@@ -1,0 +1,73 @@
+<Type Name="BorderType" FullName="System.Windows.Forms.VisualStyles.BorderType">
+  <TypeSignature Language="C#" Value="public enum BorderType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BorderType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.BorderType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the border type of a visual style element with a filled-border background.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.BorderType> values represent the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A> method when it is called with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ellipse">
+      <MemberSignature Language="C#" Value="Ellipse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.BorderType Ellipse = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.BorderType.Ellipse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.BorderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An elliptical border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rectangle">
+      <MemberSignature Language="C#" Value="Rectangle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.BorderType Rectangle = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.BorderType.Rectangle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.BorderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A rectangular border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundedRectangle">
+      <MemberSignature Language="C#" Value="RoundedRectangle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.BorderType RoundedRectangle = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.BorderType.RoundedRectangle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.BorderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A rectangular border with rounded corners.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

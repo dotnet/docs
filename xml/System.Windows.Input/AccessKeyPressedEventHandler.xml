@@ -1,0 +1,32 @@
+<Type Name="AccessKeyPressedEventHandler" FullName="System.Windows.Input.AccessKeyPressedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void AccessKeyPressedEventHandler(object sender, AccessKeyPressedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessKeyPressedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.AccessKeyPressedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Input.AccessKeyPressedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Input.AccessKeyManager.AccessKeyPressed" /> attached event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Access keys in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] are handled by a manager class that acts somewhat like a service for access keys, and forwards access key input to the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] input system. Rather than handling access key pressed events specifically by attaching a handler for the <xref:System.Windows.Input.AccessKeyManager.AccessKeyPressed> attached event on a specific object, it is generally a better practice to associate the access key with a particular command through a command binding, and then handle the routed commands through the corresponding routed events. This technique provides a unified event system for user input regardless of what input mode initiated the input. For more information, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,101 @@
+<Type Name="VisualStyleElement+Window" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+Window">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.Window" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/Window extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.Window" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of a window. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.Caption>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.CaptionSizingTemplate>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.CloseButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.Dialog>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameBottom>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameBottomSizingTemplate>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameLeft>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameLeftSizingTemplate>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameRight>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameRightSizingTemplate>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.HelpButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.HorizontalScroll>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.HorizontalThumb>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MaxButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MaxCaption>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MdiCloseButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MdiHelpButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MdiMinButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MdiRestoreButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MdiSysButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MinButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.MinCaption>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.RestoreButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallCaption>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallCaptionSizingTemplate>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallCloseButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallFrameBottom>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallFrameBottomSizingTemplate>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallFrameLeft>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallFrameLeftSizingTemplate>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallFrameRight>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallFrameRightSizingTemplate>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallMaxCaption>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SmallMinCaption>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.SysButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.VerticalScroll>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.VerticalThumb>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for the part of the window specified by the class name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,5 @@
+---
+uid: System.Web.Configuration.TicketCompatibilityMode
+ms.author: "riande"
+manager: "wpickett"
+---

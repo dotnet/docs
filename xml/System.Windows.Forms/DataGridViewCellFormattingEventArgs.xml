@@ -1,0 +1,240 @@
+<Type Name="DataGridViewCellFormattingEventArgs" FullName="System.Windows.Forms.DataGridViewCellFormattingEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridViewCellFormattingEventArgs : System.Windows.Forms.ConvertEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellFormattingEventArgs extends System.Windows.Forms.ConvertEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellFormattingEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ConvertEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.CellFormatting" /> event of a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event to customize the conversion of a cell value into a format suitable for display or to customize the appearance of a cell depending on its state or value.  
+  
+ The <xref:System.Windows.Forms.DataGridView.CellFormatting> event occurs every time each cell is painted, so you should avoid lengthy processing when handling this event. This event also occurs when the cell <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> is retrieved or its <xref:System.Windows.Forms.DataGridViewCell.GetFormattedValue%2A> method is called.  
+  
+ When you handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> property is initialized with the cell value. If you provide custom conversion from the cell value to the display value, set the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> property to the converted value, ensuring that the new value is of the type specified by the cell <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. To indicate that no further value formatting is necessary, set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`.  
+  
+ When the event handler completes, if the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> is `null` or is not of the correct type, or the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property is `false`, the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> is formatted using the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the cell style returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A?displayProperty=fullName> property, which is initialized using the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property.  
+  
+ Regardless of the value of the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property, the display properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A?displayProperty=fullName> property are used to render the cell.  
+  
+ For more information about custom formatting using the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md).  
+  
+ To avoid performance penalties when handling this event, access the cell through the parameters of the event handler rather than accessing the cell directly.  
+  
+ To customize the conversion of a formatted, user-specified value into an actual cell value, handle the <xref:System.Windows.Forms.DataGridView.CellParsing> event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to handle <xref:System.Windows.Forms.DataGridView.CellFormatting>.  
+  
+ [!code-cpp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewCellFormattingEventArgs (int columnIndex, int rowIndex, object value, Type desiredType, System.Windows.Forms.DataGridViewCellStyle cellStyle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 columnIndex, int32 rowIndex, object value, class System.Type desiredType, class System.Windows.Forms.DataGridViewCellStyle cellStyle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellFormattingEventArgs.#ctor(System.Int32,System.Int32,System.Object,System.Type,System.Windows.Forms.DataGridViewCellStyle)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="rowIndex" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="desiredType" Type="System.Type" />
+        <Parameter Name="cellStyle" Type="System.Windows.Forms.DataGridViewCellStyle" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">The column index of the cell that caused the event.</param>
+        <param name="rowIndex">The row index of the cell that caused the event.</param>
+        <param name="value">The cell's contents.</param>
+        <param name="desiredType">The type to convert <c>value</c> to.</param>
+        <param name="cellStyle">The style of the cell that caused the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellFormattingEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `desiredType` parameter represents the type that the `value` parameter should be converted to, and `desiredType` is assigned the cell's <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. For example, if a cell is formatting picture names as bitmaps, `value` is the <xref:System.String> that contains the picture name, and `desiredType` is a <xref:System.Type> representing the <xref:System.Drawing.Bitmap> type.  
+  
+ If the <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler does not set the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> property to a type that can be displayed by the cell, the cell contents will be formatted using the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use a <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs>.  
+  
+ [!code-cpp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="columnIndex" /> is less than -1  
+  
+ -or-  
+  
+ <paramref name="rowIndex" /> is less than -1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CellStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewCellStyle CellStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle CellStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewCellStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the style of the cell that is being formatted.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that represents the display style of the cell being formatted. The default is the value of the cell's <see cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A> property will change how the cell and its contents are displayed. To avoid performance penalties, use this property to change the cell styles rather than accessing the cell directly.  
+  
+ For more information about cell styles, see [Cell Styles in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/cell-styles-in-the-windows-forms-datagridview-control.md)  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A> property to color the background of cells that contain the string "Pink" to <xref:System.Drawing.Color.Pink%2A>.  
+  
+ [!code-cpp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnIndex">
+      <MemberSignature Language="C#" Value="public int ColumnIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellFormattingEventArgs.ColumnIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the column index of the cell that is being formatted.</summary>
+        <value>The column index of the cell that is being formatted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.ColumnIndex%2A> property to obtain an index into the <xref:System.Windows.Forms.DataGridView.Columns%2A> property of a <xref:System.Windows.Forms.DataGridView>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.ColumnIndex%2A> property to retrieve column properties.  
+  
+ [!code-cpp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormattingApplied">
+      <MemberSignature Language="C#" Value="public bool FormattingApplied { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FormattingApplied" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the cell value has been successfully formatted.</summary>
+        <value>
+          <see langword="true" /> if the formatting for the cell value has been handled; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When handling the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A> property to `true` after setting the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> property if no further value formatting is required. If the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A> property value is `false` when the event handler exits, the formatting will be applied to the value as indicated by the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A> properties of the <xref:System.Windows.Forms.DataGridViewCellStyle> object returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example sets the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A> property to `true` to signal that formatting for this cell is finished.  
+  
+ [!code-cpp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowIndex">
+      <MemberSignature Language="C#" Value="public int RowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellFormattingEventArgs.RowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the row index of the cell that is being formatted.</summary>
+        <value>The row index of the cell that is being formatted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.RowIndex%2A> property to obtain an index into the <xref:System.Windows.Forms.DataGridView.Rows%2A> property of a <xref:System.Windows.Forms.DataGridView>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.RowIndex%2A> property to retrieve the cell being formatted. The cell reference is then used to set the cell's ToolTip text.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridViewCell.ToolTipText#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCell.ToolTipText/cpp/datagridviewcell.tooltiptext.cpp#1)]
+ [!code-csharp[System.Windows.Forms.DataGridViewCell.ToolTipText#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCell.ToolTipText/CS/datagridviewcell.tooltiptext.cs#1)]
+ [!code-vb[System.Windows.Forms.DataGridViewCell.ToolTipText#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewCell.ToolTipText/VB/datagridviewcell.tooltiptext.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

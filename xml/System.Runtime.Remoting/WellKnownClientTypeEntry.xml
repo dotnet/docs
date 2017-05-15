@@ -1,0 +1,178 @@
+<Type Name="WellKnownClientTypeEntry" FullName="System.Runtime.Remoting.WellKnownClientTypeEntry">
+  <TypeSignature Language="C#" Value="public class WellKnownClientTypeEntry : System.Runtime.Remoting.TypeEntry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WellKnownClientTypeEntry extends System.Runtime.Remoting.TypeEntry" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.WellKnownClientTypeEntry" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Runtime.Remoting.TypeEntry</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Holds values for an object type registered on the client as a server-activated type (single call or singleton).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Server-activated types can be either single call or singleton. If a class is registered as a single call type, a new instance is created each time a call from the client arrives. All calls to a singleton object are handled by one instance of that object, unless that object has been collected.  
+  
+ Any client that knows the URI of a registered server-activated object can obtain a proxy for this object by registering the channel it prefers with <xref:System.Runtime.Remoting.Channels.ChannelServices> and activating the object by calling `new` or <xref:System.Activator.GetObject%2A?displayProperty=fullName>. To activate a server-activated object with `new`, you must first register the server-activated object type on the client using the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A> method. By calling <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownClientType%2A>, you are giving the remoting infrastructure the location of the remote object, which allows the `new` keyword to create it. If, on the other hand, you use the <xref:System.Activator.GetObject%2A?displayProperty=fullName> method to activate a server-activated object, you must supply it with the object's URL as an argument, so no prior registration on the client is necessary.  
+  
+ For a detailed description of server-activated objects and remote object activation, see [&#91;\<topic://cpconActivation>&#93;](http://msdn.microsoft.com/en-us/e90d0c64-00da-4080-ae78-a6c558825c25).  
+  
+   
+  
+## Examples  
+ [!code-cpp[WellKnownClientTypeEntry_Client#1](~/samples/snippets/cpp/VS_Snippets_Remoting/WellKnownClientTypeEntry_Client/CPP/wellknownclienttypeentry_client.cpp#1)]
+ [!code-csharp[WellKnownClientTypeEntry_Client#1](~/samples/snippets/csharp/VS_Snippets_Remoting/WellKnownClientTypeEntry_Client/CS/wellknownclienttypeentry_client.cs#1)]
+ [!code-vb[WellKnownClientTypeEntry_Client#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/WellKnownClientTypeEntry_Client/VB/wellknownclienttypeentry_client.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WellKnownClientTypeEntry (Type type, string objectUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string objectUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.WellKnownClientTypeEntry.#ctor(System.Type,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="objectUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The <see cref="T:System.Type" /> of the server-activated type.</param>
+        <param name="objectUrl">The URL of the server-activated type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" /> class with the given type and URL.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WellKnownClientTypeEntry (string typeName, string assemblyName, string objectUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName, string assemblyName, string objectUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.WellKnownClientTypeEntry.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="objectUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">The type name of the server-activated type.</param>
+        <param name="assemblyName">The assembly name of the server-activated type.</param>
+        <param name="objectUrl">The URL of the server-activated type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.WellKnownClientTypeEntry" /> class with the given type, assembly name, and URL.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationUrl">
+      <MemberSignature Language="C#" Value="public string ApplicationUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.WellKnownClientTypeEntry.ApplicationUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL of the application to activate the type in.</summary>
+        <value>The URL of the application to activate the type in.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The application URL is optional and should be set to the URL of the application corresponding to the server-activated object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectType">
+      <MemberSignature Language="C#" Value="public Type ObjectType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ObjectType" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.WellKnownClientTypeEntry.ObjectType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Type" /> of the server-activated client type.</summary>
+        <value>Gets the <see cref="T:System.Type" /> of the server-activated client type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectUrl">
+      <MemberSignature Language="C#" Value="public string ObjectUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ObjectUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.WellKnownClientTypeEntry.ObjectUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the URL of the server-activated client object.</summary>
+        <value>The URL of the server-activated client object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.WellKnownClientTypeEntry.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the full type name, assembly name, and object URL of the server-activated client type as a <see cref="T:System.String" />.</summary>
+        <returns>The full type name, assembly name, and object URL of the server-activated client type as a <see cref="T:System.String" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Runtime.Remoting.WellKnownClientTypeEntry.ApplicationUrl%2A> is not `null`, it is returned at the end of the string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

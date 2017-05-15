@@ -1,0 +1,96 @@
+<Type Name="DataGridHeadersVisibility" FullName="System.Windows.Controls.DataGridHeadersVisibility">
+  <TypeSignature Language="C#" Value="public enum DataGridHeadersVisibility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridHeadersVisibility extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridHeadersVisibility" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines constants that specify the visibility of row and column headers in a <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Controls.DataGrid.HeadersVisibility%2A> property.  
+  
+ The style of the headers is determined by the <xref:System.Windows.Controls.DataGrid.RowHeaderStyle%2A> and <xref:System.Windows.Controls.DataGrid.ColumnHeaderStyle%2A> properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridHeadersVisibility All = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridHeadersVisibility.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridHeadersVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Both row and column headers are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="Column" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridHeadersVisibility Column = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridHeadersVisibility.Column" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridHeadersVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only column headers are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridHeadersVisibility None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridHeadersVisibility.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridHeadersVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No headers are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Row">
+      <MemberSignature Language="C#" Value="Row" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridHeadersVisibility Row = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridHeadersVisibility.Row" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridHeadersVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only row headers are visible.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

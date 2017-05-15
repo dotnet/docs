@@ -1,0 +1,213 @@
+<Type Name="ModelMemberCollection&lt;TItemType,TFindType&gt;" FullName="System.Activities.Presentation.Model.ModelMemberCollection&lt;TItemType,TFindType&gt;">
+  <TypeSignature Language="C#" Value="public abstract class ModelMemberCollection&lt;TItemType,TFindType&gt; : System.Collections.Generic.IEnumerable&lt;TItemType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ModelMemberCollection`2&lt;TItemType, TFindType&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;!TItemType&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelMemberCollection`2" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TItemType" />
+    <TypeParameter Name="TFindType" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;TItemType&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TItemType">The type of item that the collection represents.</typeparam>
+    <typeparam name="TFindType">The type that should be used as a key in the "Find" methods.</typeparam>
+    <summary>An abstract base class that <see cref="T:System.Activities.Presentation.Model.ModelPropertyCollection" /> derives from.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public TItemType Find (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TItemType Find(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelMemberCollection`2.Find(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItemType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the given key.</param>
+        <summary>Searches the collection for the given key and returns it if it is found. If the key is not found, this method returns <see langword="null" />.</summary>
+        <returns>Returns <see cref="{0}" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public TItemType Find (TFindType value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TItemType Find(!TFindType value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelMemberCollection`2.Find(`1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItemType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="TFindType" />
+      </Parameters>
+      <Docs>
+        <param name="value">The type of the given key.</param>
+        <summary>Searches the collection for the given key and returns it if it is found. If the key is not found, this method returns <see langword="null" />.</summary>
+        <returns>Returns <see cref="{0}" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="protected abstract TItemType Find (string name, bool throwOnError);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !TItemType Find(string name, bool throwOnError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelMemberCollection`2.Find(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItemType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="throwOnError" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the given key.</param>
+        <param name="throwOnError">
+          <see langword="true" /> to throw an exception if the given key is not found; otherwise, <see langword="false" />.</param>
+        <summary>Searches the collection for the given key and returns it if it is found. If the key is not found, this method throws an exception or returns <see langword="null" />, depending on the value passed to <paramref name="throwOnError" />.</summary>
+        <returns>Returns <see cref="{0}" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="name" /> is not found and <paramref name="throwOnError" /> is <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="protected abstract TItemType Find (TFindType value, bool throwOnError);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !TItemType Find(!TFindType value, bool throwOnError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelMemberCollection`2.Find(`1,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItemType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="TFindType" />
+        <Parameter Name="throwOnError" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The type of the given key.</param>
+        <param name="throwOnError">
+          <see langword="true" /> to throw an exception if the given key is not found; otherwise, <see langword="false" />.</param>
+        <summary>Searches the collection for the given key and returns it if it is found. If the key is not found, this method throws an exception or returns <see langword="null" />, depending on the value passed to <paramref name="throwOnError" />.</summary>
+        <returns>Returns <see cref="{0}" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="value" /> is not found and <paramref name="throwOnError" /> is <see langword="true" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerator&lt;TItemType&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!TItemType&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelMemberCollection`2.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;TItemType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator to enumerate through the values in the collection.</summary>
+        <returns>Returns <see cref="T:System.Collections.Generic.IEnumerator`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public TItemType this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TItemType Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelMemberCollection`2.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItemType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the type to retrieve.</param>
+        <summary>Gets the value at the specified index by name.</summary>
+        <value>The value at the specified index by name.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="name" /> is not found.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="name" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public TItemType this[TFindType value] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TItemType Item(!TFindType)" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelMemberCollection`2.Item(`1)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TItemType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="TFindType" />
+      </Parameters>
+      <Docs>
+        <param name="value">The type to retrieve.</param>
+        <summary>Gets the value at the specified index by type.</summary>
+        <value>The value at the specified index by type.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="value" /> is not found.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelMemberCollection`2.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through a collection.</summary>
+        <returns>Returns <see cref="T:System.Collections.IEnumerator" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

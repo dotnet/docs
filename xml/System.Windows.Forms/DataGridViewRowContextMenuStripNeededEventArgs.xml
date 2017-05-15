@@ -1,0 +1,137 @@
+<Type Name="DataGridViewRowContextMenuStripNeededEventArgs" FullName="System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridViewRowContextMenuStripNeededEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewRowContextMenuStripNeededEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event occurs only when the <xref:System.Windows.Forms.DataGridView> control <xref:System.Windows.Forms.DataGridView.DataSource%2A> property is set or its <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`. Handling the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event is useful when you want to display a shortcut menu determined by a row's current state or the values it contains.  
+  
+ When you handle the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event, the shortcut menu that you specify in the handler is shown whenever the user right-clicks a row unless the <xref:System.Windows.Forms.DataGridView.CellContextMenuStripNeeded> event overrides the shortcut menu for the specific cell that was clicked.  
+  
+ The <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event also occurs whenever the value of the <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A?displayProperty=fullName> property is retrieved, either programmatically or when the user right-clicks a row.  
+  
+ You can use the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.RowIndex%2A> property to determine the state of a row or the values it contains, and use this information to change or modify the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.ContextMenuStrip%2A> property. This property is initialized with the value of the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> property, which the event value overrides.  
+  
+ Handle the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event when working with large amounts of data to avoid the performance penalties of setting the row <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A> value for multiple rows. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example handles the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event to provide a <xref:System.Windows.Forms.ContextMenuStrip> based on the title of the employee. In this example, there are two shortcut menus, one for managers and one for all other employees.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridView_NeededEvents#00](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_NeededEvents/CS/Form1.cs#00)]
+ [!code-vb[System.Windows.Forms.DataGridView_NeededEvents#00](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_NeededEvents/VB/Form1.vb#00)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewRowContextMenuStripNeededEventArgs (int rowIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 rowIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rowIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowIndex">The index of the row.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor uses the `rowIndex` parameter value to initialize the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.RowIndex%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="rowIndex" /> is less than -1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuStrip">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ContextMenuStrip ContextMenuStrip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContextMenuStrip ContextMenuStrip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.ContextMenuStrip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ContextMenuStrip</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the shortcut menu for the row that raised the <see cref="E:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded" /> event.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ContextMenuStrip" /> in use.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property initially contains the value of the <xref:System.Windows.Forms.DataGridViewRow.ContextMenuStrip%2A?displayProperty=fullName> property if it has been set for a row.  
+  
+   
+  
+## Examples  
+ The following code example handles the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event to provide a <xref:System.Windows.Forms.ContextMenuStrip> based on the title of the employee. In this example, there are two shortcut menus, one for managers and one for all other employees. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs> class overview.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridView_NeededEvents#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_NeededEvents/CS/Form1.cs#10)]
+ [!code-vb[System.Windows.Forms.DataGridView_NeededEvents#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_NeededEvents/VB/Form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowIndex">
+      <MemberSignature Language="C#" Value="public int RowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs.RowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the row that is requesting a shortcut menu.</summary>
+        <value>The zero-based index of the row that is requesting a shortcut menu.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to retrieve additional information about the row.  
+  
+   
+  
+## Examples  
+ The following code example handles the <xref:System.Windows.Forms.DataGridView.RowContextMenuStripNeeded> event to provide a <xref:System.Windows.Forms.ContextMenuStrip> based on the title of the employee. In this example, there are two shortcut menus, one for managers and one for all other employees. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridViewRowContextMenuStripNeededEventArgs> class overview.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridView_NeededEvents#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_NeededEvents/CS/Form1.cs#10)]
+ [!code-vb[System.Windows.Forms.DataGridView_NeededEvents#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView_NeededEvents/VB/Form1.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

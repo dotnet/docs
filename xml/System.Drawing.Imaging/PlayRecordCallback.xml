@@ -1,0 +1,29 @@
+<Type Name="PlayRecordCallback" FullName="System.Drawing.Imaging.PlayRecordCallback">
+  <TypeSignature Language="C#" Value="public delegate void PlayRecordCallback(EmfPlusRecordType recordType, int flags, int dataSize, IntPtr recordData);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PlayRecordCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.PlayRecordCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="recordType" Type="System.Drawing.Imaging.EmfPlusRecordType" />
+    <Parameter Name="flags" Type="System.Int32" />
+    <Parameter Name="dataSize" Type="System.Int32" />
+    <Parameter Name="recordData" Type="System.IntPtr" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="recordType">Not used.</param>
+    <param name="flags">Not used.</param>
+    <param name="dataSize">Not used.</param>
+    <param name="recordData">Not used.</param>
+    <summary>This delegate is not used. For an example of enumerating the records of a metafile, see <see cref="M:System.Drawing.Graphics.EnumerateMetafile(System.Drawing.Imaging.Metafile,System.Drawing.Point,System.Drawing.Graphics.EnumerateMetafileProc)" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

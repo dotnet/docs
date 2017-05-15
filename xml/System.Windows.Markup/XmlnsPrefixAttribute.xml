@@ -1,0 +1,103 @@
+<Type Name="XmlnsPrefixAttribute" FullName="System.Windows.Markup.XmlnsPrefixAttribute">
+  <TypeSignature Language="C#" Value="public sealed class XmlnsPrefixAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlnsPrefixAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XmlnsPrefixAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies a recommended prefix to associate with a XAML namespace for XAML usage, when writing elements and attributes in a XAML file (serialization) or when interacting with a design environment that has XAML editing features.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XAML processors or frameworks that incorporate XAML, or any process that performs XAML serialization, should generally honor the recommended prefix. The prefix might be necessary in any case where prefixes from specific mappings in the original XAML source are not somehow preserved in the runtime object graph or otherwise stored by a framework or technology. A framework might have specific preferences for how to serialize its own types that ignore the recommended prefix from its own assemblies; this might be done to consistently promote a default XAML namespace. However, such a framework should still provide recommended prefixes for possible third-party and tool usages of its XAML types. See "Best Practice for XAML Designer Support or General Serialization" section below.  
+  
+ A general recommendation for prefixes is to use short strings, because the prefix is typically applied to all serialized elements that come from the XAML namespace. The prefix string length can have a noticeable effect on the size of serialized XAML output.  
+  
+ If a prefix being requested is already in use by another previously encountered/serialized XAML namespace identifier, the behavior is unspecified (behavior is up to each individual XAML processor implementation).  
+  
+ In most cases, you apply <xref:System.Windows.Markup.XmlnsPrefixAttribute> only if you have also applied at least one <xref:System.Windows.Markup.XmlnsDefinitionAttribute> in the assembly for that same XAML namespace.  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.XmlnsPrefixAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+## Best Practice for XAML Designer Support or General Serialization  
+ Even if you intend the associated XAML namespace to be the default XAML namespace in most usage cases for your framework or library, you should still specify a non-empty string as the recommended prefix for a XAML namespace. Default XAML namespace information is carried in individual XAML files and XAML node streams. The default XAML namespace and how it is defined in a given XAML source can easily be perpetuated for per-case serialization without using <xref:System.Windows.Markup.XmlnsPrefixAttribute>. However, the <xref:System.Windows.Markup.XmlnsPrefixAttribute> is useful for cases where the XAML author has chosen to map the default XAML namespace to something else. In this scenario a XAML text editor embedded in a design environment can use <xref:System.Windows.Markup.XmlnsPrefixAttribute> as a hint for an initial XAML namespace `xmlns` mapping. Or a design environment can add just-in-time mappings to the backing XAML for design metaphors such as dragging objects out of a toolbox and into a visual design surface. Also, it is conceivable that a designer could simultaneously support multiple XAML-enabling frameworks, and has a common XAML serializer that relies on .NET Framework XAML Services rather than framework-specific serialization. Specifying a <xref:System.Windows.Markup.XmlnsPrefixAttribute> for these scenarios helps make the XAML usage for your types more portable and robust if the XAML is exchanged between design tools, or undergoes a round trip between XAML editors and other consumers such as markup compilers or other serialization.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlnsPrefixAttribute (string xmlNamespace, string prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xmlNamespace, string prefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XmlnsPrefixAttribute.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="xmlNamespace" Type="System.String" />
+        <Parameter Name="prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlNamespace">The XAML namespace indentifier.</param>
+        <param name="prefix">The recommended prefix string.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XmlnsPrefixAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xmlNamespace" /> or <paramref name="prefix" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Prefix">
+      <MemberSignature Language="C#" Value="public string Prefix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Prefix" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsPrefixAttribute.Prefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the recommended prefix associated with this attribute.</summary>
+        <value>The recommended prefix string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlNamespace">
+      <MemberSignature Language="C#" Value="public string XmlNamespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XmlNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XmlnsPrefixAttribute.XmlNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XAML namespace identifier associated with this attribute.</summary>
+        <value>The XAML namespace identifier.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,124 @@
+<Type Name="ManifestReader" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader">
+  <TypeSignature Language="C#" Value="public static class ManifestReader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ManifestReader extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Reads an XML manifest file into an object representation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ReadManifest">
+      <MemberSignature Language="C#" Value="public static Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest ReadManifest (System.IO.Stream input, bool preserveStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest ReadManifest(class System.IO.Stream input, bool preserveStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest(System.IO.Stream,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="System.IO.Stream" />
+        <Parameter Name="preserveStream" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="input">Specifies an input stream.</param>
+        <param name="preserveStream">Specifies whether to preserve the input stream in the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.InputStream" /> property of the resulting manifest object. Used by <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter" /> to reconstitute input which is not represented in the object representation.</param>
+        <summary>Reads the specified manifest XML and returns an object representation.</summary>
+        <returns>A <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" /> object representation of the manifest. Can be cast to <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />, <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" />, or <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" /> to access more specific functionality.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadManifest">
+      <MemberSignature Language="C#" Value="public static Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest ReadManifest (string path, bool preserveStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest ReadManifest(string path, bool preserveStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="preserveStream" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="path">The fully qualified path name of the input file. For example, the full path may be c:\directory\folder\filename.manifest.</param>
+        <param name="preserveStream">Specifies whether to preserve the input stream in the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.InputStream" /> property of the resulting manifest object. Used by <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter" /> to reconstitute input which is not represented in the object representation.</param>
+        <summary>Reads the specified manifest XML and returns an object representation.</summary>
+        <returns>A <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" /> object representation of the manifest. Can be cast to <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />, <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" />, or <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" /> to access more specific functionality.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadManifest">
+      <MemberSignature Language="C#" Value="public static Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest ReadManifest (string manifestType, System.IO.Stream input, bool preserveStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest ReadManifest(string manifestType, class System.IO.Stream input, bool preserveStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest(System.String,System.IO.Stream,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="manifestType" Type="System.String" />
+        <Parameter Name="input" Type="System.IO.Stream" />
+        <Parameter Name="preserveStream" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="manifestType">Specifies the expected type of the manifest. Valid values are <see langword="AssemblyManifest" />, <see langword="ApplicationManifest" />, or <see langword="DeployManifest" />.</param>
+        <param name="input">Specifies an input stream.</param>
+        <param name="preserveStream">Specifies whether to preserve the input stream in the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.InputStream" /> property of the resulting manifest object. Used by <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter" /> to reconstitute input which is not represented in the object representation.</param>
+        <summary>Reads the specified manifest XML and returns an object representation.</summary>
+        <returns>A <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" /> object representation of the manifest. Can be cast to <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />, <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" />, or <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" /> to access more specific functionality.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadManifest">
+      <MemberSignature Language="C#" Value="public static Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest ReadManifest (string manifestType, string path, bool preserveStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest ReadManifest(string manifestType, string path, bool preserveStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestReader.ReadManifest(System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="manifestType" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="preserveStream" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="manifestType">Specifies the expected type of the manifest. Valid values are <see langword="AssemblyManifest" />, <see langword="ApplicationManifest" />, or <see langword="DeployManifest" />.</param>
+        <param name="path">The path name of the input file.</param>
+        <param name="preserveStream">Specifies whether to preserve the input stream in the <see cref="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.InputStream" /> property of the resulting manifest object. Used by <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter" /> to reconstitute input which is not represented in the object representation.</param>
+        <summary>Reads the specified manifest XML and returns an object representation.</summary>
+        <returns>A <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest" /> object representation of the manifest. Can be cast to <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyManifest" />, <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationManifest" />, or <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest" /> to access more specific functionality.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

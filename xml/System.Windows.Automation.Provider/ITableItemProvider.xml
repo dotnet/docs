@@ -1,0 +1,80 @@
+<Type Name="ITableItemProvider" FullName="System.Windows.Automation.Provider.ITableItemProvider">
+  <TypeSignature Language="C#" Value="public interface ITableItemProvider : System.Windows.Automation.Provider.IGridItemProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITableItemProvider implements class System.Windows.Automation.Provider.IGridItemProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ITableItemProvider" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Automation.Provider.IGridItemProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("b9734fa6-771f-4d78-9c90-2517999349cd")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods and properties to support UI Automation client access to child controls of containers that implement <see cref="T:System.Windows.Automation.Provider.ITableProvider" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This control pattern is analogous to <xref:System.Windows.Automation.Provider.IGridItemProvider> with the distinction that any control implementing <xref:System.Windows.Automation.Provider.ITableItemProvider> must expose the relationship between the individual cell and its row and column information.  
+  
+ Access to individual cell functionality is provided by the concurrent implementation of <xref:System.Windows.Automation.Provider.IGridItemProvider>.  
+  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.TableItemPattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetColumnHeaderItems">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple[] GetColumnHeaderItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] GetColumnHeaderItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITableItemProvider.GetColumnHeaderItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a collection of UI Automation providers representing all the column headers associated with a table item or cell.</summary>
+        <returns>A collection of UI Automation providers.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowHeaderItems">
+      <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple[] GetRowHeaderItems ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] GetRowHeaderItems() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITableItemProvider.GetRowHeaderItems" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a collection of UI Automation providers representing all the row headers associated with a table item or cell.</summary>
+        <returns>A collection of UI Automation providers.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

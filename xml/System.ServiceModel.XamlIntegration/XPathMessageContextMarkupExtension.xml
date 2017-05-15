@@ -1,0 +1,104 @@
+<Type Name="XPathMessageContextMarkupExtension" FullName="System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension">
+  <TypeSignature Language="C#" Value="public class XPathMessageContextMarkupExtension : System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi XPathMessageContextMarkupExtension extends System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.MarkupExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Namespaces")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an extension of the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageContext" /> to contain namespaces when serializing XPath message queries into XAML.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used in conjunction with the <xref:System.ServiceModel.XamlIntegration.XPathMessageContextTypeConverter> to convert an <xref:System.ServiceModel.Dispatcher.XPathMessageContext> into the <xref:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension> type. That class converts the XPath query context information from an XML file into a format that can be serialized as XAML.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XPathMessageContextMarkupExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XPathMessageContextMarkupExtension (System.ServiceModel.Dispatcher.XPathMessageContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Dispatcher.XPathMessageContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor(System.ServiceModel.Dispatcher.XPathMessageContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.ServiceModel.Dispatcher.XPathMessageContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The XPath message context to convert.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension" /> class with the <see cref="T:System.ServiceModel.Dispatcher.XPathMessageContext" /> to convert.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespaces">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; Namespaces { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; Namespaces" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.Namespaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the namespaces contained in this instance.</summary>
+        <value>A collection of namespaces and prefixes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideValue">
+      <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">A service provider that is not used in the operation.</param>
+        <summary>Provides the namespaces used in the XPath message query.</summary>
+        <returns>The namespaces.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,61 @@
+<Type Name="DatePickerFormat" FullName="System.Windows.Controls.DatePickerFormat">
+  <TypeSignature Language="C#" Value="public enum DatePickerFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DatePickerFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DatePickerFormat" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies date formats for a <see cref="T:System.Windows.Controls.DatePicker" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.DatePicker> that displays the date by using unabbreviated days of the week and month names.  
+  
+ [!code-csharp[DatePickerSnippets#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datepickersnippets/csharp/window1.xaml.cs#1)]
+ [!code-vb[DatePickerSnippets#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datepickersnippets/visualbasic/window1.xaml.vb#1)]
+ [!code-xml[DatePickerSnippets#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datepickersnippets/xaml/window1.xaml#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Long">
+      <MemberSignature Language="C#" Value="Long" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DatePickerFormat Long = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePickerFormat.Long" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DatePickerFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the date should be displayed by using unabbreviated days of the week and month names. This value displays a string that is equal to the string that is returned by the <see cref="M:System.DateTime.ToLongDateString" /> method.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Short">
+      <MemberSignature Language="C#" Value="Short" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DatePickerFormat Short = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DatePickerFormat.Short" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DatePickerFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the date should be displayed by using abbreviated days of the week and month names. This value displays a string that is equal to the string that is returned by the <see cref="M:System.DateTime.ToShortDateString" /> method.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

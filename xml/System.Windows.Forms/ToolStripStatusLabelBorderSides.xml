@@ -1,0 +1,125 @@
+<Type Name="ToolStripStatusLabelBorderSides" FullName="System.Windows.Forms.ToolStripStatusLabelBorderSides">
+  <TypeSignature Language="C#" Value="public enum ToolStripStatusLabelBorderSides" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripStatusLabelBorderSides extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripStatusLabelBorderSides" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.BorderSidesEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies which sides of a <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> have borders.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripStatusLabelBorderSides All = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripStatusLabelBorderSides.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All sides of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> have borders.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripStatusLabelBorderSides Bottom = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripStatusLabelBorderSides.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only the bottom side of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> has borders.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripStatusLabelBorderSides Left = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripStatusLabelBorderSides.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only the left side of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> has borders.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripStatusLabelBorderSides None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripStatusLabelBorderSides.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> has no borders.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripStatusLabelBorderSides Right = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripStatusLabelBorderSides.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only the right side of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> has borders.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripStatusLabelBorderSides Top = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripStatusLabelBorderSides.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripStatusLabelBorderSides</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only the top side of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" /> has borders.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "DataRepeater, walkthrough"
 ms.assetid: 65dcdb95-6c3e-47cc-987d-190000f71653
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

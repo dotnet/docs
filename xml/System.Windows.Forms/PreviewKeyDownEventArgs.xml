@@ -1,0 +1,298 @@
+<Type Name="PreviewKeyDownEventArgs" FullName="System.Windows.Forms.PreviewKeyDownEventArgs">
+  <TypeSignature Language="C#" Value="public class PreviewKeyDownEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PreviewKeyDownEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PreviewKeyDownEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.PreviewKeyDown" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.PreviewKeyDown> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.PreviewKeyDown> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#65](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#65)]
+ [!code-vb[System.Windows.Forms.EventExamples#65](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#65)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PreviewKeyDownEventArgs (System.Windows.Forms.Keys keyData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.Keys keyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PreviewKeyDownEventArgs.#ctor(System.Windows.Forms.Keys)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+      </Parameters>
+      <Docs>
+        <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PreviewKeyDownEventArgs" /> class with the specified key.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt">
+      <MemberSignature Language="C#" Value="public bool Alt { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Alt" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Alt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the ALT key was pressed.</summary>
+        <value>
+          <see langword="true" /> if the ALT key was pressed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#65](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#65)]
+ [!code-vb[System.Windows.Forms.EventExamples#65](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="public bool Control { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Control" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Control" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the CTRL key was pressed.</summary>
+        <value>
+          <see langword="true" /> if the CTRL key was pressed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#65](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#65)]
+ [!code-vb[System.Windows.Forms.EventExamples#65](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInputKey">
+      <MemberSignature Language="C#" Value="public bool IsInputKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInputKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether a key is a regular input key.</summary>
+        <value>
+          <see langword="true" /> if the key is a regular input key; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#65](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#65)]
+ [!code-vb[System.Windows.Forms.EventExamples#65](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyCode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Keys KeyCode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Keys KeyCode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.KeyCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the keyboard code for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.Keys" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#65](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#65)]
+ [!code-vb[System.Windows.Forms.EventExamples#65](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyData">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Keys KeyData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Keys KeyData" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.KeyData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the key data for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.Keys" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#65](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#65)]
+ [!code-vb[System.Windows.Forms.EventExamples#65](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyValue">
+      <MemberSignature Language="C#" Value="public int KeyValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 KeyValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.KeyValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the keyboard value for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <value>An <see cref="T:System.Int32" /> representing the keyboard value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#65](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#65)]
+ [!code-vb[System.Windows.Forms.EventExamples#65](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Modifiers">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Keys Modifiers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Keys Modifiers" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Modifiers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the modifier flags for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.Keys" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#65](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#65)]
+ [!code-vb[System.Windows.Forms.EventExamples#65](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shift">
+      <MemberSignature Language="C#" Value="public bool Shift { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Shift" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PreviewKeyDownEventArgs.Shift" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the SHIFT key was pressed.</summary>
+        <value>
+          <see langword="true" /> if the SHIFT key was pressed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#65](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#65)]
+ [!code-vb[System.Windows.Forms.EventExamples#65](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#65)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

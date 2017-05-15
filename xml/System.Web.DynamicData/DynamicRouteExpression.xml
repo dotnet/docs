@@ -1,0 +1,175 @@
+<Type Name="DynamicRouteExpression" FullName="System.Web.DynamicData.DynamicRouteExpression">
+  <TypeSignature Language="C#" Value="public class DynamicRouteExpression : System.Web.UI.WebControls.Expressions.DataSourceExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicRouteExpression extends System.Web.UI.WebControls.Expressions.DataSourceExpression" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicRouteExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.Expressions.DataSourceExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Gets the primary key from the routing information in order to perform data filtering.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicRouteExpression> class is used with the <xref:System.Web.UI.WebControls.QueryExtender> control in page markup. The <xref:System.Web.DynamicData.DynamicRouteExpression> class gets the primary key from the routing information that is contained in a Web request. The <xref:System.Web.UI.WebControls.QueryExtender> control then uses the key in a `Where` clause. This modifies the query for the data source, which then returns table rows filtered by the key.  
+  
+ You can also filter data by using a foreign key that you specify using the <xref:System.Web.DynamicData.DynamicRouteExpression.ColumnName%2A> property.  
+  
+<a name="DeclarativeSyntax"></a>   
+## Declarative Syntax  
+  
+```  
+<asp:DynamicRouteExpression  
+  ColumnName="Name of the foreign key column"/>  
+```  
+  
+   
+  
+## Examples  
+ A Visual Studio project with source code is available to accompany this topic: [Scaffolding Dynamic Data](http://go.microsoft.com/fwlink/?LinkId=168914).  
+  
+ The following example shows a custom List.aspx page template for the Products table. It uses the <xref:System.Web.DynamicData.DynamicRouteExpression.ColumnName%2A> property to specify the ProductCategory foreign key for filtering the Products rows.  
+  
+ The custom List.aspx page displays a column that contains links of the categories that are contained by the ProductCategory foreign-key column. When the user clicks one of these links, the List.aspx page displays only the rows that contain the selected category.  
+  
+ The example requires the following:  
+  
+-   A Dynamic Data Web site. For more information, see [Walkthrough: Creating a New Dynamic Data Web Site Using Scaffolding](http://msdn.microsoft.com/library/1564aef2-9103-436a-9806-c8ad7abd616a).  
+  
+-   The AdventureWorksLT sample database. For more information, see [How to: Connect to the AdventureWorksLT Database using an .MDF File](http://msdn.microsoft.com/library/d34ffbac-607d-40f1-b088-0a3304ea032b).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.DynamicRouteExpression#1](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.dynamicrouteexpression/cs/list.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.DynamicRouteExpression#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.dynamicrouteexpression/vb/list.aspx#1)]  -->  
+  
+ [!code-csharp[System.Web.DynamicData.DynamicRouteExpression#3](~/samples/snippets/csharp/VS_Snippets_WebNet/system.web.dynamicdata.dynamicrouteexpression/cs/list.aspx.cs#3)]
+ [!code-vb[System.Web.DynamicData.DynamicRouteExpression#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/system.web.dynamicdata.dynamicrouteexpression/vb/list.aspx.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicRouteExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicRouteExpression.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicRouteExpression" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You typically do not call the <xref:System.Web.DynamicData.DynamicRouteExpression.%23ctor%2A> constructor. Instead, you use the <xref:System.Web.DynamicData.DynamicRouteExpression> class in page markup and the class is initialized when the page is loaded.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnName">
+      <MemberSignature Language="C#" Value="public string ColumnName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ColumnName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicRouteExpression.ColumnName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of a column that contains a foreign key that is used to query the data source.</summary>
+        <value>The name of the foreign-key column.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DynamicRouteExpression.ColumnName%2A> property represents a foreign key. This key is used to modify the query for the data source.  
+  
+   
+  
+## Examples  
+ The following example shows how to specify the ProductCategory foreign-key column for filtering the products to display. This example is part of the larger example that is provided for the <xref:System.Web.DynamicData.DynamicRouteExpression> class.  
+  
+```  
+<asp:QueryExtender TargetControlID="GridDataSource"   
+    ID="GridQueryExtender" runat="server">  
+  <asp:DynamicRouteExpression ColumnName="ProductCategory" />  
+</asp:QueryExtender>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueryable">
+      <MemberSignature Language="C#" Value="public override System.Linq.IQueryable GetQueryable (System.Linq.IQueryable source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Linq.IQueryable GetQueryable(class System.Linq.IQueryable source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicRouteExpression.GetQueryable(System.Linq.IQueryable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable" />
+      </Parameters>
+      <Docs>
+        <param name="source">The query to modify.</param>
+        <summary>Gets the query from the data source..</summary>
+        <returns>An instance of the modified query.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The query from the data source, represented by the `source` parameter, is modified by applying the primary or foreign key that is the current route information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetContext">
+      <MemberSignature Language="C#" Value="public override void SetContext (System.Web.UI.Control owner, System.Web.HttpContext context, System.Web.UI.WebControls.IQueryableDataSource dataSource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetContext(class System.Web.UI.Control owner, class System.Web.HttpContext context, class System.Web.UI.WebControls.IQueryableDataSource dataSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicRouteExpression.SetContext(System.Web.UI.Control,System.Web.HttpContext,System.Web.UI.WebControls.IQueryableDataSource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.Control" />
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+        <Parameter Name="dataSource" Type="System.Web.UI.WebControls.IQueryableDataSource" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The control that contains the <see cref="T:System.Web.DynamicData.DynamicRouteExpression" /> instance. This is a <see cref="T:System.Web.UI.WebControls.QueryExtender" /> control.</param>
+        <param name="context">The Web request context.</param>
+        <param name="dataSource">The target data source for the <see cref="T:System.Web.DynamicData.DynamicRouteExpression" /> instance.</param>
+        <summary>Sets the HTTP context of the <see cref="T:System.Web.DynamicData.DynamicRouteExpression" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

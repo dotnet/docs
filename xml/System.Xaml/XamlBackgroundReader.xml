@@ -1,0 +1,322 @@
+<Type Name="XamlBackgroundReader" FullName="System.Xaml.XamlBackgroundReader">
+  <TypeSignature Language="C#" Value="public class XamlBackgroundReader : System.Xaml.XamlReader, System.Xaml.IXamlLineInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlBackgroundReader extends System.Xaml.XamlReader implements class System.Xaml.IXamlLineInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.XamlBackgroundReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xaml.XamlReader</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Xaml.IXamlLineInfo</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Implements a double-buffered <see cref="T:System.Xaml.XamlReader" /> that can split reading and writing to different threads.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlBackgroundReader (System.Xaml.XamlReader wrappedReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlReader wrappedReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlBackgroundReader.#ctor(System.Xaml.XamlReader)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="wrappedReader" Type="System.Xaml.XamlReader" />
+      </Parameters>
+      <Docs>
+        <param name="wrappedReader">The <see cref="T:System.Xaml.XamlReader" /> that this <see cref="T:System.Xaml.XamlBackgroundReader" /> is based on.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlBackgroundReader" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wrappedReader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlBackgroundReader.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release managed resources; otherwise, <see langword="false" />.</param>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Xaml.XamlBackgroundReader" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In addition to calling the base implementation, this `Dispose` implementation disposes related writers and event handlers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasLineInfo">
+      <MemberSignature Language="C#" Value="public bool HasLineInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasLineInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.HasLineInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether line information is available.</summary>
+        <value>
+          <see langword="true" /> if line information is available; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEof">
+      <MemberSignature Language="C#" Value="public override bool IsEof { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEof" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.IsEof" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that reports whether the reader position is at end-of-file.</summary>
+        <value>
+          <see langword="true" /> if the position is at end-of-file; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LineNumber">
+      <MemberSignature Language="C#" Value="public int LineNumber { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumber" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.LineNumber" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the line number to report.</summary>
+        <value>The line number to report.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinePosition">
+      <MemberSignature Language="C#" Value="public int LinePosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LinePosition" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.LinePosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the line position to report.</summary>
+        <value>The line position to report.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Member">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlMember Member { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlMember Member" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.Member" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlMember</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current member at the reader position, if the reader position is on a <see cref="F:System.Xaml.XamlNodeType.StartMember" />.</summary>
+        <value>The current member; or <see langword="null" />, if the position is not on a member.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public override System.Xaml.NamespaceDeclaration Namespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.NamespaceDeclaration Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.NamespaceDeclaration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the XAML namespace from the current node.</summary>
+        <value>The XAML namespace, if it is available; otherwise, <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeType">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlNodeType NodeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xaml.XamlNodeType NodeType" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.NodeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the current node.</summary>
+        <value>A value of the <see cref="T:System.Xaml.XamlNodeType" /> enumeration.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public override bool Read ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Read() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlBackgroundReader.Read" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides the next XAML node from the source, if a node is available.</summary>
+        <returns>
+          <see langword="true" /> if a node is available; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaContext">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlSchemaContext SchemaContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlSchemaContext SchemaContext" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.SchemaContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlSchemaContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that provides schema context information for the information set.</summary>
+        <value>An object that provides schema context information for the information set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartThread">
+      <MemberSignature Language="C#" Value="public void StartThread ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartThread() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlBackgroundReader.StartThread" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and starts a new <see cref="T:System.Threading.Thread" /> (constructed from <see cref="T:System.Threading.ParameterizedThreadStart" />) that handles a named thread for the <see cref="T:System.Xaml.XamlReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the thread is named `XAML reader thread`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The thread is already started.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartThread">
+      <MemberSignature Language="C#" Value="public void StartThread (string threadName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartThread(string threadName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlBackgroundReader.StartThread(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="threadName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="threadName">The name for the thread.</param>
+        <summary>Creates and starts a new <see cref="T:System.Threading.Thread" /> (constructed from <see cref="T:System.Threading.ParameterizedThreadStart" />) that handles a named thread for the <see cref="T:System.Xaml.XamlReader" />. You specify the thread name as a parameter.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The thread is already started.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public override System.Xaml.XamlType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType Type" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xaml.XamlType" /> of the current node.</summary>
+        <value>The <see cref="T:System.Xaml.XamlType" /> of the current node; or <see langword="null" />, if the current reader position is not on an object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public override object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlBackgroundReader.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the current node.</summary>
+        <value>The value of the current node; or <see langword="null" />, if the current reader position is not on a <see cref="F:System.Xaml.XamlNodeType.Value" /> node type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

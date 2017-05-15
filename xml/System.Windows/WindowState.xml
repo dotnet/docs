@@ -1,0 +1,66 @@
+<Type Name="WindowState" FullName="System.Windows.WindowState">
+  <TypeSignature Language="C#" Value="public enum WindowState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WindowState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.WindowState" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a window is minimized, maximized, or restored. Used by the <see cref="P:System.Windows.Window.WindowState" /> property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Maximized">
+      <MemberSignature Language="C#" Value="Maximized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.WindowState Maximized = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.WindowState.Maximized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WindowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The window is maximized.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimized">
+      <MemberSignature Language="C#" Value="Minimized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.WindowState Minimized = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.WindowState.Minimized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WindowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The window is minimized.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.WindowState Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.WindowState.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.WindowState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The window is restored.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

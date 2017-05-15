@@ -1,0 +1,140 @@
+<Type Name="DataGridViewCellMouseEventArgs" FullName="System.Windows.Forms.DataGridViewCellMouseEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridViewCellMouseEventArgs : System.Windows.Forms.MouseEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellMouseEventArgs extends System.Windows.Forms.MouseEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.MouseEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for mouse events raised by a <see cref="T:System.Windows.Forms.DataGridView" /> whenever the mouse is moved within a <see cref="T:System.Windows.Forms.DataGridViewCell" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewCellMouseEventArgs> class provides data for the following <xref:System.Windows.Forms.DataGridView> events:  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseDoubleClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseDown>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseMove>  
+  
+-   <xref:System.Windows.Forms.DataGridView.CellMouseUp>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseDoubleClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowHeaderMouseClick>  
+  
+-   <xref:System.Windows.Forms.DataGridView.RowHeaderMouseDoubleClick>  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this type.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#160](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#160)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#160](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#160)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewCellMouseEventArgs (int columnIndex, int rowIndex, int localX, int localY, System.Windows.Forms.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 columnIndex, int32 rowIndex, int32 localX, int32 localY, class System.Windows.Forms.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellMouseEventArgs.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.MouseEventArgs)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="rowIndex" Type="System.Int32" />
+        <Parameter Name="localX" Type="System.Int32" />
+        <Parameter Name="localY" Type="System.Int32" />
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="columnIndex">The cell's zero-based column index.</param>
+        <param name="rowIndex">The cell's zero-based row index.</param>
+        <param name="localX">The x-coordinate of the mouse, in pixels.</param>
+        <param name="localY">The y-coordinate of the mouse, in pixels.</param>
+        <param name="e">The originating <see cref="T:System.Windows.Forms.MouseEventArgs" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellMouseEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="columnIndex" /> is less than -1.  
+  
+ -or-  
+  
+ <paramref name="rowIndex" /> is less than -1.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnIndex">
+      <MemberSignature Language="C#" Value="public int ColumnIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellMouseEventArgs.ColumnIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the zero-based column index of the cell.</summary>
+        <value>An integer specifying the column index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc#160](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#160)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc#160](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#160)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowIndex">
+      <MemberSignature Language="C#" Value="public int RowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellMouseEventArgs.RowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the zero-based row index of the cell.</summary>
+        <value>An integer specifying the row index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this type.  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewMisc2#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/cs/misc2.cs#10)]
+ [!code-vb[System.Windows.Forms.DataGridViewMisc2#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc2/vb/misc2.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,196 @@
+<Type Name="EdmToObjectNamespaceMap" FullName="System.Data.Entity.Design.EdmToObjectNamespaceMap">
+  <TypeSignature Language="C#" Value="public class EdmToObjectNamespaceMap" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EdmToObjectNamespaceMap extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EdmToObjectNamespaceMap" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of conceptual model to code namespace mappings.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The namespace mappings are used by the <xref:System.Data.Entity.Design.EntityClassGenerator> class to specify a different code namespace for generating code than what is specified in the CSDL file. The namespace mappings are consulted when a reference to a type is to be generated. If an entry is found, the value will be used to generate the qualified reference to the type; otherwise, the CSDL namespace will be used.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string edmNamespace, string objectNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string edmNamespace, string objectNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EdmToObjectNamespaceMap.Add(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="edmNamespace" Type="System.String" />
+        <Parameter Name="objectNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="edmNamespace">The model namespace name.</param>
+        <param name="objectNamespace">The code namespace name.</param>
+        <summary>Adds a namespace mapping to the <see cref="T:System.Data.Entity.Design.EdmToObjectNamespaceMap" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EdmToObjectNamespaceMap.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all namespace mappings from the <see cref="T:System.Data.Entity.Design.EdmToObjectNamespaceMap" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string edmNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string edmNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EdmToObjectNamespaceMap.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="edmNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="edmNamespace">The model namespace name.</param>
+        <summary>Gets a value indicating whether the <see cref="T:System.Data.Entity.Design.EdmToObjectNamespaceMap" /> contains the specified model namespace name.</summary>
+        <returns>
+          <see langword="true" /> if the model namespace name is found; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EdmToObjectNamespaceMap.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of mappings in the <see cref="T:System.Data.Entity.Design.EdmToObjectNamespaceMap" />.</summary>
+        <value>The number of mappings.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EdmNamespaces">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; EdmNamespaces { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; EdmNamespaces" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EdmToObjectNamespaceMap.EdmNamespaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of model namespace names in the <see cref="T:System.Data.Entity.Design.EdmToObjectNamespaceMap" />.</summary>
+        <value>The list of model namespace names.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public string this[string edmNamespace] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EdmToObjectNamespaceMap.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="edmNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="edmNamespace">The model namespace name.</param>
+        <summary>Gets or sets the code namespace name of the specified model namespace name.</summary>
+        <value>The code namespace name that maps to the specified model namespace name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (string edmNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(string edmNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EdmToObjectNamespaceMap.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="edmNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="edmNamespace">The model namespace mapping to remove.</param>
+        <summary>Removes the specified namespace mapping.</summary>
+        <returns>
+          <see langword="true" /> if the namespace mapping was successfully removed; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetObjectNamespace">
+      <MemberSignature Language="C#" Value="public bool TryGetObjectNamespace (string edmNamespace, out string objectNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectNamespace(string edmNamespace, string objectNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EdmToObjectNamespaceMap.TryGetObjectNamespace(System.String,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="edmNamespace" Type="System.String" />
+        <Parameter Name="objectNamespace" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="edmNamespace">The model namespace name.</param>
+        <param name="objectNamespace">The code namespace name.</param>
+        <summary>Gets a value indicating whether the object namespace was retrieved.</summary>
+        <returns>
+          <see langword="true" /> if the object namespace was retrieved; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,243 @@
+<Type Name="RayMeshGeometry3DHitTestResult" FullName="System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult">
+  <TypeSignature Language="C#" Value="public sealed class RayMeshGeometry3DHitTestResult : System.Windows.Media.Media3D.RayHitTestResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RayMeshGeometry3DHitTestResult extends System.Windows.Media.Media3D.RayHitTestResult" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Media3D.RayHitTestResult</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an intersection between a ray hit test and a <see cref="T:System.Windows.Media.Media3D.MeshGeometry3D" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class returns information about the intersection of a ray and a <xref:System.Windows.Media.Media3D.MeshGeometry3D>.  
+  
+ Barycentric coordinates returned by <xref:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight1%2A>, <xref:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight2%2A>, and <xref:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight3%2A> can be interpolated to find the <xref:System.Windows.Media.Media3D.Point3D> where the intersection occurred, or the point on the intersected model's texture using texture coordinates.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DistanceToRayOrigin">
+      <MemberSignature Language="C#" Value="public override double DistanceToRayOrigin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DistanceToRayOrigin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.DistanceToRayOrigin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance between the point of intersection and the ray's origin in the coordinate space of <see cref="T:System.Windows.Media.Media3D.Visual3D" /> which initiated the hit test.</summary>
+        <value>Double that indicates the distance between the point of intersection and the ray's origin in the coordinate space of <see cref="T:System.Windows.Media.Media3D.Visual3D" /> which initiated the hit test.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code excerpt reads this property.  
+  
+ [!code-csharp[hittest3d#HitTest3D3DN7](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTest3D/CSharp/Window1.xaml.cs#hittest3d3dn7)]
+ [!code-vb[hittest3d#HitTest3D3DN7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTest3D/visualbasic/window1.xaml.vb#hittest3d3dn7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeshHit">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.MeshGeometry3D MeshHit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Media3D.MeshGeometry3D MeshHit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.MeshHit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.MeshGeometry3D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Media.Media3D.MeshGeometry3D" /> intersected by this hit test.</summary>
+        <value>
+          <see cref="T:System.Windows.Media.Media3D.MeshGeometry3D" /> intersected by the ray.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PointHit">
+      <MemberSignature Language="C#" Value="public override System.Windows.Media.Media3D.Point3D PointHit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Point3D PointHit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.PointHit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Media3D.Point3D</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the point at which the mesh was intersected by the ray along which the hit test was performed.</summary>
+        <value>Point3D at which the mesh was intersected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VertexIndex1">
+      <MemberSignature Language="C#" Value="public int VertexIndex1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VertexIndex1" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexIndex1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>First vertex of the mesh triangle intersected by the ray.</summary>
+        <value>The index of the first vertex.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the index position of the vertex in the <xref:System.Windows.Media.Media3D.MeshGeometry3D.Positions%2A>, <xref:System.Windows.Media.Media3D.MeshGeometry3D.Normals%2A>, and <xref:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates%2A> collections of the mesh triangle intersected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VertexIndex2">
+      <MemberSignature Language="C#" Value="public int VertexIndex2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VertexIndex2" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexIndex2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Second vertex of the mesh triangle intersected by the ray.</summary>
+        <value>The index of the second vertex.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the index position of the vertex in the <xref:System.Windows.Media.Media3D.MeshGeometry3D.Positions%2A>, <xref:System.Windows.Media.Media3D.MeshGeometry3D.Normals%2A>, and <xref:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates%2A> collections of the mesh triangle intersected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VertexIndex3">
+      <MemberSignature Language="C#" Value="public int VertexIndex3 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VertexIndex3" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexIndex3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Third vertex of the mesh triangle intersected by the ray.</summary>
+        <value>The index of the third vertex.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the index position of the vertex in the <xref:System.Windows.Media.Media3D.MeshGeometry3D.Positions%2A>, <xref:System.Windows.Media.Media3D.MeshGeometry3D.Normals%2A>, and <xref:System.Windows.Media.Media3D.MeshGeometry3D.TextureCoordinates%2A> collections of the mesh triangle intersected.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VertexWeight1">
+      <MemberSignature Language="C#" Value="public double VertexWeight1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 VertexWeight1" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Relative contribution of the first vertex of a mesh triangle to the point at which that triangle was intersected by the hit test, expressed as a value between zero and 1.</summary>
+        <value>The weighting of the first vertex.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is the first of the mesh triangle's barycentric coordinates.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VertexWeight2">
+      <MemberSignature Language="C#" Value="public double VertexWeight2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 VertexWeight2" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Relative contribution of the second vertex of a mesh triangle to the point at which that triangle was intersected by the hit test, expressed as a value between zero and 1.</summary>
+        <value>The weighting of the second vertex.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is the second of the mesh triangle's barycentric coordinates.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VertexWeight3">
+      <MemberSignature Language="C#" Value="public double VertexWeight3 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 VertexWeight3" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayMeshGeometry3DHitTestResult.VertexWeight3" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Relative contribution of the third vertex of a mesh triangle to the point at which that triangle was intersected by the hit test, expressed as a value between zero and 1.</summary>
+        <value>The weighting of the third vertex.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is the third of the mesh triangle's barycentric coordinates.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

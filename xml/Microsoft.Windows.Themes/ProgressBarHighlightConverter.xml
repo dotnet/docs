@@ -1,0 +1,120 @@
+<Type Name="ProgressBarHighlightConverter" FullName="Microsoft.Windows.Themes.ProgressBarHighlightConverter">
+  <TypeSignature Language="C#" Value="public class ProgressBarHighlightConverter : System.Windows.Data.IMultiValueConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProgressBarHighlightConverter extends System.Object implements class System.Windows.Data.IMultiValueConverter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ProgressBarHighlightConverter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.Aero</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework.Aero2</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Data.IMultiValueConverter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Creates a <see cref="T:System.Windows.Media.DrawingBrush" /> used to draw the highlighting for the <see cref="T:System.Windows.Controls.ProgressBar" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.DrawingBrush> is twice as long as progress bar track and will animate to the right.  
+  
+<a name="xamlTextUsage_ProgressBarHighlightConverter"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProgressBarHighlightConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ProgressBarHighlightConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero2</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Windows.Themes.ProgressBarHighlightConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public object Convert (object[] values, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object[] values, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ProgressBarHighlightConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero2</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="values">The <see cref="T:System.Windows.Media.Brush" /> used for the <see cref="P:System.Windows.Controls.Control.Foreground" /> of the <see cref="T:System.Windows.Controls.ProgressBar" />, the <see cref="T:System.Double" /> defining the <see cref="P:System.Windows.FrameworkElement.Width" />, and the <see cref="T:System.Double" /> defining the <see cref="P:System.Windows.FrameworkElement.Height" />.</param>
+        <param name="targetType">This parameter is not used.</param>
+        <param name="parameter">This parameter is not used.</param>
+        <param name="culture">This parameter is not used.</param>
+        <summary>Creates the <see cref="T:System.Windows.Media.DrawingBrush" />.</summary>
+        <returns>The created <see cref="T:System.Windows.Media.DrawingBrush" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertBack">
+      <MemberSignature Language="C#" Value="public object[] ConvertBack (object value, Type[] targetTypes, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] ConvertBack(object value, class System.Type[] targetTypes, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Windows.Themes.ProgressBarHighlightConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework.Aero2</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="targetTypes" Type="System.Type[]" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">This parameter is not used.</param>
+        <param name="targetTypes">This parameter is not used.</param>
+        <param name="parameter">This parameter is not used.</param>
+        <param name="culture">This parameter is not used.</param>
+        <summary>Not implemented.</summary>
+        <returns>
+          <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

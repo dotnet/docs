@@ -1,0 +1,114 @@
+<Type Name="CatalogPartDesigner" FullName="System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner">
+  <TypeSignature Language="C#" Value="public class CatalogPartDesigner : System.Web.UI.Design.WebControls.WebParts.PartDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CatalogPartDesigner extends System.Web.UI.Design.WebControls.WebParts.PartDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.WebControls.WebParts.PartDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides design-time support for <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />, <see cref="T:System.Web.UI.WebControls.WebParts.ImportCatalogPart" />, and <see cref="T:System.Web.UI.WebControls.WebParts.PageCatalogPart" /> controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner> is a multi-purpose designer that provides design-time rendering for <xref:System.Web.UI.WebControls.WebParts.ImportCatalogPart> and <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> controls, which both inherit from the <xref:System.Web.UI.WebControls.WebParts.CatalogPart> base class. <xref:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner> serves as a standard control designer, adding only what customization is needed to validate the associated control and apply its design mode state to the design-time rendering.  
+  
+ If you have a custom <xref:System.Web.UI.WebControls.WebParts.PageCatalogPart> control, you can create a derived designer, such as <xref:System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner>, to provide design-time rendering. You can safely override any of the members as needed; however, when overriding the <xref:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner.CreateViewControl%2A> method, be sure to call the base implementation to avoid losing design mode state information.  
+  
+   
+  
+## Examples  
+ <xref:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner> and <xref:System.Web.UI.Design.WebControls.WebParts.EditorPartDesigner> share an identical interface and functionality. For an applicable code example, see the <xref:System.Web.UI.Design.WebControls.WebParts.EditorPartDesigner> class overview.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CatalogPartDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateViewControl">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.Control CreateViewControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.Control CreateViewControl() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner.CreateViewControl" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Control</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the associated <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control to render at design time.</summary>
+        <returns>A copy of the associated <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is overridden to copy zone information to the view control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeHtml">
+      <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner.GetDesignTimeHtml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Verifies that the control resides in a zone of type <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" />, and then gets the markup that is used to represent the control at design time.</summary>
+        <returns>The markup that is used to represent the control at design time, or error markup if the control does not reside in a <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZoneBase" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogPartDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />-derived control associated with the designer.</param>
+        <summary>Binds the designer to the associated <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />-derived control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

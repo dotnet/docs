@@ -1,0 +1,845 @@
+<Type Name="RecognizeCompletedEventArgs" FullName="System.Speech.Recognition.RecognizeCompletedEventArgs">
+  <TypeSignature Language="C#" Value="public class RecognizeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RecognizeCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognizeCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see langword="RecognizeCompleted" /> event raised by a <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> or a <see cref="T:System.Speech.Recognition.SpeechRecognizer" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An instance of <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted> is created when the <xref:System.Speech.Recognition.SpeechRecognitionEngine> or the <xref:System.Speech.Recognition.SpeechRecognizer> object raises its `SpeechRecognized` event after completing a `RecognizeAsync` operation. For more information about speech recognition events, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+  
+   
+  
+## Examples  
+ The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+  
+```  
+using System;  
+using System.Speech.Recognition;  
+  
+namespace SampleRecognition  
+{  
+  class Program  
+  {  
+    private static SpeechRecognitionEngine recognizer;  
+    public static void Main(string[] args)  
+    {  
+  
+      // Initialize a SpeechRecognitionEngine object and set its input.  
+      recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US"));  
+      recognizer.SetInputToDefaultAudioDevice();  
+  
+      // Configure recognition parameters.  
+      recognizer.InitialSilenceTimeout = TimeSpan.FromSeconds(5.0);  
+      recognizer.BabbleTimeout = TimeSpan.FromSeconds(3.0);  
+      recognizer.EndSilenceTimeout = TimeSpan.FromSeconds(1.0);  
+      recognizer.EndSilenceTimeoutAmbiguous = TimeSpan.FromSeconds(1.0);  
+  
+      // Add a handler for the LoadGrammarCompleted event.  
+      recognizer.LoadGrammarCompleted +=  
+        new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
+  
+      // Add a handler for the RecognizeCompleted event.  
+      recognizer.RecognizeCompleted +=   
+        new EventHandler<RecognizeCompletedEventArgs>(recognizer_RecognizeCompleted);  
+  
+      // Create a speech recognition grammar and build it into a Grammar object.  
+      Choices bankingMenu = new Choices(new string[]   
+      { "Access accounts", "Transfer funds", "Pay bills", "Get loan balance" });  
+      GrammarBuilder banking = new GrammarBuilder(bankingMenu);  
+      Grammar bankGrammar = new Grammar(banking);  
+      bankGrammar.Name = "Banking Menu";  
+  
+      // Load the Grammar objects to the recognizer.  
+      recognizer.LoadGrammarAsync(bankGrammar);  
+  
+      // Start asynchronous, continuous recognition.  
+      recognizer.RecognizeAsync();  
+  
+      // Keep the console window open.  
+      Console.ReadLine();  
+    }  
+  
+    // Handle the RecognizeCompleted event.  
+    static void recognizer_RecognizeCompleted(object sender, RecognizeCompletedEventArgs e)  
+    {  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted, error occurred during recognition: {0}", e.Error);  
+        return;  
+      }  
+  
+      if (e.InitialSilenceTimeout || e.BabbleTimeout)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: BabbleTimeout({0}), InitialSilenceTimeout({1}).",  
+          e.BabbleTimeout, e.InitialSilenceTimeout);  
+        return;  
+      }  
+  
+      if (e.InputStreamEnded)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: AudioPosition({0}), InputStreamEnded({1}).",  
+          e.AudioPosition, e.InputStreamEnded);  
+      }  
+  
+      if (e.Result != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: Grammar ({0}), Text ({1}), Confidence ({2}), AudioPosition ({3}).",  
+          e.Result.Grammar.Name, e.Result.Text, e.Result.Confidence, e.AudioPosition);  
+      }  
+  
+      else  
+      {  
+        Console.WriteLine("RecognizeCompleted: No result.");  
+      }   
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Handle the LoadGrammarCompleted event.   
+    static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
+    {  
+      string grammarName = e.Grammar.Name;  
+      bool grammarLoaded = e.Grammar.Loaded;  
+      bool grammarEnabled = e.Grammar.Enabled;  
+  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine("LoadGrammar for {0} failed with a {1}.",  
+        grammarName, e.Error.GetType().Name);  
+  
+        // Add exception handling code here.  
+      }  
+  
+      Console.WriteLine("Grammar {0} {1} loaded and {2} enabled.", grammarName,   
+        (grammarLoaded) ? "is" : "is not", (grammarEnabled) ? "is" : "is not");  
+    }  
+  }            
+}  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AudioPosition">
+      <MemberSignature Language="C#" Value="public TimeSpan AudioPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan AudioPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizeCompletedEventArgs.AudioPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location in the input device's audio stream associated with the <see cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" /> event.</summary>
+        <value>The location in the input device's audio stream associated with the <see cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" /> event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property references the position at the beginning of the recognized phrase in the input device's generated audio stream. By contrast, the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizerAudioPosition%2A> property references the recognizer's position within its audio input. These positions can be different. For more information, see [Using Speech Recognition Events](http://msdn.microsoft.com/en-us/01c598ca-2e0e-4e89-b303-cd1cef9e8482).  
+  
+   
+  
+## Examples  
+ The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+  
+```  
+using System;  
+using System.Speech.Recognition;  
+  
+namespace SampleRecognition  
+{  
+  class Program  
+  {  
+    private static SpeechRecognitionEngine recognizer;  
+    public static void Main(string[] args)  
+    {  
+  
+      // Initialize a SpeechRecognitionEngine object and set its input.  
+      recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US"));  
+      recognizer.SetInputToDefaultAudioDevice();  
+  
+      // Configure recognition parameters.  
+      recognizer.InitialSilenceTimeout = TimeSpan.FromSeconds(5.0);  
+      recognizer.BabbleTimeout = TimeSpan.FromSeconds(3.0);  
+      recognizer.EndSilenceTimeout = TimeSpan.FromSeconds(1.0);  
+      recognizer.EndSilenceTimeoutAmbiguous = TimeSpan.FromSeconds(1.0);  
+  
+      // Add a handler for the LoadGrammarCompleted event.  
+      recognizer.LoadGrammarCompleted +=  
+        new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
+  
+      // Add a handler for the RecognizeCompleted event.  
+      recognizer.RecognizeCompleted +=   
+        new EventHandler<RecognizeCompletedEventArgs>(recognizer_RecognizeCompleted);  
+  
+      // Create a speech recognition grammar and build it into a Grammar object.  
+      Choices bankingMenu = new Choices(new string[]   
+      { "Access accounts", "Transfer funds", "Pay bills", "Get loan balance" });  
+      GrammarBuilder banking = new GrammarBuilder(bankingMenu);  
+      Grammar bankGrammar = new Grammar(banking);  
+      bankGrammar.Name = "Banking Menu";  
+  
+      // Load the Grammar objects to the recognizer.  
+      recognizer.LoadGrammarAsync(bankGrammar);  
+  
+      // Start asynchronous, continuous recognition.  
+      recognizer.RecognizeAsync();  
+  
+      // Keep the console window open.  
+      Console.ReadLine();  
+    }  
+  
+    // Handle the RecognizeCompleted event.  
+    static void recognizer_RecognizeCompleted(object sender, RecognizeCompletedEventArgs e)  
+    {  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted, error occurred during recognition: {0}", e.Error);  
+        return;  
+      }  
+  
+      if (e.InitialSilenceTimeout || e.BabbleTimeout)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: BabbleTimeout({0}), InitialSilenceTimeout({1}).",  
+          e.BabbleTimeout, e.InitialSilenceTimeout);  
+        return;  
+      }  
+  
+      if (e.InputStreamEnded)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: AudioPosition({0}), InputStreamEnded({1}).",  
+          e.AudioPosition, e.InputStreamEnded);  
+      }  
+  
+      if (e.Result != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: Grammar ({0}), Text ({1}), Confidence ({2}), AudioPosition ({3}).",  
+          e.Result.Grammar.Name, e.Result.Text, e.Result.Confidence, e.AudioPosition);  
+      }  
+  
+      else  
+      {  
+        Console.WriteLine("RecognizeCompleted: No result.");  
+      }   
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Handle the LoadGrammarCompleted event.   
+    static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
+    {  
+      string grammarName = e.Grammar.Name;  
+      bool grammarLoaded = e.Grammar.Loaded;  
+      bool grammarEnabled = e.Grammar.Enabled;  
+  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine("LoadGrammar for {0} failed with a {1}.",  
+        grammarName, e.Error.GetType().Name);  
+  
+        // Add exception handling code here.  
+      }  
+  
+      Console.WriteLine("Grammar {0} {1} loaded and {2} enabled.", grammarName,   
+        (grammarLoaded) ? "is" : "is not", (grammarEnabled) ? "is" : "is not");  
+    }  
+  }            
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BabbleTimeout">
+      <MemberSignature Language="C#" Value="public bool BabbleTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BabbleTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizeCompletedEventArgs.BabbleTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a babble timeout generated the <see cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" /> event.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> has detected only background noise for longer than was specified by its <see cref="P:System.Speech.Recognition.SpeechRecognitionEngine.BabbleTimeout" /> property; otherwise <see langword="false." /></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+  
+```  
+using System;  
+using System.Speech.Recognition;  
+  
+namespace SampleRecognition  
+{  
+  class Program  
+  {  
+    private static SpeechRecognitionEngine recognizer;  
+    public static void Main(string[] args)  
+    {  
+  
+      // Initialize a SpeechRecognitionEngine object and set its input.  
+      recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US"));  
+      recognizer.SetInputToDefaultAudioDevice();  
+  
+      // Configure recognition parameters.  
+      recognizer.InitialSilenceTimeout = TimeSpan.FromSeconds(5.0);  
+      recognizer.BabbleTimeout = TimeSpan.FromSeconds(3.0);  
+      recognizer.EndSilenceTimeout = TimeSpan.FromSeconds(1.0);  
+      recognizer.EndSilenceTimeoutAmbiguous = TimeSpan.FromSeconds(1.0);  
+  
+      // Add a handler for the LoadGrammarCompleted event.  
+      recognizer.LoadGrammarCompleted +=  
+        new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
+  
+      // Add a handler for the RecognizeCompleted event.  
+      recognizer.RecognizeCompleted +=   
+        new EventHandler<RecognizeCompletedEventArgs>(recognizer_RecognizeCompleted);  
+  
+      // Create a speech recognition grammar and build it into a Grammar object.  
+      Choices bankingMenu = new Choices(new string[]   
+      { "Access accounts", "Transfer funds", "Pay bills", "Get loan balance" });  
+      GrammarBuilder banking = new GrammarBuilder(bankingMenu);  
+      Grammar bankGrammar = new Grammar(banking);  
+      bankGrammar.Name = "Banking Menu";  
+  
+      // Load the Grammar objects to the recognizer.  
+      recognizer.LoadGrammarAsync(bankGrammar);  
+  
+      // Start asynchronous, continuous recognition.  
+      recognizer.RecognizeAsync();  
+  
+      // Keep the console window open.  
+      Console.ReadLine();  
+    }  
+  
+    // Handle the RecognizeCompleted event.  
+    static void recognizer_RecognizeCompleted(object sender, RecognizeCompletedEventArgs e)  
+    {  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted, error occurred during recognition: {0}", e.Error);  
+        return;  
+      }  
+  
+      if (e.InitialSilenceTimeout || e.BabbleTimeout)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: BabbleTimeout({0}), InitialSilenceTimeout({1}).",  
+          e.BabbleTimeout, e.InitialSilenceTimeout);  
+        return;  
+      }  
+  
+      if (e.InputStreamEnded)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: AudioPosition({0}), InputStreamEnded({1}).",  
+          e.AudioPosition, e.InputStreamEnded);  
+      }  
+  
+      if (e.Result != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: Grammar ({0}), Text ({1}), Confidence ({2}), AudioPosition ({3}).",  
+          e.Result.Grammar.Name, e.Result.Text, e.Result.Confidence, e.AudioPosition);  
+      }  
+  
+      else  
+      {  
+        Console.WriteLine("RecognizeCompleted: No result.");  
+      }   
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Handle the LoadGrammarCompleted event.   
+    static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
+    {  
+      string grammarName = e.Grammar.Name;  
+      bool grammarLoaded = e.Grammar.Loaded;  
+      bool grammarEnabled = e.Grammar.Enabled;  
+  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine("LoadGrammar for {0} failed with a {1}.",  
+        grammarName, e.Error.GetType().Name);  
+  
+        // Add exception handling code here.  
+      }  
+  
+      Console.WriteLine("Grammar {0} {1} loaded and {2} enabled.", grammarName,   
+        (grammarLoaded) ? "is" : "is not", (grammarEnabled) ? "is" : "is not");  
+    }  
+  }            
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialSilenceTimeout">
+      <MemberSignature Language="C#" Value="public bool InitialSilenceTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InitialSilenceTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizeCompletedEventArgs.InitialSilenceTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether an initial silence timeout generated the <see cref="E:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted" /> event.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> has detected only silence for a longer time period than was specified by its <see cref="P:System.Speech.Recognition.SpeechRecognitionEngine.InitialSilenceTimeout" /> property; otherwise <see langword="false." /></value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+  
+```  
+using System;  
+using System.Speech.Recognition;  
+  
+namespace SampleRecognition  
+{  
+  class Program  
+  {  
+    private static SpeechRecognitionEngine recognizer;  
+    public static void Main(string[] args)  
+    {  
+  
+      // Initialize a SpeechRecognitionEngine object and set its input.  
+      recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US"));  
+      recognizer.SetInputToDefaultAudioDevice();  
+  
+      // Configure recognition parameters.  
+      recognizer.InitialSilenceTimeout = TimeSpan.FromSeconds(5.0);  
+      recognizer.BabbleTimeout = TimeSpan.FromSeconds(3.0);  
+      recognizer.EndSilenceTimeout = TimeSpan.FromSeconds(1.0);  
+      recognizer.EndSilenceTimeoutAmbiguous = TimeSpan.FromSeconds(1.0);  
+  
+      // Add a handler for the LoadGrammarCompleted event.  
+      recognizer.LoadGrammarCompleted +=  
+        new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
+  
+      // Add a handler for the RecognizeCompleted event.  
+      recognizer.RecognizeCompleted +=   
+        new EventHandler<RecognizeCompletedEventArgs>(recognizer_RecognizeCompleted);  
+  
+      // Create a speech recognition grammar and build it into a Grammar object.  
+      Choices bankingMenu = new Choices(new string[]   
+      { "Access accounts", "Transfer funds", "Pay bills", "Get loan balance" });  
+      GrammarBuilder banking = new GrammarBuilder(bankingMenu);  
+      Grammar bankGrammar = new Grammar(banking);  
+      bankGrammar.Name = "Banking Menu";  
+  
+      // Load the Grammar objects to the recognizer.  
+      recognizer.LoadGrammarAsync(bankGrammar);  
+  
+      // Start asynchronous, continuous recognition.  
+      recognizer.RecognizeAsync();  
+  
+      // Keep the console window open.  
+      Console.ReadLine();  
+    }  
+  
+    // Handle the RecognizeCompleted event.  
+    static void recognizer_RecognizeCompleted(object sender, RecognizeCompletedEventArgs e)  
+    {  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted, error occurred during recognition: {0}", e.Error);  
+        return;  
+      }  
+  
+      if (e.InitialSilenceTimeout || e.BabbleTimeout)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: BabbleTimeout({0}), InitialSilenceTimeout({1}).",  
+          e.BabbleTimeout, e.InitialSilenceTimeout);  
+        return;  
+      }  
+  
+      if (e.InputStreamEnded)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: AudioPosition({0}), InputStreamEnded({1}).",  
+          e.AudioPosition, e.InputStreamEnded);  
+      }  
+  
+      if (e.Result != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: Grammar ({0}), Text ({1}), Confidence ({2}), AudioPosition ({3}).",  
+          e.Result.Grammar.Name, e.Result.Text, e.Result.Confidence, e.AudioPosition);  
+      }  
+  
+      else  
+      {  
+        Console.WriteLine("RecognizeCompleted: No result.");  
+      }   
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Handle the LoadGrammarCompleted event.   
+    static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
+    {  
+      string grammarName = e.Grammar.Name;  
+      bool grammarLoaded = e.Grammar.Loaded;  
+      bool grammarEnabled = e.Grammar.Enabled;  
+  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine("LoadGrammar for {0} failed with a {1}.",  
+        grammarName, e.Error.GetType().Name);  
+  
+        // Add exception handling code here.  
+      }  
+  
+      Console.WriteLine("Grammar {0} {1} loaded and {2} enabled.", grammarName,   
+        (grammarLoaded) ? "is" : "is not", (grammarEnabled) ? "is" : "is not");  
+    }  
+  }            
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputStreamEnded">
+      <MemberSignature Language="C#" Value="public bool InputStreamEnded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool InputStreamEnded" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizeCompletedEventArgs.InputStreamEnded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the input stream ended.</summary>
+        <value>
+          <see langword="true" /> if the recognizer no longer has audio input; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The recognizer sets this property to `true` when a file provides the input stream for the recognizer and the end of the file is reached. The end of the input stream can coincide with a successful recognition operation. For more information about using a file as the input stream, see the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToAudioStream%2A> and <xref:System.Speech.Recognition.SpeechRecognitionEngine.SetInputToWaveFile%2A> methods.  
+  
+   
+  
+## Examples  
+ The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+  
+```  
+using System;  
+using System.Speech.Recognition;  
+  
+namespace SampleRecognition  
+{  
+  class Program  
+  {  
+    private static SpeechRecognitionEngine recognizer;  
+    public static void Main(string[] args)  
+    {  
+  
+      // Initialize a SpeechRecognitionEngine object and set its input.  
+      recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US"));  
+      recognizer.SetInputToDefaultAudioDevice();  
+  
+      // Configure recognition parameters.  
+      recognizer.InitialSilenceTimeout = TimeSpan.FromSeconds(5.0);  
+      recognizer.BabbleTimeout = TimeSpan.FromSeconds(3.0);  
+      recognizer.EndSilenceTimeout = TimeSpan.FromSeconds(1.0);  
+      recognizer.EndSilenceTimeoutAmbiguous = TimeSpan.FromSeconds(1.0);  
+  
+      // Add a handler for the LoadGrammarCompleted event.  
+      recognizer.LoadGrammarCompleted +=  
+        new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
+  
+      // Add a handler for the RecognizeCompleted event.  
+      recognizer.RecognizeCompleted +=   
+        new EventHandler<RecognizeCompletedEventArgs>(recognizer_RecognizeCompleted);  
+  
+      // Create a speech recognition grammar and build it into a Grammar object.  
+      Choices bankingMenu = new Choices(new string[]   
+      { "Access accounts", "Transfer funds", "Pay bills", "Get loan balance" });  
+      GrammarBuilder banking = new GrammarBuilder(bankingMenu);  
+      Grammar bankGrammar = new Grammar(banking);  
+      bankGrammar.Name = "Banking Menu";  
+  
+      // Load the Grammar objects to the recognizer.  
+      recognizer.LoadGrammarAsync(bankGrammar);  
+  
+      // Start asynchronous, continuous recognition.  
+      recognizer.RecognizeAsync();  
+  
+      // Keep the console window open.  
+      Console.ReadLine();  
+    }  
+  
+    // Handle the RecognizeCompleted event.  
+    static void recognizer_RecognizeCompleted(object sender, RecognizeCompletedEventArgs e)  
+    {  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted, error occurred during recognition: {0}", e.Error);  
+        return;  
+      }  
+  
+      if (e.InitialSilenceTimeout || e.BabbleTimeout)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: BabbleTimeout({0}), InitialSilenceTimeout({1}).",  
+          e.BabbleTimeout, e.InitialSilenceTimeout);  
+        return;  
+      }  
+  
+      if (e.InputStreamEnded)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: AudioPosition({0}), InputStreamEnded({1}).",  
+          e.AudioPosition, e.InputStreamEnded);  
+      }  
+  
+      if (e.Result != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: Grammar ({0}), Text ({1}), Confidence ({2}), AudioPosition ({3}).",  
+          e.Result.Grammar.Name, e.Result.Text, e.Result.Confidence, e.AudioPosition);  
+      }  
+  
+      else  
+      {  
+        Console.WriteLine("RecognizeCompleted: No result.");  
+      }   
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Handle the LoadGrammarCompleted event.   
+    static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
+    {  
+      string grammarName = e.Grammar.Name;  
+      bool grammarLoaded = e.Grammar.Loaded;  
+      bool grammarEnabled = e.Grammar.Enabled;  
+  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine("LoadGrammar for {0} failed with a {1}.",  
+        grammarName, e.Error.GetType().Name);  
+  
+        // Add exception handling code here.  
+      }  
+  
+      Console.WriteLine("Grammar {0} {1} loaded and {2} enabled.", grammarName,   
+        (grammarLoaded) ? "is" : "is not", (grammarEnabled) ? "is" : "is not");  
+    }  
+  }            
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public System.Speech.Recognition.RecognitionResult Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Speech.Recognition.RecognitionResult Result" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizeCompletedEventArgs.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.RecognitionResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the recognition result.</summary>
+        <value>The recognition result if the recognition operation succeeded; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Recognition.RecognitionResult> object derives from <xref:System.Speech.Recognition.RecognizedPhrase> and contains full information about a phrase returned by a recognition operation.  
+  
+   
+  
+## Examples  
+ The following example performs asynchronous speech recognition on a speech recognition grammar, using the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync%2A?displayProperty=fullName> method with the in-process recognizer. The example uses <xref:System.Speech.Recognition.Choices> and <xref:System.Speech.Recognition.GrammarBuilder> objects to create the speech recognition grammar before building it into a <xref:System.Speech.Recognition.Grammar> object. A handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.RecognizeCompleted?displayProperty=fullName> event outputs information about the recognition operation to the console.  
+  
+```  
+using System;  
+using System.Speech.Recognition;  
+  
+namespace SampleRecognition  
+{  
+  class Program  
+  {  
+    private static SpeechRecognitionEngine recognizer;  
+    public static void Main(string[] args)  
+    {  
+  
+      // Initialize a SpeechRecognitionEngine object and set its input.  
+      recognizer = new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US"));  
+      recognizer.SetInputToDefaultAudioDevice();  
+  
+      // Configure recognition parameters.  
+      recognizer.InitialSilenceTimeout = TimeSpan.FromSeconds(5.0);  
+      recognizer.BabbleTimeout = TimeSpan.FromSeconds(3.0);  
+      recognizer.EndSilenceTimeout = TimeSpan.FromSeconds(1.0);  
+      recognizer.EndSilenceTimeoutAmbiguous = TimeSpan.FromSeconds(1.0);  
+  
+      // Add a handler for the LoadGrammarCompleted event.  
+      recognizer.LoadGrammarCompleted +=  
+        new EventHandler<LoadGrammarCompletedEventArgs>(recognizer_LoadGrammarCompleted);  
+  
+      // Add a handler for the RecognizeCompleted event.  
+      recognizer.RecognizeCompleted +=   
+        new EventHandler<RecognizeCompletedEventArgs>(recognizer_RecognizeCompleted);  
+  
+      // Create a speech recognition grammar and build it into a Grammar object.  
+      Choices bankingMenu = new Choices(new string[]   
+      { "Access accounts", "Transfer funds", "Pay bills", "Get loan balance" });  
+      GrammarBuilder banking = new GrammarBuilder(bankingMenu);  
+      Grammar bankGrammar = new Grammar(banking);  
+      bankGrammar.Name = "Banking Menu";  
+  
+      // Load the Grammar objects to the recognizer.  
+      recognizer.LoadGrammarAsync(bankGrammar);  
+  
+      // Start asynchronous, continuous recognition.  
+      recognizer.RecognizeAsync();  
+  
+      // Keep the console window open.  
+      Console.ReadLine();  
+    }  
+  
+    // Handle the RecognizeCompleted event.  
+    static void recognizer_RecognizeCompleted(object sender, RecognizeCompletedEventArgs e)  
+    {  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted, error occurred during recognition: {0}", e.Error);  
+        return;  
+      }  
+  
+      if (e.InitialSilenceTimeout || e.BabbleTimeout)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: BabbleTimeout({0}), InitialSilenceTimeout({1}).",  
+          e.BabbleTimeout, e.InitialSilenceTimeout);  
+        return;  
+      }  
+  
+      if (e.InputStreamEnded)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: AudioPosition({0}), InputStreamEnded({1}).",  
+          e.AudioPosition, e.InputStreamEnded);  
+      }  
+  
+      if (e.Result != null)  
+      {  
+        Console.WriteLine(  
+          "RecognizeCompleted: Grammar ({0}), Text ({1}), Confidence ({2}), AudioPosition ({3}).",  
+          e.Result.Grammar.Name, e.Result.Text, e.Result.Confidence, e.AudioPosition);  
+      }  
+  
+      else  
+      {  
+        Console.WriteLine("RecognizeCompleted: No result.");  
+      }   
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  
+    // Handle the LoadGrammarCompleted event.   
+    static void recognizer_LoadGrammarCompleted(object sender, LoadGrammarCompletedEventArgs e)  
+    {  
+      string grammarName = e.Grammar.Name;  
+      bool grammarLoaded = e.Grammar.Loaded;  
+      bool grammarEnabled = e.Grammar.Enabled;  
+  
+      if (e.Error != null)  
+      {  
+        Console.WriteLine("LoadGrammar for {0} failed with a {1}.",  
+        grammarName, e.Error.GetType().Name);  
+  
+        // Add exception handling code here.  
+      }  
+  
+      Console.WriteLine("Grammar {0} {1} loaded and {2} enabled.", grammarName,   
+        (grammarLoaded) ? "is" : "is not", (grammarEnabled) ? "is" : "is not");  
+    }  
+  }            
+}  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,148 @@
+<Type Name="WorkflowSchedulerService" FullName="System.Workflow.Runtime.Hosting.WorkflowSchedulerService">
+  <TypeSignature Language="C#" Value="public abstract class WorkflowSchedulerService : System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkflowSchedulerService extends System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowSchedulerService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Runtime.Hosting.WorkflowRuntimeService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a mechanism to implement your own thread pool to execute the workflow and manage in-memory timer registration and events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService> is that base class for all classes that create threads that run workflow instances on the workflow runtime engine host. These include <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService> and <xref:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService>.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Workflow.Runtime.Hosting.WorkflowSchedulerService" />, you must override the following members: <see cref="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Cancel(System.Guid)" />, <see cref="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid)" /> and <see cref="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid,System.DateTime,System.Guid)" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WorkflowSchedulerService ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.WorkflowSchedulerService" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates creating an instance of a <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> object (that inherits from <xref:System.Workflow.Runtime.Hosting.WorkflowPersistenceService>) and adding it to the runtime. This example is from the Nested Exception Handlers SDK sample, from the Program.cs file. For more information, see [Nested Exception Handlers Sample](http://msdn.microsoft.com/en-us/d1da0209-842b-41c8-9b7c-0cbaa1034265).  
+  
+ [!code-csharp[WF_Samples#161](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets11.cs#161)]
+ [!code-vb[WF_Samples#161](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets11.vb#161)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="protected abstract void Cancel (Guid timerId);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Cancel(valuetype System.Guid timerId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Cancel(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timerId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="timerId">The <see cref="T:System.Guid" /> associated with the existing scheduled thread to cancel.</param>
+        <summary>When overridden in a derived class, cancels the scheduled work item with the given <paramref name="timerId" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Cancel%2A> removes from the pending work items queue a previous request to schedule a workflow instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schedule">
+      <MemberSignature Language="C#" Value="protected abstract void Schedule (System.Threading.WaitCallback callback, Guid workflowInstanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Schedule(class System.Threading.WaitCallback callback, valuetype System.Guid workflowInstanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Threading.WaitCallback" />
+        <Parameter Name="workflowInstanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="callback">A <see cref="T:System.Threading.WaitCallback" /> multicast delegate that represents the method to run.</param>
+        <param name="workflowInstanceId">A <see cref="T:System.Guid" /> that represents the workflow instance.</param>
+        <summary>When overridden in a derived class, this method is called by the runtime to schedule a work item (callback) for a particular instance ID.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Threading.WaitCallback> constructor to create your delegate method to run in the new thread.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schedule">
+      <MemberSignature Language="C#" Value="protected abstract void Schedule (System.Threading.WaitCallback callback, Guid workflowInstanceId, DateTime whenUtc, Guid timerId);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Schedule(class System.Threading.WaitCallback callback, valuetype System.Guid workflowInstanceId, valuetype System.DateTime whenUtc, valuetype System.Guid timerId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid,System.DateTime,System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Threading.WaitCallback" />
+        <Parameter Name="workflowInstanceId" Type="System.Guid" />
+        <Parameter Name="whenUtc" Type="System.DateTime" />
+        <Parameter Name="timerId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="callback">A <see cref="T:System.Threading.WaitCallback" /> multicast delegate that represents the method to run.</param>
+        <param name="workflowInstanceId">A <see cref="T:System.Guid" /> that represents the workflow instance to add.</param>
+        <param name="whenUtc">The <see cref="T:System.DateTime" /> to begin running the workflow item.</param>
+        <param name="timerId">A <see cref="T:System.Guid" /> that represents the scheduled timer.</param>
+        <summary>When overridden in a derived class, this method is called by the runtime to schedule a work item (callback) for a particular workflow instance to be done at the given time (<see cref="T:System.DateTime" />).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

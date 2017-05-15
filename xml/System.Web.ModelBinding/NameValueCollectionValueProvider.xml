@@ -1,0 +1,142 @@
+<Type Name="NameValueCollectionValueProvider" FullName="System.Web.ModelBinding.NameValueCollectionValueProvider">
+  <TypeSignature Language="C#" Value="public class NameValueCollectionValueProvider : System.Web.ModelBinding.IUnvalidatedValueProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NameValueCollectionValueProvider extends System.Object implements class System.Web.ModelBinding.IUnvalidatedValueProvider, class System.Web.ModelBinding.IValueProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.NameValueCollectionValueProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.ModelBinding.IUnvalidatedValueProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents the base class for value providers whose values come from a name/value collection.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NameValueCollectionValueProvider (System.Collections.Specialized.NameValueCollection collection, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.NameValueCollection collection, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.NameValueCollectionValueProvider.#ctor(System.Collections.Specialized.NameValueCollection,System.Globalization.CultureInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The collection.</param>
+        <param name="culture">The culture information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.NameValueCollectionValueProvider" /> class by using a collection and culture information.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NameValueCollectionValueProvider (System.Collections.Specialized.NameValueCollection collection, System.Collections.Specialized.NameValueCollection unvalidatedCollection, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.NameValueCollection collection, class System.Collections.Specialized.NameValueCollection unvalidatedCollection, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.NameValueCollectionValueProvider.#ctor(System.Collections.Specialized.NameValueCollection,System.Collections.Specialized.NameValueCollection,System.Globalization.CultureInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="unvalidatedCollection" Type="System.Collections.Specialized.NameValueCollection" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="collection">The collection.</param>
+        <param name="unvalidatedCollection">The unvalidated collection.</param>
+        <param name="culture">The culture information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.NameValueCollectionValueProvider" /> class by using a collection, an unvalidated version of the collection, and culture information.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsPrefix">
+      <MemberSignature Language="C#" Value="public virtual bool ContainsPrefix (string prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsPrefix(string prefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.NameValueCollectionValueProvider.ContainsPrefix(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="prefix">The prefix.</param>
+        <summary>Returns a value that indicates whether the value provider contains the specified prefix.</summary>
+        <returns>
+          <see langword="true" /> if the value provider contains the specified prefix; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public virtual System.Web.ModelBinding.ValueProviderResult GetValue (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.ValueProviderResult GetValue(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.NameValueCollectionValueProvider.GetValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ValueProviderResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <summary>Returns the value for the specified key.</summary>
+        <returns>The value for the specified key.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method is equivalent to calling the <xref:System.Web.ModelBinding.NameValueCollectionValueProvider.GetValue%2A> method overload and passing `false` for the `skipValidation` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public virtual System.Web.ModelBinding.ValueProviderResult GetValue (string key, bool skipValidation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.ValueProviderResult GetValue(string key, bool skipValidation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.NameValueCollectionValueProvider.GetValue(System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ValueProviderResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="skipValidation" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <param name="skipValidation">
+          <see langword="true" /> to skip validation; otherwise, <see langword="false" />.</param>
+        <summary>Returns the value for the specified key and optionally enables the caller to specify whether request validation should be skipped.</summary>
+        <returns>The value for the specified key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,261 @@
+<Type Name="PartBuilder&lt;T&gt;" FullName="System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class PartBuilder&lt;T&gt; : System.ComponentModel.Composition.Registration.PartBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartBuilder`1&lt;T&gt; extends System.ComponentModel.Composition.Registration.PartBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Registration.PartBuilder`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Composition.Registration.PartBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of the target.</typeparam>
+    <summary>Extends the <see cref="T:System.ComponentModel.Composition.Registration.PartBuilder" /> class to allow the use of expressions to select members.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExportProperty">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt; ExportProperty (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertyFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder`1&lt;!T&gt; ExportProperty(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertyFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ExportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <summary>Specifies a property that should be exported.</summary>
+        <returns>The current object, to allow chaining.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportProperty">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt; ExportProperty (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertyFilter, Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder`1&lt;!T&gt; ExportProperty(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertyFilter, class System.Action`1&lt;class System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ExportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.ComponentModel.Composition.Registration.ExportBuilder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+        <Parameter Name="exportConfiguration" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <param name="exportConfiguration">An object that contains configuration information about the export. The default value is <see langword="null" />.</param>
+        <summary>Specifies a property that should be exported, and provides configuration information for the resulting export.</summary>
+        <returns>The current object, to allow chaining.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportProperty&lt;TContract&gt;">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt; ExportProperty&lt;TContract&gt; (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertyFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder`1&lt;!T&gt; ExportProperty&lt;TContract&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertyFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ExportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContract" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContract">The type of the contract.</typeparam>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <summary>Specifies a property that should be exported as the specified contract type.</summary>
+        <returns>The current object, to allow chaining.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportProperty&lt;TContract&gt;">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt; ExportProperty&lt;TContract&gt; (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertyFilter, Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder`1&lt;!T&gt; ExportProperty&lt;TContract&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertyFilter, class System.Action`1&lt;class System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ExportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.ComponentModel.Composition.Registration.ExportBuilder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContract" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+        <Parameter Name="exportConfiguration" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContract">The type of the contract.</typeparam>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <param name="exportConfiguration">An object that contains configuration information about the export. The default value is <see langword="null" />.</param>
+        <summary>Specifies a property that should be exported as the specified contract type, and provides configuration information for the resulting export.</summary>
+        <returns>The current object, to allow chaining.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportProperty">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt; ImportProperty (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertyFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder`1&lt;!T&gt; ImportProperty(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertyFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ImportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <summary>Specifies that a property should be imported.</summary>
+        <returns>The current object, to allow chaining.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportProperty">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt; ImportProperty (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertyFilter, Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt; importConfiguration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder`1&lt;!T&gt; ImportProperty(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertyFilter, class System.Action`1&lt;class System.ComponentModel.Composition.Registration.ImportBuilder&gt; importConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ImportProperty(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.ComponentModel.Composition.Registration.ImportBuilder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+        <Parameter Name="importConfiguration" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <param name="importConfiguration">An object that contains configuration information about the import. The default value is <see langword="null" />.</param>
+        <summary>Specifies that a property should be imported, and provides configuration information for the resulting import.</summary>
+        <returns>The current object, to allow chaining.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportProperty&lt;TContract&gt;">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt; ImportProperty&lt;TContract&gt; (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertyFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder`1&lt;!T&gt; ImportProperty&lt;TContract&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertyFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ImportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContract" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContract">The contract type to use.</typeparam>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <summary>Specifies that a property should be imported using the specified contract name.</summary>
+        <returns>The current object, to allow chaining.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportProperty&lt;TContract&gt;">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt; ImportProperty&lt;TContract&gt; (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; propertyFilter, Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt; importConfiguration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder`1&lt;!T&gt; ImportProperty&lt;TContract&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!T, object&gt;&gt; propertyFilter, class System.Action`1&lt;class System.ComponentModel.Composition.Registration.ImportBuilder&gt; importConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.ImportProperty``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Action{System.ComponentModel.Composition.Registration.ImportBuilder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContract" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="propertyFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;T,System.Object&gt;&gt;" />
+        <Parameter Name="importConfiguration" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContract">The contract name to use.</typeparam>
+        <param name="propertyFilter">An expression that results in a reference to the target property.</param>
+        <param name="importConfiguration">An object that contains configuration information about the import. The default value is <see langword="null" />.</param>
+        <summary>Specifies that a property should be imported using the specified contract name, and provides configuration information for the resulting import.</summary>
+        <returns>The current object, to allow chaining.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectConstructor">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt; SelectConstructor (System.Linq.Expressions.Expression&lt;Func&lt;System.ComponentModel.Composition.Registration.ParameterImportBuilder,T&gt;&gt; constructorFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder`1&lt;!T&gt; SelectConstructor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.ComponentModel.Composition.Registration.ParameterImportBuilder, !T&gt;&gt; constructorFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder`1.SelectConstructor(System.Linq.Expressions.Expression{System.Func{System.ComponentModel.Composition.Registration.ParameterImportBuilder,`0}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Registration.PartBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constructorFilter" Type="System.Linq.Expressions.Expression&lt;System.Func&lt;System.ComponentModel.Composition.Registration.ParameterImportBuilder,T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="constructorFilter">An expression that constructs <c>T</c> by using the desired constructor. It is used only for reference, not actually invoked.</param>
+        <summary>Specifies the constructor that should be used as an importing constructor.</summary>
+        <returns>The current object, to allow chaining.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

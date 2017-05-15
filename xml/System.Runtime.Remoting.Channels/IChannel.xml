@@ -1,0 +1,140 @@
+<Type Name="IChannel" FullName="System.Runtime.Remoting.Channels.IChannel">
+  <TypeSignature Language="C#" Value="public interface IChannel" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannel" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IChannel" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides conduits for messages that cross remoting boundaries.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Remoting boundaries can be <xref:System.Runtime.Remoting.Contexts.Context>s, <xref:System.AppDomain>s, processes, or computers. An application can cross these boundaries only by using channels. These crossings can be inbound and outbound. A channel can listen on an endpoint for inbound messages, send to an endpoint for outbound messages, or both. This provides an extensibility point in the runtime to plug in a wide range protocols, even though the runtime might not be at the other end of the channel.  
+  
+ Run-time objects can be used to represent a wide and rich set of semantics and entities. The channel provides the extensibility point to convert the messages to and from the specific protocols. If there are runtimes at both ends of the channel, a virtual channel is created between the two ends, in order to connect the client and server sink chains on either side of the boundary.  
+  
+ The client part of the channel is located at the end of a client context sink chain. The server part of the channel is located at the start of the server context sink chain. Messages are delivered to the client channel using the <xref:System.Runtime.Remoting.Messaging.IMessageSink> interface, travel through the channel, and are then received by the server channel. The server channel delivers the message to the first server context sink.  
+  
+ Channels must expose the <xref:System.Runtime.Remoting.Channels.IChannel> interface, which provides informational properties such as the <xref:System.Runtime.Remoting.Channels.IChannel.ChannelName%2A> and <xref:System.Runtime.Remoting.Channels.IChannel.ChannelPriority%2A> properties. Channels can be registered using the <xref:System.Runtime.Remoting.Channels.ChannelServices.RegisterChannel%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChannelName">
+      <MemberSignature Language="C#" Value="public string ChannelName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ChannelName" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannel.ChannelName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the channel.</summary>
+        <value>The name of the channel.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[HttpServerChannel_Server_Client#2](~/samples/snippets/cpp/VS_Snippets_Remoting/HttpServerChannel_Server_Client/CPP/httpserverchannel_9_server.cpp#2)]
+ [!code-csharp[HttpServerChannel_Server_Client#2](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpServerChannel_Server_Client/CS/httpserverchannel_9_server.cs#2)]
+ [!code-vb[HttpServerChannel_Server_Client#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpServerChannel_Server_Client/VB/httpserverchannel_9_server.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelPriority">
+      <MemberSignature Language="C#" Value="public int ChannelPriority { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ChannelPriority" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannel.ChannelPriority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the priority of the channel.</summary>
+        <value>An integer that indicates the priority of the channel.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Higher numbers indicate higher priority, so a channel with priority of 50 has a higher priority than a channel with priority 25. The cross application domain channel has a priority of 100.  
+  
+ Client channels with higher priority are given the first chance to connect to a remote object specified by a URL or a particular channel data entry from a <xref:System.Runtime.Remoting.ObjRef>.  
+  
+ For server channels, the priority indicates the order in which their channel data will appear in a <xref:System.Runtime.Remoting.ObjRef>, which in turn affects the order in which clients will try to connect to the server object. If the server is listening on an HTTP channel with priority 50 and a TCP channel with priority 25 and the client has registered both an HTTP and TCP channel, then the client will use the HTTP channel to talk to the server.  
+  
+   
+  
+## Examples  
+ [!code-cpp[HttpServerChannel_Server_Client#5](~/samples/snippets/cpp/VS_Snippets_Remoting/HttpServerChannel_Server_Client/CPP/httpclientchannel_6_client.cpp#5)]
+ [!code-csharp[HttpServerChannel_Server_Client#5](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpServerChannel_Server_Client/CS/httpclientchannel_6_client.cs#5)]
+ [!code-vb[HttpServerChannel_Server_Client#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpServerChannel_Server_Client/VB/httpclientchannel_6_client.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public string Parse (string url, out string objectURI);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Parse(string url, string objectURI) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannel.Parse(System.String,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="objectURI" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="url">The URL of the object.</param>
+        <param name="objectURI">When this method returns, contains a <see cref="T:System.String" /> that holds the object URI. This parameter is passed uninitialized.</param>
+        <summary>Returns the object URI as an out parameter, and the URI of the current channel as the return value.</summary>
+        <returns>The URI of the current channel, or <see langword="null" /> if the URI does not belong to this channel.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[HttpServerChannel_Server_Client#5](~/samples/snippets/cpp/VS_Snippets_Remoting/HttpServerChannel_Server_Client/CPP/httpclientchannel_6_client.cpp#5)]
+ [!code-csharp[HttpServerChannel_Server_Client#5](~/samples/snippets/csharp/VS_Snippets_Remoting/HttpServerChannel_Server_Client/CS/httpclientchannel_6_client.cs#5)]
+ [!code-vb[HttpServerChannel_Server_Client#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/HttpServerChannel_Server_Client/VB/httpclientchannel_6_client.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

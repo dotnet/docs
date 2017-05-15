@@ -1,0 +1,59 @@
+<Type Name="DataGridViewCellFormattingEventHandler" FullName="System.Windows.Forms.DataGridViewCellFormattingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataGridViewCellFormattingEventHandler(object sender, DataGridViewCellFormattingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellFormattingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellFormattingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellFormattingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellFormattingEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.DataGridView.CellFormatting" /> event of a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event to customize the conversion of a cell value into a format suitable for display or to customize the appearance of a cell depending on its state or value.  
+  
+ The <xref:System.Windows.Forms.DataGridView.CellFormatting> event occurs every time each cell is painted, so you should avoid lengthy processing when handling this event. This event also occurs when the cell <xref:System.Windows.Forms.DataGridViewCell.FormattedValue%2A> is retrieved or its <xref:System.Windows.Forms.DataGridViewCell.GetFormattedValue%2A> method is called.  
+  
+ When you handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> property is initialized with the cell value. If you provide custom conversion from the cell value to the display value, set the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> property to the converted value, ensuring that the new value is of the type specified by the cell <xref:System.Windows.Forms.DataGridViewCell.FormattedValueType%2A> property. To indicate that no further value formatting is necessary, set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`.  
+  
+ When the event handler completes, if the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A?displayProperty=fullName> is `null` or is not of the correct type, or the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property is `false`, the <xref:System.Windows.Forms.ConvertEventArgs.Value%2A> is formatted using the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A>, <xref:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue%2A>, and <xref:System.Windows.Forms.DataGridViewCellStyle.FormatProvider%2A> properties of the cell style returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A?displayProperty=fullName> property, which is initialized using the cell <xref:System.Windows.Forms.DataGridViewCell.InheritedStyle%2A> property.  
+  
+ Regardless of the value of the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property, the display properties of the object returned by the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.CellStyle%2A?displayProperty=fullName> property are used to render the cell.  
+  
+ For more information about custom formatting using the <xref:System.Windows.Forms.DataGridView.CellFormatting> event, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md).  
+  
+ To avoid performance penalties when handling this event, access the cell through the parameters of the event handler rather than accessing the cell directly.  
+  
+ To customize the conversion of a formatted, user-specified value into an actual cell value, handle the <xref:System.Windows.Forms.DataGridView.CellParsing> event.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ When you create a <xref:System.Windows.Forms.DataGridViewCellFormattingEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event.  
+  
+ [!code-cpp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.GridViewUnbound#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewUnbound/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,59 @@
+<Type Name="AttributeInfoAttribute" FullName="System.Workflow.ComponentModel.Compiler.AttributeInfoAttribute">
+  <TypeSignature Language="C#" Value="public sealed class AttributeInfoAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttributeInfoAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.AttributeInfoAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property, AllowMultiple=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a class holding information about an attribute at design time. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This class is used to represent attributes on design-time types (types that are yet to be compiled). This occurs only when validation is triggered through the designer.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AttributeInfo">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.AttributeInfo AttributeInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Compiler.AttributeInfo AttributeInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.AttributeInfoAttribute.AttributeInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Compiler.AttributeInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Compiler.AttributeInfo" /> associated with this instance.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.Compiler.AttributeInfo" /> associated with this instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,230 @@
+<Type Name="ChannelManagerService" FullName="System.Workflow.Runtime.Hosting.ChannelManagerService">
+  <TypeSignature Language="C#" Value="public sealed class ChannelManagerService : System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ChannelManagerService extends System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.ChannelManagerService" />
+  <AssemblyInfo>
+    <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Runtime.Hosting.WorkflowRuntimeService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides functionality for constructing client-side channels, caching channels, and channel factories.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> is responsible for creating a channel for a <xref:System.Workflow.Activities.SendActivity> based on the channel token defined in the activity's <xref:System.Workflow.Activities.SendActivity.ChannelToken%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelManagerService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ChannelManagerService" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object. This example was adapted from the `SequentialWorklowService` SDK sample.  
+  
+ [!code-csharp[ChannelManagerService#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#0)]
+ [!code-vb[ChannelManagerService#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelManagerService (System.Collections.Generic.IList&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.Collections.Generic.IList{System.ServiceModel.Description.ServiceEndpoint})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpoints" Type="System.Collections.Generic.IList&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="endpoints">A collection of service endpoints.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ChannelManagerService" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Instances of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> class are usually created by the runtime using configuration files.  
+  
+ The endpoints defined in the service's constructor will be used to create channels that match the configuration name in the <xref:System.Workflow.Activities.SendActivity.ChannelToken%2A>. The endpoints defined in the configuration take precedence over the endpoints defined in code, so if a service endpoint added through code has the same name and contract type as one in the configuration file, then the endpoint defined in code will not be used.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object. This example was adapted from the `WorkflowServiceUtility` SDK sample.  
+  
+ [!code-csharp[ChannelManagerService#1](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#1)]
+ [!code-vb[ChannelManagerService#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelManagerService (System.Collections.Specialized.NameValueCollection parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.NameValueCollection parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">Configuration parameters for the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ChannelManagerService" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following parameters are supported:  
+  
+-   `idleTimeout`: The maximum <xref:System.TimeSpan> that a cached channel can be idle.  
+  
+-   `leaseTimeout`: The maximum <xref:System.TimeSpan> that a cached channel can be checked out or in use by a <xref:System.Workflow.Activities.SendActivity>.  
+  
+-   `maxIdleChannelsPerEndpoint`: The maximum number of idle channels matching a single endpoint that can be cached at any point.  
+  
+ Instances of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> class are usually created by the runtime using configuration files.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object.  
+  
+ [!code-csharp[ChannelManagerService#2](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#2)]
+ [!code-vb[ChannelManagerService#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelManagerService (System.ServiceModel.Channels.ChannelPoolSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.ChannelPoolSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.ServiceModel.Channels.ChannelPoolSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="settings" Type="System.ServiceModel.Channels.ChannelPoolSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">Settings for quotas for the pool of channels managed by this service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ChannelManagerService" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object.  
+  
+ [!code-csharp[ChannelManagerService#3](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#3)]
+ [!code-vb[ChannelManagerService#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ChannelManagerService (System.ServiceModel.Channels.ChannelPoolSettings settings, System.Collections.Generic.IList&lt;System.ServiceModel.Description.ServiceEndpoint&gt; endpoints);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.ChannelPoolSettings settings, class System.Collections.Generic.IList`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; endpoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.#ctor(System.ServiceModel.Channels.ChannelPoolSettings,System.Collections.Generic.IList{System.ServiceModel.Description.ServiceEndpoint})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="settings" Type="System.ServiceModel.Channels.ChannelPoolSettings" />
+        <Parameter Name="endpoints" Type="System.Collections.Generic.IList&lt;System.ServiceModel.Description.ServiceEndpoint&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="settings">Settings for quotas for the pool of channels managed by this service.</param>
+        <param name="endpoints">A collection of service endpoints.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ChannelManagerService" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to create a new instance of the <xref:System.Workflow.Runtime.Hosting.ChannelManagerService> object.  
+  
+ [!code-csharp[ChannelManagerService#4](~/samples/snippets/csharp/VS_Snippets_CFX/channelmanagerservice/cs/snippets.cs#4)]
+ [!code-vb[ChannelManagerService#4](~/samples/snippets/visualbasic/VS_Snippets_CFX/channelmanagerservice/vb/snippets.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="protected override void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="protected override void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ChannelManagerService.Stop" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

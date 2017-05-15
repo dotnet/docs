@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "sum operator"
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
 caps.latest.revision: 26
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,25 @@
+<Type Name="TaskFinishedEventHandler" FullName="Microsoft.Build.Framework.TaskFinishedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void TaskFinishedEventHandler(object sender, TaskFinishedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TaskFinishedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.TaskFinishedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="Microsoft.Build.Framework.TaskFinishedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:Microsoft.Build.Framework.TargetFinishedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:Microsoft.Build.Framework.IEventSource.TaskFinished" /> event of a build.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

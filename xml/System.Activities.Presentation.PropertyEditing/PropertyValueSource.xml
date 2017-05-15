@@ -1,0 +1,46 @@
+<Type Name="PropertyValueSource" FullName="System.Activities.Presentation.PropertyEditing.PropertyValueSource">
+  <TypeSignature Language="C#" Value="public abstract class PropertyValueSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PropertyValueSource extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.PropertyValueSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the origin of a property value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Examples of property value sources can include inherited values, parent template values, default values, implicit style references, trigger-based values, and others.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_PropertyValueSource#0](WFD_PropertyValueSource#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PropertyValueSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.PropertyValueSource.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueSource" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

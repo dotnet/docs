@@ -1,0 +1,94 @@
+<Type Name="HostSecurityPolicyResolver" FullName="System.Web.Hosting.HostSecurityPolicyResolver">
+  <TypeSignature Language="C#" Value="public class HostSecurityPolicyResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HostSecurityPolicyResolver extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.HostSecurityPolicyResolver" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a way to customize ASP.NET behavior at run time that overrides the ASP.NET code access security policy.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In complex Web hosting environments such as SharePoint and Web farms, you might have to extend the ASP.NET code access security policy. By extending the <xref:System.Web.Hosting.HostSecurityPolicyResolver> type, you can implement custom security policy behavior that overrides the ASP.NET code access security policy.  
+  
+## Configuring a HostSecurityPolicyResolver Class  
+ In the configuration files, you can configure a custom <xref:System.Web.Hosting.HostSecurityPolicyResolver> instance by adding the <xref:System.Web.Configuration.TrustSection.HostSecurityPolicyResolverType%2A> attribute to the  element. The <xref:System.Web.Configuration.TrustSection.HostSecurityPolicyResolverType%2A> attribute can be set to the name of the custom <xref:System.Web.Hosting.HostSecurityPolicyResolver> type that will be loaded by ASP.NET. The attribute value contains the fully qualified name of the derived type. By default, [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] does not set this attribute.  
+  
+ The following syntax shows how to configure the attribute:  
+  
+```  
+<trust   
+  Level = "[Full|High|Medium|Low|Minimal]"  
+  permissionSetName = "name of the permission set"  
+  hostSecurityPolicyResolverType = "security policy resolution type"  
+/>  
+```  
+  
+ The <xref:System.Web.Configuration.TrustSection.PermissionSetName%2A> attribute in the `trust` element can be set to a string value that indicates which named permission set in a partial trust configuration file should be used. By default, ASP.NET 4 sets this attribute to "ASP.Net".  
+  
+ The <xref:System.Web.Configuration.TrustSection.HostSecurityPolicyResolverType%2A> attribute in the `trust` element indicates the custom <xref:System.Web.Hosting.HostSecurityPolicyResolver> object that will be loaded by ASP.NET. If the attribute is set to an empty string, the application uses the ASP.NET default logic for determining the permissions for the assembly. The <xref:System.Web.Hosting.HostSecurityPolicyResolver> type attribute cannot be set to a null value.  
+  
+> [!IMPORTANT]
+>  The assembly that contains a derived <xref:System.Web.Hosting.HostSecurityPolicyResolver> type must run with full trust, because the custom type provides information that ASP.NET can use to elevate assemblies to full trust. In general, you should deploy a custom policy resolver type in the global assembly cache, where it will run with full trust.  
+  
+ When you implement this class, you must override the <xref:System.Web.Hosting.HostSecurityPolicyResolver.ResolvePolicy%2A> method. Depending on the <xref:System.Security.Policy.Evidence> instance that is passed as a parameter, the method returns an enumeration value that indicates the security policy to apply to the assembly. The set of available security policies is determined by the <xref:System.Web.Hosting.HostSecurityPolicyResults> enumeration.  
+  
+ ]]></format>
+    </remarks>
+    <exception cref="T:System.Configuration.ConfigurationErrorsException">The <see cref="P:System.Web.Configuration.TrustSection.HostSecurityPolicyResolverType" /> attribute has an invalid value or cannot be found.</exception>
+    <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for the inheriting type. This class cannot be inherited by partially trusted code.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HostSecurityPolicyResolver ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostSecurityPolicyResolver.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.HostSecurityPolicyResolver" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvePolicy">
+      <MemberSignature Language="C#" Value="public virtual System.Web.Hosting.HostSecurityPolicyResults ResolvePolicy (System.Security.Policy.Evidence evidence);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Web.Hosting.HostSecurityPolicyResults ResolvePolicy(class System.Security.Policy.Evidence evidence) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.HostSecurityPolicyResolver.ResolvePolicy(System.Security.Policy.Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.HostSecurityPolicyResults</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evidence" Type="System.Security.Policy.Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="evidence">A collection of evidence about an assembly and a host, which is used as an input to security policy.</param>
+        <summary>Gets a value that indicates the security policy that should be applied to an assembly.</summary>
+        <returns>A value that indicates the type of security permissions should be applied to an assembly.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you inherit from the <xref:System.Web.Hosting.HostSecurityPolicyResolver> class, you must implement the <xref:System.Web.Hosting.HostSecurityPolicyResolver.ResolvePolicy%2A> method. Based on the information that is provided in the `evidence` parameter, the method should return one of the security policies that are defined in the <xref:System.Web.Hosting.HostSecurityPolicyResults> enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

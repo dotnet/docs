@@ -1,0 +1,105 @@
+<Type Name="FillType" FullName="System.Windows.Forms.VisualStyles.FillType">
+  <TypeSignature Language="C#" Value="public enum FillType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FillType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.FillType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the interior of visual style elements with a filled border background.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.FillType> values represent the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetEnumValue%2A?displayProperty=fullName> method when it is called with an argument value of <xref:System.Windows.Forms.VisualStyles.EnumProperty?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HorizontalGradient">
+      <MemberSignature Language="C#" Value="HorizontalGradient" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FillType HorizontalGradient = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FillType.HorizontalGradient" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The interior of the element is a horizontal gradient.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RadialGradient">
+      <MemberSignature Language="C#" Value="RadialGradient" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FillType RadialGradient = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FillType.RadialGradient" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The interior of the element is a radial gradient.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Solid">
+      <MemberSignature Language="C#" Value="Solid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FillType Solid = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FillType.Solid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The interior of the element is solid.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TileImage">
+      <MemberSignature Language="C#" Value="TileImage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FillType TileImage = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FillType.TileImage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The interior of the element is a tiled image.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalGradient">
+      <MemberSignature Language="C#" Value="VerticalGradient" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.FillType VerticalGradient = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.FillType.VerticalGradient" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.FillType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The interior of the element is a vertical gradient.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

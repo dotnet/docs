@@ -1,0 +1,798 @@
+<Type Name="IExpressionEditorInstance" FullName="System.Activities.Presentation.View.IExpressionEditorInstance">
+  <TypeSignature Language="C#" Value="public interface IExpressionEditorInstance" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpressionEditorInstance" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.IExpressionEditorInstance" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an expression editor instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For a detailed description of an expression editor instance, see <xref:System.Activities.Presentation.View.IExpressionEditorService>.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_IExpressionEditorInstance#0](WFD_IExpressionEditorInstance#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AcceptsReturn">
+      <MemberSignature Language="C#" Value="public bool AcceptsReturn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AcceptsReturn" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.IExpressionEditorInstance.AcceptsReturn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the expression editor instance accepts the RETURN key.</summary>
+        <value>
+          <see langword="true" /> if the expression editor accepts the RETURN key; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcceptsTab">
+      <MemberSignature Language="C#" Value="public bool AcceptsTab { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AcceptsTab" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.IExpressionEditorInstance.AcceptsTab" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the expression editor instance accepts the TAB key.</summary>
+        <value>
+          <see langword="true" /> if the expression editor accepts the TAB key; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCompleteWord">
+      <MemberSignature Language="C#" Value="public bool CanCompleteWord ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanCompleteWord() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CanCompleteWord" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the expression editor instance can complete the string being typed by the user.</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCopy">
+      <MemberSignature Language="C#" Value="public bool CanCopy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanCopy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CanCopy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the expression editor instance can be closed.</summary>
+        <returns>
+          <see langword="true" /> if the expression editor instance can be closed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanCut">
+      <MemberSignature Language="C#" Value="public bool CanCut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanCut() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CanCut" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the expression can be cut.</summary>
+        <returns>
+          <see langword="true" /> if the expression can be cut; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanDecreaseFilterLevel">
+      <MemberSignature Language="C#" Value="public bool CanDecreaseFilterLevel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanDecreaseFilterLevel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CanDecreaseFilterLevel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the filter level can be decreased when using Intellisense filtering.</summary>
+        <returns>
+          <see langword="true" /> if the filter level can be decreased; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanGlobalIntellisense">
+      <MemberSignature Language="C#" Value="public bool CanGlobalIntellisense ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanGlobalIntellisense() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CanGlobalIntellisense" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the expression editor instance can retrieve global IntelliSense on the expression.</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanIncreaseFilterLevel">
+      <MemberSignature Language="C#" Value="public bool CanIncreaseFilterLevel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanIncreaseFilterLevel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CanIncreaseFilterLevel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the filter level can be increased when using Intellisense filtering.</summary>
+        <returns>
+          <see langword="true" /> if the filter level can be increased; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanParameterInfo">
+      <MemberSignature Language="C#" Value="public bool CanParameterInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanParameterInfo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CanParameterInfo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the expression editor instance can retrieve parameter information on the expression.</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanPaste">
+      <MemberSignature Language="C#" Value="public bool CanPaste ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanPaste() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CanPaste" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the expression can be pasted.</summary>
+        <returns>
+          <see langword="true" /> if the expression can be pasted; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanQuickInfo">
+      <MemberSignature Language="C#" Value="public bool CanQuickInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanQuickInfo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CanQuickInfo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the expression editor instance can retrieve type information to be shown in an IntelliSense quick info tool tip.</summary>
+        <returns>Returns a <see cref="T:System.Boolean" /> set to <see langword="true" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRedo">
+      <MemberSignature Language="C#" Value="public bool CanRedo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanRedo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CanRedo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the system can redo the operation.</summary>
+        <returns>
+          <see langword="true" /> if the system can redo the operation; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUndo">
+      <MemberSignature Language="C#" Value="public bool CanUndo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanUndo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CanUndo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a Boolean value that indicates whether the system can undo the operation.</summary>
+        <returns>
+          <see langword="true" /> if the system can undo the operation; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearSelection">
+      <MemberSignature Language="C#" Value="public void ClearSelection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearSelection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.ClearSelection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the selection in the editor instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes and purges the editor items. This will close the specific expression editor instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Closing">
+      <MemberSignature Language="C#" Value="public event EventHandler Closing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Closing" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.IExpressionEditorInstance.Closing" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the expression editor instance is closing.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompleteWord">
+      <MemberSignature Language="C#" Value="public bool CompleteWord ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CompleteWord() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.CompleteWord" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether the expression editor instance can provide a list of completions for the partial word typed by the user. For example, member, argument, and method names can be shown to the user in an attempt to help them complete the word they are typing.</summary>
+        <returns>
+          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public bool Copy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Copy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.Copy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copies the active expression.</summary>
+        <returns>
+          <see langword="true" /> if the copy is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cut">
+      <MemberSignature Language="C#" Value="public bool Cut ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Cut() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.Cut" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cuts the active expression.</summary>
+        <returns>
+          <see langword="true" /> if the cut is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecreaseFilterLevel">
+      <MemberSignature Language="C#" Value="public bool DecreaseFilterLevel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool DecreaseFilterLevel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.DecreaseFilterLevel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Decreases the filter level to show all items in the Intellisense filter list and returns a value that indicates whether this operation was successful.</summary>
+        <returns>
+          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Focus">
+      <MemberSignature Language="C#" Value="public void Focus ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Focus() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.Focus" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets focus on the editor instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommittedText">
+      <MemberSignature Language="C#" Value="public string GetCommittedText ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetCommittedText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.GetCommittedText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the text used to generate an expression.</summary>
+        <returns>Returns a <see cref="T:System.String" /> that contains the text used to generate an expression.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalIntellisense">
+      <MemberSignature Language="C#" Value="public bool GlobalIntellisense ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GlobalIntellisense() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.GlobalIntellisense" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves global IntelliSense on the expression in the expression editor and returns a value that indicates whether this operation was successful.</summary>
+        <returns>
+          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GotAggregateFocus">
+      <MemberSignature Language="C#" Value="public event EventHandler GotAggregateFocus;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler GotAggregateFocus" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.IExpressionEditorInstance.GotAggregateFocus" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the expression editor instance has aggregate focus.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasAggregateFocus">
+      <MemberSignature Language="C#" Value="public bool HasAggregateFocus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasAggregateFocus" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.IExpressionEditorInstance.HasAggregateFocus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the instance has aggregate focus.</summary>
+        <value>
+          <see langword="true" /> if the editor instance has aggregate focus; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instance has aggregate focus when the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> or any other control created by the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> has focus.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalScrollBarVisibility">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.ScrollBarVisibility HorizontalScrollBarVisibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.ScrollBarVisibility HorizontalScrollBarVisibility" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.IExpressionEditorInstance.HorizontalScrollBarVisibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the horizontal scrollbar is visible.</summary>
+        <value>Returns <see cref="T:System.Windows.Controls.ScrollBarVisibility" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HostControl">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.Control HostControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Control HostControl" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Controls.Control" /> instance that can be used to display in the <see langword="ExpressionTextBox" />.</summary>
+        <value>Returns <see cref="T:System.Windows.Controls.Control" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncreaseFilterLevel">
+      <MemberSignature Language="C#" Value="public bool IncreaseFilterLevel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IncreaseFilterLevel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.IncreaseFilterLevel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Increases the filter level to show common items in the Intellisense filter list and returns a value that indicates whether this operation was successful.</summary>
+        <returns>
+          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LostAggregateFocus">
+      <MemberSignature Language="C#" Value="public event EventHandler LostAggregateFocus;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LostAggregateFocus" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.IExpressionEditorInstance.LostAggregateFocus" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents an event that is raised when the expression editor instance loses aggregate focus.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The instance loses aggregate focus when the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> and every control created by the <xref:System.Activities.Presentation.View.IExpressionEditorInstance.HostControl%2A> loose focus.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxLines">
+      <MemberSignature Language="C#" Value="public int MaxLines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLines" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.IExpressionEditorInstance.MaxLines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control. This property implicitly sets the height of the <see langword="ExpressionTextBox" /> control when growing to fit.</summary>
+        <value>Returns an <see cref="T:System.Int32" /> that containing the maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MaxHeight%2A> is set, it will override `MaxLines`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinLines">
+      <MemberSignature Language="C#" Value="public int MinLines { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinLines" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.IExpressionEditorInstance.MinLines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control. This property implicitly sets the height of the <see langword="ExpressionTextBox" /> control.</summary>
+        <value>Returns an<see cref="T:System.Int32" /> that contains the minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MinHeight%2A> is set, then it will override MinLines.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterInfo">
+      <MemberSignature Language="C#" Value="public bool ParameterInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ParameterInfo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.ParameterInfo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves parameter information on the expression in the expression editor and returns a value that indicates whether this operation was successful.</summary>
+        <returns>
+          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paste">
+      <MemberSignature Language="C#" Value="public bool Paste ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Paste() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.Paste" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Pastes the active expression.</summary>
+        <returns>
+          <see langword="true" /> if the paste is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuickInfo">
+      <MemberSignature Language="C#" Value="public bool QuickInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool QuickInfo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.QuickInfo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether type information to be shown in an IntelliSense quick info tool tip.</summary>
+        <returns>
+          <see langword="true" /> if this method succeeds; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Redo">
+      <MemberSignature Language="C#" Value="public bool Redo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Redo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.Redo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reapplies the last operation that was undone in the editor, that is, reverse the effects of the undo operation.</summary>
+        <returns>
+          <see langword="true" /> if the redo is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.IExpressionEditorInstance.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the text.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.IExpressionEditorInstance.TextChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents an event that is raised when the text in an expression editor instance is changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Undo">
+      <MemberSignature Language="C#" Value="public bool Undo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Undo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorInstance.Undo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Undoes the last operation in the editor.</summary>
+        <returns>
+          <see langword="true" /> if the undo is successful; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalScrollBarVisibility">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.ScrollBarVisibility VerticalScrollBarVisibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.ScrollBarVisibility VerticalScrollBarVisibility" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.IExpressionEditorInstance.VerticalScrollBarVisibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ScrollBarVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the vertical scrollbar is visible.</summary>
+        <value>Returns <see cref="T:System.Windows.Controls.ScrollBarVisibility" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

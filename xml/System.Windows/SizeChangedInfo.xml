@@ -1,0 +1,161 @@
+<Type Name="SizeChangedInfo" FullName="System.Windows.SizeChangedInfo">
+  <TypeSignature Language="C#" Value="public class SizeChangedInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SizeChangedInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.SizeChangedInfo" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Report the specifics of a value change involving a <see cref="T:System.Windows.Size" />. This is used as a parameter in <see cref="M:System.Windows.UIElement.OnRenderSizeChanged(System.Windows.SizeChangedInfo)" /> overrides.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class parallels some of the members <xref:System.Windows.SizeChangedEventArgs> class, which is used to report event data for <xref:System.Windows.FrameworkElement.SizeChanged>, but the two classes serve different purposes.  <xref:System.Windows.SizeChangedInfo> is specifically used for <xref:System.Windows.UIElement.OnRenderSizeChanged%2A> overrides, which offers class handling for an event that is not exposed as a public event in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For details, see <xref:System.Windows.UIElement.OnRenderSizeChanged%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SizeChangedInfo (System.Windows.UIElement element, System.Windows.Size previousSize, bool widthChanged, bool heightChanged);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.UIElement element, valuetype System.Windows.Size previousSize, bool widthChanged, bool heightChanged) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.SizeChangedInfo.#ctor(System.Windows.UIElement,System.Windows.Size,System.Boolean,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="previousSize" Type="System.Windows.Size" />
+        <Parameter Name="widthChanged" Type="System.Boolean" />
+        <Parameter Name="heightChanged" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element where the size is being changed.</param>
+        <param name="previousSize">The previous size, before the change.</param>
+        <param name="widthChanged">
+          <see langword="true" /> if the Width component of the size changed.</param>
+        <param name="heightChanged">
+          <see langword="true" /> if the Height component of the size changed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.SizeChangedInfo" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the two Boolean parameters, note that you should report these as `true` only if the changes in the value are significant to rendering, or should interpret the values as such if reading existing values. Minor changes in the size values are possible due to precision side-effects, particularly when mathematical functions are applied to the double values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeightChanged">
+      <MemberSignature Language="C#" Value="public bool HeightChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HeightChanged" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.SizeChangedInfo.HeightChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether this <see cref="T:System.Windows.SizeChangedInfo" /> reports a size change that includes a significant change to the Height component.</summary>
+        <value>
+          <see langword="true" /> if there is a significant Height component change; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only, and can only be set in the initial <xref:System.Windows.SizeChangedInfo> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSize">
+      <MemberSignature Language="C#" Value="public System.Windows.Size NewSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size NewSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.SizeChangedInfo.NewSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new size being reported.</summary>
+        <value>The new size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only, and can only be set through the initial <xref:System.Windows.SizeChangedInfo> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousSize">
+      <MemberSignature Language="C#" Value="public System.Windows.Size PreviousSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PreviousSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.SizeChangedInfo.PreviousSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the previous size of the size-related value being reported as changed.</summary>
+        <value>The previous size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only, and cannot be set by any direct means, it is being reported from an actual value on some instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WidthChanged">
+      <MemberSignature Language="C#" Value="public bool WidthChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WidthChanged" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.SizeChangedInfo.WidthChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that declares whether the Width component of the size changed.</summary>
+        <value>
+          <see langword="true" /> if the width changed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is read-only, and can only be set through the initial <xref:System.Windows.SizeChangedInfo> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

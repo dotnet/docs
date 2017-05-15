@@ -1,0 +1,89 @@
+<Type Name="HostSecurityPolicyResults" FullName="System.Web.Hosting.HostSecurityPolicyResults">
+  <TypeSignature Language="C#" Value="public enum HostSecurityPolicyResults" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HostSecurityPolicyResults extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.HostSecurityPolicyResults" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of security policy to apply to an assembly.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Hosting.HostSecurityPolicyResults> class is used to supply the return value for the <xref:System.Web.Hosting.HostSecurityPolicyResolver.ResolvePolicy%2A> method. Use this method if you want to customize ASP.NET run-time behavior to override the ASP.NET code access security policy. The enumeration value that is returned by the method indicates the type of security policy to use.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppDomainTrust">
+      <MemberSignature Language="C#" Value="AppDomainTrust" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Hosting.HostSecurityPolicyResults AppDomainTrust = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Hosting.HostSecurityPolicyResults.AppDomainTrust" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.HostSecurityPolicyResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the permission set that is associated with the <see cref="T:System.AppDomain" /> instance should be applied to the specified assembly. This means that the assembly should be treated as a user assembly that is loaded into the partial-trust ASP.NET <see cref="T:System.AppDomain" /> instance. In addition, the assembly should have the permission set that was assigned to the <see cref="T:System.AppDomain" /> instance at initialization.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPolicy">
+      <MemberSignature Language="C#" Value="DefaultPolicy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Hosting.HostSecurityPolicyResults DefaultPolicy = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Hosting.HostSecurityPolicyResults.DefaultPolicy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.HostSecurityPolicyResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that ASP.NET should use default logic to determine the appropriate permissions set for the specified assembly. You should return the <see cref="F:System.Web.Hosting.HostSecurityPolicyResults.DefaultPolicy" /> value if you do not you want to decide the permission set for the assembly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FullTrust">
+      <MemberSignature Language="C#" Value="FullTrust" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Hosting.HostSecurityPolicyResults FullTrust = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Hosting.HostSecurityPolicyResults.FullTrust" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.HostSecurityPolicyResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the specified assembly should be granted full trust.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Nothing">
+      <MemberSignature Language="C#" Value="Nothing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Hosting.HostSecurityPolicyResults Nothing = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Hosting.HostSecurityPolicyResults.Nothing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.HostSecurityPolicyResults</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the permission set for the specified assembly is set to empty. An empty permission set is a new instance of the <see cref="T:System.Security.PermissionSet" /> class, with a parameter value of <see cref="F:System.Security.Permissions.PermissionState.None" /> passed to the constructor. An assembly that is associated with an empty permission set will not load in an ASP.NET partial trust application domain. Therefore, you can use the <see cref="F:System.Web.Hosting.HostSecurityPolicyResults.Nothing" /> field to prevent an assembly from loading into a partial trust ASP.NET application domain.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

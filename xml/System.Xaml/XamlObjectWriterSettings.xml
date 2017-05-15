@@ -1,0 +1,386 @@
+<Type Name="XamlObjectWriterSettings" FullName="System.Xaml.XamlObjectWriterSettings">
+  <TypeSignature Language="C#" Value="public class XamlObjectWriterSettings : System.Xaml.XamlWriterSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlObjectWriterSettings extends System.Xaml.XamlWriterSettings" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.XamlObjectWriterSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Xaml.XamlWriterSettings</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides specific XAML writer settings for <see cref="T:System.Xaml.XamlObjectWriter" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Xaml.XamlObjectWriter> can function within specified <xref:System.Xaml.XamlObjectWriterSettings>. Where settings are not specified, an instance of <xref:System.Xaml.XamlObjectWriterSettings> exists that has default values for a constructed <xref:System.Xaml.XamlObjectWriter>, and this instance can be used in merges of settings for a derived class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlObjectWriterSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectWriterSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterSettings" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlObjectWriterSettings (System.Xaml.XamlObjectWriterSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlObjectWriterSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectWriterSettings.#ctor(System.Xaml.XamlObjectWriterSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="settings" Type="System.Xaml.XamlObjectWriterSettings" />
+      </Parameters>
+      <Docs>
+        <param name="settings">The settings instance to copy.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterSettings" /> class that is based on the copy of an existing instance.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="settings" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AccessLevel">
+      <MemberSignature Language="C#" Value="public System.Xaml.Permissions.XamlAccessLevel AccessLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.Permissions.XamlAccessLevel AccessLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.AccessLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Permissions.XamlAccessLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> permissions that the XAML writer observes.</summary>
+        <value>The <see cref="T:System.Xaml.Permissions.XamlAccessLevel" /> permissions.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates the expected access level for non-public members, which are accessed in partial trust through a partial-trust tolerant runtime.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterBeginInitHandler">
+      <MemberSignature Language="C#" Value="public EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt; AfterBeginInitHandler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler`1&lt;class System.Xaml.XamlObjectEventArgs&gt; AfterBeginInitHandler" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.AfterBeginInitHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reference to a callback that is invoked by the XAML writer at the <see cref="M:System.ComponentModel.ISupportInitialize.BeginInit" /> phase of the object lifetime for each created object.</summary>
+        <value>A callback that is invoked by the XAML writer at the <see cref="M:System.ComponentModel.ISupportInitialize.BeginInit" /> phase of object lifetime.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterEndInitHandler">
+      <MemberSignature Language="C#" Value="public EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt; AfterEndInitHandler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler`1&lt;class System.Xaml.XamlObjectEventArgs&gt; AfterEndInitHandler" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.AfterEndInitHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reference to a callback that is invoked by the XAML writer at the <see cref="M:System.ComponentModel.ISupportInitialize.EndInit" /> phase of the object lifetime for each created object.</summary>
+        <value>A callback that is invoked by the XAML writer at the <see cref="M:System.ComponentModel.ISupportInitialize.EndInit" /> phase of object lifetime.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AfterPropertiesHandler">
+      <MemberSignature Language="C#" Value="public EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt; AfterPropertiesHandler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler`1&lt;class System.Xaml.XamlObjectEventArgs&gt; AfterPropertiesHandler" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.AfterPropertiesHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reference to a callback that is invoked by the XAML writer at the post-member-write phase of the object lifetime for each created object.</summary>
+        <value>A callback that is invoked by the XAML writer at the post-member-write phase of object lifetime.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeforePropertiesHandler">
+      <MemberSignature Language="C#" Value="public EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt; BeforePropertiesHandler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler`1&lt;class System.Xaml.XamlObjectEventArgs&gt; BeforePropertiesHandler" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.BeforePropertiesHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Xaml.XamlObjectEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reference to a callback that is invoked by the XAML writer at the pre-member-write phase of the object lifetime for each created object.</summary>
+        <value>A callback that is invoked by the XAML writer at the pre-member-write phase of object lifetime.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalNameScope">
+      <MemberSignature Language="C#" Value="public System.Windows.Markup.INameScope ExternalNameScope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Markup.INameScope ExternalNameScope" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.ExternalNameScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.INameScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XAML namescope to use for registering names from the XAML writer if <see cref="P:System.Xaml.XamlObjectWriterSettings.RegisterNamesOnExternalNamescope" /> is <see langword="true" />.</summary>
+        <value>The XAML namescope to use for registering names. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Specific contexts for a <xref:System.Xaml.XamlObjectWriter> might use an external XAML namescope.  
+  
+## WPF Usage Notes  
+ In the WPF XAML implementation, XAML writer operations that are initiated by <xref:System.Windows.FrameworkTemplate> specify a separate XAML namescope. In this WPF scenario, templates should not share a XAML namescope with the root of the XAML page that defines them. Instead, they should process into a separate, designated XAML namescope.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnoreCanConvert">
+      <MemberSignature Language="C#" Value="public bool IgnoreCanConvert { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreCanConvert" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.IgnoreCanConvert" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the XAML writer should ignore (not call) <see cref="M:System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" /> implementations on a <see cref="T:System.ComponentModel.TypeConverter" /> in type-converter situations.</summary>
+        <value>
+          <see langword="true" /> if the XAML writer ignores <see cref="M:System.ComponentModel.TypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" /> implementations; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.TypeConverter> class and its <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A> method are part of an overall design for type conversion in the CLR. In XAML systems, you can typically assume that type-converter input is identifiable by the XAML reader, and for purposes of input, is always a string. If you set this property to `true`, you enable a mode where this assumption is codified in the XAML object writer behavior.  
+  
+ This mode supports a compatibility requirement for previous versions of WPF XAML.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreferUnconvertedDictionaryKeys">
+      <MemberSignature Language="C#" Value="public bool PreferUnconvertedDictionaryKeys { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PreferUnconvertedDictionaryKeys" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.PreferUnconvertedDictionaryKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether to disable a default <see cref="T:System.Xaml.XamlObjectWriter" /> feature that runs type conversion on the <paramref name="K" /> component of a <see cref="T:System.Collections.Generic.Dictionary`2" /> before writing the object graph representation.</summary>
+        <value>
+          <see langword="true" /> if <paramref name="K" /> type conversion for a <see cref="T:System.Collections.Generic.Dictionary`2" /> object should be disabled. <see langword="false" /> if performing <paramref name="K" /> type conversion for a <see cref="T:System.Collections.Generic.Dictionary`2" /> object applies. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about the `K` type conversion feature, see Remarks in <xref:System.Xaml.XamlObjectWriter>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterNamesOnExternalNamescope">
+      <MemberSignature Language="C#" Value="public bool RegisterNamesOnExternalNamescope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RegisterNamesOnExternalNamescope" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.RegisterNamesOnExternalNamescope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether name registration should occur against the specified <see cref="P:System.Xaml.XamlObjectWriterSettings.ExternalNameScope" />.</summary>
+        <value>
+          <see langword="true" /> if name registration should occur against the <see cref="P:System.Xaml.XamlObjectWriterSettings.ExternalNameScope" />; <see langword="false" /> if name registration should occur into the parent XAML namescope. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootObjectInstance">
+      <MemberSignature Language="C#" Value="public object RootObjectInstance { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RootObjectInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.RootObjectInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a preexisting root object for <see cref="T:System.Xaml.XamlObjectWriter" /> operations.</summary>
+        <value>A preexisting root object for <see cref="T:System.Xaml.XamlObjectWriter" /> operations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you set this value, the root object instance is used as an implicit <xref:System.Xaml.XamlObjectWriter.WriteStartObject%2A> call (with object input that is direct instead of coming from the reader) that precedes the first explicit node-write call by the <xref:System.Xaml.XamlObjectWriter>. Any error checking, such as verifying the XAML type of the provided root object, is deferred until that implicit <xref:System.Xaml.XamlObjectWriter.WriteStartObject%2A> call, instead of being checked when you set this settings property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipDuplicatePropertyCheck">
+      <MemberSignature Language="C#" Value="public bool SkipDuplicatePropertyCheck { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SkipDuplicatePropertyCheck" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.SkipDuplicatePropertyCheck" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether the XAML writer omits to check for the code path that checks for duplicate properties.</summary>
+        <value>
+          <see langword="true" /> if the duplicate property check should be omitted; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The specified code path checks the currently assigned properties and throws an exception if a duplicate property set of the named ambient property is attempted. For more information, see <xref:System.Xaml.IAmbientProvider>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SkipProvideValueOnRoot">
+      <MemberSignature Language="C#" Value="public bool SkipProvideValueOnRoot { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SkipProvideValueOnRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.SkipProvideValueOnRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Xaml.XamlObjectWriter" /> should omit to call <see langword="ProvideValue" /> on a markup extension, which is relevant when the markup extension represents the root of an object graph.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Xaml.XamlObjectWriter" /> should omit to call <see langword="ProvideValue" /> on a markup extension; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This setting is used when the <xref:System.Xaml.XamlObjectWriter> processes the root node (<xref:System.Xaml.XamlObjectWriter.WriteEndObject%2A>, or members within the root node). This property is relevant for template and defer-load scenarios.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceBamlUri">
+      <MemberSignature Language="C#" Value="public Uri SourceBamlUri { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SourceBamlUri" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.SourceBamlUri" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used in the <see langword="BeginInitHandler" /> in place of the actual <see langword="BaseUri" />.</summary>
+        <value>A <see cref="T:System.Uri" /> to be used in place of the actual <see langword="BaseUri" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Used internally to provide the correct info in the handler, while keeping runtime behavior fully compatible.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XamlSetValueHandler">
+      <MemberSignature Language="C#" Value="public EventHandler&lt;System.Windows.Markup.XamlSetValueEventArgs&gt; XamlSetValueHandler { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EventHandler`1&lt;class System.Windows.Markup.XamlSetValueEventArgs&gt; XamlSetValueHandler" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectWriterSettings.XamlSetValueHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Windows.Markup.XamlSetValueEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the handler to use when the object writer calls into a CLR-implemented <see langword="SetValue" /> for dependency properties.</summary>
+        <value>A handler implementation that handles this case.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event handler is based on the generic <xref:System.EventHandler%601> delegate that uses the <xref:System.Windows.Markup.XamlSetValueEventArgs> event data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

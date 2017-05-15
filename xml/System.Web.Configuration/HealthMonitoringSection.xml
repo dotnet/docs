@@ -1,0 +1,495 @@
+<Type Name="HealthMonitoringSection" FullName="System.Web.Configuration.HealthMonitoringSection">
+  <TypeSignature Language="C#" Value="public sealed class HealthMonitoringSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HealthMonitoringSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HealthMonitoringSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Configures ASP.NET profiles that determine how health-monitoring events are sent to event providers. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class corresponds to the `<healthMonitoring>` configuration file element.  
+  
+> [!NOTE]
+>  Medium trust or higher is required to raise an event.  
+  
+   
+  
+## Examples  
+ The following configuration file excerpt shows how to specify the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+```  
+<healthMonitoring  
+  enabled="true"  
+  heartBeatInterval="0">  
+  <bufferModes>  
+    <add name="Critical Notification"  
+      maxBufferSize="100"  
+      maxFlushSize="20"  
+      urgentFlushThreshold="1"  
+      regularFlushInterval="Infinite"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Notification"  
+      maxBufferSize="300"  
+      maxFlushSize="20"  
+      urgentFlushThreshold="1"  
+      regularFlushInterval="Infinite"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Analysis"  
+      maxBufferSize="1000"  
+      maxFlushSize="100"  
+      urgentFlushThreshold="100"  
+      regularFlushInterval="00:05:00"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Logging"  
+      maxBufferSize="1000"  
+      maxFlushSize="200"  
+      urgentFlushThreshold="800"  
+      regularFlushInterval="00:30:00"  
+      urgentFlushInterval="00:05:00"  
+      maxBufferThreads="1"  
+    />  
+  </bufferModes>  
+  <providers>  
+    <add name="CriticalMailEventProvider"  
+      type="System.Web.Management.SimpleMailWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
+      from="sender address"  
+      to="bob@contoso.com"  
+      cc="stella@contoso.com"  
+      bcc="joe@contoso.com"  
+      priority="High"  
+      bodyHeader="Warning!"  
+      bodyFooter="Please investigate ASAP."  
+      subjectPrefix="Action required."  
+      buffer="true"  
+      bufferMode="Critical Notification"  
+      maxEventLength="4096"  
+      maxSize="4096"  
+      maxMessagesPerNotification="1"  
+    />  
+    <add name="EventLogProvider"  
+      type="System.Web.Management.EventLogWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
+      buffer="true"  
+      bufferMode="Logging"  
+    />  
+    <add name="SqlWebEventProvider"  
+      type="System.Web.Management.SqlWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
+      connectionStringName="LocalSqlServer"  
+      maxEventDetailsLength="1073741823"  
+      buffer="true"  
+      bufferMode="Analysis"  
+    />  
+    <add name="WmiWebEventProvider"  
+      type="System.Web.Management.WmiWebEventProvider, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"  
+      buffer="true"  
+      bufferMode="Notification"  
+    />  
+  </providers>  
+  <eventMappings>  
+    <add name="All Events"  
+      type="System.Web.Management.WebBaseEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="HeartBeats"  
+      type="System.Web.Management.WebHeartbeatEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="Application Lifetime Events"  
+      type="System.Web.Management.WebApplicationLifetimeEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="Request Processing Events"  
+      type="System.Web.Management.WebRequestEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="All Errors"  
+      type="System.Web.Management.WebBaseErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="Infrastructure Errors"  
+      type="System.Web.Management.WebErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="Request Processing Errors"  
+      type="System.Web.Management.WebRequestErrorEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="All Audits"  
+      type="System.Web.Management.WebAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="Failure Audits"  
+      type="System.Web.Management.WebFailureAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+    <add name="Success Audits"  
+      type="System.Web.Management.WebSuccessAuditEvent, System.Web, Version=%ASSEMBLY_VERSION%, Culture=neutral, PublicKeyToken=%MICROSOFT_PUBLICKEY%"   
+    />  
+  </eventMappings>  
+  <profiles>  
+    <add name="Default"  
+      minInstances="1"  
+      maxLimit="Infinite"  
+      minInterval="00:10:00"  
+    />  
+    <add name="Critical"  
+      minInstances="1"  
+      maxLimit="1024"  
+      minInterval="00:00:00"  
+    />  
+  </profiles>  
+  <rules>  
+    <add name="All Errors Default"  
+      eventName="All Errors"  
+      provider="EventLogProvider"  
+      profile="Default"  
+      minInterval="00:01:00"   
+    />  
+    <add name="All Audits Default"  
+      eventName="All Audits"  
+      provider="SqlWebEventProvider"  
+      profile="Default"  
+      minInterval="00:00:30"   
+    />  
+    <add name="Failure Audits Default"  
+      eventName="Failure Audits"  
+      provider="WmiWebEventProvider"  
+      profile="Critical"  
+      minInterval="00:00:30"   
+     />  
+     <add name="Request Processing Errors"  
+       eventName="Request Processing Errors"  
+       provider="CriticalMailEventProvider"  
+       profile="Default"  
+     />  
+     <add name="Infrastructure Notifications"  
+      eventName="Infrastructure Errors"  
+      provider="CriticalMailEventProvider"  
+      profile="Critical"  
+    />  
+  </rules>  
+</healthMonitoring>   
+```  
+  
+ The following code example shows how to use the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#1)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HealthMonitoringSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HealthMonitoringSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HealthMonitoringSection" /> class using default settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is not intended to be used directly from your code.  
+  
+ The following table shows the default settings that are used for this constructor.  
+  
+|Setting|Default value|  
+|-------------|-------------------|  
+|<xref:System.Web.Configuration.HealthMonitoringSection.Enabled%2A>|`true`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BufferModes">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.BufferModesCollection BufferModes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.BufferModesCollection BufferModes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.BufferModes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("bufferModes")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.BufferModesCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of objects that specify the settings for the buffer modes.</summary>
+        <value>A <see cref="T:System.Web.Configuration.BufferModesCollection" /> collection of <see cref="T:System.Web.Configuration.BufferModeSettings" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a collection of <xref:System.Web.Configuration.BufferModeSettings> objects that define the manner in which health-monitoring events can be buffered before they are raised.  
+  
+ This property defaults to an empty <xref:System.Web.Configuration.BufferModesCollection> collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.HealthMonitoringSection.BufferModes%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#4)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.Enabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("enabled", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether health monitoring is enabled.</summary>
+        <value>
+          <see langword="true" /> if health monitoring is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to get the current value from the <xref:System.Web.Configuration.HealthMonitoringSection.Enabled%2A> property and how to disable health monitoring by setting this property to a value of `false`. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#2)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventMappings">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.EventMappingSettingsCollection EventMappings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.EventMappingSettingsCollection EventMappings" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.EventMappings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("eventMappings")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.EventMappingSettingsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Configuration.EventMappingSettingsCollection" /> collection of <see cref="T:System.Web.Configuration.EventMappingSettings" /> objects.</summary>
+        <value>A <see cref="T:System.Web.Configuration.EventMappingSettingsCollection" /> collection of <see cref="T:System.Web.Configuration.EventMappingSettings" /> objects. The default is an empty <see cref="T:System.Web.Configuration.EventMappingSettingsCollection" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.HealthMonitoringSection.EventMappings%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#5)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeartbeatInterval">
+      <MemberSignature Language="C#" Value="public TimeSpan HeartbeatInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan HeartbeatInterval" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.HeartbeatInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.TimeSpanSecondsConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("heartbeatInterval", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.TimeSpanValidator(MaxValueString="24.20:31:23", MinValueString="00:00:00")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the interval used by the application domain when it raises the <see cref="T:System.Web.Management.WebHeartbeatEvent" /> event.</summary>
+        <value>The interval used by the application domain when it raises the <see cref="T:System.Web.Management.WebHeartbeatEvent" /> event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.TimeSpan> value is zero ticks, no <xref:System.Web.Management.WebHeartbeatEvent> event is raised.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.HealthMonitoringSection.HeartbeatInterval%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#3)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Profiles">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ProfileSettingsCollection Profiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ProfileSettingsCollection Profiles" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.Profiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("profiles")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ProfileSettingsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Configuration.ProfileSettingsCollection" /> collection of <see cref="T:System.Web.Configuration.ProfileSettings" /> objects.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ProfileSettingsCollection" /> collection of <see cref="T:System.Web.Configuration.ProfileSettings" /> objects. The default is an empty <see cref="T:System.Web.Configuration.ProfileSettingsCollection" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.HealthMonitoringSection.Profiles%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#6)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public System.Configuration.ProviderSettingsCollection Providers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ProviderSettingsCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("providers")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ProviderSettingsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Configuration.ProviderSettingsCollection" /> collection of <see cref="T:System.Configuration.ProviderSettings" /> objects.</summary>
+        <value>A <see cref="T:System.Configuration.ProviderSettingsCollection" /> collection. The default is an empty <see cref="T:System.Configuration.ProviderSettingsCollection" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HealthMonitoringSection.Providers%2A> property specifies which provider is used for which of the events defined in the <xref:System.Web.Configuration.HealthMonitoringSection.EventMappings%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.HealthMonitoringSection.Providers%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#7)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rules">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.RuleSettingsCollection Rules { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.RuleSettingsCollection Rules" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HealthMonitoringSection.Rules" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("rules")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.RuleSettingsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Configuration.RuleSettingsCollection" /> collection of <see cref="T:System.Web.Configuration.RuleSettings" /> objects.</summary>
+        <value>A <see cref="T:System.Web.Configuration.RuleSettingsCollection" /> collection. The default is an empty <see cref="T:System.Web.Configuration.RuleSettingsCollection" /> collection</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:System.Web.Configuration.RuleSettings> object defines a connection between an event defined in the <xref:System.Web.Configuration.HealthMonitoringSection.EventMappings%2A> property and an event provider defined in the <xref:System.Web.Configuration.HealthMonitoringSection.Providers%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.HealthMonitoringSection.Rules%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#8)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

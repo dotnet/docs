@@ -1,0 +1,105 @@
+<Type Name="ManipulationPivot" FullName="System.Windows.Input.ManipulationPivot">
+  <TypeSignature Language="C#" Value="public class ManipulationPivot" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManipulationPivot extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationPivot" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies how a rotation occurs with one point of user input.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A?displayProperty=fullName> property is a <xref:System.Windows.Input.ManipulationPivot>.  When you set<xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A> in an event handler for the <xref:System.Windows.UIElement.ManipulationStarting> event, the manipulation will contain rotation data when the user uses one finger during a manipulation.  This is to simulate real-world situations where you can use one finger to rotate an object, such as a piece of paper on a table.  If the <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A> is `null`, the user must use two fingers to cause rotation.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Windows.UIElement.ManipulationStarting> event and sets the <xref:System.Windows.Input.ManipulationStartingEventArgs.Pivot%2A?displayProperty=fullName> property. To test this example, follow the steps in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md) and replace the code in step 4 with this code.  
+  
+ [!code-csharp[BasicManipulation#ManipulationPivot](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/reportboundaryfeedbackexample.xaml.cs#manipulationpivot)]
+ [!code-vb[BasicManipulation#ManipulationPivot](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/reportboundaryfeedbackexample.xaml.vb#manipulationpivot)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManipulationPivot ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationPivot.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.ManipulationPivot" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManipulationPivot (System.Windows.Point center, double radius);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point center, float64 radius) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationPivot.#ctor(System.Windows.Point,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="center" Type="System.Windows.Point" />
+        <Parameter Name="radius" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="center">The center of a single-point manipulation.</param>
+        <param name="radius">The area around the pivot that is used to determine how much rotation and translation occurs when a single point of contact initiates the manipulation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.ManipulationPivot" /> class with the specified point of a single-point manipulation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Center">
+      <MemberSignature Language="C#" Value="public System.Windows.Point Center { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point Center" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationPivot.Center" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the center of a single-point manipulation.</summary>
+        <value>The center of a single-point manipulation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Radius">
+      <MemberSignature Language="C#" Value="public double Radius { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Radius" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationPivot.Radius" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the area around the pivot that is used to determine how much rotation and translation occurs when a single point of contact initiates the manipulation.</summary>
+        <value>The area around the pivot that is used to determine how much rotation and translation occurs when a single point of contact initiates the manipulation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

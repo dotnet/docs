@@ -1,0 +1,70 @@
+<Type Name="IInternalConfigWebHost" FullName="System.Web.Configuration.Internal.IInternalConfigWebHost">
+  <TypeSignature Language="C#" Value="public interface IInternalConfigWebHost" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInternalConfigWebHost" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.Internal.IInternalConfigWebHost" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines interfaces used by internal .NET Framework infrastructure for accessing and manipulating Host configuration files.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetConfigPathFromSiteIDAndVPath">
+      <MemberSignature Language="C#" Value="public string GetConfigPathFromSiteIDAndVPath (string siteID, string vpath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetConfigPathFromSiteIDAndVPath(string siteID, string vpath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.Internal.IInternalConfigWebHost.GetConfigPathFromSiteIDAndVPath(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="siteID" Type="System.String" />
+        <Parameter Name="vpath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="siteID">The application's site identifier. For more information, see ASP.NET Configuration Overview.</param>
+        <param name="vpath">The application's virtual path as a string. For more information, see ASP.NET Web Site Paths.</param>
+        <summary>Returns a value representing the path to a configuration file associated with the provided site identifier and application's virtual path.</summary>
+        <returns>A string representing the path to a configuration file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSiteIDAndVPathFromConfigPath">
+      <MemberSignature Language="C#" Value="public void GetSiteIDAndVPathFromConfigPath (string configPath, out string siteID, out string vpath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetSiteIDAndVPathFromConfigPath(string configPath, string siteID, string vpath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.Internal.IInternalConfigWebHost.GetSiteIDAndVPathFromConfigPath(System.String,System.String@,System.String@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="configPath" Type="System.String" />
+        <Parameter Name="siteID" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="vpath" Type="System.String&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="configPath">A string representing the path to the application's configuration file.</param>
+        <param name="siteID">The application's site Identifier. For more information, see ASP.NET Configuration Overview.</param>
+        <param name="vpath">The application's virtual path as a string. For more information, see ASP.NET Web Site Paths.</param>
+        <summary>Sets the current site identifier of a configuration object based on the application virtual path and the application configuration path.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

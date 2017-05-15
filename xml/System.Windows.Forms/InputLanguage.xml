@@ -1,0 +1,322 @@
+<Type Name="InputLanguage" FullName="System.Windows.Forms.InputLanguage">
+  <TypeSignature Language="C#" Value="public sealed class InputLanguage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InputLanguage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InputLanguage" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods and fields to manage the input language. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An input language is a culture/keyboard layout pair that determines how the physical keys on a keyboard map or plot to characters in a language. The input language is based on a Windows input locale identifier, such as that returned by the Platform SDK function, `GetKeyboardLayout`. The input locale identifier is also called a handle to a keyboard layout (HKL) value.  
+  
+ Use the `static` methods provided to find all installed mappings of the system and to change the input language for a thread or process. Call <xref:System.Windows.Forms.InputLanguage.CurrentInputLanguage%2A> to get the current input language. Call <xref:System.Windows.Forms.InputLanguage.DefaultInputLanguage%2A> for the default input language. Call <xref:System.Windows.Forms.InputLanguage.InstalledInputLanguages%2A> to get all the installed languages in this system. After you have a list of all the installed languages, use <xref:System.Windows.Forms.InputLanguage.CurrentInputLanguage%2A> to change the current input language to a different language.  
+  
+   
+  
+## Examples  
+ The following code example gets a list of installed languages. The example requires that `textBox1` has been instantiated and that `textBox1.MultiLine` has been set to `true`.  
+  
+ [!code-cpp[Classic InputLanguage Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic InputLanguage Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic InputLanguage Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic InputLanguage Example/CS/source.cs#1)]
+ [!code-vb[Classic InputLanguage Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic InputLanguage Example/VB/source.vb#1)]  
+  
+ The next example sets the default input language as the current input language. The example requires that `textBox1` has been instantiated and that `textBox1.MultiLine` has been set to `true`.  
+  
+ [!code-cpp[Classic InputLanguage Example#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic InputLanguage Example/CPP/source.cpp#2)]
+ [!code-csharp[Classic InputLanguage Example#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic InputLanguage Example/CS/source.cs#2)]
+ [!code-vb[Classic InputLanguage Example#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic InputLanguage Example/VB/source.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Culture">
+      <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo Culture { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Culture" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.Culture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the culture of the current input language.</summary>
+        <value>A <see cref="T:System.Globalization.CultureInfo" /> that represents the culture of the current input language.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets the <xref:System.Windows.Forms.InputLanguage> for the current input language. A text box displays this input language and the name of the input language.  
+  
+ This code assumes that `textBox1` has been instantiated.  
+  
+ [!code-cpp[Classic InputLanguage.Culture Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic InputLanguage.Culture Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic InputLanguage.Culture Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic InputLanguage.Culture Example/CS/source.cs#1)]
+ [!code-vb[Classic InputLanguage.Culture Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic InputLanguage.Culture Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentInputLanguage">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.InputLanguage CurrentInputLanguage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.InputLanguage CurrentInputLanguage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.CurrentInputLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.InputLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the input language for the current thread.</summary>
+        <value>An <see cref="T:System.Windows.Forms.InputLanguage" /> that represents the input language for the current thread.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets and displays the name of the current input language. This code assumes that `textBox1` has been instantiated.  
+  
+ [!code-cpp[Classic InputLanguage.CurrentInputLanguage Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic InputLanguage.CurrentInputLanguage Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic InputLanguage.CurrentInputLanguage Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic InputLanguage.CurrentInputLanguage Example/CS/source.cs#1)]
+ [!code-vb[Classic InputLanguage.CurrentInputLanguage Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic InputLanguage.CurrentInputLanguage Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The input language is not recognized by the system.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultInputLanguage">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.InputLanguage DefaultInputLanguage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.InputLanguage DefaultInputLanguage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.DefaultInputLanguage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.InputLanguage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default input language for the system.</summary>
+        <value>An <see cref="T:System.Windows.Forms.InputLanguage" /> representing the default input language for the system.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets the default input language and prints its name in a text box. This code assumes that `textBox1` has been instantiated.  
+  
+ [!code-cpp[Classic InputLanguage.DefaultInputLanguage Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic InputLanguage.DefaultInputLanguage Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic InputLanguage.DefaultInputLanguage Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic InputLanguage.DefaultInputLanguage Example/CS/source.cs#1)]
+ [!code-vb[Classic InputLanguage.DefaultInputLanguage Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic InputLanguage.DefaultInputLanguage Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InputLanguage.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The language to test for equality.</param>
+        <summary>Specifies whether two input languages are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two languages are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromCulture">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.InputLanguage FromCulture (System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.InputLanguage FromCulture(class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InputLanguage.FromCulture(System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.InputLanguage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> that specifies the culture to convert from.</param>
+        <summary>Returns the input language associated with the specified culture.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.InputLanguage" /> that represents the previously selected input language.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.InputLanguage.FromCulture%2A> method selects from among installed keyboards. Specifically, this method performs the following operations:  
+  
+1.  Gets the LCID associated with `culture`.  
+  
+2.  Gets the full list of available input language identifiers (HKLs) from the `GetKeyboardLayoutList` function.  
+  
+3.  Finds the HKL that corresponds to the LCID from `culture`, if one is present.  
+  
+4.  Returns the installed keyboard associated with that HKL.  
+  
+5.  If no keyboard is found, returns `null`.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.InputLanguage.FromCulture%2A> method never tries to load or install an additional keyboard if one has not already been installed for `culture`. Use the Platform SDK function, `LoadKeyboardLayout`, to install an additional keyboard.  
+  
+   
+  
+## Examples  
+ The following code example sets the default input language as the current input language.  
+  
+ First, <xref:System.Windows.Forms.InputLanguage.DefaultInputLanguage%2A> is called to get the system default language. Next, <xref:System.Windows.Forms.InputLanguage.CurrentInputLanguage%2A> is called to get the current input language. The results are printed in a text box. Then, calling <xref:System.Windows.Forms.InputLanguage.CurrentInputLanguage%2A> with the default input language changes the current input language to the default. The new current input language is displayed in a text box.  
+  
+ This code assumes that `textBox1` has been instantiated.  
+  
+ [!code-cpp[Classic InputLanguage.FromCulture Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic InputLanguage.FromCulture Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic InputLanguage.FromCulture Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic InputLanguage.FromCulture Example/CS/source.cs#1)]
+ [!code-vb[Classic InputLanguage.FromCulture Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic InputLanguage.FromCulture Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.InputLanguage.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this input language.</summary>
+        <returns>The hash code for this input language.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.Handle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the handle for the input language.</summary>
+        <value>An <see cref="T:System.IntPtr" /> that represents the handle of this input language.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets the current input language. Then it calls <xref:System.Windows.Forms.InputLanguage.Handle%2A> to get the handle and prints the results in a text box. The example requires that `textBox1` has been instantiated.  
+  
+ [!code-cpp[Classic InputLanguage.Handle Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic InputLanguage.Handle Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic InputLanguage.Handle Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic InputLanguage.Handle Example/CS/source.cs#1)]
+ [!code-vb[Classic InputLanguage.Handle Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic InputLanguage.Handle Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstalledInputLanguages">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.InputLanguageCollection InstalledInputLanguages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.InputLanguageCollection InstalledInputLanguages" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.InstalledInputLanguages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.InputLanguageCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of all installed input languages.</summary>
+        <value>An array of <see cref="T:System.Windows.Forms.InputLanguage" /> objects that represent the input languages installed on the computer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example retrieves all the input languages installed on the computer and displays their names. The code calls <xref:System.Windows.Forms.InputLanguage.InstalledInputLanguages%2A> to get the installed languages. A text box displays the list of language names.  
+  
+ This code assumes that `textBox1` has been instantiated and that `textBox1.MultiLine` has been set to `true`.  
+  
+ [!code-cpp[Classic InputLanguage.InstalledInputLanguages Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic InputLanguage.InstalledInputLanguages Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic InputLanguage.InstalledInputLanguages Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic InputLanguage.InstalledInputLanguages Example/CS/source.cs#1)]
+ [!code-vb[Classic InputLanguage.InstalledInputLanguages Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic InputLanguage.InstalledInputLanguages Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LayoutName">
+      <MemberSignature Language="C#" Value="public string LayoutName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LayoutName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.InputLanguage.LayoutName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the current keyboard layout as it appears in the regional settings of the operating system on the computer.</summary>
+        <value>The name of the layout.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets the culture associated with the current input language and displays the culture name.  
+  
+ First, <xref:System.Windows.Forms.InputLanguage.CurrentInputLanguage%2A> is called to get the current input language. Then, <xref:System.Windows.Forms.InputLanguage.Culture%2A> is called to get the culture information for this input language. Finally, <xref:System.Globalization.CultureInfo.EnglishName%2A> is retrieved and displayed in a text box.  
+  
+ [!code-cpp[Classic InputLanguage.LayoutName Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic InputLanguage.LayoutName Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic InputLanguage.LayoutName Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic InputLanguage.LayoutName Example/CS/source.cs#1)]
+ [!code-vb[Classic InputLanguage.LayoutName Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic InputLanguage.LayoutName Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

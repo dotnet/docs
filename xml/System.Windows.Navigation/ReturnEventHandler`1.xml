@@ -1,0 +1,29 @@
+<Type Name="ReturnEventHandler&lt;T&gt;" FullName="System.Windows.Navigation.ReturnEventHandler&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate void ReturnEventHandler&lt;T&gt;(object sender, ReturnEventArgs&lt;T&gt; e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ReturnEventHandler`1&lt;T&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.ReturnEventHandler`1" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Navigation.ReturnEventArgs&lt;T&gt;" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T">The type specifier for the event.</typeparam>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Navigation.PageFunction`1.Return" /> event of the <see cref="T:System.Windows.Navigation.PageFunction`1" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

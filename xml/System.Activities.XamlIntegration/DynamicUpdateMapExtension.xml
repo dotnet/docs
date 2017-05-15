@@ -1,0 +1,115 @@
+<Type Name="DynamicUpdateMapExtension" FullName="System.Activities.XamlIntegration.DynamicUpdateMapExtension">
+  <TypeSignature Language="C#" Value="public class DynamicUpdateMapExtension : System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicUpdateMapExtension extends System.Windows.Markup.MarkupExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.DynamicUpdateMapExtension" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.MarkupExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("XmlContent")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies dynamic update map extension options.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicUpdateMapExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.DynamicUpdateMapExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.DynamicUpdateMapExtension" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DynamicUpdateMapExtension (System.Activities.DynamicUpdate.DynamicUpdateMap updateMap);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.DynamicUpdate.DynamicUpdateMap updateMap) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.DynamicUpdateMapExtension.#ctor(System.Activities.DynamicUpdate.DynamicUpdateMap)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="updateMap" Type="System.Activities.DynamicUpdate.DynamicUpdateMap" />
+      </Parameters>
+      <Docs>
+        <param name="updateMap">The update map.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.XamlIntegration.DynamicUpdateMapExtension" /> class using the update map.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProvideValue">
+      <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.DynamicUpdateMapExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">The service provider.</param>
+        <summary>Specifies the value for service provider.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateMap">
+      <MemberSignature Language="C#" Value="public System.Activities.DynamicUpdate.DynamicUpdateMap UpdateMap { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.DynamicUpdate.DynamicUpdateMap UpdateMap" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.DynamicUpdateMapExtension.UpdateMap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.DynamicUpdate.DynamicUpdateMap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the extension for the dynamic update map.</summary>
+        <value>The extension for the dynamic update map.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XmlContent">
+      <MemberSignature Language="C#" Value="public System.Xml.Serialization.IXmlSerializable XmlContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.IXmlSerializable XmlContent" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.XamlIntegration.DynamicUpdateMapExtension.XmlContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Serialization.IXmlSerializable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Xml content for the Dynamic Update Map Extension.</summary>
+        <value>The Xml content for the Dynamic Update Map Extension.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

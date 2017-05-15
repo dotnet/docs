@@ -1,0 +1,175 @@
+<Type Name="Import" FullName="System.Web.Services.Description.Import">
+  <TypeSignature Language="C#" Value="public sealed class Import : System.Web.Services.Description.DocumentableItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Import extends System.Web.Services.Description.DocumentableItem" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Import" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.DocumentableItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtensionPoint("Extensions")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Associates an XML namespace with a document location. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Web Services Description Language (WSDL) `import` element that is enclosed by the `definitions` element allows the separation of different parts of the XML Web service into different documents, which can then be imported as required. Each document's URL is associated with a unique XML tag prefix that represents the XML namespace for that document's elements. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/. For more information about XML namespaces, see the <xref:System.Web.Services.WebServiceAttribute.Namespace%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows a user-defined method that creates a new instance of the <xref:System.Web.Services.Description.Import> class.  
+  
+ [!code-cpp[Importsample#7](~/samples/snippets/cpp/VS_Snippets_Remoting/Importsample/CPP/importsample.cpp#7)]
+ [!code-csharp[Importsample#7](~/samples/snippets/csharp/VS_Snippets_Remoting/Importsample/CS/importsample.cs#7)]
+ [!code-vb[Importsample#7](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Importsample/VB/importsample.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Import ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Import.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.Import" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extensions">
+      <MemberSignature Language="C#" Value="public override System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Import.Extensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.Import" /> class.</summary>
+        <value>The <see cref="T:System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection" /> associated with this <see cref="T:System.Web.Services.Description.Import" /> class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public string Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Location" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Import.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("location")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the XML <see langword="location" /> attribute of the <see langword="import" /> element.</summary>
+        <value>The value of the XML <see langword="location" /> attribute of the <see langword="import" /> element. This value also specifies the URL of the imported document.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[ImportSample#4](~/samples/snippets/cpp/VS_Snippets_Remoting/Importsample/CPP/importsample.cpp#4)]
+ [!code-csharp[ImportSample#4](~/samples/snippets/csharp/VS_Snippets_Remoting/Importsample/CS/importsample.cs#4)]
+ [!code-vb[ImportSample#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Importsample/VB/importsample.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Import.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("namespace")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the XML <see langword="namespace" /> attribute of the <see langword="import" /> element.</summary>
+        <value>The value of the XML <see langword="namespace" /> attribute of the <see langword="import" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[ImportSample#5](~/samples/snippets/cpp/VS_Snippets_Remoting/Importsample/CPP/importsample.cpp#5)]
+ [!code-csharp[ImportSample#5](~/samples/snippets/csharp/VS_Snippets_Remoting/Importsample/CS/importsample.cs#5)]
+ [!code-vb[ImportSample#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Importsample/VB/importsample.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceDescription">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceDescription ServiceDescription { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescription ServiceDescription" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Import.ServiceDescription" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the <see cref="T:System.Web.Services.Description.ServiceDescription" /> of which the <see cref="T:System.Web.Services.Description.Import" /> is a member.</summary>
+        <value>The <see cref="T:System.Web.Services.Description.ServiceDescription" /> of which the <see cref="T:System.Web.Services.Description.Import" /> is a member.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates the use of the <xref:System.Web.Services.Description.Import.ServiceDescription%2A> property.  
+  
+ Importsample#6  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,64 @@
+<Type Name="DataAccessKind" FullName="Microsoft.SqlServer.Server.DataAccessKind">
+  <TypeSignature Language="C#" Value="public enum DataAccessKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DataAccessKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.DataAccessKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the type of access to user data for a user-defined method or function.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Describes the type of access to user data for a user-defined method or function.  
+  
+ This enumeration is used in <xref:Microsoft.SqlServer.Server.SqlMethodAttribute> and <xref:Microsoft.SqlServer.Server.SqlFunctionAttribute> to indicate whether the method or function uses ADO.NET to connect back to the database using the "context connection."  
+  
+ Note that methods and functions are not allowed to make changes to the database, so the options for this enumeration are `None` (meaning no data-access performed by the method or function) and `Read` (meaning that the method or function perform read-only data-access operations, such as executing SELECT statements).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.DataAccessKind None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.DataAccessKind.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.DataAccessKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The method or function does not access user data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="Read" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.DataAccessKind Read = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.DataAccessKind.Read" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.SqlServer.Server.DataAccessKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The method or function reads user data.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

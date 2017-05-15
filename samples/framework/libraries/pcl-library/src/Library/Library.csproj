@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;portable40-net45+sl5+win8+wp8+wpa81</TargetFrameworks>
+    <AssemblyName>Library</AssemblyName>
+    <PackageId>Library</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
+    <PackageReference Include="NETStandard.Library" Version="1.6.0" />
+  </ItemGroup>
+
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'portable40-net45+sl5+win8+wp8+wpa81' ">
+    <DefineConstants>$(DefineConstants);PORTABLE259</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'portable40-net45+sl5+win8+wp8+wpa81' ">
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+
+</Project>

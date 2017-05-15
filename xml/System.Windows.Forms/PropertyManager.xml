@@ -1,0 +1,309 @@
+<Type Name="PropertyManager" FullName="System.Windows.Forms.PropertyManager">
+  <TypeSignature Language="C#" Value="public class PropertyManager : System.Windows.Forms.BindingManagerBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyManager extends System.Windows.Forms.BindingManagerBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.BindingManagerBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Maintains a <see cref="T:System.Windows.Forms.Binding" /> between an object's property and a data-bound control property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PropertyManager> inherits from the <xref:System.Windows.Forms.BindingManagerBase>, and it is used to maintain the current property of an object, rather than the property of a current object in a list. For this reason, trying to set the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> or <xref:System.Windows.Forms.BindingManagerBase.Count%2A> property for a <xref:System.Windows.Forms.PropertyManager> has no effect. Similarly, the <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> and <xref:System.Windows.Forms.BindingManagerBase.RemoveAt%2A> methods are not supported because there is no underlying list of data to add to or delete from. In addition, a call to <xref:System.Windows.Forms.BindingManagerBase.IsBindingSuspended%2A> will always return `false` if the <xref:System.Windows.Forms.PropertyManager> has a data source, regardless of whether <xref:System.Windows.Forms.BindingManagerBase.SuspendBinding%2A> has been called.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PropertyManager" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNew">
+      <MemberSignature Language="C#" Value="public override void AddNew ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddNew() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.AddNew" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, adds a new item to the underlying list.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelCurrentEdit">
+      <MemberSignature Language="C#" Value="public override void CancelCurrentEdit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CancelCurrentEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.CancelCurrentEdit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, cancels the current edit.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public override int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyManager.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the number of rows managed by the <see cref="T:System.Windows.Forms.BindingManagerBase" />.</summary>
+        <value>The number of rows managed by the <see cref="T:System.Windows.Forms.BindingManagerBase" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public override object Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyManager.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object to which the data-bound property belongs.</summary>
+        <value>An <see cref="T:System.Object" /> that represents the object to which the property belongs.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.PropertyManager.Current%2A> property returns the data source of a data-bound relationship.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndCurrentEdit">
+      <MemberSignature Language="C#" Value="public override void EndCurrentEdit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndCurrentEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.EndCurrentEdit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, ends the current edit.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetListName">
+      <MemberSignature Language="C#" Value="protected override string GetListName (System.Collections.ArrayList listAccessors);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string GetListName(class System.Collections.ArrayList listAccessors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.GetListName(System.Collections.ArrayList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listAccessors" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="listAccessors">An <see cref="T:System.Collections.ArrayList" /> containing the table's bound properties.</param>
+        <summary>When overridden in a derived class, gets the name of the list supplying the data for the binding.</summary>
+        <returns>The name of the list supplying the data for the binding.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCurrentChanged">
+      <MemberSignature Language="C#" Value="protected override void OnCurrentChanged (EventArgs ea);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnCurrentChanged(class System.EventArgs ea) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.OnCurrentChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ea" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="ea">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCurrentItemChanged">
+      <MemberSignature Language="C#" Value="protected override void OnCurrentItemChanged (EventArgs ea);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnCurrentItemChanged(class System.EventArgs ea) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.OnCurrentItemChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ea" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="ea">An <see cref="T:System.EventArgs" /> containing the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingManagerBase.CurrentItemChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public override int Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Position" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyManager.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or sets the position in the underlying list that controls bound to this data source point to.</summary>
+        <value>A zero-based index that specifies a position in the underlying list.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public override void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the row to delete.</param>
+        <summary>When overridden in a derived class, deletes the row at the specified index from the underlying list.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeBinding">
+      <MemberSignature Language="C#" Value="public override void ResumeBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResumeBinding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.ResumeBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, resumes data binding.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendBinding">
+      <MemberSignature Language="C#" Value="public override void SuspendBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SuspendBinding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.SuspendBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Suspends the data binding between a data source and a data-bound property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.PropertyManager.SuspendBinding%2A> and <xref:System.Windows.Forms.PropertyManager.ResumeBinding%2A> are two methods that allow the temporary suspension and resumption of data binding. You typically suspend data binding if the user must be allowed to make several edits to data fields before validation occurs. For example, if one field must be changed in accordance with a second, but where validating the first field would cause the second field to be in error. A call to <xref:System.Windows.Forms.BindingManagerBase.IsBindingSuspended%2A> will always return `false` if the <xref:System.Windows.Forms.PropertyManager> has a data source, regardless of whether <xref:System.Windows.Forms.BindingManagerBase.SuspendBinding%2A> has been called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIsBinding">
+      <MemberSignature Language="C#" Value="protected override void UpdateIsBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UpdateIsBinding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.UpdateIsBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Updates the current <see cref="T:System.Windows.Forms.Binding" /> between a data binding and a data-bound property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

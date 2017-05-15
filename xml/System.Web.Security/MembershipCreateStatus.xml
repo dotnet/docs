@@ -1,0 +1,235 @@
+<Type Name="MembershipCreateStatus" FullName="System.Web.Security.MembershipCreateStatus">
+  <TypeSignature Language="C#" Value="public enum MembershipCreateStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MembershipCreateStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipCreateStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web, Version=2.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes the result of a <see cref="M:System.Web.Security.Membership.CreateUser(System.String,System.String)" /> operation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.MembershipCreateStatus> enumeration indicates the success or failure of an attempt to create a new user. If the <xref:System.Web.Security.Membership.CreateUser%2A> operation fails, the <xref:System.Web.Security.MembershipCreateStatus> enumeration describes the cause of the failure.  
+  
+> [!NOTE]
+>  If you are not familiar with the membership features of ASP.NET, see [Introduction to Membership](http://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980) before continuing. For a list of other topics related to membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+  
+ If you use a <xref:System.Web.Security.Membership.CreateUser%2A> method overload that does not specify an output parameter of type <xref:System.Web.Security.MembershipCreateStatus>, an unsuccessful attempt to create a new user throws a <xref:System.Web.Security.MembershipCreateUserException> with the <xref:System.Web.Security.MembershipCreateUserException.StatusCode%2A> property set to one of the <xref:System.Web.Security.MembershipCreateStatus> enumeration values.  
+  
+   
+  
+## Examples  
+ The following code example creates a new user for an ASP.NET application configured to use forms authentication and ASP.NET membership. If the user is not created successfully, a message is displayed to the user. If the user is created successfully, the user is redirected to the login page for the application. This code example uses the <xref:System.Web.Security.MembershipCreateStatus> enumeration to determine the message displayed to the user in the event of a failure.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/CreateUsercs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/CreateUservb.aspx#2)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DuplicateEmail">
+      <MemberSignature Language="C#" Value="DuplicateEmail" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus DuplicateEmail = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.DuplicateEmail" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The e-mail address already exists in the database for the application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateProviderUserKey">
+      <MemberSignature Language="C#" Value="DuplicateProviderUserKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus DuplicateProviderUserKey = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.DuplicateProviderUserKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The provider user key already exists in the database for the application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DuplicateUserName">
+      <MemberSignature Language="C#" Value="DuplicateUserName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus DuplicateUserName = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.DuplicateUserName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user name already exists in the database for the application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidAnswer">
+      <MemberSignature Language="C#" Value="InvalidAnswer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidAnswer = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidAnswer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The password answer is not formatted correctly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidEmail">
+      <MemberSignature Language="C#" Value="InvalidEmail" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidEmail = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidEmail" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The e-mail address is not formatted correctly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidPassword">
+      <MemberSignature Language="C#" Value="InvalidPassword" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidPassword = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidPassword" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The password is not formatted correctly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidProviderUserKey">
+      <MemberSignature Language="C#" Value="InvalidProviderUserKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidProviderUserKey = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidProviderUserKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The provider user key is of an invalid type or format.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidQuestion">
+      <MemberSignature Language="C#" Value="InvalidQuestion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidQuestion = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidQuestion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The password question is not formatted correctly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidUserName">
+      <MemberSignature Language="C#" Value="InvalidUserName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus InvalidUserName = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.InvalidUserName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user name was not found in the database.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderError">
+      <MemberSignature Language="C#" Value="ProviderError" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus ProviderError = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.ProviderError" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The provider returned an error that is not described by other <see cref="T:System.Web.Security.MembershipCreateStatus" /> enumeration values.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Success">
+      <MemberSignature Language="C#" Value="Success" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus Success = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.Success" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user was successfully created.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserRejected">
+      <MemberSignature Language="C#" Value="UserRejected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.MembershipCreateStatus UserRejected = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Security.MembershipCreateStatus.UserRejected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipCreateStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user was not created, for a reason defined by the provider.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,118 @@
+<Type Name="IAnchorInfo" FullName="System.Windows.Annotations.IAnchorInfo">
+  <TypeSignature Language="C#" Value="public interface IAnchorInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAnchorInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.IAnchorInfo" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the capabilities for matching annotations with the corresponding annotated objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.IAnchorInfo> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+   
+  
+## Examples  
+ Consider a simple document reader application that has a comments pane. The comments pane might be a list box that displays the text from a list of annotations that are anchored to a document. If the user selects an item in the list box, then the application brings into view the paragraph in the document that the corresponding annotation object is anchored to.  
+  
+ The following example demonstrates how to implement the event handler of such a list box that serves as the comments pane:  
+  
+ [!code-csharp[FlowDocumentAnnotatedViewer#Handler](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentAnnotatedViewer/CSharp/Window1.xaml.cs#handler)]
+ [!code-vb[FlowDocumentAnnotatedViewer#Handler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentAnnotatedViewer/visualbasic/window1.xaml.vb#handler)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Anchor">
+      <MemberSignature Language="C#" Value="public System.Windows.Annotations.AnnotationResource Anchor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Annotations.AnnotationResource Anchor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.IAnchorInfo.Anchor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.AnnotationResource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the anchor of the annotation.</summary>
+        <value>The anchor that is resolved.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.IAnchorInfo.Anchor%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotation">
+      <MemberSignature Language="C#" Value="public System.Windows.Annotations.Annotation Annotation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Annotations.Annotation Annotation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.IAnchorInfo.Annotation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.Annotation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the annotation object.</summary>
+        <value>The annotation object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.IAnchorInfo.Annotation%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvedAnchor">
+      <MemberSignature Language="C#" Value="public object ResolvedAnchor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ResolvedAnchor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.IAnchorInfo.ResolvedAnchor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that represents the location on the tree where the <see cref="P:System.Windows.Annotations.IAnchorInfo.Anchor" /> is resolved.</summary>
+        <value>The object that represents the location on the tree where the <see cref="P:System.Windows.Annotations.IAnchorInfo.Anchor" /> is resolved. The type is specified by the type of the annotated object. Sticky notes and highlights in flow or fixed documents always resolve to a <see cref="T:System.Windows.Annotations.TextAnchor" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.IAnchorInfo.ResolvedAnchor%2A> is introduced in the [!INCLUDE[TLA#tla_netframewk](~/includes/tlasharptla-netframewk-md.md)] version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+   
+  
+## Examples  
+ Consider a simple document reader application that has a comments pane. The comments pane might be a list box that displays the text from a list of annotations that are anchored to a document. If the user selects an item in the list box, then the application brings into view the paragraph in the document that the corresponding annotation object is anchored to.  
+  
+ The following example demonstrates how to implement the event handler of such a list box that serves as the comments pane:  
+  
+ [!code-csharp[FlowDocumentAnnotatedViewer#Handler](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentAnnotatedViewer/CSharp/Window1.xaml.cs#handler)]
+ [!code-vb[FlowDocumentAnnotatedViewer#Handler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentAnnotatedViewer/visualbasic/window1.xaml.vb#handler)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

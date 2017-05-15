@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "Unicode, marshaling strings"
 ms.assetid: 0021d5ff-3209-444e-8497-420f3e6ee075
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

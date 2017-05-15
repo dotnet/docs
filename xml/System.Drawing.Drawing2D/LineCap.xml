@@ -1,0 +1,211 @@
+<Type Name="LineCap" FullName="System.Drawing.Drawing2D.LineCap">
+  <TypeSignature Language="C#" Value="public enum LineCap" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LineCap extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.LineCap" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the available cap styles with which a <see cref="T:System.Drawing.Pen" /> object can end a line.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can draw the start or end of a line in one of several shapes called line caps. [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] supports several line caps, such as round, square, diamond, and arrowhead. The following illustration shows a line with a round cap and an arrow cap.  
+  
+ ![Pens](~/add/media/pens4.gif "Pens")  
+  
+   
+  
+## Examples  
+ The following example draws a line with an arrowhead at one end and a round cap at the other end. To run this example, Create a Windows Form and handle the form's <xref:System.Windows.Forms.Control.Paint> event. Paste the example code into the <xref:System.Windows.Forms.Control.Paint> event handler passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Drawing.UsingAPen#71](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs#71)]
+ [!code-vb[System.Drawing.UsingAPen#71](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#71)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnchorMask">
+      <MemberSignature Language="C#" Value="AnchorMask" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap AnchorMask = int32(240)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.AnchorMask" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a mask used to check whether a line cap is an anchor cap.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrowAnchor">
+      <MemberSignature Language="C#" Value="ArrowAnchor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap ArrowAnchor = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.ArrowAnchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an arrow-shaped anchor cap.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Custom">
+      <MemberSignature Language="C#" Value="Custom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap Custom = int32(255)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.Custom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a custom line cap.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DiamondAnchor">
+      <MemberSignature Language="C#" Value="DiamondAnchor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap DiamondAnchor = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.DiamondAnchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a diamond anchor cap.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Flat">
+      <MemberSignature Language="C#" Value="Flat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap Flat = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.Flat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a flat line cap.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoAnchor">
+      <MemberSignature Language="C#" Value="NoAnchor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap NoAnchor = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.NoAnchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies no anchor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="Round" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap Round = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.Round" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a round line cap.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundAnchor">
+      <MemberSignature Language="C#" Value="RoundAnchor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap RoundAnchor = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.RoundAnchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a round anchor cap.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Square">
+      <MemberSignature Language="C#" Value="Square" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap Square = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.Square" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a square line cap.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SquareAnchor">
+      <MemberSignature Language="C#" Value="SquareAnchor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap SquareAnchor = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.SquareAnchor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a square anchor line cap.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Triangle">
+      <MemberSignature Language="C#" Value="Triangle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap Triangle = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.Triangle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a triangular line cap.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

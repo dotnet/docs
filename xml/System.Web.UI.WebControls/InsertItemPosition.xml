@@ -1,0 +1,79 @@
+<Type Name="InsertItemPosition" FullName="System.Web.UI.WebControls.InsertItemPosition">
+  <TypeSignature Language="C#" Value="public enum InsertItemPosition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InsertItemPosition extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.InsertItemPosition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the location of the <see cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" /> template when it is rendered as part of the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows a <xref:System.Web.UI.WebControls.ListView> control that is configured to display the <xref:System.Web.UI.WebControls.ListView.InsertItemTemplate%2A> template as the last item in the control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/CS/ListViewItemInsertedCS.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.ItemInserted#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.ItemInserted/VB/ListViewItemInsertedVB.aspx#2)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FirstItem">
+      <MemberSignature Language="C#" Value="FirstItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.InsertItemPosition FirstItem = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.InsertItemPosition.FirstItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.InsertItemPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" /> template is rendered as the first item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LastItem">
+      <MemberSignature Language="C#" Value="LastItem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.InsertItemPosition LastItem = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.InsertItemPosition.LastItem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.InsertItemPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" /> template is rendered as the last item in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.InsertItemPosition None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.InsertItemPosition.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.InsertItemPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.Web.UI.WebControls.ListView.InsertItemTemplate" /> template is not rendered.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

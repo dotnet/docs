@@ -1,0 +1,91 @@
+<Type Name="QueryPageSettingsEventArgs" FullName="System.Drawing.Printing.QueryPageSettingsEventArgs">
+  <TypeSignature Language="C#" Value="public class QueryPageSettingsEventArgs : System.Drawing.Printing.PrintEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryPageSettingsEventArgs extends System.Drawing.Printing.PrintEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.QueryPageSettingsEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Drawing.Printing.PrintEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Drawing.Printing.PrintDocument.QueryPageSettings" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is possible to print each page of a document using different page settings. You set page settings by modifying individual properties of the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings%2A> property or by setting the property to a <xref:System.Drawing.Printing.PageSettings>. The print job can also be canceled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+  
+   
+  
+## Examples  
+ The following code example prints a document with the first page in color, if the printer supports it. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` has been created, and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> and <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> events are handled.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Drawing.Printing> namespaces for this example.  
+  
+ [!code-cpp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#6)]
+ [!code-csharp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#6)]
+ [!code-vb[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QueryPageSettingsEventArgs (System.Drawing.Printing.PageSettings pageSettings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Printing.PageSettings pageSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.QueryPageSettingsEventArgs.#ctor(System.Drawing.Printing.PageSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pageSettings" Type="System.Drawing.Printing.PageSettings" />
+      </Parameters>
+      <Docs>
+        <param name="pageSettings">The page settings for the page to be printed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.QueryPageSettingsEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PageSettings">
+      <MemberSignature Language="C#" Value="public System.Drawing.Printing.PageSettings PageSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PageSettings PageSettings" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PageSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the page settings for the page to be printed.</summary>
+        <value>The page settings for the page to be printed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is possible to print each page of a document using different page settings. You set page settings by modifying individual properties of the <xref:System.Drawing.Printing.QueryPageSettingsEventArgs.PageSettings%2A> property or by setting the property to a <xref:System.Drawing.Printing.PageSettings>. The print job can also be canceled by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+  
+   
+  
+## Examples  
+ The following code example prints a document with the first page in color, if the printer supports it. The example assumes that a <xref:System.Drawing.Printing.PrintDocument> variable named `printDoc` has been created, and the <xref:System.Drawing.Printing.PrintDocument.PrintPage> and <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> events are handled.  
+  
+ Use the <xref:System.Drawing> and <xref:System.Drawing.Printing> namespaces for this example.  
+  
+ [!code-cpp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/cpp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CPP/source.cpp#6)]
+ [!code-csharp[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/csharp/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/CS/source.cs#6)]
+ [!code-vb[PaperSource and PaperSize Example with Resolution#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/PaperSource and PaperSize Example with Resolution/VB/source.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

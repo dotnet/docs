@@ -1,0 +1,113 @@
+<Type Name="TrackingChannel" FullName="System.Workflow.Runtime.Tracking.TrackingChannel">
+  <TypeSignature Language="C#" Value="public abstract class TrackingChannel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TrackingChannel extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingChannel" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see langword="abstract" /> base class that represents a tracking channel.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ If a <xref:System.Workflow.Runtime.Tracking.TrackingService> is present, the runtime tracking infrastructure calls <xref:System.Workflow.Runtime.Tracking.TrackingService.GetTrackingChannel%2A> to get a tracking channel for a workflow instance. The runtime tracking infrastructure uses this tracking channel to send tracking records associated with the workflow instance back to the host application whenever the tracking infrastructure matches a track point in the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> associated with the workflow instance. Your application can treat this tracking information in any way you choose. For example, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> writes tracking information to a SQL database.  
+  
+ To create a tracking channel for your tracking service, derive a class from the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> base class.  You can use the <xref:System.Workflow.Runtime.Tracking.TrackingParameters> object passed by the runtime tracking infrastructure in its call to your implementation of <xref:System.Workflow.Runtime.Tracking.TrackingService.GetTrackingChannel%2A> to associate each instance of your tracking channel with a specific workflow instance. The workflow runtime engine requests a tracking channel from each tracking service that has provided a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for a workflow instance.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TrackingChannel ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingChannel.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingChannel" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceCompletedOrTerminated">
+      <MemberSignature Language="C#" Value="protected abstract void InstanceCompletedOrTerminated ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void InstanceCompletedOrTerminated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingChannel.InstanceCompletedOrTerminated" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, notifies a receiver of data on the tracking channel that the workflow instance associated with the tracking channel has either completed or terminated.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The runtime tracking infrastructure calls <xref:System.Workflow.Runtime.Tracking.TrackingChannel.InstanceCompletedOrTerminated%2A> to notify the receiver of data on the tracking channel that the workflow instance associated with this tracking channel has either terminated or completed. No more data will be sent on the tracking channel. When <xref:System.Workflow.Runtime.Tracking.TrackingChannel.InstanceCompletedOrTerminated%2A> is called, you may perform whatever actions are required by your implementation of the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send">
+      <MemberSignature Language="C#" Value="protected abstract void Send (System.Workflow.Runtime.Tracking.TrackingRecord record);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Send(class System.Workflow.Runtime.Tracking.TrackingRecord record) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingChannel.Send(System.Workflow.Runtime.Tracking.TrackingRecord)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="record" Type="System.Workflow.Runtime.Tracking.TrackingRecord" />
+      </Parameters>
+      <Docs>
+        <param name="record">The <see cref="T:System.Workflow.Runtime.Tracking.TrackingRecord" /> to send.</param>
+        <summary>When implemented in a derived class, sends a <see cref="T:System.Workflow.Runtime.Tracking.TrackingRecord" /> on the <see cref="T:System.Workflow.Runtime.Tracking.TrackingChannel" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The runtime tracking infrastructure calls <xref:System.Workflow.Runtime.Tracking.TrackingChannel.Send%2A> to deliver a <xref:System.Workflow.Runtime.Tracking.TrackingRecord> on the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> when it matches a track point in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. You can treat the tracking information sent on the <xref:System.Workflow.Runtime.Tracking.TrackingChannel> in whatever manner the requirements of your application dictate.  
+  
+   
+  
+## Examples  
+ The following example demonstrates an implementation of the Send method.  In this implementation, tracking messages are written to the event log when a workflow terminates.  This sample is from the Termination Tracking Service SDK sample.  For more information, see [Termination Tracking Service Sample](http://msdn.microsoft.com/en-us/29b7c0d7-cece-4bb9-96d0-c5b6c6e14439).  
+  
+ [!code-csharp[WF_Samples#117](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#117)]
+ [!code-vb[WF_Samples#117](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#117)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

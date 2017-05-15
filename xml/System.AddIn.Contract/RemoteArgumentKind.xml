@@ -1,0 +1,91 @@
+<Type Name="RemoteArgumentKind" FullName="System.AddIn.Contract.RemoteArgumentKind">
+  <TypeSignature Language="C#" Value="public enum RemoteArgumentKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RemoteArgumentKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.RemoteArgumentKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn.Contract</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the kind of argument that a <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AddIn.Contract.RemoteArgumentKind> enumeration is used by the <xref:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind%2A?displayProperty=fullName> property.  
+  
+ An intrinsic data type is a primitive data type (that is, the <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property of the type is `true`) or a <xref:System.String>, <xref:System.Decimal>, <xref:System.DateTime>, or <xref:System.DBNull>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contract">
+      <MemberSignature Language="C#" Value="Contract" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Contract.RemoteArgumentKind Contract = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.Contract" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an <see cref="T:System.AddIn.Contract.IContract" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Intrinsic">
+      <MemberSignature Language="C#" Value="Intrinsic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Contract.RemoteArgumentKind Intrinsic = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.Intrinsic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an intrinsic data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IntrinsicArray">
+      <MemberSignature Language="C#" Value="IntrinsicArray" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Contract.RemoteArgumentKind IntrinsicArray = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.IntrinsicArray" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents an <see cref="T:System.Array" /> that contains elements of an intrinsic data type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Missing">
+      <MemberSignature Language="C#" Value="Missing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AddIn.Contract.RemoteArgumentKind Missing = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.RemoteArgumentKind.Missing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.RemoteArgumentKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.AddIn.Contract.RemoteArgument" /> represents the <see cref="F:System.Type.Missing" /> value. This is the default value for the <see cref="P:System.AddIn.Contract.RemoteArgument.RemoteArgumentKind" /> property.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

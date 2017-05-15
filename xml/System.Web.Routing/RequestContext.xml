@@ -1,0 +1,120 @@
+<Type Name="RequestContext" FullName="System.Web.Routing.RequestContext">
+  <TypeSignature Language="C#" Value="public class RequestContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Routing.RequestContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Routing, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates information about an HTTP request that matches a defined route.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Routing.RequestContext> class contains information about the HTTP request in the <xref:System.Web.Routing.RequestContext.HttpContext%2A> property. It contains information about the route that matched the current request in the <xref:System.Web.Routing.RequestContext.RouteData%2A> property.  
+  
+ When you construct a URL from a route, you pass an instance of the <xref:System.Web.Routing.RequestContext> class to the <xref:System.Web.Routing.RouteCollection.GetVirtualPath%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RequestContext.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RequestContext" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestContext (System.Web.HttpContextBase httpContext, System.Web.Routing.RouteData routeData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContextBase httpContext, class System.Web.Routing.RouteData routeData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Routing.RequestContext.#ctor(System.Web.HttpContextBase,System.Web.Routing.RouteData)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="httpContext" Type="System.Web.HttpContextBase" />
+        <Parameter Name="routeData" Type="System.Web.Routing.RouteData" />
+      </Parameters>
+      <Docs>
+        <param name="httpContext">An object that contains information about the HTTP request.</param>
+        <param name="routeData">An object that contains information about the route that matched the current request.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Routing.RequestContext" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="httpContext" /> or <paramref name="routeData" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpContext">
+      <MemberSignature Language="C#" Value="public virtual System.Web.HttpContextBase HttpContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContextBase HttpContext" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Routing.RequestContext.HttpContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpContextBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets information about the HTTP request.</summary>
+        <value>An object that contains information about the HTTP request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To set the <xref:System.Web.Routing.RequestContext.HttpContext%2A> property, you must pass the value as a parameter when you call the <xref:System.Web.Routing.RequestContext.%23ctor%28System.Web.HttpContextBase%2CSystem.Web.Routing.RouteData%29> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RouteData">
+      <MemberSignature Language="C#" Value="public virtual System.Web.Routing.RouteData RouteData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RouteData RouteData" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Routing.RequestContext.RouteData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Routing.RouteData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets information about the requested route.</summary>
+        <value>An object that contains information about the requested route.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To set the <xref:System.Web.Routing.RequestContext.RouteData%2A> property, you must pass the value as a parameter when you call the <xref:System.Web.Routing.RequestContext.%23ctor%28System.Web.HttpContextBase%2CSystem.Web.Routing.RouteData%29> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

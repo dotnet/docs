@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s0="http://tempuri.org/" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="HelloWorldResult" nillable="true" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Number" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetClientDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetClientDataResult" nillable="true" type="s0:ArrayOfClientData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfClientData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ClientData" type="s0:ClientData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ClientData">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Name" nillable="true" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddNumbers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Number1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Number2" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddNumbersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddNumbersResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="ArrayOfClientData" nillable="true" type="s0:ArrayOfClientData" />
+      <s:element name="int" type="s:int" />
+    </s:schema>
+  </types>
+  <message name="HelloWorldSoapIn">
+    <part name="parameters" element="s0:HelloWorld" />
+  </message>
+  <message name="HelloWorldSoapOut">
+    <part name="parameters" element="s0:HelloWorldResponse" />
+  </message>
+  <message name="GetClientDataSoapIn">
+    <part name="parameters" element="s0:GetClientData" />
+  </message>
+  <message name="GetClientDataSoapOut">
+    <part name="parameters" element="s0:GetClientDataResponse" />
+  </message>
+  <message name="AddNumbersSoapIn">
+    <part name="parameters" element="s0:AddNumbers" />
+  </message>
+  <message name="AddNumbersSoapOut">
+    <part name="parameters" element="s0:AddNumbersResponse" />
+  </message>
+  <message name="HelloWorldHttpGetIn" />
+  <message name="HelloWorldHttpGetOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetClientDataHttpGetIn">
+    <part name="Number" type="s:string" />
+  </message>
+  <message name="GetClientDataHttpGetOut">
+    <part name="Body" element="s0:ArrayOfClientData" />
+  </message>
+  <message name="AddNumbersHttpGetIn">
+    <part name="Number1" type="s:string" />
+    <part name="Number2" type="s:string" />
+  </message>
+  <message name="AddNumbersHttpGetOut">
+    <part name="Body" element="s0:int" />
+  </message>
+  <message name="HelloWorldHttpPostIn" />
+  <message name="HelloWorldHttpPostOut">
+    <part name="Body" element="s0:string" />
+  </message>
+  <message name="GetClientDataHttpPostIn">
+    <part name="Number" type="s:string" />
+  </message>
+  <message name="GetClientDataHttpPostOut">
+    <part name="Body" element="s0:ArrayOfClientData" />
+  </message>
+  <message name="AddNumbersHttpPostIn">
+    <part name="Number1" type="s:string" />
+    <part name="Number2" type="s:string" />
+  </message>
+  <message name="AddNumbersHttpPostOut">
+    <part name="Body" element="s0:int" />
+  </message>
+  <portType name="Service1Soap">
+    <operation name="HelloWorld">
+      <input message="s0:HelloWorldSoapIn" />
+      <output message="s0:HelloWorldSoapOut" />
+    </operation>
+    <operation name="GetClientData">
+      <input message="s0:GetClientDataSoapIn" />
+      <output message="s0:GetClientDataSoapOut" />
+    </operation>
+    <operation name="AddNumbers">
+      <input message="s0:AddNumbersSoapIn" />
+      <output message="s0:AddNumbersSoapOut" />
+    </operation>
+  </portType>
+  <portType name="Service1HttpGet">
+    <operation name="HelloWorld">
+      <input message="s0:HelloWorldHttpGetIn" />
+      <output message="s0:HelloWorldHttpGetOut" />
+    </operation>
+    <operation name="GetClientData">
+      <input message="s0:GetClientDataHttpGetIn" />
+      <output message="s0:GetClientDataHttpGetOut" />
+    </operation>
+    <operation name="AddNumbers">
+      <input message="s0:AddNumbersHttpGetIn" />
+      <output message="s0:AddNumbersHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="Service1HttpPost">
+    <operation name="HelloWorld">
+      <input message="s0:HelloWorldHttpPostIn" />
+      <output message="s0:HelloWorldHttpPostOut" />
+    </operation>
+    <operation name="GetClientData">
+      <input message="s0:GetClientDataHttpPostIn" />
+      <output message="s0:GetClientDataHttpPostOut" />
+    </operation>
+    <operation name="AddNumbers">
+      <input message="s0:AddNumbersHttpPostIn" />
+      <output message="s0:AddNumbersHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="Service1Soap" type="s0:Service1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GetClientData">
+      <soap:operation soapAction="http://tempuri.org/GetClientData" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="AddNumbers">
+      <soap:operation soapAction="http://tempuri.org/AddNumbers" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="Service1HttpGet" type="s0:Service1HttpGet">
+    <http:binding verb="GET" />
+    <operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GetClientData">
+      <http:operation location="/GetClientData" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="AddNumbers">
+      <http:operation location="/AddNumbers" />
+      <input>
+        <http:urlEncoded />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="Service1HttpPost" type="s0:Service1HttpPost">
+    <http:binding verb="POST" />
+    <operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="GetClientData">
+      <http:operation location="/GetClientData" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+    <operation name="AddNumbers">
+      <http:operation location="/AddNumbers" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Service1">
+    <port name="Service1Soap" binding="s0:Service1Soap">
+      <soap:address location="http://localhost/MyFirstWebService/Service1.asmx" />
+    </port>
+    <port name="Service1HttpGet" binding="s0:Service1HttpGet">
+      <http:address location="http://localhost/MyFirstWebService/Service1.asmx" />
+    </port>
+    <port name="Service1HttpPost" binding="s0:Service1HttpPost">
+      <http:address location="http://localhost/MyFirstWebService/Service1.asmx" />
+    </port>
+  </service>
+</definitions>

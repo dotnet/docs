@@ -1,7 +1,7 @@
 Better Fibonacci Sample
 ================
 
-This sample is part of the [step-by-step tutorial](https://docs.microsoft.com/dotnet/articles/core/preview3/tutorials/using-with-xplat-cli-msbuild)
+This sample is part of the [step-by-step tutorial](https://docs.microsoft.com/dotnet/articles/core/tutorials/using-with-xplat-cli)
 for creating .NET Core Console Applications. Please see that topic for detailed steps on the code
 for this sample.
 

@@ -8,6 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 254836c0-3be7-4549-bd9a-40fc0f445c31
+redirect_url: /dotnet/articles/csharp/tutorials/index
 ---
 
 # 🔧 Creating Portable Libraries

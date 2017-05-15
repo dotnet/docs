@@ -1,0 +1,60 @@
+<Type Name="CacheItemPriority" FullName="System.Runtime.Caching.CacheItemPriority">
+  <TypeSignature Language="C#" Value="public enum CacheItemPriority" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheItemPriority extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheItemPriority" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Caching</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a priority setting that is used to decide whether to evict a cache entry.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The only priority that can be set is whether an entry should remain in the cache forever.  
+  
+> [!IMPORTANT]
+>  Adding an entry to the cache with a priority level of NotRemovable has the potential to overflow the cache with entries that can never be removed. Cache implementations should only set the NotRemovable priority for a cache entry if they provide ways to evict such entries from the cache and to manage the number of cache entries.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheItemPriority Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheItemPriority.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Caching.CacheItemPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that there is no priority for removing the cache entry.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotRemovable">
+      <MemberSignature Language="C#" Value="NotRemovable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheItemPriority NotRemovable = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheItemPriority.NotRemovable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Caching.CacheItemPriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a cache entry should never be removed from the cache.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,356 @@
+<Type Name="DiscoveryDocument" FullName="System.Web.Services.Discovery.DiscoveryDocument">
+  <TypeSignature Language="C#" Value="public sealed class DiscoveryDocument" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryDocument extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryDocument" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlRoot("discovery", Namespace="http://schemas.xmlsoap.org/disco/")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a discovery document. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XML Web services discovery involves discovering the available XML Web services, given an URL. The URL typically points to a discovery document, which usually has a.disco file name extension. The discovery document, which is an XML document, contains references to information about the existance of XML Web services, such as a service description, XML Schema Definition (XSD) language schema, or another discovery document. This class represents the contents of the discovery document; where the <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property contains a list of the references contained within the discovery document.  
+  
+   
+  
+## Examples  
+ The following code example reads a discovery document from a file using the <xref:System.Web.Services.Discovery.DiscoveryDocument.Read%2A> and writes it back out to file using the <xref:System.Web.Services.Discovery.DiscoveryDocument.Write%2A> method.  
+  
+ [!code-cpp[DiscoveryDocument#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument/CPP/discoverydocument.cpp#1)]
+ [!code-csharp[DiscoveryDocument#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument/CS/discoverydocument.cs#1)]
+ [!code-vb[DiscoveryDocument#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument/VB/discoverydocument.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscoveryDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRead">
+      <MemberSignature Language="C#" Value="public static bool CanRead (System.Xml.XmlReader xmlReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanRead(class System.Xml.XmlReader xmlReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.CanRead(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="xmlReader">The <see cref="T:System.Xml.XmlReader" /> that is tested whether it can be deserialized into a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />.</param>
+        <summary>Returns a value indicating whether the passed <see cref="T:System.Xml.XmlReader" /> can be deserialized into a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />.</summary>
+        <returns>
+          <see langword="true" /> if <see cref="T:System.Xml.XmlReader" /> can be deserialized into a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example reads in the contents of a discovery document, if the <xref:System.Web.Services.Discovery.DiscoveryDocument.CanRead%2A> property is `true`.  
+  
+ [!code-cpp[DiscoveryDocument_DiscoveryDocument#3](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CPP/discoverydocument_discoverydocument.cpp#3)]
+ [!code-csharp[DiscoveryDocument_DiscoveryDocument#3](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CS/discoverydocument_discoverydocument.cs#3)]
+ [!code-vb[DiscoveryDocument_DiscoveryDocument#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/VB/discoverydocument_discoverydocument.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public const string Namespace;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Discovery.DiscoveryDocument.Namespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Namespace of the discovery XML element of a discovery document.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A discovery document contains references to documents describing Web Services. These references are XML elements contained within a discovery XML element. That discovery XML element is a member of the XML namespace specified by the <xref:System.Web.Services.Discovery.DiscoveryDocument.Namespace> constant.  
+  
+   
+  
+## Examples  
+ The following code example displays the XML namespace associated with the discovery XML element of a discovery document.  
+  
+ [!code-cpp[DiscoveryDocument_DiscoveryDocument#2](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CPP/discoverydocument_discoverydocument.cpp#2)]
+ [!code-csharp[DiscoveryDocument_DiscoveryDocument#2](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CS/discoverydocument_discoverydocument.cs#2)]
+ [!code-vb[DiscoveryDocument_DiscoveryDocument#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/VB/discoverydocument_discoverydocument.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Discovery.DiscoveryDocument Read (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Discovery.DiscoveryDocument Read(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Read(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Discovery.DiscoveryDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> from which to read the <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />.</param>
+        <summary>Reads and returns a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> from the passed <see cref="T:System.IO.Stream" />.</summary>
+        <returns>A <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> containing the contents of a discovery document from the passed <see cref="T:System.IO.Stream" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Discovery.DiscoveryDocument Read (System.IO.TextReader textReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Discovery.DiscoveryDocument Read(class System.IO.TextReader textReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Read(System.IO.TextReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Discovery.DiscoveryDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.IO.TextReader" />
+      </Parameters>
+      <Docs>
+        <param name="textReader">To be added.</param>
+        <summary>Reads and returns a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> from the passed <see cref="T:System.IO.TextReader" />.</summary>
+        <returns>A <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> containing the contents of a discovery document from the passed <see cref="T:System.IO.TextReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example reads the discovery document from " `http://localhost/example_Write2_cs.vsdisco` " into a <xref:System.Xml.XmlTextReader>.  
+  
+ [!code-cpp[DiscoveryDocument_Write2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CPP/discoverydocument_write2.cpp#1)]
+ [!code-csharp[DiscoveryDocument_Write2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CS/discoverydocument_write2.cs#1)]
+ [!code-vb[DiscoveryDocument_Write2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_Write2/VB/discoverydocument_write2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Discovery.DiscoveryDocument Read (System.Xml.XmlReader xmlReader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Discovery.DiscoveryDocument Read(class System.Xml.XmlReader xmlReader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Read(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Discovery.DiscoveryDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlReader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="xmlReader">The <see cref="T:System.Xml.XmlReader" /> from which to read the <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" />.</param>
+        <summary>Reads and returns a <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> from the passed <see cref="T:System.Xml.XmlReader" />.</summary>
+        <returns>A <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> containing the contents of a discovery document from the passed <see cref="T:System.Xml.XmlReader" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example reads in the contents of a discovery document, if the <xref:System.Web.Services.Discovery.DiscoveryDocument.CanRead%2A> property is `true`.  
+  
+ [!code-cpp[DiscoveryDocument_DiscoveryDocument#4](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CPP/discoverydocument_discoverydocument.cpp#4)]
+ [!code-csharp[DiscoveryDocument_DiscoveryDocument#4](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CS/discoverydocument_discoverydocument.cs#4)]
+ [!code-vb[DiscoveryDocument_DiscoveryDocument#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/VB/discoverydocument_discoverydocument.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="References">
+      <MemberSignature Language="C#" Value="public System.Collections.IList References { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList References" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryDocument.References" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A list of references contained within the discovery document.</summary>
+        <value>An <see cref="T:System.Collections.IList" /> containing the references within the discovery document.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A discovery document contains references to information about the existence of XML Web services. These references can refer to service descriptions, XSD schemas, or other discovery documents. The <xref:System.Web.Services.Discovery.DiscoveryDocument.References%2A> property contains a list of these references.  
+  
+   
+  
+## Examples  
+ The following code example enumerates over the references for a discovery document.  
+  
+ [!code-cpp[DiscoveryDocument_DiscoveryDocument#5](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CPP/discoverydocument_discoverydocument.cpp#5)]
+ [!code-csharp[DiscoveryDocument_DiscoveryDocument#5](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/CS/discoverydocument_discoverydocument.cs#5)]
+ [!code-vb[DiscoveryDocument_DiscoveryDocument#5](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_DiscoveryDocument/VB/discoverydocument_discoverydocument.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Write(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> into which this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> is written.</param>
+        <summary>Writes this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> into the passed <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example writes a discovery document out to a file named `log.txt` using the <xref:System.Web.Services.Discovery.DiscoveryDocument.Write%2A> method.  
+  
+ [!code-cpp[DiscoveryDocument_Write1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_Write1/CPP/discoverydocument_write1.cpp#1)]
+ [!code-csharp[DiscoveryDocument_Write1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_Write1/CS/discoverydocument_write1.cs#1)]
+ [!code-vb[DiscoveryDocument_Write1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_Write1/VB/discoverydocument_write1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (System.IO.TextWriter textWriter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.IO.TextWriter textWriter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Write(System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="textWriter">To be added.</param>
+        <summary>Writes this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> into the passed <see cref="T:System.IO.TextWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example writes a discovery document into a <xref:System.Xml.XmlTextWriter>.  
+  
+ [!code-cpp[DiscoveryDocument_Write2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CPP/discoverydocument_write2.cpp#1)]
+ [!code-csharp[DiscoveryDocument_Write2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CS/discoverydocument_write2.cs#1)]
+ [!code-vb[DiscoveryDocument_Write2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_Write2/VB/discoverydocument_write2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (System.Xml.XmlWriter xmlWriter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.Xml.XmlWriter xmlWriter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryDocument.Write(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="xmlWriter">To be added.</param>
+        <summary>Writes this <see cref="T:System.Web.Services.Discovery.DiscoveryDocument" /> into the passed <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example writes a discovery document into a <xref:System.Xml.XmlTextWriter>.  
+  
+ [!code-cpp[DiscoveryDocument_Write2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CPP/discoverydocument_write2.cpp#1)]
+ [!code-csharp[DiscoveryDocument_Write2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryDocument_Write2/CS/discoverydocument_write2.cs#1)]
+ [!code-vb[DiscoveryDocument_Write2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryDocument_Write2/VB/discoverydocument_write2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,333 @@
+<Type Name="NumericUpDownAccelerationCollection" FullName="System.Windows.Forms.NumericUpDownAccelerationCollection">
+  <TypeSignature Language="C#" Value="public class NumericUpDownAccelerationCollection : MarshalByRefObject, System.Collections.Generic.ICollection&lt;System.Windows.Forms.NumericUpDownAcceleration&gt;, System.Collections.Generic.IEnumerable&lt;System.Windows.Forms.NumericUpDownAcceleration&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumericUpDownAccelerationCollection extends System.MarshalByRefObject implements class System.Collections.Generic.ICollection`1&lt;class System.Windows.Forms.NumericUpDownAcceleration&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Forms.NumericUpDownAcceleration&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;System.Windows.Forms.NumericUpDownAcceleration&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Windows.Forms.NumericUpDownAcceleration&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ListBindable(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a sorted collection of <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> objects in the <see cref="T:System.Windows.Forms.NumericUpDown" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements in the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> are sorted by the <xref:System.Windows.Forms.NumericUpDownAcceleration.Seconds%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.NumericUpDown.Accelerations%2A> property. To run this example, paste the following code into a form and call the `InitializeAcceleratedUpDown` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler. While the code is running, press and hold the up or down arrow to see the acceleration occur.  
+  
+ [!code-csharp[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/CS/Form1.cs#6)]
+ [!code-vb[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/VB/form1.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NumericUpDownAccelerationCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Windows.Forms.NumericUpDownAcceleration acceleration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Windows.Forms.NumericUpDownAcceleration acceleration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.Add(System.Windows.Forms.NumericUpDownAcceleration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="acceleration" Type="System.Windows.Forms.NumericUpDownAcceleration" />
+      </Parameters>
+      <Docs>
+        <param name="acceleration">The <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> to add to the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</param>
+        <summary>Adds a new <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> to the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The item is added while preserving the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> sorted.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.NumericUpDown.Accelerations%2A> property. To run this example, paste the following code into a form and call the `InitializeAcceleratedUpDown` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler. While the code is running, press and hold the up or down arrow to see the acceleration occur.  
+  
+ [!code-csharp[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/CS/Form1.cs#6)]
+ [!code-vb[System.Windows.Forms.MiscBugDriven#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.MiscBugDriven/VB/form1.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="acceleration" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddRange">
+      <MemberSignature Language="C#" Value="public void AddRange (System.Windows.Forms.NumericUpDownAcceleration[] accelerations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Windows.Forms.NumericUpDownAcceleration[] accelerations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.AddRange(System.Windows.Forms.NumericUpDownAcceleration[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="accelerations" Type="System.Windows.Forms.NumericUpDownAcceleration[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="accelerations">An array of type <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> containing the objects to add to the collection.</param>
+        <summary>Adds the elements of the specified array to the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />, keeping the collection sorted.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="accelerations" /> is <see langword="null" />, or one of the entries in the <paramref name="accelerations" /> array is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements from the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Forms.NumericUpDownAcceleration acceleration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Windows.Forms.NumericUpDownAcceleration acceleration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.Contains(System.Windows.Forms.NumericUpDownAcceleration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="acceleration" Type="System.Windows.Forms.NumericUpDownAcceleration" />
+      </Parameters>
+      <Docs>
+        <param name="acceleration">The <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> to locate in the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</param>
+        <summary>Determines whether the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" /> contains a specific <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> is found in the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Forms.NumericUpDownAcceleration[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Windows.Forms.NumericUpDownAcceleration[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.CopyTo(System.Windows.Forms.NumericUpDownAcceleration[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Windows.Forms.NumericUpDownAcceleration[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> that is the destination of the values copied from <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</param>
+        <param name="index">The index in <c>array</c> where copying begins.</param>
+        <summary>Copies the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" /> values to a one-dimensional <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> instance at the specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAccelerationCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of objects in the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</summary>
+        <value>The number of objects in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAccelerationCollection.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" /> is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property always returns `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.NumericUpDownAcceleration this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.NumericUpDownAcceleration Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NumericUpDownAccelerationCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.NumericUpDownAcceleration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> to get from the collection.</param>
+        <summary>Gets the <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> at the specified index number.</summary>
+        <value>The <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> with the specified index.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (System.Windows.Forms.NumericUpDownAcceleration acceleration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Windows.Forms.NumericUpDownAcceleration acceleration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.Remove(System.Windows.Forms.NumericUpDownAcceleration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="acceleration" Type="System.Windows.Forms.NumericUpDownAcceleration" />
+      </Parameters>
+      <Docs>
+        <param name="acceleration">The <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> to remove from the collection.</param>
+        <summary>Removes the first occurrence of the specified <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> from the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> is removed from <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Forms.NumericUpDownAcceleration&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Windows.Forms.NumericUpDownAcceleration&gt; IEnumerable&lt;NumericUpDownAcceleration&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Forms.NumericUpDownAcceleration&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Forms.NumericUpDownAcceleration&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Forms#NumericUpDownAcceleration&gt;#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Windows.Forms.NumericUpDownAcceleration&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the enumerator for the collection.</summary>
+        <returns>Iterates over a collection to specify how acceleration should be performed on the control when the up or down button is pressed for specified time period.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NumericUpDownAccelerationCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the enumerator for the collection.</summary>
+        <returns>An iteration over the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.NumericUpDownAccelerationCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

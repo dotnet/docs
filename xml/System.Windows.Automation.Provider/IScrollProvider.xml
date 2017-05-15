@@ -1,0 +1,218 @@
+<Type Name="IScrollProvider" FullName="System.Windows.Automation.Provider.IScrollProvider">
+  <TypeSignature Language="C#" Value="public interface IScrollProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScrollProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IScrollProvider" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("b38b8077-1fc3-42a5-8cae-d40c2215055a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Exposes methods and properties to support UI Automation client access to a control that acts as a scrollable container for a collection of child objects. The children of this control must implement <see cref="T:System.Windows.Automation.Provider.IScrollItemProvider" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implemented on a UI Automation provider that must support the <xref:System.Windows.Automation.ScrollPattern> control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HorizontallyScrollable">
+      <MemberSignature Language="C#" Value="public bool HorizontallyScrollable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HorizontallyScrollable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the control can scroll horizontally.</summary>
+        <value>
+          <see langword="true" /> if the control can scroll horizontally; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be dynamic. For example, the content area of the control might not be larger than the current viewable area, meaning <xref:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable%2A> is `false`. However, either resizing the control or adding child items can increase the bounds of the content area beyond the viewable area, meaning that <xref:System.Windows.Automation.Provider.IScrollProvider.HorizontallyScrollable%2A> is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalScrollPercent">
+      <MemberSignature Language="C#" Value="public double HorizontalScrollPercent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalScrollPercent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current horizontal scroll position.</summary>
+        <value>The horizontal scroll position as a percentage of the total content area within the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalViewSize">
+      <MemberSignature Language="C#" Value="public double HorizontalViewSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalViewSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.HorizontalViewSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current horizontal view size.</summary>
+        <value>The horizontal size of the viewable region as a percentage of the total content area within the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scroll">
+      <MemberSignature Language="C#" Value="public void Scroll (System.Windows.Automation.ScrollAmount horizontalAmount, System.Windows.Automation.ScrollAmount verticalAmount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Scroll(valuetype System.Windows.Automation.ScrollAmount horizontalAmount, valuetype System.Windows.Automation.ScrollAmount verticalAmount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IScrollProvider.Scroll(System.Windows.Automation.ScrollAmount,System.Windows.Automation.ScrollAmount)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="horizontalAmount" Type="System.Windows.Automation.ScrollAmount" />
+        <Parameter Name="verticalAmount" Type="System.Windows.Automation.ScrollAmount" />
+      </Parameters>
+      <Docs>
+        <param name="horizontalAmount">The horizontal increment specific to the control. <see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll" /> should be passed in if the control cannot be scrolled in this direction.</param>
+        <param name="verticalAmount">The vertical increment specific to the control. <see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll" /> should be passed in if the control cannot be scrolled in this direction.</param>
+        <summary>Scrolls the visible region of the content area horizontally and vertically.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">If a control supports <see cref="F:System.Windows.Automation.ScrollAmount.SmallIncrement" /> values exclusively for horizontal or vertical scrolling but a <see cref="F:System.Windows.Automation.ScrollAmount.LargeIncrement" /> value is passed in.</exception>
+        <exception cref="T:System.InvalidOperationException">An attempt is made to scroll in an unsupported direction.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetScrollPercent">
+      <MemberSignature Language="C#" Value="public void SetScrollPercent (double horizontalPercent, double verticalPercent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetScrollPercent(float64 horizontalPercent, float64 verticalPercent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IScrollProvider.SetScrollPercent(System.Double,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="horizontalPercent" Type="System.Double" />
+        <Parameter Name="verticalPercent" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="horizontalPercent">The horizontal position as a percentage of the content area's total range. <see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll" /> should be passed in if the control cannot be scrolled in this direction.</param>
+        <param name="verticalPercent">The vertical position as a percentage of the content area's total range. <see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll" /> should be passed in if the control cannot be scrolled in this direction.</param>
+        <summary>Sets the horizontal and vertical scroll position as a percentage of the total content area within the control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is only useful when the content area of the control is larger than the visible region.  
+  
+ Passing in the value <xref:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll> indicates that there is no scrolling in the specified direction.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A value that cannot be converted to a double is passed in.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">A value greater than 100 or less than 0 is passed in (except -1, which is equivalent to <see cref="F:System.Windows.Automation.ScrollPatternIdentifiers.NoScroll" />). The <see cref="P:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent" /> and <see cref="P:System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent" /> values are normalized to either 100 percent or 0 percent.</exception>
+        <exception cref="T:System.InvalidOperationException">An attempt is made to scroll in an unsupported direction.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticallyScrollable">
+      <MemberSignature Language="C#" Value="public bool VerticallyScrollable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool VerticallyScrollable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the control can scroll vertically.</summary>
+        <value>
+          <see langword="true" /> if the control can scroll vertically; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be dynamic. For example, the content area of the control might not be larger than the viewable area meaning <xref:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable%2A> is `false`. However, resizing the control or adding child items can increase the bounds of the content area beyond the viewable area, indicating that <xref:System.Windows.Automation.Provider.IScrollProvider.VerticallyScrollable%2A> is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalScrollPercent">
+      <MemberSignature Language="C#" Value="public double VerticalScrollPercent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 VerticalScrollPercent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.VerticalScrollPercent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current vertical scroll position.</summary>
+        <value>The vertical scroll position as a percentage of the total content area within the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalViewSize">
+      <MemberSignature Language="C#" Value="public double VerticalViewSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 VerticalViewSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IScrollProvider.VerticalViewSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the vertical view size.</summary>
+        <value>The vertical size of the viewable region as a percentage of the total content area within the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

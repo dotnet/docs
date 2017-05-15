@@ -1,0 +1,109 @@
+<Type Name="RibbonGroupSizeDefinitionBaseCollection" FullName="System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection">
+  <TypeSignature Language="C#" Value="public class RibbonGroupSizeDefinitionBaseCollection : System.Windows.FreezableCollection&lt;System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBase&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonGroupSizeDefinitionBaseCollection extends System.Windows.FreezableCollection`1&lt;class System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBase&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.FreezableCollection&lt;System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBase&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBase</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a friendly name for XAML usage of a <see cref="T:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinition" /> collection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection> type to define a collection of <xref:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinition> objects as a resource.  
+  
+   
+  
+## Examples  
+ The following example shows how to define a <xref:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection> as a resource with the x:Key `3ControlSizeDef` and reference it from the <xref:System.Windows.Controls.Ribbon.RibbonGroup.GroupSizeDefinitions%2A> property of a <xref:System.Windows.Controls.Ribbon.RibbonGroup>.  
+  
+```  
+xmlns:ribbon="clr-namespace:System.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"  
+<!-- ... -->  
+ <ribbon:Ribbon x:Name="Ribbon">  
+  <ribbon:Ribbon.Resources>  
+    <ribbon:RibbonGroupSizeDefinitionBaseCollection x:Key="3ControlSizeDef">  
+      <ribbon:RibbonGroupSizeDefinition>  
+        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />  
+        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True" />  
+        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True" />  
+      </ribbon:RibbonGroupSizeDefinition>  
+      <ribbon:RibbonGroupSizeDefinition>  
+        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />  
+        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />  
+        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />  
+      </ribbon:RibbonGroupSizeDefinition>  
+      <ribbon:RibbonGroupSizeDefinition IsCollapsed="True" />  
+    </ribbon:RibbonGroupSizeDefinitionBaseCollection>  
+  </ribbon:Ribbon.Resources>  
+  
+  <ribbon:RibbonTab Header="Home" >  
+    <ribbon:RibbonGroup Header="Clipboard" Name="Clipboard" SmallImageSource="Images/Paste16.png"  
+                        GroupSizeDefinitions="{StaticResource 3ControlSizeDef}">  
+      <ribbon:RibbonButton Label="Paste"  
+                         Command="ApplicationCommands.Paste"  
+                         SmallImageSource="Images/Paste16.png"  
+                         LargeImageSource="Images/Paste32.png" />  
+      <ribbon:RibbonButton Label="Cut"  
+                         Command="ApplicationCommands.Cut"  
+                         SmallImageSource="Images/Cut16.png"  
+                         LargeImageSource="Images/Cut32.png" />  
+      <ribbon:RibbonButton Label="Copy"  
+                         Command="ApplicationCommands.Copy"  
+                         SmallImageSource="Images/Copy16.png"  
+                         LargeImageSource="Images/Copy32.png" />  
+    </ribbon:RibbonGroup>  
+  </ribbon:RibbonTab>  
+</ribbon:Ribbon>  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RibbonGroupSizeDefinitionBaseCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonGroupSizeDefinitionBaseCollection" /> class.</summary>
+        <returns>A new instance of this class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

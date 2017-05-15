@@ -1,0 +1,380 @@
+<Type Name="DefaultClaimSet" FullName="System.IdentityModel.Claims.DefaultClaimSet">
+  <TypeSignature Language="C#" Value="public class DefaultClaimSet : System.IdentityModel.Claims.ClaimSet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DefaultClaimSet extends System.IdentityModel.Claims.ClaimSet" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Claims.DefaultClaimSet" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Claims.ClaimSet</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract(Namespace="http://schemas.xmlsoap.org/ws/2005/05/identity")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a default implementation of the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a concrete implementation of the <xref:System.IdentityModel.Claims.ClaimSet> abstract base class.  Implementations of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> can use an instance of this class to add a <xref:System.IdentityModel.Claims.ClaimSet> to an <xref:System.IdentityModel.Policy.EvaluationContext>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DefaultClaimSet (System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt; claims);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Claims.Claim&gt; claims) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.DefaultClaimSet.#ctor(System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="claims" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="claims">An <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that contains the claims to add to this claim set.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" /> class, using the specified claims.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when the <xref:System.IdentityModel.Claims.ClaimSet> is self-issued. For example, a claim set for an anonymous user is self-issued.  
+  
+ This constructor calls the <xref:System.IdentityModel.Claims.DefaultClaimSet.Initialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="claims" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DefaultClaimSet (System.IdentityModel.Claims.Claim[] claims);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.Claim[] claims) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.DefaultClaimSet.#ctor(System.IdentityModel.Claims.Claim[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="claims" Type="System.IdentityModel.Claims.Claim[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="claims">An array of <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the claims to be added to this claim set.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" /> class, using the specified claims.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when the <xref:System.IdentityModel.Claims.ClaimSet> is self-issued. For example, a claim set for an anonymous user is self-issued.  
+  
+ This constructor calls the <xref:System.IdentityModel.Claims.DefaultClaimSet.Initialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="claims" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DefaultClaimSet (System.IdentityModel.Claims.ClaimSet issuer, System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt; claims);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.ClaimSet issuer, class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Claims.Claim&gt; claims) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.DefaultClaimSet.#ctor(System.IdentityModel.Claims.ClaimSet,System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="issuer" Type="System.IdentityModel.Claims.ClaimSet" />
+        <Parameter Name="claims" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="issuer">A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that specifies the issuer of the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> specified in the <c>claims</c> parameter.</param>
+        <param name="claims">An <see cref="T:System.Collections.Generic.IList`1" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that contains the claims to add to this claim set.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" /> class, using the specified claims.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor calls the <xref:System.IdentityModel.Claims.DefaultClaimSet.Initialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="claims" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="issuer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DefaultClaimSet (System.IdentityModel.Claims.ClaimSet issuer, System.IdentityModel.Claims.Claim[] claims);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.ClaimSet issuer, class System.IdentityModel.Claims.Claim[] claims) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.DefaultClaimSet.#ctor(System.IdentityModel.Claims.ClaimSet,System.IdentityModel.Claims.Claim[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="issuer" Type="System.IdentityModel.Claims.ClaimSet" />
+        <Parameter Name="claims" Type="System.IdentityModel.Claims.Claim[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="issuer">A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that specifies the issuer of the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> specified in the <c>claims</c> parameter.</param>
+        <param name="claims">An array of <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the claims to be added to this claim set.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" /> class, using the specified claims.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor calls the <xref:System.IdentityModel.Claims.DefaultClaimSet.Initialize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="claims" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="issuer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsClaim">
+      <MemberSignature Language="C#" Value="public override bool ContainsClaim (System.IdentityModel.Claims.Claim claim);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ContainsClaim(class System.IdentityModel.Claims.Claim claim) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.DefaultClaimSet.ContainsClaim(System.IdentityModel.Claims.Claim)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claim" Type="System.IdentityModel.Claims.Claim" />
+      </Parameters>
+      <Docs>
+        <param name="claim">The <see cref="T:System.IdentityModel.Claims.Claim" /> to determine whether it exists in this collection.</param>
+        <summary>Determines whether the specified claim is contained within this claim set.</summary>
+        <returns>
+          <see langword="true" /> if the claim is contained in this claim set; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To find claims that match a claim type and right, call the <xref:System.IdentityModel.Claims.DefaultClaimSet.FindClaims%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="claim" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public override int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.DefaultClaimSet.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of <see cref="T:System.IdentityModel.Claims.Claim" /> objects in this claim set.</summary>
+        <value>The number of <see cref="T:System.IdentityModel.Claims.Claim" /> objects in this claim set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindClaims">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Claims.Claim&gt; FindClaims (string claimType, string right);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Claims.Claim&gt; FindClaims(string claimType, string right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.DefaultClaimSet.FindClaims(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Claims.Claim&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claimType" Type="System.String" />
+        <Parameter Name="right" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="claimType">The uniform resource identifier (URI) of a claim type. Several claim types are available as static properties of the <see cref="T:System.IdentityModel.Claims.ClaimTypes" /> class.</param>
+        <param name="right">The URI of the right associated with the new claim. Several rights are available as static properties of the <see cref="T:System.IdentityModel.Claims.Rights" /> class.</param>
+        <summary>Searches for the <see cref="T:System.IdentityModel.Claims.Claim" /> object that matches the specified claim type and rights in the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" />.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that enables you to enumerate the claims that match the specified criteria<see langword="." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the `claimType` parameter is `null`, any claim that matches the `right` parameter is considered a match.  
+  
+ When the `right` parameter is `null`, any claim that matches the `claimType` parameter is considered a match.  
+  
+ When both the `claimType` and `right` parameters are `null`, all claims in the collection are returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerator&lt;System.IdentityModel.Claims.Claim&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.IdentityModel.Claims.Claim&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.DefaultClaimSet.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.IdentityModel.Claims.Claim&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to enumerate the <see cref="T:System.IdentityModel.Claims.Claim" /> object in the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" />.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1" /> that can be used to enumerate the <see cref="T:System.IdentityModel.Claims.Claim" /> object in the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected void Initialize (System.IdentityModel.Claims.ClaimSet issuer, System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt; claims);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.IdentityModel.Claims.ClaimSet issuer, class System.Collections.Generic.IList`1&lt;class System.IdentityModel.Claims.Claim&gt; claims) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.DefaultClaimSet.Initialize(System.IdentityModel.Claims.ClaimSet,System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="issuer" Type="System.IdentityModel.Claims.ClaimSet" />
+        <Parameter Name="claims" Type="System.Collections.Generic.IList&lt;System.IdentityModel.Claims.Claim&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="issuer">The <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that issued the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> specified in the <c>claims</c> parameter.</param>
+        <param name="claims">The set of <see cref="T:System.IdentityModel.Claims.Claim" /> objects to be included in this claim set.</param>
+        <summary>Initializes an instance of the <see cref="T:System.IdentityModel.Claims.DefaultClaimSet" /> class, using the specified claims.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructors that take at least one parameter call the <xref:System.IdentityModel.Claims.DefaultClaimSet.Initialize%28System.IdentityModel.Claims.ClaimSet%2CSystem.Collections.Generic.IList%7BSystem.IdentityModel.Claims.Claim%7D%29> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="claims" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="issuer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Issuer">
+      <MemberSignature Language="C#" Value="public override System.IdentityModel.Claims.ClaimSet Issuer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Claims.ClaimSet Issuer" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.DefaultClaimSet.Issuer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Claims.ClaimSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that issued this claim set.</summary>
+        <value>The <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object that issued this claim set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this class was created using one of the constructors that do not have an issuer parameter, this <xref:System.IdentityModel.Claims.ClaimSet> is considered self-issued. The value for the <xref:System.IdentityModel.Claims.DefaultClaimSet.Issuer%2A> property on a self-issued claim set is this claim set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public override System.IdentityModel.Claims.Claim this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Claims.Claim Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.DefaultClaimSet.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Claims.Claim</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the claim to be retrieved.</param>
+        <summary>Gets the <see cref="T:System.IdentityModel.Claims.Claim" /> for the specified index.</summary>
+        <value>The <see cref="T:System.IdentityModel.Claims.Claim" /> specified by the index.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Claims.DefaultClaimSet.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns this <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object.</summary>
+        <returns>This <see cref="T:System.IdentityModel.Claims.ClaimSet" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string returned by <xref:System.IdentityModel.Claims.DefaultClaimSet.ToString%2A> method contains the <xref:System.IdentityModel.Claims.Claim.Right%2A> and <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> properties for every claim in the <xref:System.IdentityModel.Claims.ClaimSet>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

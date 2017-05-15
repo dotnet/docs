@@ -1,0 +1,238 @@
+<Type Name="CommonExtensions" FullName="Microsoft.FSharp.Control.CommonExtensions">
+  <TypeSignature Language="C#" Value="public static class CommonExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed CommonExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.CommonExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AutoOpen</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddToObservable&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void AddToObservable&lt;T&gt; (IObservable&lt;T&gt; x, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void AddToObservable&lt;T&gt;(class System.IObservable`1&lt;!!T&gt; x, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.CommonExtensions.AddToObservable``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("Add")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.IObservable&lt;T&gt;" />
+        <Parameter Name="callback" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncRead">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;int&gt; AsyncRead (System.IO.Stream stream, byte[] buffer, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; offset, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;int32&gt; AsyncRead(class System.IO.Stream stream, unsigned int8[] buffer, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; offset, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.CommonExtensions.AsyncRead(System.IO.Stream,System.Byte[],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("AsyncRead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="count" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncReadBytes">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;byte[]&gt; AsyncReadBytes (System.IO.Stream stream, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;unsigned int8[]&gt; AsyncReadBytes(class System.IO.Stream stream, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.CommonExtensions.AsyncReadBytes(System.IO.Stream,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("AsyncRead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;System.Byte[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncWrite">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; AsyncWrite (System.IO.Stream stream, byte[] buffer, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; offset, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; AsyncWrite(class System.IO.Stream stream, unsigned int8[] buffer, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; offset, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.CommonExtensions.AsyncWrite(System.IO.Stream,System.Byte[],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("AsyncWrite")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="offset" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="count" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="offset">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubscribeToObservable&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IDisposable SubscribeToObservable&lt;T&gt; (IObservable&lt;T&gt; x, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.IDisposable SubscribeToObservable&lt;T&gt;(class System.IObservable`1&lt;!!T&gt; x, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.CommonExtensions.SubscribeToObservable``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("Subscribe")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="System.IObservable&lt;T&gt;" />
+        <Parameter Name="callback" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">To be added.</param>
+        <param name="callback">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

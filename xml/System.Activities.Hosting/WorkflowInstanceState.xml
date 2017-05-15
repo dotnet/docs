@@ -1,0 +1,114 @@
+<Type Name="WorkflowInstanceState" FullName="System.Activities.Hosting.WorkflowInstanceState">
+  <TypeSignature Language="C#" Value="public enum WorkflowInstanceState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkflowInstanceState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.WorkflowInstanceState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the state of a <see cref="T:System.Activities.Hosting.WorkflowInstance" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Aborted">
+      <MemberSignature Language="C#" Value="Aborted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Hosting.WorkflowInstanceState Aborted = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Aborted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Hosting.WorkflowInstanceState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is aborted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow instance will be in this state after <xref:System.Activities.WorkflowApplication.Abort%2A> has been called. A workflow in this state is capable of being resumed using <xref:System.Activities.WorkflowApplication.Run%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Complete">
+      <MemberSignature Language="C#" Value="Complete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Hosting.WorkflowInstanceState Complete = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Complete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Hosting.WorkflowInstanceState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is complete.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A workflow in this state has exited, and its <xref:System.Activities.WorkflowApplication.Completed%2A> or <xref:System.Activities.WorkflowInvoker.InvokeCompleted> event has executed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Idle">
+      <MemberSignature Language="C#" Value="Idle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Hosting.WorkflowInstanceState Idle = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Idle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Hosting.WorkflowInstanceState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> is idle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A workflow in this state is waiting on an incoming event, such as when executing a <xref:System.Activities.Statements.Pick> activity, or is waiting for the expiration of a timeout, such as when executing a <xref:System.Activities.Statements.Delay> activity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Runnable">
+      <MemberSignature Language="C#" Value="Runnable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Hosting.WorkflowInstanceState Runnable = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Hosting.WorkflowInstanceState.Runnable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Hosting.WorkflowInstanceState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Activities.Hosting.WorkflowInstance" /> can be run.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A workflow in this state has been created, but <xref:System.Activities.WorkflowApplication.Run%2A> has not been called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

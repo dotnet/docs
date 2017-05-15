@@ -1,0 +1,274 @@
+<Type Name="PixelFormat" FullName="System.Windows.Media.PixelFormat">
+  <TypeSignature Language="C#" Value="public struct PixelFormat : IEquatable&lt;System.Windows.Media.PixelFormat&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit PixelFormat extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Media.PixelFormat&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.PixelFormat" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Windows.Media.PixelFormat&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Media.PixelFormatConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a pixel format for images and pixel-based surfaces.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_PixelFormat"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="pixelFormat"/>  
+```  
+  
+<a name="xamlValues_PixelFormat"></a>   
+## XAML Values  
+ *pixelFormat*  
+ One of the predefined pixel formats defined by the <xref:System.Windows.Media.PixelFormats> class.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Media.PixelFormat> and find the value of its properties.  
+  
+ [!code-csharp[ImagingSnippetGallery_procedural_snip#PixelFormatExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/PixelFormatsExample.cs#pixelformatexample1)]
+ [!code-vb[ImagingSnippetGallery_procedural_snip#PixelFormatExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/PixelFormatsExample.vb#pixelformatexample1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BitsPerPixel">
+      <MemberSignature Language="C#" Value="public int BitsPerPixel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BitsPerPixel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormat.BitsPerPixel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of bits-per-pixel (bpp) for this <see cref="T:System.Windows.Media.PixelFormat" />.</summary>
+        <value>The number of bits-per-pixel (bpp) for this <see cref="T:System.Windows.Media.PixelFormat" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.PixelFormat.BitsPerPixel%2A> property to find the number of bits-per-pixel of a pixel format.  
+  
+ [!code-csharp[ImagingSnippetGallery_procedural_snip#PixelFormatExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/PixelFormatsExample.cs#pixelformatexample1)]
+ [!code-vb[ImagingSnippetGallery_procedural_snip#PixelFormatExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/PixelFormatsExample.vb#pixelformatexample1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Object to compare with the current Object.</param>
+        <summary>Determines whether the specified object is equal to the current object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.PixelFormat" /> is equal to <paramref name="obj" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.PixelFormat pixelFormat);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Media.PixelFormat pixelFormat) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.Equals(System.Windows.Media.PixelFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pixelFormat" Type="System.Windows.Media.PixelFormat" />
+      </Parameters>
+      <Docs>
+        <param name="pixelFormat">The pixel format to compare.</param>
+        <summary>Determines whether the pixel format equals the given <see cref="T:System.Windows.Media.PixelFormat" />.</summary>
+        <returns>
+          <see langword="true" /> if the pixel formats are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (System.Windows.Media.PixelFormat left, System.Windows.Media.PixelFormat right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype System.Windows.Media.PixelFormat left, valuetype System.Windows.Media.PixelFormat right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.Equals(System.Windows.Media.PixelFormat,System.Windows.Media.PixelFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.PixelFormat" />
+        <Parameter Name="right" Type="System.Windows.Media.PixelFormat" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:System.Windows.Media.PixelFormat" /> objects to compare for equality.</param>
+        <param name="right">The second <see cref="T:System.Windows.Media.PixelFormat" /> object to compare for equality.</param>
+        <summary>Determines whether the specified <see cref="T:System.Windows.Media.PixelFormat" /> instances are considered equal.</summary>
+        <returns>
+          <see langword="true" /> if the two parameters are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a hash code from this pixel format's <see cref="P:System.Windows.Media.PixelFormat.Masks" /> value.</summary>
+        <returns>The pixel format's hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Masks">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Windows.Media.PixelFormatChannelMask&gt; Masks { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Windows.Media.PixelFormatChannelMask&gt; Masks" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormat.Masks" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Media.PixelFormatChannelMask&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of bit masks associated with the <see cref="T:System.Windows.Media.PixelFormat" />.</summary>
+        <value>The collection of bit masks and shifts associated with the <see cref="T:System.Windows.Media.PixelFormat" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Media.PixelFormat.Masks%2A> property to get the bit masks associated with the pixel format.  
+  
+ [!code-csharp[ImagingSnippetGallery_procedural_snip#PixelFormatExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/PixelFormatsExample.cs#pixelformatexample1)]
+ [!code-vb[ImagingSnippetGallery_procedural_snip#PixelFormatExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/PixelFormatsExample.vb#pixelformatexample1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Media.PixelFormat left, System.Windows.Media.PixelFormat right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.PixelFormat left, valuetype System.Windows.Media.PixelFormat right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.op_Equality(System.Windows.Media.PixelFormat,System.Windows.Media.PixelFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.PixelFormat" />
+        <Parameter Name="right" Type="System.Windows.Media.PixelFormat" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:System.Windows.Media.PixelFormat" /> to compare.</param>
+        <param name="right">The second <see cref="T:System.Windows.Media.PixelFormat" /> to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.PixelFormat" /> instances for equality.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:System.Windows.Media.PixelFormat" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Media.PixelFormat left, System.Windows.Media.PixelFormat right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.PixelFormat left, valuetype System.Windows.Media.PixelFormat right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.op_Inequality(System.Windows.Media.PixelFormat,System.Windows.Media.PixelFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Media.PixelFormat" />
+        <Parameter Name="right" Type="System.Windows.Media.PixelFormat" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:System.Windows.Media.PixelFormat" /> to compare.</param>
+        <param name="right">The second <see cref="T:System.Windows.Media.PixelFormat" /> to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Media.PixelFormat" /> instances for inequality.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.PixelFormat" /> objects are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.PixelFormat.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a string representation of this <see cref="T:System.Windows.Media.PixelFormat" />.</summary>
+        <returns>A <see cref="T:System.String" /> containing a representation of the <see cref="T:System.Windows.Media.PixelFormat" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

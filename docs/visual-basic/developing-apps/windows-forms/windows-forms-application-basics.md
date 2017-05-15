@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "Windows Forms, Visual Basic"
 ms.assetid: 0b919d30-7fd6-42db-85c8-543d15312441
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

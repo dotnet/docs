@@ -1,0 +1,170 @@
+<Type Name="WebServiceProtocols" FullName="System.Web.Services.Configuration.WebServiceProtocols">
+  <TypeSignature Language="C#" Value="public enum WebServiceProtocols" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebServiceProtocols extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.WebServiceProtocols" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the transmission protocols that are used to decrypt data sent from a client browser in the HTTP request.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  Using the HttpPostLocalhost value of this enumeration does not prevent access to the test or web service from remote computers. This value checks only the host header of the request; no other validation, authentication, or authorization checks are performed. This check mitigates only browser-based redirection attacks. Authentication and authorization are still required to restrict access to a Web service.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AnyHttpSoap">
+      <MemberSignature Language="C#" Value="AnyHttpSoap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols AnyHttpSoap = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.AnyHttpSoap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Any version of the HTTP SOAP protocol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Documentation">
+      <MemberSignature Language="C#" Value="Documentation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols Documentation = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.Documentation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Web Services Documentation protocol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpGet">
+      <MemberSignature Language="C#" Value="HttpGet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols HttpGet = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.HttpGet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The HTTP GET protocol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpPost">
+      <MemberSignature Language="C#" Value="HttpPost" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols HttpPost = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.HttpPost" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The HTTP POST protocol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpPostLocalhost">
+      <MemberSignature Language="C#" Value="HttpPostLocalhost" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols HttpPostLocalhost = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.HttpPostLocalhost" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The HTTP POST LOCALHOST protocol.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  See the Remarks section. This value only checks the request's host header to mitigate only browser-redirect attacks. Authentication and authorization are still required to restrict access to a Web service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpSoap">
+      <MemberSignature Language="C#" Value="HttpSoap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols HttpSoap = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.HttpSoap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The HTTP SOAP protocol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HttpSoap12">
+      <MemberSignature Language="C#" Value="HttpSoap12" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols HttpSoap12 = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.HttpSoap12" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The HTTP SOAP version 1.2 protocol.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.WebServiceProtocols Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.WebServiceProtocols.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.WebServiceProtocols</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Unknown protocol.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

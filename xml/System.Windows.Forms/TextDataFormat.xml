@@ -1,0 +1,119 @@
+<Type Name="TextDataFormat" FullName="System.Windows.Forms.TextDataFormat">
+  <TypeSignature Language="C#" Value="public enum TextDataFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextDataFormat extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextDataFormat" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the formats used with text-related methods of the <see cref="T:System.Windows.Forms.Clipboard" /> and <see cref="T:System.Windows.Forms.DataObject" /> classes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration contains values that are similar to the text-related fields of the <xref:System.Windows.Forms.DataFormats> type.  
+  
+ This enumeration is used with the following methods:  
+  
+-   <xref:System.Windows.Forms.Clipboard.ContainsText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Forms.Clipboard.GetText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Forms.Clipboard.SetText%28System.String%2CSystem.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Forms.DataObject.ContainsText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Forms.DataObject.GetText%28System.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Forms.DataObject.SetText%28System.String%2CSystem.Windows.Forms.TextDataFormat%29?displayProperty=fullName>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CommaSeparatedValue">
+      <MemberSignature Language="C#" Value="CommaSeparatedValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextDataFormat CommaSeparatedValue = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextDataFormat.CommaSeparatedValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextDataFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies a comma-separated value (CSV) format, which is a common interchange format used by spreadsheets.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Html">
+      <MemberSignature Language="C#" Value="Html" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextDataFormat Html = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextDataFormat.Html" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextDataFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies text consisting of HTML data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rtf">
+      <MemberSignature Language="C#" Value="Rtf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextDataFormat Rtf = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextDataFormat.Rtf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextDataFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies text consisting of rich text format (RTF) data.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="Text" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextDataFormat Text = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextDataFormat.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextDataFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the standard ANSI text format.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnicodeText">
+      <MemberSignature Language="C#" Value="UnicodeText" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextDataFormat UnicodeText = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextDataFormat.UnicodeText" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TextDataFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the standard Windows Unicode text format.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

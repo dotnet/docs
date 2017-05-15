@@ -1,0 +1,336 @@
+<Type Name="EventTrigger" FullName="System.Windows.EventTrigger">
+  <TypeSignature Language="C#" Value="public class EventTrigger : System.Windows.TriggerBase, System.Windows.Markup.IAddChild" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventTrigger extends System.Windows.TriggerBase implements class System.Windows.Markup.IAddChild" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.EventTrigger" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.TriggerBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Markup.IAddChild</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Actions")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a trigger that applies a set of actions in response to an event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Trigger> objects have the <xref:System.Windows.Trigger.Setters%2A>, <xref:System.Windows.TriggerBase.EnterActions%2A>, and <xref:System.Windows.TriggerBase.ExitActions%2A> properties that apply changes or actions based on the state of certain properties, while <xref:System.Windows.EventTrigger> objects start a set of <xref:System.Windows.EventTrigger.Actions%2A> when a specified routed event occurs. For example, you may want to use an <xref:System.Windows.EventTrigger> to start a set of animations when the mouse pointer is over a certain [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] control. Unlike <xref:System.Windows.Trigger>, <xref:System.Windows.EventTrigger> has no concept of termination of state, so the action will not be undone once the condition that raised the event is no longer true.  
+  
+ Note that when using an <xref:System.Windows.EventTrigger>, you need to choose events that do not interfere with the inherent behavior of your control. Controls such as <xref:System.Windows.Controls.Button> or <xref:System.Windows.Controls.TextBox> perform specific actions on user input events such as mouse clicks and keyboard events. For example, if you are styling a button and try to set the <xref:System.Windows.Input.Mouse.MouseDown> event as the <xref:System.Windows.EventTrigger.RoutedEvent%2A> of an <xref:System.Windows.EventTrigger>, the <xref:System.Windows.EventTrigger> never gets applied because the event first gets handled by the button. Instead, you can use the <xref:System.Windows.Input.Mouse.PreviewMouseDown> event or a different event.  
+  
+ When using data binding, if you are using the <xref:System.Windows.Data.Binding.TargetUpdated> event, you must set the <xref:System.Windows.Data.Binding.NotifyOnTargetUpdated%2A> value of your <xref:System.Windows.Data.Binding> object to `true` for the event to be raised.  
+  
+ Adding a <xref:System.Windows.TriggerAction> child to an <xref:System.Windows.EventTrigger> object implicitly adds it to the <xref:System.Windows.TriggerActionCollection> for the <xref:System.Windows.EventTrigger> object.  
+  
+   
+  
+## Examples  
+ This example shows how to use event triggers in a style to animate the <xref:System.Windows.UIElement.MouseEnter> and <xref:System.Windows.UIElement.MouseLeave> events of a <xref:System.Windows.FrameworkElement>. In this example, the <xref:System.Windows.Style> has the <xref:System.Windows.Style.TargetType%2A> set to <xref:System.Windows.Shapes.Rectangle>. Therefore, there is no need to qualify the `MouseEnter` and `MouseLeave` event names with the class name.  
+  
+ [!code-xml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleEventTriggerAnimation/CS/Default.xaml#eventtriggersnippet)]
+ <!-- TODO: review snippet reference [!code-xml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleEventTriggerAnimation/XAML/Default.xaml#eventtriggersnippet)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventTrigger ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventTrigger.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.EventTrigger" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventTrigger (System.Windows.RoutedEvent routedEvent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.RoutedEvent routedEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventTrigger.#ctor(System.Windows.RoutedEvent)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="routedEvent" Type="System.Windows.RoutedEvent" />
+      </Parameters>
+      <Docs>
+        <param name="routedEvent">The <see cref="T:System.Windows.RoutedEvent" /> that activates this trigger.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.EventTrigger" /> class with the specified event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Actions">
+      <MemberSignature Language="C#" Value="public System.Windows.TriggerActionCollection Actions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TriggerActionCollection Actions" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.EventTrigger.Actions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.TriggerActionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of actions to apply when the event occurs.</summary>
+        <value>The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unlike <xref:System.Windows.Trigger>, <xref:System.Windows.EventTrigger> has no concept of termination of state, so the action will not be undone once the condition that raised the event is no longer true.  
+  
+ Adding a <xref:System.Windows.TriggerAction> child to an <xref:System.Windows.EventTrigger> object implicitly adds it to the <xref:System.Windows.TriggerActionCollection> for the <xref:System.Windows.EventTrigger> object.  
+  
+> [!NOTE]
+>  This property can only be set in [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] via the collection syntax shown, or by accessing the collection object and using its various methods such as Add. The property to access the collection object itself is read-only, the collection itself is read-write.  
+  
+<a name="xamlPropertyElementUsage_Actions"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.Actions>  
+    OneOrMoreTriggerActions  
+  </object.Actions>  
+</object>  
+```  
+  
+<a name="xamlValues_Actions"></a>   
+## XAML Values  
+ *OneOrMoreTriggerActions*  
+ One or more <xref:System.Windows.TriggerAction> objects.  
+  
+   
+  
+## Examples  
+ This example describes how to use event triggers in a style to animate the <xref:System.Windows.UIElement.MouseEnter> and <xref:System.Windows.UIElement.MouseLeave> events of a <xref:System.Windows.FrameworkElement>. As mentioned above, adding a <xref:System.Windows.TriggerAction> child to an <xref:System.Windows.EventTrigger> object implicitly adds it to the <xref:System.Windows.TriggerActionCollection> for the <xref:System.Windows.EventTrigger> object. Therefore, in this example, `<EventTrigger.Actions>` is implicit.  
+  
+ [!code-xml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleEventTriggerAnimation/CS/Default.xaml#eventtriggersnippet)]
+ <!-- TODO: review snippet reference [!code-xml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleEventTriggerAnimation/XAML/Default.xaml#eventtriggersnippet)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddChild">
+      <MemberSignature Language="C#" Value="protected virtual void AddChild (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddChild(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventTrigger.AddChild(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">A <see cref="T:System.Windows.TriggerAction" /> object to add to the <see cref="P:System.Windows.EventTrigger.Actions" /> collection of this trigger.</param>
+        <summary>Adds the specified object to the <see cref="P:System.Windows.EventTrigger.Actions" /> collection of the current event trigger.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddText">
+      <MemberSignature Language="C#" Value="protected virtual void AddText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventTrigger.AddText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">This parameter is not used.</param>
+        <summary>This method is not supported and results in an exception.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoutedEvent">
+      <MemberSignature Language="C#" Value="public System.Windows.RoutedEvent RoutedEvent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.RoutedEvent RoutedEvent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.EventTrigger.RoutedEvent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEvent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.RoutedEvent" /> that will activate this trigger.</summary>
+        <value>The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.EventTrigger>s apply a set of actions when the specified routed event occurs. For example, you may want to use <xref:System.Windows.EventTrigger>s to start a set of animations when the mouse pointer is over a certain [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] control.  
+  
+ If the template or style that contains this <xref:System.Windows.EventTrigger> does not have the `TargetType` property specified, then you need to quality the event name with the class name using the `ClassName.EventName` syntax.  
+  
+ <xref:System.Windows.EventTrigger> objects cannot handle events that have already been <xref:System.Windows.RoutedEventArgs.Handled%2A>. Controls such as <xref:System.Windows.Controls.Button> or <xref:System.Windows.Controls.TextBox> perform specific actions on user input events such as mouse clicks and keyboard events. For example, if you are styling a button and try to set the <xref:System.Windows.Input.Mouse.MouseDown> event as the <xref:System.Windows.EventTrigger.RoutedEvent%2A> of an <xref:System.Windows.EventTrigger>, the <xref:System.Windows.EventTrigger> never gets applied because the event first gets handled by the button. Instead, you can use the <xref:System.Windows.Input.Mouse.PreviewMouseDown> event or a different event.  
+  
+ When using data binding, if you are using the <xref:System.Windows.Data.Binding.TargetUpdated> event, you must set the <xref:System.Windows.Data.Binding.NotifyOnTargetUpdated%2A> value of your <xref:System.Windows.Data.Binding> object to true for the event to be raised.  
+  
+   
+  
+## Examples  
+ This example shows how to use event triggers in a style to animate the <xref:System.Windows.UIElement.MouseEnter> and <xref:System.Windows.UIElement.MouseLeave> events of a <xref:System.Windows.FrameworkElement>. In this example, the <xref:System.Windows.Style> has the <xref:System.Windows.Style.TargetType%2A> set to <xref:System.Windows.Shapes.Rectangle>. Therefore, there is no need to qualify the `MouseEnter` and `MouseLeave` event names with the class name.  
+  
+ [!code-xml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleEventTriggerAnimation/CS/Default.xaml#eventtriggersnippet)]
+ <!-- TODO: review snippet reference [!code-xml[StyleEventTriggerAnimation#EventTriggerSnippet](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleEventTriggerAnimation/XAML/Default.xaml#eventtriggersnippet)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Windows.EventTrigger.RoutedEvent" /> property cannot be null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeActions">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeActions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeActions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventTrigger.ShouldSerializeActions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns whether serialization processes should serialize the effective value of the <see cref="P:System.Windows.EventTrigger.Actions" /> property on instances of this class.</summary>
+        <returns>Returns <see langword="true " />if the <see cref="P:System.Windows.EventTrigger.Actions" /> property value should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceName">
+      <MemberSignature Language="C#" Value="public string SourceName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.EventTrigger.SourceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the object with the event that activates this trigger. This is only used by element triggers or template triggers.</summary>
+        <value>The default value is <see langword="null" />. If this property value is <see langword="null" />, then the element being monitored for the raising of the event is the templated parent or the logical tree root.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set this property to the name of any element within the scope of where the trigger collection (the collection that this <xref:System.Windows.EventTrigger> is part of) is applied. This is typically a named element that is within the template that contains this <xref:System.Windows.EventTrigger>. If you are setting the <xref:System.Windows.FrameworkElement.Triggers%2A> property on an element directly, then it is a named element within the scope of that parent element.  
+  
+ You can name an object using the [x:Name Directive](~/docs/framework/xaml-services/x-name-directive.md) syntax.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">After an <see cref="T:System.Windows.EventTrigger" /> is in use, it cannot be modified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IAddChild.AddChild">
+      <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventTrigger.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The child object to add.</param>
+        <summary>Adds a child object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.EventTrigger> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Markup.IAddChild.AddText">
+      <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.EventTrigger.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The text to add to the object.</param>
+        <summary>Adds the text content of a node to the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.EventTrigger> instance is cast to an <xref:System.Windows.Markup.IAddChild> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

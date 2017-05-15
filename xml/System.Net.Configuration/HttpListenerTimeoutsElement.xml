@@ -1,0 +1,241 @@
+<Type Name="HttpListenerTimeoutsElement" FullName="System.Net.Configuration.HttpListenerTimeoutsElement">
+  <TypeSignature Language="C#" Value="public sealed class HttpListenerTimeoutsElement : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpListenerTimeoutsElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Configuration.HttpListenerTimeoutsElement" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see cref="T:System.Net.HttpListener" /> timeouts element in the configuration file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The timeouts element defines the dafault connection timeout limits for an <xref:System.Net.HttpListener> instance.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpListenerTimeoutsElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Configuration.HttpListenerTimeoutsElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.HttpListenerTimeoutsElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrainEntityBody">
+      <MemberSignature Language="C#" Value="public TimeSpan DrainEntityBody { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DrainEntityBody" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.DrainEntityBody" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("drainEntityBody", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time, in seconds, allowed for the <see cref="T:System.Net.HttpListener" /> to drain the entity body on a Keep-Alive connection.</summary>
+        <value>Returns <see cref="T:System.TimeSpan" />.  
+  
+ The time, in seconds, allowed for the <see cref="T:System.Net.HttpListener" /> to drain the entity body on a Keep-Alive connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ On a Keep-Alive connection, after the app has sent a response for a request and before the request entity body has completely arrived, the <xref:System.Net.HttpListener> starts draining the remainder of the entity body to reach another potentially pipelined request from the client. If the time to drain the remaining entity body exceeds the allowed period the connection is timed out.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityBody">
+      <MemberSignature Language="C#" Value="public TimeSpan EntityBody { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan EntityBody" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.EntityBody" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("entityBody", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time, in seconds, allowed for the request entity body to arrive.</summary>
+        <value>Returns <see cref="T:System.TimeSpan" />.  
+  
+ The time, in seconds, allowed for the request entity body to arrive.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Net.HttpListener> turns on this timer when the request has an entity body. The timer expiration is initially set to the configured value. When the <xref:System.Net.HttpListener> receives additional data indications on the request, it resets the timer to give the connection another interval.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderWait">
+      <MemberSignature Language="C#" Value="public TimeSpan HeaderWait { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan HeaderWait" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.HeaderWait" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("headerWait", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time, in seconds, allowed for the <see cref="T:System.Net.HttpListener" /> to parse the request header.</summary>
+        <value>Returns <see cref="T:System.TimeSpan" />.  
+  
+ The time, in seconds, allowed for the <see cref="T:System.Net.HttpListener" /> to parse the request header.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This timeout is only enforced after the first request on the connection is routed to the <xref:System.Net.HttpListener>.  
+  
+ The system cannot determine the request queue or URL group that the request is associated with until the headers have been parsed. Therefore, the <xref:System.Net.HttpListener> enforces the default <xref:System.Net.HttpListenerTimeoutManager.HeaderWait%2A> timer for the first request on a connection. Subsequent requests on a Keep-Alive connection will use the value set on this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdleConnection">
+      <MemberSignature Language="C#" Value="public TimeSpan IdleConnection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan IdleConnection" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.IdleConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("idleConnection", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time, in seconds, allowed for an idle connection.</summary>
+        <value>Returns <see cref="T:System.TimeSpan" />.  
+  
+ The time, in seconds, allowed for an idle connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This timeout is only enforced after the first request on the connection is routed to the <xref:System.Net.HttpListener>.  
+  
+ The system cannot determine the request queue or URL group that the request is associated with until the headers have been parsed. Therefore, the <xref:System.Net.HttpListener> enforces the default <xref:System.Net.HttpListenerTimeoutManager.IdleConnection%2A> timer for the first request on a connection. Subsequent requests on a Keep-Alive connection will use the value set on this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinSendBytesPerSecond">
+      <MemberSignature Language="C#" Value="public long MinSendBytesPerSecond { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MinSendBytesPerSecond" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.MinSendBytesPerSecond" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("minSendBytesPerSecond", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the minimum send rate, in bytes-per-second, for the response.</summary>
+        <value>Returns <see cref="T:System.Int64" />.  
+  
+ The minimum send rate, in bytes-per-second, for the response.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestQueue">
+      <MemberSignature Language="C#" Value="public TimeSpan RequestQueue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RequestQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.HttpListenerTimeoutsElement.RequestQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("requestQueue", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time, in seconds, allowed for the request to remain in the request queue before the <see cref="T:System.Net.HttpListener" /> picks it up.</summary>
+        <value>Returns <see cref="T:System.TimeSpan" />.  
+  
+ The time, in seconds, allowed for the request to remain in the request queue before the <see cref="T:System.Net.HttpListener" /> picks it up.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

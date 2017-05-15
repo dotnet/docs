@@ -1,0 +1,491 @@
+<Type Name="MBindingCollection" FullName="Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection">
+  <TypeSignature Language="C#" Value="public class MBindingCollection : IDisposable, Microsoft.VisualBasic.Compatibility.VB6.DBindingCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi MBindingCollection extends System.Object implements class Microsoft.VisualBasic.Compatibility.VB6.DBindingCollection, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.VisualBasic.Compatibility.VB6.DBindingCollection</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an interface to replace COM-based data binding in an application upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MBindingCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.DBinding Add (object obj, string propertyName, string dataField, Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp dataFormat = null, string key = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.VisualBasic.Compatibility.VB6.DBinding Add(object obj, string propertyName, string dataField, class Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp dataFormat, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Add(System.Object,System.String,System.String,Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.DBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="dataField" Type="System.String" />
+        <Parameter Name="dataFormat" Type="Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An <see cref="T:System.Object" /> that contains data.</param>
+        <param name="propertyName">A <see langword="String" /> that contains a property name.</param>
+        <param name="dataField">A <see langword="String" /> that contains the name of a data field.</param>
+        <param name="dataFormat">Optional. An <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp" /> interface.</param>
+        <param name="key">Optional. A <see langword="String" /> that contains the key value.</param>
+        <summary>Adds a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBinding" /> to a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />.</summary>
+        <returns>A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBinding" /> interface.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.DBinding Add (object obj, string propertyName, string dataField, Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp dataFormat, string key, bool immediateBind);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.VisualBasic.Compatibility.VB6.DBinding Add(object obj, string propertyName, string dataField, class Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp dataFormat, string key, bool immediateBind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Add(System.Object,System.String,System.String,Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.DBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="dataField" Type="System.String" />
+        <Parameter Name="dataFormat" Type="Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="immediateBind" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An <see cref="T:System.Object" /> that contains data.</param>
+        <param name="propertyName">A <see langword="String" /> that contains a property name.</param>
+        <param name="dataField">A <see langword="String" /> that contains the name of a data field.</param>
+        <param name="dataFormat">An <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp" /> interface.</param>
+        <param name="key">A <see langword="String" /> that contains the key value.</param>
+        <param name="immediateBind">
+          <see langword="true" /> to bind immediately; otherwise <see langword="false" />.</param>
+        <summary>Adds a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBinding" /> to a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />.</summary>
+        <returns>A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBinding" /> interface.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the collection of binding objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of bindings in the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />.</summary>
+        <value>An <see langword="Integer" /> that contains the count.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataMember">
+      <MemberSignature Language="C#" Value="public string DataMember { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataMember" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.DataMember" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data member for a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />.</summary>
+        <value>A <see langword="String" /> that contains the name of the data member.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSource">
+      <MemberSignature Language="C#" Value="public msdatasrc.DataSource DataSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class msdatasrc.DataSource DataSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.DataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>msdatasrc.DataSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the data source for a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />.</summary>
+        <value>A COM-based <see langword="msdatasrc.DataSource" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="T:System.Windows.Forms.BindingSource" />
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases the unmanaged resources that are used by a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method.  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyinstance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources that are used by a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public `Dispose()` method and the <xref:System.Object.Finalize%2A> method. `Dispose()` invokes the protected `Dispose(Boolean)` method with the disposing parameter set to `true`. <xref:System.Object.Finalize%2A> invokes `Dispose` with the disposing parameter set to `false`.  
+  
+ When the disposing parameter is `true`, this method releases all resources held by any managed objects that this control references. This method invokes the `Dispose()` method of each referenced object.  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerator for a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.DBinding this[object index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualBasic.Compatibility.VB6.DBinding Item(object)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Item(System.Object)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.DBinding</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">An <see cref="T:System.Object" /> that represents the index.</param>
+        <summary>Gets the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBinding" /> at the specified index.</summary>
+        <value>A <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBinding" /> interface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (object index);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Remove(object index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">An <see cref="T:System.Object" /> that represents the index.</param>
+        <summary>Removes a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBinding" /> interface from a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SavePendingChanges">
+      <MemberSignature Language="C#" Value="public void SavePendingChanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void SavePendingChanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.SavePendingChanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether to save changes in a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateControls">
+      <MemberSignature Language="C#" Value="public void UpdateControls ();" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void UpdateControls() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.UpdateControls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the current row from the data source of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" /> object and resets the contents of controls bound through the object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateMode">
+      <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.UpdateMode UpdateMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.VisualBasic.Compatibility.VB6.UpdateMode UpdateMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.UpdateMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.UpdateMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.UpdateMode" /> for a <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection" />.</summary>
+        <value>A <see cref="P:Microsoft.VisualBasic.Compatibility.VB6.DBindingCollection.UpdateMode" /> enumeration.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

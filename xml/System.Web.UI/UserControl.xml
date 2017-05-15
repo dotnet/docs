@@ -1,0 +1,930 @@
+<Type Name="UserControl" FullName="System.Web.UI.UserControl">
+  <TypeSignature Language="C#" Value="public class UserControl : System.Web.UI.TemplateControl, System.Web.UI.IAttributeAccessor, System.Web.UI.IUserControlDesignerAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserControl extends System.Web.UI.TemplateControl implements class System.Web.UI.IAttributeAccessor, class System.Web.UI.INamingContainer, class System.Web.UI.IUserControlDesignerAccessor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.UserControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.TemplateControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IAttributeAccessor</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IUserControlDesignerAccessor</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("Load")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer("Microsoft.VisualStudio.Web.WebForms.WebFormCodeDomSerializer, Microsoft.VisualStudio.Web, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.ComponentModel.Design.Serialization.TypeCodeDomSerializer, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.UserControlDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("Microsoft.VisualStudio.Web.WebForms.WebFormDesigner, Microsoft.VisualStudio.Web, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.ComponentModel.Design.IRootDesigner))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignerCategory("ASPXCodeBehind")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ControlBuilder(typeof(System.Web.UI.UserControlControlBuilder))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ParseChildren(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an .ascx file, also known as a user control, requested from a server that hosts an ASP.NET Web application. The file must be called from a Web Forms page or a parser error will occur.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.UserControl> class is associated with files that have .ascx extensions. These files are compiled at run time as <xref:System.Web.UI.UserControl> objects and cached in server memory.  
+  
+ You can nest user controls by declaring one .ascx file in another including the latter in a Web Forms page.  
+  
+ User controls are contained in ASP.NET Web Forms pages, and offer Web developers an easy way to capture commonly used Web UI. They are instantiated and cached in ways similar to <xref:System.Web.UI.Page> objects. Unlike pages, however, user controls cannot be called independently. They can only be called from the page or other user control that contains them.  
+  
+ Derive from this class if you want to create a user control using the code-behind technique. This is recommended if you are developing Web Forms pages using this technique.  
+  
+ For information about creating user controls declaratively, see [ASP.NET User Controls](http://msdn.microsoft.com/library/5e601b3d-bb16-4dbe-9e35-7e92a34565ca).  
+  
+   
+  
+## Examples  
+ The class defined in the following example, `SimpleControl`, inherits the <xref:System.Web.UI.UserControl> class and can be used as an ASP.NET code-behind class. It uses the <xref:System.Web.UI.WebControls.TextBox>, <xref:System.Web.UI.WebControls.Label>, and <xref:System.Web.UI.WebControls.Button> Web server controls and defines a `myButton_Click` method that assigns the <xref:System.Web.UI.WebControls.TextBox.Text%2A?displayProperty=fullName> property value, along with two strings, to the <xref:System.Web.UI.WebControls.Label.Text%2A?displayProperty=fullName> property.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ [!code-csharp[Sys.Web.UI.TemplateControl_UserControl#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/CS/simplecontrol.cs#2)]
+ [!code-vb[Sys.Web.UI.TemplateControl_UserControl#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/VB/simplecontrol.vb#2)]  
+  
+ The following example is markup contained in an .ascx file. You can use the `SimpleControl` class defined in the previous example as a code-behind class for the markup in this .ascx file.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Sys.Web.UI.TemplateControl_UserControl#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/CS/simpleformcs.ascx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Sys.Web.UI.TemplateControl_UserControl#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Sys.Web.UI.TemplateControl_UserControl/VB/simpleformvb.ascx#3)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UserControl ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.UserControl" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You do not typically create an instance of the <xref:System.Web.UI.UserControl> class. To create your own user control, inherit from the <xref:System.Web.UI.UserControl> class.  
+  
+ To create a new user control on an ASP.NET page programmatically, use the <xref:System.Web.UI.TemplateControl.LoadControl%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public System.Web.HttpApplicationState Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpApplicationState Application" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Application" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpApplicationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Web.HttpContext.Application" /> object for the current Web request.</summary>
+        <value>The <see cref="T:System.Web.HttpApplicationState" /> object for the current Web request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example adds two key value pairs to the application state associated with a user control if the user control's <xref:System.Web.UI.UserControl.IsPostBack%2A> property returns `false`. When this condition is met, the code uses the <xref:System.Web.HttpApplicationState.Add%2A> method, through the user control's <xref:System.Web.UI.UserControl.Application%2A> property, to add the keys and their values.  
+  
+ [!code-csharp[UserControl_Properties#2](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl_Properties/CS/usercontrol_properties.cs.aspx#2)]
+ [!code-vb[UserControl_Properties#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl_Properties/VB/usercontrol_properties.vb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public System.Web.UI.AttributeCollection Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.AttributeCollection Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.AttributeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of all attribute name and value pairs declared in the user control tag within the .aspx file.</summary>
+        <value>An <see cref="T:System.Web.UI.AttributeCollection" /> object that contains all the name and value pairs declared in the user control tag.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the user control's <xref:System.Web.UI.UserControl.Attributes%2A> property to access the `Message` attribute declared in the custom control tag that instantiated the user control on the page that contains it.  
+  
+ [!code-csharp[UserControl_Properties#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl_Properties/CS/usercontrol_properties.cs.aspx#1)]
+ [!code-vb[UserControl_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl_Properties/VB/usercontrol_properties.vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cache">
+      <MemberSignature Language="C#" Value="public System.Web.Caching.Cache Cache { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Caching.Cache Cache" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Cache" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Caching.Cache</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Caching.Cache" /> object that is associated with the application that contains the user control.</summary>
+        <value>The <see cref="T:System.Web.Caching.Cache" /> object in which to store the user control's data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.UserControl.Cache%2A> allows you to store data for later retrieval, and is shared across the application. The data that you store is independent of the current page or user session. Access data through this property to boost page or application performance if creating the data is slow. For more information about using the Cache, see [Caching Application Data](http://msdn.microsoft.com/library/206f977d-7860-4d20-bdd5-c3b3d8479f3d).  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Web.UI.UserControl.Cache%2A> property to store the <xref:System.Web.UI.WebControls.Label.Text%2A> property value of a <xref:System.Web.UI.WebControls.Label> Web server control, `txtValue`, in the <xref:System.Web.Caching.Cache> object associated with the user control's application. It uses the <xref:System.Web.UI.UserControl.Cache%2A> property to do so, assigning the item a key parameter value of `txtName.Text`.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ [!code-csharp[Classic Cache.this Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Cache.this Example/CS/source.cs#2)]
+ [!code-vb[Classic Cache.this Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Cache.this Example/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CachePolicy">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ControlCachePolicy CachePolicy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ControlCachePolicy CachePolicy" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.CachePolicy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ControlCachePolicy</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a collection of caching parameters for this user control.</summary>
+        <value>A <see cref="T:System.Web.UI.ControlCachePolicy" /> containing properties that define the caching parameters for this <see cref="T:System.Web.UI.UserControl" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.UserControl.CachePolicy%2A> property defines the cache parameters for the instance of the <xref:System.Web.UI.UserControl> class. The <xref:System.Web.UI.UserControl.CachePolicy%2A> property is read-only; however, you can set the properties of the <xref:System.Web.UI.ControlCachePolicy> object that it returns.  
+  
+ The <xref:System.Web.UI.UserControl.CachePolicy%2A> property cannot be set declaratively. It must be set programmatically.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.ControlCachePolicy.SupportsCaching%2A> property to determine whether the user control can be cached, and if so, sets the <xref:System.Web.UI.ControlCachePolicy.Duration%2A> property to cache the control for 10 seconds.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[UserControlCachePolicy#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControlCachePolicy/CS/usercontrolcachepolicycs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[UserControlCachePolicy#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControlCachePolicy/VB/usercontrolcachepolicyvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignerInitialize">
+      <MemberSignature Language="C#" Value="public void DesignerInitialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DesignerInitialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.DesignerInitialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs any initialization steps on the user control that are required by RAD designers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example calls the <xref:System.Web.UI.UserControl.DesignerInitialize%2A> method during the `Page_Init` stage of request processing. This makes the user control available to a RAD designer such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)].  
+  
+ [!code-csharp[UserControl1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl1/CS/usercontrol1.cs.aspx#1)]
+ [!code-vb[UserControl1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl1/VB/usercontrol1.vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeAsUserControl">
+      <MemberSignature Language="C#" Value="public void InitializeAsUserControl (System.Web.UI.Page page);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InitializeAsUserControl(class System.Web.UI.Page page) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.InitializeAsUserControl(System.Web.UI.Page)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="page" Type="System.Web.UI.Page" />
+      </Parameters>
+      <Docs>
+        <param name="page">The <see cref="T:System.Web.UI.Page" /> object that contains the user control.</param>
+        <summary>Initializes the <see cref="T:System.Web.UI.UserControl" /> object that has been created declaratively. Since there are some differences between pages and user controls, this method makes sure that the user control is initialized properly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example calls the <xref:System.Web.UI.UserControl.InitializeAsUserControl%2A> method during the `Page_Init` stage of request processing. In this case it is initialized from the page itself, but you could initialize it from another control and pass the <xref:System.Web.UI.Page.ID%2A> property value of the containing page as the parameter for this method.  
+  
+ [!code-csharp[UserControl1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl1/CS/usercontrol1.cs.aspx#1)]
+ [!code-vb[UserControl1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl1/VB/usercontrol1.vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPostBack">
+      <MemberSignature Language="C#" Value="public bool IsPostBack { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsPostBack" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.IsPostBack" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the user control is being loaded in response to a client postback, or if it is being loaded and accessed for the first time.</summary>
+        <value>
+          <see langword="true" /> if the user control is being loaded in response to a client postback; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example adds two key value pairs to the application state associated with a user control if the user control's <xref:System.Web.UI.UserControl.IsPostBack%2A> property returns `false`. When this condition is met, the code uses the <xref:System.Web.HttpApplicationState.Add%2A> method, through the user control's <xref:System.Web.UI.UserControl.Application%2A> property, to add the keys and their values.  
+  
+ [!code-csharp[UserControl_Properties#2](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl_Properties/CS/usercontrol_properties.cs.aspx#2)]
+ [!code-vb[UserControl_Properties#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl_Properties/VB/usercontrol_properties.vb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">An <see cref="T:System.Object" /> that represents the user control state to be restored.</param>
+        <summary>Restores the view-state information from a previous user control request that was saved by the <see cref="M:System.Web.UI.UserControl.SaveViewState" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used primarily by the .NET Framework infrastructure and is not intended to be used directly from your code.  However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+  
+ You can load a view-state value into a field so that you do not have to retrieve it from the <xref:System.Web.UI.Control.ViewState%2A?displayProperty=fullName> property later. You can also insert the value into the <xref:System.Web.UI.Control.ViewState%2A> property just before calling <xref:System.Web.UI.UserControl.SaveViewState%2A> , which is an effective way to make a field persist across round trips to the server.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a user control that manages its view state using the <xref:System.Web.UI.UserControl.LoadViewState%2A> and <xref:System.Web.UI.UserControl.SaveViewState%2A> methods.  
+  
+ [!code-csharp[UserControl_StateManagement#1](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl_StateManagement/CS/usercontrol2.cs#1)]
+ [!code-vb[UserControl_StateManagement#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl_StateManagement/VB/usercontrol2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapPath">
+      <MemberSignature Language="C#" Value="public string MapPath (string virtualPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string MapPath(string virtualPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.MapPath(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual file path to map.</param>
+        <summary>Assigns a virtual file path, either absolute or relative, to a physical file path.</summary>
+        <returns>The physical path to the file.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ While similar to the <xref:System.Web.UI.Page.MapPath%2A?displayProperty=fullName> method, this method maps the path from the .ascx file's location, not the .aspx file's location. You can use this method to obtain a path to a directory of images or other resources associated with your <xref:System.Web.UI.UserControl> object.  
+  
+   
+  
+## Examples  
+ The following example calls the <xref:System.Web.UI.UserControl.MapPath%2A> method to associate an `actualServerPath` variable with the physical path associated with the user control named `myControl`.  
+  
+ [!code-csharp[UserControl1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl1/CS/usercontrol1.cs.aspx#3)]
+ [!code-vb[UserControl1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl1/VB/usercontrol1.vb.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInit">
+      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.OnInit(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Init" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When notified by this method, the <xref:System.Web.UI.UserControl> must perform any initialization steps that are required to create and set up an instance. This method confirms site information associated with the <xref:System.Web.UI.UserControl> instance and ensures that the class is initialized correctly as a <xref:System.Web.UI.UserControl> object.  
+  
+ In this stage of the user control's lifecycle, the control's view state has yet to be populated. Additionally, you cannot access other server controls when this method is called, regardless of whether it is a child or parent to this control. Other server controls are not certain to be created and ready for access.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Request">
+      <MemberSignature Language="C#" Value="public System.Web.HttpRequest Request { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpRequest Request" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Request" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpRequest</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpRequest" /> object for the current Web request.</summary>
+        <value>The <see cref="T:System.Web.HttpRequest" /> object associated with the <see cref="T:System.Web.UI.Page" /> that contains the <see cref="T:System.Web.UI.UserControl" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Web.UI.UserControl.Request%2A> property to obtain the physical path of the user control. With an <xref:System.Web.UI.Control.ID%2A> property set to `myControl`, the user control's location is obtained by a containing page or user control using the `myControl.Request.Path` syntax.  
+  
+ [!code-csharp[UserControl1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl1/CS/usercontrol1.cs.aspx#3)]
+ [!code-vb[UserControl1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl1/VB/usercontrol1.vb.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Response">
+      <MemberSignature Language="C#" Value="public System.Web.HttpResponse Response { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpResponse Response" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Response" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpResponse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpResponse" /> object for the current Web request.</summary>
+        <value>The <see cref="T:System.Web.HttpResponse" /> object associated with the <see cref="T:System.Web.UI.Page" /> that contains the <see cref="T:System.Web.UI.UserControl" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses the <xref:System.Web.UI.UserControl.Response%2A> property to write the name of the Web server computer on which the user control is running. The `myControl.Response.Write` syntax instructs the user control to display the information the control obtains with the `myControl.Server.Machinename` syntax.  
+  
+ [!code-csharp[UserControl1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl1/CS/usercontrol1.cs.aspx#3)]
+ [!code-vb[UserControl1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl1/VB/usercontrol1.vb.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves any user control view-state changes that have occurred since the last page postback.</summary>
+        <returns>Returns the user control's current view state. If there is no view state associated with the control, it returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In general, you do not need to call this method. However, if you store custom information in view state, you can override this method to do so.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a user control that manages its view state using the <xref:System.Web.UI.UserControl.LoadViewState%2A> and <xref:System.Web.UI.UserControl.SaveViewState%2A> methods.  
+  
+ [!code-csharp[UserControl_StateManagement#2](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl_StateManagement/CS/usercontrol2.cs#2)]
+ [!code-vb[UserControl_StateManagement#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl_StateManagement/VB/usercontrol2.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Server">
+      <MemberSignature Language="C#" Value="public System.Web.HttpServerUtility Server { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpServerUtility Server" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Server" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpServerUtility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpServerUtility" /> object for the current Web request.</summary>
+        <value>The <see cref="T:System.Web.HttpServerUtility" /> object associated with the <see cref="T:System.Web.UI.Page" /> that contains the <see cref="T:System.Web.UI.UserControl" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.UserControl.Server%2A> object is compatible with ASP pages.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Web.UI.UserControl.Server%2A> property to write the name of the Web server computer on which the user control is running. The `myControl.Response.Write` syntax instructs the user control to display the information the control obtains with the `myControl.Server.Machinename` syntax.  
+  
+ [!code-csharp[UserControl1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl1/CS/usercontrol1.cs.aspx#3)]
+ [!code-vb[UserControl1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl1/VB/usercontrol1.vb.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Session">
+      <MemberSignature Language="C#" Value="public System.Web.SessionState.HttpSessionState Session { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SessionState.HttpSessionState Session" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Session" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.SessionState.HttpSessionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.SessionState.HttpSessionState" /> object for the current Web request.</summary>
+        <value>An <see cref="T:System.Web.SessionState.HttpSessionState" /> object associated with the <see cref="T:System.Web.UI.Page" /> that contains the <see cref="T:System.Web.UI.UserControl" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example adds values to the <xref:System.Web.UI.UserControl.Session%2A> property of a user control. The `myControl.Session.Add` syntax inserts the values of two <xref:System.Web.UI.WebControls.TextBox> Web server controls to the session associated with the user control and the page that contains it.  
+  
+ [!code-csharp[UserControl1#6](~/samples/snippets/csharp/VS_Snippets_WebNet/UserControl1/CS/usercontrol1.cs.aspx#6)]
+ [!code-vb[UserControl1#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/UserControl1/VB/usercontrol1.vb.aspx#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IAttributeAccessor.GetAttribute">
+      <MemberSignature Language="C#" Value="string IAttributeAccessor.GetAttribute (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.IAttributeAccessor.GetAttribute(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.System#Web#UI#IAttributeAccessor#GetAttribute(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attribute to get the value of.</param>
+        <summary>Returns the value of the specified user control attribute.</summary>
+        <returns>The value of the specified user control attribute.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.UserControl.System%23Web%23UI%23IAttributeAccessor%23GetAttribute%2A> method to get the value of control attributes that are not exposed as properties on the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IAttributeAccessor.SetAttribute">
+      <MemberSignature Language="C#" Value="void IAttributeAccessor.SetAttribute (string name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IAttributeAccessor.SetAttribute(string name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.System#Web#UI#IAttributeAccessor#SetAttribute(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the attribute to set.</param>
+        <param name="value">The value of the attribute to set.</param>
+        <summary>Sets the value of the specified user control attribute.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.UserControl.System%23Web%23UI%23IAttributeAccessor%23SetAttribute%2A> method to set the value of control attributes that are not exposed as properties on the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IUserControlDesignerAccessor.InnerText">
+      <MemberSignature Language="C#" Value="string System.Web.UI.IUserControlDesignerAccessor.InnerText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string System.Web.UI.IUserControlDesignerAccessor.InnerText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.System#Web#UI#IUserControlDesignerAccessor#InnerText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that appears between the opening and closing tags of a user control.</summary>
+        <value>The text that appears between the opening and closing tabs of a user control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IUserControlDesignerAccessor.TagName">
+      <MemberSignature Language="C#" Value="string System.Web.UI.IUserControlDesignerAccessor.TagName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string System.Web.UI.IUserControlDesignerAccessor.TagName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.System#Web#UI#IUserControlDesignerAccessor#TagName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the full tag name of the user control.</summary>
+        <value>The full tag name of the user control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Trace">
+      <MemberSignature Language="C#" Value="public System.Web.TraceContext Trace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.TraceContext Trace" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.UserControl.Trace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.TraceContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.TraceContext" /> object for the current Web request.</summary>
+        <value>The data from the <see cref="T:System.Web.TraceContext" /> object for the current Web request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Tracing tracks and presents the execution details about a Web request. For trace data to be visible in a rendered page, you must enable tracing for that page.  
+  
+ By default, page tracing is disabled. To enable tracing for a page, use the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive as follows: \<%@ Page trace="true" %>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryUpdateModel&lt;TModel&gt;">
+      <MemberSignature Language="C#" Value="public virtual bool TryUpdateModel&lt;TModel&gt; (TModel model) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryUpdateModel&lt;class TModel&gt;(!!TModel model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.TryUpdateModel``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="model" Type="TModel" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of the model object.</typeparam>
+        <param name="model">The model instance to update.</param>
+        <summary>Attempts to update the model instance by using the values from the data-bound control.</summary>
+        <returns>
+          <see langword="true" /> if the model instance was updated successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.UserControl.TryUpdateModel%2A> method must be invoked from inside a data-operation method of the control by using the `ModelType` property for data binding.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryUpdateModel&lt;TModel&gt;">
+      <MemberSignature Language="C#" Value="public virtual bool TryUpdateModel&lt;TModel&gt; (TModel model, System.Web.ModelBinding.IValueProvider valueProvider) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryUpdateModel&lt;class TModel&gt;(!!TModel model, class System.Web.ModelBinding.IValueProvider valueProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.TryUpdateModel``1(``0,System.Web.ModelBinding.IValueProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="model" Type="TModel" />
+        <Parameter Name="valueProvider" Type="System.Web.ModelBinding.IValueProvider" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of the model object.</typeparam>
+        <param name="model">The model instance to update.</param>
+        <param name="valueProvider">A dictionary of values to use to update the model.</param>
+        <summary>Attempts to update the model instance using values from the value provider.</summary>
+        <returns>
+          <see langword="true" /> if the model instance was updated successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.UserControl.TryUpdateModel%2A> method must be invoked from inside a data-operation method of the control using the `ModelType` property for data binding.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateModel&lt;TModel&gt;">
+      <MemberSignature Language="C#" Value="public virtual void UpdateModel&lt;TModel&gt; (TModel model) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateModel&lt;class TModel&gt;(!!TModel model) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.UpdateModel``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="model" Type="TModel" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of the model object.</typeparam>
+        <param name="model">The model instance to update.</param>
+        <summary>Updates the model instance by using values from the data-bound control.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The model instance was not updated successfully.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateModel&lt;TModel&gt;">
+      <MemberSignature Language="C#" Value="public virtual void UpdateModel&lt;TModel&gt; (TModel model, System.Web.ModelBinding.IValueProvider valueProvider) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateModel&lt;class TModel&gt;(!!TModel model, class System.Web.ModelBinding.IValueProvider valueProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControl.UpdateModel``1(``0,System.Web.ModelBinding.IValueProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="model" Type="TModel" />
+        <Parameter Name="valueProvider" Type="System.Web.ModelBinding.IValueProvider" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of the model object.</typeparam>
+        <param name="model">The model instance to update.</param>
+        <param name="valueProvider">A dictionary of values to use to update the model.</param>
+        <summary>Updates the specified model instance using values from the value provider of the user control.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The model instance was not updated successfully.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

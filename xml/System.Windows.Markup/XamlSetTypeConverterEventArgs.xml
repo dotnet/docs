@@ -1,0 +1,126 @@
+<Type Name="XamlSetTypeConverterEventArgs" FullName="System.Windows.Markup.XamlSetTypeConverterEventArgs">
+  <TypeSignature Language="C#" Value="public class XamlSetTypeConverterEventArgs : System.Windows.Markup.XamlSetValueEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlSetTypeConverterEventArgs extends System.Windows.Markup.XamlSetValueEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlSetTypeConverterEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Markup.XamlSetValueEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for callbacks that are invoked when a XAML writer sets a value using a type converter call.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Callbacks for type converter usages use the <xref:System.EventHandler%601> delegate, with <xref:System.Windows.Markup.XamlSetTypeConverterEventArgs> event data constraint.  
+  
+ Callbacks for type converter usages are referenced by <xref:System.Windows.Markup.XamlSetTypeConverterAttribute> applied at the class level (for example on <xref:System.Windows.Setter> class in WPF). A custom <xref:System.Xaml.Schema.XamlTypeInvoker> might also reference a callback through the <xref:System.Xaml.Schema.XamlTypeInvoker.SetTypeConverterHandler%2A>value.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlSetTypeConverterEventArgs (System.Xaml.XamlMember member, System.ComponentModel.TypeConverter typeConverter, object value, System.ComponentModel.ITypeDescriptorContext serviceProvider, System.Globalization.CultureInfo cultureInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlMember member, class System.ComponentModel.TypeConverter typeConverter, object value, class System.ComponentModel.ITypeDescriptorContext serviceProvider, class System.Globalization.CultureInfo cultureInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlSetTypeConverterEventArgs.#ctor(System.Xaml.XamlMember,System.ComponentModel.TypeConverter,System.Object,System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="member" Type="System.Xaml.XamlMember" />
+        <Parameter Name="typeConverter" Type="System.ComponentModel.TypeConverter" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="serviceProvider" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="cultureInfo" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="member">XAML type system / schema information for the member being set.</param>
+        <param name="typeConverter">The specific type converter instance being invoked.</param>
+        <param name="value">The value to provide for the member being set.</param>
+        <param name="serviceProvider">Service provider information that can be used by the <c>typeConverter</c> class.</param>
+        <param name="cultureInfo">Culture information that can be used by the <c>typeConverter</c> class when calling <see cref="M:System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" /> and other methods.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlSetTypeConverterEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallBase">
+      <MemberSignature Language="C#" Value="public override void CallBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CallBase() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlSetTypeConverterEventArgs.CallBase" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides a way to invoke a callback as defined on a base class of the current acting type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CultureInfo">
+      <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo CultureInfo { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo CultureInfo" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlSetTypeConverterEventArgs.CultureInfo" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets <see cref="T:System.Globalization.CultureInfo" /> information that can be used by the type converter class when calling <see cref="M:System.ComponentModel.TypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" /> and other methods.</summary>
+        <value>Culture information that can be used by the type converter class</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceProvider">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.ITypeDescriptorContext ServiceProvider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ITypeDescriptorContext ServiceProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlSetTypeConverterEventArgs.ServiceProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ITypeDescriptorContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets <see cref="T:System.IServiceProvider" /> information that can be used by the type converter class.</summary>
+        <value>Service provider information that can be used by the <paramref name="typeConverter" /> class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeConverter">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.TypeConverter TypeConverter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.TypeConverter TypeConverter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlSetTypeConverterEventArgs.TypeConverter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.TypeConverter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ComponentModel.TypeConverter" /> instance that is invoked and provides type conversion behavior.</summary>
+        <value>The type converter that provides type conversion behavior.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

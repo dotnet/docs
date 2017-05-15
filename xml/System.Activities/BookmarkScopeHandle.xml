@@ -1,0 +1,163 @@
+<Type Name="BookmarkScopeHandle" FullName="System.Activities.BookmarkScopeHandle">
+  <TypeSignature Language="C#" Value="public sealed class BookmarkScopeHandle : System.Activities.Handle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BookmarkScopeHandle extends System.Activities.Handle" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.BookmarkScopeHandle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Handle</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A T:System.Handle used to manage the lifetime of a <see cref="T:System.Activities.BookmarkScope" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BookmarkScopeHandle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.BookmarkScopeHandle.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.BookmarkScopeHandle" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BookmarkScope">
+      <MemberSignature Language="C#" Value="public System.Activities.BookmarkScope BookmarkScope { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.BookmarkScope BookmarkScope" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.BookmarkScopeHandle.BookmarkScope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.BookmarkScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Activities.BookmarkScope" /> associated with this <see cref="T:System.Activities.BookmarkScopeHandle" />.</summary>
+        <value>A <see cref="T:System.Activities.BookmarkScope" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBookmarkScope">
+      <MemberSignature Language="C#" Value="public void CreateBookmarkScope (System.Activities.NativeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreateBookmarkScope(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.BookmarkScopeHandle.CreateBookmarkScope(System.Activities.NativeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The activity context.</param>
+        <summary>Creates a new <see cref="P:System.Activities.BookmarkScopeHandle.BookmarkScope" /></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBookmarkScope">
+      <MemberSignature Language="C#" Value="public void CreateBookmarkScope (System.Activities.NativeActivityContext context, Guid scopeId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreateBookmarkScope(class System.Activities.NativeActivityContext context, valuetype System.Guid scopeId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.BookmarkScopeHandle.CreateBookmarkScope(System.Activities.NativeActivityContext,System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+        <Parameter Name="scopeId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="context">The activity context.</param>
+        <param name="scopeId">A unique global identifier associated with the <see cref="T:System.Activities.BookmarkScope" />.</param>
+        <summary>Creates a new <see cref="T:System.Activities.BookmarkScope" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static System.Activities.BookmarkScopeHandle Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Activities.BookmarkScopeHandle Default" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.BookmarkScopeHandle.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.BookmarkScopeHandle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default <see cref="T:System.Activities.BookmarkScopeHandle" />.</summary>
+        <value>A <see cref="T:System.Activities.BookmarkScopeHandle" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public void Initialize (System.Activities.NativeActivityContext context, Guid scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize(class System.Activities.NativeActivityContext context, valuetype System.Guid scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.BookmarkScopeHandle.Initialize(System.Activities.NativeActivityContext,System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+        <Parameter Name="scope" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="context">The activity context.</param>
+        <param name="scope">A GUID identifier that is associated with <see cref="P:System.Activities.BookmarkScopeHandle.BookmarkScope" />.</param>
+        <summary>Initializes the <see cref="P:System.Activities.BookmarkScopeHandle.BookmarkScope" />, usingthe specified activity context and GUID identifier.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUninitialize">
+      <MemberSignature Language="C#" Value="protected override void OnUninitialize (System.Activities.HandleInitializationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnUninitialize(class System.Activities.HandleInitializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.BookmarkScopeHandle.OnUninitialize(System.Activities.HandleInitializationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.HandleInitializationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

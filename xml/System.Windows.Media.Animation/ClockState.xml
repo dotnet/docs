@@ -1,0 +1,75 @@
+<Type Name="ClockState" FullName="System.Windows.Media.Animation.ClockState">
+  <TypeSignature Language="C#" Value="public enum ClockState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClockState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ClockState" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the potential states of a timeline's <see cref="T:System.Windows.Media.Animation.Clock" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that <xref:System.Windows.Media.Animation.ClockState> does not indicate whether a clock is paused or the direction in which time is flowing.  
+  
+ These explanations rely on the concept of ticks; for a detailed explanation see the [Animation and Timing System Overview](~/docs/framework/wpf/graphics-multimedia/animation-and-timing-system-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="Active" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Animation.ClockState Active = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ClockState.Active" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.ClockState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The current <see cref="T:System.Windows.Media.Animation.Clock" /> time changes in direct relation to that of its parent. If the timeline is an animation, it is actively affecting targeted properties, so their value may change from *tick* (a sampling point in time) to tick. If the timeline has children, they may be <see cref="F:System.Windows.Media.Animation.ClockState.Active" />, <see cref="F:System.Windows.Media.Animation.ClockState.Filling" />, or <see cref="F:System.Windows.Media.Animation.ClockState.Stopped" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Filling">
+      <MemberSignature Language="C#" Value="Filling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Animation.ClockState Filling = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ClockState.Filling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.ClockState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Media.Animation.Clock" /> timing continues, but does not change in relation to that of its parent. If the timeline is an animation, it is actively affecting targeted properties, but its values don't change from tick to tick. If the timeline has children, they may be <see cref="F:System.Windows.Media.Animation.ClockState.Active" />, <see cref="F:System.Windows.Media.Animation.ClockState.Filling" />, or <see cref="F:System.Windows.Media.Animation.ClockState.Stopped" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stopped">
+      <MemberSignature Language="C#" Value="Stopped" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Animation.ClockState Stopped = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ClockState.Stopped" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.ClockState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Media.Animation.Clock" /> timing is halted, making the clock's current time and progress values undefined. If this timeline is an animation, it no longer affects targeted properties. If this timeline has children, they are also <see cref="F:System.Windows.Media.Animation.ClockState.Stopped" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

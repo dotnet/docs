@@ -1,0 +1,91 @@
+<Type Name="InstanceKeyView" FullName="System.Runtime.DurableInstancing.InstanceKeyView">
+  <TypeSignature Language="C#" Value="public sealed class InstanceKeyView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InstanceKeyView extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceKeyView" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a view into instance key information.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InstanceKey">
+      <MemberSignature Language="C#" Value="public Guid InstanceKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid InstanceKey" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceKeyView.InstanceKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the instance key (GUID).</summary>
+        <value>The value of the instance key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceKeyMetadata">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt; InstanceKeyMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt; InstanceKeyMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceKeyView.InstanceKeyMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the metadata for the instance key as a dictionary of **XNames** and corresponding **InstanceValue** objects.</summary>
+        <value>The metadata for the instance key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceKeyMetadataConsistency">
+      <MemberSignature Language="C#" Value="public System.Runtime.DurableInstancing.InstanceValueConsistency InstanceKeyMetadataConsistency { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.DurableInstancing.InstanceValueConsistency InstanceKeyMetadataConsistency" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceKeyView.InstanceKeyMetadataConsistency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceValueConsistency</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets consistency of the metadata (None, In Doubt, or Partial) of the instance key.</summary>
+        <value>The consistency of the metadata.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InstanceKeyState">
+      <MemberSignature Language="C#" Value="public System.Runtime.DurableInstancing.InstanceKeyState InstanceKeyState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.DurableInstancing.InstanceKeyState InstanceKeyState" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.DurableInstancing.InstanceKeyView.InstanceKeyState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceKeyState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the instance key (Unassociated, Associated, or Completed).</summary>
+        <value>The state of the instance key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

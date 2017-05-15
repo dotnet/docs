@@ -1,0 +1,101 @@
+<Type Name="GenericTypeArgumentConverter" FullName="System.Activities.Core.Presentation.GenericTypeArgumentConverter">
+  <TypeSignature Language="C#" Value="public sealed class GenericTypeArgumentConverter : System.Windows.Data.IValueConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GenericTypeArgumentConverter extends System.Object implements class System.Windows.Data.IValueConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.GenericTypeArgumentConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Data.IValueConverter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Enables the retrieval of type arguments of generic types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_GenericTypeArgumentConverter#0](WFD_GenericTypeArgumentConverter#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GenericTypeArgumentConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.GenericTypeArgumentConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Core.Presentation.GenericTypeArgumentConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public object Convert (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object value, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.GenericTypeArgumentConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">The generic type in the binding source to get the type argument from.</param>
+        <param name="targetType">The type of the binding target property.</param>
+        <param name="parameter">The zero-based position of the type argument to get. This corresponds to the position of the argument in the order it appears in the list of type arguments for the generic type.</param>
+        <param name="culture">The culture information.</param>
+        <summary>Returns the type argument at the specified parameter position of the specified generic type.</summary>
+        <returns>The type argument.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertBack">
+      <MemberSignature Language="C#" Value="public object ConvertBack (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ConvertBack(object value, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.GenericTypeArgumentConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">Not implemented.</param>
+        <param name="targetType">Not implemented.</param>
+        <param name="parameter">Not implemented.</param>
+        <param name="culture">Not implemented.</param>
+        <summary>Not implemented.</summary>
+        <returns>Throws a <see cref="T:System.NotSupportedException" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

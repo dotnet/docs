@@ -1,0 +1,71 @@
+<Type Name="ToolsetDefinitionLocations" FullName="Microsoft.Build.BuildEngine.ToolsetDefinitionLocations">
+  <TypeSignature Language="C#" Value="public enum ToolsetDefinitionLocations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolsetDefinitionLocations extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.ToolsetDefinitionLocations" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An enumeration whose values control <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> initialization.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ConfigurationFile">
+      <MemberSignature Language="C#" Value="ConfigurationFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.BuildEngine.ToolsetDefinitionLocations ConfigurationFile = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.ToolsetDefinitionLocations.ConfigurationFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.BuildEngine.ToolsetDefinitionLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read Toolset information from the .exe configuration file.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.BuildEngine.ToolsetDefinitionLocations None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.ToolsetDefinitionLocations.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.BuildEngine.ToolsetDefinitionLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not read Toolset information from any external location.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Registry">
+      <MemberSignature Language="C#" Value="Registry" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.BuildEngine.ToolsetDefinitionLocations Registry = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Build.BuildEngine.ToolsetDefinitionLocations.Registry" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.BuildEngine.ToolsetDefinitionLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Read Toolset information from the registry (HKLM\Software\Microsoft\MSBuild\ToolsVersions).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

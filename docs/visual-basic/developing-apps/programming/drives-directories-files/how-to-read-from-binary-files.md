@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "My.Computer.FileSystem object, reading from binary files"
 ms.assetid: d2b1269e-24b6-42e0-9414-ae708db282d8
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

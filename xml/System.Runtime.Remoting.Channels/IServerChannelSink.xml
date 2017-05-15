@@ -1,0 +1,200 @@
+<Type Name="IServerChannelSink" FullName="System.Runtime.Remoting.Channels.IServerChannelSink">
+  <TypeSignature Language="C#" Value="public interface IServerChannelSink : System.Runtime.Remoting.Channels.IChannelSinkBase" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServerChannelSink implements class System.Runtime.Remoting.Channels.IChannelSinkBase" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IServerChannelSink" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Channels.IChannelSinkBase</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides methods used for security and transport sinks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Channel sinks provide a plug-in point that allows access to the underlying messages flowing through the channel as well as the stream used by the transport mechanism to send messages to a remote object. Channel sinks are linked together in a chain of channel sink providers, and all channel messages flow through this chain of sinks before the message is serialized and transported.  
+  
+   
+  
+## Examples  
+ The following code example illustrates an implementation of the <xref:System.Runtime.Remoting.Channels.IServerChannelSink> interface.  
+  
+ [!code-cpp[Remoting_Sinks#60](~/samples/snippets/cpp/VS_Snippets_Remoting/Remoting_Sinks/CPP/serversink.cpp#60)]
+ [!code-csharp[Remoting_Sinks#60](~/samples/snippets/csharp/VS_Snippets_Remoting/Remoting_Sinks/CS/serversink.cs#60)]  
+  
+ See the <xref:System.Runtime.Remoting.Channels.IServerChannelSinkProvider> interface documentation for an example of the corresponding server sink provider implementation.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName="AsyncProcessResponse">
+      <MemberSignature Language="C#" Value="public void AsyncProcessResponse (System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack sinkStack, object state, System.Runtime.Remoting.Messaging.IMessage msg, System.Runtime.Remoting.Channels.ITransportHeaders headers, System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AsyncProcessResponse(class System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack sinkStack, object state, class System.Runtime.Remoting.Messaging.IMessage msg, class System.Runtime.Remoting.Channels.ITransportHeaders headers, class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IServerChannelSink.AsyncProcessResponse(System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack,System.Object,System.Runtime.Remoting.Messaging.IMessage,System.Runtime.Remoting.Channels.ITransportHeaders,System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sinkStack" Type="System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack" />
+        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="msg" Type="System.Runtime.Remoting.Messaging.IMessage" />
+        <Parameter Name="headers" Type="System.Runtime.Remoting.Channels.ITransportHeaders" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="sinkStack">A stack of sinks leading back to the server transport sink.</param>
+        <param name="state">Information generated on the request side that is associated with this sink.</param>
+        <param name="msg">The response message.</param>
+        <param name="headers">The headers to add to the return message heading to the client.</param>
+        <param name="stream">The stream heading back to the transport sink.</param>
+        <summary>Requests processing from the current sink of the response from a method call sent asynchronously.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `state` parameter contains information that was pushed onto the channel sink stack and associated with the current sink.  
+  
+   
+  
+## Examples  
+ [!code-cpp[CommonTransportKeys#1](~/samples/snippets/cpp/VS_Snippets_Remoting/CommonTransportKeys/CPP/commontransportkeys.cpp#1)]
+ [!code-csharp[CommonTransportKeys#1](~/samples/snippets/csharp/VS_Snippets_Remoting/CommonTransportKeys/CS/commontransportkeys.cs#1)]
+ [!code-vb[CommonTransportKeys#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/CommonTransportKeys/VB/commontransportkeys.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResponseStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream GetResponseStream (System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack sinkStack, object state, System.Runtime.Remoting.Messaging.IMessage msg, System.Runtime.Remoting.Channels.ITransportHeaders headers);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetResponseStream(class System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack sinkStack, object state, class System.Runtime.Remoting.Messaging.IMessage msg, class System.Runtime.Remoting.Channels.ITransportHeaders headers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IServerChannelSink.GetResponseStream(System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack,System.Object,System.Runtime.Remoting.Messaging.IMessage,System.Runtime.Remoting.Channels.ITransportHeaders)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sinkStack" Type="System.Runtime.Remoting.Channels.IServerResponseChannelSinkStack" />
+        <Parameter Name="state" Type="System.Object" />
+        <Parameter Name="msg" Type="System.Runtime.Remoting.Messaging.IMessage" />
+        <Parameter Name="headers" Type="System.Runtime.Remoting.Channels.ITransportHeaders" />
+      </Parameters>
+      <Docs>
+        <param name="sinkStack">A stack of sinks leading back to the server transport sink.</param>
+        <param name="state">The state that has been pushed to the stack by this sink.</param>
+        <param name="msg">The response message to serialize.</param>
+        <param name="headers">The headers to put in the response stream to the client.</param>
+        <summary>Returns the <see cref="T:System.IO.Stream" /> onto which the provided response message is to be serialized.</summary>
+        <returns>The <see cref="T:System.IO.Stream" /> onto which the provided response message is to be serialized.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called when a response stream needs to be created.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="NextChannelSink">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Channels.IServerChannelSink NextChannelSink { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Channels.IServerChannelSink NextChannelSink" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IServerChannelSink.NextChannelSink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.IServerChannelSink</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the next server channel sink in the server sink chain.</summary>
+        <value>The next server channel sink in the server sink chain.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Channel sinks are linked together in a chain of sink providers, and all channel messages flow through this chain before the message is serialized and transported.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have the required <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /> permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessMessage">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Channels.ServerProcessing ProcessMessage (System.Runtime.Remoting.Channels.IServerChannelSinkStack sinkStack, System.Runtime.Remoting.Messaging.IMessage requestMsg, System.Runtime.Remoting.Channels.ITransportHeaders requestHeaders, System.IO.Stream requestStream, out System.Runtime.Remoting.Messaging.IMessage responseMsg, out System.Runtime.Remoting.Channels.ITransportHeaders responseHeaders, out System.IO.Stream responseStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Runtime.Remoting.Channels.ServerProcessing ProcessMessage(class System.Runtime.Remoting.Channels.IServerChannelSinkStack sinkStack, class System.Runtime.Remoting.Messaging.IMessage requestMsg, class System.Runtime.Remoting.Channels.ITransportHeaders requestHeaders, class System.IO.Stream requestStream, class System.Runtime.Remoting.Messaging.IMessage responseMsg, class System.Runtime.Remoting.Channels.ITransportHeaders responseHeaders, class System.IO.Stream responseStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IServerChannelSink.ProcessMessage(System.Runtime.Remoting.Channels.IServerChannelSinkStack,System.Runtime.Remoting.Messaging.IMessage,System.Runtime.Remoting.Channels.ITransportHeaders,System.IO.Stream,System.Runtime.Remoting.Messaging.IMessage@,System.Runtime.Remoting.Channels.ITransportHeaders@,System.IO.Stream@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.ServerProcessing</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sinkStack" Type="System.Runtime.Remoting.Channels.IServerChannelSinkStack" />
+        <Parameter Name="requestMsg" Type="System.Runtime.Remoting.Messaging.IMessage" />
+        <Parameter Name="requestHeaders" Type="System.Runtime.Remoting.Channels.ITransportHeaders" />
+        <Parameter Name="requestStream" Type="System.IO.Stream" />
+        <Parameter Name="responseMsg" Type="System.Runtime.Remoting.Messaging.IMessage&amp;" RefType="out" />
+        <Parameter Name="responseHeaders" Type="System.Runtime.Remoting.Channels.ITransportHeaders&amp;" RefType="out" />
+        <Parameter Name="responseStream" Type="System.IO.Stream&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="sinkStack">A stack of channel sinks that called the current sink.</param>
+        <param name="requestMsg">The message that contains the request.</param>
+        <param name="requestHeaders">Headers retrieved from the incoming message from the client.</param>
+        <param name="requestStream">The stream that needs to be to processed and passed on to the deserialization sink.</param>
+        <param name="responseMsg">When this method returns, contains a <see cref="T:System.Runtime.Remoting.Messaging.IMessage" /> that holds the response message. This parameter is passed uninitialized.</param>
+        <param name="responseHeaders">When this method returns, contains a <see cref="T:System.Runtime.Remoting.Channels.ITransportHeaders" /> that holds the headers that are to be added to return message heading to the client. This parameter is passed uninitialized.</param>
+        <param name="responseStream">When this method returns, contains a <see cref="T:System.IO.Stream" /> that is heading back to the transport sink. This parameter is passed uninitialized.</param>
+        <summary>Requests message processing from the current sink.</summary>
+        <returns>A <see cref="T:System.Runtime.Remoting.Channels.ServerProcessing" /> status value that provides information about how message was processed.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The job of a proxy is to convert a method call invoked on it into a message object. This message object, which implements the <xref:System.Runtime.Remoting.Messaging.IMessage> interface, is passed from the client end to the server end by invoking <xref:System.Runtime.Remoting.Channels.IServerChannelSink.ProcessMessage%2A> on message sink objects. Message sinks are chained together in the sense that every message sink is responsible for calling <xref:System.Runtime.Remoting.Channels.IServerChannelSink.ProcessMessage%2A> on the next message sink after it has performed its work. For instance, a synchronization-related message sink can cause a lock to be acquired or released, and then delegated further to the downstream message sink.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

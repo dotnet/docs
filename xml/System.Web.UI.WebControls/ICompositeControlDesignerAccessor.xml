@@ -1,0 +1,52 @@
+<Type Name="ICompositeControlDesignerAccessor" FullName="System.Web.UI.WebControls.ICompositeControlDesignerAccessor">
+  <TypeSignature Language="C#" Value="public interface ICompositeControlDesignerAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICompositeControlDesignerAccessor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ICompositeControlDesignerAccessor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface to allow a composite-control designer to recreate the child controls of its associated control at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A class derived from <xref:System.Web.UI.WebControls.CompositeControl> implements the <xref:System.Web.UI.WebControls.ICompositeControlDesignerAccessor> interface to allow its associated designer to call the control's <xref:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls%2A> method at design time. The associated designer must derive from <xref:System.Web.UI.Design.WebControls.CompositeControlDesigner>.  
+  
+ The <xref:System.Web.UI.WebControls.ICompositeControlDesignerAccessor> interface is used primarily by control developers.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RecreateChildControls">
+      <MemberSignature Language="C#" Value="public void RecreateChildControls ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RecreateChildControls() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>In a control derived from <see cref="T:System.Web.UI.WebControls.CompositeControl" />, recreates the child controls at design time. Called by the control's associated designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls%2A> method allows a designer for a composite control to recreate the control's child controls at design time.  
+  
+ The <xref:System.Web.UI.WebControls.ICompositeControlDesignerAccessor.RecreateChildControls%2A> method is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

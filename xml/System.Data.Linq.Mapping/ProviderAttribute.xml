@@ -1,0 +1,96 @@
+<Type Name="ProviderAttribute" FullName="System.Data.Linq.Mapping.ProviderAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ProviderAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProviderAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.ProviderAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies which database provider to use.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] supports <xref:System.Data.Linq.SqlClient.Sql2000Provider>, <xref:System.Data.Linq.SqlClient.Sql2005Provider>, and <xref:System.Data.Linq.SqlClient.Sql2008Provider> providers. These are subclasses of <xref:System.Data.Linq.SqlClient.SqlProvider>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProviderAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.ProviderAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.ProviderAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProviderAttribute (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.ProviderAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The provider type to use to construct the <see cref="T:System.Data.Linq.Mapping.ProviderAttribute" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.ProviderAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] supports <xref:System.Data.Linq.SqlClient.Sql2000Provider>, <xref:System.Data.Linq.SqlClient.Sql2005Provider>, and <xref:System.Data.Linq.SqlClient.Sql2008Provider> providers. These are subclasses of <xref:System.Data.Linq.SqlClient.SqlProvider>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public Type Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.ProviderAttribute.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the provider that is used to construct the <see cref="T:System.Data.Linq.Mapping.ProviderAttribute" />.</summary>
+        <value>The type of the provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] supports <xref:System.Data.Linq.SqlClient.Sql2000Provider>, <xref:System.Data.Linq.SqlClient.Sql2005Provider>, and <xref:System.Data.Linq.SqlClient.Sql2008Provider> providers. These are subclasses of <xref:System.Data.Linq.SqlClient.SqlProvider>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

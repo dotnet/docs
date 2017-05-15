@@ -15,8 +15,8 @@ dev_langs:
   - "VB"
 ms.assetid: 71a4a045-65bb-417d-b3bd-99a9fa3c53f6
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -47,4 +47,4 @@ The specified Clipboard format is incompatible with the method being executed. A
 -   Remove the invalid format and specify a valid one.  
   
 ## See Also  
- [Clipboard: Adding Other Formats](http://msdn.microsoft.com/library/aea58159-65ed-4385-aeaa-3d9d5281903b)
+ [Clipboard: Adding Other Formats](/cpp/mfc/clipboard-adding-other-formats)

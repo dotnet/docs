@@ -1,0 +1,172 @@
+<Type Name="XmlReturnReader" FullName="System.Web.Services.Protocols.XmlReturnReader">
+  <TypeSignature Language="C#" Value="public class XmlReturnReader : System.Web.Services.Protocols.MimeReturnReader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlReturnReader extends System.Web.Services.Protocols.MimeReturnReader" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.XmlReturnReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Protocols.MimeReturnReader</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Reads return values from XML that is encoded in the body of incoming responses for Web service clients implemented using HTTP but without SOAP.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Services.Protocols.XmlReturnReader> and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard. The <xref:System.Web.Services.Protocols.XmlReturnReader> class implements the client-side reading of XML documents into Web method return values. The XML documents are encoded in the body of HTTP responses.  
+  
+ You typically will not need to use <xref:System.Web.Services.Protocols.XmlReturnReader> directly. Instead, when the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter%2A> property to <xref:System.Web.Services.Protocols.XmlReturnReader>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlReturnReader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.XmlReturnReader.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.XmlReturnReader" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInitializer">
+      <MemberSignature Language="C#" Value="public override object GetInitializer (System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetInitializer(class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.XmlReturnReader.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodInfo" Type="System.Web.Services.Protocols.LogicalMethodInfo" />
+      </Parameters>
+      <Docs>
+        <param name="methodInfo">A <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> that specifies the Web method for which the initializer is obtained.</param>
+        <summary>Returns an initializer for the specified method.</summary>
+        <returns>An initializer for the specified method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An initializer is an object passed as a parameter to the Initialize method. For the <xref:System.Web.Services.Protocols.XmlReturnReader> class, the initializer is an <xref:System.Xml.Serialization.XmlSerializer> object for the return type of the Web method.  
+  
+ The <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializer%2A> method is invoked during service initialization. Later, at the time a response is processed, the initializer object is passed to the <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method of another <xref:System.Web.Services.Protocols.XmlReturnReader> instance. The other instance performs the actual reading.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInitializers">
+      <MemberSignature Language="C#" Value="public override object[] GetInitializers (System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object[] GetInitializers(class System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.XmlReturnReader.GetInitializers(System.Web.Services.Protocols.LogicalMethodInfo[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodInfos" Type="System.Web.Services.Protocols.LogicalMethodInfo[]" />
+      </Parameters>
+      <Docs>
+        <param name="methodInfos">An array of type <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> that specifies the Web methods for which the initializers are obtained.</param>
+        <summary>Returns an array of initializer objects corresponding to an input array of method definitions.</summary>
+        <returns>An array of initializer objects corresponding to an input array of method definitions.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An initializer is an object passed as a parameter to the Initialize method. For the <xref:System.Web.Services.Protocols.XmlReturnReader> class, the initializer is an <xref:System.Xml.Serialization.XmlSerializer> object for the return type of the Web method.  
+  
+ The <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializers%2A> method is invoked during service initialization. Later, at the time a response is processed, the initializer object for each Web method is passed to the <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method of another <xref:System.Web.Services.Protocols.XmlReturnReader> instance. The other instance performs the actual reading.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.XmlReturnReader.Initialize(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">An <see cref="T:System.Xml.Serialization.XmlSerializer" /> for the return type of the Web method being invoked.</param>
+        <summary>Initializes an instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method supplies the <xref:System.Xml.Serialization.XmlSerializer> object used by the <xref:System.Web.Services.Protocols.XmlReturnReader.Read%2A> method to deserialize an XML document contained in the HTTP response.  
+  
+ The <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method is invoked at the time a request is processed. The input parameter, `o`, is obtained by calling the <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializer%2A> or <xref:System.Web.Services.Protocols.XmlReturnReader.GetInitializers%2A> method on another instance during client initialization.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public override object Read (System.Net.WebResponse response, System.IO.Stream responseStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Read(class System.Net.WebResponse response, class System.IO.Stream responseStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.XmlReturnReader.Read(System.Net.WebResponse,System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Net.WebResponse" />
+        <Parameter Name="responseStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="response">An <see cref="T:System.Web.HttpRequest" /> object containing the output message for an operation.</param>
+        <param name="responseStream">A <see cref="T:System.IO.Stream" /> whose content is the body of the HTTP response represented by the <c>response</c> parameter.</param>
+        <summary>Gets a return value deserialized from an XML document contained in the HTTP response.</summary>
+        <returns>A return value deserialized from an XML document contained in the HTTP response.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To deserialize the XML content of the HTTP response, the <xref:System.Web.Services.Protocols.XmlReturnReader> class's implementation of the <xref:System.Web.Services.Protocols.XmlReturnReader.Read%2A> method uses the <xref:System.Xml.Serialization.XmlSerializer> object passed as an argument to the <xref:System.Web.Services.Protocols.XmlReturnReader.Initialize%2A> method. It throws an exception if the HTTP response's MIME content type is not `text/xml`. The method closes the response before returning the deserialized Web method return value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

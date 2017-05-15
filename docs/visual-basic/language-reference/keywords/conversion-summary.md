@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "type conversion, keywords"
 ms.assetid: ae2c79a7-2d62-4fbe-8585-14360d11f987
 caps.latest.revision: 13
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

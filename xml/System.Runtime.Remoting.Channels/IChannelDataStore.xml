@@ -1,0 +1,82 @@
+<Type Name="IChannelDataStore" FullName="System.Runtime.Remoting.Channels.IChannelDataStore">
+  <TypeSignature Language="C#" Value="public interface IChannelDataStore" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelDataStore" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IChannelDataStore" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Stores channel data for the remoting channels.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Channels that want to use the channel sink architecture must implement this interface on their `ChannelData` object.  
+  
+   
+  
+## Examples  
+ [!code-cpp[IChannelDataStore_Item#1](~/samples/snippets/cpp/VS_Snippets_Remoting/IChannelDataStore_Item/CPP/ichanneldatastore.cpp#1)]
+ [!code-csharp[IChannelDataStore_Item#1](~/samples/snippets/csharp/VS_Snippets_Remoting/IChannelDataStore_Item/CS/ichanneldatastore.cs#1)]
+ [!code-vb[IChannelDataStore_Item#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/IChannelDataStore_Item/VB/ichanneldatastore.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChannelUris">
+      <MemberSignature Language="C#" Value="public string[] ChannelUris { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ChannelUris" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannelDataStore.ChannelUris" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an array of channel URIs to which the current channel maps.</summary>
+        <value>An array of channel URIs to which the current channel maps.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[object key] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannelDataStore.Item(System.Object)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key the data object is associated with.</param>
+        <summary>Gets or sets the data object associated with the specified key for the implementing channel.</summary>
+        <value>The specified data object for the implementing channel.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

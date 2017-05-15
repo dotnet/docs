@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 292cc094-9483-4192-ac3b-a5dc51fbac12
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Style Part of a WordprocessingML Document

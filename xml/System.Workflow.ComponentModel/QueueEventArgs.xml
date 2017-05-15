@@ -1,0 +1,51 @@
+<Type Name="QueueEventArgs" FullName="System.Workflow.ComponentModel.QueueEventArgs">
+  <TypeSignature Language="C#" Value="public class QueueEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit QueueEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.QueueEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the event arguments for a workflow queue-related event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="QueueName">
+      <MemberSignature Language="C#" Value="public IComparable QueueName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IComparable QueueName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.QueueEventArgs.QueueName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IComparable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the workflow queue that originated the event.</summary>
+        <value>The name of the workflow queue that originated the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

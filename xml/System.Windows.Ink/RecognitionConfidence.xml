@@ -1,0 +1,84 @@
+<Type Name="RecognitionConfidence" FullName="System.Windows.Ink.RecognitionConfidence">
+  <TypeSignature Language="C#" Value="public enum RecognitionConfidence" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RecognitionConfidence extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.RecognitionConfidence" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the confidence level that the <see cref="T:System.Windows.Ink.GestureRecognizer" /> determines for a particular ink gesture.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_RecognitionConfidence"></a>   
+## XAML Text Usage  
+ This class is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to identify a gesture on an <xref:System.Windows.Controls.InkCanvas>. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1` and that its <xref:System.Windows.Controls.InkCanvas.Gesture> event has been connected to the event handler in this example.  
+  
+ [!code-csharp[GestureSample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureSample/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[GestureSample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureSample/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Intermediate">
+      <MemberSignature Language="C#" Value="Intermediate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.RecognitionConfidence Intermediate = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.RecognitionConfidence.Intermediate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.RecognitionConfidence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates intermediate confidence in the recognition result.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Poor">
+      <MemberSignature Language="C#" Value="Poor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.RecognitionConfidence Poor = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.RecognitionConfidence.Poor" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.RecognitionConfidence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates poor confidence in the recognition result.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Strong">
+      <MemberSignature Language="C#" Value="Strong" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Ink.RecognitionConfidence Strong = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.RecognitionConfidence.Strong" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.RecognitionConfidence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates strong confidence in the recognition result.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

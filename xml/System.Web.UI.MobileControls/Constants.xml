@@ -1,0 +1,474 @@
+<Type Name="Constants" FullName="System.Web.UI.MobileControls.Constants">
+  <TypeSignature Language="C#" Value="public class Constants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Constants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Constants" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Creates a UI element that allows user invocation of ASP.NET event handlers and provides a way to post user input from UI elements back to the server. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table describes the read-only <xref:System.Web.UI.MobileControls.Constants> class members you can use.  
+  
+|Member|Description|  
+|------------|-----------------|  
+|AlternatingItemTemplateTag|Contains the tag name for the AlternatingItem template.|  
+|ContentTemplateTag|Contains the tag name for the Content template.|  
+|DefaultSessionsStateHistorySize|Contains the default depth of the history stack.|  
+|EventArgumentID|The argument associated with the postback event.|  
+|EventSourceID|Contains the query String name of the event target (the control that generated the postback).|  
+|FooterTemplateTag|Contains the tag name for the Footer template.|  
+|FormIDPrefix|Contains the prefix of a form in a URL.|  
+|HeaderTemplateTag|Contains the tag name for the HeaderTemplate.|  
+|ItemDetailsTemplateTag|Contains the tag name for the ItemDetails template.|  
+|ItemTemplateTag|Contains the tag name for the Item template.|  
+|LabelTemplateTag|Contains the tag name for the Label template.|  
+|OptimumPageWeightParameter|Contains the default page weight.|  
+|PagePrefix|Contains a page number delimiter used to ensure proper page numbering in a postback.|  
+|ScreenCharactersHeightParameter|Contains the default for the height of the characters on the screen.|  
+|ScriptTemplateTag|Contains the tag name for the Script template.|  
+|SelectionListSpecialCharacter|Contains the character used in CheckBox IDs for cHTML.|  
+|SeparatorTemplateTag|Contains the tag name for the Separator template.|  
+|SymbolProtocol|Contains the characters used to denote the beginning of an i-mode or J-Phone symbol scheme.|  
+|UniqueFilePathSuffixVariable|Contains the query String name of the unique file path suffix.|  
+|UniqueFilePathSuffixVariableWithoutEqual|Contains the query String name of the unique file path suffix, but no equal sign.|  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Constants ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Constants.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.MobileControls.Constants" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlternatingItemTemplateTag">
+      <MemberSignature Language="C#" Value="public static readonly string AlternatingItemTemplateTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string AlternatingItemTemplateTag" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.AlternatingItemTemplateTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the tag name for the AlternatingItem template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentTemplateTag">
+      <MemberSignature Language="C#" Value="public static readonly string ContentTemplateTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ContentTemplateTag" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.ContentTemplateTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the tag name for the Content template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSessionsStateHistorySize">
+      <MemberSignature Language="C#" Value="public static readonly int DefaultSessionsStateHistorySize;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 DefaultSessionsStateHistorySize" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.DefaultSessionsStateHistorySize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the default depth of the history stack. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventArgumentID">
+      <MemberSignature Language="C#" Value="public static readonly string EventArgumentID;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string EventArgumentID" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.EventArgumentID" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The argument associated with the postback event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventSourceID">
+      <MemberSignature Language="C#" Value="public static readonly string EventSourceID;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string EventSourceID" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.EventSourceID" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the query String name of the event target (the control that generated the postback). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FooterTemplateTag">
+      <MemberSignature Language="C#" Value="public static readonly string FooterTemplateTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string FooterTemplateTag" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.FooterTemplateTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the tag name for the Footer template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormIDPrefix">
+      <MemberSignature Language="C#" Value="public static readonly string FormIDPrefix;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string FormIDPrefix" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.FormIDPrefix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the prefix of a form in a URL. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplateTag">
+      <MemberSignature Language="C#" Value="public static readonly string HeaderTemplateTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string HeaderTemplateTag" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.HeaderTemplateTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the tag name for the HeaderTemplate. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemDetailsTemplateTag">
+      <MemberSignature Language="C#" Value="public static readonly string ItemDetailsTemplateTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ItemDetailsTemplateTag" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.ItemDetailsTemplateTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the tag name for the ItemDetails template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplateTag">
+      <MemberSignature Language="C#" Value="public static readonly string ItemTemplateTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ItemTemplateTag" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.ItemTemplateTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the tag name for the Item template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LabelTemplateTag">
+      <MemberSignature Language="C#" Value="public static readonly string LabelTemplateTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string LabelTemplateTag" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.LabelTemplateTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the tag name for the Label template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OptimumPageWeightParameter">
+      <MemberSignature Language="C#" Value="public static readonly string OptimumPageWeightParameter;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string OptimumPageWeightParameter" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.OptimumPageWeightParameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the default page weight. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PagePrefix">
+      <MemberSignature Language="C#" Value="public static readonly string PagePrefix;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string PagePrefix" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.PagePrefix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains a page number delimiter used to ensure proper page numbering in a postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScreenCharactersHeightParameter">
+      <MemberSignature Language="C#" Value="public static readonly string ScreenCharactersHeightParameter;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ScreenCharactersHeightParameter" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.ScreenCharactersHeightParameter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the default for the height of the characters on the screen. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScriptTemplateTag">
+      <MemberSignature Language="C#" Value="public static readonly string ScriptTemplateTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ScriptTemplateTag" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.ScriptTemplateTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the tag name for the Script template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ AlternatingItemTemplateTag  
+ Contains the tag name for the AlternatingItem template.  
+  
+ ContentTemplateTag  
+ Contains the tag name for the Content template.  
+  
+ DefaultSessionsStateHistorySize  
+ Contains the default SessionsState history size.  
+  
+ EventArgumentID  
+ Contains the Event Argument ID.  
+  
+ EventSourceID  
+ Contains the Event Source ID.  
+  
+ FooterTemplateTag  
+ Contains the tag name for the Footer template.  
+  
+ FormIDPrefix  
+ Contains the Form ID prefix.  
+  
+ HeaderTemplateTag  
+ Contains the tag name for the Header template.  
+  
+ ItemDetailsTemplateTag  
+ Contains the tag name for the ItemDetails template.  
+  
+ ItemTemplateTag  
+ Contains the tag name for the Item template.  
+  
+ LabelTemplateTag  
+ Contains the tag name for the Label template.  
+  
+ OptimumPageWeightParameter  
+ Contains the optimum page weight parameter.  
+  
+ PagePrefix  
+ Contains the page prefix.  
+  
+ ScreenCharactersHeightParameter  
+ Contains the screen characters height parameter.  
+  
+ ScriptTemplateTag  
+ Contains the tag name for the Script template.  
+  
+ SelectionListSpecialCharacter  
+ Contains the selection list special character.  
+  
+ SeparatorTemplateTag  
+ Contains the tag name for the Separator template.  
+  
+ SymbolProtocol  
+ Contains the symbol protocol.  
+  
+ UniqueFilePathSuffixVariable  
+ Contains the unique file path suffix variable.  
+  
+ UniqueFilePathSuffixVariableWithoutEqual  
+ Contains the unique file path suffix variable without equal.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionListSpecialCharacter">
+      <MemberSignature Language="C#" Value="public static readonly char SelectionListSpecialCharacter;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly char SelectionListSpecialCharacter" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.SelectionListSpecialCharacter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the character used in CheckBox IDs for cHTML. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeparatorTemplateTag">
+      <MemberSignature Language="C#" Value="public static readonly string SeparatorTemplateTag;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string SeparatorTemplateTag" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.SeparatorTemplateTag" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the tag name for the Separator template. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SymbolProtocol">
+      <MemberSignature Language="C#" Value="public static readonly string SymbolProtocol;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string SymbolProtocol" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.SymbolProtocol" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the characters used to denote the beginning of an i-mode or J-Phone symbol scheme. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UniqueFilePathSuffixVariable">
+      <MemberSignature Language="C#" Value="public static readonly string UniqueFilePathSuffixVariable;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string UniqueFilePathSuffixVariable" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.UniqueFilePathSuffixVariable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the query String name of the unique file path suffix. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UniqueFilePathSuffixVariableWithoutEqual">
+      <MemberSignature Language="C#" Value="public static readonly string UniqueFilePathSuffixVariableWithoutEqual;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string UniqueFilePathSuffixVariableWithoutEqual" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.UniqueFilePathSuffixVariableWithoutEqual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the query String name of the unique file path suffix, but no equal sign. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

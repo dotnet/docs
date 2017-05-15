@@ -1,0 +1,198 @@
+<Type Name="FormViewDeleteEventArgs" FullName="System.Web.UI.WebControls.FormViewDeleteEventArgs">
+  <TypeSignature Language="C#" Value="public class FormViewDeleteEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormViewDeleteEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewDeleteEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.FormView.ItemDeleting" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormView> control raises the <xref:System.Web.UI.WebControls.FormView.ItemDeleting> event when a Delete button (a button with its `CommandName` property set to "Delete") within the control is clicked, but before the <xref:System.Web.UI.WebControls.FormView> control deletes the record. This allows you to provide an event-handling method that performs a custom routine, such as verifying a record before deleting it, whenever this event occurs.  
+  
+ A <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs> object is passed to the event-handling method, which allows you to determine the index of the record being deleted and to indicate that the delete operation should be canceled. To determine the index of a record, use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex%2A> property. To cancel the delete operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can also access the key fields and non-key fields by using the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> properties, respectively. These values are useful if you want to verify the record before deleting it.  
+  
+> [!NOTE]
+>  It is possible to modify the key field values and non-key field values in the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> properties, respectively. If you change these values, the record that corresponds to the new values will be deleted.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs> class, see the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs> object passed to the event-handling method for the <xref:System.Web.UI.WebControls.FormView.ItemDeleting> event to cancel a delete operation.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewDeleteEventArgs2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteEventArgs2/CS/formviewdeleteeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewDeleteEventArgs2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteEventArgs2/VB/formviewdeleteeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FormViewDeleteEventArgs (int rowIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 rowIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.FormViewDeleteEventArgs.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rowIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rowIndex">The index of the row being deleted.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.FormViewDeleteEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs> class.  
+  
+ The following table shows the initial property value for an instance of the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs> class.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex%2A>|The value of the `rowIndex` parameter.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers when raising events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an ordered dictionary of key field name/value pairs for the record to delete.</summary>
+        <value>An <see cref="T:System.Collections.Specialized.OrderedDictionary" /> that contains the key field name/value pairs for the record to delete.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> property contains the values of the key fields listed in the <xref:System.Web.UI.WebControls.FormView.DataKeyNames%2A> property of a <xref:System.Web.UI.WebControls.FormView> control. Use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> property to access the values of the key field or fields for the record to be deleted. For example, you can use these values to verify the record before deleting it, to change the record to delete, or to keep a log of deleted records.  
+  
+> [!NOTE]
+>  This property contains only the key fields. To access the name/value pair values for the non-key fields, use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the key fields. To access the key field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the key field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
+  
+> [!NOTE]
+>  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.OrderedDictionary> object to access the key field values. The advantage in using the indexer is that it returns key field values directly. Data source controls that rely on the field order (such as <xref:System.Web.UI.WebControls.AccessDataSource>) can access key field values only by index.  
+  
+ The <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> properties are read-only; however, you can modify the field values of the <xref:System.Collections.Specialized.OrderedDictionary> object. If you change the key and non-key field values, the corresponding record will be deleted from the data source.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> property to access the value of the key field for the record being deleted.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewDeleteEventArgs2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteEventArgs2/CS/formviewdeleteeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewDeleteEventArgs2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteEventArgs2/VB/formviewdeleteeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowIndex">
+      <MemberSignature Language="C#" Value="public int RowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the record being deleted from the data source.</summary>
+        <value>The index of the record being deleted from the data source.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex%2A> property to determine the index of the record being deleted from the data source. The row index corresponds to the page index of the record being deleted.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.RowIndex%2A> property to determine the index of the record being deleted.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewDeleteEventArgs2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteEventArgs2/CS/formviewdeleteeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewDeleteEventArgs2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteEventArgs2/VB/formviewdeleteeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Values" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary of the non-key field name/value pairs for the item to delete.</summary>
+        <value>An <see cref="T:System.Collections.Specialized.OrderedDictionary" /> that contains the non-key field name/value pairs for the item to delete.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> property to access the values of the non-key fields for the record to be deleted. For example, you can use these values to verify the record before deleting it, or to keep a log of deleted records.  
+  
+> [!NOTE]
+>  This property does not contain the key field or fields. To access the name/value pair values for the key field or fields, use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> property returns an <xref:System.Collections.Specialized.OrderedDictionary> object that implements the <xref:System.Collections.Specialized.IOrderedDictionary?displayProperty=fullName> interface. The <xref:System.Collections.Specialized.OrderedDictionary> object contains <xref:System.Collections.DictionaryEntry?displayProperty=fullName> objects that represent the non-key fields. To access the field names, use the <xref:System.Collections.Specialized.OrderedDictionary.Keys%2A> property of the <xref:System.Collections.Specialized.OrderedDictionary> object. Similarly, you can access the field values by using the <xref:System.Collections.Specialized.OrderedDictionary.Values%2A> property.  
+  
+> [!NOTE]
+>  As a shortcut, you can also use the indexer of the <xref:System.Collections.Specialized.OrderedDictionary> object to access the field values. The advantage in using the indexer is that it returns field values directly. Data source controls that rely on the field order (such as <xref:System.Web.UI.WebControls.AccessDataSource>) can access field values only by index.  
+  
+ The values in the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> collection do not get passed to the data source control. If the data source requires any of these values, you should add these values to the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> collection.  
+  
+ The <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> properties are read-only; however, you can modify the field values of the <xref:System.Collections.Specialized.OrderedDictionary> object. If you change the key and non-key field values, the corresponding record will be deleted from the data source.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.FormViewDeleteEventArgs.Values%2A> property to access the values of the non-key fields of the record being deleted.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormViewDeleteEventArgs2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormViewDeleteEventArgs2/CS/formviewdeleteeventargscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormViewDeleteEventArgs2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormViewDeleteEventArgs2/VB/formviewdeleteeventargsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

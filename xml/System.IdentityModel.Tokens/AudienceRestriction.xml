@@ -1,0 +1,88 @@
+<Type Name="AudienceRestriction" FullName="System.IdentityModel.Tokens.AudienceRestriction">
+  <TypeSignature Language="C#" Value="public class AudienceRestriction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudienceRestriction extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.AudienceRestriction" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines settings for an AudienceRestriction verification.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AudienceRestriction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AudienceRestriction.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AudienceRestriction" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AudienceRestriction (System.IdentityModel.Selectors.AudienceUriMode audienceMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.IdentityModel.Selectors.AudienceUriMode audienceMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AudienceRestriction.#ctor(System.IdentityModel.Selectors.AudienceUriMode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="audienceMode" Type="System.IdentityModel.Selectors.AudienceUriMode" />
+      </Parameters>
+      <Docs>
+        <param name="audienceMode">One of the enumeration values that specifies the mode in which the Audience URI restriction is applied.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AudienceRestriction" /> class with the specified mode.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowedAudienceUris">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;Uri&gt; AllowedAudienceUris { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Uri&gt; AllowedAudienceUris" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.AudienceRestriction.AllowedAudienceUris" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of allowed Audience URIs.</summary>
+        <value>The list of allowed Audience URIs.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AudienceMode">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.AudienceUriMode AudienceMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Selectors.AudienceUriMode AudienceMode" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.AudienceRestriction.AudienceMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Selectors.AudienceUriMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the mode in which Audience URI restriction is applied.</summary>
+        <value>One of the enumeration values that specifies the mode in which the Audience URI restriction is applied.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

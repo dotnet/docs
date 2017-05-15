@@ -1,0 +1,63 @@
+<Type Name="DebugBuildExtension" FullName="Microsoft.Activities.Build.Debugger.DebugBuildExtension">
+  <TypeSignature Language="C#" Value="public class DebugBuildExtension : Microsoft.Build.Tasks.Xaml.IXamlBuildTypeGenerationExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DebugBuildExtension extends System.Object implements class Microsoft.Build.Tasks.Xaml.IXamlBuildTypeGenerationExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Activities.Build.Debugger.DebugBuildExtension" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Activities.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Tasks.Xaml.IXamlBuildTypeGenerationExtension</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Build Extension for Workflow debugger support.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DebugBuildExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Activities.Build.Debugger.DebugBuildExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Activities.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Activities.Build.Debugger.DebugBuildExtension" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public bool Execute (Microsoft.Build.Tasks.Xaml.ClassData classData, Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext buildContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Execute(class Microsoft.Build.Tasks.Xaml.ClassData classData, class Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext buildContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Activities.Build.Debugger.DebugBuildExtension.Execute(Microsoft.Build.Tasks.Xaml.ClassData,Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Activities.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="classData" Type="Microsoft.Build.Tasks.Xaml.ClassData" />
+        <Parameter Name="buildContext" Type="Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext" />
+      </Parameters>
+      <Docs>
+        <param name="classData">Class data to add the checksum.</param>
+        <param name="buildContext">The build context</param>
+        <summary>Indicates whether the debug symbol with specified checksum updates.</summary>
+        <returns>
+          <see langword="True" /> if the debug symbol with specified checksum updates; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

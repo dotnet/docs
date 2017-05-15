@@ -1,0 +1,73 @@
+<Type Name="ProxyElement+BypassOnLocalValues" FullName="System.Net.Configuration.ProxyElement+BypassOnLocalValues">
+  <TypeSignature Language="C#" Value="public enum ProxyElement.BypassOnLocalValues" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ProxyElement/BypassOnLocalValues extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ProxyElement.BypassOnLocalValues" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether the proxy is bypassed for local resources.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Local resources include the local server (http://localhost, http://loopback, or http://127.0.0.1) and a URI without a period (http://webserver).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="False">
+      <MemberSignature Language="C#" Value="False" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.ProxyElement/BypassOnLocalValues False = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.ProxyElement.BypassOnLocalValues.False" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.ProxyElement+BypassOnLocalValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All requests for local resources should go through the proxy</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="True">
+      <MemberSignature Language="C#" Value="True" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.ProxyElement/BypassOnLocalValues True = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.ProxyElement.BypassOnLocalValues.True" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.ProxyElement+BypassOnLocalValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Access local resources directly.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="Unspecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.ProxyElement/BypassOnLocalValues Unspecified = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.ProxyElement.BypassOnLocalValues.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.ProxyElement+BypassOnLocalValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Unspecified.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

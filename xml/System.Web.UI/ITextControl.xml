@@ -1,0 +1,70 @@
+<Type Name="ITextControl" FullName="System.Web.UI.ITextControl">
+  <TypeSignature Language="C#" Value="public interface ITextControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITextControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ITextControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the interface a control implements to get or set its text content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ITextControl> interface defines the <xref:System.Web.UI.ITextControl.Text%2A> property a control implements to allow the getting or setting of its text content. The <xref:System.Web.UI.ITextControl.Text%2A> property can be set programmatically or through user input.  
+  
+> [!CAUTION]
+>  A control implementing this interface can be used to display user input. Before displaying user input, the input must be checked for malicious client script, such as executable script or SQL statements. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+  
+   
+  
+## Examples  
+ The following code example shows a custom control that implements the <xref:System.Web.UI.ITextControl> interface. A default value is assigned to the <xref:System.Web.UI.ITextControl.Text%2A> property if `null` is passed to the property.  
+  
+ [!code-csharp[System.Web.UI.ITextControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ITextControl/CS/CustomTextControl.cs#1)]
+ [!code-vb[System.Web.UI.ITextControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ITextControl/VB/CustomTextControl.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ITextControl.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text content of a control.</summary>
+        <value>The text content of a control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.ITextControl.Text%2A> property can be set programmatically or through user input.  
+  
+> [!CAUTION]
+>  A control implementing this interface can be used to display user input. Before displaying user input, the input must be checked for malicious client script, such as executable script or SQL statements. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+  
+   
+  
+## Examples  
+ The following code example shows a custom control that implements the <xref:System.Web.UI.ITextControl> interface. A default value is assigned to the <xref:System.Web.UI.ITextControl.Text%2A> property if `null` is passed to the property.  
+  
+ [!code-csharp[System.Web.UI.ITextControl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.ITextControl/CS/CustomTextControl.cs#1)]
+ [!code-vb[System.Web.UI.ITextControl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.ITextControl/VB/CustomTextControl.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

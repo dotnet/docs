@@ -1,0 +1,84 @@
+<Type Name="ToolStripSeparatorRenderEventArgs" FullName="System.Windows.Forms.ToolStripSeparatorRenderEventArgs">
+  <TypeSignature Language="C#" Value="public class ToolStripSeparatorRenderEventArgs : System.Windows.Forms.ToolStripItemRenderEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripSeparatorRenderEventArgs extends System.Windows.Forms.ToolStripItemRenderEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripSeparatorRenderEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ToolStripItemRenderEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderGrip" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderSeparator> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderSeparator> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#602](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#602)]
+ [!code-vb[System.Windows.Forms.EventExamples#602](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#602)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolStripSeparatorRenderEventArgs (System.Drawing.Graphics g, System.Windows.Forms.ToolStripSeparator separator, bool vertical);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Windows.Forms.ToolStripSeparator separator, bool vertical) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripSeparatorRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripSeparator,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="separator" Type="System.Windows.Forms.ToolStripSeparator" />
+        <Parameter Name="vertical" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> to paint with.</param>
+        <param name="separator">The <see cref="T:System.Windows.Forms.ToolStripSeparator" /> to be painted.</param>
+        <param name="vertical">A value indicating whether or not the <see cref="T:System.Windows.Forms.ToolStripSeparator" /> is to be drawn vertically.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripSeparatorRenderEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="public bool Vertical { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Vertical" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripSeparatorRenderEventArgs.Vertical" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the display style for the grip is vertical.</summary>
+        <value>
+          <see langword="true" /> if the display style for the <see cref="T:System.Windows.Forms.ToolStripSeparator" /> is vertical; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderSeparator?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderSeparator?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#602](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#602)]
+ [!code-vb[System.Windows.Forms.EventExamples#602](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#602)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

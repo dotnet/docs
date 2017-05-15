@@ -91,9 +91,9 @@ A method is a code block that contains a series of statements. A program causes 
   
  Using a local variable, in this case, `result`, to store a value is optional. It may help the readability of the code, or it may be necessary if you need to store the original value of the argument for the entire scope of the method.  
   
- Returning a multi-dimensional array from a method, M, that modifies the array's contents is not necessary if the calling function passed the array into M.  You may return the resulting array from M for good style or functional flow of values, but it is not necessary.  The reason you do not need to return the modified array is that C# passes all reference types by value, and the value of an array reference is the pointer to the array. In the method M, any changes to the array's contents are observable by any code that has a reference to the array, as shown in the following example.  
+ Returning a multi-dimensional array from a method, M, that modifies the array's contents is not necessary if the calling function passed the array into M.  You may return the resulting array from M for good style or functional flow of values, but it is not necessary.  The reason you don't need to return the modified array is that C# passes all reference types by value, and the value of an array reference is the pointer to the array. In the method M, any changes to the array's contents are observable by any code that has a reference to the array, as shown in the following example.  
   
-```cs  
+```csharp  
 static void Main(string[] args)  
         {  
             int[,] matrix = new int[2, 2];  
@@ -117,7 +117,7 @@ static void Main(string[] args)
  For more information, see [return](../../../csharp/language-reference/keywords/return.md).  
   
 ## Async Methods  
- By using the async feature, you can invoke asynchronous methods without using explicit callbacks or manually splitting your code across multiple methods or lambda expressions. The async feature was introduced [!INCLUDE[vs_dev11_long](../../../csharp/includes/vs_dev11_long_md.md)].  
+ By using the async feature, you can invoke asynchronous methods without using explicit callbacks or manually splitting your code across multiple methods or lambda expressions. 
   
  If you mark a method with the [async](../../../csharp/language-reference/keywords/async.md) modifier, you can use the [await](../../../csharp/language-reference/keywords/await.md) operator in the method. When control reaches an await expression in the async method, control returns to the caller, and progress in the method is suspended until the awaited task completes. When the task is complete, execution can resume in the method.  
   
@@ -139,7 +139,7 @@ static void Main(string[] args)
 ## Expression Body Definitions  
  It is common to have method definitions that simply return immediately with the result of an expression, or that have a single statement as the body of the method.  There is a syntax shortcut for defining such methods using `=>`:  
   
-```cs  
+```csharp  
 public Point Move(int dx, int dy) => new Point(x + dx, y + dy);   
 public void Print() => Console.WriteLine(First + " " + Last);  
 // Works with operators, properties, and indexers too.  
@@ -148,7 +148,7 @@ public string Name => First + " " + Last;
 public Customer this[long id] => store.LookupCustomer(id);  
 ```  
   
- If the method returns `void` or is an async method, then the body of the method must be a statement expression (same as with lambdas).  For properties and indexers, they must be read only, and you do not use the `get` accessor keyword.  
+ If the method returns `void` or is an async method, then the body of the method must be a statement expression (same as with lambdas).  For properties and indexers, they must be read only, and you don't use the `get` accessor keyword.  
   
 ## Iterators  
  An iterator performs a custom iteration over a collection, such as a list or an array. An iterator uses the [yield return](../../../csharp/language-reference/keywords/yield.md) statement to return each element one at a time. When a [yield return](../../../csharp/language-reference/keywords/yield.md) statement is reached, the current location in code is remembered. Execution is restarted from that location when the iterator is called the next time.  

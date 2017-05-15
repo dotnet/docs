@@ -1,0 +1,782 @@
+<Type Name="RowDefinitionCollection" FullName="System.Windows.Controls.RowDefinitionCollection">
+  <TypeSignature Language="C#" Value="public sealed class RowDefinitionCollection : System.Collections.Generic.ICollection&lt;System.Windows.Controls.RowDefinition&gt;, System.Collections.Generic.IEnumerable&lt;System.Windows.Controls.RowDefinition&gt;, System.Collections.Generic.IList&lt;System.Windows.Controls.RowDefinition&gt;, System.Collections.IList" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RowDefinitionCollection extends System.Object implements class System.Collections.Generic.ICollection`1&lt;class System.Windows.Controls.RowDefinition&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Controls.RowDefinition&gt;, class System.Collections.Generic.IList`1&lt;class System.Windows.Controls.RowDefinition&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.RowDefinitionCollection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;System.Windows.Controls.RowDefinition&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Windows.Controls.RowDefinition&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IList&lt;System.Windows.Controls.RowDefinition&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides access to an ordered, strongly typed collection of <see cref="T:System.Windows.Controls.RowDefinition" /> objects.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Windows.Controls.RowDefinition value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Windows.Controls.RowDefinition value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.Add(System.Windows.Controls.RowDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Controls.RowDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="value">Identifies the <see cref="T:System.Windows.Controls.RowDefinition" /> to add to the collection.</param>
+        <summary>Adds a <see cref="T:System.Windows.Controls.RowDefinition" /> element to a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Add%2A> method to add a <xref:System.Windows.Controls.RowDefinition> to a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#3](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[columndefinitionsgrid#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#3)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the content of the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Clear%2A> method to clear the content of a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#4)]
+ [!code-vb[columndefinitionsgrid#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#4)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Controls.RowDefinition value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Windows.Controls.RowDefinition value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.Contains(System.Windows.Controls.RowDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Controls.RowDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="value">Identifies the <see cref="T:System.Windows.Controls.RowDefinition" /> that is being tested.</param>
+        <summary>Determines whether a given <see cref="T:System.Windows.Controls.RowDefinition" /> exists within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.RowDefinition" /> exists within the collection; otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Contains%2A> method to determine whether a <xref:System.Windows.Controls.RowDefinition> exists in a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#8](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#8)]
+ [!code-vb[columndefinitionsgrid#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#8)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Controls.RowDefinition[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Windows.Controls.RowDefinition[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.CopyTo(System.Windows.Controls.RowDefinition[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Windows.Controls.RowDefinition[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of <see cref="T:System.Windows.Controls.RowDefinition" /> objects.</param>
+        <param name="index">Identifies the index position within <c>array</c> to which the <see cref="T:System.Windows.Controls.RowDefinition" /> objects are copied.</param>
+        <summary>Copies an array of <see cref="T:System.Windows.Controls.RowDefinition" /> objects to a given index position within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from index to the end of the destination array.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinitionCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of items within this instance of <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <value>The total number of items in the collection. This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Count%2A> property.  
+  
+ [!code-csharp[columndefinitionsgrid#7](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#7)]
+ [!code-vb[columndefinitionsgrid#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#7)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Controls.RowDefinition value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(class System.Windows.Controls.RowDefinition value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.IndexOf(System.Windows.Controls.RowDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Controls.RowDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Windows.Controls.RowDefinition" /> whose index position is desired.</param>
+        <summary>Returns the index position of a given <see cref="T:System.Windows.Controls.RowDefinition" /> within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <returns>The index of <paramref name="value" /> if found in the collection; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.IndexOf%2A> method to determine the index position of a <xref:System.Windows.Controls.RowDefinition> within a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#9)]
+ [!code-vb[columndefinitionsgrid#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#9)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Windows.Controls.RowDefinition value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, class System.Windows.Controls.RowDefinition value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.Insert(System.Int32,System.Windows.Controls.RowDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Windows.Controls.RowDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="index">The position within the collection where the item is inserted.</param>
+        <param name="value">The <see cref="T:System.Windows.Controls.RowDefinition" /> to insert.</param>
+        <summary>Inserts a <see cref="T:System.Windows.Controls.RowDefinition" /> at the specified index position within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.Insert%2A> method to insert a <xref:System.Windows.Controls.RowDefinition> to a specific `index` position within a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#9](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#9)]
+ [!code-vb[columndefinitionsgrid#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#9)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.IList" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinitionCollection.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether a <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> is read-only.</summary>
+        <value>
+          <see langword="true" /> if the collection is read-only; otherwise <see langword="false" />. This property has no default value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to get the value of the <xref:System.Windows.Controls.RowDefinitionCollection.IsReadOnly%2A> property.  
+  
+ [!code-csharp[columndefinitionsgrid#10](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#10)]
+ [!code-vb[columndefinitionsgrid#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#10)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinitionCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether access to this <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> is synchronized (thread-safe).</summary>
+        <value>
+          <see langword="true" /> if access to this collection is synchronized; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions that result from changes made by other threads.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.RowDefinition this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.RowDefinition Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinitionCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.RowDefinition</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The current item in the collection.</param>
+        <summary>Gets a value that indicates the current item within a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index position in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (System.Windows.Controls.RowDefinition value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Windows.Controls.RowDefinition value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.Remove(System.Windows.Controls.RowDefinition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Windows.Controls.RowDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Windows.Controls.RowDefinition" /> to remove from the collection.</param>
+        <summary>Removes a <see cref="T:System.Windows.Controls.RowDefinition" /> from a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.RowDefinition" /> was found in the collection and removed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The position within the collection at which the <see cref="T:System.Windows.Controls.RowDefinition" /> is removed.</param>
+        <summary>Removes a <see cref="T:System.Windows.Controls.RowDefinition" /> from a <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> at the specified index position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.RemoveAt%2A> method to remove a <xref:System.Windows.Controls.RowDefinition> to a <xref:System.Windows.Controls.RowDefinitionCollection> at a specific `index` position.  
+  
+ [!code-csharp[columndefinitionsgrid#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#5)]
+ [!code-vb[columndefinitionsgrid#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#5)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveRange">
+      <MemberSignature Language="C#" Value="public void RemoveRange (int index, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveRange(int32 index, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.RemoveRange(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The position within the collection at which the first <see cref="T:System.Windows.Controls.RowDefinition" /> is removed.</param>
+        <param name="count">The total number of <see cref="T:System.Windows.Controls.RowDefinition" /> objects to remove from the collection.</param>
+        <summary>Removes a range of <see cref="T:System.Windows.Controls.RowDefinition" /> objects from a <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.RowDefinitionCollection> uses a zero-based indexing system.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Windows.Controls.RowDefinitionCollection.RemoveRange%2A> method to remove a range of <xref:System.Windows.Controls.RowDefinition> elements from a <xref:System.Windows.Controls.RowDefinitionCollection>.  
+  
+ [!code-csharp[columndefinitionsgrid#6](~/samples/snippets/csharp/VS_Snippets_Wpf/ColumnDefinitionsGrid/CSharp/Window1.xaml.cs#6)]
+ [!code-vb[columndefinitionsgrid#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ColumnDefinitionsGrid/VisualBasic/Window1.xaml.vb#6)]  
+  
+ To view the complete sample, see [How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](~/docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinitionCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions that result from changes made by other threads.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IEnumerable&lt;System.Windows.Controls.RowDefinition&gt;.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Windows.Controls.RowDefinition&gt; IEnumerable&lt;RowDefinition&gt;.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Controls.RowDefinition&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Controls.RowDefinition&gt;.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Controls#RowDefinition&gt;#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Windows.Controls.RowDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.Generic.IEnumerable%601> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A zero-based <see cref="T:System.Array" /> that receives the copied items from the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <param name="index">The first position in the specified <see cref="T:System.Array" /> to receive the copied contents.</param>
+        <summary>Copies the elements of the collection to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through the collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> object that can be used to iterate through the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IEnumerable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Add">
+      <MemberSignature Language="C#" Value="int IList.Add (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to add to the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <summary>Adds an item to the collection.</summary>
+        <returns>The position into which the new element was inserted.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Contains">
+      <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <summary>Determines whether the collection contains a specific value.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IndexOf">
+      <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <summary>Determines the index of a specific item in the collection.</summary>
+        <returns>The index of <paramref name="value" /> if found in the list; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Insert">
+      <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which to insert the <see cref="T:System.Object" />.</param>
+        <param name="value">The <see cref="T:System.Object" /> to insert into the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <summary>Inserts an item to the collection at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsFixedSize">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinitionCollection.System#Collections#IList#IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the the <see cref="T:System.Windows.Controls.RowDefinitionCollection" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Item">
+      <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.RowDefinitionCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>Gets or sets the element at the specified index.</summary>
+        <value>The element at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index position in the list.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Remove">
+      <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.RowDefinitionCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to remove from the <see cref="T:System.Windows.Controls.RowDefinitionCollection" />.</param>
+        <summary>Removes the first occurrence of a specific object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Controls.RowDefinitionCollection> instance is cast to an <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

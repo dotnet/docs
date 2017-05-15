@@ -1,0 +1,112 @@
+<Type Name="CustomBuildEventArgs" FullName="Microsoft.Build.Framework.CustomBuildEventArgs">
+  <TypeSignature Language="C#" Value="public abstract class CustomBuildEventArgs : Microsoft.Build.Framework.LazyFormattedBuildEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit CustomBuildEventArgs extends Microsoft.Build.Framework.LazyFormattedBuildEventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.CustomBuildEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Framework.LazyFormattedBuildEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:Microsoft.Build.Framework.IEventSource.CustomEventRaised" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CustomBuildEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.CustomBuildEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.CustomBuildEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CustomBuildEventArgs (string message, string helpKeyword, string senderName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, string senderName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.CustomBuildEventArgs.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="helpKeyword" Type="System.String" />
+        <Parameter Name="senderName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The text of the event.</param>
+        <param name="helpKeyword">The Help keyword associated with the event.</param>
+        <param name="senderName">The source of the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.CustomBuildEventArgs" /> class with the specified <see cref="P:Microsoft.Build.Framework.BuildEventArgs.Message" />, <see cref="P:Microsoft.Build.Framework.BuildEventArgs.HelpKeyword" />, and <see cref="P:Microsoft.Build.Framework.BuildEventArgs.SenderName" /> values.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CustomBuildEventArgs (string message, string helpKeyword, string senderName, DateTime eventTimestamp);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, string senderName, valuetype System.DateTime eventTimestamp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.CustomBuildEventArgs.#ctor(System.String,System.String,System.String,System.DateTime)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="helpKeyword" Type="System.String" />
+        <Parameter Name="senderName" Type="System.String" />
+        <Parameter Name="eventTimestamp" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="message">The text of the event.</param>
+        <param name="helpKeyword">The Help keyword associated with the event.</param>
+        <param name="senderName">The source of the event.</param>
+        <param name="eventTimestamp">The date and time to associate with the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.CustomBuildEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CustomBuildEventArgs (string message, string helpKeyword, string senderName, DateTime eventTimestamp, object[] messageArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, string senderName, valuetype System.DateTime eventTimestamp, object[] messageArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.CustomBuildEventArgs.#ctor(System.String,System.String,System.String,System.DateTime,System.Object[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="helpKeyword" Type="System.String" />
+        <Parameter Name="senderName" Type="System.String" />
+        <Parameter Name="eventTimestamp" Type="System.DateTime" />
+        <Parameter Name="messageArgs" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="message">The text of the event.</param>
+        <param name="helpKeyword">The Help keyword associated with the event.</param>
+        <param name="senderName">The source of the event.</param>
+        <param name="eventTimestamp">The date and time to associate with the event.</param>
+        <param name="messageArgs">The arguments for the message.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.CustomBuildEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,88 @@
+<Type Name="TextSimpleMarkerProperties" FullName="System.Windows.Media.TextFormatting.TextSimpleMarkerProperties">
+  <TypeSignature Language="C#" Value="public class TextSimpleMarkerProperties : System.Windows.Media.TextFormatting.TextMarkerProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextSimpleMarkerProperties extends System.Windows.Media.TextFormatting.TextMarkerProperties" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.TextFormatting.TextMarkerProperties</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides for a generic implementation of text marker properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A text marker is a symbol that is commonly used for bullets and auto-numbering. The following example shows all the different representations of a <xref:System.Windows.TextMarkerStyle>.  
+  
+ When you create a <xref:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties> object, you can create a custom text marker that is associated with an enumerated value of <xref:System.Windows.TextMarkerStyle>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextSimpleMarkerProperties (System.Windows.TextMarkerStyle style, double offset, int autoNumberingIndex, System.Windows.Media.TextFormatting.TextParagraphProperties textParagraphProperties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.TextMarkerStyle style, float64 offset, int32 autoNumberingIndex, class System.Windows.Media.TextFormatting.TextParagraphProperties textParagraphProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties.#ctor(System.Windows.TextMarkerStyle,System.Double,System.Int32,System.Windows.Media.TextFormatting.TextParagraphProperties)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="style" Type="System.Windows.TextMarkerStyle" />
+        <Parameter Name="offset" Type="System.Double" />
+        <Parameter Name="autoNumberingIndex" Type="System.Int32" />
+        <Parameter Name="textParagraphProperties" Type="System.Windows.Media.TextFormatting.TextParagraphProperties" />
+      </Parameters>
+      <Docs>
+        <param name="style">An enumerated value of <see cref="T:System.Windows.TextMarkerStyle" />.</param>
+        <param name="offset">A <see cref="T:System.Double" /> that represents the distance from the start of the line to the end of the text marker symbol.</param>
+        <param name="autoNumberingIndex">An <see cref="T:System.Int32" /> value that represents the auto-numbering counter of counter-style text marker.</param>
+        <param name="textParagraphProperties">A <see cref="T:System.Windows.Media.TextFormatting.TextParagraphProperties" /> value that represents the properties shared by every text character of the text marker.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public override sealed double Offset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Offset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance from the start of the line to the end of the text marker symbol.</summary>
+        <value>An <see cref="T:System.Int32" /> object that represents the offset of the text marker symbol.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextSource">
+      <MemberSignature Language="C#" Value="public override sealed System.Windows.Media.TextFormatting.TextSource TextSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextSource TextSource" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextSimpleMarkerProperties.TextSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the source of the text runs used for the text marker.</summary>
+        <value>A <see cref="T:System.Windows.Media.TextFormatting.TextSource" /> value that represents the text run used for the text marker.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

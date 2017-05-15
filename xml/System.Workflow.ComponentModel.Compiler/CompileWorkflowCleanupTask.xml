@@ -1,0 +1,92 @@
+<Type Name="CompileWorkflowCleanupTask" FullName="System.Workflow.ComponentModel.Compiler.CompileWorkflowCleanupTask">
+  <TypeSignature Language="C#" Value="public sealed class CompileWorkflowCleanupTask : Microsoft.Build.Utilities.Task, Microsoft.Build.Framework.ITask" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompileWorkflowCleanupTask extends Microsoft.Build.Utilities.Task implements class Microsoft.Build.Framework.ITask" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.CompileWorkflowCleanupTask" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Utilities.Task</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.ITask</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines an MSBuild task for erasing the contents of temporary files that are used when compiling workflows created using Visual Basic. The contents of the temporary files are erased but the files are not deleted. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This class extends the `Task` class of Microsoft Build framework. The class should be used when compiling Windows Workflow Foundation types of Visual Basic projects.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompileWorkflowCleanupTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompileWorkflowCleanupTask.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.CompileWorkflowCleanupTask" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompileWorkflowCleanupTask.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Erases the contents of the files specified in the <see cref="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowCleanupTask.TemporaryFiles" /> property, without deleting the files.</summary>
+        <returns>
+          <see langword="true" /> if the task successfully executed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemporaryFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] TemporaryFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] TemporaryFiles" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.CompileWorkflowCleanupTask.TemporaryFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an array of paths to temporary files created when compiling workflows created using Visual Basic .NET.</summary>
+        <value>A list of temporary files associated with this compilation task.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

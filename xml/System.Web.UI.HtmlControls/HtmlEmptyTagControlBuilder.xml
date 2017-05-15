@@ -1,0 +1,75 @@
+<Type Name="HtmlEmptyTagControlBuilder" FullName="System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder">
+  <TypeSignature Language="C#" Value="public sealed class HtmlEmptyTagControlBuilder : System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlEmptyTagControlBuilder extends System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ControlBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Interacts with the page parser to build HTML server controls that do not have a body or closing tag. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder> control interacts with the page parser to build HTML server controls that do not have a body or closing tag, such as `<img>`, `<link>`, `<input>`, and `<meta>`. The <xref:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder.HasBody%2A> property always returns `false`, indicating that controls built with the <xref:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder> control do not have closing tags.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlEmptyTagControlBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder.%23ctor%2A> method is used internally by the ASP.NET page framework and is not intended to be called from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasBody">
+      <MemberSignature Language="C#" Value="public override bool HasBody ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool HasBody() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder.HasBody" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Indicates that the controls built with the <see cref="T:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder" /> control do not have closing tags.</summary>
+        <returns>
+          <see langword="false" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder.HasBody%2A> method overrides the base class's <xref:System.Web.UI.ControlBuilder.HasBody%2A> method to always return `false`, because the <xref:System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder> class represents controls that do not have closing tags. The <xref:System.Web.UI.ControlBuilder.HasBody%2A> method of the <xref:System.Web.UI.ControlBuilder> class determines whether a control has both an opening and a closing tag.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

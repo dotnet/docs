@@ -1,0 +1,76 @@
+<Type Name="ReportDeferredValidationErrorsTask" FullName="Microsoft.Activities.Build.Validation.ReportDeferredValidationErrorsTask">
+  <TypeSignature Language="C#" Value="public class ReportDeferredValidationErrorsTask : Microsoft.Build.Utilities.Task" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReportDeferredValidationErrorsTask extends Microsoft.Build.Utilities.Task" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Activities.Build.Validation.ReportDeferredValidationErrorsTask" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Activities.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Utilities.Task</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a task that reports any deferred validation errors.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReportDeferredValidationErrorsTask ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Activities.Build.Validation.ReportDeferredValidationErrorsTask.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Activities.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Activities.Build.Validation.ReportDeferredValidationErrorsTask" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeferredValidationErrorsFilePath">
+      <MemberSignature Language="C#" Value="public string DeferredValidationErrorsFilePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeferredValidationErrorsFilePath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Activities.Build.Validation.ReportDeferredValidationErrorsTask.DeferredValidationErrorsFilePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Activities.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Required</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location where the deferred validation error were located.</summary>
+        <value>The location where the deferred validation error were located.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Activities.Build.Validation.ReportDeferredValidationErrorsTask.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Activities.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes the <see cref="T:Microsoft.Activities.Build.Validation.ReportDeferredValidationErrorsTask" />.</summary>
+        <returns>The result of the execution.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

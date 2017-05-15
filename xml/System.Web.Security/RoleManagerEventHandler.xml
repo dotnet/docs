@@ -1,0 +1,42 @@
+<Type Name="RoleManagerEventHandler" FullName="System.Web.Security.RoleManagerEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void RoleManagerEventHandler(object sender, RoleManagerEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RoleManagerEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.RoleManagerEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.Security.RoleManagerEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The <see cref="T:System.Web.Security.RoleManagerModule" /> that raised the <see cref="E:System.Web.Security.RoleManagerModule.GetRoles" /> event.</param>
+    <param name="e">A <see cref="T:System.Web.Security.RoleManagerEventArgs" /> object that contains the event data.</param>
+    <summary>Defines the delegate for the <see cref="E:System.Web.Security.RoleManagerModule.GetRoles" /> event of the <see cref="T:System.Web.Security.RoleManagerModule" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.RoleManagerEventHandler> delegate is defined for the <xref:System.Web.Security.RoleManagerModule.GetRoles> event of the <xref:System.Web.Security.RoleManagerModule> class. You can access the <xref:System.Web.Security.RoleManagerModule.GetRoles> event of the <xref:System.Web.Security.RoleManagerModule> class in the Global.asax file for your ASP.NET application as shown in the example for this topic.  
+  
+ You can use the <xref:System.Web.Security.RoleManagerEventHandler> to replace the creation of the <xref:System.Web.Security.RolePrincipal> object by the <xref:System.Web.Security.RoleManagerModule> with your own custom object. To do this, define a delegate using the <xref:System.Web.Security.RoleManagerEventHandler> and assign it to the <xref:System.Web.Security.RoleManagerModule.GetRoles> event of the <xref:System.Web.Security.RoleManagerModule>.  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Web.Security.RoleManagerModule.GetRoles> event included in the Global.asax file for an ASP.NET application. The <xref:System.Web.Security.RoleManagerModule.GetRoles> event adds a trace notification for an application where trace is enabled in the Web.config file.  
+  
+ [!code-csharp[System.Web.Security.RoleManagerModule#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.RoleManagerModule/CS/global.asax#1)]
+ [!code-vb[System.Web.Security.RoleManagerModule#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.RoleManagerModule/VB/global.asax#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

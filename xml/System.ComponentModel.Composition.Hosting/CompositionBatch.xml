@@ -1,0 +1,174 @@
+<Type Name="CompositionBatch" FullName="System.ComponentModel.Composition.Hosting.CompositionBatch">
+  <TypeSignature Language="C#" Value="public class CompositionBatch" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositionBatch extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.CompositionBatch" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a set of <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> objects which will be added or removed from the container in a single transactional composition.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompositionBatch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionBatch" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompositionBatch (System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; partsToAdd, System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; partsToRemove);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePart&gt; partsToAdd, class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePart&gt; partsToRemove) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.#ctor(System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ComposablePart},System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.Primitives.ComposablePart})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="partsToAdd" Type="System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;" />
+        <Parameter Name="partsToRemove" Type="System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="partsToAdd">A collection of <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> objects to add.</param>
+        <param name="partsToRemove">A collection of <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> objects to remove.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionBatch" /> class with the specified parts for addition and removal.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="partsToAdd" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="partsToRemove" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddExport">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Primitives.ComposablePart AddExport (System.ComponentModel.Composition.Primitives.Export export);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Primitives.ComposablePart AddExport(class System.ComponentModel.Composition.Primitives.Export export) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.AddExport(System.ComponentModel.Composition.Primitives.Export)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Primitives.ComposablePart</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="export" Type="System.ComponentModel.Composition.Primitives.Export" />
+      </Parameters>
+      <Docs>
+        <param name="export">The export to add to the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionBatch" /> object.</param>
+        <summary>Adds the specified export to the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionBatch" /> object.</summary>
+        <returns>The part added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="export" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPart">
+      <MemberSignature Language="C#" Value="public void AddPart (System.ComponentModel.Composition.Primitives.ComposablePart part);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPart(class System.ComponentModel.Composition.Primitives.ComposablePart part) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.AddPart(System.ComponentModel.Composition.Primitives.ComposablePart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePart" />
+      </Parameters>
+      <Docs>
+        <param name="part">The part to add.</param>
+        <summary>Adds the specified part to the <see cref="T:System.ComponentModel.Composition.Hosting.CompositionBatch" /> object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="part" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PartsToAdd">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; PartsToAdd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePart&gt; PartsToAdd" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.CompositionBatch.PartsToAdd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> objects to be added.</summary>
+        <value>A collection of parts to be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartsToRemove">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt; PartsToRemove { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.ComponentModel.Composition.Primitives.ComposablePart&gt; PartsToRemove" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.CompositionBatch.PartsToRemove" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.ComponentModel.Composition.Primitives.ComposablePart&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.ComponentModel.Composition.Primitives.ComposablePart" /> objects to be removed.</summary>
+        <value>A collection of parts to be removed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePart">
+      <MemberSignature Language="C#" Value="public void RemovePart (System.ComponentModel.Composition.Primitives.ComposablePart part);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemovePart(class System.ComponentModel.Composition.Primitives.ComposablePart part) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CompositionBatch.RemovePart(System.ComponentModel.Composition.Primitives.ComposablePart)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePart" />
+      </Parameters>
+      <Docs>
+        <param name="part">The part to be removed.</param>
+        <summary>Puts the specified part on the list of parts to remove.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="part" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

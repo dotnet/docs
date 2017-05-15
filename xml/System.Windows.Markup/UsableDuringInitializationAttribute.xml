@@ -1,0 +1,80 @@
+<Type Name="UsableDuringInitializationAttribute" FullName="System.Windows.Markup.UsableDuringInitializationAttribute">
+  <TypeSignature Language="C#" Value="public sealed class UsableDuringInitializationAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UsableDuringInitializationAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.UsableDuringInitializationAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates whether this type is built top-down during XAML object graph creation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Top-down is a metaphor that approximates XAML processor behavior when creating the object graph. When built top-down, a class is instantiated, attached to the parent, and then has its properties set. Top-down construction avoids invoking property-changed handlers multiple times. Such handling will ripple up the object graph and therefore eliminating the multiple handler calls provides a performance optimization for startup of the object graph.  
+  
+ In previous versions of the .NET Framework, this class existed in the WPF-specific assembly WindowsBase. In [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], <xref:System.Windows.Markup.UsableDuringInitializationAttribute> is in the System.Xaml assembly. For more information, see [Types Migrated from WPF to System.Xaml](~/docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md).  
+  
+## WPF Usage Notes  
+ In WPF XAML for [!INCLUDE[net_v30_short](~/includes/net-v30-short-md.md)] and [!INCLUDE[net_v35_short](~/includes/net-v35-short-md.md)], top-down construction was built in to the XAML processing for certain classes. The <xref:System.Windows.Markup.UsableDuringInitializationAttribute> attribute formalizes the reporting of the top-down behavior in [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UsableDuringInitializationAttribute (bool usable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool usable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.UsableDuringInitializationAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="usable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="usable">Defines whether the associated class is usable during initialization.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.UsableDuringInitializationAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute inherits. For the initial application you would typically apply as `[UsableDuringInitialization(true)]`, but you could then set `[UsableDuringInitialization(false)]` on a derived class to change the derived class reporting of the behavior.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Usable">
+      <MemberSignature Language="C#" Value="public bool Usable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Usable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.UsableDuringInitializationAttribute.Usable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated class is usable during initialization.</summary>
+        <value>
+          <see langword="true" /> if the associated class is usable during initialization; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

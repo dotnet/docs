@@ -1,0 +1,52 @@
+<Type Name="UndoUnitEventArgs" FullName="System.Activities.Presentation.UndoUnitEventArgs">
+  <TypeSignature Language="C#" Value="public class UndoUnitEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UndoUnitEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.UndoUnitEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the argument that is passed to the <see cref="E:System.Activities.Presentation.UndoEngine.UndoUnitAddedevent" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UndoUnitEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.UndoUnitEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.UndoUnitEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UndoUnit">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.UndoUnit UndoUnit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.UndoUnit UndoUnit" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.UndoUnitEventArgs.UndoUnit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.UndoUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Activities.Presentation.UndoUnit" /> to be passed to the <see cref="E:System.Activities.Presentation.UndoEngine.UndoUnitAddedevent" /> event.</summary>
+        <value>Returns <see cref="T:System.Activities.Presentation.UndoUnit" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

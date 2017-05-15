@@ -1,0 +1,147 @@
+<Type Name="BasicProfileViolationEnumerator" FullName="System.Web.Services.Description.BasicProfileViolationEnumerator">
+  <TypeSignature Language="C#" Value="public class BasicProfileViolationEnumerator : System.Collections.Generic.IEnumerator&lt;System.Web.Services.Description.BasicProfileViolation&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BasicProfileViolationEnumerator extends System.Object implements class System.Collections.Generic.IEnumerator`1&lt;class System.Web.Services.Description.BasicProfileViolation&gt;, class System.Collections.IEnumerator, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.BasicProfileViolationEnumerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerator&lt;System.Web.Services.Description.BasicProfileViolation&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Enumerates the elements in a <see cref="T:System.Web.Services.Description.BasicProfileViolationCollection" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BasicProfileViolationEnumerator (System.Web.Services.Description.BasicProfileViolationCollection list);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.Services.Description.BasicProfileViolationCollection list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationEnumerator.#ctor(System.Web.Services.Description.BasicProfileViolationCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="list" Type="System.Web.Services.Description.BasicProfileViolationCollection" />
+      </Parameters>
+      <Docs>
+        <param name="list">The <see cref="T:System.Web.Services.Description.BasicProfileViolationCollection" /> to be enumerated using this class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.BasicProfileViolationEnumerator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Services.Description.BasicProfileViolationEnumerator.Current%2A> is set to -1.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.BasicProfileViolation Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.BasicProfileViolation Current" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.BasicProfileViolationEnumerator.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.BasicProfileViolation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current <see cref="T:System.Web.Services.Description.BasicProfileViolation" /> element in the <see cref="T:System.Web.Services.Description.BasicProfileViolationCollection" />.</summary>
+        <value>A <see cref="T:System.Web.Services.Description.BasicProfileViolation" /> object representing the current element in the <see cref="T:System.Web.Services.Description.BasicProfileViolationCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is -1.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationEnumerator.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Web.Services.Description.BasicProfileViolationEnumerator" /> class.Releases all resources used by the <see cref="T:System.Web.Services.Description.BasicProfileViolationEnumerator" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MoveNext">
+      <MemberSignature Language="C#" Value="public bool MoveNext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationEnumerator.MoveNext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Enumerates to the next element in the <see cref="T:System.Web.Services.Description.BasicProfileViolationCollection" />.</summary>
+        <returns>
+          <see langword="false" /> if the end of the collection is reached; otherwise <see langword="true" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerator.Current">
+      <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.BasicProfileViolationEnumerator.System#Collections#IEnumerator#Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current element in the <see cref="T:System.Web.Services.Description.BasicProfileViolationCollection" />.</summary>
+        <value>The current element in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerator.Reset">
+      <MemberSignature Language="C#" Value="void IEnumerator.Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IEnumerator.Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.BasicProfileViolationEnumerator.System#Collections#IEnumerator#Reset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Sets the enumerator to its initial position, which is before the first element in the <see cref="T:System.Web.Services.Description.BasicProfileViolationCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,125 @@
+<Type Name="LogExtent" FullName="System.IO.Log.LogExtent">
+  <TypeSignature Language="C#" Value="public sealed class LogExtent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LogExtent extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Log.LogExtent" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Log</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a disk extent that contains log data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.IO.Log.LogStore> instance stores its data in a collection of disk extents, represented by <xref:System.IO.Log.LogExtent> instances. A particular <xref:System.IO.Log.LogExtent> is associated with exactly one <xref:System.IO.Log.LogStore>, and <xref:System.IO.Log.LogExtent> objects in the same <xref:System.IO.Log.LogStore> are of identical size. Space is added to and removed from a <xref:System.IO.Log.LogStore> instance in extent increments.  
+  
+ Although <xref:System.IO.Log.LogExtent> objects are represented on disk as files, they should not be moved or deleted as normal files. To delete a <xref:System.IO.Log.LogExtent> instance, remove it from the <xref:System.IO.Log.LogExtentCollection> that contains it.  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogExtent> class to add and emulate extents in a log sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
+ [!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogExtent.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the fully qualified path of this <see cref="T:System.IO.Log.LogExtent" /> instance.</summary>
+        <value>The fully qualified path of this <see cref="T:System.IO.Log.LogExtent" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although <xref:System.IO.Log.LogExtent> objects are represented on disk as files, they should not be moved or deleted as normal files. To delete a <xref:System.IO.Log.LogExtent> instance, remove it from the <xref:System.IO.Log.LogExtentCollection> that contains it.  
+  
+   
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogExtent> class to add and emulate extents in a log sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
+ [!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public long Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Size" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogExtent.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of this <see cref="T:System.IO.Log.LogExtent" /> instance, in bytes.</summary>
+        <value>The size of this <see cref="T:System.IO.Log.LogExtent" /> instance, in bytes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogExtent> class to add and emulate extents in a log sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
+ [!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.IO.Log.LogExtentState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.LogExtentState State" />
+      <MemberSignature Language="DocId" Value="P:System.IO.Log.LogExtent.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.LogExtentState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of this <see cref="T:System.IO.Log.LogExtent" /> instance.</summary>
+        <value>The state of this <see cref="T:System.IO.Log.LogExtent" /> instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogExtent> class to add and emulate extents in a log sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#0)]
+ [!code-vb[S_UELogRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

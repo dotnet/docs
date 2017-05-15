@@ -1,0 +1,70 @@
+<Type Name="WorkflowFileItem" FullName="System.Activities.Presentation.WorkflowFileItem">
+  <TypeSignature Language="C#" Value="public class WorkflowFileItem : System.Activities.Presentation.ContextItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowFileItem extends System.Activities.Presentation.ContextItem" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowFileItem" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Presentation.ContextItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a<see cref="T:System.Activities.Presentation.ContextItem" /> that is published in the editing context and that provides information about the file that the current editing session is based on. Note that it is possible that the <see cref="T:System.Activities.Presentation.WorkflowFileItem" /> value is <see langword="null" />, for instance if a <see cref="T:System.Activities.Presentation.WorkflowDesigner" /> operates directly on an object instance and does not serialize into a file-based format.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowFileItem ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowFileItem.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.WorkflowFileItem" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemType">
+      <MemberSignature Language="C#" Value="public override sealed Type ItemType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ItemType" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowFileItem.ItemType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the item type for this file item.</summary>
+        <value>Returns <see cref="T:System.Type" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadedFile">
+      <MemberSignature Language="C#" Value="public string LoadedFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LoadedFile" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowFileItem.LoadedFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the name of the file that is being loaded.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,311 @@
+<Type Name="CompilationPass2Task" FullName="Microsoft.Build.Tasks.Xaml.CompilationPass2Task">
+  <TypeSignature Language="C#" Value="public class CompilationPass2Task : Microsoft.Build.Utilities.Task" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompilationPass2Task extends Microsoft.Build.Utilities.Task" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.CompilationPass2Task" />
+  <AssemblyInfo>
+    <AssemblyName>XamlBuildTask</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Utilities.Task</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an MS Build task that verifies that all the types referenced in the original input XAML files are resolved.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompilationPass2Task ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Xaml.CompilationPass2Task" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationMarkup">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ApplicationMarkup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ApplicationMarkup" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.ApplicationMarkup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of XAML files to process, populated by MS Build.</summary>
+        <value>A list of the XAML files to process.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationMarkupWithTypeName">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ApplicationMarkupWithTypeName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ApplicationMarkupWithTypeName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.ApplicationMarkupWithTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the build action for the application markup files which are excluded from the project used to generate the temporary assembly.</summary>
+        <value>The build action for the application markup files.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyName">
+      <MemberSignature Language="C#" Value="public string AssemblyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.AssemblyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the assembly to be generated.</summary>
+        <value>The name of the assembly.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildTaskPath">
+      <MemberSignature Language="C#" Value="public string BuildTaskPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BuildTaskPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.BuildTaskPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path to the assembly for this build task.</summary>
+        <value>The assembly path.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called by MS Build to execute the task.</summary>
+        <returns>
+          <see langword="true" /> if the task executes successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtensionGeneratedCodeFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ExtensionGeneratedCodeFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ExtensionGeneratedCodeFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.ExtensionGeneratedCodeFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of code files generated by the extension.</summary>
+        <value>The collection of code files generated by the extension.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInProcessXamlMarkupCompile">
+      <MemberSignature Language="C#" Value="public bool IsInProcessXamlMarkupCompile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInProcessXamlMarkupCompile" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.IsInProcessXamlMarkupCompile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the task in in process of compiling XAML markup.</summary>
+        <value>True if the task in in process of compiling XAML markup.; otherwise, false.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public string Language { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Language" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.Language" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the language used for the task.</summary>
+        <value>The language used for the task.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalAssemblyReference">
+      <MemberSignature Language="C#" Value="public string LocalAssemblyReference { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LocalAssemblyReference" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.LocalAssemblyReference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path to the generated temporary assembly.</summary>
+        <value>The path to the generated temporary assembly.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MSBuildProjectDirectory">
+      <MemberSignature Language="C#" Value="public string MSBuildProjectDirectory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MSBuildProjectDirectory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.MSBuildProjectDirectory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the directory for the MS build project.</summary>
+        <value>The directory for the MS build project.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutputPath">
+      <MemberSignature Language="C#" Value="public string OutputPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OutputPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.OutputPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the directory to place the generated files.</summary>
+        <value>The directory to place the generated files.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="References">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] References { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] References" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.References" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of assemblies to reference during the compilation process.</summary>
+        <value>A list of the assemblies to reference during the compilation process.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNamespace">
+      <MemberSignature Language="C#" Value="public string RootNamespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RootNamespace" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.RootNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root namespace for the project.</summary>
+        <value>The root namespace.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceCodeFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] SourceCodeFiles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] SourceCodeFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.SourceCodeFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a list of source code files in the project.</summary>
+        <value>A list of source code files in the project.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XamlBuildTypeInspectionExtensionNames">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] XamlBuildTypeInspectionExtensionNames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] XamlBuildTypeInspectionExtensionNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CompilationPass2Task.XamlBuildTypeInspectionExtensionNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the extension names for the Xaml build type inspection.</summary>
+        <value>The extension names for the Xaml build type inspection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

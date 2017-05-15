@@ -1,0 +1,684 @@
+<Type Name="HtmlInputImage" FullName="System.Web.UI.HtmlControls.HtmlInputImage">
+  <TypeSignature Language="C#" Value="public class HtmlInputImage : System.Web.UI.HtmlControls.HtmlInputControl, System.Web.UI.IPostBackDataHandler, System.Web.UI.IPostBackEventHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlInputImage extends System.Web.UI.HtmlControls.HtmlInputControl implements class System.Web.UI.IPostBackDataHandler, class System.Web.UI.IPostBackEventHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputImage" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.HtmlControls.HtmlInputControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackDataHandler</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackEventHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("ServerClick")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows programmatic access to the HTML <see langword="&lt;input type= image&gt;" /> element on the server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control to create a button that displays an image. You can programmatically control the action associated with the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control by providing an event handler for the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event.  
+  
+ The coordinates where the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control can be determined by using the <xref:System.Web.UI.ImageClickEventArgs.X?displayProperty=fullName> and <xref:System.Web.UI.ImageClickEventArgs.Y?displayProperty=fullName> properties of the <xref:System.Web.UI.ImageClickEventArgs?displayProperty=fullName> object that is passed as a parameter to the user-defined event handler.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputImage>, see the <xref:System.Web.UI.HtmlControls.HtmlInputImage.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control to create a button that displays an image.  
+  
+> [!NOTE]
+>  You must provide your own image files for this example to work correctly.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlInputImage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputImage.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlInputImage>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlInputControl.Type%2A>|The "image" literal string.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a new instance of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control and place it on the Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputImageCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageCtor/CS/htmlinputimagectorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputImageCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageCtor/VB/htmlinputimagectorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Align">
+      <MemberSignature Language="C#" Value="public string Align { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Align" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputImage.Align" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alignment of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control in relation to other elements on the Web page.</summary>
+        <value>The alignment of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control in relation to other elements on the Web page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Align%2A> property to specify the alignment of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control in relation to the other elements on the Web page.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Align%2A> property to specify the alignment of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control in relation to other elements on the Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.Align Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.Align Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt">
+      <MemberSignature Language="C#" Value="public string Alt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Alt" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputImage.Alt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alternative text that the browser displays if the image is unavailable or has not been downloaded.</summary>
+        <value>The alternative text for the specified image. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Alt%2A> property to specify the text to display when the specified image is not available or has not been downloaded. You can also use this property to programmatically determine the specified alternative text.  
+  
+ In browsers that support the ToolTip feature, this text also appears as a ToolTip for the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Alt%2A> property to specify the alternate text to display when the image is not available.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Border">
+      <MemberSignature Language="C#" Value="public int Border { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Border" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputImage.Border" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border width for the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control.</summary>
+        <value>The border width, in pixels, for the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Border%2A> property to specify the border width for the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+> [!NOTE]
+>  This property is not supported in all browsers. Check your browser to determine compatibility.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Border%2A> property to specify the border width for the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.Align Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.Align Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Align Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CausesValidation">
+      <MemberSignature Language="C#" Value="public virtual bool CausesValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether validation is performed when the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control is clicked.</summary>
+        <value>
+          <see langword="true" /> if validation is performed when the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control is clicked; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, page validation is performed when an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control is clicked. Page validation determines whether the input controls associated with a validation control on the page all pass the validation rules specified by the validation control.  
+  
+ You can specify or determine whether validation is performed on both the client and the server when an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control is clicked by using the <xref:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation%2A> property. To prevent validation from being performed, set the <xref:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation%2A> property to `false`.  
+  
+ This property is commonly used in the event handler for the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event to prevent page validation from occurring when a Cancel or Reset button is clicked.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation%2A> property to prevent page validation from occurring. Notice how the <xref:System.Web.UI.WebControls.BaseValidator.Validate%2A> method activates each validation control independently.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputImageCausesValidation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageCausesValidation/CS/htmlinputimagecausesvalidationcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputImageCausesValidation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageCausesValidation/VB/htmlinputimagecausesvalidationvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPostData">
+      <MemberSignature Language="C#" Value="protected virtual bool LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputImage.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control.</param>
+        <param name="postCollection">The collection of all incoming name values.</param>
+        <summary>Processes the postback data for the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control's state has changed as a result of the postback; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputImage.LoadPostData%2A> method checks to see whether coordinates that represent the location where the image was clicked by the user are part of the postback data for the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control. If coordinates are part of the postback data, then the <xref:System.Web.UI.HtmlControls.HtmlInputImage.LoadPostData%2A> method registers the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control with the Web page as a control that requires an event to be raised when it is processed.  
+  
+> [!NOTE]
+>  The origin coordinates (0,0) are located in the upper-left corner of the image.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputImage.LoadPostData%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputImage.OnPreRender(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputImage.OnPreRender%2A> method is called just prior to rendering the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control. The <xref:System.Web.UI.HtmlControls.HtmlInputImage.OnPreRender%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputImage.OnPreRender%2A> method so that it always displays a custom <xref:System.Web.UI.HtmlControls.HtmlInputImage> server control with no border.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputImageOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputImageOnPreRender/CS/custom_htmlinputimage_onprerendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputImageOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputImageOnPreRender/VB/custom_htmlinputimage_onprerendervb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlInputImageOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputImageOnPreRender/CS/custom_htmlinputimage_onprerender.cs#2)]
+ [!code-vb[CustomHtmlInputImageOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputImageOnPreRender/VB/custom_htmlinputimage_onprerender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlInputImage.OnPreRender(System.EventArgs)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputImage.OnPreRender(System.EventArgs)" /> method so that registered delegates receive the <see cref="E:System.Web.UI.Control.PreRender" /> event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnServerClick">
+      <MemberSignature Language="C#" Value="protected virtual void OnServerClick (System.Web.UI.ImageClickEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnServerClick(class System.Web.UI.ImageClickEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputImage.OnServerClick(System.Web.UI.ImageClickEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Web.UI.ImageClickEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.Web.UI.ImageClickEventArgs" /> that contains event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event is raised when the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+ The coordinates where the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control can be determined by using the <xref:System.Web.UI.ImageClickEventArgs.X?displayProperty=fullName> and <xref:System.Web.UI.ImageClickEventArgs.Y?displayProperty=fullName> properties of the <xref:System.Web.UI.ImageClickEventArgs?displayProperty=fullName> object. The <xref:System.Web.UI.ImageClickEventArgs?displayProperty=fullName> object is passed as a parameter to the user-defined event handler.  
+  
+> [!NOTE]
+>  The origin (0, 0) is located at the upper-left corner of the image.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputImage.OnServerClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event to determine the coordinates where the user clicks the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/VB/sourcevb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputImageServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageServerClick/CS/htmlinputimageserverclickcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputImageServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageServerClick/VB/htmlinputimageserverclickvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlInputImage.OnServerClick(System.Web.UI.ImageClickEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlInputImage.OnServerClick(System.Web.UI.ImageClickEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostBackEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostBackEvent (string eventArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputImage.RaisePostBackEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgument">The argument for the event.</param>
+        <summary>Raises events for the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control when it posts back to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputImage.RaisePostBackEvent%2A> method is used by the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control, when it is clicked, to raise a <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event.  
+  
+ If the <xref:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation%2A> property is `true`; the <xref:System.Web.UI.Page.Validate%2A> method is called using the group of controls specified in the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ValidationGroup%2A> property.  
+  
+ This method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputImage.RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Notifies the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control that the state of the control has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputImage.RaisePostDataChangedEvent%2A> method does not participate in the processing of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control and is included to complete the <xref:System.Web.UI.IPostBackDataHandler> interface implementation.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputImage.RaisePostDataChangedEvent%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderAttributes">
+      <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputImage.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that contains the output stream to render on the client.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control's attributes to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputImage.RenderAttributes%2A> method resolves the URL set in the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Src%2A> property, writes the `onclick` attribute of the rendered <xref:System.Web.UI.HtmlControls.HtmlInputImage> control if the <xref:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation%2A> property is `true`, and finally calls the base <xref:System.Web.UI.HtmlControls.HtmlInputControl.RenderAttributes%2A> method. If the value of the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Src%2A> property is a malformed URL, an <xref:System.Web.HttpException> exception is thrown.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputImage.RenderAttributes%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlInputImage.RenderAttributes%2A> method in a custom server control so that specific alternate text, accessible as a ToolTip, is always displayed with the <xref:System.Web.UI.HtmlControls.HtmlInputImage>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlInputImageRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputImageRenderAttributes/CS/custom_htmlinputimage_renderattributescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlInputImageRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputImageRenderAttributes/VB/custom_htmlinputimage_renderattributesvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlInputImageRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlInputImageRenderAttributes/CS/custom_htmlinputimage_renderattributes.cs#2)]
+ [!code-vb[CustomHtmlInputImageRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlInputImageRenderAttributes/VB/custom_htmlinputimage_renderattributes.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.HtmlControls.HtmlInputImage.Src" /> property contains a malformed URL.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerClick">
+      <MemberSignature Language="C#" Value="public event System.Web.UI.ImageClickEventHandler ServerClick;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.ImageClickEventHandler ServerClick" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ImageClickEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs on the server when the user clicks an <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event is raised when the user clicks an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event to determine the coordinates where the user clicks the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.ServerClick Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.ServerClick Example/VB/sourcevb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputImageServerClick#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageServerClick/CS/htmlinputimageserverclickcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputImageServerClick#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageServerClick/VB/htmlinputimageserverclickvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Src">
+      <MemberSignature Language="C#" Value="public string Src { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Src" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputImage.Src" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the location of the image file.</summary>
+        <value>The location of the image file. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Src%2A> property to specify the location of the image to display in the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control. If the image is not available, the text specified in the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Alt%2A> property is displayed.  
+  
+ You can use a relative or absolute URL. A relative URL relates the location of the image to the location of the Web page without specifying a complete path on the server. The path is relative to the location of the Web page. This makes it easier to move the entire site to another directory on the server without updating the path to the image in code. You can use the relative path " `~/` " to refer to the current virtual directory where the page is located. For example, the value of <xref:System.Web.UI.HtmlControls.HtmlInputImage.Src%2A> for `<input type="image" runat="server" src="~/abc/d.gif">` on a page in the "XspTest" virtual directory is `<input type="image" src="/XspText/abc/d.gif">`. An absolute URL provides the complete path. Therefore, moving the site to another directory requires that you update the code.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.Src%2A> property to specify the path to an image displayed in the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlInputImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlInputImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlInputImage.Src Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
+      <MemberSignature Language="C#" Value="bool IPostBackDataHandler.LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputImage.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control.</param>
+        <param name="postCollection">The collection of all incoming name values.</param>
+        <summary>Implements the <see cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> interface method by calling the <see cref="M:System.Web.UI.HtmlControls.HtmlInputImage.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" /> method.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control's state has changed as a result of the postback; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="void IPostBackDataHandler.RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputImage.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Implements the <see cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" /> interface method by calling the <see cref="M:System.Web.UI.HtmlControls.HtmlInputImage.RaisePostDataChangedEvent" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
+      <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputImage.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventArgument" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="eventArgument">The argument for the event.</param>
+        <summary>Enables the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control to raise events on postback.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationGroup">
+      <MemberSignature Language="C#" Value="public virtual string ValidationGroup { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputImage.ValidationGroup" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the group of controls for which the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control causes validation when it posts back to the server.</summary>
+        <value>The group of controls for which the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> control causes validation when it posts back to the server. The default value is an empty string (""), indicating that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Validation groups allow you to assign validation controls on a page to a specific category. Each validation group can be validated independently from other validation groups on the page. Use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ValidationGroup%2A> property to specify the name of the validation group for which the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control causes validation when it posts back to the server.  
+  
+ This property has an effect only when the value of the <xref:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation%2A> property is set to `true`. When you specify a value for the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ValidationGroup%2A> property, only the validation controls that are part of the specified group are validated when the <xref:System.Web.UI.HtmlControls.HtmlInputImage> control posts back to the server. If you do not specify a value for this property and the <xref:System.Web.UI.HtmlControls.HtmlInputImage.CausesValidation%2A> property is set to `true`, all validation controls on the page that are not assigned to a validation group are validated when the control posts back to the server.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlInputImage.ValidationGroup%2A> property to specify the controls to validate when an <xref:System.Web.UI.HtmlControls.HtmlInputImage> control posts back to the server. The page contains two text boxes to capture data from the user and two <xref:System.Web.UI.WebControls.RequiredFieldValidator> controls to ensure that the user does not leave a text box blank. The <xref:System.Web.UI.WebControls.RequiredFieldValidator> control for the first text box is in the `CityInfoGroup` validation group and the <xref:System.Web.UI.WebControls.RequiredFieldValidator> control for the second box is in the `StateInfoGroup` validation group. When the `CityQueryButton` is clicked, only the control in the `CityInfoGroup` validation group is validated. When the `StateQueryButton` is clicked, only the control in the `StateInfoGroup` validation group is validated.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlInputImageValidationGroup#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlInputImageValidationGroup/cs/htmlinputimagevalidationgroupcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlInputImageValidationGroup#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlInputImageValidationGroup/vb/htmlinputimagevalidationgroupvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

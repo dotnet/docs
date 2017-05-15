@@ -28,11 +28,11 @@ the project respectively.
 Multi-project samples have instructions in their root directory in
 a `README.md` file.  
 
-Except where noted, all samples will build from the command line, on
+Except where noted, all samples build from the command line on
 any platform supported by .NET Core. There are a few samples that are
-specific to Visual Studio, and will require Visual Studio 2015 Update 3
-or a newer version. In addition, some samples show platform specific features,
-and will require a specific platform.
+specific to Visual Studio and require Visual Studio 2017 or later. In 
+addition, some samples show platform specific features and will require 
+a specific platform.
 
 ## Creating new samples
 
@@ -57,7 +57,7 @@ To create a sample:
 2. Write the topic that explains the concepts demonstrated in your sample (example: `docs/standard/linq/where-clause.md`) 
 3. Write your sample (example: `WhereClause-Sample1.cs`)
 4. Create a Program.cs with a Main entry point that calls your samples. If there is already one there, add the call to your sample:
-  ```cs
+  ```csharp
     public class Program
     {
         public void Main(string[] args)

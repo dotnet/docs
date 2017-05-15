@@ -1,0 +1,1341 @@
+<Type Name="WorkflowUpdateableControlClient" FullName="System.ServiceModel.Activities.WorkflowUpdateableControlClient">
+  <TypeSignature Language="C#" Value="public class WorkflowUpdateableControlClient : System.ServiceModel.ClientBase&lt;System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowUpdateableControlClient extends System.ServiceModel.ClientBase`1&lt;class System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.ClientBase&lt;System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a service contract that defines a set of operations that allows a client to update workflow service hosted with <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient (System.ServiceModel.Activities.WorkflowControlEndpoint workflowEndpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Activities.WorkflowControlEndpoint workflowEndpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor(System.ServiceModel.Activities.WorkflowControlEndpoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="workflowEndpoint" Type="System.ServiceModel.Activities.WorkflowControlEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="workflowEndpoint">The workflow control endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient (string endpointConfigurationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="endpointConfigurationName">The configuration to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The binding.</param>
+        <param name="remoteAddress">The endpoint address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient (string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor(System.String,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="endpointConfigurationName">The configuration to use.</param>
+        <param name="remoteAddress">The endpoint address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient (string endpointConfigurationName, string remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, string remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="remoteAddress" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="endpointConfigurationName">The configuration to use.</param>
+        <param name="remoteAddress">The endpoint address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abandon">
+      <MemberSignature Language="C#" Value="public void Abandon (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abandon(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Abandon(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to abandon.</param>
+        <summary>Abandons the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abandon">
+      <MemberSignature Language="C#" Value="public void Abandon (Guid instanceId, string reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abandon(valuetype System.Guid instanceId, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Abandon(System.Guid,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to abandon.</param>
+        <param name="reason">The reason to abandon the workflow instance.</param>
+        <summary>Abandons the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbandonAsync">
+      <MemberSignature Language="C#" Value="public void AbandonAsync (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AbandonAsync(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.AbandonAsync(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflows instance to abandon.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbandonAsync">
+      <MemberSignature Language="C#" Value="public void AbandonAsync (Guid instanceId, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AbandonAsync(valuetype System.Guid instanceId, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.AbandonAsync(System.Guid,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflows instance to abandon.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous abandon operation.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbandonAsync">
+      <MemberSignature Language="C#" Value="public void AbandonAsync (Guid instanceId, string reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AbandonAsync(valuetype System.Guid instanceId, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.AbandonAsync(System.Guid,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflows instance to abandon.</param>
+        <param name="reason">The reason to abandon the workflow instance.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbandonAsync">
+      <MemberSignature Language="C#" Value="public void AbandonAsync (Guid instanceId, string reason, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AbandonAsync(valuetype System.Guid instanceId, string reason, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.AbandonAsync(System.Guid,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflows instance to abandon.</param>
+        <param name="reason">The reason to abandon the workflow instance.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous abandon operation.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AbandonCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; AbandonCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; AbandonCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.AbandonCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an asynchronous abandon operation completes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginAbandon">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginAbandon (Guid instanceId, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginAbandon(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginAbandon(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to abandon.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous abandon operation.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginAbandon">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginAbandon (Guid instanceId, string reason, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginAbandon(valuetype System.Guid instanceId, string reason, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginAbandon(System.Guid,System.String,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to abandon.</param>
+        <param name="reason">The reason to abandon the workflow instance.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous abandon operation.</param>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginCancel">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginCancel (Guid instanceId, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginCancel(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginCancel(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to cancel.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous cancel operation.</param>
+        <summary>Begins an asynchronous operation that cancels the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginRun">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginRun (Guid instanceId, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginRun(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginRun(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to run.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous run operation.</param>
+        <summary>Begins an asynchronous operation that runs the specified workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginSuspend">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginSuspend (Guid instanceId, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSuspend(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginSuspend(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous suspend operation.</param>
+        <summary>Begins an asynchronous operation that suspends the specified operation.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginSuspend">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginSuspend (Guid instanceId, string reason, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSuspend(valuetype System.Guid instanceId, string reason, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginSuspend(System.Guid,System.String,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="reason">The reason to suspend the workflow instance.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous suspend operation.</param>
+        <summary>Begins an asynchronous operation that suspends the specified operation.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTerminate">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTerminate (Guid instanceId, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginTerminate(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginTerminate(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous terminate operation.</param>
+        <summary>Begins an asynchronous operation that terminates a workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTerminate">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTerminate (Guid instanceId, string reason, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginTerminate(valuetype System.Guid instanceId, string reason, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginTerminate(System.Guid,System.String,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous terminate operation.</param>
+        <summary>Begins an asynchronous operation that terminates a workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUnsuspend">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginUnsuspend (Guid instanceId, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginUnsuspend(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginUnsuspend(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to unsuspend.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous unsuspend operation.</param>
+        <summary>Begins an asynchronous operation that unsuspends a workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUpdate">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginUpdate (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginUpdate(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginUpdate(System.Guid,System.Activities.WorkflowIdentity,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to update.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <param name="callback">The asynchronous callback delegate that receives the notification of the asynchronous operation completion.</param>
+        <param name="state">A user-defined object that contains state information associated with the asynchronous update operation.</param>
+        <summary>Begins an asynchronous operation that updates a workflow instance.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public void Cancel (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Cancel(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Cancel(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to cancel.</param>
+        <summary>Cancels the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelAsync">
+      <MemberSignature Language="C#" Value="public void CancelAsync (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelAsync(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.CancelAsync(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to cancel.</param>
+        <summary>Begins an asynchronous operation that cancels the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelAsync">
+      <MemberSignature Language="C#" Value="public void CancelAsync (Guid instanceId, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelAsync(valuetype System.Guid instanceId, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.CancelAsync(System.Guid,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to cancel.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous cancel operation.</param>
+        <summary>Begins an asynchronous operation that cancels the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; CancelCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; CancelCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.CancelCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an asynchronous cancel operation completes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndAbandon">
+      <MemberSignature Language="C#" Value="public void EndAbandon (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndAbandon(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndAbandon(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous abandon operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndCancel">
+      <MemberSignature Language="C#" Value="public void EndCancel (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndCancel(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndCancel(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous cancel operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndRun">
+      <MemberSignature Language="C#" Value="public void EndRun (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndRun(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndRun(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous run operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndSuspend">
+      <MemberSignature Language="C#" Value="public void EndSuspend (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndSuspend(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndSuspend(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous suspend operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTerminate">
+      <MemberSignature Language="C#" Value="public void EndTerminate (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndTerminate(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndTerminate(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous terminate operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndUnsuspend">
+      <MemberSignature Language="C#" Value="public void EndUnsuspend (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndUnsuspend(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndUnsuspend(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous unsuspend operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndUpdate">
+      <MemberSignature Language="C#" Value="public void EndUpdate (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndUpdate(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndUpdate(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> object that represents the status of the asynchronous operation.</param>
+        <summary>Completes an asynchronous update operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Run">
+      <MemberSignature Language="C#" Value="public void Run (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Run(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Run(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to run.</param>
+        <summary>Runs the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunAsync">
+      <MemberSignature Language="C#" Value="public void RunAsync (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RunAsync(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.RunAsync(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to run.</param>
+        <summary>Begins an asynchronous operation that runs the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunAsync">
+      <MemberSignature Language="C#" Value="public void RunAsync (Guid instanceId, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RunAsync(valuetype System.Guid instanceId, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.RunAsync(System.Guid,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to run.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous run operation.</param>
+        <summary>Begins an asynchronous operation that runs the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RunCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; RunCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; RunCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.RunCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an asynchronous run operation completes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspend">
+      <MemberSignature Language="C#" Value="public void Suspend (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Suspend(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Suspend(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <summary>Suspends the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspend">
+      <MemberSignature Language="C#" Value="public void Suspend (Guid instanceId, string reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Suspend(valuetype System.Guid instanceId, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Suspend(System.Guid,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="reason">The reason to suspend the workflow instance.</param>
+        <summary>Suspends the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendAsync">
+      <MemberSignature Language="C#" Value="public void SuspendAsync (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SuspendAsync(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.SuspendAsync(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <summary>Begins an asynchronous suspend operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendAsync">
+      <MemberSignature Language="C#" Value="public void SuspendAsync (Guid instanceId, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SuspendAsync(valuetype System.Guid instanceId, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.SuspendAsync(System.Guid,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous suspend operation.</param>
+        <summary>Begins an asynchronous suspend operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendAsync">
+      <MemberSignature Language="C#" Value="public void SuspendAsync (Guid instanceId, string reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SuspendAsync(valuetype System.Guid instanceId, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.SuspendAsync(System.Guid,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="reason">The reason to suspend the workflow instance.</param>
+        <summary>Begins an asynchronous suspend operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendAsync">
+      <MemberSignature Language="C#" Value="public void SuspendAsync (Guid instanceId, string reason, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SuspendAsync(valuetype System.Guid instanceId, string reason, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.SuspendAsync(System.Guid,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to suspend.</param>
+        <param name="reason">The reason to suspend the workflow instance.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous run operation.</param>
+        <summary>Begins an asynchronous suspend operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; SuspendCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; SuspendCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.SuspendCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an asynchronous suspend operation completes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Terminate">
+      <MemberSignature Language="C#" Value="public void Terminate (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Terminate(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Terminate(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <summary>Terminates the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Terminate">
+      <MemberSignature Language="C#" Value="public void Terminate (Guid instanceId, string reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Terminate(valuetype System.Guid instanceId, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Terminate(System.Guid,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <summary>Terminates the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminateAsync">
+      <MemberSignature Language="C#" Value="public void TerminateAsync (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TerminateAsync(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.TerminateAsync(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <summary>Begins an asynchronous terminate operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminateAsync">
+      <MemberSignature Language="C#" Value="public void TerminateAsync (Guid instanceId, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TerminateAsync(valuetype System.Guid instanceId, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.TerminateAsync(System.Guid,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous terminate operation.</param>
+        <summary>Begins an asynchronous terminate operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminateAsync">
+      <MemberSignature Language="C#" Value="public void TerminateAsync (Guid instanceId, string reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TerminateAsync(valuetype System.Guid instanceId, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.TerminateAsync(System.Guid,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <summary>Begins an asynchronous terminate operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminateAsync">
+      <MemberSignature Language="C#" Value="public void TerminateAsync (Guid instanceId, string reason, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TerminateAsync(valuetype System.Guid instanceId, string reason, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.TerminateAsync(System.Guid,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to terminate.</param>
+        <param name="reason">The reason to terminate the workflow instance.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous terminate operation.</param>
+        <summary>Begins an asynchronous terminate operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TerminateCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; TerminateCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; TerminateCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.TerminateCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an asynchronous terminate operation completes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unsuspend">
+      <MemberSignature Language="C#" Value="public void Unsuspend (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unsuspend(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Unsuspend(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to unsuspend.</param>
+        <summary>Unsuspends the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsuspendAsync">
+      <MemberSignature Language="C#" Value="public void UnsuspendAsync (Guid instanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnsuspendAsync(valuetype System.Guid instanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UnsuspendAsync(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to unsuspend.</param>
+        <summary>Begins an asynchronous unsuspend operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsuspendAsync">
+      <MemberSignature Language="C#" Value="public void UnsuspendAsync (Guid instanceId, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnsuspendAsync(valuetype System.Guid instanceId, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UnsuspendAsync(System.Guid,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to unsuspend.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous unsuspend operation.</param>
+        <summary>Begins an asynchronous unsuspend operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnsuspendCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; UnsuspendCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; UnsuspendCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UnsuspendCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an asynchronous unsuspend operation completes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public void Update (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Update(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Update(System.Guid,System.Activities.WorkflowIdentity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to update.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <summary>Updates the specified workflow instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAsync">
+      <MemberSignature Language="C#" Value="public void UpdateAsync (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateAsync(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UpdateAsync(System.Guid,System.Activities.WorkflowIdentity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to update.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <summary>Begins an asynchronous update operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateAsync">
+      <MemberSignature Language="C#" Value="public void UpdateAsync (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity, object userState);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateAsync(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity, object userState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UpdateAsync(System.Guid,System.Activities.WorkflowIdentity,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="updatedDefinitionIdentity" Type="System.Activities.WorkflowIdentity" />
+        <Parameter Name="userState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The workflow instance to update.</param>
+        <param name="updatedDefinitionIdentity">The updated workflow identity.</param>
+        <param name="userState">A user-defined object that contains state information associated with the asynchronous update operation.</param>
+        <summary>Begins an asynchronous update operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateCompleted">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; UpdateCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; UpdateCompleted" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UpdateCompleted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an asynchronous update operation completes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

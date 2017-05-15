@@ -1,0 +1,44 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <AssemblyName>ListBoxItemStyle</AssemblyName>
+    <TargetType>winexe</TargetType>
+    <Configuration Condition="'$(Configuration)'==''">Debug</Configuration>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <ProductVersion>10.0.20821</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>SDKSamples</RootNamespace>
+    <ProjectGuid>{2FDB1A97-FB5A-4BDE-81DB-BAD0D528440D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="app.xaml" />
+    <Page Include="Pane1.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pane1.xaml.vb">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="App.ico" />
+  </ItemGroup>
+</Project>

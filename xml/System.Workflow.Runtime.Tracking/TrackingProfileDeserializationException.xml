@@ -1,0 +1,192 @@
+<Type Name="TrackingProfileDeserializationException" FullName="System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException">
+  <TypeSignature Language="C#" Value="public sealed class TrackingProfileDeserializationException : SystemException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TrackingProfileDeserializationException extends System.SystemException" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.SystemException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The exception that is thrown when an XML document cannot be deserialized into a <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> by a <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfileSerializer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ When the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> throws this exception it supplies a message that describes the reason for the exception. In some cases the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> supplies a list of validation errors and warnings that it encountered while trying to deserialize the <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A> property contains this list if it is supplied.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrackingProfileDeserializationException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error and takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic)|  
+|<xref:System.Exception.Message%2A>|A system-supplied localized description.|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A>|An empty <xref:System.Collections.IList>.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrackingProfileDeserializationException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException" /> class with a specified error message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The content of the `message` parameter is intended to be understood by humans. The caller of this constructor is required to ensure that this string has been localized for the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|A null reference (`Nothing` in Visual Basic)|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A>|An empty <xref:System.Collections.IList>.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrackingProfileDeserializationException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the error.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not a null reference (<see langword="Nothing" /> in Visual Basic), the current exception is raised in a catch block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An exception that is thrown as a direct result of a previous exception should include a reference to the previous exception in the <xref:System.Exception.InnerException%2A> property. The <xref:System.Exception.InnerException%2A> property returns the same value that is supplied to the constructor or a null reference (Nothing in Visual Basic) if the `innerException` parameter does not supply the inner exception value to the constructor.  
+  
+ The following table shows the initial property values for an instance of <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|The inner exception reference.|  
+|<xref:System.Exception.Message%2A>|The error message string.|  
+|<xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A>|An empty <xref:System.Collections.IList>.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that holds the serialized object data about the exception being thrown.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains contextual information about the source or destination.</param>
+        <summary>Sets the <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the collection of <see cref="T:System.Xml.Schema.ValidationEventArgs" /> associated with this exception, and additional exception information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.GetObjectData%2A> sets a <xref:System.Runtime.Serialization.SerializationInfo> with all the exception object data targeted for serialization. During deserialization the exception object is reconstituted from the <xref:System.Runtime.Serialization.SerializationInfo> transmitted over the stream.  
+  
+ For more information see XML and SOAP Serialization.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is a null reference (<see langword="Nothing" /> in Visual Basic)</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationEventArgs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xml.Schema.ValidationEventArgs&gt; ValidationEventArgs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Xml.Schema.ValidationEventArgs&gt; ValidationEventArgs" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Xml.Schema.ValidationEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list that contains validation warnings and errors associated with this exception.</summary>
+        <value>A <see cref="T:System.Collections.IList" /> of <see cref="T:System.Xml.Schema.ValidationEventArgs" /> objects that contains validation warnings and errors associated with this exception. The default is an empty list.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> uses an <xref:System.Xml.XmlReader> to deserialize an XML document into a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> collects validation errors and warnings emitted by the <xref:System.Xml.XmlReader>. At certain points during deserialization, the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> determines whether the <xref:System.Xml.XmlReader> has encountered any validation errors, and, if it has, the <xref:System.Workflow.Runtime.Tracking.TrackingProfileSerializer> adds these warnings and errors to <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A> and throws a <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException>. Not all exceptions of this class will have <xref:System.Workflow.Runtime.Tracking.TrackingProfileDeserializationException.ValidationEventArgs%2A> set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,92 @@
+<Type Name="PenLineCap" FullName="System.Windows.Media.PenLineCap">
+  <TypeSignature Language="C#" Value="public enum PenLineCap" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PenLineCap extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.PenLineCap" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the shape at the end of a line or segment.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following illustration shows the available cap styles for lines or segments. The red portion of the line shows the extra area added by the line cap setting.  
+  
+ ![PenLineCap settings](~/add/media/wcpsdk-graphicsmm-linecaps.png "PenLineCap settings")  
+Line caps  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Flat">
+      <MemberSignature Language="C#" Value="Flat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenLineCap Flat = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Flat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A cap that does not extend past the last point of the line. Comparable to no line cap.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="Round" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenLineCap Round = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Round" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A semicircle that has a diameter equal to the line thickness.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Square">
+      <MemberSignature Language="C#" Value="Square" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenLineCap Square = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Square" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A rectangle that has a height equal to the line thickness and a length equal to half the line thickness.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Triangle">
+      <MemberSignature Language="C#" Value="Triangle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.PenLineCap Triangle = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.PenLineCap.Triangle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PenLineCap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An isosceles right triangle whose base length is equal to the thickness of the line.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

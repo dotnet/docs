@@ -1,0 +1,147 @@
+<Type Name="AddInAttribute" FullName="System.AddIn.AddInAttribute">
+  <TypeSignature Language="C#" Value="public sealed class AddInAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AddInAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.AddInAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies an object as an add-in.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following methods, which maintain the store of information about available pipeline segments, use this attribute to identify an add-in.  
+  
+-   <xref:System.AddIn.Hosting.AddInStore.Rebuild%2A>  
+  
+-   <xref:System.AddIn.Hosting.AddInStore.RebuildAddIns%2A>  
+  
+-   <xref:System.AddIn.Hosting.AddInStore.Update%2A>  
+  
+-   <xref:System.AddIn.Hosting.AddInStore.UpdateAddIns%2A>  
+  
+-   <xref:System.AddIn.Hosting.AddInStore.FindAddIn%2A>  
+  
+ This attribute is not required when an add-in is found exclusively by the <xref:System.AddIn.Hosting.AddInStore.FindAddIn%2A> method. The host has already identified the add-in by its type name and location, and therefore the attribute is not required for the add-in to be discovered.  
+  
+ This attribute should be used only on types that activate the segments of the pipeline. Types that represent objects passed between the host and the add-in do not need this attribute.  
+  
+   
+  
+## Examples  
+ The following example identifies an add-in.  
+  
+ [!code-csharp[AddInP2AddInCalcV2#2](~/samples/snippets/csharp/VS_Snippets_CLR/AddInP2AddInCalcV2/cs/addincalcv2.cs#2)]
+ [!code-vb[AddInP2AddInCalcV2#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInP2AddInCalcV2/vb/AddInCalcV2.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AddInAttribute (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.AddInAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the add-in.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.AddIn.AddInAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="name" /> is a zero-length string.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.AddIn.AddInAttribute.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the description of an add-in.</summary>
+        <value>The current description of the add-in.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.AddIn.AddInAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the add-In.</summary>
+        <value>The name of the add-in.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Publisher">
+      <MemberSignature Language="C#" Value="public string Publisher { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Publisher" />
+      <MemberSignature Language="DocId" Value="P:System.AddIn.AddInAttribute.Publisher" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the publisher of the add-in.</summary>
+        <value>The publisher of the add-in.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public string Version { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Version" />
+      <MemberSignature Language="DocId" Value="P:System.AddIn.AddInAttribute.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the software version of the add-in.</summary>
+        <value>The software version of the add-in.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

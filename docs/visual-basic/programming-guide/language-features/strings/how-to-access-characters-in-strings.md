@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "characters [Visual Basic], accessing in strings"
 ms.assetid: 02c5206c-ffab-494d-b648-3b2ea358dc34
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

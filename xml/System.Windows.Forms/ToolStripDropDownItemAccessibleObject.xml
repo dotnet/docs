@@ -1,0 +1,157 @@
+<Type Name="ToolStripDropDownItemAccessibleObject" FullName="System.Windows.Forms.ToolStripDropDownItemAccessibleObject">
+  <TypeSignature Language="C#" Value="public class ToolStripDropDownItemAccessibleObject : System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripDropDownItemAccessibleObject extends System.Windows.Forms.ToolStripItem/ToolStripItemAccessibleObject" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownItemAccessibleObject" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ToolStripItem+ToolStripItemAccessibleObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information that accessibility applications use to adjust the user interface of a <see cref="T:System.Windows.Forms.ToolStripDropDown" /> for users with impairments.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolStripDropDownItemAccessibleObject (System.Windows.Forms.ToolStripDropDownItem item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolStripDropDownItem item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownItemAccessibleObject.#ctor(System.Windows.Forms.ToolStripDropDownItem)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Windows.Forms.ToolStripDropDownItem" />
+      </Parameters>
+      <Docs>
+        <param name="item">The <see cref="T:System.Windows.Forms.ToolStripDropDownItem" /> that owns this <see cref="T:System.Windows.Forms.ToolStripDropDownItemAccessibleObject" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownItemAccessibleObject" /> class with the specified <see cref="T:System.Windows.Forms.ToolStripDropDownItem" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoDefaultAction">
+      <MemberSignature Language="C#" Value="public override void DoDefaultAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DoDefaultAction() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownItemAccessibleObject.DoDefaultAction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs the default action associated with this accessible object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Clients can retrieve the object's default action by inspecting an object's <xref:System.Windows.Forms.AccessibleObject.DefaultAction%2A> property. A client can use automation (if supported) instead of <xref:System.Windows.Forms.AccessibleObject.DoDefaultAction%2A> to perform an object's default action. However, <xref:System.Windows.Forms.AccessibleObject.DoDefaultAction%2A> provides an easy way to perform an object's most commonly used action.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>The default action performed by system-provided user interface elements depends on the keyboard state. That is, if a modifier key such as SHIFT, ALT, or CTRL is down (either by a user action or programmatically) when <see cref="M:System.Windows.Forms.AccessibleObject.DoDefaultAction" /> is called, the default action might not be the same as when those keys are not down. Not all objects have a default action.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChild">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject GetChild (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject GetChild(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownItemAccessibleObject.GetChild(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the accessible child control.</param>
+        <summary>Retrieves the accessible child control corresponding to the specified index.</summary>
+        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the accessible child control corresponding to the specified index.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from <xref:System.Windows.Forms.Control.ControlAccessibleObject>, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual <xref:System.Windows.Forms.Control>-based control, but instead is drawn by the chart control, it does not any built-in accessible information. Therefore, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+  
+ This code demonstrates overriding the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+  
+ [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
+ [!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
+ [!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetChildCount">
+      <MemberSignature Language="C#" Value="public override int GetChildCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetChildCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownItemAccessibleObject.GetChildCount" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the number of children belonging to an accessible object.</summary>
+        <returns>The number of children belonging to an accessible object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from <xref:System.Windows.Forms.Control.ControlAccessibleObject>, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual <xref:System.Windows.Forms.Control>-based control, but instead is drawn by the chart control, it does not any built-in accessible information. Therefore, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+  
+ This code demonstrates shows overriding the <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+  
+ [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
+ [!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
+ [!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Role">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleRole Role { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleRole Role" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripDropDownItemAccessibleObject.Role" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleRole</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the role of this accessible object.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The role of the object helps describe the function of the object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

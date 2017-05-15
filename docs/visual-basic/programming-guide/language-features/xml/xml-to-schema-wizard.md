@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "XML schemas, creating"
 ms.assetid: 98c495ba-8f37-4517-a0db-aa738611ab76
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,357 @@
+<Type Name="CallbackContextMessageProperty" FullName="System.ServiceModel.Channels.CallbackContextMessageProperty">
+  <TypeSignature Language="C#" Value="public class CallbackContextMessageProperty : System.ServiceModel.Channels.IMessageProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CallbackContextMessageProperty extends System.Object implements class System.ServiceModel.Channels.IMessageProperty" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CallbackContextMessageProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IMessageProperty</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents the contents of the <see langword="wsc:CallbackContext" /> message header when using a channel that supports the context exchange protocol.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The context exchange protocol allows for duplex communication between durable services.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallbackContextMessageProperty (System.Collections.Generic.IDictionary&lt;string,string&gt; context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;string, string&gt; context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.#ctor(System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="context">Information contained in the message which is identifiable by the client and the service instance between which the communication is taking place.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallbackContextMessageProperty (System.ServiceModel.EndpointAddress callbackAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress callbackAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.#ctor(System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="callbackAddress">The callback address.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified <see cref="T:System.ServiceModel.EndpointAddress" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The callback address is the endpoint address that the service uses to call back to the client.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallbackContextMessageProperty (System.ServiceModel.EndpointAddress listenAddress, System.Collections.Generic.IDictionary&lt;string,string&gt; context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress listenAddress, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.#ctor(System.ServiceModel.EndpointAddress,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="listenAddress" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="listenAddress">The endpoint address the client listens on.</param>
+        <param name="context">Information contained in the message which is identifiable by the client and the service instance between which the communication is taking place.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified <see cref="T:System.ServiceModel.EndpointAddress" /> and a <see cref="T:System.Collections.Generic.IDictionary`2" /> that contains context information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The context information may include client instance and conversation information.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallbackContextMessageProperty (string listenAddress, System.Collections.Generic.IDictionary&lt;string,string&gt; context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string listenAddress, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="listenAddress" Type="System.String" />
+        <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="listenAddress">The endpoint address the client listens on.</param>
+        <param name="context">Information contained in the message which is identifiable by the client and the service instance between which the communication is taking place.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified listen address and context information.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CallbackContextMessageProperty (Uri listenAddress, System.Collections.Generic.IDictionary&lt;string,string&gt; context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri listenAddress, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.#ctor(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="listenAddress" Type="System.Uri" />
+        <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="listenAddress">The endpoint address the client listens on.</param>
+        <param name="context">Information contained in the message which is identifiable by the client and the service instance between which the communication is taking place.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class with the specified listen address and context information.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOrReplaceInMessage">
+      <MemberSignature Language="C#" Value="public void AddOrReplaceInMessage (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOrReplaceInMessage(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.AddOrReplaceInMessage(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to add or replace the callback context message property.</param>
+        <summary>Adds or replaces the current <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance within the specified message.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddOrReplaceInMessageProperties">
+      <MemberSignature Language="C#" Value="public void AddOrReplaceInMessageProperties (System.ServiceModel.Channels.MessageProperties properties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOrReplaceInMessageProperties(class System.ServiceModel.Channels.MessageProperties properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.AddOrReplaceInMessageProperties(System.ServiceModel.Channels.MessageProperties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.ServiceModel.Channels.MessageProperties" />
+      </Parameters>
+      <Docs>
+        <param name="properties">The message properties collection to add the callback context message property to.</param>
+        <summary>Adds or replaces the current <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance within the specified message properties collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallbackAddress">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress CallbackAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress CallbackAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CallbackContextMessageProperty.CallbackAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the callback address.</summary>
+        <value>An <see cref="T:System.ServiceModel.EndpointAddress" /> that contains the callback address.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The callback address is the endpoint address the server uses to call the client.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Context" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CallbackContextMessageProperty.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the context associated with the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" />.</summary>
+        <value>The context.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCallbackAddress">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress CreateCallbackAddress (Uri listenAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.EndpointAddress CreateCallbackAddress(class System.Uri listenAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.CreateCallbackAddress(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listenAddress" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="listenAddress">The listen URI</param>
+        <summary>Merges the client's <paramref name="listenAddress" /> and its context into a single callback address that is sent to the service.</summary>
+        <returns>A <see cref="T:System.ServiceModel.EndpointAddress" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCopy">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.IMessageProperty CreateCopy ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IMessageProperty CreateCopy() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.CreateCopy" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.IMessageProperty</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance.</summary>
+        <returns>A copy of the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetListenAddressAndContext">
+      <MemberSignature Language="C#" Value="public void GetListenAddressAndContext (out System.ServiceModel.EndpointAddress listenAddress, out System.Collections.Generic.IDictionary&lt;string,string&gt; context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetListenAddressAndContext(class System.ServiceModel.EndpointAddress listenAddress, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.GetListenAddressAndContext(System.ServiceModel.EndpointAddress@,System.Collections.Generic.IDictionary{System.String,System.String}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listenAddress" Type="System.ServiceModel.EndpointAddress&amp;" RefType="out" />
+        <Parameter Name="context" Type="System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="listenAddress">A reference to store the listen address.</param>
+        <param name="context">Information contained in the message which is identifiable by the client and the service instance between which the communication is taking place.</param>
+        <summary>Gets the listen address and context data from the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public static string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CallbackContextMessageProperty.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the property name for the <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> class.</summary>
+        <value>The property name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGet">
+      <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Channels.CallbackContextMessageProperty contextMessageProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Channels.CallbackContextMessageProperty contextMessageProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.CallbackContextMessageProperty@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.CallbackContextMessageProperty&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to get the callback context message property from.</param>
+        <param name="contextMessageProperty">A reference to store the callback context message property instance.</param>
+        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance from the specified message.</summary>
+        <returns>
+          <see langword="true" /> if the callback context message property is retrieved successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGet">
+      <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Channels.CallbackContextMessageProperty contextMessageProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, class System.ServiceModel.Channels.CallbackContextMessageProperty contextMessageProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CallbackContextMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.CallbackContextMessageProperty@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.ServiceModel.Channels.MessageProperties" />
+        <Parameter Name="contextMessageProperty" Type="System.ServiceModel.Channels.CallbackContextMessageProperty&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="properties">The message properties collection to get the callback context message property from.</param>
+        <param name="contextMessageProperty">A reference to store the callback context message property instance.</param>
+        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CallbackContextMessageProperty" /> instance from the specified message properties.</summary>
+        <returns>
+          <see langword="true" /> if the callback context message property is retrieved successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

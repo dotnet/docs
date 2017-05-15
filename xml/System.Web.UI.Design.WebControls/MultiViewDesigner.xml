@@ -1,0 +1,69 @@
+<Type Name="MultiViewDesigner" FullName="System.Web.UI.Design.WebControls.MultiViewDesigner">
+  <TypeSignature Language="C#" Value="public class MultiViewDesigner : System.Web.UI.Design.ContainerControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MultiViewDesigner extends System.Web.UI.Design.ContainerControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.MultiViewDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.ContainerControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.MultiView" /> Web server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.MultiView> control is a container for a group of <xref:System.Web.UI.WebControls.View> controls. An application renders a specific <xref:System.Web.UI.WebControls.View> control to the client browser based on criteria that the application defines.  
+  
+ In a visual designer, when you switch from Source to Design view, the markup source code that describes the <xref:System.Web.UI.WebControls.MultiView> control is parsed and a design-time version of the control is created on the design surface. When you switch back to Source view, the design-time control is persisted to the markup source code and edited into the markup for the Web page. The <xref:System.Web.UI.Design.WebControls.MultiViewDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.MultiView> control in a visual designer.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MultiViewDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MultiViewDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.MultiViewDesigner" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.MultiViewDesigner> class when it creates the associated <xref:System.Web.UI.WebControls.MultiView> control or a copy of that control on the design surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoWrap">
+      <MemberSignature Language="C#" Value="protected override bool NoWrap { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool NoWrap" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.MultiViewDesigner.NoWrap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates that the <see langword="nowrap" /> HTML attribute should not be used.</summary>
+        <value>
+          <see langword="true" /> in all cases.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

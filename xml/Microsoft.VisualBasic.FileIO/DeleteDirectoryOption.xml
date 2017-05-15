@@ -1,0 +1,57 @@
+<Type Name="DeleteDirectoryOption" FullName="Microsoft.VisualBasic.FileIO.DeleteDirectoryOption">
+  <TypeSignature Language="C#" Value="public enum DeleteDirectoryOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeleteDirectoryOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.DeleteDirectoryOption" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies what should be done when a directory that is to be deleted contains files or directories.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.DeleteDirectory%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeleteAllContents">
+      <MemberSignature Language="C#" Value="DeleteAllContents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileIO.DeleteDirectoryOption DeleteAllContents = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.DeleteDirectoryOption.DeleteAllContents" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FileIO.DeleteDirectoryOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Delete the contents of the directory along with the directory. Default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowIfDirectoryNonEmpty">
+      <MemberSignature Language="C#" Value="ThrowIfDirectoryNonEmpty" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileIO.DeleteDirectoryOption ThrowIfDirectoryNonEmpty = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.DeleteDirectoryOption.ThrowIfDirectoryNonEmpty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FileIO.DeleteDirectoryOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Throw an <see cref="T:System.IO.IOException" /> if the directory is not empty. The <see langword="Data" /> property of the exception lists the file(s) that could not be deleted.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

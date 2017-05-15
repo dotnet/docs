@@ -1,0 +1,108 @@
+<Type Name="DbProjectExpression" FullName="System.Data.Common.CommandTrees.DbProjectExpression">
+  <TypeSignature Language="C#" Value="public sealed class DbProjectExpression : System.Data.Common.CommandTrees.DbExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DbProjectExpression extends System.Data.Common.CommandTrees.DbExpression" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbProjectExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.CommandTrees.DbExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the projection of a given input set over the specified expression. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accept">
+      <MemberSignature Language="C#" Value="public override void Accept (System.Data.Common.CommandTrees.DbExpressionVisitor visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Accept(class System.Data.Common.CommandTrees.DbExpressionVisitor visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbProjectExpression.Accept(System.Data.Common.CommandTrees.DbExpressionVisitor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visitor" Type="System.Data.Common.CommandTrees.DbExpressionVisitor" />
+      </Parameters>
+      <Docs>
+        <param name="visitor">An instance of <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />.</param>
+        <summary>Implements the visitor pattern for expressions that do not produce a result value.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="visitor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;TResultType&gt;">
+      <MemberSignature Language="C#" Value="public override TResultType Accept&lt;TResultType&gt; (System.Data.Common.CommandTrees.DbExpressionVisitor&lt;TResultType&gt; visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!TResultType Accept&lt;TResultType&gt;(class System.Data.Common.CommandTrees.DbExpressionVisitor`1&lt;!!TResultType&gt; visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbProjectExpression.Accept``1(System.Data.Common.CommandTrees.DbExpressionVisitor{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResultType</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResultType" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="System.Data.Common.CommandTrees.DbExpressionVisitor&lt;TResultType&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResultType">The type of the result produced by <c>visitor</c>.</typeparam>
+        <param name="visitor">An instance of a typed <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" /> that produces a result value of a specific type.</param>
+        <summary>Implements the visitor pattern for expressions that produce a result value of a specific type.</summary>
+        <returns>A result value of a specific type produced by <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="visitor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Input">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpressionBinding Input { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpressionBinding Input" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbProjectExpression.Input" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpressionBinding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> that specifies the input set.</summary>
+        <value>The <see cref="T:System.Data.Common.CommandTrees.DbExpressionBinding" /> that specifies the input set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Projection">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Projection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Projection" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbProjectExpression.Projection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the projection.</summary>
+        <value>The <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that defines the projection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The expression is not associated with the command tree of the <see cref="T:System.Data.Common.CommandTrees.DbProjectExpression" />, or its result type is not equal or promotable to the reference type of the current projection.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

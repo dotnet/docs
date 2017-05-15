@@ -1,0 +1,126 @@
+<Type Name="LiteralControlBuilder" FullName="System.Web.UI.WebControls.LiteralControlBuilder">
+  <TypeSignature Language="C#" Value="public class LiteralControlBuilder : System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LiteralControlBuilder extends System.Web.UI.ControlBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LiteralControlBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ControlBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Interacts with the parser to build a <see cref="T:System.Web.UI.WebControls.Literal" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used primarily for control developers. To create a custom control builder for a <xref:System.Web.UI.WebControls.Literal> derived control, you need to inherit from this class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LiteralControlBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LiteralControlBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LiteralControlBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowWhitespaceLiterals">
+      <MemberSignature Language="C#" Value="public override bool AllowWhitespaceLiterals ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool AllowWhitespaceLiterals() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LiteralControlBuilder.AllowWhitespaceLiterals" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Determines whether the control builder should process the white space literals that are represented by the <see cref="T:System.Web.UI.WebControls.Literal" /> control.</summary>
+        <returns>
+          <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.LiteralControlBuilder.AllowWhitespaceLiterals%2A> method overrides the inherited implementation of the <xref:System.Web.UI.ControlBuilder.AllowWhitespaceLiterals%2A?displayProperty=fullName> method to always indicate that white spaces in the text that are associated with the <xref:System.Web.UI.WebControls.Literal> control are not represented by <xref:System.Web.UI.WebControls.Literal?displayProperty=fullName> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendLiteralString">
+      <MemberSignature Language="C#" Value="public override void AppendLiteralString (string s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendLiteralString(string s) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LiteralControlBuilder.AppendLiteralString(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="s">The content to add to the control.</param>
+        <summary>Adds the specified literal content to a control. The <see cref="M:System.Web.UI.WebControls.LiteralControlBuilder.AppendLiteralString(System.String)" /> method is called by the ASP.NET page framework.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the string is white space, it is handled according to the setting of the <xref:System.Web.UI.WebControls.LiteralControlBuilder.AllowWhitespaceLiterals%2A> method. Otherwise, it is treated as if the inner text represents the <xref:System.Web.UI.WebControls.Literal.Text%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The string literal is not well formed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendSubBuilder">
+      <MemberSignature Language="C#" Value="public override void AppendSubBuilder (System.Web.UI.ControlBuilder subBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendSubBuilder(class System.Web.UI.ControlBuilder subBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LiteralControlBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subBuilder" Type="System.Web.UI.ControlBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="subBuilder">The <see cref="T:System.Web.UI.ControlBuilder" /> object to add the child control builders to.</param>
+        <summary>Throws <see cref="T:System.Web.HttpException" />, because adding child control builders does not apply to the <see cref="T:System.Web.UI.WebControls.Literal" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the <xref:System.Web.UI.ControlBuilder> base class, this method adds the builders of all child controls associated with the <xref:System.Web.UI.WebControls.Literal> control to the specified <xref:System.Web.UI.ControlBuilder?displayProperty=fullName> object. This method is inherited from the <xref:System.Web.UI.ControlBuilder?displayProperty=fullName> class and is not applicable to the <xref:System.Web.UI.WebControls.LiteralControlBuilder>. In the overridden implementation in <xref:System.Web.UI.WebControls.LiteralControlBuilder>, the method always throws <xref:System.Web.HttpException>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">An attempt is made to use this method.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,264 @@
+<Type Name="ContentDesigner" FullName="System.Web.UI.Design.WebControls.ContentDesigner">
+  <TypeSignature Language="C#" Value="public class ContentDesigner : System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContentDesigner extends System.Web.UI.Design.ControlDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ContentDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.ControlDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Extends design-time behavior for the <see cref="T:System.Web.UI.WebControls.Content" /> Web server control.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContentDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ContentDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.ContentDesigner" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionLists">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ContentDesigner.ActionLists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object for this designer.</summary>
+        <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with this designer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.Design.WebControls.ContentDesigner> objects add <xref:System.ComponentModel.Design.DesignerActionItem> elements to the <xref:System.ComponentModel.Design.DesignerActionListCollection> for the <xref:System.Web.UI.WebControls.Content> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowResize">
+      <MemberSignature Language="C#" Value="public override bool AllowResize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowResize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ContentDesigner.AllowResize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the control can be resized on the visual designer surface.</summary>
+        <value>
+          <see langword="true" /> if the control can be resized; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeHtml">
+      <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml (System.Web.UI.Design.DesignerRegionCollection regions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml(class System.Web.UI.Design.DesignerRegionCollection regions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ContentDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="regions" Type="System.Web.UI.Design.DesignerRegionCollection" />
+      </Parameters>
+      <Docs>
+        <param name="regions">The <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> associated with the design-time markup generated by <see cref="M:System.Web.UI.Design.WebControls.ContentDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />.</param>
+        <summary>Gets the markup that is used to represent the control at design time from the specified <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> object.</summary>
+        <returns>The markup that is used to represent the control at design time.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The markup generated by <xref:System.Web.UI.Design.WebControls.ContentDesigner.GetDesignTimeHtml%2A> includes region identifiers. <xref:System.Web.UI.Design.WebControls.ContentDesigner.GetDesignTimeHtml%2A> should add <xref:System.Web.UI.Design.DesignerRegion> elements to the <xref:System.Web.UI.Design.DesignerRegionCollection> specified by the `regions` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditableDesignerRegionContent">
+      <MemberSignature Language="C#" Value="public override string GetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ContentDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="System.Web.UI.Design.EditableDesignerRegion" />
+      </Parameters>
+      <Docs>
+        <param name="region">The <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> from which to get the content.</param>
+        <summary>Gets the content of the specified <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> object.</summary>
+        <returns>The persistence string for the content of the specified <see cref="T:System.Web.UI.Design.EditableDesignerRegion" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Web.UI.Design.EditableDesignerRegion> elements are defined in the <xref:System.Web.UI.Design.DesignerRegionCollection> and the design-time markup contains region identifiers, the <xref:System.Web.UI.Design.WebControls.ContentDesigner.GetEditableDesignerRegionContent%2A> method is used to return the content for each <xref:System.Web.UI.Design.EditableDesignerRegion> in the <xref:System.Web.UI.Design.DesignerRegionCollection>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPersistenceContent">
+      <MemberSignature Language="C#" Value="public override string GetPersistenceContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetPersistenceContent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ContentDesigner.GetPersistenceContent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the inner markup of the control.</summary>
+        <returns>The inner markup of the control.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A region is not a property of the control, so for persistent content, this method must return the inner HTML markup of the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostFilterProperties">
+      <MemberSignature Language="C#" Value="protected override void PostFilterProperties (System.Collections.IDictionary properties);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostFilterProperties(class System.Collections.IDictionary properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ContentDesigner.PostFilterProperties(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="properties">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects that represent the properties of the class of the component. The keys in the dictionary of properties are property names.</param>
+        <summary>When overridden in a derived class, allows a designer to change or remove items from the set of properties that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method provides a way to change or remove items within the dictionary of properties that are exposed through a <xref:System.ComponentModel.TypeDescriptor>.  
+  
+ The keys in the dictionary of properties are the names of the properties. The objects are of type <xref:System.ComponentModel.PropertyDescriptor>.  
+  
+ In this overridden method, the designer clears all properties except <xref:System.Web.UI.WebControls.Content.ContentPlaceHolderID%2A> and <xref:System.Web.UI.Design.ControlDesigner.ID%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You can directly filter the dictionary that is accessible through the <paramref name="properties" /> parameter, or you can leave it unchanged. If you are overriding this method, call the base implementation after you perform your own filtering.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="PreFilterEvents">
+      <MemberSignature Language="C#" Value="protected override void PreFilterEvents (System.Collections.IDictionary events);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterEvents(class System.Collections.IDictionary events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ContentDesigner.PreFilterEvents(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="events" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="events">The <see cref="T:System.ComponentModel.EventDescriptor" /> objects that represent the events of the class of the component. The keys in the dictionary of events are event names.</param>
+        <summary>When overridden in a derived class, allows a designer to add items to the set of events that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method provides a way to add items to the dictionary of events that a designer exposes through a <xref:System.ComponentModel.TypeDescriptor>.  
+  
+ The keys in the dictionary of events are the names of the events. The objects are of type <xref:System.ComponentModel.EventDescriptor>.  
+  
+ In this overridden method, the designer clears all events for this control.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>You can directly modify the dictionary that is accessible through the <paramref name="events" /> parameter, or you can leave it unchanged. If you are overriding this method, call the base implementation before you perform your own filtering.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEditableDesignerRegionContent">
+      <MemberSignature Language="C#" Value="public override void SetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region, string content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region, string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ContentDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="System.Web.UI.Design.EditableDesignerRegion" />
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="region">The <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> in which to set the content.</param>
+        <param name="content">The persistence string for the <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> content.</param>
+        <summary>Sets the content of the specified <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Developers will typically persist the content to the control or property that represents the region.  
+  
+ If <xref:System.Web.UI.Design.EditableDesignerRegion> elements are defined in the <xref:System.Web.UI.Design.DesignerRegionCollection> and the design-time markup contains region identifiers, the <xref:System.Web.UI.Design.WebControls.ContentDesigner.SetEditableDesignerRegionContent%2A> method is used to set the content for each <xref:System.Web.UI.Design.EditableDesignerRegion> in the <xref:System.Web.UI.Design.DesignerRegionCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

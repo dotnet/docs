@@ -1,0 +1,39 @@
+<Type Name="ObjectCreationDelegate" FullName="System.Runtime.InteropServices.ObjectCreationDelegate">
+  <TypeSignature Language="C#" Value="public delegate IntPtr ObjectCreationDelegate(IntPtr aggregator);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectCreationDelegate extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ObjectCreationDelegate" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="aggregator" Type="System.IntPtr" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.IntPtr</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="aggregator">A pointer to the managed object's <see langword="IUnknown" /> interface.</param>
+    <summary>Creates a COM object.</summary>
+    <returns>An <see cref="T:System.IntPtr" /> object that represents the <see langword="IUnknown" /> interface of the COM object.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is called to create a COM object as an alternative to `CoCreateInstance` when a managed object needs to create a new instance of its unmanaged portion. The `IUnknown` interface of the managed object is passed as a parameter and the delegate should return the `IUnknown` interface of the unmanaged object. Both interfaces are passed as type <xref:System.IntPtr> to avoid marshaling.  
+  
+ Every derived class of <xref:System.Delegate> and <xref:System.MulticastDelegate> has a constructor and an `Invoke` method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,105 @@
+<Type Name="DragDeltaEventArgs" FullName="System.Windows.Controls.Primitives.DragDeltaEventArgs">
+  <TypeSignature Language="C#" Value="public class DragDeltaEventArgs : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DragDeltaEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DragDeltaEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information about the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" /> event that occurs one or more times when a user drags a <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control with the mouse.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DragDeltaEventArgs (double horizontalChange, double verticalChange);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 horizontalChange, float64 verticalChange) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DragDeltaEventArgs.#ctor(System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="horizontalChange" Type="System.Double" />
+        <Parameter Name="verticalChange" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="horizontalChange">The horizontal change in the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> position since the last <see cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" /> event.</param>
+        <param name="verticalChange">The vertical change in the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> position since the last <see cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" /> event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.DragDeltaEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalChange">
+      <MemberSignature Language="C#" Value="public double HorizontalChange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalChange" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DragDeltaEventArgs.HorizontalChange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the horizontal distance that the mouse has moved since the previous <see cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" /> event when the user drags the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> control with the mouse.</summary>
+        <value>A horizontal change in position of the mouse during a drag operation. There is no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DragDeltaEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">The event handler delegate.</param>
+        <param name="genericTarget">The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> that uses the handler.</param>
+        <summary>Converts a method that handles the <see cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" /> event to the <see cref="T:System.Windows.Controls.Primitives.DragDeltaEventHandler" /> type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the `genericHandler` as a <xref:System.Windows.Controls.Primitives.DragDeltaEventHandler>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalChange">
+      <MemberSignature Language="C#" Value="public double VerticalChange { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 VerticalChange" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DragDeltaEventArgs.VerticalChange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the vertical distance that the mouse has moved since the previous <see cref="E:System.Windows.Controls.Primitives.Thumb.DragDelta" /> event when the user drags the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> with the mouse.</summary>
+        <value>A vertical change in position of the mouse during a drag operation. There is no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

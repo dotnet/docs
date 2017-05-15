@@ -1,0 +1,104 @@
+<Type Name="DesignerProperties" FullName="System.ComponentModel.DesignerProperties">
+  <TypeSignature Language="C#" Value="public static class DesignerProperties" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DesignerProperties extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignerProperties" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides attached properties used to communicate with a designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.DesignerProperties> class provides attached properties that can be used to query the state of a control when it is running in a designer. Designer tools will set values for properties on objects that are running in the designer.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetIsInDesignMode">
+      <MemberSignature Language="C#" Value="public static bool GetIsInDesignMode (System.Windows.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsInDesignMode(class System.Windows.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerProperties.GetIsInDesignMode(System.Windows.DependencyObject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element from which the property value is read.</param>
+        <summary>Gets the value of the <see cref="P:System.ComponentModel.DesignerProperties.IsInDesignMode" /> attached property for the specified <see cref="T:System.Windows.UIElement" />.</summary>
+        <returns>The <see cref="P:System.ComponentModel.DesignerProperties.IsInDesignMode" /> property value for the element.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInDesignModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInDesignModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInDesignModeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerProperties.IsInDesignModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.ComponentModel.DesignerProperties.IsInDesignMode" /> attached property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.ComponentModel.DesignerProperties.IsInDesignMode%2A> attached property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsInDesignMode">
+      <MemberSignature Language="C#" Value="public static void SetIsInDesignMode (System.Windows.DependencyObject element, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsInDesignMode(class System.Windows.DependencyObject element, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignerProperties.SetIsInDesignMode(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.DependencyObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to which the attached property is written.</param>
+        <param name="value">The needed <see cref="T:System.Boolean" /> value.</param>
+        <summary>Sets the value of the <see cref="P:System.ComponentModel.DesignerProperties.IsInDesignMode" /> attached property to a specified element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="element" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

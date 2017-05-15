@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 49794de4-64c3-473c-b8ed-fe98835df69c
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.mt: 
   - "cs-cz"
@@ -209,10 +209,10 @@ End Class
 ####  <a name="Destructors"></a> Destructors  
  Destructors are used to destruct instances of classes. In the .NET Framework, the garbage collector automatically manages the allocation and release of memory for the managed objects in your application. However, you may still need destructors to clean up any unmanaged resources that your application creates. There can be only one destructor for a class.  
   
- For more information about destructors and garbage collection in the .NET Framework, see [Garbage Collection](../../../standard/garbagecollection/index.md).  
+ For more information about destructors and garbage collection in the .NET Framework, see [Garbage Collection](../../../standard/garbage-collection/index.md).  
   
 ####  <a name="Events"></a> Events  
- Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+ Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](../../../standard/events/index.md).  
   
 -   To declare events, use the [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md).  
   
@@ -325,7 +325,7 @@ Dim sampleObject =
  Inheritance enables you to create a new class that reuses, extends, and modifies the behavior that is defined in another class. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. However, all classes in Visual Basic implicitly inherit from the <xref:System.Object> class that supports .NET class hierarchy and provides low-level services to all classes.  
   
 > [!NOTE]
->  Visual Basic doesn't support multiple inheritance, i.e. you can specify only one base class for a derived class.  
+>  Visual Basic doesn't support multiple inheritance. That is, you can specify only one base class for a derived class.  
   
  To inherit from a base class:  
   
@@ -430,7 +430,7 @@ sampleObject.Field = "Sample string"
  A *delegate* is a type that defines a method signature, and can provide a reference to any method with a compatible signature. You can invoke (or call) the method through the delegate. Delegates are used to pass methods as arguments to other methods.  
   
 > [!NOTE]
->  Event handlers are nothing more than methods that are invoked through delegates. For more information about using delegates in event handling, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+>  Event handlers are nothing more than methods that are invoked through delegates. For more information about using delegates in event handling, see [Events](../../../standard/events/index.md).  
   
  To create a delegate:  
   

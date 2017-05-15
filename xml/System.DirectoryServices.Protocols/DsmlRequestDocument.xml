@@ -1,0 +1,770 @@
+<Type Name="DsmlRequestDocument" FullName="System.DirectoryServices.Protocols.DsmlRequestDocument">
+  <TypeSignature Language="C#" Value="public class DsmlRequestDocument : System.DirectoryServices.Protocols.DsmlDocument, System.Collections.IList" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DsmlRequestDocument extends System.DirectoryServices.Protocols.DsmlDocument implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DsmlDocument</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> class enables you to build a DSML request payload, such as <see cref="T:System.DirectoryServices.Protocols.AddRequest" />, <see cref="T:System.DirectoryServices.Protocols.ModifyRequest" />, or <see cref="T:System.DirectoryServices.Protocols.SearchRequest" />.  It contains zero or more <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> derived objects. The user may add, delete, modify, and enumerate the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> before sending to the server. <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> can be used with any DSML Binding classes to transport the document, such as <see cref="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DsmlRequestDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates an empty request document.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.DirectoryServices.Protocols.DirectoryRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.DirectoryServices.Protocols.DirectoryRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Add(System.DirectoryServices.Protocols.DirectoryRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to add to the collection.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Add(System.DirectoryServices.Protocols.DirectoryRequest)" /> method adds a <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to the collection.</summary>
+        <returns>The index of the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection at which the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object was added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="request" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Clear" /> method removes all items from this collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.Protocols.DirectoryRequest value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.Protocols.DirectoryRequest value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Contains(System.DirectoryServices.Protocols.DirectoryRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object for which to search.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Contains(System.DirectoryServices.Protocols.DirectoryRequest)" /> method determines whether this <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection contains the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object is part of the collection; <see langword="false" />, otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.Protocols.DirectoryRequest[] value, int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.Protocols.DirectoryRequest[] value, int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.CopyTo(System.DirectoryServices.Protocols.DirectoryRequest[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryRequest[]" />
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> object.</param>
+        <param name="i">The zero-based index of <c>value</c> where copying begins.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.CopyTo(System.DirectoryServices.Protocols.DirectoryRequest[],System.Int32)" /> method copies the entire <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection to a one-dimensional array, starting at the specified index of the target array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.Count" /> property contains the number of <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> objects in this collection.</summary>
+        <value>The number of <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> objects in this collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentProcessing">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DsmlDocumentProcessing DocumentProcessing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.DsmlDocumentProcessing DocumentProcessing" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.DocumentProcessing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DsmlDocumentProcessing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.DocumentProcessing" /> property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlDocumentProcessing" /> that specifies how the elements of the collection are processed.</summary>
+        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlDocumentProcessing" /> that specifies how the elements of the collection are processed.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="value" /> is an invalid enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorProcessing">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DsmlErrorProcessing ErrorProcessing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.DsmlErrorProcessing ErrorProcessing" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.ErrorProcessing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DsmlErrorProcessing</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.ErrorProcessing" /> property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlErrorProcessing" /> that specifies how errors are processed.</summary>
+        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlErrorProcessing" /> that specifies how errors are processed.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="value" /> is an invalid enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.GetEnumerator" /> method returns an enumerator for the entire <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection.</summary>
+        <returns>A <see cref="T:System.Collections.IEnumerator" /> object for the entire collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.Protocols.DirectoryRequest value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.Protocols.DirectoryRequest value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.IndexOf(System.DirectoryServices.Protocols.DirectoryRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object for which the index is returned.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.IndexOf(System.DirectoryServices.Protocols.DirectoryRequest)" /> method returns the zero-based index of the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object in the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection.</summary>
+        <returns>The index value of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object, if found; otherwise, -1.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.DirectoryServices.Protocols.DirectoryRequest value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.DirectoryServices.Protocols.DirectoryRequest value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Insert(System.Int32,System.DirectoryServices.Protocols.DirectoryRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index in the collection at which to insert the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</param>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to be inserted into the collection.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Insert(System.Int32,System.DirectoryServices.Protocols.DirectoryRequest)" /> method inserts the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object into the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection at the specified index.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFixedSize">
+      <MemberSignature Language="C#" Value="protected bool IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.IsFixedSize" /> property contains a value that indicates whether the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="protected bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.IsReadOnly" /> property contains a value indicating whether the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is read only or not.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is read only; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="protected bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.IsSynchronized" /> property contains a value that indicates whether access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is synchronized (thread-safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DirectoryRequest this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.Protocols.DirectoryRequest Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DirectoryRequest</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index value at which the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object is found.</param>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.Item(System.Int32)" /> property contains the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified index.</summary>
+        <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified index.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="index" /> is set to a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.DirectoryServices.Protocols.DirectoryRequest value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.DirectoryServices.Protocols.DirectoryRequest value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Remove(System.DirectoryServices.Protocols.DirectoryRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to remove.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.Remove(System.DirectoryServices.Protocols.DirectoryRequest)" /> method removes the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object from the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to remove.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.RemoveAt(System.Int32)" /> method removes the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified position.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestId">
+      <MemberSignature Language="C#" Value="public string RequestId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RequestId" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.RequestId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.RequestId" /> property contains the <paramref name="RequestID" /> associated with the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</summary>
+        <value>The <paramref name="RequestID" /> associated with the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseOrder">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DsmlResponseOrder ResponseOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.DsmlResponseOrder ResponseOrder" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.ResponseOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DsmlResponseOrder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.ResponseOrder" /> property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlResponseOrder" /> that specifies the order of the response.</summary>
+        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.DsmlResponseOrder" /> that specifies the order of the response.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="value" /> is an invalid enumeration value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="protected object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.SyncRoot" /> property contains an object that can be used to synchronize access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Derived classes can provide synchronized versions of the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument> using the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument.SyncRoot%2A> property. The synchronizing code must perform operations on the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument.SyncRoot%2A> of the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument>, not directly on the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument>. This ensures proper operation of collections that are derived from other objects. Specifically, it maintains proper synchronization with other threads that might be simultaneously modifying the <xref:System.DirectoryServices.Protocols.DsmlRequestDocument> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array value, int i);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array value, int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Array" />
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">A one-dimensional array that is the destination of the elements copied from the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> object.</param>
+        <param name="i">The zero-based index of <c>value</c> where copying begins.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.ICollection.CopyTo(System.Array,System.Int32)" /> method copies the entire <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection to a one-dimensional array, starting at the specified index of the target array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.Count">
+      <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#ICollection#Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.ICollection.Count" /> property gets the number of <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> objects in this collection.</summary>
+        <value>The number of <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> objects.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.ICollection.IsSynchronized" /> property gets a value that indicates whether access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is synchronized (thread-safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.ICollection.SyncRoot" /> property gets an object that can be used to synchronize access to the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</summary>
+        <value>An object that can be used to synchronize access to <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Add">
+      <MemberSignature Language="C#" Value="int IList.Add (object request);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to add to the collection.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Add(System.Object)" /> method adds a <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to the collection.</summary>
+        <returns>The index of the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection at which the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object was added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="request" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="request" /> is not a  <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Clear">
+      <MemberSignature Language="C#" Value="void IList.Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Clear" /> method removes all items from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Contains">
+      <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object for which to search.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Contains(System.Object)" /> method determines whether this <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection contains the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object is part of the collection; <see langword="false" />, otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IndexOf">
+      <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object for which the index is returned.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.IndexOf(System.Object)" /> method returns the zero-based index of the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object in the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection.</summary>
+        <returns>The index value of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object, if found; otherwise, -1.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is <see langword="null" /> reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Insert">
+      <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index in the collection at which to insert the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</param>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to be inserted into the collection.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Insert(System.Int32,System.Object)" /> method inserts the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object into the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> collection at the specified index.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not a  <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsFixedSize">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.IsFixedSize" /> property gets a value that indicates whether the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.IsReadOnly" /> property gets a value that indicates whether the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is read-only or not.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> is read only; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Item">
+      <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index value at which the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object is found.</param>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Item(System.Int32)" /> property gets or sets the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified index.</summary>
+        <value>The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified <paramref name="index" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="index" /> is set to a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="value" /> is not a  <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Remove">
+      <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to remove.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.Remove(System.Object)" /> method removes the first occurrence of the specified <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object from the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="value" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.RemoveAt">
+      <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System#Collections#IList#RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object to remove.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.System.Collections.IList.RemoveAt(System.Int32)" /> method removes the <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object at the specified position.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public override System.Xml.XmlDocument ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlDocument ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlRequestDocument.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlRequestDocument.ToXml" /> method transforms each <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object in the collection into an <see cref="T:System.Xml.XmlDocument" /> object.</summary>
+        <returns>The transformed <see cref="T:System.Xml.XmlDocument" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

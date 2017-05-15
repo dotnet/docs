@@ -1,0 +1,115 @@
+<Type Name="DataGridPreparingCellForEditEventArgs" FullName="System.Windows.Controls.DataGridPreparingCellForEditEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridPreparingCellForEditEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridPreparingCellForEditEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridPreparingCellForEditEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.PreparingCellForEdit" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridPreparingCellForEditEventArgs (System.Windows.Controls.DataGridColumn column, System.Windows.Controls.DataGridRow row, System.Windows.RoutedEventArgs editingEventArgs, System.Windows.FrameworkElement editingElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.DataGridColumn column, class System.Windows.Controls.DataGridRow row, class System.Windows.RoutedEventArgs editingEventArgs, class System.Windows.FrameworkElement editingElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridPreparingCellForEditEventArgs.#ctor(System.Windows.Controls.DataGridColumn,System.Windows.Controls.DataGridRow,System.Windows.RoutedEventArgs,System.Windows.FrameworkElement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="column" Type="System.Windows.Controls.DataGridColumn" />
+        <Parameter Name="row" Type="System.Windows.Controls.DataGridRow" />
+        <Parameter Name="editingEventArgs" Type="System.Windows.RoutedEventArgs" />
+        <Parameter Name="editingElement" Type="System.Windows.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="column">The column that contains the cell to be edited.</param>
+        <param name="row">The row that contains the cell to be edited.</param>
+        <param name="editingEventArgs">Information about the user gesture that caused the cell to enter edit mode.</param>
+        <param name="editingElement">The element that the column displays for a cell in editing mode.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridPreparingCellForEditEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridColumn Column { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataGridColumn Column" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridPreparingCellForEditEventArgs.Column" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridColumn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the column that contains the cell to be edited.</summary>
+        <value>The column that contains the cell to be edited.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditingElement">
+      <MemberSignature Language="C#" Value="public System.Windows.FrameworkElement EditingElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.FrameworkElement EditingElement" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridPreparingCellForEditEventArgs.EditingElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the element that the column displays for a cell in editing mode.</summary>
+        <value>The element that the column displays for a cell in editing mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditingEventArgs">
+      <MemberSignature Language="C#" Value="public System.Windows.RoutedEventArgs EditingEventArgs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.RoutedEventArgs EditingEventArgs" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridPreparingCellForEditEventArgs.EditingEventArgs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.RoutedEventArgs</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets information about the user gesture that caused the cell to enter edit mode.</summary>
+        <value>Information about the user gesture that caused the cell to enter edit mode.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Row">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridRow Row { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataGridRow Row" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridPreparingCellForEditEventArgs.Row" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridRow</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the row that contains the cell to be edited.</summary>
+        <value>The row that contains the cell to be edited.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -23,7 +23,7 @@ ms.assetid: [GET ONE FROM guidgenerator.com]
 
 # Metadata and Markdown Template
 
-This core-docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
+This dotnet/docs template contains examples of Markdown syntax, as well as guidance on setting the metadata. To get the most of it, you must view both the [raw Markdown](https://raw.githubusercontent.com/dotnet/docs/master/styleguide/template.md) and the [rendered view](https://github.com/dotnet/docs/blob/master/styleguide/template.md) (for instance, the raw Markdown shows the metadata block, while the rendered view does not).
 
 When creating a Markdown file, you should copy this template to a new file, fill out the metadata as specified below, set the H1 heading above to the title of the article, and delete the content. 
 
@@ -128,6 +128,7 @@ The build system has some extensions that allow us to link to .NET Core APIs wit
 When linking to an API, you can use its unique identifier (UID) that is auto-generated from the source code.
 
 You can use one of the following syntax:
+
 1. Markdown link: `[link_text](xref:UID)`
 2. Auto link: `<xref:UID>`
 3. Shorthand form: `@UID`
@@ -137,7 +138,7 @@ You can use one of the following syntax:
 
 For more information about using this notation, see [Using cross reference](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html#using-cross-reference).
 
-> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in this repo: [docascode/coreapi](https://github.com/docascode/coreapi). We're working on having a better system in the future.
+> Right now, there is no easy way to find the UIDs. The best way to find the UID for an API is to search for it in [the `xml` directory of this repo](../xml), then looking at the DocId signature and ignoring its first two characters (letter and colon). We're working on having a better system in the future.
 
 When the UID contains the special characters \` or \#, the UID value needs to be HTML encoded as %60 and %23 respectively as in the following examples:
 - Example: @System.Threading.Tasks.Task\`1 becomes `@System.Threading.Tasks.Task%601`
@@ -253,11 +254,37 @@ runtime errors, you can use inline code blocks.
 
 ### Inline code blocks with language identifier
 
-Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the entire list of [GFM language IDs](https://github.com/jmm/gfm-lang-ids/wiki/GitHub-Flavored-Markdown-(GFM)-language-IDs).
+Use three backticks (\`\`\`) + a language ID to apply language-specific color coding to a code block. Here is the list of supported languages showing the markdown label for each language ID. 
+
+#### Supported Languages
+|Name|Markdown Label|
+|-----|-------|
+|Azure CLI|azurecli|
+|AzCopy|azcopy|
+|C++|cpp|
+|C#|csharp|
+|F#|fsharp|
+|JavaScript|javascript|
+|JSON|json|
+|NodeJS|nodejs|
+|Objective-C|objc|
+|PHP|php|
+|PowerShell|powershell|
+|Python|python|
+|Ruby|ruby|
+|SQL / T-SQL|sql|
+|Swift|swift|
+|VB|vb|
+|XAML|xaml|
+|XML|xml| 
+ 
+ 
+
+The following are examples of code blocks using the language IDs for C# (\`\`\`csharp), Python (\`\`\`python), and PowerShell (\`\`\`powershell).
 
 ##### C&#9839;
 
-```cs
+```csharp
 using System;
 namespace HelloWorld
 {
@@ -376,7 +403,7 @@ You can see an example of buttons in action at the [Intune docs](https://docs.mi
 
 > [!div class="op_single_selector"]
 - [macOS](../docs/core/tutorials/using-on-macos.md)
-- [Windows](../docs/core/tutorials/using-on-windows.md)
+- [Windows](../docs/csharp/getting-started/with-visual-studio.md)
 
 You can see an example of selectors in action at the [Intune docs](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune#how-your-end-users-get-their-apps).
 

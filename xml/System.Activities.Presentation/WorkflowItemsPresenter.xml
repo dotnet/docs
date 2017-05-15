@@ -1,0 +1,726 @@
+<Type Name="WorkflowItemsPresenter" FullName="System.Activities.Presentation.WorkflowItemsPresenter">
+  <TypeSignature Language="C#" Value="public class WorkflowItemsPresenter : System.Windows.Controls.ContentControl, System.Activities.Presentation.IMultipleDragEnabledCompositeView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowItemsPresenter extends System.Windows.Controls.ContentControl implements class System.Activities.Presentation.ICompositeView, class System.Activities.Presentation.IMultipleDragEnabledCompositeView" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowItemsPresenter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.ContentControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Activities.Presentation.IMultipleDragEnabledCompositeView</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a control that can be used to present a collection of objects on a design surface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.WorkflowItemsPresenter> is the second key [!INCLUDE[avalon1](~/includes/avalon1-md.md)] control provided by the [!INCLUDE[wf2](~/includes/wf2-md.md)] designer infrastructure that is collection based. While the <xref:System.Activities.Presentation.WorkflowItemPresenter> enables the display and the editing of a single contained element, the <xref:System.Activities.Presentation.WorkflowItemsPresenter> is collection based, displays a visualization, and supports editing of the collection of items provided by the <xref:System.Activities.Presentation.WorkflowItemsPresenter.Items%2A> property. In addition to allowing the multiple items contained in the collection to be visualized and edited, the `WorkflowItemsPresenter` also enables collection-oriented actions, such as inserting an item at a given index in the collection, deleting an item from the collection, and moving an item from one index to another. `WorkflowItemsPresenter` also handles combined actions, such as dragging between the various presenters and allowing that edit to occur in a single, undoable action.Use <xref:System.Activities.Presentation.WorkflowItemPresenter> to present a single object on a design surface.  
+  
+ For an example of the <xref:System.Activities.Presentation.WorkflowItemsPresenter> in use, see the [Custom Composite Designers - Workflow Items Presenter](~/docs/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-items-presenter.md) sample.  
+  
+   
+  
+## Examples  
+ The following sample code shows how you can build a designer for the Parallel activity. Note the binding to ModelItem.Branches for the Items.  
+  
+```  
+<sap:ActivityDesigner x:Class="customActivityDesigners.CustomParallelDesigner"  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+    xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"  
+    xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"  
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation">  
+   <Grid>  
+        <StackPanel>  
+            <Label>Custom Parallel Designer</Label>  
+            <TextBlock Text="{Binding Path=ModelItem.Branches.Count, StringFormat=Branches: {0}}" />  
+            <sap:WorkflowItemsPresenter Items="{Binding Path=ModelItem.Branches}" AllowedItemType="{x:Type sa:Activity }" HintText="Place Activities Here" Margin="20,0,0,0">  
+                <sap:WorkflowItemsPresenter.ItemsPanel>  
+                    <ItemsPanelTemplate>  
+                        <StackPanel Orientation="Vertical" />  
+                    </ItemsPanelTemplate>  
+                </sap:WorkflowItemsPresenter.ItemsPanel>  
+                <sap:WorkflowItemsPresenter.SpacerTemplate>  
+                    <DataTemplate>  
+                        <Rectangle Width="80" Height="5" Fill="Black" />  
+                    </DataTemplate>  
+                </sap:WorkflowItemsPresenter.SpacerTemplate>  
+            </sap:WorkflowItemsPresenter>  
+        </StackPanel>  
+    </Grid>  
+</sap:ActivityDesigner>  
+```  
+  
+<!-- TODO: review snippet reference  [!CODE [WorkflowItemsPresenter#1](WorkflowItemsPresenter#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowItemsPresenter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowedItemType">
+      <MemberSignature Language="C#" Value="public Type AllowedItemType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type AllowedItemType" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.AllowedItemType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of item  supported by the presenter.</summary>
+        <value>The <see langword="Type" /> of item supported by the presenter.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowedItemTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AllowedItemTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AllowedItemTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.AllowedItemTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowItemsPresenter.AllowedItemType" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanPasteItems">
+      <MemberSignature Language="C#" Value="public bool CanPasteItems (System.Collections.Generic.List&lt;object&gt; itemsToPaste);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanPasteItems(class System.Collections.Generic.List`1&lt;object&gt; itemsToPaste) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.CanPasteItems(System.Collections.Generic.List{System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemsToPaste" Type="System.Collections.Generic.List&lt;System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="itemsToPaste">The list of objects to be pasted.</param>
+        <summary>Returns a Boolean that indicates whether the specified objects can be pasted.</summary>
+        <returns>
+          <see langword="true" /> if the specified list of objects can be pasted; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DroppingTypeResolvingOptions">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.View.TypeResolvingOptions DroppingTypeResolvingOptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.View.TypeResolvingOptions DroppingTypeResolvingOptions" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.DroppingTypeResolvingOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.TypeResolvingOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object for resolving types used by the <see cref="T:System.Activities.Presentation.WorkflowItemPresenter" />.</summary>
+        <value>A <see cref="T:System.Activities.Presentation.View.TypeResolvingOptions" /> object for resolving types used by the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DroppingTypeResolvingOptionsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DroppingTypeResolvingOptionsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DroppingTypeResolvingOptionsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.DroppingTypeResolvingOptionsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowItemPresenter.DroppingTypeResolvingOptions" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FooterTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate FooterTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate FooterTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.FooterTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="DataTemplate" /> that defines how the footer section of the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> control is displayed.</summary>
+        <value>A <see langword="DataTemplate" /> that defines how the footer section of the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> control is displayed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FooterTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FooterTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FooterTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.FooterTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowItemsPresenter.FooterTemplate" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate HeaderTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate HeaderTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.HeaderTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="DataTemplate" /> that defines how the header section of the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> control is displayed.</summary>
+        <value>A <see langword="DataTemplate" /> that defines how the header section of the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> control is displayed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.HeaderTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowItemsPresenter.HeaderTemplate" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HintText">
+      <MemberSignature Language="C#" Value="public string HintText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HintText" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.HintText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that contains the hint text for the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> control.</summary>
+        <value>The hint text for the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HintTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HintTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HintTextProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.HintTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowItemsPresenter.HintText" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IndexProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IndexProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.IndexProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the index dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultContainer">
+      <MemberSignature Language="C#" Value="public bool IsDefaultContainer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDefaultContainer" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.IsDefaultContainer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that indicates whether the current designer is the default container.</summary>
+        <value>
+          <see langword="true" /> if the current designer is the default container; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDefaultContainerProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsDefaultContainerProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsDefaultContainerProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.IsDefaultContainerProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowItemsPresenter.IsDefaultContainer" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItemCollection Items { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItemCollection Items" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItemCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection used to generate the content of the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" />.</summary>
+        <value>A <see langword="ModelItemCollection" /> used to generate the content of the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsPanel">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.ItemsPanelTemplate ItemsPanel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ItemsPanelTemplate ItemsPanel" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ItemsPanelTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the template that defines the panel that controls the layout of items.</summary>
+        <value>An <see langword="ItemsPanelTemplate" /> that defines the panel to use for the layout of the items.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsPanelProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemsPanelProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemsPanelProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanelProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By providing a custom panel template, you can customize and control the layout of the contained items. The default <xref:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel%2A> is based on a vertically oriented `StackPanel`. As an illustration, the `ItemsPanel` for the designer of <xref:System.Activities.Statements.Parallel> activities is based on a horizontally oriented `StackPanel`.  
+  
+   
+  
+## Examples  
+ The following example in XAML shows the `ItemsPanel` for the designer of <xref:System.Activities.Statements.Parallel> activities that is based on a horizontally oriented `StackPanel`.  
+  
+```  
+  
+<sad:WorkflowItemsPresenter.ItemsPanel>  
+  <ItemsPanelTemplate>  
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="ItemsPanel"/>  
+  </ItemsPanelTemplate>  
+</sad:WorkflowItemsPresenter.ItemsPanel>  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.ItemsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowItemsPresenter.Items" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" />-specific <see langword="AutomationPeer" /> implementation for the [!INCLUDE[avalon1](~/includes/avalon1-md.md)] infrastructure. Implement this method in your derived class to add class handling for this event.</summary>
+        <returns>The type-specific <see langword="AutomationPeer" /> implementation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDragEnter">
+      <MemberSignature Language="C#" Value="protected override void OnDragEnter (System.Windows.DragEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragEnter(class System.Windows.DragEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnDragEnter(System.Windows.DragEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Provides data for the drag event.</param>
+        <summary>Occurs when an object is dragged into the control's bounds.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDragOver">
+      <MemberSignature Language="C#" Value="protected override void OnDragOver (System.Windows.DragEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDragOver(class System.Windows.DragEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnDragOver(System.Windows.DragEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Provides data for the drag event.</param>
+        <summary>Occurs when an object is dragged over the control's bounds.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDrop">
+      <MemberSignature Language="C#" Value="protected override void OnDrop (System.Windows.DragEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDrop(class System.Windows.DragEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnDrop(System.Windows.DragEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DragEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see langword="DragEventArgs" /> instance that contains the event data.</param>
+        <summary>Invoked when an object is dragged into the bounds of a <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> control. Implement this method in your derived class to add class handling for this event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInitialized">
+      <MemberSignature Language="C#" Value="protected override void OnInitialized (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitialized(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnInitialized(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see langword="EventArgs" /> instance that contains the event data.</param>
+        <summary>Invoked when a <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> object is initialized. Implement this method in your derived class to add class handling for this event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemMoved">
+      <MemberSignature Language="C#" Value="public void OnItemMoved (System.Activities.Presentation.Model.ModelItem modelItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnItemMoved(class System.Activities.Presentation.Model.ModelItem modelItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemMoved(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that was moved.</param>
+        <summary>Informs the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> that a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> was moved.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `modelItem` is in <xref:System.Activities.Presentation.WorkflowItemsPresenter.Items%2A>, it is removed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsCopied">
+      <MemberSignature Language="C#" Value="public object OnItemsCopied (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; itemsToCopy);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object OnItemsCopied(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; itemsToCopy) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemsCopied(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemsToCopy" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="itemsToCopy">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> instances to be copied.</param>
+        <summary>Occurs when the specified <see cref="T:System.Activities.Presentation.Model.ModelItem" /> instances are cloned.</summary>
+        <returns>The copied items.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsCut">
+      <MemberSignature Language="C#" Value="public object OnItemsCut (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; itemsToCut);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object OnItemsCut(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; itemsToCut) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemsCut(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemsToCut" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="itemsToCut">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> instances to be cut.</param>
+        <summary>Occurs when the specified <see cref="T:System.Activities.Presentation.Model.ModelItem" /> instances are cut.</summary>
+        <returns>A clone of <paramref name="itemsToCut" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsDelete">
+      <MemberSignature Language="C#" Value="public void OnItemsDelete (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; itemsToDelete);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnItemsDelete(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; itemsToDelete) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemsDelete(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemsToDelete" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="itemsToDelete">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> instances to be deleted.</param>
+        <summary>Occurs when the specified <see cref="T:System.Activities.Presentation.Model.ModelItem" /> instances are deleted.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsMoved">
+      <MemberSignature Language="C#" Value="public void OnItemsMoved (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; movedItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnItemsMoved(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; movedItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemsMoved(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="movedItems" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="movedItems">The items that has been moved.</param>
+        <summary>Invoked after the start of a move operation to complete the moving of the specified item.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnItemsPasted">
+      <MemberSignature Language="C#" Value="public void OnItemsPasted (System.Collections.Generic.List&lt;object&gt; itemsToPaste, System.Collections.Generic.List&lt;object&gt; metaData, System.Windows.Point pastePoint, System.Activities.Presentation.WorkflowViewElement pastePointReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnItemsPasted(class System.Collections.Generic.List`1&lt;object&gt; itemsToPaste, class System.Collections.Generic.List`1&lt;object&gt; metaData, valuetype System.Windows.Point pastePoint, class System.Activities.Presentation.WorkflowViewElement pastePointReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.OnItemsPasted(System.Collections.Generic.List{System.Object},System.Collections.Generic.List{System.Object},System.Windows.Point,System.Activities.Presentation.WorkflowViewElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemsToPaste" Type="System.Collections.Generic.List&lt;System.Object&gt;" />
+        <Parameter Name="metaData" Type="System.Collections.Generic.List&lt;System.Object&gt;" />
+        <Parameter Name="pastePoint" Type="System.Windows.Point" />
+        <Parameter Name="pastePointReference" Type="System.Activities.Presentation.WorkflowViewElement" />
+      </Parameters>
+      <Docs>
+        <param name="itemsToPaste">The items to be pasted.</param>
+        <param name="metaData">The metadata associated with the items to be pasted.</param>
+        <param name="pastePoint">The location of the paste.</param>
+        <param name="pastePointReference">A reference to the paste point.</param>
+        <summary>Pastes the specified <see cref="T:System.Activities.Presentation.Model.ModelItem" /> instances to the specified location.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortSelectedItems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; SortSelectedItems (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; selectedItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; SortSelectedItems(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; selectedItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowItemsPresenter.SortSelectedItems(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="selectedItems" Type="System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="selectedItems">The selected items to be sorted.</param>
+        <summary>Sorts the selected items.</summary>
+        <returns>The list of the sorted items.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpacerTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate SpacerTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate SpacerTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowItemsPresenter.SpacerTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see langword="DataTemplate" /> that defines how the spacer of the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> control is displayed.</summary>
+        <value>A <see langword="DataTemplate" /> that defines how the spacer of the <see cref="T:System.Activities.Presentation.WorkflowItemsPresenter" /> control is displayed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpacerTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SpacerTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SpacerTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowItemsPresenter.SpacerTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowItemsPresenter.SpacerTemplate" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

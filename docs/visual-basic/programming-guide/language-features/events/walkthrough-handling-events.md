@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "event handlers [Visual Basic], walkthroughs"
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

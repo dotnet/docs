@@ -1,0 +1,43 @@
+<Type Name="DataGridViewCellValidatingEventHandler" FullName="System.Windows.Forms.DataGridViewCellValidatingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void DataGridViewCellValidatingEventHandler(object sender, DataGridViewCellValidatingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellValidatingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellValidatingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.DataGridViewCellValidatingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">A reference to the event sender.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.DataGridViewCellValidatingEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.DataGridView.CellValidating" /> event of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.CellValidating> event occurs when a cell loses input focus, enabling content validation. Canceling this event cancels the changes to the current cell. When this event is canceled in data-bound mode, the new value is not pushed to the underlying data source. When this event is canceled in virtual mode, the <xref:System.Windows.Forms.DataGridView.CellValuePushed> event will not be raised.  
+  
+ When you create a <xref:System.Windows.Forms.DataGridViewCellValidatingEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example handles the <xref:System.Windows.Forms.DataGridView.CellValidating> event to ensure that only positive integers are entered by the user. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> reference topic.  
+  
+ [!code-cpp[System.Windows.Forms.DataGridView._Virtual#40](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._Virtual/CPP/virtual.cpp#40)]
+ [!code-csharp[System.Windows.Forms.DataGridView._Virtual#40](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._Virtual/CS/virtual.cs#40)]
+ [!code-vb[System.Windows.Forms.DataGridView._Virtual#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView._Virtual/VB/virtual.vb#40)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

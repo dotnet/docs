@@ -1,0 +1,72 @@
+<Type Name="ExtensibleClassFactory" FullName="System.Runtime.InteropServices.ExtensibleClassFactory">
+  <TypeSignature Language="C#" Value="public sealed class ExtensibleClassFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExtensibleClassFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ExtensibleClassFactory" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enables customization of managed objects that extend from unmanaged objects during creation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `ExtensibleClassFactory` allows users to specify a `delegate` that is called during construction of a runtime callable wrapper (RCW) that provides an instance of the underlying COM object. In effect, the callback acts as the class factory for the COM object wrapped by the RCW. Without the callback, the common language runtime creates the underlying COM object by calling `CoCreateInstance`. This callback provides an alternative way of activating the underlying object, such as with a COM moniker or by providing a singleton object. The <xref:System.Runtime.InteropServices.ExtensibleClassFactory.RegisterObjectCreationCallback%2A> method must be called in the `static` initializer of the class that is extending the RCW. Only one object creation callback is permitted per object type. When the extensible RCW is activated, the callback is registered. When the underlying COM object needs to be created, the callback is called to provide a reference to the object. The callback must return an `IUnknown` interface pointer for the base object.  
+  
+   
+  
+## Examples  
+ Registers a `delegate` that will be called whenever an instance of a managed type that extends from an unmanaged type needs to allocate the aggregated unmanaged object. This `delegate` is expected to allocate and aggregate the unmanaged object and is called in place of a `CoCreateInstance`. This routine must be called in the context of the `static` initializer for the class for which the callbacks will be made.  
+  
+ [!code-cpp[Classic ExtensibleClassFactory Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ExtensibleClassFactory Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ExtensibleClassFactory Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ExtensibleClassFactory Example/CS/source.cs#1)]
+ [!code-vb[Classic ExtensibleClassFactory Example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic ExtensibleClassFactory Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RegisterObjectCreationCallback">
+      <MemberSignature Language="C#" Value="public static void RegisterObjectCreationCallback (System.Runtime.InteropServices.ObjectCreationDelegate callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterObjectCreationCallback(class System.Runtime.InteropServices.ObjectCreationDelegate callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ExtensibleClassFactory.RegisterObjectCreationCallback(System.Runtime.InteropServices.ObjectCreationDelegate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Runtime.InteropServices.ObjectCreationDelegate" />
+      </Parameters>
+      <Docs>
+        <param name="callback">A <see langword="delegate" /> that is called in place of <see langword="CoCreateInstance" />.</param>
+        <summary>Registers a <see langword="delegate" /> that is called when an instance of a managed type, that extends from an unmanaged type, needs to allocate the aggregated unmanaged object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This `delegate` allocates and aggregates the unmanaged object and is called in place of `CoCreateInstance`. This `delegate` must be registered in the context of the `static` class initializer for which the callbacks will be made.  
+  
+ Only one class in an hierarchy should register a `delegate` callback.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

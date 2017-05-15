@@ -1,0 +1,100 @@
+<Type Name="QuestionEventArgs" FullName="System.Windows.Forms.QuestionEventArgs">
+  <TypeSignature Language="C#" Value="public class QuestionEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QuestionEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QuestionEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for events that need a <see langword="true" /> or <see langword="false" /> answer to a question.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is currently used with the <xref:System.Windows.Forms.DataGridView.CancelRowEdit> and <xref:System.Windows.Forms.DataGridView.RowDirtyStateNeeded> events of the <xref:System.Windows.Forms.DataGridView> control. It allows you to specify a response to events that occur when the control needs the answer to a question. The answer to the question is specified by setting the <xref:System.Windows.Forms.QuestionEventArgs.Response%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CancelRowEdit> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CancelRowEdit> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#281](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#281)]
+ [!code-vb[System.Windows.Forms.EventExamples#281](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#281)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QuestionEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.QuestionEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QuestionEventArgs" /> class using a default <see cref="P:System.Windows.Forms.QuestionEventArgs.Response" /> property value of <see langword="false" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QuestionEventArgs (bool response);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.QuestionEventArgs.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="response" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="response">The default value of the <see cref="P:System.Windows.Forms.QuestionEventArgs.Response" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QuestionEventArgs" /> class using the specified default value for the <see cref="P:System.Windows.Forms.QuestionEventArgs.Response" /> property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Response">
+      <MemberSignature Language="C#" Value="public bool Response { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Response" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QuestionEventArgs.Response" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating the response to a question represented by the event.</summary>
+        <value>
+          <see langword="true" /> for an affirmative response; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.CancelRowEdit?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.CancelRowEdit?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#281](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#281)]
+ [!code-vb[System.Windows.Forms.EventExamples#281](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#281)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

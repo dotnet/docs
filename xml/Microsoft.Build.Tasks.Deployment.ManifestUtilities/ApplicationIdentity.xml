@@ -1,0 +1,87 @@
+<Type Name="ApplicationIdentity" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity">
+  <TypeSignature Language="C#" Value="public sealed class ApplicationIdentity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationIdentity extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a unique identifier for a ClickOnce application.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApplicationIdentity (string url, Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity deployManifestIdentity, Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity applicationManifestIdentity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity deployManifestIdentity, class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity applicationManifestIdentity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.#ctor(System.String,Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity,Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="deployManifestIdentity" Type="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" />
+        <Parameter Name="applicationManifestIdentity" Type="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="url">The deployment provider URL for the ClickOnce deployment manifest.</param>
+        <param name="deployManifestIdentity">The assembly identity of the ClickOnce deployment manifest.</param>
+        <param name="applicationManifestIdentity">The assembly identity of the ClickOnce application manifest.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApplicationIdentity (string url, string deployManifestPath, string applicationManifestPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string url, string deployManifestPath, string applicationManifestPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="deployManifestPath" Type="System.String" />
+        <Parameter Name="applicationManifestPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="url">The deployment provider URL for the ClickOnce deployment manifest.</param>
+        <param name="deployManifestPath">The path to ClickOnce deployment manifest. The assembly identity will be obtained from the specified file.</param>
+        <param name="applicationManifestPath">The path to ClickOnce application manifest. The assembly identity will be obtained from the specified file.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the full ClickOnce application identity.</summary>
+        <returns>A string containing the ClickOnce application identity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "Yield statement [Visual Basic]"
 ms.assetid: f33126c5-d7c4-43e2-8e36-4ae3f0703d97
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -113,9 +113,6 @@ Next
  [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_2.vb)]  
   
  For additional examples, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
-  
-## Requirements  
- [!INCLUDE[vs_dev11_long](../../../csharp/includes/vs_dev11_long_md.md)]  
   
 ## See Also  
  [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)   

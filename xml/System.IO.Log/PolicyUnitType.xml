@@ -1,0 +1,60 @@
+<Type Name="PolicyUnitType" FullName="System.IO.Log.PolicyUnitType">
+  <TypeSignature Language="C#" Value="public enum PolicyUnitType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PolicyUnitType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IO.Log.PolicyUnitType" />
+  <AssemblyInfo>
+    <AssemblyName>System.IO.Log</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the unit of measurement of a <see cref="T:System.IO.Log.PolicyUnit" /> instance.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogPolicy> class, <xref:System.IO.Log.PolicyUnit> structure and <xref:System.IO.Log.PolicyUnitType> enumeration to set policy for a log record sequence.  
+  
+ [!code-csharp[S_UELogRecordSequence#2](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#2)]
+ [!code-vb[S_UELogRecordSequence#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Extents">
+      <MemberSignature Language="C#" Value="Extents" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.PolicyUnitType Extents = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Log.PolicyUnitType.Extents" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.PolicyUnitType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The measurement is in containers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Percentage">
+      <MemberSignature Language="C#" Value="Percentage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.PolicyUnitType Percentage = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IO.Log.PolicyUnitType.Percentage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Log.PolicyUnitType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The measurement is a percentage of the size of the <see cref="T:System.IO.Log.LogStore" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

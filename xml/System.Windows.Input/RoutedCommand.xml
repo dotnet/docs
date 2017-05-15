@@ -1,0 +1,415 @@
+<Type Name="RoutedCommand" FullName="System.Windows.Input.RoutedCommand">
+  <TypeSignature Language="C#" Value="public class RoutedCommand : System.Windows.Input.ICommand" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoutedCommand extends System.Object implements class System.Windows.Input.ICommand" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.RoutedCommand" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Input.ICommand</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter("System.Windows.Input.CommandConverter, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ValueSerializer("System.Windows.Input.CommandValueSerializer, PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, Custom=null")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a command that implements <see cref="T:System.Windows.Input.ICommand" /> and is routed through the element tree.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.RoutedCommand.Execute%2A> and <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> methods on a <xref:System.Windows.Input.RoutedCommand> do not contain the application logic for the command as is the case with a typical <xref:System.Windows.Input.ICommand>, but rather, these methods raise events that traverse the element tree looking for an object with a <xref:System.Windows.Input.CommandBinding>.  The event handlers attached to the <xref:System.Windows.Input.CommandBinding> contain the command logic.  
+  
+ The <xref:System.Windows.Input.RoutedCommand.Execute%2A> method raises the <xref:System.Windows.Input.CommandManager.PreviewExecuted> and <xref:System.Windows.Input.CommandManager.Executed> events.  The <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method raises the <xref:System.Windows.Input.CommandManager.PreviewCanExecute> and <xref:System.Windows.Input.CommandManager.CanExecute> events.  
+  
+<a name="xamlAttributeUsage_RoutedCommand"></a>   
+## XAML Attribute Usage  
+ \<*object* *property*="*predefinedCommandName*"/>  
+  
+ \- or -  
+  
+ \<*object* *property*="*predefinedClassName*.*predefinedCommandName*"/>  
+  
+ \- or -  
+  
+ \<*object* *property*="{ *customClassName*.*customCommandName*}"/>  
+  
+<a name="xamlValues_RoutedCommand"></a>   
+## XAML Values  
+ *predefinedClassName*  
+ One of the predefined command classes.  
+  
+ *predefinedCommandName*  
+ One of the predefined commands.  
+  
+ *customClassName*  
+ A custom class which contains the custom command. Custom classes generally require an `xlmns` prefix mapping; see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+  
+ *customCommandName*  
+ A custom command.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutedCommand ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.RoutedCommand" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutedCommand (string name, Type ownerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type ownerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.#ctor(System.String,System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ownerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="name">Declared name for serialization.</param>
+        <param name="ownerType">The type which is registering the command.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.RoutedCommand" /> class with the specified name and owner type.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ownerType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutedCommand (string name, Type ownerType, System.Windows.Input.InputGestureCollection inputGestures);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type ownerType, class System.Windows.Input.InputGestureCollection inputGestures) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.#ctor(System.String,System.Type,System.Windows.Input.InputGestureCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="ownerType" Type="System.Type" />
+        <Parameter Name="inputGestures" Type="System.Windows.Input.InputGestureCollection" />
+      </Parameters>
+      <Docs>
+        <param name="name">Declared name for serialization.</param>
+        <param name="ownerType">The type that is registering the command.</param>
+        <param name="inputGestures">Default input gestures associated with this command.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.RoutedCommand" /> class with the specified name, owner type, and collection of gestures.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">the length of <paramref name="name" /> is zero  
+  
+ \- or -  
+  
+ <paramref name="ownerType" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanExecute">
+      <MemberSignature Language="C#" Value="public bool CanExecute (object parameter, System.Windows.IInputElement target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanExecute(object parameter, class System.Windows.IInputElement target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.CanExecute(System.Object,System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="target" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">A user defined data type.</param>
+        <param name="target">The command target.</param>
+        <summary>Determines whether this <see cref="T:System.Windows.Input.RoutedCommand" /> can execute in its current state.</summary>
+        <returns>
+          <see langword="true" /> if the command can execute on the current command target; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The actual logic that determines if a <xref:System.Windows.Input.RoutedCommand> can execute on the current command target is not contained in the <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> methods, rather <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> raises the <xref:System.Windows.Input.CommandManager.PreviewCanExecute> and the <xref:System.Windows.Input.CommandManager.CanExecute> events which tunnel and bubble through element tree looking for a object with a <xref:System.Windows.Input.CommandBinding>.  If a <xref:System.Windows.Input.CommandBinding> for that <xref:System.Windows.Input.RoutedCommand> is found, then the <xref:System.Windows.Input.CanExecuteRoutedEventHandler> attached to <xref:System.Windows.Input.CommandBinding> is called.  These handlers supply the programming logic for determining if the <xref:System.Windows.Input.RoutedCommand> can execute or not.  
+  
+ The <xref:System.Windows.Input.CommandManager.PreviewCanExecute> and <xref:System.Windows.Input.CommandManager.PreviewExecuted> events are raised on the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A>.  If the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> is not set on the <xref:System.Windows.Input.ICommandSource>, the <xref:System.Windows.Input.CommandManager.PreviewCanExecute> and <xref:System.Windows.Input.CommandManager.CanExecute> events are raised on the element with keyboard focus.  
+  
+   
+  
+## Examples  
+ The following example is a <xref:System.Windows.Input.ICommand.CanExecuteChanged> event handler from a custom implementation of <xref:System.Windows.Input.ICommandSource>.  
+  
+ `this.Command` in this example is the <xref:System.Windows.Input.ICommandSource.Command%2A> property on the <xref:System.Windows.Input.ICommandSource>.  If the command is not `null`, the command is cast to a <xref:System.Windows.Input.RoutedCommand>.  If the command is a <xref:System.Windows.Input.RoutedCommand>, then the <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method is called passing the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> and the <xref:System.Windows.Input.ICommandSource.CommandParameter%2A>.  If command is not a <xref:System.Windows.Input.RoutedCommand>, it is cast to an <xref:System.Windows.Input.ICommand> and the <xref:System.Windows.Input.ICommand.CanExecute%2A> method is called passing the <xref:System.Windows.Input.ICommandSource.CommandParameter%2A>.  
+  
+ If the <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method returns `true`, then the control is enabled; otherwise, the control is disable.  
+  
+ [!code-csharp[ImplementICommandSource#ImplementICommandCanExecuteChanged](~/samples/snippets/csharp/VS_Snippets_Wpf/ImplementICommandSource/CSharp/CommandSlider.cs#implementicommandcanexecutechanged)]
+ [!code-vb[ImplementICommandSource#ImplementICommandCanExecuteChanged](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImplementICommandSource/visualbasic/commandslider.vb#implementicommandcanexecutechanged)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="target" /> is not a <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanExecuteChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler CanExecuteChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CanExecuteChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Input.RoutedCommand.CanExecuteChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when changes to the command source are detected by the command manager. These changes often affect whether the command should execute on the current command target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.RoutedCommand> listens for the <xref:System.Windows.Input.CommandManager.RequerySuggested> event, which is raised by the <xref:System.Windows.Input.CommandManager>. The <xref:System.Windows.Input.CommandManager.RequerySuggested> event is raised whenever conditions are met that may change the whether the command should execute, such as a change in keyboard focus.  When the command receives the <xref:System.Windows.Input.CommandManager.RequerySuggested> event, it raises the <xref:System.Windows.Input.RoutedCommand.CanExecuteChanged> event.  Generally, the command source will listen for this event and query the <xref:System.Windows.Input.RoutedCommand> by way of the <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method.  Most command sources will disable themselves if the command cannot be executed, as part of their command binding.  An example of this is when a <xref:System.Windows.Controls.MenuItem> grays itself out when the command cannot be executed.  
+  
+ In some situations, the <xref:System.Windows.Input.CommandManager> is unaware of a change in conditions that alters the ability of a command to execute.  In these cases, you can force the <xref:System.Windows.Input.CommandManager> to raises the <xref:System.Windows.Input.CommandManager.RequerySuggested> event by calling the <xref:System.Windows.Input.CommandManager.InvalidateRequerySuggested%2A> method, this will in turn cause the <xref:System.Windows.Input.RoutedCommand> to raise the <xref:System.Windows.Input.RoutedCommand.CanExecuteChanged> event.  
+  
+   
+  
+## Examples  
+ The following example is a <xref:System.Windows.Input.ICommand.CanExecuteChanged> event handler from a custom implementation of <xref:System.Windows.Input.ICommandSource>.  
+  
+ `this.Command` in this example is the <xref:System.Windows.Input.ICommandSource.Command%2A> property on the <xref:System.Windows.Input.ICommandSource>.  If the command is not `null`, the command is cast to a <xref:System.Windows.Input.RoutedCommand>.  If the command is a <xref:System.Windows.Input.RoutedCommand>, then the <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method is called passing the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> and the <xref:System.Windows.Input.ICommandSource.CommandParameter%2A>.  If command is not a <xref:System.Windows.Input.RoutedCommand>, it is cast to an <xref:System.Windows.Input.ICommand> and the <xref:System.Windows.Input.ICommand.CanExecute%2A> method is called passing the <xref:System.Windows.Input.ICommandSource.CommandParameter%2A>.  
+  
+ If the <xref:System.Windows.Input.RoutedCommand.CanExecute%2A> method returns `true`, then the control is enabled; otherwise, the control is disabled.  
+  
+ [!code-csharp[ImplementICommandSource#ImplementICommandCanExecuteChanged](~/samples/snippets/csharp/VS_Snippets_Wpf/ImplementICommandSource/CSharp/CommandSlider.cs#implementicommandcanexecutechanged)]
+ [!code-vb[ImplementICommandSource#ImplementICommandCanExecuteChanged](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImplementICommandSource/visualbasic/commandslider.vb#implementicommandcanexecutechanged)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public void Execute (object parameter, System.Windows.IInputElement target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Execute(object parameter, class System.Windows.IInputElement target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.Execute(System.Object,System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="target" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">User defined parameter to be passed to the handler.</param>
+        <param name="target">Element at which to begin looking for command handlers.</param>
+        <summary>Executes the <see cref="T:System.Windows.Input.RoutedCommand" /> on the current command target.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The actual logic that executes the <xref:System.Windows.Input.RoutedCommand> is not contained in the <xref:System.Windows.Input.RoutedCommand.Execute%2A> methods.  <xref:System.Windows.Input.RoutedCommand.Execute%2A> raises the <xref:System.Windows.Input.CommandManager.PreviewExecuted> and <xref:System.Windows.Input.CommandManager.Executed> events, which tunnel and bubble through the element tree looking for an object with a <xref:System.Windows.Input.CommandBinding>.  If a <xref:System.Windows.Input.CommandBinding> for that <xref:System.Windows.Input.RoutedCommand> is found, then the <xref:System.Windows.Input.ExecutedRoutedEventHandler> attached to <xref:System.Windows.Input.CommandBinding> is called.  These handlers supply the programming logic that performs the <xref:System.Windows.Input.RoutedCommand>.  
+  
+ The <xref:System.Windows.Input.CommandManager.PreviewExecuted> and <xref:System.Windows.Input.CommandManager.Executed> events are raised on the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A>.  If the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> is not set on the <xref:System.Windows.Input.ICommandSource>, the <xref:System.Windows.Input.CommandManager.PreviewExecuted> and <xref:System.Windows.Input.CommandManager.Executed> events are raised on the element with keyboard focus.  
+  
+   
+  
+## Examples  
+ The following example is from a custom implementation of <xref:System.Windows.Input.ICommandSource> sample.  
+  
+ `this.Command` in this example is the Command property on the <xref:System.Windows.Input.ICommandSource>.  If the command is not null, the command is cast to a <xref:System.Windows.Input.RoutedCommand>.  If it is a <xref:System.Windows.Input.RoutedCommand>, then the <xref:System.Windows.Input.RoutedCommand.Execute%2A> method is called passing the <xref:System.Windows.Input.ICommandSource.CommandTarget%2A> and the <xref:System.Windows.Input.ICommandSource.CommandParameter%2A>.  If the command is not a <xref:System.Windows.Input.RoutedCommand>, it is cast to an <xref:System.Windows.Input.ICommand> and the <xref:System.Windows.Input.ICommand.Execute%2A> method is called passing the <xref:System.Windows.Input.ICommandSource.CommandParameter%2A>.  
+  
+ [!code-csharp[ImplementICommandSource#ImplementICommandExecute](~/samples/snippets/csharp/VS_Snippets_Wpf/ImplementICommandSource/CSharp/CommandSlider.cs#implementicommandexecute)]
+ [!code-vb[ImplementICommandSource#ImplementICommandExecute](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImplementICommandSource/visualbasic/commandslider.vb#implementicommandexecute)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="target" /> is not a <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InputGestures">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.InputGestureCollection InputGestures { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InputGestureCollection InputGestures" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.RoutedCommand.InputGestures" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.InputGestureCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.Windows.Input.InputGesture" /> objects that are associated with this command.</summary>
+        <value>The input gestures.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to add a new <xref:System.Windows.Input.MouseGesture> to a <xref:System.Windows.Input.RoutedCommand>.  
+  
+ [!code-csharp[commandlibrarysnippets#MouseBindingAddedCommand](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandLibrarySnippets/CSharp/Window1.xaml.cs#mousebindingaddedcommand)]
+ [!code-vb[commandlibrarysnippets#MouseBindingAddedCommand](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandLibrarySnippets/visualbasic/window1.xaml.vb#mousebindingaddedcommand)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.RoutedCommand.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the command.</summary>
+        <value>The name of the command.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be used when referencing a <xref:System.Windows.Input.RoutedCommand> in [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerType">
+      <MemberSignature Language="C#" Value="public Type OwnerType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type OwnerType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.RoutedCommand.OwnerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type that is registered with the command.</summary>
+        <value>The type of the command owner.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Input.ICommand.CanExecute">
+      <MemberSignature Language="C#" Value="bool ICommand.CanExecute (object parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Input.ICommand.CanExecute(object parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.System#Windows#Input#ICommand#CanExecute(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to <see langword="null" />.</param>
+        <summary>For a description of this members, see <see cref="M:System.Windows.Input.ICommand.CanExecute(System.Object)" />.</summary>
+        <returns>
+          <see langword="true" /> if this command can be executed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.RoutedCommand> instance is cast to an <xref:System.Windows.Input.ICommand> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Input.ICommand.Execute">
+      <MemberSignature Language="C#" Value="void ICommand.Execute (object parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Input.ICommand.Execute(object parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.RoutedCommand.System#Windows#Input#ICommand#Execute(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">Data used by the command.  If the command does not require data to be passed, this object can be set to <see langword="null" />.</param>
+        <summary>For a description of this members, see <see cref="M:System.Windows.Input.ICommand.Execute(System.Object)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Input.RoutedCommand> instance is cast to an <xref:System.Windows.Input.ICommand> interface.  
+  
+   
+  
+## Examples  
+ See Also  
+  
+ <xref:System.Windows.Input.RoutedCommand.Execute%2A>  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

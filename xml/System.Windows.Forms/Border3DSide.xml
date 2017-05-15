@@ -1,0 +1,129 @@
+<Type Name="Border3DSide" FullName="System.Windows.Forms.Border3DSide">
+  <TypeSignature Language="C#" Value="public enum Border3DSide" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Border3DSide extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Border3DSide" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the sides of a rectangle to apply a three-dimensional border to.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration with the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A> method of the <xref:System.Windows.Forms.ControlPaint> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DSide All = int32(2063)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DSide.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A three-dimensional border on all four sides of the rectangle. The middle of the rectangle is filled with the color defined for three-dimensional controls.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DSide Bottom = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DSide.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A three-dimensional border on the bottom side of the rectangle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DSide Left = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DSide.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A three-dimensional border on the left edge of the rectangle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Middle">
+      <MemberSignature Language="C#" Value="Middle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DSide Middle = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DSide.Middle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The interior of the rectangle is filled with the color defined for three-dimensional controls instead of the background color for the form.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DSide Right = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DSide.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A three-dimensional border on the right side of the rectangle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DSide Top = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DSide.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DSide</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A three-dimensional border on the top edge of the rectangle.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

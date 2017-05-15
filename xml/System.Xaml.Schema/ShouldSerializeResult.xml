@@ -1,0 +1,73 @@
+<Type Name="ShouldSerializeResult" FullName="System.Xaml.Schema.ShouldSerializeResult">
+  <TypeSignature Language="C#" Value="public enum ShouldSerializeResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ShouldSerializeResult extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.Schema.ShouldSerializeResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines serialization behavior as reported by a <see cref="T:System.Xaml.Schema.XamlMemberInvoker" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is for specialized serialization support by invokers. More general serialization support should not require this enumeration. `ShouldSerialize` information is otherwise available to XAML writers as part of the default XAML schema context and CLR reflection.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.Schema.ShouldSerializeResult Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.ShouldSerializeResult.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.ShouldSerializeResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Unknown, defer to the type of the member.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="False">
+      <MemberSignature Language="C#" Value="False" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.Schema.ShouldSerializeResult False = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.ShouldSerializeResult.False" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.ShouldSerializeResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Do not serialize the result.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="True">
+      <MemberSignature Language="C#" Value="True" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.Schema.ShouldSerializeResult True = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Xaml.Schema.ShouldSerializeResult.True" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.Schema.ShouldSerializeResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Serialize the result.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

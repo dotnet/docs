@@ -1,0 +1,163 @@
+<Type Name="WorkflowCompilationContext" FullName="System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext">
+  <TypeSignature Language="C#" Value="public sealed class WorkflowCompilationContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowCompilationContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides workflow compilation options for the current compilation or validation task.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This class can only be created on a scope basis, using the <xref:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.CreateScope%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckTypes">
+      <MemberSignature Language="C#" Value="public bool CheckTypes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CheckTypes" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.CheckTypes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether <see cref="P:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.CheckTypes" /> is enabled at the current scope.</summary>
+        <value>
+          <see langword="true" /> if <see cref="P:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.CheckTypes" /> is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.CheckTypes%2A> indicates whether the types in the workflow being compiled are checked against a list that allows or excludes types based on the value of the <xref:System.Workflow.ComponentModel.Compiler.AuthorizedType.Authorized%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateScope">
+      <MemberSignature Language="C#" Value="public static IDisposable CreateScope (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IDisposable CreateScope(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.CreateScope(System.IServiceProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">The workflow compiler options for the current scope.</param>
+        <summary>Initializes a <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext" /> class at the current scope.</summary>
+        <returns>A reference to the scope.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `serviceProvider` parameter is the general property bag for the scope; if it contains an <xref:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService> the context is set according to that service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext Current" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext" /> that is available at the current scope.</summary>
+        <value>The workflow compilation context that is available at the current scope, or <see langword="null" /> if no compilation scope is initialized.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAuthorizedTypes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Compiler.AuthorizedType&gt; GetAuthorizedTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Workflow.ComponentModel.Compiler.AuthorizedType&gt; GetAuthorizedTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.GetAuthorizedTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Compiler.AuthorizedType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a list of types that the compiler allows in compiled workflows.</summary>
+        <returns>A list of types that the compiler allows in compiled workflows.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Language">
+      <MemberSignature Language="C#" Value="public string Language { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Language" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.Language" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the workflow compiler options <see cref="P:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.Language" /> that is available at the current scope.</summary>
+        <value>The workflow compiler options programming language that is available at the current scope.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNamespace">
+      <MemberSignature Language="C#" Value="public string RootNamespace { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RootNamespace" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.WorkflowCompilationContext.RootNamespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the workflow compiler options <see cref="P:System.Workflow.ComponentModel.Compiler.IWorkflowCompilerOptionsService.RootNamespace" /> that is available at the current scope.</summary>
+        <value>The workflow compiler options root namespace that is available at the current scope.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

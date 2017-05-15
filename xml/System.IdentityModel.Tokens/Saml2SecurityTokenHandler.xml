@@ -1,0 +1,2799 @@
+<Type Name="Saml2SecurityTokenHandler" FullName="System.IdentityModel.Tokens.Saml2SecurityTokenHandler">
+  <TypeSignature Language="C#" Value="public class Saml2SecurityTokenHandler : System.IdentityModel.Tokens.SecurityTokenHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Saml2SecurityTokenHandler extends System.IdentityModel.Tokens.SecurityTokenHandler" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.Saml2SecurityTokenHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.SecurityTokenHandler</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a security token handler that creates security tokens from SAML 2.0 Assertions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class serializes and deserializes security tokens backed by SAML 2.0 Assertions into <xref:System.IdentityModel.Tokens.Saml2SecurityToken> objects. Security token handlers are responsible for creating, reading, writing, and validating tokens.  
+  
+ You can configure a security token service (STS) or relying party (RP) application to process SAML 2.0 Assertion-backed security tokens by adding an instance of the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class to the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollection> object configured for the service (or application). This can be done either programmatically or in the configuration file. The handler itself is configured from the configuration specified for the collection through the collection’s <xref:System.IdentityModel.Tokens.SecurityTokenHandlerCollection.Configuration%2A> property when it is added to the collection. While it is possible to configure the handler individually by setting its <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property, this is not normally necessary; however, if the handler must be configured individually, the property should be set after the handler is added to the collection.  
+  
+ For many scenarios, the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class can be used as-is; however, the class provides many extension points through the methods it exposes. By deriving from the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> and overriding specific methods, you can modify the functionality of the token processing provided in the default implementation, or you can add processing for extensions to the SAML Assertion specification that may be needed in some custom scenarios.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Saml2SecurityTokenHandler ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SecurityTokenHandler" /> class with default security token requirements.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.SamlSecurityTokenRequirement%2A> property is set to an instance of <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> that is crated with the default constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Saml2SecurityTokenHandler (System.IdentityModel.Tokens.SamlSecurityTokenRequirement samlSecurityTokenRequirement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SamlSecurityTokenRequirement samlSecurityTokenRequirement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.#ctor(System.IdentityModel.Tokens.SamlSecurityTokenRequirement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="samlSecurityTokenRequirement" Type="System.IdentityModel.Tokens.SamlSecurityTokenRequirement" />
+      </Parameters>
+      <Docs>
+        <param name="samlSecurityTokenRequirement">The <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" /> to be used by this instance when validating tokens. Sets the <see cref="P:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.SamlSecurityTokenRequirement" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.Saml2SecurityTokenHandler" /> class with the specified security token requirements.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="samlSecurityTokenRequirement" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDelegateToAttributes">
+      <MemberSignature Language="C#" Value="protected virtual void AddDelegateToAttributes (System.Security.Claims.ClaimsIdentity subject, System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt; attributes, System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddDelegateToAttributes(class System.Security.Claims.ClaimsIdentity subject, class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Tokens.Saml2Attribute&gt; attributes, class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.AddDelegateToAttributes(System.Security.Claims.ClaimsIdentity,System.Collections.Generic.ICollection{System.IdentityModel.Tokens.Saml2Attribute},System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subject" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="attributes" Type="System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;" />
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="subject">The delegate of this <see cref="T:System.Security.Claims.ClaimsIdentity" /> object will be serialized into a <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" />.</param>
+        <param name="attributes">A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" />.</param>
+        <param name="tokenDescriptor">The token descriptor.</param>
+        <summary>Adds all of the delegates associated with the subject into the attribute collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subject" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="tokenDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CanReadKeyIdentifierClause">
+      <MemberSignature Language="C#" Value="public override bool CanReadKeyIdentifierClause (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanReadKeyIdentifierClause(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CanReadKeyIdentifierClause(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An XML reader positioned at the start element.</param>
+        <summary>Indicates if the current XML element is pointing to a key identifier clause that can be serialized by this instance.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadKeyIdentifierClause(System.Xml.XmlReader)" /> method can read the element; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanReadToken">
+      <MemberSignature Language="C#" Value="public override bool CanReadToken (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanReadToken(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CanReadToken(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An XML reader positioned at a start element. The reader should not be advanced.</param>
+        <summary>Indicates whether the current XML element can be read as a token of the type handled by this instance.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadToken(System.Xml.XmlReader)" /> method can read the element; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanValidateToken">
+      <MemberSignature Language="C#" Value="public override bool CanValidateToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanValidateToken" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CanValidateToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates if this handler can validate tokens of type <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />.</summary>
+        <value>
+          <see langword="true" />, which indicates that the handler can validate tokens of type <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the base class method and always returns `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanWriteKeyIdentifierClause">
+      <MemberSignature Language="C#" Value="public override bool CanWriteKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanWriteKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CanWriteKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="securityKeyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+      </Parameters>
+      <Docs>
+        <param name="securityKeyIdentifierClause">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> to be serialized.</param>
+        <summary>Indicates if the specified key identifier clause can be serialized by this instance.</summary>
+        <returns>
+          <see langword="true" /> if the specified key identifier clause can be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanWriteToken">
+      <MemberSignature Language="C#" Value="public override bool CanWriteToken { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanWriteToken" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CanWriteToken" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether this handler can serialize tokens of type <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />.</summary>
+        <value>
+          <see langword="true" />; which indicates that the handler can serialize tokens of type <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the base class method and always returns `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CertificateValidator">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CertificateValidator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Selectors.X509CertificateValidator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the X.509 certificate validator that is used by the current instance to validate X.509 certificates.</summary>
+        <value>An <see cref="T:System.IdentityModel.Selectors.X509CertificateValidator" /> that represents the validator.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectAttributeValues">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt; CollectAttributeValues (System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt; attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Tokens.Saml2Attribute&gt; CollectAttributeValues(class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Tokens.Saml2Attribute&gt; attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CollectAttributeValues(System.Collections.Generic.ICollection{System.IdentityModel.Tokens.Saml2Attribute})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Collections.Generic.ICollection&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">A collection of type <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that contains the attributes generated from claims.</param>
+        <summary>Collects attributes with a common claim type, claim value type, and original issuer into a single attribute with multiple values.</summary>
+        <returns>A collection of <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that contains attributes derived from the input collection. Attributes in the input collection that share a common claim type, claim value, and original issuer with other attributes are consolidated into a single attribute with multiple values in the output collection. Attributes in the input collection that do not share claim type, claim value, or original issuer with other attributes appear unaltered in the output collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAdvice">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Advice CreateAdvice (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Advice CreateAdvice(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateAdvice(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Advice</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="tokenDescriptor">The token descriptor.</param>
+        <summary>Creates a <see cref="T:System.IdentityModel.Tokens.Saml2Advice" /> object for the assertion.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Advice" /> object. The default is <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAttribute">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Attribute CreateAttribute (System.Security.Claims.Claim claim, System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Attribute CreateAttribute(class System.Security.Claims.Claim claim, class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateAttribute(System.Security.Claims.Claim,System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Attribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claim" Type="System.Security.Claims.Claim" />
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="claim">The <see cref="T:System.Security.Claims.Claim" /> from which to generate the SAML Attribute.</param>
+        <param name="tokenDescriptor">The token descriptor.</param>
+        <summary>Creates a <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> object from a claim.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that contains the converted claim.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="claim" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAttributeStatement">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2AttributeStatement CreateAttributeStatement (System.Security.Claims.ClaimsIdentity subject, System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2AttributeStatement CreateAttributeStatement(class System.Security.Claims.ClaimsIdentity subject, class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateAttributeStatement(System.Security.Claims.ClaimsIdentity,System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2AttributeStatement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subject" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="subject">The <see cref="T:System.Security.Claims.ClaimsIdentity" /> object that contains claims which will be converted to SAML Attributes.</param>
+        <param name="tokenDescriptor">The token descriptor.</param>
+        <summary>Creates a <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> object from a token descriptor.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> that contains the converted claims.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method may return `null` if the token descriptor does not contain any subject or the subject does not have any claims.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateAuthenticationStatement">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2AuthenticationStatement CreateAuthenticationStatement (System.Security.Claims.AuthenticationInformation authInfo, System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2AuthenticationStatement CreateAuthenticationStatement(class System.Security.Claims.AuthenticationInformation authInfo, class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateAuthenticationStatement(System.Security.Claims.AuthenticationInformation,System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2AuthenticationStatement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="authInfo" Type="System.Security.Claims.AuthenticationInformation" />
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="authInfo">An <see cref="T:System.Security.Claims.AuthenticationInformation" /> object that contains the state to be wrapped as a <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" /> object.</param>
+        <param name="tokenDescriptor">The token descriptor.</param>
+        <summary>Creates a SAML 2.0 authentication statement from the specified authentication information.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" /> to add to the assertion being created or <see langword="null" /> to ignore the <see cref="T:System.Security.Claims.AuthenticationInformation" /> object (and not create a SAML 2.0 authentication statement).</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tokenDescriptor" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.Subject" /> property of <paramref name="tokenDescriptor" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The subject of the <paramref name="tokenDescriptor" /> (the <see cref="P:System.IdentityModel.Tokens.SecurityTokenDescriptor.Subject" /> property) contains claims with a claim type of either <see cref="F:System.Security.Claims.ClaimTypes.AuthenticationInstant" /> or  <see cref="F:System.Security.Claims.ClaimTypes.AuthenticationMethod" /> but does not contain at least one claim of each type.  
+  
+ -or-  
+  
+ The authentication method specified by the subject of the <paramref name="tokenDescriptor" /> cannot be resolved to an absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateClaims">
+      <MemberSignature Language="C#" Value="protected virtual System.Security.Claims.ClaimsIdentity CreateClaims (System.IdentityModel.Tokens.Saml2SecurityToken samlToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Security.Claims.ClaimsIdentity CreateClaims(class System.IdentityModel.Tokens.Saml2SecurityToken samlToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateClaims(System.IdentityModel.Tokens.Saml2SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Claims.ClaimsIdentity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="samlToken" Type="System.IdentityModel.Tokens.Saml2SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="samlToken">A <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" /> that represents the security token from which to create the claims.</param>
+        <summary>Creates claims from a SAML 2.0 token.</summary>
+        <returns>An <see cref="T:System.Security.Claims.ClaimsIdentity" /> that contains the claims extracted from the token.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="samlToken" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.IdentityModel.Tokens.Saml2SecurityToken.Assertion" /> property of <paramref name="samlToken" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The handler is not configured or an issuer name registry is not configured for the handler. (The <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration" /> property is <see langword="null" /> or is set to a <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration" /> with an <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerNameRegistry" /> property that is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The issuer name returned by the configured issuer name registry for the security token (<paramref name="samlToken" />) is <see langword="null" /> or empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateConditions">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Conditions CreateConditions (System.IdentityModel.Protocols.WSTrust.Lifetime tokenLifetime, string relyingPartyAddress, System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Conditions CreateConditions(class System.IdentityModel.Protocols.WSTrust.Lifetime tokenLifetime, string relyingPartyAddress, class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateConditions(System.IdentityModel.Protocols.WSTrust.Lifetime,System.String,System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Conditions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokenLifetime" Type="System.IdentityModel.Protocols.WSTrust.Lifetime" />
+        <Parameter Name="relyingPartyAddress" Type="System.String" />
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="tokenLifetime">The lifetime of the token.</param>
+        <param name="relyingPartyAddress">The endpoint address for which the token is created. The address is modeled as an AudienceRestriction condition.</param>
+        <param name="tokenDescriptor">The token descriptor.</param>
+        <summary>Creates the conditions for the assertion.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Conditions" /> object that contains the conditions for the assertion.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Generally, conditions should be included in assertions to limit the impact of misuse of the assertion. Specifying the NotBefore and NotOnOrAfter conditions can limit the period of vulnerability in the case of a compromised assertion. The AudienceRestrictionCondition can be used to explicitly state the intended relying party or parties of the assertion, which coupled with appropriate audience restriction enforcement at relying parties can help to mitigate spoofing attacks between relying parties.  
+  
+ The default implementation creates NotBefore and NotOnOrAfter conditions based on the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.Lifetime%2A> property of the `tokenDescriptor`. It will also generate an AudienceRestrictionCondition limiting consumption of the assertion to the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.AppliesToAddress%2A> property of the `tokenDescriptor`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIssuerNameIdentifier">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2NameIdentifier CreateIssuerNameIdentifier (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2NameIdentifier CreateIssuerNameIdentifier(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateIssuerNameIdentifier(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2NameIdentifier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="tokenDescriptor">The token descriptor from which to create the name identifier.</param>
+        <summary>Creates a name identifier that identifies the assertion issuer.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> that represents the name identifier.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ SAML2 assertions must contain a name identifier for the issuer. This method may not return `null`.  
+  
+ The default implementation creates a simple name identifier from the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.TokenIssuerName%2A> property of the `tokenDescriptor`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tokenDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSamlSubject">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Subject CreateSamlSubject (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Subject CreateSamlSubject(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateSamlSubject(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Subject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="tokenDescriptor">The security token descriptor from which to create the subject.</param>
+        <summary>Creates a SAML 2.0 subject for the assertion.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Subject" /> that represents the subject of the assertion.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tokenDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSecurityTokenReference">
+      <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityKeyIdentifierClause CreateSecurityTokenReference (System.IdentityModel.Tokens.SecurityToken token, bool attached);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityKeyIdentifierClause CreateSecurityTokenReference(class System.IdentityModel.Tokens.SecurityToken token, bool attached) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateSecurityTokenReference(System.IdentityModel.Tokens.SecurityToken,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
+        <Parameter Name="attached" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="token">The SAML token.</param>
+        <param name="attached">A value that indicates whether an attached or unattached reference should be created.</param>
+        <summary>Creates the security token reference when the token is not attached to the message.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents the token reference. (An instance of <see cref="T:System.IdentityModel.Tokens.Saml2AssertionKeyIdentifierClause" /> is actually returned.)</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="token" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateStatements">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.Saml2Statement&gt; CreateStatements (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.Saml2Statement&gt; CreateStatements(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateStatements(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.Saml2Statement&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="tokenDescriptor">The token descriptor from which to create the statements.</param>
+        <summary>Creates SAML 2.0 statements to be included in the assertion.</summary>
+        <returns>An enumeration of <see cref="T:System.IdentityModel.Tokens.Saml2Statement" /> that contains the statements.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Statements are not required in a SAML 2.0 assertion. This method may return an empty collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tokenDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateToken">
+      <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityToken CreateToken (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken CreateToken(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateToken(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="tokenDescriptor">The token descriptor from which to create the security token.</param>
+        <summary>Creates a security token based on a token descriptor.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the SAML 2.0 security token. (The token returned is actually an instance of <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />.)</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tokenDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateWindowsIdentity">
+      <MemberSignature Language="C#" Value="protected virtual System.Security.Principal.WindowsIdentity CreateWindowsIdentity (string upn);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Security.Principal.WindowsIdentity CreateWindowsIdentity(string upn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateWindowsIdentity(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Principal.WindowsIdentity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="upn" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="upn">The UPN to use to create the identity.</param>
+        <summary>Creates a <see cref="T:System.Security.Principal.WindowsIdentity" /> object using the specified User Principal Name (UPN).</summary>
+        <returns>The Windows identity that was created.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="upn" /> is <see langword="null" /> or an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateXmlStringFromAttributes">
+      <MemberSignature Language="C#" Value="protected virtual string CreateXmlStringFromAttributes (System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.Saml2Attribute&gt; attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string CreateXmlStringFromAttributes(class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.Saml2Attribute&gt; attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.CreateXmlStringFromAttributes(System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.Saml2Attribute})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.Saml2Attribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">An enumeration of type <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that contains the attributes.</param>
+        <summary>Builds an XML formatted string from a collection of SAML 2.0 attributes that represent the Actor.</summary>
+        <returns>A well-formed XML string constructed using the attributes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The string is of the form "\<Actor>\<Attribute name, ns>\<AttributeValue>...\</AttributeValue>, ...\</Attribute>...\</Actor>"  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DenormalizeAuthenticationType">
+      <MemberSignature Language="C#" Value="protected virtual string DenormalizeAuthenticationType (string normalizedAuthenticationType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string DenormalizeAuthenticationType(string normalizedAuthenticationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.DenormalizeAuthenticationType(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="normalizedAuthenticationType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="normalizedAuthenticationType">The normalized value.</param>
+        <summary>Returns the <see cref="T:System.IdentityModel.Tokens.Saml2Constants.AuthenticationContextClasses" /> value matching a normalized value for a SAML authentication context class reference.</summary>
+        <returns>A string that contains one of the <see cref="T:System.IdentityModel.Tokens.Saml2Constants.AuthenticationContextClasses" /> constants.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetectReplayedToken">
+      <MemberSignature Language="C#" Value="protected override void DetectReplayedToken (System.IdentityModel.Tokens.SecurityToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DetectReplayedToken(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.DetectReplayedToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the SAML 2.0 security token (the token should be of type <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />) to be checked.</param>
+        <summary>Throws an exception if the specified token already exists in the token replay cache; otherwise the token is added to the cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default behavior is to only check bearer tokens (tokens that do not have keys). The token replay cache is the <xref:System.IdentityModel.Tokens.TokenReplayCache> object configured for this handler through the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.Caches%2A> property of the <xref:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration> object referenced through the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="token" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration" /> property is <see langword="null" />.  
+  
+ -or-  
+  
+ There is no <see cref="T:System.IdentityModel.Tokens.TokenReplayCache" /> configured under the <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.Caches" /> property of the handler configuration (accessed through the <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration" /> property).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="token" /> cannot be cast as an instance of <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenValidationException">The ID of the assertion associated with the token is <see langword="null" /> or empty. (The <see cref="P:System.IdentityModel.Tokens.Saml2SecurityToken.Assertion" /> property of the token references a <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> that has an <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.Id" /> property that references a <see cref="T:System.IdentityModel.Tokens.Saml2Id" /> with a <see cref="P:System.IdentityModel.Tokens.Saml2Id.Value" /> property that is <see langword="null" /> or empty.)</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenReplayDetectedException">The token already exists in the <see cref="T:System.IdentityModel.Tokens.TokenReplayCache" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FindUpn">
+      <MemberSignature Language="C#" Value="protected virtual string FindUpn (System.Security.Claims.ClaimsIdentity claimsIdentity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string FindUpn(class System.Security.Claims.ClaimsIdentity claimsIdentity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.FindUpn(System.Security.Claims.ClaimsIdentity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="claimsIdentity" Type="System.Security.Claims.ClaimsIdentity" />
+      </Parameters>
+      <Docs>
+        <param name="claimsIdentity">The claims identity object containing the desired UPN claim.</param>
+        <summary>Finds the UPN claim value in the specified <see cref="T:System.Security.Claims.ClaimsIdentity" /> object for the purpose of mapping the identity to a <see cref="T:System.Security.Principal.WindowsIdentity" /> object.</summary>
+        <returns>A string that contains the UPN claim value found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEncryptingCredentials">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.EncryptingCredentials GetEncryptingCredentials (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.EncryptingCredentials GetEncryptingCredentials(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.GetEncryptingCredentials(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.EncryptingCredentials</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="tokenDescriptor">Retrieves some scope encrypting credentials from the Scope object.</param>
+        <summary>Gets the token encrypting credentials. Override this method to change the token encrypting credentials.</summary>
+        <returns>An <see cref="T:System.IdentityModel.Tokens.EncryptingCredentials" /> that represents the token encrypting credentials.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation retrieves the encrypting credentials from the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.EncryptingCredentials%2A> property of the `tokenDescriptor`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tokenDescriptor" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The encrypting credentials retrieved from the token descriptor are asymmetric.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSigningCredentials">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SigningCredentials GetSigningCredentials (System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SigningCredentials GetSigningCredentials(class System.IdentityModel.Tokens.SecurityTokenDescriptor tokenDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.GetSigningCredentials(System.IdentityModel.Tokens.SecurityTokenDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SigningCredentials</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokenDescriptor" Type="System.IdentityModel.Tokens.SecurityTokenDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="tokenDescriptor">The token descriptor.</param>
+        <summary>Gets the credentials for signing the assertion.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SigningCredentials" /> that represents the credentials for signing the assertion.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ SAML2 assertions used as security tokens should be signed.  
+  
+ The default implementation uses the <xref:System.IdentityModel.Tokens.SecurityTokenDescriptor.SigningCredentials%2A> property of the `tokenDescriptor` to retrieve the credentials.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="tokenDescriptor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenReplayCacheEntryExpirationTime">
+      <MemberSignature Language="C#" Value="protected virtual DateTime GetTokenReplayCacheEntryExpirationTime (System.IdentityModel.Tokens.Saml2SecurityToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.DateTime GetTokenReplayCacheEntryExpirationTime(class System.IdentityModel.Tokens.Saml2SecurityToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.GetTokenReplayCacheEntryExpirationTime(System.IdentityModel.Tokens.Saml2SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.Saml2SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">The token for which to return the expiration time.</param>
+        <summary>Returns the time until which the token should be held in the token replay cache.</summary>
+        <returns>A <see cref="T:System.DateTime" /> that represents the expiration time.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, this method returns the NotOnOrAfter of the SAML Condition if present.  
+  
+ If that value does not exist, it returns the NotOnOrAfter of the first SubjectConfirmationData.  
+  
+ This function will never return a value further from the current time (<xref:System.DateTime.Now%2A>) than Configuration.TokenReplayCacheExpirationPeriod.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="token" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenTypeIdentifiers">
+      <MemberSignature Language="C#" Value="public override string[] GetTokenTypeIdentifiers ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetTokenTypeIdentifiers() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.GetTokenTypeIdentifiers" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the token type identifier(s) supported by this handler.</summary>
+        <returns>An array of strings that contains the token type identifier(s) supported by this handler.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyInfoSerializer">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.SecurityTokenSerializer KeyInfoSerializer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.SecurityTokenSerializer KeyInfoSerializer" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.KeyInfoSerializer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Selectors.SecurityTokenSerializer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the security token serializer that is used to serialize and deserialize key identifiers.</summary>
+        <value>A <see cref="T:System.IdentityModel.Selectors.SecurityTokenSerializer" /> that represents the serializer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Serializes and deserializes <xref:System.IdentityModel.Tokens.SecurityKeyIdentifier> objects.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the value to <see langword="null" /> occurs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadCustomConfiguration">
+      <MemberSignature Language="C#" Value="public override void LoadCustomConfiguration (System.Xml.XmlNodeList customConfigElements);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadCustomConfiguration(class System.Xml.XmlNodeList customConfigElements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="customConfigElements" Type="System.Xml.XmlNodeList" />
+      </Parameters>
+      <Docs>
+        <param name="customConfigElements">An <see cref="T:System.Xml.XmlNodeList" /> that specifies the SAML token authentication requirements.</param>
+        <summary>Loads custom configuration from XML.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="customConfigElements" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The configuration specified in <paramref name="customConfigElements" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalizeAuthenticationContextClassReference">
+      <MemberSignature Language="C#" Value="protected virtual string NormalizeAuthenticationContextClassReference (string saml2AuthenticationContextClassReference);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string NormalizeAuthenticationContextClassReference(string saml2AuthenticationContextClassReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.NormalizeAuthenticationContextClassReference(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="saml2AuthenticationContextClassReference" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="saml2AuthenticationContextClassReference">One of the <see cref="T:System.IdentityModel.Tokens.Saml2Constants.AuthenticationContextClasses" /> constants.</param>
+        <summary>Returns the normalized value matching a SAML authentication context class reference.</summary>
+        <returns>A string that contains the normalized value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessAttributeStatement">
+      <MemberSignature Language="C#" Value="protected virtual void ProcessAttributeStatement (System.IdentityModel.Tokens.Saml2AttributeStatement statement, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessAttributeStatement(class System.IdentityModel.Tokens.Saml2AttributeStatement statement, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ProcessAttributeStatement(System.IdentityModel.Tokens.Saml2AttributeStatement,System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statement" Type="System.IdentityModel.Tokens.Saml2AttributeStatement" />
+        <Parameter Name="subject" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="issuer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="statement">The <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> from which the claims are created.</param>
+        <param name="subject">The subject to which the claims are added.</param>
+        <param name="issuer">The issuer.</param>
+        <summary>Creates claims from a SAML 2.0 attribute statement and adds them to the specified subject.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The created claims are added to the subject.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="statement" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="subject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessAuthenticationStatement">
+      <MemberSignature Language="C#" Value="protected virtual void ProcessAuthenticationStatement (System.IdentityModel.Tokens.Saml2AuthenticationStatement statement, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessAuthenticationStatement(class System.IdentityModel.Tokens.Saml2AuthenticationStatement statement, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ProcessAuthenticationStatement(System.IdentityModel.Tokens.Saml2AuthenticationStatement,System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statement" Type="System.IdentityModel.Tokens.Saml2AuthenticationStatement" />
+        <Parameter Name="subject" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="issuer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="statement">The <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" /> from which the claims are created.</param>
+        <param name="subject">The subject to which the claims are added.</param>
+        <param name="issuer">The issuer.</param>
+        <summary>Creates claims from a SAML 2.0 authentication statement and adds them to the specified subject.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="statement" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="subject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessAuthorizationDecisionStatement">
+      <MemberSignature Language="C#" Value="protected virtual void ProcessAuthorizationDecisionStatement (System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement statement, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessAuthorizationDecisionStatement(class System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement statement, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ProcessAuthorizationDecisionStatement(System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement,System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statement" Type="System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" />
+        <Parameter Name="subject" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="issuer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="statement">The <see cref="T:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" /> from which the claims are created.</param>
+        <param name="subject">The subject to which the claims are added.</param>
+        <param name="issuer">The issuer.</param>
+        <summary>Creates claims from a SAML 2.0 authorization decision statement and adds them to the specified subject.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation does nothing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessSamlSubject">
+      <MemberSignature Language="C#" Value="protected virtual void ProcessSamlSubject (System.IdentityModel.Tokens.Saml2Subject assertionSubject, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessSamlSubject(class System.IdentityModel.Tokens.Saml2Subject assertionSubject, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ProcessSamlSubject(System.IdentityModel.Tokens.Saml2Subject,System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assertionSubject" Type="System.IdentityModel.Tokens.Saml2Subject" />
+        <Parameter Name="subject" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="issuer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assertionSubject">The <see cref="T:System.IdentityModel.Tokens.Saml2Subject" /> from which the claims are created.</param>
+        <param name="subject">The subject to which the claims are added.</param>
+        <param name="issuer">The issuer.</param>
+        <summary>Creates claims from the SAML 2.0 subject and adds them to the specified subject.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="statement" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="assertionSubject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessStatement">
+      <MemberSignature Language="C#" Value="protected virtual void ProcessStatement (System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Statement&gt; statements, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ProcessStatement(class System.Collections.ObjectModel.Collection`1&lt;class System.IdentityModel.Tokens.Saml2Statement&gt; statements, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ProcessStatement(System.Collections.ObjectModel.Collection{System.IdentityModel.Tokens.Saml2Statement},System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="statements" Type="System.Collections.ObjectModel.Collection&lt;System.IdentityModel.Tokens.Saml2Statement&gt;" />
+        <Parameter Name="subject" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="issuer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="statements">A collection of <see cref="T:System.IdentityModel.Tokens.Saml2Statement" /> from which the claims are created.</param>
+        <param name="subject">The subject to which the claims are added.</param>
+        <param name="issuer">The issuer.</param>
+        <summary>Creates claims from a collection of SAML 2.0 statements and adds them to the specified subject.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="subject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAction">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Action ReadAction (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Action ReadAction(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAction(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Action</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:Action&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Action" /> that represents the Action element that is read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAdvice">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Advice ReadAdvice (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Advice ReadAdvice(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAdvice(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Advice</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:Advice&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Advice" /> that represents the Advice element that is read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Advice element has an extensibility point to allow XML elements from non-SAML 2.0 namespaces to be included. By default, because the Advice may be ignored without affecting the semantics of the assertion, any such elements are ignored. To handle the processing of those elements, override this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAssertion">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Assertion ReadAssertion (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Assertion ReadAssertion(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAssertion(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Assertion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:Assertion&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> that represents the Assertion element that is read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAttribute">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Attribute ReadAttribute (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Attribute ReadAttribute(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAttribute(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Attribute</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:Attribute&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> that represents the Assertion element that is read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation requires that the content of the Attribute element be a simple string. To handle complex content or content of declared simple types other than xs:string, override this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAttributeStatement">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2AttributeStatement ReadAttributeStatement (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2AttributeStatement ReadAttributeStatement(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAttributeStatement(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2AttributeStatement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:AttributeStatement&gt; element, or a &lt;saml:Statement&gt; element that specifies an xsi:type of saml:AttributeStatementType.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" /> that represents the element that is read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAttributeValue">
+      <MemberSignature Language="C#" Value="protected virtual string ReadAttributeValue (System.Xml.XmlReader reader, System.IdentityModel.Tokens.Saml2Attribute attribute);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string ReadAttributeValue(class System.Xml.XmlReader reader, class System.IdentityModel.Tokens.Saml2Attribute attribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAttributeValue(System.Xml.XmlReader,System.IdentityModel.Tokens.Saml2Attribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="attribute" Type="System.IdentityModel.Tokens.Saml2Attribute" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <param name="attribute">The attribute being read.</param>
+        <summary>Reads an attribute value.</summary>
+        <returns>A string that contains the attribute value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAudienceRestriction">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2AudienceRestriction ReadAudienceRestriction (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2AudienceRestriction ReadAudienceRestriction(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAudienceRestriction(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2AudienceRestriction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:AudienceRestriction&gt; element or a &lt;saml:Condition&gt; element that specifies an xsi:type of saml:AudienceRestrictionType.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2AudienceRestriction" /> that represents the element that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAuthenticationContext">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2AuthenticationContext ReadAuthenticationContext (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2AuthenticationContext ReadAuthenticationContext(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAuthenticationContext(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2AuthenticationContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:AuthnContext&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationContext" /> that represents the AuthnContext element that is read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation does not handle the optional \<saml:AuthnContextDecl> element. To handle by-value authentication context declarations, override this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAuthenticationStatement">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2AuthenticationStatement ReadAuthenticationStatement (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2AuthenticationStatement ReadAuthenticationStatement(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAuthenticationStatement(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2AuthenticationStatement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:AuthnStatement&gt; element or a &lt;saml:Statement&gt; element that specifies an xsi:type of saml:AuthnStatementType.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" /> that represents the element that is read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAuthorizationDecisionStatement">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement ReadAuthorizationDecisionStatement (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement ReadAuthorizationDecisionStatement(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAuthorizationDecisionStatement(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:AuthzDecisionStatement&gt; element or a &lt;saml:Statement&gt; element that specifies an xsi:type of saml:AuthzDecisionStatementType.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" /> that represents the element that is read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadConditions">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Conditions ReadConditions (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Conditions ReadConditions(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadConditions(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Conditions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:Conditions&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Conditions" /> that represents the Conditions element that is read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To handle custom \<saml:Condition> elements, override this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.XmlException">
+          <paramref name="reader" /> is not positioned at a Conditions element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadEncryptedId">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2NameIdentifier ReadEncryptedId (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2NameIdentifier ReadEncryptedId(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadEncryptedId(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2NameIdentifier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> pointing at the EncryptedId element.</param>
+        <summary>Reads the &lt;saml:EncryptedId&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> that represents the EncryptedId element that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Xml.XmlException">
+          <paramref name="reader" /> is not positioned at an EncryptedID element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadEvidence">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Evidence ReadEvidence (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Evidence ReadEvidence(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadEvidence(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Evidence</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:Evidence&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Evidence" /> that represents the Evidence element that is read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadIssuer">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2NameIdentifier ReadIssuer (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2NameIdentifier ReadIssuer(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadIssuer(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2NameIdentifier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:Issuer&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> that represents the Issuer element that is read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadKeyIdentifierClause">
+      <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityKeyIdentifierClause ReadKeyIdentifierClause (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityKeyIdentifierClause ReadKeyIdentifierClause(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadKeyIdentifierClause(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifierClause</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The <see cref="T:System.Xml.XmlReader" /> with which to read.</param>
+        <summary>Reads a SecurityKeyIdentifierClause.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents the security key identifier clause.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadNameId">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2NameIdentifier ReadNameId (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2NameIdentifier ReadNameId(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadNameId(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2NameIdentifier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at a NameID element.</param>
+        <summary>Reads the &lt;saml:NameID&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> that represents the NameID element that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadNameIdType">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2NameIdentifier ReadNameIdType (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2NameIdentifier ReadNameIdType(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadNameIdType(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2NameIdentifier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at NameID type.</param>
+        <summary>Both &lt;Issuer&gt; and &lt;NameID&gt; are of NameIDType. This method reads the content of either one of those elements.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> constructed from the XML.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadProxyRestriction">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2ProxyRestriction ReadProxyRestriction (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2ProxyRestriction ReadProxyRestriction(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadProxyRestriction(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2ProxyRestriction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:ProxyRestriction&gt; element, or a &lt;saml:Condition&gt; element that specifies an xsi:type of saml:ProxyRestrictionType.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2ProxyRestriction" /> that represents the element that was read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In the default implementation, the maximum value of the Count attribute is limited to Int32.MaxValue.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSigningKeyInfo">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SecurityKeyIdentifier ReadSigningKeyInfo (System.Xml.XmlReader reader, System.IdentityModel.Tokens.Saml2Assertion assertion);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityKeyIdentifier ReadSigningKeyInfo(class System.Xml.XmlReader reader, class System.IdentityModel.Tokens.Saml2Assertion assertion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadSigningKeyInfo(System.Xml.XmlReader,System.IdentityModel.Tokens.Saml2Assertion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="assertion" Type="System.IdentityModel.Tokens.Saml2Assertion" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An XmlReader that can be positioned at a ds:KeyInfo element.</param>
+        <param name="assertion">The assertion that is having the signature checked.</param>
+        <summary>Deserializes the SAML Signing KeyInfo.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key to use to check the signature.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadStatement">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Statement ReadStatement (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Statement ReadStatement(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadStatement(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Statement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:Statement&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Statement" /> that represents the Statement element that was read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation only handles Statement elements that specify an xsi:type of saml:AttributeStatementType, saml:AuthnStatementType, and saml:AuthzDecisionStatementType. To handle custom statements, override this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSubject">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2Subject ReadSubject (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2Subject ReadSubject(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadSubject(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2Subject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:Subject&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2Subject" /> that represents the Subject element that was read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation does not handle the optional \<EncryptedID> element. To handle encryped IDs in the Subject, override this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSubjectConfirmation">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2SubjectConfirmation ReadSubjectConfirmation (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2SubjectConfirmation ReadSubjectConfirmation(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadSubjectConfirmation(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2SubjectConfirmation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;SubjectConfirmation&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmation" /> that represents the SubjectConfirmation element that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSubjectConfirmationData">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2SubjectConfirmationData ReadSubjectConfirmationData (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2SubjectConfirmationData ReadSubjectConfirmationData(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadSubjectConfirmationData(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2SubjectConfirmationData</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:SubjectConfirmationData&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmationData" /> that represents the SubjectConfirmationData element that was read.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation handles the unextended element as well as the extended type saml:KeyInfoConfirmationDataType.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSubjectId">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2NameIdentifier ReadSubjectId (System.Xml.XmlReader reader, string parentElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2NameIdentifier ReadSubjectId(class System.Xml.XmlReader reader, string parentElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadSubjectId(System.Xml.XmlReader,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2NameIdentifier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+        <Parameter Name="parentElement" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the Subject ID XML.</param>
+        <param name="parentElement">The parent element that contains this Subject ID.</param>
+        <summary>This method handles the construct used in the &lt;Subject&gt; and &lt;SubjectConfirmation&gt; elements for ID.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> constructed from the XML.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSubjectKeyInfo">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SecurityKeyIdentifier ReadSubjectKeyInfo (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityKeyIdentifier ReadSubjectKeyInfo(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadSubjectKeyInfo(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifier</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at a &lt;ds:KeyInfo&gt; element.</param>
+        <summary>Deserializes the SAML Subject &lt;ds:KeyInfo&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the contents of the &lt;ds:KeyInfo&gt; element.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadSubjectLocality">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.Saml2SubjectLocality ReadSubjectLocality (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.Saml2SubjectLocality ReadSubjectLocality(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadSubjectLocality(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.Saml2SubjectLocality</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">An <see cref="T:System.Xml.XmlReader" /> positioned at the element to read.</param>
+        <summary>Reads the &lt;saml:SubjectLocality&gt; element.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.Saml2SubjectLocality" /> that represents the SubjectLocality element that was read.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadToken">
+      <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityToken ReadToken (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken ReadToken(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadToken(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">A <see cref="T:System.Xml.XmlReader" /> stream to a SAML 2.0 Security Token.</param>
+        <summary>Reads a SAML 2.0 token from the specified stream.</summary>
+        <returns>An instance of <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration" /> property is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerTokenResolver" /> property of the configuration specified by the <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration" /> property is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.ServiceTokenResolver" /> property of the configuration specified by the <see cref="P:System.IdentityModel.Tokens.SecurityTokenHandler.Configuration" /> property is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveIssuerToken">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Tokens.SecurityToken ResolveIssuerToken (System.IdentityModel.Tokens.Saml2Assertion assertion, System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityToken ResolveIssuerToken(class System.IdentityModel.Tokens.Saml2Assertion assertion, class System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ResolveIssuerToken(System.IdentityModel.Tokens.Saml2Assertion,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assertion" Type="System.IdentityModel.Tokens.Saml2Assertion" />
+        <Parameter Name="issuerResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+      </Parameters>
+      <Docs>
+        <param name="assertion">The <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> for which the Issuer token is to be resolved.</param>
+        <param name="issuerResolver">The current <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> associated with this handler.</param>
+        <summary>Resolves the Signing Key Identifier to a <see cref="T:System.IdentityModel.Tokens.SecurityToken" />.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the resolved token.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assertion" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The handler is unable to resolve the token.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveSecurityKeys">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt; ResolveSecurityKeys (System.IdentityModel.Tokens.Saml2Assertion assertion, System.IdentityModel.Selectors.SecurityTokenResolver resolver);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SecurityKey&gt; ResolveSecurityKeys(class System.IdentityModel.Tokens.Saml2Assertion assertion, class System.IdentityModel.Selectors.SecurityTokenResolver resolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ResolveSecurityKeys(System.IdentityModel.Tokens.Saml2Assertion,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assertion" Type="System.IdentityModel.Tokens.Saml2Assertion" />
+        <Parameter Name="resolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+      </Parameters>
+      <Docs>
+        <param name="assertion">The <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> to process.</param>
+        <param name="resolver">The <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> to use in resolving the <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> objects.</param>
+        <summary>Resolves the collection of <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> referenced in a <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" />.</summary>
+        <returns>A collection of type <see cref="T:System.IdentityModel.Tokens.SecurityKey" /> that contains the keys.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assertion" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The handler is unable to resolve the keys.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SamlSecurityTokenRequirement">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SamlSecurityTokenRequirement SamlSecurityTokenRequirement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SamlSecurityTokenRequirement SamlSecurityTokenRequirement" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.SamlSecurityTokenRequirement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SamlSecurityTokenRequirement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the security token requirements for this instance.</summary>
+        <value>A <see cref="T:System.IdentityModel.Tokens.SamlSecurityTokenRequirement" /> that specifies the requirements.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set the value to <see langword="null" /> occurs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDelegateFromAttribute">
+      <MemberSignature Language="C#" Value="protected virtual void SetDelegateFromAttribute (System.IdentityModel.Tokens.Saml2Attribute attribute, System.Security.Claims.ClaimsIdentity subject, string issuer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetDelegateFromAttribute(class System.IdentityModel.Tokens.Saml2Attribute attribute, class System.Security.Claims.ClaimsIdentity subject, string issuer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.SetDelegateFromAttribute(System.IdentityModel.Tokens.Saml2Attribute,System.Security.Claims.ClaimsIdentity,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribute" Type="System.IdentityModel.Tokens.Saml2Attribute" />
+        <Parameter Name="subject" Type="System.Security.Claims.ClaimsIdentity" />
+        <Parameter Name="issuer" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="attribute">The <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> to use.</param>
+        <param name="subject">The <see cref="T:System.Security.Claims.ClaimsIdentity" /> that is the subject of this token.</param>
+        <param name="issuer">The issuer of the claim.</param>
+        <summary>This method gets called when a special type of <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> is detected. The <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> passed in wraps a <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that contains a collection of attribute values (in the <see cref="P:System.IdentityModel.Tokens.Saml2Attribute.Values" /> property), each of which will get mapped to a claim. All of the claims will be returned in an <see cref="T:System.Security.Claims.ClaimsIdentity" /> with the specified issuer.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> does not contain any valid attribute values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenProfile11ValueType">
+      <MemberSignature Language="C#" Value="public const string TokenProfile11ValueType;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string TokenProfile11ValueType" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.TokenProfile11ValueType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The key identifier value type for SAML 2.0 assertion IDs, as defined by the OASIS Web Services Security SAML Token Profile 1.1. This is a URI.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenType">
+      <MemberSignature Language="C#" Value="public override Type TokenType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type TokenType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.TokenType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the token type supported by this handler.</summary>
+        <value>The <see cref="T:System.Type" /> of the <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" /> class.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryResolveIssuerToken">
+      <MemberSignature Language="C#" Value="protected virtual bool TryResolveIssuerToken (System.IdentityModel.Tokens.Saml2Assertion assertion, System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver, out System.IdentityModel.Tokens.SecurityToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool TryResolveIssuerToken(class System.IdentityModel.Tokens.Saml2Assertion assertion, class System.IdentityModel.Selectors.SecurityTokenResolver issuerResolver, class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.TryResolveIssuerToken(System.IdentityModel.Tokens.Saml2Assertion,System.IdentityModel.Selectors.SecurityTokenResolver,System.IdentityModel.Tokens.SecurityToken@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assertion" Type="System.IdentityModel.Tokens.Saml2Assertion" />
+        <Parameter Name="issuerResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="assertion">The <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> for which the Issuer token is to be resolved.</param>
+        <param name="issuerResolver">The current <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> associated with this handler.</param>
+        <param name="token">When this method returns, contains the resolved security token if a token was successfully resolved.</param>
+        <summary>Resolves the Signing Key Identifier to a SecurityToken.</summary>
+        <returns>
+          <see langword="true" /> if the token is resolved.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateConditions">
+      <MemberSignature Language="C#" Value="protected virtual void ValidateConditions (System.IdentityModel.Tokens.Saml2Conditions conditions, bool enforceAudienceRestriction);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateConditions(class System.IdentityModel.Tokens.Saml2Conditions conditions, bool enforceAudienceRestriction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ValidateConditions(System.IdentityModel.Tokens.Saml2Conditions,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="conditions" Type="System.IdentityModel.Tokens.Saml2Conditions" />
+        <Parameter Name="enforceAudienceRestriction" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="conditions">The SAML 2.0 condition to be validated.</param>
+        <param name="enforceAudienceRestriction">
+          <see langword="true" /> to check for Audience Restriction condition.</param>
+        <summary>Validates the specified <see cref="T:System.IdentityModel.Tokens.Saml2Conditions" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Throws an appropriate exception if the condition is not valid. The token may not be valid for a number of reasons. For example, the current time may not be within the token's validity period, the token may contain data that is contradictory or not valid, or the token may contain unsupported SAML 2.0 elements.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateConfirmationData">
+      <MemberSignature Language="C#" Value="protected virtual void ValidateConfirmationData (System.IdentityModel.Tokens.Saml2SubjectConfirmationData confirmationData);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateConfirmationData(class System.IdentityModel.Tokens.Saml2SubjectConfirmationData confirmationData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ValidateConfirmationData(System.IdentityModel.Tokens.Saml2SubjectConfirmationData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="confirmationData" Type="System.IdentityModel.Tokens.Saml2SubjectConfirmationData" />
+      </Parameters>
+      <Docs>
+        <param name="confirmationData">The SAML 2.0 subject confirmation data.</param>
+        <summary>Validates the specified <see cref="T:System.IdentityModel.Tokens.Saml2SubjectConfirmationData" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Throws an appropriate exception if the confirmation data is not valid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateToken">
+      <MemberSignature Language="C#" Value="public override System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt; ValidateToken (System.IdentityModel.Tokens.SecurityToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.Claims.ClaimsIdentity&gt; ValidateToken(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">The SAML 2.0 token to be validated.</param>
+        <summary>Validates the token data and returns its claims.</summary>
+        <returns>The identities contained in the token.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Throws an appropriate exception if the token is not valid.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAction">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAction (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2Action data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAction(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2Action data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteAction(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2Action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2Action" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:Action&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAdvice">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAdvice (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2Advice data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAdvice(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2Advice data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteAdvice(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2Advice)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2Advice" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:Advice&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAssertion">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAssertion (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2Assertion data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAssertion(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2Assertion data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteAssertion(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2Assertion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2Assertion" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to use for the serialization.</param>
+        <param name="data">A <see cref="T:System.IdentityModel.Tokens.Saml2Assertion" /> that represents the assertion to serialize.</param>
+        <summary>Serializes the specified SAML assertion to the specified XML writer.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="data" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The assertion specified by <paramref name="data" /> has both the <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.EncryptingCredentials" /> and <see cref="T:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReceivedEncryptingCredentials" /> properties set to <see langword="null" />.  
+  
+ -or-  
+  
+ There are no statements and no subject in the assertion specified by <paramref name="data" />. (Both the <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.Subject" /> property and the <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.Statements" /> property are <see langword="null" />.) If an assertion does not contain statements, it must contain a subject.  
+  
+ -or-  
+  
+ The assertion specified by <paramref name="data" /> contains an authentication, attribute, or authorization decision statement and no subject—these statements require a subject. (The <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.Statements" /> property contains a statement of type <see cref="T:System.IdentityModel.Tokens.Saml2AttributeStatement" />, <see cref="T:System.IdentityModel.Tokens.Saml2AuthenticationStatement" />, or <see cref="T:System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" /> and the <see cref="P:System.IdentityModel.Tokens.Saml2Assertion.Subject" /> property is <see langword="null" />).</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The token encrypting credentials do not have a Symmetric Key specified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttribute">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAttribute (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2Attribute data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAttribute(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2Attribute data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteAttribute(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2Attribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2Attribute" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:Attribute&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttributeStatement">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAttributeStatement (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2AttributeStatement data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAttributeStatement(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2AttributeStatement data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteAttributeStatement(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2AttributeStatement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2AttributeStatement" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:AttributeStatement&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAttributeValue">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAttributeValue (System.Xml.XmlWriter writer, string value, System.IdentityModel.Tokens.Saml2Attribute attribute);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAttributeValue(class System.Xml.XmlWriter writer, string value, class System.IdentityModel.Tokens.Saml2Attribute attribute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteAttributeValue(System.Xml.XmlWriter,System.String,System.IdentityModel.Tokens.Saml2Attribute)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="attribute" Type="System.IdentityModel.Tokens.Saml2Attribute" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write.</param>
+        <param name="value">A string that contains the attribute value to be written.</param>
+        <param name="attribute">A <see cref="T:System.IdentityModel.Tokens.Saml2Attribute" /> that represents the attribute whose value is being written.</param>
+        <summary>Writes the saml:Attribute value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default the method writes the value as a string.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAudienceRestriction">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAudienceRestriction (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2AudienceRestriction data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAudienceRestriction(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2AudienceRestriction data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteAudienceRestriction(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2AudienceRestriction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2AudienceRestriction" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:AudienceRestriction&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAuthenticationContext">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAuthenticationContext (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2AuthenticationContext data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAuthenticationContext(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2AuthenticationContext data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteAuthenticationContext(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2AuthenticationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2AuthenticationContext" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:AuthnContext&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAuthenticationStatement">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAuthenticationStatement (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2AuthenticationStatement data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAuthenticationStatement(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2AuthenticationStatement data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteAuthenticationStatement(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2AuthenticationStatement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2AuthenticationStatement" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:AuthnStatement&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAuthorizationDecisionStatement">
+      <MemberSignature Language="C#" Value="protected virtual void WriteAuthorizationDecisionStatement (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteAuthorizationDecisionStatement(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteAuthorizationDecisionStatement(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2AuthorizationDecisionStatement" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:AuthzDecisionStatement&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteConditions">
+      <MemberSignature Language="C#" Value="protected virtual void WriteConditions (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2Conditions data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteConditions(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2Conditions data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteConditions(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2Conditions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2Conditions" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:Conditions&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteEvidence">
+      <MemberSignature Language="C#" Value="protected virtual void WriteEvidence (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2Evidence data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteEvidence(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2Evidence data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteEvidence(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2Evidence)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2Evidence" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:Evidence&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteIssuer">
+      <MemberSignature Language="C#" Value="protected virtual void WriteIssuer (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2NameIdentifier data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteIssuer(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2NameIdentifier data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteIssuer(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2NameIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2NameIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:Issuer&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteKeyIdentifierClause">
+      <MemberSignature Language="C#" Value="public override void WriteKeyIdentifierClause (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteKeyIdentifierClause(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteKeyIdentifierClause(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="securityKeyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> to serialize the key identifier clause.</param>
+        <param name="securityKeyIdentifierClause">A <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifierClause" /> that represents the key identifier clause to be serialized.</param>
+        <summary>Serializes a <see cref="T:System.IdentityModel.Tokens.Saml2AssertionKeyIdentifierClause" /> to the specified XML writer.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="securityKeyIdentifierClause" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNameId">
+      <MemberSignature Language="C#" Value="protected virtual void WriteNameId (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2NameIdentifier data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteNameId(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2NameIdentifier data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteNameId(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2NameIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2NameIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to serialize the <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" />.</param>
+        <param name="data">The <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> to be serialized.</param>
+        <summary>Writes the &lt;saml:NameID&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Security.Cryptography.CryptographicException">The Saml2NameIdentifier encrypting credentials must have a Symmetric Key specified.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteNameIdType">
+      <MemberSignature Language="C#" Value="protected virtual void WriteNameIdType (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2NameIdentifier data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteNameIdType(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2NameIdentifier data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteNameIdType(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2NameIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2NameIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to serialize the NameID type.</param>
+        <param name="data">The <see cref="T:System.IdentityModel.Tokens.Saml2NameIdentifier" /> to write.</param>
+        <summary>Both &lt;Issuer&gt; and &lt;NameID&gt; are of NameIDType. This method writes the content of either one of those elements.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteProxyRestriction">
+      <MemberSignature Language="C#" Value="protected virtual void WriteProxyRestriction (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2ProxyRestriction data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteProxyRestriction(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2ProxyRestriction data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteProxyRestriction(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2ProxyRestriction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2ProxyRestriction" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:ProxyRestriction&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSigningKeyInfo">
+      <MemberSignature Language="C#" Value="protected virtual void WriteSigningKeyInfo (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SecurityKeyIdentifier data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSigningKeyInfo(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SecurityKeyIdentifier data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteSigningKeyInfo(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to serialize the key identifier.</param>
+        <param name="data">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key identifier to write.</param>
+        <summary>Writes the Signing &lt;ds:KeyInfo&gt; element using the specified XML writer.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="signingKeyIdentifier" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The handler cannot serialize the key identifier specified by <paramref name="signingKeyIdentifier" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteStatement">
+      <MemberSignature Language="C#" Value="protected virtual void WriteStatement (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2Statement data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteStatement(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2Statement data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteStatement(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2Statement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2Statement" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes a Saml2Statement.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method may write a \<saml:AttributeStatement>, \<saml:AuthnStatement>, or \<saml:AuthzDecisionStatement> element. To handle custom <xref:System.IdentityModel.Tokens.Saml2Statement> classes for writing a \<saml:Statement> element, override this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSubject">
+      <MemberSignature Language="C#" Value="protected virtual void WriteSubject (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2Subject data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSubject(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2Subject data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteSubject(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2Subject)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2Subject" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:Subject&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSubjectConfirmation">
+      <MemberSignature Language="C#" Value="protected virtual void WriteSubjectConfirmation (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2SubjectConfirmation data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSubjectConfirmation(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2SubjectConfirmation data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteSubjectConfirmation(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2SubjectConfirmation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2SubjectConfirmation" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:SubjectConfirmation&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSubjectConfirmationData">
+      <MemberSignature Language="C#" Value="protected virtual void WriteSubjectConfirmationData (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2SubjectConfirmationData data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSubjectConfirmationData(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2SubjectConfirmationData data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteSubjectConfirmationData(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2SubjectConfirmationData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2SubjectConfirmationData" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:SubjectConfirmationData&gt; element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the data.KeyIdentifiers collection is not empty, an xsi:type attribute will be written specifying the saml:KeyInfoConfirmationDataType.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSubjectKeyInfo">
+      <MemberSignature Language="C#" Value="protected virtual void WriteSubjectKeyInfo (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SecurityKeyIdentifier data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSubjectKeyInfo(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SecurityKeyIdentifier data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteSubjectKeyInfo(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to serialize the key identifier.</param>
+        <param name="data">The <see cref="T:System.IdentityModel.Tokens.SecurityKeyIdentifier" /> that represents the key identifier to write.</param>
+        <summary>Serializes the Subject &lt;ds:KeyInfo&gt; element using the specified XML writer.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteSubjectLocality">
+      <MemberSignature Language="C#" Value="protected virtual void WriteSubjectLocality (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.Saml2SubjectLocality data);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WriteSubjectLocality(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.Saml2SubjectLocality data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteSubjectLocality(System.Xml.XmlWriter,System.IdentityModel.Tokens.Saml2SubjectLocality)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="data" Type="System.IdentityModel.Tokens.Saml2SubjectLocality" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="data">The data to write.</param>
+        <summary>Writes the &lt;saml:SubjectLocality&gt; element.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteToken">
+      <MemberSignature Language="C#" Value="public override void WriteToken (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SecurityToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteToken(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.Saml2SecurityTokenHandler.WriteToken(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="token" Type="System.IdentityModel.Tokens.SecurityToken" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Xml.XmlWriter" /> with which to write the data.</param>
+        <param name="token">The token to write.</param>
+        <summary>Writes a Saml2 Token to the specified XML writer.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="writer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="token" /> is not a <see cref="T:System.IdentityModel.Tokens.Saml2SecurityToken" /> object.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,96 @@
+<Type Name="ActivityCodeGeneratorAttribute" FullName="System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ActivityCodeGeneratorAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityCodeGeneratorAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates the type to be used for code generation for an activity. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityCodeGeneratorAttribute (string codeGeneratorTypeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string codeGeneratorTypeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="codeGeneratorTypeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="codeGeneratorTypeName">The specified value for <see cref="P:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute.CodeGeneratorTypeName" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute" /> class, also initializing the <see cref="P:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute.CodeGeneratorTypeName" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="codeGeneratorTypeName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityCodeGeneratorAttribute (Type codeGeneratorType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type codeGeneratorType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="codeGeneratorType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="codeGeneratorType">The <see cref="T:System.Type" /> to initialize the instance from.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute" /> class from a code generator <see cref="T:System.Type" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="codeGeneratorType" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="codeGeneratorType" /> has no default constructor.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeGeneratorTypeName">
+      <MemberSignature Language="C#" Value="public string CodeGeneratorTypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CodeGeneratorTypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Compiler.ActivityCodeGeneratorAttribute.CodeGeneratorTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the code generator <see cref="T:System.Type" /> which this instance is based on.</summary>
+        <value>A string that contains the name of the code generator <see cref="T:System.Type" /> on which this instance is based.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

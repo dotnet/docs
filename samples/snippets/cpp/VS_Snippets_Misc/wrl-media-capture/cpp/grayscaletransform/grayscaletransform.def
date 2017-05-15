@@ -1,0 +1,6 @@
+;// <snippet5>
+EXPORTS
+    DllCanUnloadNow                     PRIVATE
+    DllGetActivationFactory             PRIVATE
+    DllGetClassObject                   PRIVATE
+;// </snippet5>

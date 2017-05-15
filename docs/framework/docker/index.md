@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: a27b2ae4-154e-4b2b-b221-0c4c05185274
 ---
 
-# Docker on .NET Framework
+# Deploying .NET Framework applications with Docker
 
-You can learn more about Windows Containers, including what they are and the requirements for running them, on the [Windows Containers](https://msdn.microsoft.com/virtualization/windowscontainers/about/about_overview) and [Getting Started with Docker for Windows](https://docs.docker.com/docker-for-windows/) articles. 
+You can deploy .NET Framework applicaton with Docker, using Windows Containers. You can learn the requirements for using [Windows Containers](https://msdn.microsoft.com/virtualization/windowscontainers/about/about_overview) and how to [Get Started with Docker for Windows](https://docs.docker.com/docker-for-windows/). 
 
-You can begin by [moving a console application to Docker](console.md).
-If you are more interested in an ASP.NET MVC application, try the
-[ASP.NET MVC application in Docker](aspnetmvc.md).
+You can begin by [running a console application with Docker](console.md).
+For running web applications in Docker, you can read
+[ASP.NET MVC applications in Docker](https://docs.microsoft.com/aspnet/mvc/overview/deployment/docker-aspnetmvc).

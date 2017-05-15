@@ -1,0 +1,34 @@
+<Type Name="FormClosingEventHandler" FullName="System.Windows.Forms.FormClosingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void FormClosingEventHandler(object sender, FormClosingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormClosingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormClosingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Forms.FormClosingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Forms.FormClosingEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles a <see cref="E:System.Windows.Forms.Form.FormClosing" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Form.FormClosing> event occurs just before a form is closed, either by the user, through the user interface (UI), or programmatically, through calls to methods such as <xref:System.Windows.Forms.Form.Close%2A> in the <xref:System.Windows.Forms.Form> class, or <xref:System.Windows.Forms.Application.Exit%2A> in the <xref:System.Windows.Forms.Application> class. This event can be canceled.  
+  
+ When you create a <xref:System.Windows.Forms.FormClosingEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

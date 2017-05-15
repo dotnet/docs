@@ -1,0 +1,575 @@
+<Type Name="AutoCompleteType" FullName="System.Web.UI.WebControls.AutoCompleteType">
+  <TypeSignature Language="C#" Value="public enum AutoCompleteType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoCompleteType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.AutoCompleteType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Represents the values that control the behavior of the AutoComplete feature in a <see cref="T:System.Web.UI.WebControls.TextBox" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To assist with data entry, Internet Explorer 5 and later and some other browsers support a feature named AutoComplete. AutoComplete monitors a text box and stores a list of the values that the user has entered. When the user returns to the text box another time, the list of values is displayed. Instead of retyping a value, the user can simply select the value from this list.  
+  
+> [!NOTE]
+>  Not all browsers support the AutoComplete feature. Check with your browser to determine compatibility.  
+  
+ To control the behavior of the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control, you use the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property. The <xref:System.Web.UI.WebControls.AutoCompleteType> enumeration is used to represent the values that you can apply to the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property.  
+  
+ By default, the <xref:System.Web.UI.WebControls.TextBox.AutoCompleteType%2A> property for a <xref:System.Web.UI.WebControls.TextBox> control is set to `AutoCompleteType.None`. With this setting, the <xref:System.Web.UI.WebControls.TextBox> control shares the list with other <xref:System.Web.UI.WebControls.TextBox> controls with the same <xref:System.Web.UI.Control.ID%2A> across different pages. You can also share a list among <xref:System.Web.UI.WebControls.TextBox> controls based on a category instead of based on an <xref:System.Web.UI.Control.ID%2A>. When you set the <xref:System.Web.UI.WebControls.AutoCompleteType> property to one of the category values (such as `AutoCompleteType.FirstName` or `AutoCompleteType.LastName`), all <xref:System.Web.UI.WebControls.TextBox> controls with the same category share the same list. You can disable the AutoComplete feature for a <xref:System.Web.UI.WebControls.TextBox> control by setting the <xref:System.Web.UI.WebControls.AutoCompleteType> property to `AutoCompleteType.Disabled`.  
+  
+ Refer to your browser documentation for details on configuring and enabling the AutoComplete feature. For example, to enable the AutoComplete feature in Internet Explorer version 5 or later, from the **Tools** menu, choose **Internet Options**. Then choose the **Content** tab. Choose the **AutoComplete** button to view and modify options for the AutoComplete feature.  
+  
+ For more information on the AutoComplete feature in Internet Explorer, search for [Using AutoComplete in HTML Forms](http://msdn.microsoft.com/library/default.asp?url=/workshop/author/forms/autocomplete_ovr.asp) in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.AutoCompleteType> enumeration to specify the AutoComplete category for a <xref:System.Web.UI.WebControls.TextBox> control.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[AutoCompleteType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AutoCompleteType/CS/AutoCompleteTypecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[AutoCompleteType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AutoCompleteType/VB/AutoCompleteTypevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BusinessCity">
+      <MemberSignature Language="C#" Value="BusinessCity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType BusinessCity = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessCity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The city for a business address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessCountryRegion">
+      <MemberSignature Language="C#" Value="BusinessCountryRegion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType BusinessCountryRegion = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessCountryRegion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The country/region for a business address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessFax">
+      <MemberSignature Language="C#" Value="BusinessFax" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType BusinessFax = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessFax" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The fax number for a business address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessPhone">
+      <MemberSignature Language="C#" Value="BusinessPhone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType BusinessPhone = int32(26)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessPhone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The phone number for a business address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessState">
+      <MemberSignature Language="C#" Value="BusinessState" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType BusinessState = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state for a business address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessStreetAddress">
+      <MemberSignature Language="C#" Value="BusinessStreetAddress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType BusinessStreetAddress = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessStreetAddress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The street for a business address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessUrl">
+      <MemberSignature Language="C#" Value="BusinessUrl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType BusinessUrl = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessUrl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The URL to a business Web site category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BusinessZipCode">
+      <MemberSignature Language="C#" Value="BusinessZipCode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType BusinessZipCode = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.BusinessZipCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ZIP code for a business address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cellular">
+      <MemberSignature Language="C#" Value="Cellular" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Cellular = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Cellular" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The phone number for a mobile-phone category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Company">
+      <MemberSignature Language="C#" Value="Company" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Company = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Company" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of a business category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Department">
+      <MemberSignature Language="C#" Value="Department" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Department = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Department" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A department within a business category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Disabled = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The AutoComplete feature is disabled for the <see cref="T:System.Web.UI.WebControls.TextBox" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="DisplayName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType DisplayName = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.DisplayName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name to display for the user category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Email">
+      <MemberSignature Language="C#" Value="Email" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Email = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Email" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user's e-mail address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Enabled">
+      <MemberSignature Language="C#" Value="Enabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Enabled = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Enabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The AutoComplete feature is enabled for the <see cref="T:System.Web.UI.WebControls.TextBox" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstName">
+      <MemberSignature Language="C#" Value="FirstName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType FirstName = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.FirstName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The first name category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Gender">
+      <MemberSignature Language="C#" Value="Gender" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Gender = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Gender" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The gender of the user category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HomeCity">
+      <MemberSignature Language="C#" Value="HomeCity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType HomeCity = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeCity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The city for a home address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HomeCountryRegion">
+      <MemberSignature Language="C#" Value="HomeCountryRegion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType HomeCountryRegion = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeCountryRegion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The country/region for a home address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HomeFax">
+      <MemberSignature Language="C#" Value="HomeFax" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType HomeFax = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeFax" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The fax number for a home address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Homepage">
+      <MemberSignature Language="C#" Value="Homepage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Homepage = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Homepage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The URL to a Web site category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HomePhone">
+      <MemberSignature Language="C#" Value="HomePhone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType HomePhone = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomePhone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The phone number for a home address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HomeState">
+      <MemberSignature Language="C#" Value="HomeState" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType HomeState = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The state for a home address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HomeStreetAddress">
+      <MemberSignature Language="C#" Value="HomeStreetAddress" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType HomeStreetAddress = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeStreetAddress" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The street for a home address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HomeZipCode">
+      <MemberSignature Language="C#" Value="HomeZipCode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType HomeZipCode = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.HomeZipCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ZIP code for a home address category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JobTitle">
+      <MemberSignature Language="C#" Value="JobTitle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType JobTitle = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.JobTitle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user's job title category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LastName">
+      <MemberSignature Language="C#" Value="LastName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType LastName = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.LastName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The last name category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleName">
+      <MemberSignature Language="C#" Value="MiddleName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType MiddleName = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.MiddleName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The user's middle name category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No category is associated with the <see cref="T:System.Web.UI.WebControls.TextBox" /> control. All <see cref="T:System.Web.UI.WebControls.TextBox" /> controls with the same <see cref="P:System.Web.UI.Control.ID" /> share the same value list.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Notes">
+      <MemberSignature Language="C#" Value="Notes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Notes = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Notes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Any supplemental information to include in the form category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Office">
+      <MemberSignature Language="C#" Value="Office" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Office = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Office" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The location of the business office category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pager">
+      <MemberSignature Language="C#" Value="Pager" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Pager = int32(22)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Pager" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The phone number for a pager category.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Search">
+      <MemberSignature Language="C#" Value="Search" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.AutoCompleteType Search = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.AutoCompleteType.Search" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.AutoCompleteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The keyword or keywords with which to search a Web page or Web site category.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

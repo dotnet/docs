@@ -1,0 +1,243 @@
+<Type Name="EntityClassGenerator" FullName="System.Data.Entity.Design.EntityClassGenerator">
+  <TypeSignature Language="C#" Value="public sealed class EntityClassGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityClassGenerator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityClassGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Generates object context and entity classes (object layer code) from conceptual schema definition language (CSDL) files.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityClassGenerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityClassGenerator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityClassGenerator" /> class with a <see cref="F:System.Data.Entity.Design.LanguageOption.GenerateCSharpCode" /> language option.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityClassGenerator (System.Data.Entity.Design.LanguageOption languageOption);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.Entity.Design.LanguageOption languageOption) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityClassGenerator.#ctor(System.Data.Entity.Design.LanguageOption)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="languageOption" Type="System.Data.Entity.Design.LanguageOption" />
+      </Parameters>
+      <Docs>
+        <param name="languageOption">A <see cref="T:System.Data.Entity.Design.LanguageOption" /> value that specifies the language of the generated code. The default language is C#.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.EntityClassGenerator" /> class with the specified <see cref="T:System.Data.Entity.Design.LanguageOption" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EdmToObjectNamespaceMap">
+      <MemberSignature Language="C#" Value="public System.Data.Entity.Design.EdmToObjectNamespaceMap EdmToObjectNamespaceMap { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Entity.Design.EdmToObjectNamespaceMap EdmToObjectNamespaceMap" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityClassGenerator.EdmToObjectNamespaceMap" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.EdmToObjectNamespaceMap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Data.Entity.Design.EdmToObjectNamespaceMap" /> that contains the conceptual schema definition language (CSDL) to code namespace mappings.</summary>
+        <value>The CSDL to code namespace mappings.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Namespace mappings can be used to specify a different code namespace for generating code than what is specified in the CSDL file. The namespace mappings are consulted when a reference to a type is to be generated. If an entry is found, the value will be used to generate the qualified reference to the type; otherwise, the CSDL namespace will be used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCode">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateCode (string sourceEdmSchemaFilePath, string targetFilePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateCode(string sourceEdmSchemaFilePath, string targetFilePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceEdmSchemaFilePath" Type="System.String" />
+        <Parameter Name="targetFilePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceEdmSchemaFilePath">The CSDL file path.</param>
+        <param name="targetFilePath">The generated source code file path.</param>
+        <summary>Generates a source code file that contains the objects that were generated from the specified conceptual schema definition language (CSDL) file.</summary>
+        <returns>An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" /> that contains any generated errors.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCode">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateCode (System.Xml.XmlReader sourceEdmSchema, System.IO.TextWriter target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateCode(class System.Xml.XmlReader sourceEdmSchema, class System.IO.TextWriter target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.Xml.XmlReader,System.IO.TextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceEdmSchema" Type="System.Xml.XmlReader" />
+        <Parameter Name="target" Type="System.IO.TextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="sourceEdmSchema">An <see cref="T:System.Xml.XmlReader" /> that contains the CSDL file.</param>
+        <param name="target">The <see cref="T:System.IO.TextWriter" /> to which the source code is written.</param>
+        <summary>Generates source code using the conceptual schema definition language (CSDL) file contained in the <see cref="T:System.Xml.XmlReader" /> object and outputs the generated source code to a <see cref="T:System.IO.TextWriter" />.</summary>
+        <returns>An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" /> that contains any generated errors.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCode">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateCode (string sourceEdmSchemaFilePath, string targetPath, System.Collections.Generic.IEnumerable&lt;string&gt; additionalEdmSchemaFilePaths);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateCode(string sourceEdmSchemaFilePath, string targetPath, class System.Collections.Generic.IEnumerable`1&lt;string&gt; additionalEdmSchemaFilePaths) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceEdmSchemaFilePath" Type="System.String" />
+        <Parameter Name="targetPath" Type="System.String" />
+        <Parameter Name="additionalEdmSchemaFilePaths" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="sourceEdmSchemaFilePath">The CSDL file path.</param>
+        <param name="targetPath">The generated source code file path.</param>
+        <param name="additionalEdmSchemaFilePaths">A list of schema file paths that can be used to resolve any references in the source schema (the CSDL file). If the source schema does not have any dependencies, pass in an empty list.</param>
+        <summary>Generates source code using the specified conceptual schema definition language (CSDL) file. The list of schema file paths is used to resolve any references contained in the CSDL file.</summary>
+        <returns>An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" /> objects that contains any generated errors.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateCode">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateCode (System.Xml.XmlReader sourceEdmSchema, System.IO.TextWriter target, System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt; additionalEdmSchemas);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Data.Metadata.Edm.EdmSchemaError&gt; GenerateCode(class System.Xml.XmlReader sourceEdmSchema, class System.IO.TextWriter target, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; additionalEdmSchemas) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.Xml.XmlReader,System.IO.TextWriter,System.Collections.Generic.IEnumerable{System.Xml.XmlReader})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Data.Metadata.Edm.EdmSchemaError&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceEdmSchema" Type="System.Xml.XmlReader" />
+        <Parameter Name="target" Type="System.IO.TextWriter" />
+        <Parameter Name="additionalEdmSchemas" Type="System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="sourceEdmSchema">An <see cref="T:System.Xml.XmlReader" /> that contains the CSDL file.</param>
+        <param name="target">The <see cref="T:System.IO.TextWriter" /> to which you want to output the generated source code.</param>
+        <param name="additionalEdmSchemas">The list of <see cref="T:System.Xml.XmlReader" /> objects that contain schemas that are referenced by the source schema (the CSDL file). If the source schema does not have any dependencies, pass in an empty <see cref="T:System.Collections.IList" /> object.</param>
+        <summary>Generates source code based on the conceptual schema definition language (CSDL) file in the <see cref="T:System.Xml.XmlReader" /> object, then outputs the generated source code to a <see cref="T:System.IO.TextWriter" />. An <see cref="T:System.Collections.IList" /> of <see cref="T:System.Xml.XmlReader" /> objects is used to resolve any references that are contained in the CSDL file.</summary>
+        <returns>A list of <see cref="T:System.Data.Metadata.Edm.EdmSchemaError" /> objects that contains any generated errors.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LanguageOption">
+      <MemberSignature Language="C#" Value="public System.Data.Entity.Design.LanguageOption LanguageOption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Entity.Design.LanguageOption LanguageOption" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.EntityClassGenerator.LanguageOption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.LanguageOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Data.Entity.Design.LanguageOption" /> value that indicates the language of the generated code.</summary>
+        <value>One of the <see cref="T:System.Data.Entity.Design.LanguageOption" /> values. The default is <see cref="F:System.Data.Entity.Design.LanguageOption.GenerateCSharpCode" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyGenerated">
+      <MemberSignature Language="C#" Value="public event System.Data.Entity.Design.PropertyGeneratedEventHandler OnPropertyGenerated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Data.Entity.Design.PropertyGeneratedEventHandler OnPropertyGenerated" />
+      <MemberSignature Language="DocId" Value="E:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.PropertyGeneratedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a property has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTypeGenerated">
+      <MemberSignature Language="C#" Value="public event System.Data.Entity.Design.TypeGeneratedEventHandler OnTypeGenerated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Data.Entity.Design.TypeGeneratedEventHandler OnTypeGenerated" />
+      <MemberSignature Language="DocId" Value="E:System.Data.Entity.Design.EntityClassGenerator.OnTypeGenerated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Entity.Design.TypeGeneratedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when type information has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

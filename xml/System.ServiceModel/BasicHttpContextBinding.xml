@@ -1,0 +1,132 @@
+<Type Name="BasicHttpContextBinding" FullName="System.ServiceModel.BasicHttpContextBinding">
+  <TypeSignature Language="C#" Value="public class BasicHttpContextBinding : System.ServiceModel.BasicHttpBinding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BasicHttpContextBinding extends System.ServiceModel.BasicHttpBinding" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpContextBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.BasicHttpBinding</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.WorkflowServices, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a context-enabled binding for the <see cref="T:System.ServiceModel.BasicHttpBinding" /> binding.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BasicHttpContextBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpContextBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpContextBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BasicHttpContextBinding (System.ServiceModel.BasicHttpSecurityMode securityMode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.BasicHttpSecurityMode securityMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpContextBinding.#ctor(System.ServiceModel.BasicHttpSecurityMode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="securityMode" Type="System.ServiceModel.BasicHttpSecurityMode" />
+      </Parameters>
+      <Docs>
+        <param name="securityMode">The HTTP security mode.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpContextBinding" /> class with the specified <see cref="T:System.ServiceModel.BasicHttpSecurityMode" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BasicHttpContextBinding (string configName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpContextBinding.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="configName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="configName">The name of the binding configuration.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpContextBinding" /> class with the specified binding configuration.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `configName` parameter should be set to the name of the `<binding>` element in the configuration file that configures this binding.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextManagementEnabled">
+      <MemberSignature Language="C#" Value="public bool ContextManagementEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ContextManagementEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpContextBinding.ContextManagementEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether context management is enabled.</summary>
+        <value>
+          <see langword="true" /> if context management is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBindingElements">
+      <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElementCollection CreateBindingElements ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElementCollection CreateBindingElements() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpContextBinding.CreateBindingElements" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.BindingElementCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an ordered collection of binding elements that are contained in the current binding.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.BindingElementCollection" /> that contains the ordered stack of binding elements described by the <see cref="T:System.ServiceModel.BasicHttpContextBinding" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The collection contains the <xref:System.ServiceModel.Channels.ContextBindingElement> that enables SOAP headers to be used to exchange context when HTTP cookies are not enabled; otherwise use HTTP cookies to exchange context.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

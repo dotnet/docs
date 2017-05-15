@@ -1,0 +1,71 @@
+<Type Name="TextTrimming" FullName="System.Windows.TextTrimming">
+  <TypeSignature Language="C#" Value="public enum TextTrimming" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextTrimming extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.TextTrimming" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Localizability(System.Windows.LocalizationCategory.None, Readability=System.Windows.Readability.Unreadable)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes how text is trimmed when it overflows the edge of its containing box.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CharacterEllipsis">
+      <MemberSignature Language="C#" Value="CharacterEllipsis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextTrimming CharacterEllipsis = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextTrimming.CharacterEllipsis" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextTrimming</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is trimmed at a character boundary. An ellipsis (...) is drawn in place of remaining text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextTrimming None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextTrimming.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextTrimming</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is not trimmed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WordEllipsis">
+      <MemberSignature Language="C#" Value="WordEllipsis" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextTrimming WordEllipsis = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextTrimming.WordEllipsis" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextTrimming</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Text is trimmed at a word boundary. An ellipsis (...) is drawn in place of remaining text.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

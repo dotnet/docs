@@ -1,0 +1,194 @@
+<Type Name="TextMarkerStyle" FullName="System.Windows.TextMarkerStyle">
+  <TypeSignature Language="C#" Value="public enum TextMarkerStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextMarkerStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.TextMarkerStyle" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the appearance of a list item's bullet style.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Documents.List.MarkerStyle%2A> property of a <xref:System.Windows.Documents.List> can be used to define the bullet style for each item in the list. The bullet style can be a graphic element or an alpha-numeric value.  
+  
+   
+  
+## Examples  
+ The following code example shows how to create a <xref:System.Windows.TextMarkerStyle>.  
+  
+ [!code-csharp[TextMarkerStyleSnippets#TextMarkerStyleSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextMarkerStyleSnippets/csharp/window1.xaml.cs#textmarkerstylesnippet1)]
+ [!code-vb[TextMarkerStyleSnippets#TextMarkerStyleSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextMarkerStyleSnippets/visualbasic/window1.xaml.vb#textmarkerstylesnippet1)]
+ [!code-xml[TextMarkerStyleSnippets#TextMarkerStyleSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextMarkerStyleSnippets/csharp/window1.xaml#textmarkerstylesnippet1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Box">
+      <MemberSignature Language="C#" Value="Box" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle Box = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.Box" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A solid square box is displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Circle">
+      <MemberSignature Language="C#" Value="Circle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle Circle = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.Circle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A hollow disc circle is displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Decimal">
+      <MemberSignature Language="C#" Value="Decimal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle Decimal = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.Decimal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A decimal is displayed, starting with the number one, for example, 1, 2, and 3. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disc">
+      <MemberSignature Language="C#" Value="Disc" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle Disc = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.Disc" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A solid disc circle is displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LowerLatin">
+      <MemberSignature Language="C#" Value="LowerLatin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle LowerLatin = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.LowerLatin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A lowercase [!INCLUDE[TLA#tla_ascii](~/includes/tlasharptla-ascii-md.md)] character is displayed, starting with the letter a, for example, a, b, and c. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LowerRoman">
+      <MemberSignature Language="C#" Value="LowerRoman" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle LowerRoman = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.LowerRoman" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A lowercase Roman numeral is displayed, starting with the numeral i, for example, i, ii, iii, and iv. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No marker is displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Square">
+      <MemberSignature Language="C#" Value="Square" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle Square = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.Square" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A hollow square shape is displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpperLatin">
+      <MemberSignature Language="C#" Value="UpperLatin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle UpperLatin = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.UpperLatin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An uppercase [!INCLUDE[TLA2#tla_ascii](~/includes/tla2sharptla-ascii-md.md)] character is displayed, starting with the letter A, for example, A, B, and C. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpperRoman">
+      <MemberSignature Language="C#" Value="UpperRoman" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextMarkerStyle UpperRoman = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.TextMarkerStyle.UpperRoman" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.TextMarkerStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An uppercase Roman numeral is displayed, starting with the numeral I, for example, I, II, III, and IV. The <see cref="T:System.Windows.TextMarkerStyle" /> is automatically incremented for each item added to the list.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

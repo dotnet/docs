@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrTextFieldParser_DelimitersNothing"
 ms.assetid: 94f64c48-8e17-449d-b92a-0426efec879c
 caps.latest.revision: 7
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

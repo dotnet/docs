@@ -1,0 +1,281 @@
+<Type Name="ScrollBarArrowButtonState" FullName="System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState">
+  <TypeSignature Language="C#" Value="public enum ScrollBarArrowButtonState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollBarArrowButtonState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the visual state of a scroll arrow that is drawn with visual styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState> values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.ArrowButton> class. The <xref:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState> values are also used as an argument in the <xref:System.Windows.Forms.ScrollBarRenderer.DrawArrowButton%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DownDisabled">
+      <MemberSignature Language="C#" Value="DownDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState DownDisabled = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.DownDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points down and is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownHot">
+      <MemberSignature Language="C#" Value="DownHot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState DownHot = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.DownHot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points down and is hot.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownNormal">
+      <MemberSignature Language="C#" Value="DownNormal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState DownNormal = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.DownNormal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points down and is normal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownPressed">
+      <MemberSignature Language="C#" Value="DownPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState DownPressed = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.DownPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points down and is pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftDisabled">
+      <MemberSignature Language="C#" Value="LeftDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState LeftDisabled = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.LeftDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points left and is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftHot">
+      <MemberSignature Language="C#" Value="LeftHot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState LeftHot = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.LeftHot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points left and is hot.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftNormal">
+      <MemberSignature Language="C#" Value="LeftNormal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState LeftNormal = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.LeftNormal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points left and is normal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftPressed">
+      <MemberSignature Language="C#" Value="LeftPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState LeftPressed = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.LeftPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points left and is pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightDisabled">
+      <MemberSignature Language="C#" Value="RightDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState RightDisabled = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.RightDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points right and is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightHot">
+      <MemberSignature Language="C#" Value="RightHot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState RightHot = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.RightHot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points right and is hot.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightNormal">
+      <MemberSignature Language="C#" Value="RightNormal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState RightNormal = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.RightNormal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points right and is normal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightPressed">
+      <MemberSignature Language="C#" Value="RightPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState RightPressed = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.RightPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points right and is pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpDisabled">
+      <MemberSignature Language="C#" Value="UpDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState UpDisabled = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.UpDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points up and is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpHot">
+      <MemberSignature Language="C#" Value="UpHot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState UpHot = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.UpHot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points up and is hot.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpNormal">
+      <MemberSignature Language="C#" Value="UpNormal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState UpNormal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.UpNormal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points up and is normal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UpPressed">
+      <MemberSignature Language="C#" Value="UpPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState UpPressed = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState.UpPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll arrow points up and is pressed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

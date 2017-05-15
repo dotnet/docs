@@ -1,0 +1,144 @@
+<Type Name="HttpPostedFileWrapper" FullName="System.Web.HttpPostedFileWrapper">
+  <TypeSignature Language="C#" Value="public class HttpPostedFileWrapper : System.Web.HttpPostedFileBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpPostedFileWrapper extends System.Web.HttpPostedFileBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.HttpPostedFileWrapper" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.HttpPostedFileBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Abstractions, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Encapsulates the HTTP intrinsic object that provides access to individual files that have been uploaded by a client.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpPostedFileWrapper> class derives from the <xref:System.Web.HttpPostedFileBase> class and serves as a wrapper for the <xref:System.Web.HttpPostedFile> class. This class exposes the functionality of the <xref:System.Web.HttpPostedFile> class while also exposing the <xref:System.Web.HttpPostedFileBase> type. The <xref:System.Web.HttpPostedFileBase> class enables you to replace the original implementation of the <xref:System.Web.HttpPostedFile> class in your application with a custom implementation, such as when you perform unit testing outside the ASP.NET pipeline.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpPostedFileWrapper (System.Web.HttpPostedFile httpPostedFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpPostedFile httpPostedFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpPostedFileWrapper.#ctor(System.Web.HttpPostedFile)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="httpPostedFile" Type="System.Web.HttpPostedFile" />
+      </Parameters>
+      <Docs>
+        <param name="httpPostedFile">The object that this wrapper class provides access to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpPostedFileWrapper" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="httpApplicationState" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentLength">
+      <MemberSignature Language="C#" Value="public override int ContentLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ContentLength" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFileWrapper.ContentLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of an uploaded file, in bytes.</summary>
+        <value>The length of the file, in bytes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public override string ContentType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFileWrapper.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the MIME content type of an uploaded file.</summary>
+        <value>The MIME content type of the file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileName">
+      <MemberSignature Language="C#" Value="public override string FileName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFileWrapper.FileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the fully qualified name of the file on the client.</summary>
+        <value>The name of the file on the client, which includes the directory path.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputStream">
+      <MemberSignature Language="C#" Value="public override System.IO.Stream InputStream { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream InputStream" />
+      <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFileWrapper.InputStream" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.IO.Stream" /> object that points to an uploaded file to prepare for reading the contents of the file.</summary>
+        <value>An object for reading a file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAs">
+      <MemberSignature Language="C#" Value="public override void SaveAs (string filename);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SaveAs(string filename) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.HttpPostedFileWrapper.SaveAs(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="filename" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="filename">The name of the file to save.</param>
+        <summary>Saves the contents of an uploaded file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

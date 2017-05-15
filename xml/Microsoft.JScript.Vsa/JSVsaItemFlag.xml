@@ -1,0 +1,77 @@
+<Type Name="JSVsaItemFlag" FullName="Microsoft.JScript.Vsa.JSVsaItemFlag">
+  <TypeSignature Language="C#" Value="public enum JSVsaItemFlag" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JSVsaItemFlag extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.JSVsaItemFlag" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("55BB0B6C-7629-4824-97FF-78A6928E92A7")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies the type of code item as Class, Module, or None.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="Class" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaItemFlag Class = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemFlag.Class" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaItemFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used when the code item is generic or when the item type does not accept flags. In such cases, no special flags are required to create the item.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Module">
+      <MemberSignature Language="C#" Value="Module" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaItemFlag Module = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemFlag.Module" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaItemFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used when the code item is a module.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.JSVsaItemFlag None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.JSVsaItemFlag.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.JSVsaItemFlag</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used when the code item is a class.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,25 @@
+﻿<Window 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1">
+    <!--<Snippet1>-->
+    <StackPanel>
+        <CheckBox Name="IsDocumentEnabledChbk" Content="IsDocumentEnabled"/>
+        <RichTextBox Name="richTB"
+                     IsDocumentEnabled="{Binding ElementName=IsDocumentEnabledChbk,
+                                                 Path=IsChecked}">
+            <FlowDocument>
+                <Paragraph>
+                    Use the Checkbox above to switch between enabling and
+                    disabling the Button and Hyperlink in the RichTextBox.
+                    <Hyperlink>Here is a hyperlink</Hyperlink>
+                </Paragraph>
+                <BlockUIContainer>
+                    <Button>Click me!</Button>
+                </BlockUIContainer>
+
+            </FlowDocument>
+        </RichTextBox>
+    </StackPanel>
+    <!--</Snippet1>-->
+</Window>

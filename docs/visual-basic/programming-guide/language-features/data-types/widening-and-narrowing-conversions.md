@@ -30,8 +30,8 @@ helpviewer_keywords:
   - "conversions, widening"
 ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
 caps.latest.revision: 27
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

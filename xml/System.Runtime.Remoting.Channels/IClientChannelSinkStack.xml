@@ -1,0 +1,95 @@
+<Type Name="IClientChannelSinkStack" FullName="System.Runtime.Remoting.Channels.IClientChannelSinkStack">
+  <TypeSignature Language="C#" Value="public interface IClientChannelSinkStack : System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClientChannelSinkStack implements class System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IClientChannelSinkStack" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides functionality for a stack of client channel sinks that must be invoked during an asynchronous message response decoding.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Channels.IClientChannelSinkStack> is used during processing of responses to asynchronous calls.  
+  
+ During a synchronous call, the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A?displayProperty=fullName> method is called when a message is outbound to the server. Each sink in the sink chain calls the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.ProcessMessage%2A> method on the next sink until the call reaches the transport sink at the end of the chain. From there the message is transported to the server.  
+  
+ When the formatter sink is called through the <xref:System.Runtime.Remoting.Messaging.IMessageSink.AsyncProcessMessage%2A> method, it dispatches the call asynchronously by calling <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessRequest%2A> on the next channel sink. A stack of reply sinks is needed to process the response. Any sink that wants to process the response needs to push itself to the client channel sink stack inside of <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessRequest%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Pop">
+      <MemberSignature Language="C#" Value="public object Pop (System.Runtime.Remoting.Channels.IClientChannelSink sink);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Pop(class System.Runtime.Remoting.Channels.IClientChannelSink sink) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IClientChannelSinkStack.Pop(System.Runtime.Remoting.Channels.IClientChannelSink)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sink" Type="System.Runtime.Remoting.Channels.IClientChannelSink" />
+      </Parameters>
+      <Docs>
+        <param name="sink">The sink to remove and return from the sink stack.</param>
+        <summary>Pops the information associated with all the sinks from the sink stack up to and including the specified sink.</summary>
+        <returns>Information generated on the request side and associated with the specified sink.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Push">
+      <MemberSignature Language="C#" Value="public void Push (System.Runtime.Remoting.Channels.IClientChannelSink sink, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Push(class System.Runtime.Remoting.Channels.IClientChannelSink sink, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IClientChannelSinkStack.Push(System.Runtime.Remoting.Channels.IClientChannelSink,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sink" Type="System.Runtime.Remoting.Channels.IClientChannelSink" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="sink">The sink to push onto the sink stack.</param>
+        <param name="state">Information generated on the request side that is needed on the response side.</param>
+        <summary>Pushes the specified sink and information associated with it onto the sink stack.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The information generated on the request side and specified in the `state` parameter is returned in the `state` parameter of the <xref:System.Runtime.Remoting.Channels.IClientChannelSink.AsyncProcessResponse%2A> method on the corresponding sink.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

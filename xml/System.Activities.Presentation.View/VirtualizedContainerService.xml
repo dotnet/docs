@@ -1,0 +1,180 @@
+<Type Name="VirtualizedContainerService" FullName="System.Activities.Presentation.View.VirtualizedContainerService">
+  <TypeSignature Language="C#" Value="public class VirtualizedContainerService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualizedContainerService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.VirtualizedContainerService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a virtual container service associated with an editing context and design view. The virtual container service is used to customize the UI virtualization behavior.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ UI virtualization is used to render only the areas of the designer canvas that are currently in view, making the designer more responsive and less memory consuming. By default, both procedural and flowchart designers are virtualization aware, but if you were to construct a control flow designer that would be larger than an individual screen, that designer could benefit from virtualization.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_VirtualizedContainerService#0](WFD_VirtualizedContainerService#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VirtualizedContainerService (System.Activities.Presentation.EditingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.EditingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.VirtualizedContainerService.#ctor(System.Activities.Presentation.EditingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.Activities.Presentation.EditingContext" /> for the service.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.View.VirtualizedContainerService" /> class with a specific editing context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContainer">
+      <MemberSignature Language="C#" Value="public System.Windows.UIElement GetContainer (System.Activities.Presentation.Model.ModelItem modelItem, System.Activities.Presentation.ICompositeView sourceContainer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.UIElement GetContainer(class System.Activities.Presentation.Model.ModelItem modelItem, class System.Activities.Presentation.ICompositeView sourceContainer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.VirtualizedContainerService.GetContainer(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.ICompositeView)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.UIElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="sourceContainer" Type="System.Activities.Presentation.ICompositeView" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> associated with the container.</param>
+        <param name="sourceContainer">The <see cref="T:System.Activities.Presentation.ICompositeView" /> that is associated with the model item.</param>
+        <summary>Gets a container and associates it with a specified model item and returns a UI element that represents the association.</summary>
+        <returns>The <see cref="T:System.Windows.UIElement" /> that represents the container associated with the model item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHintSize">
+      <MemberSignature Language="C#" Value="public static object GetHintSize (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetHintSize(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.VirtualizedContainerService.GetHintSize(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The property store.</param>
+        <summary>Attempts to get a value for the Hint Size Name property.</summary>
+        <returns>The destination <see cref="T:System.Object" /> for the value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.View.VirtualizedContainerService.GetHintSize%2A> does not throw an exception if the property is not found in the store.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetViewElement">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.WorkflowViewElement GetViewElement (System.Activities.Presentation.Model.ModelItem modelItem, System.Activities.Presentation.ICompositeView sourceContainer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Presentation.WorkflowViewElement GetViewElement(class System.Activities.Presentation.Model.ModelItem modelItem, class System.Activities.Presentation.ICompositeView sourceContainer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.VirtualizedContainerService.GetViewElement(System.Activities.Presentation.Model.ModelItem,System.Activities.Presentation.ICompositeView)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.WorkflowViewElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelItem" Type="System.Activities.Presentation.Model.ModelItem" />
+        <Parameter Name="sourceContainer" Type="System.Activities.Presentation.ICompositeView" />
+      </Parameters>
+      <Docs>
+        <param name="modelItem">The underlying model item of the workflow view element to get.</param>
+        <param name="sourceContainer">The drag source dependency property value to set for the workflow view element.</param>
+        <summary>Returns the workflow view element that corresponds to the specified model item.</summary>
+        <returns>The workflow view element that corresponds to the specified model item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HintSizeName">
+      <MemberSignature Language="C#" Value="public static readonly System.Xaml.AttachableMemberIdentifier HintSizeName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xaml.AttachableMemberIdentifier HintSizeName" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.VirtualizedContainerService.HintSizeName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.AttachableMemberIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides a XAML type system identifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier is a string that consists of the <xref:System.Activities.Presentation.View.VirtualizedContainerService> type plus "HintSize".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHintSize">
+      <MemberSignature Language="C#" Value="public static void SetHintSize (object instance, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetHintSize(object instance, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.VirtualizedContainerService.SetHintSize(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The property store.</param>
+        <param name="value">The value set.</param>
+        <summary>Attempts to set a value for the Hint Size Name property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method parses the assigned `value` into a <xref:System.Windows.Size> object; therefore the string must be formatted using en-us culture.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

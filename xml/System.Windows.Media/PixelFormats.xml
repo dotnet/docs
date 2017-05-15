@@ -1,0 +1,836 @@
+<Type Name="PixelFormats" FullName="System.Windows.Media.PixelFormats">
+  <TypeSignature Language="C#" Value="public static class PixelFormats" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PixelFormats extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.PixelFormats" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the collection of supported pixel formats.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bgr101010">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgr101010 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgr101010" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgr101010" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Bgr101010" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Bgr101010" /> is a sRGB format with 32 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel (blue, green, and red) is allocated 10 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)].</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgr101010" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Bgr101010"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Bgr101010"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bgr24">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgr24 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgr24" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgr24" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Bgr24" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Bgr24" /> is a sRGB format with 24 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel (blue, green, and red) is allocated 8 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)].</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgr24" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This format uses 24 bits of data per pixel (8 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)] for each of the three primary colors blue, green, and red). This translates to 256 shades of each primary color to provide up to 16 million colors for each image. To display <xref:System.Windows.Media.PixelFormats.Bgr24%2A> images, the monitor and controller must be capable of displaying at least 32,000 colors.  
+  
+<a name="xamlAttributeUsage_Bgr24"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Bgr24"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bgr32">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgr32 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgr32" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgr32" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Bgr32" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Bgr32" /> is a sRGB format with 32 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel (blue, green, and red) is allocated 8 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)].</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgr32" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Bgr32"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Bgr32"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bgr555">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgr555 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgr555" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgr555" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Bgr555" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Bgr555" /> is a sRGB format with 16 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel (blue, green, and red) is allocated 5 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)].</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgr555" /> pixel format</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Bgr555"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Bgr555"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bgr565">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgr565 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgr565" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgr565" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Bgr565" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Bgr565" /> is a sRGB format with 16 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel (blue, green, and red) is allocated 5, 6, and 5 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)] respectively.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgr565" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Bgr565"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Bgr565"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bgra32">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Bgra32 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Bgra32" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Bgra32" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Bgra32" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Bgra32" /> is a sRGB format with 32 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each channel (blue, green, red, and alpha) is allocated 8 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)].</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Bgra32" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Bgra32"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Bgra32"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlackWhite">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat BlackWhite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat BlackWhite" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.BlackWhite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the black and white pixel format which displays one bit of data per pixel as either black or white.</summary>
+        <value>The pixel format Black-and-White.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_BlackWhite"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="BlackWhite"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cmyk32">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Cmyk32 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Cmyk32" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Cmyk32" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Cmyk32" /> pixel format which displays 32 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)] with each color channel (cyan, magenta, yellow, and black) allocated 8 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)].</summary>
+        <value>The CMYK32 pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The CMYK color system is often used in printing inks for paper. This type of color representation is of the form cmyk (C%, M%, Y%, K%), where C, M, Y, and K are the percent values for the cyan, magenta, yellow, and black values of the color.  
+  
+<a name="xamlAttributeUsage_Cmyk32"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Cmyk32"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Default" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the pixel format that is best suited for the particular operation.</summary>
+        <value>The <see cref="T:System.Windows.Media.PixelFormat" /> best suited for the particular operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.PixelFormats.Default%2A> is technically not a pixel format but rather a way to access the pixel format best suited for a particular operation. This format is used for situations where the specific pixel format is not important.  
+  
+<a name="xamlAttributeUsage_Default"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Default"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Windows.Media.PixelFormat" /> properties are accessed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray16">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Gray16 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Gray16" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Gray16" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Gray16" /> pixel format which displays a 16 bits-per-pixel grayscale channel, allowing 65536 shades of gray. This format has a gamma of 1.0.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Gray16" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Gray16"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Gray16"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray2">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Gray2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Gray2" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Gray2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Gray2" /> pixel format which displays a 2 bits-per-pixel grayscale channel, allowing 4 shades of gray.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Gray2" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Gray2"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Gray2"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray32Float">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Gray32Float { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Gray32Float" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Gray32Float" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Gray32Float" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Gray32Float" /> displays a 32 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)] grayscale channel, allowing over 4 billion shades of gray. This format has a gamma of 1.0.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Gray32Float" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Gray32Float"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Gray32Float"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray4">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Gray4 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Gray4" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Gray4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Gray4" /> pixel format which displays a 4 bits-per-pixel grayscale channel, allowing 16 shades of gray.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Gray4" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Gray4"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Gray4"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Gray8">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Gray8 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Gray8" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Gray8" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Gray8" /> pixel format which displays an 8 bits-per-pixel grayscale channel, allowing 256 shades of gray.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Gray8" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Gray8"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Gray8"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indexed1">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Indexed1 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Indexed1" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Indexed1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the pixel format specifying a paletted bitmap with 2 colors.</summary>
+        <value>The pixel format which specifying a paletted bitmap with 2 colors.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed1%2A> pixel format has 2 colors available in the table.  
+  
+<a name="xamlAttributeUsage_Indexed1"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Indexed1"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indexed2">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Indexed2 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Indexed2" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Indexed2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the pixel format specifying a paletted bitmap with 4 colors.</summary>
+        <value>The pixel format which specifying a paletted bitmap with 4 colors.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed2%2A> pixel format has 4 colors available in the table.  
+  
+<a name="xamlAttributeUsage_Indexed2"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Indexed2"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indexed4">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Indexed4 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Indexed4" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Indexed4" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the pixel format specifying a paletted bitmap with 16 colors.</summary>
+        <value>The pixel format which specifying a paletted bitmap with 16 colors.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed4%2A> pixel format has 16 colors available in the table.  
+  
+<a name="xamlAttributeUsage_Indexed4"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Indexed4"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indexed8">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Indexed8 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Indexed8" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Indexed8" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the pixel format specifying a paletted bitmap with 256 colors.</summary>
+        <value>The pixel format which specifying a paletted bitmap with 256 colors.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Paletted images use a color table which determines the color usage for the image. Each pixel in the image is mapped to a particular color in the table, or palette. Each color in the palette is identified by its index number, or value, which corresponds to its position in the table. The <xref:System.Windows.Media.PixelFormats.Indexed8%2A> pixel format has 256 colors available in the table.  
+  
+<a name="xamlAttributeUsage_Indexed8"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Indexed8"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pbgra32">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Pbgra32 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Pbgra32" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Pbgra32" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Pbgra32" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Pbgra32" /> is a sRGB format with 32 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each channel (blue, green, red, and alpha) is allocated 8 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel is pre-multiplied by the alpha value.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Pbgra32" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Pbgra32"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Pbgra32"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prgba128Float">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Prgba128Float { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Prgba128Float" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Prgba128Float" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Prgba128Float" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Prgba128Float" /> is a ScRGB format with 128 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each channel (red, green, blue, and alpha) is allocated 32 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel is pre-multiplied by the alpha value. This format has a gamma of 1.0.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Prgba128Float" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Prgba128Float"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Prgba128Float"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prgba64">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Prgba64 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Prgba64" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Prgba64" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Prgba64" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Prgba64" /> is a sRGB format with 64 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each channel (blue, green, red, and alpha) is allocated 32 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel is pre-multiplied by the alpha value. This format has a gamma of 1.0.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Prgba64" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Prgba64"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Prgba64"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb128Float">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Rgb128Float { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Rgb128Float" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Rgb128Float" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Rgb128Float" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Rgb128Float" /> is a ScRGB format with 128 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel is allocated 32 [!INCLUDE[tla2#tla_bpp](~/includes/tla2sharptla-bpp-md.md)]. This format has a gamma of 1.0.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Rgb128Float" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Rgb128Float"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Rgb128Float"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb24">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Rgb24 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Rgb24" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Rgb24" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Rgb24" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Rgb24" /> is a sRGB format with 24 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel (red, green, and blue) is allocated 8 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)].</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Rgb24" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This format uses 24 bits of data per pixel (8 bits per pixel for each of the three primary colors red, green, and blue). This translates to 256 shades of each primary color to provide up to 16 million colors for each image.  
+  
+ An <xref:System.Windows.Media.PixelFormats.Rgb24%2A> image is the same as a <xref:System.Windows.Media.PixelFormats.Bgr24%2A> image, but the color channels (red, green, and blue) are in a different order.  
+  
+<a name="xamlAttributeUsage_Rgb24"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Rgb24"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgb48">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Rgb48 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Rgb48" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Rgb48" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Rgb48" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Rgb48" /> is a sRGB format with 48 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel (red, green, and blue) is allocated 16 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. This format has a gamma of 1.0.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Rgb48" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Rgb48"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Rgb48"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgba128Float">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Rgba128Float { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Rgba128Float" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Rgba128Float" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Rgba128Float" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Rgba128Float" /> is a ScRGB format with 128 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each color channel is allocated 32 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. This format has a gamma of 1.0.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Rgba128Float" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Rgba128Float"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Rgba128Float"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rgba64">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.PixelFormat Rgba64 { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.PixelFormat Rgba64" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.PixelFormats.Rgba64" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.PixelFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Windows.Media.PixelFormats.Rgba64" /> pixel format. <see cref="P:System.Windows.Media.PixelFormats.Rgba64" /> is an sRGB format with 64 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. Each channel (red, green, blue, and alpha) is allocated 16 [!INCLUDE[tla#tla_bpp](~/includes/tlasharptla-bpp-md.md)]. This format has a gamma of 1.0.</summary>
+        <value>The <see cref="P:System.Windows.Media.PixelFormats.Rgba64" /> pixel format.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlAttributeUsage_Rgba64"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object property="Rgba64"/>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

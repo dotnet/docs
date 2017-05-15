@@ -1,0 +1,151 @@
+<Type Name="ImageClickEventArgs" FullName="System.Web.UI.ImageClickEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ImageClickEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImageClickEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ImageClickEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for any events that occur when a user clicks an image-based ASP.NET server control, such as the <see cref="T:System.Web.UI.HtmlControls.HtmlInputImage" /> or <see cref="T:System.Web.UI.WebControls.ImageButton" /> server controls. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class passes the location where a user clicked an <xref:System.Web.UI.HtmlControls.HtmlInputImage> server control or an <xref:System.Web.UI.WebControls.ImageButton> Web server control. Clicking an <xref:System.Web.UI.HtmlControls.HtmlInputImage> server control causes a <xref:System.Web.UI.HtmlControls.HtmlInputImage.ServerClick> event to occur, while clicking an <xref:System.Web.UI.WebControls.ImageButton> server control causes a <xref:System.Web.UI.WebControls.ImageButton.Click> event to occur. You can then use event handlers to programmatically respond to the event based on the value of these coordinates.  
+  
+> [!NOTE]
+>  The origin coordinates (0,0) are located at the upper left corner of the image.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates an ASP.NET page that uses the information provided by this class to display the coordinates of a user's click on an image.  
+  
+ [!code-csharp[SystemWebUI.ImageClickEventArgs Sample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI.ImageClickEventArgs Sample/CS/imageclickeventargscs.aspx#1)]
+ [!code-vb[SystemWebUI.ImageClickEventArgs Sample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI.ImageClickEventArgs Sample/VB/imageclickeventargsvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImageClickEventArgs (int x, int y);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 x, int32 y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ImageClickEventArgs.#ctor(System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="x">The x-coordinate where the user clicked an image-based ASP.NET server control.</param>
+        <param name="y">The y-coordinate where the user clicked an image-based ASP.NET server control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ImageClickEventArgs" /> class using the <paramref name="x" /> and <paramref name="y" /> parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImageClickEventArgs (int x, int y, double xRaw, double yRaw);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 x, int32 y, float64 xRaw, float64 yRaw) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ImageClickEventArgs.#ctor(System.Int32,System.Int32,System.Double,System.Double)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="xRaw" Type="System.Double" />
+        <Parameter Name="yRaw" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="x">The x-coordinate where a user clicked an image-based ASP.NET server control.</param>
+        <param name="y">The y-coordinate where a user clicked an image-based ASP.NET server control.</param>
+        <param name="xRaw">The raw x-coordinate where a user clicked an image-based ASP.NET server control.</param>
+        <param name="yRaw">The raw y-coordinate where a user clicked an image-based ASP.NET server control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ImageClickEventArgs" /> class using the <paramref name="x" />, <paramref name="y" />, <paramref name="xRaw" />, and <paramref name="yRaw" /> parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="public int X;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 X" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ImageClickEventArgs.X" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integer that represents the x-coordinate where a user clicked an image-based ASP.NET server control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XRaw">
+      <MemberSignature Language="C#" Value="public double XRaw;" />
+      <MemberSignature Language="ILAsm" Value=".field public float64 XRaw" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ImageClickEventArgs.XRaw" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integer that represents the raw x-coordinate where a user clicked an image-based ASP.NET server control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="public int Y;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 Y" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ImageClickEventArgs.Y" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integer that represents the y-coordinate where a user clicked an image-based ASP.NET server control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YRaw">
+      <MemberSignature Language="C#" Value="public double YRaw;" />
+      <MemberSignature Language="ILAsm" Value=".field public float64 YRaw" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.ImageClickEventArgs.YRaw" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An integer that represents the raw y-coordinate where a user clicked an image-based ASP.NET server control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

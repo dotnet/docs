@@ -1,0 +1,89 @@
+<Type Name="CallType" FullName="Microsoft.VisualBasic.CallType">
+  <TypeSignature Language="C#" Value="public enum CallType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CallType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CallType" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the type of procedure being invoked when calling the <see langword="CallByName" /> function.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call the `CallByName` function, you can use the following `CallType` enumeration members in your code in place of the actual values. The `UseCallType` argument takes the `CallType` enumeration members.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="Get" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.CallType Get = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CallType.Get" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.CallType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A property value is being retrieved.  This member is equivalent to the Visual Basic constant <see langword="vbGet" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Let">
+      <MemberSignature Language="C#" Value="Let" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.CallType Let = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CallType.Let" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.CallType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An Object property value is being determined. This member is equivalent to the Visual Basic constant <see langword="vbLet" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="Method" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.CallType Method = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CallType.Method" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.CallType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A method is being invoked.  This member is equivalent to the Visual Basic constant <see langword="vbMethod" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="Set" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.CallType Set = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.CallType.Set" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.CallType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A property value is being determined.  This member is equivalent to the Visual Basic constant <see langword="vbSet" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

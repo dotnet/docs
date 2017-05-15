@@ -1,0 +1,38 @@
+<Type Name="WSHttpBindingCollectionElement" FullName="System.ServiceModel.Configuration.WSHttpBindingCollectionElement">
+  <TypeSignature Language="C#" Value="public class WSHttpBindingCollectionElement : System.ServiceModel.Configuration.StandardBindingCollectionElement&lt;System.ServiceModel.WSHttpBinding,System.ServiceModel.Configuration.WSHttpBindingElement&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSHttpBindingCollectionElement extends System.ServiceModel.Configuration.StandardBindingCollectionElement`2&lt;class System.ServiceModel.WSHttpBinding, class System.ServiceModel.Configuration.WSHttpBindingElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSHttpBindingCollectionElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.StandardBindingCollectionElement&lt;System.ServiceModel.WSHttpBinding,System.ServiceModel.Configuration.WSHttpBindingElement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TStandardBinding">System.ServiceModel.WSHttpBinding</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TBindingConfiguration">System.ServiceModel.Configuration.WSHttpBindingElement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a configuration element that contains sub-elements that specify settings for using the wsHttpBinding binding.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSHttpBindingCollectionElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpBindingCollectionElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WSHttpBindingCollectionElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

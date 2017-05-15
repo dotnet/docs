@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "validation, strings"
 ms.assetid: 9a1acf9b-7e2c-40cb-bba4-656ee2bc2ed0
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -54,4 +54,4 @@ This section discusses how to validate strings in [!INCLUDE[vbprvb](../../../../
   
 ## See Also  
  [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)   
- [MaskedTextBox Control](http://msdn.microsoft.com/library/235d6121-027d-481d-8d59-4f6794d15d0c)
+ [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)

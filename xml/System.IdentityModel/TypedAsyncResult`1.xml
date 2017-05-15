@@ -1,0 +1,158 @@
+<Type Name="TypedAsyncResult&lt;T&gt;" FullName="System.IdentityModel.TypedAsyncResult&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class TypedAsyncResult&lt;T&gt; : System.IdentityModel.AsyncResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TypedAsyncResult`1&lt;T&gt; extends System.IdentityModel.AsyncResult" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.TypedAsyncResult`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.IdentityModel.AsyncResult</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of the result.</typeparam>
+    <summary>A concrete implementation of <see cref="T:System.IdentityModel.AsyncResult" /> that will wrap the result <see cref="T:System.Type" /> and return it when the <see cref="M:System.IdentityModel.TypedAsyncResult`1.End(System.IAsyncResult)" /> method is called.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypedAsyncResult (object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="state">A user-defined object that qualifies or contains information about an asynchronous operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.TypedAsyncResult`1" /> class that has a state object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor if your <xref:System.IdentityModel.TypedAsyncResult%601> instance does not need a callback delegate.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypedAsyncResult (AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.#ctor(System.AsyncCallback,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The method to be called when the asynchronous operation completes.</param>
+        <param name="state">A user-defined object that qualifies or contains information about an asynchronous operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.TypedAsyncResult`1" /> class that has a callback delegate and a state object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Complete">
+      <MemberSignature Language="C#" Value="public void Complete (T result, bool completedSynchronously);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete(!T result, bool completedSynchronously) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.Complete(`0,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="T" />
+        <Parameter Name="completedSynchronously" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="result">The result to be wrapped.</param>
+        <param name="completedSynchronously">
+          <see langword="true" /> if the asynchronous operation completed synchronously; otherwise <see langword="false" />.</param>
+        <summary>Call this version of complete when your asynchronous operation is complete and no exception was encountered. It updates the state of the operation and notifies the callback.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Complete">
+      <MemberSignature Language="C#" Value="public void Complete (T result, bool completedSynchronously, Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Complete(!T result, bool completedSynchronously, class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.Complete(`0,System.Boolean,System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="T" />
+        <Parameter Name="completedSynchronously" Type="System.Boolean" />
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="result">The result to be wrapped.</param>
+        <param name="completedSynchronously">
+          <see langword="true" /> if the asynchronous operation completed synchronously; otherwise <see langword="false" />.</param>
+        <param name="exception">The exception that occurred during the processing of the asynchronous operation.</param>
+        <summary>Call this version of complete if you raise an exception during processing. In addition to notifying the callback, it captures the exception and stores it to be thrown during the call to the <see cref="M:System.IdentityModel.TypedAsyncResult`1.End(System.IAsyncResult)" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="public static T End (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !T End(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.TypedAsyncResult`1.End(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">The <see cref="T:System.IAsyncResult" /> representing the status of an asynchronous operation.</param>
+        <summary>End should be called when the End function for the asynchronous operation is complete. It ensures the asynchronous operation is complete, and does some common validation.</summary>
+        <returns>The typed result of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public T Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Result" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.TypedAsyncResult`1.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the typed result of the completed asynchronous operation.</summary>
+        <value>The typed result of the completed asynchronous operation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

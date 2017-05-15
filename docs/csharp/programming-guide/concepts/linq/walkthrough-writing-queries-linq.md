@@ -199,7 +199,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
   
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
   
- [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17)  
+ [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
   
  [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml.md)  
   

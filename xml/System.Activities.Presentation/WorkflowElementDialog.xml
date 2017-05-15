@@ -1,0 +1,412 @@
+<Type Name="WorkflowElementDialog" FullName="System.Activities.Presentation.WorkflowElementDialog">
+  <TypeSignature Language="C#" Value="public class WorkflowElementDialog : System.Windows.Controls.ContentControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowElementDialog extends System.Windows.Controls.ContentControl" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowElementDialog" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.ContentControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a dialog box for the workflow element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.WorkflowElementDialog> is a base type providing a set of methods and services that enable a dialog box to be displayed on the designer surface in a modal fashion in order to obtain input from a user. Examples of this in [!INCLUDE[wf2](~/includes/wf2-md.md)] include the dynamic argument designer that enables dynamic arguments to be manipulated and the <xref:System.Activities.Statements.FlowSwitch> case editor. Custom activity designer authors are encouraged to use the <xref:System.Activities.Presentation.WorkflowElementDialog> rather than their own dialog mechanisms to provide a common way to handle this display.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WorkflowElementDialog ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.WorkflowElementDialog" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.EditingContext Context { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.EditingContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.EditingContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the editing context associated with this dialog box.</summary>
+        <value>Returns <see cref="T:System.Activities.Presentation.EditingContext" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContextProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowElementDialog.ContextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowElementDialog.Context" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableMaximizeButton">
+      <MemberSignature Language="C#" Value="public bool EnableMaximizeButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableMaximizeButton" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.EnableMaximizeButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that determines whether the maximize button is enabled.</summary>
+        <value>
+          <see langword="true" /> if the maximize button is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableMinimizeButton">
+      <MemberSignature Language="C#" Value="public bool EnableMinimizeButton { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableMinimizeButton" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.EnableMinimizeButton" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that determines whether the minimize button is enabled.</summary>
+        <value>
+          <see langword="true" /> if the minimize button is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableOk">
+      <MemberSignature Language="C#" Value="protected void EnableOk (bool enabled);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EnableOk(bool enabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.EnableOk(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="enabled" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="enabled">The **OK** button is enabled if this is <see langword="true" />; otherwise, it is disabled.</param>
+        <summary>Enables or disables the **OK** button of the dialog based on the specified value.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpKeyword">
+      <MemberSignature Language="C#" Value="public string HelpKeyword { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpKeyword" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.HelpKeyword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the keyword used to display the F1 help topic related to the dialog.</summary>
+        <value>Returns a<see cref="T:System.String" /> that contains the keyword.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelItem">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem ModelItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItem ModelItem" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.ModelItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> associated with this dialog box.</summary>
+        <value>Returns <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelItemProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ModelItemProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ModelItemProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowElementDialog.ModelItemProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowElementDialog.ModelItem" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInitialized">
+      <MemberSignature Language="C#" Value="protected override void OnInitialized (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitialized(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.OnInitialized(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Contains event data.</param>
+        <summary>Raises the Initialized event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnModelItemChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnModelItemChanged (object newItem);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnModelItemChanged(object newItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.OnModelItemChanged(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="newItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="newItem">The new <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</param>
+        <summary>When overridden in a derived class, occurs when the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> is changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnWorkflowElementDialogClosed">
+      <MemberSignature Language="C#" Value="protected virtual void OnWorkflowElementDialogClosed (Nullable&lt;bool&gt; dialogResult);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWorkflowElementDialogClosed(valuetype System.Nullable`1&lt;bool&gt; dialogResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.OnWorkflowElementDialogClosed(System.Nullable{System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialogResult" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="dialogResult">A Boolean value that indicates how the dialog was closed by the user.</param>
+        <summary>When overridden in a derived class, performs cleanup operations when the dialog is closed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyObject Owner { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject Owner" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the owner of this dialog box.</summary>
+        <value>Returns <see cref="T:System.Windows.DependencyObject" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public void Show ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.Show" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays the dialog window.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowOkCancel">
+      <MemberSignature Language="C#" Value="public bool ShowOkCancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShowOkCancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.ShowOkCancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays the dialog with **OK** and **Cancel** buttons and returns after the dialog is closed.</summary>
+        <returns>
+          <see langword="true" /> if the user accepted the dialog; <see langword="false" /> if the user cancelled the dialog.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Title">
+      <MemberSignature Language="C#" Value="public string Title { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Title" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.Title" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the title of this dialog box.</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TitleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TitleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TitleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowElementDialog.TitleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowElementDialog.Title" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowResizeMode">
+      <MemberSignature Language="C#" Value="public System.Windows.ResizeMode WindowResizeMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.ResizeMode WindowResizeMode" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.WindowResizeMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.ResizeMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the resize mode of the window.</summary>
+        <value>Returns a <see cref="T:System.Windows.ResizeMode" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowResizeModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WindowResizeModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WindowResizeModeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowElementDialog.WindowResizeModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowElementDialog.WindowResizeMode" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowSizeToContent">
+      <MemberSignature Language="C#" Value="public System.Windows.SizeToContent WindowSizeToContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.SizeToContent WindowSizeToContent" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.WindowSizeToContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.SizeToContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a window will automatically size itself to fit the size of its content.</summary>
+        <value>Returns a <see cref="T:System.Windows.SizeToContent" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowSizeToContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WindowSizeToContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WindowSizeToContentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowElementDialog.WindowSizeToContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Activities.Presentation.WorkflowElementDialog.WindowSizeToContent" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

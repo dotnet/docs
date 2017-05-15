@@ -1,0 +1,74 @@
+<Type Name="SessionOpenNotification" FullName="System.ServiceModel.Channels.SessionOpenNotification">
+  <TypeSignature Language="C#" Value="public abstract class SessionOpenNotification" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SessionOpenNotification extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.SessionOpenNotification" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an open session notification used to update message properties.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected SessionOpenNotification ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SessionOpenNotification.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.ServiceModel.Channels.SessionOpenNotification" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public abstract bool IsEnabled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.SessionOpenNotification.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether notification is enabled.</summary>
+        <value>
+          <see langword="true" /> if notification is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateMessageProperties">
+      <MemberSignature Language="C#" Value="public abstract void UpdateMessageProperties (System.ServiceModel.Channels.MessageProperties inboundMessageProperties);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateMessageProperties(class System.ServiceModel.Channels.MessageProperties inboundMessageProperties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.SessionOpenNotification.UpdateMessageProperties(System.ServiceModel.Channels.MessageProperties)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inboundMessageProperties" Type="System.ServiceModel.Channels.MessageProperties" />
+      </Parameters>
+      <Docs>
+        <param name="inboundMessageProperties">The message properties to update.</param>
+        <summary>Updates the message properties.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,274 @@
+<Type Name="ObjectDesignerDataSourceView" FullName="System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView">
+  <TypeSignature Language="C#" Value="public class ObjectDesignerDataSourceView : System.Web.UI.Design.DesignerDataSourceView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectDesignerDataSourceView extends System.Web.UI.Design.DesignerDataSourceView" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.DesignerDataSourceView</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the design-time view that is associated with the <see cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ObjectDataSource> control represents a data source that calls methods of a business object in order to perform the Delete, Insert, Select, and Update database-type operations.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> class provides design-time support for the <xref:System.Web.UI.WebControls.ObjectDataSource> control in a visual designer. An <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView> object provides members that indicate whether various database-type operations can be performed and that return schema and design-time data.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanInsert%2A>, <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanUpdate%2A>, and <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanDelete%2A> properties indicate whether the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control can perform the corresponding database-type operations.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanSort%2A> property, which is always `true`, indicates that the associated control can sort rows. The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanPage%2A> and <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanRetrieveTotalRowCount%2A> properties, which are always `false`, indicate that the associated control cannot perform server paging and cannot return the total number of rows in a query, respectively.  
+  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.Schema%2A> property gets a schema that describes the data source view that is represented by this view object. The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.GetDesignTimeData%2A> method generates design-time data that matches the schema of the associated control.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObjectDesignerDataSourceView (System.Web.UI.Design.WebControls.ObjectDataSourceDesigner owner, string viewName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.WebControls.ObjectDataSourceDesigner owner, string viewName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.#ctor(System.Web.UI.Design.WebControls.ObjectDataSourceDesigner,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" />
+        <Parameter Name="viewName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="owner">The <see cref="T:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner" /> that owns this <see cref="T:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView" /> object.</param>
+        <param name="viewName">A string containing the name of this <see cref="T:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView" /> object.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework creates a new instance of the <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView> class when requested by the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner.GetView%2A> method of the <xref:System.Web.UI.Design.WebControls.ObjectDataSourceDesigner> object that is associated with the <xref:System.Web.UI.WebControls.ObjectDataSource> control on the visual designer surface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanDelete">
+      <MemberSignature Language="C#" Value="public override bool CanDelete { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanDelete" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanDelete" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated data source control as it is currently configured can perform a Delete operation.</summary>
+        <value>
+          <see langword="true" /> if the associated <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> can perform a Delete operation; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanDelete%2A> property returns `true` if the <xref:System.Web.UI.WebControls.ObjectDataSource.DeleteMethod%2A> property of the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control contains a value other than the empty string ("").  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanInsert">
+      <MemberSignature Language="C#" Value="public override bool CanInsert { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanInsert" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanInsert" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated data source control as it is currently configured can perform an Insert operation.</summary>
+        <value>
+          <see langword="true" /> if the associated <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> can perform an Insert operation; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanInsert%2A> property returns `true` if the <xref:System.Web.UI.WebControls.ObjectDataSource.InsertMethod%2A> property of the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control contains a value other than the empty string ("").  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanPage">
+      <MemberSignature Language="C#" Value="public override bool CanPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanPage" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanPage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated data source control can perform server-based paging.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanPage%2A> property indicates that <xref:System.Web.UI.WebControls.ObjectDataSource> controls cannot perform server-based paging.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRetrieveTotalRowCount">
+      <MemberSignature Language="C#" Value="public override bool CanRetrieveTotalRowCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRetrieveTotalRowCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanRetrieveTotalRowCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated data source control can return the total number of rows that are returned by a query.</summary>
+        <value>Always <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanRetrieveTotalRowCount%2A> property indicates that <xref:System.Web.UI.WebControls.ObjectDataSource> controls cannot return result-set row counts.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSort">
+      <MemberSignature Language="C#" Value="public override bool CanSort { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanSort" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanSort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated data source control can sort rows.</summary>
+        <value>Always <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanSort%2A> property indicates that <xref:System.Web.UI.WebControls.ObjectDataSource> controls can sort result-set rows. The <xref:System.Web.UI.WebControls.ObjectDataSource.SortParameterName%2A> property specifies the parameter in the collection that is referenced by the <xref:System.Web.UI.WebControls.ObjectDataSource.SelectParameters%2A> property that is used to define the sort expression.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUpdate">
+      <MemberSignature Language="C#" Value="public override bool CanUpdate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanUpdate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanUpdate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the associated data source control as it is currently configured can perform an Update operation.</summary>
+        <value>
+          <see langword="true" /> if the associated <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> can perform an Update operation; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.CanUpdate%2A> property returns `true` if the <xref:System.Web.UI.WebControls.ObjectDataSource.UpdateMethod%2A> property of the associated <xref:System.Web.UI.WebControls.ObjectDataSource> control contains a value other than the empty string ("").  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeData">
+      <MemberSignature Language="C#" Value="public override System.Collections.IEnumerable GetDesignTimeData (int minimumRows, out bool isSampleData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerable GetDesignTimeData(int32 minimumRows, bool isSampleData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="minimumRows" Type="System.Int32" />
+        <Parameter Name="isSampleData" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="minimumRows">An integer containing the minimum number of rows to retrieve.</param>
+        <param name="isSampleData">A value indicating whether the data returned is sample data or real data.</param>
+        <summary>Generates design-time data that matches the schema of the associated data source control.</summary>
+        <returns>A sample of the data represented by the associated <see cref="T:System.Web.UI.WebControls.ObjectDataSource" /> or <see langword="null" /> if the designer cannot generate any sample data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.GetDesignTimeData%2A> method provides a design-time version of the <xref:System.Web.UI.WebControls.ObjectDataSource> view for use by the associated data-bound control designer.  
+  
+ It is not expected that the designer will perform actual data access at design-time time. Instead, the designer creates sample data that matches the schema of the data source.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schema">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.Design.IDataSourceViewSchema Schema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IDataSourceViewSchema Schema" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.Schema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.IDataSourceViewSchema</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a schema that describes the data source view that is represented by this view object.</summary>
+        <value>An object implementing the <see cref="T:System.Web.UI.Design.IDataSourceViewSchema" /> that describes the view and the properties of the objects in the list or <see langword="null" /> if the schema is unavailable.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.Schema%2A> property gets the schema tables from the associated designer. If any <xref:System.Data.DataTable> objects are returned, the schema selects the <xref:System.Data.DataTable> with the same <xref:System.Data.DataTable.TableName%2A> property as this view object, or it selects the first <xref:System.Data.DataTable> if this view has no name. The <xref:System.Web.UI.Design.WebControls.ObjectDesignerDataSourceView.Schema%2A> then creates and returns a <xref:System.Web.UI.Design.DataSetViewSchema> object from the selected <xref:System.Data.DataTable>.  
+  
+ This allows the designer of a data-bound control to provide relevant choices based on the design-time data source view that is selected for data binding.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,349 @@
+<Type Name="RootProfilePropertySettingsCollection" FullName="System.Web.Configuration.RootProfilePropertySettingsCollection">
+  <TypeSignature Language="C#" Value="public sealed class RootProfilePropertySettingsCollection : System.Web.Configuration.ProfilePropertySettingsCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RootProfilePropertySettingsCollection extends System.Web.Configuration.ProfilePropertySettingsCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RootProfilePropertySettingsCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Configuration.ProfilePropertySettingsCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Web.Configuration.ProfilePropertySettings))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Acts as the top of a two-level named hierarchy of <see cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" /> collections.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RootProfilePropertySettingsCollection> class is both a root-level <xref:System.Web.Configuration.ProfilePropertySettingsCollection> collection and a container for a <xref:System.Web.Configuration.ProfileGroupSettingsCollection> collection. These collections allow you to create named groups of more <xref:System.Web.Configuration.ProfilePropertySettingsCollection> collections, each containing individual named <xref:System.Web.Configuration.ProfilePropertySettings> objects. For more information about the profile features added to [!INCLUDE[vstecasplong](~/includes/vstecasplong-md.md)], see [NIB: ASP.NET Profile Properties](http://msdn.microsoft.com/en-us/06a7bf4a-a5a2-462d-9793-c79063a2018d).  
+  
+ The <xref:System.Web.Configuration.ProfileSection.PropertySettings%2A> property is a <xref:System.Web.Configuration.RootProfilePropertySettingsCollection> object that contains all the properties defined within the `properties` subsection of the `profile` section of the configuration file.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.RootProfilePropertySettingsCollection> type as the <xref:System.Web.Configuration.ProfileSection.PropertySettings%2A> property of the <xref:System.Web.Configuration.ProfileSection> class. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.ProfileSection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#7)]
+ [!code-vb[System.Web.Configuration.ProfileSection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RootProfilePropertySettingsCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" /> class using default settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RootProfilePropertySettingsCollection> property is a <xref:System.Web.Configuration.RootProfilePropertySettingsCollection> object that contains all the properties defined within the `properties` subsection of the `profile` section of the configuration file.  
+  
+ The following table shows the default settings that are used for this constructor.  
+  
+|Setting|Default Value|  
+|-------------|-------------------|  
+|<xref:System.Web.Configuration.ProfilePropertySettingsCollection.AllowClear%2A>|`True`.|  
+|<xref:System.Web.Configuration.RootProfilePropertySettingsCollection.GroupSettings%2A>|An empty <xref:System.Web.Configuration.ProfileGroupSettingsCollection>.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowClear">
+      <MemberSignature Language="C#" Value="protected override bool AllowClear { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowClear" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RootProfilePropertySettingsCollection.AllowClear" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object rootProfilePropertySettingsCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object rootProfilePropertySettingsCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootProfilePropertySettingsCollection" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="rootProfilePropertySettingsCollection">A <see cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" /> object to compare to.</param>
+        <summary>Compares the current <see cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" /> object to another A <see cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the passed <see cref="T:System.Web.Configuration.RootProfilePropertySettingsCollection" /> object is equal to the current object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override of base class method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Generates a hash code for the collection.</summary>
+        <returns>Unique integer hash code for the current object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override of base class method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupSettings">
+      <MemberSignature Language="C#" Value="public System.Web.Configuration.ProfileGroupSettingsCollection GroupSettings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ProfileGroupSettingsCollection GroupSettings" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RootProfilePropertySettingsCollection.GroupSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("group")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.ProfileGroupSettingsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Configuration.ProfileGroupSettingsCollection" /> containing a collection of <see cref="T:System.Web.Configuration.ProfileGroupSettings" /> objects.</summary>
+        <value>A <see cref="T:System.Web.Configuration.ProfileGroupSettingsCollection" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.RootProfilePropertySettingsCollection.GroupSettings%2A> property allows you to create groups of <xref:System.Web.Configuration.ProfilePropertySettingsCollection> collections.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.RootProfilePropertySettingsCollection.GroupSettings%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.ProfileSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.ProfileSection#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/CS/profilesection.cs#12)]
+ [!code-vb[System.Web.Configuration.ProfileSection#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.ProfileSection/VB/profilesection.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsModified">
+      <MemberSignature Language="C#" Value="protected override bool IsModified ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsModified() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.IsModified" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeserializeUnrecognizedElement">
+      <MemberSignature Language="C#" Value="protected override bool OnDeserializeUnrecognizedElement (string elementName, System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnDeserializeUnrecognizedElement(string elementName, class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.OnDeserializeUnrecognizedElement(System.String,System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="elementName" Type="System.String" />
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="elementName">To be added.</param>
+        <param name="reader">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RootProfilePropertySettingsCollection.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="parentElement">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetModified">
+      <MemberSignature Language="C#" Value="protected override void ResetModified ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ResetModified() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.ResetModified" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeElement">
+      <MemberSignature Language="C#" Value="protected override bool SerializeElement (System.Xml.XmlWriter writer, bool serializeCollectionKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool SerializeElement(class System.Xml.XmlWriter writer, bool serializeCollectionKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.SerializeElement(System.Xml.XmlWriter,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="serializeCollectionKey" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <param name="serializeCollectionKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowOnDuplicate">
+      <MemberSignature Language="C#" Value="protected override bool ThrowOnDuplicate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnDuplicate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RootProfilePropertySettingsCollection.ThrowOnDuplicate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unmerge">
+      <MemberSignature Language="C#" Value="protected override void Unmerge (System.Configuration.ConfigurationElement sourceElement, System.Configuration.ConfigurationElement parentElement, System.Configuration.ConfigurationSaveMode saveMode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Unmerge(class System.Configuration.ConfigurationElement sourceElement, class System.Configuration.ConfigurationElement parentElement, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RootProfilePropertySettingsCollection.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceElement" Type="System.Configuration.ConfigurationElement" />
+        <Parameter Name="parentElement" Type="System.Configuration.ConfigurationElement" />
+        <Parameter Name="saveMode" Type="System.Configuration.ConfigurationSaveMode" />
+      </Parameters>
+      <Docs>
+        <param name="sourceElement">To be added.</param>
+        <param name="parentElement">To be added.</param>
+        <param name="saveMode">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,217 @@
+<Type Name="TreeViewHitTestLocations" FullName="System.Windows.Forms.TreeViewHitTestLocations">
+  <TypeSignature Language="C#" Value="public enum TreeViewHitTestLocations" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeViewHitTestLocations extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewHitTestLocations" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines constants that represent areas of a <see cref="T:System.Windows.Forms.TreeView" /> or <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeViewHitTestLocations> enumeration is used by the <xref:System.Windows.Forms.TreeViewHitTestInfo> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.TreeViewHitTestLocations> enumeration. To run this example, paste the following code into a Windows Form that contains a <xref:System.Windows.Forms.TreeView> control named `treeView1`, and populate the <xref:System.Windows.Forms.TreeView> with items. Ensure that `treeview1` and the <xref:System.Windows.Forms.Control.MouseDown> event for the form are associated with the `HandleMouseDown` method in this example.  
+  
+ [!code-csharp[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/CS/Form1.cs#1)]
+ [!code-vb[System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewPictureBoxWhidbeyMembers/VB/Form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AboveClientArea">
+      <MemberSignature Language="C#" Value="AboveClientArea" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewHitTestLocations AboveClientArea = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.AboveClientArea" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position above the client portion of a <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BelowClientArea">
+      <MemberSignature Language="C#" Value="BelowClientArea" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewHitTestLocations BelowClientArea = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.BelowClientArea" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position below the client portion of a <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="Image" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewHitTestLocations Image = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.Image" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position within the bounds of an image contained on a <see cref="T:System.Windows.Forms.TreeView" /> or <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Indent">
+      <MemberSignature Language="C#" Value="Indent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewHitTestLocations Indent = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.Indent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position in the indentation area for a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="Label" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewHitTestLocations Label = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.Label" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position on the text portion of a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftOfClientArea">
+      <MemberSignature Language="C#" Value="LeftOfClientArea" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewHitTestLocations LeftOfClientArea = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.LeftOfClientArea" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position to the left of the client area of a <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewHitTestLocations None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position in the client area of the <see cref="T:System.Windows.Forms.TreeView" /> control, but not on a node or a portion of a node.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PlusMinus">
+      <MemberSignature Language="C#" Value="PlusMinus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewHitTestLocations PlusMinus = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.PlusMinus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position on the plus/minus area of a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightOfClientArea">
+      <MemberSignature Language="C#" Value="RightOfClientArea" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewHitTestLocations RightOfClientArea = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.RightOfClientArea" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position to the right of the client area of the <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightOfLabel">
+      <MemberSignature Language="C#" Value="RightOfLabel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewHitTestLocations RightOfLabel = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.RightOfLabel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position to the right of the text area of a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StateImage">
+      <MemberSignature Language="C#" Value="StateImage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TreeViewHitTestLocations StateImage = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TreeViewHitTestLocations.StateImage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeViewHitTestLocations</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A position within the bounds of a state image for a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

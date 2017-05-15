@@ -1,0 +1,18 @@
+<Type Name="GraphicsContainer" FullName="System.Drawing.Drawing2D.GraphicsContainer">
+  <TypeSignature Language="C#" Value="public sealed class GraphicsContainer : MarshalByRefObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GraphicsContainer extends System.MarshalByRefObject" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.GraphicsContainer" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the internal data of a graphics container. This class is used when saving the state of a <see cref="T:System.Drawing.Graphics" /> object using the <see cref="M:System.Drawing.Graphics.BeginContainer" /> and <see cref="M:System.Drawing.Graphics.EndContainer(System.Drawing.Drawing2D.GraphicsContainer)" /> methods. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,6 @@
+<Namespace Name="System.IdentityModel.Services">
+  <Docs>
+    <summary>The <see cref="N:System.IdentityModel.Services" /> namespace primarily contains classes that are used in applications built using Windows Identity Foundation (WIF) that perform federated authentication with the WS-Federation protocol. It contains the HTTP Modules, <see cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" /> (WSFAM) and <see cref="T:System.IdentityModel.Services.SessionAuthenticationModule" /> (SAM), as well as classes that support their operation. The WSFAM provides handling for the WS-Federation sign-in and sign-out sequences and the SAM provides session management by maintaining and handling cookies. The namespace also contains classes that represent WS-Federation messages (<see cref="T:System.IdentityModel.Services.WSFederationMessage" />), such as sign-in (<see cref="T:System.IdentityModel.Services.SignInRequestMessage" />, <see cref="T:System.IdentityModel.Services.SignInResponseMessage" />) and sign-out messages (<see cref="T:System.IdentityModel.Services.SignOutRequestMessage" />), as well as serializers that serialize and deserialize between the object model and the on-the-wire representations of these messages.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Namespace>

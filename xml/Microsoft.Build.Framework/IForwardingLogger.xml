@@ -1,0 +1,56 @@
+<Type Name="IForwardingLogger" FullName="Microsoft.Build.Framework.IForwardingLogger">
+  <TypeSignature Language="C#" Value="public interface IForwardingLogger : Microsoft.Build.Framework.INodeLogger" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IForwardingLogger implements class Microsoft.Build.Framework.ILogger, class Microsoft.Build.Framework.INodeLogger" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IForwardingLogger" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.INodeLogger</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Extends the <see cref="T:Microsoft.Build.Framework.ILogger" /> interface to provide properties to forward events to a logger running in a different process. It can also be used create filtering loggers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuildEventRedirector">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.IEventRedirector BuildEventRedirector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.IEventRedirector BuildEventRedirector" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IForwardingLogger.BuildEventRedirector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.IEventRedirector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or set by the build engine to allow node loggers to forward messages to the central logger.</summary>
+        <value>An <see cref="T:Microsoft.Build.Framework.IEventRedirector" /> representing the event redirector to forward messages to.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeId">
+      <MemberSignature Language="C#" Value="public int NodeId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NodeId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IForwardingLogger.NodeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or set by the build engine or node to inform the forwarding logger on which node it is running.</summary>
+        <value>An integer representing the node ID on which the build engine is running.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

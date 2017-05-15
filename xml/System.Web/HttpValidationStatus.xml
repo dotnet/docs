@@ -1,0 +1,66 @@
+<Type Name="HttpValidationStatus" FullName="System.Web.HttpValidationStatus">
+  <TypeSignature Language="C#" Value="public enum HttpValidationStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpValidationStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.HttpValidationStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Provides enumerated values that indicate cache validation status.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IgnoreThisRequest">
+      <MemberSignature Language="C#" Value="IgnoreThisRequest" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.HttpValidationStatus IgnoreThisRequest = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpValidationStatus.IgnoreThisRequest" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpValidationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the request is treated as a cache miss and the page is executed. The cache is not invalidated.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.HttpValidationStatus Invalid = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpValidationStatus.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpValidationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the cache is invalid. The item is evicted from the cache and the request is handled as a cache miss.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Valid">
+      <MemberSignature Language="C#" Value="Valid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.HttpValidationStatus Valid = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.HttpValidationStatus.Valid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpValidationStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the cache is valid.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

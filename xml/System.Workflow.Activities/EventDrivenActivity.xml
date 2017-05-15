@@ -1,0 +1,142 @@
+<Type Name="EventDrivenActivity" FullName="System.Workflow.Activities.EventDrivenActivity">
+  <TypeSignature Language="C#" Value="public sealed class EventDrivenActivity : System.Workflow.Activities.SequenceActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventDrivenActivity extends System.Workflow.Activities.SequenceActivity" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.EventDrivenActivity" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Activities.SequenceActivity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.Activities.EventDrivenDesigner), typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(typeof(System.Workflow.ComponentModel.Design.ActivityToolboxItem))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Workflow.Activities.EventDrivenActivity), "Resources.EventDriven.png")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityValidator(typeof(System.Workflow.Activities.EventDrivenValidator))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Wraps an <see cref="T:System.Workflow.ComponentModel.Activity" /> whose execution is initialized by an event. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ It is a <xref:System.Workflow.ComponentModel.CompositeActivity> that is used to handle an event; typically it can be raised from the host or by the runtime in response to a delay timer expiring. <xref:System.Workflow.Activities.EventDrivenActivity> is inherited from <xref:System.Workflow.Activities.SequenceActivity>; therefore, it is a sequence that has the additional restriction that the first activity should be an <xref:System.Workflow.Activities.IEventActivity>.  
+  
+ The <xref:System.Workflow.Activities.EventDrivenActivity> is a <xref:System.Workflow.ComponentModel.CompositeActivity>, which means the <xref:System.Workflow.Activities.EventDrivenActivity> can contain other activities. The <xref:System.Workflow.Activities.EventDrivenActivity> is similar to the <xref:System.Workflow.Activities.SequenceActivity> activity, with some additional characteristics.  
+  
+ An <xref:System.Workflow.Activities.EventDrivenActivity> must have a parent that is either a <xref:System.Workflow.Activities.ListenActivity>, <xref:System.Workflow.Activities.StateActivity>, or <xref:System.Workflow.Activities.StateMachineWorkflowActivity>.  
+  
+ The first child of an <xref:System.Workflow.Activities.EventDrivenActivity> activity must be an activity that inherits from <xref:System.Workflow.Activities.IEventActivity>. All subsequent children can be activities of any type. The <xref:System.Workflow.Activities.IEventActivity> blocks and waits for the pending occurrence of some events, such as starting a timer or the arrival of a message. When the event occurs, the <xref:System.Workflow.Activities.IEventActivity> finishes running and then all subsequent activities are executed.  
+  
+ When the <xref:System.Workflow.Activities.StateMachineWorkflowActivity> contains an <xref:System.Workflow.Activities.EventDrivenActivity>, the <xref:System.Workflow.Activities.EventDrivenActivity> has some restrictions:  
+  
+-   The <xref:System.Workflow.Activities.EventDrivenActivity> may contain one, and only one, activity of type <xref:System.Workflow.Activities.IEventActivity>.  
+  
+-   The <xref:System.Workflow.Activities.HandleExternalEventActivity> must be the first child activity. An <xref:System.Workflow.Activities.HandleExternalEventActivity> cannot be in the event handler for a child activity and cannot be a child to the <xref:System.Workflow.Activities.EventDrivenActivity> if the <xref:System.Workflow.Activities.HandleExternalEventActivity> is not the first child.  
+  
+-   As long as the first activity is the <xref:System.Workflow.Activities.HandleExternalEventActivity>, the event handler can contain any activities. If an activity other than <xref:System.Workflow.Activities.HandleExternalEventActivity> is contained in <xref:System.Workflow.Activities.EventDrivenActivity>, that activity cannot have an event handler.  
+  
+ For example, an activity that supports event handling can be used inside the <xref:System.Workflow.Activities.EventDrivenActivity> but the activity cannot have event handlers attached to itself.  
+  
+ Another example is that the <xref:System.Workflow.Activities.EventDrivenActivity> can contain a <xref:System.Workflow.Activities.ConditionedActivityGroup>, but the <xref:System.Workflow.Activities.ConditionedActivityGroup> itself cannot contain any <xref:System.Workflow.Activities.HandleExternalEventActivity> classes.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Workflow.Activities.EventDrivenActivity> to perform state machine transitions. This code example is part of the SimpleStateMachineWorkflow SDK sample from the StateMachineWorkflow.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+  
+ [!code-csharp[wf_samples#185](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#185)]
+ [!code-vb[wf_samples#185](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#185)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventDrivenActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventDrivenActivity.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.EventDrivenActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to create a new instance of the <xref:System.Workflow.Activities.EventDrivenActivity> class.  This code example is part of the SimpleStateMachineWorkflow SDK sample from the StateMachineWorkflow.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)][Simple State Machine](http://msdn.microsoft.com/en-us/1974edbd-253d-4e01-9095-38ff9c3e749e).  
+  
+ [!code-csharp[wf_samples#187](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets19.cs#187)]
+ [!code-vb[wf_samples#187](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets19.vb#187)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventDrivenActivity (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.EventDrivenActivity.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The user-identified name of the activity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.EventDrivenActivity" /> class using the name of the activity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventActivity">
+      <MemberSignature Language="C#" Value="public System.Workflow.Activities.IEventActivity EventActivity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.IEventActivity EventActivity" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.EventDrivenActivity.EventActivity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Activities.IEventActivity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the event activity that drives the change.</summary>
+        <value>The event activity that drives the change.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

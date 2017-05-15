@@ -1,0 +1,347 @@
+<Type Name="AutomationEvents" FullName="System.Windows.Automation.Peers.AutomationEvents">
+  <TypeSignature Language="C#" Value="public enum AutomationEvents" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutomationEvents extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.AutomationEvents" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the event that is raised by the element through the associated <see cref="T:System.Windows.Automation.Peers.AutomationPeer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is passed to the <xref:System.Windows.Automation.Peers.AutomationPeer.RaiseAutomationEvent%2A> method to raise an event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsyncContentLoaded">
+      <MemberSignature Language="C#" Value="AsyncContentLoaded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents AsyncContentLoaded = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.AsyncContentLoaded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.AsyncContentLoadedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AutomationFocusChanged">
+      <MemberSignature Language="C#" Value="AutomationFocusChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents AutomationFocusChanged = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.AutomationFocusChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.AutomationFocusChangedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InputDiscarded">
+      <MemberSignature Language="C#" Value="InputDiscarded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents InputDiscarded = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.InputDiscarded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputDiscardedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InputReachedOtherElement">
+      <MemberSignature Language="C#" Value="InputReachedOtherElement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents InputReachedOtherElement = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.InputReachedOtherElement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedOtherElementEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InputReachedTarget">
+      <MemberSignature Language="C#" Value="InputReachedTarget" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents InputReachedTarget = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.InputReachedTarget" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.SynchronizedInputPatternIdentifiers.InputReachedTargetEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokePatternOnInvoked">
+      <MemberSignature Language="C#" Value="InvokePatternOnInvoked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents InvokePatternOnInvoked = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.InvokePatternOnInvoked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuClosed">
+      <MemberSignature Language="C#" Value="MenuClosed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents MenuClosed = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.MenuClosed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.MenuClosedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuOpened">
+      <MemberSignature Language="C#" Value="MenuOpened" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents MenuOpened = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.MenuOpened" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.MenuOpenedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="PropertyChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents PropertyChanged = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.PropertyChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used to raise a notification that a property has changed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionItemPatternOnElementAddedToSelection">
+      <MemberSignature Language="C#" Value="SelectionItemPatternOnElementAddedToSelection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents SelectionItemPatternOnElementAddedToSelection = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.SelectionItemPatternOnElementAddedToSelection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionItemPatternOnElementRemovedFromSelection">
+      <MemberSignature Language="C#" Value="SelectionItemPatternOnElementRemovedFromSelection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents SelectionItemPatternOnElementRemovedFromSelection = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.SelectionItemPatternOnElementRemovedFromSelection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionItemPatternOnElementSelected">
+      <MemberSignature Language="C#" Value="SelectionItemPatternOnElementSelected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents SelectionItemPatternOnElementSelected = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.SelectionItemPatternOnElementSelected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionPatternOnInvalidated">
+      <MemberSignature Language="C#" Value="SelectionPatternOnInvalidated" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents SelectionPatternOnInvalidated = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.SelectionPatternOnInvalidated" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.SelectionPatternIdentifiers.InvalidatedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StructureChanged">
+      <MemberSignature Language="C#" Value="StructureChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents StructureChanged = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.StructureChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.StructureChangedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextPatternOnTextChanged">
+      <MemberSignature Language="C#" Value="TextPatternOnTextChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents TextPatternOnTextChanged = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.TextPatternOnTextChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.TextPatternIdentifiers.TextChangedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TextPatternOnTextSelectionChanged">
+      <MemberSignature Language="C#" Value="TextPatternOnTextSelectionChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents TextPatternOnTextSelectionChanged = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.TextPatternOnTextSelectionChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.TextPatternIdentifiers.TextSelectionChangedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipClosed">
+      <MemberSignature Language="C#" Value="ToolTipClosed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents ToolTipClosed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.ToolTipClosed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.ToolTipClosedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipOpened">
+      <MemberSignature Language="C#" Value="ToolTipOpened" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationEvents ToolTipOpened = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationEvents.ToolTipOpened" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationEvents</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <see cref="F:System.Windows.Automation.AutomationElementIdentifiers.ToolTipOpenedEvent" />
+        </summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

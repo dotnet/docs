@@ -1,0 +1,242 @@
+<Type Name="IDataSourceDesigner" FullName="System.Web.UI.Design.IDataSourceDesigner">
+  <TypeSignature Language="C#" Value="public interface IDataSourceDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataSourceDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the basic functionality for a data source designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IDataSourceDesigner> interface defines an interface through which you can implement basic services for a data source designer. A designer is only active at design time, and must be associated with a data source, using a <xref:System.ComponentModel.DesignerAttribute>, in order to be loaded when a data source of the associated type is created at design time.  
+  
+ The <xref:System.Web.UI.Design.IDataSourceDesigner> interface provides methods and properties that you can implement in order to provide custom behavior at design time.  
+  
+ A designer can also use the available design-time services to perform a variety of tasks, including surveying the current design-time environment for components and their properties, reading and setting the values of properties of components, managing the toolbox, managing selected components, or displaying a user interface that can be used to configure values or to apply further processing.  
+  
+ In most cases, implement your custom designer for a data source by deriving it from the <xref:System.Web.UI.Design.DataSourceDesigner> class. Data sources whose associated designer does not derive from <xref:System.Web.UI.Design.DataSourceDesigner> are displayed in the component tray. The <xref:System.Web.UI.Design.DataSourceDesigner> class implements the <xref:System.Web.UI.Design.IDataSourceDesigner> interface and provides additional design-time support that may be of use to authors of designers. For more information, see the reference documentation for these classes.  
+  
+ For an overview of creating design components, see [Extending Design-Time Support](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanConfigure">
+      <MemberSignature Language="C#" Value="public bool CanConfigure { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanConfigure" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceDesigner.CanConfigure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="M:System.Web.UI.Design.IDataSourceDesigner.Configure" /> method can be called.</summary>
+        <value>
+          <see langword="true" /> if the underlying data source has a configuration wizard that can be launched with the <see cref="M:System.Web.UI.Design.IDataSourceDesigner.Configure" /> method; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRefreshSchema">
+      <MemberSignature Language="C#" Value="public bool CanRefreshSchema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRefreshSchema" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="M:System.Web.UI.Design.IDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called.</summary>
+        <value>
+          <see langword="true" /> if the underlying data source can refresh its schema; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Configure">
+      <MemberSignature Language="C#" Value="public void Configure ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Configure() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.Configure" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Launches the underlying data source's configuration wizard.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can be called only if <xref:System.Web.UI.Design.IDataSourceDesigner.CanConfigure%2A> is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSourceChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.IDataSourceDesigner.DataSourceChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a data source has changed in a way that affects data-bound controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.IDataSourceDesigner.DataSourceChanged> event occurs when the value of a field in the data source, or a property in the data-bound control that affects the data bindings to that field, has changed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetView">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.DesignerDataSourceView GetView (string viewName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.DesignerDataSourceView GetView(string viewName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.GetView(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.DesignerDataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="viewName">The name of a view in the underlying data source.</param>
+        <summary>Gets the <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> for the specified view.</summary>
+        <returns>A <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> containing information about the identified view, or <see langword="null" /> if a view with the specified name is not found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A class that implements <xref:System.Web.UI.Design.IDataSourceDesigner> can define a view in a way that is useful within the context of that class.  
+  
+ Use the <xref:System.Web.UI.Design.IDataSourceDesigner.GetViewNames%2A> method to get a list of view names.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetViewNames">
+      <MemberSignature Language="C#" Value="public string[] GetViewNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetViewNames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.GetViewNames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the names of the views in the underlying data source.</summary>
+        <returns>An array of type <see cref="T:System.String" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshSchema">
+      <MemberSignature Language="C#" Value="public void RefreshSchema (bool preferSilent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshSchema(bool preferSilent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.RefreshSchema(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="preferSilent" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="preferSilent">Indicates whether to suppress any events raised while refreshing the schema.</param>
+        <summary>Refreshes the schema of the underlying data source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeDataSourceEvents">
+      <MemberSignature Language="C#" Value="public void ResumeDataSourceEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResumeDataSourceEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Resumes raising data source events after calling the <see cref="M:System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaRefreshed">
+      <MemberSignature Language="C#" Value="public event EventHandler SchemaRefreshed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SchemaRefreshed" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.IDataSourceDesigner.SchemaRefreshed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the fields or data of the underlying data source have changed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressDataSourceEvents">
+      <MemberSignature Language="C#" Value="public void SuppressDataSourceEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SuppressDataSourceEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Suppresses all events raised by a data source until the <see cref="M:System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents" /> method is called.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

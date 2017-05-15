@@ -1,0 +1,106 @@
+<Type Name="DataObjectSettingDataEventArgs" FullName="System.Windows.DataObjectSettingDataEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class DataObjectSettingDataEventArgs : System.Windows.DataObjectEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataObjectSettingDataEventArgs extends System.Windows.DataObjectEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectSettingDataEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.DataObjectEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains arguments for the <see cref="T:System.Windows.DataObject" />.<see cref="E:System.Windows.DataObject.SettingData" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.DataObject.SettingData> event occurs as part of a copy command or a drag command, once for each of the data formats to be added to the associated data object. Typically, this event is connected to a content control such as <xref:System.Windows.Controls.TextBox>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataObjectSettingDataEventArgs (System.Windows.IDataObject dataObject, string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.IDataObject dataObject, string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectSettingDataEventArgs.#ctor(System.Windows.IDataObject,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataObject" Type="System.Windows.IDataObject" />
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="dataObject">The <see cref="T:System.Windows.DataObject" /> to which a new data format is being added.</param>
+        <param name="format">A string specifying the new data format that is being added to the accompanying data object. See the <see cref="T:System.Windows.DataFormats" /> class for a set of predefined data formats.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.DataObjectSettingDataEventArgs" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Raised when <paramref name="dataObject" /> or <paramref name="format" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DataObject">
+      <MemberSignature Language="C#" Value="public System.Windows.IDataObject DataObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IDataObject DataObject" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectSettingDataEventArgs.DataObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IDataObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.DataObject" /> associated with the <see cref="E:System.Windows.DataObject.SettingData" /> event.</summary>
+        <value>The <see cref="T:System.Windows.DataObject" /> associated with the <see cref="E:System.Windows.DataObject.SettingData" /> event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public string Format { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Format" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectSettingDataEventArgs.Format" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string specifying the new data format that is being added to the accompanying data object.</summary>
+        <value>A string specifying the new data format that is being added to the accompanying data object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectSettingDataEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">To be added.</param>
+        <param name="genericTarget">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

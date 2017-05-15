@@ -1,0 +1,242 @@
+<Type Name="ModelBinderProviderCollection" FullName="System.Web.ModelBinding.ModelBinderProviderCollection">
+  <TypeSignature Language="C#" Value="public sealed class ModelBinderProviderCollection : System.Collections.ObjectModel.Collection&lt;System.Web.ModelBinding.ModelBinderProvider&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ModelBinderProviderCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Web.ModelBinding.ModelBinderProvider&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelBinderProviderCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Web.ModelBinding.ModelBinderProvider&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Web.ModelBinding.ModelBinderProvider</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a container for a collection of model binder providers.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelBinderProviderCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelBinderProviderCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelBinderProviderCollection (System.Collections.Generic.IList&lt;System.Web.ModelBinding.ModelBinderProvider&gt; list);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.Web.ModelBinding.ModelBinderProvider&gt; list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.#ctor(System.Collections.Generic.IList{System.Web.ModelBinding.ModelBinderProvider})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="list" Type="System.Collections.Generic.IList&lt;System.Web.ModelBinding.ModelBinderProvider&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="list">The list of model binder providers.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelBinderProviderCollection" /> class by using the specified list of model binder providers.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBinder">
+      <MemberSignature Language="C#" Value="public System.Web.ModelBinding.IModelBinder GetBinder (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelBindingContext bindingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.ModelBinding.IModelBinder GetBinder(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.GetBinder(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.IModelBinder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelBindingExecutionContext" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+        <Parameter Name="bindingContext" Type="System.Web.ModelBinding.ModelBindingContext" />
+      </Parameters>
+      <Docs>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <param name="bindingContext">The binding context.</param>
+        <summary>Returns the appropriate model binder for the specified execution context and binding context.</summary>
+        <returns>The model binder.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="modelBindingExecutionContext" /> or the <paramref name="bindingContext" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">No model binder or model binder provider exists for the specified model type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Web.ModelBinding.ModelBinderProvider item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Web.ModelBinding.ModelBinderProvider item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.InsertItem(System.Int32,System.Web.ModelBinding.ModelBinderProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Web.ModelBinding.ModelBinderProvider" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterBinderForGenericType">
+      <MemberSignature Language="C#" Value="public void RegisterBinderForGenericType (Type modelType, Func&lt;Type[],System.Web.ModelBinding.IModelBinder&gt; modelBinderFactory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterBinderForGenericType(class System.Type modelType, class System.Func`2&lt;class System.Type[], class System.Web.ModelBinding.IModelBinder&gt; modelBinderFactory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForGenericType(System.Type,System.Func{System.Type[],System.Web.ModelBinding.IModelBinder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelType" Type="System.Type" />
+        <Parameter Name="modelBinderFactory" Type="System.Func&lt;System.Type[],System.Web.ModelBinding.IModelBinder&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="modelType">The model type.</param>
+        <param name="modelBinderFactory">The model binder factory.</param>
+        <summary>Adds a model binder to the collection for a generic type by using the specified model type and model binder factory.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterBinderForGenericType">
+      <MemberSignature Language="C#" Value="public void RegisterBinderForGenericType (Type modelType, Type modelBinderType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterBinderForGenericType(class System.Type modelType, class System.Type modelBinderType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForGenericType(System.Type,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelType" Type="System.Type" />
+        <Parameter Name="modelBinderType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="modelType">The model type.</param>
+        <param name="modelBinderType">The model binder type.</param>
+        <summary>Adds a model binder provider to the collection for a generic type by using the specified model type and model binder type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterBinderForGenericType">
+      <MemberSignature Language="C#" Value="public void RegisterBinderForGenericType (Type modelType, System.Web.ModelBinding.IModelBinder modelBinder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterBinderForGenericType(class System.Type modelType, class System.Web.ModelBinding.IModelBinder modelBinder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForGenericType(System.Type,System.Web.ModelBinding.IModelBinder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelType" Type="System.Type" />
+        <Parameter Name="modelBinder" Type="System.Web.ModelBinding.IModelBinder" />
+      </Parameters>
+      <Docs>
+        <param name="modelType">The model type.</param>
+        <param name="modelBinder">The model binder.</param>
+        <summary>Adds a model binder provider to the collection for a generic type by using the specified model type and model binder.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterBinderForType">
+      <MemberSignature Language="C#" Value="public void RegisterBinderForType (Type modelType, Func&lt;System.Web.ModelBinding.IModelBinder&gt; modelBinderFactory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterBinderForType(class System.Type modelType, class System.Func`1&lt;class System.Web.ModelBinding.IModelBinder&gt; modelBinderFactory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForType(System.Type,System.Func{System.Web.ModelBinding.IModelBinder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelType" Type="System.Type" />
+        <Parameter Name="modelBinderFactory" Type="System.Func&lt;System.Web.ModelBinding.IModelBinder&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="modelType">The model type.</param>
+        <param name="modelBinderFactory">The model binder factory.</param>
+        <summary>Adds a model binder provider to the collection for a non-generic type by using the specified model type and model binder factory.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterBinderForType">
+      <MemberSignature Language="C#" Value="public void RegisterBinderForType (Type modelType, System.Web.ModelBinding.IModelBinder modelBinder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterBinderForType(class System.Type modelType, class System.Web.ModelBinding.IModelBinder modelBinder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForType(System.Type,System.Web.ModelBinding.IModelBinder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelType" Type="System.Type" />
+        <Parameter Name="modelBinder" Type="System.Web.ModelBinding.IModelBinder" />
+      </Parameters>
+      <Docs>
+        <param name="modelType">The model type.</param>
+        <param name="modelBinder">The model binder.</param>
+        <summary>Adds a model binder provider to the collection for a non-generic type by using the specified model type and model binder.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Web.ModelBinding.ModelBinderProvider item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Web.ModelBinding.ModelBinderProvider item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelBinderProviderCollection.SetItem(System.Int32,System.Web.ModelBinding.ModelBinderProvider)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Web.ModelBinding.ModelBinderProvider" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

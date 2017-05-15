@@ -1,0 +1,168 @@
+<Type Name="InertiaExpansionBehavior" FullName="System.Windows.Input.InertiaExpansionBehavior">
+  <TypeSignature Language="C#" Value="public class InertiaExpansionBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InertiaExpansionBehavior extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InertiaExpansionBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Controls the deceleration of a resizing manipulation during inertia.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Input.InertiaExpansionBehavior> class specifies how a expansion manipulation behaves when it is inertia.  Use the <xref:System.Windows.Input.ManipulationInertiaStartingEventArgs.ExpansionBehavior%2A> property in the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event to do the following:  
+  
+-   Specify the initial velocity of the inertia when it begins by setting the <xref:System.Windows.Input.InertiaExpansionBehavior.InitialVelocity%2A> property.  
+  
+-   Specify the desired expansion of the manipulation when inertia ends by setting the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> property.  
+  
+-   Specify the desired deceleration of the inertia by setting the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A> property.  
+  
+ Set either the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> or the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+   
+  
+## Examples  
+ The following example shows the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event handler and sets the desired deceleration for translation, expansion, and rotation that is used during inertia. This example is part of a larger example in [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ [!code-csharp[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationinertiastarting)]
+ [!code-vb[BasicManipulation#ManipulationInertiaStarting](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationinertiastarting)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InertiaExpansionBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InertiaExpansionBehavior.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InertiaExpansionBehavior" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesiredDeceleration">
+      <MemberSignature Language="C#" Value="public double DesiredDeceleration { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredDeceleration" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the rate that resizing slows in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] per square milliseconds.</summary>
+        <value>The rate that resizing slows in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)] per square milliseconds. The default is <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A> property to specify the desired deceleration of the inertia. Set either the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> or the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is set to infinity.  
+  
+ -or-  
+  
+ The property is set to <see cref="F:System.Double.NaN" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DesiredExpansion">
+      <MemberSignature Language="C#" Value="public System.Windows.Vector DesiredExpansion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Vector DesiredExpansion" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount the element resizes at the end of inertia.</summary>
+        <value>The amount the element resizes at the end of inertia. The default is a <see cref="T:System.Windows.Vector" /> that has its <see cref="P:System.Windows.Vector.X" /> and <see cref="P:System.Windows.Vector.Y" /> properties set to <see cref="F:System.Double.NaN" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> property to specify the desired expansion of the manipulation when inertia ends. Set either the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredExpansion%2A> or the <xref:System.Windows.Input.InertiaExpansionBehavior.DesiredDeceleration%2A>, but not both. When you set one of these properties, the other property is changed to <xref:System.Double.NaN?displayProperty=fullName> if it has a value.  
+  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialRadius">
+      <MemberSignature Language="C#" Value="public double InitialRadius { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 InitialRadius" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaExpansionBehavior.InitialRadius" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the initial average radius.</summary>
+        <value>The initial average radius.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitialVelocity">
+      <MemberSignature Language="C#" Value="public System.Windows.Vector InitialVelocity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Vector InitialVelocity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InertiaExpansionBehavior.InitialVelocity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Vector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the initial rate the element resizes at the start of inertia.</summary>
+        <value>The initial rate the element resizes at the start of inertia.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about manipulations, see the [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

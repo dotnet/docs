@@ -1,0 +1,25 @@
+<Type Name="StrokeCollectionChangedEventHandler" FullName="System.Windows.Ink.StrokeCollectionChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void StrokeCollectionChangedEventHandler(object sender, StrokeCollectionChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StrokeCollectionChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.StrokeCollectionChangedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Ink.StrokeCollectionChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Windows.Ink.StrokeCollectionChangedEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Windows.Ink.StrokeCollection.StrokesChanged" /> event of a <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

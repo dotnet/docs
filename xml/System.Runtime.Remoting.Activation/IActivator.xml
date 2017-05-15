@@ -1,0 +1,104 @@
+<Type Name="IActivator" FullName="System.Runtime.Remoting.Activation.IActivator">
+  <TypeSignature Language="C#" Value="public interface IActivator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IActivator" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Activation.IActivator" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the basic functionality for a remoting activator class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Activators control and participate in the activation of marshal by reference objects. Some activators create contexts, whereas others create actual objects.  
+  
+ Activators use the <xref:System.Runtime.Remoting.Activation.IActivator.NextActivator%2A> property to form a hierarchy that must be observed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Activation.IConstructionReturnMessage Activate (System.Runtime.Remoting.Activation.IConstructionCallMessage msg);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Activation.IConstructionReturnMessage Activate(class System.Runtime.Remoting.Activation.IConstructionCallMessage msg) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Activation.IActivator.Activate(System.Runtime.Remoting.Activation.IConstructionCallMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Activation.IConstructionReturnMessage</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Runtime.Remoting.Activation.IConstructionCallMessage" />
+      </Parameters>
+      <Docs>
+        <param name="msg">The information about the object that is needed to activate it, stored in a <see cref="T:System.Runtime.Remoting.Activation.IConstructionCallMessage" />.</param>
+        <summary>Creates an instance of the object that is specified in the provided <see cref="T:System.Runtime.Remoting.Activation.IConstructionCallMessage" />.</summary>
+        <returns>Status of the object activation contained in a <see cref="T:System.Runtime.Remoting.Activation.IConstructionReturnMessage" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Level">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Activation.ActivatorLevel Level { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Remoting.Activation.ActivatorLevel Level" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Activation.IActivator.Level" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Runtime.Remoting.Activation.ActivatorLevel" /> where this activator is active.</summary>
+        <value>The <see cref="T:System.Runtime.Remoting.Activation.ActivatorLevel" /> where this activator is active.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Activation.IActivator.Level%2A> is used to locate the right position in the chain when adding an activator.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="NextActivator">
+      <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Activation.IActivator NextActivator { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Activation.IActivator NextActivator" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Activation.IActivator.NextActivator" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Activation.IActivator</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the next activator in the chain.</summary>
+        <value>The next activator in the chain.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

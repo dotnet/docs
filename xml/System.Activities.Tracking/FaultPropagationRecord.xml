@@ -1,0 +1,164 @@
+<Type Name="FaultPropagationRecord" FullName="System.Activities.Tracking.FaultPropagationRecord">
+  <TypeSignature Language="C#" Value="public sealed class FaultPropagationRecord : System.Activities.Tracking.TrackingRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FaultPropagationRecord extends System.Activities.Tracking.TrackingRecord" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.FaultPropagationRecord" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Tracking.TrackingRecord</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains the data sent to a tracking participant by the run-time tracking infrastructure when a fault is propagated from a workflow activity.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FaultPropagationRecord (Guid instanceId, long recordNumber, System.Activities.Tracking.ActivityInfo faultSource, System.Activities.Tracking.ActivityInfo faultHandler, bool isFaultSource, Exception fault);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid instanceId, int64 recordNumber, class System.Activities.Tracking.ActivityInfo faultSource, class System.Activities.Tracking.ActivityInfo faultHandler, bool isFaultSource, class System.Exception fault) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.FaultPropagationRecord.#ctor(System.Guid,System.Int64,System.Activities.Tracking.ActivityInfo,System.Activities.Tracking.ActivityInfo,System.Boolean,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instanceId" Type="System.Guid" />
+        <Parameter Name="recordNumber" Type="System.Int64" />
+        <Parameter Name="faultSource" Type="System.Activities.Tracking.ActivityInfo" />
+        <Parameter Name="faultHandler" Type="System.Activities.Tracking.ActivityInfo" />
+        <Parameter Name="isFaultSource" Type="System.Boolean" />
+        <Parameter Name="fault" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="instanceId">The instance ID of the activity that generated the event.</param>
+        <param name="recordNumber">A sequence that defines the order in which tracking events are generated.</param>
+        <param name="faultSource">The activity that is the source of the fault.</param>
+        <param name="faultHandler">The activity that is the fault handler.</param>
+        <param name="isFaultSource">
+          <see langword="true" /> if this handler is the first handler of the fault; <see langword="false" /> if this handler is a subsequent handler of the fault.</param>
+        <param name="fault">The exception details.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.FaultPropagationRecord" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="protected override System.Activities.Tracking.TrackingRecord Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Activities.Tracking.TrackingRecord Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.FaultPropagationRecord.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Tracking.TrackingRecord</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fault">
+      <MemberSignature Language="C#" Value="public Exception Fault { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Fault" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.FaultPropagationRecord.Fault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get the exception data contained in the fault.</summary>
+        <value>The exception data.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FaultHandler">
+      <MemberSignature Language="C#" Value="public System.Activities.Tracking.ActivityInfo FaultHandler { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Tracking.ActivityInfo FaultHandler" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.FaultPropagationRecord.FaultHandler" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Tracking.ActivityInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Activities.Tracking.ActivityInfo" /> of the fault handler.</summary>
+        <value>The activity information.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FaultSource">
+      <MemberSignature Language="C#" Value="public System.Activities.Tracking.ActivityInfo FaultSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Tracking.ActivityInfo FaultSource" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.FaultPropagationRecord.FaultSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Tracking.ActivityInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Activities.Tracking.ActivityInfo" /> of the activity that generated the fault.</summary>
+        <value>The activity information.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFaultSource">
+      <MemberSignature Language="C#" Value="public bool IsFaultSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFaultSource" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.FaultPropagationRecord.IsFaultSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A value that indicates whether this handler is the first handler for the fault.</summary>
+        <value>
+          <see langword="true" /> if this is the first handler for the exception. <see langword="false" /> if this handler is a subsequent handler for the fault.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.FaultPropagationRecord.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current <see cref="T:System.Activities.Tracking.FaultPropagationRecord" /> object.</summary>
+        <returns>The tracking data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,55 @@
+<Type Name="MailEncoding" FullName="System.Web.Mail.MailEncoding">
+  <TypeSignature Language="C#" Value="public enum MailEncoding" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MailEncoding extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Mail.MailEncoding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The recommended alternative is System.Net.Mime.TransferEncoding. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides enumerated values for e-mail encoding. Recommended alternative: <see cref="N:System.Net.Mail" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Base64">
+      <MemberSignature Language="C#" Value="Base64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Mail.MailEncoding Base64 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Mail.MailEncoding.Base64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Mail.MailEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the e-mail message uses Base64 encoding.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UUEncode">
+      <MemberSignature Language="C#" Value="UUEncode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Mail.MailEncoding UUEncode = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Mail.MailEncoding.UUEncode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Mail.MailEncoding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the e-mail message uses UUEncode encoding.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

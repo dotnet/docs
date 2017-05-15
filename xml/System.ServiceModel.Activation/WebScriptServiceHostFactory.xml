@@ -1,0 +1,98 @@
+<Type Name="WebScriptServiceHostFactory" FullName="System.ServiceModel.Activation.WebScriptServiceHostFactory">
+  <TypeSignature Language="C#" Value="public class WebScriptServiceHostFactory : System.ServiceModel.Activation.ServiceHostFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebScriptServiceHostFactory extends System.ServiceModel.Activation.ServiceHostFactory" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.WebScriptServiceHostFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Activation.ServiceHostFactory</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Automatically adds an ASP.NET AJAX endpoint to a service, without requiring configuration, in a managed hosting environment that dynamically activates host instances for the service in response to incoming messages.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This factory provides a way to add an ASP.NET AJAX endpoint to a service without requiring configuration. The endpoint is added to any other endpoints that are defined in configuration, if any. The managed hosting environments that support this type of dynamic host activation are Internet Information Services (IIS) and Windows Process Activation Services (WAS).  
+  
+ To use this factory, specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> in the `Factory` attribute of the [@ServiceHost](~/docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive.  
+  
+ The ASP.NET AJAX endpoint created by this factory is configured with the <xref:System.ServiceModel.WebHttpBinding> and the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>, with all the default settings. The endpoint is created at an empty address relative to the .svc file. If service configuration already defines an endpoint at this address, an <xref:System.InvalidOperationException> is thrown and the service fails to start.  
+  
+   
+  
+## Examples  
+ Specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> for the value of the `Factory` attribute in the [@ServiceHost](~/docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive to activate an ASP.NET AJAX endpoint for the `MyService` service as shown in the following example.  
+  
+```  
+<% @ServiceHost   
+Service="MyService"  
+Language="C#"  
+Debug="true"  
+Factory="WebScriptServiceHostFactory"  
+%>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebScriptServiceHostFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.WebScriptServiceHostFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activation.WebScriptServiceHostFactory" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally, this constructor is called automatically by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] as part of service activation - there is no need to call this method manually.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateServiceHost">
+      <MemberSignature Language="C#" Value="protected override System.ServiceModel.ServiceHost CreateServiceHost (Type serviceType, Uri[] baseAddresses);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.ServiceHost CreateServiceHost(class System.Type serviceType, class System.Uri[] baseAddresses) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.WebScriptServiceHostFactory.CreateServiceHost(System.Type,System.Uri[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.ServiceHost</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+        <Parameter Name="baseAddresses" Type="System.Uri[]" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The type of service to host.</param>
+        <param name="baseAddresses">The <see cref="T:System.Array" /> of type <see cref="T:System.Uri" /> that contains the base addresses for the service hosted.</param>
+        <summary>Creates a derived class of <see cref="T:System.ServiceModel.ServiceHost" /> for a specified type of service with a specific base address that can be used to automatically enable ASP.NET AJAX endpoints in certain scenarios.</summary>
+        <returns>A <see cref="T:System.ServiceModel.ServiceHost" /> for the type of service specified with the specified base address.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally, this method is called automatically by [!INCLUDE[indigo1](~/includes/indigo1-md.md)] as part of service activation - there is no need to call this method manually.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Another service uses the same base address, or another endpoint is using the same address as the ASP.NET AJAX endpoint that this factory is trying to create.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

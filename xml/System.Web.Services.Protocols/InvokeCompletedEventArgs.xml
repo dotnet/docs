@@ -1,0 +1,46 @@
+<Type Name="InvokeCompletedEventArgs" FullName="System.Web.Services.Protocols.InvokeCompletedEventArgs">
+  <TypeSignature Language="C#" Value="public class InvokeCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InvokeCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.InvokeCompletedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the result of an asynchronously invoked web method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is accepted as an argument by delegates of the type <xref:System.Web.Services.Protocols.InvokeCompletedEventHandler>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Results">
+      <MemberSignature Language="C#" Value="public object[] Results { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object[] Results" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.InvokeCompletedEventArgs.Results" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the results returned by the Web method.</summary>
+        <value>An array of objects returned by the Web method.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

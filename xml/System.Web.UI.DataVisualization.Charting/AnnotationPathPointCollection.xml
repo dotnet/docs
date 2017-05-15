@@ -1,0 +1,89 @@
+<Type Name="AnnotationPathPointCollection" FullName="System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection">
+  <TypeSignature Language="C#" Value="public class AnnotationPathPointCollection : System.Web.UI.DataVisualization.Charting.ChartElementCollection&lt;System.Web.UI.DataVisualization.Charting.AnnotationPathPoint&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnnotationPathPointCollection extends System.Web.UI.DataVisualization.Charting.ChartElementCollection`1&lt;class System.Web.UI.DataVisualization.Charting.AnnotationPathPoint&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.DataVisualization.Charting.ChartElementCollection&lt;System.Web.UI.DataVisualization.Charting.AnnotationPathPoint&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">System.Web.UI.DataVisualization.Charting.AnnotationPathPoint</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.DataVisualization.Charting.PolylineAnnotation" /> or <see cref="T:System.Web.UI.DataVisualization.Charting.PolygonAnnotation" /> path points, which can be accessed using the <c>GraphicPathPoints</c> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This collection is used at design time only, and employs serialization to expose the shape of a polyline or polygon annotation, using their respective `GraphicPathPoints` collection properties.  
+  
+ At run time, use the `GraphicsPath` property to set the path of a <xref:System.Web.UI.DataVisualization.Charting.PolylineAnnotation> or <xref:System.Web.UI.DataVisualization.Charting.PolygonAnnotation>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnnotationPathPointCollection (System.Web.UI.DataVisualization.Charting.PolylineAnnotation annotation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.DataVisualization.Charting.PolylineAnnotation annotation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection.#ctor(System.Web.UI.DataVisualization.Charting.PolylineAnnotation)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="annotation" Type="System.Web.UI.DataVisualization.Charting.PolylineAnnotation" />
+      </Parameters>
+      <Docs>
+        <param name="annotation">A polyline annotation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection" /> class with the specified polyline annotation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases unmanaged and, optionally, managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalidate">
+      <MemberSignature Language="C#" Value="public override void Invalidate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Invalidate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.AnnotationPathPointCollection.Invalidate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Forces the invalidation of the chart element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

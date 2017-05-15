@@ -1,0 +1,1815 @@
+<Type Name="EdmFunctions" FullName="System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions">
+  <TypeSignature Language="C#" Value="public static class EdmFunctions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EdmFunctions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an API to construct <see cref="T:System.Data.Common.CommandTrees.DbExpression" />s that invoke canonical EDM functions, and allows that API to be accessed as extension methods on the expression type itself.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Abs">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Abs (this System.Data.Common.CommandTrees.DbExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Abs(class System.Data.Common.CommandTrees.DbExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Abs(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">An expression that specifies the numeric value.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Abs' function with the specified argument, which must each have a numeric result type. The result type of the expression is the same as the result type of **value**.</summary>
+        <returns>A new DbFunctionExpression that returns the absolute value of **value**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**value**</exception>
+        <exception cref="T:System.ArgumentException">**value**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDays">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddDays (this System.Data.Common.CommandTrees.DbExpression dateValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddDays(class System.Data.Common.CommandTrees.DbExpression dateValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.AddDays(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">An expression that specifies the value to which **addValue**should be added.</param>
+        <param name="addValue">An expression that specifies the number of days to add to **dateValue**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'AddDays' function with the specified arguments, which must have DateTime or DateTimeOffset and integer result types. The result type of the expression is the same as the result type of **dateValue**.</summary>
+        <returns>A new DbFunctionExpression that adds the number of days specified by **addValue** to the value specified by **dateValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**dateValue** **addValue**</exception>
+        <exception cref="T:System.ArgumentException">**dateValue** **addValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHours">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddHours (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddHours(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.AddHours(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
+        <param name="addValue">An expression that specifies the number of hours to add to **timeValue**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'AddHours' function with the specified arguments, which must have DateTime, DateTimeOffset or Time, and integer result types. The result type of the expression is the same as the result type of **timeValue**.</summary>
+        <returns>A new DbFunctionExpression that adds the number of hours specified by **addValue** to the value specified by **timeValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**timeValue** **addValue**</exception>
+        <exception cref="T:System.ArgumentException">**timeValue** **addValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMicroseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddMicroseconds (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddMicroseconds(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.AddMicroseconds(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
+        <param name="addValue">An expression that specifies the number of microseconds to add to **timeValue**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'AddMicroseconds' function with the specified arguments, which must have DateTime, DateTimeOffset or Time, and integer result types. The result type of the expression is the same as the result type of **timeValue**.</summary>
+        <returns>A new DbFunctionExpression that adds the number of microseconds specified by **addValue** to the value specified by **timeValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**timeValue** **addValue**</exception>
+        <exception cref="T:System.ArgumentException">**timeValue** **addValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMilliseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddMilliseconds (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddMilliseconds(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.AddMilliseconds(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
+        <param name="addValue">An expression that specifies the number of milliseconds to add to **timeValue**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'AddMilliseconds' function with the specified arguments, which must have DateTime, DateTimeOffset or Time, and integer result types. The result type of the expression is the same as the result type of **timeValue**.</summary>
+        <returns>A new DbFunctionExpression that adds the number of milliseconds specified by **addValue** to the value specified by **timeValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**timeValue** **addValue**</exception>
+        <exception cref="T:System.ArgumentException">**timeValue** **addValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMinutes">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddMinutes (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddMinutes(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.AddMinutes(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
+        <param name="addValue">An expression that specifies the number of minutes to add to **timeValue**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'AddMinutes' function with the specified arguments, which must have DateTime, DateTimeOffset or Time, and integer result types. The result type of the expression is the same as the result type of **timeValue**.</summary>
+        <returns>A new DbFunctionExpression that adds the number of minutes specified by **addValue** to the value specified by **timeValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**timeValue** **addValue**</exception>
+        <exception cref="T:System.ArgumentException">**timeValue** **addValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMonths">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddMonths (this System.Data.Common.CommandTrees.DbExpression dateValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddMonths(class System.Data.Common.CommandTrees.DbExpression dateValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.AddMonths(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">An expression that specifies the value to which **addValue**should be added.</param>
+        <param name="addValue">An expression that specifies the number of months to add to **dateValue**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'AddMonths' function with the specified arguments, which must have DateTime or DateTimeOffset and integer result types. The result type of the expression is the same as the result type of **dateValue**.</summary>
+        <returns>A new DbFunctionExpression that adds the number of months specified by **addValue** to the value specified by **dateValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**dateValue** **addValue**</exception>
+        <exception cref="T:System.ArgumentException">**dateValue** **addValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNanoseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddNanoseconds (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddNanoseconds(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.AddNanoseconds(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
+        <param name="addValue">An expression that specifies the number of nanoseconds to add to **timeValue**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'AddNanoseconds' function with the specified arguments, which must have DateTime, DateTimeOffset or Time, and integer result types. The result type of the expression is the same as the result type of **timeValue**.</summary>
+        <returns>A new DbFunctionExpression that adds the number of nanoseconds specified by **addValue** to the value specified by **timeValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**timeValue** **addValue**</exception>
+        <exception cref="T:System.ArgumentException">**timeValue** **addValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddSeconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddSeconds (this System.Data.Common.CommandTrees.DbExpression timeValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddSeconds(class System.Data.Common.CommandTrees.DbExpression timeValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.AddSeconds(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">An expression that specifies the value to which **addValue**should be added.</param>
+        <param name="addValue">An expression that specifies the number of seconds to add to **timeValue**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'AddSeconds' function with the specified arguments, which must have DateTime, DateTimeOffset or Time, and integer result types. The result type of the expression is the same as the result type of **timeValue**.</summary>
+        <returns>A new DbFunctionExpression that adds the number of seconds specified by **addValue** to the value specified by **timeValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**timeValue** **addValue**</exception>
+        <exception cref="T:System.ArgumentException">**timeValue** **addValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddYears">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression AddYears (this System.Data.Common.CommandTrees.DbExpression dateValue, System.Data.Common.CommandTrees.DbExpression addValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression AddYears(class System.Data.Common.CommandTrees.DbExpression dateValue, class System.Data.Common.CommandTrees.DbExpression addValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.AddYears(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="addValue" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">An expression that specifies the value to which **addValue**should be added.</param>
+        <param name="addValue">An expression that specifies the number of years to add to **dateValue**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'AddYears' function with the specified arguments, which must have DateTime or DateTimeOffset and integer result types. The result type of the expression is the same as the result type of **dateValue**.</summary>
+        <returns>A new DbFunctionExpression that adds the number of years specified by **addValue** to the value specified by **dateValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**dateValue** **addValue**</exception>
+        <exception cref="T:System.ArgumentException">**dateValue** **addValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Average">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Average (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Average(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Average(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">An expression that specifies the collection from which the average value should be computed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Avg' function over the specified collection. The result type of the expression is the same as the element type of the collection.</summary>
+        <returns>A new DbFunctionExpression that produces the average value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**collection**</exception>
+        <exception cref="T:System.ArgumentException">**collection**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseAnd">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression BitwiseAnd (this System.Data.Common.CommandTrees.DbExpression value1, System.Data.Common.CommandTrees.DbExpression value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression BitwiseAnd(class System.Data.Common.CommandTrees.DbExpression value1, class System.Data.Common.CommandTrees.DbExpression value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.BitwiseAnd(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value1">An expression that specifies the first operand.</param>
+        <param name="value2">An expression that specifies the second operand.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'BitwiseAnd' function with the specified arguments, which must have the same integer numeric result type. The result type of the expression is the same as the type of the arguments.</summary>
+        <returns>A new DbFunctionExpression that returns the value produced by performing the bitwise AND of **value1** and **value2**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**value1** **value2**</exception>
+        <exception cref="T:System.ArgumentException">**value1** **value2**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseNot">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression BitwiseNot (this System.Data.Common.CommandTrees.DbExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression BitwiseNot(class System.Data.Common.CommandTrees.DbExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.BitwiseNot(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">An expression that specifies the first operand.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'BitwiseNot' function with the specified argument, which must have an integer numeric result type. The result type of the expression is the same as the type of the arguments.</summary>
+        <returns>A new DbFunctionExpression that returns the value produced by performing the bitwise NOT of **value**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**value**</exception>
+        <exception cref="T:System.ArgumentException">**value**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseOr">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression BitwiseOr (this System.Data.Common.CommandTrees.DbExpression value1, System.Data.Common.CommandTrees.DbExpression value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression BitwiseOr(class System.Data.Common.CommandTrees.DbExpression value1, class System.Data.Common.CommandTrees.DbExpression value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.BitwiseOr(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value1">An expression that specifies the first operand.</param>
+        <param name="value2">An expression that specifies the second operand.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'BitwiseOr' function with the specified arguments, which must have the same integer numeric result type. The result type of the expression is the same as the type of the arguments.</summary>
+        <returns>A new DbFunctionExpression that returns the value produced by performing the bitwise OR of **value1** and **value2**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**value1** **value2**</exception>
+        <exception cref="T:System.ArgumentException">**value1** **value2**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BitwiseXor">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression BitwiseXor (this System.Data.Common.CommandTrees.DbExpression value1, System.Data.Common.CommandTrees.DbExpression value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression BitwiseXor(class System.Data.Common.CommandTrees.DbExpression value1, class System.Data.Common.CommandTrees.DbExpression value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.BitwiseXor(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="value2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value1">An expression that specifies the first operand.</param>
+        <param name="value2">An expression that specifies the second operand.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'BitwiseXor' function with the specified arguments, which must have the same integer numeric result type. The result type of the expression is the same as the type of the arguments.</summary>
+        <returns>A new DbFunctionExpression that returns the value produced by performing the bitwise XOR (exclusive OR) of **value1** and **value2**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**value1** **value2**</exception>
+        <exception cref="T:System.ArgumentException">**value1** **value2**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Ceiling">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Ceiling (this System.Data.Common.CommandTrees.DbExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Ceiling(class System.Data.Common.CommandTrees.DbExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Ceiling(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">An expression that specifies the numeric value.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Ceiling' function with the specified argument, which must each have a single, double or decimal result type. The result type of the expression is the same as the result type of **value**.</summary>
+        <returns>A new DbFunctionExpression that returns the smallest integer value not less than than **value**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**value**</exception>
+        <exception cref="T:System.ArgumentException">**value**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Concat">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Concat (this System.Data.Common.CommandTrees.DbExpression string1, System.Data.Common.CommandTrees.DbExpression string2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Concat(class System.Data.Common.CommandTrees.DbExpression string1, class System.Data.Common.CommandTrees.DbExpression string2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Concat(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="string1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="string2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="string1">An expression that specifies the string that should appear first in the concatenated result string.</param>
+        <param name="string2">An expression that specifies the string that should appear second in the concatenated result string.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Concat' function with the specified arguments, which must each have a string result type. The result type of the expression is string.</summary>
+        <returns>A new DbFunctionExpression that produces the concatenated string.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**string1** **string2**</exception>
+        <exception cref="T:System.ArgumentException">**string1** **string2**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbExpression Contains (this System.Data.Common.CommandTrees.DbExpression searchedString, System.Data.Common.CommandTrees.DbExpression searchedForString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbExpression Contains(class System.Data.Common.CommandTrees.DbExpression searchedString, class System.Data.Common.CommandTrees.DbExpression searchedForString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Contains(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchedString" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="searchedForString" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="searchedString">An expression that specifies the string to search for any occurence of **searchedForString**.</param>
+        <param name="searchedForString">An expression that specifies the string to search for in **searchedString**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Contains' function with the specified arguments, which must each have a string result type. The result type of the expression is Boolean.</summary>
+        <returns>A new DbFunctionExpression that returns a Boolean value indicating whether or not **searchedForString** occurs within **searchedString**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**searchedString** **searchedForString**</exception>
+        <exception cref="T:System.ArgumentException">**searchedString** **searchedForString**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Count (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Count(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Count(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">An expression that specifies the collection over which the count value should be computed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Count' function over the specified collection. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that produces the count value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**collection**</exception>
+        <exception cref="T:System.ArgumentException">**collection**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDateTime">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CreateDateTime (System.Data.Common.CommandTrees.DbExpression year, System.Data.Common.CommandTrees.DbExpression month, System.Data.Common.CommandTrees.DbExpression day, System.Data.Common.CommandTrees.DbExpression hour, System.Data.Common.CommandTrees.DbExpression minute, System.Data.Common.CommandTrees.DbExpression second);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CreateDateTime(class System.Data.Common.CommandTrees.DbExpression year, class System.Data.Common.CommandTrees.DbExpression month, class System.Data.Common.CommandTrees.DbExpression day, class System.Data.Common.CommandTrees.DbExpression hour, class System.Data.Common.CommandTrees.DbExpression minute, class System.Data.Common.CommandTrees.DbExpression second) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.CreateDateTime(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="month" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="day" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="year">An expression that provides the year value for the new DateTime instance.</param>
+        <param name="month">An expression that provides the month value for the new DateTime instance.</param>
+        <param name="day">An expression that provides the day value for the new DateTime instance.</param>
+        <param name="hour">An expression that provides the hour value for the new DateTime instance.</param>
+        <param name="minute">An expression that provides the minute value for the new DateTime instance.</param>
+        <param name="second">An expression that provides the second value for the new DateTime instance.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'CreateDateTime' function with the specified arguments. **second** must have a result type of Edm.Double, while all other arguments must have a result type of Edm.Int32. The result type of the expression is Edm.DateTime.</summary>
+        <returns>A new DbFunctionExpression that returns a new DateTime based on the specified values.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**year** **month** **day** **hour** **minute** **second**</exception>
+        <exception cref="T:System.ArgumentException">**year** **month** **day** **hour** **minute** **second**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDateTimeOffset">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CreateDateTimeOffset (System.Data.Common.CommandTrees.DbExpression year, System.Data.Common.CommandTrees.DbExpression month, System.Data.Common.CommandTrees.DbExpression day, System.Data.Common.CommandTrees.DbExpression hour, System.Data.Common.CommandTrees.DbExpression minute, System.Data.Common.CommandTrees.DbExpression second, System.Data.Common.CommandTrees.DbExpression timeZoneOffset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CreateDateTimeOffset(class System.Data.Common.CommandTrees.DbExpression year, class System.Data.Common.CommandTrees.DbExpression month, class System.Data.Common.CommandTrees.DbExpression day, class System.Data.Common.CommandTrees.DbExpression hour, class System.Data.Common.CommandTrees.DbExpression minute, class System.Data.Common.CommandTrees.DbExpression second, class System.Data.Common.CommandTrees.DbExpression timeZoneOffset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.CreateDateTimeOffset(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="year" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="month" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="day" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="timeZoneOffset" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="year">An expression that provides the year value for the new DateTimeOffset instance.</param>
+        <param name="month">An expression that provides the month value for the new DateTimeOffset instance.</param>
+        <param name="day">An expression that provides the day value for the new DateTimeOffset instance.</param>
+        <param name="hour">An expression that provides the hour value for the new DateTimeOffset instance.</param>
+        <param name="minute">An expression that provides the minute value for the new DateTimeOffset instance.</param>
+        <param name="second">An expression that provides the second value for the new DateTimeOffset instance.</param>
+        <param name="timeZoneOffset">An expression that provides the number of minutes in the time zone offset value for the new DateTimeOffset instance.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'CreateDateTimeOffset' function with the specified arguments. **second** must have a result type of Edm.Double, while all other arguments must have a result type of Edm.Int32. The result type of the expression is Edm.DateTimeOffset.</summary>
+        <returns>A new DbFunctionExpression that returns a new DateTimeOffset based on the specified values.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**year** **month** **day** **hour** **minute** **second** **timeZoneOffset**</exception>
+        <exception cref="T:System.ArgumentException">**year** **month** **day** **hour** **minute** **second** **timeZoneOffset**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTime">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CreateTime (System.Data.Common.CommandTrees.DbExpression hour, System.Data.Common.CommandTrees.DbExpression minute, System.Data.Common.CommandTrees.DbExpression second);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CreateTime(class System.Data.Common.CommandTrees.DbExpression hour, class System.Data.Common.CommandTrees.DbExpression minute, class System.Data.Common.CommandTrees.DbExpression second) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.CreateTime(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hour" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="minute" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="second" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="hour">An expression that provides the hour value for the new DateTime instance.</param>
+        <param name="minute">An expression that provides the minute value for the new DateTime instance.</param>
+        <param name="second">An expression that provides the second value for the new DateTime instance.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'CreateTime' function with the specified arguments. **second** must have a result type of Edm.Double, while all other arguments must have a result type of Edm.Int32. The result type of the expression is Edm.Time.</summary>
+        <returns>A new DbFunctionExpression that returns a new Time based on the specified values.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**hour** **minute** **second**</exception>
+        <exception cref="T:System.ArgumentException">**hour** **minute** **second**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentDateTime">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CurrentDateTime ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CurrentDateTime() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.CurrentDateTime" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'CurrentDateTime' function.</summary>
+        <returns>A new DbFunctionExpression that returns the current date and time as an Edm.DateTime instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentDateTimeOffset">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CurrentDateTimeOffset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CurrentDateTimeOffset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.CurrentDateTimeOffset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'CurrentDateTimeOffset' function.</summary>
+        <returns>A new DbFunctionExpression that returns the current date and time as an Edm.DateTimeOffset instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentUtcDateTime">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression CurrentUtcDateTime ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression CurrentUtcDateTime() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.CurrentUtcDateTime" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'CurrentUtcDateTime' function.</summary>
+        <returns>A new DbFunctionExpression that returns the current UTC date and time as an Edm.DateTime instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Day">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Day (this System.Data.Common.CommandTrees.DbExpression dateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Day(class System.Data.Common.CommandTrees.DbExpression dateValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Day(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">An expression that specifies the value from which the day should be retrieved.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Day' function with the specified argument, which must have a DateTime or DateTimeOffset result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the integer day value from **dateValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**dateValue**</exception>
+        <exception cref="T:System.ArgumentException">**dateValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DayOfYear">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DayOfYear (this System.Data.Common.CommandTrees.DbExpression dateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DayOfYear(class System.Data.Common.CommandTrees.DbExpression dateValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.DayOfYear(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">An expression that specifies the value from which the day within the year should be retrieved.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'DayOfYear' function with the specified argument, which must have a DateTime or DateTimeOffset result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the integer day of year value from **dateValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**dateValue**</exception>
+        <exception cref="T:System.ArgumentException">**dateValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffDays">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffDays (this System.Data.Common.CommandTrees.DbExpression dateValue1, System.Data.Common.CommandTrees.DbExpression dateValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffDays(class System.Data.Common.CommandTrees.DbExpression dateValue1, class System.Data.Common.CommandTrees.DbExpression dateValue2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.DiffDays(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue1">An expression that specifies the first date value argument.</param>
+        <param name="dateValue2">An expression that specifies the second date value argument.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'DiffDays' function with the specified arguments, which must each have DateTime or DateTimeOffset result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the number of days that is the difference between **dateValue1** and **dateValue2**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffHours">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffHours (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffHours(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.DiffHours(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">An expression that specifies the first time value argument.</param>
+        <param name="timeValue2">An expression that specifies the second time value argument.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'DiffHours' function with the specified arguments, which must each have DateTime, DateTimeOffset or Time result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the number of hours that is the difference between **timeValue1** and **timeValue2**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffMicroseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffMicroseconds (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffMicroseconds(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.DiffMicroseconds(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">An expression that specifies the first time value argument.</param>
+        <param name="timeValue2">An expression that specifies the second time value argument.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'DiffMicroseconds' function with the specified arguments, which must each have DateTime, DateTimeOffset or Time result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the number of microseconds that is the difference between **timeValue1** and **timeValue2**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffMilliseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffMilliseconds (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffMilliseconds(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.DiffMilliseconds(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">An expression that specifies the first time value argument.</param>
+        <param name="timeValue2">An expression that specifies the second time value argument.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'DiffMilliseconds' function with the specified arguments, which must each have DateTime, DateTimeOffset or Time result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the number of milliseconds that is the difference between **timeValue1** and **timeValue2**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffMinutes">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffMinutes (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffMinutes(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.DiffMinutes(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">An expression that specifies the first time value argument.</param>
+        <param name="timeValue2">An expression that specifies the second time value argument.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'DiffMinutes' function with the specified arguments, which must each have DateTime, DateTimeOffset or Time result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the number of minutes that is the difference between **timeValue1** and **timeValue2**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffMonths">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffMonths (this System.Data.Common.CommandTrees.DbExpression dateValue1, System.Data.Common.CommandTrees.DbExpression dateValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffMonths(class System.Data.Common.CommandTrees.DbExpression dateValue1, class System.Data.Common.CommandTrees.DbExpression dateValue2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.DiffMonths(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue1">An expression that specifies the first date value argument.</param>
+        <param name="dateValue2">An expression that specifies the second date value argument.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'DiffMonths' function with the specified arguments, which must each have DateTime or DateTimeOffset result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the number of months that is the difference between **dateValue1** and **dateValue2**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffNanoseconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffNanoseconds (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffNanoseconds(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.DiffNanoseconds(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">An expression that specifies the first time value argument.</param>
+        <param name="timeValue2">An expression that specifies the second time value argument.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'DiffNanoseconds' function with the specified arguments, which must each have DateTime, DateTimeOffset or Time result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the number of nanoseconds that is the difference between **timeValue1** and **timeValue2**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffSeconds">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffSeconds (this System.Data.Common.CommandTrees.DbExpression timeValue1, System.Data.Common.CommandTrees.DbExpression timeValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffSeconds(class System.Data.Common.CommandTrees.DbExpression timeValue1, class System.Data.Common.CommandTrees.DbExpression timeValue2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.DiffSeconds(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="timeValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue1">An expression that specifies the first time value argument.</param>
+        <param name="timeValue2">An expression that specifies the second time value argument.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'DiffSeconds' function with the specified arguments, which must each have DateTime, DateTimeOffset or Time result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the number of seconds that is the difference between **timeValue1** and **timeValue2**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiffYears">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression DiffYears (this System.Data.Common.CommandTrees.DbExpression dateValue1, System.Data.Common.CommandTrees.DbExpression dateValue2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression DiffYears(class System.Data.Common.CommandTrees.DbExpression dateValue1, class System.Data.Common.CommandTrees.DbExpression dateValue2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.DiffYears(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue1" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="dateValue2" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue1">An expression that specifies the first date value argument.</param>
+        <param name="dateValue2">An expression that specifies the second date value argument.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'DiffYears' function with the specified arguments, which must each have DateTime or DateTimeOffset result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the number of years that is the difference between **dateValue1** and **dateValue2**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndsWith">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression EndsWith (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression suffix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression EndsWith(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression suffix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.EndsWith(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="suffix" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string that is searched at the end for string **suffix**.</param>
+        <param name="suffix">An expression that specifies the target string that is searched for at the end of **stringArgument**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'EndsWith' function with the specified arguments, which must each have a string result type. The result type of the expression is Boolean.</summary>
+        <returns>A new DbFunctionExpression that returns a Boolean value indicating whether or not **stringArgument** ends with **suffix**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Floor">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Floor (this System.Data.Common.CommandTrees.DbExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Floor(class System.Data.Common.CommandTrees.DbExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Floor(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">An expression that specifies the numeric value.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Floor' function with the specified argument, which must each have a single, double or decimal result type. The result type of the expression is the same as the result type of **value**.</summary>
+        <returns>A new DbFunctionExpression that returns the largest integer value not greater than **value**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**value**</exception>
+        <exception cref="T:System.ArgumentException">**value**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTotalOffsetMinutes">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression GetTotalOffsetMinutes (this System.Data.Common.CommandTrees.DbExpression dateTimeOffsetArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression GetTotalOffsetMinutes(class System.Data.Common.CommandTrees.DbExpression dateTimeOffsetArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.GetTotalOffsetMinutes(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTimeOffsetArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateTimeOffsetArgument">An expression that specifies the DateTimeOffset value from which the minute offset from GMT should be retrieved.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'GetTotalOffsetMinutes' function with the specified argument, which must have a DateTimeOffset result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the number of minutes **dateTimeOffsetArgument** is offset from GMT.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**dateTimeOffsetArgument**</exception>
+        <exception cref="T:System.ArgumentException">**dateTimeOffsetArgument**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Hour">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Hour (this System.Data.Common.CommandTrees.DbExpression timeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Hour(class System.Data.Common.CommandTrees.DbExpression timeValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Hour(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">An expression that specifies the value from which the hour should be retrieved.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Hour' function with the specified argument, which must have a DateTime, DateTimeOffset or Time result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the integer hour value from **timeValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**timeValue**</exception>
+        <exception cref="T:System.ArgumentException">**timeValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression IndexOf (this System.Data.Common.CommandTrees.DbExpression searchString, System.Data.Common.CommandTrees.DbExpression stringToFind);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression IndexOf(class System.Data.Common.CommandTrees.DbExpression searchString, class System.Data.Common.CommandTrees.DbExpression stringToFind) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.IndexOf(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="searchString" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="stringToFind" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="searchString">An expression that specifies the string to search for **stringToFind**.</param>
+        <param name="stringToFind">An expression that specifies the string to locate within **searchString** should be checked.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'IndexOf' function with the specified arguments, which must each have a string result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the first index of **stringToFind** in **searchString**.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The index returned by IndexOf is \<b>1-based\</b>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">**searchString** **stringToFind**</exception>
+        <exception cref="T:System.ArgumentException">**searchString** **stringToFind**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Left (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Left(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Left(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string from which to extract the leftmost substring.</param>
+        <param name="length">An expression that specifies the length of the leftmost substring to extract from **stringArgument**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Left' function with the specified arguments, which must have a string and integer numeric result type. The result type of the expression is string.</summary>
+        <returns>A new DbFunctionExpression that returns the the leftmost substring of length **length** from **stringArgument**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**stringArgument** **length**</exception>
+        <exception cref="T:System.ArgumentException">**stringArgument**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Length (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Length(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Length(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string for which the length should be computed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Length' function with the specified argument, which must have a string result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the length of **stringArgument**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**stringArgument**</exception>
+        <exception cref="T:System.ArgumentException">**stringArgument**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LongCount">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression LongCount (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression LongCount(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.LongCount(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">An expression that specifies the collection over which the count value should be computed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'BigCount' function over the specified collection. The result type of the expression is Edm.Int64.</summary>
+        <returns>A new DbFunctionExpression that produces the count value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**collection**</exception>
+        <exception cref="T:System.ArgumentException">**collection**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Max">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Max (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Max(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Max(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">An expression that specifies the collection from which the maximum value should be retrieved</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Max' function over the specified collection. The result type of the expression is the same as the element type of the collection.</summary>
+        <returns>A new DbFunctionExpression that produces the maximum value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**collection**</exception>
+        <exception cref="T:System.ArgumentException">**collection**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Millisecond">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Millisecond (this System.Data.Common.CommandTrees.DbExpression timeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Millisecond(class System.Data.Common.CommandTrees.DbExpression timeValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Millisecond(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">An expression that specifies the value from which the millisecond should be retrieved.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Millisecond' function with the specified argument, which must have a DateTime, DateTimeOffset or Time result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the integer millisecond value from **timeValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**timeValue**</exception>
+        <exception cref="T:System.ArgumentException">**timeValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Min">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Min (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Min(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Min(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">An expression that specifies the collection from which the minimum value should be retrieved.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Min' function over the specified collection. The result type of the expression is the same as the element type of the collection.</summary>
+        <returns>A new DbFunctionExpression that produces the minimum value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**collection**</exception>
+        <exception cref="T:System.ArgumentException">**collection**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Minute">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Minute (this System.Data.Common.CommandTrees.DbExpression timeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Minute(class System.Data.Common.CommandTrees.DbExpression timeValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Minute(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">An expression that specifies the value from which the minute should be retrieved.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Minute' function with the specified argument, which must have a DateTime, DateTimeOffset or Time result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the integer minute value from **timeValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**timeValue**</exception>
+        <exception cref="T:System.ArgumentException">**timeValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Month">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Month (this System.Data.Common.CommandTrees.DbExpression dateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Month(class System.Data.Common.CommandTrees.DbExpression dateValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Month(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">An expression that specifies the value from which the month should be retrieved.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Month' function with the specified argument, which must have a DateTime or DateTimeOffset result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the integer month value from **dateValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**dateValue**</exception>
+        <exception cref="T:System.ArgumentException">**dateValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NewGuid">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression NewGuid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression NewGuid() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.NewGuid" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'NewGuid' function.</summary>
+        <returns>A new DbFunctionExpression that returns a new GUID value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Power">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Power (this System.Data.Common.CommandTrees.DbExpression baseArgument, System.Data.Common.CommandTrees.DbExpression exponent);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Power(class System.Data.Common.CommandTrees.DbExpression baseArgument, class System.Data.Common.CommandTrees.DbExpression exponent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Power(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="exponent" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="baseArgument">An expression that specifies the numeric value to raise to the given power.</param>
+        <param name="exponent">An expression that specifies the power to which **baseArgument** should be raised.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Power' function with the specified arguments, which must have numeric result types. The result type of the expression is the same as the result type of **baseArgument**.</summary>
+        <returns>A new DbFunctionExpression that returns the value of **baseArgument** raised to the power specified by **exponent**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**baseArgument** **exponent**</exception>
+        <exception cref="T:System.ArgumentException">**baseArgument** **exponent**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Replace">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Replace (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression toReplace, System.Data.Common.CommandTrees.DbExpression replacement);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Replace(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression toReplace, class System.Data.Common.CommandTrees.DbExpression replacement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Replace(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="toReplace" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="replacement" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string in which to perform the replacement operation.</param>
+        <param name="toReplace">An expression that specifies the string that is replaced.</param>
+        <param name="replacement">An expression that specifies the replacement string.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Replace' function with the specified arguments, which must each have a string result type. The result type of the expression is also string.</summary>
+        <returns>A new DbFunctionExpression than returns a new string based on **stringArgument** where every occurence of **toReplace** is replaced by **replacement**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**stringArgument** **toReplace** **replacement**</exception>
+        <exception cref="T:System.ArgumentException">**stringArgument** **toReplace** **replacement**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Reverse">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Reverse (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Reverse(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Reverse(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string to reverse.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Reverse' function with the specified argument, which must have a string result type. The result type of the expression is also string.</summary>
+        <returns>A new DbFunctionExpression that produces the reversed value of **stringArgument**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**stringArgument**</exception>
+        <exception cref="T:System.ArgumentException">**stringArgument**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Right (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Right(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Right(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string from which to extract the rightmost substring.</param>
+        <param name="length">An expression that specifies the length of the rightmost substring to extract from **stringArgument**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Right' function with the specified arguments, which must have a string and integer numeric result type. The result type of the expression is string.</summary>
+        <returns>A new DbFunctionExpression that returns the the rightmost substring of length **length** from **stringArgument**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**stringArgument** **length**</exception>
+        <exception cref="T:System.ArgumentException">**stringArgument**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Round (this System.Data.Common.CommandTrees.DbExpression value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Round(class System.Data.Common.CommandTrees.DbExpression value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Round(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value">An expression that specifies the numeric value to round.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Round' function with the specified argument, which must each have a single, double or decimal result type. The result type of the expression is the same as the result type of **value**.</summary>
+        <returns>A new DbFunctionExpression that rounds the specified argument to the nearest integer value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**value**</exception>
+        <exception cref="T:System.ArgumentException">**value**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Round (this System.Data.Common.CommandTrees.DbExpression value, System.Data.Common.CommandTrees.DbExpression digits);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Round(class System.Data.Common.CommandTrees.DbExpression value, class System.Data.Common.CommandTrees.DbExpression digits) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Round(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="digits" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value">An expression that specifies the numeric value to round.</param>
+        <param name="digits">An expression that specifies the number of digits of precision to use when rounding.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Round' function with the specified arguments, which must have a single, double or decimal, and integer result types. The result type of the expression is the same as the result type of **value**.</summary>
+        <returns>A new DbFunctionExpression that rounds the specified argument to the nearest integer value, with precision as specified by **digits**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**value** **digits**</exception>
+        <exception cref="T:System.ArgumentException">**value** **digits**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Second">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Second (this System.Data.Common.CommandTrees.DbExpression timeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Second(class System.Data.Common.CommandTrees.DbExpression timeValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Second(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="timeValue">An expression that specifies the value from which the second should be retrieved.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Second' function with the specified argument, which must have a DateTime, DateTimeOffset or Time result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the integer second value from **timeValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**timeValue**</exception>
+        <exception cref="T:System.ArgumentException">**timeValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartsWith">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression StartsWith (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression StartsWith(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression prefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.StartsWith(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="prefix" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string that is searched at the start for string **prefix**.</param>
+        <param name="prefix">An expression that specifies the target string that is searched for at the start of **stringArgument**.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'StartsWith' function with the specified arguments, which must each have a string result type. The result type of the expression is Boolean.</summary>
+        <returns>A new DbFunctionExpression that returns a Boolean value indicating whether or not **stringArgument** starts with **prefix**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StDev">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression StDev (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression StDev(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.StDev(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">An expression that specifies the collection for which the standard deviation should be computed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'StDev' function over the non-null members of the specified collection. The result type of the expression is Edm.Double.</summary>
+        <returns>A new DbFunctionExpression that produces the standard deviation value over non-null members of the collection.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**collection**</exception>
+        <exception cref="T:System.ArgumentException">**collection**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StDevP">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression StDevP (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression StDevP(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.StDevP(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">An expression that specifies the collection for which the standard deviation should be computed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'StDevP' function over the population of the specified collection. The result type of the expression is Edm.Double.</summary>
+        <returns>A new DbFunctionExpression that produces the standard deviation value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**collection**</exception>
+        <exception cref="T:System.ArgumentException">**collection**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Substring">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Substring (this System.Data.Common.CommandTrees.DbExpression stringArgument, System.Data.Common.CommandTrees.DbExpression start, System.Data.Common.CommandTrees.DbExpression length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Substring(class System.Data.Common.CommandTrees.DbExpression stringArgument, class System.Data.Common.CommandTrees.DbExpression start, class System.Data.Common.CommandTrees.DbExpression length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Substring(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="start" Type="System.Data.Common.CommandTrees.DbExpression" />
+        <Parameter Name="length" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string from which to extract the substring.</param>
+        <param name="start">An expression that specifies the starting index from which the substring should be taken.</param>
+        <param name="length">An expression that specifies the length of the substring.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Substring' function with the specified arguments, which must have a string and integer numeric result types. The result type of the expression is string.</summary>
+        <returns>A new DbFunctionExpression that returns the substring of length **length** from **stringArgument** starting at **start**.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Substring requires that the index specified by **start** be \<b>1-based\</b>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">**stringArgument** **start** **length**</exception>
+        <exception cref="T:System.ArgumentException">**stringArgument** **start** **length**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Sum">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Sum (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Sum(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Sum(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">An expression that specifies the collection from which the sum should be computed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Sum' function over the specified collection. The result type of the expression is the same as the element type of the collection.</summary>
+        <returns>A new DbFunctionExpression that produces the sum.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**collection**</exception>
+        <exception cref="T:System.ArgumentException">**collection**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToLower">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression ToLower (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression ToLower(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.ToLower(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string that should be converted to lower case.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'ToLower' function with the specified argument, which must have a string result type. The result type of the expression is also string.</summary>
+        <returns>A new DbFunctionExpression that returns value of **stringArgument** converted to lower case.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**stringArgument**</exception>
+        <exception cref="T:System.ArgumentException">**stringArgument**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToUpper">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression ToUpper (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression ToUpper(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.ToUpper(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string that should be converted to upper case.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'ToUpper' function with the specified argument, which must have a string result type. The result type of the expression is also string.</summary>
+        <returns>A new DbFunctionExpression that returns value of **stringArgument** converted to upper case.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**stringArgument**</exception>
+        <exception cref="T:System.ArgumentException">**stringArgument**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Trim">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Trim (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Trim(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Trim(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string from which leading and trailing space should be removed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Trim' function with the specified argument, which must have a string result type. The result type of the expression is also string.</summary>
+        <returns>A new DbFunctionExpression that returns value of **stringArgument** with leading and trailing space removed.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**stringArgument**</exception>
+        <exception cref="T:System.ArgumentException">**stringArgument**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimEnd">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression TrimEnd (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression TrimEnd(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.TrimEnd(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string from which trailing space should be removed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'RTrim' function with the specified argument, which must have a string result type. The result type of the expression is also string.</summary>
+        <returns>A new DbFunctionExpression that returns value of **stringArgument** with trailing space removed.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**stringArgument**</exception>
+        <exception cref="T:System.ArgumentException">**stringArgument**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TrimStart">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression TrimStart (this System.Data.Common.CommandTrees.DbExpression stringArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression TrimStart(class System.Data.Common.CommandTrees.DbExpression stringArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.TrimStart(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stringArgument" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="stringArgument">An expression that specifies the string from which leading space should be removed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'LTrim' function with the specified argument, which must have a string result type. The result type of the expression is also string.</summary>
+        <returns>A new DbFunctionExpression that returns value of **stringArgument** with leading space removed.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**stringArgument**</exception>
+        <exception cref="T:System.ArgumentException">**stringArgument**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Truncate">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Truncate (this System.Data.Common.CommandTrees.DbExpression value, System.Data.Common.CommandTrees.DbExpression digits);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Truncate(class System.Data.Common.CommandTrees.DbExpression value, class System.Data.Common.CommandTrees.DbExpression digits) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Truncate(System.Data.Common.CommandTrees.DbExpression,System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+        <Parameter Name="digits" Type="System.Data.Common.CommandTrees.DbExpression" />
+      </Parameters>
+      <Docs>
+        <param name="value">An expression that specifies the numeric value to truncate.</param>
+        <param name="digits">An expression that specifies the number of digits of precision to use when truncating.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Truncate' function with the specified arguments, which must have a single, double or decimal, and integer result types. The result type of the expression is the same as the result type of **value**.</summary>
+        <returns>A new DbFunctionExpression that truncates the specified argument to the nearest integer value, with precision as specified by **digits**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**value** **digits**</exception>
+        <exception cref="T:System.ArgumentException">**value** **digits**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TruncateTime">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression TruncateTime (this System.Data.Common.CommandTrees.DbExpression dateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression TruncateTime(class System.Data.Common.CommandTrees.DbExpression dateValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.TruncateTime(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">An expression that specifies the value for which the time portion should be truncated.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'TruncateTime' function with the specified argument, which must have a DateTime or DateTimeOffset result type. The result type of the expression is the same as the result type of **dateValue**.</summary>
+        <returns>A new DbFunctionExpression that returns the value of **dateValue** with time set to zero.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**dateValue**</exception>
+        <exception cref="T:System.ArgumentException">**dateValue**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Var">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Var (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Var(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Var(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">An expression that specifies the collection for which the statistical variance should be computed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Var' function over the non-null members of the specified collection. The result type of the expression is Edm.Double.</summary>
+        <returns>A new DbFunctionExpression that produces the statistical variance value for the non-null members of the collection.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**collection**</exception>
+        <exception cref="T:System.ArgumentException">**collection**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="VarP">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression VarP (this System.Data.Common.CommandTrees.DbExpression collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression VarP(class System.Data.Common.CommandTrees.DbExpression collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.VarP(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="collection">An expression that specifies the collection for which the statistical variance should be computed.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'VarP' function over the population of the specified collection. The result type of the expression Edm.Double.</summary>
+        <returns>A new DbFunctionExpression that produces the statistical variance value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**collection**</exception>
+        <exception cref="T:System.ArgumentException">**collection**</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Year">
+      <MemberSignature Language="C#" Value="public static System.Data.Common.CommandTrees.DbFunctionExpression Year (this System.Data.Common.CommandTrees.DbExpression dateValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.CommandTrees.DbFunctionExpression Year(class System.Data.Common.CommandTrees.DbExpression dateValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.EdmFunctions.Year(System.Data.Common.CommandTrees.DbExpression)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbFunctionExpression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateValue" Type="System.Data.Common.CommandTrees.DbExpression" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="dateValue">An expression that specifies the value from which the year should be retrieved.</param>
+        <summary>Creates a <see cref="T:System.Data.Common.CommandTrees.DbFunctionExpression" /> that invokes the canonical 'Year' function with the specified argument, which must have a DateTime or DateTimeOffset result type. The result type of the expression is Edm.Int32.</summary>
+        <returns>A new DbFunctionExpression that returns the integer year value from **dateValue**.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">**dateValue**</exception>
+        <exception cref="T:System.ArgumentException">**dateValue**</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

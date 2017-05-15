@@ -1,0 +1,210 @@
+<Type Name="ChartValueType" FullName="System.Web.UI.DataVisualization.Charting.ChartValueType">
+  <TypeSignature Language="C#" Value="public enum ChartValueType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartValueType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartValueType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies value types for various chart properties.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Property type is set automatically by the <see cref="T:System.Web.UI.DataVisualization.Charting.Chart" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Date">
+      <MemberSignature Language="C#" Value="Date" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType Date = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.Date" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The date portion of a <see cref="T:System.DateTime" /> value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTime">
+      <MemberSignature Language="C#" Value="DateTime" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType DateTime = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.DateTime" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.DateTime" /> value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DateTimeOffset">
+      <MemberSignature Language="C#" Value="DateTimeOffset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType DateTimeOffset = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.DateTimeOffset" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.DateTime" /> value with offset.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Double">
+      <MemberSignature Language="C#" Value="Double" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType Double = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.Double" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Double" /> value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Int32">
+      <MemberSignature Language="C#" Value="Int32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType Int32 = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.Int32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Int32" /> value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Int64">
+      <MemberSignature Language="C#" Value="Int64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType Int64 = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.Int64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Int64" /> value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Single">
+      <MemberSignature Language="C#" Value="Single" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType Single = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.Single" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.Single" /> value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="String">
+      <MemberSignature Language="C#" Value="String" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType String = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.String" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.String" /> value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Time">
+      <MemberSignature Language="C#" Value="Time" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType Time = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.Time" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The time portion of the <see cref="T:System.DateTime" /> value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UInt32">
+      <MemberSignature Language="C#" Value="UInt32" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType UInt32 = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.UInt32" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.UInt32" /> value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UInt64">
+      <MemberSignature Language="C#" Value="UInt64" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartValueType UInt64 = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartValueType.UInt64" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartValueType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A <see cref="T:System.UInt64" /> value.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

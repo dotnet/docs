@@ -1,0 +1,146 @@
+<Type Name="LegendSeparatorStyle" FullName="System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle">
+  <TypeSignature Language="C#" Value="public enum LegendSeparatorStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LegendSeparatorStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the styles for legend separator lines.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DashLine">
+      <MemberSignature Language="C#" Value="DashLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle DashLine = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle.DashLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend separator is a dashed line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DotLine">
+      <MemberSignature Language="C#" Value="DotLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle DotLine = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle.DotLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend separator is a dotted line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DoubleLine">
+      <MemberSignature Language="C#" Value="DoubleLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle DoubleLine = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle.DoubleLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend separator is a double line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientLine">
+      <MemberSignature Language="C#" Value="GradientLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle GradientLine = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle.GradientLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend separator is a solid line with a gradient on the ends.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Line">
+      <MemberSignature Language="C#" Value="Line" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle Line = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle.Line" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend separator is a solid line.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No separator will be shown.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThickGradientLine">
+      <MemberSignature Language="C#" Value="ThickGradientLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle ThickGradientLine = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle.ThickGradientLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend separator is a thick solid line with a gradient on the ends.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThickLine">
+      <MemberSignature Language="C#" Value="ThickLine" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle ThickLine = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle.ThickLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendSeparatorStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Legend separator is a thick solid line.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

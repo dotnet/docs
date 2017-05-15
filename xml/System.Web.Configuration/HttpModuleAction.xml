@@ -1,0 +1,200 @@
+<Type Name="HttpModuleAction" FullName="System.Web.Configuration.HttpModuleAction">
+  <TypeSignature Language="C#" Value="public sealed class HttpModuleAction : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpModuleAction extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpModuleAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Configures the <see cref="T:System.Web.Configuration.HttpModulesSection" /> modules. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.HttpModuleAction> class provides a way to programmatically access and modify the `add` element of the `httpModules` section of a configuration file.  
+  
+ The <xref:System.Web.Configuration.HttpModuleAction> type is part of a group that includes the <xref:System.Web.Configuration.HttpModuleActionCollection>, collection, and the <xref:System.Web.Configuration.HttpModulesSection> types.  
+  
+   
+  
+## Examples  
+ This example demonstrates how to specify values declaratively for several attributes of the `add` element of the `httpModules` section, which can also be accessed as members of the <xref:System.Web.Configuration.HttpModuleAction> class.  
+  
+ The following configuration file example shows how to specify values declaratively for the `httpModules` section.  
+  
+ Refer to the [NIB: How to: Create and Configure an HTTP Module](http://msdn.microsoft.com/en-us/4174fd13-a9c4-4ff6-baa5-3f7d7fc73ef3) to see how to build and configure an HTTP module.  
+  
+```  
+<httpModules>  
+    <add name="TimerModule"   
+      type="Samples.Aspnet.Configuration.RequestTimeInterval, RequestTimeInterval Version=1.0.1557.23158, Culture=neutral,  
+      PublicKeyToken=7bfb33146a87b52e, processorArchitecture=MSIL"/>  
+</httpModules>  
+```  
+  
+ The following code example shows how to use the <xref:System.Web.Configuration.HttpModuleAction> class.  
+  
+ [!code-csharp[System.Web.Configuration.HttpModuleAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleAction/CS/httpmoduleaction.cs#1)]
+ [!code-vb[System.Web.Configuration.HttpModuleAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleAction/VB/httpmoduleaction.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpModuleAction (string name, string type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpModuleAction.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="type" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The module name.</param>
+        <param name="type">A comma-separated list containing the module type name and the assembly information.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.HttpModuleAction" /> class using the passed parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The module name is an alias you can use to associate event handlers with the module events. ASP.NET searches for the assembly DLL first in the application's private \bin directory and then in the Global Assembly Cache (GAC).  
+  
+   
+  
+## Examples  
+ The following code example shows how to create an <xref:System.Web.Configuration.HttpModuleAction> object.  
+  
+ [!code-csharp[System.Web.Configuration.HttpModuleAction#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleAction/CS/httpmoduleaction.cs#3)]
+ [!code-vb[System.Web.Configuration.HttpModuleAction#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleAction/VB/httpmoduleaction.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementProperty">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElementProperty ElementProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationElementProperty ElementProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpModuleAction.ElementProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElementProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpModuleAction.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the module name.</summary>
+        <value>The module name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The module name is used to identify this <xref:System.Web.Configuration.HttpModuleAction> object.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.HttpModuleAction.Name%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.HttpModuleAction#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleAction/CS/httpmoduleaction.cs#4)]
+ [!code-vb[System.Web.Configuration.HttpModuleAction#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleAction/VB/httpmoduleaction.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpModuleAction.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public string Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Type" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpModuleAction.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("type", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the module type.</summary>
+        <value>A comma-separated list containing the module type name and the assembly information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To find the assembly defined by the <xref:System.Web.Configuration.HttpModuleAction.Type%2A>, ASP.NET searches for the assembly DLL first in the application's private \bin directory, and then in the system assembly cache.  
+  
+   
+  
+## Examples  
+ The following code example shows how to access the <xref:System.Web.Configuration.HttpModuleAction.Type%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.HttpModuleAction#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleAction/CS/httpmoduleaction.cs#5)]
+ [!code-vb[System.Web.Configuration.HttpModuleAction#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HttpModuleAction/VB/httpmoduleaction.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

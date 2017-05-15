@@ -1,0 +1,979 @@
+<Type Name="EventSourceCreationData" FullName="System.Diagnostics.EventSourceCreationData">
+  <TypeSignature Language="C#" Value="public class EventSourceCreationData" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventSourceCreationData extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventSourceCreationData" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the configuration settings used to create an event log source on the local computer or a remote computer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.EventSourceCreationData> class to configure a new source for writing localized entries to an event log. It is not necessary to use this class to read from an event log.  
+  
+ This class defines the configuration settings for a new event source and its associated event log. The associated event log can be on the local computer or a remote computer. To create a new source for a new or existing event log on the local computer, set the <xref:System.Diagnostics.EventSourceCreationData.LogName%2A> and <xref:System.Diagnostics.EventSourceCreationData.Source%2A> properties of an <xref:System.Diagnostics.EventSourceCreationData> and call the <xref:System.Diagnostics.EventLog.CreateEventSource%28System.Diagnostics.EventSourceCreationData%29?displayProperty=fullName> method. This method creates the event source you specify in the <xref:System.Diagnostics.EventSourceCreationData.Source%2A> property and registers it for the event log specified in <xref:System.Diagnostics.EventSourceCreationData.LogName%2A>. This behavior is similar to using the <xref:System.Diagnostics.EventLogInstaller> class to register an event source for an event log.  
+  
+ Use the <xref:System.Diagnostics.EventLog.WriteEvent%2A> and <xref:System.Diagnostics.EventLog.WriteEntry%2A> methods to write events to an event log. You must specify an event source to write events; you must create and configure the event source before writing the first entry with the source.  
+  
+ Create the new event source during the installation of your application. This allows time for the operating system to refresh its list of registered event sources and their configurations. If the operating system has not refreshed its list of event sources, and you attempt to write an event with the new source, the write operation will fail. You can configure a new source using an <xref:System.Diagnostics.EventLogInstaller>, or using the <xref:System.Diagnostics.EventLog.CreateEventSource%2A> method. You must have administrative rights on the computer to create a new event source.  
+  
+ You can create an event source for an existing event log or a new event log. When you create a new source for a new event log, the system registers the source for that log, but the log is not created until the first entry is written to it.  
+  
+ Each source can only write to one event log at a time; however, your application can use multiple sources to write to multiple event logs. For example, your application might need multiple sources configured for different event logs or different resource files.  
+  
+ To change the configuration details of an existing source, you must delete the source and then create it with the new configuration. If other applications or components use the existing source, create a new source with the updated configuration rather than deleting the existing source.  
+  
+ You can register the event source with localized resources for your event category and message strings. Your application can write event log entries using resource identifiers, rather than specifying the actual string. The Event Viewer uses the resource identifier to find and display the corresponding string from the localized resource file based on current language settings. You can register a separate file for event categories, messages, and parameter insertion strings, or you can register the same resource file for all three types of strings. Use the <xref:System.Diagnostics.EventSourceCreationData.CategoryCount%2A>, <xref:System.Diagnostics.EventSourceCreationData.CategoryResourceFile%2A>, <xref:System.Diagnostics.EventSourceCreationData.MessageResourceFile%2A>, and <xref:System.Diagnostics.EventSourceCreationData.ParameterResourceFile%2A> properties to configure the source to write localized entries to the event log. If your application writes string values directly to the event log, you do not need to set these properties.  
+  
+ The source must be configured either for writing localized entries or for writing direct strings. The <xref:System.Diagnostics.EventLog.WriteEntry%2A> method writes the given string directly to the event log; it does not use a localizable message resource file. Use the <xref:System.Diagnostics.EventLog.WriteEvent%2A> method to write events using a localized message resource file.  
+  
+ If your application writes entries using both resource identifiers and string values, you must register two separate sources. For example, configure one source with resource files, and then use that source in the <xref:System.Diagnostics.EventLog.WriteEvent%2A> method to write entries using resource identifiers to the event log. Then create a different source without resource files and use that source in the <xref:System.Diagnostics.EventLog.WriteEntry%2A> method to write strings directly to the event log using that source.  
+  
+   
+  
+## Examples  
+ The following code example sets the configuration properties for an event source from command-line arguments. The input arguments specify the event source name, event log name, computer name, and event message resource file. The code example verifies that the source does not conflict with an existing event source, and then creates the new event source for the specified event log.  
+  
+ [!code-cpp[EventLog_EventSourceCreation_Properties#1](~/samples/snippets/cpp/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/CPP/source.cpp#1)]
+ [!code-csharp[EventLog_EventSourceCreation_Properties#1](~/samples/snippets/csharp/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/CS/source.cs#1)]
+ [!code-vb[EventLog_EventSourceCreation_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventSourceCreationData (string source, string logName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string source, string logName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventSourceCreationData.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="logName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="source">The name to register with the event log as a source of entries.</param>
+        <param name="logName">The name of the log to which entries from the source are written.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventSourceCreationData" /> class with a specified event source and event log name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To write entries to an event log, you must first create an event source for the event log. To register a new source, initialize an <xref:System.Diagnostics.EventSourceCreationData> instance, configure the instance properties for your application, and call the <xref:System.Diagnostics.EventLog.CreateEventSource%28System.Diagnostics.EventSourceCreationData%29?displayProperty=fullName> method. After the source is registered, you can write entries from the source using the <xref:System.Diagnostics.EventLog.WriteEvent%2A> or <xref:System.Diagnostics.EventLog.WriteEntry%2A> methods.  
+  
+ You can register the event source with localized resources for your event category and message strings. Your application can write event log entries using resource identifiers, rather than specifying the actual string. The Event Viewer uses the resource identifier to find and display the corresponding string from the localized resource file based on current language settings. You can register a separate file for event categories, messages, and parameter insertion strings, or you can register the same resource file for all three types of strings. Use the <xref:System.Diagnostics.EventSourceCreationData.CategoryCount%2A>, <xref:System.Diagnostics.EventSourceCreationData.CategoryResourceFile%2A>, <xref:System.Diagnostics.EventSourceCreationData.MessageResourceFile%2A>, and <xref:System.Diagnostics.EventSourceCreationData.ParameterResourceFile%2A> properties to configure the source to write localized entries to the event log. If your application writes string values directly to the event log, you do not need to set these properties.  
+  
+ The source must be configured either for writing localized entries or for writing direct strings. If your application writes entries using both resource identifiers and string values, you must register two separate sources. For example, configure one source with resource files, and then use that source in the <xref:System.Diagnostics.EventLog.WriteEvent%2A> method to write entries using resource identifiers to the event log. Then create a different source without resource files and use that source in the <xref:System.Diagnostics.EventLog.WriteEntry%2A> method to write strings directly to the event log.  
+  
+ The following table shows initial property values for an <xref:System.Diagnostics.EventSourceCreationData>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Diagnostics.EventSourceCreationData.Source%2A>|The `source` parameter.|  
+|<xref:System.Diagnostics.EventSourceCreationData.LogName%2A>|The `logName` parameter.|  
+|<xref:System.Diagnostics.EventSourceCreationData.MachineName%2A>|The local computer (".").|  
+|<xref:System.Diagnostics.EventSourceCreationData.CategoryCount%2A>|Zero|  
+|<xref:System.Diagnostics.EventSourceCreationData.CategoryResourceFile%2A>|`null` (`Nothing` in Visual Basic).|  
+|<xref:System.Diagnostics.EventSourceCreationData.MessageResourceFile%2A>|`null` (`Nothing` in Visual Basic).|  
+|<xref:System.Diagnostics.EventSourceCreationData.ParameterResourceFile%2A>|`null` (`Nothing` in Visual Basic).|  
+  
+   
+  
+## Examples  
+ The following code example determines whether the event source named `SampleApplicationSource` is registered on the local computer. If the event source does not exist, the example sets the message resource file for the source and creates the new event source. Finally, the code example sets the localized display name for the event log, using the resource identifier value in `DisplayNameMsgId` and the resource file path in `messageFile`.  
+  
+ [!code-cpp[EventLog_WriteEvent#6](~/samples/snippets/cpp/VS_Snippets_CLR/eventlog_WriteEvent/CPP/source.cpp#6)]
+ [!code-csharp[EventLog_WriteEvent#6](~/samples/snippets/csharp/VS_Snippets_CLR/eventlog_WriteEvent/CS/source.cs#6)]
+ [!code-vb[EventLog_WriteEvent#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventlog_WriteEvent/VB/source.vb#6)]  
+  
+ The code example uses the following message text file, built into the resource library EventLogMsgs.dll. A message text file is the source from which the message resource file is created. The message text file defines the resource identifiers and text for the category, event message, and parameter insertion strings.  
+  
+```  
+; // EventLogMsgs.mc  
+; // ********************************************************  
+  
+; // Use the following commands to build this file:  
+  
+; //   mc -s EventLogMsgs.mc  
+; //   rc EventLogMsgs.rc  
+; //   link /DLL /SUBSYSTEM:WINDOWS /NOENTRY /MACHINE:x86 EventLogMsgs.Res   
+; // ********************************************************  
+  
+; // - Event categories -  
+; // Categories must be numbered consecutively starting at 1.  
+; // ********************************************************  
+  
+MessageId=0x1  
+Severity=Success  
+SymbolicName=INSTALL_CATEGORY  
+Language=English  
+Installation  
+.  
+  
+MessageId=0x2  
+Severity=Success  
+SymbolicName=QUERY_CATEGORY  
+Language=English  
+Database Query  
+.  
+  
+MessageId=0x3  
+Severity=Success  
+SymbolicName=REFRESH_CATEGORY  
+Language=English  
+Data Refresh  
+.  
+  
+; // - Event messages -  
+; // *********************************  
+  
+MessageId = 1000  
+Severity = Success  
+Facility = Application  
+SymbolicName = AUDIT_SUCCESS_MESSAGE_ID_1000  
+Language=English  
+My application message text, in English, for message id 1000, called from %1.  
+.  
+  
+MessageId = 1001  
+Severity = Warning  
+Facility = Application  
+SymbolicName = AUDIT_FAILED_MESSAGE_ID_1001  
+Language=English  
+My application message text, in English, for message id 1001, called from %1.  
+.  
+  
+MessageId = 1002  
+Severity = Success  
+Facility = Application  
+SymbolicName = GENERIC_INFO_MESSAGE_ID_1002  
+Language=English  
+My generic information message in English, for message id 1002.  
+.  
+  
+MessageId = 1003  
+Severity = Warning  
+Facility = Application  
+SymbolicName = GENERIC_WARNING_MESSAGE_ID_1003  
+Language=English  
+My generic warning message in English, for message id 1003, called from %1.  
+.  
+  
+MessageId = 1004  
+Severity = Success  
+Facility = Application  
+SymbolicName = UPDATE_CYCLE_COMPLETE_MESSAGE_ID_1004  
+Language=English  
+The update cycle is complete for %%5002.  
+.  
+  
+MessageId = 1005  
+Severity = Warning  
+Facility = Application  
+SymbolicName = SERVER_CONNECTION_DOWN_MESSAGE_ID_1005  
+Language=English  
+The refresh operation did not complete because the connection to server %1 could not be established.  
+.  
+  
+; // - Event log display name -  
+; // ********************************************************  
+  
+MessageId = 5001  
+Severity = Success  
+Facility = Application  
+SymbolicName = EVENT_LOG_DISPLAY_NAME_MSGID  
+Language=English  
+Sample Event Log  
+.  
+  
+; // - Event message parameters -  
+; //   Language independent insertion strings  
+; // ********************************************************  
+  
+MessageId = 5002  
+Severity = Success  
+Facility = Application  
+SymbolicName = EVENT_LOG_SERVICE_NAME_MSGID  
+Language=English  
+SVC_UPDATE.EXE  
+.  
+```  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryCount">
+      <MemberSignature Language="C#" Value="public int CategoryCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CategoryCount" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.CategoryCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of categories in the category resource file.</summary>
+        <value>The number of categories in the category resource file. The default value is zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.EventSourceCreationData.CategoryCount%2A> and <xref:System.Diagnostics.EventSourceCreationData.CategoryResourceFile%2A> properties to write events with localized category strings. The Event Viewer displays the category for an event entry if you supply a category when you write the event. Event log categories are application-defined strings that help filter events, or provide further information on the event. For example, your application can define separate categories for different components or different operations.  
+  
+ Event categories are optional; if your application does not use categories, do not set the <xref:System.Diagnostics.EventSourceCreationData.CategoryCount%2A> and <xref:System.Diagnostics.EventSourceCreationData.CategoryResourceFile%2A> properties.  
+  
+ For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+  
+   
+  
+## Examples  
+ The following code example determines whether the event source named `SampleApplicationSource` is registered on the local computer. If the event source does not exist, the example sets the message resource file for the source and creates the new event source. Finally, the code example sets the localized display name for the event log, using the resource identifier value in `DisplayNameMsgId` and the resource file path in `messageFile`.  
+  
+ [!code-cpp[EventLog_WriteEvent#6](~/samples/snippets/cpp/VS_Snippets_CLR/eventlog_WriteEvent/CPP/source.cpp#6)]
+ [!code-csharp[EventLog_WriteEvent#6](~/samples/snippets/csharp/VS_Snippets_CLR/eventlog_WriteEvent/CS/source.cs#6)]
+ [!code-vb[EventLog_WriteEvent#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventlog_WriteEvent/VB/source.vb#6)]  
+  
+ The code example uses the following message text file, built into the resource library EventLogMsgs.dll. A message text file is the source from which the message resource file is created. The message text file defines the resource identifiers and text for the category, event message, and parameter insertion strings.  
+  
+```  
+; // EventLogMsgs.mc  
+; // ********************************************************  
+  
+; // Use the following commands to build this file:  
+  
+; //   mc -s EventLogMsgs.mc  
+; //   rc EventLogMsgs.rc  
+; //   link /DLL /SUBSYSTEM:WINDOWS /NOENTRY /MACHINE:x86 EventLogMsgs.Res   
+; // ********************************************************  
+  
+; // - Event categories -  
+; // Categories must be numbered consecutively starting at 1.  
+; // ********************************************************  
+  
+MessageId=0x1  
+Severity=Success  
+SymbolicName=INSTALL_CATEGORY  
+Language=English  
+Installation  
+.  
+  
+MessageId=0x2  
+Severity=Success  
+SymbolicName=QUERY_CATEGORY  
+Language=English  
+Database Query  
+.  
+  
+MessageId=0x3  
+Severity=Success  
+SymbolicName=REFRESH_CATEGORY  
+Language=English  
+Data Refresh  
+.  
+  
+; // - Event messages -  
+; // *********************************  
+  
+MessageId = 1000  
+Severity = Success  
+Facility = Application  
+SymbolicName = AUDIT_SUCCESS_MESSAGE_ID_1000  
+Language=English  
+My application message text, in English, for message id 1000, called from %1.  
+.  
+  
+MessageId = 1001  
+Severity = Warning  
+Facility = Application  
+SymbolicName = AUDIT_FAILED_MESSAGE_ID_1001  
+Language=English  
+My application message text, in English, for message id 1001, called from %1.  
+.  
+  
+MessageId = 1002  
+Severity = Success  
+Facility = Application  
+SymbolicName = GENERIC_INFO_MESSAGE_ID_1002  
+Language=English  
+My generic information message in English, for message id 1002.  
+.  
+  
+MessageId = 1003  
+Severity = Warning  
+Facility = Application  
+SymbolicName = GENERIC_WARNING_MESSAGE_ID_1003  
+Language=English  
+My generic warning message in English, for message id 1003, called from %1.  
+.  
+  
+MessageId = 1004  
+Severity = Success  
+Facility = Application  
+SymbolicName = UPDATE_CYCLE_COMPLETE_MESSAGE_ID_1004  
+Language=English  
+The update cycle is complete for %%5002.  
+.  
+  
+MessageId = 1005  
+Severity = Warning  
+Facility = Application  
+SymbolicName = SERVER_CONNECTION_DOWN_MESSAGE_ID_1005  
+Language=English  
+The refresh operation did not complete because the connection to server %1 could not be established.  
+.  
+  
+; // - Event log display name -  
+; // ********************************************************  
+  
+MessageId = 5001  
+Severity = Success  
+Facility = Application  
+SymbolicName = EVENT_LOG_DISPLAY_NAME_MSGID  
+Language=English  
+Sample Event Log  
+.  
+  
+; // - Event message parameters -  
+; //   Language independent insertion strings  
+; // ********************************************************  
+  
+MessageId = 5002  
+Severity = Success  
+Facility = Application  
+SymbolicName = EVENT_LOG_SERVICE_NAME_MSGID  
+Language=English  
+SVC_UPDATE.EXE  
+.  
+```  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The property is set to a negative value or to a value larger than <see cref="F:System.UInt16.MaxValue" />.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryResourceFile">
+      <MemberSignature Language="C#" Value="public string CategoryResourceFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CategoryResourceFile" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.CategoryResourceFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path of the resource file that contains category strings for the source.</summary>
+        <value>The path of the category resource file. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.EventSourceCreationData.CategoryCount%2A> and <xref:System.Diagnostics.EventSourceCreationData.CategoryResourceFile%2A> properties to write events with localized category strings. The Event Viewer displays the category for an event entry if you supply a category when you write the event. Event log categories are application-defined strings that help filter events, or provide further information on the event. For example, your application can define separate categories for different components or different operations.  
+  
+ Event categories are optional; if your application does not use categories, do not set the <xref:System.Diagnostics.EventSourceCreationData.CategoryCount%2A> and <xref:System.Diagnostics.EventSourceCreationData.CategoryResourceFile%2A> properties.  
+  
+ For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+  
+   
+  
+## Examples  
+ The following code example determines whether the event source named `SampleApplicationSource` is registered on the local computer. If the event source does not exist, the example sets the message resource file for the source and creates the new event source. Finally, the code example sets the localized display name for the event log, using the resource identifier value in `DisplayNameMsgId` and the resource file path in `messageFile`.  
+  
+ [!code-cpp[EventLog_WriteEvent#6](~/samples/snippets/cpp/VS_Snippets_CLR/eventlog_WriteEvent/CPP/source.cpp#6)]
+ [!code-csharp[EventLog_WriteEvent#6](~/samples/snippets/csharp/VS_Snippets_CLR/eventlog_WriteEvent/CS/source.cs#6)]
+ [!code-vb[EventLog_WriteEvent#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventlog_WriteEvent/VB/source.vb#6)]  
+  
+ The code example uses the following message text file, built into the resource library EventLogMsgs.dll. A message text file is the source from which the message resource file is created. The message text file defines the resource identifiers and text for the category, event message, and parameter insertion strings.  
+  
+```  
+; // EventLogMsgs.mc  
+; // ********************************************************  
+  
+; // Use the following commands to build this file:  
+  
+; //   mc -s EventLogMsgs.mc  
+; //   rc EventLogMsgs.rc  
+; //   link /DLL /SUBSYSTEM:WINDOWS /NOENTRY /MACHINE:x86 EventLogMsgs.Res   
+; // ********************************************************  
+  
+; // - Event categories -  
+; // Categories must be numbered consecutively starting at 1.  
+; // ********************************************************  
+  
+MessageId=0x1  
+Severity=Success  
+SymbolicName=INSTALL_CATEGORY  
+Language=English  
+Installation  
+.  
+  
+MessageId=0x2  
+Severity=Success  
+SymbolicName=QUERY_CATEGORY  
+Language=English  
+Database Query  
+.  
+  
+MessageId=0x3  
+Severity=Success  
+SymbolicName=REFRESH_CATEGORY  
+Language=English  
+Data Refresh  
+.  
+  
+; // - Event messages -  
+; // *********************************  
+  
+MessageId = 1000  
+Severity = Success  
+Facility = Application  
+SymbolicName = AUDIT_SUCCESS_MESSAGE_ID_1000  
+Language=English  
+My application message text, in English, for message id 1000, called from %1.  
+.  
+  
+MessageId = 1001  
+Severity = Warning  
+Facility = Application  
+SymbolicName = AUDIT_FAILED_MESSAGE_ID_1001  
+Language=English  
+My application message text, in English, for message id 1001, called from %1.  
+.  
+  
+MessageId = 1002  
+Severity = Success  
+Facility = Application  
+SymbolicName = GENERIC_INFO_MESSAGE_ID_1002  
+Language=English  
+My generic information message in English, for message id 1002.  
+.  
+  
+MessageId = 1003  
+Severity = Warning  
+Facility = Application  
+SymbolicName = GENERIC_WARNING_MESSAGE_ID_1003  
+Language=English  
+My generic warning message in English, for message id 1003, called from %1.  
+.  
+  
+MessageId = 1004  
+Severity = Success  
+Facility = Application  
+SymbolicName = UPDATE_CYCLE_COMPLETE_MESSAGE_ID_1004  
+Language=English  
+The update cycle is complete for %%5002.  
+.  
+  
+MessageId = 1005  
+Severity = Warning  
+Facility = Application  
+SymbolicName = SERVER_CONNECTION_DOWN_MESSAGE_ID_1005  
+Language=English  
+The refresh operation did not complete because the connection to server %1 could not be established.  
+.  
+  
+; // - Event log display name -  
+; // ********************************************************  
+  
+MessageId = 5001  
+Severity = Success  
+Facility = Application  
+SymbolicName = EVENT_LOG_DISPLAY_NAME_MSGID  
+Language=English  
+Sample Event Log  
+.  
+  
+; // - Event message parameters -  
+; //   Language independent insertion strings  
+; // ********************************************************  
+  
+MessageId = 5002  
+Severity = Success  
+Facility = Application  
+SymbolicName = EVENT_LOG_SERVICE_NAME_MSGID  
+Language=English  
+SVC_UPDATE.EXE  
+.  
+```  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="LogName">
+      <MemberSignature Language="C#" Value="public string LogName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LogName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.LogName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the event log to which the source writes entries.</summary>
+        <value>The name of the event log. This can be Application, System, or a custom log name. The default value is "Application."</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.EventSourceCreationData.LogName%2A> property to identify the event log that your application writes entries to using the new source. The event log can be a new log or an existing log. Applications and services should write to the Application log or a custom log. Device drivers should write to the System log. If you do not explicitly set the <xref:System.Diagnostics.EventSourceCreationData.LogName%2A> property, the event log defaults to the Application log.  
+  
+> [!NOTE]
+>  The Security log is read-only.  
+  
+ To target an existing log for the new source, set the <xref:System.Diagnostics.EventSourceCreationData.LogName%2A> property to the existing event log name. To create a new event log for the source, you must set the <xref:System.Diagnostics.EventSourceCreationData.LogName%2A> property. Event log names must consist of printable characters, and cannot include the characters '*', '?', or '\\'. The first 8 characters of the event log name must be different from the first 8 characters of existing names of event logs on the specified computer.  
+  
+ The operating system stores event logs as files. When you use <xref:System.Diagnostics.EventLogInstaller> or the <xref:System.Diagnostics.EventLog.CreateEventSource%2A> method to create a new event log, the associated file is stored in the %SystemRoot%\System32\Config directory on the specified computer. The file name is set by appending the first 8 characters of the <xref:System.Diagnostics.EventSourceCreationData.LogName%2A> property with the ".evt" file name extension.  
+  
+   
+  
+## Examples  
+ The following code example sets the configuration properties for an event source from command-line arguments. The input arguments specify the event source name, event log name, computer name, and event message resource file. This example is part of a larger example provided for the <xref:System.Diagnostics.EventSourceCreationData> class.  
+  
+ [!code-cpp[EventLog_EventSourceCreation_Properties#2](~/samples/snippets/cpp/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/CPP/source.cpp#2)]
+ [!code-csharp[EventLog_EventSourceCreation_Properties#2](~/samples/snippets/csharp/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/CS/source.cs#2)]
+ [!code-vb[EventLog_EventSourceCreation_Properties#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineName">
+      <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.MachineName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the computer on which to register the event source.</summary>
+        <value>The name of the system on which to register the event source. The default is the local computer (".").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.EventSourceCreationData.MachineName%2A> value cannot be an empty string. If the machine name is not explicitly set, it defaults to the local computer (".").  
+  
+ When registering a source on a remote computer, you must have administrative rights on that computer to write the registry values with sufficient permissions.  
+  
+   
+  
+## Examples  
+ The following code example sets the configuration properties for an event source from command-line arguments. The input arguments specify the event source name, event log name, computer name, and event message resource file. This example is part of a larger example provided for the <xref:System.Diagnostics.EventSourceCreationData> class.  
+  
+ [!code-cpp[EventLog_EventSourceCreation_Properties#2](~/samples/snippets/cpp/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/CPP/source.cpp#2)]
+ [!code-csharp[EventLog_EventSourceCreation_Properties#2](~/samples/snippets/csharp/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/CS/source.cs#2)]
+ [!code-vb[EventLog_EventSourceCreation_Properties#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The computer name is invalid.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageResourceFile">
+      <MemberSignature Language="C#" Value="public string MessageResourceFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MessageResourceFile" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.MessageResourceFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path of the message resource file that contains message formatting strings for the source.</summary>
+        <value>The path of the message resource file. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.EventSourceCreationData.MessageResourceFile%2A> property to configure an event log source to write localized event messages. Event messages are application-defined strings that describe the event to the user.  
+  
+ Your application can write event log entries using resource identifiers. A resource identifier indexes a message located in the <xref:System.Diagnostics.EventSourceCreationData.MessageResourceFile%2A>. The Event Viewer uses the resource identifier to find and display the corresponding string from the localized message resource file based on current language settings.  
+  
+ The event source must be configured either for writing localized entries or for writing direct strings. Use the <xref:System.Diagnostics.EventLog.WriteEvent%2A> method to write localized entries for a source configured with a message resource file.  
+  
+ If your application writes event message strings directly, rather than using a resource identifier in a localized resource file, do not set the <xref:System.Diagnostics.EventSourceCreationData.MessageResourceFile%2A> property.  
+  
+ For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+  
+   
+  
+## Examples  
+ The following code example determines whether the event source named `SampleApplicationSource` is registered on the local computer. If the event source does not exist, the example sets the message resource file for the source and creates the new event source. Finally, the code example sets the localized display name for the event log, using the resource identifier value in `DisplayNameMsgId` and the resource file path in `messageFile`.  
+  
+ [!code-cpp[EventLog_WriteEvent#6](~/samples/snippets/cpp/VS_Snippets_CLR/eventlog_WriteEvent/CPP/source.cpp#6)]
+ [!code-csharp[EventLog_WriteEvent#6](~/samples/snippets/csharp/VS_Snippets_CLR/eventlog_WriteEvent/CS/source.cs#6)]
+ [!code-vb[EventLog_WriteEvent#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventlog_WriteEvent/VB/source.vb#6)]  
+  
+ The code example uses the following message text file, built into the resource library EventLogMsgs.dll. A message text file is the source from which the message resource file is created. The message text file defines the resource identifiers and text for the category, event message, and parameter insertion strings.  
+  
+```  
+; // EventLogMsgs.mc  
+; // ********************************************************  
+  
+; // Use the following commands to build this file:  
+  
+; //   mc -s EventLogMsgs.mc  
+; //   rc EventLogMsgs.rc  
+; //   link /DLL /SUBSYSTEM:WINDOWS /NOENTRY /MACHINE:x86 EventLogMsgs.Res   
+; // ********************************************************  
+  
+; // - Event categories -  
+; // Categories must be numbered consecutively starting at 1.  
+; // ********************************************************  
+  
+MessageId=0x1  
+Severity=Success  
+SymbolicName=INSTALL_CATEGORY  
+Language=English  
+Installation  
+.  
+  
+MessageId=0x2  
+Severity=Success  
+SymbolicName=QUERY_CATEGORY  
+Language=English  
+Database Query  
+.  
+  
+MessageId=0x3  
+Severity=Success  
+SymbolicName=REFRESH_CATEGORY  
+Language=English  
+Data Refresh  
+.  
+  
+; // - Event messages -  
+; // *********************************  
+  
+MessageId = 1000  
+Severity = Success  
+Facility = Application  
+SymbolicName = AUDIT_SUCCESS_MESSAGE_ID_1000  
+Language=English  
+My application message text, in English, for message id 1000, called from %1.  
+.  
+  
+MessageId = 1001  
+Severity = Warning  
+Facility = Application  
+SymbolicName = AUDIT_FAILED_MESSAGE_ID_1001  
+Language=English  
+My application message text, in English, for message id 1001, called from %1.  
+.  
+  
+MessageId = 1002  
+Severity = Success  
+Facility = Application  
+SymbolicName = GENERIC_INFO_MESSAGE_ID_1002  
+Language=English  
+My generic information message in English, for message id 1002.  
+.  
+  
+MessageId = 1003  
+Severity = Warning  
+Facility = Application  
+SymbolicName = GENERIC_WARNING_MESSAGE_ID_1003  
+Language=English  
+My generic warning message in English, for message id 1003, called from %1.  
+.  
+  
+MessageId = 1004  
+Severity = Success  
+Facility = Application  
+SymbolicName = UPDATE_CYCLE_COMPLETE_MESSAGE_ID_1004  
+Language=English  
+The update cycle is complete for %%5002.  
+.  
+  
+MessageId = 1005  
+Severity = Warning  
+Facility = Application  
+SymbolicName = SERVER_CONNECTION_DOWN_MESSAGE_ID_1005  
+Language=English  
+The refresh operation did not complete because the connection to server %1 could not be established.  
+.  
+  
+; // - Event log display name -  
+; // ********************************************************  
+  
+MessageId = 5001  
+Severity = Success  
+Facility = Application  
+SymbolicName = EVENT_LOG_DISPLAY_NAME_MSGID  
+Language=English  
+Sample Event Log  
+.  
+  
+; // - Event message parameters -  
+; //   Language independent insertion strings  
+; // ********************************************************  
+  
+MessageId = 5002  
+Severity = Success  
+Facility = Application  
+SymbolicName = EVENT_LOG_SERVICE_NAME_MSGID  
+Language=English  
+SVC_UPDATE.EXE  
+.  
+```  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterResourceFile">
+      <MemberSignature Language="C#" Value="public string ParameterResourceFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParameterResourceFile" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.ParameterResourceFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path of the resource file that contains message parameter strings for the source.</summary>
+        <value>The path of the parameter resource file. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Diagnostics.EventSourceCreationData.ParameterResourceFile%2A> property to configure an event log source to write localized event messages with inserted parameter strings. Each localized event message specified in the <xref:System.Diagnostics.EventSourceCreationData.MessageResourceFile%2A> property can contain placeholders for insertion strings. These placeholders are used to specify the position and resource identifier for a language-independent string within the event message. The Event Viewer fills in the placeholders using the corresponding strings from the <xref:System.Diagnostics.EventSourceCreationData.ParameterResourceFile%2A> and formats the event log message for the localized event entry.  
+  
+ For example, the following section of a message text file defines a string with a parameter placeholder:  
+  
+```  
+  
+MessageId = 1501  
+Severity = Success  
+Facility = Application  
+SymbolicName = COMPONENT_STARTING  
+Language=English  
+Component %%6050 is starting.  
+.  
+```  
+  
+ Within the parameter resource file, the insertion string must be defined with the resource identifier that corresponds to the placeholder, as shown below:  
+  
+```  
+MessageId = 6050  
+Severity = Success  
+Facility = Application  
+SymbolicName = COMPONENT_NAME_MSGID  
+Language=English  
+TRIGGER.EXE  
+.  
+```  
+  
+ The event source must be configured either for writing localized entries or for writing direct strings. Use the <xref:System.Diagnostics.EventLog.WriteEvent%2A> method to write localized entries for a source configured with a message resource file.  
+  
+ If your application writes event message strings directly to the event log, or if your <xref:System.Diagnostics.EventSourceCreationData.MessageResourceFile%2A> property does not contain messages with parameter insertion placeholders, do not set the <xref:System.Diagnostics.EventSourceCreationData.ParameterResourceFile%2A> property.  
+  
+ For details about defining event messages and building event resource files, see the "Message Compiler" topic in the Platform SDK documentation at [http://msdn.microsoft.com](http://msdn.microsoft.com/).  
+  
+   
+  
+## Examples  
+ The following code example determines whether the event source named `SampleApplicationSource` is registered on the local computer. If the event source does not exist, the example sets the message resource file for the source and creates the new event source. Finally, the code example sets the localized display name for the event log, using the resource identifier value in `DisplayNameMsgId` and the resource file path in `messageFile`.  
+  
+ [!code-cpp[EventLog_WriteEvent#6](~/samples/snippets/cpp/VS_Snippets_CLR/eventlog_WriteEvent/CPP/source.cpp#6)]
+ [!code-csharp[EventLog_WriteEvent#6](~/samples/snippets/csharp/VS_Snippets_CLR/eventlog_WriteEvent/CS/source.cs#6)]
+ [!code-vb[EventLog_WriteEvent#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventlog_WriteEvent/VB/source.vb#6)]  
+  
+ The code example uses the following message text file, built into the resource library EventLogMsgs.dll. A message text file is the source from which the message resource file is created. The message text file defines the resource identifiers and text for the category, event message, and parameter insertion strings. Specifically, the message defined for resource identifier 1004 uses a placeholder for a parameter string defined for resource identifier 5002.  
+  
+```  
+; // EventLogMsgs.mc  
+; // ********************************************************  
+  
+; // Use the following commands to build this file:  
+  
+; //   mc -s EventLogMsgs.mc  
+; //   rc EventLogMsgs.rc  
+; //   link /DLL /SUBSYSTEM:WINDOWS /NOENTRY /MACHINE:x86 EventLogMsgs.Res   
+; // ********************************************************  
+  
+; // - Event categories -  
+; // Categories must be numbered consecutively starting at 1.  
+; // ********************************************************  
+  
+MessageId=0x1  
+Severity=Success  
+SymbolicName=INSTALL_CATEGORY  
+Language=English  
+Installation  
+.  
+  
+MessageId=0x2  
+Severity=Success  
+SymbolicName=QUERY_CATEGORY  
+Language=English  
+Database Query  
+.  
+  
+MessageId=0x3  
+Severity=Success  
+SymbolicName=REFRESH_CATEGORY  
+Language=English  
+Data Refresh  
+.  
+  
+; // - Event messages -  
+; // *********************************  
+  
+MessageId = 1000  
+Severity = Success  
+Facility = Application  
+SymbolicName = AUDIT_SUCCESS_MESSAGE_ID_1000  
+Language=English  
+My application message text, in English, for message id 1000, called from %1.  
+.  
+  
+MessageId = 1001  
+Severity = Warning  
+Facility = Application  
+SymbolicName = AUDIT_FAILED_MESSAGE_ID_1001  
+Language=English  
+My application message text, in English, for message id 1001, called from %1.  
+.  
+  
+MessageId = 1002  
+Severity = Success  
+Facility = Application  
+SymbolicName = GENERIC_INFO_MESSAGE_ID_1002  
+Language=English  
+My generic information message in English, for message id 1002.  
+.  
+  
+MessageId = 1003  
+Severity = Warning  
+Facility = Application  
+SymbolicName = GENERIC_WARNING_MESSAGE_ID_1003  
+Language=English  
+My generic warning message in English, for message id 1003, called from %1.  
+.  
+  
+MessageId = 1004  
+Severity = Success  
+Facility = Application  
+SymbolicName = UPDATE_CYCLE_COMPLETE_MESSAGE_ID_1004  
+Language=English  
+The update cycle is complete for %%5002.  
+.  
+  
+MessageId = 1005  
+Severity = Warning  
+Facility = Application  
+SymbolicName = SERVER_CONNECTION_DOWN_MESSAGE_ID_1005  
+Language=English  
+The refresh operation did not complete because the connection to server %1 could not be established.  
+.  
+  
+; // - Event log display name -  
+; // ********************************************************  
+  
+MessageId = 5001  
+Severity = Success  
+Facility = Application  
+SymbolicName = EVENT_LOG_DISPLAY_NAME_MSGID  
+Language=English  
+Sample Event Log  
+.  
+  
+; // - Event message parameters -  
+; //   Language independent insertion strings  
+; // ********************************************************  
+  
+MessageId = 5002  
+Severity = Success  
+Facility = Application  
+SymbolicName = EVENT_LOG_SERVICE_NAME_MSGID  
+Language=English  
+SVC_UPDATE.EXE  
+.  
+```  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public string Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Source" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventSourceCreationData.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name to register with the event log as an event source.</summary>
+        <value>The name to register with the event log as a source of entries. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The source name is often the name of the application, or the name of a component within a large application. The <xref:System.Diagnostics.EventLog.CreateEventSource%28System.Diagnostics.EventSourceCreationData%29?displayProperty=fullName> method uses the <xref:System.Diagnostics.EventSourceCreationData.Source%2A>, <xref:System.Diagnostics.EventSourceCreationData.LogName%2A>, and <xref:System.Diagnostics.EventSourceCreationData.MachineName%2A> properties to create registry values on the target computer for the new source and its associated event log. A new source name cannot match an existing source name or an existing event log name on the target computer.  
+  
+ After the registry values for the source are created, your application can use the source to write entries to the configured event log.  
+  
+ Each source can only write to one event log at a time; however, your application can use multiple sources to write to multiple event logs. For example, your application might require multiple sources configured for different event logs or different resource files.  
+  
+   
+  
+## Examples  
+ The following code example sets the configuration properties for an event source from command-line arguments. The input arguments specify the event source name, event log name, computer name, and event message resource file. This example is part of a larger example provided for the <xref:System.Diagnostics.EventSourceCreationData> class.  
+  
+ [!code-cpp[EventLog_EventSourceCreation_Properties#2](~/samples/snippets/cpp/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/CPP/source.cpp#2)]
+ [!code-csharp[EventLog_EventSourceCreation_Properties#2](~/samples/snippets/csharp/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/CS/source.cs#2)]
+ [!code-vb[EventLog_EventSourceCreation_Properties#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/EventLog_EventSourceCreation_Properties/VB/source.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for calling any member of <see cref="T:System.Diagnostics.EventSourceCreationData" /> with full trust. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,48 @@
+<Type Name="BeginEventHandler" FullName="System.Web.BeginEventHandler">
+  <TypeSignature Language="C#" Value="public delegate IAsyncResult BeginEventHandler(object sender, EventArgs e, AsyncCallback cb, object extraData);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BeginEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.BeginEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.EventArgs" />
+    <Parameter Name="cb" Type="System.AsyncCallback" />
+    <Parameter Name="extraData" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.IAsyncResult</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+    <param name="cb">The delegate to call when the asynchronous method call is complete. If <c>cb</c> is <see langword="null" />, the delegate is not called.</param>
+    <param name="extraData">Any additional data needed to process the request.</param>
+    <summary>Represents the method that handles asynchronous events such as application events. This delegate is called at the start of an asynchronous operation.</summary>
+    <returns>The <see cref="T:System.IAsyncResult" /> that represents the result of the <see cref="T:System.Web.BeginEventHandler" /> operation.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Web.BeginEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Web.BeginEventHandler> delegate to register a handler an asynchronous page.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/CS/pageaddonprerendercompleteasynccs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/VB/pageaddonprerendercompleteasyncvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

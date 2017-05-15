@@ -1,0 +1,17 @@
+<Namespace Name="System.Runtime.Remoting.Channels">
+  <Docs>
+    <summary>The <see cref="N:System.Runtime.Remoting.Channels" /> namespace contains classes that support and handle channels and channel sinks, which are used as the transport medium when a client calls a method on a remote object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Channels are objects that transport messages between applications across remoting boundaries, whether between application domains, processes, or computers. A channel can listen on an endpoint for inbound messages, send outbound messages to another endpoint, or both. This enables you to plug in a wide range of protocols, even if the common language runtime is not at the other end of the channel.  
+  
+ Channels send each object along a chain of channel sink objects prior to sending or after receiving a message. This sink chain contains sinks required for basic channel functionality, such as transport or stack builder sinks, but you can customize the channel sink chain to perform special tasks with a message or a stream. Each sink in each chain receives the object, performs a specific operation, and passes it on to the next sink in the chain. There is no rule that the exact object received by a message sink must be passed on to the next sink, though this will often be the case.  
+  
+ For more information, see [Channels](http://msdn.microsoft.com/en-us/6e9b60e0-9bc0-47b4-a8ef-3b78585f9a18) and [Sinks and Sink Chains](http://msdn.microsoft.com/en-us/516aaab7-5b3d-4c72-83dd-d435c01af8f6).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

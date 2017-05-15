@@ -1,0 +1,312 @@
+<Type Name="ToolsetCollection" FullName="Microsoft.Build.BuildEngine.ToolsetCollection">
+  <TypeSignature Language="C#" Value="public class ToolsetCollection : System.Collections.Generic.ICollection&lt;Microsoft.Build.BuildEngine.Toolset&gt;, System.Collections.Generic.IEnumerable&lt;Microsoft.Build.BuildEngine.Toolset&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolsetCollection extends System.Object implements class System.Collections.Generic.ICollection`1&lt;class Microsoft.Build.BuildEngine.Toolset&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Build.BuildEngine.Toolset&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.ToolsetCollection" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;Microsoft.Build.BuildEngine.Toolset&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;Microsoft.Build.BuildEngine.Toolset&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents one or more <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> objects. A Toolset is a combination of a Toolset version (such as "2.0"), a tools path, and an optional set of associated properties.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Build.BuildEngine.ToolsetCollection> allows you to retrieve individual <xref:Microsoft.Build.BuildEngine.Toolset> objects by passing the string value of the tools version corresponding with the desired <xref:Microsoft.Build.BuildEngine.Toolset>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (Microsoft.Build.BuildEngine.Toolset item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class Microsoft.Build.BuildEngine.Toolset item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.Add(Microsoft.Build.BuildEngine.Toolset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Build.BuildEngine.Toolset" />
+      </Parameters>
+      <Docs>
+        <param name="item">A <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> object representing the Toolset to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> to this collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Build.BuildEngine.ToolsetCollection.Add%2A> replaces any previous value that has the same tools version. It also notifies the parent <xref:Microsoft.Build.BuildEngine.Engine> of the change.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This method is not supported.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Microsoft.Build.BuildEngine.Toolset item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class Microsoft.Build.BuildEngine.Toolset item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.Contains(Microsoft.Build.BuildEngine.Toolset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Build.BuildEngine.Toolset" />
+      </Parameters>
+      <Docs>
+        <param name="item">Required. A string value representing the name of the <see cref="T:Microsoft.Build.BuildEngine.Toolset" />.</param>
+        <summary>Gets whether the collection contains a <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> with the specified <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" /> name.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> is contained in the collection; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string toolsVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string toolsVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.Contains(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolsVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolsVersion">Required. A string value representing the tools version associated with the <see cref="T:Microsoft.Build.BuildEngine.Toolset" />.</param>
+        <summary>Gets whether the collection contains a <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> with the specified tools version.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> is contained in the collection; otherwise, <see langword="false" />. The default is <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Microsoft.Build.BuildEngine.Toolset[] array, int arrayIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class Microsoft.Build.BuildEngine.Toolset[] array, int32 arrayIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.CopyTo(Microsoft.Build.BuildEngine.Toolset[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="Microsoft.Build.BuildEngine.Toolset[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="arrayIndex">The zero-based index in <c>Array</c> at which copying begins.</param>
+        <summary>Copies the contents of the <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" /> to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ToolsetCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating the number of <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> objects in the <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" />.</summary>
+        <value>An integer value representing the number of <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> objects in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each <xref:Microsoft.Build.BuildEngine.Toolset> element in the collection represents a <xref:Microsoft.Build.BuildEngine.Toolset> in the project.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;Microsoft.Build.BuildEngine.Toolset&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class Microsoft.Build.BuildEngine.Toolset&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;Microsoft.Build.BuildEngine.Toolset&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerator that iterates through the <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the entire <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method allows the caller to use the `foreach` statement of the C# language (`for each` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]) to iterate through the individual <xref:Microsoft.Build.BuildEngine.Toolset> objects in the <xref:Microsoft.Build.BuildEngine.ToolsetCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ToolsetCollection.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether the <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" /> is read-only. <see cref="P:Microsoft.Build.BuildEngine.ToolsetCollection.IsReadOnly" /> always returns <see langword="false" /> because Toolsets are always writable.</summary>
+        <value>A boolean value indicating whether the <see cref="T:Microsoft.Build.BuildEngine.ToolsetCollection" /> is read-only.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.Build.BuildEngine.ToolsetCollection.IsReadOnly%2A> always returns `false` because Toolsets are always writable.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.Toolset this[string toolsVersion] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.BuildEngine.Toolset Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ToolsetCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.BuildEngine.Toolset</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toolsVersion" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toolsVersion">Required. A string value representing the tools version associated with the desired <see cref="T:Microsoft.Build.BuildEngine.Toolset" />.</param>
+        <summary>Gets the <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> associated with the specified tools version.</summary>
+        <value>A <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> object representing the toolset that matches the specified <paramref name="toolsVersion" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (Microsoft.Build.BuildEngine.Toolset item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class Microsoft.Build.BuildEngine.Toolset item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.Remove(Microsoft.Build.BuildEngine.Toolset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Build.BuildEngine.Toolset" />
+      </Parameters>
+      <Docs>
+        <param name="item">Not supported.</param>
+        <summary>This method is not supported.</summary>
+        <returns>Not supported.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.ToolsetCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Non-generic enumerator for the Toolsets in this collection.</summary>
+        <returns>Returns an enumerator for the toolsets.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns the enumerator.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolsVersions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; ToolsVersions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; ToolsVersions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.ToolsetCollection.ToolsVersions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the names of the <see cref="T:Microsoft.Build.BuildEngine.Toolset" />s stored in this collection.</summary>
+        <value>An enumeration whose elements represent individual <see cref="T:Microsoft.Build.BuildEngine.Toolset" /> objects in this collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

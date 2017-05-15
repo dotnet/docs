@@ -1,0 +1,218 @@
+<Type Name="ControlChars" FullName="Microsoft.VisualBasic.ControlChars">
+  <TypeSignature Language="C#" Value="public sealed class ControlChars" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ControlChars extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ControlChars" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see langword="ControlChars" /> module contains constants used as control characters. These constants can be used anywhere in your code.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This module supports the Visual Basic language keywords and run-time library members that provide constant control characters for printing and displaying text. For more information, see [Constants and Enumerations](~/docs/visual-basic/language-reference/constants-and-enumerations.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlChars ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ControlChars.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ControlChars" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Back">
+      <MemberSignature Language="C#" Value="public const char Back;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal char Back" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.Back" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a backspace character (<see langword="vbBack" />).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cr">
+      <MemberSignature Language="C#" Value="public const char Cr;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal char Cr" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.Cr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a carriage return character (<see langword="vbCr" />).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CrLf">
+      <MemberSignature Language="C#" Value="public const string CrLf;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string CrLf" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.CrLf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a carriage return/linefeed character combination (<see langword="vbCrLf" />).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormFeed">
+      <MemberSignature Language="C#" Value="public const char FormFeed;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal char FormFeed" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.FormFeed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a form feed character for print functions (<see langword="vbFormFeed" />).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lf">
+      <MemberSignature Language="C#" Value="public const char Lf;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal char Lf" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.Lf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a line feed character (<see langword="vbLf" />).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewLine">
+      <MemberSignature Language="C#" Value="public const string NewLine;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string NewLine" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.NewLine" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a new line character (<see langword="vbNewLine" />).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more detailed information, see the Visual Basic topic [Constants and Enumerations](~/docs/visual-basic/language-reference/constants-and-enumerations.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NullChar">
+      <MemberSignature Language="C#" Value="public const char NullChar;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal char NullChar" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.NullChar" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a null character (<see langword="vbNullChar" />).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Quote">
+      <MemberSignature Language="C#" Value="public const char Quote;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal char Quote" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.Quote" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a double-quote character.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tab">
+      <MemberSignature Language="C#" Value="public const char Tab;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal char Tab" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.Tab" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a tab character (<see langword="vbTab" />).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalTab">
+      <MemberSignature Language="C#" Value="public const char VerticalTab;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal char VerticalTab" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ControlChars.VerticalTab" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a vertical tab character (<see langword="vbVerticalTab" />).</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

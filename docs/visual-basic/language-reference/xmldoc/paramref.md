@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "<paramref> XML tag"
 ms.assetid: 8979d53b-beb1-41b7-b41e-6bbea1c17a03
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

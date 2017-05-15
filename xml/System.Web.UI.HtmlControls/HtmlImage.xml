@@ -1,0 +1,405 @@
+<Type Name="HtmlImage" FullName="System.Web.UI.HtmlControls.HtmlImage">
+  <TypeSignature Language="C#" Value="public class HtmlImage : System.Web.UI.HtmlControls.HtmlControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlImage extends System.Web.UI.HtmlControls.HtmlControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlImage" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.HtmlControls.HtmlControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.ControlBuilder(typeof(System.Web.UI.HtmlControls.HtmlEmptyTagControlBuilder))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides programmatic access for the HTML <see langword="&lt;img&gt;" /> element on the server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this control to display an image on a Web page. The <xref:System.Web.UI.HtmlControls.HtmlImage> control can be programmatically manipulated to change the image displayed, the image size, and the alignment of the image relative to other page elements.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlImage>, see the <xref:System.Web.UI.HtmlControls.HtmlImage.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically modify the properties of an <xref:System.Web.UI.HtmlControls.HtmlImage> control when an <xref:System.Web.UI.HtmlControls.HtmlButton> is clicked.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlImage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlImage.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlImage" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlImage> class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlImage>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The "img" literal string.|  
+  
+   
+  
+## Examples  
+ The following code example illustrates how to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlImage> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlImageCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlImageCtor/CS/htmlimagectorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlImageCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlImageCtor/VB/htmlimagectorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Align">
+      <MemberSignature Language="C#" Value="public string Align { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Align" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Align" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alignment of the image relative to other Web page elements.</summary>
+        <value>A string that specifies the alignment of the image relative to other Web page elements.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify the alignment of the image with respect to other elements on the Web page.  
+  
+ The following table represents the possible values.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|left|The image is aligned on the left side of the Web page.|  
+|center|The image is aligned in the center of the Web page.|  
+|right|The image is aligned on the right side of the Web page.|  
+|top|Other elements in the Web page are aligned with the top edge of the image.|  
+|middle|Other elements in the Web page are aligned with the middle of the image.|  
+|bottom|Other elements in the Web page are aligned with the bottom edge of the image.|  
+  
+> [!NOTE]
+>  The center value might not work on all browsers. To center an image, wrap the <xref:System.Web.UI.HtmlControls.HtmlImage> control inside paragraph tags that contain the `align` attribute set to `"center"` (`<p align= "center">`).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Align%2A> property to specify the alignment of an image on a Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Align Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Align Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Align Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Align Example/VB/sourcevb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to center an image on the Web page by wrapping the <xref:System.Web.UI.HtmlControls.HtmlImage> control inside paragraph tags with the `align` attribute set to `"center"`.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Align Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Align Example/CS/source2cs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Align Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Align Example/VB/source2vb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt">
+      <MemberSignature Language="C#" Value="public string Alt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Alt" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Alt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alternative caption the browser displays if an image is unavailable or currently downloading and not yet finished.</summary>
+        <value>A string that contains the alternative caption for the browser to use when the image is unavailable.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify the caption displayed when the image specified by the <xref:System.Web.UI.HtmlControls.HtmlImage.Src%2A> property is unavailable. On newer browsers, this caption also appears as a ToolTip.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Alt%2A> property to specify the caption to display when the image specified by the <xref:System.Web.UI.HtmlControls.HtmlImage.Src%2A> property is unavailable.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Border Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Border Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Border Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Border Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Border">
+      <MemberSignature Language="C#" Value="public int Border { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Border" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Border" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of a frame for an image.</summary>
+        <value>The width (in pixels) of a frame for an image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to create a frame with the specified width (in pixels) for an image.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Border%2A> property to specify a frame with a width of 5 pixels for an <xref:System.Web.UI.HtmlControls.HtmlImage> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Border Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Border Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Border Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Border Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public int Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of the image.</summary>
+        <value>The height of the image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlImage.Height%2A> and <xref:System.Web.UI.HtmlControls.HtmlImage.Width%2A> properties can be used two ways. You can use the <xref:System.Web.UI.HtmlControls.HtmlImage.Height%2A> and <xref:System.Web.UI.HtmlControls.HtmlImage.Width%2A> properties to send image size specifications to the browser. This displays the Web page faster because the browser does not need to recalculate the positions of elements on the page when the image loads.  
+  
+ You can also use the <xref:System.Web.UI.HtmlControls.HtmlImage.Height%2A> and <xref:System.Web.UI.HtmlControls.HtmlImage.Width%2A> properties to scale the image. When using values different from the physical size of the image, the image is resized accordingly. However, this method for scaling the image is not recommended because it takes longer for the page to display it. Instead, physically resize the image to the size you need.  
+  
+ By default, the <xref:System.Web.UI.HtmlControls.HtmlImage.Height%2A> property is expressed in pixels, but it can also be expressed as a percentage of the size of the window.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Height%2A> property to programmatically modify the height of the displayed image.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Height Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Height Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Height Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Height Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderAttributes">
+      <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlImage.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that contains the output stream to render on the client.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlImage" /> control's attributes to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of the <xref:System.Web.UI.HtmlControls.HtmlImage.Src%2A> property is a malformed URL, the <xref:System.Web.UI.HtmlControls.HtmlImage.RenderAttributes%2A> method throws an <xref:System.Web.HttpException> exception.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlImage.RenderAttributes%2A> method overrides the base class's <xref:System.Web.UI.HtmlControls.HtmlImage.RenderAttributes%2A> method to write the `src` attribute of the rendered <xref:System.Web.UI.HtmlControls.HtmlImage> control.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlImage.RenderAttributes%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlImage> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlImage.RenderAttributes%2A> method in a custom server control so that specific alternative text, accessible as a ToolTip, is always displayed with the <xref:System.Web.UI.HtmlControls.HtmlImage> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlImageRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlImageRenderAttributes/CS/custom_htmlimage_renderattributescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlImageRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlImageRenderAttributes/VB/custom_htmlimage_renderattributesvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlImageRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlImageRenderAttributes/CS/custom_htmlimage_renderattributes.cs#2)]
+ [!code-vb[CustomHtmlImageRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlImageRenderAttributes/VB/custom_htmlimage_renderattributes.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The <see cref="P:System.Web.UI.HtmlControls.HtmlImage.Src" /> property contains a malformed URL.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Src">
+      <MemberSignature Language="C#" Value="public string Src { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Src" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Src" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the source of the image file to display.</summary>
+        <value>A string that contains the path to an image file to display.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify the path to the image file to display. If the image file is in the same directory as the Web page source file that uses it, you can just specify the file name. Otherwise, you must also include the path to the file. The path can be absolute or relative to the directory that contains the Web page source file. You can use the relative path " `~/` " to refer to the current virtual directory where the page is located. For example, the value of <xref:System.Web.UI.HtmlControls.HtmlImage.Src%2A> for `<img runat="server" src="~/abc/d.gif">` on a page in the "XspTest" virtual directory is `<img src="/XspText/abc/d.gif">`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Src%2A> property to specify an image file to display in the same directory as the Web page source file.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Src Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Src Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Src Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Src Example/VB/sourcevb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Src%2A> property to specify an image file to display in a different directory from the Web page source file.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Src Example#2](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Src Example/CS/source2cs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Src Example#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Src Example/VB/source2vb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public int Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlImage.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(100)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the image.</summary>
+        <value>The width of the image.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlImage.Height%2A> and <xref:System.Web.UI.HtmlControls.HtmlImage.Width%2A> properties can be used two ways. You can use the <xref:System.Web.UI.HtmlControls.HtmlImage.Height%2A> and <xref:System.Web.UI.HtmlControls.HtmlImage.Width%2A> properties to send the image size specifications to the browser. This displays the Web page faster because the browser does not need to recalculate the positions of elements on the page when the image loads.  
+  
+ You can also use the <xref:System.Web.UI.HtmlControls.HtmlImage.Height%2A> and <xref:System.Web.UI.HtmlControls.HtmlImage.Width%2A> properties to scale the image. When using values that are different from the physical size of the image, the image is resized accordingly. However, this method for scaling the image is not recommended because it takes longer for the page to display it. Instead, physically resize the image to the size you need.  
+  
+ By default, the <xref:System.Web.UI.HtmlControls.HtmlImage.Width%2A> property is expressed in pixels, but it can also be expressed as a percentage of the window size.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlImage.Width%2A> property to programmatically modify the width of the displayed image.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic HtmlImage.Height Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HtmlImage.Height Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic HtmlImage.Height Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HtmlImage.Height Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

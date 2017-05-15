@@ -1,0 +1,748 @@
+<Type Name="GridViewHeaderRowPresenter" FullName="System.Windows.Controls.GridViewHeaderRowPresenter">
+  <TypeSignature Language="C#" Value="public class GridViewHeaderRowPresenter : System.Windows.Controls.Primitives.GridViewRowPresenterBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewHeaderRowPresenter extends System.Windows.Controls.Primitives.GridViewRowPresenterBase" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridViewHeaderRowPresenter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Primitives.GridViewRowPresenterBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.StyleTypedProperty(Property="ColumnHeaderContainerStyle", StyleTargetType=typeof(System.Windows.Controls.GridViewColumnHeader))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an object that is used to define the layout of a row of column headers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.Windows.Controls.GridViewRowPresenter> object and <xref:System.Windows.Controls.GridViewHeaderRowPresenter> objects are support objects for the <xref:System.Windows.Controls.GridView> <xref:System.Windows.Controls.ListView.View%2A> mode that displays data in columns for a <xref:System.Windows.Controls.ListView>. For more information about how to define a <xref:System.Windows.Controls.GridView> view, see the [GridView Overview](~/docs/framework/wpf/controls/gridview-overview.md).  
+  
+ You can determine when a column is moving to a new location by monitoring the <xref:System.Collections.ObjectModel.ObservableCollection%601.CollectionChanged> event that is defined for the <xref:System.Windows.Controls.GridViewColumnCollection>.  
+  
+ You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GridViewHeaderRowPresenter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.GridViewHeaderRowPresenter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowsColumnReorder">
+      <MemberSignature Language="C#" Value="public bool AllowsColumnReorder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowsColumnReorder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether columns can change positions.</summary>
+        <value>
+          <see langword="true" /> if columns can be moved by the drag-and-drop operation of a column header; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.AllowsColumnReorder%2A> property on the <xref:System.Windows.Controls.GridView>.  
+  
+<a name="dependencyPropertyInfo_AllowsColumnReorder"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorderProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowsColumnReorderProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AllowsColumnReorderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AllowsColumnReorderProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrangeOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.ArrangeOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arrangeSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="arrangeSize">The area that is available for the column header row.</param>
+        <summary>Arranges the content of the header row elements, and computes the actual size of the header row.</summary>
+        <returns>The actual <see cref="T:System.Windows.Size" /> for the column header row.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderContainerStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Style ColumnHeaderContainerStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style ColumnHeaderContainerStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Style" /> to use for the column headers.</summary>
+        <value>The <see cref="T:System.Windows.Style" /> to use for the column header container. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderContainerStyle%2A> property on the <xref:System.Windows.Controls.GridView>.  
+  
+ You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+  
+ When you set styles, some restrictions apply. For more information, see the [Styling and Templating](~/docs/framework/wpf/controls/styling-and-templating.md).  
+  
+<a name="xamlAttributeUsage_ColumnHeaderContainerStyle"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object ColumnHeaderContainerStyle="{ResourceExtension StyleResourceKey}"/>  
+```  
+  
+<a name="xamlPropertyElementUsage_ColumnHeaderContainerStyle"></a>   
+## XAML Property Element Usage  
+  
+<a name="xamlValues_ColumnHeaderContainerStyle"></a>   
+## XAML Values  
+ *ResourceExtension*  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+ *StyleResourceKey*  
+ The key that identifies the style being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+  
+> [!NOTE]
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
+  
+<a name="dependencyPropertyInfo_ColumnHeaderContainerStyle"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyleProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderContainerStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColumnHeaderContainerStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColumnHeaderContainerStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyle" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContainerStyle%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderContextMenu">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.ContextMenu ColumnHeaderContextMenu { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ContextMenu ColumnHeaderContextMenu" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ContextMenu</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Controls.ContextMenu" /> for the column headers.</summary>
+        <value>The <see cref="T:System.Windows.Controls.ContextMenu" /> for the column header row. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderContextMenu%2A> property on the <xref:System.Windows.Controls.GridView>.  
+  
+ You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+  
+<a name="dependencyPropertyInfo_ColumnHeaderContextMenu"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenuProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderContextMenuProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColumnHeaderContextMenuProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColumnHeaderContextMenuProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenuProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenu" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderContextMenu%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderStringFormat">
+      <MemberSignature Language="C#" Value="public string ColumnHeaderStringFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ColumnHeaderStringFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a composite string that specifies how to format the column headers if they are displayed as strings.</summary>
+        <value>A composite string that specifies how to format the column headers if they are displayed as strings. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A?displayProperty=fullName>, <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A?displayProperty=fullName>, or <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A?displayProperty=fullName> property is set, this property is ignored.  
+  
+ You can use several properties to specify the format of the column headers.  If more than one property is set, the column header is formatted with the value of the property that has the highest priority. The format for a column can be set on several types. The following list shows the properties that can be used to format the column headers, ordered from lowest to highest priority:  
+  
+-   <xref:System.Windows.Controls.GridView.ColumnHeaderStringFormat%2A?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat%2A?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Controls.GridViewColumn.HeaderStringFormat%2A?displayProperty=fullName>  
+  
+<a name="dependencyPropertyInfo_ColumnHeaderStringFormat"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormatProperty>|  
+|Metadata properties set to **true**|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderStringFormatProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColumnHeaderStringFormatProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColumnHeaderStringFormatProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormatProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderStringFormat" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate ColumnHeaderTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate ColumnHeaderTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the template to use to display the column headers.</summary>
+        <value>The <see cref="T:System.Windows.DataTemplate" /> that is used to display the column header content. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> property on the <xref:System.Windows.Controls.GridView>.  
+  
+ If the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> property and the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector%2A> property are both set, the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> takes precedence.  
+  
+ You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+  
+<a name="xamlAttributeUsage_ColumnHeaderTemplate"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object ColumnHeaderTemplate="{ResourceExtension TemplateResourceKey}"/>  
+```  
+  
+<a name="xamlPropertyElementUsage_ColumnHeaderTemplate"></a>   
+## XAML Property Element Usage  
+  
+<a name="xamlValues_ColumnHeaderTemplate"></a>   
+## XAML Values  
+ *ResourceExtension*  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+ *TemplateResourceKey*  
+ The key that identifies the template being requested. The key refers to an existing resource in a <xref:System.Windows.ResourceDictionary>.  
+  
+> [!NOTE]
+>  Property element syntax is technically possible, but not recommended. See [Inline Styles and Templates](~/docs/framework/wpf/advanced/inline-styles-and-templates.md). A binding reference using  or  is also possible, but uncommon.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColumnHeaderTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColumnHeaderTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderTemplateSelector">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.DataTemplateSelector ColumnHeaderTemplateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataTemplateSelector ColumnHeaderTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataTemplateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Controls.DataTemplateSelector" /> that provides logic that selects the data template to use to display a column header.</summary>
+        <value>The <see cref="T:System.Windows.Controls.DataTemplateSelector" /> that chooses the <see cref="T:System.Windows.DataTemplate" /> to use to display each column header. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> property and the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector%2A> property are both set, the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplate%2A> takes precedence.  
+  
+ When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderTemplateSelector%2A> property on the <xref:System.Windows.Controls.GridView>.  
+  
+ You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+  
+<a name="xamlAttributeUsage_ColumnHeaderTemplateSelector"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object ColumnHeaderTemplateSelector="{ResourceExtension DataTemplateSelectorClassKey}"/>  
+```  
+  
+<a name="xamlPropertyElementUsage_ColumnHeaderTemplateSelector"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.ColumnHeaderTemplateSelector>  
+    <MyDataTemplateSelectorImplementation .../>  
+  </object.ColumnHeaderTemplateSelector>  
+</object>  
+```  
+  
+<a name="xamlValues_ColumnHeaderTemplateSelector"></a>   
+## XAML Values  
+ *MyDataTemplateSelectorImplementation*  
+ A class derived from <xref:System.Windows.Controls.DataTemplateSelector> that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+  
+ *ResourceExtension*  
+ One of the following: `StaticResource`, or `DynamicResource`. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md).  
+  
+ *DataTemplateSelectorClassKey*  
+ The key that identifies the selector implementation being requested. The key refers to a derived class that implements a practical <xref:System.Windows.Controls.DataTemplateSelector.SelectTemplate%2A> override. For information about how to map your custom class, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md). You can also programmatically add an instance of your <xref:System.Windows.Controls.DataTemplateSelector> class as a resource to a resource dictionary.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderTemplateSelectorProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColumnHeaderTemplateSelectorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColumnHeaderTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelectorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderTemplateSelector%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderToolTip">
+      <MemberSignature Language="C#" Value="public object ColumnHeaderToolTip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ColumnHeaderToolTip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content for a tooltip for the column header row.</summary>
+        <value>An object that represents the content of a tooltip for the column headers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you implement this class as part of a <xref:System.Windows.Controls.GridView> view mode, the value of this property is bound to the value of the <xref:System.Windows.Controls.GridView.ColumnHeaderToolTip%2A> property on the <xref:System.Windows.Controls.GridView>.  
+  
+ You can customize column headers in a <xref:System.Windows.Controls.GridView> view mode by using a variety of properties that are found in this class and in related classes. For more information about these properties, and about the precedence between them, see [GridView Column Header Styles and Templates Overview](~/docs/framework/wpf/controls/gridview-column-header-styles-and-templates-overview.md).  
+  
+<a name="xamlAttributeUsage_ColumnHeaderToolTip"></a>   
+## XAML Attribute Usage  
+  
+```  
+<object ToolTip="toolTipContent"/>  
+```  
+  
+<a name="xamlPropertyElementUsage_ColumnHeaderToolTip"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.ToolTip>  
+    <ToolTip .../>  
+  </object.ToolTip>  
+</object>  
+- or -  
+<object>  
+  <object.ToolTip>  
+    toolTipObjectContent  
+  </object.ToolTip>  
+</object>  
+```  
+  
+<a name="xamlValues_ColumnHeaderToolTip"></a>   
+## XAML Values  
+ `toolTipContent`  
+ A string that becomes the display text for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A>.  
+  
+ `toolTipObjectContent`  
+ An object to use as the content for the tooltip. Typically, this object is a <xref:System.Windows.FrameworkElement> or some other element that defines a layout for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A>, such as a text element. In this usage, a <xref:System.Windows.Controls.ToolTip> element is implicitly created from the parsed [!INCLUDE[TLA2#tla_xaml](~/includes/tla2sharptla-xaml-md.md)], and the `toolTipObjectContent` content is set as its <xref:System.Windows.Controls.ContentControl.Content%2A?displayProperty=fullName> property.  
+  
+ <`ToolTip` .../>  
+ See <xref:System.Windows.Controls.ToolTip>.  
+  
+<a name="dependencyPropertyInfo_ColumnHeaderToolTip"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTipProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnHeaderToolTipProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColumnHeaderToolTipProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColumnHeaderToolTipProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTipProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip" /> dependency property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The identifier for the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.ColumnHeaderToolTip%2A> dependency property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.MeasureOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraint" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="constraint">The amount of area that is available to display the column header row.</param>
+        <summary>Determines the area that is required to display the column header row.</summary>
+        <returns>The required <see cref="T:System.Windows.Size" /> for the column header row.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.OnCreateAutomationPeer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an <see cref="T:System.Windows.Automation.Peers.AutomationPeer" /> object for the column header row.</summary>
+        <returns>A <see cref="T:System.Windows.Automation.Peers.GridViewHeaderRowPresenterAutomationPeer" /> object for this column header row.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLostMouseCapture">
+      <MemberSignature Language="C#" Value="protected override void OnLostMouseCapture (System.Windows.Input.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLostMouseCapture(class System.Windows.Input.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.LostMouseCapture" /> event for the <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a <xref:System.Windows.UIElement.LostMouseCapture> event occurs while a column is moving to a new position, the move is canceled.  
+  
+ This implementation does not handle the <xref:System.Windows.UIElement.LostMouseCapture> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseLeftButtonDown">
+      <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonDown (System.Windows.Input.MouseButtonEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeftButtonDown" /> event that occurs when the user presses the left mouse button inside a <see cref="T:System.Windows.Controls.GridViewColumnHeader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> is `true`, this method prepares a column to be dragged to another location in the column header row.  
+  
+ This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonDown> event by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseLeftButtonUp">
+      <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonUp (System.Windows.Input.MouseButtonEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonUp(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseButtonEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseLeftButtonUp" /> event that occurs when the user releases the left mouse button.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> is `true`, and if the <xref:System.Windows.UIElement.MouseLeftButtonUp> event occurs after a column is dragged to a new location, the column is moved.  
+  
+ This implementation handles the <xref:System.Windows.UIElement.MouseLeftButtonUp> event by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMouseMove">
+      <MemberSignature Language="C#" Value="protected override void OnMouseMove (System.Windows.Input.MouseEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Input.MouseEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewHeaderRowPresenter.OnMouseMove(System.Windows.Input.MouseEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Input.MouseEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event data.</param>
+        <summary>Provides class handling for the <see cref="E:System.Windows.UIElement.MouseMove" /> event that occurs when the user moves the mouse.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Controls.GridViewHeaderRowPresenter.AllowsColumnReorder%2A> property is set to `true` and the user presses the left mouse button, this method implements the visual behavior that occurs when the user drags a <xref:System.Windows.Controls.GridViewColumnHeader> to a new location. This method override sets the <xref:System.Windows.RoutedEventArgs.Handled%2A> event argument to `true` for the <xref:System.Windows.UIElement.MouseMove> event even if the user does not press the left mouse button.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

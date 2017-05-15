@@ -1,0 +1,139 @@
+<Type Name="PersonalizationProviderCollection" FullName="System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection">
+  <TypeSignature Language="C#" Value="public sealed class PersonalizationProviderCollection : System.Configuration.Provider.ProviderCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PersonalizationProviderCollection extends System.Configuration.Provider.ProviderCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.Provider.ProviderCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores references to <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" /> objects indexed by name. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used to store the default provider in the single-provider scenario. In multiple-provider scenarios, you can use this collection to choose a specific personalization provider at run time.  
+  
+ Personalization providers in the collection are indexed according to the name of each provider as set in the Web.config or the Machine.config configuration file using the [providers Element for personalization for webParts (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/51363b49-eafa-4b9c-b9d0-80086b385195) attribute.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PersonalizationProviderCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public override void Add (System.Configuration.Provider.ProviderBase provider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Configuration.Provider.ProviderBase provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Configuration.Provider.ProviderBase" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The personalization provider to be added.</param>
+        <summary>Adds an instance of a class that implements <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" /> to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to add <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider>-derived instances to the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The provider specified is not a <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="provider" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.WebParts.PersonalizationProvider[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.WebParts.PersonalizationProvider[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection.CopyTo(System.Web.UI.WebControls.WebParts.PersonalizationProvider[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.UI.WebControls.WebParts.PersonalizationProvider[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The array to which the personalization providers are copied.</param>
+        <param name="index">The location in the array at which to begin copying.</param>
+        <summary>Copies the personalization providers in the collection to an array, starting at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The array is an array of <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider> instances.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.PersonalizationProvider this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.PersonalizationProvider Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.PersonalizationProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the personalization provider.</param>
+        <summary>Gets a personalization provider based on the specified name.</summary>
+        <value>The name of the personalization provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Personalization providers in the collection are indexed according to the name of each provider, as set in the Web.config or Machine.config configuration files.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

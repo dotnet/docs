@@ -1,0 +1,98 @@
+<Type Name="MergeAction" FullName="System.Windows.Forms.MergeAction">
+  <TypeSignature Language="C#" Value="public enum MergeAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MergeAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MergeAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the kind of action to take if a match is found when combining menu items on a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Append">
+      <MemberSignature Language="C#" Value="Append" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MergeAction Append = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MergeAction.Append" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MergeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Appends the item to the end of the collection, ignoring match results.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MergeAction Insert = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MergeAction.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MergeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Inserts the item to the target's collection immediately preceding the matched item. A match of the end of the list results in the item being appended to the list. If there is no match or the match is at the beginning of the list, the item is inserted at the beginning of the collection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchOnly">
+      <MemberSignature Language="C#" Value="MatchOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MergeAction MatchOnly = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MergeAction.MatchOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MergeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A match is required, but no action is taken. Use this for tree creation and successful access to nested layouts.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="Remove" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MergeAction Remove = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MergeAction.Remove" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MergeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Removes the matched item.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Replace">
+      <MemberSignature Language="C#" Value="Replace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MergeAction Replace = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MergeAction.Replace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.MergeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Replaces the matched item with the source item. The original item's drop-down items do not become children of the incoming item.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

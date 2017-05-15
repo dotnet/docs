@@ -1,0 +1,133 @@
+<Type Name="VisualStyleElement+ExplorerBar+NormalGroupExpand" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ExplorerBar+NormalGroupExpand">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.ExplorerBar.NormalGroupExpand" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ExplorerBar/NormalGroupExpand extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for each state of the expand button of a common group of items in the Explorer Bar. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each property of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand> class gets a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for a different state of the expand button of a common group of items in the Explorer Bar, such as the **File and Folder Tasks** group in Windows Explorer.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand.Normal%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementExplorerBarNormalGroupExpand1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#154](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#154)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#154](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#154)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Hot">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Hot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Hot" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand.Hot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a visual style element that represents a hot expand button of a common group of items in the Explorer Bar.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a hot expand button.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand.Hot%2A> property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand.Hot%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementExplorerBarNormalGroupExpand2` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#155](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#155)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#155](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#155)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Normal { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Normal" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand.Normal" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a visual style element that represents a normal expand button of a common group of items in the Explorer Bar.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a normal expand button.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand.Normal%2A> property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand.Normal%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementExplorerBarNormalGroupExpand1` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#154](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#154)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#154](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#154)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pressed">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Pressed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Pressed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand.Pressed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a visual style element that represents a pressed expand button of a common group of items in the Explorer Bar.</summary>
+        <value>A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that represents a pressed expand button.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand.Pressed%2A> property to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> with the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> returned by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ExplorerBar.NormalGroupExpand.Pressed%2A> property. To run this example, paste it into a Windows Form. Handle the form’s <xref:System.Windows.Forms.Control.Paint> event and call the `DrawVisualStyleElementExplorerBarNormalGroupExpand3` method from the <xref:System.Windows.Forms.Control.Paint> event-handling method, passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
+  
+ [!code-csharp[System.Windows.Forms.VisualStyleElementsExamples#156](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/CS/Form1.cs#156)]
+ [!code-vb[System.Windows.Forms.VisualStyleElementsExamples#156](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.VisualStyleElementsExamples/VB/Form1.vb#156)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

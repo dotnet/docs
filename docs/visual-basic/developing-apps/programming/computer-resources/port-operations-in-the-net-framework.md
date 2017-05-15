@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "ports, Visual Basic"
 ms.assetid: 1eba223b-7bd3-401a-b097-982bce96df1b
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

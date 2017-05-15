@@ -1,0 +1,50 @@
+<Type Name="ScrollUnit" FullName="System.Windows.Controls.ScrollUnit">
+  <TypeSignature Language="C#" Value="public enum ScrollUnit" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollUnit extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ScrollUnit" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of unit that is used by the <see cref="P:System.Windows.Controls.VirtualizingPanel.ScrollUnit" /> attached property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="Item" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ScrollUnit Item = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollUnit.Item" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ScrollUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.Windows.Controls.VirtualizingPanel.ScrollUnit" /> is measured in terms of the items that are displayed in the panel.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pixel">
+      <MemberSignature Language="C#" Value="Pixel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.ScrollUnit Pixel = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollUnit.Pixel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ScrollUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.Windows.Controls.VirtualizingPanel.ScrollUnit" /> is measured in terms of [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

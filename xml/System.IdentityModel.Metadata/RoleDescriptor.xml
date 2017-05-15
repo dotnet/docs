@@ -1,0 +1,167 @@
+<Type Name="RoleDescriptor" FullName="System.IdentityModel.Metadata.RoleDescriptor">
+  <TypeSignature Language="C#" Value="public abstract class RoleDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RoleDescriptor extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.RoleDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a role descriptor.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RoleDescriptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.RoleDescriptor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.RoleDescriptor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Metadata.RoleDescriptor.ProtocolsSupported%2A> property is initialized to an empty collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RoleDescriptor (System.Collections.ObjectModel.Collection&lt;Uri&gt; protocolsSupported);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.ObjectModel.Collection`1&lt;class System.Uri&gt; protocolsSupported) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.RoleDescriptor.#ctor(System.Collections.ObjectModel.Collection{System.Uri})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="protocolsSupported" Type="System.Collections.ObjectModel.Collection&lt;System.Uri&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="protocolsSupported">The supported protocol collection. Initializes the <see cref="P:System.IdentityModel.Metadata.RoleDescriptor.ProtocolsSupported" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.RoleDescriptor" /> class that has the collection of supported protocols.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contacts">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.ContactPerson&gt; Contacts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Metadata.ContactPerson&gt; Contacts" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.RoleDescriptor.Contacts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.ContactPerson&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.IdentityModel.Metadata.ContactPerson" />.</summary>
+        <value>The collection of contact persons for this role descriptor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorUrl">
+      <MemberSignature Language="C#" Value="public Uri ErrorUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ErrorUrl" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.RoleDescriptor.ErrorUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the error URL.</summary>
+        <value>The error URL for this role descriptor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.KeyDescriptor&gt; Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.IdentityModel.Metadata.KeyDescriptor&gt; Keys" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.RoleDescriptor.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.IdentityModel.Metadata.KeyDescriptor&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.IdentityModel.Metadata.KeyDescriptor" />.</summary>
+        <value>The collection of key descriptors for this role descriptor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Organization">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.Organization Organization { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Metadata.Organization Organization" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.RoleDescriptor.Organization" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.Organization</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="P:System.IdentityModel.Metadata.RoleDescriptor.Organization" />.</summary>
+        <value>The organization for this role descriptor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolsSupported">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Uri&gt; ProtocolsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Uri&gt; ProtocolsSupported" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.RoleDescriptor.ProtocolsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Uri&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of protocols supported.</summary>
+        <value>The collection of supported protocols for this role descriptor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidUntil">
+      <MemberSignature Language="C#" Value="public DateTime ValidUntil { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidUntil" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.RoleDescriptor.ValidUntil" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expiration time.</summary>
+        <value>The expiration time for this role descriptor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

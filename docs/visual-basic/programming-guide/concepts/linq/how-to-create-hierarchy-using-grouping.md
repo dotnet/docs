@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 4eb3ca6b-1aed-43de-b8b9-41c769c993f8
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Create Hierarchy Using Grouping (Visual Basic)

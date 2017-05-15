@@ -1,0 +1,62 @@
+<Type Name="LocationChangedEventArgs" FullName="System.Activities.Core.Presentation.LocationChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class LocationChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocationChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Core.Presentation.LocationChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the arguments for the LocationChanged event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_LocationChangedEventArgs#0](WFD_LocationChangedEventArgs#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocationChangedEventArgs (System.Windows.Point newLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Point newLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Core.Presentation.LocationChangedEventArgs.#ctor(System.Windows.Point)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newLocation" Type="System.Windows.Point" />
+      </Parameters>
+      <Docs>
+        <param name="newLocation">The new location.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Core.Presentation.LocationChangedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewLocation">
+      <MemberSignature Language="C#" Value="public System.Windows.Point NewLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point NewLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Core.Presentation.LocationChangedEventArgs.NewLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new location.</summary>
+        <value>An instance of <see cref="T:System.Windows.Point" /> that contains the new location.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

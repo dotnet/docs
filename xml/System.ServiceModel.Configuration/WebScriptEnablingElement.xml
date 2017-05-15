@@ -1,0 +1,158 @@
+<Type Name="WebScriptEnablingElement" FullName="System.ServiceModel.Configuration.WebScriptEnablingElement">
+  <TypeSignature Language="C#" Value="public sealed class WebScriptEnablingElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebScriptEnablingElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebScriptEnablingElement" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.BehaviorExtensionElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables the <see cref="T:System.ServiceModel.Description.WebScriptEnablingBehavior" /> for an endpoint through configuration.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Configuration.WebScriptEnablingElement> is a <xref:System.ServiceModel.Configuration.BehaviorExtensionElement> subtype that can be used to include the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> on an endpoint through configuration. There are no configurable properties on this element.  
+  
+ The <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>, in turn, allows an endpoint to be accessed by ASP.NET AJAX Web pages when it is configured with the <xref:System.ServiceModel.WebHttpBinding>.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] how to enable a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] service to respond to ASP.NET AJAX clients, see [Creating WCF Services for ASP.NET AJAX](~/docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md).  
+  
+   
+  
+## Examples  
+ The following is an example of using this configuration element to configure a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] endpoint to be accessed by ASP.NET AJAX Web page.  
+  
+```  
+<system.serviceModel>  
+<services>  
+        <service name="Microsoft.Ajax.Samples.CalculatorService">  
+            <endpoint address=""  
+                behaviorConfiguration="AspNetAjaxBehavior"   
+                binding="webHttpBinding"  
+                contract="Microsoft.Ajax.Samples.ICalculator" />  
+        </service>  
+    </services>  
+    <behaviors>  
+        <endpointBehaviors>  
+            <behavior name="AspNetAjaxBehavior">  
+                <enableWebScript />  
+            </behavior>  
+        </endpointBehaviors>  
+    </behaviors>  
+</system.serviceModel>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebScriptEnablingElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebScriptEnablingElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WebScriptEnablingElement" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following sample returns the type <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>.  
+  
+```  
+using System;  
+using System.ServiceModel;  
+using System.ServiceModel.Web;  
+using System.ServiceModel.Configuration;  
+  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            WebScriptEnablingElement wSEB = new WebScriptEnablingElement();  
+            Console.WriteLine("The type is: {0}",wSEB.BehaviorType );  
+            Console.WriteLine("Press <ENTER> to terminate the program.");  
+            Console.ReadLine();  
+        }  
+    }  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BehaviorType">
+      <MemberSignature Language="C#" Value="public override Type BehaviorType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type BehaviorType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WebScriptEnablingElement.BehaviorType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the behavior enabled by this configuration element.</summary>
+        <value>The <see cref="T:System.Type" /> for the behavior enabled with the configuration element: <see cref="T:System.ServiceModel.Description.WebScriptEnablingBehavior" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following sample returns the type <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>.  
+  
+```  
+using System;  
+using System.ServiceModel;  
+using System.ServiceModel.Web;  
+using System.ServiceModel.Configuration;  
+  
+    class Program  
+    {  
+        static void Main(string[] args)  
+        {  
+            WebScriptEnablingElement wSEB = new WebScriptEnablingElement();  
+            Console.WriteLine("The type is: {0}",wSEB.BehaviorType );  
+            Console.WriteLine("Press <ENTER> to terminate the program.");  
+            Console.ReadLine();  
+        }  
+    }  
+  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBehavior">
+      <MemberSignature Language="C#" Value="protected override object CreateBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object CreateBehavior() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebScriptEnablingElement.CreateBehavior" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

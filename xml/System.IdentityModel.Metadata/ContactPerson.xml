@@ -1,0 +1,209 @@
+<Type Name="ContactPerson" FullName="System.IdentityModel.Metadata.ContactPerson">
+  <TypeSignature Language="C#" Value="public class ContactPerson" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContactPerson extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.ContactPerson" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a contact person in SAML 2.0 metadata.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Represents a `<md:ContactPerson>` element. [!INCLUDE[wif_samlmeta_ref](~/includes/wif-samlmeta-ref-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContactPerson ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.ContactPerson.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.ContactPerson" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContactPerson (System.IdentityModel.Metadata.ContactType contactType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.IdentityModel.Metadata.ContactType contactType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.ContactPerson.#ctor(System.IdentityModel.Metadata.ContactType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="contactType" Type="System.IdentityModel.Metadata.ContactType" />
+      </Parameters>
+      <Docs>
+        <param name="contactType">The contact type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.ContactPerson" /> class with the specified contact type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Company">
+      <MemberSignature Language="C#" Value="public string Company { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Company" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.Company" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the company name.</summary>
+        <value>The company name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the optional `<md:Company>` child element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmailAddresses">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; EmailAddresses { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; EmailAddresses" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.EmailAddresses" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of email addresses.</summary>
+        <value>The collection of email addresses.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to optional `<md:EmailAddress>` child elements.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GivenName">
+      <MemberSignature Language="C#" Value="public string GivenName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GivenName" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.GivenName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the given name.</summary>
+        <value>The given name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the optional `<md:GivenName>` child element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Surname">
+      <MemberSignature Language="C#" Value="public string Surname { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Surname" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.Surname" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the surname.</summary>
+        <value>The surname.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the optional `<md:Surname>` child element.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TelephoneNumbers">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; TelephoneNumbers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; TelephoneNumbers" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.TelephoneNumbers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the collection of telephone numbers.</summary>
+        <value>The collection of telephone numbers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to optional `<md:TelephoneNumber>` child elements.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Metadata.ContactType Type { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IdentityModel.Metadata.ContactType Type" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.ContactPerson.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the contact type.</summary>
+        <value>One of the enumeration values that specify the contact type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Corresponds to the required `contactType` attribute.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

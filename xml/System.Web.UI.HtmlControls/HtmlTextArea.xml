@@ -1,0 +1,613 @@
+<Type Name="HtmlTextArea" FullName="System.Web.UI.HtmlControls.HtmlTextArea">
+  <TypeSignature Language="C#" Value="public class HtmlTextArea : System.Web.UI.HtmlControls.HtmlContainerControl, System.Web.UI.IPostBackDataHandler" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlTextArea extends System.Web.UI.HtmlControls.HtmlContainerControl implements class System.Web.UI.IPostBackDataHandler" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlTextArea" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.HtmlControls.HtmlContainerControl</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IPostBackDataHandler</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("ServerChange")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ValidationProperty("Value")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows programmatic access to the <see langword="&lt;textarea&gt;" /> HTML element on the server.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea> control corresponds to the `<textarea>` HTML element that allows you to create a multiline text box on a Web page. Use this control to programmatically manipulate a `<textarea>` HTML element.  
+  
+ This class allows you to control the height and width of a multiline text box by setting the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Rows%2A> and <xref:System.Web.UI.HtmlControls.HtmlTextArea.Cols%2A> properties, respectively. You also can assign a name to the control by setting the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Name%2A> property. To determine or specify the text in the text box, use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Value%2A> property.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea> class provides a <xref:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange> event that allows you to perform a custom set of instructions every time the value of the text box changes between posts to the server. This event is commonly used for data validation.  
+  
+> [!NOTE]
+>  If you want to create a single-line text box, use the <xref:System.Web.UI.HtmlControls.HtmlInputText> control.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlTextArea>, see the <xref:System.Web.UI.HtmlControls.HtmlTextArea.%23ctor%2A> constructor.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control to create a multiline text box.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTextArea2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextArea2/CS/htmltextareacs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTextArea2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextArea2/VB/htmltextareavb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlTextArea ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTextArea.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> class.  
+  
+ The following table shows initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlTextArea>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The "textarea" literal string.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an instance of an <xref:System.Web.UI.HtmlControls.HtmlTextArea> control and place on the Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaCtor/CS/htmltextareactorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaCtor/VB/htmltextareactorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddParsedSubObject">
+      <MemberSignature Language="C#" Value="protected override void AddParsedSubObject (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddParsedSubObject(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTextArea.AddParsedSubObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An <see cref="T:System.Object" /> that represents the parsed element.</param>
+        <summary>Notifies the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control that an object was parsed and adds the object to the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control's <see cref="T:System.Web.UI.ControlCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.AddParsedSubObject%2A> method adds an object to the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control's <xref:System.Web.UI.ControlCollection> if the object is of the type <xref:System.Web.UI.LiteralControl> or <xref:System.Web.UI.DataBoundLiteralControl>; otherwise, an <xref:System.Web.HttpException> is thrown.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.AddParsedSubObject%2A> method is primarily used by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlTextArea.AddParsedSubObject%2A> method in a custom <xref:System.Web.UI.HtmlControls.HtmlTextArea> server control so that it always determines whether the parsed object is of the type <xref:System.Web.UI.LiteralControl> or <xref:System.Web.UI.DataBoundLiteralControl>.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTextAreaAddParsedSubObject#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaAddParsedSubObject/CS/custom_htmltextarea_addparsedsubobjectcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlTextAreaAddParsedSubObject#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaAddParsedSubObject/VB/custom_htmltextarea_addparsedsubobjectvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlTextAreaAddParsedSubObject#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaAddParsedSubObject/CS/custom_htmltextarea_addparsedsubobject.cs#2)]
+ [!code-vb[CustomHtmlTextAreaAddParsedSubObject#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaAddParsedSubObject/VB/custom_htmltextarea_addparsedsubobject.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Web.HttpException">The object specified by the <paramref name="obj" /> parameter can only be of the type <see cref="T:System.Web.UI.LiteralControl" /> or <see cref="T:System.Web.UI.DataBoundLiteralControl" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Cols">
+      <MemberSignature Language="C#" Value="public int Cols { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Cols" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTextArea.Cols" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width (in characters) of the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control.</summary>
+        <value>The width (in characters) of the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control. The default value is <see langword="-1" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Cols%2A> property to specify or determine the width (in characters) of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control. If you enter text that is longer than the width of the text box, the text automatically continues on the next line of the control.  
+  
+ To control the height of the control, set the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Rows%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Cols%2A> property to control the width of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaCols#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaCols/CS/htmltextareacolscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaCols#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaCols/VB/htmltextareacolsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadPostData">
+      <MemberSignature Language="C#" Value="protected virtual bool LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTextArea.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control.</param>
+        <param name="postCollection">The collection of all incoming name values.</param>
+        <summary>Processes the postback data for the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control's state has changed as a result of the postback; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.LoadPostData%2A> method checks whether the postback value of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control is different from its previous value, and if so, returns `true`.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.LoadPostData%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public virtual string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTextArea.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the unique identifier name for the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control.</summary>
+        <value>A string that represents the value of the <see cref="P:System.Web.UI.Control.UniqueID" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Name%2A> property to determine the unique identifier name for the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control. In this implementation of the property, the `get` accessor returns the value of the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=fullName> property. However, the `set` accessor does not assign a value to this property.  
+  
+> [!NOTE]
+>  The `set` accessor does not assign a value to this property because the <xref:System.Web.UI.HtmlControls.HtmlInputControl.Name%2A> property must have the same value as the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=fullName> property for the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control to work properly.  
+  
+ Classes that inherit from the <xref:System.Web.UI.HtmlControls.HtmlTextArea> class may override this implementation, if necessary.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Name%2A> property to select an <xref:System.Web.UI.HtmlControls.HtmlTextArea> control on a page and set its <xref:System.Web.UI.HtmlControls.HtmlTextArea.Value%2A>property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaName#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaName/CS/htmltextareanamecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaName#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaName/VB/htmltextareanamevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreRender">
+      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTextArea.OnPreRender(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.PreRender" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.OnPreRender%2A> method notifies the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control to perform any necessary steps prior to saving the view state and rendering content.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.OnPreRender%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlTextArea.OnPreRender%2A> method to always display 5 rows and 75 columns in a custom <xref:System.Web.UI.HtmlControls.HtmlTextArea> server control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTextAreaOnPreRender#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaOnPreRender/CS/custom_htmltextarea_onprerendercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlTextAreaOnPreRender#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaOnPreRender/VB/custom_htmltextarea_onprerendervb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlTextAreaOnPreRender#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaOnPreRender/CS/custom_htmltextarea_onprerender.cs#2)]
+ [!code-vb[CustomHtmlTextAreaOnPreRender#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaOnPreRender/VB/custom_htmltextarea_onprerender.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding the <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnPreRender(System.EventArgs)" /> method in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnPreRender(System.EventArgs)" /> method so that the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control is properly registered with the page.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnServerChange">
+      <MemberSignature Language="C#" Value="protected virtual void OnServerChange (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnServerChange(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange" /> event of the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control. This allows you to provide a custom handler for the event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange> event is raised when the content of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control changes between posts to the server.  
+  
+> [!NOTE]
+>  This event is only raised when the user initiates a post to the server, such as by clicking a `submit` button. This event does not cause a post to the server to occur.  
+  
+> [!NOTE]
+>  The control must have viewstate enabled for the <xref:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange> event to work correctly.  
+  
+ This event is commonly used to perform data validation on the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control when the user updates the text in the control.  
+  
+ Raising an event invokes the event handler through a delegate. For more information, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and create a custom event handler for the <xref:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange> event. A message is displayed when the value entered in the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control exceeds 20 characters.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaServerChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChanged/CS/htmltextareaserverchangecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaServerChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChanged/VB/htmltextareaserverchangevb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChange/CS/htmltextareaserverchangecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChange/VB/htmltextareaserverchangevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="protected virtual void RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTextArea.RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Calls the <see cref="M:System.Web.UI.HtmlControls.HtmlTextArea.OnServerChange(System.EventArgs)" /> method to signal the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control that the state of the control has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.RaisePostDataChangedEvent%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderAttributes">
+      <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTextArea.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered content.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control's attributes to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.RenderAttributes%2A> method renders the `name` attribute of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control directly to ensure that it has the same value as the <xref:System.Web.UI.Control.UniqueID%2A?displayProperty=fullName> property. After rendering the attribute, the <xref:System.Web.UI.HtmlControls.HtmlTextArea.RenderAttributes%2A> method calls the base class's <xref:System.Web.UI.HtmlControls.HtmlContainerControl.RenderAttributes%2A> method.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.RenderAttributes%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlTextArea.RenderAttributes%2A> method in a custom server control so that specific title text is always displayed for the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTextAreaRenderAttributes#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaRenderAttributes/cs/custom_htmltextarea_renderattributescs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlTextAreaRenderAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaRenderAttributes/vb/custom_htmltextarea_renderattributesvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlTextAreaRenderAttributes#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTextAreaRenderAttributes/cs/custom_htmltextarea_renderattributes.cs#2)]
+ [!code-vb[CustomHtmlTextAreaRenderAttributes#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTextAreaRenderAttributes/vb/custom_htmltextarea_renderattributes.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rows">
+      <MemberSignature Language="C#" Value="public int Rows { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Rows" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTextArea.Rows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height (in characters) of the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control.</summary>
+        <value>The height (in characters) of the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control. The default value is <see langword="-1" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Rows%2A> property to specify or determine the height (in characters) of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control. If you enter text that takes up more lines than the height specified, scroll bars are enabled.  
+  
+ To control the width of the control, set the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Cols%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Rows%2A> property to control the height of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaRows#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaRows/CS/htmltextarearowscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaRows#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaRows/VB/htmltextarearowsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerChange">
+      <MemberSignature Language="C#" Value="public event EventHandler ServerChange;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ServerChange" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the content of the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control changes between posts to the server.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange> event is raised when the content of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control changes between posts to the server. This event is commonly used to perform data validation on the text box.  
+  
+> [!NOTE]
+>  This event is only raised when the user initiates a post to the server, such as clicking a `submit` button. This event does not cause a post to the server to occur.  
+  
+> [!NOTE]
+>  The control must have viewstate enabled for the <xref:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange> event to work correctly.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and create a custom event handler for the <xref:System.Web.UI.HtmlControls.HtmlTextArea.ServerChange> event. A message is displayed when the value entered in the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control exceeds 10 characters.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaServerChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChanged/CS/htmltextareaserverchangecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaServerChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChanged/VB/htmltextareaserverchangevb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTextAreaServerChange#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextAreaServerChange/CS/htmltextareaserverchangecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTextAreaServerChange#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextAreaServerChange/VB/htmltextareaserverchangevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.LoadPostData">
+      <MemberSignature Language="C#" Value="bool IPostBackDataHandler.LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTextArea.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="postDataKey" Type="System.String" />
+        <Parameter Name="postCollection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="postDataKey">The key identifier for the control.</param>
+        <param name="postCollection">The collection of all incoming name values.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control's state has changed as a result of postback; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlTextArea> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent">
+      <MemberSignature Language="C#" Value="void IPostBackDataHandler.RaisePostDataChangedEvent ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTextArea.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.HtmlControls.HtmlTextArea> instance is cast to an <xref:System.Web.UI.IPostBackDataHandler> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTextArea.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text entered in the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control.</summary>
+        <value>The text entered in the <see cref="T:System.Web.UI.HtmlControls.HtmlTextArea" /> control. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Value%2A> property to programmatically control the text entered in the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control. This property is commonly used to retrieve the text entered in the text box, but you can also use it to specify the text to display in the control. This is useful if you want to provide a default value or display a message in the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. ASP.NET provides an input request validation feature to block script and HTML in user input. Validation server controls are also provided to assess user input. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTextArea.Value%2A> property to determine the contents of the <xref:System.Web.UI.HtmlControls.HtmlTextArea> control. The contents are then displayed in the Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTextArea2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextArea2/CS/htmltextareacs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTextArea2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTextArea2/VB/htmltextareavb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

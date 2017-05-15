@@ -1,0 +1,73 @@
+<Type Name="ColumnHeaderAutoResizeStyle" FullName="System.Windows.Forms.ColumnHeaderAutoResizeStyle">
+  <TypeSignature Language="C#" Value="public enum ColumnHeaderAutoResizeStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColumnHeaderAutoResizeStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnHeaderAutoResizeStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how a column contained in a <see cref="T:System.Windows.Forms.ListView" /> should be resized.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ColumnHeaderAutoResizeStyle> is used by the <xref:System.Windows.Forms.ListView.AutoResizeColumn%2A?displayProperty=fullName>, <xref:System.Windows.Forms.ListView.AutoResizeColumns%2A?displayProperty=fullName>, and <xref:System.Windows.Forms.ColumnHeader.AutoResize%2A?displayProperty=fullName> methods.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ColumnContent">
+      <MemberSignature Language="C#" Value="ColumnContent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ColumnHeaderAutoResizeStyle ColumnContent = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColumnHeaderAutoResizeStyle.ColumnContent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeaderAutoResizeStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the column should be resized based on the length of the column content.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderSize">
+      <MemberSignature Language="C#" Value="HeaderSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ColumnHeaderAutoResizeStyle HeaderSize = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColumnHeaderAutoResizeStyle.HeaderSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeaderAutoResizeStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the column should be resized based on the length of the column header content.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ColumnHeaderAutoResizeStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColumnHeaderAutoResizeStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ColumnHeaderAutoResizeStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies no resizing should occur.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

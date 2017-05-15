@@ -1,0 +1,89 @@
+<Type Name="AxisArrowStyle" FullName="System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle">
+  <TypeSignature Language="C#" Value="public enum AxisArrowStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AxisArrowStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>An enumeration of axis arrow styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle> enumeration represents the style for an axis arrow. If the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.ArrowStyle%2A> property is set to None, no arrow is displayed for an axis.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Lines">
+      <MemberSignature Language="C#" Value="Lines" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle Lines = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Lines" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A line-shaped arrow is used for the relevant axis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No arrow is used for the relevant axis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SharpTriangle">
+      <MemberSignature Language="C#" Value="SharpTriangle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle SharpTriangle = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.SharpTriangle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A sharp triangular arrow is used for the relevant axis.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Triangle">
+      <MemberSignature Language="C#" Value="Triangle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle Triangle = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle.Triangle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisArrowStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A triangular arrow is used for the relevant axis.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

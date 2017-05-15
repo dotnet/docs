@@ -1,0 +1,107 @@
+<Type Name="ProfileRemovedEventArgs" FullName="System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ProfileRemovedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProfileRemovedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved" /> event. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ A tracking service that implements the <xref:System.Workflow.Runtime.Tracking.IProfileNotification> interface raises a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved> event to notify the runtime tracking infrastructure that new instances of a particular workflow <xref:System.Type> should no longer be tracked. The tracking service uses a <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs> to provide the workflow <xref:System.Type> to the runtime tracking infrastructure. For example, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> uses a <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs> when it raises the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileRemoved?displayProperty=fullName> event. After a tracking service raises the <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved> event, the runtime tracking infrastructure will no longer associate a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> with the specified workflow <xref:System.Type> for that tracking service.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileRemovedEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you use this constructor when you raise a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved> event inside a tracking service, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.WorkflowType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileRemovedEventArgs (Type workflowType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type workflowType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="workflowType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="workflowType">The workflow <see cref="T:System.Type" /> for which the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> should be removed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs" /> class that applies to the specified workflow <see cref="T:System.Type" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new instance of <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs> is created with <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.WorkflowType%2A> set to the specified <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowType">
+      <MemberSignature Language="C#" Value="public Type WorkflowType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type WorkflowType" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.WorkflowType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the workflow <see cref="T:System.Type" /> for which the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> should be removed.</summary>
+        <value>The <see cref="T:System.Type" /> of a workflow.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.WorkflowType%2A> specifies the workflow <xref:System.Type> for which a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> no longer exists, and which, therefore, should no longer be tracked by the runtime tracking infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

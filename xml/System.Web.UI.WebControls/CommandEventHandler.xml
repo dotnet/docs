@@ -1,0 +1,47 @@
+<Type Name="CommandEventHandler" FullName="System.Web.UI.WebControls.CommandEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void CommandEventHandler(object sender, CommandEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CommandEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CommandEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.CommandEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see langword="Command" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Command` event is raised when a <xref:System.Web.UI.WebControls.Button>, <xref:System.Web.UI.WebControls.ImageButton>, or <xref:System.Web.UI.WebControls.LinkButton> control is clicked.  
+  
+ When you create a <xref:System.Web.UI.WebControls.CommandEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Button.Command> event of a <xref:System.Web.UI.WebControls.Button> control. This example specifies the event handler declaratively, using the <xref:System.Web.UI.WebControls.Button.OnClick%2A> property of the <xref:System.Web.UI.WebControls.Button> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ButtonCommandNameArgument#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommandNameArgument/CS/buttoncommandnamecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ButtonCommandNameArgument#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommandNameArgument/VB/buttoncommandnamevb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to specify the event handler and programmatically add it to the event in the `Page_Load` method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ButtonCommand#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonCommand/CS/buttoncommandcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ButtonCommand#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonCommand/VB/buttoncommandvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

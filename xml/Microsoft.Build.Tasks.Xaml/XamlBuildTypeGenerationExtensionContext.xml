@@ -1,0 +1,52 @@
+<Type Name="XamlBuildTypeGenerationExtensionContext" FullName="Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext">
+  <TypeSignature Language="C#" Value="public sealed class XamlBuildTypeGenerationExtensionContext : Microsoft.Build.Tasks.Xaml.BuildExtensionContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XamlBuildTypeGenerationExtensionContext extends Microsoft.Build.Tasks.Xaml.BuildExtensionContext" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext" />
+  <AssemblyInfo>
+    <AssemblyName>XamlBuildTask</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.Xaml.BuildExtensionContext</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies settings for the build type generation extension context.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlBuildTypeGenerationExtensionContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InputTaskItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem InputTaskItem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem InputTaskItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.XamlBuildTypeGenerationExtensionContext.InputTaskItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>XamlBuildTask</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the input task item for the XAML build type generation extension context.</summary>
+        <value>The input task item for the XAML build type generation extension context.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

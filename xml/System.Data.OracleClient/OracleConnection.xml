@@ -1,0 +1,942 @@
+<Type Name="OracleConnection" FullName="System.Data.OracleClient.OracleConnection">
+  <TypeSignature Language="C#" Value="public sealed class OracleConnection : System.Data.Common.DbConnection, ICloneable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OracleConnection extends System.Data.Common.DbConnection implements class System.ICloneable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleConnection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.OracleClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.DbConnection</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultEvent("InfoMessage")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("OracleConnection has been deprecated. http://go.microsoft.com/fwlink/?LinkID=144260", false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an open connection to a database. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type is deprecated and will be removed in a future version of the .NET Framework. For more information, see [Oracle and ADO.NET](~/docs/framework/data/adonet/oracle-and-adonet.md).  
+  
+ An <xref:System.Data.OracleClient.OracleConnection> object represents a unique connection to an Oracle database. In the case of a client/server database system, it is equivalent to a network connection to the server.  
+  
+ An application that creates an instance of the <xref:System.Data.OracleClient.OracleConnection> object can set declarative or imperative security demands that require all direct and indirect callers to have adequate permission to the code. <xref:System.Data.OracleClient.OracleConnection> creates security demands by using the <xref:System.Data.OracleClient.OraclePermission> object. Users can verify that their code has adequate permissions by using the <xref:System.Data.OracleClient.OraclePermissionAttribute> object. Users and administrators can also use the Code Access Security Policy Tool (Caspol.exe) to modify security policy at the machine, user, and enterprise levels. For more information, see [Security](http://msdn.microsoft.com/library/9a9621d7-8883-4a4f-a874-65e8e09e20a6).  
+  
+> [!NOTE]
+>  Unlike the **Connection** object in the other .NET Framework data providers (SQL Server, OLE DB, and ODBC), <xref:System.Data.OracleClient.OracleConnection> does not support a <xref:System.Data.OracleClient.OracleConnection.ConnectionTimeout%2A> property. Setting a connection time-out either as a property or in the connection string has no effect, and the value returned is always zero. <xref:System.Data.OracleClient.OracleConnection> also does not support a <xref:System.Data.OracleClient.OracleConnection.Database%2A> property or a <xref:System.Data.OracleClient.OracleConnection.ChangeDatabase%2A> method.  
+  
+ If the <xref:System.Data.OracleClient.OracleConnection> object goes out of scope, it remains open. Therefore, you should always close <xref:System.Data.OracleClient.OracleConnection> objects by calling <xref:System.Data.OracleClient.OracleConnection.Close%2A> or **Dispose**, or by using the <xref:System.Data.OracleClient.OracleConnection> object within a `Using` statement. Otherwise, the garbage collection might not free them immediately. Such delays can cause errors if the maximum number of connections is reached while a number of connections are waiting to be deleted by the garbage collector. By contrast, closing the connections by calling <xref:System.Data.OracleClient.OracleConnection.Close%2A> uses native resources more efficiently, enhancing scalability and improving overall application performance. To ensure that connections are always closed, open the connection inside of a `Using` block.  
+  
+> [!NOTE]
+>  To deploy high-performance applications, you often need to use connection pooling. However, when you use the .NET Framework Data Provider for Oracle, you do not need to enable connection pooling because the provider manages this automatically.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleCommand> and an <xref:System.Data.OracleClient.OracleConnection>. The <xref:System.Data.OracleClient.OracleConnection> is opened and set as the <xref:System.Data.OracleClient.OracleCommand.Connection%2A?displayProperty=fullName> property. The example then calls <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A>, and closes the connection. To accomplish this, the <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A> is passed a connection string and a query string that is an SQL INSERT statement.  
+  
+ [!code-csharp[Classic WebData OracleConnection#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleConnection/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleConnection#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleConnection/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleConnection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleConnection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates and opens an <xref:System.Data.OracleClient.OracleConnection>.  
+  
+ [!code-csharp[Classic WebData OracleConnection.OracleConnection1#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleConnection.OracleConnection1/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleConnection.OracleConnection1#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleConnection.OracleConnection1/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OracleConnection (string connectionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">The connection used to open the database.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleConnection" /> class with the specified connection string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates and opens an <xref:System.Data.OracleClient.OracleConnection>.  
+  
+ [!code-csharp[Classic WebData OracleConnection.OracleConnection1#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleConnection.OracleConnection1/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleConnection.OracleConnection1#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleConnection.OracleConnection1/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginDbTransaction">
+      <MemberSignature Language="C#" Value="protected override System.Data.Common.DbTransaction BeginDbTransaction (System.Data.IsolationLevel isolationLevel);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbTransaction BeginDbTransaction(valuetype System.Data.IsolationLevel isolationLevel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.BeginDbTransaction(System.Data.IsolationLevel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbTransaction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isolationLevel" Type="System.Data.IsolationLevel" />
+      </Parameters>
+      <Docs>
+        <param name="isolationLevel">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTransaction">
+      <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleTransaction BeginTransaction ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OracleClient.OracleTransaction BeginTransaction() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.BeginTransaction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleTransaction</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Begins a transaction at the database.</summary>
+        <returns>An object representing the new transaction.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To commit or roll back the transaction, you must explicitly use the <xref:System.Data.OracleClient.OracleTransaction.Commit%2A> or <xref:System.Data.OracleClient.OracleTransaction.Rollback%2A> methods.  
+  
+ To ensure that the .NET Framework Data Provider for Oracle transaction management model performs correctly, avoid using other transaction management models, such as those provided by the database.  
+  
+> [!NOTE]
+>  If you do not specify an isolation level, the default isolation level is used. To specify an isolation level with the <xref:System.Data.OracleClient.OracleConnection.BeginTransaction%2A> method, use the <xref:System.Data.OracleClient.OracleConnection.BeginTransaction%2A> overload.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleConnection> and an <xref:System.Data.OracleClient.OracleTransaction>. It also demonstrates how to use the <xref:System.Data.OracleClient.OracleConnection.BeginTransaction%2A>, <xref:System.Data.OracleClient.OracleTransaction.Commit%2A>, and <xref:System.Data.OracleClient.OracleTransaction.Rollback%2A> methods.  
+  
+ [!code-csharp[Classic WebData OracleConnection.BeginTransaction#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleConnection.BeginTransaction/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleConnection.BeginTransaction#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleConnection.BeginTransaction/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Parallel transactions are not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTransaction">
+      <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleTransaction BeginTransaction (System.Data.IsolationLevel il);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OracleClient.OracleTransaction BeginTransaction(valuetype System.Data.IsolationLevel il) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.BeginTransaction(System.Data.IsolationLevel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleTransaction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="il" Type="System.Data.IsolationLevel" />
+      </Parameters>
+      <Docs>
+        <param name="il">The transaction isolation level for this connection.</param>
+        <summary>Begins a transaction at the database with the specified <see cref="T:System.Data.IsolationLevel" /> value.</summary>
+        <returns>An object representing the new transaction.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To commit or roll back the transaction, you must explicitly use the <xref:System.Data.OracleClient.OracleTransaction.Commit%2A> or <xref:System.Data.OracleClient.OracleTransaction.Rollback%2A> methods.  
+  
+ To ensure that the .NET Framework Data Provider for Oracle transaction management model performs correctly, avoid using other transaction management models, such as those provided by the database.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleConnection> and an <xref:System.Data.OracleClient.OracleTransaction>. It also demonstrates how to use the <xref:System.Data.OracleClient.OracleConnection.BeginTransaction%2A>, <xref:System.Data.OracleClient.OracleTransaction.Commit%2A>, and <xref:System.Data.OracleClient.OracleTransaction.Rollback%2A> methods.  
+  
+ [!code-csharp[Classic WebData OracleConnection.BeginTransaction#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleConnection.BeginTransaction/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleConnection.BeginTransaction#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleConnection.BeginTransaction/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Parallel transactions are not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeDatabase">
+      <MemberSignature Language="C#" Value="public override void ChangeDatabase (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ChangeDatabase(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.ChangeDatabase(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The name of the database to use instead of the current database.</param>
+        <summary>Changes the current database for an open <see cref="T:System.Data.OracleClient.OracleConnection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `value` parameter must contain a valid database name, and cannot contain a null value, an empty string (""), or a string with only blank characters.  
+  
+> [!NOTE]
+>  Unlike the **Connection** object in the other .NET Framework data providers (SQL Server, OLE DB, and ODBC), <xref:System.Data.OracleClient.OracleConnection> does not support a <xref:System.Data.OracleClient.OracleConnection.ConnectionTimeout%2A> property. Setting a connection time-out either as a property or in the connection string has no effect, and the value returned is always zero. <xref:System.Data.OracleClient.OracleConnection> also does not support a <xref:System.Data.OracleClient.OracleConnection.Database%2A> property or a <xref:System.Data.OracleClient.OracleConnection.ChangeDatabase%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The database name is not valid.</exception>
+        <exception cref="T:System.InvalidOperationException">The connection is not open.</exception>
+        <exception cref="T:System.Data.OracleClient.OracleException">Cannot change the database.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAllPools">
+      <MemberSignature Language="C#" Value="public static void ClearAllPools ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearAllPools() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.ClearAllPools" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Empties the connection pool.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OracleClient.OracleConnection.ClearAllPools%2A> resets (or empties) the connection pool. If connections are in use at the time of the call, they are marked appropriately and are discarded when <xref:System.Data.OracleClient.OracleConnection.Close%2A> is called on them.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearPool">
+      <MemberSignature Language="C#" Value="public static void ClearPool (System.Data.OracleClient.OracleConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearPool(class System.Data.OracleClient.OracleConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.ClearPool(System.Data.OracleClient.OracleConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connection" Type="System.Data.OracleClient.OracleConnection" />
+      </Parameters>
+      <Docs>
+        <param name="connection">The <see cref="T:System.Data.OracleClient.OracleConnection" /> to be cleared from the pool.</param>
+        <summary>Empties the connection pool associated with the specified connection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Data.OracleClient.OracleConnection.ClearPool%2A> method clears the connection pool that is associated with `connection`. If additional connections associated with `connection` are in use at the time of the call, they are marked appropriately and are discarded when <xref:System.Data.OracleClient.OracleConnection.Close%2A> is called on them.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public override void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the connection to the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OracleClient.OracleConnection.Close%2A> method rolls back any pending transactions. It then releases the connection to the connection pool, or closes the connection if connection pooling is disabled.  
+  
+ An application can call <xref:System.Data.OracleClient.OracleConnection.Close%2A> more than once without generating an exception.  
+  
+> [!NOTE]
+>  When you use the .NET Framework Data Provider for Oracle, you do not need to enable connection pooling because the provider manages this automatically.  
+  
+> [!CAUTION]
+>  Do not call <xref:System.Data.OracleClient.OracleConnection.Close%2A> on a <xref:System.Data.OracleClient.OracleConnection>, a <xref:System.Data.OracleClient.OracleDataReader>, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public override string ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Oracle.Design.OracleConnectionStringEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RecommendedAsConfigurable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.SettingsBindable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string used to open an Oracle database.</summary>
+        <value>The Oracle connection string that includes settings, such as the server name, needed to establish the initial connection. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> can be set only when the connection is closed.  
+  
+ You can use the <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> property to connect to a database. The following example illustrates a typical connection string.  
+  
+```  
+"Data Source=Oracle8i;Integrated Security=yes"  
+```  
+  
+ Many of the settings specified in the string have corresponding read-only properties (for example, `Data Source=MyServer`, which corresponds to the <xref:System.Data.OracleClient.OracleConnection.DataSource%2A> property). When the connection string is set, all of these properties are updated, unless an error is detected, in which case none of the properties are updated. <xref:System.Data.OracleClient.OracleConnection> properties return only default settings or those settings specified in the <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A>.  
+  
+ Resetting the <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> on a closed connection resets all connection string values (and related properties), including the password.  
+  
+ The connection string is parsed immediately after being set. If parsing reveals errors in syntax, a run-time exception, such as <xref:System.ArgumentException>, is generated. Other errors can be found only when an attempt is made to open the connection.  
+  
+ The basic format of a connection string is a series of keyword/value pairs separated by semicolons. The equal sign (=) connects each keyword and its value. To include values that contain a semicolon, single-quote character, or double-quote character, the value must be enclosed in double quotes. If the value contains both a semicolon and a double-quote character, the value can be enclosed in single quotes. The single quote is also useful if the value begins with a double-quote character. Conversely, the double quote can be used if the value begins with a single quote. If the value contains both single-quote and double-quote characters, the quote character used to enclose the value must be doubled each time it occurs within the value.  
+  
+ To include preceding or trailing spaces in the string value, the value must be enclosed in either single quotes or double quotes. Any leading or trailing spaces around integer, Boolean, or enumerated values are ignored, even if enclosed in quotes. However, spaces within a string literal keyword or value are preserved. Single or double quotes may be used within a connection string without using delimiters unless a quote character is the first or last character in the value, for example, `Data Source= my'Server` or `Data Source= my"Server`.  
+  
+ To include an equal sign (=) in a keyword or value, it must be preceded by another equal sign. For example, in the hypothetical connection string  
+  
+```  
+"key==word=value"  
+```  
+  
+ the keyword is "key=word" and the value is "value".  
+  
+ If a specific keyword in a keyword/value pair occurs more than once in a connection string, the last occurrence is used in the value set.  
+  
+ Keywords are case insensitive.  
+  
+ The following table lists the valid names for values within the <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A>.  
+  
+|Name|Default|Description|  
+|----------|-------------|-----------------|  
+|Data Source<br /><br /> -or-<br /><br /> Server||The name or network address of the instance of Oracle to which to connect.|  
+|Integrated Security|'false'|Whether the connection is to be a secure connection or not.<br /><br /> Recognized values are `true` (strongly recommended), `false`, `yes`, and `no`.|  
+|Password||The password for the Oracle account logging on. To maintain a high level of security, we strongly recommend that you use the Integrated Security keyword instead.|  
+|Persist Security Info|'false'|When set to `false` or `no` (strongly recommended), security-sensitive information such as the password is not returned as part of the connection if the connection is open or has ever been in an open <xref:System.Data.OracleClient.OracleConnection.State%2A>. Resetting the connection string resets all connection string values, including the password.<br /><br /> Recognized values are `true`, `false`, `yes`, and `no`.|  
+|Unicode|'false'|Specifies whether the .NET Framework Data Provider for Oracle uses UTF16 mode API calls. This keyword is ignored except when using Oracle9i client software.|  
+|User ID||The Oracle login account. To maintain a high level of security, we strongly recommend that you use the Integrated Security keyword instead.|  
+  
+ The following table lists the valid names for connection pooling values within the <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A>.  
+  
+|Name|Default|Description|  
+|----------|-------------|-----------------|  
+|Connection Lifetime|0|When a connection is returned to the pool, its creation time is compared with the current time, and the connection is destroyed if that time span (in seconds) exceeds the value specified by `Connection Lifetime`. This is useful in clustered configurations to force load balancing between a running server and a server just brought online.<br /><br /> A value of zero causes pooled connections to have the maximum connection time-out.|  
+|Enlist|'true'|When `true` or `yes`, the pooler automatically enlists the connection in the creation thread's current transaction context.<br /><br /> Recognized values are `true`, `false`, `yes`, and `no`.|  
+|Max Pool Size|100|The maximum number of connections allowed in the pool. Setting the `Max Pool Size` value of the <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> can affect performance. If you plan to create and actively use more than 100 connections, you should increase `Max Pool Size` to a value that approximates the steady-state connection usage for the application.|  
+|Min Pool Size|0|The minimum number of connections allowed in the pool.|  
+|Pooling|'true'|When `true` or `yes`, the <xref:System.Data.OracleClient.OracleConnection> object is drawn from the appropriate pool, or if necessary, is created and added to the appropriate pool.<br /><br /> Recognized values are `true`, `false`, `yes`, and `no`.|  
+  
+ When setting keyword or connection pooling values that require a Boolean value, you can use 'yes' instead of 'true', and 'no' instead of 'false'. Integer values are represented as strings.  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleConnection> and sets some of its properties in the connection string.  
+  
+ [!code-csharp[Classic WebData OracleConnection.DataSource#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleConnection.DataSource/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleConnection.DataSource#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleConnection.DataSource/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionTimeout">
+      <MemberSignature Language="C#" Value="public override int ConnectionTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.ConnectionTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time to wait to establish a connection before terminating the attempt and generating an error.</summary>
+        <value>The time (in seconds) to wait for a connection to open. The default value is 15 seconds.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set the amount of time a connection waits to time out by using the `Connect Timeout` or `Connection Timeout` keywords in the connection string. A value of 0 indicates no limit, and should be avoided in a <xref:System.Data.OracleClient.OracleConnection.ConnectionString%2A> because an attempt to connect waits indefinitely.  
+  
+> [!NOTE]
+>  Unlike the `Connection` object in the other .NET Framework data providers (SQL Server, OLE DB, and ODBC), <xref:System.Data.OracleClient.OracleConnection> does not support a <xref:System.Data.OracleClient.OracleConnection.ConnectionTimeout%2A> property. Setting a connection time-out either with a property or in the connection string has no effect, and the value returned is always zero. <xref:System.Data.OracleClient.OracleConnection> also does not support a <xref:System.Data.OracleClient.OracleConnection.Database%2A> property or a <xref:System.Data.OracleClient.OracleConnection.ChangeDatabase%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value specified is less than 0.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCommand">
+      <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleCommand CreateCommand ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OracleClient.OracleCommand CreateCommand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.CreateCommand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleCommand</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates and returns an <see cref="T:System.Data.OracleClient.OracleCommand" /> object associated with the <see cref="T:System.Data.OracleClient.OracleConnection" />.</summary>
+        <returns>An <see cref="T:System.Data.OracleClient.OracleCommand" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDbCommand">
+      <MemberSignature Language="C#" Value="protected override System.Data.Common.DbCommand CreateDbCommand ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbCommand CreateDbCommand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.CreateDbCommand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.DbCommand</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Database">
+      <MemberSignature Language="C#" Value="public override string Database { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Database" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.Database" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the current database or the database to be used after a connection is opened.</summary>
+        <value>The name of the current database or the name of the database to be used after a connection is opened. The default value is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OracleClient.OracleConnection.Database%2A> property updates dynamically. If you change the current database using a SQL statement or the <xref:System.Data.OracleClient.OracleConnection.ChangeDatabase%2A> method, an informational message is sent and the property is updated automatically.  
+  
+> [!NOTE]
+>  Unlike the `Connection` object in the other .NET Framework data providers (SQL Server, OLE DB, and ODBC), <xref:System.Data.OracleClient.OracleConnection> does not support a <xref:System.Data.OracleClient.OracleConnection.ConnectionTimeout%2A> property. Setting a connection time-out either with a property or in the connection string has no effect, and the value returned is always zero. <xref:System.Data.OracleClient.OracleConnection> also does not support a <xref:System.Data.OracleClient.OracleConnection.Database%2A> property or a <xref:System.Data.OracleClient.OracleConnection.ChangeDatabase%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataSource">
+      <MemberSignature Language="C#" Value="public override string DataSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataSource" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.DataSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the Oracle server to which to connect.</summary>
+        <value>The name of the Oracle server to which to connect. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleConnection> and displays some of its read-only properties.  
+  
+ [!code-csharp[Classic WebData OracleConnection.DataSource#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleConnection.DataSource/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleConnection.DataSource#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleConnection.DataSource/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnlistDistributedTransaction">
+      <MemberSignature Language="C#" Value="public void EnlistDistributedTransaction (System.EnterpriseServices.ITransaction distributedTransaction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnlistDistributedTransaction(class System.EnterpriseServices.ITransaction distributedTransaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.EnlistDistributedTransaction(System.EnterpriseServices.ITransaction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="distributedTransaction" Type="System.EnterpriseServices.ITransaction" />
+      </Parameters>
+      <Docs>
+        <param name="distributedTransaction">A reference to an existing <see cref="T:System.EnterpriseServices.ITransaction" /> in which to enlist.</param>
+        <summary>Enlists in the specified transaction as a distributed transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ New in ADO.NET 2.0 is support for using the <xref:System.Data.Common.DbConnection.EnlistTransaction%2A> method to enlist in a distributed transaction. Because it enlists a connection in a <xref:System.Transactions.Transaction> instance, **EnlistTransaction** takes advantage of functionality available in the <xref:System.Transactions> namespace for managing distributed transactions, making it preferable to **EnlistDistributedTransaction** for this purpose. For more information, see [Distributed Transactions](~/docs/framework/data/adonet/distributed-transactions.md).  
+  
+ You can continue to enlist in an existing distributed transaction using the  
+  
+ <xref:System.Data.OracleClient.OracleConnection.EnlistDistributedTransaction%2A> method if auto-enlistment is disabled. Enlisting in an existing distributed transaction ensures that, if the transaction is committed or rolled back, modifications made by the code at the data source are also committed or rolled back.  
+  
+ <xref:System.Data.OracleClient.OracleConnection.EnlistDistributedTransaction%2A> returns an exception if the <xref:System.Data.OracleClient.OracleConnection> has already started a transaction using <xref:System.Data.OracleClient.OracleConnection.BeginTransaction%2A>. However, if the transaction is a local transaction started at the data source (for example, by explicitly executing the BEGIN TRANSACTION statement using an <xref:System.Data.OracleClient.OracleCommand> object), <xref:System.Data.OracleClient.OracleConnection.EnlistDistributedTransaction%2A> rolls back the local transaction and enlists in the existing distributed transaction as requested. You will not receive notice that the local transaction was rolled back, and are responsible for managing any local transactions not started using <xref:System.Data.OracleClient.OracleConnection.BeginTransaction%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnlistTransaction">
+      <MemberSignature Language="C#" Value="public override void EnlistTransaction (System.Transactions.Transaction transaction);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnlistTransaction(class System.Transactions.Transaction transaction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.EnlistTransaction(System.Transactions.Transaction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="transaction" Type="System.Transactions.Transaction" />
+      </Parameters>
+      <Docs>
+        <param name="transaction">A reference to an existing <see cref="T:System.Transactions.Transaction" /> in which to enlist.</param>
+        <summary>Enlists in the specified transaction as a distributed transaction.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ New in ADO.NET 2.0 is support for using the  
+  
+ <xref:System.Data.Common.DbConnection.EnlistTransaction%2A> method to enlist in a distributed transaction. Because it enlists a connection in a <xref:System.Transactions.Transaction> instance, **EnlistTransaction** takes advantage of functionality available in the <xref:System.Transactions> namespace for managing distributed transactions, making it preferable to **EnlistDistributedTransaction**, which uses a **System.EnterpriseServices.ITransaction** object. It also has slightly different semantics: once a connection is explicitly enlisted on a transaction, it cannot be unenlisted or enlisted in another transaction until the first transaction finishes. For more information about distributed transactions, see [Distributed Transactions](~/docs/framework/data/adonet/distributed-transactions.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSchema">
+      <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchema ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchema() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.GetSchema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns schema information for the data source of this <see cref="T:System.Data.OracleClient.OracleConnection" />.</summary>
+        <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSchema">
+      <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchema (string collectionName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchema(string collectionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.GetSchema(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collectionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="collectionName">Specifies the name of the schema to return.</param>
+        <summary>Returns schema information for the data source of this <see cref="T:System.Data.OracleClient.OracleConnection" /> using the specified string for the schema name.</summary>
+        <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Queries using <xref:System.Data.OracleClient.OracleConnection.GetSchema%2A> are case sensitive. Because of Oracle's treatment of cases when a schema is first created, this can lead to unexpected results.  
+  
+ If the schema was created without quotes`,` Oracle stores the object name in upper case. If the schema was created with quotes, Oracle stores the object name in the casing provided.  
+  
+ For example, suppose that you create a table called MyTable, using one of the following two statements:  
+  
+ `CREATE TABLE MyTable ...`  
+  
+ `CREATE TABLE "MyTable" ...`  
+  
+ To retrieve information about this table via the **GetSchema** method in the first case, you would have to pass "MYTABLE" in as an argument. In the second case, you would have to pass "MyTable" in as an argument.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="collectionName" /> is specified as null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSchema">
+      <MemberSignature Language="C#" Value="public override System.Data.DataTable GetSchema (string collectionName, string[] restrictionValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.DataTable GetSchema(string collectionName, string[] restrictionValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.GetSchema(System.String,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.DataTable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collectionName" Type="System.String" />
+        <Parameter Name="restrictionValues" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="collectionName">Specifies the name of the schema to return.</param>
+        <param name="restrictionValues">A set of restriction values for the requested schema.</param>
+        <summary>Returns schema information for the data source of this <see cref="T:System.Data.OracleClient.OracleConnection" /> using the specified string for the schema name and the specified string array for the restriction values.</summary>
+        <returns>A <see cref="T:System.Data.DataTable" /> that contains schema information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `restrictionValues` parameter can supply n depth of values which are specified by the restrictions collection for a specific collection. In order to set values on a given restriction, and not set the values of other restrictions, you need to set the preceding restrictions to null and then put the appropriate value in for the restriction that you would like to specify a value for.  
+  
+ An example of this is the "Tables" collection. If the "Tables" collection has 3 restrictions: database, owner, and table name; and you want to get back only the tables associated with the owner "Carl", then you would need to pass in the following values (at a minimum): null, "Carl". If a restriction value is not passed in, the default values are used for that restriction. This is the same mapping as passing in null, which is different than passing in an empty string for the parameter value. In that case, the empty string ("") is considered to be the value for the specified parameter.  
+  
+ Queries using <xref:System.Data.OracleClient.OracleConnection.GetSchema%2A> are case sensitive. Because of Oracle's treatment of cases when a schema is first created, this can lead to unexpected results.  
+  
+ If the schema was created without quotes`,` Oracle stores the object name in upper case. If the schema was created with quotes, Oracle stores the object name in the casing provided.  
+  
+ For example, suppose that you create a table called MyTable, using one of the following two statements:  
+  
+ `CREATE TABLE MyTable ...`  
+  
+ `CREATE TABLE "MyTable" ...`  
+  
+ To retrieve information about this table via the **GetSchema** method in the first case, you would have to pass "MYTABLE" in as an argument. In the second case, you would have to pass "MyTable" in as an argument.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="collectionName" /> is specified as null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InfoMessage">
+      <MemberSignature Language="C#" Value="public event System.Data.OracleClient.OracleInfoMessageEventHandler InfoMessage;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Data.OracleClient.OracleInfoMessageEventHandler InfoMessage" />
+      <MemberSignature Language="DocId" Value="E:System.Data.OracleClient.OracleConnection.InfoMessage" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.OracleClient.OracleInfoMessageEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when Oracle sends a warning or an informational message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the .NET Framework Data Provider for Oracle uses the Oracle Call Interface (OCI), whenever the data provider receives a Success With Info message, an <xref:System.Data.OracleClient.OracleConnection.InfoMessage> event is generated. An example would be creating a stored procedure that contains a syntax error. The call to the <xref:System.Data.OracleClient.OracleCommand.ExecuteNonQuery%2A> method would succeed. However an <xref:System.Data.OracleClient.OracleConnection.InfoMessage> event would be generated informing you of the syntax error.  
+  
+ Clients who want to process warnings or informational messages sent by the server should create an <xref:System.Data.OracleClient.OracleInfoMessageEventHandler> delegate to listen to this event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public override void Open ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Open() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.Open" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Opens a connection to a database with the property settings specified by the <see cref="P:System.Data.OracleClient.OracleConnection.ConnectionString" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OracleClient.OracleConnection> draws an open connection from the connection pool if one is available. Otherwise, it establishes a new connection to the database.  
+  
+> [!NOTE]
+>  If the <xref:System.Data.OracleClient.OracleConnection> goes out of scope, the connection it represents does not close automatically. Therefore, you must explicitly close the connection by calling <xref:System.Data.OracleClient.OracleConnection.Close%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection is not open.</exception>
+        <exception cref="T:System.Data.OracleClient.OracleException">Cannot change the database.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerVersion">
+      <MemberSignature Language="C#" Value="public override string ServerVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServerVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.ServerVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string containing the version of the server to which the client is connected.</summary>
+        <value>The version of the connected server.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.OracleClient.OracleConnection.ServerVersion%2A> property is in Oracle version format. For example, the format for an Oracle8 release is a string in the form "8.1.7.0.0 Oracle8 Release 8.1.7.0.0 - Production."  
+  
+   
+  
+## Examples  
+ The following example creates an <xref:System.Data.OracleClient.OracleConnection> and displays some of its read-only properties.  
+  
+ [!code-csharp[Classic WebData OracleConnection.ServerVersion#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleConnection.ServerVersion/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleConnection.ServerVersion#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleConnection.ServerVersion/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The connection is closed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public override System.Data.ConnectionState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ConnectionState State" />
+      <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleConnection.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.ConnectionState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current state of the connection.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Data.ConnectionState" /> values. The default is <see langword="Closed" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The allowed state changes are:  
+  
+-   From `Closed` to `Open`, using the `Open` method of the <xref:System.Data.OracleClient.OracleConnection> object.  
+  
+-   From `Open` to `Closed`, using the <xref:System.Data.OracleClient.OracleConnection.Close%2A> method of the <xref:System.Data.OracleClient.OracleConnection> object.  
+  
+   
+  
+## Examples  
+ The following example creates an instance of a derived class, <xref:System.Data.OracleClient.OracleConnection>, sets its <xref:System.Data.IDbConnection.ConnectionString%2A>, and displays its <xref:System.Data.OracleClient.OracleConnection.State%2A>.  
+  
+ [!code-csharp[Classic WebData OracleConnection.State#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData OracleConnection.State/CS/source.cs#1)]
+ [!code-vb[Classic WebData OracleConnection.State#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData OracleConnection.State/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ICloneable.Clone">
+      <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleConnection.System#ICloneable#Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new object that is a copy of the current instance.</summary>
+        <returns>A new object that is a copy of this instance..</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Data.OracleClient.OracleConnection> instance is cast to an <xref:System.ICloneable> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

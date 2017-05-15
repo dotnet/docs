@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "para XML tag"
 ms.assetid: a3a18b6c-6416-4358-94ec-37b22675fd37
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

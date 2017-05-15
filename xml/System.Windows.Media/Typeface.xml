@@ -1,0 +1,535 @@
+<Type Name="Typeface" FullName="System.Windows.Media.Typeface">
+  <TypeSignature Language="C#" Value="public class Typeface" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Typeface extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Typeface" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a combination of <see cref="T:System.Windows.Media.FontFamily" />, <see cref="T:System.Windows.FontWeight" />, <see cref="T:System.Windows.FontStyle" />, and <see cref="T:System.Windows.FontStretch" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A typeface is a single variation of a font within the same font family. An example of a typeface is an italic version of the "Times New Roman" font family. Typeface defines the weight, style and stretching features of a font.  
+  
+   
+  
+## Examples  
+ [!code-csharp[FontSnippets#102](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#102)]
+ [!code-vb[FontSnippets#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#102)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Typeface (string typefaceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typefaceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="typefaceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typefaceName">The typeface name for the specified font family.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class for the specified font family typeface name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[FontSnippets#105](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#105)]
+ [!code-vb[FontSnippets#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#105)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Typeface (System.Windows.Media.FontFamily fontFamily, System.Windows.FontStyle style, System.Windows.FontWeight weight, System.Windows.FontStretch stretch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.FontFamily fontFamily, valuetype System.Windows.FontStyle style, valuetype System.Windows.FontWeight weight, valuetype System.Windows.FontStretch stretch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.#ctor(System.Windows.Media.FontFamily,System.Windows.FontStyle,System.Windows.FontWeight,System.Windows.FontStretch)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fontFamily" Type="System.Windows.Media.FontFamily" />
+        <Parameter Name="style" Type="System.Windows.FontStyle" />
+        <Parameter Name="weight" Type="System.Windows.FontWeight" />
+        <Parameter Name="stretch" Type="System.Windows.FontStretch" />
+      </Parameters>
+      <Docs>
+        <param name="fontFamily">The font family of the typeface.</param>
+        <param name="style">The style of the typeface.</param>
+        <param name="weight">The relative weight of the typeface.</param>
+        <param name="stretch">The degree to which the typeface is stretched.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class for the specified font family name, <see cref="P:System.Windows.Media.Typeface.Style" />, <see cref="P:System.Windows.Media.Typeface.Weight" />, and <see cref="P:System.Windows.Media.Typeface.Stretch" /> values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[FontSnippets#105](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#105)]
+ [!code-vb[FontSnippets#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#105)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Typeface (System.Windows.Media.FontFamily fontFamily, System.Windows.FontStyle style, System.Windows.FontWeight weight, System.Windows.FontStretch stretch, System.Windows.Media.FontFamily fallbackFontFamily);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.FontFamily fontFamily, valuetype System.Windows.FontStyle style, valuetype System.Windows.FontWeight weight, valuetype System.Windows.FontStretch stretch, class System.Windows.Media.FontFamily fallbackFontFamily) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.#ctor(System.Windows.Media.FontFamily,System.Windows.FontStyle,System.Windows.FontWeight,System.Windows.FontStretch,System.Windows.Media.FontFamily)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fontFamily" Type="System.Windows.Media.FontFamily" />
+        <Parameter Name="style" Type="System.Windows.FontStyle" />
+        <Parameter Name="weight" Type="System.Windows.FontWeight" />
+        <Parameter Name="stretch" Type="System.Windows.FontStretch" />
+        <Parameter Name="fallbackFontFamily" Type="System.Windows.Media.FontFamily" />
+      </Parameters>
+      <Docs>
+        <param name="fontFamily">The font family of the typeface.</param>
+        <param name="style">The style of the typeface.</param>
+        <param name="weight">The relative weight of the typeface.</param>
+        <param name="stretch">The degree to which the typeface is stretched.</param>
+        <param name="fallbackFontFamily">The font family that is used when a character is encountered that the primary font family (specified by the <c>fontFamily</c> parameter) cannot display.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Typeface" /> class for the specified font family name, <see cref="P:System.Windows.Media.Typeface.Style" />, <see cref="P:System.Windows.Media.Typeface.Weight" />, and <see cref="P:System.Windows.Media.Typeface.Stretch" /> values. In addition, a fallback font family is specified.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Passing `null` for the `fallbackFontFamily` parameter causes box characters to be displayed for characters not included in the primary font family.  
+  
+   
+  
+## Examples  
+ [!code-csharp[FontSnippets#105](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#105)]
+ [!code-vb[FontSnippets#105](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#105)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CapsHeight">
+      <MemberSignature Language="C#" Value="public double CapsHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 CapsHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.CapsHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance from the baseline to the top of an English capital letter for the typeface.</summary>
+        <value>A <see cref="T:System.Double" /> that indicates the distance from the baseline to the top of an English capital letter, expressed as a fraction of the font em size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A return value of `1` indicates that the top of an English capital letter is one font em above the baseline, while a return value of `0.5` indicates that it is half a font em above the baseline.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The <see cref="T:System.Windows.Media.Typeface" /> to compare.</param>
+        <summary>Gets a value that indicates whether the current typeface and the specified typeface have the same <see cref="P:System.Windows.Media.Typeface.FontFamily" />, <see cref="P:System.Windows.Media.Typeface.Style" />, <see cref="P:System.Windows.Media.Typeface.Weight" />, <see cref="P:System.Windows.Media.Typeface.Stretch" />, and fallback font values.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> is equal to the current <see cref="T:System.Windows.Media.Typeface" /> object; otherwise, <see langword="false" />. If <paramref name="o" /> is not a <see cref="T:System.Windows.Media.Typeface" /> object, <see langword="false" /> is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FaceNames">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.LanguageSpecificStringDictionary FaceNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.LanguageSpecificStringDictionary FaceNames" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.FaceNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.LanguageSpecificStringDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of culture-specific names for the <see cref="T:System.Windows.Media.Typeface" />.</summary>
+        <value>A <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> value that represents the culture-specific names for the typeface.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontFamily">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.FontFamily FontFamily { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.FontFamily FontFamily" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.FontFamily" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontFamily</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the font family from which the typeface was constructed.</summary>
+        <value>The <see cref="T:System.Windows.Media.FontFamily" /> from which the typeface was constructed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for <see cref="T:System.Windows.Media.Typeface" />. It is suitable for use in hashing algorithms and data structures such as a hash table.</summary>
+        <returns>An <see cref="T:System.Int32" /> value that represents the hash code for the current object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBoldSimulated">
+      <MemberSignature Language="C#" Value="public bool IsBoldSimulated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBoldSimulated" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.IsBoldSimulated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether to simulate a bold weight for the glyphs represented by the <see cref="T:System.Windows.Media.Typeface" />.</summary>
+        <value>
+          <see langword="true" /> if bold simulation is used for glyphs; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.Typeface> can simulate a bold weight by stretching a glyph. A non-simulated bold typeface is typically designed to have a better visual appearance than a simulated bold typeface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsObliqueSimulated">
+      <MemberSignature Language="C#" Value="public bool IsObliqueSimulated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsObliqueSimulated" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.IsObliqueSimulated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether to simulate an italic style for the glyphs represented by the <see cref="T:System.Windows.Media.Typeface" />.</summary>
+        <value>
+          <see langword="true" /> if italic simulation is used for glyphs; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.Typeface> can simulate an italic style by shearing, or slanting, a glyph. A non-simulated italic typeface is typically designed to have a better visual appearance than a simulated italic typeface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stretch">
+      <MemberSignature Language="C#" Value="public System.Windows.FontStretch Stretch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStretch Stretch" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.Stretch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the stretch value for the <see cref="T:System.Windows.Media.Typeface" />. The stretch value determines whether a typeface is expanded or condensed when it is displayed.</summary>
+        <value>A <see cref="T:System.Windows.FontStretch" /> value that represents the stretch value for the typeface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A font stretch value describes the degree to which a font form is stretched from its normal aspect ratio, which is the original width to height ratio specified for the glyphs in the font.  
+  
+   
+  
+## Examples  
+ [!code-csharp[FontSnippets#108](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#108)]
+ [!code-vb[FontSnippets#108](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#108)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrikethroughPosition">
+      <MemberSignature Language="C#" Value="public double StrikethroughPosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 StrikethroughPosition" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.StrikethroughPosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the distance from the baseline to the strikethrough for the typeface.</summary>
+        <value>A <see cref="T:System.Double" /> that indicates the strikethrough position, measured from the baseline and expressed as a fraction of the font em size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A return value of `0.1` indicates that the strikethrough position is one-tenth of a font em above the baseline, while a return value of `0.25` indicates that its one-fourth of a font em above the baseline.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StrikethroughThickness">
+      <MemberSignature Language="C#" Value="public double StrikethroughThickness { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 StrikethroughThickness" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.StrikethroughThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the thickness of the strikethrough relative to the font em size.</summary>
+        <value>A <see cref="T:System.Double" /> that indicates the strikethrough thickness, expressed as a fraction of the font em size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A return value of `0.05` indicates that the strikethrough thickness is one-twentieth of the font em size, while a return value of `0.1` indicates that the strikethrough thickness is  one-tenth of the font em size.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public System.Windows.FontStyle Style { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStyle Style" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.Style" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the style of the <see cref="T:System.Windows.Media.Typeface" />.</summary>
+        <value>A <see cref="T:System.Windows.FontStyle" /> value that represents the style value for the typeface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Three terms categorize the slant of a font: normal, oblique, and italic.  
+  
+   
+  
+## Examples  
+ [!code-csharp[FontSnippets#109](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#109)]
+ [!code-vb[FontSnippets#109](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#109)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetGlyphTypeface">
+      <MemberSignature Language="C#" Value="public bool TryGetGlyphTypeface (out System.Windows.Media.GlyphTypeface glyphTypeface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetGlyphTypeface(class System.Windows.Media.GlyphTypeface glyphTypeface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Typeface.TryGetGlyphTypeface(System.Windows.Media.GlyphTypeface@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="glyphTypeface" Type="System.Windows.Media.GlyphTypeface&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="glyphTypeface">
+          <see cref="T:System.Windows.Media.GlyphTypeface" /> object that corresponds to this typeface, or <see langword="null" /> if the typeface was constructed from a composite font.</param>
+        <summary>Retrieves the <see cref="T:System.Windows.Media.GlyphTypeface" /> that corresponds to the <see cref="T:System.Windows.Media.Typeface" />.</summary>
+        <returns>
+          <see langword="true" /> if the out parameter is set to a <see cref="T:System.Windows.Media.GlyphTypeface" /> value; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.GlyphTypeface> is font face that directly corresponds to a font file on the disk. A <xref:System.Windows.Media.Typeface>, however, is a representation of font face.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnderlinePosition">
+      <MemberSignature Language="C#" Value="public double UnderlinePosition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 UnderlinePosition" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.UnderlinePosition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the distance of the underline from the baseline for the typeface.</summary>
+        <value>A <see cref="T:System.Double" /> that indicates the underline position, measured from the baseline and expressed as a fraction of the font em size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The return value is usually negative, to place the underline below the baseline. For example, a return value of `-0.1` indicates that the underline position is one-tenth of a font em below the baseline, while a return value of `-0.25` indicates that it is one-fourth of a font em below the baseline.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnderlineThickness">
+      <MemberSignature Language="C#" Value="public double UnderlineThickness { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 UnderlineThickness" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.UnderlineThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the thickness of the underline relative to the font em size for the typeface.</summary>
+        <value>A <see cref="T:System.Double" /> that indicates the underline thickness, expressed as a fraction of the font em size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A return value of `0.05` indicates that the underline thickness is one-twentieth of the font em size, while a return value of `0.1` indicates that the underline thickness is one-tenth of the font em size.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Weight">
+      <MemberSignature Language="C#" Value="public System.Windows.FontWeight Weight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontWeight Weight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.Weight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the relative weight of the typeface.</summary>
+        <value>A <see cref="T:System.Windows.FontWeight" /> value that represents the relative weight of the typeface.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Weight differences are generally differentiated by an increased stroke or thickness associated with a given character in a typeface, as compared to a "normal" character from that same typeface.  
+  
+ **Note** Not all weights are available for all typefaces. When a weight is not available for a typeface, the closest matching weight is returned.  
+  
+   
+  
+## Examples  
+ [!code-csharp[FontSnippets#110](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/Window1.xaml.cs#110)]
+ [!code-vb[FontSnippets#110](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/window1.xaml.vb#110)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XHeight">
+      <MemberSignature Language="C#" Value="public double XHeight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 XHeight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Typeface.XHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the distance from the baseline to the top of an English lowercase letter for a typeface. The distance excludes ascenders.</summary>
+        <value>A <see cref="T:System.Double" /> that indicates the distance from the baseline to the top of an English lowercase letter (excluding ascenders), expressed as a fraction of the font em size.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A return value of `0.25` indicates that the top of an English letter is one-fourth of a font em above the baseline, while a return value of `0.75` indicates that the top of an English letter is three-fourths of a font em above the baseline.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

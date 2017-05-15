@@ -1,0 +1,514 @@
+<Type Name="EventLogConfiguration" FullName="System.Diagnostics.Eventing.Reader.EventLogConfiguration">
+  <TypeSignature Language="C#" Value="public class EventLogConfiguration : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventLogConfiguration extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Contains static information and configuration settings for an event log. Many of the configurations settings were defined by the event provider that created the log.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a property is changed for this object, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+  
+   
+  
+## Examples  
+ For example code using this class, see [How to: Configure and Read Event Log Properties](http://msdn.microsoft.com/en-us/2d2b00b3-2d1d-4567-a47e-3f5a7c1955ac).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventLogConfiguration (string logName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string logName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogConfiguration.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="logName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="logName">The name of the local event log for which to get information and configuration settings.</param>
+        <summary>Initializes a new <see cref="T:System.Diagnostics.Eventing.Reader.EventLogConfiguration" /> object by specifying the local event log for which to get information and configuration settings.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventLogConfiguration (string logName, System.Diagnostics.Eventing.Reader.EventLogSession session);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string logName, class System.Diagnostics.Eventing.Reader.EventLogSession session) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogConfiguration.#ctor(System.String,System.Diagnostics.Eventing.Reader.EventLogSession)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="logName" Type="System.String" />
+        <Parameter Name="session" Type="System.Diagnostics.Eventing.Reader.EventLogSession" />
+      </Parameters>
+      <Docs>
+        <param name="logName">The name of the event log for which to get information and configuration settings.</param>
+        <param name="session">The event log session used to determine the event log service that the specified log belongs to. The session is either connected to the event log service on the local computer or a remote computer.</param>
+        <summary>Initializes a new <see cref="T:System.Diagnostics.Eventing.Reader.EventLogConfiguration" /> object by specifying the name of the log for which to get information and configuration settings. The log can be on the local computer or a remote computer, based on the event log session specified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogConfiguration.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all the resources used by this object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogConfiguration.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
+        <summary>Releases the unmanaged resources used by this object, and optionally releases the managed resources.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsClassicLog">
+      <MemberSignature Language="C#" Value="public bool IsClassicLog { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsClassicLog" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.IsClassicLog" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the flag that indicates if the event log is a classic event log. A classic event log is one that has its events defined in a .mc file instead of a manifest (.xml file) used by the event provider.</summary>
+        <value>Returns <see langword="true" /> if the event log is a classic log, and returns <see langword="false" /> if the event log is not a classic log.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that determines whether the event log is enabled or disabled. An enabled log is one in which events can be logged, and a disabled log is one in which events cannot be logged.</summary>
+        <value>Returns <see langword="true" /> if the log is enabled, and returns <see langword="false" /> if the log is disabled.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogFilePath">
+      <MemberSignature Language="C#" Value="public string LogFilePath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LogFilePath" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogFilePath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the file directory path to the location of the file where the events are stored for the log.</summary>
+        <value>Returns a string that contains the path to the event log file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogIsolation">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.Eventing.Reader.EventLogIsolation LogIsolation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.Eventing.Reader.EventLogIsolation LogIsolation" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogIsolation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.EventLogIsolation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogIsolation" /> value that specifies whether the event log is an application, system, or custom event log.</summary>
+        <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogIsolation" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogMode">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.Eventing.Reader.EventLogMode LogMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.Eventing.Reader.EventLogMode LogMode" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.EventLogMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogMode" /> value that determines how events are handled when the event log becomes full.</summary>
+        <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogMode" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogName">
+      <MemberSignature Language="C#" Value="public string LogName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LogName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the event log.</summary>
+        <value>Returns a string that contains the name of the event log.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogType">
+      <MemberSignature Language="C#" Value="public System.Diagnostics.Eventing.Reader.EventLogType LogType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.Eventing.Reader.EventLogType LogType" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.EventLogType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogType" /> value that determines the type of the event log.</summary>
+        <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogType" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumSizeInBytes">
+      <MemberSignature Language="C#" Value="public long MaximumSizeInBytes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 MaximumSizeInBytes" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.MaximumSizeInBytes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum size, in bytes, that the event log file is allowed to be. When the file reaches this maximum size, it is considered full.</summary>
+        <value>Returns a long value that represents the maximum size, in bytes, that the event log file is allowed to be.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwningProviderName">
+      <MemberSignature Language="C#" Value="public string OwningProviderName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OwningProviderName" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.OwningProviderName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the event provider that created this event log.</summary>
+        <value>Returns a string that contains the name of the event provider that created this event log.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderBufferSize">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ProviderBufferSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ProviderBufferSize" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderBufferSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the buffer that the event provider uses for publishing events to the log.</summary>
+        <value>Returns an integer value that can be null.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderControlGuid">
+      <MemberSignature Language="C#" Value="public Nullable&lt;Guid&gt; ProviderControlGuid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Guid&gt; ProviderControlGuid" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderControlGuid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Guid&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the control globally unique identifier (GUID) for the event log if the log is a debug log. If this log is not a debug log, this value will be null.</summary>
+        <value>Returns a GUID value or null.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderKeywords">
+      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; ProviderKeywords { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; ProviderKeywords" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderKeywords" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets keyword mask used by the event provider.</summary>
+        <value>Returns a long value that can be null if the event provider did not define any keywords.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderLatency">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ProviderLatency { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ProviderLatency" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderLatency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum latency time used by the event provider when publishing events to the log.</summary>
+        <value>Returns an integer value that can be null if no latency time was specified by the event provider.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderLevel">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ProviderLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ProviderLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum event level (which defines the severity of the event) that is allowed to be logged in the event log. This value is defined by the event provider.</summary>
+        <value>Returns an integer value that can be null if the maximum event level was not defined in the event provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderMaximumNumberOfBuffers">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ProviderMaximumNumberOfBuffers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ProviderMaximumNumberOfBuffers" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderMaximumNumberOfBuffers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the maximum number of buffers used by the event provider to publish events to the event log.</summary>
+        <value>Returns an integer value that is the maximum number of buffers used by the event provider to publish events to the event log. This value can be null.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderMinimumNumberOfBuffers">
+      <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ProviderMinimumNumberOfBuffers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ProviderMinimumNumberOfBuffers" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderMinimumNumberOfBuffers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the minimum number of buffers used by the event provider to publish events to the event log.</summary>
+        <value>Returns an integer value that is the minimum number of buffers used by the event provider to publish events to the event log. This value can be null.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderNames">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; ProviderNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; ProviderNames" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an enumerable collection of the names of all the event providers that can publish events to this event log.</summary>
+        <value>Returns an enumerable collection of strings that contain the event provider names.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveChanges">
+      <MemberSignature Language="C#" Value="public void SaveChanges ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveChanges() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves the configuration settings that</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityDescriptor">
+      <MemberSignature Language="C#" Value="public string SecurityDescriptor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SecurityDescriptor" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SecurityDescriptor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the security descriptor of the event log. The security descriptor defines the users and groups of users that can read and write to the event log.</summary>
+        <value>Returns a string that contains the security descriptor for the event log.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the value of this property is changed, call the <xref:System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges%2A> method to save the changes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

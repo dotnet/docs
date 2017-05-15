@@ -1,0 +1,55 @@
+<Type Name="ResolveResponse" FullName="System.ServiceModel.Discovery.ResolveResponse">
+  <TypeSignature Language="C#" Value="public class ResolveResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResolveResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.ResolveResponse" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the response from a resolve request.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EndpointDiscoveryMetadata">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.EndpointDiscoveryMetadata EndpointDiscoveryMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.EndpointDiscoveryMetadata EndpointDiscoveryMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.ResolveResponse.EndpointDiscoveryMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.EndpointDiscoveryMetadata</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> that matched the resolve request.</summary>
+        <value>The endpoint discovery metadata.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageSequence">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.DiscoveryMessageSequence MessageSequence { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.DiscoveryMessageSequence MessageSequence" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.ResolveResponse.MessageSequence" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.DiscoveryMessageSequence</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> associated with the <see cref="T:System.ServiceModel.Discovery.ResolveResponse" />.</summary>
+        <value>The discovery message sequence.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

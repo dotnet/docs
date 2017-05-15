@@ -1,0 +1,38 @@
+<Type Name="WebPartMovingEventHandler" FullName="System.Web.UI.WebControls.WebParts.WebPartMovingEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void WebPartMovingEventHandler(object sender, WebPartMovingEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebPartMovingEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartMovingEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartMovingEventArgs" /> that contains the event data.</param>
+    <summary>Represents the method that will handle the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving" /> event of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event is raised when a <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server control is being moved within its own zone, or to another zone. This can occur both when a user drags a control, and when there is a programmatic move.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartMoving%2A> method, and it provides an opportunity to cancel the moving process before it is complete. If the move is completed and the control placed in a new position, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoved> event.  
+  
+ The method specified in the <xref:System.Web.UI.WebControls.WebParts.WebPartMovingEventHandler> delegate will be called when a <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartMoving> event is raised.  
+  
+ Page developers can create a custom handler for the event by adding the `OnWebPartMoving` attribute to the `<asp:webpartmanager>` element, and assigning a custom method name to the attribute. A custom handler can also be assigned programmatically. For more information on programmatically assigning an event handler, see [NIB: How to: Connect Event Handler Methods to Events](http://msdn.microsoft.com/en-us/348e9600-22e3-49a2-8864-11c5bb3e98fc).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

@@ -1,0 +1,34 @@
+<Type Name="ICodeBlockTypeAccessor" FullName="System.Web.UI.ICodeBlockTypeAccessor">
+  <TypeSignature Language="C#" Value="public interface ICodeBlockTypeAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICodeBlockTypeAccessor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ICodeBlockTypeAccessor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to the <see cref="T:System.Web.UI.CodeBlockType" /> of a code block builder.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BlockType">
+      <MemberSignature Language="C#" Value="public System.Web.UI.CodeBlockType BlockType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.CodeBlockType BlockType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ICodeBlockTypeAccessor.BlockType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeBlockType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of code block.</summary>
+        <value>The type of code block.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,57 @@
+<Type Name="ViewStateManager" FullName="System.Activities.Presentation.ViewState.ViewStateManager">
+  <TypeSignature Language="C#" Value="public sealed class ViewStateManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ViewStateManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ViewState.ViewStateManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("ViewStateData")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>This class is used to hold ViewStateData for all activities in the workflow as an attached property on the root of the XAML document.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ViewStateManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ViewState.ViewStateManager.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Presentation.ViewState.ViewStateManager" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewStateData">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.Presentation.ViewState.ViewStateData&gt; ViewStateData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Presentation.ViewState.ViewStateData&gt; ViewStateData" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ViewState.ViewStateManager.ViewStateData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Activities.Presentation.ViewState.ViewStateData&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of ViewStateData for all activities in the workflow as an attached property on the root of the XAML document.</summary>
+        <value>The collection of ViewStateData for all activities in the workflow as an attached property on the root of the XAML document.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

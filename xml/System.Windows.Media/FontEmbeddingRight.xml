@@ -1,0 +1,233 @@
+<Type Name="FontEmbeddingRight" FullName="System.Windows.Media.FontEmbeddingRight">
+  <TypeSignature Language="C#" Value="public enum FontEmbeddingRight" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontEmbeddingRight extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.FontEmbeddingRight" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes font embedding permissions specified in an OpenType font file.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on the OpenType fonts, see the **OpenType Specification** at [http://www.microsoft.com/typography/otspec/](http://www.microsoft.com/typography/otspec/).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Editable">
+      <MemberSignature Language="C#" Value="Editable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight Editable = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.Editable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The font may be embedded but must only be installed temporarily on other systems. In contrast to the <see cref="F:System.Windows.Media.FontEmbeddingRight.PreviewAndPrint" /> setting, documents containing Editable fonts may be opened for reading, editing is permitted, and changes may be saved.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EditableButNoSubsetting">
+      <MemberSignature Language="C#" Value="EditableButNoSubsetting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight EditableButNoSubsetting = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.EditableButNoSubsetting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The font may be embedded but must only be installed temporarily on other systems. Documents containing the font may be opened for reading, editing is permitted, and changes may be saved. The font may not be subsetted prior to embedding.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EditableButNoSubsettingAndWithBitmapsOnly">
+      <MemberSignature Language="C#" Value="EditableButNoSubsettingAndWithBitmapsOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight EditableButNoSubsettingAndWithBitmapsOnly = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.EditableButNoSubsettingAndWithBitmapsOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The font may be embedded but must only be installed temporarily on other systems. Documents containing the font may be opened for reading, editing is permitted, and changes may be saved. The font may not be subsetted prior to embedding. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EditableButWithBitmapsOnly">
+      <MemberSignature Language="C#" Value="EditableButWithBitmapsOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight EditableButWithBitmapsOnly = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.EditableButWithBitmapsOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The font may be embedded but must only be installed temporarily on other systems. Documents containing the font may be opened for reading, editing is permitted, and changes may be saved. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Installable">
+      <MemberSignature Language="C#" Value="Installable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight Installable = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.Installable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. The user of the remote system acquires the identical rights, obligations and licenses for that font as the original purchaser of the font, and is subject to the same end-user license agreement, copyright, design patent, and/or trademark as was the original purchaser.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallableButNoSubsetting">
+      <MemberSignature Language="C#" Value="InstallableButNoSubsetting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight InstallableButNoSubsetting = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.InstallableButNoSubsetting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. They may not be subsetted prior to embedding.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallableButNoSubsettingAndWithBitmapsOnly">
+      <MemberSignature Language="C#" Value="InstallableButNoSubsettingAndWithBitmapsOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight InstallableButNoSubsettingAndWithBitmapsOnly = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.InstallableButNoSubsettingAndWithBitmapsOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. They may not be subsetted prior to embedding. Only bitmaps contained in the fonts may be embedded. No outline data may be embedded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InstallableButWithBitmapsOnly">
+      <MemberSignature Language="C#" Value="InstallableButWithBitmapsOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight InstallableButWithBitmapsOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.InstallableButWithBitmapsOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fonts with this setting indicate that they may be embedded and permanently installed on the remote system by an application. Only bitmaps contained in the fonts may be embedded. No outline data may be embedded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewAndPrint">
+      <MemberSignature Language="C#" Value="PreviewAndPrint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight PreviewAndPrint = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.PreviewAndPrint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewAndPrintButNoSubsetting">
+      <MemberSignature Language="C#" Value="PreviewAndPrintButNoSubsetting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight PreviewAndPrintButNoSubsetting = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.PreviewAndPrintButNoSubsetting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode. The font may not be subsetted prior to embedding.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewAndPrintButNoSubsettingAndWithBitmapsOnly">
+      <MemberSignature Language="C#" Value="PreviewAndPrintButNoSubsettingAndWithBitmapsOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight PreviewAndPrintButNoSubsettingAndWithBitmapsOnly = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.PreviewAndPrintButNoSubsettingAndWithBitmapsOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode. The font may not be subsetted prior to embedding. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviewAndPrintButWithBitmapsOnly">
+      <MemberSignature Language="C#" Value="PreviewAndPrintButWithBitmapsOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight PreviewAndPrintButWithBitmapsOnly = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.PreviewAndPrintButWithBitmapsOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The font may be embedded and temporarily loaded on the remote system. Documents containing the font must be opened in a read-only mode. Only bitmaps contained in the font may be embedded. No outline data may be embedded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RestrictedLicense">
+      <MemberSignature Language="C#" Value="RestrictedLicense" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.FontEmbeddingRight RestrictedLicense = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.FontEmbeddingRight.RestrictedLicense" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.FontEmbeddingRight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Fonts with this setting must not be modified, embedded or exchanged in any manner without first obtaining permission of the legal owner.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

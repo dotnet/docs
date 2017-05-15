@@ -9,14 +9,10 @@ ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 5fb15297-a276-417f-8c4f-267281357769
+ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
 ---
 
 # Using .NET Core SDK and tools in Continuous Integration (CI)
-
-> [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
-> see the [Using .NET Core SDK and tools in Continuous Integration (CI) (.NET Core Tools RC4)](../preview3/tools/using-ci-with-cli.md) topic.
 
 ## Overview
 This document outlines the usage of .NET Core SDK and its tools on the build server. In general, on a CI build server, 
@@ -42,7 +38,7 @@ feed that contains the packages.
 
 For Windows platforms, you can use the MSI. 
 
-All of the binaries can be found on the [.NET Core getting started page](https://aka.ms/dotnetcoregs) which points to the 
+All of the binaries can be found on the [.NET Core installation guide](https://aka.ms/dotnetcoregs) which points to the 
 latest stable releases. If you wish to use newer (and potentially unstable) releases or the latest, you can use the 
 links from the [CLI repo](https://github.com/dotnet/cli). 
 
@@ -82,13 +78,12 @@ for more information.
 
 ### AppVeyor
 
-The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK preview2 already installed 
-in the build worker image `Visual Studio 2015`.
+The [appveyor.com ci](https://www.appveyor.com/) has .NET Core SDK 1.0.1 already installed in the build worker image `Visual Studio 2017`.
 
 Just use:
 
 ```yaml
-os: Visual Studio 2015
+os: Visual Studio 2017
 ```
 
 It's possible to install a specific version of .NET Core SDK, see [example appveyor.yml](https://github.com/dotnet/docs/blob/master/appveyor.yml) 
@@ -110,4 +105,3 @@ install:
   - ps: $url = "https://dotnetcli.blob.core.windows.net/dotnet/preview/Binaries/$($env:CLI_VERSION)/dotnet-dev-win-x64.$($env:CLI_VERSION.ToLower()).zip"
   # follow normal installation from binaries
 ```
-

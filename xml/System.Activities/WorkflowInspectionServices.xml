@@ -1,0 +1,168 @@
+<Type Name="WorkflowInspectionServices" FullName="System.Activities.WorkflowInspectionServices">
+  <TypeSignature Language="C#" Value="public static class WorkflowInspectionServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WorkflowInspectionServices extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowInspectionServices" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods for working with the runtime metadata for an activity tree.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="public static void CacheMetadata (System.Activities.Activity rootActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CacheMetadata(class System.Activities.Activity rootActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.CacheMetadata(System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootActivity" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="rootActivity">The root activity of the activity tree.</param>
+        <summary>Caches the runtime metadata for the specified activity tree.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="public static void CacheMetadata (System.Activities.Activity rootActivity, System.Activities.LocationReferenceEnvironment hostEnvironment);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CacheMetadata(class System.Activities.Activity rootActivity, class System.Activities.LocationReferenceEnvironment hostEnvironment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.CacheMetadata(System.Activities.Activity,System.Activities.LocationReferenceEnvironment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rootActivity" Type="System.Activities.Activity" />
+        <Parameter Name="hostEnvironment" Type="System.Activities.LocationReferenceEnvironment" />
+      </Parameters>
+      <Docs>
+        <param name="rootActivity">The root activity of the activity tree.</param>
+        <param name="hostEnvironment">The environment associated with the activity tree.</param>
+        <summary>Caches the runtime metadata for the specified activity tree using the specified environment.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanInduceIdle">
+      <MemberSignature Language="C#" Value="public static bool CanInduceIdle (System.Activities.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanInduceIdle(class System.Activities.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.CanInduceIdle(System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The activity.</param>
+        <summary>Specifies whether the service can include idle activities.</summary>
+        <returns>
+          <see langword="True" /> if the service can include idle activities; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetActivities">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Activities.Activity&gt; GetActivities (System.Activities.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Activity&gt; GetActivities(class System.Activities.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.GetActivities(System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Activities.WorkflowInspectionServices/&lt;GetActivities&gt;d__3))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Activities.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The root activity.</param>
+        <summary>Returns an <see cref="T:System.Collections.Generic.IEnumerable`1" /> that represents all activities associated with the input activity.</summary>
+        <returns>An enumeration that represents all activities associated with the input activity.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The enumeration contains all child activities, delegate handlers, variable defaults, and argument expressions. If the input activity is `null`, an <xref:System.ArgumentNullException> is thrown. The activity tree must remain unmodified and <xref:System.Activities.WorkflowInspectionServices.CacheMetadata%2A> must not be called while the tree is being enumerated or else an <xref:System.InvalidOperationException> is thrown when <xref:System.Collections.IEnumerator.MoveNext%2A> is called.  
+  
+ Calling this method causes a full cache metadata to occur. If you make changes to the workflow after calling this method, you must call the <xref:System.Activities.Validation.ActivityValidationServices> <xref:System.Activities.Validation.ActivityValidationServices.Validate%2A> method after making the changes in order to re-cache the metadata.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetImplementationVersion">
+      <MemberSignature Language="C#" Value="public static Version GetImplementationVersion (System.Activities.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Version GetImplementationVersion(class System.Activities.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.GetImplementationVersion(System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The activity.</param>
+        <summary>Retrieves the implementation version of the activity.</summary>
+        <returns>The implementation version of the activity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="public static System.Activities.Activity Resolve (System.Activities.Activity root, string id);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity Resolve(class System.Activities.Activity root, string id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowInspectionServices.Resolve(System.Activities.Activity,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="root" Type="System.Activities.Activity" />
+        <Parameter Name="id" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="root">The activity tree to search.</param>
+        <param name="id">The identifier of the activity to find.</param>
+        <summary>Returns the activity with the specified <paramref name="id" /> from the specified activity tree.</summary>
+        <returns>The specified activity if found; otherwise, an <see cref="T:System.ArgumentException" /> is thrown.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

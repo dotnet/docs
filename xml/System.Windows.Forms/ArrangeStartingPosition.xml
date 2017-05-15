@@ -1,0 +1,110 @@
+<Type Name="ArrangeStartingPosition" FullName="System.Windows.Forms.ArrangeStartingPosition">
+  <TypeSignature Language="C#" Value="public enum ArrangeStartingPosition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ArrangeStartingPosition extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ArrangeStartingPosition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the starting position that the system uses to arrange minimized windows.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.SystemInformation.ArrangeStartingPosition%2A> property of the <xref:System.Windows.Forms.SystemInformation> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BottomLeft">
+      <MemberSignature Language="C#" Value="BottomLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ArrangeStartingPosition BottomLeft = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ArrangeStartingPosition.BottomLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ArrangeStartingPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Starts at the lower-left corner of the screen, which is the default position.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomRight">
+      <MemberSignature Language="C#" Value="BottomRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ArrangeStartingPosition BottomRight = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ArrangeStartingPosition.BottomRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ArrangeStartingPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Starts at the lower-right corner of the screen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hide">
+      <MemberSignature Language="C#" Value="Hide" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ArrangeStartingPosition Hide = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ArrangeStartingPosition.Hide" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ArrangeStartingPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Hides minimized windows by moving them off the visible area of the screen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLeft">
+      <MemberSignature Language="C#" Value="TopLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ArrangeStartingPosition TopLeft = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ArrangeStartingPosition.TopLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ArrangeStartingPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Starts at the upper-left corner of the screen.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopRight">
+      <MemberSignature Language="C#" Value="TopRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ArrangeStartingPosition TopRight = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ArrangeStartingPosition.TopRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ArrangeStartingPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Starts at the upper-right corner of the screen.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

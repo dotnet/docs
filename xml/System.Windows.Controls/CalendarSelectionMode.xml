@@ -1,0 +1,93 @@
+<Type Name="CalendarSelectionMode" FullName="System.Windows.Controls.CalendarSelectionMode">
+  <TypeSignature Language="C#" Value="public enum CalendarSelectionMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CalendarSelectionMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CalendarSelectionMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a single or multiple dates can be selected in a <see cref="T:System.Windows.Controls.Calendar" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example sets the <xref:System.Windows.Controls.Calendar.SelectionMode%2A> property to MultipleRange.  
+  
+ [!code-csharp[CalendarSnippets#3](~/samples/snippets/csharp/VS_Snippets_Wpf/calendarsnippets/csharp/window1.xaml.cs#3)]
+ [!code-vb[CalendarSnippets#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/calendarsnippets/visualbasic/window1.xaml.vb#3)]
+ [!code-xml[CalendarSnippets#3](~/samples/snippets/xaml/VS_Snippets_Wpf/calendarsnippets/xaml/window1.xaml#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MultipleRange">
+      <MemberSignature Language="C#" Value="MultipleRange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CalendarSelectionMode MultipleRange = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarSelectionMode.MultipleRange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.CalendarSelectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiple non-contiguous ranges of dates can be selected. Use the <see cref="P:System.Windows.Controls.Calendar.SelectedDates" /> property to retrieve the selected dates.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CalendarSelectionMode None = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarSelectionMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.CalendarSelectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No selections are allowed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleDate">
+      <MemberSignature Language="C#" Value="SingleDate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CalendarSelectionMode SingleDate = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarSelectionMode.SingleDate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.CalendarSelectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single date can be selected. Use the <see cref="P:System.Windows.Controls.Calendar.SelectedDate" /> property to retrieve the selected date.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleRange">
+      <MemberSignature Language="C#" Value="SingleRange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CalendarSelectionMode SingleRange = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarSelectionMode.SingleRange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.CalendarSelectionMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A single range of dates can be selected. Use the <see cref="P:System.Windows.Controls.Calendar.SelectedDates" /> property to retrieve the selected dates.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

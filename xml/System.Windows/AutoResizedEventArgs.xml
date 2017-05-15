@@ -1,0 +1,55 @@
+<Type Name="AutoResizedEventArgs" FullName="System.Windows.AutoResizedEventArgs">
+  <TypeSignature Language="C#" Value="public class AutoResizedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AutoResizedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.AutoResizedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Interop.HwndSource.AutoResized" /> event raised by <see cref="T:System.Windows.Interop.HwndSource" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AutoResizedEventArgs (System.Windows.Size size);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.AutoResizedEventArgs.#ctor(System.Windows.Size)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="size" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="size">The size to report in the event data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.AutoResizedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public System.Windows.Size Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size Size" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.AutoResizedEventArgs.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new size of the window after the auto resize operation.</summary>
+        <value>Size of the window after resizing.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

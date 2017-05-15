@@ -54,8 +54,8 @@ namespace Statements
                     Console.WriteLine("One argument");
                     break;
                 default:
-                Console.WriteLine($"{n} arguments");
-                break;
+                    Console.WriteLine($"{n} arguments");
+                    break;
             }
         }
 
@@ -241,7 +241,7 @@ namespace Statements
 
            try {
                CheckedUnchecked(args);
-           } catch (OverflowException e)
+           } catch (OverflowException)
            {
                Console.WriteLine("Caught Expected Exception");
            }

@@ -32,8 +32,8 @@ helpviewer_keywords:
   - "Case statement, Select...Case"
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -56,11 +56,11 @@ Runs one of several groups of statements, depending on the value of an expressio
 ## Syntax  
   
 ```  
-Select [ Case ] testexpression  
-    [ Case expressionlist  
-        [ statements ] ]  
-    [ Case Else  
-        [ elsestatements ] ]  
+Select [ Case ] testexpression  
+    [ Case expressionlist  
+        [ statements ] ]  
+    [ Case Else  
+        [ elsestatements ] ]  
 End Select  
 ```  
   

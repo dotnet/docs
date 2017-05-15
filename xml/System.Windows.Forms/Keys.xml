@@ -1,0 +1,3178 @@
+<Type Name="Keys" FullName="System.Windows.Forms.Keys">
+  <TypeSignature Language="C#" Value="public enum Keys" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Keys extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Keys" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ShortcutKeysEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.KeysConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies key codes and modifiers.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Keys> class contains constants for processing keyboard input. The members of the Keys enumeration consist of a key code and a set of modifiers combined into a single integer value. In the Win32 application programming interface (API) a key value has two halves, with the high-order bits containing the key code (which is the same as a Windows virtual key code), and the low-order bits representing key modifiers such as the SHIFT, CONTROL, and ALT keys.  
+  
+> [!WARNING]
+>  Do not use the values in this enumeration for combined bitwise operations. The values in the enumeration are not mutually exclusive.  
+  
+> [!NOTE]
+>  This enumeration provides no way to test whether the CAPS LOCK or NUM LOCK keys are currently activated. You can use one of the following techniques to determine if these keys are activated:  
+  
+-   Call the <xref:System.Windows.Forms.Control.IsKeyLocked%2A> method of the <xref:System.Windows.Forms.Control> class.  
+  
+-   For finer control, use the Win32 API functions `GetKeyState`, `GetAsyncKeyState`, or `GetKeyboardState` defined in user32.dll, to do this. For more information about calling native functions, see [Consuming Unmanaged DLL Functions](~/docs/framework/interop/consuming-unmanaged-dll-functions.md).  
+  
+ The following table shows the key code values represented by two enumerated values, representing both the general original equipment manufacturer (OEM) keys and the more specific U.S.-keyboard associations.  
+  
+|Hexadecimal value|U.S. keyboard|General OEM|  
+|-----------------------|-------------------|-----------------|  
+|BA|OemSemicolon|Oem1|  
+|BF|OemQuestion|Oem2|  
+|C0|Oemtilde|Oem3|  
+|DB|OemOpenBrackets|Oem4|  
+|DC|OemPipe|Oem5|  
+|DD|OemCloseBrackets|Oem6|  
+|DE|OemQuotes|Oem7|  
+|E2|OemBackslash|Oem102|  
+  
+> [!CAUTION]
+>  For the .NET Framework 2.0, a member IMEAccept was added that supersedes the previous entry, IMEAceept, which was spelled incorrectly. The older version has been retained for backward compatibility, but it may be deleted in future versions of the .NET Framework  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.Control.KeyDown> event to determine the type of character entered into the control.  
+  
+ [!code-cpp[Control.KeyDown#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Control.KeyDown/CPP/form1.cpp#1)]
+ [!code-csharp[Control.KeyDown#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Control.KeyDown/CS/form1.cs#1)]
+ [!code-vb[Control.KeyDown#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Control.KeyDown/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="A">
+      <MemberSignature Language="C#" Value="A" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys A = int32(65)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.A" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The A key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="Add" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Add = int32(107)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Add" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The add key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Alt">
+      <MemberSignature Language="C#" Value="Alt" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Alt = int32(262144)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Alt" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ALT modifier key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Apps">
+      <MemberSignature Language="C#" Value="Apps" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Apps = int32(93)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Apps" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The application key (Microsoft Natural Keyboard).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Attn">
+      <MemberSignature Language="C#" Value="Attn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Attn = int32(246)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Attn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ATTN key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="B">
+      <MemberSignature Language="C#" Value="B" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys B = int32(66)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.B" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The B key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Back">
+      <MemberSignature Language="C#" Value="Back" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Back = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Back" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The BACKSPACE key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserBack">
+      <MemberSignature Language="C#" Value="BrowserBack" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserBack = int32(166)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserBack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The browser back key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserFavorites">
+      <MemberSignature Language="C#" Value="BrowserFavorites" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserFavorites = int32(171)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserFavorites" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The browser favorites key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserForward">
+      <MemberSignature Language="C#" Value="BrowserForward" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserForward = int32(167)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserForward" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The browser forward key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserHome">
+      <MemberSignature Language="C#" Value="BrowserHome" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserHome = int32(172)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserHome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The browser home key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserRefresh">
+      <MemberSignature Language="C#" Value="BrowserRefresh" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserRefresh = int32(168)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserRefresh" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The browser refresh key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserSearch">
+      <MemberSignature Language="C#" Value="BrowserSearch" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserSearch = int32(170)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserSearch" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The browser search key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BrowserStop">
+      <MemberSignature Language="C#" Value="BrowserStop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys BrowserStop = int32(169)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.BrowserStop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The browser stop key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="C">
+      <MemberSignature Language="C#" Value="C" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys C = int32(67)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.C" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The C key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="Cancel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Cancel = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Cancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CANCEL key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Capital">
+      <MemberSignature Language="C#" Value="Capital" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Capital = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Capital" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CAPS LOCK key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CapsLock">
+      <MemberSignature Language="C#" Value="CapsLock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys CapsLock = int32(20)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.CapsLock" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CAPS LOCK key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="Clear" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Clear = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Clear" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CLEAR key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Control">
+      <MemberSignature Language="C#" Value="Control" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Control = int32(131072)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Control" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CTRL modifier key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlKey">
+      <MemberSignature Language="C#" Value="ControlKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys ControlKey = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.ControlKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CTRL key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Crsel">
+      <MemberSignature Language="C#" Value="Crsel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Crsel = int32(247)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Crsel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CRSEL key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="D">
+      <MemberSignature Language="C#" Value="D" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D = int32(68)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The D key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="D0">
+      <MemberSignature Language="C#" Value="D0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D0 = int32(48)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D0" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 0 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="D1">
+      <MemberSignature Language="C#" Value="D1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D1 = int32(49)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 1 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="D2">
+      <MemberSignature Language="C#" Value="D2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D2 = int32(50)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 2 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="D3">
+      <MemberSignature Language="C#" Value="D3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D3 = int32(51)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 3 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="D4">
+      <MemberSignature Language="C#" Value="D4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D4 = int32(52)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 4 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="D5">
+      <MemberSignature Language="C#" Value="D5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D5 = int32(53)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 5 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="D6">
+      <MemberSignature Language="C#" Value="D6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D6 = int32(54)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 6 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="D7">
+      <MemberSignature Language="C#" Value="D7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D7 = int32(55)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 7 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="D8">
+      <MemberSignature Language="C#" Value="D8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D8 = int32(56)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 8 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="D9">
+      <MemberSignature Language="C#" Value="D9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys D9 = int32(57)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.D9" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 9 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Decimal">
+      <MemberSignature Language="C#" Value="Decimal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Decimal = int32(110)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Decimal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The decimal key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Delete = int32(46)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The DEL key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Divide">
+      <MemberSignature Language="C#" Value="Divide" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Divide = int32(111)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Divide" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The divide key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Down">
+      <MemberSignature Language="C#" Value="Down" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Down = int32(40)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Down" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The DOWN ARROW key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="E">
+      <MemberSignature Language="C#" Value="E" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys E = int32(69)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.E" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The E key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="End">
+      <MemberSignature Language="C#" Value="End" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys End = int32(35)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.End" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The END key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Enter">
+      <MemberSignature Language="C#" Value="Enter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Enter = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Enter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ENTER key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EraseEof">
+      <MemberSignature Language="C#" Value="EraseEof" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys EraseEof = int32(249)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.EraseEof" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ERASE EOF key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Escape">
+      <MemberSignature Language="C#" Value="Escape" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Escape = int32(27)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Escape" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ESC key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="Execute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Execute = int32(43)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Execute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The EXECUTE key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Exsel">
+      <MemberSignature Language="C#" Value="Exsel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Exsel = int32(248)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Exsel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The EXSEL key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F">
+      <MemberSignature Language="C#" Value="F" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F = int32(70)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F1">
+      <MemberSignature Language="C#" Value="F1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F1 = int32(112)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F1 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F10">
+      <MemberSignature Language="C#" Value="F10" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F10 = int32(121)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F10" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F10 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F11">
+      <MemberSignature Language="C#" Value="F11" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F11 = int32(122)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F11" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F11 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F12">
+      <MemberSignature Language="C#" Value="F12" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F12 = int32(123)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F12" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F12 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F13">
+      <MemberSignature Language="C#" Value="F13" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F13 = int32(124)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F13" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F13 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F14">
+      <MemberSignature Language="C#" Value="F14" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F14 = int32(125)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F14" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F14 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F15">
+      <MemberSignature Language="C#" Value="F15" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F15 = int32(126)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F15" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F15 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F16">
+      <MemberSignature Language="C#" Value="F16" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F16 = int32(127)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F16" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F16 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F17">
+      <MemberSignature Language="C#" Value="F17" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F17 = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F17" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F17 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F18">
+      <MemberSignature Language="C#" Value="F18" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F18 = int32(129)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F18" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F18 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F19">
+      <MemberSignature Language="C#" Value="F19" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F19 = int32(130)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F19" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F19 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F2">
+      <MemberSignature Language="C#" Value="F2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F2 = int32(113)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F2 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F20">
+      <MemberSignature Language="C#" Value="F20" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F20 = int32(131)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F20" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F20 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F21">
+      <MemberSignature Language="C#" Value="F21" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F21 = int32(132)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F21" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F21 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F22">
+      <MemberSignature Language="C#" Value="F22" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F22 = int32(133)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F22" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F22 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F23">
+      <MemberSignature Language="C#" Value="F23" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F23 = int32(134)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F23" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F23 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F24">
+      <MemberSignature Language="C#" Value="F24" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F24 = int32(135)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F24" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F24 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F3">
+      <MemberSignature Language="C#" Value="F3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F3 = int32(114)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F3 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F4">
+      <MemberSignature Language="C#" Value="F4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F4 = int32(115)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F4 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F5">
+      <MemberSignature Language="C#" Value="F5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F5 = int32(116)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F5 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F6">
+      <MemberSignature Language="C#" Value="F6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F6 = int32(117)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F6 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F7">
+      <MemberSignature Language="C#" Value="F7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F7 = int32(118)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F7 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F8">
+      <MemberSignature Language="C#" Value="F8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F8 = int32(119)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F8 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="F9">
+      <MemberSignature Language="C#" Value="F9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys F9 = int32(120)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.F9" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The F9 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FinalMode">
+      <MemberSignature Language="C#" Value="FinalMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys FinalMode = int32(24)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.FinalMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME final mode key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="G">
+      <MemberSignature Language="C#" Value="G" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys G = int32(71)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.G" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The G key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="H">
+      <MemberSignature Language="C#" Value="H" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys H = int32(72)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.H" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The H key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HanguelMode">
+      <MemberSignature Language="C#" Value="HanguelMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys HanguelMode = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.HanguelMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME Hanguel mode key. (maintained for compatibility; use <see langword="HangulMode" />)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HangulMode">
+      <MemberSignature Language="C#" Value="HangulMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys HangulMode = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.HangulMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME Hangul mode key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HanjaMode">
+      <MemberSignature Language="C#" Value="HanjaMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys HanjaMode = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.HanjaMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME Hanja mode key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Help">
+      <MemberSignature Language="C#" Value="Help" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Help = int32(47)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Help" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The HELP key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Home">
+      <MemberSignature Language="C#" Value="Home" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Home = int32(36)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Home" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The HOME key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="I">
+      <MemberSignature Language="C#" Value="I" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys I = int32(73)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.I" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The I key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IMEAccept">
+      <MemberSignature Language="C#" Value="IMEAccept" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys IMEAccept = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEAccept" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME accept key, replaces <see cref="F:System.Windows.Forms.Keys.IMEAceept" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IMEAceept">
+      <MemberSignature Language="C#" Value="IMEAceept" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys IMEAceept = int32(30)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEAceept" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME accept key. Obsolete, use <see cref="F:System.Windows.Forms.Keys.IMEAccept" /> instead.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IMEConvert">
+      <MemberSignature Language="C#" Value="IMEConvert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys IMEConvert = int32(28)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEConvert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME convert key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IMEModeChange">
+      <MemberSignature Language="C#" Value="IMEModeChange" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys IMEModeChange = int32(31)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMEModeChange" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME mode change key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="IMENonconvert">
+      <MemberSignature Language="C#" Value="IMENonconvert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys IMENonconvert = int32(29)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.IMENonconvert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME nonconvert key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Insert = int32(45)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The INS key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="J">
+      <MemberSignature Language="C#" Value="J" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys J = int32(74)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.J" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The J key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="JunjaMode">
+      <MemberSignature Language="C#" Value="JunjaMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys JunjaMode = int32(23)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.JunjaMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME Junja mode key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="K">
+      <MemberSignature Language="C#" Value="K" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys K = int32(75)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.K" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The K key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KanaMode">
+      <MemberSignature Language="C#" Value="KanaMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys KanaMode = int32(21)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.KanaMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME Kana mode key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KanjiMode">
+      <MemberSignature Language="C#" Value="KanjiMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys KanjiMode = int32(25)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.KanjiMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The IME Kanji mode key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyCode">
+      <MemberSignature Language="C#" Value="KeyCode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys KeyCode = int32(65535)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.KeyCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bitmask to extract a key code from a key value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="L">
+      <MemberSignature Language="C#" Value="L" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys L = int32(76)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.L" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The L key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LaunchApplication1">
+      <MemberSignature Language="C#" Value="LaunchApplication1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LaunchApplication1 = int32(182)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LaunchApplication1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The start application one key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LaunchApplication2">
+      <MemberSignature Language="C#" Value="LaunchApplication2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LaunchApplication2 = int32(183)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LaunchApplication2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The start application two key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LaunchMail">
+      <MemberSignature Language="C#" Value="LaunchMail" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LaunchMail = int32(180)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LaunchMail" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The launch mail key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LButton">
+      <MemberSignature Language="C#" Value="LButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LButton = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left mouse button.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LControlKey">
+      <MemberSignature Language="C#" Value="LControlKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LControlKey = int32(162)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LControlKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left CTRL key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Left = int32(37)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The LEFT ARROW key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LineFeed">
+      <MemberSignature Language="C#" Value="LineFeed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LineFeed = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LineFeed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The LINEFEED key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LMenu">
+      <MemberSignature Language="C#" Value="LMenu" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LMenu = int32(164)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LMenu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left ALT key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LShiftKey">
+      <MemberSignature Language="C#" Value="LShiftKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LShiftKey = int32(160)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LShiftKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left SHIFT key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LWin">
+      <MemberSignature Language="C#" Value="LWin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys LWin = int32(91)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.LWin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left Windows logo key (Microsoft Natural Keyboard).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="M">
+      <MemberSignature Language="C#" Value="M" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys M = int32(77)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.M" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The M key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MButton">
+      <MemberSignature Language="C#" Value="MButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys MButton = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The middle mouse button (three-button mouse).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaNextTrack">
+      <MemberSignature Language="C#" Value="MediaNextTrack" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys MediaNextTrack = int32(176)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaNextTrack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The media next track key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaPlayPause">
+      <MemberSignature Language="C#" Value="MediaPlayPause" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys MediaPlayPause = int32(179)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaPlayPause" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The media play pause key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaPreviousTrack">
+      <MemberSignature Language="C#" Value="MediaPreviousTrack" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys MediaPreviousTrack = int32(177)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaPreviousTrack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The media previous track key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MediaStop">
+      <MemberSignature Language="C#" Value="MediaStop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys MediaStop = int32(178)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.MediaStop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The media Stop key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Menu">
+      <MemberSignature Language="C#" Value="Menu" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Menu = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Menu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ALT key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Modifiers">
+      <MemberSignature Language="C#" Value="Modifiers" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Modifiers = int32(-65536)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Modifiers" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bitmask to extract modifiers from a key value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="Multiply" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Multiply = int32(106)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Multiply" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The multiply key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="N">
+      <MemberSignature Language="C#" Value="N" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys N = int32(78)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.N" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The N key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Next">
+      <MemberSignature Language="C#" Value="Next" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Next = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Next" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PAGE DOWN key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoName">
+      <MemberSignature Language="C#" Value="NoName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NoName = int32(252)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NoName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant reserved for future use.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No key pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumLock">
+      <MemberSignature Language="C#" Value="NumLock" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumLock = int32(144)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumLock" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The NUM LOCK key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumPad0">
+      <MemberSignature Language="C#" Value="NumPad0" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad0 = int32(96)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad0" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 0 key on the numeric keypad.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumPad1">
+      <MemberSignature Language="C#" Value="NumPad1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad1 = int32(97)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 1 key on the numeric keypad.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumPad2">
+      <MemberSignature Language="C#" Value="NumPad2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad2 = int32(98)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 2 key on the numeric keypad.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumPad3">
+      <MemberSignature Language="C#" Value="NumPad3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad3 = int32(99)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 3 key on the numeric keypad.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumPad4">
+      <MemberSignature Language="C#" Value="NumPad4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad4 = int32(100)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 4 key on the numeric keypad.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumPad5">
+      <MemberSignature Language="C#" Value="NumPad5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad5 = int32(101)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 5 key on the numeric keypad.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumPad6">
+      <MemberSignature Language="C#" Value="NumPad6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad6 = int32(102)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 6 key on the numeric keypad.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumPad7">
+      <MemberSignature Language="C#" Value="NumPad7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad7 = int32(103)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 7 key on the numeric keypad.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumPad8">
+      <MemberSignature Language="C#" Value="NumPad8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad8 = int32(104)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 8 key on the numeric keypad.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NumPad9">
+      <MemberSignature Language="C#" Value="NumPad9" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys NumPad9 = int32(105)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.NumPad9" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The 9 key on the numeric keypad.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="O">
+      <MemberSignature Language="C#" Value="O" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys O = int32(79)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.O" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The O key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oem1">
+      <MemberSignature Language="C#" Value="Oem1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem1 = int32(186)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM 1 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oem102">
+      <MemberSignature Language="C#" Value="Oem102" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem102 = int32(226)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem102" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM 102 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oem2">
+      <MemberSignature Language="C#" Value="Oem2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem2 = int32(191)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM 2 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oem3">
+      <MemberSignature Language="C#" Value="Oem3" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem3 = int32(192)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem3" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM 3 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oem4">
+      <MemberSignature Language="C#" Value="Oem4" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem4 = int32(219)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem4" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM 4 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oem5">
+      <MemberSignature Language="C#" Value="Oem5" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem5 = int32(220)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem5" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM 5 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oem6">
+      <MemberSignature Language="C#" Value="Oem6" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem6 = int32(221)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem6" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM 6 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oem7">
+      <MemberSignature Language="C#" Value="Oem7" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem7 = int32(222)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem7" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM 7 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oem8">
+      <MemberSignature Language="C#" Value="Oem8" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oem8 = int32(223)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oem8" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM 8 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemBackslash">
+      <MemberSignature Language="C#" Value="OemBackslash" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemBackslash = int32(226)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemBackslash" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM angle bracket or backslash key on the RT 102 key keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemClear">
+      <MemberSignature Language="C#" Value="OemClear" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemClear = int32(254)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemClear" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The CLEAR key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemCloseBrackets">
+      <MemberSignature Language="C#" Value="OemCloseBrackets" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemCloseBrackets = int32(221)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemCloseBrackets" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM close bracket key on a US standard keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oemcomma">
+      <MemberSignature Language="C#" Value="Oemcomma" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oemcomma = int32(188)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oemcomma" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM comma key on any country/region keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemMinus">
+      <MemberSignature Language="C#" Value="OemMinus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemMinus = int32(189)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemMinus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM minus key on any country/region keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemOpenBrackets">
+      <MemberSignature Language="C#" Value="OemOpenBrackets" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemOpenBrackets = int32(219)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemOpenBrackets" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM open bracket key on a US standard keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemPeriod">
+      <MemberSignature Language="C#" Value="OemPeriod" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemPeriod = int32(190)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemPeriod" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM period key on any country/region keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemPipe">
+      <MemberSignature Language="C#" Value="OemPipe" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemPipe = int32(220)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemPipe" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM pipe key on a US standard keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oemplus">
+      <MemberSignature Language="C#" Value="Oemplus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oemplus = int32(187)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oemplus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM plus key on any country/region keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemQuestion">
+      <MemberSignature Language="C#" Value="OemQuestion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemQuestion = int32(191)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemQuestion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM question mark key on a US standard keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemQuotes">
+      <MemberSignature Language="C#" Value="OemQuotes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemQuotes = int32(222)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemQuotes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM singled/double quote key on a US standard keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OemSemicolon">
+      <MemberSignature Language="C#" Value="OemSemicolon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys OemSemicolon = int32(186)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.OemSemicolon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM Semicolon key on a US standard keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Oemtilde">
+      <MemberSignature Language="C#" Value="Oemtilde" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Oemtilde = int32(192)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Oemtilde" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The OEM tilde key on a US standard keyboard (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="P">
+      <MemberSignature Language="C#" Value="P" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys P = int32(80)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.P" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The P key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pa1">
+      <MemberSignature Language="C#" Value="Pa1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Pa1 = int32(253)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Pa1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PA1 key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Packet">
+      <MemberSignature Language="C#" Value="Packet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Packet = int32(231)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Packet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Used to pass Unicode characters as if they were keystrokes. The Packet key value is the low word of a 32-bit virtual-key value used for non-keyboard input methods.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PageDown">
+      <MemberSignature Language="C#" Value="PageDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys PageDown = int32(34)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.PageDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PAGE DOWN key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PageUp">
+      <MemberSignature Language="C#" Value="PageUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys PageUp = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.PageUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PAGE UP key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pause">
+      <MemberSignature Language="C#" Value="Pause" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Pause = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Pause" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PAUSE key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Play">
+      <MemberSignature Language="C#" Value="Play" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Play = int32(250)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Play" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PLAY key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Print">
+      <MemberSignature Language="C#" Value="Print" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Print = int32(42)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Print" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PRINT key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PrintScreen">
+      <MemberSignature Language="C#" Value="PrintScreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys PrintScreen = int32(44)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.PrintScreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PRINT SCREEN key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Prior">
+      <MemberSignature Language="C#" Value="Prior" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Prior = int32(33)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Prior" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PAGE UP key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessKey">
+      <MemberSignature Language="C#" Value="ProcessKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys ProcessKey = int32(229)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.ProcessKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PROCESS KEY key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Q">
+      <MemberSignature Language="C#" Value="Q" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Q = int32(81)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Q" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Q key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="R">
+      <MemberSignature Language="C#" Value="R" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys R = int32(82)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.R" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The R key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RButton">
+      <MemberSignature Language="C#" Value="RButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys RButton = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right mouse button.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RControlKey">
+      <MemberSignature Language="C#" Value="RControlKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys RControlKey = int32(163)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RControlKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right CTRL key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Return">
+      <MemberSignature Language="C#" Value="Return" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Return = int32(13)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Return" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The RETURN key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Right = int32(39)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The RIGHT ARROW key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RMenu">
+      <MemberSignature Language="C#" Value="RMenu" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys RMenu = int32(165)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RMenu" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right ALT key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RShiftKey">
+      <MemberSignature Language="C#" Value="RShiftKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys RShiftKey = int32(161)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RShiftKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right SHIFT key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RWin">
+      <MemberSignature Language="C#" Value="RWin" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys RWin = int32(92)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.RWin" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right Windows logo key (Microsoft Natural Keyboard).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="S">
+      <MemberSignature Language="C#" Value="S" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys S = int32(83)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.S" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The S key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scroll">
+      <MemberSignature Language="C#" Value="Scroll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Scroll = int32(145)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Scroll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The SCROLL LOCK key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="Select" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Select = int32(41)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Select" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The SELECT key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectMedia">
+      <MemberSignature Language="C#" Value="SelectMedia" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys SelectMedia = int32(181)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.SelectMedia" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The select media key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Separator">
+      <MemberSignature Language="C#" Value="Separator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Separator = int32(108)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Separator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The separator key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Shift">
+      <MemberSignature Language="C#" Value="Shift" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Shift = int32(65536)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Shift" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The SHIFT modifier key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftKey">
+      <MemberSignature Language="C#" Value="ShiftKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys ShiftKey = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.ShiftKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The SHIFT key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sleep">
+      <MemberSignature Language="C#" Value="Sleep" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Sleep = int32(95)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Sleep" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The computer sleep key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Snapshot">
+      <MemberSignature Language="C#" Value="Snapshot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Snapshot = int32(44)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Snapshot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The PRINT SCREEN key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Space">
+      <MemberSignature Language="C#" Value="Space" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Space = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Space" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The SPACEBAR key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Subtract">
+      <MemberSignature Language="C#" Value="Subtract" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Subtract = int32(109)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Subtract" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The subtract key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="T">
+      <MemberSignature Language="C#" Value="T" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys T = int32(84)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.T" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The T key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Tab">
+      <MemberSignature Language="C#" Value="Tab" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Tab = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Tab" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The TAB key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="U">
+      <MemberSignature Language="C#" Value="U" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys U = int32(85)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.U" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The U key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Up">
+      <MemberSignature Language="C#" Value="Up" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Up = int32(38)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Up" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The UP ARROW key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="V">
+      <MemberSignature Language="C#" Value="V" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys V = int32(86)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.V" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The V key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VolumeDown">
+      <MemberSignature Language="C#" Value="VolumeDown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys VolumeDown = int32(174)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.VolumeDown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The volume down key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VolumeMute">
+      <MemberSignature Language="C#" Value="VolumeMute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys VolumeMute = int32(173)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.VolumeMute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The volume mute key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VolumeUp">
+      <MemberSignature Language="C#" Value="VolumeUp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys VolumeUp = int32(175)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.VolumeUp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The volume up key (Windows 2000 or later).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="W">
+      <MemberSignature Language="C#" Value="W" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys W = int32(87)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.W" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The W key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="X">
+      <MemberSignature Language="C#" Value="X" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys X = int32(88)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.X" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The X key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XButton1">
+      <MemberSignature Language="C#" Value="XButton1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys XButton1 = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.XButton1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The first x mouse button (five-button mouse).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="XButton2">
+      <MemberSignature Language="C#" Value="XButton2" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys XButton2 = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.XButton2" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The second x mouse button (five-button mouse).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Y">
+      <MemberSignature Language="C#" Value="Y" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Y = int32(89)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Y" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Y key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Z">
+      <MemberSignature Language="C#" Value="Z" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Z = int32(90)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Z" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Z key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Zoom">
+      <MemberSignature Language="C#" Value="Zoom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Keys Zoom = int32(251)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Keys.Zoom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Keys</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ZOOM key.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

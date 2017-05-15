@@ -1,0 +1,53 @@
+<Type Name="DsmlDocument" FullName="System.DirectoryServices.Protocols.DsmlDocument">
+  <TypeSignature Language="C#" Value="public abstract class DsmlDocument" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DsmlDocument extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlDocument" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlDocument" /> class is an abstract class to construct or manipulate a DSML document. It is the base class for both <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> and <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" />. <see cref="T:System.DirectoryServices.Protocols.DsmlDocument" /> supports collections and indexes. Each item in its collection is an object derived from <see cref="T:System.DirectoryServices.Protocols.DirectoryOperation" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DsmlDocument ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlDocument.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlDocument.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DsmlDocument" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToXml">
+      <MemberSignature Language="C#" Value="public abstract System.Xml.XmlDocument ToXml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlDocument ToXml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlDocument.ToXml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlDocument</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlDocument.ToXml" /> method transforms this <see cref="T:System.DirectoryServices.Protocols.DsmlDocument" /> object into a <see cref="T:System.Xml.XmlDocument" /> object.</summary>
+        <returns>The transformed <see cref="T:System.Xml.XmlDocument" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

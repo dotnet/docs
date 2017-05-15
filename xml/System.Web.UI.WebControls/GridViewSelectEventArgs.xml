@@ -1,0 +1,107 @@
+<Type Name="GridViewSelectEventArgs" FullName="System.Web.UI.WebControls.GridViewSelectEventArgs">
+  <TypeSignature Language="C#" Value="public class GridViewSelectEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewSelectEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewSelectEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.GridView.SelectedIndexChanging" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.GridView> control raises the <xref:System.Web.UI.WebControls.GridView.SelectedIndexChanging> event when a Select button (a button with its `CommandName` property set to "Select") is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control handles the select operation. This allows you to provide an event-handling method that performs a custom routine, such as canceling the selection operation, whenever this event occurs.  
+  
+ A <xref:System.Web.UI.WebControls.GridViewSelectEventArgs> object is passed to the event-handling method, which allows you to determine the index of the row selected by the user and to indicate that the selection operation should be canceled. To cancel the selection operation, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs> object to `true`.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewSelectEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs> object passed to the event-handling method to cancel the select operation of a <xref:System.Web.UI.WebControls.GridView> control when the user selects an author with the last name White.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GridViewSelectEventArgs (int newSelectedIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 newSelectedIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewSelectEventArgs.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newSelectedIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="newSelectedIndex">The index of the new row to select in the <see cref="T:System.Web.UI.WebControls.GridView" /> control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.GridViewSelectEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs> class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.WebControls.GridViewSelectEventArgs>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.GridViewSelectEventArgs.NewSelectedIndex%2A>|The value of the `newSelectedIndex` parameter.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers when raising events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSelectedIndex">
+      <MemberSignature Language="C#" Value="public int NewSelectedIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 NewSelectedIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewSelectEventArgs.NewSelectedIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the new row to select in the <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
+        <value>The index of the new row to select in the <see cref="T:System.Web.UI.WebControls.GridView" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Web.UI.WebControls.GridView.SelectedIndexChanging> event occurs before the <xref:System.Web.UI.WebControls.GridView> control performs the select operation, the <xref:System.Web.UI.WebControls.GridView.SelectedIndex%2A> property of the control cannot be used to determine the index of the new row selected by the user. The <xref:System.Web.UI.WebControls.GridView.SelectedIndex%2A> property still contains the index of the previously selected row. To determine the index of the new row selected by the user, use the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs.NewSelectedIndex%2A> property. You can also use this property to programmatically override the row index selected by the user by setting it to another value.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs.NewSelectedIndex%2A> property to determine the index of the row selected by the user.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewSelect#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSelect/CS/gridviewselectcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewSelect#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSelect/VB/gridviewselectvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

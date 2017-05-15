@@ -1,0 +1,135 @@
+<Type Name="HotSpotCollectionEditor" FullName="System.Web.UI.Design.WebControls.HotSpotCollectionEditor">
+  <TypeSignature Language="C#" Value="public class HotSpotCollectionEditor : System.ComponentModel.Design.CollectionEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HotSpotCollectionEditor extends System.ComponentModel.Design.CollectionEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.HotSpotCollectionEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Design.CollectionEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a component editor for <see cref="T:System.Web.UI.WebControls.HotSpotCollection" /> objects in an <see cref="T:System.Web.UI.WebControls.ImageMap" /> or a similar control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.HotSpotCollectionEditor> class provides a user interface for editing the <xref:System.Web.UI.WebControls.HotSpot> elements of the <xref:System.Web.UI.WebControls.HotSpotCollection> object that is embedded in an <xref:System.Web.UI.WebControls.ImageMap> or a similar control.  
+  
+ The <xref:System.Web.UI.Design.WebControls.HotSpotCollectionEditor> is invoked by selecting the ellipsis button (**…**) on the **HotSpots** property in the visual designer's **Properties** grid.  
+  
+ The <xref:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.CanSelectMultipleInstances%2A> method always returns `false` to indicate that only one object can be selected at a time in the editor. The <xref:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.CreateNewItemTypes%2A> method returns an array of types that the editor can create. The <xref:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.HelpTopic%2A> property returns the name of the Help topic that the editor displays.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HotSpotCollectionEditor (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type of the collection to edit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.HotSpotCollectionEditor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The .NET Framework internally constructs a new instance of the <xref:System.Web.UI.Design.WebControls.HotSpotCollectionEditor> class when you select the ellipsis button (**…**) on the **HotSpots** property in the visual designer's **Properties** grid, when designing an <xref:System.Web.UI.WebControls.ImageMap> control or other control that encapsulates a <xref:System.Web.UI.WebControls.HotSpotCollection> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanSelectMultipleInstances">
+      <MemberSignature Language="C#" Value="protected override bool CanSelectMultipleInstances ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CanSelectMultipleInstances() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.CanSelectMultipleInstances" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a value indicating whether multiple <see cref="T:System.Web.UI.WebControls.HotSpot" /> collection elements can be selected at one time.</summary>
+        <returns>Always <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.CanSelectMultipleInstances%2A> method always returns `false`; thus, only one <xref:System.Web.UI.WebControls.HotSpot> object can be selected at a time in the <xref:System.Web.UI.Design.WebControls.HotSpotCollectionEditor> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewItemTypes">
+      <MemberSignature Language="C#" Value="protected override Type[] CreateNewItemTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] CreateNewItemTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.CreateNewItemTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the multiple data types that the collection editor can create.</summary>
+        <returns>A type array of the data types the <see cref="T:System.Web.UI.Design.WebControls.HotSpotCollectionEditor" /> can create.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The types that the <xref:System.Web.UI.Design.WebControls.HotSpotCollectionEditor> object can create are <xref:System.Web.UI.WebControls.CircleHotSpot>, <xref:System.Web.UI.WebControls.RectangleHotSpot>, <xref:System.Web.UI.WebControls.PolygonHotSpot>, and others that can be derived from the <xref:System.Web.UI.WebControls.HotSpot> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpTopic">
+      <MemberSignature Language="C#" Value="protected override string HelpTopic { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpTopic" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.HelpTopic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Help topic to display for the <see cref="T:System.Web.UI.Design.WebControls.HotSpotCollectionEditor" /> object.</summary>
+        <value>A string that specifies the Help topic to display.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.HelpTopic%2A> property gets the name of the Help topic to display when the <xref:System.Web.UI.Design.WebControls.HotSpotCollectionEditor> dialog box **Help** button is clicked or when the **F1** key is pressed.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override the <see cref="P:System.Web.UI.Design.WebControls.HotSpotCollectionEditor.HelpTopic" /> property to display a different Help topic.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

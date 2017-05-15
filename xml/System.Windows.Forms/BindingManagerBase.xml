@@ -1,0 +1,976 @@
+<Type Name="BindingManagerBase" FullName="System.Windows.Forms.BindingManagerBase">
+  <TypeSignature Language="C#" Value="public abstract class BindingManagerBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BindingManagerBase extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingManagerBase" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Manages all <see cref="T:System.Windows.Forms.Binding" /> objects that are bound to the same data source and data member. This class is abstract.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingManagerBase> enables the synchronization of data-bound controls on a Windows Form that are bound to the same data source. (For more information about simple binding a control to a data source, see the <xref:System.Windows.Forms.Binding> class.) For example, suppose that a form contains two <xref:System.Windows.Forms.TextBox> controls that are bound to the same data source but to different columns. The data source might be a <xref:System.Data.DataTable> that contains customer names, while the columns might contain the first and last names. The two controls must be synchronized in order to display the correct first and last names together for the same customer. The <xref:System.Windows.Forms.CurrencyManager>, which inherits from the <xref:System.Windows.Forms.BindingManagerBase> class, accomplishes this synchronization by maintaining a pointer to the current item in the data source. The <xref:System.Windows.Forms.TextBox> controls are bound to the current item so they display the information for the same row. When the current item changes, the <xref:System.Windows.Forms.CurrencyManager> notifies all the bound controls so that they can refresh their data. Furthermore, you can set the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> property to specify the row in the <xref:System.Data.DataTable> that the controls point to. To determine how many rows exist in the data source, use the <xref:System.Windows.Forms.BindingManagerBase.Count%2A> property.  
+  
+ The <xref:System.Windows.Forms.CurrencyManager> is necessary because data sources do not necessarily maintain a current-item pointer. For instance, arrays and <xref:System.Collections.ArrayList> objects can be data sources, but they do not have a property that returns the current item. To get the current item, use the <xref:System.Windows.Forms.BindingManagerBase.Current%2A> property.  
+  
+ The <xref:System.Windows.Forms.PropertyManager> also inherits from the <xref:System.Windows.Forms.BindingManagerBase>, and it is used to maintain the current property of an object, rather than the property of a current object in a data source. For this reason, trying to set the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> or <xref:System.Windows.Forms.BindingManagerBase.Count%2A> property for a <xref:System.Windows.Forms.PropertyManager> has no effect.  
+  
+ To create a <xref:System.Windows.Forms.BindingManagerBase>, use the <xref:System.Windows.Forms.BindingContext> class, which returns either a <xref:System.Windows.Forms.CurrencyManager> or a <xref:System.Windows.Forms.PropertyManager>, depending on the data source being managed.  
+  
+ Solutions programmers are encouraged to bind controls directly to a <xref:System.Windows.Forms.BindingSource> component, which acts as both a data source and data connector to the actual target data source. <xref:System.Windows.Forms.BindingSource> greatly simplifies both simple and complex data binding, including managing currency between the control and its target.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.BindingContext> to return a <xref:System.Windows.Forms.BindingManagerBase> for a specific data source. (The example assumes you have declared `myBindingManagerBase` in the Declarations section of the module.) The example then adds event delegates to the <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> and <xref:System.Windows.Forms.BindingManagerBase.PositionChanged> events. Lastly, the example contains four methods (`MoveNext`, `MovePrevious`, `MoveFirst`, and `MoveLast`) that increment or decrement the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> property, and set the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> to the first or last row in the list. The last row in the list is determined by using the <xref:System.Windows.Forms.BindingManagerBase.Count%2A> property.  
+  
+ [!code-cpp[Classic BindingManagerBase Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindingManagerBase Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindingManagerBase Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindingManagerBase Example/CS/source.cs#1)]
+ [!code-vb[Classic BindingManagerBase Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindingManagerBase Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Windows.Forms.BindingManagerBase" />, you must override the following abstract members: <see cref="M:System.Windows.Forms.BindingManagerBase.AddNew" />, <see cref="P:System.Windows.Forms.BindingManagerBase.Count" />, <see cref="M:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit" />, <see cref="P:System.Windows.Forms.BindingManagerBase.Current" />, <see cref="M:System.Windows.Forms.BindingManagerBase.EndCurrentEdit" />, <see cref="M:System.Windows.Forms.BindingManagerBase.GetItemProperties" />, <see cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" />, <see cref="P:System.Windows.Forms.BindingManagerBase.Position" />, <see cref="M:System.Windows.Forms.BindingManagerBase.RemoveAt(System.Int32)" />, <see cref="M:System.Windows.Forms.BindingManagerBase.ResumeBinding" />, <see cref="M:System.Windows.Forms.BindingManagerBase.SuspendBinding" />, and <see cref="M:System.Windows.Forms.BindingManagerBase.UpdateIsBinding" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BindingManagerBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingManagerBase" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor sets the <xref:System.Windows.Forms.BindingManagerBase.Bindings%2A> property to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddNew">
+      <MemberSignature Language="C#" Value="public abstract void AddNew ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddNew() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.AddNew" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, adds a new item to the underlying list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> method adds a new item to the underlying list by using the default constructor for that item's type. <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> is intended primarily to be used by programmers adding complex data-binding support to their custom component.  
+  
+ <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> is commonly implemented using the following pattern that allows application programmers to inject their own code for creating customized items:  
+  
+1.  <xref:System.Windows.Forms.BindingManagerBase.AddNew%2A> raises the <xref:System.Windows.Forms.BindingSource.AddingNew> event.  
+  
+2.  The programmer can supply a custom item by handling the <xref:System.Windows.Forms.BindingSource.AddingNew> event and setting the <xref:System.ComponentModel.AddingNewEventArgs.NewObject%2A> property of the <xref:System.ComponentModel.AddingNewEventArgs> parameter to the new item. Otherwise, the component should create an item using the default constructor.  
+  
+3.  If the data source does not implement the <xref:System.ComponentModel.IEditableObject> interface, the item is immediately added to the data source and underlying list. If this interface is supported, then the addition is transacted by the <xref:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit%2A> and <xref:System.Windows.Forms.BindingManagerBase.EndCurrentEdit%2A> methods.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BindingComplete">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.BindingCompleteEventHandler BindingComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.BindingCompleteEventHandler BindingComplete" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingManagerBase.BindingComplete" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BindingCompleteEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs at the completion of a data-binding operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingManagerBase.BindingComplete> event occurs after the completion of a data-binding operation, which may include the following:  
+  
+-   Pushing information from the data source into the property of its bound control.  
+  
+-   Pulling information from a bound control into its associated data source.  
+  
+ Note that this event is raised regardless of the completion status of the binding operation, although this status can be determined by examining the <xref:System.Windows.Forms.BindingCompleteEventArgs.BindingCompleteState%2A> property of the <xref:System.Windows.Forms.BindingCompleteEventArgs> parameter associated with the event. <xref:System.Windows.Forms.BindingCompleteEventArgs> may also contain error and exception information. For example, a binding operation that attempts to push a null value from a data source into a <xref:System.Windows.Forms.DateTimePicker> control will generate an exception, since a <xref:System.DateTime> cannot be `null`. In this case, although the binding operation does not successfully complete, the <xref:System.Windows.Forms.BindingManagerBase.BindingComplete> event will be raised, and the event will contain information on the failed binding attempt.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to handle the <xref:System.Windows.Forms.BindingManagerBase.BindingComplete> event and ensure multiple controls bound to the same data source remain synchronized when one of the control values is changed. To run this example, paste the code into a Windows Form and call the `InitializeControlsAndData` method from the form's constructor or <xref:System.Windows.Forms.Form.Load> event-handling method.  
+  
+ [!code-csharp[System.Windows.Forms.BindingSourceMultipleControls#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleControls/CS/Form1.cs#11)]
+ [!code-vb[System.Windows.Forms.BindingSourceMultipleControls#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleControls/VB/Form1.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bindings">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.BindingsCollection Bindings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.BindingsCollection Bindings" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingManagerBase.Bindings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BindingsCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of bindings being managed.</summary>
+        <value>A <see cref="T:System.Windows.Forms.BindingsCollection" /> that contains the <see cref="T:System.Windows.Forms.Binding" /> objects managed by this <see cref="T:System.Windows.Forms.BindingManagerBase" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example gets the <xref:System.Windows.Forms.BindingManagerBase> for a specific data source. The example then uses the <xref:System.Windows.Forms.BindingManagerBase.Bindings%2A> property to print information about each control bound to the same data source.  
+  
+ [!code-cpp[Classic BindingManagerBase.Bindings Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindingManagerBase.Bindings Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindingManagerBase.Bindings Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindingManagerBase.Bindings Example/CS/source.cs#1)]
+ [!code-vb[Classic BindingManagerBase.Bindings Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindingManagerBase.Bindings Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelCurrentEdit">
+      <MemberSignature Language="C#" Value="public abstract void CancelCurrentEdit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelCurrentEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, cancels the current edit.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is supported only if the data source implements the <xref:System.ComponentModel.IEditableObject> interface. If the object does not implement the <xref:System.ComponentModel.IEditableObject> interface, changes made to the data will not be discarded.  
+  
+ Calling the <xref:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit%2A> method causes the <xref:System.Windows.Forms.Binding.Format> event to occur.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates both the <xref:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit%2A> and the <xref:System.Windows.Forms.BindingManagerBase.EndCurrentEdit%2A> methods. When you call the <xref:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit%2A> methods, changes made to the data are discarded. When you call the <xref:System.Windows.Forms.BindingManagerBase.EndCurrentEdit%2A> method, the changes are kept.  
+  
+ [!code-cpp[BindingManagerBase.CancelCurrentEdit Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/BindingManagerBase.CancelCurrentEdit Example/CPP/canceledit.cpp#1)]
+ [!code-csharp[BindingManagerBase.CancelCurrentEdit Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/BindingManagerBase.CancelCurrentEdit Example/CS/canceledit.cs#1)]
+ [!code-vb[BindingManagerBase.CancelCurrentEdit Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BindingManagerBase.CancelCurrentEdit Example/VB/canceledit.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public abstract int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingManagerBase.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the number of rows managed by the <see cref="T:System.Windows.Forms.BindingManagerBase" />.</summary>
+        <value>The number of rows managed by the <see cref="T:System.Windows.Forms.BindingManagerBase" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.BindingManagerBase.Count%2A> property to determine the last item in the list of rows maintained by the <xref:System.Windows.Forms.BindingManagerBase>. To go to the last item, set the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> property to the <xref:System.Windows.Forms.BindingManagerBase.Count%2A> property value minus 1.  
+  
+   
+  
+## Examples  
+ The following code example shows four methods that set the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> property. The `MoveNext` method increments the property by 1. The `MovePrevious` method decrements the property by 1. The `MoveFirst` method sets the property to 0. The `MoveLast` method sets the property to the value of the <xref:System.Windows.Forms.BindingManagerBase.Count%2A> property minus 1.  
+  
+ [!code-cpp[Classic BindingManagerBase.Count Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindingManagerBase.Count Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindingManagerBase.Count Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindingManagerBase.Count Example/CS/source.cs#1)]
+ [!code-vb[Classic BindingManagerBase.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindingManagerBase.Count Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public abstract object Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingManagerBase.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the current object.</summary>
+        <value>An <see cref="T:System.Object" /> that represents the current object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingManagerBase.Current%2A> object contains the value of the current item in the data source. To use the value of the current item, you must cast the item to the <xref:System.Type> of the object contained by the <xref:System.Windows.Forms.Binding.DataSource%2A>. For example, a <xref:System.Data.DataTable> contains <xref:System.Data.DataRowView> objects. To determine the type of the current object, use the <xref:System.Object.GetType%2A> and <xref:System.Type.ToString%2A> methods.  
+  
+> [!NOTE]
+>  When the <xref:System.Windows.Forms.Binding.DataSource%2A> is a <xref:System.Data.DataSet>, <xref:System.Data.DataViewManager>, or <xref:System.Data.DataTable>, you are actually binding to a <xref:System.Data.DataView>. Consequently, each <xref:System.Windows.Forms.BindingManagerBase.Current%2A> object is a <xref:System.Data.DataRowView> object.  
+  
+   
+  
+## Examples  
+ The following code example prints the value of the <xref:System.Windows.Forms.BindingManagerBase.Current%2A> object in a <xref:System.Windows.Forms.BindingManagerBase> in the <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> event. The example assumes the data source is a <xref:System.Data.DataTable> containing a <xref:System.Data.DataColumn> named `CustName`.  
+  
+ [!code-cpp[Classic BindingManagerBase.Current Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindingManagerBase.Current Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindingManagerBase.Current Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindingManagerBase.Current Example/CS/source.cs#1)]
+ [!code-vb[Classic BindingManagerBase.Current Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindingManagerBase.Current Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler CurrentChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CurrentChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the currently bound item changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> event is raised whenever the <xref:System.Windows.Forms.BindingManagerBase.Current%2A> property changes or the <xref:System.Windows.Forms.BindingManagerBase.CurrentItemChanged> event occurs.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example prints the value of the <xref:System.Windows.Forms.BindingManagerBase.Current%2A> object in a <xref:System.Windows.Forms.BindingManagerBase> in the <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> event. The example assumes the data source is a <xref:System.Data.DataTable> containing a <xref:System.Data.DataColumn> named `CustName`.  
+  
+ [!code-cpp[Classic BindingManagerBase.Current Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindingManagerBase.Current Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindingManagerBase.Current Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindingManagerBase.Current Example/CS/source.cs#1)]
+ [!code-vb[Classic BindingManagerBase.Current Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindingManagerBase.Current Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentItemChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler CurrentItemChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CurrentItemChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingManagerBase.CurrentItemChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the state of the currently bound item changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingManagerBase.CurrentItemChanged> event occurs whenever there is a change in the state in the currently bound item. This can occur if one of the properties of this item is changed or if the item itself is replaced or moved.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingManagerBase.CurrentItemChanged> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.BindingManagerBase>, such as a <xref:System.Windows.Forms.PropertyManager> or <xref:System.Windows.Forms.CurrencyManager>. Then name the instance `BindingManagerBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingManagerBase.CurrentItemChanged> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#82](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#82)]
+ [!code-vb[System.Windows.Forms.EventExamples#82](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#82)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataError">
+      <MemberSignature Language="C#" Value="public event System.Windows.Forms.BindingManagerDataErrorEventHandler DataError;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.BindingManagerDataErrorEventHandler DataError" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingManagerBase.DataError" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BindingManagerDataErrorEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an <see cref="T:System.Exception" /> is silently handled by the <see cref="T:System.Windows.Forms.BindingManagerBase" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event is informational and reports Common Language Specification (CLS)-compliant exceptions only. To determine what type of exception occurred, handle this event and check the <xref:System.Windows.Forms.BindingManagerDataErrorEventArgs.Exception%2A> property of the <xref:System.Windows.Forms.BindingManagerDataErrorEventArgs>.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.BindingManagerBase.DataError> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.BindingManagerBase>, such as a <xref:System.Windows.Forms.PropertyManager> or <xref:System.Windows.Forms.CurrencyManager>. Then name the instance `BindingManagerBase1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.BindingManagerBase.DataError> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#83](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#83)]
+ [!code-vb[System.Windows.Forms.EventExamples#83](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#83)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndCurrentEdit">
+      <MemberSignature Language="C#" Value="public abstract void EndCurrentEdit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCurrentEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.EndCurrentEdit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, ends the current edit.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is supported only if the data source implements the <xref:System.ComponentModel.IEditableObject> interface. In that case, changes will be saved. If the object does not implement the <xref:System.ComponentModel.IEditableObject> interface, changes made to the data will not be saved.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates both the <xref:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit%2A> and the <xref:System.Windows.Forms.BindingManagerBase.EndCurrentEdit%2A> methods. When you call the <xref:System.Windows.Forms.BindingManagerBase.CancelCurrentEdit%2A> methods, changes made to the data are discarded. When you call the <xref:System.Windows.Forms.BindingManagerBase.EndCurrentEdit%2A> method, the changes are kept.  
+  
+ [!code-cpp[BindingManagerBase.CancelCurrentEdit Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/BindingManagerBase.CancelCurrentEdit Example/CPP/canceledit.cpp#1)]
+ [!code-csharp[BindingManagerBase.CancelCurrentEdit Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/BindingManagerBase.CancelCurrentEdit Example/CS/canceledit.cs#1)]
+ [!code-vb[BindingManagerBase.CancelCurrentEdit Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BindingManagerBase.CancelCurrentEdit Example/VB/canceledit.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemProperties">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptorCollection GetItemProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetItemProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.GetItemProperties" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, gets the collection of property descriptors for the binding.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the property descriptors for the binding.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method to return a <xref:System.ComponentModel.PropertyDescriptorCollection>. The example prints the <xref:System.ComponentModel.MemberDescriptor.Name%2A> and value of the current <xref:System.Data.DataColumn> using the <xref:System.ComponentModel.PropertyDescriptor.GetValue%2A> method of the <xref:System.ComponentModel.PropertyDescriptor>.  
+  
+ [!code-cpp[Classic BindingManagerBase.GetItemProperties Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindingManagerBase.GetItemProperties Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindingManagerBase.GetItemProperties Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindingManagerBase.GetItemProperties Example/CS/source.cs#1)]
+ [!code-vb[Classic BindingManagerBase.GetItemProperties Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindingManagerBase.GetItemProperties Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemProperties">
+      <MemberSignature Language="C#" Value="protected virtual System.ComponentModel.PropertyDescriptorCollection GetItemProperties (System.Collections.ArrayList dataSources, System.Collections.ArrayList listAccessors);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetItemProperties(class System.Collections.ArrayList dataSources, class System.Collections.ArrayList listAccessors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.GetItemProperties(System.Collections.ArrayList,System.Collections.ArrayList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataSources" Type="System.Collections.ArrayList" />
+        <Parameter Name="listAccessors" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="dataSources">An <see cref="T:System.Collections.ArrayList" /> containing the data sources.</param>
+        <param name="listAccessors">An <see cref="T:System.Collections.ArrayList" /> containing the table's bound properties.</param>
+        <summary>Gets the collection of property descriptors for the binding using the specified <see cref="T:System.Collections.ArrayList" />.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the property descriptors for the binding.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used by developers creating data-bound controls.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemProperties">
+      <MemberSignature Language="C#" Value="protected virtual System.ComponentModel.PropertyDescriptorCollection GetItemProperties (Type listType, int offset, System.Collections.ArrayList dataSources, System.Collections.ArrayList listAccessors);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetItemProperties(class System.Type listType, int32 offset, class System.Collections.ArrayList dataSources, class System.Collections.ArrayList listAccessors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.GetItemProperties(System.Type,System.Int32,System.Collections.ArrayList,System.Collections.ArrayList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listType" Type="System.Type" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="dataSources" Type="System.Collections.ArrayList" />
+        <Parameter Name="listAccessors" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="listType">The <see cref="T:System.Type" /> of the bound list.</param>
+        <param name="offset">A counter used to recursively call the method.</param>
+        <param name="dataSources">An <see cref="T:System.Collections.ArrayList" /> containing the data sources.</param>
+        <param name="listAccessors">An <see cref="T:System.Collections.ArrayList" /> containing the table's bound properties.</param>
+        <summary>Gets the list of properties of the items managed by this <see cref="T:System.Windows.Forms.BindingManagerBase" />.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that represents the property descriptors for the binding.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload is used by developers to create data-bound controls.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.BindingManagerBase.GetItemProperties%2A> method to return a <xref:System.ComponentModel.PropertyDescriptorCollection> for a <xref:System.Windows.Forms.BindingManagerBase>. The example then prints out the <xref:System.ComponentModel.MemberDescriptor.Name%2A> and <xref:System.ComponentModel.PropertyDescriptor.PropertyType%2A> of each <xref:System.ComponentModel.PropertyDescriptor> in the collection.  
+  
+ [!code-cpp[Classic BindingManagerBase.GetItemProperties2 Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindingManagerBase.GetItemProperties2 Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindingManagerBase.GetItemProperties2 Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindingManagerBase.GetItemProperties2 Example/CS/source.cs#1)]
+ [!code-vb[Classic BindingManagerBase.GetItemProperties2 Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindingManagerBase.GetItemProperties2 Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetListName">
+      <MemberSignature Language="C#" Value="protected abstract string GetListName (System.Collections.ArrayList listAccessors);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string GetListName(class System.Collections.ArrayList listAccessors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.GetListName(System.Collections.ArrayList)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="listAccessors" Type="System.Collections.ArrayList" />
+      </Parameters>
+      <Docs>
+        <param name="listAccessors">An <see cref="T:System.Collections.ArrayList" /> containing the table's bound properties.</param>
+        <summary>When overridden in a derived class, gets the name of the list supplying the data for the binding.</summary>
+        <returns>The name of the list supplying the data for the binding.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBindingSuspended">
+      <MemberSignature Language="C#" Value="public bool IsBindingSuspended { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBindingSuspended" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingManagerBase.IsBindingSuspended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether binding is suspended.</summary>
+        <value>
+          <see langword="true" /> if binding is suspended; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBindingComplete">
+      <MemberSignature Language="C#" Value="protected void OnBindingComplete (System.Windows.Forms.BindingCompleteEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void OnBindingComplete(class System.Windows.Forms.BindingCompleteEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.OnBindingComplete(System.Windows.Forms.BindingCompleteEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.Windows.Forms.BindingCompleteEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">A <see cref="T:System.Windows.Forms.BindingCompleteEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingManagerBase.BindingComplete" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingManagerBase.OnBindingComplete%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingManagerBase.OnBindingComplete(System.Windows.Forms.BindingCompleteEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingManagerBase.OnBindingComplete(System.Windows.Forms.BindingCompleteEventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCurrentChanged">
+      <MemberSignature Language="C#" Value="protected abstract void OnCurrentChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnCurrentChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingManagerBase.OnCurrentChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="onCurrentChangedHandler">
+      <MemberSignature Language="C#" Value="protected EventHandler onCurrentChangedHandler;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.EventHandler onCurrentChangedHandler" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BindingManagerBase.onCurrentChangedHandler" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the event handler for the <see cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCurrentItemChanged">
+      <MemberSignature Language="C#" Value="protected abstract void OnCurrentItemChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnCurrentItemChanged(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.OnCurrentItemChanged(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingManagerBase.CurrentItemChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingManagerBase.OnCurrentItemChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentItemChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentItemChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDataError">
+      <MemberSignature Language="C#" Value="protected void OnDataError (Exception e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void OnDataError(class System.Exception e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.OnDataError(System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="e">An <see cref="T:System.Exception" /> that caused the <see cref="E:System.Windows.Forms.BindingManagerBase.DataError" /> event to occur.</param>
+        <summary>Raises the <see cref="E:System.Windows.Forms.BindingManagerBase.DataError" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate. For more information, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+ The <xref:System.Windows.Forms.BindingManagerBase.OnDataError%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Forms.BindingManagerBase.OnDataError(System.Exception)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.BindingManagerBase.OnDataError(System.Exception)" /> method so that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="onPositionChangedHandler">
+      <MemberSignature Language="C#" Value="protected EventHandler onPositionChangedHandler;" />
+      <MemberSignature Language="ILAsm" Value=".field family class System.EventHandler onPositionChangedHandler" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BindingManagerBase.onPositionChangedHandler" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the event handler for the <see cref="E:System.Windows.Forms.BindingManagerBase.PositionChanged" /> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public abstract int Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Position" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingManagerBase.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or sets the position in the underlying list that controls bound to this data source point to.</summary>
+        <value>A zero-based index that specifies a position in the underlying list.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> property to iterate through the underlying list maintained by the <xref:System.Windows.Forms.BindingManagerBase>. To go to the first item, set the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> to 0. To go to the end of the list, set the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> to the value of the <xref:System.Windows.Forms.BindingManagerBase.Count%2A> property minus 1.  
+  
+ The <xref:System.Windows.Forms.BindingManagerBase.PositionChanged> event occurs when the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> property value changes.  
+  
+   
+  
+## Examples  
+ The following code example shows four methods that set the <xref:System.Windows.Forms.BindingManagerBase.Position%2A> property. The `MoveNext` method increments the property by 1. The `MovePrevious` method decrements the property by 1. The `MoveFirst` method sets the property to 0, and the `MoveLast` method sets the property to the value of the <xref:System.Windows.Forms.BindingManagerBase.Count%2A> property minus 1.  
+  
+ [!code-cpp[Classic BindingManagerBase.Count Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindingManagerBase.Count Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindingManagerBase.Count Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindingManagerBase.Count Example/CS/source.cs#1)]
+ [!code-vb[Classic BindingManagerBase.Count Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindingManagerBase.Count Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PositionChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler PositionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PositionChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingManagerBase.PositionChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs after the value of the <see cref="P:System.Windows.Forms.BindingManagerBase.Position" /> property has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example creates a <xref:System.Windows.Forms.Binding>, and then adds it to a collection of <xref:System.Windows.Forms.Binding> objects for a <xref:System.Windows.Forms.TextBox> control. The example then gets the <xref:System.Windows.Forms.BindingManagerBase> for the data source and adds a delegate to the <xref:System.Windows.Forms.BindingManagerBase.PositionChanged> event.  
+  
+ [!code-cpp[Classic BindingManagerBase.PositionChanged Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic BindingManagerBase.PositionChanged Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic BindingManagerBase.PositionChanged Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic BindingManagerBase.PositionChanged Example/CS/source.cs#1)]
+ [!code-vb[Classic BindingManagerBase.PositionChanged Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic BindingManagerBase.PositionChanged Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PullData">
+      <MemberSignature Language="C#" Value="protected void PullData ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PullData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.PullData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Pulls data from the data-bound control into the data source, returning no information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingManagerBase.PullData%2A> method is a programmatic way to pull information from the data-bound control back into the data source. It is not required for standard operation of a control, since normally a control automatically updates its bound data source when focus leaves it.  
+  
+ <xref:System.Windows.Forms.BindingManagerBase.PullData%2A> raises the <xref:System.Windows.Forms.BindingManagerBase.BindingComplete> event and change events on the data source as appropriate.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PushData">
+      <MemberSignature Language="C#" Value="protected void PushData ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PushData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.PushData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Pushes data from the data source into the data-bound control, returning no information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingManagerBase.PushData%2A> method is a programmatic way to push information from the data source into the data-bound control. This method is not required if the data source implements the <xref:System.ComponentModel.IBindingList?displayProperty=fullName> interface, because the <xref:System.ComponentModel.IBindingList.ListChanged?displayProperty=fullName> event should automatically cause the control to be updated through its currency manager.  
+  
+ If this method is issued when a <xref:System.Windows.Forms.BindingManagerBase.PullData%2A> operation is being performed, the <xref:System.Windows.Forms.BindingManagerBase.PushData%2A> method returns immediately with a value of `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public abstract void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the row to delete.</param>
+        <summary>When overridden in a derived class, deletes the row at the specified index from the underlying list.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingManagerBase.RemoveAt%2A> method relies on the underlying data source to determine how the method behaves. (See the <xref:System.Windows.Forms.Binding> class for a list of supported data sources.) For classes that implement <xref:System.Collections.IList>, <xref:System.ComponentModel.IBindingList>, or <xref:System.ComponentModel.ITypedList>, as well as strongly typed classes that implement <xref:System.Collections.IList>, the <xref:System.Windows.Forms.BindingManagerBase.RemoveAt%2A> method actually deletes the row in the underlying list instead of removing its contents.  
+  
+ If the underlying list implements the <xref:System.ComponentModel.IBindingList> interface, the <xref:System.ComponentModel.IBindingList.AllowRemove%2A> property must return `true`. If the underlying list implements the <xref:System.Collections.IList> interface, the <xref:System.Collections.IList.IsFixedSize%2A> property must return `false`.  
+  
+   
+  
+## Examples  
+ [!code-cpp[BindingManagerBase_RemoveAt#1](~/samples/snippets/cpp/VS_Snippets_Winforms/BindingManagerBase_RemoveAt/CPP/bindingmanagerbase_removeat.cpp#1)]
+ [!code-csharp[BindingManagerBase_RemoveAt#1](~/samples/snippets/csharp/VS_Snippets_Winforms/BindingManagerBase_RemoveAt/CS/bindingmanagerbase_removeat.cs#1)]
+ [!code-vb[BindingManagerBase_RemoveAt#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BindingManagerBase_RemoveAt/VB/bindingmanagerbase_removeat.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.IndexOutOfRangeException">There is no row at the specified <paramref name="index" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResumeBinding">
+      <MemberSignature Language="C#" Value="public abstract void ResumeBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResumeBinding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.ResumeBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, resumes data binding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.BindingManagerBase.SuspendBinding%2A> and <xref:System.Windows.Forms.BindingManagerBase.ResumeBinding%2A> are two methods that allow the temporary suspension and resumption of data binding. You would typically suspend data binding if the user must be allowed to edit data fields before validation occurs. For example, the user might need to change a field to be in accordance with a second field; otherwise, validating the first field would cause the second field to be in error.  
+  
+   
+  
+## Examples  
+ [!code-cpp[BindingManagerBase_Suspend_Resume_Binding#2](~/samples/snippets/cpp/VS_Snippets_Winforms/BindingManagerBase_Suspend_Resume_Binding/CPP/bindingmanagerbase_suspend_resume_binding.cpp#2)]
+ [!code-csharp[BindingManagerBase_Suspend_Resume_Binding#2](~/samples/snippets/csharp/VS_Snippets_Winforms/BindingManagerBase_Suspend_Resume_Binding/CS/bindingmanagerbase_suspend_resume_binding.cs#2)]
+ [!code-vb[BindingManagerBase_Suspend_Resume_Binding#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BindingManagerBase_Suspend_Resume_Binding/VB/bindingmanagerbase_suspend_resume_binding.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendBinding">
+      <MemberSignature Language="C#" Value="public abstract void SuspendBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SuspendBinding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.SuspendBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, suspends data binding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.BindingManagerBase.SuspendBinding%2A> and <xref:System.Windows.Forms.BindingManagerBase.ResumeBinding%2A> are two methods that allow the temporary suspension and resumption of data binding. You would typically suspend data binding if the user must be allowed to edit data fields before validation occurs. For example, the user might need to change a field to be in accordance with a second field; otherwise, validating the first field would cause the second field to be in error.  
+  
+   
+  
+## Examples  
+ [!code-cpp[BindingManagerBase_Suspend_Resume_Binding#2](~/samples/snippets/cpp/VS_Snippets_Winforms/BindingManagerBase_Suspend_Resume_Binding/CPP/bindingmanagerbase_suspend_resume_binding.cpp#2)]
+ [!code-csharp[BindingManagerBase_Suspend_Resume_Binding#2](~/samples/snippets/csharp/VS_Snippets_Winforms/BindingManagerBase_Suspend_Resume_Binding/CS/bindingmanagerbase_suspend_resume_binding.cs#2)]
+ [!code-vb[BindingManagerBase_Suspend_Resume_Binding#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/BindingManagerBase_Suspend_Resume_Binding/VB/bindingmanagerbase_suspend_resume_binding.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateIsBinding">
+      <MemberSignature Language="C#" Value="protected abstract void UpdateIsBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UpdateIsBinding() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingManagerBase.UpdateIsBinding" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, updates the binding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.BindingManagerBase.UpdateIsBinding%2A> method updates the data binding between the bound control and its data source. For complex data-binding scenarios, it also resets the current position to the beginning of the underlying list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

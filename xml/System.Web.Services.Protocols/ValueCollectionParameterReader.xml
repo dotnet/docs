@@ -1,0 +1,179 @@
+<Type Name="ValueCollectionParameterReader" FullName="System.Web.Services.Protocols.ValueCollectionParameterReader">
+  <TypeSignature Language="C#" Value="public abstract class ValueCollectionParameterReader : System.Web.Services.Protocols.MimeParameterReader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ValueCollectionParameterReader extends System.Web.Services.Protocols.MimeParameterReader" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.ValueCollectionParameterReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Protocols.MimeParameterReader</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serves as a base class for readers of incoming request parameters for Web services implemented using HTTP but without SOAP.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Services.Protocols.ValueCollectionParameterReader> and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard. The <xref:System.Web.Services.Protocols.ValueCollectionParameterReader> class provides, among other methods, a common <xref:System.Web.Services.Protocols.ValueCollectionParameterReader.Read%2A> method for all service-side readers of collections of name/value pairs into Web method parameters. The name/value pairs have been parsed from an incoming HTTP request.  
+  
+ You typically will not need to use <xref:System.Web.Services.Protocols.ValueCollectionParameterReader> or its descendant classes directly. The appropriate types  are used according to settings in an ASP.NET configuration file (Web.config).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ValueCollectionParameterReader ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.ValueCollectionParameterReader" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInitializer">
+      <MemberSignature Language="C#" Value="public override object GetInitializer (System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetInitializer(class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodInfo" Type="System.Web.Services.Protocols.LogicalMethodInfo" />
+      </Parameters>
+      <Docs>
+        <param name="methodInfo">A <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> that specifies the Web method for which the initializer is obtained.</param>
+        <summary>Returns an initializer for the specified method.</summary>
+        <returns>A <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> representing the Web method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object returned by the <xref:System.Web.Services.Protocols.ValueCollectionParameterReader.GetInitializer%2A> method is the <xref:System.Web.Services.Protocols.LogicalMethodInfo.InParameters%2A> property of the `methodinfo` parameter. The <xref:System.Web.Services.Protocols.LogicalMethodInfo.InParameters%2A> property value is an array of type <xref:System.Reflection.ParameterInfo>.  
+  
+ The <xref:System.Web.Services.Protocols.ValueCollectionParameterReader.GetInitializer%2A> method is invoked during service initialization. Later, at the time a request is processed, the initializer object is passed to the <xref:System.Web.Services.Protocols.ValueCollectionParameterReader.Initialize%2A> method of another <xref:System.Web.Services.Protocols.ValueCollectionParameterReader> instance. The other instance performs the actual reading.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.Initialize(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">A <see cref="T:System.Reflection.ParameterInfo" /> array, obtained through the <see cref="P:System.Web.Services.Protocols.LogicalMethodInfo.InParameters" /> property of the <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> class.</param>
+        <summary>Initializes an instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.ValueCollectionParameterReader.Initialize%2A> method is invoked at the time a request is processed.  
+  
+ The input parameter, `o`, is obtained by calling the <xref:System.Web.Services.Protocols.ValueCollectionParameterReader.GetInitializer%2A> method on another instance during service initialization.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported (System.Reflection.ParameterInfo paramInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSupported(class System.Reflection.ParameterInfo paramInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.IsSupported(System.Reflection.ParameterInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="paramInfo" Type="System.Reflection.ParameterInfo" />
+      </Parameters>
+      <Docs>
+        <param name="paramInfo">A <see cref="T:System.Reflection.ParameterInfo" /> that specifies the parameter to check.</param>
+        <summary>Determines whether a particular parameter type is supported by the <see cref="T:System.Web.Services.Protocols.ValueCollectionParameterReader" /> class.</summary>
+        <returns>
+          <see langword="true" /> if a method's parameter definitions are supported by the reader; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported (System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSupported(class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.IsSupported(System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodInfo" Type="System.Web.Services.Protocols.LogicalMethodInfo" />
+      </Parameters>
+      <Docs>
+        <param name="methodInfo">A <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> that specifies the method to check.</param>
+        <summary>Determines whether a method definition's parameter definitions are supported by the <see cref="T:System.Web.Services.Protocols.ValueCollectionParameterReader" /> class.</summary>
+        <returns>
+          <see langword="true" /> if a method's parameter definitions are supported by the reader; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="protected object[] Read (System.Collections.Specialized.NameValueCollection collection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object[] Read(class System.Collections.Specialized.NameValueCollection collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.ValueCollectionParameterReader.Read(System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="collection">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> object that specifies the collection of name/value pairs containing method parameter names and values.</param>
+        <summary>Translates a collection of name/value pairs into an array of objects representing method parameter values.</summary>
+        <returns>An array of <see cref="T:System.Object" /> objects representing method parameter values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.ValueCollectionParameterReader.Read%2A> method is called by the <xref:System.Web.Services.Protocols.ValueCollectionParameterReader.Read%2A> method defined in thetwo classes derived from <xref:System.Web.Services.Protocols.ValueCollectionParameterReader>, <xref:System.Web.Services.Protocols.UrlParameterReader> and <xref:System.Web.Services.Protocols.HtmlFormParameterReader>. Those two classes' <xref:System.Web.Services.Protocols.ValueCollectionParameterReader.Read%2A> methods take an <xref:System.Web.HttpRequest> parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

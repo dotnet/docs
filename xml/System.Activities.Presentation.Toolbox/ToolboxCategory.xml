@@ -1,0 +1,648 @@
+<Type Name="ToolboxCategory" FullName="System.Activities.Presentation.Toolbox.ToolboxCategory">
+  <TypeSignature Language="C#" Value="public sealed class ToolboxCategory : System.Collections.IList, System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ToolboxCategory extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>A collection of toolbox items that have been categorized.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection contains items of type <xref:System.Activities.Presentation.Toolbox.ToolboxItemWrapper> that are added and removed from an instance of the collection using the  <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Add%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Remove%2A> methods.  
+  
+ The <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> class implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface. This allows the collection that is storing the toolbox items to provide notifications when properties like the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.CategoryName%2A> property are changed and methods like <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Add%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Remove%2A> are used to change the contents of the collection.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_ToolboxCategory#0](WFD_ToolboxCategory#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxCategory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default name assigned to the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection is an empty `string`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolboxCategory (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the toolbox category collection.</param>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> class with a specified name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name assigned to the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection can be an empty `string`. This is the value assigned by the default constructor, <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.%23ctor%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Activities.Presentation.Toolbox.ToolboxItemWrapper tool);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Activities.Presentation.Toolbox.ToolboxItemWrapper tool) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.Add(System.Activities.Presentation.Toolbox.ToolboxItemWrapper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tool" Type="System.Activities.Presentation.Toolbox.ToolboxItemWrapper" />
+      </Parameters>
+      <Docs>
+        <param name="tool">The <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> item to add to the collection.</param>
+        <summary>Adds a specified tool to the end of the toolbox category collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tool" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CategoryName">
+      <MemberSignature Language="C#" Value="public string CategoryName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CategoryName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxCategory.CategoryName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the toolbox category.</summary>
+        <value>The name of the toolbox category.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When set, the property provides a notification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Activities.Presentation.Toolbox.ToolboxItemWrapper this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Toolbox.ToolboxItemWrapper Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxCategory.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Toolbox.ToolboxItemWrapper</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the tool to get or set.</param>
+        <summary>Gets or sets the tool at the specified index.</summary>
+        <value>The <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> object at the specified <paramref name="index" />..</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not valid for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Toolbox.ToolboxCategory.PropertyChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a property value changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (System.Activities.Presentation.Toolbox.ToolboxItemWrapper tool);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(class System.Activities.Presentation.Toolbox.ToolboxItemWrapper tool) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.Remove(System.Activities.Presentation.Toolbox.ToolboxItemWrapper)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tool" Type="System.Activities.Presentation.Toolbox.ToolboxItemWrapper" />
+      </Parameters>
+      <Docs>
+        <param name="tool">The <see cref="T:System.Activities.Presentation.Toolbox.ToolboxItemWrapper" /> item to remove from the collection.</param>
+        <summary>Removes the first occurrence of a specified tool from the toolbox category collection.</summary>
+        <returns>
+          <see langword="true" /> if the tool is successfully removed; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if the tool was not found in the collection.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="tool" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The index of the array at which the copying begins.</param>
+        <summary>Copies the entire <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection to a compatible one-dimensional <see cref="T:System.Array" />, starting at the specified index of the target <see cref="T:System.Array" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The elements are copied to the <xref:System.Array> in the same order in which the enumerator iterates through the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="array" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.Count">
+      <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#ICollection#Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of tools contained in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <value>The number of elements contained in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.IsSynchronized">
+      <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#ICollection#IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> is synchronized (thread safe).</summary>
+        <value>
+          <see langword="true" /> if access to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> is synchronized (thread safe); otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.ICollection> interface. The <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.System%23Collections%23ICollection%23SyncRoot%2A> property returns an object, which can be used to synchronize access to the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.SyncRoot">
+      <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#ICollection#SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerator that iterates through the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator`1" /> for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerators can be used to read the data in a collection, but they cannot be used to modify the underlying collection.  
+  
+ Initially, the enumerator is positioned before the first element in the collection. At this position, <xref:System.Collections.Generic.IEnumerator%601.Current> is undefined. Therefore, you must call <xref:System.Collections.IEnumerator.MoveNext> to advance the enumerator to the first element of the collection before reading the value of <xref:System.Collections.Generic.IEnumerator%601.Current>. An enumerator remains valid as long as the collection remains unchanged. If changes are made to the collection, such as adding, modifying, or deleting elements, the enumerator is no longer valid and its behavior is undefined.  
+  
+ The enumerator does not have exclusive access to the collection; therefore, enumerating through a collection is intrinsically not a thread-safe procedure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Add">
+      <MemberSignature Language="C#" Value="int IList.Add (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The position into which the new element is inserted.</param>
+        <summary>Adds a tool to the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <returns>The zero-based index of the tool added to the collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="value" /> is of a type that is not assignable to the <see cref="T:System.Collections.IList" /> implemented by the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Clear">
+      <MemberSignature Language="C#" Value="void IList.Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all the tools from the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Contains">
+      <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The tool <see cref="T:System.Object" /> to locate in the collection.</param>
+        <summary>Determines whether the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> contains a specific tool.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="value" /> is found in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IndexOf">
+      <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</param>
+        <summary>Determines the index of a specific tool in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <returns>The zero-based index of <paramref name="value" /> if found in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Insert">
+      <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which <c>value</c> should be inserted.</param>
+        <param name="value">The tool added to the collection.</param>
+        <summary>Inserts a tool into the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ If `index` equals the number of items in the <xref:System.Collections.IList>, then `value` is appended to the end.  
+  
+ In collections of contiguous elements, such as lists, the elements that follow the insertion point move down to accommodate the new element. If the collection is indexed, the indexes of the elements that are moved are also updated.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not valid for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> is read-only, or it has a fixed size that has been exceeded.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsFixedSize">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> is read-only.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> is read-only; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface. A collection that is read-only does not allow the addition, removal, or modification of elements after the collection is created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Item">
+      <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the tool item to get or set.</param>
+        <summary>Gets or sets the tool at the specified index.</summary>
+        <value>The tool<see cref="T:System.Object" /> at the specified index.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface. This property provides the ability to access a specific element in the collection by using the following syntax: `myCollection[index]`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Remove">
+      <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The tool <see cref="T:System.Object" /> to remove from the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</param>
+        <summary>Removes the first occurrence of a specific tool from the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.RemoveAt">
+      <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the tool item to remove.</param>
+        <summary>Removes the tool at the specified index of the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> implements the <xref:System.Collections.IList> interface.  
+  
+ In collections of contiguous elements, such as lists, the elements that follow the removed element move up to occupy the vacated spot. If the collection is indexed, the indexes of the elements that are moved are also updated.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not valid for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" /> collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Tools">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Activities.Presentation.Toolbox.ToolboxItemWrapper&gt; Tools { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Activities.Presentation.Toolbox.ToolboxItemWrapper&gt; Tools" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ToolboxCategory.Tools" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Activities.Presentation.Toolbox.ToolboxItemWrapper&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the tools in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
+        <value>An<see cref="T:System.Collections.Generic.ICollection`1" /> that contains the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

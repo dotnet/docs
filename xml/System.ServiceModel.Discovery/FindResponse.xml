@@ -1,0 +1,59 @@
+<Type Name="FindResponse" FullName="System.ServiceModel.Discovery.FindResponse">
+  <TypeSignature Language="C#" Value="public class FindResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FindResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.FindResponse" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the response from a find request.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Endpoints">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt; Endpoints { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt; Endpoints" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.FindResponse.Endpoints" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" /> for the discoverable services that matched the find request.</summary>
+        <value>A collection of endpoint discovery metadata.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMessageSequence">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.DiscoveryMessageSequence GetMessageSequence (System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Discovery.DiscoveryMessageSequence GetMessageSequence(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.FindResponse.GetMessageSequence(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.DiscoveryMessageSequence</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpointDiscoveryMetadata" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="endpointDiscoveryMetadata">The endpoint discovery metadata</param>
+        <summary>Gets the <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequence" /> associated with the specified <see cref="T:System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />.</summary>
+        <returns>The discovery message sequence.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

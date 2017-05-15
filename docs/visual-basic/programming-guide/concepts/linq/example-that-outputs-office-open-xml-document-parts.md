@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: a951925b-c985-48ed-b215-2a68b58f1ae5
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Example that Outputs Office Open XML Document Parts (Visual Basic)

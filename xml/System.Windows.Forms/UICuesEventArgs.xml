@@ -1,0 +1,212 @@
+<Type Name="UICuesEventArgs" FullName="System.Windows.Forms.UICuesEventArgs">
+  <TypeSignature Language="C#" Value="public class UICuesEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UICuesEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UICuesEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.ChangeUICues" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Forms.UICuesEventArgs> specifies which user interface feature changed and its new value.  
+  
+ The <xref:System.Windows.Forms.Control.ChangeUICues> event occurs when the user interface changes by showing or hiding focus indicators or keyboard cues. This is usually when the user presses the TAB, ALT, or F10 keys.  
+  
+ For information about the event model, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.ChangeUICues> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.ChangeUICues> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#67](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#67)]
+ [!code-vb[System.Windows.Forms.EventExamples#67](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#67)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UICuesEventArgs (System.Windows.Forms.UICues uicues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.UICues uicues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.UICuesEventArgs.#ctor(System.Windows.Forms.UICues)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uicues" Type="System.Windows.Forms.UICues" />
+      </Parameters>
+      <Docs>
+        <param name="uicues">A bitwise combination of the <see cref="T:System.Windows.Forms.UICues" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.UICuesEventArgs" /> class with the specified <see cref="T:System.Windows.Forms.UICues" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Changed">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.UICues Changed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.UICues Changed" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UICuesEventArgs.Changed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.UICues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bitwise combination of the <see cref="T:System.Windows.Forms.UICues" /> values.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Windows.Forms.UICues" /> values. The default is <see cref="F:System.Windows.Forms.UICues.Changed" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.ChangeUICues?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.ChangeUICues?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#67](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#67)]
+ [!code-vb[System.Windows.Forms.EventExamples#67](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#67)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeFocus">
+      <MemberSignature Language="C#" Value="public bool ChangeFocus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ChangeFocus" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UICuesEventArgs.ChangeFocus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the state of the focus cues has changed.</summary>
+        <value>
+          <see langword="true" /> if the state of the focus cues has changed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.ChangeUICues?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.ChangeUICues?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#67](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#67)]
+ [!code-vb[System.Windows.Forms.EventExamples#67](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#67)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeKeyboard">
+      <MemberSignature Language="C#" Value="public bool ChangeKeyboard { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ChangeKeyboard" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UICuesEventArgs.ChangeKeyboard" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the state of the keyboard cues has changed.</summary>
+        <value>
+          <see langword="true" /> if the state of the keyboard cues has changed; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.ChangeUICues?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.ChangeUICues?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#67](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#67)]
+ [!code-vb[System.Windows.Forms.EventExamples#67](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#67)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowFocus">
+      <MemberSignature Language="C#" Value="public bool ShowFocus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowFocus" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UICuesEventArgs.ShowFocus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether focus rectangles are shown after the change.</summary>
+        <value>
+          <see langword="true" /> if focus rectangles are shown after the change; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.ChangeUICues?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.ChangeUICues?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#67](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#67)]
+ [!code-vb[System.Windows.Forms.EventExamples#67](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#67)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowKeyboard">
+      <MemberSignature Language="C#" Value="public bool ShowKeyboard { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowKeyboard" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.UICuesEventArgs.ShowKeyboard" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether keyboard cues are underlined after the change.</summary>
+        <value>
+          <see langword="true" /> if keyboard cues are underlined after the change; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.ChangeUICues?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.ChangeUICues?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#67](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#67)]
+ [!code-vb[System.Windows.Forms.EventExamples#67](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#67)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

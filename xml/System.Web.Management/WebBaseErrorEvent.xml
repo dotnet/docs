@@ -1,0 +1,215 @@
+<Type Name="WebBaseErrorEvent" FullName="System.Web.Management.WebBaseErrorEvent">
+  <TypeSignature Language="C#" Value="public class WebBaseErrorEvent : System.Web.Management.WebManagementEvent" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebBaseErrorEvent extends System.Web.Management.WebManagementEvent" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebBaseErrorEvent" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Management.WebManagementEvent</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serves as the base class for all the health-monitoring error events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ The <xref:System.Web.Management.WebBaseErrorEvent> class is the base class for the health-monitoring events that represent error conditions. ASP.NET uses <xref:System.Web.Management.WebBaseErrorEvent> and its derived types to indicate error conditions during the lifetime of a Web application.  
+  
+> [!NOTE]
+>  In most cases you will be able to use the ASP.NET health-monitoring types as implemented and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of deriving from the <xref:System.Web.Management.WebBaseErrorEvent> class, see the example provided in this topic.  
+  
+   
+  
+## Examples  
+ The following code example has two parts. The first is an excerpt of a configuration file that enables ASP.NET health monitoring to use an event derived from the <xref:System.Web.Management.WebBaseErrorEvent> class. The second shows how to derive from the <xref:System.Web.Management.WebBaseErrorEvent> class to create the custom event.  
+  
+```  
+<healthMonitoring   
+  enabled="true" heartBeatInterval="0">  
+  
+  <providers>  
+    <!-- Define the custom provider that   
+         processes custom Web request events. -->  
+    <add name="SampleWebEventProvider"   
+      type="SamplesAspNet.SampleEventProvider,  
+      webeventprovider,Version=1.0.1573.18094,   
+      Culture=neutral, PublicKeyToken=b5a57a9a9d487cf4,   
+      processorArchitecture=MSIL"/>  
+  </providers>  
+  
+  <eventMappings>  
+  
+    <!--  Define the event source that issues custom events.   -->  
+    <add  name="SampleWebBaseErrorEvent"      
+      type="SamplesAspNet.SampleWebBaseErrorEvent,  
+      webbaseerrorevent,Version=1.0.1573.21549, Culture=neutral,     
+      PublicKeyToken=2a0b23915ac7352b, processorArchitecture=MSIL"/>  
+  </eventMappings>  
+  
+  <rules>  
+    <!-- Associate custom event with related   
+      custom provider -->  
+    <add   
+       name="Custom Web Base Errors"  
+       eventName="SampleWebBaseErrorEvent"   
+       provider="SampleWebEventProvider"   
+       profile="Custom"/>    
+  </rules>  
+  
+</healthMonitoring>  
+```  
+  
+ The following code shows how to derive from the <xref:System.Web.Management.WebBaseErrorEvent> class to create a custom event.  
+  
+ [!code-csharp[System.Web.Management.WebErrorEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebErrorEvent/CS/weberrorevent.cs#1)]
+ [!code-vb[System.Web.Management.WebErrorEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebErrorEvent/VB/weberrorevent.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebBaseErrorEvent (string message, object eventSource, int eventCode, Exception e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, class System.Exception e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseErrorEvent.#ctor(System.String,System.Object,System.Int32,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="eventSource" Type="System.Object" />
+        <Parameter Name="eventCode" Type="System.Int32" />
+        <Parameter Name="e" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The event description.</param>
+        <param name="eventSource">The object that is the source of the event.</param>
+        <param name="eventCode">The code associated with the event. When you implement a custom event, the event code must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</param>
+        <param name="e">The <see cref="T:System.Exception" /> associated with the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebBaseErrorEvent" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used internally by the ASP.NET health-monitoring system. You can call this constructor when implementing your own event type that inherits from this class.  
+  
+   
+  
+## Examples  
+ The following code example shows how to call this constructor from a constructor for the `SampleWebBaseErrorEvent` class, a class that derives from the <xref:System.Web.Management.WebBaseErrorEvent> class.  
+  
+ [!code-csharp[System.Web.Management.WebBaseErrorEvent#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseErrorEvent/CS/webbaseerrorevent.cs#2)]
+ [!code-vb[System.Web.Management.WebBaseErrorEvent#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseErrorEvent/VB/webbaseerrorevent.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebBaseErrorEvent (string message, object eventSource, int eventCode, int eventDetailCode, Exception e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, int32 eventDetailCode, class System.Exception e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseErrorEvent.#ctor(System.String,System.Object,System.Int32,System.Int32,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="eventSource" Type="System.Object" />
+        <Parameter Name="eventCode" Type="System.Int32" />
+        <Parameter Name="eventDetailCode" Type="System.Int32" />
+        <Parameter Name="e" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The event description.</param>
+        <param name="eventSource">The object that is the source of the event.</param>
+        <param name="eventCode">The code associated with the event. When you implement a custom event, the event code must be greater than <see cref="F:System.Web.Management.WebEventCodes.WebExtendedBase" />.</param>
+        <param name="eventDetailCode">The detailed identifier for the event.</param>
+        <param name="e">The <see cref="T:System.Exception" /> associated with the error.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebBaseErrorEvent" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used internally by the ASP.NET health-monitoring system. You can call this constructor when implementing your own event type that inherits from this class.  
+  
+   
+  
+## Examples  
+ The following code example shows how to call this constructor from a constructor for the `SampleWebBaseErrorEvent` class, a class that derives from the <xref:System.Web.Management.WebBaseErrorEvent> class.  
+  
+ [!code-csharp[System.Web.Management.WebBaseErrorEvent#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseErrorEvent/CS/webbaseerrorevent.cs#3)]
+ [!code-vb[System.Web.Management.WebBaseErrorEvent#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseErrorEvent/VB/webbaseerrorevent.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorException">
+      <MemberSignature Language="C#" Value="public Exception ErrorException { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception ErrorException" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseErrorEvent.ErrorException" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Exception" /> associated with the error.</summary>
+        <value>The <see cref="T:System.Exception" /> associated with the error.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you implement a custom <xref:System.Web.Management.WebBaseErrorEvent>, you must ensure that your custom error event handles this exception.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncrementPerfCounters">
+      <MemberSignature Language="C#" Value="protected override void IncrementPerfCounters ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void IncrementPerfCounters() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseErrorEvent.IncrementPerfCounters" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Increments the event-error performance-related counters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method increments the following performance counters:  
+  
+-   Infrastructure Error Events Raised. This is a global counter that tracks the error events raised.  
+  
+-   Error Events Raised. This is an application-specific counter that tracks the number of error events raised since the application started.  
+  
+ This method also calls the parent <xref:System.Web.Management.WebBaseEvent.IncrementPerfCounters%2A>, which increments the Events Raised counter. This counter tracks the total number of events raised.  
+  
+ To view these performance counters in System Monitor (PerfMon), in the **Add Counters** window select **ASP.NET** in the **Performance object** drop-down list, select the performance counter you want to view, and click the **Add** button. For more information, see [Using the System Monitor (PerfMon) with ASP.NET Applications](http://go.microsoft.com/fwlink/?linkid=36882&clcid=0x409) in the IIS documentation on MSDN.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,504 @@
+<Type Name="DataPagerFieldCollection" FullName="System.Web.UI.WebControls.DataPagerFieldCollection">
+  <TypeSignature Language="C#" Value="public class DataPagerFieldCollection : System.Web.UI.StateManagedCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPagerFieldCollection extends System.Web.UI.StateManagedCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataPagerFieldCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.StateManagedCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.DataPagerField" /> objects that are used by the <see cref="T:System.Web.UI.WebControls.DataPager" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class to programmatically manage a set of <xref:System.Web.UI.WebControls.DataPagerField> objects. Note that it is more typical to define these fields declaratively instead of programmatically.  
+  
+ You can access the properties and methods of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class through the <xref:System.Web.UI.WebControls.DataPager.Fields%2A?displayProperty=fullName> property. You can add, insert, and remove <xref:System.Web.UI.WebControls.DataPagerField> objects by using the appropriate methods of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> class. To programmatically retrieve <xref:System.Web.UI.WebControls.DataPagerField> objects from a collection, do one of following:  
+  
+-   Use the indexer to get a single <xref:System.Web.UI.WebControls.DataPagerField> object from the collection.  
+  
+-   Use the <xref:System.Web.UI.StateManagedCollection.GetEnumerator%2A> method to create an object that implements <xref:System.Collections.IEnumerator?displayProperty=fullName>, which you can then use to get items from the collection.  
+  
+ The <xref:System.Web.UI.StateManagedCollection.Count%2A> property gets the total number of items in the collection. It is typically used to determine the upper bound of the collection. You can add items and remove items in the collection by using the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Add%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Insert%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Remove%2A>, and <xref:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt%2A> methods.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataPagerFieldCollection (System.Web.UI.WebControls.DataPager dataPager);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.DataPager dataPager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.#ctor(System.Web.UI.WebControls.DataPager)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataPager" Type="System.Web.UI.WebControls.DataPager" />
+      </Parameters>
+      <Docs>
+        <param name="dataPager">The control that will contain the collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is primarily used by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.UI.WebControls.DataPagerField field);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.WebControls.DataPagerField field) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Add(System.Web.UI.WebControls.DataPagerField)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="field" Type="System.Web.UI.WebControls.DataPagerField" />
+      </Parameters>
+      <Docs>
+        <param name="field">The object to append to the collection.</param>
+        <summary>Appends the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerField> object is added to the end of the collection.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Add%2A> method to add a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object to a <xref:System.Web.UI.WebControls.DataPager> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/CS/NextPreviousPagerFieldCtorCS.aspx#2)]
+ [!code-vb[System.Web.UI.WebControls.NextPreviousPagerField.Ctor#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.NextPreviousPagerField.Ctor/VB/NextPreviousPagerFieldCtorVB.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneFields">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataPagerFieldCollection CloneFields (System.Web.UI.WebControls.DataPager pager);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.WebControls.DataPagerFieldCollection CloneFields(class System.Web.UI.WebControls.DataPager pager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.CloneFields(System.Web.UI.WebControls.DataPager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataPagerFieldCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pager" Type="System.Web.UI.WebControls.DataPager" />
+      </Parameters>
+      <Docs>
+        <param name="pager">The object that contains the collection.</param>
+        <summary>Creates a copy of the current collection.</summary>
+        <returns>An object that contains a copy of each <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object that is in the current collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is primarily used in design-time dialog boxes to implement rollback behavior when an operation is canceled.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.DataPagerField field);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.DataPagerField field) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Contains(System.Web.UI.WebControls.DataPagerField)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="field" Type="System.Web.UI.WebControls.DataPagerField" />
+      </Parameters>
+      <Docs>
+        <param name="field">The object to locate in the <see cref="T:System.Web.UI.WebControls.DataControlFieldCollection" /> collection.</param>
+        <summary>Determines whether the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection contains the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection contains the specified field; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.DataPagerField[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.DataPagerField[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.CopyTo(System.Web.UI.WebControls.DataPagerField[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.UI.WebControls.DataPagerField[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection. The array object must use zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying starts.</param>
+        <summary>Copies the complete <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection to a one-dimensional <see cref="T:System.Array" /> object, starting at the specified index of the target array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateKnownType">
+      <MemberSignature Language="C#" Value="protected override object CreateKnownType (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateKnownType(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.CreateKnownType(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> type to create from the ordered list of types that are returned by the <see cref="M:System.Web.UI.WebControls.DataPagerFieldCollection.GetKnownTypes" /> method.</param>
+        <summary>Creates a default instance of the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> type that is identified by the provided index.</summary>
+        <returns>An object that represents an instance of a class that is derived from the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> class, according to the index provided.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerFieldCollection.CreateKnownType%2A> method is called internally by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> collection in its implementation of the <xref:System.Web.UI.StateManagedCollection.System%23Web%23UI%23IStateManager%23LoadViewState%2A> method. The <xref:System.Web.UI.WebControls.DataPagerFieldCollection.CreateKnownType%2A> method creates an instance of an object by using the type identified by the specified `index`, which maps to one of the types returned by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.GetKnownTypes%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified index is not in the recognized range.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FieldsChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler FieldsChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FieldsChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the fields in the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection change.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event is usually raised as a result of a call to the <xref:System.Web.UI.StateManagedCollection.Clear%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Insert%2A>, <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Remove%2A>, or <xref:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt%2A> methods.  
+  
+ For more information about how to handle events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetKnownTypes">
+      <MemberSignature Language="C#" Value="protected override Type[] GetKnownTypes ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] GetKnownTypes() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.GetKnownTypes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an array of <see cref="T:System.Web.UI.WebControls.DataPagerField" /> types that the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection can contain.</summary>
+        <returns>An array of type objects that identify the types of <see cref="T:System.Web.UI.WebControls.DataPagerField" /> objects that the collection can contain.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.DataPagerField field);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.DataPagerField field) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.IndexOf(System.Web.UI.WebControls.DataPagerField)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="field" Type="System.Web.UI.WebControls.DataPagerField" />
+      </Parameters>
+      <Docs>
+        <param name="field">The object to locate in the collection.</param>
+        <summary>Gets the index of a specific <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object in the collection.</summary>
+        <returns>The index of the <paramref name="field" /> parameter, if it is found in the collection; otherwise, -1.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.UI.WebControls.DataPagerField field);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.DataPagerField field) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Insert(System.Int32,System.Web.UI.WebControls.DataPagerField)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="field" Type="System.Web.UI.WebControls.DataPagerField" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object will be inserted.</param>
+        <param name="field">The object to insert.</param>
+        <summary>Inserts the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object into the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection at the specified index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataPagerField this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataPagerField Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerFieldCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataPagerField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object to retrieve from the collection.</param>
+        <summary>Gets the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object that is at the specified index in the collection.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object that is at the specified index in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClearComplete">
+      <MemberSignature Language="C#" Value="protected override void OnClearComplete ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClearComplete() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnClearComplete" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs additional processing after all items are removed from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Web.UI.StateManagedCollection.Clear%2A> method to perform additional processing after all items are removed from the collection. This method raises the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInsertComplete">
+      <MemberSignature Language="C#" Value="protected override void OnInsertComplete (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsertComplete(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnInsertComplete(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index in the collection that the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object was inserted at.</param>
+        <param name="value">The object that was inserted into the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection.</param>
+        <summary>Performs additional processing after an item is added to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Insert%2A> method to perform additional processing after an item is added to the collection. This method raises the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnRemoveComplete">
+      <MemberSignature Language="C#" Value="protected override void OnRemoveComplete (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemoveComplete(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnRemoveComplete(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index in the collection that the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object was removed from.</param>
+        <param name="value">The object that was removed from the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection.</param>
+        <summary>Performs additional processing after an item is removed from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.Remove%2A> or <xref:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt%2A> method to perform additional processing after an item is removed from the collection. This method raises the <xref:System.Web.UI.WebControls.DataPagerFieldCollection.FieldsChanged> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValidate">
+      <MemberSignature Language="C#" Value="protected override void OnValidate (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.OnValidate(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to validate.</param>
+        <summary>Verifies that the specified object is a <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called internally to validate an element of the <xref:System.Web.UI.WebControls.DataPagerFieldCollection> collection. The method performs type-checking and verifies that the object specified in the `o` parameter is not `null`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="o" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="o" /> is not an instance of the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> class or of one of its derived classes.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.DataPagerField field);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.DataPagerField field) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.Remove(System.Web.UI.WebControls.DataPagerField)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="field" Type="System.Web.UI.WebControls.DataPagerField" />
+      </Parameters>
+      <Docs>
+        <param name="field">The object to remove from the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection.</param>
+        <summary>Removes the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object from the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object to remove.</param>
+        <summary>Removes the <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object at the specified index from the <see cref="T:System.Web.UI.WebControls.DataPagerFieldCollection" /> collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDirtyObject">
+      <MemberSignature Language="C#" Value="protected override void SetDirtyObject (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDirtyObject(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldCollection.SetDirtyObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object to mark as changed since the last time that view state was loaded or saved.</param>
+        <summary>Instructs the specified <see cref="T:System.Web.UI.WebControls.DataPagerField" /> object to record its complete state to view state, instead of recording only changed information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is primarily used by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

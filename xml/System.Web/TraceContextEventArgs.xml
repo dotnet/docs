@@ -1,0 +1,87 @@
+<Type Name="TraceContextEventArgs" FullName="System.Web.TraceContextEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class TraceContextEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceContextEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.TraceContextEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a collection of trace records to any method that handles the <see cref="E:System.Web.TraceContext.TraceFinished" /> event. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.TraceContextEventArgs> class is used by the <xref:System.Web.TraceContext> class to provide access to trace records after all the tracing information is gathered during HTTP request processing. By adding an event handler delegate to handle the <xref:System.Web.TraceContext.TraceFinished> event, you can process the records, record them to your own data store, or provide them as input to a profiling tool.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can register a <xref:System.Web.TraceContextEventHandler> delegate to handle the <xref:System.Web.TraceContext.TraceFinished> event. In this example, the `OnTraceFinished` method accesses the collection of <xref:System.Web.TraceContextRecord> objects through the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> property, iterates through them, and writes them to the response stream.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TraceContextEventArgs (System.Collections.ICollection records);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection records) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.TraceContextEventArgs.#ctor(System.Collections.ICollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="records" Type="System.Collections.ICollection" />
+      </Parameters>
+      <Docs>
+        <param name="records">A collection of <see cref="T:System.Web.TraceContextRecord" /> objects that represent all the trace records logged for the current request.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.TraceContextEventArgs" /> class, using the provided collection of trace records.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceRecords">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection TraceRecords { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection TraceRecords" />
+      <MemberSignature Language="DocId" Value="P:System.Web.TraceContextEventArgs.TraceRecords" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Web.TraceContextRecord" /> messages that are associated with the current request.</summary>
+        <value>A collection of trace records that are associated with the current request.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every call to the <xref:System.Web.TraceContext.Write%2A?displayProperty=fullName> and <xref:System.Web.TraceContext.Warn%2A?displayProperty=fullName> methods generates a <xref:System.Web.TraceContextRecord> object that is added to the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> messages collection. The <xref:System.Web.TraceContext.Warn%2A> method call sets the <xref:System.Web.TraceContextRecord.IsWarning%2A> property to `true`, while the other method calls set it to `false`.  
+  
+ You can iterate through the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> messages and examine records with specific categories or messages, and whether they are warnings.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can register a <xref:System.Web.TraceContextEventHandler> delegate to handle the <xref:System.Web.TraceContext.TraceFinished> event. In this example, the `OnTraceFinished` method accesses the collection of <xref:System.Web.TraceContextRecord> objects through the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> property, iterates through them, and writes them to the response stream.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,56 @@
+<Type Name="OutOfProcNode" FullName="Microsoft.Build.Execution.OutOfProcNode">
+  <TypeSignature Language="C#" Value="public class OutOfProcNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OutOfProcNode extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.OutOfProcNode" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class represents an implementation of an out-of-proc build node.  This class is deprecated and has no alternative.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OutOfProcNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.OutOfProcNode.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Constructor.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Run">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Execution.NodeEngineShutdownReason Run (out Exception shutdownException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Build.Execution.NodeEngineShutdownReason Run(class System.Exception shutdownException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Execution.OutOfProcNode.Run(System.Exception@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Execution.NodeEngineShutdownReason</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shutdownException" Type="System.Exception&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="shutdownException">The exception which caused shutdown, if any.</param>
+        <summary>Starts up the node and processes messages until the node is requested to shut down.</summary>
+        <returns>The reason for shutting down.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

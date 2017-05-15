@@ -1,0 +1,28 @@
+<Type Name="CreateExpressionFromStringCallback" FullName="System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback">
+  <TypeSignature Language="C#" Value="public delegate System.Activities.ActivityWithResult CreateExpressionFromStringCallback(string expressionText, bool useLocationExpression, Type expressionType);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CreateExpressionFromStringCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Expressions.CreateExpressionFromStringCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="expressionText" Type="System.String" />
+    <Parameter Name="useLocationExpression" Type="System.Boolean" />
+    <Parameter Name="expressionType" Type="System.Type" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Activities.ActivityWithResult</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="expressionText">To be added.</param>
+    <param name="useLocationExpression">To be added.</param>
+    <param name="expressionType">To be added.</param>
+    <summary>Represents a delegate supplied by the custom expression editor to create an expression activity from string text.</summary>
+    <returns>To be added.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

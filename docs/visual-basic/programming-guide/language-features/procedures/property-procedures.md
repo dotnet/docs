@@ -24,8 +24,8 @@ helpviewer_keywords:
   - "Get statement, property procedures"
 ms.assetid: 46a98379-e1a2-45dd-a48c-b51213f5ab07
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

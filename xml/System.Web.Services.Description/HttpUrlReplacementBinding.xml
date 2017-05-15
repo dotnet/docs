@@ -1,0 +1,50 @@
+<Type Name="HttpUrlReplacementBinding" FullName="System.Web.Services.Description.HttpUrlReplacementBinding">
+  <TypeSignature Language="C#" Value="public sealed class HttpUrlReplacementBinding : System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpUrlReplacementBinding extends System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.HttpUrlReplacementBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.ServiceDescriptionFormatExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtension("urlReplacement", "http://schemas.xmlsoap.org/wsdl/http/", typeof(System.Web.Services.Description.InputBinding))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an extensibility element added to an <see cref="T:System.Web.Services.Description.InputBinding" /> within an XML Web service. It specifies the format for data transmission through HTTP. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class allows users to specify a custom format for data transmission, rather than limiting them to the standard format ("name=value&name=value") used in HTTP query strings. For example, a developer could decide to use the following custom format: "/name,value/name,value".  
+  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpUrlReplacementBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.HttpUrlReplacementBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.HttpUrlReplacementBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

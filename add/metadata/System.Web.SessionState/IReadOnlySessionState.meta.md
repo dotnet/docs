@@ -1,0 +1,5 @@
+---
+uid: System.Web.SessionState.IReadOnlySessionState
+ms.author: "riande"
+manager: "wpickett"
+---

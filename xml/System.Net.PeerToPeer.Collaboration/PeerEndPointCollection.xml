@@ -1,0 +1,136 @@
+<Type Name="PeerEndPointCollection" FullName="System.Net.PeerToPeer.Collaboration.PeerEndPointCollection">
+  <TypeSignature Language="C#" Value="public class PeerEndPointCollection : System.Collections.ObjectModel.Collection&lt;System.Net.PeerToPeer.Collaboration.PeerEndPoint&gt;, IEquatable&lt;System.Net.PeerToPeer.Collaboration.PeerEndPointCollection&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PeerEndPointCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Net.PeerToPeer.Collaboration.PeerEndPoint&gt; implements class System.IEquatable`1&lt;class System.Net.PeerToPeer.Collaboration.PeerEndPointCollection&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.Net.PeerToPeer.Collaboration.PeerEndPoint&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.Net.PeerToPeer.Collaboration.PeerEndPoint</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Net.PeerToPeer.Collaboration.PeerEndPointCollection&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a container for elements of a <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object. An instance of this type is returned by the <see cref="T:System.Net.PeerToPeer.Collaboration.Peer" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[NCLPNRPContacts#3](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Net.PeerToPeer.Collaboration.PeerEndPointCollection other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Net.PeerToPeer.Collaboration.PeerEndPointCollection other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection.Equals(System.Net.PeerToPeer.Collaboration.PeerEndPointCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" />
+      </Parameters>
+      <Docs>
+        <param name="other">The object to compare against.</param>
+        <summary>Compares the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> to the specified object.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> is equal to the object specified.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertItem">
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Net.PeerToPeer.Collaboration.PeerEndPoint item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Net.PeerToPeer.Collaboration.PeerEndPoint item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerEndPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to replace</param>
+        <param name="item">The new value for the element at the specified index</param>
+        <summary>Inserts a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> element into the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection" /> at the specified index or key.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` value elements are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Net.PeerToPeer.Collaboration.PeerEndPoint item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Net.PeerToPeer.Collaboration.PeerEndPoint item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection.SetItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerEndPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="System.Net.PeerToPeer.Collaboration.PeerEndPoint" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the element to replace</param>
+        <param name="item">The new value for the element at the specified index</param>
+        <summary>Replaces the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> element at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `Null` value elements are not allowed.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> argument is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerEndPointCollection.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see cref="T:System.String" /> representing the current value for each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />, separated by commas.</summary>
+        <returns>Unicode <see cref="T:System.String" /> representing the current value of each instance of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

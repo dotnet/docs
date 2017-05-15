@@ -1,0 +1,126 @@
+<Type Name="StyleSheetLocation" FullName="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation">
+  <TypeSignature Language="C#" Value="public enum StyleSheetLocation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StyleSheetLocation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the type of location for the style sheet for a mobile control or page. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation> enumeration is used by classes in the <xref:System.Web.UI.MobileControls.Adapters.XhtmlAdapters> namespace to facilitate creating XHTML markup.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationCache">
+      <MemberSignature Language="C#" Value="ApplicationCache" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation ApplicationCache = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation.ApplicationCache" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The style sheet is stored in the Application Cache.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Internal">
+      <MemberSignature Language="C#" Value="Internal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation Internal = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation.Internal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The style sheet is a set of styles within the current source file (either .aspx or .ascx).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation None = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Not currently used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NotSet">
+      <MemberSignature Language="C#" Value="NotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation NotSet = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation.NotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default value. The location has not yet been determined.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PhysicalFile">
+      <MemberSignature Language="C#" Value="PhysicalFile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation PhysicalFile = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation.PhysicalFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The style sheet is an external physical file, such as MyStylesheet.css.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionState">
+      <MemberSignature Language="C#" Value="SessionState" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation SessionState = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation.SessionState" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.Adapters.XhtmlAdapters.StyleSheetLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The style sheet is stored in the current Session state.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

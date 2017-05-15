@@ -1,0 +1,827 @@
+<Type Name="IssuedSecurityTokenProvider" FullName="System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider">
+  <TypeSignature Language="C#" Value="public class IssuedSecurityTokenProvider : System.IdentityModel.Selectors.SecurityTokenProvider, System.ServiceModel.ICommunicationObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IssuedSecurityTokenProvider extends System.IdentityModel.Selectors.SecurityTokenProvider implements class System.ServiceModel.ICommunicationObject" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Selectors.SecurityTokenProvider</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.ICommunicationObject</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a token provider for issued security tokens.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Care must be taken when caching and reusing security tokens that are returned from the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method, because the security token might become unusable when the channel that the token provider is associated with is closed. The security token becomes unusable when the requested key type is asymmetric and the thread is running under impersonated context when the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method is called.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IssuedSecurityTokenProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public void Abort ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Abort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Aborts the provider.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginClose">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginClose (AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginClose(class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginClose(System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> method to execute when the operation completed.</param>
+        <param name="state">An <see cref="T:System.Object" /> that represents the state of the operation.</param>
+        <summary>Asynchronously begins closing the provider.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the result of an asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginClose">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginClose (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginClose(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> after which the call times out.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> method to execute when the operation completed.</param>
+        <param name="state">An <see cref="T:System.Object" /> that represents the state of the operation.</param>
+        <summary>Asynchronously begins closing the provider.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the result of an asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginGetTokenCore">
+      <MemberSignature Language="C#" Value="protected override IAsyncResult BeginGetTokenCore (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IAsyncResult BeginGetTokenCore(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginGetTokenCore(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> after which the call times out.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> method to execute when the operation completed.</param>
+        <param name="state">An <see cref="T:System.Object" /> that represents the state of the operation.</param>
+        <summary>Asynchronously begins getting the token core.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the result of an asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginOpen">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginOpen (AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginOpen(class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginOpen(System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> method to execute when the operation completed.</param>
+        <param name="state">An <see cref="T:System.Object" /> that represents the state of the operation.</param>
+        <summary>Asynchronously begins opening the provider.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the result of an asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginOpen">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginOpen (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginOpen(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> after which the call times out.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> method to execute when the operation completed.</param>
+        <param name="state">An <see cref="T:System.Object" /> that represents the state of the operation.</param>
+        <summary>Asynchronously begins opening the provider.</summary>
+        <returns>An <see cref="T:System.IAsyncResult" /> object that represents the result of an asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheIssuedTokens">
+      <MemberSignature Language="C#" Value="public bool CacheIssuedTokens { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CacheIssuedTokens" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.CacheIssuedTokens" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the issued tokens are cached.</summary>
+        <value>
+          <see langword="True" /> if the issued tokens are cached; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes the provider.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Close(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> after which the call times out.</param>
+        <summary>Closes the provider.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Closed">
+      <MemberSignature Language="C#" Value="public event EventHandler Closed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Closed" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Closed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides registration and deregistration of event handler for the <c>Closed</c> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Closing">
+      <MemberSignature Language="C#" Value="public event EventHandler Closing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Closing" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Closing" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides registration and deregistration of event handler for the <c>Closing</c> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultCloseTimeout">
+      <MemberSignature Language="C#" Value="public virtual TimeSpan DefaultCloseTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultCloseTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.DefaultCloseTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default time-out for closing the connection.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that represents the default time-out for closing the connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For internal use only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultOpenTimeout">
+      <MemberSignature Language="C#" Value="public virtual TimeSpan DefaultOpenTimeout { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultOpenTimeout" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.DefaultOpenTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default time-out for opening the connection.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that represents the default time-out for opening the connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For internal use only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndClose">
+      <MemberSignature Language="C#" Value="public void EndClose (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndClose(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.EndClose(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> object that represents the result of an asynchronous operation.</param>
+        <summary>Ends the asynchronous call for closing the provider.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndGetTokenCore">
+      <MemberSignature Language="C#" Value="protected override System.IdentityModel.Tokens.SecurityToken EndGetTokenCore (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken EndGetTokenCore(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.EndGetTokenCore(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> object that represents the result of an asynchronous operation.</param>
+        <summary>Ends the asynchronous call for getting the token core.</summary>
+        <returns>A security token.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndOpen">
+      <MemberSignature Language="C#" Value="public void EndOpen (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndOpen(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.EndOpen(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">An <see cref="T:System.IAsyncResult" /> object that represents the result of an asynchronous operation.</param>
+        <summary>Ends the asynchronous call for opening the provider.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Faulted">
+      <MemberSignature Language="C#" Value="public event EventHandler Faulted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Faulted" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Faulted" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides registration and deregistration of event handler for the <c>Faulted</c> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenCore">
+      <MemberSignature Language="C#" Value="protected override System.IdentityModel.Tokens.SecurityToken GetTokenCore (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IdentityModel.Tokens.SecurityToken GetTokenCore(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityToken</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> after which the call times out.</param>
+        <summary>Gets the token core.</summary>
+        <returns>The <see cref="T:System.IdentityModel.Tokens.SecurityToken" /> that represents the token core.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Care must be taken when caching and reusing security tokens that are returned from the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method, because the security token might become unusable when the channel that the token provider is associated with is closed. The security token becomes unusable when the requested key type is asymmetric and the thread is running under impersonated context when the <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.GetTokenCore%2A> method is called.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityVerifier">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Security.IdentityVerifier IdentityVerifier { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.IdentityVerifier IdentityVerifier" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IdentityVerifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.IdentityVerifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the identity verifier.</summary>
+        <value>The identity verifier.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IssuedTokenRenewalThresholdPercentage">
+      <MemberSignature Language="C#" Value="public int IssuedTokenRenewalThresholdPercentage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 IssuedTokenRenewalThresholdPercentage" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuedTokenRenewalThresholdPercentage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the issued token renewal threshold percentage.</summary>
+        <value>The issued token renewal threshold percentage.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This percentage controls how often the token provider contacts the SecurityTokenService for a new issued token. For example, if the percentage is 90 percent, then the token provider will contact the SecurityTokenService when 90 percent of the issued token's validity interval is over.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IssuerAddress">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress IssuerAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress IssuerAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the issuer address.</summary>
+        <value>The issuer address.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IssuerBinding">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Binding IssuerBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Binding IssuerBinding" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Binding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the issuer binding.</summary>
+        <value>The issuer binding.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IssuerChannelBehaviors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IEndpointBehavior&gt; IssuerChannelBehaviors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.KeyedByTypeCollection`1&lt;class System.ServiceModel.Description.IEndpointBehavior&gt; IssuerChannelBehaviors" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.IssuerChannelBehaviors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IEndpointBehavior&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the issuer channel behaviors.</summary>
+        <value>A <see cref="T:System.Collections.Generic.KeyedByTypeCollection`1" /> that contains the behaviors for the issuer channel.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These channel behaviors are added to the channel used by the token provider for the SecurityTokenService. The key for this collection is the URL of the security token service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyEntropyMode">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityKeyEntropyMode KeyEntropyMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Security.SecurityKeyEntropyMode KeyEntropyMode" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.KeyEntropyMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key entropy mode.</summary>
+        <value>The key entropy mode.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is the key entropy mode used by the token provider when negotiating a symmetric key with the SecurityTokenService to use with the issued token.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxIssuedTokenCachingTime">
+      <MemberSignature Language="C#" Value="public TimeSpan MaxIssuedTokenCachingTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxIssuedTokenCachingTime" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.MaxIssuedTokenCachingTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum time that an issued token will be cached.</summary>
+        <value>A <see cref="T:System.TimeSpan" /> that represents the maximum time that an issued token will be cached.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageSecurityVersion">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.MessageSecurityVersion MessageSecurityVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.MessageSecurityVersion MessageSecurityVersion" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.MessageSecurityVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.MessageSecurityVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the message security version.</summary>
+        <value>The message security version.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.MessageSecurityVersion> contains numerous properties that specify version numbers of different components of a message.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Open" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Opens the provider.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Open(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">A <see cref="T:System.TimeSpan" /> after which the call times out.</param>
+        <summary>Opens the provider.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opened">
+      <MemberSignature Language="C#" Value="public event EventHandler Opened;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Opened" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Opened" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides registration and deregistration of event handler for the <c>Opened</c> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opening">
+      <MemberSignature Language="C#" Value="public event EventHandler Opening;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Opening" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Opening" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides registration and deregistration of event handler for the <c>Opening</c> event.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityAlgorithmSuite">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityAlgorithmSuite SecurityAlgorithmSuite { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityAlgorithmSuite SecurityAlgorithmSuite" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SecurityAlgorithmSuite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.SecurityAlgorithmSuite</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the security algorithm suite.</summary>
+        <value>The security algorithm suite.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Security.SecurityAlgorithmSuite> object that is returned contains numerous properties that specify security algorithms to use in specific conditions. It also describes various security capabilities of the service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityTokenSerializer">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.SecurityTokenSerializer SecurityTokenSerializer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.SecurityTokenSerializer SecurityTokenSerializer" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SecurityTokenSerializer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Selectors.SecurityTokenSerializer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the security token serializer.</summary>
+        <value>The security token serializer.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.CommunicationState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.CommunicationState State" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.CommunicationState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the communication state.</summary>
+        <value>The communication state.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsTokenCancellation">
+      <MemberSignature Language="C#" Value="public override bool SupportsTokenCancellation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsTokenCancellation" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.SupportsTokenCancellation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether token cancellation is supported.</summary>
+        <value>
+          <see langword="True" /> if token cancellation is supported; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetAddress">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress TargetAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress TargetAddress" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.TargetAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.EndpointAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target address.</summary>
+        <value>The target address.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenRequestParameters">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt; TokenRequestParameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlElement&gt; TokenRequestParameters" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.TokenRequestParameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlElement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the token request parameters.</summary>
+        <value>A collection of XML elements that represent the token request parameters.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a collection of XML elements that the token provider includes as part of the RequestSecurityToken it sends to the SecurityTokenService. These parameters can be set explicitly by the client or can be obtained from the relying party's security policy.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

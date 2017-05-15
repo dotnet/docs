@@ -1,0 +1,261 @@
+<Type Name="ModelValidationNode" FullName="System.Web.ModelBinding.ModelValidationNode">
+  <TypeSignature Language="C#" Value="public sealed class ModelValidationNode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ModelValidationNode extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelValidationNode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a container for model validation information.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelValidationNode (System.Web.ModelBinding.ModelMetadata modelMetadata, string modelStateKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata modelMetadata, string modelStateKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidationNode.#ctor(System.Web.ModelBinding.ModelMetadata,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="modelMetadata" Type="System.Web.ModelBinding.ModelMetadata" />
+        <Parameter Name="modelStateKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="modelMetadata">The model metadata.</param>
+        <param name="modelStateKey">The model state key.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelValidationNode" /> class, using the model metadata and state key.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelValidationNode (System.Web.ModelBinding.ModelMetadata modelMetadata, string modelStateKey, System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidationNode&gt; childNodes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata modelMetadata, string modelStateKey, class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelValidationNode&gt; childNodes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidationNode.#ctor(System.Web.ModelBinding.ModelMetadata,System.String,System.Collections.Generic.IEnumerable{System.Web.ModelBinding.ModelValidationNode})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="modelMetadata" Type="System.Web.ModelBinding.ModelMetadata" />
+        <Parameter Name="modelStateKey" Type="System.String" />
+        <Parameter Name="childNodes" Type="System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidationNode&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="modelMetadata">The model metadata.</param>
+        <param name="modelStateKey">The model state key.</param>
+        <param name="childNodes">The model child nodes.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelValidationNode" /> class, using the model metadata, the model state key, and child model-validation nodes.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="modelMetadata" /> or <paramref name="modelStateKey" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildNodes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Web.ModelBinding.ModelValidationNode&gt; ChildNodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Web.ModelBinding.ModelValidationNode&gt; ChildNodes" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidationNode.ChildNodes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.Web.ModelBinding.ModelValidationNode&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the child nodes.</summary>
+        <value>The child nodes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CombineWith">
+      <MemberSignature Language="C#" Value="public void CombineWith (System.Web.ModelBinding.ModelValidationNode otherNode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CombineWith(class System.Web.ModelBinding.ModelValidationNode otherNode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidationNode.CombineWith(System.Web.ModelBinding.ModelValidationNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherNode" Type="System.Web.ModelBinding.ModelValidationNode" />
+      </Parameters>
+      <Docs>
+        <param name="otherNode">The model validation node to combine with the current instance.</param>
+        <summary>Combines the current <see cref="T:System.Web.ModelBinding.ModelValidationNode" /> instance with a specified <see cref="T:System.Web.ModelBinding.ModelValidationNode" /> instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelMetadata">
+      <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ModelMetadata ModelMetadata { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelMetadata ModelMetadata" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidationNode.ModelMetadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelMetadata</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the model metadata.</summary>
+        <value>The model metadata.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelStateKey">
+      <MemberSignature Language="C#" Value="public string ModelStateKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ModelStateKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidationNode.ModelStateKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the model state key.</summary>
+        <value>The model state key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressValidation">
+      <MemberSignature Language="C#" Value="public bool SuppressValidation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuppressValidation" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidationNode.SuppressValidation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether validation should be suppressed.</summary>
+        <value>
+          <see langword="true" /> if validation should be suppressed; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidationNode.Validate(System.Web.ModelBinding.ModelBindingExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelBindingExecutionContext" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <summary>Validates the model using the specified execution context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.ModelBinding.ModelValidationNode.SuppressValidation%2A> property is `true`, this method does nothing.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="modelBindingExecutionContext" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelValidationNode parentNode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelValidationNode parentNode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelValidationNode.Validate(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelValidationNode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelBindingExecutionContext" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+        <Parameter Name="parentNode" Type="System.Web.ModelBinding.ModelValidationNode" />
+      </Parameters>
+      <Docs>
+        <param name="modelBindingExecutionContext">The execution context.</param>
+        <param name="parentNode">The parent node.</param>
+        <summary>Validates the model using the specified execution context and parent node.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateAllProperties">
+      <MemberSignature Language="C#" Value="public bool ValidateAllProperties { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidateAllProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidationNode.ValidateAllProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether all properties of the model should be validated.</summary>
+        <value>
+          <see langword="true" /> if all properties of the model should be validated, or <see langword="false" /> if validation should be skipped.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validated">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.ModelBinding.ModelValidatedEventArgs&gt; Validated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.ModelBinding.ModelValidatedEventArgs&gt; Validated" />
+      <MemberSignature Language="DocId" Value="E:System.Web.ModelBinding.ModelValidationNode.Validated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Web.ModelBinding.ModelValidatedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the model has been validated.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validating">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.ModelBinding.ModelValidatingEventArgs&gt; Validating;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.ModelBinding.ModelValidatingEventArgs&gt; Validating" />
+      <MemberSignature Language="DocId" Value="E:System.Web.ModelBinding.ModelValidationNode.Validating" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Web.ModelBinding.ModelValidatingEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the model is being validated.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "interaction functions [Visual Basic]"
 ms.assetid: 6e698461-e944-4c0f-ae48-87429f1fe740
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

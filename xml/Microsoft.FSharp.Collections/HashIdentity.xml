@@ -1,0 +1,167 @@
+<Type Name="HashIdentity" FullName="Microsoft.FSharp.Collections.HashIdentity">
+  <TypeSignature Language="C#" Value="public static class HashIdentity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed HashIdentity extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.HashIdentity" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FromFunctions&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; FromFunctions&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,int&gt; hasher, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; equality);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; FromFunctions&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, int32&gt; hasher, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; equality) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.HashIdentity.FromFunctions``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Int32},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEqualityComparer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="hasher" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Int32&gt;" />
+        <Parameter Name="equality" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="hasher">To be added.</param>
+        <param name="equality">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LimitedStructural&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; LimitedStructural&lt;T&gt; (int limit);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; LimitedStructural&lt;T&gt;(int32 limit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.HashIdentity.LimitedStructural``1(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEqualityComparer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="limit" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="limit">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NonStructural&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; NonStructural&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; NonStructural&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.HashIdentity.NonStructural``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEqualityComparer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reference&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; Reference&lt;T&gt; () where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; Reference&lt;class T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.HashIdentity.Reference``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEqualityComparer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Structural&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; Structural&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; Structural&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.HashIdentity.Structural``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEqualityComparer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

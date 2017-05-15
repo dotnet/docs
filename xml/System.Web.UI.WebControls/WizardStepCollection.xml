@@ -1,0 +1,693 @@
+<Type Name="WizardStepCollection" FullName="System.Web.UI.WebControls.WizardStepCollection">
+  <TypeSignature Language="C#" Value="public sealed class WizardStepCollection : System.Collections.IList" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WizardStepCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WizardStepCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.IList</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived objects in a control that acts as a wizard. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WizardStepCollection> class is used to store and manage a collection of <xref:System.Web.UI.WebControls.WizardStepBase>-derived objects in a control that acts as a wizard, such as the <xref:System.Web.UI.WebControls.CreateUserWizard> control or the <xref:System.Web.UI.WebControls.Wizard> control. For example, the <xref:System.Web.UI.WebControls.Wizard> control uses the <xref:System.Web.UI.WebControls.WizardStepCollection> class for its <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property.  
+  
+ There are multiple ways you can access the <xref:System.Web.UI.WebControls.WizardStepBase>-derived objects in the <xref:System.Web.UI.WebControls.WizardStepCollection>:  
+  
+-   Use the <xref:System.Web.UI.WebControls.WizardStepCollection.Item%2A> property to directly access a <xref:System.Web.UI.WebControls.WizardStepBase>-derived object at a specific zero-based index.  
+  
+-   Use the <xref:System.Web.UI.WebControls.WizardStepCollection.GetEnumerator%2A> method to create an enumerator that can be used to iterate through the collection.  
+  
+-   Use the <xref:System.Web.UI.WebControls.WizardStepCollection.CopyTo%2A> method to copy the contents of the <xref:System.Web.UI.WebControls.WizardStepCollection> collection into an <xref:System.Array> object.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to populate the <xref:System.Web.UI.WebControls.WizardStepCollection> collection using declarative syntax.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionDeclare#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionDeclare/CS/wizardstepcollectiondeclarecs.aspx#3)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionDeclare#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionDeclare/VB/wizardstepcollectiondeclarevb.aspx#3)]  -->  
+  
+ The following example demonstrates how to programmatically populate a <xref:System.Web.UI.WebControls.WizardStepCollection> collection.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/CS/wizardstepcollectioncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/VB/wizardstepcollectionvb.aspx#1)]  -->  
+  
+ The following is the code-behind file for the Web page in the preceding example.  
+  
+ [!code-csharp[System.Web.UI.WebControls.WizardStepCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/CS/wizardstepcollection.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.WizardStepCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollection/VB/wizardstepcollection.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.UI.WebControls.WizardStepBase wizardStep);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.WebControls.WizardStepBase wizardStep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.Add(System.Web.UI.WebControls.WizardStepBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wizardStep" Type="System.Web.UI.WebControls.WizardStepBase" />
+      </Parameters>
+      <Docs>
+        <param name="wizardStep">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object to append to the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection.</param>
+        <summary>Appends the specified <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object to the end of the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WizardStepCollection.Add%2A> method adds the <xref:System.Web.UI.WebControls.WizardStepBase>-derived object to the end of the <xref:System.Web.UI.WebControls.WizardStepCollection> collection. To add a <xref:System.Web.UI.WebControls.WizardStepBase>-derived object to the collection at a specific index location, use the <xref:System.Web.UI.WebControls.WizardStepCollection.AddAt%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates programmatically creating a <xref:System.Web.UI.WebControls.Wizard> control and using the <xref:System.Web.UI.WebControls.WizardStepCollection.Add%2A> method to add <xref:System.Web.UI.WebControls.WizardStepBase>-derived <xref:System.Web.UI.WebControls.WizardStep> objects to the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> collection. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/CS/wizardstepscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardSteps#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardSteps/VB/wizardstepsvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAt">
+      <MemberSignature Language="C#" Value="public void AddAt (int index, System.Web.UI.WebControls.WizardStepBase wizardStep);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAt(int32 index, class System.Web.UI.WebControls.WizardStepBase wizardStep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.AddAt(System.Int32,System.Web.UI.WebControls.WizardStepBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="wizardStep" Type="System.Web.UI.WebControls.WizardStepBase" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index location at which to insert <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object.</param>
+        <param name="wizardStep">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object to append to the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object to the collection at the specified index location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WizardStepCollection.AddAt%2A> method adds the <xref:System.Web.UI.WebControls.WizardStepBase>-derived object to the collection at the specified index location.  
+  
+ To add a <xref:System.Web.UI.WebControls.WizardStepBase>-derived object to the end of the <xref:System.Web.UI.WebControls.WizardStepCollection> collection, use the <xref:System.Web.UI.WebControls.WizardStepCollection.Add%2A> method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived objects from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WizardStepCollection.Clear%2A> method to remove all the <xref:System.Web.UI.WebControls.WizardStepBase>-derived objects from the <xref:System.Web.UI.WebControls.WizardStepCollection> collection.  
+  
+> [!NOTE]
+>  After the <xref:System.Web.UI.WebControls.WizardStepCollection.Clear%2A> method removes the <xref:System.Web.UI.WebControls.WizardStepBase>-derived objects from the collection, the <xref:System.Web.UI.WebControls.WizardStepCollection.Count%2A> property of the <xref:System.Web.UI.WebControls.WizardStepCollection> collection has a value of zero.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.WizardStepBase wizardStep);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.WizardStepBase wizardStep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.Contains(System.Web.UI.WebControls.WizardStepBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wizardStep" Type="System.Web.UI.WebControls.WizardStepBase" />
+      </Parameters>
+      <Docs>
+        <param name="wizardStep">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object to find in the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection.</param>
+        <summary>Determines whether the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection contains a specific <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object is found in the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WizardStepCollection.Contains%2A> method to determine whether a <xref:System.Web.UI.WebControls.WizardStepBase>-derived object is contained in the collection. This method is commonly used to test for the existence of a <xref:System.Web.UI.WebControls.WizardStepBase>-derived object before performing a task, such as removing a <xref:System.Web.UI.WebControls.WizardStepBase>-derived object from the collection.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="wizardStep" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.WizardStepBase[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.WizardStepBase[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.CopyTo(System.Web.UI.WebControls.WizardStepBase[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.UI.WebControls.WizardStepBase[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A zero-based array of <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> objects that receives the items copied from the collection.</param>
+        <param name="index">The position in the target array at which the array starts receiving the copied items.</param>
+        <summary>Copies all the items from a <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection to a compatible one-dimensional array of <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> objects, starting at the specified index in the target array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WizardStepCollection.CopyTo%2A> method to copy the contents of the collection into the specified zero-based array. Items are copied starting at the specified index of the target array. After the items are in an array, you can use array syntax to access the items in the <xref:System.Web.UI.WebControls.WizardStepCollection> collection.  
+  
+ As an alternative, you can also use the <xref:System.Web.UI.WebControls.WizardStepCollection.GetEnumerator%2A> method to create an enumerator that can be used to access the items in the collection.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.WizardStepCollection.CopyTo%2A> method to copy the <xref:System.Web.UI.WebControls.WizardStepBase> objects from the collection to an array. The array is then iterated through to display the <xref:System.Web.UI.Control.ID%2A> property of each <xref:System.Web.UI.WebControls.WizardStepBase>-derived object. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionCopyTo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionCopyTo/CS/wizardstepcollectioncopytocs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionCopyTo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionCopyTo/VB/wizardstepcollectioncopytovb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived objects in the <see cref="T:System.Web.UI.WebControls.Wizard" /> control's <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection.</summary>
+        <value>The number of <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived objects in the <see cref="T:System.Web.UI.WebControls.Wizard" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WizardStepCollection.Count%2A> property to determine the number of <xref:System.Web.UI.WebControls.WizardStepBase>-derived objects in the <xref:System.Web.UI.WebControls.WizardStepCollection> collection. The <xref:System.Web.UI.WebControls.WizardStepCollection.Count%2A> property is commonly used when iterating through the collection to determine its upper bound.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an <see cref="T:System.Collections.IEnumerator" />-implemented object that can be used to iterate through the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived objects in the collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" />-implemented object that contains all the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived objects in the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.WizardStepBase wizardStep);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.WizardStepBase wizardStep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.IndexOf(System.Web.UI.WebControls.WizardStepBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wizardStep" Type="System.Web.UI.WebControls.WizardStepBase" />
+      </Parameters>
+      <Docs>
+        <param name="wizardStep">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object to search for in the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection.</param>
+        <summary>Determines the index value that represents the position of the specified <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object in the collection.</summary>
+        <returns>If found, the zero-based index of the first occurrence of the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in within the current <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection; otherwise, -1.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WizardStepCollection.IndexOf%2A> method to determine the index of the specified <xref:System.Web.UI.WebControls.WizardStepBase>-derived object in the current <xref:System.Web.UI.WebControls.WizardStepCollection> collection. If the <xref:System.Web.UI.WebControls.WizardStepBase>-derived object is not in the collection, the method returns -1.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.UI.WebControls.WizardStepBase wizardStep);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.WizardStepBase wizardStep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.Insert(System.Int32,System.Web.UI.WebControls.WizardStepBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="wizardStep" Type="System.Web.UI.WebControls.WizardStepBase" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index location at which to insert the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object.</param>
+        <param name="wizardStep">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object to insert into the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection.</param>
+        <summary>Inserts the specified <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object into the collection at the specified index location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WizardStepCollection.Insert%2A> method adds the <xref:System.Web.UI.WebControls.WizardStepBase>-derived object to the collection at the specified index location.  
+  
+ Alternatively, you can use the <xref:System.Web.UI.WebControls.WizardStepCollection.AddAt%2A> method to add the <xref:System.Web.UI.WebControls.WizardStepBase>-derived object to the collection. To add a <xref:System.Web.UI.WebControls.WizardStepBase>-derived object to the end of the <xref:System.Web.UI.WebControls.WizardStepCollection> collection, use the <xref:System.Web.UI.WebControls.WizardStepCollection.Add%2A> method.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.WizardStepCollection.Insert%2A> method and the <xref:System.Web.UI.WebControls.WizardStepCollection.AddAt%2A> method perform essentially the same function. When the <xref:System.Web.UI.WebControls.WizardStepCollection.Insert%2A> method is called, it simply passes the `wizardStep` and `index` parameters to the <xref:System.Web.UI.WebControls.WizardStepCollection.AddAt%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates programmatically creating a <xref:System.Web.UI.WebControls.Wizard> control and using the <xref:System.Web.UI.WebControls.WizardStepCollection.Insert%2A> method to add <xref:System.Web.UI.WebControls.WizardStepBase>-derived objects to the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> collection. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionInsert#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionInsert/CS/wizardstepcollectioninsertcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionInsert#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionInsert/VB/wizardstepcollectioninsertvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepCollection.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived objects in the collection can be modified.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection can be modified; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether access to the collection is synchronized (thread-safe).</summary>
+        <value>
+          <see langword="false" /> in all cases.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is derived from the <xref:System.Collections.ICollection> interface and is overridden to always return `false`.  
+  
+ For more information on the <xref:System.Web.UI.WebControls.WizardStepCollection.IsSynchronized%2A> property, see the <xref:System.Collections.ICollection.IsSynchronized%2A> property of the <xref:System.Collections.ICollection> interface  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WizardStepBase this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WizardStepBase Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WizardStepBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Web.UI.WebControls.WizardStep" /> object to retrieve.</param>
+        <summary>Gets a <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object from the collection at the specified index.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object in the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection at the specified index location.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WizardStepCollection.Item%2A> property to retrieve the <xref:System.Web.UI.WebControls.WizardStepBase>-derived object at the specified index location in the <xref:System.Web.UI.WebControls.WizardStepCollection> collection using array notation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.WizardStepBase wizardStep);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.WizardStepBase wizardStep) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.Remove(System.Web.UI.WebControls.WizardStepBase)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="wizardStep" Type="System.Web.UI.WebControls.WizardStepBase" />
+      </Parameters>
+      <Docs>
+        <param name="wizardStep">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object to remove from the collection.</param>
+        <summary>Removes the specified <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WizardStepCollection.Remove%2A> method to remove the <xref:System.Web.UI.WebControls.WizardStepBase>-derived object from the <xref:System.Web.UI.WebControls.WizardStepCollection> collection. Alternatively, you can use the <xref:System.Web.UI.WebControls.WizardStepCollection.RemoveAt%2A> method to remove a <xref:System.Web.UI.WebControls.WizardStepBase>-derived object from a specified location in the <xref:System.Web.UI.WebControls.WizardStepCollection> collection.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.WizardStepCollection.Remove%2A> method to remove a <xref:System.Web.UI.WebControls.WizardStepBase>-derived object from the <xref:System.Web.UI.WebControls.WizardStepCollection> collection. Note that in the example, the <xref:System.Web.UI.WebControls.Wizard.WizardSteps%2A> property of the <xref:System.Web.UI.WebControls.Wizard> control is an instance of the <xref:System.Web.UI.WebControls.WizardStepCollection> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.WizardStepCollectionRemove#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionRemove/CS/wizardstepcollectionremovecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.WizardStepCollectionRemove#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.WizardStepCollectionRemove/VB/wizardstepcollectionremovevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object passed in is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object to remove.</param>
+        <summary>Removes the <see cref="T:System.Web.UI.WebControls.WizardStepBase" />-derived object from the collection at the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.WizardStepCollection.RemoveAt%2A> method to remove the <xref:System.Web.UI.WebControls.WizardStepBase>-derived object from the <xref:System.Web.UI.WebControls.WizardStepCollection> collection at the specified index location. Alternatively, you can remove a specific <xref:System.Web.UI.WebControls.WizardStepBase>-derived object from the collection using the <xref:System.Web.UI.WebControls.WizardStepCollection.Remove%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the collection.</summary>
+        <value>An object that can be used to synchronize access to the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object returned in this implementation is the <xref:System.Web.UI.WebControls.WizardStepCollection> object itself.  
+  
+ For more information on the <xref:System.Web.UI.WebControls.WizardStepCollection.SyncRoot%2A> property, see the <xref:System.Collections.ICollection.SyncRoot%2A> property of the <xref:System.Collections.ICollection> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A zero-based <see cref="T:System.Array" /> that receives the items copied from the <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection.</param>
+        <param name="index">The position in the target array at which to start receiving the copied content.</param>
+        <summary>Copies all the items from a <see cref="T:System.Web.UI.WebControls.WizardStepCollection" /> collection to a one-dimensional array, starting at the specified index in the target array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Add">
+      <MemberSignature Language="C#" Value="int IList.Add (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to append to the end of the collection.</param>
+        <summary>Appends the specified object to the end of the collection.</summary>
+        <returns>The position into which the new element was inserted.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Contains">
+      <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to locate in the collection.</param>
+        <summary>Determines whether the collection contains the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Object" /> is found in the <see cref="T:System.Collections.IList" />; otherwise <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IndexOf">
+      <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to search for in the collection.</param>
+        <summary>Determines the index value that represents the position of the specified object in the collection.</summary>
+        <returns>The index value of the specified object in the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Insert">
+      <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index at which to insert the object into the collection.</param>
+        <param name="value">The object to insert into the collection.</param>
+        <summary>Inserts the specified object in the collection at the specified position.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.IsFixedSize">
+      <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepCollection.System#Collections#IList#IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the collection has a fixed size.</summary>
+        <value>
+          <see langword="true" /> if the collection has a fixed size; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Item">
+      <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WizardStepCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the object to get from the collection.</param>
+        <summary>Gets the object at the specified index in the collection.</summary>
+        <value>The object to be retrieved.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the ability to access a specific element in the collection by using the following syntax: myCollection[index].  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IList.Remove">
+      <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WizardStepCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The object to remove from the collection.</param>
+        <summary>Removes the specified object from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,142 @@
+<Type Name="ToolStripPanelRenderEventArgs" FullName="System.Windows.Forms.ToolStripPanelRenderEventArgs">
+  <TypeSignature Language="C#" Value="public class ToolStripPanelRenderEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripPanelRenderEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripPanelRenderEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for <see cref="T:System.Windows.Forms.ToolStripPanel" /> drawing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripPanelBackground> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripPanelBackground> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#585](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#585)]
+ [!code-vb[System.Windows.Forms.EventExamples#585](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#585)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolStripPanelRenderEventArgs (System.Drawing.Graphics g, System.Windows.Forms.ToolStripPanel toolStripPanel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics g, class System.Windows.Forms.ToolStripPanel toolStripPanel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripPanelRenderEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.ToolStripPanel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="toolStripPanel" Type="System.Windows.Forms.ToolStripPanel" />
+      </Parameters>
+      <Docs>
+        <param name="g">The graphics used to paint the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</param>
+        <param name="toolStripPanel">The <see cref="T:System.Windows.Forms.ToolStripPanel" /> to draw.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripPanelRenderEventArgs" /> class for the specified <see cref="T:System.Windows.Forms.ToolStripPanel" /> that uses the specified graphics for drawing.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Graphics">
+      <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRenderEventArgs.Graphics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Graphics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the graphics used to paint the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+        <value>The <see cref="T:System.Drawing.Graphics" /> used to paint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripPanelBackground?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripPanelBackground?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#585](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#585)]
+ [!code-vb[System.Windows.Forms.EventExamples#585](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#585)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handled">
+      <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRenderEventArgs.Handled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the event was handled.</summary>
+        <value>
+          <see langword="true" /> if the event was handled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripPanelBackground?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripPanelBackground?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#585](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#585)]
+ [!code-vb[System.Windows.Forms.EventExamples#585](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#585)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripPanel">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripPanel ToolStripPanel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripPanel ToolStripPanel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripPanelRenderEventArgs.ToolStripPanel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolStripPanel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.ToolStripPanel" /> to paint.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ToolStripPanel" /> to paint.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripPanelBackground?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.ToolStripRenderer>, such as a <xref:System.Windows.Forms.ToolStripSystemRenderer> or <xref:System.Windows.Forms.ToolStripProfessionalRenderer>. Then name the instance `ToolStripRenderer1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.ToolStripRenderer.RenderToolStripPanelBackground?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#585](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#585)]
+ [!code-vb[System.Windows.Forms.EventExamples#585](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#585)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

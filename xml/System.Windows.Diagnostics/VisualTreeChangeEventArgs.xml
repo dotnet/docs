@@ -1,0 +1,157 @@
+<Type Name="VisualTreeChangeEventArgs" FullName="System.Windows.Diagnostics.VisualTreeChangeEventArgs">
+  <TypeSignature Language="C#" Value="public class VisualTreeChangeEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualTreeChangeEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.VisualTreeChangeEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Diagnostics.VisualDiagnostics.VisualTreeChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_type](~/includes/internalonly-netframework-type-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VisualTreeChangeEventArgs (System.Windows.DependencyObject parent, System.Windows.DependencyObject child, int childIndex, System.Windows.Diagnostics.VisualTreeChangeType changeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.DependencyObject parent, class System.Windows.DependencyObject child, int32 childIndex, valuetype System.Windows.Diagnostics.VisualTreeChangeType changeType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.VisualTreeChangeEventArgs.#ctor(System.Windows.DependencyObject,System.Windows.DependencyObject,System.Int32,System.Windows.Diagnostics.VisualTreeChangeType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Windows.DependencyObject" />
+        <Parameter Name="child" Type="System.Windows.DependencyObject" />
+        <Parameter Name="childIndex" Type="System.Int32" />
+        <Parameter Name="changeType" Type="System.Windows.Diagnostics.VisualTreeChangeType" />
+      </Parameters>
+      <Docs>
+        <param name="parent">The <see cref="T:System.Windows.DependencyObject" /> to which an element (Child) was either added or removed.</param>
+        <param name="child">The <see cref="T:System.Windows.DependencyObject" /> that was added to or removed from another element (Parent).</param>
+        <param name="childIndex">The index in the Parent element’s children where the Child element is located when the add or remove operation is complete.</param>
+        <param name="changeType">A value that indicates whether the Child element was added to another element (Parent) or removed.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Diagnostics.VisualTreeChangeEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeType">
+      <MemberSignature Language="C#" Value="public System.Windows.Diagnostics.VisualTreeChangeType ChangeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Diagnostics.VisualTreeChangeType ChangeType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.VisualTreeChangeEventArgs.ChangeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Diagnostics.VisualTreeChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the Child element was added to another element (Parent) or removed.</summary>
+        <value>An enumeration value that indicates whether the child element was Added or Removed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Child">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyObject Child { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject Child" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.VisualTreeChangeEventArgs.Child" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.DependencyObject" /> that was added to or removed from another element (Parent).</summary>
+        <value>The element that was added to or removed from the Parent element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildIndex">
+      <MemberSignature Language="C#" Value="public int ChildIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ChildIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.VisualTreeChangeEventArgs.ChildIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index in the Parent element’s children where the Child element is located when the add or remove operation is complete. On a removal, this value will always be -1.</summary>
+        <value>The index in the Parent element’s children where the Child element is located when the add or remove operation is complete.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public System.Windows.DependencyObject Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject Parent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.VisualTreeChangeEventArgs.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.DependencyObject" /> to which an element (Child) was either added or removed.</summary>
+        <value>The element to which the child element was either added or removed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[internalonly_netframework_member](~/includes/internalonly-netframework-member-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

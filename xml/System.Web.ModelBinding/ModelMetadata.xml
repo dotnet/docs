@@ -1,0 +1,669 @@
+<Type Name="ModelMetadata" FullName="System.Web.ModelBinding.ModelMetadata">
+  <TypeSignature Language="C#" Value="public class ModelMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelMetadata extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a container for metadata for a model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The word *model* is used differently in the context of this class than it is typically used elsewhere. In an ASP.NET Web Forms application, the <xref:System.Web.ModelBinding.ModelBindingContext.ModelType%2A> attribute of a data-bound control specifies the type of a data element that the data control is bound to. This type is typically referred to as the model, and it typically corresponds to a row in a database table. The properties of the model typically correspond to columns of the table.  
+  
+ A <xref:System.Web.ModelBinding.ModelMetadata> object can provide metadata for the model itself or for a property of the model, or for a property of a complex property. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to a property, the word *model* refers to the property, and the word *container* refers to the model.  
+  
+ For example, the model might be **Contact**, which has **Name** and **Age** properties, and the **Name** property might be a complex property composed of **FirstName** and **LastName**. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to the **Contact** object, the model type is **Contact** and there is no container. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to the **Name** property, the model type is **Name** and the container type is **Contact**. When the <xref:System.Web.ModelBinding.ModelMetadata> object pertains to the **FirstName** property, the model type is **FirstName** and the container type is **Name**.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelMetadata (System.Web.ModelBinding.ModelMetadataProvider provider, Type containerType, Func&lt;object&gt; modelAccessor, Type modelType, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadataProvider provider, class System.Type containerType, class System.Func`1&lt;object&gt; modelAccessor, class System.Type modelType, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelMetadata.#ctor(System.Web.ModelBinding.ModelMetadataProvider,System.Type,System.Func{System.Object},System.Type,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Web.ModelBinding.ModelMetadataProvider" />
+        <Parameter Name="containerType" Type="System.Type" />
+        <Parameter Name="modelAccessor" Type="System.Func&lt;System.Object&gt;" />
+        <Parameter Name="modelType" Type="System.Type" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The provider object.</param>
+        <param name="containerType">The type of the container, or <see langword="null" /> to create metadata for the model type.</param>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="modelType">The type of the model.</param>
+        <param name="propertyName">The name of the property, or <see langword="null" /> to create metadata for the model type.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.ModelBinding.ModelMetadata" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalValues">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.Dictionary&lt;string,object&gt; AdditionalValues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; AdditionalValues" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.AdditionalValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection that contains additional metadata about the model.</summary>
+        <value>A collection that contains additional metadata about the model.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainerType">
+      <MemberSignature Language="C#" Value="public Type ContainerType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContainerType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ContainerType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the container.</summary>
+        <value>The type of the container, or <see langword="null" /> if there is no container.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertEmptyStringToNull">
+      <MemberSignature Language="C#" Value="public virtual bool ConvertEmptyStringToNull { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConvertEmptyStringToNull" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ConvertEmptyStringToNull" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether empty strings that are submitted in forms should be converted to <see langword="null" />.</summary>
+        <value>
+          <see langword="true" /> if empty strings should be converted to <see langword="null" />; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataTypeName">
+      <MemberSignature Language="C#" Value="public virtual string DataTypeName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataTypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.DataTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the data type.</summary>
+        <value>The name of the data type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be used to provide additional information about the type of data that is stored by the model. For example, if the <xref:System.Web.ModelBinding.ModelMetadata.ModelType%2A> property is set to <xref:System.String>, this property might be "EmailAddress" or "Url" — that is, a name that indicates more than just that the data is typed as a string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultOrder">
+      <MemberSignature Language="C#" Value="public const int DefaultOrder = 10000;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultOrder = (10000)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.ModelBinding.ModelMetadata.DefaultOrder" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>10000</MemberValue>
+      <Docs>
+        <summary>An integer value that is always set to <c>10000</c>.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public virtual string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets text that describes the model.</summary>
+        <value>The description text.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayFormatString">
+      <MemberSignature Language="C#" Value="public virtual string DisplayFormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayFormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.DisplayFormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a format string that should be applied when the model is displayed in display mode (as opposed to in edit mode).</summary>
+        <value>The format string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayName">
+      <MemberSignature Language="C#" Value="public virtual string DisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.DisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text to use in UI when the name of the model is displayed.</summary>
+        <value>The text to use as the name of the model.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditFormatString">
+      <MemberSignature Language="C#" Value="public virtual string EditFormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EditFormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.EditFormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the format string to use in UI in edit mode.</summary>
+        <value>The format string.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDisplayName">
+      <MemberSignature Language="C#" Value="public string GetDisplayName ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDisplayName() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelMetadata.GetDisplayName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns text to display as the name of the model in UI.</summary>
+        <returns>Text to display as the name of the model in UI. The default is the value of the <see cref="P:System.Web.ModelBinding.ModelMetadata.DisplayName" /> property if that value is not <see langword="null" />. If the <see cref="P:System.Web.ModelBinding.ModelMetadata.DisplayName" /> property is <see langword="null" />, the default value is the value of the <see cref="P:System.Web.ModelBinding.ModelMetadata.PropertyName" /> property. If the <see cref="P:System.Web.ModelBinding.ModelMetadata.PropertyName" /> property is <see langword="null" />, the default value comes from the <see cref="P:System.Reflection.MemberInfo.Name" /> property of the <see cref="P:System.Web.ModelBinding.ModelMetadata.ModelType" /> property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSimpleDisplayText">
+      <MemberSignature Language="C#" Value="protected virtual string GetSimpleDisplayText ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetSimpleDisplayText() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelMetadata.GetSimpleDisplayText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns text to display for the model when the model represents a complex object.</summary>
+        <returns>The property value is derived by examining the following sequence of related values until a return value is found.  
+  
+1.  If the <see cref="P:System.Web.ModelBinding.ModelMetadata.SimpleDisplayText" /> property value is not <see langword="null" />, that value is returned.  
+  
+2.  If the <see cref="P:System.Web.ModelBinding.ModelMetadata.Model" /> property is <see langword="null" />, the <see cref="P:System.Web.ModelBinding.ModelMetadata.NullDisplayText" /> property value is returned.  
+  
+3.  If an attempt to convert the <see cref="P:System.Web.ModelBinding.ModelMetadata.Model" /> property to a string returns <see langword="null" />, an empty string is returned.  
+  
+4.  If the string conversion of the <see cref="P:System.Web.ModelBinding.ModelMetadata.Model" /> property value is the same as the <see cref="P:System.Type.FullName" /> property of the <see cref="P:System.Web.ModelBinding.ModelMetadata.Model" /> property type, that value is returned.  
+  
+5.  If there are no properties in the <see cref="P:System.Web.ModelBinding.ModelMetadata.Properties" /> collection, an empty string is returned.  
+  
+6.  If none of the preceding tests have returned a value, the return value comes from the first property in the <see cref="P:System.Web.ModelBinding.ModelMetadata.Properties" /> collection. If the <see cref="P:System.Web.ModelBinding.ModelMetadata.Model" /> property of the first property is <see langword="null" />, the <see cref="P:System.Web.ModelBinding.ModelMetadata.NullDisplayText" /> property value is returned; otherwise the result of converting the first property's <see cref="P:System.Web.ModelBinding.ModelMetadata.Model" /> property to a string is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValidators">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidator&gt; GetValidators (System.Web.ModelBinding.ModelBindingExecutionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelValidator&gt; GetValidators(class System.Web.ModelBinding.ModelBindingExecutionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ModelMetadata.GetValidators(System.Web.ModelBinding.ModelBindingExecutionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidator&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.ModelBinding.ModelBindingExecutionContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The model binding execution context.</param>
+        <summary>Returns a collection of validators that apply to the model.</summary>
+        <returns>A collection of validators.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HideSurroundingHtml">
+      <MemberSignature Language="C#" Value="public virtual bool HideSurroundingHtml { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HideSurroundingHtml" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.HideSurroundingHtml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that determines whether surrounding HTML should be hidden.</summary>
+        <value>
+          <see langword="true" /> if surrounding HTML should be hidden; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsComplexType">
+      <MemberSignature Language="C#" Value="public virtual bool IsComplexType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsComplexType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.IsComplexType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the model is a complex type.</summary>
+        <value>
+          <see langword="true" /> if the model is a complex type; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Built-in .NET Framework types are not considered complex types for purposes of this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNullableValueType">
+      <MemberSignature Language="C#" Value="public bool IsNullableValueType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNullableValueType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.IsNullableValueType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the model is a nullable value type.</summary>
+        <value>
+          <see langword="true" /> if the model is a nullable value type; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the model can be updated.</summary>
+        <value>
+          <see langword="true" /> if the model is read-only; otherwise, <see langword="false" /> The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRequired">
+      <MemberSignature Language="C#" Value="public virtual bool IsRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRequired" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.IsRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the property is required.</summary>
+        <value>
+          <see langword="true" /> if the property is required; otherwise, <see langword="false" />. The default is <see langword="true" /> for non-nullable value types and <see langword="false" /> for all other types.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Model">
+      <MemberSignature Language="C#" Value="public object Model { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Model" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Model" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the model object.</summary>
+        <value>The model object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ModelType">
+      <MemberSignature Language="C#" Value="public Type ModelType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ModelType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ModelType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of the model.</summary>
+        <value>The type of the model.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NullDisplayText">
+      <MemberSignature Language="C#" Value="public virtual string NullDisplayText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NullDisplayText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.NullDisplayText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the string that should be displayed when the model is <see langword="null" />.</summary>
+        <value>The string to display when the model is <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Order">
+      <MemberSignature Language="C#" Value="public virtual int Order { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Order" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Order" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an integer that indicates the order in which to display this property relative to other properties.</summary>
+        <value>The relative order in which to display this property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelMetadata&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelMetadata&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelMetadata&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of model metadata objects that describe the properties of the model.</summary>
+        <value>Metadata for all properties in the model.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyName">
+      <MemberSignature Language="C#" Value="public string PropertyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.PropertyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the property.</summary>
+        <value>The name of the property if the model is a property; otherwise, <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Provider">
+      <MemberSignature Language="C#" Value="protected System.Web.ModelBinding.ModelMetadataProvider Provider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelMetadataProvider Provider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Provider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelMetadataProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the provider object for this metadata.</summary>
+        <value>The provider object for this metadata.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestValidationEnabled">
+      <MemberSignature Language="C#" Value="public virtual bool RequestValidationEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool RequestValidationEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.RequestValidationEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether request validation is enabled.</summary>
+        <value>
+          <see langword="true" /> if request validation is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShortDisplayName">
+      <MemberSignature Language="C#" Value="public virtual string ShortDisplayName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ShortDisplayName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ShortDisplayName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a short version of the display name.</summary>
+        <value>The text to display when a short version of the model name is required.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The short display name can be used in a tooltip or in any UI where the complete display name might not fit. If this field is `null`, the <xref:System.Web.ModelBinding.ModelMetadata.DisplayName%2A> property should be used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowForDisplay">
+      <MemberSignature Language="C#" Value="public virtual bool ShowForDisplay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowForDisplay" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ShowForDisplay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the model should be displayed in the UI in display mode (as opposed to edit mode).</summary>
+        <value>
+          <see langword="true" /> if the model should be displayed in display mode; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowForEdit">
+      <MemberSignature Language="C#" Value="public virtual bool ShowForEdit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ShowForEdit" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.ShowForEdit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the property should be displayed in edit mode (as opposed to display mode).</summary>
+        <value>
+          <see langword="true" /> if the property should be displayed in edit mode; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SimpleDisplayText">
+      <MemberSignature Language="C#" Value="public virtual string SimpleDisplayText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SimpleDisplayText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.SimpleDisplayText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets text to display for the model when the model represents a complex object</summary>
+        <value>Text to display in UI for a complex object. The default value is determined by calling the <see cref="M:System.Web.ModelBinding.ModelMetadata.GetSimpleDisplayText" /> method.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateHint">
+      <MemberSignature Language="C#" Value="public virtual string TemplateHint { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TemplateHint" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.TemplateHint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates what template (data control) should be used in UI for the model.</summary>
+        <value>A value that indicates what template (data control) should be used in UI for the model.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Watermark">
+      <MemberSignature Language="C#" Value="public virtual string Watermark { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Watermark" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelMetadata.Watermark" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets watermark text for a text box.</summary>
+        <value>The watermark text.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property contains text to display as a watermark when a property is rendered for editing in a text box. The default value is `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,119 @@
+<Type Name="DelegateInArgument&lt;T&gt;" FullName="System.Activities.DelegateInArgument&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class DelegateInArgument&lt;T&gt; : System.Activities.DelegateInArgument" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DelegateInArgument`1&lt;T&gt; extends System.Activities.DelegateInArgument" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DelegateInArgument`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.DelegateInArgument</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The data type of the <see cref="T:System.Activities.DelegateInArgument`1" />.</typeparam>
+    <summary>A binding terminal that represents the flow of data into an <see cref="T:System.Activities.ActivityDelegate" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DelegateInArgument ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DelegateInArgument`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DelegateInArgument`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DelegateInArgument (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DelegateInArgument`1.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Activities.DelegateInArgument`1" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DelegateInArgument`1" /> class using the specified name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public T Get (System.Activities.ActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Get(class System.Activities.ActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DelegateInArgument`1.Get(System.Activities.ActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.ActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The current activity context.</param>
+        <summary>Gets the value of the <see cref="T:System.Activities.DelegateInArgument`1" />.</summary>
+        <returns>The value of the <see cref="T:System.Activities.DelegateInArgument`1" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public void Set (System.Activities.ActivityContext context, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set(class System.Activities.ActivityContext context, !T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DelegateInArgument`1.Set(System.Activities.ActivityContext,`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.ActivityContext" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="context">The current activity context.</param>
+        <param name="value">The new value.</param>
+        <summary>Sets the value of the <see cref="T:System.Activities.DelegateInArgument`1" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeCore">
+      <MemberSignature Language="C#" Value="protected override Type TypeCore { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type TypeCore" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DelegateInArgument`1.TypeCore" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

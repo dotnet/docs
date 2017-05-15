@@ -1,0 +1,150 @@
+<Type Name="TrackingRecord" FullName="System.Workflow.Runtime.Tracking.TrackingRecord">
+  <TypeSignature Language="C#" Value="public abstract class TrackingRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TrackingRecord extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingRecord" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see langword="abstract" /> base class from which <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingRecord" />, <see cref="T:System.Workflow.Runtime.Tracking.UserTrackingRecord" />, and <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord" /> are derived.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ During its execution, a workflow instance emits three kinds of tracking events to the runtime tracking infrastructure: activity status events, user events, and workflow status events. The runtime tracking infrastructure tries to match these events with track points in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. Whenever the runtime tracking infrastructure matches a track point, it sends a tracking record that contains data associated with both the track point and the tracking event to the tracking service. There are three kinds of tracking record that the runtime tracking infrastructure can send: an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord>, a <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord>, and a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord>. Each kind of tracking record derives from the <xref:System.Workflow.Runtime.Tracking.TrackingRecord> class and corresponds to one of the three kinds of track point that the runtime tracking infrastructure can match: an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint>, a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint>, or a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TrackingRecord ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingRecord.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingRecord" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotations">
+      <MemberSignature Language="C#" Value="public abstract System.Workflow.Runtime.Tracking.TrackingAnnotationCollection Annotations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.TrackingAnnotationCollection Annotations" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingRecord.Annotations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingAnnotationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the collection of annotations associated with the track point.</summary>
+        <value>A <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> that contains the annotations associated with the track point to which this <see cref="T:System.Workflow.Runtime.Tracking.TrackingRecord" /> corresponds.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can specify annotations to be associated with an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint>, a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackPoint> or a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint> in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>. The runtime tracking infrastructure stores these annotations, and, when it matches the track point, it returns them in <xref:System.Workflow.Runtime.Tracking.TrackingRecord.Annotations%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventArgs">
+      <MemberSignature Language="C#" Value="public abstract EventArgs EventArgs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.EventArgs EventArgs" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingRecord.EventArgs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventArgs</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or sets the event data, if any, that is associated with the tracking event that caused the tracking record to be sent.</summary>
+        <value>An <see cref="T:System.EventArgs" /> that represents the event data, if any, that is associated with the tracking event that caused the tracking record to be sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Certain kinds of tracking events emitted by a workflow instance have event data associated with them. If a tracking event has event data associated with it, the runtime tracking infrastructure puts the event data in <xref:System.Workflow.Runtime.Tracking.TrackingRecord.EventArgs%2A> property of the derived class. For example, when a workflow instance is terminated, the runtime tracking infrastructure sends a <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord> with <xref:System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventArgs%2A?displayProperty=fullName> set to a <xref:System.Workflow.Runtime.Tracking.TrackingWorkflowTerminatedEventArgs> that contains information about the reason for the termination.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventDateTime">
+      <MemberSignature Language="C#" Value="public abstract DateTime EventDateTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime EventDateTime" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingRecord.EventDateTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or sets the time and date of the tracking event associated with the tracking record.</summary>
+        <value>A <see cref="T:System.DateTime" /> that indicates the date and time that the tracking event occurred.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.DateTime> is Coordinated Universal Time (UTC).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventOrder">
+      <MemberSignature Language="C#" Value="public abstract int EventOrder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EventOrder" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingRecord.EventOrder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets or sets a value that indicates the order of the tracking event associated with the tracking record relative to the other tracking events emitted by the workflow instance.</summary>
+        <value>A value that indicates the order of the tracking event relative to the other tracking events emitted by the workflow instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.TrackingRecord.EventOrder%2A> indicates the relative order of the tracking event within the workflow instance. <xref:System.Workflow.Runtime.Tracking.TrackingRecord.EventOrder%2A> will be unique within a workflow instance, but it is not guaranteed to be sequential.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

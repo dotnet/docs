@@ -1,0 +1,61 @@
+<Type Name="VARDESC+DESCUNION" FullName="System.Runtime.InteropServices.VARDESC+DESCUNION">
+  <TypeSignature Language="C#" Value="public struct VARDESC.DESCUNION" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sealed beforefieldinit VARDESC/DESCUNION extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.VARDESC.DESCUNION" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION" /> instead.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="lpvarValue">
+      <MemberSignature Language="C#" Value="public IntPtr lpvarValue;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int lpvarValue" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARDESC.DESCUNION.lpvarValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Describes a symbolic constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="oInst">
+      <MemberSignature Language="C#" Value="public int oInst;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 oInst" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.VARDESC.DESCUNION.oInst" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates the offset of this variable within the instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

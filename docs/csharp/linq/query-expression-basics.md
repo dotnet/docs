@@ -2,7 +2,7 @@
 title: "Query expression basics"
 description: Introduces concepts related to query expressions
 keywords: .NET, .NET Core, C#
-author: stevehoag
+author: BillWagner
 manager: wpickett
 ms.author: wiwagn
 ms.date: 11/30/2016
@@ -135,7 +135,7 @@ ms.assetid: 027db1f8-346f-44d2-a16e-043fcea3a4e0
 
  Use the `where` clause to filter out elements from the source data based on one or more predicate expressions. The `where` clause in the following example has one predicate with two conditions.  
   
- [!code-cs[csrefQueryExpBasics#59]../../../samples/snippets/csharp/concepts/linq/query-expression-basics_15.cs)]  
+ [!code-cs[csrefQueryExpBasics#59](../../../samples/snippets/csharp/concepts/linq/query-expression-basics_15.cs)]  
   
  For more information, see [where clause](../language-reference/keywords/where-clause.md).  
   

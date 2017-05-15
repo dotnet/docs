@@ -1,0 +1,151 @@
+<Type Name="DataGridCommandEventArgs" FullName="System.Web.UI.WebControls.DataGridCommandEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridCommandEventArgs : System.Web.UI.WebControls.CommandEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridCommandEventArgs extends System.Web.UI.WebControls.CommandEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataGridCommandEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.CommandEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.DataGrid.CancelCommand" />, <see cref="E:System.Web.UI.WebControls.DataGrid.DeleteCommand" />, <see cref="E:System.Web.UI.WebControls.DataGrid.EditCommand" />, <see cref="E:System.Web.UI.WebControls.DataGrid.ItemCommand" />, and <see cref="E:System.Web.UI.WebControls.DataGrid.UpdateCommand" /> events of the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataGrid.CancelCommand> event is raised when the Cancel button for an item in the <xref:System.Web.UI.WebControls.DataGrid> control is clicked.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.DeleteCommand> event is raised when the Delete button for an item in the <xref:System.Web.UI.WebControls.DataGrid> control is clicked.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.EditCommand> event is raised when the Edit button for an item in the <xref:System.Web.UI.WebControls.DataGrid> control is clicked.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event is raised when any button for an item in the <xref:System.Web.UI.WebControls.DataGrid> control is clicked. This allows you to programmatically test for when a specific command button is clicked and take appropriate action. This event is commonly used to handle custom command buttons for the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ The <xref:System.Web.UI.WebControls.DataGrid.UpdateCommand> event is raised when the Update button for an item in the <xref:System.Web.UI.WebControls.DataGrid> control is clicked.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.DataGridCommandEventArgs>, see the <xref:System.Web.UI.WebControls.DataGridCommandEventArgs.%23ctor%2A> constructor.  
+  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code event handlers for the <xref:System.Web.UI.WebControls.DataGrid.EditCommand>, <xref:System.Web.UI.WebControls.DataGrid.CancelCommand>, and <xref:System.Web.UI.WebControls.DataGrid.UpdateCommand> events to edit items in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridEdit2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit2/CS/datagridedit2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridEdit2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit2/VB/datagridedit2vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridCommandEventArgs (System.Web.UI.WebControls.DataGridItem item, object commandSource, System.Web.UI.WebControls.CommandEventArgs originalArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.DataGridItem item, object commandSource, class System.Web.UI.WebControls.CommandEventArgs originalArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataGridCommandEventArgs.#ctor(System.Web.UI.WebControls.DataGridItem,System.Object,System.Web.UI.WebControls.CommandEventArgs)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Web.UI.WebControls.DataGridItem" />
+        <Parameter Name="commandSource" Type="System.Object" />
+        <Parameter Name="originalArgs" Type="System.Web.UI.WebControls.CommandEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="item">A <see cref="T:System.Web.UI.WebControls.DataGridItem" /> that represents the selected item in the <see cref="T:System.Web.UI.WebControls.DataGrid" />.</param>
+        <param name="commandSource">The source of the command.</param>
+        <param name="originalArgs">A <see cref="T:System.Web.UI.WebControls.CommandEventArgs" /> that contains the event data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DataGridCommandEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DataGridCommandEventArgs> class.  
+  
+ When an instance of <xref:System.Web.UI.WebControls.DataGridCommandEventArgs> is created by a call to this constructor, the following properties are initialized to the specified values.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.DataGridCommandEventArgs.CommandSource%2A>|The value of the `commandSource` parameter.|  
+|<xref:System.Web.UI.WebControls.DataGridCommandEventArgs.Item%2A>|The value of the `item` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandSource">
+      <MemberSignature Language="C#" Value="public object CommandSource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object CommandSource" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridCommandEventArgs.CommandSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the source of the command.</summary>
+        <value>The source of the command.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DataGridCommandEventArgs.CommandSource%2A> property to determine the command source that raised the event. This property is commonly used to determine which command raised the event.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to determine the source of the command using the <xref:System.Web.UI.WebControls.DataGridCommandEventArgs.CommandSource%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridCommandEventArgsCommandSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridCommandEventArgsCommandSource/CS/datagridcommandeventargscommandsourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridCommandEventArgsCommandSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridCommandEventArgsCommandSource/VB/datagridcommandeventargscommandsourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataGridItem Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataGridItem Item" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataGridCommandEventArgs.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataGridItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the item containing the command source in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.DataGridItem" /> that represents the selected item in the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.DataGridCommandEventArgs.Item%2A> property is used to access the properties of the selected item in the <xref:System.Web.UI.WebControls.DataGrid> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to retrieve the description and price of an item in the <xref:System.Web.UI.WebControls.DataGrid> control using the <xref:System.Web.UI.WebControls.DataGridCommandEventArgs.Item%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridEdit/CS/datagrideditcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridEdit/VB/datagrideditvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

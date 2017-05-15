@@ -1,0 +1,139 @@
+<Type Name="InputMethodStateChangedEventArgs" FullName="System.Windows.Input.InputMethodStateChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class InputMethodStateChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InputMethodStateChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputMethodStateChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains arguments associated with the <see cref="E:System.Windows.Input.InputMethod.StateChanged" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsHandwritingStateChanged">
+      <MemberSignature Language="C#" Value="public bool IsHandwritingStateChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsHandwritingStateChanged" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsHandwritingStateChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.HandwritingState" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.HandwritingState" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsImeConversionModeChanged">
+      <MemberSignature Language="C#" Value="public bool IsImeConversionModeChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsImeConversionModeChanged" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsImeConversionModeChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.ImeConversionMode" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.ImeConversionMode" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsImeSentenceModeChanged">
+      <MemberSignature Language="C#" Value="public bool IsImeSentenceModeChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsImeSentenceModeChanged" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsImeSentenceModeChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.ImeSentenceMode" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.ImeSentenceMode" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsImeStateChanged">
+      <MemberSignature Language="C#" Value="public bool IsImeStateChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsImeStateChanged" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsImeStateChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.ImeState" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.ImeState" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsMicrophoneStateChanged">
+      <MemberSignature Language="C#" Value="public bool IsMicrophoneStateChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsMicrophoneStateChanged" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsMicrophoneStateChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.MicrophoneState" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.MicrophoneState" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSpeechModeChanged">
+      <MemberSignature Language="C#" Value="public bool IsSpeechModeChanged { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSpeechModeChanged" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethodStateChangedEventArgs.IsSpeechModeChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether or not the <see cref="P:System.Windows.Input.InputMethod.SpeechMode" /> property changed.</summary>
+        <value>**true** if the <see cref="P:System.Windows.Input.InputMethod.SpeechMode" /> property changed; otherwise, **false**.  
+  
+ This property has no default value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

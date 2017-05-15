@@ -1,0 +1,251 @@
+<Type Name="ValidationSummary" FullName="System.Web.UI.MobileControls.ValidationSummary">
+  <TypeSignature Language="C#" Value="public class ValidationSummary : System.Web.UI.MobileControls.MobileControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidationSummary extends System.Web.UI.MobileControls.MobileControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ValidationSummary" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.MobileControls.MobileControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("FormToValidate")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer(typeof(System.Web.UI.Design.MobileControls.ValidationSummaryDesigner))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem("System.Web.UI.Design.WebControlToolboxItem, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.MobileControls.DesignerAdapter(typeof(System.Web.UI.Design.MobileControls.Adapters.DesignerValidationSummaryAdapter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Web.UI.ToolboxData("&lt;{0}:ValidationSummary runat="server"&gt;&lt;/{0}:ValidationSummary&gt;")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Presents a summary of all the validation errors that have occurred on a form. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.MobileControls.ValidationSummary> class creates a summary of all validation errors and presents them either inline or on a separate form. The <xref:System.Web.UI.MobileControls.ValidationSummary> uses the text in the <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property for the errors that are displayed either inline or on a summary form.  
+  
+ Although the <xref:System.Web.UI.MobileControls.ValidationSummary> class of the ASP.NET mobile controls mimics the behavior of the Web Forms <xref:System.Web.UI.WebControls.ValidationSummary> class in many ways, the mobile controls version of the class does not inherit directly from the Web Forms version of the class. Thus, properties that modify the output of the validation summary, such as the <xref:System.Web.UI.WebControls.ValidationSummary.DisplayMode%2A> property, are not available in mobile controls. The mobile controls version of the summary is derived directly from the <xref:System.Web.UI.MobileControls.MobileControl> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create an instance of a <xref:System.Web.UI.MobileControls.ValidationSummary> class, and add it to a form in an ASP.NET mobile Web application during a page load. The user-defined `Page_Load` event handler determines if there is an error, and then either launches the form containing the <xref:System.Web.UI.MobileControls.ValidationSummary>, or the congratulatory thank you form.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[MobileValidationSummarySample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileValidationSummarySample/cs/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[MobileValidationSummarySample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileValidationSummarySample/vb/Default.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValidationSummary ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ValidationSummary.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ValidationSummary" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackLabel">
+      <MemberSignature Language="C#" Value="public string BackLabel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackLabel" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.BackLabel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a string from the validation summary that links to the form that contains an error. The default value is <see cref="F:System.String.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>A string from the validation summary that links to the form that contains an error.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an error occurs during the rendering of a form, the validation process uses the text in the <xref:System.Web.UI.MobileControls.ValidationSummary.BackLabel%2A> property as the string that is displayed on the validation summary page.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.MobileControls.ValidationSummary.BackLabel%2A> property to specify the link text in a <xref:System.Web.UI.MobileControls.ValidationSummary> to return to the form with the error.  
+  
+ [!code-csharp[MobileValidationSummarySample#2](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileValidationSummarySample/cs/Default.aspx#2)]
+ [!code-vb[MobileValidationSummarySample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileValidationSummarySample/vb/Default.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormToValidate">
+      <MemberSignature Language="C#" Value="public string FormToValidate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FormToValidate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.FormToValidate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.Design.MobileControls.Converters.FormConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the identifier of the <see cref="T:System.Web.UI.MobileControls.Form" /> that you want to validate. The default value is an empty string (""). This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The identifier of the <see cref="T:System.Web.UI.MobileControls.Form" /> that you want to validate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want to use validation, this property must contain a value that represents a valid form ID. The <xref:System.Web.UI.MobileControls.ValidationSummary.FormToValidate%2A> property can be set in code or declaratively, as in the example for the <xref:System.Web.UI.MobileControls.ValidationSummary> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetErrorMessages">
+      <MemberSignature Language="C#" Value="public string[] GetErrorMessages ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetErrorMessages() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ValidationSummary.GetErrorMessages" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an array of the error messages that the <see cref="T:System.Web.UI.MobileControls.ValidationSummary" /> page will display. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <returns>An array of the error messages that the <see cref="T:System.Web.UI.MobileControls.ValidationSummary" /> page will display.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">the value of the <see cref="P:System.Web.UI.MobileControls.ValidationSummary.FormToValidate" /> property is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderText">
+      <MemberSignature Language="C#" Value="public string HeaderText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HeaderText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.HeaderText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that will appear in the heading section of the validation summary page. The default value is <see cref="F:System.String.Empty" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The text that will appear in the heading section of the validation summary page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you are developing in HTML, the <xref:System.Web.UI.MobileControls.ValidationSummary> page renders the value of the <xref:System.Web.UI.MobileControls.ValidationSummary.HeaderText%2A> property first. When the validation process invalidates a form, it produces a list of <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> properties for each validator. Each instance of an <xref:System.Web.UI.MobileControls.BaseValidator.ErrorMessage%2A> property in the list results in an error on the invalid form. This list of errors is followed by a <xref:System.Web.UI.MobileControls.Link> that targets the invalid form. The text of the link is the value of the <xref:System.Web.UI.MobileControls.ValidationSummary.BackLabel%2A> property.  
+  
+ The display of errors for WML 1.1 is similar to HTML, except that the <xref:System.Web.UI.MobileControls.ValidationSummary.HeaderText%2A> property is displayed as plain WML text followed by each error message and preceded by "- " (a hyphen followed by a space).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnLoad">
+      <MemberSignature Language="C#" Value="protected override void OnLoad (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLoad(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ValidationSummary.OnLoad(System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see cref="T:System.EventArgs" /> object that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Web.UI.Control.Load" /> event. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StyleReference">
+      <MemberSignature Language="C#" Value="public override string StyleReference { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StyleReference" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ValidationSummary.StyleReference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("error")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reference to the style properties for a control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>A reference to the style properties for a control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,170 @@
+<Type Name="WebPartConnectionsCancelEventArgs" FullName="System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs">
+  <TypeSignature Language="C#" Value="public class WebPartConnectionsCancelEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebPartConnectionsCancelEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" /> and <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsConnecting%2A> method, and it indicates that the connection process has begun (for example, a user has selected a control and clicked a connect verb), but is not yet completed. The event provides an opportunity to cancel a connection before it is complete. If the connection is successfully completed, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnected> event.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting> event is raised by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.OnWebPartsDisconnecting%2A> method, and it indicates that a user has clicked a disconnect verb, or the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.DisconnectWebParts%2A> method has otherwise been called. The event provides an opportunity to cancel the process of ending a connection before it is complete. If the connection is ended successfully, this event is followed by the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnected> event.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs> class contains information about the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting> and <xref:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting> events. It provides access to the Web Parts controls that are being connected or disconnected.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartConnectionsCancelEventArgs (System.Web.UI.WebControls.WebParts.WebPart provider, System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, System.Web.UI.WebControls.WebParts.WebPart consumer, System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart provider, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPart consumer, class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="providerConnectionPoint" Type="System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
+        <Parameter Name="consumer" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="consumerConnectionPoint" Type="System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The Web Parts control providing data in the connection.</param>
+        <param name="providerConnectionPoint">The connection point for providing data.</param>
+        <param name="consumer">The Web Parts control consuming data in the connection.</param>
+        <param name="consumerConnectionPoint">The connection point for consuming data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs" /> class without a specified connection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartConnectionsCancelEventArgs (System.Web.UI.WebControls.WebParts.WebPart provider, System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, System.Web.UI.WebControls.WebParts.WebPart consumer, System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint, System.Web.UI.WebControls.WebParts.WebPartConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart provider, class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint providerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPart consumer, class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint consumerConnectionPoint, class System.Web.UI.WebControls.WebParts.WebPartConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ProviderConnectionPoint,System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint,System.Web.UI.WebControls.WebParts.WebPartConnection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="provider" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="providerConnectionPoint" Type="System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
+        <Parameter Name="consumer" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+        <Parameter Name="consumerConnectionPoint" Type="System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />
+        <Parameter Name="connection" Type="System.Web.UI.WebControls.WebParts.WebPartConnection" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The Web Parts control providing data in the connection.</param>
+        <param name="providerConnectionPoint">The connection point for providing data.</param>
+        <param name="consumer">The Web Parts control consuming data in the connection.</param>
+        <param name="consumerConnectionPoint">The connection point for consuming data.</param>
+        <param name="connection">The Web Parts connection involved in the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" /> or <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting" /> event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs" /> class with the specified connection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connection">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartConnection Connection { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartConnection Connection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs.Connection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartConnection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Web Parts connection involved in the event.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> involved in the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsConnecting" /> or <see cref="E:System.Web.UI.WebControls.WebParts.WebPartManager.WebPartsDisconnecting" /> event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Consumer">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPart Consumer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPart Consumer" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs.Consumer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPart</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Web Parts control acting as the consumer in the connection.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> acting as the consumer in the connection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConsumerConnectionPoint">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint ConsumerConnectionPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint ConsumerConnectionPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs.ConsumerConnectionPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the connection point that consumes data in the Web Parts connection.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.ConsumerConnectionPoint" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Provider">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPart Provider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPart Provider" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs.Provider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPart</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Web Parts control acting as the provider in the connection.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> acting as the provider in the connection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderConnectionPoint">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.ProviderConnectionPoint ProviderConnectionPoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.ProviderConnectionPoint ProviderConnectionPoint" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartConnectionsCancelEventArgs.ProviderConnectionPoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.ProviderConnectionPoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the connection point that provides data in the Web Parts connection.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

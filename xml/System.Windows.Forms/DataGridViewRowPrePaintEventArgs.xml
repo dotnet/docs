@@ -1,0 +1,586 @@
+<Type Name="DataGridViewRowPrePaintEventArgs" FullName="System.Windows.Forms.DataGridViewRowPrePaintEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridViewRowPrePaintEventArgs : System.ComponentModel.HandledEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewRowPrePaintEventArgs extends System.ComponentModel.HandledEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowPrePaintEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.HandledEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.DataGridView.RowPrePaint" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.RowPrePaint> event occurs before a row is painted on a <xref:System.Windows.Forms.DataGridView> control. <xref:System.Windows.Forms.DataGridView.RowPrePaint> enables you to manually adjust the appearance of the row before any of the cells in the row are painted. This is useful if you want to customize the row, such as to produce a row where the content of one column spans multiple columns. Use the properties in <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs> to get the settings of the row without directly accessing the row in the <xref:System.Windows.Forms.DataGridView>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to handle the <xref:System.Windows.Forms.DataGridView.RowPrePaint> event to draw a custom background for selected cells. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#20)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridViewRowPrePaintEventArgs (System.Windows.Forms.DataGridView dataGridView, System.Drawing.Graphics graphics, System.Drawing.Rectangle clipBounds, System.Drawing.Rectangle rowBounds, int rowIndex, System.Windows.Forms.DataGridViewElementStates rowState, string errorText, System.Windows.Forms.DataGridViewCellStyle inheritedRowStyle, bool isFirstDisplayedRow, bool isLastVisibleRow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridView dataGridView, class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipBounds, valuetype System.Drawing.Rectangle rowBounds, int32 rowIndex, valuetype System.Windows.Forms.DataGridViewElementStates rowState, string errorText, class System.Windows.Forms.DataGridViewCellStyle inheritedRowStyle, bool isFirstDisplayedRow, bool isLastVisibleRow) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.#ctor(System.Windows.Forms.DataGridView,System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.String,System.Windows.Forms.DataGridViewCellStyle,System.Boolean,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dataGridView" Type="System.Windows.Forms.DataGridView" />
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="clipBounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="rowBounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="rowIndex" Type="System.Int32" />
+        <Parameter Name="rowState" Type="System.Windows.Forms.DataGridViewElementStates" />
+        <Parameter Name="errorText" Type="System.String" />
+        <Parameter Name="inheritedRowStyle" Type="System.Windows.Forms.DataGridViewCellStyle" />
+        <Parameter Name="isFirstDisplayedRow" Type="System.Boolean" />
+        <Parameter Name="isLastVisibleRow" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dataGridView">The <see cref="T:System.Windows.Forms.DataGridView" /> that owns the row that is being painted.</param>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> used to paint the <see cref="T:System.Windows.Forms.DataGridViewRow" />.</param>
+        <param name="clipBounds">A <see cref="T:System.Drawing.Rectangle" /> that represents the area of the <see cref="T:System.Windows.Forms.DataGridView" /> that needs to be painted.</param>
+        <param name="rowBounds">A <see cref="T:System.Drawing.Rectangle" /> that contains the bounds of the <see cref="T:System.Windows.Forms.DataGridViewRow" /> that is being painted.</param>
+        <param name="rowIndex">The row index of the cell that is being painted.</param>
+        <param name="rowState">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that specifies the state of the row.</param>
+        <param name="errorText">An error message that is associated with the row.</param>
+        <param name="inheritedRowStyle">A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that contains formatting and style information about the row.</param>
+        <param name="isFirstDisplayedRow">
+          <see langword="true" /> to indicate whether the current row is the first row currently displayed in the <see cref="T:System.Windows.Forms.DataGridView" />; otherwise, <see langword="false" />.</param>
+        <param name="isLastVisibleRow">
+          <see langword="true" /> to indicate whether the current row is the last row in the <see cref="T:System.Windows.Forms.DataGridView" /> that has the <see cref="P:System.Windows.Forms.DataGridViewRow.Visible" /> property set to <see langword="true" />; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewRowPrePaintEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="dataGridView" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="graphics" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="inheritedRowStyle" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClipBounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle ClipBounds { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle ClipBounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.ClipBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the area of the <see cref="T:System.Windows.Forms.DataGridView" /> that needs to be repainted.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the area of the <see cref="T:System.Windows.Forms.DataGridView" /> that needs to be repainted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.ClipBounds%2A> property represents the area of the <xref:System.Windows.Forms.DataGridView> that needs to be repainted. For example, if a user covers the entire <xref:System.Windows.Forms.DataGridView> with another window and then uncovers it, then <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.ClipBounds%2A> represents the entire <xref:System.Windows.Forms.DataGridView>. If a user covers a small area of the <xref:System.Windows.Forms.DataGridView> and then uncovers it, then <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.ClipBounds%2A> represents the small area that was covered.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#356](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#356)]
+ [!code-vb[System.Windows.Forms.EventExamples#356](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#356)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawFocus">
+      <MemberSignature Language="C#" Value="public void DrawFocus (System.Drawing.Rectangle bounds, bool cellsPaintSelectionBackground);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawFocus(valuetype System.Drawing.Rectangle bounds, bool cellsPaintSelectionBackground) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.DrawFocus(System.Drawing.Rectangle,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="cellsPaintSelectionBackground" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that specifies the focus area.</param>
+        <param name="cellsPaintSelectionBackground">
+          <see langword="true" /> to use the <see cref="P:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor" /> property of the <see cref="P:System.Windows.Forms.DataGridViewRow.InheritedStyle" /> property to determine the color of the focus rectangle; <see langword="false" /> to use the <see cref="P:System.Windows.Forms.DataGridViewCellStyle.BackColor" /> property of the <see cref="P:System.Windows.Forms.DataGridViewRow.InheritedStyle" />.</param>
+        <summary>Draws the focus rectangle around the specified bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.DrawFocus%2A> method when you draw the <xref:System.Windows.Forms.DataGridViewRow> and its cells' contents yourself. If you manually paint the entire row and its cells' contents, set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> property to `true`. When <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> is `true`, the <xref:System.Windows.Forms.DataGridView.CellPainting> and <xref:System.Windows.Forms.DataGridView.RowPostPaint> events do not occur.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.DrawFocus%2A> method to draw a focus around the visible cells of the row. The code actually uses the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.DrawFocus%2A?displayProperty=fullName> method, which is nearly identical to the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.DrawFocus%2A> method of <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs>. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#30)]
+ [!code-vb[System.Windows.Forms.DataGridViewRowPainting#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#30)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorText">
+      <MemberSignature Language="C#" Value="public string ErrorText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorText" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.ErrorText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string that represents an error message for the current <see cref="T:System.Windows.Forms.DataGridViewRow" />.</summary>
+        <value>A string that represents an error message for the current <see cref="T:System.Windows.Forms.DataGridViewRow" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.ErrorText%2A> property is the same as the current row's <xref:System.Windows.Forms.DataGridViewRow.ErrorText%2A?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#356](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#356)]
+ [!code-vb[System.Windows.Forms.EventExamples#356](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#356)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Graphics">
+      <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.Graphics" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Graphics</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> used to paint the current <see cref="T:System.Windows.Forms.DataGridViewRow" />.</summary>
+        <value>The <see cref="T:System.Drawing.Graphics" /> used to paint the current <see cref="T:System.Windows.Forms.DataGridViewRow" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Graphics> class provides properties and methods that are useful for custom drawing.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.Graphics%2A> property to paint the custom background. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#25)]
+ [!code-vb[System.Windows.Forms.DataGridViewRowPainting#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InheritedRowStyle">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewCellStyle InheritedRowStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle InheritedRowStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.InheritedRowStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewCellStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cell style applied to the row.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that contains the cell style currently applied to the row.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.InheritedRowStyle%2A> property contains the same values as the row's <xref:System.Windows.Forms.DataGridViewRow.InheritedStyle%2A> property. Directly accessing a <xref:System.Windows.Forms.DataGridViewRow> in the <xref:System.Windows.Forms.DataGridView> can affect performance. Use <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.InheritedRowStyle%2A> in the <xref:System.Windows.Forms.DataGridView.RowPrePaint> event to avoid unsharing the row and maintain optimal performance.  
+  
+ The <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.InheritedRowStyle%2A> property is read-only. Although you can set the properties of the <xref:System.Windows.Forms.DataGridViewCellStyle> retrieved through the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.InheritedRowStyle%2A> property, the new settings will have no effect.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.InheritedRowStyle%2A> property to paint a custom background for the selected row. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#25)]
+ [!code-vb[System.Windows.Forms.DataGridViewRowPainting#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFirstDisplayedRow">
+      <MemberSignature Language="C#" Value="public bool IsFirstDisplayedRow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFirstDisplayedRow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.IsFirstDisplayedRow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the current row is the first row currently displayed in the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+        <value>
+          <see langword="true" /> if the row being painted is currently the first row displayed in the <see cref="T:System.Windows.Forms.DataGridView" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#356](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#356)]
+ [!code-vb[System.Windows.Forms.EventExamples#356](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#356)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLastVisibleRow">
+      <MemberSignature Language="C#" Value="public bool IsLastVisibleRow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLastVisibleRow" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.IsLastVisibleRow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the current row is the last visible row in the <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+        <value>
+          <see langword="true" /> if the row being painted is currently the last row in the <see cref="T:System.Windows.Forms.DataGridView" /> that has the <see cref="P:System.Windows.Forms.DataGridViewRow.Visible" /> property set to <see langword="true" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.DataGridView> named `DataGridView1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.DataGridView.RowPrePaint?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#356](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#356)]
+ [!code-vb[System.Windows.Forms.EventExamples#356](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#356)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PaintCells">
+      <MemberSignature Language="C#" Value="public void PaintCells (System.Drawing.Rectangle clipBounds, System.Windows.Forms.DataGridViewPaintParts paintParts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PaintCells(valuetype System.Drawing.Rectangle clipBounds, valuetype System.Windows.Forms.DataGridViewPaintParts paintParts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.PaintCells(System.Drawing.Rectangle,System.Windows.Forms.DataGridViewPaintParts)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clipBounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="paintParts" Type="System.Windows.Forms.DataGridViewPaintParts" />
+      </Parameters>
+      <Docs>
+        <param name="clipBounds">A <see cref="T:System.Drawing.Rectangle" /> that specifies the area of the <see cref="T:System.Windows.Forms.DataGridView" /> to be painted.</param>
+        <param name="paintParts">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values specifying the parts to paint.</param>
+        <summary>Paints the specified cell parts for the area in the specified bounds.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PaintCellsBackground">
+      <MemberSignature Language="C#" Value="public void PaintCellsBackground (System.Drawing.Rectangle clipBounds, bool cellsPaintSelectionBackground);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PaintCellsBackground(valuetype System.Drawing.Rectangle clipBounds, bool cellsPaintSelectionBackground) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.PaintCellsBackground(System.Drawing.Rectangle,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clipBounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="cellsPaintSelectionBackground" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="clipBounds">A <see cref="T:System.Drawing.Rectangle" /> that specifies the area of the <see cref="T:System.Windows.Forms.DataGridView" /> to be painted.</param>
+        <param name="cellsPaintSelectionBackground">
+          <see langword="true" /> to paint the background of the specified bounds with the color of the <see cref="P:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor" /> property of the <see cref="P:System.Windows.Forms.DataGridViewRow.InheritedStyle" />; <see langword="false" /> to paint the background of the specified bounds with the color of the <see cref="P:System.Windows.Forms.DataGridViewCellStyle.BackColor" /> property of the <see cref="P:System.Windows.Forms.DataGridViewRow.InheritedStyle" />.</param>
+        <summary>Paints the cell backgrounds for the area in the specified bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.PaintCellsBackground%2A> method when you draw the <xref:System.Windows.Forms.DataGridViewRow> and its cells' contents yourself. If you manually paint the entire row and its cells' contents, set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> property to `true`. When <xref:System.ComponentModel.HandledEventArgs.Handled%2A?displayProperty=fullName> is `true`, the <xref:System.Windows.Forms.DataGridView.CellPainting> and <xref:System.Windows.Forms.DataGridView.RowPostPaint> events do not occur.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PaintCellsContent">
+      <MemberSignature Language="C#" Value="public void PaintCellsContent (System.Drawing.Rectangle clipBounds);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PaintCellsContent(valuetype System.Drawing.Rectangle clipBounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.PaintCellsContent(System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clipBounds" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="clipBounds">A <see cref="T:System.Drawing.Rectangle" /> that specifies the area of the <see cref="T:System.Windows.Forms.DataGridView" /> to be painted.</param>
+        <summary>Paints the cell contents for the area in the specified bounds.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PaintHeader">
+      <MemberSignature Language="C#" Value="public void PaintHeader (bool paintSelectionBackground);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PaintHeader(bool paintSelectionBackground) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.PaintHeader(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="paintSelectionBackground" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="paintSelectionBackground">
+          <see langword="true" /> to paint the row header with the color of the <see cref="P:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor" /> property of the <see cref="P:System.Windows.Forms.DataGridViewRow.InheritedStyle" />; <see langword="false" /> to paint the row header with the <see cref="P:System.Windows.Forms.DataGridViewCellStyle.BackColor" /> of the <see cref="P:System.Windows.Forms.DataGridView.RowHeadersDefaultCellStyle" /> property.</param>
+        <summary>Paints the entire row header of the current <see cref="T:System.Windows.Forms.DataGridViewRow" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.PaintHeader%2A> method when you draw the <xref:System.Windows.Forms.DataGridViewRow> and its cells' contents yourself. If you manually paint the entire row and its cells' contents, set the <xref:System.ComponentModel.HandledEventArgs.Handled%2A> property to `true`. When <xref:System.ComponentModel.HandledEventArgs.Handled%2A> is `true`, the <xref:System.Windows.Forms.DataGridView.CellPainting> and <xref:System.Windows.Forms.DataGridView.RowPostPaint> events do not occur.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PaintHeader">
+      <MemberSignature Language="C#" Value="public void PaintHeader (System.Windows.Forms.DataGridViewPaintParts paintParts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PaintHeader(valuetype System.Windows.Forms.DataGridViewPaintParts paintParts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.PaintHeader(System.Windows.Forms.DataGridViewPaintParts)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="paintParts" Type="System.Windows.Forms.DataGridViewPaintParts" />
+      </Parameters>
+      <Docs>
+        <param name="paintParts">A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values specifying the parts to paint.</param>
+        <summary>Paints the specified parts of the row header of the current row.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex" /> is less than zero or greater than the number of rows in the <see cref="T:System.Windows.Forms.DataGridView" /> control minus one.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PaintParts">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewPaintParts PaintParts { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewPaintParts PaintParts" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.PaintParts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewPaintParts</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The cell parts that are to be painted.</summary>
+        <value>A bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values specifying the parts to be painted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property. This example is part of a larger example available in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#20)]
+ [!code-vb[System.Windows.Forms.DataGridViewRowPainting#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The specified value when setting this property is not a valid bitwise combination of <see cref="T:System.Windows.Forms.DataGridViewPaintParts" /> values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RowBounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle RowBounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle RowBounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.RowBounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get the bounds of the current <see cref="T:System.Windows.Forms.DataGridViewRow" />.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the current <see cref="T:System.Windows.Forms.DataGridViewRow" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The width of the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.RowBounds%2A> property is the same as the width of the <xref:System.Windows.Forms.DataGridView>. To get the width of the columns in the <xref:System.Windows.Forms.DataGridView>, use the <xref:System.Windows.Forms.DataGridViewColumnCollection.GetColumnsWidth%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.RowBounds%2A> property to calculate the bounds of the row to paint a custom background. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#25)]
+ [!code-vb[System.Windows.Forms.DataGridViewRowPainting#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowIndex">
+      <MemberSignature Language="C#" Value="public int RowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.RowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the current <see cref="T:System.Windows.Forms.DataGridViewRow" />.</summary>
+        <value>The index of the current <see cref="T:System.Windows.Forms.DataGridViewRow" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The row index can be used to access the current row within a <xref:System.Windows.Forms.DataGridViewRowCollection>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.RowIndex%2A> property to access the current row. Although the code actually uses the <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs.RowIndex%2A?displayProperty=fullName> property, this property is nearly identical to the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.RowIndex%2A> property of <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs>. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPostPaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#35](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#35)]
+ [!code-vb[System.Windows.Forms.DataGridViewRowPainting#35](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#35)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewElementStates State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewElementStates State" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the state of the current <see cref="T:System.Windows.Forms.DataGridViewRow" />.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Windows.Forms.DataGridViewElementStates" /> values that specifies the state of the row.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be used to determine whether the row is frozen, read-only, or selected, among other states.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs.State%2A> property to determine whether a row is selected. If the row is selected, the code paints a custom background. The variable, `e`, is of type <xref:System.Windows.Forms.DataGridViewRowPrePaintEventArgs>. This code example is part of a larger example provided in [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/customize-the-appearance-of-rows-in-the-datagrid.md).  
+  
+ [!code-csharp[System.Windows.Forms.DataGridViewRowPainting#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/CS/datagridviewrowpainting.cs#25)]
+ [!code-vb[System.Windows.Forms.DataGridViewRowPainting#25](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRowPainting/VB/datagridviewrowpainting.vb#25)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

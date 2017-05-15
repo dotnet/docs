@@ -1,0 +1,187 @@
+<Type Name="DateInterval" FullName="Microsoft.VisualBasic.DateInterval">
+  <TypeSignature Language="C#" Value="public enum DateInterval" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DateInterval extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.DateInterval" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates how to determine and format date intervals when calling date-related functions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call date-related functions, you can use enumeration members in your code in place of the actual values.  
+  
+ The `DateInterval` enumeration defines constants used with date-related functions to identify how date intervals are determined and formatted.  For an example, see the <xref:Microsoft.VisualBasic.DateAndTime.DatePart%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Day">
+      <MemberSignature Language="C#" Value="Day" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Day = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Day" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Day of month (1 through 31)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DayOfYear">
+      <MemberSignature Language="C#" Value="DayOfYear" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval DayOfYear = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.DayOfYear" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Day of year (1 through 366)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hour">
+      <MemberSignature Language="C#" Value="Hour" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Hour = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Hour" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Hour (0 through 23)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Minute">
+      <MemberSignature Language="C#" Value="Minute" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Minute = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Minute" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Minute (0 through 59)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Month">
+      <MemberSignature Language="C#" Value="Month" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Month = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Month" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Month (1 through 12)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Quarter">
+      <MemberSignature Language="C#" Value="Quarter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Quarter = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Quarter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Quarter of year (1 through 4)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Second">
+      <MemberSignature Language="C#" Value="Second" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Second = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Second" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Second (0 through 59)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Weekday">
+      <MemberSignature Language="C#" Value="Weekday" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Weekday = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Weekday" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Day of week (1 through 7)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WeekOfYear">
+      <MemberSignature Language="C#" Value="WeekOfYear" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval WeekOfYear = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.WeekOfYear" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Week of year (1 through 53)</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Year">
+      <MemberSignature Language="C#" Value="Year" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.DateInterval Year = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.DateInterval.Year" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.DateInterval</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Year</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

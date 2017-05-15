@@ -1,0 +1,93 @@
+<Type Name="ContextConfiguration" FullName="System.Web.DynamicData.ContextConfiguration">
+  <TypeSignature Language="C#" Value="public class ContextConfiguration" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContextConfiguration extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ContextConfiguration" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information for a data-context instance in order to allow customization.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.ContextConfiguration> class enables you to customize data access. For example, you can use this class to enable scaffolding for a Web application, or to define a custom metadata provider.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.DynamicData.ContextConfiguration> class when you call the <xref:System.Web.DynamicData.MetaModel.RegisterContext%2A> method in order to register a data context with scaffolding enabled.  
+  
+ [!code-csharp[System.Web.DynamicData.MetaModel#99](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/global.asax.cs#99)]
+ [!code-vb[System.Web.DynamicData.MetaModel#99](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/global.asax.vb#99)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContextConfiguration ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ContextConfiguration.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.ContextConfiguration" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataProviderFactory">
+      <MemberSignature Language="C#" Value="public Func&lt;Type,System.ComponentModel.TypeDescriptionProvider&gt; MetadataProviderFactory { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Type, class System.ComponentModel.TypeDescriptionProvider&gt; MetadataProviderFactory" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ContextConfiguration.MetadataProviderFactory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Type,System.ComponentModel.TypeDescriptionProvider&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the metadata provider.</summary>
+        <value>The type of the metadata provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method enables you to define a custom metadata provider for a given data context.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaffoldAllTables">
+      <MemberSignature Language="C#" Value="public bool ScaffoldAllTables { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ScaffoldAllTables" />
+      <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ContextConfiguration.ScaffoldAllTables" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether scaffolding is enabled.</summary>
+        <value>
+          <see langword="true" /> if scaffolding is enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

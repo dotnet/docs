@@ -1,0 +1,265 @@
+<Type Name="ContourPoint" FullName="System.Speech.Synthesis.TtsEngine.ContourPoint">
+  <TypeSignature Language="C#" Value="public struct ContourPoint : IEquatable&lt;System.Speech.Synthesis.TtsEngine.ContourPoint&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ContourPoint extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Speech.Synthesis.TtsEngine.ContourPoint&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.ContourPoint" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Speech.Synthesis.TtsEngine.ContourPoint&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ImmutableObject(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents changes in pitch for the speech content of a <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The pitch contour is defined as an array of targets at specified time positions in the speech output. Each target is defined by three parameters. The first value is a percentage of the period of the contained text (a number followed by "%"). The second value specifies the amount to raise or lower the pitch. The third value designates the unit to use for the number specified in the second value; either percentage or hertz (Hz).  
+  
+ <xref:System.Speech.Synthesis.TtsEngine.ContourPoint> objects are obtained by the <xref:System.Speech.Synthesis.TtsEngine.Prosody.GetContourPoints%2A> method, or used to set the pitch contour for a <xref:System.Speech.Synthesis.TtsEngine.TextFragment> by the <xref:System.Speech.Synthesis.TtsEngine.Prosody.SetContourPoints%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContourPoint (float start, float change, System.Speech.Synthesis.TtsEngine.ContourPointChangeType changeType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 start, float32 change, valuetype System.Speech.Synthesis.TtsEngine.ContourPointChangeType changeType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.#ctor(System.Single,System.Single,System.Speech.Synthesis.TtsEngine.ContourPointChangeType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="start" Type="System.Single" />
+        <Parameter Name="change" Type="System.Single" />
+        <Parameter Name="changeType" Type="System.Speech.Synthesis.TtsEngine.ContourPointChangeType" />
+      </Parameters>
+      <Docs>
+        <param name="start">A <see cref="T:System.Single" /> that specifies the point at which to apply the pitch change in the <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" />. This is expressed as the elapsed percentage of the duration of the <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> at that point.</param>
+        <param name="change">A <see cref="T:System.Single" /> that specifies the amount to raise or lower the pitch.</param>
+        <param name="changeType">A member of <see cref="P:System.Speech.Synthesis.TtsEngine.ContourPoint.ChangeType" /> that specifies the unit to use for the number specified in the <c>change</c> parameter.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Change">
+      <MemberSignature Language="C#" Value="public float Change { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Change" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.ContourPoint.Change" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value that represents the amount to raise or lower the pitch at a point in a <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" />.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is combined with a value from the <xref:System.Speech.Synthesis.TtsEngine.ContourPoint.ChangeType%2A> property to define the amount to raise or lower the pitch.  
+  
+ If a pitch value is not defined for 0% or 100% then the nearest pitch target is copied. All relative values for the pitch are relative to the pitch value just before the contained text.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChangeType">
+      <MemberSignature Language="C#" Value="public System.Speech.Synthesis.TtsEngine.ContourPointChangeType ChangeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Synthesis.TtsEngine.ContourPointChangeType ChangeType" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.ContourPoint.ChangeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.TtsEngine.ContourPointChangeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a member of <see cref="P:System.Speech.Synthesis.TtsEngine.ContourPoint.ChangeType" /> that specifies the unit to use for the number specified in the <paramref name="change" /> parameter of a <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> object.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A value from this enumeration is combined with a value from the <xref:System.Speech.Synthesis.TtsEngine.ContourPoint.Change%2A> property to define the amount to raise or lower the pitch.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An object that can be cast to an instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" />.</param>
+        <summary>Determines if a given object is an instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> and equal to the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" />.</summary>
+        <returns>Returns <see langword="true" /> if the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> and that obtained from the <paramref name="obj" /> argument are equal, otherwise returns <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method returns false if the <xref:System.Object> provided by the `obj` argument cannot be cast to <xref:System.Speech.Synthesis.TtsEngine.ContourPoint>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Speech.Synthesis.TtsEngine.ContourPoint other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Speech.Synthesis.TtsEngine.ContourPoint other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.Equals(System.Speech.Synthesis.TtsEngine.ContourPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Speech.Synthesis.TtsEngine.ContourPoint" />
+      </Parameters>
+      <Docs>
+        <param name="other">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> that will be compared to the current instance.</param>
+        <summary>Determines if a given instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> is equal to the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" />.</summary>
+        <returns>Returns <see langword="true" /> if both the current instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> and that supplied through the <paramref name="other" /> argument are equal, otherwise returns <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Speech.Synthesis.TtsEngine.ContourPoint> objects might have the same hash code even though they represent different time values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Speech.Synthesis.TtsEngine.ContourPoint point1, System.Speech.Synthesis.TtsEngine.ContourPoint point2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point1, valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.op_Equality(System.Speech.Synthesis.TtsEngine.ContourPoint,System.Speech.Synthesis.TtsEngine.ContourPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point1" Type="System.Speech.Synthesis.TtsEngine.ContourPoint" />
+        <Parameter Name="point2" Type="System.Speech.Synthesis.TtsEngine.ContourPoint" />
+      </Parameters>
+      <Docs>
+        <param name="point1">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> to compare against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> provided by the <c>point2</c> argument.</param>
+        <param name="point2">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> to compare against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> provided by the <c>point1</c> argument.</param>
+        <summary>Determines if two instances of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> are equal.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> instances referenced by <paramref name="point1" /> and <paramref name="point2" /> are equal, otherwise returns <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.ContourPoint.Equals%28System.Speech.Synthesis.TtsEngine.ContourPoint%2CSystem.Speech.Synthesis.TtsEngine.ContourPoint%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Speech.Synthesis.TtsEngine.ContourPoint point1, System.Speech.Synthesis.TtsEngine.ContourPoint point2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point1, valuetype System.Speech.Synthesis.TtsEngine.ContourPoint point2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Synthesis.TtsEngine.ContourPoint.op_Inequality(System.Speech.Synthesis.TtsEngine.ContourPoint,System.Speech.Synthesis.TtsEngine.ContourPoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point1" Type="System.Speech.Synthesis.TtsEngine.ContourPoint" />
+        <Parameter Name="point2" Type="System.Speech.Synthesis.TtsEngine.ContourPoint" />
+      </Parameters>
+      <Docs>
+        <param name="point1">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> to compare against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> provided by the <c>point2</c> argument.</param>
+        <param name="point2">An instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> to compare against the instance of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> provided by the <c>point1</c> argument.</param>
+        <summary>Determines if two instances of <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> are NOT equal.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Speech.Synthesis.TtsEngine.ContourPoint" /> instances referenced by <paramref name="point1" /> and <paramref name="point2" /> are NOT equal, otherwise returns <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Speech.Synthesis.TtsEngine.ContourPoint.Compare%28System.Speech.Synthesis.TtsEngine.ContourPoint%2CSystem.Speech.Synthesis.TtsEngine.ContourPoint%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public float Start { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 Start" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.TtsEngine.ContourPoint.Start" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Single" /> that specifies the point at which to apply the pitch change in a <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" />. This is expressed as the elapsed percentage of the duration of the <see cref="T:System.Speech.Synthesis.TtsEngine.TextFragment" /> at that point.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Time position values less than 0% or greater than 100% are ignored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

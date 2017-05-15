@@ -1,0 +1,37 @@
+<Type Name="VisualStyleElement+Rebar" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+Rebar">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.Rebar" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/Rebar extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of the rebar control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar.Band>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar.Chevron>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar.ChevronVertical>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar.Gripper>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar.GripperVertical>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for each state of the rebar part specified by the class name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

@@ -1,0 +1,94 @@
+<Type Name="ToolBarButtonClickEventArgs" FullName="System.Windows.Forms.ToolBarButtonClickEventArgs">
+  <TypeSignature Language="C#" Value="public class ToolBarButtonClickEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolBarButtonClickEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarButtonClickEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.ToolBar.ButtonClick" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event occurs whenever the user clicks on a button on a <xref:System.Windows.Forms.ToolBar> control. The <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property contains the <xref:System.Windows.Forms.ToolBarButton> wiith the information about the button that was clicked.  
+  
+   
+  
+## Examples  
+ The following example instantiates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls. The toolbar buttons are assigned to the button collection, the collection is assigned to the toolbar, and the toolbar is added to the form. On the <xref:System.Windows.Forms.ToolBar.ButtonClick> event of the toolbar, the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> is evaluated, and the appropriate dialog opened. This code assumes that a <xref:System.Windows.Forms.Form>, an <xref:System.Windows.Forms.OpenFileDialog>, a <xref:System.Windows.Forms.SaveFileDialog>, and a <xref:System.Windows.Forms.PrintDialog> have been instantiated.  
+  
+ [!code-cpp[Classic ToolBar.ToolBar Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ToolBar.ToolBar Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ToolBar.ToolBar Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ToolBar.ToolBar Example/CS/source.cs#1)]
+ [!code-vb[Classic ToolBar.ToolBar Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ToolBar.ToolBar Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToolBarButtonClickEventArgs (System.Windows.Forms.ToolBarButton button);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolBarButton button) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBarButtonClickEventArgs.#ctor(System.Windows.Forms.ToolBarButton)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="button" Type="System.Windows.Forms.ToolBarButton" />
+      </Parameters>
+      <Docs>
+        <param name="button">The <see cref="T:System.Windows.Forms.ToolBarButton" /> that was clicked.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolBarButtonClickEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property is set equal to the `button` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Button">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolBarButton Button { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolBarButton Button" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolBarButtonClickEventArgs.Button" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ToolBarButton</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ToolBarButton" /> that was clicked.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ToolBarButton" /> that was clicked.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property is initially set equal to the `button` parameter of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example instantiates a <xref:System.Windows.Forms.ToolBar> and three <xref:System.Windows.Forms.ToolBarButton> controls. The toolbar buttons are assigned to the button collection, the collection is assigned to the toolbar, and the toolbar is added to the form. On the <xref:System.Windows.Forms.ToolBar.ButtonClick> event of the toolbar, the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> is evaluated, and the appropriate dialog opened. This code assumes that a <xref:System.Windows.Forms.Form>, an <xref:System.Windows.Forms.OpenFileDialog>, a <xref:System.Windows.Forms.SaveFileDialog>, and a <xref:System.Windows.Forms.PrintDialog> have been instantiated.  
+  
+ [!code-cpp[Classic ToolBar.ToolBar Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic ToolBar.ToolBar Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic ToolBar.ToolBar Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic ToolBar.ToolBar Example/CS/source.cs#1)]
+ [!code-vb[Classic ToolBar.ToolBar Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic ToolBar.ToolBar Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

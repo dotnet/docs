@@ -1,0 +1,63 @@
+<Type Name="ButtonColumnType" FullName="System.Web.UI.WebControls.ButtonColumnType">
+  <TypeSignature Language="C#" Value="public enum ButtonColumnType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ButtonColumnType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ButtonColumnType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the button type for the <see cref="T:System.Web.UI.WebControls.ButtonColumn" /> object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ButtonColumnType> enumeration represents the button styles for the <xref:System.Web.UI.WebControls.ButtonColumn> object.  
+  
+   
+  
+## Examples  
+ [!code-csharp[ButtonColumnButtonType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonColumnButtonType/CS/source.cs#1)]
+ [!code-vb[ButtonColumnButtonType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonColumnButtonType/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LinkButton">
+      <MemberSignature Language="C#" Value="LinkButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ButtonColumnType LinkButton = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ButtonColumnType.LinkButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ButtonColumnType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A column of hyperlink buttons.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PushButton">
+      <MemberSignature Language="C#" Value="PushButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ButtonColumnType PushButton = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ButtonColumnType.PushButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ButtonColumnType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A column of push buttons.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

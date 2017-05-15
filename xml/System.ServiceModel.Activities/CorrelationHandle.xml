@@ -1,0 +1,97 @@
+<Type Name="CorrelationHandle" FullName="System.ServiceModel.Activities.CorrelationHandle">
+  <TypeSignature Language="C#" Value="public class CorrelationHandle : System.Activities.Handle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CorrelationHandle extends System.Activities.Handle" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.CorrelationHandle" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Handle</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Associates activities together in a correlation by representing a particular shared <see cref="T:System.Runtime.DurableInstancing.InstanceKey" /> or transient context in the workflow.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[wf](~/includes/wf-md.md)] provides four types of correlation: [Content Based](~/docs/framework/wcf/feature-details/content-based-correlation.md), [Request-Reply](~/docs/framework/wcf/feature-details/request-reply-correlation.md), [Durable Duplex](~/docs/framework/wcf/feature-details/durable-duplex-correlation.md), and [Context Exchange](~/docs/framework/wcf/feature-details/context-exchange-correlation.md). [!INCLUDE[crabout](~/includes/crabout-md.md)] correlation, see [Correlation Overview](~/docs/framework/wcf/feature-details/correlation-overview.md), the specific correlation types mentioned previously, and the correlation samples located in the [Services &#91;WF Samples&#93;](~/docs/framework/windows-workflow-foundation/samples/services.md) node of the [!INCLUDE[wf1](~/includes/wf1-md.md)] samples.  
+  
+ The runtime uses the <xref:System.ServiceModel.Activities.CorrelationInitializer.CorrelationHandle%2A> for correlation if it is present, otherwise the **CorrelatesWith** property of the messaging activity will be used.  If both are absent, the ambient handle provided by <xref:System.ServiceModel.Activities.CorrelationScope> or the workflow service is used.  
+  
+   
+  
+## Examples  
+ The following example shows how to set the <xref:System.ServiceModel.Activities.CorrelationHandle> on a <xref:System.ServiceModel.Activities.SendReply> activity.  
+  
+ [!code-csharp[ImplicitExplicitCorrelation#0](~/samples/snippets/csharp/VS_Snippets_CFX/implicitexplicitcorrelation/cs/service/pharmacyservice.cs#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CorrelationHandle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CorrelationHandle.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.CorrelationHandle" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnInitialize">
+      <MemberSignature Language="C#" Value="protected override void OnInitialize (System.Activities.HandleInitializationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitialize(class System.Activities.HandleInitializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CorrelationHandle.OnInitialize(System.Activities.HandleInitializationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.HandleInitializationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The initialization environment.</param>
+        <summary>Registers the <see cref="T:System.ServiceModel.Activities.CorrelationHandle" /> with the workflow runtime.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnUninitialize">
+      <MemberSignature Language="C#" Value="protected override void OnUninitialize (System.Activities.HandleInitializationContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnUninitialize(class System.Activities.HandleInitializationContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.CorrelationHandle.OnUninitialize(System.Activities.HandleInitializationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.HandleInitializationContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The initialization environment of the <see cref="T:System.ServiceModel.Activities.CorrelationHandle" />.</param>
+        <summary>Unregisters the <see cref="T:System.ServiceModel.Activities.CorrelationHandle" /> with the workflow runtime.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

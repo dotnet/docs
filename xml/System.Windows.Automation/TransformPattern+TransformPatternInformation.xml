@@ -1,0 +1,127 @@
+<Type Name="TransformPattern+TransformPatternInformation" FullName="System.Windows.Automation.TransformPattern+TransformPatternInformation">
+  <TypeSignature Language="C#" Value="public struct TransformPattern.TransformPatternInformation" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit TransformPattern/TransformPatternInformation extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TransformPattern.TransformPatternInformation" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides access to the property values of a <see cref="T:System.Windows.Automation.TransformPattern" /> object using its <see cref="P:System.Windows.Automation.TransformPattern.Current" /> or <see cref="P:System.Windows.Automation.TransformPattern.Cached" /> accessors.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanMove">
+      <MemberSignature Language="C#" Value="public bool CanMove { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanMove" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TransformPattern.TransformPatternInformation.CanMove" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element can be moved.</summary>
+        <value>
+          <see langword="true" /> if the element can be moved; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An object cannot be moved, resized or rotated such that its resulting screen location would be completely outside the coordinates of its container and inaccessible to keyboard or mouse. For example, when a top-level window is moved completely off-screen or a child object is moved outside the boundaries of the container's viewport. In these cases the object is placed as close to the requested screen coordinates as possible with the top or left coordinates overridden to be within the container boundaries.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.TransformPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and subsequently used to move the <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIATransformPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATransformPattern_snip/CSharp/UIATransformPattern_snippets.cs#101)]
+ [!code-vb[UIATransformPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATransformPattern_snip/VisualBasic/UIATransformPattern_snippets.vb#101)]  
+[!code-csharp[UIATransformPattern_snip#103](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATransformPattern_snip/CSharp/UIATransformPattern_snippets.cs#103)]
+[!code-vb[UIATransformPattern_snip#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATransformPattern_snip/VisualBasic/UIATransformPattern_snippets.vb#103)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanResize">
+      <MemberSignature Language="C#" Value="public bool CanResize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanResize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TransformPattern.TransformPatternInformation.CanResize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element can be resized.</summary>
+        <value>
+          <see langword="true" /> if the element can be resized; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An object cannot be moved, resized, or rotated such that its resulting screen location would be completely outside the coordinates of its container and inaccessible to keyboard or mouse. For example, when a top-level window is moved completely off-screen or a child object is moved outside the boundaries of the container's viewport. In these cases the object is placed as close to the requested screen coordinates as possible with the top or left coordinates overridden to be within the container boundaries.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.TransformPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and subsequently used to resize the <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIATransformPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATransformPattern_snip/CSharp/UIATransformPattern_snippets.cs#101)]
+ [!code-vb[UIATransformPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATransformPattern_snip/VisualBasic/UIATransformPattern_snippets.vb#101)]  
+[!code-csharp[UIATransformPattern_snip#104](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATransformPattern_snip/CSharp/UIATransformPattern_snippets.cs#104)]
+[!code-vb[UIATransformPattern_snip#104](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATransformPattern_snip/VisualBasic/UIATransformPattern_snippets.vb#104)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRotate">
+      <MemberSignature Language="C#" Value="public bool CanRotate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRotate" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TransformPattern.TransformPatternInformation.CanRotate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that specifies whether the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] element can be rotated.</summary>
+        <value>
+          <see langword="true" /> if the element can be rotated; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An object cannot be moved, resized, or rotated such that its resulting screen location would be completely outside the coordinates of its container and inaccessible to keyboard or mouse. For example, when a top-level window is moved completely off-screen or a child object is moved outside the boundaries of the container's viewport. In these cases the object is placed as close to the requested screen coordinates as possible with the top or left coordinates overridden to be within the container boundaries.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.TransformPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement> and subsequently used to rotate the <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIATransformPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATransformPattern_snip/CSharp/UIATransformPattern_snippets.cs#101)]
+ [!code-vb[UIATransformPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATransformPattern_snip/VisualBasic/UIATransformPattern_snippets.vb#101)]  
+[!code-csharp[UIATransformPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATransformPattern_snip/CSharp/UIATransformPattern_snippets.cs#102)]
+[!code-vb[UIATransformPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATransformPattern_snip/VisualBasic/UIATransformPattern_snippets.vb#102)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

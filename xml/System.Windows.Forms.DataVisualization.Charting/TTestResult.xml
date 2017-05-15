@@ -1,0 +1,214 @@
+<Type Name="TTestResult" FullName="System.Windows.Forms.DataVisualization.Charting.TTestResult">
+  <TypeSignature Language="C#" Value="public class TTestResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TTestResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.TTestResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Stores the results of a T Test statistical formula.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TTestResult ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.TTestResult.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.TTestResult" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DegreeOfFreedom">
+      <MemberSignature Language="C#" Value="public double DegreeOfFreedom { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DegreeOfFreedom" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.DegreeOfFreedom" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the degree of freedom.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstSeriesMean">
+      <MemberSignature Language="C#" Value="public double FirstSeriesMean { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FirstSeriesMean" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.FirstSeriesMean" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the mean of the first series.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstSeriesVariance">
+      <MemberSignature Language="C#" Value="public double FirstSeriesVariance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FirstSeriesVariance" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.FirstSeriesVariance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the variance of the first series.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProbabilityTOneTail">
+      <MemberSignature Language="C#" Value="public double ProbabilityTOneTail { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ProbabilityTOneTail" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.ProbabilityTOneTail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Probability T one tail value.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProbabilityTTwoTail">
+      <MemberSignature Language="C#" Value="public double ProbabilityTTwoTail { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ProbabilityTTwoTail" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.ProbabilityTTwoTail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Probability T two tail value.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondSeriesMean">
+      <MemberSignature Language="C#" Value="public double SecondSeriesMean { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SecondSeriesMean" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.SecondSeriesMean" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the mean of the second series.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondSeriesVariance">
+      <MemberSignature Language="C#" Value="public double SecondSeriesVariance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SecondSeriesVariance" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.SecondSeriesVariance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the variance of the second series.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TCriticalValueOneTail">
+      <MemberSignature Language="C#" Value="public double TCriticalValueOneTail { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TCriticalValueOneTail" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.TCriticalValueOneTail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Critical T one tail value.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TCriticalValueTwoTail">
+      <MemberSignature Language="C#" Value="public double TCriticalValueTwoTail { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TCriticalValueTwoTail" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.TCriticalValueTwoTail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Critical T two tail value.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TValue">
+      <MemberSignature Language="C#" Value="public double TValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.TTestResult.TValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the T value.</summary>
+        <value>A <see langword="double" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

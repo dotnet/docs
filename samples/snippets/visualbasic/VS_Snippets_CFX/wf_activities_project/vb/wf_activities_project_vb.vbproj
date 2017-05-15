@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FDBFEE13-5B88-42E3-8380-CD55A275F926}</ProjectGuid>
+    <ProjectTypeGuids>{D59BE175-2ED0-4C54-BE3D-CDAA9F3214C8};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>wf_activities_project_vb</RootNamespace>
+    <AssemblyName>wf_activities_project_vb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MyType="Windows"</DefineConstants>
+    <DocumentationFile>wf_activities_project_vb.xml</DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>_MyType="Windows"</DefineConstants>
+    <DocumentationFile>wf_activities_project_vb.xml</DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System</Name>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Data</Name>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Transactions</Name>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System.Xml</Name>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Workflow.Activities, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Name>System.Workflow.Activities</Name>
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Workflow.ComponentModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Name>System.Workflow.ComponentModel</Name>
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Workflow.Runtime, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Name>System.Workflow.Runtime</Name>
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Name>System.Design</Name>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Name>System.Drawing</Name>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Drawing.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Name>System.Drawing.Design</Name>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+    </Reference>
+    <Reference Include="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=x86">
+      <Name>System.Web</Name>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Name>System.Web.Services</Name>
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.WorkflowServices">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.ComponentModel.Design" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Workflow.ComponentModel.Compiler" />
+    <Import Include="System.Workflow.ComponentModel.Serialization" />
+    <Import Include="System.Workflow.ComponentModel" />
+    <Import Include="System.Workflow.ComponentModel.Design" />
+    <Import Include="System.Workflow.Runtime" />
+    <Import Include="System.Workflow.Activities" />
+    <Import Include="System.Workflow.Activities.Rules" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Text" />
+    <Import Include="System.Threading" />
+    <Import Include="System.Workflow.Runtime" />
+    <Import Include="System.Workflow.Runtime.Hosting" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsoleWriteLineActivity.Designer.vb">
+      <DependentUpon>ConsoleWriteLineActivity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleWriteLineActivity.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="Workflow1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Workflow1.designer.vb">
+      <DependentUpon>Workflow1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\MySettings.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>MySettings.settings</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\MySettings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>MySettings.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Windows Workflow Foundation\v3.5\Workflow.VisualBasic.Targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

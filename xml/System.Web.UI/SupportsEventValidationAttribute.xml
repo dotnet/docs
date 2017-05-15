@@ -1,0 +1,51 @@
+<Type Name="SupportsEventValidationAttribute" FullName="System.Web.UI.SupportsEventValidationAttribute">
+  <TypeSignature Language="C#" Value="public sealed class SupportsEventValidationAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SupportsEventValidationAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.SupportsEventValidationAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the metadata attribute that Web server controls use to indicate support for event validation. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Event validation prevents forged postbacks to an ASP.NET Web page and can be enabled through the `EnableEventValidation` page directive.  
+  
+ For more information, see <xref:System.Web.UI.Page.EnableEventValidation%2A>. For more information about attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>If you do not define the <see cref="T:System.Web.UI.SupportsEventValidationAttribute" /> attribute, your custom control does not automatically participate in event validation. However, your control can explicitly call <see cref="M:System.Web.UI.ClientScriptManager.ValidateEvent(System.String)" />. If you handle event registration and validation, call <see cref="M:System.Web.UI.ClientScriptManager.ValidateEvent(System.String)" />, and then you do not need to define this attribute on the control.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SupportsEventValidationAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.SupportsEventValidationAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.SupportsEventValidationAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

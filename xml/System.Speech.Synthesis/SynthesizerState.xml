@@ -1,0 +1,75 @@
+<Type Name="SynthesizerState" FullName="System.Speech.Synthesis.SynthesizerState">
+  <TypeSignature Language="C#" Value="public enum SynthesizerState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SynthesizerState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SynthesizerState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumerates values for the state of the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer.State%2A> property uses <xref:System.Speech.Synthesis.SynthesizerState> to indicate the current state of the <xref:System.Speech.Synthesis.SpeechSynthesizer>. See <xref:System.Speech.Synthesis.SpeechSynthesizer.State%2A> for an example.  
+  
+ The <xref:System.Speech.Synthesis.StateChangedEventArgs.PreviousState%2A> and <xref:System.Speech.Synthesis.StateChangedEventArgs.State%2A> properties use <xref:System.Speech.Synthesis.SynthesizerState> to indicate state of the <xref:System.Speech.Synthesis.SpeechSynthesizer> when the <xref:System.Speech.Synthesis.SpeechSynthesizer.StateChanged> event is raised.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Paused">
+      <MemberSignature Language="C#" Value="Paused" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.SynthesizerState Paused = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesizerState.Paused" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesizerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> is paused.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Ready">
+      <MemberSignature Language="C#" Value="Ready" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.SynthesizerState Ready = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesizerState.Ready" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesizerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> is ready to generate speech from a prompt.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Speaking">
+      <MemberSignature Language="C#" Value="Speaking" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.SynthesizerState Speaking = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesizerState.Speaking" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesizerState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the <see cref="T:System.Speech.Synthesis.SpeechSynthesizer" /> is speaking.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

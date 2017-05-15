@@ -1,0 +1,116 @@
+<Type Name="LeaseState" FullName="System.Runtime.Remoting.Lifetime.LeaseState">
+  <TypeSignature Language="C#" Value="public enum LeaseState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed LeaseState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Lifetime.LeaseState" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates the possible lease states of a lifetime lease.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Remoting.Lifetime.ILease.CurrentState%2A> property returns the lease status for a lease.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Active">
+      <MemberSignature Language="C#" Value="Active" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Lifetime.LeaseState Active = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Lifetime.LeaseState.Active" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Lifetime.LeaseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The lease is active and has not expired.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Expired">
+      <MemberSignature Language="C#" Value="Expired" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Lifetime.LeaseState Expired = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Lifetime.LeaseState.Expired" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Lifetime.LeaseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The lease has expired and cannot be renewed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Initial">
+      <MemberSignature Language="C#" Value="Initial" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Lifetime.LeaseState Initial = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Lifetime.LeaseState.Initial" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Lifetime.LeaseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The lease has been created, but is not yet active.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="Null" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Lifetime.LeaseState Null = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Lifetime.LeaseState.Null" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Lifetime.LeaseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The lease is not initialized.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Renewing">
+      <MemberSignature Language="C#" Value="Renewing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Lifetime.LeaseState Renewing = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Lifetime.LeaseState.Renewing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Lifetime.LeaseState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The lease has expired and is seeking sponsorship.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

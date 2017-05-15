@@ -1,0 +1,153 @@
+<Type Name="CalendarAutoFormatDialog" FullName="System.Web.UI.Design.WebControls.CalendarAutoFormatDialog">
+  <TypeSignature Language="C#" Value="public class CalendarAutoFormatDialog : System.Windows.Forms.Form" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CalendarAutoFormatDialog extends System.Windows.Forms.Form" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.CalendarAutoFormatDialog" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Form</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("Use of this type is not recommended because the AutoFormat dialog is launched by the designer host. The list of available AutoFormats is exposed on the ControlDesigner in the AutoFormats property. http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an **Auto Format** dialog box for a <see cref="T:System.Web.UI.WebControls.Calendar" /> Web server control.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CalendarAutoFormatDialog (System.Web.UI.WebControls.Calendar calendar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.Calendar calendar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CalendarAutoFormatDialog.#ctor(System.Web.UI.WebControls.Calendar)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="calendar" Type="System.Web.UI.WebControls.Calendar" />
+      </Parameters>
+      <Docs>
+        <param name="calendar">The <see cref="T:System.Web.UI.WebControls.Calendar" /> instance for which the AutoFormatePage is displayed.</param>
+        <summary>Creates a new AutoFormatPage instance associated with a <see cref="T:System.Web.UI.WebControls.Calendar" /> instance for a designer host.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoDelayLoadActions">
+      <MemberSignature Language="C#" Value="protected void DoDelayLoadActions ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DoDelayLoadActions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CalendarAutoFormatDialog.DoDelayLoadActions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Executes any initialization that was delayed until the first idle time</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnActivated">
+      <MemberSignature Language="C#" Value="protected void OnActivated (object source, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnActivated(object source, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CalendarAutoFormatDialog.OnActivated(System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that provides information about the event.</param>
+        <summary>Occurs when the <see cref="T:System.Web.UI.Design.WebControls.CalendarAutoFormatDialog" /> is activated.</summary>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>This method provides an opportunity to perform processing after a Calendar AutoFormat dialog box has been activated.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnOKClicked">
+      <MemberSignature Language="C#" Value="protected void OnOKClicked (object source, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnOKClicked(object source, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CalendarAutoFormatDialog.OnOKClicked(System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that provides information about the event.</param>
+        <summary>Handles changes in the pre-defined schema choices</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSelChangedScheme">
+      <MemberSignature Language="C#" Value="protected void OnSelChangedScheme (object source, EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnSelChangedScheme(object source, class System.EventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CalendarAutoFormatDialog.OnSelChangedScheme(System.Object,System.EventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="source">The source of the event.</param>
+        <param name="e">An <see cref="T:System.EventArgs" /> that provides information about the event.</param>
+        <summary>Handles changes in the predefined schema choices</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveComponent">
+      <MemberSignature Language="C#" Value="protected void SaveComponent ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SaveComponent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CalendarAutoFormatDialog.SaveComponent" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves any changes into the component</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

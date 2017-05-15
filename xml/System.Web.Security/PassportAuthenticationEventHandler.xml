@@ -1,0 +1,37 @@
+<Type Name="PassportAuthenticationEventHandler" FullName="System.Web.Security.PassportAuthenticationEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void PassportAuthenticationEventHandler(object sender, PassportAuthenticationEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PassportAuthenticationEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.PassportAuthenticationEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("This type is obsolete. The Passport authentication product is no longer supported and has been superseded by Live ID.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.Security.PassportAuthenticationEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object that raised the event.</param>
+    <param name="e">A <see cref="T:System.Web.Security.PassportAuthenticationEventArgs" /> object that contains the event data.</param>
+    <summary>Represents the method that handles the <see langword="PassportAuthentication_OnAuthenticate" /> event of a <see cref="T:System.Web.Security.PassportAuthenticationModule" />. This class is deprecated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class has been deprecated and is no longer supported. Microsoft Passport Network has been replaced by Windows Live ID. For more information about how to use Windows Live ID to authenticate users in a Web application, see [Windows Live ID SDK](http://go.microsoft.com/fwlink/?LinkId=106346).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

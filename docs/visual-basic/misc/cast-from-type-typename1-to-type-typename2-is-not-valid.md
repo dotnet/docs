@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrInvalidCast_FromTo"
 ms.assetid: 4e6a8957-63ca-461f-a833-f48a1ff2eba6
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

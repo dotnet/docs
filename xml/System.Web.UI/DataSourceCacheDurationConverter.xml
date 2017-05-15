@@ -1,0 +1,265 @@
+<Type Name="DataSourceCacheDurationConverter" FullName="System.Web.UI.DataSourceCacheDurationConverter">
+  <TypeSignature Language="C#" Value="public class DataSourceCacheDurationConverter : System.ComponentModel.Int32Converter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataSourceCacheDurationConverter extends System.ComponentModel.Int32Converter" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceCacheDurationConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Int32Converter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a type converter to convert 32-bit signed integer objects to and from data source control cache duration representations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET data source controls that support caching typically provide a `CacheDuration` property that you can set to the number of seconds that the control caches data. The value 0 represents "Infinite" in these caching contexts, and the <xref:System.Web.UI.DataSourceCacheDurationConverter> class takes care of this explicit conversion.  
+  
+ Page developers do not use the <xref:System.Web.UI.DataSourceCacheDurationConverter> class. Control developers who are developing data source controls that support caching use this type converter along with the <xref:System.ComponentModel.TypeConverterAttribute> attribute to decorate a property that represents a cache duration setting of a custom data source control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can decorate a property on a data source control that supports caching with a <xref:System.ComponentModel.TypeConverterAttribute> attribute. In this example, the data source control supports caching semantics and exposes three properties modeled after other ASP.NET data source controls: `EnableCaching`, `CacheDuration`, and `CacheExpirationPolicy`. The `CacheDuration` property uses the <xref:System.Web.UI.DataSourceCacheDurationConverter> type converter.  
+  
+ [!code-csharp[System.Web.UI.DataSourceCacheDurationConverter#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.DataSourceCacheDurationConverter/CS/somedatasourcecdc.cs#1)]
+ [!code-vb[System.Web.UI.DataSourceCacheDurationConverter#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.DataSourceCacheDurationConverter/VB/somedatasourcecdc.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataSourceCacheDurationConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceCacheDurationConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.DataSourceCacheDurationConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceCacheDurationConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="sourceType">A <see cref="T:System.Type" /> that represents a type that the converter converts.</param>
+        <summary>Determines whether the <see cref="T:System.Web.UI.DataSourceCacheDurationConverter" /> can convert an object in the given source type to an <see cref="T:System.Int32" /> object.</summary>
+        <returns>
+          <see langword="true" /> if this converter can perform the operation; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataSourceCacheDurationConverter> class explicitly handles `string` types. Otherwise, it calls on its base class, <xref:System.ComponentModel.Int32Converter>, to make the determination.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertTo">
+      <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext context, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceCacheDurationConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="destinationType">A <see cref="T:System.Type" /> that represents the type to which you want to convert.</param>
+        <summary>Returns a value indicating whether the <see cref="T:System.Web.UI.DataSourceCacheDurationConverter" /> instance can convert an object to the given destination type.</summary>
+        <returns>
+          <see langword="true" /> if this converter can perform the operation; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataSourceCacheDurationConverter> explicitly handles conversion to `string` and <xref:System.ComponentModel.Design.Serialization.InstanceDescriptor> types. Otherwise, it calls on its base class, <xref:System.ComponentModel.Int32Converter>, to make the determination.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceCacheDurationConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> that specifies the culture in which to represent the number.</param>
+        <param name="value">The object to convert.</param>
+        <summary>Converts the specified object to an <see cref="T:System.Int32" /> object.</summary>
+        <returns>An object that represents the converted value. If <see langword="null" /> is passed in the value parameter, <see langword="null" /> is returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataSourceCacheDurationConverter.ConvertFrom%2A?displayProperty=fullName> method converts an <xref:System.String.Empty?displayProperty=fullName> string or the string "Infinite" to the value 0. Other values are handled by the base class, <xref:System.ComponentModel.Int32Converter>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceCacheDurationConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> that specifies the culture in which to represent the number.</param>
+        <param name="value">The object to convert.</param>
+        <param name="destinationType">The type to convert the object to.</param>
+        <summary>Converts the specified object to another type.</summary>
+        <returns>An object that represents the converted value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataSourceCacheDurationConverter.ConvertTo%28System.ComponentModel.ITypeDescriptorContext%2CSystem.Globalization.CultureInfo%2CSystem.Object%2CSystem.Type%29> method converts a valid value of 0 to the string "Infinite". Other values are handled by the base class, <xref:System.ComponentModel.Int32Converter>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStandardValues">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.TypeConverter.StandardValuesCollection GetStandardValues (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.TypeConverter/StandardValuesCollection GetStandardValues(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceCacheDurationConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.TypeConverter+StandardValuesCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <summary>Returns a collection of standard values for the data type the <see cref="T:System.Web.UI.DataSourceCacheDurationConverter" /> instance is designed for.</summary>
+        <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that contains 0 for cache duration, which represents "Infinite".</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStandardValuesExclusive">
+      <MemberSignature Language="C#" Value="public override bool GetStandardValuesExclusive (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesExclusive(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceCacheDurationConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <summary>Specifies whether the collection of standard values returned from the <see cref="Overload:System.Web.UI.DataSourceCacheDurationConverter.GetStandardValues" /> method is an exclusive list, using the specified context.</summary>
+        <returns>
+          <see langword="false" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataSourceCacheDurationConverter> class always returns `false` to indicate that the <xref:System.ComponentModel.TypeConverter.StandardValuesCollection> collection returned from the <xref:System.Web.UI.DataSourceCacheDurationConverter.GetStandardValues%2A> method is not an exhaustive list of possible values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStandardValuesSupported">
+      <MemberSignature Language="C#" Value="public override bool GetStandardValuesSupported (System.ComponentModel.ITypeDescriptorContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataSourceCacheDurationConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
+        <summary>Specifies whether the <see cref="T:System.Web.UI.DataSourceCacheDurationConverter" /> object supports a standard set of values that can be picked from a list, using the specified context.</summary>
+        <returns>
+          <see langword="true" /> in all cases.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataSourceCacheDurationConverter> object always returns `true` to indicate that the <xref:System.Web.UI.DataSourceCacheDurationConverter.GetStandardValues%2A> method should be called to find a common set of values the converter supports.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,153 @@
+<Type Name="ModelPropertyEntryToModelItemConverter" FullName="System.Activities.Presentation.Converters.ModelPropertyEntryToModelItemConverter">
+  <TypeSignature Language="C#" Value="public sealed class ModelPropertyEntryToModelItemConverter : System.Windows.Data.IMultiValueConverter, System.Windows.Data.IValueConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ModelPropertyEntryToModelItemConverter extends System.Object implements class System.Windows.Data.IMultiValueConverter, class System.Windows.Data.IValueConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Converters.ModelPropertyEntryToModelItemConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Data.IMultiValueConverter</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Data.IValueConverter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Used to convert UI property data into <see cref="T:System.Activities.Presentation.Model.ModelItem" /> and <see cref="T:System.Activities.Presentation.EditingContext" /> objects that describe the UI property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ModelPropertyEntryToModelItemConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Converters.ModelPropertyEntryToModelItemConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Converters.ModelPropertyEntryToModelItemConverter" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public object Convert (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object value, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Converters.ModelPropertyEntryToModelItemConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> derived object to convert.</param>
+        <param name="targetType">Not used.</param>
+        <param name="parameter">Not used.</param>
+        <param name="culture">Not used.</param>
+        <summary>Converts a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> derived object to a <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</summary>
+        <returns>Returns an <see cref="T:System.Object" /> that contains the <see cref="T:System.Activities.Presentation.Model.ModelItem" />, <see cref="T:System.Activities.Presentation.EditingContext" />, and value of the UI property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public object Convert (object[] values, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object[] values, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Converters.ModelPropertyEntryToModelItemConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="values">An array of <see cref="T:System.Activities.Presentation.Model.ModelItem" /> derived objects to convert.</param>
+        <param name="targetType">Not used.</param>
+        <param name="parameter">The converter parameter to use.</param>
+        <param name="culture">Not used.</param>
+        <summary>Converts a <see cref="T:System.Activities.Presentation.Model.ModelItem" /> derived object to a <see cref="T:System.Activities.Presentation.Model.ModelItem" /></summary>
+        <returns>Returns an <see cref="T:System.Object" /> that contains the <see cref="T:System.Activities.Presentation.Model.ModelItem" />, <see cref="T:System.Activities.Presentation.EditingContext" />, and value of the UI property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertBack">
+      <MemberSignature Language="C#" Value="public object ConvertBack (object value, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ConvertBack(object value, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Converters.ModelPropertyEntryToModelItemConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">Not used.</param>
+        <param name="targetType">Not used.</param>
+        <param name="parameter">Not used.</param>
+        <param name="culture">Not used.</param>
+        <summary>Not supported in this release.</summary>
+        <returns>Returns an <see cref="T:System.Object" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertBack">
+      <MemberSignature Language="C#" Value="public object[] ConvertBack (object value, Type[] targetTypes, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] ConvertBack(object value, class System.Type[] targetTypes, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Converters.ModelPropertyEntryToModelItemConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="targetTypes" Type="System.Type[]" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">Not used.</param>
+        <param name="targetTypes">Not used.</param>
+        <param name="parameter">Not used.</param>
+        <param name="culture">Not used.</param>
+        <summary>Not supported in this release.</summary>
+        <returns>Returns an <see cref="T:System.Object" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

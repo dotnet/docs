@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="MyControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             Name="MyToolWindow">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBox Name="resultsTextBox" Height="800.0"
+        Width="800.0"
+        IsReadOnly="True">
+            </TextBox>
+        </StackPanel>
+    </Grid>
+</UserControl>

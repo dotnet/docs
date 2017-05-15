@@ -1,0 +1,64 @@
+<Type Name="IResourceUrlGenerator" FullName="System.Web.UI.IResourceUrlGenerator">
+  <TypeSignature Language="C#" Value="public interface IResourceUrlGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResourceUrlGenerator" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IResourceUrlGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the method that a designer-host must implement to provide URL reference look-up for embedded resources.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET version 2.0 provides the ability to retrieve embedded resources from an assembly for controls, such as the <xref:System.Web.UI.Page> control. At run time, the URL to the embedded resource can be retrieved using the <xref:System.Web.UI.ClientScriptManager.GetWebResourceUrl%2A> method of the <xref:System.Web.UI.ClientScriptManager> class. To provide a design-time means for generating a resource URL from an assembly, designer hosts can offer a service that implements the <xref:System.Web.UI.IResourceUrlGenerator> interface. For more information:  
+  
+-   On using resources in localization, see [ASP.NET Web Page Resources Overview](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd).  
+  
+-   On using embedded resources, see [NIB:How to: Use Resources to Set Property Values in Web Server Controls](http://msdn.microsoft.com/en-us/d8e0e5c0-1958-422b-b4f5-ebe63f6c45cb) and [How to: Retrieve Resource Values Programmatically](http://msdn.microsoft.com/library/7a06d512-6fc3-40ca-9cb6-7f41d1a9fa28).  
+  
+-   On control designers, see [ASP.NET Control Designers Overview](http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810).  
+  
+ The <xref:System.Web.UI.IResourceUrlGenerator> interface has one method, the <xref:System.Web.UI.IResourceUrlGenerator.GetResourceUrl%2A> method, that returns a URL reference to a resource given the resource type and name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetResourceUrl">
+      <MemberSignature Language="C#" Value="public string GetResourceUrl (Type type, string resourceName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetResourceUrl(class System.Type type, string resourceName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IResourceUrlGenerator.GetResourceUrl(System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="resourceName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type in the assembly that contains the embedded resource.</param>
+        <param name="resourceName">The name of the resource to retrieve.</param>
+        <summary>Returns a URL reference to an embedded resource in an assembly that is used at design time.</summary>
+        <returns>The URL reference to the resource.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ At run time, the <xref:System.Web.UI.ClientScriptManager.GetWebResourceUrl%2A> method returns a URL to a resource. The <xref:System.Web.Handlers.AssemblyResourceLoader> class defines the HTTP handler that is used to load embedded resources.  
+  
+ At design time, the <xref:System.Web.UI.ClientScriptManager.GetWebResourceUrl%2A> method of the <xref:System.Web.UI.ClientScriptManager> class detects design mode and delegates to the designer-host service implementation, which returns a URL.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,57 @@
+<Type Name="TextCollapsingStyle" FullName="System.Windows.Media.TextFormatting.TextCollapsingStyle">
+  <TypeSignature Language="C#" Value="public enum TextCollapsingStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextCollapsingStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextCollapsingStyle" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the style of collapsed text.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Line collapsing is the ability to reduce displaying space for a line by not showing part of the line's text. Depending on the collapsing style, a collapsing symbol may be shown at the location where the collapsed text occurred.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="TrailingCharacter">
+      <MemberSignature Language="C#" Value="TrailingCharacter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormatting.TextCollapsingStyle TrailingCharacter = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.TextCollapsingStyle.TrailingCharacter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextCollapsingStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Collapse trailing characters.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailingWord">
+      <MemberSignature Language="C#" Value="TrailingWord" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TextFormatting.TextCollapsingStyle TrailingWord = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.TextFormatting.TextCollapsingStyle.TrailingWord" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.TextFormatting.TextCollapsingStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Collapse trailing words.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

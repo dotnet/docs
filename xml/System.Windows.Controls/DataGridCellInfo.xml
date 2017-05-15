@@ -1,0 +1,253 @@
+<Type Name="DataGridCellInfo" FullName="System.Windows.Controls.DataGridCellInfo">
+  <TypeSignature Language="C#" Value="public struct DataGridCellInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DataGridCellInfo extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridCellInfo" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents information about a specific cell in a <see cref="T:System.Windows.Controls.DataGrid" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This structure provides information about the cell and the data item associated with the cell. It is used instead of a reference to the actual <xref:System.Windows.Controls.DataGridCell> container when the <xref:System.Windows.Controls.DataGrid> gets a cell; for example, in the <xref:System.Windows.Controls.DataGrid.CurrentCell%2A> or <xref:System.Windows.Controls.DataGrid.SelectedCells%2A> properties.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridCellInfo (System.Windows.Controls.DataGridCell cell);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.DataGridCell cell) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.#ctor(System.Windows.Controls.DataGridCell)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cell" Type="System.Windows.Controls.DataGridCell" />
+      </Parameters>
+      <Docs>
+        <param name="cell">The cell for which information is to be generated.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridCellInfo" /> structure for the specified cell.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor associates the <xref:System.Windows.Controls.DataGridCellInfo> with the specific <xref:System.Windows.Controls.DataGrid> instance that owns the cell container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridCellInfo (object item, System.Windows.Controls.DataGridColumn column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object item, class System.Windows.Controls.DataGridColumn column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.#ctor(System.Object,System.Windows.Controls.DataGridColumn)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="column" Type="System.Windows.Controls.DataGridColumn" />
+      </Parameters>
+      <Docs>
+        <param name="item">The data item for the row that contains the cell.</param>
+        <param name="column">The column that contains the cell.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridCellInfo" /> structure using the specified data item and column.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor does not associate the <xref:System.Windows.Controls.DataGridCellInfo> with a specific <xref:System.Windows.Controls.DataGrid> instance.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Column">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridColumn Column { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataGridColumn Column" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridCellInfo.Column" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridColumn</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the column that contains the cell.</summary>
+        <value>The column that contains the cell.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare to the current instance.</param>
+        <summary>Indicates whether the specified object is equal to the current instance.</summary>
+        <returns>
+          <see langword="true" /> if the comparison object represents the same cell; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a hash code for the current <see cref="T:System.Windows.Controls.DataGridCellInfo" /> structure.</summary>
+        <returns>A hash code for the structure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridCellInfo.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the structure holds valid information.</summary>
+        <value>
+          <see langword="true" /> if the structure has valid information; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property verifies that the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property is not <xref:System.Windows.DependencyProperty.UnsetValue?displayProperty=fullName> and the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property is not `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object Item { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridCellInfo.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the data item for the row that contains the cell.</summary>
+        <value>The data item for the row that contains the cell.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Controls.DataGridCellInfo cell1, System.Windows.Controls.DataGridCellInfo cell2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.DataGridCellInfo cell1, valuetype System.Windows.Controls.DataGridCellInfo cell2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.op_Equality(System.Windows.Controls.DataGridCellInfo,System.Windows.Controls.DataGridCellInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell1" Type="System.Windows.Controls.DataGridCellInfo" />
+        <Parameter Name="cell2" Type="System.Windows.Controls.DataGridCellInfo" />
+      </Parameters>
+      <Docs>
+        <param name="cell1">The first structure to compare.</param>
+        <param name="cell2">The second structure to compare.</param>
+        <summary>Indicates whether two <see cref="T:System.Windows.Controls.DataGridCellInfo" /> instances are equal.</summary>
+        <returns>
+          <see langword="true" /> if the two structures represent the same cell; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.DataGridCellInfo cell1, System.Windows.Controls.DataGridCellInfo cell2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.DataGridCellInfo cell1, valuetype System.Windows.Controls.DataGridCellInfo cell2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridCellInfo.op_Inequality(System.Windows.Controls.DataGridCellInfo,System.Windows.Controls.DataGridCellInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell1" Type="System.Windows.Controls.DataGridCellInfo" />
+        <Parameter Name="cell2" Type="System.Windows.Controls.DataGridCellInfo" />
+      </Parameters>
+      <Docs>
+        <param name="cell1">The first structure to compare.</param>
+        <param name="cell2">The second structure to compare.</param>
+        <summary>Indicates whether two <see cref="T:System.Windows.Controls.DataGridCellInfo" /> instances are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the two structures do not represent the same cell; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This operator compares the <xref:System.Windows.Controls.DataGridCellInfo.Column%2A> property, the <xref:System.Windows.Controls.DataGridCellInfo.Item%2A> property, and the <xref:System.Windows.Controls.DataGrid> that owns the cell container.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

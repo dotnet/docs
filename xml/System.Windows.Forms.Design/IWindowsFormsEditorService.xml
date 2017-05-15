@@ -1,0 +1,124 @@
+<Type Name="IWindowsFormsEditorService" FullName="System.Windows.Forms.Design.IWindowsFormsEditorService">
+  <TypeSignature Language="C#" Value="public interface IWindowsFormsEditorService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWindowsFormsEditorService" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.IWindowsFormsEditorService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an interface for a <see cref="T:System.Drawing.Design.UITypeEditor" /> to display Windows Forms or to display a control in a drop-down area from a property grid control in design mode.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Design.IWindowsFormsEditorService> is only available through the <xref:System.IServiceProvider.GetService%2A> method of the <xref:System.Windows.Forms.PropertyGrid> control.  
+  
+ This service is typically used to display a form from the <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> method of a <xref:System.Drawing.Design.UITypeEditor>. When a <xref:System.Windows.Forms.PropertyGrid> invokes the <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> method of a <xref:System.Drawing.Design.UITypeEditor> to provide a user interface for editing the value of a property, the <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> method is passed a reference to an <xref:System.IServiceProvider> that can typically provide an instance of the <xref:System.Windows.Forms.Design.IWindowsFormsEditorService>. The methods of this service can be used to display dialog boxes and forms, or to show a <xref:System.Windows.Forms.Control> within a drop down container that is shown on top of the property grid near the area of the value field whose value is being edited.  
+  
+   
+  
+## Examples  
+ The following example provides an example <xref:System.Drawing.Design.UITypeEditor> that uses an <xref:System.Windows.Forms.Design.IWindowsFormsEditorService> to display a <xref:System.Windows.Forms.Form> for user input.  
+  
+ [!code-cpp[WinFormsEditorServiceDialogExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/WinFormsEditorServiceDialogExample/CPP/winformsedserviceeditordialogexample.cpp#1)]
+ [!code-csharp[WinFormsEditorServiceDialogExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/WinFormsEditorServiceDialogExample/CS/winformsedserviceeditordialogexample.cs#1)]
+ [!code-vb[WinFormsEditorServiceDialogExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WinFormsEditorServiceDialogExample/VB/winformsedserviceeditordialogexample.vb#1)]  
+  
+ The following example provides an example <xref:System.Drawing.Design.UITypeEditor> that uses an <xref:System.Windows.Forms.Design.IWindowsFormsEditorService> to display a drop-down <xref:System.Windows.Forms.UserControl> for user input.  
+  
+ [!code-cpp[WinFormsEditorServiceDropDownExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/WinFormsEditorServiceDropDownExample/CPP/winformsedserviceeditordropdownexample.cpp#1)]
+ [!code-csharp[WinFormsEditorServiceDropDownExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/WinFormsEditorServiceDropDownExample/CS/winformsedserviceeditordropdownexample.cs#1)]
+ [!code-vb[WinFormsEditorServiceDropDownExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WinFormsEditorServiceDropDownExample/VB/winformsedserviceeditordropdownexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CloseDropDown">
+      <MemberSignature Language="C#" Value="public void CloseDropDown ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseDropDown() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IWindowsFormsEditorService.CloseDropDown" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Closes any previously opened drop down control area.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method closes the drop down container area for a control that has been shown using the <xref:System.Windows.Forms.Design.IWindowsFormsEditorService.DropDownControl%2A> method, and releases the drop down container's reference to the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DropDownControl">
+      <MemberSignature Language="C#" Value="public void DropDownControl (System.Windows.Forms.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DropDownControl(class System.Windows.Forms.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IWindowsFormsEditorService.DropDownControl(System.Windows.Forms.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Windows.Forms.Control" />
+      </Parameters>
+      <Docs>
+        <param name="control">The drop down list <see cref="T:System.Windows.Forms.Control" /> to open.</param>
+        <summary>Displays the specified control in a drop down area below a value field of the property grid that provides this service.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Design.UITypeEditor.EditValue%2A> method of a <xref:System.Drawing.Design.UITypeEditor> can call this method to display a specified control in a drop down area over the property grid hosting the editor which uses this service.  
+  
+ When possible, the dimensions of the control will be maintained. If this is not possible due to the screen layout, the control may be resized. To ensure that the control resizes neatly, you should implement docking and anchoring, and possibly any resize event-handler update code. If the user performs an action that causes the drop down to close, the control will be hidden and disposed by garbage collection if there is no other stored reference to the control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowDialog">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DialogResult ShowDialog (System.Windows.Forms.Form dialog);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.DialogResult ShowDialog(class System.Windows.Forms.Form dialog) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.IWindowsFormsEditorService.ShowDialog(System.Windows.Forms.Form)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dialog" Type="System.Windows.Forms.Form" />
+      </Parameters>
+      <Docs>
+        <param name="dialog">The <see cref="T:System.Windows.Forms.Form" /> to display.</param>
+        <summary>Shows the specified <see cref="T:System.Windows.Forms.Form" />.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.DialogResult" /> indicating the result code returned by the <see cref="T:System.Windows.Forms.Form" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method displays the specified form.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

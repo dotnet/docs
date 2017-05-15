@@ -1,0 +1,178 @@
+<Type Name="SqlTrackingQuery" FullName="System.Workflow.Runtime.Tracking.SqlTrackingQuery">
+  <TypeSignature Language="C#" Value="public sealed class SqlTrackingQuery" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlTrackingQuery extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.SqlTrackingQuery" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains methods and properties that are used to manage queries to the tracking data that is contained in the SQL database used by a <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery> provides methods and properties that you can use in order to access certain kinds of tracking data stored in a SQL database by the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService>. Access to this data is provided through <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects. You can call <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A> to try to get a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> for a specific workflow instance. You can call <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A> to get a collection of <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> objects that correspond workflow instances that have tracking data that matches a set of query parameters contained in a <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> that is passed as a parameter to the method. See the <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance> class for more information about the kind of tracking data available and see the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions> class for more information about the kind of queries that can be performed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlTrackingQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingQuery" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> to a null reference (`Nothing` in Visual Basic). You must set <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> before you call <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows%2A> or <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A> or an <xref:System.InvalidOperationException> will be thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlTrackingQuery (string connectionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">The connection string of the SQL database to query.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingQuery" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString%2A> property is initialized to `connectionString`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.%23ctor%2A> to create an instance of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery> class.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#129](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#129)]
+ [!code-vb[WF_Samples#129](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#129)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="connectionString" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The connection string of the SQL tracking database to query.</summary>
+        <value>A SQL database connection string.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt to set <see cref="P:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString" /> to a null reference (<see langword="Nothing" /> in Visual Basic) was made.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWorkflows">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&gt; GetWorkflows (System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&gt; GetWorkflows(class System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.GetWorkflows(System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="options" Type="System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions" />
+      </Parameters>
+      <Docs>
+        <param name="options">A <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions" /> that specifies query parameters.</param>
+        <summary>Returns tracking data for a set of workflow instances that correspond to a set of query parameters specified by a <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingQueryOptions" />.</summary>
+        <returns>A list of <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> objects that provide access to tracking data for the set of workflow instances with tracking data that matches the query parameters specified by <paramref name="options" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="options" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString" /> is a null reference (<see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetWorkflow">
+      <MemberSignature Language="C#" Value="public bool TryGetWorkflow (Guid workflowInstanceId, out System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance workflowInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetWorkflow(valuetype System.Guid workflowInstanceId, class System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance workflowInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow(System.Guid,System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowInstanceId" Type="System.Guid" />
+        <Parameter Name="workflowInstance" Type="System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="workflowInstanceId">The <see cref="T:System.Guid" /> of the workflow instance for which the tracking data is requested.</param>
+        <param name="workflowInstance">When this method returns <see langword="true" />, contains a <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance" /> that provides access to the tracking data associated with the workflow instance. This parameter is passed uninitiailized.</param>
+        <summary>Tries to get query data for a specified workflow instance.</summary>
+        <returns>
+          <see langword="true" /> if tracking data is available for the requested workflow instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow%2A> method to retrieve a <xref:System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance>.  
+  
+ This code example is part of the Workflow Monitor SDK Sample from the DatabaseService.cs file. For more information, see [Workflow Monitor](http://msdn.microsoft.com/en-us/4f70c1c5-f82d-4d5f-8b7d-943b9f99f8e2).  
+  
+ [!code-csharp[WF_Samples#129](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#129)]
+ [!code-vb[WF_Samples#129](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#129)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Workflow.Runtime.Tracking.SqlTrackingQuery.ConnectionString" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

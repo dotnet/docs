@@ -1,0 +1,42 @@
+<Type Name="ServiceMoniker" FullName="System.ServiceModel.ComIntegration.ServiceMoniker">
+  <TypeSignature Language="C#" Value="public sealed class ServiceMoniker : ContextBoundObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceMoniker extends System.ContextBoundObject" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.ComIntegration.ServiceMoniker" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ContextBoundObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("CE39D6F3-DAB7-41b3-9F7D-BD1CC4E92399")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>This class provides the supporting implementation for the COM service moniker and should not be used directly.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceMoniker ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.ServiceMoniker.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ComIntegration.ServiceMoniker" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

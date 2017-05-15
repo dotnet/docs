@@ -1,0 +1,48 @@
+<Type Name="HttpResponseMessageExtensionMethods" FullName="System.ServiceModel.Channels.HttpResponseMessageExtensionMethods">
+  <TypeSignature Language="C#" Value="public static class HttpResponseMessageExtensionMethods" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit HttpResponseMessageExtensionMethods extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpResponseMessageExtensionMethods" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A static extension methods class for getting a <see cref="T:System.ServiceModel.Channels.Message" /> instance from an <see cref="T:System.Net.Http.HttpResponseMessage" /> instance.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToMessage">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.Message ToMessage (this System.Net.Http.HttpResponseMessage httpResponseMessage);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.Message ToMessage(class System.Net.Http.HttpResponseMessage httpResponseMessage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpResponseMessageExtensionMethods.ToMessage(System.Net.Http.HttpResponseMessage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Channels</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="httpResponseMessage" Type="System.Net.Http.HttpResponseMessage" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="httpResponseMessage">The <see cref="T:System.Net.Http.HttpResponseMessage" /> from which to create the <see cref="T:System.ServiceModel.Channels.Message" /> instance.</param>
+        <summary>Creates a <see cref="T:System.ServiceModel.Channels.Message" /> instance from an <see cref="T:System.Net.Http.HttpResponseMessage" /> instance.</summary>
+        <returns>The new <see cref="T:System.ServiceModel.Channels.Message" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.Message> instance can be read, written and copied  just as a traditional <xref:System.ServiceModel.Channels.ByteStreamMessage> instance. The <xref:System.ServiceModel.Channels.Message> instance can also "read" to retrieve the original <xref:System.Net.Http.HttpResponseMessage> instance by calling the  <xref:System.ServiceModel.Channels.MessageExtensionMethods.ToHttpResponseMessage%2A> extension method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

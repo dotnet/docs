@@ -1,0 +1,65 @@
+<Type Name="ITemplate" FullName="System.Web.UI.ITemplate">
+  <TypeSignature Language="C#" Value="public interface ITemplate" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITemplate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ITemplate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the behavior for populating a templated ASP.NET server control with child controls. The child controls represent the inline templates defined on the page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is used by custom server controls, but never implemented by them. ASP.NET always implements it.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a simple templated server control that uses the <xref:System.Web.UI.ITemplate> interface to create a templated property.  
+  
+ [!code-csharp[Classic ITemplate Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic ITemplate Example/CS/source.cs#1)]
+ [!code-vb[Classic ITemplate Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic ITemplate Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InstantiateIn">
+      <MemberSignature Language="C#" Value="public void InstantiateIn (System.Web.UI.Control container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstantiateIn(class System.Web.UI.Control container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="container">The <see cref="T:System.Web.UI.Control" /> object to contain the instances of controls from the inline template.</param>
+        <summary>When implemented by a class, defines the <see cref="T:System.Web.UI.Control" /> object that child controls and templates belong to. These child controls are in turn defined within an inline template.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When developing templated server controls, you do not need to implement this method; the .NET Framework provides the implementation for you.  
+  
+   
+  
+## Examples  
+ [!code-csharp[ITemplate_Interface#2](~/samples/snippets/csharp/VS_Snippets_WebNet/ITemplate_Interface/CS/itemplate.cs#2)]
+ [!code-vb[ITemplate_Interface#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ITemplate_Interface/VB/itemplate.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

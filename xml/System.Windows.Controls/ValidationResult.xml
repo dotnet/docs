@@ -1,0 +1,265 @@
+<Type Name="ValidationResult" FullName="System.Windows.Controls.ValidationResult">
+  <TypeSignature Language="C#" Value="public class ValidationResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidationResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ValidationResult" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the result returned by the <see cref="T:System.Windows.Controls.ValidationRule" />.<see cref="M:System.Windows.Controls.ValidationRule.Validate(System.Object,System.Globalization.CultureInfo)" /> method that indicates whether the checked value passed the <see cref="T:System.Windows.Controls.ValidationRule" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding model enables you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with your <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.MultiBinding> object. You can create custom rules by subclassing the <xref:System.Windows.Controls.ValidationRule> class and implementing the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method. The <xref:System.Windows.Controls.ValidationRule.Validate%2A> method returns a <xref:System.Windows.Controls.ValidationResult> object to report whether the checked value is valid.  
+  
+ For a detailed discussion of the validation process, see "Data Validation" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+   
+  
+## Examples  
+ The following example shows the implementation of a validation rule that marks the input value as invalid if it contains non-numeric characters or outside the lower and upper bounds. If the value is invalid, the <xref:System.Windows.Controls.ValidationResult.ErrorContent%2A> property and the <xref:System.Windows.Controls.ValidationResult.IsValid%2A> property of the returned <xref:System.Windows.Controls.ValidationResult> are set to the appropriate error message and `false` respectively.  
+  
+ For the complete example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
+  
+ [!code-csharp[BindValidation#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/AgeRangeRule.cs#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ValidationResult (bool isValid, object errorContent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isValid, object errorContent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.#ctor(System.Boolean,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="isValid" Type="System.Boolean" />
+        <Parameter Name="errorContent" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="isValid">Whether or not the value checked against the <see cref="T:System.Windows.Controls.ValidationRule" /> is valid.</param>
+        <param name="errorContent">Information about the invalidity.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.ValidationResult" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding model enables you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with your <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.MultiBinding> object. You can create custom rules by subclassing the <xref:System.Windows.Controls.ValidationRule> class and implementing the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method. The <xref:System.Windows.Controls.ValidationRule.Validate%2A> method returns a <xref:System.Windows.Controls.ValidationResult> object to report whether the checked value is valid.  
+  
+ For a detailed discussion of the validation process, see "Data Validation" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+   
+  
+## Examples  
+ The following example shows the implementation of a validation rule that marks the input value as invalid if it contains non-numeric characters or outside the lower and upper bounds. If the value is invalid, the <xref:System.Windows.Controls.ValidationResult.ErrorContent%2A> property and the <xref:System.Windows.Controls.ValidationResult.IsValid%2A> property of the returned <xref:System.Windows.Controls.ValidationResult> are set to the appropriate error message and `false` respectively.  
+  
+ For the complete example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
+  
+ [!code-csharp[BindValidation#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/AgeRangeRule.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Windows.Controls.ValidationResult" /> instance to compare.</param>
+        <summary>Compares the specified instance and the current instance of <see cref="T:System.Windows.Controls.ValidationResult" /> for value equality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> and this instance of <see cref="T:System.Windows.Controls.ValidationResult" />.have the same values.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the operator overrides.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorContent">
+      <MemberSignature Language="C#" Value="public object ErrorContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ErrorContent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationResult.ErrorContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that provides additional information about the invalidity.</summary>
+        <value>An object that provides additional information about the invalidity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding model enables you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with your <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.MultiBinding> object. You can create custom rules by subclassing the <xref:System.Windows.Controls.ValidationRule> class and implementing the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method. The <xref:System.Windows.Controls.ValidationRule.Validate%2A> method returns a <xref:System.Windows.Controls.ValidationResult> object to report whether the checked value is valid.  
+  
+ For a detailed discussion of the validation process, see "Data Validation" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+   
+  
+## Examples  
+ The following example shows the implementation of a validation rule that marks the input value as invalid if it contains non-numeric characters or outside the lower and upper bounds. If the value is invalid, the <xref:System.Windows.Controls.ValidationResult.ErrorContent%2A> property and the <xref:System.Windows.Controls.ValidationResult.IsValid%2A> property of the returned <xref:System.Windows.Controls.ValidationResult> are set to the appropriate error message and `false` respectively.  
+  
+ For the complete example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
+  
+ [!code-csharp[BindValidation#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/AgeRangeRule.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this <see cref="T:System.Windows.Controls.ValidationResult" />.</summary>
+        <returns>The hash code for this <see cref="T:System.Windows.Controls.ValidationResult" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationResult.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the value checked against the <see cref="T:System.Windows.Controls.ValidationRule" /> is valid.</summary>
+        <value>
+          <see langword="true" /> if the value is valid; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] data binding model enables you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with your <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.MultiBinding> object. You can create custom rules by subclassing the <xref:System.Windows.Controls.ValidationRule> class and implementing the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method. The <xref:System.Windows.Controls.ValidationRule.Validate%2A> method returns a <xref:System.Windows.Controls.ValidationResult> object to report whether the checked value is valid.  
+  
+ For a detailed discussion of the validation process, see "Data Validation" in [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
+  
+   
+  
+## Examples  
+ The following example shows the implementation of a validation rule that marks the input value as invalid if it contains non-numeric characters or outside the lower and upper bounds. If the value is invalid, the <xref:System.Windows.Controls.ValidationResult.ErrorContent%2A> property and the <xref:System.Windows.Controls.ValidationResult.IsValid%2A> property of the returned <xref:System.Windows.Controls.ValidationResult> are set to the appropriate error message and `false` respectively.  
+  
+ For the complete example, see [How to: Implement Binding Validation](~/docs/framework/wpf/data/how-to-implement-binding-validation.md).  
+  
+ [!code-csharp[BindValidation#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/AgeRangeRule.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Controls.ValidationResult left, System.Windows.Controls.ValidationResult right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Controls.ValidationResult left, class System.Windows.Controls.ValidationResult right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.op_Equality(System.Windows.Controls.ValidationResult,System.Windows.Controls.ValidationResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Controls.ValidationResult" />
+        <Parameter Name="right" Type="System.Windows.Controls.ValidationResult" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first instance to compare.</param>
+        <param name="right">The second instance to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Controls.ValidationResult" /> objects for value equality.</summary>
+        <returns>
+          <see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.ValidationResult left, System.Windows.Controls.ValidationResult right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Controls.ValidationResult left, class System.Windows.Controls.ValidationResult right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ValidationResult.op_Inequality(System.Windows.Controls.ValidationResult,System.Windows.Controls.ValidationResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Controls.ValidationResult" />
+        <Parameter Name="right" Type="System.Windows.Controls.ValidationResult" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first instance to compare.</param>
+        <param name="right">The second instance to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Controls.ValidationResult" /> objects for value inequality.</summary>
+        <returns>
+          <see langword="true" /> if the values are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidResult">
+      <MemberSignature Language="C#" Value="public static System.Windows.Controls.ValidationResult ValidResult { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Controls.ValidationResult ValidResult" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ValidationResult.ValidResult" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.ValidationResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a valid instance of <see cref="T:System.Windows.Controls.ValidationResult" />.</summary>
+        <value>A valid instance of <see cref="T:System.Windows.Controls.ValidationResult" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

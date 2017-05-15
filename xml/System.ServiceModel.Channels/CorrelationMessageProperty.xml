@@ -1,0 +1,188 @@
+<Type Name="CorrelationMessageProperty" FullName="System.ServiceModel.Channels.CorrelationMessageProperty">
+  <TypeSignature Language="C#" Value="public class CorrelationMessageProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CorrelationMessageProperty extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CorrelationMessageProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a message property that contains correlation instance keys after applying the correlation calculation to a message.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CorrelationMessageProperty (System.Runtime.DurableInstancing.InstanceKey correlationKey, System.Collections.Generic.IEnumerable&lt;System.Runtime.DurableInstancing.InstanceKey&gt; additionalKeys);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.DurableInstancing.InstanceKey correlationKey, class System.Collections.Generic.IEnumerable`1&lt;class System.Runtime.DurableInstancing.InstanceKey&gt; additionalKeys) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationMessageProperty.#ctor(System.Runtime.DurableInstancing.InstanceKey,System.Collections.Generic.IEnumerable{System.Runtime.DurableInstancing.InstanceKey})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="correlationKey" Type="System.Runtime.DurableInstancing.InstanceKey" />
+        <Parameter Name="additionalKeys" Type="System.Collections.Generic.IEnumerable&lt;System.Runtime.DurableInstancing.InstanceKey&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="correlationKey">The instance key for the primary correlation.</param>
+        <param name="additionalKeys">Instance keys for additional correlations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> class using the specified correlation keys.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CorrelationMessageProperty (System.Runtime.DurableInstancing.InstanceKey correlationKey, System.Collections.Generic.IEnumerable&lt;System.Runtime.DurableInstancing.InstanceKey&gt; additionalKeys, System.Collections.Generic.IEnumerable&lt;System.Runtime.DurableInstancing.InstanceKey&gt; transientCorrelations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.DurableInstancing.InstanceKey correlationKey, class System.Collections.Generic.IEnumerable`1&lt;class System.Runtime.DurableInstancing.InstanceKey&gt; additionalKeys, class System.Collections.Generic.IEnumerable`1&lt;class System.Runtime.DurableInstancing.InstanceKey&gt; transientCorrelations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationMessageProperty.#ctor(System.Runtime.DurableInstancing.InstanceKey,System.Collections.Generic.IEnumerable{System.Runtime.DurableInstancing.InstanceKey},System.Collections.Generic.IEnumerable{System.Runtime.DurableInstancing.InstanceKey})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="correlationKey" Type="System.Runtime.DurableInstancing.InstanceKey" />
+        <Parameter Name="additionalKeys" Type="System.Collections.Generic.IEnumerable&lt;System.Runtime.DurableInstancing.InstanceKey&gt;" />
+        <Parameter Name="transientCorrelations" Type="System.Collections.Generic.IEnumerable&lt;System.Runtime.DurableInstancing.InstanceKey&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="correlationKey">The correlation key.</param>
+        <param name="additionalKeys">The additional keys.</param>
+        <param name="transientCorrelations">The transient correlations.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalKeys">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; AdditionalKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Runtime.DurableInstancing.InstanceKey&gt; AdditionalKeys" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationMessageProperty.AdditionalKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection that contains the additional instance keys for this <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />.</summary>
+        <value>The additional instance keys.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrelationKey">
+      <MemberSignature Language="C#" Value="public System.Runtime.DurableInstancing.InstanceKey CorrelationKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.DurableInstancing.InstanceKey CorrelationKey" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationMessageProperty.CorrelationKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.DurableInstancing.InstanceKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the primary correlation instance key for this <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />.</summary>
+        <value>The primary correlation instance key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public static string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationMessageProperty.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of this <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />.</summary>
+        <value>The string value <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransientCorrelations">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; TransientCorrelations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Runtime.DurableInstancing.InstanceKey&gt; TransientCorrelations" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationMessageProperty.TransientCorrelations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of transient correlation instance key for this <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />.</summary>
+        <value>The collection of transient correlation instance key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGet">
+      <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Channels.CorrelationMessageProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, class System.ServiceModel.Channels.CorrelationMessageProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.CorrelationMessageProperty@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="property" Type="System.ServiceModel.Channels.CorrelationMessageProperty&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that contains the <see cref="P:System.ServiceModel.Channels.Message.Properties" /> to inspect.</param>
+        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> contained the specified message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" /> if one is present; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
+        <summary>Attempts to get a <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> from the specified message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" />.</summary>
+        <returns>
+          <see langword="true" /> if the message’s <see cref="P:System.ServiceModel.Channels.Message.Properties" /> contains a <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />; otherwise; <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGet">
+      <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Channels.CorrelationMessageProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, class System.ServiceModel.Channels.CorrelationMessageProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.CorrelationMessageProperty@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.ServiceModel.Channels.MessageProperties" />
+        <Parameter Name="property" Type="System.ServiceModel.Channels.CorrelationMessageProperty&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="properties">The message properties to inspect.</param>
+        <param name="property">When this method returns, contains the <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> contained by the specified message properties if one is present; otherwise, <see langword="null" />. This parameter is passed uninitialized.</param>
+        <summary>Attempts to get the <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" /> from the specified message properties.</summary>
+        <returns>
+          <see langword="true" /> if the message properties contain a <see cref="T:System.ServiceModel.Channels.CorrelationMessageProperty" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

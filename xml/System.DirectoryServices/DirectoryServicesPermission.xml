@@ -1,0 +1,110 @@
+<Type Name="DirectoryServicesPermission" FullName="System.DirectoryServices.DirectoryServicesPermission">
+  <TypeSignature Language="C#" Value="public sealed class DirectoryServicesPermission : System.Security.Permissions.ResourcePermissionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DirectoryServicesPermission extends System.Security.Permissions.ResourcePermissionBase" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryServicesPermission" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Permissions.ResourcePermissionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.DirectoryServicesPermission" /> class allows you to control code access security permissions for <see cref="N:System.DirectoryServices" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DirectoryServicesPermission ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermission.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectoryServicesPermission" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DirectoryServicesPermission (System.DirectoryServices.DirectoryServicesPermissionEntry[] permissionAccessEntries);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.DirectoryServicesPermissionEntry[] permissionAccessEntries) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermission.#ctor(System.DirectoryServices.DirectoryServicesPermissionEntry[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="permissionAccessEntries" Type="System.DirectoryServices.DirectoryServicesPermissionEntry[]" />
+      </Parameters>
+      <Docs>
+        <param name="permissionAccessEntries">An array of <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntry" /> objects. The <see cref="P:System.DirectoryServices.DirectoryServicesPermission.PermissionEntries" /> property is set to this value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectoryServicesPermission" /> class with the specified permission access level entries.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The specified value for the <paramref name="permissionAccessEntries" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DirectoryServicesPermission (System.Security.Permissions.PermissionState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Security.Permissions.PermissionState" />
+      </Parameters>
+      <Docs>
+        <param name="state">One of the <see cref="T:System.Security.Permissions.PermissionState" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectoryServicesPermission" /> class with the specified permission state.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="State" /> parameter is not a valid value of <see cref="T:System.Security.Permissions.PermissionState" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DirectoryServicesPermission (System.DirectoryServices.DirectoryServicesPermissionAccess permissionAccess, string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.DirectoryServicesPermissionAccess permissionAccess, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermission.#ctor(System.DirectoryServices.DirectoryServicesPermissionAccess,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="permissionAccess" Type="System.DirectoryServices.DirectoryServicesPermissionAccess" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="permissionAccess">One of the <see cref="T:System.DirectoryServices.DirectoryServicesPermissionAccess" /> values.</param>
+        <param name="path">The path of the Active Directory Domain Services object, otherwise known as the ADsPath, to which the permissions apply.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DirectoryServicesPermission" /> class with the specified access levels and specified path to an Active Directory Domain Services node.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionEntries">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryServicesPermissionEntryCollection PermissionEntries { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.DirectoryServicesPermissionEntryCollection PermissionEntries" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryServicesPermission.PermissionEntries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.DirectoryServicesPermissionEntryCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of permission entries for this permission.</summary>
+        <value>A <see cref="T:System.DirectoryServices.DirectoryServicesPermissionEntryCollection" /> object that contains the permission entries for this permission.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

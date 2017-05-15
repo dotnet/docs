@@ -1,0 +1,220 @@
+<Type Name="DeviceSpecificChoiceCollection" FullName="System.Web.UI.MobileControls.DeviceSpecificChoiceCollection">
+  <TypeSignature Language="C#" Value="public class DeviceSpecificChoiceCollection : System.Web.UI.MobileControls.ArrayListCollectionBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeviceSpecificChoiceCollection extends System.Web.UI.MobileControls.ArrayListCollectionBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.MobileControls.ArrayListCollectionBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a collection of choices for the <see cref="T:System.Web.UI.MobileControls.DeviceSpecific" /> class. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Accessing the <xref:System.Web.UI.MobileControls.DeviceSpecific.Choices%2A> property of a <xref:System.Web.UI.MobileControls.DeviceSpecific> object retrieves a <xref:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection> object. This collection implements the <xref:System.Collections.ICollection> interface (through the <xref:System.Web.UI.MobileControls.ArrayListCollectionBase> object); it implements all properties and methods of the <xref:System.Collections.ICollection> interface.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection> class to gain access to the choices in a DeviceSpecific/Choice construct. For your convenience, a Web.config file containing the filters follows the example code.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[MobileDeviceSpecificChoiceCollectionSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileDeviceSpecificChoiceCollectionSample/cs/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[MobileDeviceSpecificChoiceCollectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileDeviceSpecificChoiceCollectionSample/vb/Default.aspx#1)]  -->  
+  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.UI.MobileControls.DeviceSpecificChoice choice);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.MobileControls.DeviceSpecificChoice choice) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Add(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="choice" Type="System.Web.UI.MobileControls.DeviceSpecificChoice" />
+      </Parameters>
+      <Docs>
+        <param name="choice">The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object to add to the end of the collection.</param>
+        <summary>Adds a <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object to the end of a collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the Add method to add a <xref:System.Web.UI.MobileControls.DeviceSpecificChoice> object programmatically (with a filter named `isCHTML10`) to the form. This example is part of a larger example for the <xref:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection> overview.  
+  
+ [!code-csharp[MobileDeviceSpecificChoiceCollectionSample#3](~/samples/snippets/csharp/VS_Snippets_WebNet/MobileDeviceSpecificChoiceCollectionSample/cs/Default.aspx#3)]
+ [!code-vb[MobileDeviceSpecificChoiceCollectionSample#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MobileDeviceSpecificChoiceCollectionSample/vb/Default.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAt">
+      <MemberSignature Language="C#" Value="public void AddAt (int index, System.Web.UI.MobileControls.DeviceSpecificChoice choice);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAt(int32 index, class System.Web.UI.MobileControls.DeviceSpecificChoice choice) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.AddAt(System.Int32,System.Web.UI.MobileControls.DeviceSpecificChoice)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="choice" Type="System.Web.UI.MobileControls.DeviceSpecificChoice" />
+      </Parameters>
+      <Docs>
+        <param name="index">The location in the collection at which to add <c>choice</c>.</param>
+        <param name="choice">The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> to add to the collection.</param>
+        <summary>Adds a choice at the location in the collection specified by the <paramref name="index" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A value of -1 for the `index` parameter specifies that the command is added to the end of the collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="public System.Collections.ArrayList All { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList All" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.All" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerDefaultProperty)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ArrayList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves an array of <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> objects from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The array of <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> objects contained by the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not available in the read-only <xref:System.Web.UI.MobileControls.IObjectListFieldCollection> interface. You can use the <xref:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Clear%2A> method for all the classes where this method applies. For example, the <xref:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Clear%2A> method for a <xref:System.Web.UI.MobileControls.StyleSheet> collection clears all the styles in the collection; or for the <xref:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection>, it clears all the choices in the collection. Adding a field to the fields of an object list changes the data-binding behavior of the control, and requires you to bind data to the control again.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.DeviceSpecificChoice this[int index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.DeviceSpecificChoice Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.MobileControls.DeviceSpecificChoice</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index number of the item to retrieve from the collection.</param>
+        <summary>Returns a <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> item in the collection, by index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <value>The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> object at the given <paramref name="index" /> in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.MobileControls.DeviceSpecificChoice choice);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.MobileControls.DeviceSpecificChoice choice) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.Remove(System.Web.UI.MobileControls.DeviceSpecificChoice)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="choice" Type="System.Web.UI.MobileControls.DeviceSpecificChoice" />
+      </Parameters>
+      <Docs>
+        <param name="choice">The <see cref="T:System.Web.UI.MobileControls.DeviceSpecificChoice" /> to remove</param>
+        <summary>Removes the specified choice. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index number of the item to remove.</param>
+        <summary>Removes the item at the specified index. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

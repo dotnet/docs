@@ -1,0 +1,114 @@
+<Type Name="PrintSystemObjects" FullName="System.Printing.PrintSystemObjects">
+  <TypeSignature Language="C#" Value="public abstract class PrintSystemObjects : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PrintSystemObjects extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemObjects" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a collection of print system objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you derive a class from <xref:System.Printing.PrintSystemObject>, you may want to derive a collection of objects of that class from <xref:System.Printing.PrintSystemObjects>.  
+  
+> [!CAUTION]
+>  Classes within the <xref:System.Printing> namespace are not supported for use within a Windows service or ASP.NET application or service. Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions.  
+  
+ If you want to print from a Windows Forms application, see the <xref:System.Drawing.Printing> namespace.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PrintSystemObjects ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemObjects.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintSystemObjects" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public override sealed void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemObjects.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Printing.PrintSystemObjects" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Printing.PrintSystemObjects.Dispose> when you are finished using the <xref:System.Printing.PrintSystemObjects>. The <xref:System.Printing.PrintSystemObjects.Dispose> method leaves the <xref:System.Printing.PrintSystemObjects> in an unusable state. After calling <xref:System.Printing.PrintSystemObjects.Dispose>, you must release all references to the <xref:System.Printing.PrintSystemObjects> so the garbage collector can reclaim the memory that the <xref:System.Printing.PrintSystemObjects> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.Printing.PrintSystemObjects.Dispose> before you release your last reference to the <xref:System.Printing.PrintSystemObjects>. Otherwise, the resources it is using will not be freed until the garbage collector calls the <xref:System.Printing.PrintSystemObjects> object's <xref:System.Object.Finalize%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool A_0);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool A_0) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemObjects.Dispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="A_0" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="A_0">To be added.</param>
+        <summary>Releases the unmanaged resources that are used by the <see cref="T:System.Printing.PrintSystemObjects" /> and optionally releases the managed resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is called by the public <xref:System.Printing.PrintSystemObjects.Dispose> method and the <xref:System.Object.Finalize%2A> method. <xref:System.Printing.PrintSystemObjects.Dispose> invokes the protected <xref:System.Printing.PrintSystemObjects.Dispose%28System.Boolean%29> method with the unnamed Boolean parameter set to `true`. <xref:System.Object.Finalize%2A> invokes <xref:System.Printing.PrintSystemObjects.Dispose%28System.Boolean%29> with the parameter set to `false`.  
+  
+ When the Boolean parameter is `true`, this method releases all resources held by any managed objects that this <xref:System.Printing.PrintSystemObjects> references. This method invokes the `Dispose()` method of each referenced object.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

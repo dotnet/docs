@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrApplicationLog_ExhaustedPossibleStreamNames"
 ms.assetid: 33994f52-8efb-4790-a459-033e5c1db632
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

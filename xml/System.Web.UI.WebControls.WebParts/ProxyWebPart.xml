@@ -1,0 +1,323 @@
+<Type Name="ProxyWebPart" FullName="System.Web.UI.WebControls.WebParts.ProxyWebPart">
+  <TypeSignature Language="C#" Value="public abstract class ProxyWebPart : System.Web.UI.WebControls.WebParts.WebPart" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ProxyWebPart extends System.Web.UI.WebControls.WebParts.WebPart" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.WebParts.WebPart</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the base class for Web Parts controls that under certain conditions must replace other Web Parts controls on a page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> is the base class for a set of Web Parts controls, such as <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> and <xref:System.Web.UI.WebControls.WebParts.ErrorWebPart>, that can be used as placeholders for other Web Parts controls on a page. Typically, a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> control will replace another Web Parts control when some type of error or failure has occurred. For example, when a user is not authorized to view a Web Parts control on a page, the intended Web Parts control is replaced with the <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control. When a Web Parts control cannot be loaded or a new instance of it cannot be created, the original Web Parts control is replaced with the <xref:System.Web.UI.WebControls.WebParts.ErrorWebPart> control. If the intended Web Parts control later becomes available to the user, it will be restored to the page and the object derived from the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> class will be removed.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> class does not save view state or control state. If a Web Parts control is replaced by a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object and then later becomes available, its view state and control state will be empty.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object preserves personalization data for the Web Parts control that it replaced. If the original Web Parts control becomes available, its personalization data will be restored.  
+  
+ When the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control saves personalization data, it does not save the properties of a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object. Instead, it saves the properties of the control that the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaced. If the original Web Parts control becomes available, the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control will automatically load it.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartCollection> object contains the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object. The ID of the intended Web Parts control can be retrieved from the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalID%2A> property or the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.GenericWebPartID%2A> property.  
+  
+ If a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a Web Parts control that is either the provider or consumer of a Web Parts connection, the connection is not activated but will not be deleted. If the original Web Parts control becomes available, the connection will be reactivated.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ProxyWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPart.#ctor(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="webPart" Type="System.Web.UI.WebControls.WebParts.WebPart" />
+      </Parameters>
+      <Docs>
+        <param name="webPart">The Web Parts control to be replaced.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" /> class when a static Web Parts control (or server or user control) must be replaced.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used to create a proxy Web Parts control to replace a static Web Parts control. To replace a dynamically created Web Parts control, use the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.%23ctor%28System.String%2CSystem.String%2CSystem.String%2CSystem.String%29> constructor to create the proxy Web Parts control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="webPart" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="webPart" /> has an empty <see cref="P:System.Web.UI.Control.ID" /> property  
+  
+ \- or -  
+  
+ <paramref name="webPart" /> is an empty <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" />  
+  
+ \- or -  
+  
+ <paramref name="webPart" /> is of type <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> and its child control has an empty <see cref="P:System.Web.UI.Control.ID" /> property</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ProxyWebPart (string originalID, string originalTypeName, string originalPath, string genericWebPartID);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string originalID, string originalTypeName, string originalPath, string genericWebPartID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPart.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="originalID" Type="System.String" />
+        <Parameter Name="originalTypeName" Type="System.String" />
+        <Parameter Name="originalPath" Type="System.String" />
+        <Parameter Name="genericWebPartID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="originalID">A string that is the control ID (not the unique ID) of the control to replace. If a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control is replaced, the ID is the ID of its child server control.</param>
+        <param name="originalTypeName">A string that is the name of the <see cref="T:System.Type" /> of the control to replace. If a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control is replaced, the type name is the type of its child server control.</param>
+        <param name="originalPath">A string that contains the path to the user control to replace.</param>
+        <param name="genericWebPartID">A string that returns the ID of a <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> control, if that type of control is being replaced. This is needed for controls that do not inherit from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> base class.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" /> class when a dynamic Web Parts control must be replaced.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used to create a proxy Web Parts control to replace a dynamic Web Parts control. To replace a static Web Parts control, use the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.%23ctor%28System.Web.UI.WebControls.WebParts.WebPart%29> constructor to create a proxy Web Parts control.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="originalPath" /> is specified but <paramref name="genericWebPartID" /> is <see langword="null" /> or an empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericWebPartID">
+      <MemberSignature Language="C#" Value="public string GenericWebPartID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GenericWebPartID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPart.GenericWebPartID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the <see cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.ID" /> property from the generic Web Parts control replaced by a proxy Web Parts control.</summary>
+        <value>A string containing the <see cref="P:System.Web.UI.WebControls.WebParts.GenericWebPart.ID" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control, this property contains the value from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ID%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ID">
+      <MemberSignature Language="C#" Value="public override sealed string ID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPart.ID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the programmatic identifier assigned to the Web Parts control.</summary>
+        <value>A <see cref="T:System.String" /> containing the identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object will contain the same value in its <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.ID%2A> property as the control it replaced.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadControlState">
+      <MemberSignature Language="C#" Value="protected override void LoadControlState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void LoadControlState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadControlState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">The previously saved state data.</param>
+        <summary>Overrides <see cref="M:System.Web.UI.Control.LoadControlState(System.Object)" /> to prevent loading previously saved state for a <see cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadControlState%2A> method overrides <xref:System.Web.UI.Control.LoadControlState%2A?displayProperty=fullName> to prevent loading the control state. The method does not load the control state or perform any other action.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadViewState">
+      <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadViewState(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="savedState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="savedState">The previously saved state data.</param>
+        <summary>Overrides <see cref="M:System.Web.UI.Control.LoadViewState(System.Object)" /> to prevent loading previously saved view state for a <see cref="T:System.Web.UI.WebControls.WebParts.ProxyWebPart" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.LoadViewState%2A> method overrides <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=fullName> to prevent loading the view state. The method does not load the view state or perform any other action.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalID">
+      <MemberSignature Language="C#" Value="public string OriginalID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OriginalID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="P:System.Web.UI.Control.ID" /> of the Web Parts control replaced by the proxy Web Parts control.</summary>
+        <value>A string containing the <see cref="P:System.Web.UI.Control.ID" /> value of the Web Parts control replaced by the proxy Web Parts control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a Web Parts control, the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalID%2A> property contains the <xref:System.Web.UI.Control.ID%2A> of the replaced control. If the replaced control is a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> object, this property contains the ID from the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.ChildControl%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalPath">
+      <MemberSignature Language="C#" Value="public string OriginalPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OriginalPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the path to the user control being replaced.</summary>
+        <value>A string that contains the path to a user control being replaced.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalTypeName">
+      <MemberSignature Language="C#" Value="public string OriginalTypeName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OriginalTypeName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPart.OriginalTypeName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Type" /> of the Web Parts control replaced by the proxy Web Parts control.</summary>
+        <value>A string containing the <see cref="T:System.Type" /> of the control replaced by the proxy Web Parts control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> object replaces a control, this property contains the <xref:System.Type> of the control that the proxy Web Parts control replaces.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveControlState">
+      <MemberSignature Language="C#" Value="protected override object SaveControlState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object SaveControlState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPart.SaveControlState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves any server control state changes that have occurred since the time the page was posted back to the server.</summary>
+        <returns>Returns the server control's current state. If there is no state associated with the control, this method returns <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveViewState">
+      <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPart.SaveViewState" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Saves any state that was modified after the <see cref="M:System.Web.UI.WebControls.Style.TrackViewState" /> method was invoked.</summary>
+        <returns>An object that contains the current view state of the control; otherwise, if there is no view state associated with the control, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

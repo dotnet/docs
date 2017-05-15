@@ -1,0 +1,87 @@
+<Type Name="EnvironmentLocationValue&lt;T&gt;" FullName="System.Activities.Expressions.EnvironmentLocationValue&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class EnvironmentLocationValue&lt;T&gt; : System.Activities.CodeActivity&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EnvironmentLocationValue`1&lt;T&gt; extends System.Activities.CodeActivity`1&lt;!T&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.EnvironmentLocationValue`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.CodeActivity&lt;T&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TResult">T</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The data type of the <see cref="T:System.Activities.Expressions.EnvironmentLocationValue`1" />.</typeparam>
+    <summary>Represents the environment location value.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.EnvironmentLocationValue`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.CodeActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">The activity’s metadata that encapsulates the activity’s arguments, variables, child activities, and activity delegates.</param>
+        <summary>Creates and validates a description of the activity’s arguments, variables, child activities, and activity delegates.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected override T Execute (System.Activities.CodeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !T Execute(class System.Activities.CodeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.EnvironmentLocationValue`1.Execute(System.Activities.CodeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.CodeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The execution context under which the activity executes.</param>
+        <summary>Performs the execution of the activity.</summary>
+        <returns>The execution of the activity.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocationReference">
+      <MemberSignature Language="C#" Value="public virtual System.Activities.LocationReference LocationReference { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.LocationReference LocationReference" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.EnvironmentLocationValue`1.LocationReference" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.LocationReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the location reference value.</summary>
+        <value>The location reference value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

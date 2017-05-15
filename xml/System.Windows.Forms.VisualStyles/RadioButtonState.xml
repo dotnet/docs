@@ -1,0 +1,153 @@
+<Type Name="RadioButtonState" FullName="System.Windows.Forms.VisualStyles.RadioButtonState">
+  <TypeSignature Language="C#" Value="public enum RadioButtonState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RadioButtonState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.RadioButtonState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the visual state of an option button (also known as a radio button) that is drawn with visual styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.RadioButtonState> values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.RadioButton> class. The <xref:System.Windows.Forms.VisualStyles.RadioButtonState> values are also used as an argument in the <xref:System.Windows.Forms.RadioButtonRenderer.DrawRadioButton%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckedDisabled">
+      <MemberSignature Language="C#" Value="CheckedDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState CheckedDisabled = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The option button is checked and disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckedHot">
+      <MemberSignature Language="C#" Value="CheckedHot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState CheckedHot = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedHot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The option button is checked and hot.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckedNormal">
+      <MemberSignature Language="C#" Value="CheckedNormal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState CheckedNormal = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedNormal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The option button is checked and normal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckedPressed">
+      <MemberSignature Language="C#" Value="CheckedPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState CheckedPressed = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.CheckedPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The option button is checked and pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UncheckedDisabled">
+      <MemberSignature Language="C#" Value="UncheckedDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState UncheckedDisabled = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The option button is unchecked and disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UncheckedHot">
+      <MemberSignature Language="C#" Value="UncheckedHot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState UncheckedHot = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedHot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The option button is unchecked and hot.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UncheckedNormal">
+      <MemberSignature Language="C#" Value="UncheckedNormal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState UncheckedNormal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedNormal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The option button is unchecked and normal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UncheckedPressed">
+      <MemberSignature Language="C#" Value="UncheckedPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.RadioButtonState UncheckedPressed = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.RadioButtonState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The option button is unchecked and pressed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

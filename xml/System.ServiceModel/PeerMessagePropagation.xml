@@ -1,0 +1,87 @@
+<Type Name="PeerMessagePropagation" FullName="System.ServiceModel.PeerMessagePropagation">
+  <TypeSignature Language="C#" Value="public enum PeerMessagePropagation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PeerMessagePropagation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerMessagePropagation" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the recipient of a message sent over a peer channel.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="Local" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessagePropagation Local = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.Local" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message is intended for the local peer node.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalAndRemote">
+      <MemberSignature Language="C#" Value="LocalAndRemote" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessagePropagation LocalAndRemote = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.LocalAndRemote" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message is intended for both the local peer node and a remote peer node in the peer mesh.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessagePropagation None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The recipient of the message is not known or available.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Remote">
+      <MemberSignature Language="C#" Value="Remote" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessagePropagation Remote = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.Remote" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message is intended for a remote peer node in the peer mesh.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

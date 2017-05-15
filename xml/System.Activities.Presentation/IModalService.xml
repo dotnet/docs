@@ -1,0 +1,50 @@
+<Type Name="IModalService" FullName="System.Activities.Presentation.IModalService">
+  <TypeSignature Language="C#" Value="public interface IModalService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IModalService" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IModalService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Enables notification to a host application that a modal dialog is displayed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some applications that host designers need to be notified when a modal dialog box has been invoked. Visual Studio is an example of such a host. The <xref:System.Activities.Presentation.IModalService> interface provides an interface to communicate the current modal status.  
+  
+ The Windows Workflow Designer calls the <xref:System.Activities.Presentation.IModalService.SetModalState%2A> method. When the `isModal` parameter is set to `true`, the host is notified that a modal dialog is displayed.  
+  
+ This is an optional service. If a host application does not care about the modal status,  you need not use the service.  
+  
+ In the current implementation, if a Windows Presentation Foundation (WPF) message box (which is a modal dialog) is invoked, the <xref:System.Activities.Presentation.IModalService.SetModalState%2A>is not called. If the host application requires this information, another workaround must be created.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetModalState">
+      <MemberSignature Language="C#" Value="public void SetModalState (bool isModal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetModalState(bool isModal) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IModalService.SetModalState(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="isModal" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="isModal">If set to <see langword="true" />, a modal dialog is being displayed.</param>
+        <summary>Notifies the host application that a modal dialog is being displayed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

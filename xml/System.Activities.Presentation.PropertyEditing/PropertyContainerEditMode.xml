@@ -1,0 +1,82 @@
+<Type Name="PropertyContainerEditMode" FullName="System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode">
+  <TypeSignature Language="C#" Value="public enum PropertyContainerEditMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyContainerEditMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Contains the different edit modes of a <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyContainer" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dialog">
+      <MemberSignature Language="C#" Value="Dialog" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode Dialog = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.Dialog" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Edit mode of the property inspector dialog window, which enables the implementation of a pop-up window to contain the property editor.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedPinned">
+      <MemberSignature Language="C#" Value="ExtendedPinned" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode ExtendedPinned = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.ExtendedPinned" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Editor mode of the property inspector dialog window, which enables the implementation of an additional user interface pinned into place within the property inspector window.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedPopup">
+      <MemberSignature Language="C#" Value="ExtendedPopup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode ExtendedPopup = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.ExtendedPopup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Editor mode of the property inspector dialog window, which enables the implementation of an additional user interface displayed on top of the property inspector window.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inline">
+      <MemberSignature Language="C#" Value="Inline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode Inline = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode.Inline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.PropertyEditing.PropertyContainerEditMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Inline editor mode of the property inspector dialog window, which enables the editing of values directly into that window.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

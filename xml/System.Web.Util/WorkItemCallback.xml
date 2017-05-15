@@ -1,0 +1,27 @@
+<Type Name="WorkItemCallback" FullName="System.Web.Util.WorkItemCallback">
+  <TypeSignature Language="C#" Value="public delegate void WorkItemCallback();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkItemCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Util.WorkItemCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>Represents the method that executes on a separate work item thread.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is passed to the <xref:System.Web.Util.WorkItem.Post%2A?displayProperty=fullName> method and provides a callback method for the thread to which the work item is being posted.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

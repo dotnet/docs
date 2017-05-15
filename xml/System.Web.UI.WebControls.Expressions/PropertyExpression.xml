@@ -1,0 +1,81 @@
+<Type Name="PropertyExpression" FullName="System.Web.UI.WebControls.Expressions.PropertyExpression">
+  <TypeSignature Language="C#" Value="public class PropertyExpression : System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyExpression extends System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Expressions.PropertyExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.Expressions.ParameterDataSourceExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a way to create a <see langword="Where" /> clause from parameters in a <see cref="P:System.Web.UI.WebControls.LinqDataSource.WhereParameters" /> collection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Expressions.PropertyExpression> class is used with the <xref:System.Web.UI.WebControls.QueryExtender> control to filter data in data fields. The <xref:System.Web.UI.WebControls.Expressions.PropertyExpression> class compares a property value of a column to a specified value. For example, you can compare a Boolean value to the value in the discontinued column of a Products table in a database.  
+  
+ The <xref:System.Web.UI.WebControls.Expressions.PropertyExpression> class creates an equals (==) comparison for the value of each parameter and the corresponding property of the <xref:System.Linq.IQueryable> data object. If you provide more than one parameter, the parameters are combined using the logical `AND` operator. Parameters that contain an empty value are not added to the `Where` clause.  
+  
+   
+  
+## Examples  
+ The following example shows how to search the Products table of the AdventureWorks database for products whose `MakeFlag` property (a Boolean column) is set to `true`. The Boolean value parameter is set in a check box. The result of the query that is returned from the <xref:System.Web.UI.WebControls.LinqDataSource> control is displayed in a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ This code example is part of a larger example that is provided in [Walkthrough: Filtering Data in a Web Page Using Declarative Syntax](http://msdn.microsoft.com/en-us/b305ae31-1a1b-4d07-a678-51457c17614f).  
+  
+  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.PropertyExpression.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Expressions.PropertyExpression" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQueryable">
+      <MemberSignature Language="C#" Value="public override System.Linq.IQueryable GetQueryable (System.Linq.IQueryable source);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Linq.IQueryable GetQueryable(class System.Linq.IQueryable source) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Expressions.PropertyExpression.GetQueryable(System.Linq.IQueryable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object to use for the query.</param>
+        <summary>Applies a <see cref="T:System.Web.UI.WebControls.Expressions.PropertyExpression" /> object by using the specified <see cref="T:System.Linq.IQueryable" /> data source object.</summary>
+        <returns>An instance of the object that the expressions were applied to.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method combines the specified <xref:System.Linq.IQueryable> object with the expressions in the <xref:System.Web.UI.WebControls.LinqDataSource.WhereParameters%2A> collection by using the logical `AND` operator.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

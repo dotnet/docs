@@ -1,0 +1,110 @@
+<Type Name="NonClientFrameEdges" FullName="System.Windows.Shell.NonClientFrameEdges">
+  <TypeSignature Language="C#" Value="public enum NonClientFrameEdges" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NonClientFrameEdges extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Shell.NonClientFrameEdges" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies constants that indicate which edges of the window frame are not owned by the client.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Shell.WindowChrome.NonClientFrameEdges%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.NonClientFrameEdges Bottom = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.NonClientFrameEdges.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.NonClientFrameEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bottom edge is not owned by the client (value = 8).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.NonClientFrameEdges Left = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.NonClientFrameEdges.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.NonClientFrameEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left edge is not owned by the client (value = 1).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.NonClientFrameEdges None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.NonClientFrameEdges.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.NonClientFrameEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All edges are owned by the client (value = 0).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.NonClientFrameEdges Right = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.NonClientFrameEdges.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.NonClientFrameEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right edge is not owned by the client (value = 4).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.NonClientFrameEdges Top = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.NonClientFrameEdges.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.NonClientFrameEdges</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The top edge is not owned by the client (value = 2).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

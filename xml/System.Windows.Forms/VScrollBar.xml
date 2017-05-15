@@ -1,0 +1,161 @@
+<Type Name="VScrollBar" FullName="System.Windows.Forms.VScrollBar">
+  <TypeSignature Language="C#" Value="public class VScrollBar : System.Windows.Forms.ScrollBar" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VScrollBar extends System.Windows.Forms.ScrollBar" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VScrollBar" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.ScrollBar</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a standard Windows vertical scroll bar.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most controls that need scroll bars already provide them and do not require this control. This is true of a multiline <xref:System.Windows.Forms.TextBox> control, a <xref:System.Windows.Forms.ListBox>, and a <xref:System.Windows.Forms.ComboBox>, for example.  
+  
+ You can use this control to implement scrolling in containers that do not provide their own scroll bars such as a <xref:System.Windows.Forms.PictureBox> or for user input of numeric data. The numeric data can be displayed in a control or used in code. The <xref:System.Windows.Forms.ScrollBar.Minimum%2A> and <xref:System.Windows.Forms.ScrollBar.Maximum%2A> properties determine the range of values the user can select. The <xref:System.Windows.Forms.ScrollBar.LargeChange%2A> property determines the effect of clicking within the scroll bar but outside the scroll box. The <xref:System.Windows.Forms.ScrollBar.SmallChange%2A> property determines the effect of clicking the scroll arrows at each end of the control.  
+  
+   
+  
+## Examples  
+ The following example creates and initializes a <xref:System.Windows.Forms.VScrollBar> and adds it to a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[Classic VScrollBar Example#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Classic VScrollBar Example/CPP/source.cpp#1)]
+ [!code-csharp[Classic VScrollBar Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Classic VScrollBar Example/CS/source.cs#1)]
+ [!code-vb[Classic VScrollBar Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic VScrollBar Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VScrollBar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.VScrollBar.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.VScrollBar" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateParams">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VScrollBar.CreateParams" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSize">
+      <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VScrollBar.DefaultSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default size of the control.</summary>
+        <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightToLeft">
+      <MemberSignature Language="C#" Value="public override System.Windows.Forms.RightToLeft RightToLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.RightToLeft RightToLeft" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VScrollBar.RightToLeft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether control's elements are aligned to support locales using right-to-left fonts.</summary>
+        <value>The <see cref="F:System.Windows.Forms.RightToLeft.No" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VScrollBar.RightToLeft%2A> property of the <xref:System.Windows.Forms.VScrollBar> control cannot be set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RightToLeftChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler RightToLeftChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.VScrollBar.RightToLeftChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.VScrollBar.RightToLeft" /> property changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VScrollBar.RightToLeft%2A> property of the <xref:System.Windows.Forms.VScrollBar> control cannot be set, so the <xref:System.Windows.Forms.VScrollBar> never raises the <xref:System.Windows.Forms.VScrollBar.RightToLeftChanged> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

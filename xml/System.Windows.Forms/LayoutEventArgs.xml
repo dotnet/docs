@@ -1,0 +1,177 @@
+<Type Name="LayoutEventArgs" FullName="System.Windows.Forms.LayoutEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class LayoutEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LayoutEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LayoutEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.Layout" /> event. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes to a control such as resizing, showing or hiding child controls, and adding or removing child controls make it necessary for a control to layout its child controls. A <xref:System.Windows.Forms.LayoutEventArgs> specifies the child control that has been changed and its affected property. For example, if a control has been made visible since the last layout operation, the <xref:System.Windows.Forms.Control.Visible%2A> property is affected.  
+  
+ The <xref:System.Windows.Forms.LayoutEventArgs.AffectedControl%2A> and <xref:System.Windows.Forms.LayoutEventArgs.AffectedProperty%2A> properties are set to `null` if no values were provided when the <xref:System.Windows.Forms.Control.PerformLayout%2A> method was called.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.LayoutEventArgs.AffectedProperty%2A> and <xref:System.Windows.Forms.LayoutEventArgs.AffectedControl%2A> properties as <xref:System.Windows.Forms.LayoutEventHandler> arguments to coordinate the size of a Windows form and its controls with various property changes to both the Windows form and the controls.  
+  
+ [!code-cpp[LayoutEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/LayoutEventArgs/CPP/form1.cpp#1)]
+ [!code-csharp[LayoutEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/LayoutEventArgs/CS/form1.cs#1)]
+ [!code-vb[LayoutEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/LayoutEventArgs/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LayoutEventArgs (System.ComponentModel.IComponent affectedComponent, string affectedProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IComponent affectedComponent, string affectedProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LayoutEventArgs.#ctor(System.ComponentModel.IComponent,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="affectedComponent" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="affectedProperty" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="affectedComponent">The <see cref="T:System.ComponentModel.Component" /> affected by the layout change.</param>
+        <param name="affectedProperty">The property affected by the layout change.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LayoutEventArgs" /> class with the specified component and property affected.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LayoutEventArgs (System.Windows.Forms.Control affectedControl, string affectedProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.Control affectedControl, string affectedProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.LayoutEventArgs.#ctor(System.Windows.Forms.Control,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="affectedControl" Type="System.Windows.Forms.Control" />
+        <Parameter Name="affectedProperty" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="affectedControl">The <see cref="T:System.Windows.Forms.Control" /> affected by the layout change.</param>
+        <param name="affectedProperty">The property affected by the layout change.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LayoutEventArgs" /> class with the specified control and property affected.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectedComponent">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent AffectedComponent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent AffectedComponent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LayoutEventArgs.AffectedComponent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ComponentModel.Component" /> affected by the layout change.</summary>
+        <value>An <see cref="T:System.ComponentModel.IComponent" /> representing the <see cref="T:System.ComponentModel.Component" /> affected by the layout change.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.Control.Layout?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of a type that inherits from <xref:System.Windows.Forms.Control>, such as a <xref:System.Windows.Forms.Button> or <xref:System.Windows.Forms.ComboBox>. Then name the instance `Control1` and ensure that the event handler is associated with the <xref:System.Windows.Forms.Control.Layout?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#51](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#51)]
+ [!code-vb[System.Windows.Forms.EventExamples#51](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#51)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectedControl">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Control AffectedControl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control AffectedControl" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LayoutEventArgs.AffectedControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the child control affected by the change.</summary>
+        <value>The child <see cref="T:System.Windows.Forms.Control" /> affected by the change.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.LayoutEventArgs.AffectedControl%2A> property is set to `null` if no value was provided when the <xref:System.Windows.Forms.Control.PerformLayout%2A> method was called.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.LayoutEventArgs.AffectedProperty%2A> and <xref:System.Windows.Forms.LayoutEventArgs.AffectedControl%2A> properties as <xref:System.Windows.Forms.LayoutEventHandler> arguments to coordinate the size of a Windows form and its controls with various property changes to both the Windows form and the controls.  
+  
+ [!code-cpp[LayoutEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/LayoutEventArgs/CPP/form1.cpp#1)]
+ [!code-csharp[LayoutEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/LayoutEventArgs/CS/form1.cs#1)]
+ [!code-vb[LayoutEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/LayoutEventArgs/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AffectedProperty">
+      <MemberSignature Language="C#" Value="public string AffectedProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AffectedProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.LayoutEventArgs.AffectedProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the property affected by the change.</summary>
+        <value>The property affected by the change.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a child control has been made visible since the last layout operation, the <xref:System.Windows.Forms.Control.Visible%2A> property is affected. The <xref:System.Windows.Forms.LayoutEventArgs.AffectedProperty%2A> property is set to `null` if no value was provided when the <xref:System.Windows.Forms.Control.PerformLayout%2A> method was called.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Windows.Forms.LayoutEventArgs.AffectedProperty%2A> and <xref:System.Windows.Forms.LayoutEventArgs.AffectedControl%2A> properties as <xref:System.Windows.Forms.LayoutEventHandler> arguments to coordinate the size of a Windows form and its controls with various property changes to both the Windows form and the controls.  
+  
+ [!code-cpp[LayoutEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/LayoutEventArgs/CPP/form1.cpp#1)]
+ [!code-csharp[LayoutEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/LayoutEventArgs/CS/form1.cs#1)]
+ [!code-vb[LayoutEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/LayoutEventArgs/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

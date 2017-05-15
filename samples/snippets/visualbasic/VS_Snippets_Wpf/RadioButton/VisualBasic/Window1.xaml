@@ -1,0 +1,75 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.Window1"
+>
+  <DockPanel>
+    <!--  The namespace + class name in the codebehind file and the 
+          x:Class attribute in the root of this document, must stay identical.  
+          You can change them, but you must keep them in sync. -->
+  
+<Grid>
+  <Grid.ColumnDefinitions>
+  <ColumnDefinition Width="250"/>
+  <ColumnDefinition Width="300"/>
+  </Grid.ColumnDefinitions>
+  <Grid.RowDefinitions>
+  <RowDefinition/>
+  <RowDefinition/>
+  <RowDefinition/>
+  <RowDefinition/>
+  <RowDefinition/>
+  <RowDefinition/>
+  <RowDefinition/>
+  <RowDefinition/>
+  <RowDefinition/>
+  </Grid.RowDefinitions>
+
+  <TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="0" FontSize="24" 
+        Grid.RowSpan="2">RadioButton</TextBlock>
+  <TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="1" 
+        Grid.ColumnSpan="2" FontSize="14" VerticalAlignment="Center">
+        The following radio button examples demonstrate:
+  </TextBlock>
+
+<DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="2" Grid.RowSpan="2">
+<RadioButton Name="rb" FontSize="12" Click="WriteText">Click the radio button.
+</RadioButton>
+</DockPanel>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="2" FontSize="12" 
+        VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+        A single radio button. Radio buttons do not toggle.
+</TextBlock>   
+  
+
+<DockPanel Margin="10, 10, 3, 0" Grid.Column="0" Grid.Row="3" Grid.RowSpan="2">
+    <TextBlock Name="txtb" FontSize="12">Click a radio button.</TextBlock>
+<StackPanel>      
+    <RadioButton Name="rb1" Checked="WriteText2">Yes</RadioButton>
+    <RadioButton Name="rb2" Checked="WriteText2">No</RadioButton>
+    <RadioButton Name="rb3" Checked="WriteText2">No opinion</RadioButton>
+</StackPanel>
+</DockPanel>
+
+<TextBlock Margin="10, 10, 0, 3" Grid.Column="1" Grid.Row="3" FontSize="12" 
+       VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+       Radio buttons grouped in a stack panel.
+</TextBlock>
+
+<DockPanel Margin="10, 10, 3, 0" Grid.Column="0" Grid.Row="5" Grid.RowSpan="2">
+<TextBlock FontSize="12">Choose color and number.</TextBlock> 
+<StackPanel>
+    <RadioButton GroupName="colorgrp">Red</RadioButton>
+    <RadioButton GroupName="colorgrp">Blue</RadioButton>
+    <RadioButton GroupName="numgrp">1</RadioButton>
+    <RadioButton GroupName="numgrp">2</RadioButton>
+</StackPanel>
+</DockPanel>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="5" FontSize="12" 
+        VerticalAlignment="Center" TextWrapping="WrapWithOverflow" Grid.RowSpan="2">
+        Two groups of radio buttons grouped in a stack panel using group names.
+</TextBlock>
+
+</Grid>
+</DockPanel>
+</Window>

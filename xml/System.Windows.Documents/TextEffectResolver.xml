@@ -1,0 +1,76 @@
+<Type Name="TextEffectResolver" FullName="System.Windows.Documents.TextEffectResolver">
+  <TypeSignature Language="C#" Value="public static class TextEffectResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TextEffectResolver extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextEffectResolver" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A helper class that sets text effects in a text container</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
+  
+ [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
+  
+ Below is the code behind for the example.  
+  
+ [!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="public static System.Windows.Documents.TextEffectTarget[] Resolve (System.Windows.Documents.TextPointer startPosition, System.Windows.Documents.TextPointer endPosition, System.Windows.Media.TextEffect effect);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Documents.TextEffectTarget[] Resolve(class System.Windows.Documents.TextPointer startPosition, class System.Windows.Documents.TextPointer endPosition, class System.Windows.Media.TextEffect effect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.TextEffectResolver.Resolve(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer,System.Windows.Media.TextEffect)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.TextEffectTarget[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startPosition" Type="System.Windows.Documents.TextPointer" />
+        <Parameter Name="endPosition" Type="System.Windows.Documents.TextPointer" />
+        <Parameter Name="effect" Type="System.Windows.Media.TextEffect" />
+      </Parameters>
+      <Docs>
+        <param name="startPosition">The starting text pointer</param>
+        <param name="endPosition">The end text pointer</param>
+        <param name="effect">The effect to apply on the text</param>
+        <summary>Resolves text effect on a text range to a list of text effect targets.</summary>
+        <returns>Collection of <see cref="T:System.Windows.Documents.TextEffectTarget" /> objects corresponding to the text range.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For each continuous block of text, this method creates a text effect targeting the scoping (parent) element.  
+  
+   
+  
+## Examples  
+ The following example shows how to apply a <xref:System.Windows.Media.TranslateTransform>, <xref:System.Windows.Media.ScaleTransform>, and <xref:System.Windows.Media.RotateTransform> text effect to text. Below is the XAML for the example.  
+  
+ [!code-xml[FlowMiscSnippets_snip#TextEffectTargetExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml#texteffecttargetexamplewholepage)]  
+  
+ Below is the code behind for the example.  
+  
+ [!code-csharp[FlowMiscSnippets_snip#TextEffectTargetCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowMiscSnippets_snip/cs/texteffecttargetexample.xaml.cs#texteffecttargetcodeexamplewholepage)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

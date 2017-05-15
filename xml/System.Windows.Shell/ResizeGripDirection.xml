@@ -1,0 +1,169 @@
+<Type Name="ResizeGripDirection" FullName="System.Windows.Shell.ResizeGripDirection">
+  <TypeSignature Language="C#" Value="public enum ResizeGripDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResizeGripDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Shell.ResizeGripDirection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies constants that indicate the direction of the resize grip behavior on an input element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Shell.WindowChrome.ResizeGripDirection%2A?displayProperty=fullName> attached property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="Bottom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.ResizeGripDirection Bottom = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.Bottom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.ResizeGripDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The window resizes from its bottom edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomLeft">
+      <MemberSignature Language="C#" Value="BottomLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.ResizeGripDirection BottomLeft = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.BottomLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.ResizeGripDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The window resizes from its bottom-left corner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomRight">
+      <MemberSignature Language="C#" Value="BottomRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.ResizeGripDirection BottomRight = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.BottomRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.ResizeGripDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The window resizes from its bottom-right corner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="Left" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.ResizeGripDirection Left = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.Left" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.ResizeGripDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The windows resizes from its left edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.ResizeGripDirection None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.ResizeGripDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No resize behavior is specified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="Right" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.ResizeGripDirection Right = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.Right" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.ResizeGripDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The window resizes from its right edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="Top" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.ResizeGripDirection Top = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.Top" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.ResizeGripDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The window resizes from its top edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLeft">
+      <MemberSignature Language="C#" Value="TopLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.ResizeGripDirection TopLeft = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.TopLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.ResizeGripDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The window resizes from its top-left corner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopRight">
+      <MemberSignature Language="C#" Value="TopRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Shell.ResizeGripDirection TopRight = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Shell.ResizeGripDirection.TopRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Shell.ResizeGripDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The window resizes from its top-right corner.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,116 @@
+<Type Name="CompositeActivityValidator" FullName="System.Workflow.ComponentModel.Compiler.CompositeActivityValidator">
+  <TypeSignature Language="C#" Value="public class CompositeActivityValidator : System.Workflow.ComponentModel.Compiler.ActivityValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeActivityValidator extends System.Workflow.ComponentModel.Compiler.ActivityValidator" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.ComponentModel.Compiler.ActivityValidator</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Derivative of <see cref="T:System.Workflow.ComponentModel.Compiler.ActivityValidator" /> that is the base class for all composite activity validator components.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The class provides validation logic for a <xref:System.Workflow.ComponentModel.CompositeActivity>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompositeActivityValidator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Validate (System.Workflow.ComponentModel.Compiler.ValidationManager manager, object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Validate(class System.Workflow.ComponentModel.Compiler.ValidationManager manager, object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator.Validate(System.Workflow.ComponentModel.Compiler.ValidationManager,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationErrorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="manager" Type="System.Workflow.ComponentModel.Compiler.ValidationManager" />
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="manager">The <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationManager" /> linked to the validation.</param>
+        <param name="obj">Activity to be validated.</param>
+        <summary>Validates the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> configuration.</summary>
+        <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> of errors found during validation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method calls <xref:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator.Validate%2A> on every child <xref:System.Workflow.ComponentModel.Activity> in the <xref:System.Workflow.ComponentModel.CompositeActivity.EnabledActivities%2A> collection. It also checks that no more than one <xref:System.Workflow.ComponentModel.CancellationHandlerActivity>, <xref:System.Workflow.ComponentModel.FaultHandlersActivity>, or <xref:System.Workflow.ComponentModel.CompensationHandlerActivity> is attached to the <xref:System.Workflow.ComponentModel.CompositeActivity>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="obj" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateActivityChange">
+      <MemberSignature Language="C#" Value="public override System.Workflow.ComponentModel.Compiler.ValidationError ValidateActivityChange (System.Workflow.ComponentModel.Activity activity, System.Workflow.ComponentModel.ActivityChangeAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.ComponentModel.Compiler.ValidationError ValidateActivityChange(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.ComponentModel.ActivityChangeAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.CompositeActivityValidator.ValidateActivityChange(System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.ActivityChangeAction)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationError</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Workflow.ComponentModel.Activity" />
+        <Parameter Name="action" Type="System.Workflow.ComponentModel.ActivityChangeAction" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The affected <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <param name="action">The <see cref="T:System.Workflow.ComponentModel.ActivityChangeAction" /> that defines the change.</param>
+        <summary>Validates the change based on the affected <see cref="T:System.Workflow.ComponentModel.Activity" /> and provides the error.</summary>
+        <returns>The <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> by the validation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If validation occurs without error, a null reference (`Nothing`) is returned.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="action" /> is a null reference (<see langword="Nothing" />).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

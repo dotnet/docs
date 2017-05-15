@@ -1,0 +1,402 @@
+<Type Name="DiscoveryProxy" FullName="System.ServiceModel.Discovery.DiscoveryProxy">
+  <TypeSignature Language="C#" Value="public abstract class DiscoveryProxy" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DiscoveryProxy extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryProxy" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>An abstract base class used to implement a discovery proxy.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DiscoveryProxy ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryProxy" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DiscoveryProxy (System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator messageSequenceGenerator);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator messageSequenceGenerator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.#ctor(System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="messageSequenceGenerator" Type="System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />
+      </Parameters>
+      <Docs>
+        <param name="messageSequenceGenerator">The message sequence generator.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryProxy" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DiscoveryProxy (System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator messageSequenceGenerator, int duplicateMessageHistoryLength);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator messageSequenceGenerator, int32 duplicateMessageHistoryLength) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.#ctor(System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="messageSequenceGenerator" Type="System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" />
+        <Parameter Name="duplicateMessageHistoryLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="messageSequenceGenerator">The message sequence generator.</param>
+        <param name="duplicateMessageHistoryLength">The maximum number of message hashes used by the transport for identifying duplicate messages. The default value is 0.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Discovery.DiscoveryProxy" /> class with the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator" /> and duplicate message history length.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginShouldRedirectFind">
+      <MemberSignature Language="C#" Value="protected virtual IAsyncResult BeginShouldRedirectFind (System.ServiceModel.Discovery.FindCriteria resolveCriteria, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult BeginShouldRedirectFind(class System.ServiceModel.Discovery.FindCriteria resolveCriteria, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.BeginShouldRedirectFind(System.ServiceModel.Discovery.FindCriteria,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resolveCriteria" Type="System.ServiceModel.Discovery.FindCriteria" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="resolveCriteria">The resolve criteria that describes the service to find.</param>
+        <param name="callback">The callback delegate to call when the operation has completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to allow the discovery proxy to send out multicast suppression messages when it receives a multicast find request.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginShouldRedirectResolve">
+      <MemberSignature Language="C#" Value="protected virtual IAsyncResult BeginShouldRedirectResolve (System.ServiceModel.Discovery.ResolveCriteria findCriteria, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult BeginShouldRedirectResolve(class System.ServiceModel.Discovery.ResolveCriteria findCriteria, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.BeginShouldRedirectResolve(System.ServiceModel.Discovery.ResolveCriteria,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="findCriteria" Type="System.ServiceModel.Discovery.ResolveCriteria" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="findCriteria">The find criteria that describes the service to find.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to allow the discovery proxy to send out multicast suppression messages when it receives a multicast resolve request.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndShouldRedirectFind">
+      <MemberSignature Language="C#" Value="protected virtual bool EndShouldRedirectFind (IAsyncResult result, out System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt; redirectionEndpoints);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool EndShouldRedirectFind(class System.IAsyncResult result, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt; redirectionEndpoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.EndShouldRedirectFind(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+        <Parameter Name="redirectionEndpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <param name="redirectionEndpoints">A collection of endpoint discovery metadata that describes the redirection endpoints.</param>
+        <summary>Override this method to handle the completion of sending the multicast suppression message for find requests.</summary>
+        <returns>
+          <see langword="true" /> if the find operation should be redirected, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndShouldRedirectResolve">
+      <MemberSignature Language="C#" Value="protected virtual bool EndShouldRedirectResolve (IAsyncResult result, out System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt; redirectionEndpoints);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool EndShouldRedirectResolve(class System.IAsyncResult result, class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt; redirectionEndpoints) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.EndShouldRedirectResolve(System.IAsyncResult,System.Collections.ObjectModel.Collection{System.ServiceModel.Discovery.EndpointDiscoveryMetadata}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+        <Parameter Name="redirectionEndpoints" Type="System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Discovery.EndpointDiscoveryMetadata&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <param name="redirectionEndpoints">A collection of endpoint discovery metadata that describes the redirection endpoints.</param>
+        <summary>Override this method to handle the completion of sending the multicast suppression message for resolve requests.</summary>
+        <returns>
+          <see langword="true" /> if the resolve operation should be redirected, otherwise <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Multicast suppression messages can be sent in response to a multicast find or resolve message when a discovery proxy is available. Sending unicast messages to the discovery proxy can help reduce the amount of network traffic caused by the discovery operations.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeginFind">
+      <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginFind (System.ServiceModel.Discovery.FindRequestContext findRequestContext, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginFind(class System.ServiceModel.Discovery.FindRequestContext findRequestContext, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginFind(System.ServiceModel.Discovery.FindRequestContext,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="findRequestContext" Type="System.ServiceModel.Discovery.FindRequestContext" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="findRequestContext">The find request context that describes the service to discover.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to handle a find operation.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Find results are returned by calling the <xref:System.ServiceModel.Discovery.FindRequestContext.AddMatchingEndpoint%2A> method one or more times.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeginOfflineAnnouncement">
+      <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginOfflineAnnouncement (System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence, System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginOfflineAnnouncement(class System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence, class System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOfflineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageSequence" Type="System.ServiceModel.Discovery.DiscoveryMessageSequence" />
+        <Parameter Name="endpointDiscoveryMetadata" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="messageSequence">The discovery message sequence.</param>
+        <param name="endpointDiscoveryMetadata">The endpoint discovery metadata.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to handle an offline announcement message.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeginOnlineAnnouncement">
+      <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginOnlineAnnouncement (System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence, System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginOnlineAnnouncement(class System.ServiceModel.Discovery.DiscoveryMessageSequence messageSequence, class System.ServiceModel.Discovery.EndpointDiscoveryMetadata endpointDiscoveryMetadata, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginOnlineAnnouncement(System.ServiceModel.Discovery.DiscoveryMessageSequence,System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messageSequence" Type="System.ServiceModel.Discovery.DiscoveryMessageSequence" />
+        <Parameter Name="endpointDiscoveryMetadata" Type="System.ServiceModel.Discovery.EndpointDiscoveryMetadata" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="messageSequence">The discovery message sequence.</param>
+        <param name="endpointDiscoveryMetadata">The endpoint discovery metadata.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to handle an online announcement message.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeginResolve">
+      <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginResolve (System.ServiceModel.Discovery.ResolveCriteria resolveCriteria, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginResolve(class System.ServiceModel.Discovery.ResolveCriteria resolveCriteria, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.OnBeginResolve(System.ServiceModel.Discovery.ResolveCriteria,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resolveCriteria" Type="System.ServiceModel.Discovery.ResolveCriteria" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="resolveCriteria">The resolve criteria that describes the service to discover.</param>
+        <param name="callback">The callback delegate to call when the operation is completed.</param>
+        <param name="state">The user-defined state data.</param>
+        <summary>Override this method to handle a resolve operation.</summary>
+        <returns>A reference to the pending asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndFind">
+      <MemberSignature Language="C#" Value="protected abstract void OnEndFind (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndFind(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.OnEndFind(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <summary>Override this method to handle the completion of a find operation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndOfflineAnnouncement">
+      <MemberSignature Language="C#" Value="protected abstract void OnEndOfflineAnnouncement (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndOfflineAnnouncement(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOfflineAnnouncement(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <summary>Override this method to handle the completion of an offline announcement message.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndOnlineAnnouncement">
+      <MemberSignature Language="C#" Value="protected abstract void OnEndOnlineAnnouncement (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndOnlineAnnouncement(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.OnEndOnlineAnnouncement(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <summary>Override this method to handle the completion of an online announcement message.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndResolve">
+      <MemberSignature Language="C#" Value="protected abstract System.ServiceModel.Discovery.EndpointDiscoveryMetadata OnEndResolve (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Discovery.EndpointDiscoveryMetadata OnEndResolve(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryProxy.OnEndResolve(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Discovery.EndpointDiscoveryMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the completed asynchronous operation.</param>
+        <summary>Override this method to handle the completion of a resolve operation.</summary>
+        <returns>Endpoint discovery metadata for the resolved service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

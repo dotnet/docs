@@ -1,0 +1,72 @@
+<Type Name="HttpOperationBinding" FullName="System.Web.Services.Description.HttpOperationBinding">
+  <TypeSignature Language="C#" Value="public sealed class HttpOperationBinding : System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpOperationBinding extends System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.HttpOperationBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.ServiceDescriptionFormatExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtension("operation", "http://schemas.xmlsoap.org/wsdl/http/", typeof(System.Web.Services.Description.OperationBinding))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an extensibility element added to an <see cref="T:System.Web.Services.Description.OperationBinding" /> within an XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class respresents an extensibility element in Web Services Description Language (WSDL) specific to HTTP. It specifies the relative URL of an operation using as the base the location specified by an <xref:System.Web.Services.Description.HttpAddressBinding>. For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl/.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpOperationBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.HttpOperationBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.HttpOperationBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Location">
+      <MemberSignature Language="C#" Value="public string Location { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Location" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.HttpOperationBinding.Location" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("location")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL relative to the location specified by the <see cref="T:System.Web.Services.Description.HttpAddressBinding" />, within the Web Services Description Language (WSDL) document, of the operation supported by the <see cref="T:System.Web.Services.Description.HttpOperationBinding" />.</summary>
+        <value>An unencoded string representing the relative path. The default value is an empty string ("").</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

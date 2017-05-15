@@ -1,0 +1,257 @@
+<Type Name="TagMapInfo" FullName="System.Web.Configuration.TagMapInfo">
+  <TypeSignature Language="C#" Value="public sealed class TagMapInfo : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TagMapInfo extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TagMapInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains a single configuration tag remapping statement. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.TagMapInfo> class allows you to remap the types of tags at compile time. This remapping causes the mapped type to be used in place of the original tag type for all pages and controls in the ASP.NET application in the scope of the configuration file.  
+  
+ The <xref:System.Web.Configuration.TagMapCollection> class allows you to programmatically access and modify the `tagMapping` subsection of the `pages` section of a configuration file. Within the `tagMappings` subsection, you can add and remove mappings between tag types by specifying the fully qualified strong names of the types.  
+  
+> [!NOTE]
+>  Unlike other attributes and collections in the `pages` section, tag remapping has no matching ASP.NET page directive.  
+  
+   
+  
+## Examples  
+ The following configuration file excerpt shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.TagMapInfo> class.  
+  
+```  
+<system.web>  
+  <pages>  
+    <tagMapping>  
+      <add  
+        tagType=  
+          "System.Web.UI.WebControls.WebParts.WebPartManager"  
+        mappedTagType=  
+          "Microsoft.Sharepoint.WebPartPartManager,   
+           MSPS.Web.dll, Version='2.0.0.0'"   
+      />  
+    </tagMapping>  
+  </pages>  
+</system.web>  
+```  
+  
+ The following code example shows how to use the <xref:System.Web.Configuration.TagMapCollection> class to programmatically modify tag-mapping settings. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#17](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#17)]
+ [!code-vb[System.Web.Configuration.PagesSection#17](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#17)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TagMapInfo (string tagTypeName, string mappedTagTypeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tagTypeName, string mappedTagTypeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapInfo.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tagTypeName" Type="System.String" />
+        <Parameter Name="mappedTagTypeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tagTypeName">The fully qualified name of the type for the tag that is being remapped.</param>
+        <param name="mappedTagTypeName">The name of the type to which the tag is remapped, along with the supporting details.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.TagMapInfo" /> class based on the passed property values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.TagMapInfo.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.PagesSection#42](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/CS/usingpagessection.cs#42)]
+ [!code-vb[System.Web.Configuration.PagesSection#42](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.PagesSection/VB/usingpagessection.vb#42)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapInfo.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">Object to compare.</param>
+        <summary>Compares this instance to another object.</summary>
+        <returns>
+          <see langword="true" /> if the objects are identical; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapInfo.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a hash value for the current instance.</summary>
+        <returns>A hash value for the current instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MappedTagType">
+      <MemberSignature Language="C#" Value="public string MappedTagType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MappedTagType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagMapInfo.MappedTagType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("mappedTagType")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the type to which the tag is remapped.</summary>
+        <value>The name of the type to which the tag is remapped. The default is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Tag remapping occurs at compile time. This remapping causes the mapped type (specified by the <xref:System.Web.Configuration.TagMapInfo.MappedTagType%2A> property) to be used in place of the original tag type (specified by the <xref:System.Web.Configuration.TagMapInfo.TagType%2A> property) for all pages and controls in the ASP.NET application in the scope of the configuration file.  
+  
+> [!NOTE]
+>  An empty string value for this property will cause the configuration system to throw an exception when the object is serialized.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.TagMapInfo.MappedTagType%2A> property. It is part of a larger example for the <xref:System.Web.Configuration.PagesSection> type.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagMapInfo.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeElement">
+      <MemberSignature Language="C#" Value="protected override bool SerializeElement (System.Xml.XmlWriter writer, bool serializeCollectionKey);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool SerializeElement(class System.Xml.XmlWriter writer, bool serializeCollectionKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TagMapInfo.SerializeElement(System.Xml.XmlWriter,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+        <Parameter Name="serializeCollectionKey" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="writer">To be added.</param>
+        <param name="serializeCollectionKey">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagType">
+      <MemberSignature Language="C#" Value="public string TagType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TagType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TagMapInfo.TagType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("tagType", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the original type for the tag that is being remapped.</summary>
+        <value>The name of the original type for the tag that is being remapped.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Tag remapping occurs at compile time. This remapping causes the mapped type (specified by the <xref:System.Web.Configuration.TagMapInfo.MappedTagType%2A> property) to be used in place of the original tag type (specified by the <xref:System.Web.Configuration.TagMapInfo.TagType%2A> property) for all pages and controls in the ASP.NET application in the scope of the configuration file.  
+  
+> [!NOTE]
+>  An empty string value for this property will cause the configuration system to throw an exception when the object is serialized.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.TagMapInfo.TagType%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.PagesSection> class.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

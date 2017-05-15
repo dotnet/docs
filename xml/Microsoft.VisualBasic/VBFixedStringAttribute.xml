@@ -1,0 +1,89 @@
+<Type Name="VBFixedStringAttribute" FullName="Microsoft.VisualBasic.VBFixedStringAttribute">
+  <TypeSignature Language="C#" Value="public sealed class VBFixedStringAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VBFixedStringAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VBFixedStringAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates that a string should be treated as if it were fixed length.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Visual Basic strings are of variable length by default. This attribute is useful when using Visual Basic file input and output functions such as `FileGet` and `FilePut` that require fixed length strings.  
+  
+   
+  
+## Examples  
+ [!code-vb[VbCnAttributes#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbCnAttributes/VB/Class2.vb#23)]  
+  
+> [!NOTE]
+>  The `VBFixedStringAttribute` is informational and cannot be used to convert a variable length string to a fixed string. The purpose of this attribute is to modify how strings in structures and non-local variables are used by methods or API calls that recognize the `VBFixedStringAttribute`. Keep in mind that this attribute does not change the actual length of the string itself.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VBFixedStringAttribute (int Length);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(int32 Length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.VBFixedStringAttribute.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="Length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Length">The length of the fixed string.</param>
+        <summary>Initializes the value of the <see langword="SizeConst" /> field.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor runs when the `VBFixedStringAttribute` attribute is applied to a string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.VBFixedStringAttribute.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the length of the string.</summary>
+        <value>Returns the length of the string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor for this attribute sets this property when the `VBFixedStringAttribute` is applied to a string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

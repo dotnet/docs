@@ -1,0 +1,199 @@
+<Type Name="Border3DStyle" FullName="System.Windows.Forms.Border3DStyle">
+  <TypeSignature Language="C#" Value="public enum Border3DStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Border3DStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Border3DStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the style of a three-dimensional border.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration when calling the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A> method of the <xref:System.Windows.Forms.ControlPaint> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Windows.Forms.ControlPaint.DrawBorder3D%2A?displayProperty=fullName> method and the <xref:System.Windows.Forms.Border3DStyle> enumeration. To run this example paste the following code in a form that imports the System.Windows.Forms and System.Drawing namespaces. Ensure the form's <xref:System.Windows.Forms.Control.Paint> event is associated with the event-handling method in this example.  
+  
+ [!code-cpp[System.Windows.Forms.ControlPaintMembers#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/CPP/form1.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ControlPaintMembers#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/CS/form1.cs#2)]
+ [!code-vb[System.Windows.Forms.ControlPaintMembers#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ControlPaintMembers/VB/form1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Adjust">
+      <MemberSignature Language="C#" Value="Adjust" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Adjust = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Adjust" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border is drawn outside the specified rectangle, preserving the dimensions of the rectangle for drawing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Bump">
+      <MemberSignature Language="C#" Value="Bump" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Bump = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Bump" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The inner and outer edges of the border have a raised appearance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Etched">
+      <MemberSignature Language="C#" Value="Etched" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Etched = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Etched" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The inner and outer edges of the border have an etched appearance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Flat">
+      <MemberSignature Language="C#" Value="Flat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Flat = int32(16394)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Flat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border has no three-dimensional effects.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Raised">
+      <MemberSignature Language="C#" Value="Raised" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Raised = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Raised" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border has raised inner and outer edges.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisedInner">
+      <MemberSignature Language="C#" Value="RaisedInner" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle RaisedInner = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.RaisedInner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border has a raised inner edge and no outer edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RaisedOuter">
+      <MemberSignature Language="C#" Value="RaisedOuter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle RaisedOuter = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.RaisedOuter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border has a raised outer edge and no inner edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sunken">
+      <MemberSignature Language="C#" Value="Sunken" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Sunken = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Sunken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border has sunken inner and outer edges.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SunkenInner">
+      <MemberSignature Language="C#" Value="SunkenInner" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle SunkenInner = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.SunkenInner" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border has a sunken inner edge and no outer edge.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SunkenOuter">
+      <MemberSignature Language="C#" Value="SunkenOuter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle SunkenOuter = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.SunkenOuter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border has a sunken outer edge and no inner edge.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

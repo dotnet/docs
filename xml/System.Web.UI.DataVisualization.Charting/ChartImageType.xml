@@ -1,0 +1,89 @@
+<Type Name="ChartImageType" FullName="System.Web.UI.DataVisualization.Charting.ChartImageType">
+  <TypeSignature Language="C#" Value="public enum ChartImageType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartImageType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartImageType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the image type for the chart.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.ChartImageType> enumeration represents the image format type of the chart, as set by the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageType%2A> property. This property determines the image type in which the chart is rendered, if image tag or input tag rendering is used.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bmp">
+      <MemberSignature Language="C#" Value="Bmp" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageType Bmp = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageType.Bmp" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>BMP image format type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Emf">
+      <MemberSignature Language="C#" Value="Emf" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageType Emf = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageType.Emf" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Windows Enhanced Metafile (EMF) image format type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Jpeg">
+      <MemberSignature Language="C#" Value="Jpeg" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageType Jpeg = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageType.Jpeg" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>JPEG image format type.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Png">
+      <MemberSignature Language="C#" Value="Png" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartImageType Png = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartImageType.Png" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.ChartImageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>PNG image format type.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

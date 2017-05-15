@@ -1,0 +1,73 @@
+<Type Name="DataGridViewComboBoxDisplayStyle" FullName="System.Windows.Forms.DataGridViewComboBoxDisplayStyle">
+  <TypeSignature Language="C#" Value="public enum DataGridViewComboBoxDisplayStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewComboBoxDisplayStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewComboBoxDisplayStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines constants that indicate how a <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" /> is displayed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.DataGridViewComboBoxCell.DisplayStyle%2A> property of the <xref:System.Windows.Forms.DataGridViewComboBoxCell> and <xref:System.Windows.Forms.DataGridViewComboBoxColumn> types to indicate the appearance of the cell when it is not in edit mode. In edit mode, the cell displays the hosted <xref:System.Windows.Forms.ComboBox> control.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ComboBox">
+      <MemberSignature Language="C#" Value="ComboBox" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewComboBoxDisplayStyle ComboBox = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.ComboBox" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewComboBoxDisplayStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When it is not in edit mode, the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" /> mimics the appearance of a <see cref="T:System.Windows.Forms.ComboBox" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DropDownButton">
+      <MemberSignature Language="C#" Value="DropDownButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewComboBoxDisplayStyle DropDownButton = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.DropDownButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewComboBoxDisplayStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When it is not in edit mode, the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" /> is displayed with a drop-down button but does not otherwise mimic the appearance of a <see cref="T:System.Windows.Forms.ComboBox" /> control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Nothing">
+      <MemberSignature Language="C#" Value="Nothing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewComboBoxDisplayStyle Nothing = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewComboBoxDisplayStyle.Nothing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewComboBoxDisplayStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When it is not in edit mode, the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" /> is displayed without a drop-down button.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

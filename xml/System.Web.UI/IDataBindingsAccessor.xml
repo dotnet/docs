@@ -1,0 +1,53 @@
+<Type Name="IDataBindingsAccessor" FullName="System.Web.UI.IDataBindingsAccessor">
+  <TypeSignature Language="C#" Value="public interface IDataBindingsAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataBindingsAccessor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IDataBindingsAccessor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Allows access to the collection of data-binding expressions on a control at design time.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataBindings">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataBindingCollection DataBindings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataBindingCollection DataBindings" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataBindingsAccessor.DataBindings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataBindingCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of all data bindings on the control. This property is read-only.</summary>
+        <value>The collection of data bindings.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasDataBindings">
+      <MemberSignature Language="C#" Value="public bool HasDataBindings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasDataBindings" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataBindingsAccessor.HasDataBindings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the control contains any data-binding logic.</summary>
+        <value>
+          <see langword="true" /> if the control contains data binding logic.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

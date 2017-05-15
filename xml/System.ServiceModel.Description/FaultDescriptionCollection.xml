@@ -1,0 +1,76 @@
+<Type Name="FaultDescriptionCollection" FullName="System.ServiceModel.Description.FaultDescriptionCollection">
+  <TypeSignature Language="C#" Value="public class FaultDescriptionCollection : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.FaultDescription&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FaultDescriptionCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.FaultDescription&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.FaultDescriptionCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.FaultDescription&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.ServiceModel.Description.FaultDescription</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.ServiceModel.Description.FaultDescription" /> objects that you can use to obtain information about SOAP faults in a contract.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Description.FaultDescriptionCollection.Find%2A> and <xref:System.ServiceModel.Description.FaultDescriptionCollection.FindAll%2A> methods to retrieve a <xref:System.ServiceModel.Description.FaultDescription> or group of <xref:System.ServiceModel.Description.FaultDescription> objects.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Find">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.FaultDescription Find (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.FaultDescription Find(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.FaultDescriptionCollection.Find(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.FaultDescription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>Returns the <see cref="T:System.ServiceModel.Description.FaultDescription" /> object that has the specified action value.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Description.FaultDescription" /> object that has the specified action, or <see langword="null" />. If more than one <see cref="T:System.ServiceModel.Description.FaultDescription" /> object has the same action, the first one in the collection is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAll">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.FaultDescription&gt; FindAll (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.FaultDescription&gt; FindAll(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.FaultDescriptionCollection.FindAll(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.FaultDescription&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <summary>Returns all <see cref="T:System.ServiceModel.Description.FaultDescription" /> objects that have the specified action value.</summary>
+        <returns>A collection of <see cref="T:System.ServiceModel.Description.FaultDescription" /> objects that have the specified action. If there are no <see cref="T:System.ServiceModel.Description.FaultDescription" /> objects with the action, an empty collection is returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

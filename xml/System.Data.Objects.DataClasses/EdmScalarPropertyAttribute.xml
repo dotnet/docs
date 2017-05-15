@@ -1,0 +1,102 @@
+<Type Name="EdmScalarPropertyAttribute" FullName="System.Data.Objects.DataClasses.EdmScalarPropertyAttribute">
+  <TypeSignature Language="C#" Value="public sealed class EdmScalarPropertyAttribute : System.Data.Objects.DataClasses.EdmPropertyAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EdmScalarPropertyAttribute extends System.Data.Objects.DataClasses.EdmPropertyAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Objects.DataClasses.EdmPropertyAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Attribute that indicates that the property represents a scalar property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable%2A> and <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> properties cannot both be `true` because key members cannot be `null`.  
+  
+ The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute> links a scalar property on a data class to a property of an entity type or complex type that is defined in the conceptual model.  
+  
+ This attribute is applied to properties that return scalar types.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EdmScalarPropertyAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntityKeyProperty">
+      <MemberSignature Language="C#" Value="public bool EntityKeyProperty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EntityKeyProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value that indicates whether the property is part of the entity key.</summary>
+        <value>The value that indicates whether the property is part of the entity key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because an entity key can contain more than one property, the <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> can be set to true for more than one property of an entity type.  
+  
+ The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable%2A> and <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> properties cannot both be `true` because key members cannot be `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNullable">
+      <MemberSignature Language="C#" Value="public bool IsNullable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value that indicates whether the property can have a <see langword="null" /> value.</summary>
+        <value>The value that indicates whether the property can have a <see langword="null" /> value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.IsNullable%2A> and <xref:System.Data.Objects.DataClasses.EdmScalarPropertyAttribute.EntityKeyProperty%2A> properties cannot both be `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

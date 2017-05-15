@@ -1,0 +1,130 @@
+<Type Name="BlockUIContainer" FullName="System.Windows.Documents.BlockUIContainer">
+  <TypeSignature Language="C#" Value="public class BlockUIContainer : System.Windows.Documents.Block" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlockUIContainer extends System.Windows.Documents.Block" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.BlockUIContainer" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Documents.Block</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Child")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A block-level flow content element which enables <see cref="T:System.Windows.UIElement" /> elements (i.e. a <see cref="T:System.Windows.Controls.Button" />) to be embedded (hosted) in flow content.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.UIElement> element (i.e. a <xref:System.Windows.Controls.Button>) may be embedded directly in flow content by enclosing it in a <xref:System.Windows.Documents.BlockUIContainer> (see example below).  
+  
+ An <xref:System.Windows.Documents.BlockUIContainer> may directly host no more than one <xref:System.Windows.UIElement> child.  However, the child element hosted by an <xref:System.Windows.Documents.BlockUIContainer> may host children of its own.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Documents.BlockUIContainer> elements to host <xref:System.Windows.UIElement> elements within flow content.  
+  
+ [!code-xml[SpanSnippets#_BlockUIXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml#_blockuixaml)]  
+  
+ The following figure shows how this example renders.  
+  
+ ![Screenshot: UIElement embedded in flow content](~/add/media/blockuicontainer.png "Screenshot: UIElement embedded in flow content")  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlockUIContainer ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.BlockUIContainer.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new, empty instance of the <see cref="T:System.Windows.Documents.BlockUIContainer" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlockUIContainer (System.Windows.UIElement uiElement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.UIElement uiElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Documents.BlockUIContainer.#ctor(System.Windows.UIElement)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uiElement" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="uiElement">An <see cref="T:System.Windows.UIElement" /> object specifying the initial contents of the new <see cref="T:System.Windows.Documents.BlockUIContainer" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.BlockUIContainer" /> class, taking a specified <see cref="T:System.Windows.UIElement" /> object as the initial contents of the new <see cref="T:System.Windows.Documents.BlockUIContainer" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates usage of this constructor.  
+  
+ [!code-csharp[SpanSnippets#_BlockUI_Const1](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_blockui_const1)]
+ [!code-vb[SpanSnippets#_BlockUI_Const1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_blockui_const1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Child">
+      <MemberSignature Language="C#" Value="public System.Windows.UIElement Child { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.UIElement Child" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.BlockUIContainer.Child" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.UIElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.UIElement" /> hosted by the <see cref="T:System.Windows.Documents.BlockUIContainer" />.</summary>
+        <value>The <see cref="T:System.Windows.UIElement" /> hosted by the <see cref="T:System.Windows.Documents.BlockUIContainer" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Windows.Documents.BlockUIContainer> may directly host no more than one <xref:System.Windows.UIElement> child.  However, the child element hosted by an <xref:System.Windows.Documents.BlockUIContainer> may host children of its own.  
+  
+ In [!INCLUDE[TLA#tla_titlexaml](~/includes/tlasharptla-titlexaml-md.md)], wrapping a <xref:System.Windows.UIElement> in an <xref:System.Windows.Documents.BlockUIContainer> is equivalent to setting that <xref:System.Windows.UIElement> as the value of the <xref:System.Windows.Documents.BlockUIContainer.Child%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Documents.BlockUIContainer> elements to host <xref:System.Windows.UIElement> elements within flow content.  
+  
+ [!code-xml[SpanSnippets#_BlockUIXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml#_blockuixaml)]  
+  
+ The following figure shows how this example renders.  
+  
+ ![Screenshot: UIElement embedded in flow content](~/add/media/blockuicontainer.png "Screenshot: UIElement embedded in flow content")  
+  
+ The following example shows how to use the <xref:System.Windows.Documents.BlockUIContainer.Child%2A> property programmatically.  
+  
+ [!code-csharp[spansnippets#_BlockUI_Child](~/samples/snippets/csharp/VS_Snippets_Wpf/SpanSnippets/CSharp/Window1.xaml.cs#_blockui_child)]
+ [!code-vb[spansnippets#_BlockUI_Child](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_blockui_child)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,94 @@
+<Type Name="TemplatedEditableDesignerRegion" FullName="System.Web.UI.Design.TemplatedEditableDesignerRegion">
+  <TypeSignature Language="C#" Value="public class TemplatedEditableDesignerRegion : System.Web.UI.Design.EditableDesignerRegion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplatedEditableDesignerRegion extends System.Web.UI.Design.EditableDesignerRegion" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.EditableDesignerRegion</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines an editable region of content within the design-time markup for the associated control.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplatedEditableDesignerRegion (System.Web.UI.Design.TemplateDefinition templateDefinition);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.TemplateDefinition templateDefinition) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplatedEditableDesignerRegion.#ctor(System.Web.UI.Design.TemplateDefinition)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="templateDefinition" Type="System.Web.UI.Design.TemplateDefinition" />
+      </Parameters>
+      <Docs>
+        <param name="templateDefinition">A <see cref="T:System.Web.UI.Design.TemplateDefinition" /> instance for the template to edit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplatedEditableDesignerRegion" /> class using the provided template definition.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSingleInstanceTemplate">
+      <MemberSignature Language="C#" Value="public virtual bool IsSingleInstanceTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSingleInstanceTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedEditableDesignerRegion.IsSingleInstanceTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets whether the template occurs only once per instance of the containing control, such as a h<see langword="eader" /> template, or can appear many times according to available data, such as an i<see langword="tem" /> template.</summary>
+        <value>
+          <see langword="true" /> if the template appears only once; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDataBinding">
+      <MemberSignature Language="C#" Value="public override bool SupportsDataBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDataBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedEditableDesignerRegion.SupportsDataBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the template can be bound to a data source.</summary>
+        <value>
+          <see langword="true" /> if the template represented by the region can be bound to a data source; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">An attempt was made to set this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateDefinition">
+      <MemberSignature Language="C#" Value="public System.Web.UI.Design.TemplateDefinition TemplateDefinition { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateDefinition TemplateDefinition" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplatedEditableDesignerRegion.TemplateDefinition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.TemplateDefinition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.UI.Design.TemplateDefinition" /> object describing the template that is referenced by the region.</summary>
+        <value>A <see cref="T:System.Web.UI.Design.TemplateDefinition" /> object.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

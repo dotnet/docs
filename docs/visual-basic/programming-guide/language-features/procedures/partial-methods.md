@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "inserting custom logic into code"
 ms.assetid: 74b3368b-b348-44a0-a326-7d7dc646f4e9
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

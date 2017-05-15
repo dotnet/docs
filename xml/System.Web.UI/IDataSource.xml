@@ -1,0 +1,140 @@
+<Type Name="IDataSource" FullName="System.Web.UI.IDataSource">
+  <TypeSignature Language="C#" Value="public interface IDataSource" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataSource" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IDataSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an abstract data source that data-bound controls bind to.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET supports a control data-binding architecture that enables Web server controls to bind to data in a consistent fashion. Web server controls that bind to data are referred to as data-bound controls, and the classes that facilitate that binding are called data source controls. Data source controls can represent any data source: a relational database, a file, a stream, a business object, and so on. Data source controls present data in a consistent way to data-bound controls, regardless of the source or format of the underlying data.  
+  
+ You implement the <xref:System.Web.UI.IDataSource> interface when you want to implement your own custom ASP.NET data source control.  
+  
+ Any class that implements the <xref:System.Web.UI.IDataSource> interface is a data source control. The <xref:System.Web.UI.IDataSource> interface serves as the foundation for all ASP.NET data source controls and defines one of the fundamental data-binding architecture concepts with its two methods: the <xref:System.Web.UI.IDataSource.GetView%2A> method and the <xref:System.Web.UI.IDataSource.GetViewNames%2A> method. This concept is that all data source controls support one or more named views on their data. The data source view object is similar to the <xref:System.Data.DataView> abstraction in the <xref:System.Data> namespace: a data-bindable, customized view of data for sorting, filtering, and other data operations that the view defines. At its core, a data source control does nothing more than retrieve views on data.  
+  
+ A data source control can have one or more associated data source view objects. Some data source controls, including those that represent relational databases such as <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.AccessDataSource>, support only one view. Other data source controls, including hierarchical data source controls such as <xref:System.Web.UI.WebControls.SiteMapDataSource>, support many views. The data source view defines the capabilities of a data source and the operations that it supports.  
+  
+ In summary, data source controls implement the <xref:System.Web.UI.IDataSource> interface, support one or more named views on the data they represent, and always support data retrieval from the data source they represent. Data source controls always retrieve data on demand, such as when `DataBind` is called on a data bound control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a class can implement the methods defined by the <xref:System.Web.UI.IDataSource> interface to provide data to data-bound controls. The data source control in this example acts as a data source on a comma-separated value file, and can be used by any data-bound control to display comma-separated file data. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceControl> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.CsvDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.CsvDataSource_1/CS/csvdatasource.cs#1)]
+ [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.CsvDataSource_1/VB/csvdatasource.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataSourceChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.IDataSource.DataSourceChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a data source control has changed in some way that affects data-bound controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IDataSource.DataSourceChanged> event is raised when the properties of a data-bound control or the underlying data has changed in some way that affects the data bindings between a data-bound control and its data. For example, the event is raised if a file name property, such as the <xref:System.Web.UI.WebControls.AccessDataSource.DataFile%2A> property, is changed on a file-based data source control.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetView">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataSourceView GetView (string viewName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.DataSourceView GetView(string viewName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IDataSource.GetView(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="viewName">The name of the view to retrieve.</param>
+        <summary>Gets the named data source view associated with the data source control.</summary>
+        <returns>Returns the named <see cref="T:System.Web.UI.DataSourceView" /> associated with the <see cref="T:System.Web.UI.IDataSource" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data source control classes can support one or more views on their underlying data. These views are represented by instances of the <xref:System.Web.UI.DataSourceView> class. The data source view defines the capabilities of a data source control, and performs all the work necessary to retrieve data from the underlying data store and perform operations such as sorting, inserting, deleting, and updating.  
+  
+ Data source control classes that implement the <xref:System.Web.UI.IDataSource> interface implement the <xref:System.Web.UI.IDataSource.GetView%2A> method to return strongly typed view objects associated with the class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a data source control class that implements the <xref:System.Web.UI.IDataSource> interface implements the <xref:System.Web.UI.IDataSource.GetView%2A> method, returning a strongly typed instance of the <xref:System.Web.UI.DataSourceView> class. Because the data source control supports only one view, it ignores the name and returns a view named with the default view name. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceControl> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.CsvDataSource_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.CsvDataSource_1/CS/csvdatasource.cs#3)]
+ [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.CsvDataSource_1/VB/csvdatasource.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetViewNames">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection GetViewNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetViewNames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IDataSource.GetViewNames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a collection of names representing the list of view objects associated with the <see cref="T:System.Web.UI.IDataSource" /> interface.</summary>
+        <returns>An <see cref="T:System.Collections.ICollection" /> that contains the names of the views associated with the <see cref="T:System.Web.UI.IDataSource" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Data source control classes can support one or more named views on their underlying data. The <xref:System.Web.UI.IDataSource.GetViewNames%2A> method returns a collection of view names currently associated with the data source control instance. Callers can iterate through the collection of view names and retrieve individual <xref:System.Web.UI.DataSourceView> objects with the <xref:System.Web.UI.IDataSource.GetView%2A> method.  
+  
+ Data source control classes that implement the <xref:System.Web.UI.IDataSource> interface implement the <xref:System.Web.UI.IDataSource.GetViewNames%2A> method to return a collection of names that represents all the data source view objects currently associated with the data source control class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a data source control that implements the <xref:System.Web.UI.IDataSource> interface implements the <xref:System.Web.UI.IDataSource.GetViewNames%2A> method, returning an <xref:System.Collections.ICollection> collection of names. Because the data source supports only one view, the method returns a collection of one element using the default name for the view. This code example is part of a larger example provided for the <xref:System.Web.UI.DataSourceControl> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.CsvDataSource_1#4](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.CsvDataSource_1/CS/csvdatasource.cs#4)]
+ [!code-vb[Urtue.Samples.Alexkr.CsvDataSource_1#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.CsvDataSource_1/VB/csvdatasource.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

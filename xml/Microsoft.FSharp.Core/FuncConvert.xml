@@ -1,0 +1,230 @@
+<Type Name="FuncConvert" FullName="Microsoft.FSharp.Core.FuncConvert">
+  <TypeSignature Language="C#" Value="public static class FuncConvert" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable sealed FuncConvert extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FuncConvert" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AbstractClass</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Sealed</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FuncFromTupled&lt;T1,T2,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,TResult&gt;&gt; FuncFromTupled&lt;T1,T2,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;T1,T2&gt;,TResult&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, !!TResult&gt;&gt; FuncFromTupled&lt;T1, T2, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`2&lt;!!T1, !!T2&gt;, !!TResult&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FuncConvert.FuncFromTupled``3(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,``1},``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,TResult&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Tuple&lt;T1,T2&gt;,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FuncFromTupled&lt;T1,T2,T3,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,TResult&gt;&gt;&gt; FuncFromTupled&lt;T1,T2,T3,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;T1,T2,T3&gt;,TResult&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T3, !!TResult&gt;&gt;&gt; FuncFromTupled&lt;T1, T2, T3, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`3&lt;!!T1, !!T2, !!T3&gt;, !!TResult&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FuncConvert.FuncFromTupled``4(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,``1,``2},``3})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,TResult&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Tuple&lt;T1,T2,T3&gt;,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FuncFromTupled&lt;T1,T2,T3,T4,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,TResult&gt;&gt;&gt;&gt; FuncFromTupled&lt;T1,T2,T3,T4,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;T1,T2,T3,T4&gt;,TResult&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T4, !!TResult&gt;&gt;&gt;&gt; FuncFromTupled&lt;T1, T2, T3, T4, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`4&lt;!!T1, !!T2, !!T3, !!T4&gt;, !!TResult&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FuncConvert.FuncFromTupled``5(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,``1,``2,``3},``4})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,TResult&gt;&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Tuple&lt;T1,T2,T3,T4&gt;,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <typeparam name="T4">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FuncFromTupled&lt;T1,T2,T3,T4,T5,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,Microsoft.FSharp.Core.FSharpFunc&lt;T5,TResult&gt;&gt;&gt;&gt;&gt; FuncFromTupled&lt;T1,T2,T3,T4,T5,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;T1,T2,T3,T4,T5&gt;,TResult&gt; func);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T4, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T5, !!TResult&gt;&gt;&gt;&gt;&gt; FuncFromTupled&lt;T1, T2, T3, T4, T5, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`5&lt;!!T1, !!T2, !!T3, !!T4, !!T5&gt;, !!TResult&gt; func) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FuncConvert.FuncFromTupled``6(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,``1,``2,``3,``4},``5})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,Microsoft.FSharp.Core.FSharpFunc&lt;T5,TResult&gt;&gt;&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="T4" />
+        <TypeParameter Name="T5" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="func" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Tuple&lt;T1,T2,T3,T4,T5&gt;,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <typeparam name="T4">To be added.</typeparam>
+        <typeparam name="T5">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="func">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToFSharpFunc&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; ToFSharpFunc&lt;T&gt; (Action&lt;T&gt; action);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; ToFSharpFunc&lt;T&gt;(class System.Action`1&lt;!!T&gt; action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FuncConvert.ToFSharpFunc``1(System.Action{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="action" Type="System.Action&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="action">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToFSharpFunc&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; ToFSharpFunc&lt;T,TResult&gt; (Converter&lt;T,TResult&gt; converter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; ToFSharpFunc&lt;T, TResult&gt;(class System.Converter`2&lt;!!T, !!TResult&gt; converter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FuncConvert.ToFSharpFunc``2(System.Converter{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="converter" Type="System.Converter&lt;T,TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="converter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

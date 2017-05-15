@@ -1,0 +1,91 @@
+<Type Name="EnumType" FullName="System.Data.Metadata.Edm.EnumType">
+  <TypeSignature Language="C#" Value="public class EnumType : System.Data.Metadata.Edm.SimpleType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EnumType extends System.Data.Metadata.Edm.SimpleType" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EnumType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.SimpleType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an enumeration type.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuiltInTypeKind">
+      <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EnumType.BuiltInTypeKind" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.BuiltInTypeKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns the kind of the type</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFlags">
+      <MemberSignature Language="C#" Value="public bool IsFlags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFlags" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EnumType.IsFlags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the enum type is defined as flags (i.e. can be treated as a bit field)</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Members">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EnumMember&gt; Members { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.EnumMember&gt; Members" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EnumType.Members" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.EnumMember&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of enumeration members for this enumeration type.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnderlyingType">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.PrimitiveType UnderlyingType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.PrimitiveType UnderlyingType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EnumType.UnderlyingType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.PrimitiveType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the underlying type for this enumeration type.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

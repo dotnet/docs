@@ -1,0 +1,110 @@
+<Type Name="EdmFunctionAttribute" FullName="System.Data.Objects.DataClasses.EdmFunctionAttribute">
+  <TypeSignature Language="C#" Value="public sealed class EdmFunctionAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EdmFunctionAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmFunctionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An attribute that, when applied to a method, indicates that the method is a proxy for a function in the conceptual model or storage model.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> links a common language runtime (CLR) method to another function. For example, the attribute can be used to map a CLR method to a function that is exposed by the storage provider, to a user-defined function in the database, or to a user-defined function in the conceptual model. Methods that have this attribute can be called from LINQ to Entities queries.  
+  
+ To use an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to map a CLR method to a function, the following must be true:  
+  
+-   The return type of the CLR method must be compatible with the return type of the mapped-to function.  
+  
+-   The argument types of the CLR method must be compatible with the argument types of the mapped-to function.  
+  
+ For information about compatible types, see [Conceptual Model Types (CSDL)](http://msdn.microsoft.com/en-us/987b995f-e429-4569-9559-b4146744def4).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EdmFunctionAttribute (string namespaceName, string functionName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string namespaceName, string functionName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmFunctionAttribute.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="namespaceName" Type="System.String" />
+        <Parameter Name="functionName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceName">The namespace of the mapped-to function.</param>
+        <param name="functionName">The name of the mapped-to function.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.DataClasses.EdmFunctionAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> links a common language runtime (CLR) method to another function. For example, the attribute can be used to map a CLR method to a function that is exposed by the storage provider, to a user-defined function in the database, or to a user-defined function in the conceptual model. Methods that have this attribute can be called from LINQ to Entities queries.  
+  
+ To use an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute> to map a CLR method to a function, the following must be true:  
+  
+-   The return type of the CLR method must be compatible with the return type of the mapped-to function.  
+  
+-   The argument types of the CLR method must be compatible with the argument types of the mapped-to function.  
+  
+ For information about compatible types, see [Conceptual Model Types (CSDL)](http://msdn.microsoft.com/en-us/987b995f-e429-4569-9559-b4146744def4).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FunctionName">
+      <MemberSignature Language="C#" Value="public string FunctionName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FunctionName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmFunctionAttribute.FunctionName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the mapped-to function.</summary>
+        <value>The name of the mapped-to function.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceName">
+      <MemberSignature Language="C#" Value="public string NamespaceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NamespaceName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmFunctionAttribute.NamespaceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The namespace of the mapped-to function.</summary>
+        <value>The namespace of the mapped-to function.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

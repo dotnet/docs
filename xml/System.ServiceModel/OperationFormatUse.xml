@@ -1,0 +1,86 @@
+<Type Name="OperationFormatUse" FullName="System.ServiceModel.OperationFormatUse">
+  <TypeSignature Language="C#" Value="public enum OperationFormatUse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OperationFormatUse extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.OperationFormatUse" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines the format of the message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value is Literal. Literal means that the message is a literal instance of the schema in the WSDL as shown in the following Document/Literal example.  
+  
+```  
+<Add xmlns="http://Microsoft.ServiceModel.Samples">  
+  <n1>100</n1>  
+  <n2>15.99</n2>  
+ </Add>  
+```  
+  
+ Encoded means that the schemas in the WSDL are abstract specifications that are encoded according to the rules found in SOAP 1.1 section 5. The following is an RPC/Encoded example.  
+  
+```  
+<q1:Add xmlns:q1="http://Microsoft.ServiceModel.Samples">  
+  <n1 xsi:type="xsd:double" xmlns="">100</n1>  
+  <n2 xsi:type="xsd:double" xmlns="">15.99</n2>  
+ </q1:Add>  
+```  
+  
+ Use the <xref:System.ServiceModel.XmlSerializerFormatAttribute?displayProperty=fullName> to set this value.  
+  
+   
+  
+## Examples  
+ The following code shows how to use this enumeration.  
+  
+ [!code-csharp[style_and_Use#0](~/samples/snippets/csharp/VS_Snippets_CFX/style_and_use/cs/source.cs#0)]
+ [!code-vb[style_and_Use#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/style_and_use/vb/source.vb#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Encoded">
+      <MemberSignature Language="C#" Value="Encoded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.OperationFormatUse Encoded = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.OperationFormatUse.Encoded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.OperationFormatUse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Implies that the schemas in the WSDL are abstract specifications that are encoded according to the rules found in SOAP 1.1 section 5.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Literal">
+      <MemberSignature Language="C#" Value="Literal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.OperationFormatUse Literal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.OperationFormatUse.Literal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.OperationFormatUse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Implies that the message is a literal instance of the schema in the WSDL.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

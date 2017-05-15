@@ -1,0 +1,143 @@
+<Type Name="DbLimitExpression" FullName="System.Data.Common.CommandTrees.DbLimitExpression">
+  <TypeSignature Language="C#" Value="public sealed class DbLimitExpression : System.Data.Common.CommandTrees.DbExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DbLimitExpression extends System.Data.Common.CommandTrees.DbExpression" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbLimitExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.CommandTrees.DbExpression</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the restriction of the number of elements in the argument collection to the specified limit value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Data.Common.CommandTrees.DbLimitExpression> can be applied to any <xref:System.Data.Common.CommandTrees.DbExpression> with a collection result type, including <xref:System.Data.Common.CommandTrees.DbSkipExpression>. <xref:System.Data.Common.CommandTrees.DbLimitExpression> provides the equivalent of the Top operation. It does not require an ordering operation to have been performed on its input. It has two `Expression` properties, <xref:System.Data.Common.CommandTrees.DbLimitExpression.Argument%2A> and <xref:System.Data.Common.CommandTrees.DbLimitExpression.Limit%2A>, that specify the collection and the number of rows to return respectively. <xref:System.Data.Common.CommandTrees.DbLimitExpression> also has a `Boolean`<xref:System.Data.Common.CommandTrees.DbLimitExpression.WithTies%2A> property that controls whether rows equal in rank to the final row are returned. <xref:System.Data.Common.CommandTrees.DbLimitExpression.WithTies%2A> defaults to `false`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accept">
+      <MemberSignature Language="C#" Value="public override void Accept (System.Data.Common.CommandTrees.DbExpressionVisitor visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Accept(class System.Data.Common.CommandTrees.DbExpressionVisitor visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbLimitExpression.Accept(System.Data.Common.CommandTrees.DbExpressionVisitor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visitor" Type="System.Data.Common.CommandTrees.DbExpressionVisitor" />
+      </Parameters>
+      <Docs>
+        <param name="visitor">An instance of <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />.</param>
+        <summary>Implements the visitor pattern for expressions that do not produce a result value.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="visitor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Accept&lt;TResultType&gt;">
+      <MemberSignature Language="C#" Value="public override TResultType Accept&lt;TResultType&gt; (System.Data.Common.CommandTrees.DbExpressionVisitor&lt;TResultType&gt; visitor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!TResultType Accept&lt;TResultType&gt;(class System.Data.Common.CommandTrees.DbExpressionVisitor`1&lt;!!TResultType&gt; visitor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbLimitExpression.Accept``1(System.Data.Common.CommandTrees.DbExpressionVisitor{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResultType</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TResultType" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="visitor" Type="System.Data.Common.CommandTrees.DbExpressionVisitor&lt;TResultType&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TResultType">The type of the result produced by <c>visitor</c>.</typeparam>
+        <param name="visitor">An instance of a typed <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" /> that produces a result value of a specific type.</param>
+        <summary>Implements the visitor pattern for expressions that produce a result value of a specific type.</summary>
+        <returns>A result value of a specific type produced by <see cref="T:System.Data.Common.CommandTrees.DbExpressionVisitor" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="visitor" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Argument">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Argument { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Argument" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbLimitExpression.Argument" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an expression that specifies the input collection.</summary>
+        <value>An expression that specifies the input collection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The expression is not associated with the command tree of the <see cref="T:System.Data.Common.CommandTrees.DbLimitExpression" />, or its result type is not a collection type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Limit">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Limit { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Limit" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbLimitExpression.Limit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an expression that specifies the limit on the number of elements returned from the input collection.</summary>
+        <value>An expression that specifies the limit on the number of elements returned from the input collection.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The expression is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The expression is not associated with the command tree of the <see cref="T:System.Data.Common.CommandTrees.DbLimitExpression" />, or is not one of <see cref="T:System.Data.Common.CommandTrees.DbConstantExpression" /> or <see cref="T:System.Data.Common.CommandTrees.DbParameterReferenceExpression" />, or its result type is not equal or promotable to a 64-bit integer type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WithTies">
+      <MemberSignature Language="C#" Value="public bool WithTies { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WithTies" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbLimitExpression.WithTies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets whether the limit operation will include tied results. Including tied results might produce more results than specified by the <see cref="P:System.Data.Common.CommandTrees.DbLimitExpression.Limit" /> value.</summary>
+        <value>
+          <see langword="true" /> if the limit operation will include tied results; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.Common.CommandTrees.DbLimitExpression.WithTies%2A> property controls whether rows equal in rank to the final row are returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

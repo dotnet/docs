@@ -1,0 +1,32 @@
+<Type Name="IConstructionReturnMessage" FullName="System.Runtime.Remoting.Activation.IConstructionReturnMessage">
+  <TypeSignature Language="C#" Value="public interface IConstructionReturnMessage : System.Runtime.Remoting.Messaging.IMethodReturnMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConstructionReturnMessage implements class System.Runtime.Remoting.Messaging.IMessage, class System.Runtime.Remoting.Messaging.IMethodMessage, class System.Runtime.Remoting.Messaging.IMethodReturnMessage" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Activation.IConstructionReturnMessage" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Messaging.IMethodReturnMessage</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Identifies a <see cref="T:System.Runtime.Remoting.Messaging.IMethodReturnMessage" /> that is returned after attempting to activate a remote object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The message that implements <xref:System.Runtime.Remoting.Activation.IConstructionReturnMessage> returns the result of the construction request sent with the <xref:System.Runtime.Remoting.Activation.IConstructionCallMessage>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

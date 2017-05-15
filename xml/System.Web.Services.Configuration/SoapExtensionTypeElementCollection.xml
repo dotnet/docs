@@ -1,0 +1,302 @@
+<Type Name="SoapExtensionTypeElementCollection" FullName="System.Web.Services.Configuration.SoapExtensionTypeElementCollection">
+  <TypeSignature Language="C#" Value="public sealed class SoapExtensionTypeElementCollection : System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapExtensionTypeElementCollection extends System.Configuration.ConfigurationElementCollection" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.SoapExtensionTypeElementCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElementCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.Web.Services.Configuration.SoapExtensionTypeElement))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains a strongly typed collection of <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Configuration.SoapExtensionTypeElementCollection> class is used to work with a collection of <xref:System.Web.Services.Configuration.SoapExtensionTypeElement> objects.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapExtensionTypeElementCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElementCollection" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.Services.Configuration.SoapExtensionTypeElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Services.Configuration.SoapExtensionTypeElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Add(System.Web.Services.Configuration.SoapExtensionTypeElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Web.Services.Configuration.SoapExtensionTypeElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> to add.</param>
+        <summary>Adds a <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> to the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> objects from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsKey">
+      <MemberSignature Language="C#" Value="public bool ContainsKey (object key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsKey(object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.ContainsKey(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> to find in the collection.</param>
+        <summary>Returns a <see cref="T:System.Boolean" /> that indicates whether a <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> with the specified key exists in the collection.</summary>
+        <returns>
+          <see langword="true" /> if the collection contains a <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> with the specified key; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Configuration.SoapExtensionTypeElement[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Configuration.SoapExtensionTypeElement[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.CopyTo(System.Web.Services.Configuration.SoapExtensionTypeElement[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.Services.Configuration.SoapExtensionTypeElement[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of type <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> to which to copy the contents of the collection.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the elements from the collection to an array, starting at a specified index of the array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateNewElement">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.CreateNewElement" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetElementKey">
+      <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Configuration.ConfigurationElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Configuration.SoapExtensionTypeElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Configuration.SoapExtensionTypeElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.IndexOf(System.Web.Services.Configuration.SoapExtensionTypeElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Web.Services.Configuration.SoapExtensionTypeElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> to find in the collection.</param>
+        <summary>Returns the zero-based index of a specified <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> in the collection.</summary>
+        <returns>The zero-based index of the specified <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" />, or -1 if the element was not found in the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.SoapExtensionTypeElement this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.SoapExtensionTypeElement Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.SoapExtensionTypeElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index into the collection.</param>
+        <summary>Gets or sets the element at a specified index in the collection.</summary>
+        <value>The <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> that exists at the specified index.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.SoapExtensionTypeElement this[object key] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.SoapExtensionTypeElement Item(object)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Item(System.Object)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.SoapExtensionTypeElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> to get or set in the collection.</param>
+        <summary>Gets or sets the <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> having the specified key in the collection.</summary>
+        <value>The <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> with the specified key.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">The <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> with the specified key was not found in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Configuration.SoapExtensionTypeElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Configuration.SoapExtensionTypeElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.Remove(System.Web.Services.Configuration.SoapExtensionTypeElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Web.Services.Configuration.SoapExtensionTypeElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> to remove from the collection.</param>
+        <summary>Removes a specified <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> to remove from the collection.</param>
+        <summary>Removes the element at the specified index in the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (object key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(object key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.SoapExtensionTypeElementCollection.RemoveAt(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key of the <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> to be removed from the collection.</param>
+        <summary>Removes the <see cref="T:System.Web.Services.Configuration.SoapExtensionTypeElement" /> with the specified key from the collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

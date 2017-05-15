@@ -1,0 +1,200 @@
+<Type Name="AttachablePropertyServices" FullName="System.Xaml.AttachablePropertyServices">
+  <TypeSignature Language="C#" Value="public static class AttachablePropertyServices" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AttachablePropertyServices extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.AttachablePropertyServices" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static helper methods that obtain values and accessor method information from an attachable property and that work with an attached property store.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Most functionality in this class relies on an attached property store, which generally implements the <xref:System.Xaml.IAttachedPropertyStore> interface. However, parameters for passing the store into <xref:System.Xaml.AttachablePropertyServices> are not typed as the interface and are instead typed as `object`. This is because you can pass an arbitrary object, and in this case, an internal default attachable property store is used.  
+  
+ Best practice for the arbitrary object is to pass the object that would otherwise be associated with the store. Do not pass `null` to indicate that you do not have an <xref:System.Xaml.IAttachedPropertyStore> to use. Passing `null` enters code paths that do nothing. Passing an object that is non-null, but evaluates as `null` on an attempted <xref:System.Xaml.IAttachedPropertyStore> cast, uses the default attachable property store.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CopyPropertiesTo">
+      <MemberSignature Language="C#" Value="public static void CopyPropertiesTo (object instance, System.Collections.Generic.KeyValuePair&lt;System.Xaml.AttachableMemberIdentifier,object&gt;[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyPropertiesTo(object instance, valuetype System.Collections.Generic.KeyValuePair`2&lt;class System.Xaml.AttachableMemberIdentifier, object&gt;[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.CopyPropertiesTo(System.Object,System.Collections.Generic.KeyValuePair{System.Xaml.AttachableMemberIdentifier,System.Object}[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="array" Type="System.Collections.Generic.KeyValuePair&lt;System.Xaml.AttachableMemberIdentifier,System.Object&gt;[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="instance">A specific attachable property store that implements <see cref="T:System.Xaml.IAttachedPropertyStore" />; or any non-null object to access a static default attachable property store.</param>
+        <param name="array">The destination array. The array is a generic array, should be passed undimensioned, and should have components of <see cref="T:System.Xaml.AttachableMemberIdentifier" /> and <see langword="object" />.</param>
+        <param name="index">The source index into which to copy.</param>
+        <summary>Copies all attachable property/value pairs from a specified attachable property store and into a destination array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling this method invokes an underlying <xref:System.Collections.Generic.ICollection%601.CopyTo%2A> implementation that is constrained with a key/value pair, which might be the source of exceptions that are not listed in this topic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttachedPropertyCount">
+      <MemberSignature Language="C#" Value="public static int GetAttachedPropertyCount (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetAttachedPropertyCount(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.GetAttachedPropertyCount(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">A specific attachable property store that implements <see cref="T:System.Xaml.IAttachedPropertyStore" />; or any non-null object to access a static default attachable property store.</param>
+        <summary>Returns the count of the attachable property entries that are in the specified store.</summary>
+        <returns>The integer count of entries in the store.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveProperty">
+      <MemberSignature Language="C#" Value="public static bool RemoveProperty (object instance, System.Xaml.AttachableMemberIdentifier name);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool RemoveProperty(object instance, class System.Xaml.AttachableMemberIdentifier name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.RemoveProperty(System.Object,System.Xaml.AttachableMemberIdentifier)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="name" Type="System.Xaml.AttachableMemberIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="instance">A specific attachable property store that implements <see cref="T:System.Xaml.IAttachedPropertyStore" />; or any non-null object to access a static default attachable property store.</param>
+        <param name="name">The identifier for the attachable property entry to remove from the store.</param>
+        <summary>Removes the entry for the specified attachable property from the specified store.</summary>
+        <returns>
+          <see langword="true" /> if an attachable property entry for <paramref name="name" /> was found in the store and removed from it; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Stores are per instance; therefore, in a store, the `name` value should be unambiguous.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty">
+      <MemberSignature Language="C#" Value="public static void SetProperty (object instance, System.Xaml.AttachableMemberIdentifier name, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetProperty(object instance, class System.Xaml.AttachableMemberIdentifier name, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.SetProperty(System.Object,System.Xaml.AttachableMemberIdentifier,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="name" Type="System.Xaml.AttachableMemberIdentifier" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">A specific attachable property store that implements <see cref="T:System.Xaml.IAttachedPropertyStore" />; or any non-null object to use a static default attachable property store.</param>
+        <param name="name">The identifier of the attachable property entry for which to set a value.</param>
+        <param name="value">The value to set.</param>
+        <summary>Sets a value for the specified attachable property in the specified store.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">A value could not be set in the store.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetProperty">
+      <MemberSignature Language="C#" Value="public static bool TryGetProperty (object instance, System.Xaml.AttachableMemberIdentifier name, out object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetProperty(object instance, class System.Xaml.AttachableMemberIdentifier name, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.TryGetProperty(System.Object,System.Xaml.AttachableMemberIdentifier,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="name" Type="System.Xaml.AttachableMemberIdentifier" />
+        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="instance">A specific attachable property store that implements <see cref="T:System.Xaml.IAttachedPropertyStore" />; or any non-null object to use a static default attachable property store.</param>
+        <param name="name">The identifier of the attachable property entry for which to get a value.</param>
+        <param name="value">Out parameter. When this method returns, contains the destination object for the value if <c>name</c> exists in the store and has a value.</param>
+        <summary>Attempts to get a value for the specified attachable property in the specified store. Does not throw an exception if the specific attachable property does not exist in the store.</summary>
+        <returns>
+          <see langword="true" /> if an attachable property entry for <paramref name="name" /> was found in the store and a value was posted to <paramref name="value" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryGetProperty&lt;T&gt; (object instance, System.Xaml.AttachableMemberIdentifier name, out T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetProperty&lt;T&gt;(object instance, class System.Xaml.AttachableMemberIdentifier name, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.AttachablePropertyServices.TryGetProperty``1(System.Object,System.Xaml.AttachableMemberIdentifier,``0@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="name" Type="System.Xaml.AttachableMemberIdentifier" />
+        <Parameter Name="value" Type="T&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The expected type of the output.</typeparam>
+        <param name="instance">A specific attachable property store that implements <see cref="T:System.Xaml.IAttachedPropertyStore" />; or any non-null object to access a static default attachable property store.</param>
+        <param name="name">The identifier of the attachable property entry for which to get a value.</param>
+        <param name="value">Out parameter. When this method returns, contains the destination object for the value if <c>name</c> exists in the store and has a value.</param>
+        <summary>Attempts to get a value for the specified attachable property in the specified store, returning a generic output form. Does not throw an exception if the specific attachable property does not exist in the store.</summary>
+        <returns>
+          <see langword="true" /> if an attachable property entry for <paramref name="name" /> was found in the store and a value was posted to <paramref name="value" />; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

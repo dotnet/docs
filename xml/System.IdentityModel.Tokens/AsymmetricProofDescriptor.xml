@@ -1,0 +1,137 @@
+<Type Name="AsymmetricProofDescriptor" FullName="System.IdentityModel.Tokens.AsymmetricProofDescriptor">
+  <TypeSignature Language="C#" Value="public class AsymmetricProofDescriptor : System.IdentityModel.Tokens.ProofDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AsymmetricProofDescriptor extends System.IdentityModel.Tokens.ProofDescriptor" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.AsymmetricProofDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.IdentityModel.Tokens.ProofDescriptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class can be used for issuing the asymmetric key based token.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsymmetricProofDescriptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AsymmetricProofDescriptor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructor used for extensibility.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsymmetricProofDescriptor (System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="keyIdentifier" Type="System.IdentityModel.Tokens.SecurityKeyIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="keyIdentifier">The key identifier on which to construct the proof token.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AsymmetricProofDescriptor" /> class based on a key identifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Constructs a proof token based on an key identifier.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsymmetricProofDescriptor (System.Security.Cryptography.RSA rsaAlgorithm);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.RSA rsaAlgorithm) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor(System.Security.Cryptography.RSA)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="rsaAlgorithm" Type="System.Security.Cryptography.RSA" />
+      </Parameters>
+      <Docs>
+        <param name="rsaAlgorithm">The RSA algorithm on which to construct the proof token.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AsymmetricProofDescriptor" /> class based on an RSA algorithm.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Constructs a proof token based on an RSA algorithm.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyTo">
+      <MemberSignature Language="C#" Value="public override void ApplyTo (System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyTo(class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricProofDescriptor.ApplyTo(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse" />
+      </Parameters>
+      <Docs>
+        <param name="response">The RSTR on which to apply the descriptor.</param>
+        <summary>Applies the proof descriptor to the RSTR's requested proof token.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For an asymmetric token, there is nothing to write into the RSTR’s proof token.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyIdentifier">
+      <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityKeyIdentifier KeyIdentifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityKeyIdentifier KeyIdentifier" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.AsymmetricProofDescriptor.KeyIdentifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityKeyIdentifier</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the key identifier that the requestor has provided from the use key. It can be echoed back inside the SAML token if it is needed.</summary>
+        <value>The key identifier that the requestor has provided from the use key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

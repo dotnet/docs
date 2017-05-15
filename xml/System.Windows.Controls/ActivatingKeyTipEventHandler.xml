@@ -1,0 +1,25 @@
+<Type Name="ActivatingKeyTipEventHandler" FullName="System.Windows.Controls.ActivatingKeyTipEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ActivatingKeyTipEventHandler(object sender, ActivatingKeyTipEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActivatingKeyTipEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ActivatingKeyTipEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Controls.ActivatingKeyTipEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Windows.Controls.KeyTipService.ActivatingKeyTip" /> attached event of a <see cref="T:System.Windows.Controls.KeyTipService" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

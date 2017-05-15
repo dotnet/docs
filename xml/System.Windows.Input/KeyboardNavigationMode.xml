@@ -1,0 +1,126 @@
+<Type Name="KeyboardNavigationMode" FullName="System.Windows.Input.KeyboardNavigationMode">
+  <TypeSignature Language="C#" Value="public enum KeyboardNavigationMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyboardNavigationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardNavigationMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the possible values for changes in focus when logical and directional navigation occurs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a <xref:System.Windows.Controls.Menu> with a number of <xref:System.Windows.Controls.MenuItem> objects.  The <xref:System.Windows.Input.KeyboardNavigation.TabNavigation%2A> attached property is set to Cycle on the <xref:System.Windows.Controls.Menu>.  This means that when focus is changed using the tab key within the <xref:System.Windows.Controls.Menu>, focus will move from each element and when the last element is reached focus will return to the first element.  
+  
+ [!code-xml[MarkupSnippets#MarkupKeyboardNavigationTabNavigationXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml#markupkeyboardnavigationtabnavigationxaml)]  
+  
+ [!code-csharp[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/MarkupSnippets/CSharp/Window1.xaml.cs#markupkeyboardnavigationtabnavigationcode)]
+ [!code-vb[MarkupSnippets#MarkupKeyboardNavigationTabNavigationCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MarkupSnippets/visualbasic/window1.xaml.vb#markupkeyboardnavigationtabnavigationcode)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contained">
+      <MemberSignature Language="C#" Value="Contained" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyboardNavigationMode Contained = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.Contained" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyboardNavigationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Depending on the direction of the navigation, focus returns to the first or the last item when the end or the beginning of the container is reached, but does not move past the beginning or end of the container.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Continue">
+      <MemberSignature Language="C#" Value="Continue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyboardNavigationMode Continue = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.Continue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyboardNavigationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Each element receives keyboard focus, as long as it is a navigation stop.  Navigation leaves the containing element when an edge is reached.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cycle">
+      <MemberSignature Language="C#" Value="Cycle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyboardNavigationMode Cycle = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.Cycle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyboardNavigationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Depending on the direction of the navigation, the focus returns to the first or the last item when the end or the beginning of the container is reached.  Focus cannot leave the container using logical navigation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="Local" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyboardNavigationMode Local = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.Local" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyboardNavigationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Tab Indexes are considered on local subtree only inside this container and behave like <see cref="F:System.Windows.Input.KeyboardNavigationMode.Continue" /> after that.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyboardNavigationMode None = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyboardNavigationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No keyboard navigation is allowed inside this container.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Once">
+      <MemberSignature Language="C#" Value="Once" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.KeyboardNavigationMode Once = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyboardNavigationMode.Once" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.KeyboardNavigationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The container and all of its child elements as a whole receive focus only once. Either the first tree child or the or the last focused element in the group receives focus</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

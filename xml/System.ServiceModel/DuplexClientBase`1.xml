@@ -1,0 +1,436 @@
+<Type Name="DuplexClientBase&lt;TChannel&gt;" FullName="System.ServiceModel.DuplexClientBase&lt;TChannel&gt;">
+  <TypeSignature Language="C#" Value="public class DuplexClientBase&lt;TChannel&gt; : System.ServiceModel.ClientBase&lt;TChannel&gt; where TChannel : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DuplexClientBase`1&lt;class TChannel&gt; extends System.ServiceModel.ClientBase`1&lt;!TChannel&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.DuplexClientBase`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TChannel">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ServiceModel.ClientBase&lt;TChannel&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TChannel">TChannel</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TChannel">The type of the channel to be created.</typeparam>
+    <summary>Used to create a channel to a duplex service and associate that channel with a callback object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.DuplexClientBase%601> class to create a channel to a service that specifies a callback object. The <xref:System.ServiceModel.DuplexClientBase%601> object wraps a <xref:System.ServiceModel.DuplexChannelFactory%601?displayProperty=fullName> object, which provides the connectivity for the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] object. You can use either type to connect to a duplex service. For more information about duplex services, see [Duplex Services](~/docs/framework/wcf/feature-details/duplex-services.md).  
+  
+ Special note for Managed C++ users deriving from this class:  
+  
+-   Put your cleanup code in (On)(Begin)Close (and/or OnAbort), not in a destructor.  
+  
+-   Avoid destructors: they cause the compiler to auto-generate <xref:System.IDisposable>  
+  
+-   Avoid non-reference members: they can cause the compiler to auto-generate <xref:System.IDisposable>  
+  
+-   Avoid finalizers; but if you include one, you should suppress the build warning and call <xref:System.GC.SuppressFinalize%28System.Object%29> and the finalizer itself from (On)(Begin)Close (and/or OnAbort) in order to emulate what would have been the auto-generated <xref:System.IDisposable> behavior.  
+  
+   
+  
+## Examples  
+ The following example shows the use in the client of a duplex [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client type, the `SampleDuplexHelloClient`, to pass a new <xref:System.ServiceModel.InstanceContext?displayProperty=fullName> object with the callback object to listen for callbacks.  
+  
+ [!code-csharp[CallbackBehaviorAttribute#3](~/samples/snippets/csharp/VS_Snippets_CFX/callbackbehaviorattribute/cs/client.cs#3)]
+ [!code-vb[CallbackBehaviorAttribute#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/callbackbehaviorattribute/vb/client.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (object callbackInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object callbackInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The callback instance is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (System.ServiceModel.InstanceContext callbackInstance);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An <see cref="T:System.ServiceModel.InstanceContext" /> object that associates the callback object with the channel to the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `callbackInstance` provided by the user is used to service all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The callback instance is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (object callbackInstance, System.ServiceModel.Description.ServiceEndpoint endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object,System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.Object" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpoint">The service endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class with the specified callback object and service endpoint.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The service endpoint is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (object callbackInstance, string endpointConfigurationName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string endpointConfigurationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.Object" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object and configuration name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The configuration name is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Description.ServiceEndpoint endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An <see cref="T:System.ServiceModel.InstanceContext" /> object that associates the callback object with the channel to the service.</param>
+        <param name="endpoint">The service endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class with the specified callback object and service endpoint.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The service endpoint is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object and configuration name.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `callbackInstance` provided by the user is used to service all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The configuration name is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (object callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.Object" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="binding">The binding with which to call the service.</param>
+        <param name="remoteAddress">The service endpoint address to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, binding, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The address is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (object callbackInstance, string bindingConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string bindingConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object,System.String,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.Object" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="bindingConfigurationName">To be added.</param>
+        <param name="remoteAddress">The address of the service endpoint to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, configuration name, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The address is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (object callbackInstance, string endpointConfigurationName, string remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object callbackInstance, string endpointConfigurationName, string remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.Object,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.Object" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="remoteAddress" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
+        <param name="remoteAddress">The address of the service endpoint to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, endpoint configuration name, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[indigo2](~/includes/indigo2-md.md)] creates a new <xref:System.ServiceModel.InstanceContext> object using the `callbackInstance` object to handle all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The address is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="binding">The binding with which to call the service.</param>
+        <param name="remoteAddress">The service endpoint address to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, binding, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `callbackInstance` provided by the user is used to service all callback operations.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress address);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, class System.ServiceModel.EndpointAddress address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
+        <param name="address">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, configuration name, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `callbackInstance` provided by the user is used to service all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The address is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DuplexClientBase (System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.#ctor(System.ServiceModel.InstanceContext,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="callbackInstance" Type="System.ServiceModel.InstanceContext" />
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="remoteAddress" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="callbackInstance">An object used to create the instance context that associates the callback object with the channel to the service.</param>
+        <param name="endpointConfigurationName">The name of the client endpoint information in the application configuration file.</param>
+        <param name="remoteAddress">The address of the service endpoint to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DuplexClientBase`1" /> class using the specified callback object, configuration name, and service endpoint address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `callbackInstance` provided by the user is used to service all callback operations.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The address is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannel">
+      <MemberSignature Language="C#" Value="protected override TChannel CreateChannel ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !TChannel CreateChannel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.DuplexClientBase`1.CreateChannel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TChannel</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerDuplexChannel">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.IDuplexContextChannel InnerDuplexChannel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.IDuplexContextChannel InnerDuplexChannel" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.DuplexClientBase`1.InnerDuplexChannel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.IDuplexContextChannel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the inner duplex channel.</summary>
+        <value>The inner duplex channel.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

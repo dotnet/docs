@@ -1,0 +1,192 @@
+<Type Name="CollectionAdapters" FullName="System.AddIn.Pipeline.CollectionAdapters">
+  <TypeSignature Language="C#" Value="public static class CollectionAdapters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CollectionAdapters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.CollectionAdapters" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Enables collections to be passed between an add-in and its host application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides methods that enable an <xref:System.Collections.Generic.IList%601> collection to be converted to a <xref:System.AddIn.Contract.IListContract%601> collection. The <xref:System.AddIn.Contract.IListContract%601> collection is passed across the isolation boundary and converted back to an <xref:System.Collections.Generic.IList%601> collection that the add-in or the host application can use.  
+  
+ Objects in collections must be remotable. For more information about the object types that you can pass, see [Contracts, Views, and Adapters](http://msdn.microsoft.com/en-us/a6460173-9507-4b87-8c07-d4ee245d715c).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToIList&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;T&gt; ToIList&lt;T&gt; (System.AddIn.Contract.IListContract&lt;T&gt; collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;!!T&gt; ToIList&lt;T&gt;(class System.AddIn.Contract.IListContract`1&lt;!!T&gt; collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.CollectionAdapters.ToIList``1(System.AddIn.Contract.IListContract{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="collection" Type="System.AddIn.Contract.IListContract&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of objects that are contained in the list. <c>T</c> must be serializable.</typeparam>
+        <param name="collection">The collection from the other side of the pipeline.</param>
+        <summary>Converts the specified <see cref="T:System.AddIn.Contract.IListContract`1" /> collection to an <see cref="T:System.Collections.Generic.IList`1" /> collection.</summary>
+        <returns>The converted collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The host application or add-in can use the returned <xref:System.Collections.Generic.IList%601> collection. The <xref:System.Collections.Generic.IList%601> collection will have a lifetime token for the remote <xref:System.AddIn.Contract.IListContract%601> collection.  
+  
+ You should use this method overload only when the contents of the <xref:System.AddIn.Contract.IListContract%601> are serializable types that can be passed directly to the add-in and host (rather than types that must be adapted into views).  
+  
+   
+  
+## Examples  
+ The following example implements a host-side adapter pipeline segment as described [Walkthrough: Passing Collections Between Hosts and Add-Ins](http://msdn.microsoft.com/en-us/b532c604-548e-4fab-b11c-377257dd0ee5). The example adapts the custom `ProcessBooks` method by taking the <xref:System.AddIn.Contract.IListContract%601> collection passed from the add-in and converting it to an <xref:System.Collections.Generic.IList%601> collection, which the host application can then use.  
+  
+ [!code-csharp[AddInCollectionPipelineAddInSideAdapter#3](~/samples/snippets/csharp/VS_Snippets_CLR/AddInCollectionPipelineAddInSideAdapter/cs/LibraryManagerViewToContractAddInAdapter.cs#3)]
+ [!code-vb[AddInCollectionPipelineAddInSideAdapter#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInCollectionPipelineAddInSideAdapter/vb/LibraryManagerViewToContractAddInAdapter.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToIList&lt;TContract,TView&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;TView&gt; ToIList&lt;TContract,TView&gt; (System.AddIn.Contract.IListContract&lt;TContract&gt; collection, Converter&lt;TContract,TView&gt; contractViewAdapter, Converter&lt;TView,TContract&gt; viewContractAdapter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;!!TView&gt; ToIList&lt;TContract, TView&gt;(class System.AddIn.Contract.IListContract`1&lt;!!TContract&gt; collection, class System.Converter`2&lt;!!TContract, !!TView&gt; contractViewAdapter, class System.Converter`2&lt;!!TView, !!TContract&gt; viewContractAdapter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.CollectionAdapters.ToIList``2(System.AddIn.Contract.IListContract{``0},System.Converter{``0,``1},System.Converter{``1,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;TView&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TContract" />
+        <TypeParameter Name="TView" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="collection" Type="System.AddIn.Contract.IListContract&lt;TContract&gt;" />
+        <Parameter Name="contractViewAdapter" Type="System.Converter&lt;TContract,TView&gt;" />
+        <Parameter Name="viewContractAdapter" Type="System.Converter&lt;TView,TContract&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TContract">The type that defines the contract for passing objects of type <c>TView</c> across the isolation boundary.</typeparam>
+        <typeparam name="TView">The type that defines the view of the objects in the list.</typeparam>
+        <param name="collection">The collection to pass to the other side of the pipeline.</param>
+        <param name="contractViewAdapter">A converter that adapts the data from the type defined in the contract to the type expected in the view.</param>
+        <param name="viewContractAdapter">A converter that adapts the data from the type defined in the view to the type expected by the contract.</param>
+        <summary>Converts a specified <see cref="T:System.AddIn.Contract.IListContract`1" /> collection to an <see cref="T:System.Collections.Generic.IList`1" /> collection by using converter adapters.</summary>
+        <returns>The converted collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method overload for <xref:System.AddIn.Contract.IListContract%601> collections that contain types that must be adapted before they can be passed to the add-in or host (rather than simple serializable types that can be passed directly). The host application or add-in can use the returned <xref:System.Collections.Generic.IList%601> collection. It will have a lifetime token for the remote <xref:System.AddIn.Contract.IListContract%601>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToIListContract&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.AddIn.Contract.IListContract&lt;T&gt; ToIListContract&lt;T&gt; (System.Collections.Generic.IList&lt;T&gt; collection);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.AddIn.Contract.IListContract`1&lt;!!T&gt; ToIListContract&lt;T&gt;(class System.Collections.Generic.IList`1&lt;!!T&gt; collection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.CollectionAdapters.ToIListContract``1(System.Collections.Generic.IList{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.IListContract&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Generic.IList&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of objects that are contained in the list. <c>T</c> must be serializable.</typeparam>
+        <param name="collection">The collection to convert.</param>
+        <summary>Converts a specified <see cref="T:System.Collections.Generic.IList`1" /> collection to an <see cref="T:System.AddIn.Contract.IListContract`1" /> collection.</summary>
+        <returns>The converted collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.AddIn.Contract.IListContract%601> collection can be marshaled across the isolation boundary between the add-in and its host application.  
+  
+ You should use this method overload only when the contents of the <xref:System.Collections.Generic.IList%601> collection are serializable types that can be passed directly to the contract (rather than types that must be adapted into contracts).  
+  
+   
+  
+## Examples  
+ The following example implements the class that defines an add-in side adapter pipeline segment. It adapts the custom `ProcessBooks` method by taking the <xref:System.Collections.Generic.IList%601> collection passed from the add-in view segment and converting it to an <xref:System.AddIn.Contract.IListContract%601> collection that can be marshaled across the isolation boundary to the host.  
+  
+ [!code-csharp[AddInCollectionPipelineHostSideAdapter#4](~/samples/snippets/csharp/VS_Snippets_CLR/AddInCollectionPipelineHostSideAdapter/cs/LibraryManagerContractToViewHostAdapter.cs#4)]
+ [!code-vb[AddInCollectionPipelineHostSideAdapter#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/AddInCollectionPipelineHostSideAdapter/vb/LibraryManagerContractToViewHostAdapter.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToIListContract&lt;TView,TContract&gt;">
+      <MemberSignature Language="C#" Value="public static System.AddIn.Contract.IListContract&lt;TContract&gt; ToIListContract&lt;TView,TContract&gt; (System.Collections.Generic.IList&lt;TView&gt; collection, Converter&lt;TView,TContract&gt; viewContractAdapter, Converter&lt;TContract,TView&gt; contractViewAdapter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.AddIn.Contract.IListContract`1&lt;!!TContract&gt; ToIListContract&lt;TView, TContract&gt;(class System.Collections.Generic.IList`1&lt;!!TView&gt; collection, class System.Converter`2&lt;!!TView, !!TContract&gt; viewContractAdapter, class System.Converter`2&lt;!!TContract, !!TView&gt; contractViewAdapter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.CollectionAdapters.ToIListContract``2(System.Collections.Generic.IList{``0},System.Converter{``0,``1},System.Converter{``1,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AddIn.Contract.IListContract&lt;TContract&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TView" />
+        <TypeParameter Name="TContract" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="collection" Type="System.Collections.Generic.IList&lt;TView&gt;" />
+        <Parameter Name="viewContractAdapter" Type="System.Converter&lt;TView,TContract&gt;" />
+        <Parameter Name="contractViewAdapter" Type="System.Converter&lt;TContract,TView&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TView">The type that defines the view of the objects in the list.</typeparam>
+        <typeparam name="TContract">The type that defines the contract for passing objects of type <c>TView</c> across the isolation boundary.</typeparam>
+        <param name="collection">The collection to convert.</param>
+        <param name="viewContractAdapter">A converter that adapts the data from the type defined in the view to the type expected by the contract.</param>
+        <param name="contractViewAdapter">A converter that adapts the data from the type defined in the contract to the type expected in the view.</param>
+        <summary>Converts a specified <see cref="T:System.Collections.Generic.IList`1" /> collection to an <see cref="T:System.AddIn.Contract.IListContract`1" /> collection by using converter adapters.</summary>
+        <returns>The converted collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method overload for <xref:System.Collections.Generic.IList%601> collections that contain types that must be adapted into contracts before they can be passed to the contract (rather than simple serializable types that can be passed directly). The <xref:System.AddIn.Contract.IListContract%601> collection can be marshaled across the isolation boundary between an add-in and its host application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

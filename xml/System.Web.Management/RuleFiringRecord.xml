@@ -1,0 +1,70 @@
+<Type Name="RuleFiringRecord" FullName="System.Web.Management.RuleFiringRecord">
+  <TypeSignature Language="C#" Value="public sealed class RuleFiringRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RuleFiringRecord extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.RuleFiringRecord" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the firing record for an event that derives from the <see cref="T:System.Web.Management.WebManagementEvent" /> class and implements the <see cref="T:System.Web.Management.IWebEventCustomEvaluator" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.RuleFiringRecord> class provides information that could be used to determine whether the firing of the event should be recorded.  
+  
+   
+  
+## Examples  
+ The following code example shows how the <xref:System.Web.Management.RuleFiringRecord> is used when passed to the <xref:System.Web.Management.IWebEventCustomEvaluator.CanFire%2A> method.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEvent#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/CS/webbaseevent.cs#22)]
+ [!code-vb[System.Web.Management.WebBaseEvent#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/VB/webbaseevent.vb#22)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LastFired">
+      <MemberSignature Language="C#" Value="public DateTime LastFired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastFired" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.RuleFiringRecord.LastFired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last time that the event was last fired.</summary>
+        <value>A <see cref="T:System.DateTime" /> object representing when the event was last fired.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimesRaised">
+      <MemberSignature Language="C#" Value="public int TimesRaised { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TimesRaised" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.RuleFiringRecord.TimesRaised" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of times that the event has been raised.</summary>
+        <value>The total number of times the event has been raised.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -26,7 +26,7 @@ You must also have [git installed](https://git-scm.com/download) and available o
 
 If you're on Windows, you have two options for installing F#.
 
-If you've already installed Visual Studio and don't have F#, you can [Install the Visual F# Tools](getting-started-visual-studio.md#installing-the-visual-f-tools).  This will install all the necessary components to write, compile, and execute F# code.
+If you've already installed Visual Studio and don't have F#, you can [Install the Visual F# Tools](getting-started-visual-studio.md#installing-f).  This will install all the necessary components to write, compile, and execute F# code.
 
 If you prefer not to install Visual Studio, use the following instructions:
 
@@ -59,7 +59,7 @@ C:\Program Files\Microsoft SDKs\F#\4.0\Framework\v4.0\fsi.exe
 C:\Program Files\Microsoft SDKs\F#\4.0\Framework\v4.0\fsiAnyCpu.exe
 ```
 
-Ionide automatically detects the compiler and tools, but if it doesn't for some reason (e.g., the Visual F# Tools were installed to a different directory), you can manually add the containing folder (`...\Microsoft SDKs\F#\4.0`) to your PATH.
+Ionide automatically detects the compiler and tools, but if it doesn't for some reason (for example, the Visual F# Tools were installed to a different directory), you can manually add the containing folder (`...\Microsoft SDKs\F#\4.0`) to your PATH.
 
 ### macOS
 

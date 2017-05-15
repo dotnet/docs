@@ -1,0 +1,704 @@
+<Type Name="FSharpValue" FullName="Microsoft.FSharp.Reflection.FSharpValue">
+  <TypeSignature Language="C#" Value="public static class FSharpValue" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable sealed FSharpValue extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Reflection.FSharpValue" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AbstractClass</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Sealed</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetExceptionFields">
+      <MemberSignature Language="C#" Value="public static object[] GetExceptionFields (object exn, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object[] GetExceptionFields(object exn, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetExceptionFields(System.Object,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exn" Type="System.Object" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="exn">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRecordField">
+      <MemberSignature Language="C#" Value="public static object GetRecordField (object record, System.Reflection.PropertyInfo info);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object GetRecordField(object record, class System.Reflection.PropertyInfo info) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetRecordField(System.Object,System.Reflection.PropertyInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="record" Type="System.Object" />
+        <Parameter Name="info" Type="System.Reflection.PropertyInfo" />
+      </Parameters>
+      <Docs>
+        <param name="record">To be added.</param>
+        <param name="info">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRecordFields">
+      <MemberSignature Language="C#" Value="public static object[] GetRecordFields (object record, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object[] GetRecordFields(object record, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetRecordFields(System.Object,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="record" Type="System.Object" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="record">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTupleField">
+      <MemberSignature Language="C#" Value="public static object GetTupleField (object tuple, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object GetTupleField(object tuple, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetTupleField(System.Object,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tuple" Type="System.Object" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tuple">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTupleFields">
+      <MemberSignature Language="C#" Value="public static object[] GetTupleFields (object tuple);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object[] GetTupleFields(object tuple) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetTupleFields(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tuple" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="tuple">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUnionFields">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;Microsoft.FSharp.Reflection.UnionCaseInfo,object[]&gt; GetUnionFields (object value, Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class Microsoft.FSharp.Reflection.UnionCaseInfo, object[]&gt; GetUnionFields(object value, class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetUnionFields(System.Object,System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;Microsoft.FSharp.Reflection.UnionCaseInfo,System.Object[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="unionType" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <param name="unionType">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeFunction">
+      <MemberSignature Language="C#" Value="public static object MakeFunction (Type functionType, Microsoft.FSharp.Core.FSharpFunc&lt;object,object&gt; implementation);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object MakeFunction(class System.Type functionType, class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object&gt; implementation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.MakeFunction(System.Type,Microsoft.FSharp.Core.FSharpFunc{System.Object,System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="functionType" Type="System.Type" />
+        <Parameter Name="implementation" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Object,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="functionType">To be added.</param>
+        <param name="implementation">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeRecord">
+      <MemberSignature Language="C#" Value="public static object MakeRecord (Type recordType, object[] values, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object MakeRecord(class System.Type recordType, object[] values, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.MakeRecord(System.Type,System.Object[],Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordType" Type="System.Type" />
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="recordType">To be added.</param>
+        <param name="values">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeTuple">
+      <MemberSignature Language="C#" Value="public static object MakeTuple (object[] tupleElements, Type tupleType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object MakeTuple(object[] tupleElements, class System.Type tupleType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.MakeTuple(System.Object[],System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tupleElements" Type="System.Object[]" />
+        <Parameter Name="tupleType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="tupleElements">To be added.</param>
+        <param name="tupleType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeUnion">
+      <MemberSignature Language="C#" Value="public static object MakeUnion (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, object[] args, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static object MakeUnion(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, object[] args, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.MakeUnion(Microsoft.FSharp.Reflection.UnionCaseInfo,System.Object[],Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionCase" Type="Microsoft.FSharp.Reflection.UnionCaseInfo" />
+        <Parameter Name="args" Type="System.Object[]" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionCase">To be added.</param>
+        <param name="args">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeRecordConstructor">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object[],object&gt; PreComputeRecordConstructor (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object[], object&gt; PreComputeRecordConstructor(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeRecordConstructor(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object[],System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordType" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="recordType">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeRecordConstructorInfo">
+      <MemberSignature Language="C#" Value="public static System.Reflection.ConstructorInfo PreComputeRecordConstructorInfo (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.ConstructorInfo PreComputeRecordConstructorInfo(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeRecordConstructorInfo(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ConstructorInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordType" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="recordType">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeRecordFieldReader">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,object&gt; PreComputeRecordFieldReader (System.Reflection.PropertyInfo info);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object&gt; PreComputeRecordFieldReader(class System.Reflection.PropertyInfo info) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeRecordFieldReader(System.Reflection.PropertyInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Reflection.PropertyInfo" />
+      </Parameters>
+      <Docs>
+        <param name="info">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeRecordReader">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,object[]&gt; PreComputeRecordReader (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object[]&gt; PreComputeRecordReader(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeRecordReader(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object,System.Object[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recordType" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="recordType">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeTupleConstructor">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object[],object&gt; PreComputeTupleConstructor (Type tupleType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object[], object&gt; PreComputeTupleConstructor(class System.Type tupleType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeTupleConstructor(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object[],System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tupleType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="tupleType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeTupleConstructorInfo">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;System.Reflection.ConstructorInfo,Microsoft.FSharp.Core.FSharpOption&lt;Type&gt;&gt; PreComputeTupleConstructorInfo (Type tupleType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class System.Reflection.ConstructorInfo, class Microsoft.FSharp.Core.FSharpOption`1&lt;class System.Type&gt;&gt; PreComputeTupleConstructorInfo(class System.Type tupleType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeTupleConstructorInfo(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;System.Reflection.ConstructorInfo,Microsoft.FSharp.Core.FSharpOption&lt;System.Type&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tupleType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="tupleType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeTuplePropertyInfo">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;System.Reflection.PropertyInfo,Microsoft.FSharp.Core.FSharpOption&lt;Tuple&lt;Type,int&gt;&gt;&gt; PreComputeTuplePropertyInfo (Type tupleType, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class System.Reflection.PropertyInfo, class Microsoft.FSharp.Core.FSharpOption`1&lt;class System.Tuple`2&lt;class System.Type, int32&gt;&gt;&gt; PreComputeTuplePropertyInfo(class System.Type tupleType, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeTuplePropertyInfo(System.Type,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;System.Reflection.PropertyInfo,Microsoft.FSharp.Core.FSharpOption&lt;System.Tuple&lt;System.Type,System.Int32&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tupleType" Type="System.Type" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="tupleType">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeTupleReader">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,object[]&gt; PreComputeTupleReader (Type tupleType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object[]&gt; PreComputeTupleReader(class System.Type tupleType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeTupleReader(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object,System.Object[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tupleType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="tupleType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeUnionConstructor">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object[],object&gt; PreComputeUnionConstructor (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object[], object&gt; PreComputeUnionConstructor(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeUnionConstructor(Microsoft.FSharp.Reflection.UnionCaseInfo,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object[],System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionCase" Type="Microsoft.FSharp.Reflection.UnionCaseInfo" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionCase">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeUnionConstructorInfo">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo PreComputeUnionConstructorInfo (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.MethodInfo PreComputeUnionConstructorInfo(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeUnionConstructorInfo(Microsoft.FSharp.Reflection.UnionCaseInfo,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MethodInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionCase" Type="Microsoft.FSharp.Reflection.UnionCaseInfo" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionCase">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeUnionReader">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,object[]&gt; PreComputeUnionReader (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object[]&gt; PreComputeUnionReader(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeUnionReader(Microsoft.FSharp.Reflection.UnionCaseInfo,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object,System.Object[]&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionCase" Type="Microsoft.FSharp.Reflection.UnionCaseInfo" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionCase">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeUnionTagMemberInfo">
+      <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo PreComputeUnionTagMemberInfo (Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.MemberInfo PreComputeUnionTagMemberInfo(class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeUnionTagMemberInfo(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.MemberInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionType" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionType">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreComputeUnionTagReader">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,int&gt; PreComputeUnionTagReader (Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, int32&gt; PreComputeUnionTagReader(class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeUnionTagReader(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpFunc&lt;System.Object,System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="unionType" Type="System.Type" />
+        <Parameter Name="bindingFlags" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="unionType">To be added.</param>
+        <param name="bindingFlags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

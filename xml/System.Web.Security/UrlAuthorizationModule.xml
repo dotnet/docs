@@ -1,0 +1,185 @@
+<Type Name="UrlAuthorizationModule" FullName="System.Web.Security.UrlAuthorizationModule">
+  <TypeSignature Language="C#" Value="public sealed class UrlAuthorizationModule : System.Web.IHttpModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UrlAuthorizationModule extends System.Object implements class System.Web.IHttpModule" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.UrlAuthorizationModule" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.IHttpModule</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Verifies that the user has permission to access the URL requested. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.UrlAuthorizationModule> determines whether the current user is permitted access to the requested URL, based on the user <xref:System.Security.Principal.IIdentity.Name%2A> or the list of roles that a user is a member of. For information about how the user name is determined, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1). For information about how to manage user roles, see [Managing Authorization Using Roles](http://msdn.microsoft.com/library/01954ce4-39a2-487f-8153-a69f6f6f3195).  
+  
+ Authorization for a user or a role is managed using the  configuration element. You can allow or deny a user or a role using the `allow` or `deny` subelements, respectively. The `allow` and `deny` subelements are interpreted in the order they appear in the configuration. Once an element specifies that access is allowed or denied, the <xref:System.Web.Security.UrlAuthorizationModule> completes its authorization check. For example, the following  section from a Web.config file requires users to log on (by denying anonymous users), and then allows only users in the Administrators role to have access. Users not in the Administrators role are denied.  
+  
+```  
+<authorization>  
+  <deny users="?" />  
+  <allow roles="Administrators" />  
+  <deny users="*" />  
+</authorization>  
+```  
+  
+ A user or role must be specifically denied to refuse the user or role permission to a URL. That is, if the previous example had not specified the `<deny users="*" />` element, then all authenticated users would have been allowed access to the requested URL, regardless of what role they were a member of.  
+  
+   
+  
+## Examples  
+ The following code example grants access to Kim and members of the Admins role, while denying it to John and all anonymous users.  
+  
+```  
+<authorization>  
+  <allow users="Kim"/>  
+  <allow roles="Admins"/>  
+  <deny users="John"/>  
+  <deny users="?"/>  
+</authorization>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UrlAuthorizationModule ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.UrlAuthorizationModule.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Web.Security.UrlAuthorizationModule" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is not intended to be called from application code.  
+  
+ ASP.NET calls this constructor to create an instance of the <xref:System.Web.Security.UrlAuthorizationModule> class. After calling the constructor, it calls the <xref:System.Web.Security.UrlAuthorizationModule.Init%2A> method to initialize the new <xref:System.Web.Security.UrlAuthorizationModule> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckUrlAccessForPrincipal">
+      <MemberSignature Language="C#" Value="public static bool CheckUrlAccessForPrincipal (string virtualPath, System.Security.Principal.IPrincipal user, string verb);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckUrlAccessForPrincipal(string virtualPath, class System.Security.Principal.IPrincipal user, string verb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.UrlAuthorizationModule.CheckUrlAccessForPrincipal(System.String,System.Security.Principal.IPrincipal,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="user" Type="System.Security.Principal.IPrincipal" />
+        <Parameter Name="verb" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="virtualPath">The virtual path to the file.</param>
+        <param name="user">An <see cref="T:System.Security.Principal.IPrincipal" /> object representing the current user.</param>
+        <param name="verb">The HTTP verb used to make the request.</param>
+        <summary>Determines whether the user has access to the requested file.</summary>
+        <returns>
+          <see langword="true" /> if the current user can access the file; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.UrlAuthorizationModule.CheckUrlAccessForPrincipal%2A> method checks to see whether the current user is granted access to the requested file in the Web.config file for the application.  
+  
+ If the HTTP verb used to make the request is `GET`, `POST`, or `HEAD`, the <xref:System.Web.Security.UrlAuthorizationModule.CheckUrlAccessForPrincipal%2A> method checks for read access to the file. If any other verb is used, the <xref:System.Web.Security.UrlAuthorizationModule.CheckUrlAccessForPrincipal%2A> checks for read/write access to the file.  
+  
+ For more information and an example Web.config file, see the <xref:System.Web.Security.UrlAuthorizationModule> class documentation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="virtualPath" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ <paramref name="user" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ <paramref name="verb" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="virtualPath" /> is outside of the application root path.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.UrlAuthorizationModule.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources, other than memory, used by the <see cref="T:System.Web.Security.UrlAuthorizationModule" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be called from application code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="public void Init (System.Web.HttpApplication app);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Init(class System.Web.HttpApplication app) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.UrlAuthorizationModule.Init(System.Web.HttpApplication)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="app" Type="System.Web.HttpApplication" />
+      </Parameters>
+      <Docs>
+        <param name="app">The current <see cref="T:System.Web.HttpApplication" /> instance.</param>
+        <summary>Initializes the <see cref="T:System.Web.Security.UrlAuthorizationModule" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not intended to be called from application code.  
+  
+ The <xref:System.Web.Security.UrlAuthorizationModule.Init%2A> method ensures that the <xref:System.Web.Security.UrlAuthorizationModule> is included in the processing of the <xref:System.Web.HttpApplication.AuthorizeRequest> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,216 @@
+<Type Name="Mouse" FullName="Microsoft.VisualBasic.Devices.Mouse">
+  <TypeSignature Language="C#" Value="public class Mouse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Mouse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Mouse" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides properties for getting information about the format and configuration of the mouse installed on the local computer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Computer.Mouse` object provides a way to find information about the computer's mouse: whether the mouse buttons are swapped, and details about the mouse wheel.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Computer.Mouse.WheelExists` and `My.Computer.Mouse.WheelScrollLines` properties to determine if the mouse has a scroll wheel and how much to scroll when it rotates.  
+  
+ [!code-vb[VbVbalrMyComputer#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#26)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Mouse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Mouse.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Devices.Mouse" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Computer.Mouse` object provides a way to find information about the computer's mouse: whether the mouse buttons are swapped and details about the mouse wheel.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonsSwapped">
+      <MemberSignature Language="C#" Value="public bool ButtonsSwapped { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ButtonsSwapped" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Mouse.ButtonsSwapped" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see langword="Boolean" /> that indicates if the functionality of the left and right mouse buttons has been swapped.</summary>
+        <value>A <see langword="Boolean" /> with a value <see langword="True" /> if the functionality of the left and right mouse buttons has been swapped; otherwise, <see langword="False" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Computer.Mouse.ButtonsSwapped` property:  
+  
+-   Provides functionality similar to the <xref:System.Windows.Forms.SystemInformation.MouseButtonsSwapped%2A> property.  
+  
+-   Provides information about the computer that runs the code.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Computer.Mouse.ButtonsSwapped` property to determine if functionality of the left and right mouse buttons has been swapped.  
+  
+ [!code-vb[VbVbalrMyComputer#35](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#35)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The computer has no mouse installed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WheelExists">
+      <MemberSignature Language="C#" Value="public bool WheelExists { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WheelExists" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Mouse.WheelExists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see langword="Boolean" /> that indicates if the mouse has a scroll wheel.</summary>
+        <value>A Boolean with value <see langword="True" /> if the mouse has a scroll wheel; otherwise <see langword="False" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Computer.Mouse.WheelExists` property provides functionality similar to the <xref:System.Windows.Forms.SystemInformation.MouseWheelPresent%2A> property.  
+  
+ You should check the value of the `My.Computer.Mouse.WheelExists` property before attempting to access the <xref:Microsoft.VisualBasic.Devices.Mouse.WheelScrollLines%2A> property, which throws an exception if the mouse does not have a scroll wheel.  
+  
+ The `My.Computer.Mouse.WheelExists` property provides information about the computer that runs the code.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Computer.Mouse.WheelExists` property to determine if the mouse has a scroll wheel and how much to scroll when the mouse wheel is rotated.  
+  
+ [!code-vb[VbVbalrMyComputer#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#26)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The computer has no mouse installed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WheelScrollLines">
+      <MemberSignature Language="C#" Value="public int WheelScrollLines { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 WheelScrollLines" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Mouse.WheelScrollLines" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a number that indicates how much to scroll when the mouse wheel is rotated one notch.</summary>
+        <value>An <see langword="Integer" /> that indicates how much to scroll when the mouse wheel is rotated one notch. A positive value indicates scrolling by that number of lines, while a negative value indicates scrolling by one screen at a time.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to determine how many lines to scroll up or down in a multi-line control that has a scroll bar.  
+  
+ The `My.Computer.Mouse.WheelScrollLines` property provides functionality similar to the <xref:System.Windows.Forms.SystemInformation.MouseWheelScrollLines%2A> property.  
+  
+ Because this property throws an exception if the mouse does not have a scroll wheel, you should make sure a mouse has a scroll wheel by checking the `My.Computer.Mouse.WheelExists` property.  
+  
+ This property provides information about the computer that runs the code.  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|**Yes**|  
+|Console Application|**Yes**|  
+|Windows Control Library|**Yes**|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example determines if the mouse has a scroll wheel and uses the `My.Computer.Mouse.WheelExists` property to determine how much to scroll when the mouse wheel is rotated.  
+  
+ [!code-vb[VbVbalrMyComputer#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#26)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The mouse has no scroll wheel.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

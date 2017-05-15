@@ -1,0 +1,41 @@
+<Type Name="ToolTipEventHandler" FullName="System.Windows.Controls.ToolTipEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ToolTipEventHandler(object sender, ToolTipEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolTipEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ToolTipEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Controls.ToolTipEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle routed event that occur when a tooltip opens and closes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a tooltip opens and closes, this delegate provides an event handler. The element that specifies the tooltip inherits from either <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. Therefore, open and close events exist on both of these classes. The following table lists the events that use this event handler.  
+  
+|Events that occur when a tooltip opens|Events that occur when a tooltip closes|  
+|--------------------------------------------|---------------------------------------------|  
+|<xref:System.Windows.FrameworkElement.ToolTipOpening?displayProperty=fullName>|<xref:System.Windows.FrameworkElement.ToolTipClosing?displayProperty=fullName>|  
+|<xref:System.Windows.FrameworkContentElement.ToolTipOpening?displayProperty=fullName>|<xref:System.Windows.FrameworkContentElement.ToolTipClosing?displayProperty=fullName>|  
+  
+ These events are registered by the <xref:System.Windows.Controls.ToolTipService> class using the <xref:System.Windows.Controls.ToolTipService.ToolTipOpeningEvent> and <xref:System.Windows.Controls.ToolTipService.ToolTipClosingEvent> fields, but the <xref:System.Windows.Controls.ToolTipService> class does not expose these events on itself (attached or otherwise). The <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement> classes both implement the <xref:System.Windows.Controls.ToolTipService> and expose this event by defining the events in the previous table, copying the <xref:System.Windows.Controls.ToolTipService> fields to create new routed event identifiers that exist on the <xref:System.Windows.FrameworkElement> and <xref:System.Windows.FrameworkContentElement>classes.  
+  
+ If the tooltip is defined as a <xref:System.Windows.Controls.ToolTip> object, the <xref:System.Windows.Controls.ToolTip.Opened> and <xref:System.Windows.Controls.ToolTip.Closed> events of the <xref:System.Windows.Controls.ToolTip> class are also raised when a tooltip opens and closes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

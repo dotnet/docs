@@ -1,0 +1,10 @@
+﻿<Window 
+	x:Class="ApplicationTryFindResourceSnippets.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ApplicationTryFindResourceSnippets" Height="300" Width="300"
+    >
+	<Grid>
+		<Button DockPanel.Dock="Top" Name="tryFindResourceButton" Click="tryFindResourceButton_Click">Try/Find Resource</Button>
+	</Grid>
+</Window>

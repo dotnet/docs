@@ -1,0 +1,59 @@
+<Type Name="DiskSpaceExhaustedOption" FullName="Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption">
+  <TypeSignature Language="C#" Value="public enum DiskSpaceExhaustedOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DiskSpaceExhaustedOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines what to do when the <see cref="T:Microsoft.VisualBasic.Logging.FileLogTraceListener" /> object attempts to write to a log and there is less free disk space available than specified by the <see cref="P:Microsoft.VisualBasic.Logging.FileLogTraceListener.ReserveDiskSpace" /> property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property is set to DiscardMessages, the log messages are by default discarded if there is not enough reserved disk space. This prevents simple applications from failing if the disk gets too full.  
+  
+ For a more robust application, set the <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.DiskSpaceExhaustedBehavior%2A> property to ThrowException, and add `Try...Catch` blocks around all code that writes to the log.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DiscardMessages">
+      <MemberSignature Language="C#" Value="DiscardMessages" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption DiscardMessages = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption.DiscardMessages" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Discard log messages.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThrowException">
+      <MemberSignature Language="C#" Value="ThrowException" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption ThrowException = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption.ThrowException" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Logging.DiskSpaceExhaustedOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Throw an exception.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

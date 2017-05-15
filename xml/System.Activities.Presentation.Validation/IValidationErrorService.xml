@@ -1,0 +1,44 @@
+<Type Name="IValidationErrorService" FullName="System.Activities.Presentation.Validation.IValidationErrorService">
+  <TypeSignature Language="C#" Value="public interface IValidationErrorService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IValidationErrorService" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Validation.IValidationErrorService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines ways to access a specified list of activity validation errors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_IValidationErrorService#0](WFD_IValidationErrorService#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ShowValidationErrors">
+      <MemberSignature Language="C#" Value="public void ShowValidationErrors (System.Collections.Generic.IList&lt;System.Activities.Presentation.Validation.ValidationErrorInfo&gt; errors);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowValidationErrors(class System.Collections.Generic.IList`1&lt;class System.Activities.Presentation.Validation.ValidationErrorInfo&gt; errors) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Validation.IValidationErrorService.ShowValidationErrors(System.Collections.Generic.IList{System.Activities.Presentation.Validation.ValidationErrorInfo})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="errors" Type="System.Collections.Generic.IList&lt;System.Activities.Presentation.Validation.ValidationErrorInfo&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="errors">A specified type of list that contains activity validation errors.</param>
+        <summary>Makes the indicated list of activity validation errors accessible through a specific implementation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,91 @@
+<Type Name="PrintRange" FullName="System.Drawing.Printing.PrintRange">
+  <TypeSignature Language="C#" Value="public enum PrintRange" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PrintRange extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintRange" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the part of the document to print.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Drawing.Printing.PrinterSettings> and <xref:System.Windows.Forms.PrintDialog> classes use this enumeration.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllPages">
+      <MemberSignature Language="C#" Value="AllPages" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintRange AllPages = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.AllPages" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All pages are printed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentPage">
+      <MemberSignature Language="C#" Value="CurrentPage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintRange CurrentPage = int32(4194304)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.CurrentPage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The currently displayed page is printed</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Selection">
+      <MemberSignature Language="C#" Value="Selection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintRange Selection = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.Selection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The selected pages are printed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SomePages">
+      <MemberSignature Language="C#" Value="SomePages" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PrintRange SomePages = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PrintRange.SomePages" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PrintRange</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The pages between <see cref="P:System.Drawing.Printing.PrinterSettings.FromPage" /> and <see cref="P:System.Drawing.Printing.PrinterSettings.ToPage" /> are printed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,57 @@
+<Type Name="AudioBitsPerSample" FullName="System.Speech.AudioFormat.AudioBitsPerSample">
+  <TypeSignature Language="C#" Value="public enum AudioBitsPerSample" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AudioBitsPerSample extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.AudioFormat.AudioBitsPerSample" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumerates values that describe the bits-per-sample characteristic of an audio format.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.BitsPerSample%2A> property gets a member of <xref:System.Speech.AudioFormat.AudioBitsPerSample> that indicates the bits-per-sample of an audio format.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Eight">
+      <MemberSignature Language="C#" Value="Eight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.AudioFormat.AudioBitsPerSample Eight = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.AudioFormat.AudioBitsPerSample.Eight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.AudioFormat.AudioBitsPerSample</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The audio format has 8 bits per sample.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sixteen">
+      <MemberSignature Language="C#" Value="Sixteen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.AudioFormat.AudioBitsPerSample Sixteen = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.AudioFormat.AudioBitsPerSample.Sixteen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.AudioFormat.AudioBitsPerSample</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The audio format has 16 bits per sample.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

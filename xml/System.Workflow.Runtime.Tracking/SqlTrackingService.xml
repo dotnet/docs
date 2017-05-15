@@ -1,0 +1,456 @@
+<Type Name="SqlTrackingService" FullName="System.Workflow.Runtime.Tracking.SqlTrackingService">
+  <TypeSignature Language="C#" Value="public sealed class SqlTrackingService : System.Workflow.Runtime.Tracking.TrackingService, System.Workflow.Runtime.Tracking.IProfileNotification" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlTrackingService extends System.Workflow.Runtime.Tracking.TrackingService implements class System.Workflow.Runtime.Tracking.IProfileNotification" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.SqlTrackingService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Runtime.Tracking.TrackingService</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Workflow.Runtime.Tracking.IProfileNotification</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a tracking service that uses a SQL database to store tracking information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> class represents a fully functional tracking service. You can use this service out-of-box to collect and store tracking information, and to store tracking profiles and provide them when requested by the workflow runtime engine. The SQL tracking service writes tracking data sent to it by the runtime tracking infrastructure to a SQL database.  
+  
+ In many scenarios it is important for the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> to maintain consistency between its database and the state of the workflow runtime engine. Therefore, the `SqlTrackingChannel` class makes use of the <xref:System.Workflow.Runtime.IPendingWork> interface to participate in the workflow transaction batching functionality provided by the <xref:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService>. You can set <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.IsTransactional%2A> or pass the appropriate parameters to the constructor to configure the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> to participate in batching and add objects that represent pending changes to the SQL database to the <xref:System.Workflow.Runtime.WorkflowEnvironment.WorkBatch%2A>.  
+  
+ The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> also maintains tracking profiles in its database. The workflow runtime engine must be kept apprised of changes to any of the tracking profiles that it is using. The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> implements the <xref:System.Workflow.Runtime.Tracking.IProfileNotification> interface and periodically examines the tracking profiles in its database in order to notify the workflow runtime engine of changes to a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> stored in its database. You can set <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval%2A> or pass the appropriate parameter to the constructor in order to set the interval at which the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> examines its tracking profiles to notify the tracking runtime of any profile changes.  
+  
+> [!NOTE]
+>  When using both the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> and the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> in a workflow application, it is recommended that you use a single database for both persistence and tracking.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlTrackingService (System.Collections.Specialized.NameValueCollection parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.NameValueCollection parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.#ctor(System.Collections.Specialized.NameValueCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Collections.Specialized.NameValueCollection" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> that specifies properties of <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> and their initial values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> class by using the specified <see cref="T:System.Collections.Specialized.NameValueCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is called by the workflow runtime engine when the workflow runtime engine is initialized from an application configuration file that specifies a <xref:System.Workflow.Runtime.Tracking.SqlTrackingService>. You can also use this constructor to initialize the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> from a host application. The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> is initialized according to the key-value pairs that are contained in the <xref:System.Collections.Specialized.NameValueCollection>. The following table enumerates the potential keys, the property which each value initializes, and the type of each property. The value associated with each key should be a string that represents the appropriate type for the property referred to by that key. You can specify one or more of these key-value pairs.  
+  
+|Key|Property Type|Property Description|  
+|---------|-------------------|--------------------------|  
+|`"IsTransactional"`|`bool`|Specifies whether <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> participates in workflow transactions by using the <xref:System.Workflow.Runtime.WorkflowEnvironment.WorkBatch%2A>. The default is `true`, specifying that tracking changes are written to the database in a synchronous manner.|  
+|`"UseDefaultProfile"`|`bool`|Specifies whether the default tracking profile will be returned if a tracking profile cannot be found for a <xref:System.Workflow.Runtime.Tracking.TrackingService.GetProfile%2A> call. The default is `true`, specifying that the default tracking profile will be used.|  
+|`"ProfileChangeCheckInterval"`|`double`|Specifies the time in milliseconds at which to examine the database for changes to its tracking profiles. The default is 60000 milliseconds.|  
+|`"ConnectionString"`|`string`|Specifies the database connection string. The default is a null reference (`Nothing` in Visual Basic).|  
+|`"PartitionOnCompletion"`|`bool`|Specifies whether tracking data for a workflow instance should be moved to the currently active partition in the database when the workflow instance is completed.|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="parameters" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.FormatException">The <see langword="string" /> value associated with a <see langword="Boolean" /> property key in <paramref name="parameters" /> is not represented by either <see cref="F:System.Boolean.TrueString" /> or <see cref="F:System.Boolean.FalseString" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlTrackingService (string connectionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">A valid database connection string.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> class by using the specified database connection string.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The database connection string is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public string ConnectionString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the connection string for the tracking database.</summary>
+        <value>The connection string for the tracking database.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableRetries">
+      <MemberSignature Language="C#" Value="public bool EnableRetries { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableRetries" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.EnableRetries" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets a value specifying whether the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> will retry when performing a database operation.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> should retry the operation; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.IsTransactional%2A> property is set to `false` and <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.EnableRetries%2A> is set to `true`, then all transaction retries depend on the value of the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.EnableRetries%2A> property.  
+  
+ If <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.IsTransactional%2A> is set to `true`, then certain work is batched and retries of those work batch transactions are handled by a derived type of <xref:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService>, such as <xref:System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService> or <xref:System.Workflow.Runtime.Hosting.SharedConnectionWorkflowCommitWorkBatchService>.  
+  
+ Regardless of whether <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.IsTransactional%2A> is set to `true`, the following work items cannot be batched and any transaction retries must be handled through the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.EnableRetries%2A> property.  
+  
+-   Polling for tracking profile changes.  
+  
+-   All writes to a SQL Server database when <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.IsTransactional%2A> is set to `false`.  
+  
+ Besides being set programmatically, this functionality can be enabled through a configuration file. For more information about how to set this property through a configuration file, see [Workflow Configuration Files](http://msdn.microsoft.com/en-us/ada4bb90-6c9d-4f3d-a9d0-b559bb0f9909).  
+  
+ For general information about retrying work batch transactions, see [Batching State Information in Workflows](http://msdn.microsoft.com/en-us/ecda18ba-9140-4bd7-b13d-6787fdf5959d).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfile">
+      <MemberSignature Language="C#" Value="protected override System.Workflow.Runtime.Tracking.TrackingProfile GetProfile (Guid scheduleInstanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Workflow.Runtime.Tracking.TrackingProfile GetProfile(valuetype System.Guid scheduleInstanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.GetProfile(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingProfile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scheduleInstanceId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="scheduleInstanceId">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProfile">
+      <MemberSignature Language="C#" Value="protected override System.Workflow.Runtime.Tracking.TrackingProfile GetProfile (Type workflowType, Version profileVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Workflow.Runtime.Tracking.TrackingProfile GetProfile(class System.Type workflowType, class System.Version profileVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.GetProfile(System.Type,System.Version)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingProfile</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowType" Type="System.Type" />
+        <Parameter Name="profileVersion" Type="System.Version" />
+      </Parameters>
+      <Docs>
+        <param name="workflowType">To be added.</param>
+        <param name="profileVersion">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTrackingChannel">
+      <MemberSignature Language="C#" Value="protected override System.Workflow.Runtime.Tracking.TrackingChannel GetTrackingChannel (System.Workflow.Runtime.Tracking.TrackingParameters parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Workflow.Runtime.Tracking.TrackingChannel GetTrackingChannel(class System.Workflow.Runtime.Tracking.TrackingParameters parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.GetTrackingChannel(System.Workflow.Runtime.Tracking.TrackingParameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameters" Type="System.Workflow.Runtime.Tracking.TrackingParameters" />
+      </Parameters>
+      <Docs>
+        <param name="parameters">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTransactional">
+      <MemberSignature Language="C#" Value="public bool IsTransactional { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTransactional" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.IsTransactional" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> participates in workflow transactions.</summary>
+        <value>
+          <see langword="true" /> if <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> participates in the workflow transaction; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Ordinarily tracking data is written to the database synchronously, that is, the data is written as soon as it is received on the Tracking Channel. If <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.IsTransactional%2A> is `true`, <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> participates in the workflow transaction. That is, it follows the semantics defined by <xref:System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService> and adds any changes to its database as work items to the <xref:System.Workflow.Runtime.WorkflowEnvironment.WorkBatch%2A>. The service commits these changes when instructed to by the workflow runtime engine.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartitionOnCompletion">
+      <MemberSignature Language="C#" Value="public bool PartitionOnCompletion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PartitionOnCompletion" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.PartitionOnCompletion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether tracking data for a workflow instance should be moved to the currently active partition in the database when the workflow instance is completed.</summary>
+        <value>
+          <see langword="true" /> if tracking data should be moved to the currently active partition on workflow completion; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> allows you to partition the database in order to provide an efficient method for archiving and deleting tracking records. If your database experiences long periods between down times or your database has no planned downtime, you can set <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.PartitionOnCompletion%2A> to move tracking records associated with a workflow instance from the active instance tables to the currently active partition when the workflow instance completes. This allows you to archive or delete these records without having to lock the data in the active instance tables of the database. For more information about partitioning, see [Data Maintenance with SqlTrackingService](http://msdn.microsoft.com/en-us/a62d5719-d6cd-4871-a3ab-56ea629d4e00).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfileChangeCheckInterval">
+      <MemberSignature Language="C#" Value="public double ProfileChangeCheckInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ProfileChangeCheckInterval" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies the interval at which the database should be checked for changes to one or more of its tracking profiles.</summary>
+        <value>The interval length in milliseconds. The default is 60000.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> periodically examines the database to determine whether one or more of its tracking profiles have been changed or have been deleted. When the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> determines that a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> has been deleted it raises an <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileRemoved> event; when it determines that a profile has been changed it raises a <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileUpdated> event. The runtime tracking infrastructure subscribes to both of these events and updates its tracking profile cache appropriately when they occur. You can also subscribe to either or both of these events if you want to be notified of changes to a tracking profile. You can set <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval%2A> to specify the frequency with which the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> should test for such changes. When you specify a new value for <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval%2A>, the timer interval is immediately set to this new value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfileRemoved">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt; ProfileRemoved;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt; ProfileRemoved" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileRemoved" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> detects that a <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> has been deleted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> periodically examines its database to determine whether one or more of its tracking profiles have been deleted. If it detects that a <xref:System.Workflow.Runtime.Tracking.TrackingProfile> has been deleted, it raises the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileRemoved> event and puts the workflow <xref:System.Type> in the <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs>. The runtime tracking infrastructure uses this event to update its profile cache. You can set <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval%2A> to specify the frequency at which the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> examines its database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProfileUpdated">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt; ProfileUpdated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt; ProfileUpdated" />
+      <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileUpdated" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the <see cref="T:System.Workflow.Runtime.Tracking.SqlTrackingService" /> detects that a <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> has been changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> periodically examines its database to determine whether one or more of its tracking profiles have been changed. If it detects such a change in a <xref:System.Workflow.Runtime.Tracking.TrackingProfile>, it raises the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileUpdated> event with the tracking profile encapsulated in a <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs>. The runtime tracking infrastructure uses this event to update its profile cache. You can set <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval%2A> to specify the frequency at which the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> examines its database.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="protected override void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetProfile">
+      <MemberSignature Language="C#" Value="protected override bool TryGetProfile (Type workflowType, out System.Workflow.Runtime.Tracking.TrackingProfile profile);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryGetProfile(class System.Type workflowType, class System.Workflow.Runtime.Tracking.TrackingProfile profile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.TryGetProfile(System.Type,System.Workflow.Runtime.Tracking.TrackingProfile@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowType" Type="System.Type" />
+        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="workflowType">To be added.</param>
+        <param name="profile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReloadProfile">
+      <MemberSignature Language="C#" Value="protected override bool TryReloadProfile (Type workflowType, Guid scheduleInstanceId, out System.Workflow.Runtime.Tracking.TrackingProfile profile);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryReloadProfile(class System.Type workflowType, valuetype System.Guid scheduleInstanceId, class System.Workflow.Runtime.Tracking.TrackingProfile profile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.SqlTrackingService.TryReloadProfile(System.Type,System.Guid,System.Workflow.Runtime.Tracking.TrackingProfile@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="workflowType" Type="System.Type" />
+        <Parameter Name="scheduleInstanceId" Type="System.Guid" />
+        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="workflowType">To be added.</param>
+        <param name="scheduleInstanceId">To be added.</param>
+        <param name="profile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDefaultProfile">
+      <MemberSignature Language="C#" Value="public bool UseDefaultProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultProfile" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.SqlTrackingService.UseDefaultProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value specifying whether a default <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> should be used for workflow types that do not have a tracking profile.</summary>
+        <value>
+          <see langword="true" /> if a default tracking profile should be used; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.UseDefaultProfile%2A> is `true`, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> will return a default <xref:System.Workflow.Runtime.Tracking.TrackingProfile> whenever the workflow runtime engine tries to get a tracking profile for a workflow <xref:System.Type> for which the tracking service has no associated <xref:System.Workflow.Runtime.Tracking.TrackingProfile>.  
+  
+ The out-of-box default tracking profile matches all activity events, user events, and workflow events emitted by a workflow instance. You can change the default tracking profile by using the `UpdateDefaultProfile` stored procedure.  
+  
+> [!NOTE]
+>  The `UpdateDefaultProfile` stored procedure will change the default tracking profile. This new default profile will be returned when the workflow runtime engine requests a profile for a workflow type for which the tracking service has no associated tracking profile. Workflow types that were previously associated with the old default profile will still be associated with that profile even after `UpdateDefaultProfile` is called; you must explicitly call the `UpdateTrackingProfile` stored procedure on any of these workflow types that you want to associate with the new default profile.  
+  
+ While <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.UseDefaultProfile%2A> is true, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> will return the default tracking profile to the workflow runtime engine for any workflow type for which it doesn't have a tracking profile associated in its database. If you later set <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.UseDefaultProfile%2A> to false, the default profile will still be associated with these workflow types in the database. You can call the `DeleteTrackingProfile` stored procedure on a workflow type to no longer associate a tracking profile with that type, or you can call the `UpdateTrackingProfile` stored procedure on a workflow type to change the tracking profile associated with that type.  
+  
+> [!NOTE]
+>  The workflow runtime engine caches its tracking profiles. Therefore, it must receive a <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileRemoved> event for any workflow type for which it already has a tracking profile associated in its cache before it will stop using its cached profile for new instances of that workflow type. Likewise, the workflow runtime engine must receive a <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileUpdated> event for such workflow types before it will load a new tracking profile into its cache to associate with new instances of the workflow type. The <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> raises the appropriate events for applicable workflow types when it examines the database for changes to its tracking profiles. The frequency at which the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> performs this operation is set by <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval%2A>.  Therefore, whenever you call the `UpdateTrackingProfile` or `DeleteTrackingProfile` stored procedures there may be a delay of up to the period specified by <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileChangeCheckInterval%2A> before the workflow runtime engine will reflect your changes in its profile cache.  
+>   
+>  For more information about tracking profiles, see [Creating and Using Tracking Profiles](http://msdn.microsoft.com/en-us/f018ad09-d20f-4626-9792-31d9f278d0b0).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

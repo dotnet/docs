@@ -1,0 +1,34 @@
+<Type Name="PropertyTranslator" FullName="System.Windows.Forms.Integration.PropertyTranslator">
+  <TypeSignature Language="C#" Value="public delegate void PropertyTranslator(object host, string propertyName, object value);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyTranslator extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Integration.PropertyTranslator" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsFormsIntegration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="host" Type="System.Object" />
+    <Parameter Name="propertyName" Type="System.String" />
+    <Parameter Name="value" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="host">The host control whose property is being mapped. The host control is either a <see cref="T:System.Windows.Forms.Integration.WindowsFormsHost" /> or an <see cref="T:System.Windows.Forms.Integration.ElementHost" />.</param>
+    <param name="propertyName">The name of the property being translated.</param>
+    <param name="value">The new value of the property.</param>
+    <summary>Provides a translation function for a mapped property of the host control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Integration.PropertyTranslator> delegate is used by the <xref:System.Windows.Forms.Integration.PropertyMap> class to implement property mapping between [!INCLUDE[TLA#tla_winforms](~/includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)]. For more information, see [Windows Forms and WPF Property Mapping](~/docs/framework/wpf/advanced/windows-forms-and-wpf-property-mapping.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

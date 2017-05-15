@@ -1,0 +1,91 @@
+<Type Name="PreviewPageInfo" FullName="System.Drawing.Printing.PreviewPageInfo">
+  <TypeSignature Language="C#" Value="public sealed class PreviewPageInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PreviewPageInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PreviewPageInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies print preview information for a single page. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used extensively by the <xref:System.Drawing.Printing.PreviewPrintController> class.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PreviewPageInfo (System.Drawing.Image image, System.Drawing.Size physicalSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Image image, valuetype System.Drawing.Size physicalSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PreviewPageInfo.#ctor(System.Drawing.Image,System.Drawing.Size)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="image" Type="System.Drawing.Image" />
+        <Parameter Name="physicalSize" Type="System.Drawing.Size" />
+      </Parameters>
+      <Docs>
+        <param name="image">The image of the printed page.</param>
+        <param name="physicalSize">The size of the printed page, in hundredths of an inch.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.PreviewPageInfo" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="public System.Drawing.Image Image { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image Image" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PreviewPageInfo.Image" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Image</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the image of the printed page.</summary>
+        <value>An <see cref="T:System.Drawing.Image" /> representing the printed page.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the <xref:System.Drawing> namespace for details on manipulating graphics.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PhysicalSize">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size PhysicalSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size PhysicalSize" />
+      <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PreviewPageInfo.PhysicalSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the printed page, in hundredths of an inch.</summary>
+        <value>A <see cref="T:System.Drawing.Size" /> that specifies the size of the printed page, in hundredths of an inch.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,72 @@
+<Type Name="IInputSessionShutdown" FullName="System.ServiceModel.Dispatcher.IInputSessionShutdown">
+  <TypeSignature Language="C#" Value="public interface IInputSessionShutdown" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInputSessionShutdown" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IInputSessionShutdown" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the contract that must be implemented to shut down an input session.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown> interface inside a duplex session to send outbound messages prior to closing the session. For example, if a client closes a session the service can implement <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown.DoneReceiving%2A> to be notified prior to the shutdown, enabling the service to send one notification message prior to returning. The client receives the notification prior to the acknowledgment that the client can close the channel.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChannelFaulted">
+      <MemberSignature Language="C#" Value="public void ChannelFaulted (System.ServiceModel.IDuplexContextChannel channel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ChannelFaulted(class System.ServiceModel.IDuplexContextChannel channel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInputSessionShutdown.ChannelFaulted(System.ServiceModel.IDuplexContextChannel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channel" Type="System.ServiceModel.IDuplexContextChannel" />
+      </Parameters>
+      <Docs>
+        <param name="channel">The <see cref="T:System.ServiceModel.IDuplexContextChannel" /> that has faulted.</param>
+        <summary>Indicates that the channel has faulted.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.ServiceModel.Dispatcher.IInputSessionShutdown.ChannelFaulted%2A> method to perform some custom behavior when a channel has faulted. Typically, the channel is aborted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DoneReceiving">
+      <MemberSignature Language="C#" Value="public void DoneReceiving (System.ServiceModel.IDuplexContextChannel channel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DoneReceiving(class System.ServiceModel.IDuplexContextChannel channel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInputSessionShutdown.DoneReceiving(System.ServiceModel.IDuplexContextChannel)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="channel" Type="System.ServiceModel.IDuplexContextChannel" />
+      </Parameters>
+      <Docs>
+        <param name="channel">The <see cref="T:System.ServiceModel.Channels.IDuplexSessionChannel" /> that is done receiving.</param>
+        <summary>Indicates when the client channel is done receiving messages as part of the duplex message exchange.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

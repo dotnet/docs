@@ -1,0 +1,37 @@
+<Type Name="StartupEventArgs" FullName="System.Windows.StartupEventArgs">
+  <TypeSignature Language="C#" Value="public class StartupEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StartupEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.StartupEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the arguments for the <see cref="E:System.Windows.Application.Startup" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Args">
+      <MemberSignature Language="C#" Value="public string[] Args { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Args" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.StartupEventArgs.Args" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets command line arguments that were passed to the application from either the command prompt or the desktop.</summary>
+        <value>A string array that contains the command line arguments that were passed to the application from either the command prompt or the desktop. If no command line arguments were passed, the string array as zero items.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

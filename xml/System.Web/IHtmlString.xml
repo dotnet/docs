@@ -1,0 +1,35 @@
+<Type Name="IHtmlString" FullName="System.Web.IHtmlString">
+  <TypeSignature Language="C#" Value="public interface IHtmlString" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHtmlString" />
+  <TypeSignature Language="DocId" Value="T:System.Web.IHtmlString" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an HTML-encoded string that should not be encoded again.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToHtmlString">
+      <MemberSignature Language="C#" Value="public string ToHtmlString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToHtmlString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.IHtmlString.ToHtmlString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an HTML-encoded string.</summary>
+        <returns>An HTML-encoded string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

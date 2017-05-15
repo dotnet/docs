@@ -1,0 +1,439 @@
+<Type Name="SamlAttribute" FullName="System.IdentityModel.Tokens.SamlAttribute">
+  <TypeSignature Language="C#" Value="public class SamlAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlAttribute extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an attribute that is associated with the subject of a <see cref="T:System.IdentityModel.Tokens.SamlAttributeStatement" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAttribute> class corresponds to the `<saml:Attribute>` XML element that is defined in the OASIS SAML 1.1 specification.  
+  
+ A <xref:System.IdentityModel.Tokens.SamlAttribute> instance contains <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A> claims for the subject of a <xref:System.IdentityModel.Tokens.SamlAttributeStatement>. For example, a <xref:System.IdentityModel.Tokens.SamlAttribute> might contain an `Over21` claim, whose type would be specified in the <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A> property and whose resource would be specified as a member of the collection in the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property. When the <xref:System.IdentityModel.Tokens.SamlStatement.CreatePolicy%2A> method is called, this `Over21` claim is added to the authorization policy that is returned by returned from by the <xref:System.IdentityModel.Tokens.SamlAttributeStatement>. When the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property contains multiple elements then one claim is returned for each element.  
+  
+ <xref:System.IdentityModel.Tokens.SamlAttribute> position in the SAML object hierarchy is:  
+  
+ <xref:System.IdentityModel.Tokens.SamlSecurityToken>  
+  
+ <xref:System.IdentityModel.Tokens.SamlAssertion>  
+  
+ <xref:System.IdentityModel.Tokens.SamlAttributeStatement>  
+  
+ <xref:System.IdentityModel.Tokens.SamlAttribute>  
+  
+   
+  
+## Examples  
+ [!code-csharp[SamlAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/samlattribute/cs/source.cs#1)]
+ [!code-vb[SamlAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/samlattribute/vb/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlAttribute (System.IdentityModel.Claims.Claim claim);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.Claim claim) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttribute.#ctor(System.IdentityModel.Claims.Claim)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="claim" Type="System.IdentityModel.Claims.Claim" />
+      </Parameters>
+      <Docs>
+        <param name="claim">A <see cref="T:System.IdentityModel.Claims.Claim" /> that represents an attribute of the subject for a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> class using the specified claim.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to convert a claim into a SAML attribute. To be converted to a SAML attribute, the <xref:System.IdentityModel.Claims.Claim.Right%2A> property must be <xref:System.IdentityModel.Claims.Rights.PossessProperty%2A>, the <xref:System.IdentityModel.Claims.Claim.Resource%2A> property must be of type <xref:System.String>, and the <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property must be in the format `namespace/name`.  
+  
+ The following table specifies what the `claim` parameter sets the <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A>, <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A>, and the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> properties to.  
+  
+|Property|Property of the `claim` parameter used to set the property|  
+|--------------|----------------------------------------------------------------|  
+|<xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A>|The value of the <xref:System.IdentityModel.Claims.Claim.Resource%2A> property is added to the collection.|  
+|<xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A>|The portion of the string after the last '/' character in the <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property.|  
+|<xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A>|The portion of the string before the last '/' character in the <xref:System.IdentityModel.Claims.Claim.ClaimType%2A> property.|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="claim" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.IdentityModel.Claims.Claim.Resource" /> property of <paramref name="claim" /> is not of type <see cref="T:System.String" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Claims.Claim.Right" /> property of <paramref name="claim" /> is not <see cref="P:System.IdentityModel.Claims.Rights.PossessProperty" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Claims.Claim.ClaimType" /> property of <paramref name="claim" /> does not have a '/' character or it is in the first or last index positions.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlAttribute (string attributeNamespace, string attributeName, System.Collections.Generic.IEnumerable&lt;string&gt; attributeValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeNamespace, string attributeName, class System.Collections.Generic.IEnumerable`1&lt;string&gt; attributeValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttribute.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeNamespace" Type="System.String" />
+        <Parameter Name="attributeName" Type="System.String" />
+        <Parameter Name="attributeValues" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="attributeNamespace">The XML namespace in which the <c>attributeName</c> parameter is defined.</param>
+        <param name="attributeName">The name of the SAML attribute.</param>
+        <param name="attributeValues">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> that contains the values of the SAML attribute.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlAttribute" /> class using the specified attribute name, XML namespace, and attribute values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table specifies the properties that are set by this constructor's parameters.  
+  
+|Property|Parameter|  
+|--------------|---------------|  
+|<xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A>|`attributeValues`|  
+|<xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A>|`attributeName`|  
+|<xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A>|`attributeNamespace`|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="attributeNamespace" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="attributeName" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="attributeValues" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.IdentityModel.Claims.Claim.Resource" /> property of <paramref name="claim" /> is not of type <see cref="T:System.String" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Claims.Claim.Right" /> property of <paramref name="claim" /> is not <see cref="P:System.IdentityModel.Claims.Rights.PossessProperty" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.IdentityModel.Claims.Claim.ClaimType" /> property of <paramref name="claim" /> does not have a '/' character or it is in the first or last index positions.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; AttributeValues { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;string&gt; AttributeValues" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAttribute.AttributeValues" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of attribute values for the SAML attribute.</summary>
+        <value>A <see cref="T:System.Collections.Generic.IList`1" /> that contains the set of attribute values for the SAML attribute.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A SAML attribute may contain more than one attribute value.  
+  
+ The <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property corresponds to the `<saml:AttributeValue>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeValueXsiType">
+      <MemberSignature Language="C#" Value="public string AttributeValueXsiType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AttributeValueXsiType" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAttribute.AttributeValueXsiType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the xsi:type of the values contained in the SAML Attribute.</summary>
+        <value>A string that contains the xsi:type. The default is <see cref="F:System.Security.Claims.ClaimValueTypes.String" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValueXsiType%2A> property corresponds to the `type` attribute of the `<saml:AttributeValue>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification. This attribute is required.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">An attempt to set a value that is <see langword="null" /> or empty occurs.  
+  
+ -or-  
+  
+ An attempt to set a value that is malformed occurs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractClaims">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Claims.Claim&gt; ExtractClaims ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Claims.Claim&gt; ExtractClaims() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttribute.ExtractClaims" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Claims.Claim&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a collection of claims that this SAML attribute represents.</summary>
+        <returns>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of type <see cref="T:System.IdentityModel.Claims.Claim" /> that contains the set of claims that this SAML attribute represents.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions that can specify an attribute about the subject represented by the security token. Use the <xref:System.IdentityModel.Tokens.SamlAttribute.ExtractClaims%2A> method to convert the SAML attribute into a set of claims.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAttribute.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the properties of this instance are read-only.</summary>
+        <value>
+          <see langword="true" /> if the properties of this instance are read-only; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To make this instance of the <xref:System.IdentityModel.Tokens.SamlAttribute> class read-only, call the <xref:System.IdentityModel.Tokens.SamlAttribute.MakeReadOnly%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeReadOnly">
+      <MemberSignature Language="C#" Value="public void MakeReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MakeReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttribute.MakeReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Causes this instance to be read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.IdentityModel.Tokens.SamlAttribute.MakeReadOnly%2A> method is called, the <xref:System.IdentityModel.Tokens.SamlAttribute.IsReadOnly%2A> property is set to `true` and properties of this instance can no longer be set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the SAML attribute.</summary>
+        <value>The name of the SAML attribute.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify the values associated with this SAML attribute, set the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A> property  
+  
+ The <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A> property corresponds to the `AttributeName` attribute of the `<Attribute>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.IdentityModel.Tokens.SamlAttribute.Name" /> property is set and the <see cref="P:System.IdentityModel.Tokens.SamlAttribute.IsReadOnly" /> property is <see langword="true" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.IdentityModel.Tokens.SamlAttribute.Name" /> property is set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAttribute.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the XML namespace in which the name of the SAML attribute is defined.</summary>
+        <value>The XML namespace in which the name of the SAML attribute is defined.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To set the name of the SAML attribute, set the <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A> property.  
+  
+ The <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A> property corresponds to the `AttributeNamespace` attribute of the `<AttributeDesignator>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalIssuer">
+      <MemberSignature Language="C#" Value="public string OriginalIssuer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OriginalIssuer" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlAttribute.OriginalIssuer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the string that represents the OriginalIssuer of the SAML attribute.</summary>
+        <value>The original issuer of the SAML attribute.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">An attempt to set a value that is an empty string occurs.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadXml">
+      <MemberSignature Language="C#" Value="public virtual void ReadXml (System.Xml.XmlDictionaryReader reader, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer, System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReadXml(class System.Xml.XmlDictionaryReader reader, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer, class System.IdentityModel.Selectors.SecurityTokenResolver outOfBandTokenResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttribute.ReadXml(System.Xml.XmlDictionaryReader,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer,System.IdentityModel.Selectors.SecurityTokenResolver)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlDictionaryReader" />
+        <Parameter Name="samlSerializer" Type="System.IdentityModel.Tokens.SamlSerializer" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
+        <Parameter Name="outOfBandTokenResolver" Type="System.IdentityModel.Selectors.SecurityTokenResolver" />
+      </Parameters>
+      <Docs>
+        <param name="reader">A <see cref="T:System.Xml.XmlDictionaryReader" /> to read the SAML attribute.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of reading XML elements in the SAML specification.</param>
+        <param name="keyInfoTokenSerializer">To be added.</param>
+        <param name="outOfBandTokenResolver">A <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that determines the security token that created the digital signature.</param>
+        <summary>Reads the SAML attribute from the specified XML reader.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlAttribute.ReadXml%28System.Xml.XmlDictionaryReader%2CSystem.IdentityModel.Tokens.SamlSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenSerializer%2CSystem.IdentityModel.Selectors.SecurityTokenResolver%29> method sets the <xref:System.IdentityModel.Tokens.SamlAttribute.AttributeValues%2A>, <xref:System.IdentityModel.Tokens.SamlAttribute.Name%2A>, and <xref:System.IdentityModel.Tokens.SamlAttribute.Namespace%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="samlSerializer" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">
+          <paramref name="reader" /> refers to an XML element that does not have the <see langword="AttributeName" /> and <see langword="AttributeNamespace" /> attributes.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteXml">
+      <MemberSignature Language="C#" Value="public virtual void WriteXml (System.Xml.XmlDictionaryWriter writer, System.IdentityModel.Tokens.SamlSerializer samlSerializer, System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteXml(class System.Xml.XmlDictionaryWriter writer, class System.IdentityModel.Tokens.SamlSerializer samlSerializer, class System.IdentityModel.Selectors.SecurityTokenSerializer keyInfoTokenSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlAttribute.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlDictionaryWriter" />
+        <Parameter Name="samlSerializer" Type="System.IdentityModel.Tokens.SamlSerializer" />
+        <Parameter Name="keyInfoSerializer" Type="System.IdentityModel.Selectors.SecurityTokenSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="writer">A <see cref="T:System.Xml.XmlDictionaryWriter" /> to write the SAML attribute.</param>
+        <param name="samlSerializer">A <see cref="T:System.IdentityModel.Tokens.SamlSerializer" /> that is capable of writing XML elements in a SAML assertion.</param>
+        <param name="keyInfoTokenSerializer">To be added.</param>
+        <summary>Writes the SAML attribute into the specified XML serializer.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="samlSerializer" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

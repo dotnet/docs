@@ -1,0 +1,93 @@
+<Type Name="FirstWeekOfYear" FullName="Microsoft.VisualBasic.FirstWeekOfYear">
+  <TypeSignature Language="C#" Value="public enum FirstWeekOfYear" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FirstWeekOfYear extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FirstWeekOfYear" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Indicates the first week of the year to use when calling date-related functions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you call date-related functions, you can use the following enumeration members in your code in place of the actual values.  
+  
+ Some date-related functions take a `DayOfWeek` argument, a `WeekOfYear` argument, or both. The `FirstWeekOfYear` enumeration specifies the valid values for the `WeekOfYear` arguments, as well as the possible return values from the functions.  
+  
+ The `WeekOfYear` argument takes the `FirstWeekOfYear` enumeration members.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FirstFourDays">
+      <MemberSignature Language="C#" Value="FirstFourDays" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstWeekOfYear FirstFourDays = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstWeekOfYear.FirstFourDays" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The first week that has at least four days in the new year. This member is equivalent to the Visual Basic constant <see langword="vbFirstFourDays" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstFullWeek">
+      <MemberSignature Language="C#" Value="FirstFullWeek" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstWeekOfYear FirstFullWeek = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstWeekOfYear.FirstFullWeek" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The first full week of the year. This member is equivalent to the Visual Basic constant <see langword="vbFirstFullWeek" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Jan1">
+      <MemberSignature Language="C#" Value="Jan1" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstWeekOfYear Jan1 = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstWeekOfYear.Jan1" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The week in which January 1 occurs (default). This member is equivalent to the Visual Basic constant <see langword="vbFirstJan1" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="System">
+      <MemberSignature Language="C#" Value="System" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FirstWeekOfYear System = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FirstWeekOfYear.System" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.FirstWeekOfYear</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The weekspecified in your system settings as the first week of the year. This member is equivalent to the Visual Basic constant <see langword="vbUseSystem" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

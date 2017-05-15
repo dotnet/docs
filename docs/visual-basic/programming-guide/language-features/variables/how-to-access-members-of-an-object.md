@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "object variables, accessing members"
 ms.assetid: a0072514-6a79-4dd6-8d03-ca8c13e61ddc
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

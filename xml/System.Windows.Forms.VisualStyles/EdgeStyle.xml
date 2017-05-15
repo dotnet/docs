@@ -1,0 +1,89 @@
+<Type Name="EdgeStyle" FullName="System.Windows.Forms.VisualStyles.EdgeStyle">
+  <TypeSignature Language="C#" Value="public enum EdgeStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EdgeStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.EdgeStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the styles that can be applied to the edges of a visual style element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.EdgeStyle> values are used as argument values in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawEdge%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bump">
+      <MemberSignature Language="C#" Value="Bump" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeStyle Bump = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeStyle.Bump" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.EdgeStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The edges are drawn to appear raised on the outside and sunken on the inside.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Etched">
+      <MemberSignature Language="C#" Value="Etched" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeStyle Etched = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeStyle.Etched" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.EdgeStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The edges are drawn to appear sunken on the outside and raised on the inside.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Raised">
+      <MemberSignature Language="C#" Value="Raised" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeStyle Raised = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeStyle.Raised" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.EdgeStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The edges are drawn to make the element seem raised.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sunken">
+      <MemberSignature Language="C#" Value="Sunken" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeStyle Sunken = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeStyle.Sunken" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.EdgeStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The edges are drawn to make the element seem sunken.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

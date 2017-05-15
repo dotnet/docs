@@ -1,0 +1,250 @@
+<Type Name="UCOMIRunningObjectTable" FullName="System.Runtime.InteropServices.UCOMIRunningObjectTable">
+  <TypeSignature Language="C#" Value="public interface UCOMIRunningObjectTable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UCOMIRunningObjectTable" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIRunningObjectTable" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("00000010-0000-0000-c000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IRunningObjectTable" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IRunningObjectTable` in the com subfolder of the MSDN library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnumRunning">
+      <MemberSignature Language="C#" Value="public void EnumRunning (out System.Runtime.InteropServices.UCOMIEnumMoniker ppenumMoniker);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumRunning(class System.Runtime.InteropServices.UCOMIEnumMoniker ppenumMoniker) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIRunningObjectTable.EnumRunning(System.Runtime.InteropServices.UCOMIEnumMoniker@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppenumMoniker" Type="System.Runtime.InteropServices.UCOMIEnumMoniker&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ppenumMoniker">On successful return, the new enumerator for the ROT.</param>
+        <summary>Enumerates the objects currently registered as running.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IRunningObjectTable::EnumRunning` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="public void GetObject (System.Runtime.InteropServices.UCOMIMoniker pmkObjectName, out object ppunkObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObject(class System.Runtime.InteropServices.UCOMIMoniker pmkObjectName, object ppunkObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIRunningObjectTable.GetObject(System.Runtime.InteropServices.UCOMIMoniker,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pmkObjectName" Type="System.Runtime.InteropServices.UCOMIMoniker" />
+        <Parameter Name="ppunkObject" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pmkObjectName">Reference to the moniker to search for in the ROT.</param>
+        <param name="ppunkObject">On successful return, contains the requested running object.</param>
+        <summary>Returns the registered object if the supplied object name is registered as running.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IRunningObjectTable::GetObject` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTimeOfLastChange">
+      <MemberSignature Language="C#" Value="public void GetTimeOfLastChange (System.Runtime.InteropServices.UCOMIMoniker pmkObjectName, out System.Runtime.InteropServices.FILETIME pfiletime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTimeOfLastChange(class System.Runtime.InteropServices.UCOMIMoniker pmkObjectName, valuetype System.Runtime.InteropServices.FILETIME pfiletime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIRunningObjectTable.GetTimeOfLastChange(System.Runtime.InteropServices.UCOMIMoniker,System.Runtime.InteropServices.FILETIME@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pmkObjectName" Type="System.Runtime.InteropServices.UCOMIMoniker" />
+        <Parameter Name="pfiletime" Type="System.Runtime.InteropServices.FILETIME&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pmkObjectName">Reference to the moniker to search for in the ROT.</param>
+        <param name="pfiletime">On successful return, contains the objects last change time.</param>
+        <summary>Searches for this moniker in the ROT and reports the recorded time of change, if present.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IRunningObjectTable::GetTimeOfLastChange` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRunning">
+      <MemberSignature Language="C#" Value="public void IsRunning (System.Runtime.InteropServices.UCOMIMoniker pmkObjectName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void IsRunning(class System.Runtime.InteropServices.UCOMIMoniker pmkObjectName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIRunningObjectTable.IsRunning(System.Runtime.InteropServices.UCOMIMoniker)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pmkObjectName" Type="System.Runtime.InteropServices.UCOMIMoniker" />
+      </Parameters>
+      <Docs>
+        <param name="pmkObjectName">Reference to the moniker to search for in the Running Object Table.</param>
+        <summary>Determines if the specified moniker is currently registered in the Running Object Table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IRunningObjectTable::IsRunning` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoteChangeTime">
+      <MemberSignature Language="C#" Value="public void NoteChangeTime (int dwRegister, ref System.Runtime.InteropServices.FILETIME pfiletime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NoteChangeTime(int32 dwRegister, valuetype System.Runtime.InteropServices.FILETIME pfiletime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIRunningObjectTable.NoteChangeTime(System.Int32,System.Runtime.InteropServices.FILETIME@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwRegister" Type="System.Int32" />
+        <Parameter Name="pfiletime" Type="System.Runtime.InteropServices.FILETIME&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="dwRegister">The ROT entry of the changed object.</param>
+        <param name="pfiletime">Reference to the object's last change time.</param>
+        <summary>Makes a note of the time that a particular object has changed so <see langword="IMoniker::GetTimeOfLastChange" /> can report an appropriate change time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IRunningObjectTable::NoteChangeTime` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public void Register (int grfFlags, object punkObject, System.Runtime.InteropServices.UCOMIMoniker pmkObjectName, out int pdwRegister);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Register(int32 grfFlags, object punkObject, class System.Runtime.InteropServices.UCOMIMoniker pmkObjectName, int32 pdwRegister) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIRunningObjectTable.Register(System.Int32,System.Object,System.Runtime.InteropServices.UCOMIMoniker,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="grfFlags" Type="System.Int32" />
+        <Parameter Name="punkObject" Type="System.Object" />
+        <Parameter Name="pmkObjectName" Type="System.Runtime.InteropServices.UCOMIMoniker" />
+        <Parameter Name="pdwRegister" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="grfFlags">Specifies whether the Running Object Table's (ROT) reference to <c>punkObject</c> is weak or strong, and controls access to the object through its entry in the ROT.</param>
+        <param name="punkObject">Reference to the object being registered as running.</param>
+        <param name="pmkObjectName">Reference to the moniker that identifies <c>punkObject</c>.</param>
+        <param name="pdwRegister">Reference to a 32-bit value that can be used to identify this ROT entry in subsequent calls to <see cref="M:System.Runtime.InteropServices.UCOMIRunningObjectTable.Revoke(System.Int32)" /> or <see cref="M:System.Runtime.InteropServices.UCOMIRunningObjectTable.NoteChangeTime(System.Int32,System.Runtime.InteropServices.FILETIME@)" />.</param>
+        <summary>Registers that the supplied object has entered the running state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IRunningObjectTable::Register` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public void Revoke (int dwRegister);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(int32 dwRegister) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIRunningObjectTable.Revoke(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dwRegister" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="dwRegister">The ROT entry to revoke.</param>
+        <summary>Unregisters the specified object from the ROT.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IRunningObjectTable::Revoke` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

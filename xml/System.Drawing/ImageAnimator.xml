@@ -1,0 +1,137 @@
+<Type Name="ImageAnimator" FullName="System.Drawing.ImageAnimator">
+  <TypeSignature Language="C#" Value="public sealed class ImageAnimator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ImageAnimator extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.ImageAnimator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Animates an image that has time-based frames.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Animate">
+      <MemberSignature Language="C#" Value="public static void Animate (System.Drawing.Image image, EventHandler onFrameChangedHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Animate(class System.Drawing.Image image, class System.EventHandler onFrameChangedHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.ImageAnimator.Animate(System.Drawing.Image,System.EventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="image" Type="System.Drawing.Image" />
+        <Parameter Name="onFrameChangedHandler" Type="System.EventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> object to animate.</param>
+        <param name="onFrameChangedHandler">An <see langword="EventHandler" /> object that specifies the method that is called when the animation frame changes.</param>
+        <summary>Displays a multiple-frame image as an animation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This Windows Forms application demonstrates how to draw an animated image to the screen. The image is created from the animated GIF file SampleAnimation.gif located in the same folder as the application.  
+  
+ [!code-cpp[System.Drawing.ClassicImageAnimator#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ClassicImageAnimator/cpp/form1.cpp#1)]
+ [!code-csharp[System.Drawing.ClassicImageAnimator#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ClassicImageAnimator/CS/form1.cs#1)]
+ [!code-vb[System.Drawing.ClassicImageAnimator#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ClassicImageAnimator/VB/form1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanAnimate">
+      <MemberSignature Language="C#" Value="public static bool CanAnimate (System.Drawing.Image image);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanAnimate(class System.Drawing.Image image) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.ImageAnimator.CanAnimate(System.Drawing.Image)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="image" Type="System.Drawing.Image" />
+      </Parameters>
+      <Docs>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> object to test.</param>
+        <summary>Returns a Boolean value indicating whether the specified image contains time-based frames.</summary>
+        <returns>This method returns <see langword="true" /> if the specified image contains time-based frames; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StopAnimate">
+      <MemberSignature Language="C#" Value="public static void StopAnimate (System.Drawing.Image image, EventHandler onFrameChangedHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StopAnimate(class System.Drawing.Image image, class System.EventHandler onFrameChangedHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.ImageAnimator.StopAnimate(System.Drawing.Image,System.EventHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="image" Type="System.Drawing.Image" />
+        <Parameter Name="onFrameChangedHandler" Type="System.EventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> object to stop animating.</param>
+        <param name="onFrameChangedHandler">An <see langword="EventHandler" /> object that specifies the method that is called when the animation frame changes.</param>
+        <summary>Terminates a running animation.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFrames">
+      <MemberSignature Language="C#" Value="public static void UpdateFrames ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateFrames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.ImageAnimator.UpdateFrames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Advances the frame in all images currently being animated. The new frame is drawn the next time the image is rendered.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateFrames">
+      <MemberSignature Language="C#" Value="public static void UpdateFrames (System.Drawing.Image image);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateFrames(class System.Drawing.Image image) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.ImageAnimator.UpdateFrames(System.Drawing.Image)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="image" Type="System.Drawing.Image" />
+      </Parameters>
+      <Docs>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> object for which to update frames.</param>
+        <summary>Advances the frame in the specified image. The new frame is drawn the next time the image is rendered. This method applies only to images with time-based frames.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

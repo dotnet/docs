@@ -1,0 +1,75 @@
+<Type Name="ActiveDesignSurfaceChangedEventArgs" FullName="System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class ActiveDesignSurfaceChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActiveDesignSurfaceChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.DesignSurfaceManager.ActiveDesignSurfaceChanged" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActiveDesignSurfaceChangedEventArgs (System.ComponentModel.Design.DesignSurface oldSurface, System.ComponentModel.Design.DesignSurface newSurface);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignSurface oldSurface, class System.ComponentModel.Design.DesignSurface newSurface) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs.#ctor(System.ComponentModel.Design.DesignSurface,System.ComponentModel.Design.DesignSurface)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="oldSurface" Type="System.ComponentModel.Design.DesignSurface" />
+        <Parameter Name="newSurface" Type="System.ComponentModel.Design.DesignSurface" />
+      </Parameters>
+      <Docs>
+        <param name="oldSurface">The design surface that is losing activation.</param>
+        <param name="newSurface">The design surface that is gaining activation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewSurface">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignSurface NewSurface { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignSurface NewSurface" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs.NewSurface" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignSurface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the design surface that is gaining activation.</summary>
+        <value>A <see cref="T:System.ComponentModel.Design.DesignSurface" /> that is gaining activation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldSurface">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignSurface OldSurface { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignSurface OldSurface" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.ActiveDesignSurfaceChangedEventArgs.OldSurface" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignSurface</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the design surface that is losing activation.</summary>
+        <value>A <see cref="T:System.ComponentModel.Design.DesignSurface" /> that is losing activation.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

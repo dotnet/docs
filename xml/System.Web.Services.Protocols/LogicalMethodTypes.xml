@@ -1,0 +1,62 @@
+<Type Name="LogicalMethodTypes" FullName="System.Web.Services.Protocols.LogicalMethodTypes">
+  <TypeSignature Language="C#" Value="public enum LogicalMethodTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LogicalMethodTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.LogicalMethodTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how the XML Web service method was invoked.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[LogicalMethodInfo_GetCustomAttribute#1](~/samples/snippets/cpp/VS_Snippets_Remoting/LogicalMethodInfo_GetCustomAttribute/CPP/logicalmethodinfo_getcustomattribute.cpp#1)]
+ [!code-csharp[LogicalMethodInfo_GetCustomAttribute#1](~/samples/snippets/csharp/VS_Snippets_Remoting/LogicalMethodInfo_GetCustomAttribute/CS/logicalmethodinfo_getcustomattribute.cs#1)]
+ [!code-vb[LogicalMethodInfo_GetCustomAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/LogicalMethodInfo_GetCustomAttribute/VB/logicalmethodinfo_getcustomattribute.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Async">
+      <MemberSignature Language="C#" Value="Async" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.LogicalMethodTypes Async = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.LogicalMethodTypes.Async" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.LogicalMethodTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The XML Web service method is invoked asynchronously.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sync">
+      <MemberSignature Language="C#" Value="Sync" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.LogicalMethodTypes Sync = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.LogicalMethodTypes.Sync" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.LogicalMethodTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The XML Web service method is invoked synchronously.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

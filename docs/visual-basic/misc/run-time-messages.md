@@ -14,8 +14,8 @@ helpviewer_keywords:
   - "run-time errors, Visual Basic"
 ms.assetid: 130f7c2b-8eb1-4a6e-81aa-e30e27d3d4f7
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

@@ -1,0 +1,111 @@
+<Type Name="IDataBoundListControl" FullName="System.Web.UI.WebControls.IDataBoundListControl">
+  <TypeSignature Language="C#" Value="public interface IDataBoundListControl : System.Web.UI.WebControls.IDataBoundControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataBoundListControl implements class System.Web.UI.WebControls.IDataBoundControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IDataBoundListControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.WebControls.IDataBoundControl</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Exposes the common properties of data-bound-controls that display multiple rows.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClientIDRowSuffix">
+      <MemberSignature Language="C#" Value="public string[] ClientIDRowSuffix { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ClientIDRowSuffix" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the names of the data fields whose values are appended to the <see cref="P:System.Web.UI.Control.ClientID" /> property value to uniquely identify each instance of a data-bound control.</summary>
+        <value>An array of data field names.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataKeys">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataKeyArray DataKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataKeyArray DataKeys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundListControl.DataKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataKeyArray</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Web.UI.WebControls.DataKey" /> objects that represent the data key value of each row in a data-bound control.</summary>
+        <value>A collection of data-key objects that contains the data-key value of each row in a data-bound control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnablePersistedSelection">
+      <MemberSignature Language="C#" Value="public bool EnablePersistedSelection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnablePersistedSelection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the selection of a row is based on index or on data-key values.</summary>
+        <value>
+          <see langword="true" /> if the row selection is based on data-key values; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedDataKey">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataKey SelectedDataKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataKey SelectedDataKey" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataKey</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that contains the data-key value for the selected row in a data-bound control.</summary>
+        <value>The object that contains the data-key value for the selected row in a data-bound control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndex">
+      <MemberSignature Language="C#" Value="public int SelectedIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the selected row in a data-bound control.</summary>
+        <value>The index of the selected row in a data-bound control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

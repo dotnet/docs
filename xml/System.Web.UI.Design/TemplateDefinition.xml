@@ -1,0 +1,315 @@
+<Type Name="TemplateDefinition" FullName="System.Web.UI.Design.TemplateDefinition">
+  <TypeSignature Language="C#" Value="public class TemplateDefinition : System.Web.UI.Design.DesignerObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateDefinition extends System.Web.UI.Design.DesignerObject" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.TemplateDefinition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.DesignerObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides properties and methods that define a template element in a Web server control at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.TemplateDefinition> class provides a base template definition class that can be inherited from and extended for a control designer to use in providing support for templated controls in a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)]. A design host uses the properties and methods of the <xref:System.Web.UI.Design.TemplateDefinition> class to facilitate creating and editing a template at design time.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to derive a custom class from the <xref:System.Web.UI.Design.ControlDesigner> class. This control designer supports a control with four possible templates.  
+  
+ To try it, add a reference to the System.Design.dll assembly, compile the code, and then, in a design host such as [!INCLUDE[vsprvslong](~/includes/vsprvslong-md.md)], look at the page in Design view. Select the control, click the action list to select a template to modify, and then use the drag-and-drop feature to move controls into the template.  
+  
+ [!code-csharp[DesignerTemplateGroupSample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DesignerTemplateGroupSample/CS/TemplateGroupsSample.cs#1)]
+ [!code-vb[DesignerTemplateGroupSample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.vb#1)]  
+<!-- TODO: review snippet reference [!code-vb[DesignerTemplateGroupSample#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DesignerTemplateGroupSample/VB/TemplateGroupsSample.aspx#2)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateDefinition (System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateDefinition.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Object,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="designer" Type="System.Web.UI.Design.ControlDesigner" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="templatedObject" Type="System.Object" />
+        <Parameter Name="templatePropertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="designer">The parent <see cref="T:System.Web.UI.Design.ControlDesigner" /> object.</param>
+        <param name="name">The name of the template.</param>
+        <param name="templatedObject">The object that contains the template.</param>
+        <param name="templatePropertyName">The property name that represents this template in the **Properties** list in the design host.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateDefinition" /> class, using the provided designer, template name, template, and property name.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="designer" /> is <see langword="null" />,  
+  
+ -or-  
+  
+ <paramref name="templatedObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateDefinition (System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, bool serverControlsOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, bool serverControlsOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateDefinition.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Object,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="designer" Type="System.Web.UI.Design.ControlDesigner" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="templatedObject" Type="System.Object" />
+        <Parameter Name="templatePropertyName" Type="System.String" />
+        <Parameter Name="serverControlsOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="designer">The parent <see cref="T:System.Web.UI.Design.ControlDesigner" /> object.</param>
+        <param name="name">The name of the template.</param>
+        <param name="templatedObject">The object that contains the template.</param>
+        <param name="templatePropertyName">The property name that represents this template in the **Properties** list in the design host.</param>
+        <param name="serverControlsOnly">A Boolean value indicating whether the template content should allow only Web server controls.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateDefinition" /> class, using the provided designer, template name, template, property name, and whether to limit the template contents to Web server controls.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="designer" /> is <see langword="null" />,  
+  
+ -or-  
+  
+ <paramref name="templatedObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateDefinition (System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, System.Web.UI.WebControls.Style style);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, class System.Web.UI.WebControls.Style style) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateDefinition.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Object,System.String,System.Web.UI.WebControls.Style)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="designer" Type="System.Web.UI.Design.ControlDesigner" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="templatedObject" Type="System.Object" />
+        <Parameter Name="templatePropertyName" Type="System.String" />
+        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
+      </Parameters>
+      <Docs>
+        <param name="designer">The parent <see cref="T:System.Web.UI.Design.ControlDesigner" /> object.</param>
+        <param name="name">The name of the template.</param>
+        <param name="templatedObject">The object that contains the template.</param>
+        <param name="templatePropertyName">The property name that represents this template in the **Properties** list in the design host.</param>
+        <param name="style">A <see cref="T:System.Web.UI.WebControls.Style" /> object to apply to each template.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateDefinition" /> class, using the provided designer, template name, template, property name, and <see cref="T:System.Web.UI.WebControls.Style" /> object.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="designer" /> is <see langword="null" />,  
+  
+ -or-  
+  
+ <paramref name="templatedObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateDefinition (System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, System.Web.UI.WebControls.Style style, bool serverControlsOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.ControlDesigner designer, string name, object templatedObject, string templatePropertyName, class System.Web.UI.WebControls.Style style, bool serverControlsOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.TemplateDefinition.#ctor(System.Web.UI.Design.ControlDesigner,System.String,System.Object,System.String,System.Web.UI.WebControls.Style,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="designer" Type="System.Web.UI.Design.ControlDesigner" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="templatedObject" Type="System.Object" />
+        <Parameter Name="templatePropertyName" Type="System.String" />
+        <Parameter Name="style" Type="System.Web.UI.WebControls.Style" />
+        <Parameter Name="serverControlsOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="designer">The parent <see cref="T:System.Web.UI.Design.ControlDesigner" /> object.</param>
+        <param name="name">The name of the template.</param>
+        <param name="templatedObject">The object that contains the template.</param>
+        <param name="templatePropertyName">The property name that represents this template in the **Properties** list in the design host.</param>
+        <param name="style">A <see cref="T:System.Web.UI.WebControls.Style" /> object to apply to each template.</param>
+        <param name="serverControlsOnly">A Boolean value indicating whether the template should limit content to Web server controls.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.TemplateDefinition" /> class, using the provided designer, template name, template, property name, <see cref="T:System.Web.UI.WebControls.Style" /> object, and whether to limit content to Web server controls.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="designer" /> is <see langword="null" />,  
+  
+ -or-  
+  
+ <paramref name="templatedObject" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowEditing">
+      <MemberSignature Language="C#" Value="public virtual bool AllowEditing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowEditing" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.AllowEditing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the template should enable editing of its contents.</summary>
+        <value>
+          <see langword="true" /> if editing is allowed; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To change the default, derived classes must override the <xref:System.Web.UI.Design.TemplateDefinition.AllowEditing%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public virtual string Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Content" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the HTML markup representing the content of the template.</summary>
+        <value>HTML markup for the content of the template.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServerControlsOnly">
+      <MemberSignature Language="C#" Value="public bool ServerControlsOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ServerControlsOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.ServerControlsOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves a value indicating whether the template should limit content to Web server controls, as set in the <see cref="Overload:System.Web.UI.Design.TemplateDefinition.#ctor" /> constructor. This property is read-only.</summary>
+        <value>
+          <see langword="true" /> if content is limited to Web server controls; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style Style { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style Style" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.Style" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the style that should be applied to the template as set in the <see cref="Overload:System.Web.UI.Design.TemplateDefinition.#ctor" /> constructor. This property is read-only.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.Style" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the <xref:System.Web.UI.WebControls.Style> property is read-only, the properties of the <xref:System.Web.UI.WebControls.Style> can be set.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsDataBinding">
+      <MemberSignature Language="C#" Value="public bool SupportsDataBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDataBinding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.SupportsDataBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves or sets a value indicating whether the template supports data binding.</summary>
+        <value>
+          <see langword="true" /> if the template supports data binding; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplatedObject">
+      <MemberSignature Language="C#" Value="public object TemplatedObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TemplatedObject" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.TemplatedObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the component in which the template resides. This property is read-only.</summary>
+        <value>The component as set when this <see cref="T:System.Web.UI.Design.TemplateDefinition" /> was created.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although this <xref:System.Web.UI.Design.TemplateDefinition.TemplatedObject%2A> property is read-only, its properties can be set, and if <xref:System.Web.UI.Design.TemplateDefinition.AllowEditing%2A> is true, the content can be edited.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplatePropertyName">
+      <MemberSignature Language="C#" Value="public string TemplatePropertyName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TemplatePropertyName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.TemplateDefinition.TemplatePropertyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the property name for the template that the design host should display in the property grid.</summary>
+        <value>The name of the template as it should appear in the **Properties** list of the design host.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Visual Basic compiler, options"
 ms.assetid: 6b57c444-50c7-4b88-8f59-ed65cff5e05c
 caps.latest.revision: 16
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

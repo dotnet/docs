@@ -1,0 +1,350 @@
+<Type Name="ProfileInfoCollection" FullName="System.Web.Profile.ProfileInfoCollection">
+  <TypeSignature Language="C#" Value="public sealed class ProfileInfoCollection : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ProfileInfoCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileInfoCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>A collection of <see cref="T:System.Web.Profile.ProfileInfo" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.Profile.ProfileInfoCollection> object contains <xref:System.Web.Profile.ProfileInfo> objects that represent user profiles from a data source. A <xref:System.Web.Profile.ProfileInfoCollection> is returned from the <xref:System.Web.Profile.ProfileProvider.GetAllProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.GetAllInactiveProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.FindProfilesByUserName%2A>, and <xref:System.Web.Profile.ProfileProvider.FindInactiveProfilesByUserName%2A> methods of a <xref:System.Web.Profile.ProfileProvider>.  
+  
+ A <xref:System.Web.Profile.ProfileInfoCollection> can be supplied to the <xref:System.Web.Profile.ProfileProvider.DeleteProfiles%2A> method to delete profile information and properties from the data source.  
+  
+   
+  
+## Examples  
+ The following code example allows a user to search for profiles using the <xref:System.Web.Profile.SqlProfileProvider.FindProfilesByUserName%2A> and <xref:System.Web.Profile.SqlProfileProvider.FindInactiveProfilesByUserName%2A> methods. The user can pass the <xref:System.Web.Profile.ProfileInfoCollection> returned by the `find` methods to the <xref:System.Web.Profile.SqlProfileProvider.DeleteProfiles%2A> method to delete the associated profiles from the data source.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/CS/DeleteInactiveProfilescs.aspx#4)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Profile.SqlProfileProvider#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.SqlProfileProvider/VB/DeleteInactiveProfilesvb.aspx#4)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileInfoCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new, empty <see cref="T:System.Web.Profile.ProfileInfoCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.Profile.ProfileInfoCollection> is constructed by profile provider implementers and returned from the <xref:System.Web.Profile.ProfileProvider.GetAllProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.GetAllInactiveProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.FindProfilesByUserName%2A>, and <xref:System.Web.Profile.ProfileProvider.FindInactiveProfilesByUserName%2A> methods of the <xref:System.Web.Profile.ProfileProvider> abstract class.  
+  
+   
+  
+## Examples  
+ For an example of a <xref:System.Web.Profile.ProfileProvider> implementation that creates a <xref:System.Web.Profile.ProfileInfoCollection> for user profiles in a data store, see [Implementing a Profile Provider](http://msdn.microsoft.com/library/58de6e99-31a7-41b9-93ed-51b9b4a67e98).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.Profile.ProfileInfo profileInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Profile.ProfileInfo profileInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.Add(System.Web.Profile.ProfileInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="profileInfo" Type="System.Web.Profile.ProfileInfo" />
+      </Parameters>
+      <Docs>
+        <param name="profileInfo">A <see cref="T:System.Web.Profile.ProfileInfo" /> object to add to the collection.</param>
+        <summary>Adds the specified <see cref="T:System.Web.Profile.ProfileInfo" /> object to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.ProfileInfoCollection.Add%2A> method is commonly used by profile-provider implementers to populate a <xref:System.Web.Profile.ProfileInfoCollection> to return from the <xref:System.Web.Profile.ProfileProvider.GetAllProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.GetAllInactiveProfiles%2A>, <xref:System.Web.Profile.ProfileProvider.FindProfilesByUserName%2A>, or <xref:System.Web.Profile.ProfileProvider.FindInactiveProfilesByUserName%2A> method of the <xref:System.Web.Profile.ProfileProvider> abstract class.  
+  
+   
+  
+## Examples  
+ For an example of a <xref:System.Web.Profile.ProfileProvider> implementation that creates a <xref:System.Web.Profile.ProfileInfoCollection> for user profiles in a data store, see [Implementing a Profile Provider](http://msdn.microsoft.com/library/58de6e99-31a7-41b9-93ed-51b9b4a67e98).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+        <exception cref="T:System.ArgumentException">A <see cref="T:System.Web.Profile.ProfileInfo" /> object with the same <see cref="P:System.Web.Profile.ProfileInfo.UserName" /> value as <paramref name="profileInfo" /> already exists in the collection.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="profileInfo" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ The <see cref="P:System.Web.Profile.ProfileInfo.UserName" /> property of <paramref name="profileInfo" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all <see cref="T:System.Web.Profile.ProfileInfo" /> objects from the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A one-dimensional <see cref="T:System.Array" /> that is the destination of the elements copied from the <see cref="T:System.Web.Profile.ProfileInfoCollection" />. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in array at which copying begins.</param>
+        <summary>Copies the <see cref="T:System.Web.Profile.ProfileInfoCollection" /> to a one-dimensional array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> to copy <xref:System.Web.Profile.ProfileInfo> objects to the specified <xref:System.Array>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Profile.ProfileInfo[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Profile.ProfileInfo[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.CopyTo(System.Web.Profile.ProfileInfo[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.Profile.ProfileInfo[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A one-dimensional array of type <see cref="T:System.Web.Profile.ProfileInfo" /> that is the destination of the elements copied from the <see cref="T:System.Web.Profile.ProfileInfoCollection" />. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in the <c>array</c> at which copying begins.</param>
+        <summary>Copies the <see cref="T:System.Web.Profile.ProfileInfoCollection" /> to a one-dimensional array of type <see cref="T:System.Web.Profile.ProfileInfo" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses <xref:System.Collections.ArrayList.CopyTo%2A?displayProperty=fullName> to copy <xref:System.Web.Profile.ProfileInfo> objects to the specified array.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfoCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of <see cref="T:System.Web.Profile.ProfileInfo" /> objects in the collection.</summary>
+        <value>The number of <see cref="T:System.Web.Profile.ProfileInfo" /> objects in the collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerator that can iterate through the <see cref="T:System.Web.Profile.ProfileInfoCollection" />.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the entire <see cref="T:System.Web.Profile.ProfileInfoCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection. For more information, see <xref:System.Collections.IEnumerator>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfoCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the profile info collection is thread safe.</summary>
+        <value>Always <see langword="false" />, because thread-safe profile info collections are not supported.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Application code does not normally use this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Profile.ProfileInfo this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Profile.ProfileInfo Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfoCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Profile.ProfileInfo</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="P:System.Web.Profile.ProfileInfo.UserName" /> of the <see cref="T:System.Web.Profile.ProfileInfo" /> object to retrieve from the collection.</param>
+        <summary>Gets the <see cref="T:System.Web.Profile.ProfileInfo" /> object in the collection, referenced by the specified <see cref="P:System.Web.Profile.ProfileInfo.UserName" />.</summary>
+        <value>A <see cref="T:System.Web.Profile.ProfileInfo" /> object for the specified user name. If name is not found in the collection, <see langword="null" /> is returned.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="P:System.Web.Profile.ProfileInfo.UserName" /> of the <see cref="T:System.Web.Profile.ProfileInfo" /> object to remove from the collection.</param>
+        <summary>Removes the <see cref="T:System.Web.Profile.ProfileInfo" /> object with the specified user name from the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReadOnly">
+      <MemberSignature Language="C#" Value="public void SetReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.SetReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Makes the contents of the <see cref="T:System.Web.Profile.ProfileInfoCollection" /> read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.ProfileInfoCollection.SetReadOnly%2A> method marks the <xref:System.Web.Profile.ProfileInfoCollection> as read-only so that <xref:System.Web.Profile.ProfileInfo> objects cannot be added to or removed from the collection. After calling the <xref:System.Web.Profile.ProfileInfoCollection.SetReadOnly%2A> method, you cannot change the <xref:System.Web.Profile.ProfileInfoCollection> back to read/write.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfoCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the synchronization root.</summary>
+        <value>Always <see langword="this" /> (<see langword="Me" /> in Visual Basic), because synchronization of <see cref="T:System.Web.Profile.ProfileInfoCollection" /> objects is not supported.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Application code does not normally use this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

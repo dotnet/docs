@@ -1,0 +1,16 @@
+<!--<Snippet2>-->
+
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name='htmlText'>
+      <xs:complexType>
+       <xs:sequence>
+         <xs:any namespace='http://www.w3.org/1999/xhtml'
+              minOccurs='1' maxOccurs='unbounded'
+              processContents='lax'/>
+       </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+</xs:schema>
+<!--</Snippet2>-->
+

@@ -1,0 +1,52 @@
+<Type Name="IExecutionProperty" FullName="System.Activities.IExecutionProperty">
+  <TypeSignature Language="C#" Value="public interface IExecutionProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExecutionProperty" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.IExecutionProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides execution properties with a mechanism for configuring thread local storage before and after the work items of the associated activity.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CleanupWorkflowThread">
+      <MemberSignature Language="C#" Value="public void CleanupWorkflowThread ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CleanupWorkflowThread() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.IExecutionProperty.CleanupWorkflowThread" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an opportunity for the execution property to tear down thread local storage.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupWorkflowThread">
+      <MemberSignature Language="C#" Value="public void SetupWorkflowThread ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetupWorkflowThread() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.IExecutionProperty.SetupWorkflowThread" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an opportunity for the execution property to set up thread local storage.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

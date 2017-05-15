@@ -1,0 +1,251 @@
+<Type Name="ConsoleApplicationBase" FullName="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase">
+  <TypeSignature Language="C#" Value="public class ConsoleApplicationBase : Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi ConsoleApplicationBase extends Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.VisualBasic.ApplicationServices.ApplicationBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides properties, methods, and events related to the current application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The properties exposed by the `My.Application` object return data that is associated only with the current application or DLL. No system-level information can be altered with `My.Application`.  
+  
+ The `My.Application` object consists of the following classes:  
+  
+-   <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase> provides members that are available in all projects.  
+  
+-   <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> provides members available in Windows Forms applications.  
+  
+-   <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase> provides members available in console applications.  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.CommandLineArgs` property to examine the application's command-line arguments. If an argument is found that starts with `/input=`, the rest of that argument is displayed.  
+  
+ [!code-vb[VbVbalrMyApplication#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConsoleApplicationBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CommandLineArgs">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; CommandLineArgs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; CommandLineArgs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection containing the command-line arguments as strings for the current application.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see langword="String" />, containing the command-line arguments as strings for the current application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.CommandLineArgs` property provides read-only access to the current application's command-line arguments for applications that are not ClickOnce deployed.  
+  
+ For a single-instance application, the `My.Application.CommandLineArgs` property returns the command-line arguments for the first instance of an application. To access the arguments for subsequent attempts to start a single-instance application, you must handle the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance> event and examine the <xref:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs.CommandLine%2A> property of the <xref:Microsoft.VisualBasic.ApplicationServices.StartupEventArgs> argument.  
+  
+> [!NOTE]
+>  The `My.Application.CommandLineArgs` property returns only the command-line arguments. This is different from the behavior of the <xref:System.Environment.CommandLine%2A> property, which returns the application name in addition to the arguments.  
+  
+> [!NOTE]
+>  In an application that is ClickOnce deployed, use the <xref:System.Deployment.Application.ApplicationDeployment.ActivationUri%2A> property of the `My.Application.Deployment` object to get the command-line arguments. For more information, see <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment%2A>.  
+  
+ The following table lists examples of tasks involving the `My.Application.CommandLineArgs` property.  
+  
+|To|See|  
+|-|-|  
+|Check the command-line arguments of subsequent attempts to start a single-instance application|<xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.StartupNextInstance>|  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Application|**Yes**|  
+|Class Library|No|  
+|Console Application|**Yes**|  
+|Windows Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example uses the `My.Application.CommandLineArgs` property to examine the application's command-line arguments. If an argument is found that starts with `/input=`, the rest of that argument is displayed.  
+  
+ [!code-vb[VbVbalrMyApplication#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <altCompliant cref="P:System.Environment.CommandLine" />
+        <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls the ability to access the PATH environment variable. Associated enumeration: <see cref="F:System.Security.Permissions.EnvironmentPermissionAccess.Read" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Deployment">
+      <MemberSignature Language="C#" Value="public System.Deployment.Application.ApplicationDeployment Deployment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Deployment.Application.ApplicationDeployment Deployment" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Deployment.Application.ApplicationDeployment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current application's ClickOnce deployment object, which provides support for updating the current deployment programmatically and support for the on-demand download of files.</summary>
+        <value>Returns the <see cref="T:System.Deployment.Application.ApplicationDeployment" /> object for the application's ClickOnce deployment.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.Deployment` property returns the application's ClickOnce <xref:System.Deployment.Application.ApplicationDeployment> object. The <xref:System.Deployment.Application.ApplicationDeployment> object provides support for updating the current deployment programmatically as well as support for the on-demand download of files. For more information on ClickOnce applications and how to deploy them, see [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a) and [Publishing ClickOnce Applications](http://msdn.microsoft.com/library/eb6dfe79-f54c-4331-8e36-073688e70973).  
+  
+ Confirm that the <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.IsNetworkDeployed%2A> property is `True` before you access the `My.Application.Deployment` property. Otherwise, if the application is not deployed using ClickOnce, reading the `My.Application.Deployment` property results in an <xref:System.Deployment.Application.InvalidDeploymentException> exception. For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](http://msdn.microsoft.com/library/2e4aa67c-4445-4f7b-9e03-9acb95829127).  
+  
+ For more information on using the `My.Application.Deployment` property, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example downloads and installs the update after checking that the application is network-deployed. The <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> method does not update the application unless it is out of date. The application has to restart to use the update.  
+  
+ [!code-vb[VbVbalrMyApplication#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#4)]  
+  
+ Only applications that are ClickOnce deployed can be updated using the `My.Application.Deployment` object. For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](http://msdn.microsoft.com/library/2e4aa67c-4445-4f7b-9e03-9acb95829127).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Deployment.Application.InvalidDeploymentException">The application is not deployed as a ClickOnce application.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalCommandLine">
+      <MemberSignature Language="C#" Value="protected System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; InternalCommandLine { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; InternalCommandLine" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.InternalCommandLine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets the values to use as the current application's command-line arguments.</summary>
+        <value>A <see cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" /> of <see langword="String" />, containing the strings to use as the command-line arguments for the current application.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method allows you to set the internal value of the command-line arguments used by the <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase> class. This property determines what the <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs%2A> property returns. If you do not set this property, or you set this property to `Nothing`, the <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs%2A> property obtains the command-line arguments from the <xref:System.Environment.CommandLine%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNetworkDeployed">
+      <MemberSignature Language="C#" Value="public bool IsNetworkDeployed { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNetworkDeployed" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.IsNetworkDeployed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see langword="Boolean" /> that represents whether the application was deployed from a network using ClickOnce.</summary>
+        <value>A <see langword="Boolean" /> that represents whether the application was deployed from a network. The value is <see langword="True" /> if the current application was deployed from a network; otherwise the value is <see langword="False" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `My.Application.IsNetworkDeployed` property indicates whether the application was deployed from a network using ClickOnce. For more information on ClickOnce applications, see [ClickOnce Security and Deployment](http://msdn.microsoft.com/library/abab6d34-c3c2-45c1-a8b6-43c7d3131e7a).  
+  
+ You should confirm that this property is `True` before you access the <xref:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment%2A> property. Otherwise, if the application is not deployed from a network using ClickOnce, reading the `My.Application.Deployment` property results in an <xref:System.Deployment.Application.InvalidDeploymentException> exception.  
+  
+ For more information on configuring ClickOnce, see [Publishing ClickOnce Applications](http://msdn.microsoft.com/library/eb6dfe79-f54c-4331-8e36-073688e70973). For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](http://msdn.microsoft.com/library/2e4aa67c-4445-4f7b-9e03-9acb95829127).  
+  
+ For more information on using the `My.Application.IsNetworkDeployed` property, see [Overview of the Visual Basic Application Model](~/docs/visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md).  
+  
+## Availability by Project Type  
+  
+|Project type|Available|  
+|-|-|  
+|Windows Forms Application|**Yes**|  
+|Class Library|No|  
+|Console Application|**Yes**|  
+|Windows Forms Control Library|No|  
+|Web Control Library|No|  
+|Windows Service|**Yes**|  
+|Web Site|No|  
+  
+   
+  
+## Examples  
+ This example downloads and installs the update after checking that the application is deployed from a network. The <xref:System.Deployment.Application.ApplicationDeployment.Update%2A> method does not update the application unless it is out of date. The application has to restart to use the update.  
+  
+ [!code-vb[VbVbalrMyApplication#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#4)]  
+  
+ Only applications that are ClickOnce-deployed can be updated using the `My.Application.Deployment` object. For more information on deploying a ClickOnce application, see [How to: Publish a ClickOnce Application using the Publish Wizard](http://msdn.microsoft.com/library/2e4aa67c-4445-4f7b-9e03-9acb95829127).  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

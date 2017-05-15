@@ -1,0 +1,520 @@
+<Type Name="ApplicationManager" FullName="System.Web.Hosting.ApplicationManager">
+  <TypeSignature Language="C#" Value="public sealed class ApplicationManager : MarshalByRefObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationManager extends System.MarshalByRefObject" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ApplicationManager" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Manages ASP.NET application domains for an ASP.NET hosting application.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Hosting.ApplicationManager> object provides lifetime management of objects in the hosting environment for an ASP.NET application. It is responsible for:  
+  
+-   Activating and initializing ASP.NET applications.  
+  
+-   Managing the application lifetime and the lifetime of objects registered in the application.  
+  
+-   Exposing objects used by the hosting environment to process ASP.NET application requests.  
+  
+-   Providing a list of applications running in the hosting process at any given moment.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.Close" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Shuts down all application domains.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a call to the <xref:System.Web.Hosting.ApplicationManager.Close%2A> method reduces the reference count of applications using the application manager to 0, the <xref:System.Web.Hosting.ApplicationManager.Close%2A> method calls the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateObject">
+      <MemberSignature Language="C#" Value="public System.Web.Hosting.IRegisteredObject CreateObject (System.Web.Hosting.IApplicationHost appHost, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Hosting.IRegisteredObject CreateObject(class System.Web.Hosting.IApplicationHost appHost, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.CreateObject(System.Web.Hosting.IApplicationHost,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.IRegisteredObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appHost" Type="System.Web.Hosting.IApplicationHost" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="appHost">An <see cref="T:System.Web.Hosting.IApplicationHost" /> object.</param>
+        <param name="type">The type of the object to create.</param>
+        <summary>Creates an object for the specified application domain, based on type.</summary>
+        <returns>A new object of the type specified in <paramref name="type" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">A physical path for the application does not exist.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="appHost" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ <paramref name="type" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateObject">
+      <MemberSignature Language="C#" Value="public System.Web.Hosting.IRegisteredObject CreateObject (string appId, Type type, string virtualPath, string physicalPath, bool failIfExists);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Hosting.IRegisteredObject CreateObject(string appId, class System.Type type, string virtualPath, string physicalPath, bool failIfExists) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.CreateObject(System.String,System.Type,System.String,System.String,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.IRegisteredObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appId" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="physicalPath" Type="System.String" />
+        <Parameter Name="failIfExists" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="appId">The unique identifier for the application that owns the object.</param>
+        <param name="type">The type of the object to create.</param>
+        <param name="virtualPath">The virtual path to the application.</param>
+        <param name="physicalPath">The physical path to the application.</param>
+        <param name="failIfExists">
+          <see langword="true" /> to throw an exception if an object of the specified type is currently registered; <see langword="false" /> to return the existing registered object of the specified type.</param>
+        <summary>Creates an object for the specified application domain based on type, virtual and physical paths, and a Boolean value indicating failure behavior when an object of the specified type already exists.</summary>
+        <returns>A new object of the specified <paramref name="type" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method is used to create and register objects in the application. Only one object of each type can be created. If you need to create multiple objects of the same type, you must implement an object factory. For more information, see the code example in this topic.  
+  
+ Each application, identified by a unique application identifier, runs in its own application domain. The <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method creates an object of the specified type in the application domain of the application specified in the `appID` parameter. If an application domain does not exist for the specified application, one is created before the object is created.  
+  
+ The `failIfExists` parameter controls the behavior of the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method when an object of the specified type already exists in the application. When `failIfExists` is `true`, the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method throws an <xref:System.InvalidOperationException> exception.  
+  
+ When `failIfExists` is `false`, the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method returns the existing registered object of the specified type.  
+  
+ The <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method calls the overload that takes an additional `throwOnError` parameter with `throwOnError` set to `false`.  
+  
+   
+  
+## Examples  
+ The following code example is an implementation of the object-factory design pattern for registered objects. Using the factory pattern enables you to register multiple instances of an object. The example contains two objects: `SampleComponent`, which is the object the application will use multiple instances of, and `SampleComponentFactory`, which manages a list of `SampleComponent` instances.  
+  
+ [!code-csharp[System.Web.Hosting.ApplicationManager#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/CS/appManagercs.aspx.cs#1)]
+ [!code-vb[System.Web.Hosting.ApplicationManager#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationManager/VB/appManagervb.aspx.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="physicalPath" /> is <see langword="null" />  
+  
+ \- or -  
+  
+ <paramref name="physicalPath" /> is not a valid application path.  
+  
+ \- or -  
+  
+ <paramref name="type" /> does not implement the <see cref="T:System.Web.Hosting.IRegisteredObject" /> interface.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="appID" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="failIfExists" /> is <see langword="true" /> and an object of the specified type is already registered.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateObject">
+      <MemberSignature Language="C#" Value="public System.Web.Hosting.IRegisteredObject CreateObject (string appId, Type type, string virtualPath, string physicalPath, bool failIfExists, bool throwOnError);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Hosting.IRegisteredObject CreateObject(string appId, class System.Type type, string virtualPath, string physicalPath, bool failIfExists, bool throwOnError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.CreateObject(System.String,System.Type,System.String,System.String,System.Boolean,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.IRegisteredObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appId" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="virtualPath" Type="System.String" />
+        <Parameter Name="physicalPath" Type="System.String" />
+        <Parameter Name="failIfExists" Type="System.Boolean" />
+        <Parameter Name="throwOnError" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="appId">The unique identifier for the application that owns the object.</param>
+        <param name="type">The type of the object to create.</param>
+        <param name="virtualPath">The virtual path to the application.</param>
+        <param name="physicalPath">The physical path to the application.</param>
+        <param name="failIfExists">
+          <see langword="true" /> to throw an exception if an object of the specified type is currently registered; <see langword="false" /> to return the existing registered object of the specified type.</param>
+        <param name="throwOnError">
+          <see langword="true" /> to throw exceptions for hosting initialization errors; <see langword="false" /> to not throw hosting initialization exceptions.</param>
+        <summary>Creates an object for the specified application domain based on type, virtual and physical paths, a Boolean value indicating failure behavior when an object of the specified type already exists, and a Boolean value indicating whether hosting initialization error exceptions are thrown.</summary>
+        <returns>A new object of the specified <paramref name="type" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload of the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method provides the `throwOnError` parameter, which allows you to control whether hosting initialization exceptions are thrown. The overload of the <xref:System.Web.Hosting.ApplicationManager.CreateObject%2A> method that does not provide `throwOnError` calls this overload with the parameter set to `false`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="physicalPath" /> is <see langword="null" />  
+  
+ \- or -  
+  
+ <paramref name="physicalPath" /> is not a valid application path.  
+  
+ \- or -  
+  
+ <paramref name="type" /> does not implement the <see cref="T:System.Web.Hosting.IRegisteredObject" /> interface.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="appID" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ <paramref name="type" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="failIfExists" /> is <see langword="true" /> and an object of the specified type is already registered.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppDomain">
+      <MemberSignature Language="C#" Value="public AppDomain GetAppDomain (string appId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.AppDomain GetAppDomain(string appId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.GetAppDomain(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AppDomain</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appId">The unique identifier for the application.</param>
+        <summary>Gets the application domain of the specified application.</summary>
+        <returns>The application domain of the application.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAppDomain">
+      <MemberSignature Language="C#" Value="public AppDomain GetAppDomain (System.Web.Hosting.IApplicationHost appHost);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.AppDomain GetAppDomain(class System.Web.Hosting.IApplicationHost appHost) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.GetAppDomain(System.Web.Hosting.IApplicationHost)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AppDomain</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appHost" Type="System.Web.Hosting.IApplicationHost" />
+      </Parameters>
+      <Docs>
+        <param name="appHost">The host to get the application domain for.</param>
+        <summary>Gets the application domain of an application using the specified host.</summary>
+        <returns>The application domain of the application.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetApplicationManager">
+      <MemberSignature Language="C#" Value="public static System.Web.Hosting.ApplicationManager GetApplicationManager ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Hosting.ApplicationManager GetApplicationManager() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.GetApplicationManager" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.ApplicationManager</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the single instance of the <see cref="T:System.Web.Hosting.ApplicationManager" /> object associated with this ASP.NET host process.</summary>
+        <returns>The single instance of the <see cref="T:System.Web.Hosting.ApplicationManager" /> object associated with the ASP.NET host process that is running.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Only one instance of the <xref:System.Web.Hosting.ApplicationManager> object is created by an ASP.NET host process in the default application domain. If an instance of the <xref:System.Web.Hosting.ApplicationManager> class is not available, the <xref:System.Web.Hosting.ApplicationManager.GetApplicationManager%2A> method first creates an instance of the <xref:System.Web.Hosting.ApplicationManager> class and then returns the newly created object. If an instance of the <xref:System.Web.Hosting.ApplicationManager> class was previously created, the <xref:System.Web.Hosting.ApplicationManager.GetApplicationManager%2A> method returns the existing object.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Web.Hosting.ApplicationManager.GetApplicationManager%2A> method to retrieve the <xref:System.Web.Hosting.ApplicationManager> instance for a Web application.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObject">
+      <MemberSignature Language="C#" Value="public System.Web.Hosting.IRegisteredObject GetObject (string appId, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Hosting.IRegisteredObject GetObject(string appId, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.GetObject(System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.IRegisteredObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appId" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="appId">The unique identifier for the application that owns the object.</param>
+        <param name="type">The type of the object to return.</param>
+        <summary>Returns the registered object of the specified type from the specified application.</summary>
+        <returns>The registered object of the specified type; or <see langword="null" /> if the type has not been registered through a call to the <see cref="M:System.Web.Hosting.ApplicationManager.CreateObject(System.String,System.Type,System.String,System.String,System.Boolean)" /> method.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="appId" /> is <see langword="null" />.  
+  
+ —or—  
+  
+ <paramref name="type" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRunningApplications">
+      <MemberSignature Language="C#" Value="public System.Web.Hosting.ApplicationInfo[] GetRunningApplications ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Hosting.ApplicationInfo[] GetRunningApplications() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.GetRunningApplications" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Hosting.ApplicationInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a snapshot of running applications.</summary>
+        <returns>An array of <see cref="T:System.Web.Hosting.ApplicationInfo" /> objects that contain information about the applications managed by this <see cref="T:System.Web.Hosting.ApplicationManager" /> instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example uses the <xref:System.Web.Hosting.ApplicationManager.GetRunningApplications%2A> method to display information about the applications managed by an <xref:System.Web.Hosting.ApplicationManager> instance.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/CS/applicationInfocs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Hosting.ApplicationInfo#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Hosting.ApplicationInfo/VB/applicationInfovb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeLifetimeService">
+      <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.InitializeLifetimeService" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gives the application domain an infinite lifetime by preventing a lease from being created.</summary>
+        <returns>Always <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method overrides the <xref:System.MarshalByRefObject.InitializeLifetimeService%2A> method in its base class. It always returns `null` and thereby prevents a lease from being created that would limit the application domain's lifetime.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIdle">
+      <MemberSignature Language="C#" Value="public bool IsIdle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsIdle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.IsIdle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value indicating whether all applications hosted by the process are idle and not processing requests.</summary>
+        <returns>
+          <see langword="true" /> if all applications in the process are idle; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Hosting.ApplicationManager.IsIdle%2A> method returns `true` if all applications hosted by the process are idle.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Open">
+      <MemberSignature Language="C#" Value="public void Open ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Open() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.Open" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Makes a thread-safe increment to the user reference count of the application manager instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShutdownAll">
+      <MemberSignature Language="C#" Value="public void ShutdownAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShutdownAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.ShutdownAll" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Unloads all application resources.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=fullName> method in all application domains managed by this <xref:System.Web.Hosting.ApplicationManager> instance; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownAll%2A> method can be called from outside the managed application domains.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShutdownApplication">
+      <MemberSignature Language="C#" Value="public void ShutdownApplication (string appId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShutdownApplication(string appId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.ShutdownApplication(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appId">The unique identifier of the application to unload.</param>
+        <summary>Unloads the specified application.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method is equivalent to calling the <xref:System.Web.Hosting.HostingEnvironment.InitiateShutdown%2A?displayProperty=fullName> method for a specific application domain; however, the <xref:System.Web.Hosting.ApplicationManager.ShutdownApplication%2A> method can be called from outside managed application domains.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="appId" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StopObject">
+      <MemberSignature Language="C#" Value="public void StopObject (string appId, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StopObject(string appId, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ApplicationManager.StopObject(System.String,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appId" Type="System.String" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="appId">The unique identifier for the application that owns the object.</param>
+        <param name="type">The type of the object to unload.</param>
+        <summary>Removes the specified object from the list of registered objects in an application. If the object to be removed is the last remaining object in the list of registered objects in an application, the application is unloaded.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="appId" /> is <see langword="null" />.  
+  
+ \- or -  
+  
+ <paramref name="type" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,323 @@
+<Type Name="Manipulation" FullName="System.Windows.Input.Manipulation">
+  <TypeSignature Language="C#" Value="public static class Manipulation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Manipulation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulation" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains methods to get and update information about a manipulation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A manipulation occurs when touch is interpreted as a physical action that is applied to an object. In [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)], manipulation events interpret input as a translation, expansion, or rotation manipulation. You usually interact with manipulations through the manipulation events that are defined on the <xref:System.Windows.UIElement>. However, the <xref:System.Windows.Input.Manipulation> class defines static methods that you can use to interact with manipulations.  
+  
+ For more information about manipulations, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md). For an example of an application that responds to manipulations, see [Walkthrough: Creating Your First Touch Application](~/docs/framework/wpf/advanced/walkthrough-creating-your-first-touch-application.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddManipulator">
+      <MemberSignature Language="C#" Value="public static void AddManipulator (System.Windows.UIElement element, System.Windows.Input.IManipulator manipulator);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddManipulator(class System.Windows.UIElement element, class System.Windows.Input.IManipulator manipulator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.AddManipulator(System.Windows.UIElement,System.Windows.Input.IManipulator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="manipulator" Type="System.Windows.Input.IManipulator" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to associate the manipulator with.</param>
+        <param name="manipulator">The object that provides the position of the input that creates or is added to a manipulation.</param>
+        <summary>Associates a <see cref="T:System.Windows.Input.IManipulator" /> object with the specified element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `element` already has a manipulation associated with it, `manipulator` is added to the existing manipulation. Otherwise, a new manipulation is created.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="element" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="manipulator" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Windows.UIElement.IsManipulationEnabled" /> property on element is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CompleteManipulation">
+      <MemberSignature Language="C#" Value="public static void CompleteManipulation (System.Windows.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompleteManipulation(class System.Windows.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.CompleteManipulation(System.Windows.UIElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element on which to complete manipulation.</param>
+        <summary>Completes the active manipulation on the specified element. When called, manipulation input is no longer tracked and inertia on the specified element stops.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Input.Manipulation.CompleteManipulation%2A> method is called, the <xref:System.Windows.UIElement.ManipulationCompleted> event is raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManipulationContainer">
+      <MemberSignature Language="C#" Value="public static System.Windows.IInputElement GetManipulationContainer (System.Windows.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.IInputElement GetManipulationContainer(class System.Windows.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.GetManipulationContainer(System.Windows.UIElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.IInputElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element on which there is an active manipulation.</param>
+        <summary>Gets the container that defines the coordinates for the manipulation.</summary>
+        <returns>The container that defines the coordinate space.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManipulationMode">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.ManipulationModes GetManipulationMode (System.Windows.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.ManipulationModes GetManipulationMode(class System.Windows.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.GetManipulationMode(System.Windows.UIElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element for which to get the manipulation mode.</param>
+        <summary>Gets the <see cref="T:System.Windows.Input.ManipulationModes" /> for the specified element.</summary>
+        <returns>One of the enumeration values.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetManipulationPivot">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.ManipulationPivot GetManipulationPivot (System.Windows.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Input.ManipulationPivot GetManipulationPivot(class System.Windows.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.GetManipulationPivot(System.Windows.UIElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ManipulationPivot</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element on which there is a manipulation.</param>
+        <summary>Returns an object that describes how a rotation occurs with one point of user input.</summary>
+        <returns>An object that describes how a rotation occurs with one point of user input.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsManipulationActive">
+      <MemberSignature Language="C#" Value="public static bool IsManipulationActive (System.Windows.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsManipulationActive(class System.Windows.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.IsManipulationActive(System.Windows.UIElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to check.</param>
+        <summary>Gets a value that indicates whether a manipulation is associated with the specified element.</summary>
+        <returns>
+          <see langword="true" /> if a manipulation is associated with the specified element; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveManipulator">
+      <MemberSignature Language="C#" Value="public static void RemoveManipulator (System.Windows.UIElement element, System.Windows.Input.IManipulator manipulator);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveManipulator(class System.Windows.UIElement element, class System.Windows.Input.IManipulator manipulator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.RemoveManipulator(System.Windows.UIElement,System.Windows.Input.IManipulator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="manipulator" Type="System.Windows.Input.IManipulator" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element to remove the associated manipulator from.</param>
+        <param name="manipulator">The object that provides the position of the input.</param>
+        <summary>Removes the association between the specified <see cref="T:System.Windows.Input.IManipulator" /> object and the element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetManipulationContainer">
+      <MemberSignature Language="C#" Value="public static void SetManipulationContainer (System.Windows.UIElement element, System.Windows.IInputElement container);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetManipulationContainer(class System.Windows.UIElement element, class System.Windows.IInputElement container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.SetManipulationContainer(System.Windows.UIElement,System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="container" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element with which the manipulation is associated.</param>
+        <param name="container">The container that defines the coordinate space.</param>
+        <summary>Sets the element that defines the coordinates for the manipulation of the specified element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetManipulationMode">
+      <MemberSignature Language="C#" Value="public static void SetManipulationMode (System.Windows.UIElement element, System.Windows.Input.ManipulationModes mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetManipulationMode(class System.Windows.UIElement element, valuetype System.Windows.Input.ManipulationModes mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.SetManipulationMode(System.Windows.UIElement,System.Windows.Input.ManipulationModes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="mode" Type="System.Windows.Input.ManipulationModes" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element on which to set the manipulation mode.</param>
+        <param name="mode">The new manipulation mode.</param>
+        <summary>Sets the mode of manipulation for the specified element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetManipulationParameter">
+      <MemberSignature Language="C#" Value="public static void SetManipulationParameter (System.Windows.UIElement element, System.Windows.Input.Manipulations.ManipulationParameters2D parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetManipulationParameter(class System.Windows.UIElement element, class System.Windows.Input.Manipulations.ManipulationParameters2D parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.SetManipulationParameter(System.Windows.UIElement,System.Windows.Input.Manipulations.ManipulationParameters2D)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="parameter" Type="System.Windows.Input.Manipulations.ManipulationParameters2D" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element that has the manipulation that the parameter is added to.</param>
+        <param name="parameter">The parameter to add.</param>
+        <summary>Adds parameters to the manipulation of the specified element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetManipulationPivot">
+      <MemberSignature Language="C#" Value="public static void SetManipulationPivot (System.Windows.UIElement element, System.Windows.Input.ManipulationPivot pivot);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetManipulationPivot(class System.Windows.UIElement element, class System.Windows.Input.ManipulationPivot pivot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.SetManipulationPivot(System.Windows.UIElement,System.Windows.Input.ManipulationPivot)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+        <Parameter Name="pivot" Type="System.Windows.Input.ManipulationPivot" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element that has an active manipulation.</param>
+        <param name="pivot">An object that describes the pivot.</param>
+        <summary>Sets the pivot of the single-point manipulation of the specified element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartInertia">
+      <MemberSignature Language="C#" Value="public static void StartInertia (System.Windows.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StartInertia(class System.Windows.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.StartInertia(System.Windows.UIElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="System.Windows.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The element on which to begin inertia.</param>
+        <summary>Stops the manipulation and begins inertia on the specified element.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

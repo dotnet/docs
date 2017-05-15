@@ -1,0 +1,258 @@
+<Type Name="MetadataSet" FullName="System.ServiceModel.Description.MetadataSet">
+  <TypeSignature Language="C#" Value="public class MetadataSet : System.Xml.Serialization.IXmlSerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetadataSet extends System.Object implements class System.Xml.Serialization.IXmlSerializable" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MetadataSet" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Xml.Serialization.IXmlSerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlRoot("Metadata", Namespace="http://schemas.xmlsoap.org/ws/2004/09/mex")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a serializable collection of service metadata in XML form.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Description.MetadataSet> class contains a collection of <xref:System.ServiceModel.Description.MetadataSection> objects, each of which contains one dialect of metadata in XML form. Typically, the <xref:System.ServiceModel.Description.MetadataSet> class is used to pass a group of XML metadata documents to and from <xref:System.ServiceModel.Description.MetadataExporter> and <xref:System.ServiceModel.Description.MetadataImporter> objects, such as <xref:System.ServiceModel.Description.WsdlImporter> and <xref:System.ServiceModel.Description.WsdlExporter>.  
+  
+ To create a <xref:System.ServiceModel.Description.MetadataSet> from a <xref:System.Collections.Generic.IEnumerable%601> object of type <xref:System.ServiceModel.Description.MetadataSection>, use the <xref:System.ServiceModel.Description.MetadataSet.%23ctor%2A> constructor. To obtain a <xref:System.Collections.Generic.IEnumerable%601> object of type <xref:System.ServiceModel.Description.MetadataSection>, use the <xref:System.ServiceModel.Description.MetadataSet.MetadataSections%2A> property.  
+  
+ In addition, you can use the <xref:System.ServiceModel.Description.MetadataSet.ReadFrom%2A> method to load a <xref:System.ServiceModel.Description.MetadataSet> from XML data and the <xref:System.ServiceModel.Description.MetadataSet.WriteTo%2A> method to write the internal metadata to an XML format.  
+  
+ This type implements the structure defined in the WS-MetadataExchange specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetadataSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSet.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataSet" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new <xref:System.ServiceModel.Description.MetadataSet> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MetadataSet (System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.MetadataSection&gt; sections);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Description.MetadataSection&gt; sections) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSet.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Description.MetadataSection})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sections" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Description.MetadataSection&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="sections">The metadata values that the <see cref="T:System.ServiceModel.Description.MetadataSet" /> is to contain.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MetadataSet" /> class that contains the specified collection of <see cref="T:System.ServiceModel.Description.MetadataSection" /> objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a new <xref:System.ServiceModel.Description.MetadataSet> from `sections`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Xml.XmlAttribute&gt; Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Xml.XmlAttribute&gt; Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSet.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAnyAttribute</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Xml.XmlAttribute&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Xml.XmlAttribute" /> objects that appear in the serialized form of the <see cref="T:System.ServiceModel.Description.MetadataSet" />.</summary>
+        <value>The <see cref="T:System.Xml.XmlAttribute" /> objects that appear in the serialized form of the <see cref="T:System.ServiceModel.Description.MetadataSet" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MetadataSections">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.MetadataSection&gt; MetadataSections { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.MetadataSection&gt; MetadataSections" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.MetadataSet.MetadataSections" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("MetadataSection", Namespace="http://schemas.xmlsoap.org/ws/2004/09/mex")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.MetadataSection&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.ServiceModel.Description.MetadataSection" /> objects that represents the metadata.</summary>
+        <value>A collection of <see cref="T:System.ServiceModel.Description.MetadataSection" /> objects that represents the metadata.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFrom">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Description.MetadataSet ReadFrom (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.MetadataSet ReadFrom(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSet.ReadFrom(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.MetadataSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The reader to read in XML.</param>
+        <summary>Returns a <see cref="T:System.ServiceModel.Description.MetadataSet" /> from the specified <see cref="T:System.Xml.XmlReader" /> object.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Description.MetadataSet" /> that contains all the metadata present in the XML stream.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Creates a <xref:System.ServiceModel.Description.MetadataSet> from an <xref:System.Xml.XmlReader> object.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The reader is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Xml.Serialization.IXmlSerializable.GetSchema">
+      <MemberSignature Language="C#" Value="System.Xml.Schema.XmlSchema IXmlSerializable.GetSchema ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSet.System#Xml#Serialization#IXmlSerializable#GetSchema" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Implements <see cref="M:System.Xml.Serialization.IXmlSerializable.GetSchema" /> method to provide serialization support.</summary>
+        <returns>Returns <see cref="T:System.Xml.Schema.XmlSchema" />.  
+  
+ Returns the <see cref="T:System.Xml.Schema.XmlSchema" /> object that describes the XML representation of the object that is produced by the <see cref="M:System.ServiceModel.Description.MetadataSet.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" /> method and accessed by the <see cref="M:System.ServiceModel.Description.MetadataSet.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" /> method.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Xml.Serialization.IXmlSerializable.ReadXml">
+      <MemberSignature Language="C#" Value="void IXmlSerializable.ReadXml (System.Xml.XmlReader reader);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.ReadXml(class System.Xml.XmlReader reader) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSet.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Xml.XmlReader" />
+      </Parameters>
+      <Docs>
+        <param name="reader">The reader to use when reading XML.</param>
+        <summary>Implements the <see cref="M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)" /> method to support deserialization from XML.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The reader is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Xml.Serialization.IXmlSerializable.WriteXml">
+      <MemberSignature Language="C#" Value="void IXmlSerializable.WriteXml (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.WriteXml(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSet.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The writer to use when writing XML.</param>
+        <summary>Implements the <see cref="M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)" /> method to support serialization to XML.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The writer is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteTo">
+      <MemberSignature Language="C#" Value="public void WriteTo (System.Xml.XmlWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteTo(class System.Xml.XmlWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MetadataSet.WriteTo(System.Xml.XmlWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Xml.XmlWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The writer to use to write the XML.</param>
+        <summary>Writes the <see cref="T:System.ServiceModel.Description.MetadataSet" /> to XML using the specified <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Writes a <xref:System.ServiceModel.Description.MetadataSet> to an XML stream.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The writer is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

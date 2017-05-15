@@ -1,0 +1,134 @@
+<Type Name="ProfileUpdatedEventArgs" FullName="System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ProfileUpdatedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProfileUpdatedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the data for the <see cref="E:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated" /> event. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ A tracking service that implements the <xref:System.Workflow.Runtime.Tracking.IProfileNotification> interface raises a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> event to notify the runtime tracking infrastructure that the <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for a particular workflow <xref:System.Type> has changed. The tracking service uses a <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs> to provide the workflow <xref:System.Type> and the new <xref:System.Workflow.Runtime.Tracking.TrackingProfile> to the runtime tracking infrastructure. For example, the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService> uses a <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs> when it raises the <xref:System.Workflow.Runtime.Tracking.SqlTrackingService.ProfileUpdated?displayProperty=fullName> event. When it receives a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> event, the runtime tracking infrastructure will update the tracking profile for the specified workflow <xref:System.Type> in its profile cache.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileUpdatedEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you use this constructor when you raise a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> event inside a tracking service, you must explicitly set <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.WorkflowType%2A> and <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.TrackingProfile%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileUpdatedEventArgs (Type workflowType, System.Workflow.Runtime.Tracking.TrackingProfile profile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type workflowType, class System.Workflow.Runtime.Tracking.TrackingProfile profile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.#ctor(System.Type,System.Workflow.Runtime.Tracking.TrackingProfile)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="workflowType" Type="System.Type" />
+        <Parameter Name="profile" Type="System.Workflow.Runtime.Tracking.TrackingProfile" />
+      </Parameters>
+      <Docs>
+        <param name="workflowType">The <see cref="T:System.Type" /> of workflow for which the <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> has changed.</param>
+        <param name="profile">The new <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs" /> class that specifies a new <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> for the specified workflow <see cref="T:System.Type" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A new instance of <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs> is created with <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.WorkflowType%2A> set to the specified <xref:System.Type> and <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.TrackingProfile%2A> set to the specified profile.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackingProfile">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.TrackingProfile TrackingProfile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.TrackingProfile TrackingProfile" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.TrackingProfile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingProfile</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the new <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> for the workflow Type.</summary>
+        <value>A <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> for the workflow type.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the runtime tracking infrastructure receives a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> event it will update its profile cache with the new <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for the workflow <xref:System.Type> specified by <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.WorkflowType%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowType">
+      <MemberSignature Language="C#" Value="public Type WorkflowType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type WorkflowType" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.WorkflowType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Type" /> of the workflow whose <see cref="T:System.Workflow.Runtime.Tracking.TrackingProfile" /> should be updated.</summary>
+        <value>The <see cref="T:System.Type" /> of a workflow.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.WorkflowType%2A> specifies the workflow <xref:System.Type> for which the tracking profile has changed. <xref:System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs.TrackingProfile%2A> is set to the new tracking profile.  When the runtime tracking infrastructure receives a <xref:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated> event it will update its profile cache with the new <xref:System.Workflow.Runtime.Tracking.TrackingProfile> for the workflow <xref:System.Type>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

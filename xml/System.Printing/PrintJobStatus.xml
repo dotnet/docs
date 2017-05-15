@@ -1,0 +1,279 @@
+<Type Name="PrintJobStatus" FullName="System.Printing.PrintJobStatus">
+  <TypeSignature Language="C#" Value="public enum PrintJobStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintJobStatus extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintJobStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the current status of a print job in a print queue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used primarily as the value of the <xref:System.Printing.PrintSystemJobInfo.JobStatus%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this enumeration when diagnosing a problem with a print job.  
+  
+ [!code-cpp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](~/samples/snippets/cpp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CPP/Program.cpp#spottroubleusingjobattributes)]
+ [!code-csharp[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](~/samples/snippets/csharp/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/CSharp/Program.cs#spottroubleusingjobattributes)]
+ [!code-vb[DiagnoseProblematicPrintJob#SpotTroubleUsingJobAttributes](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DiagnoseProblematicPrintJob/visualbasic/program.vb#spottroubleusingjobattributes)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Blocked">
+      <MemberSignature Language="C#" Value="Blocked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Blocked = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Blocked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An error condition, possibly on a print job that precedes this one in the queue, blocked the print job.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="Completed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Completed = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Completed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print job is complete, including any post-printing processing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Deleted">
+      <MemberSignature Language="C#" Value="Deleted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Deleted = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Deleted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print job was deleted from the queue, typically after printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Deleting">
+      <MemberSignature Language="C#" Value="Deleting" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Deleting = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Deleting" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print job is in the process of being deleted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Error = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print job is in an error state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print job has no specified state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Offline">
+      <MemberSignature Language="C#" Value="Offline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Offline = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Offline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is offline.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PaperOut">
+      <MemberSignature Language="C#" Value="PaperOut" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus PaperOut = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.PaperOut" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer is out of the required paper size.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Paused">
+      <MemberSignature Language="C#" Value="Paused" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Paused = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Paused" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print job is paused.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Printed">
+      <MemberSignature Language="C#" Value="Printed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Printed = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Printed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print job printed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Printing">
+      <MemberSignature Language="C#" Value="Printing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Printing = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Printing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print job is now printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Restarted">
+      <MemberSignature Language="C#" Value="Restarted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Restarted = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Restarted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print job was blocked but has restarted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Retained">
+      <MemberSignature Language="C#" Value="Retained" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Retained = int32(8192)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Retained" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print job is retained in the print queue after printing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Spooling">
+      <MemberSignature Language="C#" Value="Spooling" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus Spooling = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.Spooling" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The print job is spooling.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserIntervention">
+      <MemberSignature Language="C#" Value="UserIntervention" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintJobStatus UserIntervention = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintJobStatus.UserIntervention" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintJobStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer requires user action to fix an error condition.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

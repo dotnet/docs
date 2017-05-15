@@ -1,0 +1,45 @@
+<Type Name="PropertyValueUIItemInvokeHandler" FullName="System.Drawing.Design.PropertyValueUIItemInvokeHandler">
+  <TypeSignature Language="C#" Value="public delegate void PropertyValueUIItemInvokeHandler(ITypeDescriptorContext context, PropertyDescriptor descriptor, PropertyValueUIItem invokedItem);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyValueUIItemInvokeHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Design.PropertyValueUIItemInvokeHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+    <Parameter Name="descriptor" Type="System.ComponentModel.PropertyDescriptor" />
+    <Parameter Name="invokedItem" Type="System.Drawing.Design.PropertyValueUIItem" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> for the property associated with the icon that was double-clicked.</param>
+    <param name="descriptor">The property associated with the icon that was double-clicked.</param>
+    <param name="invokedItem">The <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> associated with the icon that was double-clicked.</param>
+    <summary>Represents the method that will handle the <see cref="P:System.Drawing.Design.PropertyValueUIItem.InvokeHandler" /> event of a <see cref="T:System.Drawing.Design.PropertyValueUIItem" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Double-clicking an icon in the Properties window will raise the <xref:System.Drawing.Design.PropertyValueUIItem.InvokeHandler%2A> event of the <xref:System.Drawing.Design.PropertyValueUIItem> that the icon is associated with. The <xref:System.Drawing.Design.PropertyValueUIItem.InvokeHandler%2A> event typically launches a user interface (UI) to edit the property's value. Add a <xref:System.Drawing.Design.PropertyValueUIItemInvokeHandler> to the <xref:System.Drawing.Design.PropertyValueUIItem.InvokeHandler%2A> property of a <xref:System.Drawing.Design.PropertyValueUIItem> to assign an event handler to perform the appropriate behavior when the icon displayed next to the property name is double-clicked.  
+  
+ When you create a <xref:System.Drawing.Design.PropertyValueUIItemInvokeHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example provides a <xref:System.Drawing.Design.PropertyValueUIItem> object for any properties of the component named `HorizontalMargin` or `VerticalMargin`. The <xref:System.Drawing.Design.PropertyValueUIItem> for these properties provides an image, a ToolTip, and an event handler that displays a message box when the image for the property is clicked. This code example is part of a larger example provided for the <xref:System.Drawing.Design.IPropertyValueUIService> interface.  
+  
+ [!code-cpp[IPropertyValueUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CPP/propertyuicomponent.cpp#2)]
+ [!code-csharp[IPropertyValueUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CS/propertyuicomponent.cs#2)]
+ [!code-vb[IPropertyValueUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IPropertyValueUIServiceExample/VB/propertyuicomponent.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

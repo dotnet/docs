@@ -1,22 +1,18 @@
 ---
-title: dotnet-pack command | Microsoft Docs
+title: dotnet-pack command - .NET Core CLI | Microsoft Docs
 description: The dotnet-pack command creates NuGet packages for your .NET Core project.
 keywords: dotnet-pack, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 10/12/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
 ms.devlang: dotnet
-ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
+ms.assetid: 8dbbb3f7-b817-4161-a6c8-a3489d05e051
 ---
 
-#dotnet-pack
-
-> [!WARNING]
-> This topic applies to .NET Core Tools Preview 2. For the .NET Core Tools RC4 version,
-> see the [dotnet-pack (.NET Core Tools RC4)](../preview3/tools/dotnet-pack.md) topic.
+# dotnet-pack
 
 ## Name
 
@@ -24,19 +20,23 @@ ms.assetid: 8b4b8cef-f56c-4a10-aa01-fde8bfaae53e
 
 ## Synopsis
 
-`dotnet pack [--help] [--output]  
-    [--no-build] [--build-base-path]  
-    [--configuration]  [--version-suffix]
-    [project]`  
+`dotnet pack [<PROJECT>] [-o|--output] [--no-build] [--include-symbols] [--include-source] [-c|--configuration] [--version-suffix <VERSION_SUFFIX>] [-s|--serviceable] [-v|--verbosity] [-h|--help]`
 
 ## Description
 
-The `dotnet pack` command builds the project and creates NuGet packages. The result of this operation is two packages with the `nupkg` extension. One package contains the code and the other contains the debug symbols. 
+The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package. If the `--include-symbols` option is present, another package containing the debug symbols is created. 
 
-NuGet dependencies of the project being packed are added to the nuspec file, so they are able to be resolved when the package is installed. 
-Project-to-project references are not packaged inside the project. Currently, you need to have a package per project if you have project-to-project dependencies.
+NuGet dependencies of the packed project are added to the *.nuspec* file, so they're properly resolved when the package is installed. Project-to-project references aren't packaged inside the project. Currently, you must have a package per project if you have project-to-project dependencies.
 
-`dotnet pack` by default first builds the project. If you wish to avoid this, pass the `--no-build` option. This can be useful in Continuous Integration (CI) build scenarios in which you know the code was just previously built, for example. 
+By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built.
+
+You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet metadata properties](csproj.md#nuget-metadata-properties) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference).
+
+## Arguments
+
+`PROJECT` 
+    
+The project to pack. It's either a path to a [csproj file](csproj.md) or to a directory. If omitted, it defaults to the current directory. 
 
 ## Options
 
@@ -44,30 +44,37 @@ Project-to-project references are not packaged inside the project. Currently, yo
 
 Prints out a short help for the command.  
 
-`[project]` 
-    
-The project to pack. It can be either a path to a [project.json](project-json.md) file or to a directory. If omitted, it will
-default to the current directory. 
-
 `-o|--output <OUTPUT_DIRECTORY>`
 
 Places the built packages in the directory specified. 
 
 `--no-build`
 
-Does not build the project before packing. 
+Don't build the project before packing. 
 
-`--build-base-path`
+`--include-symbols`
 
-Places the temporary build artifacts in the specified directory. By default, they go to the `obj` directory in the current directory. 
+Generates the symbols `nupkg`. 
 
-`-c|--configuration <Debug|Release>`
+`--include-source`
 
-Configuration to use when building the project. If not specified, will default to `Debug`.
+Includes the source files in the NuGet package. The sources files are included in the `src` folder within the `nupkg`. 
 
-`--version-suffix`
+`-c|--configuration <CONFIGURATION>`
 
-Updates the star in `-*` package version suffix with a specified string.
+Configuration to use when building the project. If not specified, configuration defaults to `Debug`.
+
+`--version-suffix <VERSION_SUFFIX>`
+
+Defines the value for the `$(VersionSuffix)` MSBuild property in the project.
+
+`-s|--serviceable`
+
+Sets the serviceable flag in the package. For more information, see [.NET Blog: .NET 4.5.1 Supports Microsoft Security Updates for .NET NuGet Libraries](https://aka.ms/nupkgservicing).
+
+`--verbosity <LEVEL>`
+
+Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 ## Examples
 
@@ -75,18 +82,22 @@ Pack the project in the current directory:
 
 `dotnet pack`
 
-Pack the app1 project:
+Pack the `app1` project:
 
-`dotnet pack ~/projects/app1/project.json`
+`dotnet pack ~/projects/app1/project.csproj`
 	
-Pack the project in the current directory and place the resulting packages into the specified folder:
+Pack the project in the current directory and place the resulting packages into the `nupkgs` folder:
 
 `dotnet pack --output nupkgs`
 
-Pack the project in the current directory into the specified folder and skip the build step:
+Pack the project in the current directory into the `nupkgs` folder and skip the build step:
 
 `dotnet pack --no-build --output nupkgs`
 
-Pack the current project and updates the resulting packages version with the given suffix. For example, version `1.0.0-*` will be updated to `1.0.0-ci-1234`.
+With the project's version suffix configured as `<VersionSuffix>$(VersionSuffix)</VersionSuffix>` in the *.csproj* file, pack the current project and update the resulting package version with the given suffix:
 
 `dotnet pack --version-suffix "ci-1234"`
+
+Set the package version to `2.1.0` with the `PackageVersion` MSBuild property:
+
+`dotnet pack /p:PackageVersion=2.1.0`

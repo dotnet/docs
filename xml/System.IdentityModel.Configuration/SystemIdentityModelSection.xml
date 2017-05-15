@@ -1,0 +1,126 @@
+<Type Name="SystemIdentityModelSection" FullName="System.IdentityModel.Configuration.SystemIdentityModelSection">
+  <TypeSignature Language="C#" Value="public sealed class SystemIdentityModelSection : System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemIdentityModelSection extends System.Configuration.ConfigurationSection" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Configuration.SystemIdentityModelSection" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the <see langword="&lt;system.identityModel&gt;" /> section in a configuration file. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Within the `<system.identityModel>` section, multiple identity configurations may be defined, each with a unique name and defining a specific configuration; for example, `<identityConfiguration name="alternate" >`. The collection of the identity configuration elements defined in the identity model section can be retrieved by using the <xref:System.IdentityModel.Configuration.SystemIdentityModelSection.IdentityConfigurationElements%2A> property.  
+  
+ If a name is not specified on an identity configuration element, the element defines the default identity configuration. The default identity configuration is always used for passive federation scenarios. Only one default configuration may exist in the identity model configuration section. It can be retrieved by using the <xref:System.IdentityModel.Configuration.SystemIdentityModelSection.DefaultIdentityConfigurationElement%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SystemIdentityModelSection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Configuration.SystemIdentityModelSection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Configuration.SystemIdentityModelSection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Configuration.SystemIdentityModelSection Current { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Configuration.SystemIdentityModelSection Current" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SystemIdentityModelSection.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Configuration.SystemIdentityModelSection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current <see cref="T:System.IdentityModel.Configuration.SystemIdentityModelSection" /> reference.</summary>
+        <value>The current <see cref="T:System.IdentityModel.Configuration.SystemIdentityModelSection" /> reference.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultIdentityConfigurationElement">
+      <MemberSignature Language="C#" Value="public static System.IdentityModel.Configuration.IdentityConfigurationElement DefaultIdentityConfigurationElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.IdentityModel.Configuration.IdentityConfigurationElement DefaultIdentityConfigurationElement" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SystemIdentityModelSection.DefaultIdentityConfigurationElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Configuration.IdentityConfigurationElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default (unnamed) <see cref="T:System.IdentityModel.Configuration.IdentityConfigurationElement" /> from the configuration file.</summary>
+        <value>The default (unnamed) <see langword="&lt;identityConfiguration&gt;" /> element.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `<system.identityModel>` section can contain only one default `<identityConfiguration>` element. The default identity configuration is always used for passive federation scenarios.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IdentityConfigurationElements">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.IdentityConfigurationElementCollection IdentityConfigurationElements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.IdentityConfigurationElementCollection IdentityConfigurationElements" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Configuration.SystemIdentityModelSection.IdentityConfigurationElements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("", Options=System.Configuration.ConfigurationPropertyOptions.IsDefaultCollection)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Configuration.IdentityConfigurationElementCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.IdentityModel.Configuration.IdentityConfigurationElementCollection" /> from the configuration file.</summary>
+        <value>A collection that contains all of the <see langword="&lt;identityConfiguration&gt;" /> elements in the <see langword="&lt;system.identityModel&gt;" /> section.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SectionName">
+      <MemberSignature Language="C#" Value="public const string SectionName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string SectionName" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Configuration.SystemIdentityModelSection.SectionName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The name of the configuration section as defined by Windows Identity Foundation (WIF); system.identityModel.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,81 @@
+<Type Name="ServiceInstallerDialogResult" FullName="System.ServiceProcess.Design.ServiceInstallerDialogResult">
+  <TypeSignature Language="C#" Value="public enum ServiceInstallerDialogResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceInstallerDialogResult extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceProcess.Design.ServiceInstallerDialogResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceProcess</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the return value of a <see cref="T:System.ServiceProcess.Design.ServiceInstallerDialog" /> form.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceProcess.Design.ServiceInstallerDialog.Result%2A?displayProperty=fullName> property uses this enumeration to indicate the user response to the dialog box.  
+  
+   
+  
+## Examples  
+ The following example uses a <xref:System.ServiceProcess.Design.ServiceInstallerDialog> to prompt the user for a service installation account.  
+  
+ [!code-cpp[ServiceInstallConfig#1](~/samples/snippets/cpp/VS_Snippets_CLR/ServiceInstallConfig/CPP/source.cpp#1)]
+ [!code-csharp[ServiceInstallConfig#1](~/samples/snippets/csharp/VS_Snippets_CLR/ServiceInstallConfig/CS/source.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Canceled">
+      <MemberSignature Language="C#" Value="Canceled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.Design.ServiceInstallerDialogResult Canceled = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.Design.ServiceInstallerDialogResult.Canceled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.Design.ServiceInstallerDialogResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The dialog return value is <see langword="Canceled" />. This value typically indicates that the user canceled out of the dialog without setting the account fields.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OK">
+      <MemberSignature Language="C#" Value="OK" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.Design.ServiceInstallerDialogResult OK = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.Design.ServiceInstallerDialogResult.OK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.Design.ServiceInstallerDialogResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The dialog return value is <see langword="OK" />. This value typically indicates that the user confirmed the account properties and pressed the <see langword="OK" /> button to close the dialog.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseSystem">
+      <MemberSignature Language="C#" Value="UseSystem" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.Design.ServiceInstallerDialogResult UseSystem = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceProcess.Design.ServiceInstallerDialogResult.UseSystem" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.Design.ServiceInstallerDialogResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Install the service with a system account rather than a user account. This value typically indicates that the dialog was not displayed to the user. For example, the <see cref="P:System.ServiceProcess.ServiceProcessInstaller.Account" /> property is set to something other than <see langword="User" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

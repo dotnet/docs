@@ -1,0 +1,118 @@
+<Type Name="RouteValueExpressionEditorSheet" FullName="System.Web.UI.Design.RouteValueExpressionEditorSheet">
+  <TypeSignature Language="C#" Value="public class RouteValueExpressionEditorSheet : System.Web.UI.Design.ExpressionEditorSheet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RouteValueExpressionEditorSheet extends System.Web.UI.Design.ExpressionEditorSheet" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.RouteValueExpressionEditorSheet" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.ExpressionEditorSheet</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a design-time editor sheet for the properties of a <see langword="RouteValue" /> expression in the UI of a designer host at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The visual designer uses the <xref:System.Web.UI.Design.RouteValueExpressionEditor> class together with the <xref:System.Web.UI.Design.RouteValueExpressionEditorSheet> class to select the individual properties of a `RouteValue` expression, and to combine the selected expression property values into a `RouteValue` expression.  
+  
+ The <xref:System.Web.UI.Design.RouteValueExpressionEditor.GetExpressionEditorSheet%2A?displayProperty=fullName> method returns a <xref:System.Web.UI.Design.RouteValueExpressionEditorSheet> object. In the expressions dialog box, when you select a control property and bind it to a `RouteValue` expression, the visual designer calls the <xref:System.Web.UI.Design.RouteValueExpressionEditor.GetExpressionEditorSheet%2A> method. The visual designer uses the returned <xref:System.Web.UI.Design.RouteValueExpressionEditorSheet> object to prompt for the <xref:System.Web.UI.Design.RouteValueExpressionEditorSheet.RouteValue%2A> property. Once the property is selected, the visual designer calls the <xref:System.Web.UI.Design.RouteValueExpressionEditorSheet.GetExpression%2A> method to create a `RouteValue` expression string.  
+  
+ The <xref:System.Web.UI.Design.RouteValueExpressionEditorSheet.RouteValue%2A> property must be specified in order to create a `RouteValue` expression string.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RouteValueExpressionEditorSheet (string expression, IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string expression, class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.RouteValueExpressionEditorSheet.#ctor(System.String,System.IServiceProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="expression">A <see langword="RouteValue" /> expression, used to initialize the expression editor sheet.</param>
+        <param name="serviceProvider">A service provider implementation supplied by the designer host, used to obtain additional design-time services</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.RouteValueExpressionEditorSheet" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The initial <xref:System.Web.UI.Design.RouteValueExpressionEditorSheet.RouteValue%2A> property value is set using the input `expression` string. The <xref:System.Web.UI.Design.ExpressionEditorSheet.ServiceProvider%2A> property is set using the input `serviceProvider` implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpression">
+      <MemberSignature Language="C#" Value="public override string GetExpression ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetExpression() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.RouteValueExpressionEditorSheet.GetExpression" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a <see langword="RouteValue" /> expression that is formed by the expression editor sheet property values.</summary>
+        <returns>The <see langword="RouteValue" /> expression string for the current settings in the sheet.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public override bool IsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.RouteValueExpressionEditorSheet.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see langword="RouteValue" /> expression string is valid.</summary>
+        <value>
+          <see langword="true" /> if the <see langword="RouteValue" /> expression string is valid; otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RouteValue">
+      <MemberSignature Language="C#" Value="public string RouteValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RouteValue" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.RouteValueExpressionEditorSheet.RouteValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the URL parameter to be evaluated by the <see langword="RouteValue" /> expression.</summary>
+        <value>The name of the URL parameter to be evaluated by the <see langword="RouteValue" /> expression.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

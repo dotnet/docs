@@ -1,0 +1,336 @@
+<Type Name="ArrayModule+Parallel" FullName="Microsoft.FSharp.Collections.ArrayModule+Parallel">
+  <TypeSignature Language="C#" Value="public static class ArrayModule.Parallel" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed ArrayModule/Parallel extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.ArrayModule.Parallel" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Choose&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static TResult[] Choose&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt; chooser, T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TResult[] Choose&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt; chooser, !!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Parallel.Choose``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpOption{``1}},``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("choose")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TResult[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="chooser" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt;" />
+        <Parameter Name="array" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="chooser">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collect&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static TResult[] Collect&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult[]&gt; mapping, T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TResult[] Collect&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult[]&gt; mapping, !!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Parallel.Collect``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1[]},``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("collect")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TResult[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult[]&gt;" />
+        <Parameter Name="array" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="mapping">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[] Initialize&lt;T&gt; (int count, Microsoft.FSharp.Core.FSharpFunc&lt;int,T&gt; initializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[] Initialize&lt;T&gt;(int32 count, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, !!T&gt; initializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Parallel.Initialize``1(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("init")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="initializer" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="count">To be added.</param>
+        <param name="initializer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Iterate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Iterate&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; action, T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Iterate&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; action, !!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Parallel.Iterate``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("iter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="array" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="action">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IterateIndexed&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void IterateIndexed&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;&gt; action, T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void IterateIndexed&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt;&gt; action, !!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Parallel.IterateIndexed``1(Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit}},``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("iteri")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;&gt;" />
+        <Parameter Name="array" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="action">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Map&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static TResult[] Map&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; mapping, T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TResult[] Map&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; mapping, !!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Parallel.Map``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("map")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TResult[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;" />
+        <Parameter Name="array" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="mapping">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapIndexed&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static TResult[] MapIndexed&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt; mapping, T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TResult[] MapIndexed&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt;&gt; mapping, !!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Parallel.MapIndexed``2(Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``0,``1}},``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("mapi")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TResult[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt;" />
+        <Parameter Name="array" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="mapping">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Partition&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;T[],T[]&gt; Partition&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!T[], !!T[]&gt; Partition&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Parallel.Partition``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("partition")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;T[],T[]&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="array" Type="T[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

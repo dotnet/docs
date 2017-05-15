@@ -1,0 +1,139 @@
+<Type Name="TextReturnReader" FullName="System.Web.Services.Protocols.TextReturnReader">
+  <TypeSignature Language="C#" Value="public class TextReturnReader : System.Web.Services.Protocols.MimeReturnReader" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextReturnReader extends System.Web.Services.Protocols.MimeReturnReader" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.TextReturnReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Protocols.MimeReturnReader</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Reads return values from HTTP response text for Web service clients implemented using HTTP but without SOAP.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.Services.Protocols.TextReturnReader> and other classes in the <xref:System.Web.Services.Protocols> namespace support the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. Web service writers and readers serialize and deserialize, respectively, between the parameters or return objects of Web methods and the HTTP request or response streams. Web service writers and readers use HTTP for transport but don't exchange messages using the SOAP standard.  
+  
+ The <xref:System.Web.Services.Protocols.TextReturnReader> class implements the client-side reading of non-XML text into Web method return values. To obtain a return value, the text, which is encoded in the body of an HTTP response, is parsed using regular expression pattern matching, as specified by the attribute <xref:System.Web.Services.Protocols.MatchAttribute>, which can be applied to a Web method in a client proxy class. The <xref:System.Web.Services.Protocols.TextReturnReader> class calls the <xref:System.Web.Services.Protocols.PatternMatcher> class to actually perform the pattern matching.  
+  
+ Text pattern matching provides a way for Web services to retrieve HTML content without converting it to XML documents that must be bound to XML Schema definitions. Regular expression search targets are specified in a Web Services Description Language (WSDL) document via `match` XML elements within `text` elements. Both elements belong to the namespace http://microsoft.com/wsdl/mime/textMatching/.  
+  
+ When **match** elements are specified in a WSDL document, the Wsdl.exe tool applies <xref:System.Web.Services.Protocols.MatchAttribute> attributes to the corresponding Web methods in the client proxy class that is generated. Also, <xref:System.Web.Services.Protocols.TextReturnReader> is used in place of <xref:System.Web.Services.Protocols.XmlReturnReader>, the default class for deserializing Web method return values according to the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations.  
+  
+ You typically will not need to use the <xref:System.Web.Services.Protocols.TextReturnReader> class directly.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TextReturnReader ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.TextReturnReader.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.TextReturnReader" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInitializer">
+      <MemberSignature Language="C#" Value="public override object GetInitializer (System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetInitializer(class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.TextReturnReader.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodInfo" Type="System.Web.Services.Protocols.LogicalMethodInfo" />
+      </Parameters>
+      <Docs>
+        <param name="methodInfo">A <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> that specifies the Web method for which the initializer is obtained.</param>
+        <summary>Returns an initializer for the specified method.</summary>
+        <returns>An initializer for the specified method</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An initializer is an object passed as a parameter to the <xref:System.Web.Services.Protocols.TextReturnReader.Initialize%2A> method. For the <xref:System.Web.Services.Protocols.TextReturnReader> class, the initializer is a <xref:System.Web.Services.Protocols.PatternMatcher> object based on the return type of the Web method.  
+  
+ The <xref:System.Web.Services.Protocols.TextReturnReader.GetInitializer%2A> method is invoked during service initialization. Later, at the time a response is processed, the initializer object is passed to the <xref:System.Web.Services.Protocols.TextReturnReader.Initialize%2A> method of another <xref:System.Web.Services.Protocols.TextReturnReader> instance. The other instance performs the actual reading.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.TextReturnReader.Initialize(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">A <see cref="T:System.Web.Services.Protocols.PatternMatcher" /> object for the return type of the Web method being invoked.</param>
+        <summary>Initializes an instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.TextReturnReader.Initialize%2A> method supplies the <xref:System.Web.Services.Protocols.PatternMatcher> object used by the <xref:System.Web.Services.Protocols.TextReturnReader.Read%2A> method to parse text contained in the HTTP response. The <xref:System.Web.Services.Protocols.TextReturnReader.Initialize%2A> method is invoked at the time a request is processed. The input parameter, `o`, is obtained by calling the <xref:System.Web.Services.Protocols.TextReturnReader.GetInitializer%2A> method on another instance of the class that is obtained during client initialization.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public override object Read (System.Net.WebResponse response, System.IO.Stream responseStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Read(class System.Net.WebResponse response, class System.IO.Stream responseStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.TextReturnReader.Read(System.Net.WebResponse,System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Net.WebResponse" />
+        <Parameter Name="responseStream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="response">A <see cref="T:System.Net.WebResponse" /> object  containing the output message for an operation.</param>
+        <param name="responseStream">A <see cref="T:System.IO.Stream" /> whose content is the body of the HTTP response represented by the <c>response</c> parameter.</param>
+        <summary>Parses text contained in the HTTP response.</summary>
+        <returns>An object containing the deserialized Web method return value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To parse the text content of the HTTP response, the <xref:System.Web.Services.Protocols.TextReturnReader> class's implementation of the <xref:System.Web.Services.Protocols.TextReturnReader.Read%2A> method uses the <xref:System.Web.Services.Protocols.PatternMatcher> object passed as an argument to the <xref:System.Web.Services.Protocols.TextReturnReader.Initialize%2A> method. It closes the response stream before returning the deserialized Web method return value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

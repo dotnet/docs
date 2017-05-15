@@ -1,0 +1,697 @@
+<Type Name="HtmlTable" FullName="System.Web.UI.HtmlControls.HtmlTable">
+  <TypeSignature Language="C#" Value="public class HtmlTable : System.Web.UI.HtmlControls.HtmlContainerControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlTable extends System.Web.UI.HtmlControls.HtmlContainerControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlTable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.HtmlControls.HtmlContainerControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.UI.ParseChildren(true, "Rows")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows programmatic access on the server to the HTML <see langword="&lt;table&gt;" /> element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTable> control to programmatically control the HTML `<table>` element on the server. This allows you to create a table on a Web page.  
+  
+ You can dynamically change the appearance of the `<table>` element by setting the <xref:System.Web.UI.HtmlControls.HtmlTable.BgColor%2A>, <xref:System.Web.UI.HtmlControls.HtmlTable.Border%2A>, <xref:System.Web.UI.HtmlControls.HtmlTable.BorderColor%2A>, <xref:System.Web.UI.HtmlControls.HtmlTable.Height%2A>, and <xref:System.Web.UI.HtmlControls.HtmlTable.Width%2A> properties. You can also control how the content of a cell is displayed by setting the <xref:System.Web.UI.HtmlControls.HtmlTable.Align%2A>, <xref:System.Web.UI.HtmlControls.HtmlTable.CellPadding%2A>, and <xref:System.Web.UI.HtmlControls.HtmlTable.CellSpacing%2A> properties.  
+  
+ The rows of the <xref:System.Web.UI.HtmlControls.HtmlTable> control are stored in the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> property of the control. This allows you to programmatically access the individual rows of the table.  
+  
+> [!NOTE]
+>  A complex table model is not supported. You cannot have an <xref:System.Web.UI.HtmlControls.HtmlTable> control with nested `<caption>`, `<col>`, `<colgroup>`, `<tbody>`, `<thead>`, or `<tfoot>` elements. These elements are removed without warning and do not appear in the output HTML. An exception will be thrown if you attempt to programmatically add these table model elements to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.HtmlControls.HtmlTable>, see the <xref:System.Web.UI.HtmlControls.HtmlTable.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use an <xref:System.Web.UI.HtmlControls.HtmlTable> control to display information in a table.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+  
+ The following code example demonstrates how to dynamically create an <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTable#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTable/CS/htmltablecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTable#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTable/VB/htmltablevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HtmlTable ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.HtmlControls.HtmlTable> class.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.HtmlControls.HtmlTable>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.HtmlControls.HtmlControl.TagName%2A>|The "table" literal string.|  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to programmatically create a new instance of an <xref:System.Web.UI.HtmlControls.HtmlTable> control and place it on the Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableCtor/CS/htmltablectorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableCtor/VB/htmltablectorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Align">
+      <MemberSignature Language="C#" Value="public string Align { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Align" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.Align" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the alignment of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control in relation to other elements on the Web page.</summary>
+        <value>The alignment of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control in relation to other elements on the Web page. The default value is <see cref="F:System.String.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTable.Align%2A> property to specify the alignment of the <xref:System.Web.UI.HtmlControls.HtmlTable> control in relation to other elements on the Web page.  
+  
+> [!NOTE]
+>  This property does not control the alignment of the contents in the cells of the <xref:System.Web.UI.HtmlControls.HtmlTable> control. To control the alignment of contents of an individual cell, use the <xref:System.Web.UI.HtmlControls.HtmlTableCell.Align%2A> and <xref:System.Web.UI.HtmlControls.HtmlTableCell.VAlign%2A> properties of the <xref:System.Web.UI.HtmlControls.HtmlTableCell> class. You can also control the alignment of contents of the cells in an entire row by using the <xref:System.Web.UI.HtmlControls.HtmlTableRow.Align%2A> and <xref:System.Web.UI.HtmlControls.HtmlTableRow.VAlign%2A> properties of the <xref:System.Web.UI.HtmlControls.HtmlTableRow> class.  
+  
+ The following table lists the values that can be used for this property.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|`Left`|Aligns the <xref:System.Web.UI.HtmlControls.HtmlTable> control on the left edge of the Web page.|  
+|`Center`|Aligns the <xref:System.Web.UI.HtmlControls.HtmlTable> control in the middle of the Web page.|  
+|`Right`|Aligns the <xref:System.Web.UI.HtmlControls.HtmlTable> control on the right edge of the Web page.|  
+  
+> [!NOTE]
+>  If you specify `Left` or `Right` alignment, other elements on the Web page will wrap to the right or left of the <xref:System.Web.UI.HtmlControls.HtmlTable> control, respectively. If you specify `Center` alignment, no wrapping occurs and other elements appear below the control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.Align%2A> property to specify the alignment of the <xref:System.Web.UI.HtmlControls.HtmlTable> control in relation to other elements on the Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableLayout/CS/htmltablealigncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableLayout/VB/htmltablealignvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BgColor">
+      <MemberSignature Language="C#" Value="public string BgColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BgColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.BgColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</summary>
+        <value>The background color of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control. The default value is <see cref="F:System.String.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTable.BgColor%2A> property to specify the background color of the <xref:System.Web.UI.HtmlControls.HtmlTable> control. You can specify a color either by name or by using a hexadecimal value, preceded by the pound character (#), in the form #RRGGBB. RR, GG, and BB represent hexadecimal values from 0 to 255 that indicate the red, green, and blue components of a color, respectively. For example, the value #0000FF represents the color blue. It specifies the minimum value (00) for the red and green components, while specifying the maximum value (FF) for the blue component.  
+  
+ The following table shows the sixteen predefined HTML color names and corresponding hexadecimal values that can be used for the <xref:System.Web.UI.HtmlControls.HtmlTable.BgColor%2A> property. For more information on HTML colors, see the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+  
+|Color name|Hexadecimal value|  
+|----------------|-----------------------|  
+|Aqua|#00FFFF|  
+|Black|#000000|  
+|Blue|#0000FF|  
+|Fuchsia|#FF00FF|  
+|Gray|#808080|  
+|Green|#008000|  
+|Lime|#00FF00|  
+|Maroon|#800000|  
+|Navy|#000080|  
+|Olive|#808000|  
+|Purple|#800080|  
+|Red|#FF0000|  
+|Silver|#C0C0C0|  
+|Teal|#008080|  
+|White|#FFFFFF|  
+|Yellow|#FFFF00|  
+  
+ The available colors for use with the <xref:System.Web.UI.HtmlControls.HtmlTable.BgColor%2A> property can be determined from the <xref:System.Drawing.KnownColor> enumeration.  
+  
+ Color names are case-insensitive.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.BgColor%2A> property to programmatically control the background color of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Border">
+      <MemberSignature Language="C#" Value="public int Border { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Border" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.Border" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width (in pixels) of the border of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</summary>
+        <value>The width (in pixels) of the border of an <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control. The default is -1, which indicates that the border width is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTable.Border%2A> property to specify the width of the border. If you do not want to display a border for the <xref:System.Web.UI.HtmlControls.HtmlTable> control, set this property to either 0 (no border width) or -1 (border width is not set).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.Border%2A> property to programmatically control the border width of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderColor">
+      <MemberSignature Language="C#" Value="public string BorderColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BorderColor" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.BorderColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the border color of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</summary>
+        <value>The border color of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control. The default value is <see cref="F:System.String.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTable.BorderColor%2A> property to specify the border color of the <xref:System.Web.UI.HtmlControls.HtmlTable> control. You can specify a color either by name or by using a hexadecimal value, preceded by the pound character (#), in the form #RRGGBB. RR, GG, and BB represent hexadecimal values from 0 to 255 that indicate the red, green, and blue components of a color, respectively. For example, the value #0000FF represents the color blue. It specifies the minimum value (00) for the red and green components, while specifying the maximum value (FF) for the blue component.  
+  
+ The following table shows the sixteen predefined HTML color names and corresponding hexadecimal values that can be used for the <xref:System.Web.UI.HtmlControls.HtmlTable.BorderColor%2A> property. For more information on HTML colors, see the [World Wide Web Consortium (W3C) Web site](http://go.microsoft.com/fwlink/?linkid=37125).  
+  
+|Color name|Hexadecimal value|  
+|----------------|-----------------------|  
+|Aqua|#00FFFF|  
+|Black|#000000|  
+|Blue|#0000FF|  
+|Fuchsia|#FF00FF|  
+|Gray|#808080|  
+|Green|#008000|  
+|Lime|#00FF00|  
+|Maroon|#800000|  
+|Navy|#000080|  
+|Olive|#808000|  
+|Purple|#800080|  
+|Red|#FF0000|  
+|Silver|#C0C0C0|  
+|Teal|#008080|  
+|White|#FFFFFF|  
+|Yellow|#FFFF00|  
+  
+ The available colors for use with the <xref:System.Web.UI.HtmlControls.HtmlTable.BorderColor%2A> property can be determined from the <xref:System.Drawing.KnownColor> enumeration.  
+  
+ Color names are case-insensitive.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.BorderColor%2A> property to programmatically control the border color of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellPadding">
+      <MemberSignature Language="C#" Value="public int CellPadding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CellPadding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.CellPadding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of space (in pixels) between the contents of a cell and the cell's border in the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</summary>
+        <value>The amount of space (in pixels) between the contents of a cell and the cell's border in the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control. The default value is -1, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTable.CellPadding%2A> property to control the spacing between the contents of a cell and the cell's border. The padding amount specified is added to all four sides of the cell. All cells in a column share the same cell width; therefore, the spacing is applied to the widest cell in the column. Similarly, all cells in the same row share the same cell height. The spacing is applied to the tallest cell in the row. Individual cell sizes cannot be specified.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.CellPadding%2A> property to programmatically control the spacing between the contents of the cell and the cell's border in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableLayout/CS/htmltablealigncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableLayout/VB/htmltablealignvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellSpacing">
+      <MemberSignature Language="C#" Value="public int CellSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CellSpacing" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.CellSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of space (in pixels) between adjacent cells in the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</summary>
+        <value>The amount of space (in pixels) between adjacent cells in the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control. The default value is -1, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTable.CellSpacing%2A> property to control the spacing between individual cells in the <xref:System.Web.UI.HtmlControls.HtmlTable> control. This spacing is applied both vertically and horizontally.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.CellSpacing%2A> property to programmatically control the spacing of cells in the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableLayout#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableLayout/CS/htmltablealigncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableLayout#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableLayout/VB/htmltablealignvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateControlCollection">
+      <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.CreateControlCollection" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ControlCollection</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Web.UI.ControlCollection" /> object for the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</summary>
+        <returns>A <see cref="T:System.Web.UI.ControlCollection" /> that contains the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control's child server controls.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTable.CreateControlCollection%2A> method creates a <xref:System.Web.UI.ControlCollection> object that is used to hold table rows.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlTable.CreateControlCollection%2A> method is primarily of interest to control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public string Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Height" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</summary>
+        <value>The height of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTable.Height%2A> property to control the height of the <xref:System.Web.UI.HtmlControls.HtmlTable> control. The height is normally specified in pixels. However, you can also specify a percentage of the browser window height by appending a percent sign (%) to the value. For example, the value `100%` indicates a height for the table that is the full height of the browser window. The table automatically expands and contracts as the user changes the window size.  
+  
+> [!NOTE]
+>  If you specify a value that is smaller than is required to display the contents of the <xref:System.Web.UI.HtmlControls.HtmlTable> control, this property is ignored.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.Height%2A> property to programmatically control the height of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerHtml">
+      <MemberSignature Language="C#" Value="public override string InnerHtml { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InnerHtml" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.InnerHtml" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content between the opening and closing tags of the control, without automatically converting special characters to their equivalent HTML entities. This property is not supported for this control.</summary>
+        <value>The content between the opening and closing tags of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  Do not read from or assign a value to this property. Otherwise, a <xref:System.NotSupportedException?displayProperty=fullName> exception is thrown. This property is inherited from the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> class and is not applicable to the <xref:System.Web.UI.HtmlControls.HtmlTable> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">An attempt was made to read from or assign a value to this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerText">
+      <MemberSignature Language="C#" Value="public override string InnerText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InnerText" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.InnerText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content between the opening and closing tags of the control, with automatic conversion of special characters to their equivalent HTML entities. This property is not supported for this control.</summary>
+        <value>The content between the opening and closing tags of the control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!CAUTION]
+>  Do not read from or assign a value to this property. Otherwise, a <xref:System.NotSupportedException?displayProperty=fullName> exception is thrown. This property is inherited from the <xref:System.Web.UI.HtmlControls.HtmlContainerControl> class and is not applicable to the <xref:System.Web.UI.HtmlControls.HtmlTable> class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">An attempt was made to read from or assign a value to this property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderChildren">
+      <MemberSignature Language="C#" Value="protected override void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered content.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control's child controls to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTable.RenderChildren%2A> method provides additional formatting before and after calling the base class's <xref:System.Web.UI.Control.RenderChildren%2A?displayProperty=fullName> method. The additional formatting makes the rendered HTML of the <xref:System.Web.UI.HtmlControls.HtmlTable> control easier to read by inserting a line return and indenting before rendering the <xref:System.Web.UI.HtmlControls.HtmlTable> control's child controls.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlTable.RenderChildren%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlTable.RenderChildren%2A> method in a custom server control so that a new table row is appended to the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTableRenderChildren#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTableRenderChildren/CS/custom_htmltable_renderchildrencs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlTableRenderChildren#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTableRenderChildren/VB/custom_htmltable_renderchildrenvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlTableRenderChildren#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTableRenderChildren/CS/custom_htmltable_renderchildren.cs#2)]
+ [!code-vb[CustomHtmlTableRenderChildren#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTableRenderChildren/VB/custom_htmltable_renderchildren.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderEndTag">
+      <MemberSignature Language="C#" Value="protected override void RenderEndTag (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderEndTag(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlTable.RenderEndTag(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The <see cref="T:System.Web.UI.HtmlTextWriter" /> that receives the rendered content.</param>
+        <summary>Renders the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control's end tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HtmlControls.HtmlTable.RenderEndTag%2A> method provides additional formatting after calling the base class's <xref:System.Web.UI.HtmlControls.HtmlContainerControl.RenderEndTag%2A?displayProperty=fullName> method. The additional formatting makes the rendered HTML of the <xref:System.Web.UI.HtmlControls.HtmlTable> control easier to read by inserting a line return after the closing `<table>` tag.  
+  
+ The <xref:System.Web.UI.HtmlControls.HtmlTable.RenderChildren%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlControls.HtmlTable.RenderEndTag%2A> method so that it always writes an end tag and a new line in a custom <xref:System.Web.UI.HtmlControls.HtmlTable> server control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CustomHtmlTableRenderEndTag#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTableRenderEndTag/CS/custom_htmltable_renderendtagcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CustomHtmlTableRenderEndTag#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTableRenderEndTag/VB/custom_htmltable_renderendtagvb.aspx#1)]  -->  
+  
+ [!code-csharp[CustomHtmlTableRenderEndTag#2](~/samples/snippets/csharp/VS_Snippets_WebNet/CustomHtmlTableRenderEndTag/CS/custom_htmltable_renderendtag.cs#2)]
+ [!code-vb[CustomHtmlTableRenderEndTag#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CustomHtmlTableRenderEndTag/VB/custom_htmltable_renderendtag.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rows">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.HtmlControls.HtmlTableRowCollection Rows { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.HtmlControls.HtmlTableRowCollection Rows" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.Rows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HtmlControls.HtmlTableRowCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> collection that contains all the rows in the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</summary>
+        <value>An <see cref="T:System.Web.UI.HtmlControls.HtmlTableRowCollection" /> that contains all the rows in the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> collection to programmatically access the rows in the <xref:System.Web.UI.HtmlControls.HtmlTable> control. You can programmatically add rows to, remove rows from, or insert rows into the collection.  
+  
+> [!NOTE]
+>  If there are no `<tr>` elements listed in the <xref:System.Web.UI.HtmlControls.HtmlTable> control, an empty <xref:System.Web.UI.HtmlControls.HtmlTableRowCollection> object is returned.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.Rows%2A> collection to programmatically add a row to the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTable#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTable/CS/htmltablecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTable#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTable/VB/htmltablevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public string Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Width" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlTable.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</summary>
+        <value>The width of the <see cref="T:System.Web.UI.HtmlControls.HtmlTable" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.HtmlControls.HtmlTable.Width%2A> property to control the width of the <xref:System.Web.UI.HtmlControls.HtmlTable> control. The width is normally specified in pixels. However, you can also specify a percentage of the browser window width by appending a percent sign (%) to the value. For example, the value `100%` indicates a width for the table that is the full width of the browser window. The table automatically expands and contracts as the user changes the window size.  
+  
+> [!NOTE]
+>  If you specify a value that is smaller than is required to display the contents of the <xref:System.Web.UI.HtmlControls.HtmlTable> control, this property is ignored.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.HtmlControls.HtmlTable.Width%2A> property to programmatically control the width of the <xref:System.Web.UI.HtmlControls.HtmlTable> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HtmlTableAppearance#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTableAppearance/CS/htmltablebgcolorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HtmlTableAppearance#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HtmlTableAppearance/VB/htmltablebgcolorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

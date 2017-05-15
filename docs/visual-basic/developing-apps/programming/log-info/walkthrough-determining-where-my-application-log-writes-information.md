@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "applications [Visual Basic], output location"
 ms.assetid: 5b70143a-7741-45f2-ae1d-03324a3a4189
 caps.latest.revision: 24
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

@@ -1,0 +1,46 @@
+<Type Name="InputLanguageChangedEventArgs" FullName="System.Windows.Input.InputLanguageChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class InputLanguageChangedEventArgs : System.Windows.Input.InputLanguageEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InputLanguageChangedEventArgs extends System.Windows.Input.InputLanguageEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputLanguageChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Input.InputLanguageEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains arguments associated with the <see cref="E:System.Windows.Input.InputLanguageManager.InputLanguageChanged" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InputLanguageChangedEventArgs (System.Globalization.CultureInfo newLanguageId, System.Globalization.CultureInfo previousLanguageId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Globalization.CultureInfo newLanguageId, class System.Globalization.CultureInfo previousLanguageId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputLanguageChangedEventArgs.#ctor(System.Globalization.CultureInfo,System.Globalization.CultureInfo)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newLanguageId" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="previousLanguageId" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="newLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing a new current input language.</param>
+        <param name="previousLanguageId">A <see cref="T:System.Globalization.CultureInfo" /> object representing the previous current input language.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputLanguageChangedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor calls the <xref:System.Windows.Input.InputLanguageEventArgs> base constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

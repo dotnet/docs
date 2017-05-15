@@ -1,0 +1,125 @@
+<Type Name="ServiceControllerPermissionAttribute" FullName="System.ServiceProcess.ServiceControllerPermissionAttribute">
+  <TypeSignature Language="C#" Value="public class ServiceControllerPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ServiceControllerPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerPermissionAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceProcess</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Security.Permissions.CodeAccessSecurityAttribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Event, AllowMultiple=true, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Allows declarative service controller permission checks.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ServiceControllerPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
+      </Parameters>
+      <Docs>
+        <param name="action">One of the <see cref="T:System.Security.Permissions.SecurityAction" /> values.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermissionAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePermission">
+      <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionAttribute.CreatePermission" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.IPermission</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates the permission based on the requested access levels that are set through the <see cref="P:System.ServiceProcess.ServiceControllerPermissionAttribute.PermissionAccess" /> property on the attribute.</summary>
+        <returns>An <see cref="T:System.Security.IPermission" /> that represents the created permission.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineName">
+      <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermissionAttribute.MachineName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the computer on which the service resides.</summary>
+        <value>The name of the computer that is running the service associated with the <see cref="T:System.ServiceProcess.ServiceController" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.ServiceProcess.ServiceControllerPermissionAttribute.MachineName" /> syntax is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PermissionAccess">
+      <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceControllerPermissionAccess PermissionAccess { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceProcess.ServiceControllerPermissionAccess PermissionAccess" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermissionAttribute.PermissionAccess" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceProcess.ServiceControllerPermissionAccess</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the access levels used in the permissions request.</summary>
+        <value>A bitwise combination of the <see cref="T:System.ServiceProcess.ServiceControllerPermissionAccess" /> values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServiceName">
+      <MemberSignature Language="C#" Value="public string ServiceName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ServiceName" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermissionAttribute.ServiceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the short name that identifies the service to the system.</summary>
+        <value>The name of the service.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.ServiceProcess.ServiceControllerPermissionAttribute.ServiceName" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The syntax of the <see cref="P:System.ServiceProcess.ServiceControllerPermissionAttribute.ServiceName" /> property is invalid.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,117 @@
+<Type Name="TraceLogRetentionOption" FullName="System.Diagnostics.TraceLogRetentionOption">
+  <TypeSignature Language="C#" Value="public enum TraceLogRetentionOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TraceLogRetentionOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceLogRetentionOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the file structure that will be used for the <see cref="T:System.Diagnostics.EventSchemaTraceListener" /> log.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Diagnostics.TraceLogRetentionOption> enumeration is used to specify the value of the <xref:System.Diagnostics.EventSchemaTraceListener.TraceLogRetentionOption%2A> property in the <xref:System.Diagnostics.EventSchemaTraceListener> class. That property setting determines the possible and default values for the <xref:System.Diagnostics.EventSchemaTraceListener.MaximumFileSize%2A?displayProperty=fullName> and <xref:System.Diagnostics.EventSchemaTraceListener.MaximumNumberOfFiles%2A?displayProperty=fullName> properties.  
+  
+ You can set the <xref:System.Diagnostics.EventSchemaTraceListener.MaximumFileSize%2A> and <xref:System.Diagnostics.EventSchemaTraceListener.MaximumNumberOfFiles%2A> properties through the `maximumFileSize` and `maximumNumberOfFiles` custom attributes in the configuration file or by using the `maximumFileSize` or `maximumNumberOfFiles` parameters in the  <xref:System.Diagnostics.EventSchemaTraceListener.%23ctor%2A> constructor. If the `maximumFileSize` or `maximumNumberOfFiles` attributes in the configuration file specify an out-of-range value, the properties are set to their default values. If you specify an out-of-range value in the `maximumFileSize` or `maximumNumberOfFiles` parameter when you call the <xref:System.Diagnostics.EventSchemaTraceListener.%23ctor%2A> constructor, an <xref:System.ArgumentOutOfRangeException> is thrown.  
+  
+ The following table shows the possible and default values for file size and file count that are associated with each trace log retention option. "N/A" indicates that the associated property is not checked for that <xref:System.Diagnostics.TraceLogRetentionOption> value.  
+  
+|TraceLogRetentionOption|Maximum file size|Default file size|Maximum number of files|Default number of files|  
+|-----------------------------|-----------------------|-----------------------|-----------------------------|-----------------------------|  
+|LimitedCircularFiles|N/A|-1|N/A|1|  
+|LimitedSequentialFiles|>0|4 kB|N/A|1|  
+|SingleFileBoundedSize|>0|4 kB|N/A|-1|  
+|SingleFileUnboundedSize|>0|4 kB|>0|1|  
+|UnlimitedSequentialFiles|>0|4 kB|>1|2|  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LimitedCircularFiles">
+      <MemberSignature Language="C#" Value="LimitedCircularFiles" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLogRetentionOption LimitedCircularFiles = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLogRetentionOption.LimitedCircularFiles" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceLogRetentionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A finite number of sequential files, each with a maximum file size. When the <see cref="P:System.Diagnostics.EventSchemaTraceListener.MaximumFileSize" /> property value is reached, writing starts in a new file with an incremented integer suffix. When the <see cref="P:System.Diagnostics.EventSchemaTraceListener.MaximumNumberOfFiles" /> property value is reached, the first file is cleared and overwritten. Files are then incrementally overwritten in a circular manner.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LimitedSequentialFiles">
+      <MemberSignature Language="C#" Value="LimitedSequentialFiles" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLogRetentionOption LimitedSequentialFiles = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLogRetentionOption.LimitedSequentialFiles" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceLogRetentionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A finite number of sequential files, each with a maximum file size. When the <see cref="P:System.Diagnostics.EventSchemaTraceListener.MaximumFileSize" /> property value is reached, writing starts in a new file with an incremented integer suffix.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleFileBoundedSize">
+      <MemberSignature Language="C#" Value="SingleFileBoundedSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLogRetentionOption SingleFileBoundedSize = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLogRetentionOption.SingleFileBoundedSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceLogRetentionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>One file with a maximum file size that is determined by the <see cref="P:System.Diagnostics.EventSchemaTraceListener.MaximumFileSize" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleFileUnboundedSize">
+      <MemberSignature Language="C#" Value="SingleFileUnboundedSize" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLogRetentionOption SingleFileUnboundedSize = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLogRetentionOption.SingleFileUnboundedSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceLogRetentionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>One file with no maximum file size restriction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UnlimitedSequentialFiles">
+      <MemberSignature Language="C#" Value="UnlimitedSequentialFiles" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLogRetentionOption UnlimitedSequentialFiles = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLogRetentionOption.UnlimitedSequentialFiles" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.TraceLogRetentionOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An unlimited number of sequential files, each with a maximum file size that is determined by the <see cref="P:System.Diagnostics.EventSchemaTraceListener.MaximumFileSize" /> property. There is no logical bound to the number or size of the files, but it is limited by the physical constraints imposed by the computer.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

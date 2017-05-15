@@ -1,0 +1,106 @@
+<Type Name="WebPartVerbsEventArgs" FullName="System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs">
+  <TypeSignature Language="C#" Value="public class WebPartVerbsEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebPartVerbsEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides event data for the <see cref="E:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs" /> event that is used by the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs(System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs> class represents the event data for the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs> event, which occurs when the Web Parts verbs are created for a zone that derives from the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class.  
+  
+ Web Parts verbs represent actions that users can perform in the user interface (UI) of a Web Parts page, such as minimizing, closing, or restoring controls; adding controls to a page; or canceling an action. Verbs can appear in both the header and footer areas of a zone, and there are both standard verbs provided with the Web Parts control set, and custom verbs that can be added by developers. A verb is represented in the UI by a clickable object, which you can set to appear as a hyperlink, an image, or a button, by using the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType%2A> property.  
+  
+ A <xref:System.Web.UI.WebControls.WebParts.WebPartZone> zone provides a standard set of verbs that get rendered in a Web Parts control's verbs menu. A custom Web Parts zone, or a Web Parts control inside a Web Parts zone, can add additional verbs to the menu.  
+  
+ A control in a Web Parts zone can add verbs to the control's verbs menu by inheriting from the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class and overriding the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A> property. If the control does not inherit from the <xref:System.Web.UI.WebControls.WebParts.WebPart> base class, you can add a new verb by implementing the <xref:System.Web.UI.WebControls.WebParts.IWebActionable> interface, and then overriding the <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> collection.  
+  
+ The protected <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A?displayProperty=fullName> method allows derived classes to override the event without attaching a delegate to it. A derived class must always call the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs%2A> method of the base class to ensure that registered delegates receive the event.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartVerbsEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the default constructor and it creates an empty object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartVerbsEventArgs (System.Web.UI.WebControls.WebParts.WebPartVerbCollection verbs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPartVerbCollection verbs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPartVerbCollection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="verbs" Type="System.Web.UI.WebControls.WebParts.WebPartVerbCollection" />
+      </Parameters>
+      <Docs>
+        <param name="verbs">A Web Parts verb collection.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs" /> class using the specified Web Parts verb collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using this constructor, the <xref:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs.Verbs%2A> property is set to the Web Parts verb collection specified in the `verbs` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Verbs">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs.Verbs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerbCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Web Parts verbs used in the event data.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbCollection" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Initially, this property is set by specifying a Web Parts verb collection in the <xref:System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs.%23ctor%28System.Web.UI.WebControls.WebParts.WebPartVerbCollection%29> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

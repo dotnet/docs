@@ -1,0 +1,42 @@
+<Type Name="ImageClickEventHandler" FullName="System.Web.UI.ImageClickEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void ImageClickEventHandler(object sender, ImageClickEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageClickEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ImageClickEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.ImageClickEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The server control that is the source of the event.</param>
+    <param name="e">An <see cref="T:System.Web.UI.ImageClickEventArgs" /> that contains event data.</param>
+    <summary>Represents the method that handles any events that are raised when a user clicks an image-based ASP.NET server control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate defines the required signature for all click events raised when a user clicks an image-based ASP.NET server control. You must use the signature defined by this delegate for any `OnServerClick` event handlers that you create for an <xref:System.Web.UI.HtmlControls.HtmlInputImage> server control or any `OnClick` event handlers that you create for an <xref:System.Web.UI.WebControls.ImageButton> Web server control.  
+  
+ If you create a custom image-based ASP.NET server control that users can click, use this delegate to define the events associated with that user action.  
+  
+ For more information about delegates and how they interact with events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115). For information about how to raise events, see [NIB: Raising an Event](http://msdn.microsoft.com/en-us/f2adaf01-1ed1-42e1-8c31-8d467e7e0ee2).  
+  
+   
+  
+## Examples  
+ [!code-csharp[SystemWebUI.ImageClickEventArgs Sample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI.ImageClickEventArgs Sample/CS/imageclickeventargscs.aspx#1)]
+ [!code-vb[SystemWebUI.ImageClickEventArgs Sample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI.ImageClickEventArgs Sample/VB/imageclickeventargsvb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

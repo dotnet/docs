@@ -1,0 +1,70 @@
+<Type Name="JumpItemsRemovedEventArgs" FullName="System.Windows.Shell.JumpItemsRemovedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class JumpItemsRemovedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JumpItemsRemovedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpItemsRemovedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Shell.JumpList.JumpItemsRemovedByUser" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JumpItemsRemovedEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpItemsRemovedEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpItemsRemovedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public JumpItemsRemovedEventArgs (System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt; removedItems);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;class System.Windows.Shell.JumpItem&gt; removedItems) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Shell.JumpItemsRemovedEventArgs.#ctor(System.Collections.Generic.IList{System.Windows.Shell.JumpItem})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="removedItems" Type="System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="removedItems">The list of Jump List items that have been removed by the user since <see cref="M:System.Windows.Shell.JumpList.Apply" /> was last called.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Shell.JumpItemsRemovedEventArgs" /> class that has the specified parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovedItems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt; RemovedItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Windows.Shell.JumpItem&gt; RemovedItems" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpItemsRemovedEventArgs.RemovedItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Windows.Shell.JumpItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the list of Jump List items that have been removed by the user since the <see cref="M:System.Windows.Shell.JumpList.Apply" /> method was last called.</summary>
+        <value>The list of Jump List items that have been removed by the user since the <see cref="M:System.Windows.Shell.JumpList.Apply" /> method was last called.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

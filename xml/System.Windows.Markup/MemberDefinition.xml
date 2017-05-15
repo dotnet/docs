@@ -1,0 +1,61 @@
+<Type Name="MemberDefinition" FullName="System.Windows.Markup.MemberDefinition">
+  <TypeSignature Language="C#" Value="public abstract class MemberDefinition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MemberDefinition extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.MemberDefinition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the base class that is used for a markup technique of defining members of a class in declarative XAML.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Markup.PropertyDefinition> class is the relevant practical class that enables defining a property in declarative XAML.  
+  
+ Support for the overall feature of defining members of a class in declarative XAML is not self-contained in this API. This API only provides the markup definitions that make the declarations possible in XAML. The actual build task handling of how such XAML is interpreted is specific to individual build tasks and the frameworks or technologies that reference them.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MemberDefinition ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.MemberDefinition.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.MemberDefinition" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public abstract string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.MemberDefinition.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented in a derived class, gets or sets the name of the member to define.</summary>
+        <value>The name of the member to define.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

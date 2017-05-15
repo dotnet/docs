@@ -1,0 +1,59 @@
+<!--<Snippet2>-->
+
+<?xml version="1.0"?>
+<schema attributeFormDefault="qualified" 
+elementFormDefault="qualified" targetNamespace="" 
+xmlns="http://www.w3.org/2000/10/XMLSchema">
+  <import namespace="http://www.cpandl.com"/>
+  <element name="Group" nullable="true" type="Group"/>
+  <complexType name="Group">
+    <sequence>
+      <element name="Staff" nullable="true">
+        <complexType>
+          <sequence>
+            <element name="Person" 
+             nullable="true" 
+             xmlns:q1="http://www.cpandl.com" 
+             type="q1:Employee" minOccurs="0" 
+             maxOccurs="unbounded"/>
+          </sequence>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+  <element name="Person" nullable="true" 
+  xmlns:q2="http://www.cpandl.com" type="q2:Employee"/>
+  <element name="Job" nullable="true" 
+  xmlns:q3="http://www.cohowinery.com" type="q3:Occupation"/>
+  <element name="Run" nullable="true" type="Run"/>
+  <complexType name="Run"/>
+</schema>
+
+<?xml version="1.0"?>
+<schema attributeFormDefault="qualified" 
+elementFormDefault="qualified" 
+targetNamespace="http://www.cpandl.com" 
+xmlns="http://www.w3.org/2000/10/XMLSchema">
+  <import namespace="http://www.cohowinery.com"/>
+  <complexType name="Employee">
+    <sequence>
+      <element name="PersonName" nullable="true" type="string"/>
+      <element name="Position" nullable="true" 
+      xmlns:q1="http://www.cohowinery.com" type="q1:Occupation"/>
+    </sequence>
+  </complexType>
+</schema>
+
+<?xml version="1.0"?>
+<schema attributeFormDefault="qualified" 
+elementFormDefault="qualified" 
+targetNamespace="http://www.cohowinery.com" 
+xmlns="http://www.w3.org/2000/10/XMLSchema">
+  <complexType name="Occupation">
+    <sequence>
+      <element name="JobName" nullable="true" type="string"/>
+    </sequence>
+  </complexType>
+</schema>
+
+<!--</Snippet2>-->

@@ -1,0 +1,53 @@
+<Type Name="IStyleConnector" FullName="System.Windows.Markup.IStyleConnector">
+  <TypeSignature Language="C#" Value="public interface IStyleConnector" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStyleConnector" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IStyleConnector" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides methods used internally by the WPF XAML parser to attach events and event setters in compiled XAML.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Markup.IStyleConnector> class is not intended for use by anything other than the WPF XAML markup compiler. It is referenced by generated code that does event wiring for markup that involves templates or a similar factory model.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public void Connect (int connectionId, object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Connect(int32 connectionId, object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IStyleConnector.Connect(System.Int32,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="connectionId" Type="System.Int32" />
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="connectionId">The unique connection ID for event wiring purposes.</param>
+        <param name="target">The target for event wiring.</param>
+        <summary>Attaches events on event setters and templates in compiled content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Markup.IStyleConnector> class is not intended for use by anything other than the WPF XAML markup compiler.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

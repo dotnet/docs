@@ -1,0 +1,1085 @@
+<Type Name="DrawingAttributes" FullName="System.Windows.Ink.DrawingAttributes">
+  <TypeSignature Language="C#" Value="public class DrawingAttributes : System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DrawingAttributes extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.DrawingAttributes" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Specifies the appearance of a <see cref="T:System.Windows.Ink.Stroke" /></summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property to specify settings such as color, width, transparency, and the shape of the stylus tip for a <xref:System.Windows.Ink.Stroke>.  
+  
+ Use the <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A> property to specify the drawing attributes for the strokes added to an <xref:System.Windows.Controls.InkCanvas>. Only strokes that are added after the <xref:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes%2A> undergo change show the updated attributes. The appearance of the strokes that are already on the <xref:System.Windows.Controls.InkCanvas> does not change.  
+  
+ For a list of initial property values for an instance of the <xref:System.Windows.Ink.DrawingAttributes> class, see the <xref:System.Windows.Ink.DrawingAttributes> constructor.  
+  
+<a name="xamlTextUsage_DrawingAttributes"></a>   
+## XAML Text Usage  
+ This class is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use two <xref:System.Windows.Ink.DrawingAttributes> objects to simulate using a pen and a highlighter on the same <xref:System.Windows.Controls.InkCanvas>. The example assumes the root element in the XAML file is a <xref:System.Windows.Controls.DockPanel> called `root`. It also assumes that there is a <xref:System.Windows.Controls.Button> called `switchHighlighter` and that the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event is connected to the event handler defined in this example.  
+  
+ [!code-csharp[DrawingAttributes#3](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#3)]
+ [!code-vb[DrawingAttributes#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DrawingAttributes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.DrawingAttributes" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of the <xref:System.Windows.Ink.DrawingAttributes> class.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|<xref:System.Windows.Ink.DrawingAttributes.Color%2A>|Black|  
+|<xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A>|`false`|  
+|<xref:System.Windows.Ink.DrawingAttributes.Height%2A>|2 device independent pixels (DIP)|  
+|<xref:System.Windows.Ink.DrawingAttributes.IgnorePressure%2A>|`false`|  
+|<xref:System.Windows.Ink.DrawingAttributes.IsHighlighter%2A>|`false`|  
+|<xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>|<xref:System.Windows.Ink.StylusTip?displayProperty=fullName>|  
+|<xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A>|<xref:System.Windows.Media.Matrix.Identity%2A?displayProperty=fullName>|  
+|<xref:System.Windows.Ink.DrawingAttributes.Width%2A>|2 DIP|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddPropertyData">
+      <MemberSignature Language="C#" Value="public void AddPropertyData (Guid propertyDataId, object propertyData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPropertyData(valuetype System.Guid propertyDataId, object propertyData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.AddPropertyData(System.Guid,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyDataId" Type="System.Guid" />
+        <Parameter Name="propertyData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="propertyDataId">The <see cref="T:System.Guid" /> to associate with the custom property.</param>
+        <param name="propertyData">The value of the custom property. <c>propertyData</c> must be of type <see cref="T:System.Char" />, <see cref="T:System.Byte" />, <see cref="T:System.Int16" />, <see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, <see cref="T:System.UInt32" />, <see cref="T:System.Int64" />, <see cref="T:System.UInt64" />, <see cref="T:System.Single" />, <see cref="T:System.Double" />, <see cref="T:System.DateTime" />, <see cref="T:System.Boolean" />, <see cref="T:System.String" />, <see cref="T:System.Decimal" /> or an array of these data types; however it cannot be an array of type <see cref="T:System.String" />.</param>
+        <summary>Adds a custom property to the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.DrawingAttributes.AddPropertyData%2A> method enables you to add custom properties to a <xref:System.Windows.Ink.DrawingAttributes> object. This is useful when you render your own strokes and want to provide extra information.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to add and retrieve a custom property from the <xref:System.Windows.Ink.DrawingAttributes> object. The example adds a property that indicates whether the <xref:System.Windows.Ink.DrawingAttributes> object is a pen or a highlighter. The code in the `ChangeColors_Click` event handler renders a new color for strokes on the <xref:System.Windows.Controls.InkCanvas> that use the <xref:System.Windows.Ink.DrawingAttributes> object, `inkDA`. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> named `inkCanvas1`, and that there are two <xref:System.Windows.Ink.DrawingAttributes> objects named `inkDA`, and `highlighterDA.`  
+  
+ [!code-csharp[DrawingAttributes#5](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#5)]
+ [!code-vb[DrawingAttributes#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="propertyData" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="propertyDataId" /> is an empty <see cref="T:System.Guid" />.  
+  
+ -or-  
+  
+ <paramref name="propertyData" /> is not one of the allowed data types listed in the <see langword="Parameters" /> section.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AttributeChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.Ink.PropertyDataChangedEventHandler AttributeChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Ink.PropertyDataChangedEventHandler AttributeChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Ink.DrawingAttributes.AttributeChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.PropertyDataChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a property in the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example handles the <xref:System.Windows.Ink.DrawingAttributes.AttributeChanged> event. This example assumes that there is a <xref:System.Windows.Ink.DrawingAttributes> object called `inkDA` and that the <xref:System.Windows.Ink.DrawingAttributes.AttributeChanged> event is connected to the event handler defined in this example.  
+  
+ [!code-csharp[DrawingAttributes#6](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#6)]
+ [!code-vb[DrawingAttributes#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Ink.DrawingAttributes Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Ink.DrawingAttributes Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.DrawingAttributes</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copies the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</summary>
+        <returns>A copy of the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Ink.DrawingAttributes.Clone%2A> method creates a new <xref:System.Windows.Ink.DrawingAttributes> object and populates it with the same values as the current object. Any custom properties are also copied.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to copy a <xref:System.Windows.Ink.DrawingAttributes> object.  
+  
+ [!code-csharp[DrawingAttributes#8](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#8)]
+ [!code-vb[DrawingAttributes#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Color Color { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Color Color" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.Color" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of a <see cref="T:System.Windows.Ink.Stroke" />.</summary>
+        <value>The color of a <see cref="T:System.Windows.Ink.Stroke" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_Color"></a>   
+## XAML Text Usage  
+ This property is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Ink.DrawingAttributes.Color%2A> property. The example assumes that your application has an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`, and two <xref:System.Windows.Ink.DrawingAttributes> objects called `inkDA` and `highlighterDA`. For the complete example, see the <xref:System.Windows.Ink.DrawingAttributes> class overview.  
+  
+ [!code-csharp[DrawingAttributes#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[DrawingAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsPropertyData">
+      <MemberSignature Language="C#" Value="public bool ContainsPropertyData (Guid propertyDataId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsPropertyData(valuetype System.Guid propertyDataId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.ContainsPropertyData(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyDataId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="propertyDataId">The <see cref="T:System.Guid" /> to locate in the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object .</param>
+        <summary>Returns a value that indicates whether the specified property data identifier is in the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the specified property data identifier is in the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to add and retrieve a custom property from the <xref:System.Windows.Ink.DrawingAttributes> object. The example adds a property that indicates whether the <xref:System.Windows.Ink.DrawingAttributes> object is a pen or a highlighter. The `ChangeColors_Click` event handler changes all the strokes that were put on the <xref:System.Windows.Controls.InkCanvas> with a <xref:System.Windows.Ink.DrawingAttributes> called `inkDA` to a new color. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> named `inkCanvas1`, and that there are two <xref:System.Windows.Ink.DrawingAttributes> objects named `inkDA`, and `highlighterDA.`  
+  
+ [!code-csharp[DrawingAttributes#5](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#5)]
+ [!code-vb[DrawingAttributes#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The <see cref="T:System.Windows.Ink.DrawingAttributes" /> object to compare to the current <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</param>
+        <summary>Determines whether the specified <see cref="T:System.Windows.Ink.DrawingAttributes" /> object is equal to the current <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Windows.Ink.DrawingAttributes> objects are equal if the following properties are equal:  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.Color%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.Width%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.Height%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.IgnorePressure%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.IsHighlighter%2A>  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Ink.DrawingAttributes.Equals%2A> method does not check the custom properties for equality.  
+  
+   
+  
+## Examples  
+ The following example compares two <xref:System.Windows.Ink.DrawingAttributes> objects for equality. Because the <xref:System.Windows.Ink.DrawingAttributes.Color%2A>, <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>, <xref:System.Windows.Ink.DrawingAttributes.Height%2A>, and <xref:System.Windows.Ink.DrawingAttributes.Width%2A> properties on `attributes1` and `attributes2` are set to the same values, the "The DrawingAttributes are equal" message appears.  
+  
+ [!code-csharp[DrawingAttributes#10](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#10)]
+ [!code-vb[DrawingAttributes#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#10)]  
+[!code-csharp[DrawingAttributes#12](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#12)]
+[!code-vb[DrawingAttributes#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FitToCurve">
+      <MemberSignature Language="C#" Value="public bool FitToCurve { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool FitToCurve" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.FitToCurve" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether Bezier smoothing is used to render the <see cref="T:System.Windows.Ink.Stroke" />.</summary>
+        <value>
+          <see langword="true" /> to use Bezier smoothing to render the <see cref="T:System.Windows.Ink.Stroke" />; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_FitToCurve"></a>   
+## XAML Text Usage  
+ This property is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A> property. The example assumes that your application has an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`, and two <xref:System.Windows.Ink.DrawingAttributes> objects called `inkDA` and `highlighterDA`. For the complete example, see the <xref:System.Windows.Ink.DrawingAttributes> class overview.  
+  
+ [!code-csharp[DrawingAttributes#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[DrawingAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for a particular type.</summary>
+        <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyData">
+      <MemberSignature Language="C#" Value="public object GetPropertyData (Guid propertyDataId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetPropertyData(valuetype System.Guid propertyDataId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.GetPropertyData(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyDataId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="propertyDataId">The <see cref="T:System.Guid" /> associated with the custom property to get.</param>
+        <summary>Gets the value of the custom property associated with the specified <see cref="T:System.Guid" />.</summary>
+        <returns>The value of the custom property associated with the specified <see cref="T:System.Guid" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Ink.DrawingAttributes.GetPropertyData%2A> method to access custom properties you added to a <xref:System.Windows.Ink.DrawingAttributes> object. <xref:System.Windows.Ink.DrawingAttributes.GetPropertyData%2A> returns the default value for the built-in property if a value has not been set.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to add and retrieve a custom property from the <xref:System.Windows.Ink.DrawingAttributes> object. The example adds a property that indicates whether the <xref:System.Windows.Ink.DrawingAttributes> object is a pen or a highlighter. The code in the `ChangeColors_Click` event handler renders a new color for strokes on the <xref:System.Windows.Controls.InkCanvas> that use the <xref:System.Windows.Ink.DrawingAttributes> object, `inkDA`. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> named `inkCanvas1`, and that there are two <xref:System.Windows.Ink.DrawingAttributes> objects named `inkDA`, and `highlighterDA.`  
+  
+ [!code-csharp[DrawingAttributes#5](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#5)]
+ [!code-vb[DrawingAttributes#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="propertyDataId" /> is not associated with a custom property of the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyDataIds">
+      <MemberSignature Language="C#" Value="public Guid[] GetPropertyDataIds ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Guid[] GetPropertyDataIds() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.GetPropertyDataIds" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the GUIDs of any custom properties associated with the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <returns>An array of type <see cref="T:System.Guid" /> that represents the property data identifiers.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The GUIDs for the built-in properties of the <xref:System.Windows.Ink.DrawingAttributes> class are in the <xref:System.Windows.Ink.DrawingAttributeIds> class.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to get the property data identifiers from the <xref:System.Windows.Ink.DrawingAttributes> object. This example assumes that a <xref:System.Windows.Ink.DrawingAttributes> called `inkDA` has been declared.  
+  
+ [!code-csharp[DrawingAttributes#7](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#7)]
+ [!code-vb[DrawingAttributes#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public double Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Height" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of the stylus used to draw the <see cref="T:System.Windows.Ink.Stroke" />.</summary>
+        <value>The value that indicates the height of the stylus used to draw the <see cref="T:System.Windows.Ink.Stroke" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following factors affect the height and width of a <xref:System.Windows.Ink.Stroke> when it is rendered, but not the value of the <xref:System.Windows.Ink.DrawingAttributes.Height%2A> property.  
+  
+-   The amount of pressure applied to the stylus when the <xref:System.Windows.Ink.Stroke> is drawn.  
+  
+-   The value of the <xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A> property.  
+  
+ If you set the <xref:System.Windows.Ink.DrawingAttributes.Height%2A> property to 0 device independent pixels (DIP), it is changed to 2 DIP.  
+  
+<a name="xamlTextUsage_Height"></a>   
+## XAML Text Usage  
+ This property is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Ink.DrawingAttributes.Height%2A> property. The example assumes that your application has an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`, and two <xref:System.Windows.Ink.DrawingAttributes> objects called `inkDA` and `highlighterDA`. For the complete example, see the <xref:System.Windows.Ink.DrawingAttributes> class overview.  
+  
+ [!code-csharp[DrawingAttributes#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[DrawingAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Windows.Ink.DrawingAttributes.Height" /> property is less than <see cref="F:System.Double.Epsilon" /> or <see cref="F:System.Double.NaN" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IgnorePressure">
+      <MemberSignature Language="C#" Value="public bool IgnorePressure { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IgnorePressure" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.IgnorePressure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the thickness of a rendered <see cref="T:System.Windows.Ink.Stroke" /> changes according the amount of pressure applied.</summary>
+        <value>
+          <see langword="true" /> to indicate that the thickness of the stroke is uniform; <see langword="false" /> to indicate that the thickness of a rendered <see cref="T:System.Windows.Ink.Stroke" /> increases when pressure is increased. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_IgnorePressure"></a>   
+## XAML Text Usage  
+ This property is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Ink.DrawingAttributes.IgnorePressure%2A> property. The example assumes that your application has an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`, and two <xref:System.Windows.Ink.DrawingAttributes> objects called `inkDA` and `highlighterDA`. For the complete example, see the <xref:System.Windows.Ink.DrawingAttributes> class overview.  
+  
+ [!code-csharp[DrawingAttributes#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[DrawingAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsHighlighter">
+      <MemberSignature Language="C#" Value="public bool IsHighlighter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsHighlighter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.IsHighlighter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the <see cref="T:System.Windows.Ink.Stroke" /> looks like a highlighter.</summary>
+        <value>
+          <see langword="true" /> to render the <see cref="T:System.Windows.Ink.Stroke" /> as a highlighter; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Ink.DrawingAttributes.IsHighlighter%2A> property is set to `true`, the <xref:System.Windows.Ink.Stroke> is slightly transparent, which allows the strokes underneath to appear.  
+  
+<a name="xamlTextUsage_IsHighlighter"></a>   
+## XAML Text Usage  
+ This property is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Ink.DrawingAttributes.IsHighlighter%2A> property. The example assumes that your application has an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`, and two <xref:System.Windows.Ink.DrawingAttributes> objects called `inkDA` and `highlighterDA`. For the complete example, see the <xref:System.Windows.Ink.DrawingAttributes> class overview.  
+  
+ [!code-csharp[DrawingAttributes#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[DrawingAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxHeight">
+      <MemberSignature Language="C#" Value="public static readonly double MaxHeight;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly float64 MaxHeight" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributes.MaxHeight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the largest value allowed for the <see cref="P:System.Windows.Ink.DrawingAttributes.Height" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Ink.DrawingAttributes.MaxHeight> field to check whether a value is within the limits allowed for the <xref:System.Windows.Ink.DrawingAttributes.Height%2A> property. Do this when the value comes from an unknown source, such as unconstrained user input.  
+  
+   
+  
+## Examples  
+ The following example ensures the <xref:System.Windows.Ink.DrawingAttributes.Height%2A> property of the <xref:System.Windows.Ink.DrawingAttributes> is set to a legal value. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[DrawingAttributes#14](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#14)]
+ [!code-vb[DrawingAttributes#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxWidth">
+      <MemberSignature Language="C#" Value="public static readonly double MaxWidth;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly float64 MaxWidth" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributes.MaxWidth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the largest value allowed for the <see cref="P:System.Windows.Ink.DrawingAttributes.Width" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Ink.DrawingAttributes.MaxWidth> field to check whether a value is within the limits allowed for the <xref:System.Windows.Ink.DrawingAttributes.Width%2A> property. Do this when the value comes from an unknown source, such as unconstrained user input.  
+  
+   
+  
+## Examples  
+ The following example ensures the <xref:System.Windows.Ink.DrawingAttributes.Width%2A> property of the <xref:System.Windows.Ink.DrawingAttributes> is set to a legal value. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[DrawingAttributes#15](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#15)]
+ [!code-vb[DrawingAttributes#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinHeight">
+      <MemberSignature Language="C#" Value="public static readonly double MinHeight;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly float64 MinHeight" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributes.MinHeight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the smallest value allowed for the <see cref="P:System.Windows.Ink.DrawingAttributes.Height" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Ink.DrawingAttributes.MinHeight> field to check whether a value is within the limits allowed for the <xref:System.Windows.Ink.DrawingAttributes.Height%2A> property. Do this when the value comes from an unknown source, such as unconstrained user input.  
+  
+   
+  
+## Examples  
+ The following example ensures the <xref:System.Windows.Ink.DrawingAttributes.Height%2A> property of the <xref:System.Windows.Ink.DrawingAttributes> is set to a legal value. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[DrawingAttributes#14](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#14)]
+ [!code-vb[DrawingAttributes#14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinWidth">
+      <MemberSignature Language="C#" Value="public static readonly double MinWidth;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly float64 MinWidth" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Ink.DrawingAttributes.MinWidth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the smallest value allowed for the <see cref="P:System.Windows.Ink.DrawingAttributes.Width" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Ink.DrawingAttributes.MinWidth> field to check whether a value is within the limits allowed for the <xref:System.Windows.Ink.DrawingAttributes.Width%2A> property. Do this when the value comes from an unknown source, such as unconstrained user input.  
+  
+   
+  
+## Examples  
+ The following example ensures the <xref:System.Windows.Ink.DrawingAttributes.Width%2A> property of the <xref:System.Windows.Ink.DrawingAttributes> is set to a legal value. This example assumes that there is an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`.  
+  
+ [!code-csharp[DrawingAttributes#15](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#15)]
+ [!code-vb[DrawingAttributes#15](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAttributeChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnAttributeChanged (System.Windows.Ink.PropertyDataChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAttributeChanged(class System.Windows.Ink.PropertyDataChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.OnAttributeChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Ink.PropertyDataChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Ink.PropertyDataChangedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Ink.DrawingAttributes.AttributeChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate.  
+  
+ The <xref:System.Windows.Ink.DrawingAttributes.OnAttributeChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="e" /> is <see langword="null" />.</exception>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Ink.DrawingAttributes.OnAttributeChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" /> in a derived class, call the <see cref="M:System.Windows.Ink.DrawingAttributes.OnAttributeChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" /> method for the base class to ensure that registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (System.ComponentModel.PropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">EventArgs</param>
+        <summary>Occurs when any <see cref="T:System.Windows.Ink.DrawingAttributes" /> property changes.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyDataChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyDataChanged (System.Windows.Ink.PropertyDataChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyDataChanged(class System.Windows.Ink.PropertyDataChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.OnPropertyDataChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.Ink.PropertyDataChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">A <see cref="T:System.Windows.Ink.PropertyDataChangedEventArgs" /> that contains the event data.</param>
+        <summary>Raises the <see cref="E:System.Windows.Ink.DrawingAttributes.PropertyDataChanged" /> event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Raising an event invokes the event handler through a delegate.  
+  
+ The <xref:System.Windows.Ink.DrawingAttributes.OnPropertyDataChanged%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="e" /> is <see langword="null" />.</exception>
+        <block subset="none" type="overrides">
+          <para>When overriding <see cref="M:System.Windows.Ink.DrawingAttributes.OnPropertyDataChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" /> in a derived class, call the <see cref="M:System.Windows.Ink.DrawingAttributes.OnPropertyDataChanged(System.Windows.Ink.PropertyDataChangedEventArgs)" /> method for the base class to ensure registered delegates receive the event.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Ink.DrawingAttributes first, System.Windows.Ink.DrawingAttributes second);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Ink.DrawingAttributes first, class System.Windows.Ink.DrawingAttributes second) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.op_Equality(System.Windows.Ink.DrawingAttributes,System.Windows.Ink.DrawingAttributes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="first" Type="System.Windows.Ink.DrawingAttributes" />
+        <Parameter Name="second" Type="System.Windows.Ink.DrawingAttributes" />
+      </Parameters>
+      <Docs>
+        <param name="first">The first <see cref="T:System.Windows.Ink.DrawingAttributes" /> object to compare.</param>
+        <param name="second">The second <see cref="T:System.Windows.Ink.DrawingAttributes" /> object to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Windows.Ink.DrawingAttributes" /> objects are equal.</summary>
+        <returns>
+          <see langword="true" /> if the objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Windows.Ink.DrawingAttributes> objects are equal if the following properties are equal:  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.Color%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.Height%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.IgnorePressure%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.IsHighlighter%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.Width%2A>  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Ink.DrawingAttributes.op_Equality%2A> method does not check the custom properties for equality.  
+  
+ The equivalent method for this operator is <xref:System.Windows.Ink.DrawingAttributes.Equals%28System.Windows.Ink.DrawingAttributes%2CSystem.Windows.Ink.DrawingAttributes%29?displayProperty=fullName>  
+  
+## Examples  
+ The following example compares two <xref:System.Windows.Ink.DrawingAttributes> objects for equality. Because the <xref:System.Windows.Ink.DrawingAttributes.Color%2A>, <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>, <xref:System.Windows.Ink.DrawingAttributes.Height%2A>, and <xref:System.Windows.Ink.DrawingAttributes.Width%2A> properties on `attributes1` and `attributes2` are set to the same values, the "The DrawingAttributes are equal" message appears.  
+  
+ [!code-csharp[DrawingAttributes#10](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#10)]
+ [!code-vb[DrawingAttributes#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#10)]  
+[!code-csharp[DrawingAttributes#11](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#11)]
+[!code-vb[DrawingAttributes#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Ink.DrawingAttributes first, System.Windows.Ink.DrawingAttributes second);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Ink.DrawingAttributes first, class System.Windows.Ink.DrawingAttributes second) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.op_Inequality(System.Windows.Ink.DrawingAttributes,System.Windows.Ink.DrawingAttributes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="first" Type="System.Windows.Ink.DrawingAttributes" />
+        <Parameter Name="second" Type="System.Windows.Ink.DrawingAttributes" />
+      </Parameters>
+      <Docs>
+        <param name="first">The first <see cref="T:System.Windows.Ink.DrawingAttributes" /> object to compare.</param>
+        <param name="second">The second <see cref="T:System.Windows.Ink.DrawingAttributes" /> object to compare.</param>
+        <summary>Determines whether the specified <see cref="T:System.Windows.Ink.DrawingAttributes" /> objects are not equal.</summary>
+        <returns>
+          <see langword="true" /> if the objects are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two <xref:System.Windows.Ink.DrawingAttributes> objects are not equal if the following properties are not equal:  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.Color%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.FitToCurve%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.Height%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.IgnorePressure%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.IsHighlighter%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A>  
+  
+-   <xref:System.Windows.Ink.DrawingAttributes.Width%2A>  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Ink.DrawingAttributes.op_Inequality%2A> method does not check the custom properties for equality.  
+  
+ The equivalent method for this operator is <xref:System.Windows.Ink.DrawingAttributes.Compare%28System.Windows.Ink.DrawingAttributes%2CSystem.Windows.Ink.DrawingAttributes%29?displayProperty=fullName>  
+  
+## Examples  
+ The following example compares two <xref:System.Windows.Ink.DrawingAttributes> objects for inequality. Because the <xref:System.Windows.Ink.DrawingAttributes.Color%2A>, <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A>, <xref:System.Windows.Ink.DrawingAttributes.Height%2A>, and <xref:System.Windows.Ink.DrawingAttributes.Width%2A> properties on `attributes1` and `attributes2` are set to the same values, the "The DrawingAttributes are equal" message appears.  
+  
+ [!code-csharp[DrawingAttributes#10](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#10)]
+ [!code-vb[DrawingAttributes#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#10)]  
+[!code-csharp[DrawingAttributes#13](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#13)]
+[!code-vb[DrawingAttributes#13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyDataChanged">
+      <MemberSignature Language="C#" Value="public event System.Windows.Ink.PropertyDataChangedEventHandler PropertyDataChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Windows.Ink.PropertyDataChangedEventHandler PropertyDataChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Ink.DrawingAttributes.PropertyDataChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.PropertyDataChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when property data is added or removed from the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example is part of a custom stroke that can draw a three-dimensional effect. The stroke defines and stores a custom property called `Shadowed`, which belongs to <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A>. When the `Shadowed` property changes, the <xref:System.Windows.Ink.DrawingAttributes.PropertyDataChanged> event handler calls the <xref:System.Windows.Ink.Stroke.OnInvalidated%2A> method, which causes the stroke to be redrawn.  
+  
+ [!code-csharp[StrokeCollectionShadow#1](~/samples/snippets/csharp/VS_Snippets_Wpf/StrokeCollectionShadow/CSharp/CustomRenderedStroke.cs#1)]
+ [!code-vb[StrokeCollectionShadow#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StrokeCollectionShadow/VisualBasic/CustomRenderedStroke.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovePropertyData">
+      <MemberSignature Language="C#" Value="public void RemovePropertyData (Guid propertyDataId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemovePropertyData(valuetype System.Guid propertyDataId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributes.RemovePropertyData(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyDataId" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="propertyDataId">The <see cref="T:System.Guid" /> associated with the custom property to remove.</param>
+        <summary>Removes the custom property associated with the specified <see cref="T:System.Guid" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to remove a custom property from a <xref:System.Windows.Ink.DrawingAttributes> object.  
+  
+ [!code-csharp[DrawingAttributes#9](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#9)]
+ [!code-vb[DrawingAttributes#9](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="propertyDataId" /> is not associated with a custom property of the <see cref="T:System.Windows.Ink.DrawingAttributes" /> object.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StylusTip">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.StylusTip StylusTip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Ink.StylusTip StylusTip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.StylusTip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StylusTip</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the shape of the stylus used to draw the <see cref="T:System.Windows.Ink.Stroke" />.</summary>
+        <value>One of the <see cref="T:System.Windows.Ink.StylusShape" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="xamlTextUsage_StylusTip"></a>   
+## XAML Text Usage  
+ This property is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Ink.DrawingAttributes.StylusTip%2A> property. The example assumes that your application has an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`, and two <xref:System.Windows.Ink.DrawingAttributes> objects called `inkDA` and `highlighterDA`. For the complete example, see the <xref:System.Windows.Ink.DrawingAttributes> class overview.  
+  
+ [!code-csharp[DrawingAttributes#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[DrawingAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StylusTipTransform">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Matrix StylusTipTransform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Matrix StylusTipTransform" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.StylusTipTransform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Matrix" /> that specifies the transformation to perform on the stylus' tip.</summary>
+        <value>A <see cref="T:System.Windows.Media.Matrix" /> that specifies the transformation to perform on the stylus' tip.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A> property to rotate, skew, or scale the stylus tip.  
+  
+<a name="xamlTextUsage_StylusTipTransform"></a>   
+## XAML Text Usage  
+ This property is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A> property. The example assumes that your application has an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`, and two <xref:System.Windows.Ink.DrawingAttributes> objects called `inkDA` and `highlighterDA`. For the complete example, see the <xref:System.Windows.Ink.DrawingAttributes> class overview.  
+  
+ [!code-csharp[DrawingAttributes#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[DrawingAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The matrix set to <see cref="P:System.Windows.Ink.DrawingAttributes.StylusTipTransform" /> is not an invertible matrix.  
+  
+ -or-  
+  
+ The <see cref="P:System.Windows.Media.Matrix.OffsetX" /> or <see cref="P:System.Windows.Media.Matrix.OffsetY" /> property of the matrix is not zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public double Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributes.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the stylus used to draw the <see cref="T:System.Windows.Ink.Stroke" />.</summary>
+        <value>The width of the stylus used to draw the <see cref="T:System.Windows.Ink.Stroke" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following factors affect the height and width of a <xref:System.Windows.Ink.Stroke> when it is rendered, but not the value of the <xref:System.Windows.Ink.DrawingAttributes.Width%2A> property.  
+  
+-   The amount of pressure applied to the stylus when the <xref:System.Windows.Ink.Stroke> is drawn.  
+  
+-   The value of the <xref:System.Windows.Ink.DrawingAttributes.StylusTipTransform%2A> property.  
+  
+ If you set the <xref:System.Windows.Ink.DrawingAttributes.Width%2A> property to 0 device independent pixels (DIP), it is changed to 2 DIP.  
+  
+<a name="xamlTextUsage_Width"></a>   
+## XAML Text Usage  
+ This property is not typically used in XAML.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to set the <xref:System.Windows.Ink.DrawingAttributes.Width%2A> property. The example assumes that your application has an <xref:System.Windows.Controls.InkCanvas> called `inkCanvas1`, and two <xref:System.Windows.Ink.DrawingAttributes> objects called `inkDA` and `highlighterDA`. For the complete example, see the <xref:System.Windows.Ink.DrawingAttributes> class overview.  
+  
+ [!code-csharp[DrawingAttributes#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingAttributes/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[DrawingAttributes#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingAttributes/VisualBasic/Window1.xaml.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Windows.Ink.DrawingAttributes.Width" /> property is less than <see cref="F:System.Double.Epsilon" /> or <see cref="F:System.Double.NaN" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

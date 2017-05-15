@@ -1,0 +1,174 @@
+<Type Name="ScrollEventType" FullName="System.Windows.Forms.ScrollEventType">
+  <TypeSignature Language="C#" Value="public enum ScrollEventType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollEventType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollEventType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the type of action used to raise the <see cref="E:System.Windows.Forms.ScrollBar.Scroll" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by <xref:System.Windows.Forms.ScrollEventArgs.Type%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EndScroll">
+      <MemberSignature Language="C#" Value="EndScroll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollEventType EndScroll = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.EndScroll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll box has stopped moving.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="First">
+      <MemberSignature Language="C#" Value="First" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollEventType First = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.First" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll box was moved to the <see cref="P:System.Windows.Forms.ScrollBar.Minimum" /> position.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LargeDecrement">
+      <MemberSignature Language="C#" Value="LargeDecrement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollEventType LargeDecrement = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.LargeDecrement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll box moved a large distance. The user clicked the scroll bar to the left(horizontal) or above(vertical) the scroll box, or pressed the PAGE UP key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LargeIncrement">
+      <MemberSignature Language="C#" Value="LargeIncrement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollEventType LargeIncrement = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.LargeIncrement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll box moved a large distance. The user clicked the scroll bar to the right(horizontal) or below(vertical) the scroll box, or pressed the PAGE DOWN key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Last">
+      <MemberSignature Language="C#" Value="Last" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollEventType Last = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.Last" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll box was moved to the <see cref="P:System.Windows.Forms.ScrollBar.Maximum" /> position.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallDecrement">
+      <MemberSignature Language="C#" Value="SmallDecrement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollEventType SmallDecrement = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.SmallDecrement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll box was moved a small distance. The user clicked the left(horizontal) or top(vertical) scroll arrow, or pressed the UP ARROW key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallIncrement">
+      <MemberSignature Language="C#" Value="SmallIncrement" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollEventType SmallIncrement = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.SmallIncrement" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll box was moved a small distance. The user clicked the right(horizontal) or bottom(vertical) scroll arrow, or pressed the DOWN ARROW key.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbPosition">
+      <MemberSignature Language="C#" Value="ThumbPosition" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollEventType ThumbPosition = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.ThumbPosition" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll box was moved.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbTrack">
+      <MemberSignature Language="C#" Value="ThumbTrack" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ScrollEventType ThumbTrack = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ScrollEventType.ThumbTrack" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ScrollEventType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The scroll box is currently being moved.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

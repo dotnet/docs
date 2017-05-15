@@ -25,10 +25,22 @@ When you call one of the methods that return <xref:System.Collections.Generic.IE
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md).  
   
-<CodeContentPlaceHolder>0</CodeContentPlaceHolder>  
+```csharp  
+XElement po = XElement.Load("PurchaseOrder.xml");  
+IEnumerable<XElement> items =  
+    from el in po.Descendants("ProductName")  
+    select el;  
+foreach(XElement prdName in items)  
+    Console.WriteLine(prdName.Name + ":" + (string) prdName);  
+```  
+  
  This code produces the following output:  
   
-<CodeContentPlaceHolder>1</CodeContentPlaceHolder>  
+```  
+ProductName:Lawnmower  
+ProductName:Baby Monitor  
+```  
+  
  The other methods that return <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement> collections follow the same pattern. Their signatures are similar to <xref:System.Xml.Linq.XContainer.Elements%2A> and <xref:System.Xml.Linq.XContainer.Descendants%2A>. The following is the complete list of methods that have similar method signatures:  
   
 -   <xref:System.Xml.Linq.XNode.Ancestors%2A>  
@@ -50,7 +62,7 @@ When you call one of the methods that return <xref:System.Collections.Generic.IE
   
  This example uses the following XML document: [Sample XML File: Typical Purchase Order in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md).  
   
-```cs  
+```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
 XElement po = XElement.Load("PurchaseOrderInNamespace.xml");  
 IEnumerable<XElement> items =  

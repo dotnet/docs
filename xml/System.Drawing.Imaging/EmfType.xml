@@ -1,0 +1,73 @@
+<Type Name="EmfType" FullName="System.Drawing.Imaging.EmfType">
+  <TypeSignature Language="C#" Value="public enum EmfType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EmfType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.EmfType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the nature of the records that are placed in an Enhanced Metafile (EMF) file. This enumeration is used by several constructors in the <see cref="T:System.Drawing.Imaging.Metafile" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GDI+ uses the enhanced Windows metafile image format (EMF). The EMF format contains a comment mechanism for embedding data within the metafile. This comment mechanism is used to embed GDI+ records within an EMF file. EMF files that contain GDI+ data are called EMF+ files. Applications that do not recognize the comment data skip the comment records and render the records they do understand. If the EMF+ file is played back by GDI+, then the GDI+ records are used to render the metafile; otherwise, the GDI records (if present) are used.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EmfOnly">
+      <MemberSignature Language="C#" Value="EmfOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EmfType EmfOnly = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EmfType.EmfOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.EmfType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that all the records in the metafile are EMF records, which can be displayed by GDI or GDI+.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EmfPlusDual">
+      <MemberSignature Language="C#" Value="EmfPlusDual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EmfType EmfPlusDual = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EmfType.EmfPlusDual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.EmfType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that all EMF+ records in the metafile are associated with an alternate EMF record. Metafiles of type <see cref="F:System.Drawing.Imaging.EmfType.EmfPlusDual" /> can be displayed by GDI or by GDI+.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EmfPlusOnly">
+      <MemberSignature Language="C#" Value="EmfPlusOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.EmfType EmfPlusOnly = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.EmfType.EmfPlusOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Imaging.EmfType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that all the records in the metafile are EMF+ records, which can be displayed by GDI+ but not by GDI.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

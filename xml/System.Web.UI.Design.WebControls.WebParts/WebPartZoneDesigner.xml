@@ -1,0 +1,228 @@
+<Type Name="WebPartZoneDesigner" FullName="System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner">
+  <TypeSignature Language="C#" Value="public class WebPartZoneDesigner : System.Web.UI.Design.WebControls.WebParts.WebPartZoneBaseDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebPartZoneDesigner extends System.Web.UI.Design.WebControls.WebParts.WebPartZoneBaseDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.WebControls.WebParts.WebPartZoneBaseDesigner</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides design-time support for <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" /> controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner> provides design-time rendering of <xref:System.Web.UI.WebControls.WebParts.WebPartZone> controls. It includes support for editable designer regions, templates, and auto-formats to allow a page developer to easily alter the appearance of the control.  
+  
+ The public <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.AutoFormats%2A> and <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.TemplateGroups%2A> collections provide quick formatting options for the page developer and can be safely overridden to change the default appearance of a custom control.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>If you want to override the <see cref="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml" /> method to change the design-time appearance of your custom control, make sure to use <see cref="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" /> and invoke the parent method before adding custom code, because that is the method that creates the rendering for the regions in the control. If you override <see cref="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml" /> and do not call <see cref="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" /> somewhere in the method, your designer regions will not be rendered.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebPartZoneDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoFormats">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.AutoFormats" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.DesignerAutoFormatCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of predefined automatic formatting schemes to display in the **Auto Format** dialog box for the associated control at design time.</summary>
+        <value>A pre-specified <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> with a default WebPartZone scheme.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.AutoFormats%2A> property overrides its base implementation to return a collection that is specific to the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeHtml">
+      <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the markup that is used to represent the control at design time by calling the <see cref="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" /> method with a null argument.</summary>
+        <returns>A method call to <see cref="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" /> with a null argument as the parameter.</returns>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding this method, you must call <see cref="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" /> with a <see cref="T:System.Web.UI.Design.DesignerRegionCollection" /> or <see langword="null" /> as an argument so that designer regions build correctly.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDesignTimeHtml">
+      <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml (System.Web.UI.Design.DesignerRegionCollection regions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml(class System.Web.UI.Design.DesignerRegionCollection regions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="regions" Type="System.Web.UI.Design.DesignerRegionCollection" />
+      </Parameters>
+      <Docs>
+        <param name="regions">The <see cref="T:System.Web.UI.Design.DesignerRegionCollection" />, if any, associated with the control.</param>
+        <summary>Creates an <see cref="T:System.Web.UI.Design.EditableDesignerRegion" /> in the designer before generating the design-time HTML of the control.</summary>
+        <returns>A <see cref="T:System.String" /> representing the design-time HTML of the control.</returns>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>When overriding this method, you must call the base method for designer regions to build correctly.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEditableDesignerRegionContent">
+      <MemberSignature Language="C#" Value="public override string GetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="System.Web.UI.Design.EditableDesignerRegion" />
+      </Parameters>
+      <Docs>
+        <param name="region">The specified <see cref="T:System.Web.UI.Design.EditableDesignerRegion" />.</param>
+        <summary>Gets the content for the specified <see cref="T:System.Web.UI.Design.EditableDesignerRegion" />.</summary>
+        <returns>A <see cref="T:System.String" /> that represents the persisted form of the designer region content.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEmptyDesignTimeHtml">
+      <MemberSignature Language="C#" Value="protected override string GetEmptyDesignTimeHtml ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetEmptyDesignTimeHtml() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.GetEmptyDesignTimeHtml" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides an empty string ("") if there is no design-time HTML for the associated control.</summary>
+        <returns>An empty string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" /> control.</param>
+        <summary>Attaches the designer to the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" /> control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEditableDesignerRegionContent">
+      <MemberSignature Language="C#" Value="public override void SetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region, string content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region, string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="region" Type="System.Web.UI.Design.EditableDesignerRegion" />
+        <Parameter Name="content" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="region">The specified <see cref="T:System.Web.UI.Design.EditableDesignerRegion" />.</param>
+        <param name="content">A <see cref="T:System.String" /> that represents the content for the specified region.</param>
+        <summary>Sets the content of the specified <see cref="T:System.Web.UI.Design.EditableDesignerRegion" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateGroups">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.Design.TemplateGroupCollection TemplateGroups { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateGroupCollection TemplateGroups" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.TemplateGroups" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.TemplateGroupCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of template groups, each containing one or more template definitions.</summary>
+        <value>A pre-specified <see cref="T:System.Web.UI.Design.TemplateGroupCollection" /> object with default settings for a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZone" /> environment.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.WebParts.WebPartZoneDesigner.TemplateGroups%2A> property overrides its base implementation to returns a collection that is specific to the <xref:System.Web.UI.WebControls.WebParts.WebPartZone> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

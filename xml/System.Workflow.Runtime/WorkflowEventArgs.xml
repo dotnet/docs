@@ -1,0 +1,75 @@
+<Type Name="WorkflowEventArgs" FullName="System.Workflow.Runtime.WorkflowEventArgs">
+  <TypeSignature Language="C#" Value="public class WorkflowEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for workflow events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Workflow events are associated with a workflow instance. A <xref:System.Workflow.Runtime.WorkflowEventArgs> contains the <xref:System.Workflow.Runtime.WorkflowInstance> associated with the workflow event. A <xref:System.Workflow.Runtime.WorkflowEventArgs> or an object that derives from the <xref:System.Workflow.Runtime.WorkflowEventArgs> class provides the data for all of the workflow events in the <xref:System.Workflow.Runtime.WorkflowRuntime> class. <xref:System.Workflow.Runtime.WorkflowEventArgs> is the base class for <xref:System.Workflow.Runtime.WorkflowCompletedEventArgs>, <xref:System.Workflow.Runtime.WorkflowSuspendedEventArgs>, and <xref:System.Workflow.Runtime.WorkflowTerminatedEventArgs>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to obtain a <xref:System.Workflow.Runtime.WorkflowInstance> object using the <xref:System.Workflow.Runtime.WorkflowEventArgs.WorkflowInstance%2A> property when an event handler method is called. When the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowIdled> event occurs, the `OnWorkflowIdled` method defined in this example is called. It determines which workflow is idled using the <xref:System.Workflow.Runtime.WorkflowEventArgs.WorkflowInstance%2A> property and then gets a collection of queued items for the workflow instance by calling the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A> method. The code iterates over the collection to determine which activity is waiting for the event that idled the workflow. It then sends an exception to the workflow queue using the <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A> method along with the name of the event queue item.  
+  
+ This code example is part of the Canceling a Workflow SDK Sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/en-us/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
+  
+ [!code-csharp[WF_Samples#261](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#261)]
+ [!code-vb[WF_Samples#261](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#261)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="WorkflowInstance">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowInstance WorkflowInstance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.WorkflowInstance WorkflowInstance" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowEventArgs.WorkflowInstance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.WorkflowInstance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the workflow instance associated with the workflow event.</summary>
+        <value>The <see cref="T:System.Workflow.Runtime.WorkflowInstance" /> associated with the workflow event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to obtain a <xref:System.Workflow.Runtime.WorkflowInstance> object using the <xref:System.Workflow.Runtime.WorkflowEventArgs.WorkflowInstance%2A> property when an event handler method is called. When the <xref:System.Workflow.Runtime.WorkflowRuntime.WorkflowIdled> event occurs, the `OnWorkflowIdled` method defined in this example is called. It determines which workflow is idled using the <xref:System.Workflow.Runtime.WorkflowEventArgs.WorkflowInstance%2A> property and then gets a collection of queued items for the workflow instance by calling the <xref:System.Workflow.Runtime.WorkflowInstance.GetWorkflowQueueData%2A> method. The code iterates over the collection to determine which activity is waiting for the event that idled the workflow. It then sends an exception to the workflow queue using the <xref:System.Workflow.Runtime.WorkflowInstance.EnqueueItem%2A> method along with the name of the event queue item.  
+  
+ This code example is part of the Canceling a Workflow SDK Sample from the Program.cs file. For more information, see [Canceling a Workflow](http://msdn.microsoft.com/en-us/d5077f56-a78b-48e7-825c-f6c77c8e54fb).  
+  
+ [!code-csharp[WF_Samples#261](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#261)]
+ [!code-vb[WF_Samples#261](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#261)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

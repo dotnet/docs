@@ -1,0 +1,135 @@
+<Type Name="TrustNotGrantedException" FullName="System.Deployment.Application.TrustNotGrantedException">
+  <TypeSignature Language="C#" Value="public class TrustNotGrantedException : System.Deployment.Application.DeploymentException" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TrustNotGrantedException extends System.Deployment.Application.DeploymentException" />
+  <TypeSignature Language="DocId" Value="T:System.Deployment.Application.TrustNotGrantedException" />
+  <AssemblyInfo>
+    <AssemblyName>System.Deployment</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Deployment.Application.DeploymentException</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Indicates that the application does not have the appropriate level of trust to run on the local computer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications are given a level of trust on client computers that prevents them from engaging in potentially malicious activity, such as deleting data from the hard drive or accessing the network. A [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application can use either permission elevation or Trusted Application Deployment to request a higher level of trust:  
+  
+-   Permission elevation asks the user to grant the application a higher level of security.  
+  
+-   Trusted Application Deployment matches the digital signature of the [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] application against a list of trusted publishers on the local machine.  
+  
+ <xref:System.Deployment.Application.TrustNotGrantedException> will be thrown if:  
+  
+-   The application uses permission elevation and the user denies the request for elevated trust; or  
+  
+ The application uses Trusted Application Deployment and the digital certificate used to sign the application is not listed as a trusted publisher on the local machine.If you have deployed an update to an application, and the update uses more permissions than the previous version, and [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] throws a <xref:System.Deployment.Application.TrustNotGrantedException>, the new version will not install.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrustNotGrantedException ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.TrustNotGrantedException.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.TrustNotGrantedException" /> class with a system-supplied message that describes the error.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor initializes the <xref:System.Exception.Message%2A> property of the new instance to a system-supplied message that describes the error, such as "DefaultMessageDisplayedByParameterlessCtorWriterMustSupply" This message takes into account the current system culture.  
+  
+ The following table shows the initial property values for an instance of <xref:System.InsufficientMemoryException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The localized error message string.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrustNotGrantedException (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.TrustNotGrantedException.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.TrustNotGrantedException" /> class with a specified message that describes the error.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for an instance of <xref:System.Deployment.Application.TrustNotGrantedException>.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.Exception.InnerException%2A>|`null`.|  
+|<xref:System.Exception.Message%2A>|The error message string specified in `message`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TrustNotGrantedException (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.TrustNotGrantedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">The object that holds the serialized object data.</param>
+        <param name="streamingContext">The contextual information about the source or destination.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.TrustNotGrantedException" /> class with serialized data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TrustNotGrantedException (string message, Exception innerException);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Deployment.Application.TrustNotGrantedException.#ctor(System.String,System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="innerException" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message that describes the exception. The caller of this constructor is required to ensure that this string has been localized for the current system culture.</param>
+        <param name="innerException">The exception that is the cause of the current exception. If the <c>innerException</c> parameter is not <see langword="null" />, the current exception is raised in a <see langword="catch" /> block that handles the inner exception.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Deployment.Application.TrustNotGrantedException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

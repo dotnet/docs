@@ -1,0 +1,409 @@
+<Type Name="MarkupProperty" FullName="System.Windows.Markup.Primitives.MarkupProperty">
+  <TypeSignature Language="C#" Value="public abstract class MarkupProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MarkupProperty extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Primitives.MarkupProperty" />
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Abstract class that provides a property description to be used while writing to markup which encapsulates access to properties and their values.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A property is either represented as a string or a list of items.  
+  
+ If the property can be represented as a string, <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `false`.  
+  
+ If <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `true`, the property is a list of items.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public abstract System.ComponentModel.AttributeCollection Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.AttributeCollection Attributes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.Attributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the attributes associated with this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" />.</summary>
+        <value>The collection of attributes.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DependencyProperty">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.DependencyProperty DependencyProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyProperty DependencyProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.Windows.DependencyProperty" /> identifier for the markup property if the property is implemented as a dependency property</summary>
+        <value>The dependency property identifier.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default behavior returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAttached">
+      <MemberSignature Language="C#" Value="public virtual bool IsAttached { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAttached" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsAttached" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" /> is an attached <see cref="T:System.Windows.DependencyProperty" />.</summary>
+        <value>
+          <see langword="true" /> if the property is an attached <see cref="T:System.Windows.DependencyProperty" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default behavior is to return `false`.  
+  
+ When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsAttached%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> is not `null` and <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> can be `null`, but is not required to be.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsComposite">
+      <MemberSignature Language="C#" Value="public virtual bool IsComposite { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsComposite" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsComposite" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" /> is a composite property.</summary>
+        <value>
+          <see langword="true" /> is this property is a composite property; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default behavior is to return `false`.  
+  
+ If <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `false`, the property can be represented as a string and <xref:System.Windows.Markup.Primitives.MarkupProperty.Value%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.StringValue%2A> are valid to use.  
+  
+ If <xref:System.Windows.Markup.Primitives.MarkupProperty.IsComposite%2A> is `true`, the property is one or more items and <xref:System.Windows.Markup.Primitives.MarkupProperty.Items%2A> is valid to use.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConstructorArgument">
+      <MemberSignature Language="C#" Value="public virtual bool IsConstructorArgument { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConstructorArgument" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" /> represents a constructor argument.</summary>
+        <value>
+          <see langword="true" /> if this property represents a constructor argument; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default behavior is return `false`.  
+  
+ When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are both `null`.  
+  
+ XAML only uses <xref:System.Windows.Markup.Primitives.MarkupProperty.IsConstructorArgument%2A> for representing the constructor arguments of instances of <xref:System.Windows.Markup.MarkupExtension>. See [Markup Extensions and WPF XAML](~/docs/framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsContent">
+      <MemberSignature Language="C#" Value="public virtual bool IsContent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsContent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" /> represents direct content of a collection.</summary>
+        <value>
+          <see langword="true" /> if the property represents direct content; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default behavior is to return `false`.  
+  
+ When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsContent%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are both `null`.  
+  
+ Dictionaries are included when determining whether this <xref:System.Windows.Markup.Primitives.MarkupProperty> represents direct content.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsKey">
+      <MemberSignature Language="C#" Value="public virtual bool IsKey { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" /> represents the key used by the <see cref="T:System.Windows.Markup.Primitives.MarkupObject" /> to store the item in a dictionary.</summary>
+        <value>
+          <see langword="true" /> if this property represents a key; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default behavior is to return `false`.  
+  
+ When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsKey%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are `null`.  
+  
+ XAML will use the identified property as an `x:Key` attribute.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValueAsString">
+      <MemberSignature Language="C#" Value="public virtual bool IsValueAsString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValueAsString" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.IsValueAsString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, determines whether this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" /> represents text which is passed to a type converter to create an instance of the property or if a constructor should be used.</summary>
+        <value>
+          <see langword="true" />, if this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" /> represents a string; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default behavior is to return `false.`  
+  
+ When <xref:System.Windows.Markup.Primitives.MarkupProperty.IsValueAsString%2A> is `true`, <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> are both `null`.  
+  
+ If the property is provided through <xref:System.Windows.Markup.Primitives.MarkupObject.Properties%2A> and <xref:System.Windows.Markup.Primitives.MarkupProperty.IsValueAsString%2A> is `true`, it will be the only property the type will provide.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Items">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.Windows.Markup.Primitives.MarkupObject&gt; Items { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Markup.Primitives.MarkupObject&gt; Items" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.Items" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Windows.Markup.Primitives.MarkupObject&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the items that make up the value of this property.</summary>
+        <value>The items that make up the value of this property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the property is not an enumeration, only one item will be returned.  
+  
+ If the property is an enumeration, or enumerable, all the items will be returned.  
+  
+ At least one item is always returned, because <xref:System.Windows.Markup.Primitives.MarkupObject> will not create a <xref:System.Windows.Markup.Primitives.MarkupProperty> for properties with no items.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets a name that is used for diagnostics and error reporting.</summary>
+        <value>The identifier property name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A serializer should not use this value. It should use the <xref:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor%2A> and/or <xref:System.Windows.Markup.Primitives.MarkupProperty.DependencyProperty%2A> instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyDescriptor">
+      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptor PropertyDescriptor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptor PropertyDescriptor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.PropertyDescriptor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the <see cref="T:System.ComponentModel.PropertyDescriptor" /> for the markup property.</summary>
+        <value>The property descriptor.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default behavior returns `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyType">
+      <MemberSignature Language="C#" Value="public abstract Type PropertyType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.PropertyType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the CLR type of the property.</summary>
+        <value>The CLR type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringValue">
+      <MemberSignature Language="C#" Value="public abstract string StringValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StringValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.StringValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the string value of this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" />.</summary>
+        <value>The string value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeReferences">
+      <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;Type&gt; TypeReferences { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; TypeReferences" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.TypeReferences" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the set of types that this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" /> will reference when it serializes its value as a string.</summary>
+        <value>The set of types.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.Primitives.MarkupProperty.TypeReferences%2A> enables a serializer to ensure that the de-serializer has enough information to convert references to these type from the string representations.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public abstract object Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.Primitives.MarkupProperty.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When overridden in a derived class, gets the current value of this <see cref="T:System.Windows.Markup.Primitives.MarkupProperty" />.</summary>
+        <value>The current value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

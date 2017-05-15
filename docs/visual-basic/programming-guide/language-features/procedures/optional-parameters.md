@@ -23,8 +23,8 @@ helpviewer_keywords:
   - "optional arguments, and named arguments"
 ms.assetid: 398d2845-1069-4e94-b934-a73b545c8b87
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

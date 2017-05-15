@@ -1,0 +1,46 @@
+<Type Name="MessagePropertyDescription" FullName="System.ServiceModel.Description.MessagePropertyDescription">
+  <TypeSignature Language="C#" Value="public class MessagePropertyDescription : System.ServiceModel.Description.MessagePartDescription" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagePropertyDescription extends System.ServiceModel.Description.MessagePartDescription" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MessagePropertyDescription" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Description.MessagePartDescription</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a message property specified by the <see cref="T:System.ServiceModel.MessagePropertyAttribute" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Description.MessagePropertyDescription> class represents message properties specified in a message contract by the use of the <xref:System.ServiceModel.MessagePropertyAttribute?displayProperty=fullName>. Message properties are used to place information on the message that can be used by other objects further on in the message pipeline but that are not serialized with the message.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MessagePropertyDescription (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MessagePropertyDescription.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.MessagePropertyDescription" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

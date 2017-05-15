@@ -1,0 +1,250 @@
+<Type Name="Int64KeyFrame" FullName="System.Windows.Media.Animation.Int64KeyFrame">
+  <TypeSignature Language="C#" Value="public abstract class Int64KeyFrame : System.Windows.Freezable, System.Windows.Media.Animation.IKeyFrame" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Int64KeyFrame extends System.Windows.Freezable implements class System.Windows.Media.Animation.IKeyFrame" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.Int64KeyFrame" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Freezable</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Media.Animation.IKeyFrame</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Abstract class that, when implemented, defines an animation segment with its own target value and interpolation method for a <see cref="T:System.Windows.Media.Animation.Int64AnimationUsingKeyFrames" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Int64KeyFrame ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Int64KeyFrame.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.Int64KeyFrame" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Int64KeyFrame (long value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Int64KeyFrame.#ctor(System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="P:System.Windows.Media.Animation.Int64KeyFrame.Value" /> of the new <see cref="T:System.Windows.Media.Animation.Int64KeyFrame" /> instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.Int64KeyFrame" /> class that has the specified target <see cref="P:System.Windows.Media.Animation.Int64KeyFrame.Value" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Int64KeyFrame (long value, System.Windows.Media.Animation.KeyTime keyTime);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(int64 value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Int64KeyFrame.#ctor(System.Int64,System.Windows.Media.Animation.KeyTime)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="System.Int64" />
+        <Parameter Name="keyTime" Type="System.Windows.Media.Animation.KeyTime" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="P:System.Windows.Media.Animation.Int64KeyFrame.Value" /> of the new <see cref="T:System.Windows.Media.Animation.Int64KeyFrame" /> instance.</param>
+        <param name="keyTime">The <see cref="P:System.Windows.Media.Animation.Int64KeyFrame.KeyTime" /> of the new <see cref="T:System.Windows.Media.Animation.Int64KeyFrame" /> instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.Int64KeyFrame" /> class that has the specified target <see cref="P:System.Windows.Media.Animation.Int64KeyFrame.Value" /> and <see cref="P:System.Windows.Media.Animation.Int64KeyFrame.KeyTime" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InterpolateValue">
+      <MemberSignature Language="C#" Value="public long InterpolateValue (long baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 InterpolateValue(int64 baseValue, float64 keyFrameProgress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Int64KeyFrame.InterpolateValue(System.Int64,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseValue" Type="System.Int64" />
+        <Parameter Name="keyFrameProgress" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="baseValue">The value to animate from.</param>
+        <param name="keyFrameProgress">A value between 0.0 and 1.0, inclusive, that specifies the percentage of time that has elapsed for this key frame.</param>
+        <summary>Returns the interpolated value of a specific key frame at the progress increment provided.</summary>
+        <returns>The output value of this key frame given the specified base value and progress.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The base value is typically the initial value of the property being animated or the <xref:System.Windows.Media.Animation.BooleanKeyFrame.Value%2A> of the previous key frame.  
+  
+ Most implementations will return the value of `baseValue` when `keyFrameProgress` is 0.0.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Occurs if <paramref name="keyFrameProgress" /> is not between 0.0 and 1.0, inclusive.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InterpolateValueCore">
+      <MemberSignature Language="C#" Value="protected abstract long InterpolateValueCore (long baseValue, double keyFrameProgress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int64 InterpolateValueCore(int64 baseValue, float64 keyFrameProgress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Int64KeyFrame.InterpolateValueCore(System.Int64,System.Double)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseValue" Type="System.Int64" />
+        <Parameter Name="keyFrameProgress" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="baseValue">The value to animate from; typically the value of the previous key frame.</param>
+        <param name="keyFrameProgress">A value between 0.0 and 1.0, inclusive, that specifies the percentage of time that has elapsed for this key frame.</param>
+        <summary>Calculates the value of a key frame at the progress increment provided.</summary>
+        <returns>The output value of this key frame given the specified base value and progress.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTime">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.KeyTime KeyTime { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Animation.KeyTime KeyTime" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Int64KeyFrame.KeyTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.KeyTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the time at which the key frame's target <see cref="P:System.Windows.Media.Animation.Int64KeyFrame.Value" /> should be reached.</summary>
+        <value>The time at which the key frame's current value should be equal to its <see cref="P:System.Windows.Media.Animation.Int64KeyFrame.Value" /> property. The default value is <see cref="P:System.Windows.Media.Animation.KeyTime.Uniform" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_KeyTime"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.Int64KeyFrame.KeyTimeProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyTimeProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeyTimeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeyTimeProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Int64KeyFrame.KeyTimeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.Int64KeyFrame.KeyTime" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Windows.Media.Animation.IKeyFrame.Value">
+      <MemberSignature Language="C#" Value="object System.Windows.Media.Animation.IKeyFrame.Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object System.Windows.Media.Animation.IKeyFrame.Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Int64KeyFrame.System#Windows#Media#Animation#IKeyFrame#Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value associated with a <see cref="T:System.Windows.Media.Animation.KeyTime" /> instance.</summary>
+        <value>The current value for this property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public long Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Value" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Int64KeyFrame.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key frame's target value.</summary>
+        <value>The key frame's target value, which is the value of this key frame at its specified <see cref="P:System.Windows.Media.Animation.Int64KeyFrame.KeyTime" />. The default value is <c>0</c>.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+<a name="dependencyPropertyInfo_Value"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.Animation.Int64KeyFrame.ValueProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ValueProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.Int64KeyFrame.ValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.Animation.Int64KeyFrame.Value" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

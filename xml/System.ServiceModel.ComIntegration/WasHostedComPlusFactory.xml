@@ -1,0 +1,65 @@
+<Type Name="WasHostedComPlusFactory" FullName="System.ServiceModel.ComIntegration.WasHostedComPlusFactory">
+  <TypeSignature Language="C#" Value="public sealed class WasHostedComPlusFactory : System.ServiceModel.Activation.ServiceHostFactoryBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WasHostedComPlusFactory extends System.ServiceModel.Activation.ServiceHostFactoryBase" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.ComIntegration.WasHostedComPlusFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Activation.ServiceHostFactoryBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Creates a service host for a Web-hosted COM+ component.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This type supports the [!INCLUDE[indigo2](~/includes/indigo2-md.md)] hosting infrastructure and is not intended to be used directly from your code.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WasHostedComPlusFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.WasHostedComPlusFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ComIntegration.WasHostedComPlusFactory" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateServiceHost">
+      <MemberSignature Language="C#" Value="public override System.ServiceModel.ServiceHostBase CreateServiceHost (string constructorString, Uri[] baseAddresses);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.ServiceHostBase CreateServiceHost(string constructorString, class System.Uri[] baseAddresses) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.WasHostedComPlusFactory.CreateServiceHost(System.String,System.Uri[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.ServiceHostBase</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constructorString" Type="System.String" />
+        <Parameter Name="baseAddresses" Type="System.Uri[]" />
+      </Parameters>
+      <Docs>
+        <param name="constructorString">A string that contains the Web host parameters.</param>
+        <param name="baseAddresses">An array of URIs for which the <see cref="T:System.ServiceModel.ServiceHostBase" /> object is to be created.</param>
+        <summary>Creates a service host for the specified URI.</summary>
+        <returns>A <see cref="T:System.ServiceModel.ServiceHostBase" /> object that contains the service host for the specified URI.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

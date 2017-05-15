@@ -1,0 +1,487 @@
+<Type Name="ContractReference" FullName="System.Web.Services.Discovery.ContractReference">
+  <TypeSignature Language="C#" Value="public class ContractReference : System.Web.Services.Discovery.DiscoveryReference" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContractReference extends System.Web.Services.Discovery.DiscoveryReference" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.ContractReference" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Discovery.DiscoveryReference</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Xml.Serialization.XmlRoot("contractRef", IsNullable=true, Namespace="http://schemas.xmlsoap.org/disco/scl/")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a reference in a discovery document to a service description.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XML Web services discovery involves discovering the available Web Services given an URL. The URL usually points to a discovery document, which typically has a.disco file name extension. Within a discovery document are references to information about the existance of XML Web services. These references can refer to service descriptions, XML Schema Definition language (XSD) schemas or other discovery documents. This class represents a reference to a Service Description.  
+  
+ Within a discovery document, a reference to a Service Description is contained within a `contractRef` XML element. The `contractRef` XML element has two attributes: `ref` and `docRef`. The `contractRef` element must have an XML namespace matching the <xref:System.Web.Services.Discovery.ContractReference.Namespace> constant, whereas the `ref` and `docRef` attributes are placed in the <xref:System.Web.Services.Discovery.ContractReference.Ref%2A> and <xref:System.Web.Services.Discovery.ContractReference.DocRef%2A> properties.  
+  
+   
+  
+## Examples  
+ [!code-cpp[ContractReference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference/CPP/contractreference.cpp#1)]
+ [!code-csharp[ContractReference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference/CS/contractreference.cs#1)]
+ [!code-vb[ContractReference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference/VB/contractreference.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContractReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.ContractReference" /> class using default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.Services.Discovery.ContractReference> class using default values.  
+  
+   
+  
+## Examples  
+ The following code example creates a new instance of <xref:System.Web.Services.Discovery.ContractReference>.  
+  
+ [!code-cpp[ContractReference_Reference#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference_Reference/CPP/contractreference_ref.cpp#1)]
+ [!code-csharp[ContractReference_Reference#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference_Reference/CS/contractreference_ref.cs#1)]
+ [!code-vb[ContractReference_Reference#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference_Reference/VB/contractreference_ref.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContractReference (string href);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string href) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="href" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="href">The URL for a Sevice Descritpion. Initializes the <see cref="P:System.Web.Services.Discovery.ContractReference.Ref" /> property value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.ContractReference" /> class using the supplied reference to a Service Description.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.Services.Discovery.ContractReference> class using the specified reference name.  
+  
+ The following table shows initial property values for an instance of <xref:System.Web.Services.Discovery.ContractReference>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|`Ref`|The `href` parameter that represents the reference name.|  
+  
+   
+  
+## Examples  
+ [!code-cpp[ContractReference_ctor1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference_ctor1/CPP/contractreference_ctor1.cpp#1)]
+ [!code-csharp[ContractReference_ctor1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference_ctor1/CS/contractreference_ctor1.cs#1)]
+ [!code-vb[ContractReference_ctor1#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference_ctor1/VB/contractreference_ctor1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContractReference (string href, string docRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string href, string docRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="href" Type="System.String" />
+        <Parameter Name="docRef" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="href">The URL for a service description. Initializes the <see cref="P:System.Web.Services.Discovery.ContractReference.Ref" /> property value.</param>
+        <param name="docRef">The URL for a XML Web service implementing the service description at <c>href</c>. Initializes the <see cref="P:System.Web.Services.Discovery.ContractReference.DocRef" /> property value.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.ContractReference" /> class using the supplied references to a service description and a XML Web service implementing the service description.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.Services.Discovery.ContractReference> class using the specified reference name and `docRef`.  
+  
+ The following table shows initial property values for an instance of <xref:System.Web.Services.Discovery.ContractReference>.  
+  
+|Property|Initial Value|  
+|--------------|-------------------|  
+|`Ref`|The `href` parameter that represents the reference name.|  
+|`DocRef`|The `docRef` parameter that represents the DocRef.|  
+  
+   
+  
+## Examples  
+ [!code-cpp[ContractReference_ctor2#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference_ctor2/CPP/contractreference_ctor2.cpp#1)]
+ [!code-csharp[ContractReference_ctor2#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference_ctor2/CS/contractreference_ctor2.cs#1)]
+ [!code-vb[ContractReference_ctor2#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference_ctor2/VB/contractreference_ctor2.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contract">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceDescription Contract { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescription Contract" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ContractReference.Contract" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescription</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Web.Services.Description.ServiceDescription" /> object representing the service description.</summary>
+        <value>A <see cref="T:System.Web.Services.Description.ServiceDescription" /> object representing the service description.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[ContractReference_Contract#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference_Contract/CPP/contractreference_contract.cpp#1)]
+ [!code-csharp[ContractReference_Contract#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference_Contract/CS/contractreference_contract.cs#1)]
+ [!code-vb[ContractReference_Contract#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference_Contract/VB/contractreference_contract.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" /> property is <see langword="null" />.</exception>
+        <exception cref="T:System.Exception">The <see cref="P:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents" /> property of <see cref="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" /> does not contain a discovery document with an URL of <see cref="P:System.Web.Services.Discovery.ContractReference.Url" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultFilename">
+      <MemberSignature Language="C#" Value="public override string DefaultFilename { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DefaultFilename" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ContractReference.DefaultFilename" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the file to use by default when saving the referenced service description.</summary>
+        <value>Name of the default file to use when saving the referenced service description to a file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[ContractReference_DefaultFileName#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference_DefaultFileName/CPP/contractreference_defaultfilename.cpp#1)]
+ [!code-csharp[ContractReference_DefaultFileName#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference_DefaultFileName/CS/contractreference_defaultfilename.cs#1)]
+ [!code-vb[ContractReference_DefaultFileName#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference_DefaultFileName/VB/contractreference_defaultfilename.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocRef">
+      <MemberSignature Language="C#" Value="public string DocRef { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DocRef" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ContractReference.DocRef" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("docRef")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the URL for a XML Web service implementing the service description referenced in the <see cref="P:System.Web.Services.Discovery.ContractReference.Ref" /> property.</summary>
+        <value>The URL for a XML Web service implementing the Service Description referenced in the <see cref="P:System.Web.Services.Discovery.ContractReference.Ref" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Within a discovery document, a reference to a Service Description is contained within a `contractRef` XML element. The `contractRef` XML element has two attributes described in the following table.  
+  
+|Attribute|Description|  
+|---------------|-----------------|  
+|ref|The URL for the service description. The <xref:System.Web.Services.Discovery.ContractReference.Ref%2A> property represents the value of the `ref` attribute.|  
+|docRef|The URL for a XML Web service implementing the service description specified by the `ref` attribute. The <xref:System.Web.Services.Discovery.ContractReference.DocRef%2A> property represents the value of the `docRef` attribute.|  
+  
+   
+  
+## Examples  
+ The following code example sets the <xref:System.Web.Services.Discovery.ContractReference.DocRef%2A> property of <xref:System.Web.Services.Discovery.ContractReference>.  
+  
+ [!code-cpp[ContractReference_Reference#3](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference_Reference/CPP/contractreference_ref.cpp#3)]
+ [!code-csharp[ContractReference_Reference#3](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference_Reference/CS/contractreference_ref.cs#3)]
+ [!code-vb[ContractReference_Reference#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference_Reference/VB/contractreference_ref.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public const string Namespace;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Discovery.ContractReference.Namespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>XML namespace for service description references in discovery documents.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Within a discovery document, a reference to a Service Description is contained within a `contractRef` XML element, which is a part of the XML namespace specified in the <xref:System.Web.Services.Discovery.ContractReference.Namespace> constant.  
+  
+   
+  
+## Examples  
+ The following code example outputs to the console the value of the <xref:System.Web.Services.Discovery.ContractReference.Namespace> constant.  
+  
+ [!code-cpp[ContractReference_Reference#4](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference_Reference/CPP/contractreference_ref.cpp#4)]
+ [!code-csharp[ContractReference_Reference#4](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference_Reference/CS/contractreference_ref.cs#4)]
+ [!code-vb[ContractReference_Reference#4](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference_Reference/VB/contractreference_ref.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadDocument">
+      <MemberSignature Language="C#" Value="public override object ReadDocument (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadDocument(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.ReadDocument(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">
+          <see cref="T:System.IO.Stream" /> containing the service description.</param>
+        <summary>Reads the service description from the passed <see cref="T:System.IO.Stream" /> and returns the service description.</summary>
+        <returns>A <see cref="T:System.Web.Services.Description.ServiceDescription" /> containing the contents of the referenced service description.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[ContractReference_ReadDocument#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference_ReadDocument/CPP/contractreference_readdocument.cpp#1)]
+ [!code-csharp[ContractReference_ReadDocument#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference_ReadDocument/CS/contractreference_readdocument.cs#1)]
+ [!code-vb[ContractReference_ReadDocument#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference_ReadDocument/VB/contractreference_readdocument.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ref">
+      <MemberSignature Language="C#" Value="public string Ref { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Ref" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ContractReference.Ref" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("ref")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to the referenced service description.</summary>
+        <value>The URL to the referenced service description.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Within a discovery document, a reference to a service description is contained within a `contractRef` XML element. The `contractRef` XML element has two attributes described in the following table.  
+  
+|Attribute|Description|  
+|---------------|-----------------|  
+|ref|The URL for the service description.The <xref:System.Web.Services.Discovery.ContractReference.Ref%2A> property represents the value of the `ref` attribute.|  
+|docRef|The URL for a XML Web service implementing the service description specified by the `ref` attribute. The <xref:System.Web.Services.Discovery.ContractReference.DocRef%2A> property represents the value of the `docRef` attribute.|  
+  
+   
+  
+## Examples  
+ The following code example sets the <xref:System.Web.Services.Discovery.ContractReference.Ref%2A> property of a <xref:System.Web.Services.Discovery.ContractReference>.  
+  
+ [!code-cpp[ContractReference_Reference#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference_Reference/CPP/contractreference_ref.cpp#2)]
+ [!code-csharp[ContractReference_Reference#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference_Reference/CS/contractreference_ref.cs#2)]
+ [!code-vb[ContractReference_Reference#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference_Reference/VB/contractreference_ref.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="protected override void Resolve (string contentType, System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Resolve(string contentType, class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.Resolve(System.String,System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentType" Type="System.String" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="contentType">The MIME content type of <c>stream</c>.</param>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> containing the referenced document.</param>
+        <summary>Resolves whether the the referenced document is valid.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the MIME type is `text/xml` and the contents of `stream` is a Service Description, then the contents of `stream` are added to the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.References%2A> and <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.Documents%2A> properties of <xref:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Web.Services.Discovery.DiscoveryReference.ClientProtocol" /> property is <see langword="null" />.  
+  
+ -or-  
+  
+ The service description could not be downloaded and verified successfully.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Url">
+      <MemberSignature Language="C#" Value="public override string Url { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Url" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.ContractReference.Url" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL for the referenced Service Description.</summary>
+        <value>The URL for the referenced service description.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the <xref:System.Web.Services.Discovery.ContractReference> class, the <xref:System.Web.Services.Discovery.ContractReference.Url%2A> property returns the value of the <xref:System.Web.Services.Discovery.ContractReference.Ref%2A> property.  
+  
+   
+  
+## Examples  
+ [!code-cpp[ContractReference_DefaultFileName#2](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference_DefaultFileName/CPP/contractreference_defaultfilename.cpp#2)]
+ [!code-csharp[ContractReference_DefaultFileName#2](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference_DefaultFileName/CS/contractreference_defaultfilename.cs#2)]
+ [!code-vb[ContractReference_DefaultFileName#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference_DefaultFileName/VB/contractreference_defaultfilename.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteDocument">
+      <MemberSignature Language="C#" Value="public override void WriteDocument (object document, System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteDocument(object document, class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.ContractReference.WriteDocument(System.Object,System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="document" Type="System.Object" />
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="document">The <see cref="T:System.Web.Services.Description.ServiceDescription" /> to write into <c>stream</c>.</param>
+        <param name="stream">The <see cref="T:System.IO.Stream" /> into which the serialized <see cref="T:System.Web.Services.Description.ServiceDescription" /> is written.</param>
+        <summary>Writes the passed-in service description into the passed-in <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[ContractReference_WriteDocument#1](~/samples/snippets/cpp/VS_Snippets_Remoting/ContractReference_WriteDocument/CPP/contractreference_writedocument.cpp#1)]
+ [!code-csharp[ContractReference_WriteDocument#1](~/samples/snippets/csharp/VS_Snippets_Remoting/ContractReference_WriteDocument/CS/contractreference_writedocument.cs#1)]
+ [!code-vb[ContractReference_WriteDocument#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/ContractReference_WriteDocument/VB/contractreference_writedocument.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

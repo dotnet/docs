@@ -1,0 +1,118 @@
+<Type Name="RegistrationConnectionType" FullName="System.Runtime.InteropServices.RegistrationConnectionType">
+  <TypeSignature Language="C#" Value="public enum RegistrationConnectionType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegistrationConnectionType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.RegistrationConnectionType" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the types of connections to a class object.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The values in the <xref:System.Runtime.InteropServices.RegistrationConnectionType> enumeration are used in the `flags` parameter of the <xref:System.Runtime.InteropServices.RegistrationServices.RegisterTypeForComClients%2A> method. These values are the same as those defined in the COM **REGCLS** enumeration, which is used as the `flags` parameter in calls to the COM API `CoRegisterClassObject`.  
+  
+ For more information about `CoRegisterClassObject` and the **REGCLS** enumeration, see the MSDN library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="MultipleUse">
+      <MemberSignature Language="C#" Value="MultipleUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType MultipleUse = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.MultipleUse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.RegistrationConnectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Multiple applications can connect to the class object through calls to <see langword="CoGetClassObject" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MultiSeparate">
+      <MemberSignature Language="C#" Value="MultiSeparate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType MultiSeparate = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.MultiSeparate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.RegistrationConnectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Registers separate CLSCTX_LOCAL_SERVER and CLSCTX_INPROC_SERVER class factories.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SingleUse">
+      <MemberSignature Language="C#" Value="SingleUse" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType SingleUse = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.SingleUse" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.RegistrationConnectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Once an application is connected to a class object with <see langword="CoGetClassObject" />, the class object is removed from public view so that no other applications can connect to it. This value is commonly used for single document interface (SDI) applications.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Surrogate">
+      <MemberSignature Language="C#" Value="Surrogate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType Surrogate = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.Surrogate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.RegistrationConnectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The class object is a surrogate process used to run DLL servers.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspended">
+      <MemberSignature Language="C#" Value="Suspended" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.RegistrationConnectionType Suspended = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.RegistrationConnectionType.Suspended" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.RegistrationConnectionType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Suspends registration and activation requests for the specified CLSID until there is a call to <see langword="CoResumeClassObjects" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

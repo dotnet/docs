@@ -1,0 +1,40 @@
+<Type Name="NavigationFailedEventHandler" FullName="System.Windows.Navigation.NavigationFailedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void NavigationFailedEventHandler(object sender, NavigationFailedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NavigationFailedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationFailedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Navigation.NavigationFailedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle <see langword="NavigationFailed" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event handler is used for the following events:  
+  
+-   <xref:System.Windows.Navigation.NavigationService.NavigationFailed?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Navigation.NavigationWindow.NavigationFailed?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Controls.Frame.NavigationFailed?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Application.NavigationFailed?displayProperty=fullName>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

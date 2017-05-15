@@ -1,0 +1,529 @@
+<Type Name="XmlDataSourceDesigner" FullName="System.Web.UI.Design.WebControls.XmlDataSourceDesigner">
+  <TypeSignature Language="C#" Value="public class XmlDataSourceDesigner : System.Web.UI.Design.HierarchicalDataSourceDesigner, System.Web.UI.Design.IDataSourceDesigner" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDataSourceDesigner extends System.Web.UI.Design.HierarchicalDataSourceDesigner implements class System.Web.UI.Design.IDataSourceDesigner" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.XmlDataSourceDesigner" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.HierarchicalDataSourceDesigner</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.Design.IDataSourceDesigner</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides design-time support in a visual designer for the <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner> class is intended for use by the XmlDataSource control, and not intended for use by developers of custom XML data source controls.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XmlDataSourceDesigner ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.XmlDataSourceDesigner" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConfigure">
+      <MemberSignature Language="C#" Value="public override bool CanConfigure { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanConfigure" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.CanConfigure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Configure" /> method can be called.</summary>
+        <value>
+          <see langword="true" />, if the <see cref="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Configure" /> method can be called; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanRefreshSchema">
+      <MemberSignature Language="C#" Value="public override bool CanRefreshSchema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanRefreshSchema" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.CanRefreshSchema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called.</summary>
+        <value>
+          <see langword="true" />, if the <see cref="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.RefreshSchema(System.Boolean)" /> method can be called, otherwise <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Configure">
+      <MemberSignature Language="C#" Value="public override void Configure ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Configure() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Configure" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Launches the configuration wizard for the underlying data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Configure%2A> method is called by the design host, if the <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.CanConfigure%2A> property is `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Data">
+      <MemberSignature Language="C#" Value="public string Data { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Data" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Data" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a block of XML that the associated data source control binds to.</summary>
+        <value>A string of XML data.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Data%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataFile">
+      <MemberSignature Language="C#" Value="public string DataFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataFile" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.DataFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the file name of an XML file that the associated data source control binds to.</summary>
+        <value>An XML file name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.DataFile%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetView">
+      <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerHierarchicalDataSourceView GetView (string viewPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.Design.DesignerHierarchicalDataSourceView GetView(string viewPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.GetView(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.DesignerHierarchicalDataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="viewPath">The path to the view to retrieve.</param>
+        <summary>Retrieves the design-time data source view object for the associated <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control.</summary>
+        <returns>The design-time data source view object for the associated <see cref="T:System.Web.UI.WebControls.XmlDataSource" /> control.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component.</param>
+        <summary>Initializes the designer and loads the specified component.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreFilterProperties">
+      <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="properties" Type="System.Collections.IDictionary" />
+      </Parameters>
+      <Docs>
+        <param name="properties">An <see langword="IDictionary" /> of properties.</param>
+        <summary>Used by a designer component to add properties to or remove properties from, the Properties grid in a design host at design time or to provide new design-time properties that might correspond to properties on the associated control.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshSchema">
+      <MemberSignature Language="C#" Value="public override void RefreshSchema (bool preferSilent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RefreshSchema(bool preferSilent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.RefreshSchema(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="preferSilent" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="preferSilent">
+          <see langword="true" /> to suppress schema UI events; otherwise, <see langword="false" />.</param>
+        <summary>Refreshes the schema from the data source, while optionally suppressing events.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.CanConfigure">
+      <MemberSignature Language="C#" Value="bool System.Web.UI.Design.IDataSourceDesigner.CanConfigure { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.Design.IDataSourceDesigner.CanConfigure" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#CanConfigure" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Web.UI.Design.IDataSourceDesigner.CanConfigure" />.</summary>
+        <value>
+          <see langword="true" /> if the data source can be configured; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema">
+      <MemberSignature Language="C#" Value="bool System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#CanRefreshSchema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>For a description of this member, see <see cref="P:System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema" />.</summary>
+        <value>
+          <see langword="true" /> if the schema can be refreshed; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.Configure">
+      <MemberSignature Language="C#" Value="void IDataSourceDesigner.Configure ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.Design.IDataSourceDesigner.Configure() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#Configure" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.Design.IDataSourceDesigner.Configure" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.GetView">
+      <MemberSignature Language="C#" Value="System.Web.UI.Design.DesignerDataSourceView IDataSourceDesigner.GetView (string viewName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Web.UI.Design.DesignerDataSourceView System.Web.UI.Design.IDataSourceDesigner.GetView(string viewName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#GetView(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.DesignerDataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="viewName">The name of a view in the underlying data source.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.Design.IDataSourceDesigner.GetView(System.String)" />.</summary>
+        <returns>A <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> object containing information about the identified view, or <see langword="null" /> if a view with the specified name is not found.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.GetViewNames">
+      <MemberSignature Language="C#" Value="string[] IDataSourceDesigner.GetViewNames ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string[] System.Web.UI.Design.IDataSourceDesigner.GetViewNames() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#GetViewNames" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.Design.IDataSourceDesigner.GetViewNames" />.</summary>
+        <returns>An array of names of the views in the data source.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.RefreshSchema">
+      <MemberSignature Language="C#" Value="void IDataSourceDesigner.RefreshSchema (bool preferSilent);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.Design.IDataSourceDesigner.RefreshSchema(bool preferSilent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#RefreshSchema(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="preferSilent" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="preferSilent">Specifies whether to suppress any events raised while refreshing the schema.</param>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.Design.IDataSourceDesigner.RefreshSchema(System.Boolean)" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents">
+      <MemberSignature Language="C#" Value="void IDataSourceDesigner.ResumeDataSourceEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#ResumeDataSourceEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents">
+      <MemberSignature Language="C#" Value="void IDataSourceDesigner.SuppressDataSourceEvents ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.System#Web#UI#Design#IDataSourceDesigner#SuppressDataSourceEvents" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>For a description of this member, see <see cref="M:System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This member is an explicit interface member implementation. It can be used only when the <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner> instance is cast to an <xref:System.Web.UI.Design.IDataSourceDesigner> interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Transform">
+      <MemberSignature Language="C#" Value="public string Transform { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Transform" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Transform" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a block of Extensible Stylesheet Language (XSL) that defines an XSLT transformation to perform on the XML data that is contained by the <see cref="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Data" /> property or by the XML file that is indicated by the <see cref="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.DataFile" /> property.</summary>
+        <value>An XSL data string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Transform%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransformFile">
+      <MemberSignature Language="C#" Value="public string TransformFile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TransformFile" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.TransformFile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the file name of an Extensible Stylesheet Language (XSL) file (.xsl) that defines an XSLT transformation to perform on the XML data that is contained by the <see cref="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Data" /> property or by the XML file that is indicated by the <see cref="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.DataFile" /> property.</summary>
+        <value>The XSLT file name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Transform%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPath">
+      <MemberSignature Language="C#" Value="public string XPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.XPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an XPath query to apply to the XML data that is contained by the <see cref="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Data" /> property or by the XML file that is indicated by the <see cref="P:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.DataFile" /> property.</summary>
+        <value>An XPath query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.XmlDataSourceDesigner.Transform%2A> property shadows the same property in the associated control, and is intended for internal use only.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

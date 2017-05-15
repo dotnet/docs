@@ -1,0 +1,65 @@
+<Type Name="BlockCollection" FullName="System.Windows.Documents.BlockCollection">
+  <TypeSignature Language="C#" Value="public class BlockCollection : System.Windows.Documents.TextElementCollection&lt;System.Windows.Documents.Block&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BlockCollection extends System.Windows.Documents.TextElementCollection`1&lt;class System.Windows.Documents.Block&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.BlockCollection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Documents.TextElementCollection&lt;System.Windows.Documents.Block&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TextElementType">System.Windows.Documents.Block</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Windows.Documents.Block" /> elements. <see cref="T:System.Windows.Documents.BlockCollection" /> defines the allowable child content of the <see cref="T:System.Windows.Documents.FlowDocument" />, <see cref="T:System.Windows.Documents.Section" />, <see cref="T:System.Windows.Documents.ListItem" />, <see cref="T:System.Windows.Documents.TableCell" />, <see cref="T:System.Windows.Documents.Floater" />, and <see cref="T:System.Windows.Documents.Figure" /> elements.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Documents.BlockCollection> creation is only permitted inside an element that owns a <xref:System.Windows.Documents.BlockCollection>, such as a <xref:System.Windows.Documents.FlowDocument> or <xref:System.Windows.Documents.TextElement>. As such, a <xref:System.Windows.Documents.BlockCollection> cannot be instantiated directly and has no default or overloaded constructor.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FirstBlock">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.Block FirstBlock { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.Block FirstBlock" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.BlockCollection.FirstBlock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.Block</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first <see cref="T:System.Windows.Documents.Block" /> element within this instance of <see cref="T:System.Windows.Documents.BlockCollection" />.</summary>
+        <value>The first <see cref="T:System.Windows.Documents.Block" /> element in the <see cref="T:System.Windows.Documents.BlockCollection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastBlock">
+      <MemberSignature Language="C#" Value="public System.Windows.Documents.Block LastBlock { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.Block LastBlock" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Documents.BlockCollection.LastBlock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Documents.Block</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last <see cref="T:System.Windows.Documents.Block" /> element within this instance of <see cref="T:System.Windows.Documents.BlockCollection" />.</summary>
+        <value>The last <see cref="T:System.Windows.Documents.Block" /> element in the <see cref="T:System.Windows.Documents.BlockCollection" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

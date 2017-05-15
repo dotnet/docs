@@ -1,0 +1,732 @@
+<Type Name="ManagementBaseObject" FullName="System.Management.ManagementBaseObject">
+  <TypeSignature Language="C#" Value="public class ManagementBaseObject : System.ComponentModel.Component, ICloneable, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ManagementBaseObject extends System.ComponentModel.Component implements class System.ICloneable, class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Management.ManagementBaseObject" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains the basic elements of a management object. It serves as a base class to more specific management object classes.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ManagementBaseObject (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="context">The destination (see <see cref="T:System.Runtime.Serialization.StreamingContext" /> ) for this serialization.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementBaseObject" /> class that is serializable.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClassPath">
+      <MemberSignature Language="C#" Value="public virtual System.Management.ManagementPath ClassPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementPath ClassPath" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.ClassPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ManagementPath</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the path to the management object's class.</summary>
+        <value>Returns a <see cref="T:System.Management.ManagementPath" /> that contains the class path to the management object's class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ A <xref:System.Management.ManagementPath> that represents the path to the management object's class.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example code lists all the classes with their class paths in the root\CIMV2 namespace.  
+  
+ For the \\\MyBox\root\cimv2:Win32_LogicalDisk= 'C:' object, the class path is \\\MyBox\root\cimv2:Win32_LogicalDisk.  
+  
+ [!code-csharp[wminet_ManagementBaseObject_ClassPath#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_ClassPath/cs/ManagementBaseObject_ClassPath.cs#1)]
+ [!code-vb[wminet_ManagementBaseObject_ClassPath#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_ClassPath/vb/ManagementBaseObject_ClassPath.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public virtual object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a copy of the object.</summary>
+        <returns>The new cloned object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareTo">
+      <MemberSignature Language="C#" Value="public bool CompareTo (System.Management.ManagementBaseObject otherObject, System.Management.ComparisonSettings settings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CompareTo(class System.Management.ManagementBaseObject otherObject, valuetype System.Management.ComparisonSettings settings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.CompareTo(System.Management.ManagementBaseObject,System.Management.ComparisonSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="otherObject" Type="System.Management.ManagementBaseObject" />
+        <Parameter Name="settings" Type="System.Management.ComparisonSettings" />
+      </Parameters>
+      <Docs>
+        <param name="otherObject">The object to which to compare this object.</param>
+        <param name="settings">Options on how to compare the objects.</param>
+        <summary>Compares this object to another, based on specified options.</summary>
+        <returns>
+          <see langword="true" /> if the objects compared are equal according to the given options; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases the unmanaged resources used by the ManagementBaseObject.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An object to compare with this instance.</param>
+        <summary>Compares two management objects.</summary>
+        <returns>
+          <see langword="true" /> if this is an instance of <see cref="T:System.Management.ManagementBaseObject" /> and represents the same object as this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.</summary>
+        <returns>A hash code for the current object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetObjectData">
+      <MemberSignature Language="C#" Value="protected virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
+        <param name="context">The destination (see <see cref="T:System.Runtime.Serialization.StreamingContext" /> ) for this serialization.</param>
+        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data necessary to deserialize the field represented by this instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyQualifierValue">
+      <MemberSignature Language="C#" Value="public object GetPropertyQualifierValue (string propertyName, string qualifierName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetPropertyQualifierValue(string propertyName, string qualifierName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetPropertyQualifierValue(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="qualifierName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to which the qualifier belongs.</param>
+        <param name="qualifierName">The name of the property qualifier of interest.</param>
+        <summary>Returns the value of the specified property qualifier.</summary>
+        <returns>The value of the specified qualifier.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Management.ManagementBaseObject.GetPropertyQualifierValue%2A> method to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ [!code-csharp[wminet_ManagementBaseObject_GetPropertyQualifierValue#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyQualifierValue/cs/ManagementBaseObject_GetPropertyQualifierValue.cs#1)]
+ [!code-vb[wminet_ManagementBaseObject_GetPropertyQualifierValue#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyQualifierValue/vb/ManagementBaseObject_GetPropertyQualifierValue.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPropertyValue">
+      <MemberSignature Language="C#" Value="public object GetPropertyValue (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetPropertyValue(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetPropertyValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property of interest.</param>
+        <summary>Gets an equivalent accessor to a property's value.</summary>
+        <returns>The value of the specified property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example lists all the names of the processes running on the local computer. The code uses the <xref:System.Management.ManagementBaseObject.GetPropertyValue%2A> method to get the process names.  
+  
+ [!code-csharp[wminet_ManagementBaseObject_GetPropertyValue#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyValue/cs/ManagementBaseObject_GetPropertyValue.cs#1)]
+ [!code-vb[wminet_ManagementBaseObject_GetPropertyValue#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetPropertyValue/vb/ManagementBaseObject_GetPropertyValue.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetQualifierValue">
+      <MemberSignature Language="C#" Value="public object GetQualifierValue (string qualifierName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetQualifierValue(string qualifierName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetQualifierValue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qualifierName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="qualifierName">The name of the qualifier of interest.</param>
+        <summary>Gets the value of the specified qualifier.</summary>
+        <returns>The value of the specified qualifier.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example displays the **Win32_Process** class description by using the <xref:System.Management.ManagementBaseObject.GetQualifierValue%2A> method. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ [!code-csharp[wminet_ManagementBaseObject_GetQualifierValue#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetQualifierValue/cs/ManagementBaseObject_GetQualifierValue.cs#1)]
+ [!code-vb[wminet_ManagementBaseObject_GetQualifierValue#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetQualifierValue/vb/ManagementBaseObject_GetQualifierValue.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetText">
+      <MemberSignature Language="C#" Value="public string GetText (System.Management.TextFormat format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetText(valuetype System.Management.TextFormat format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.GetText(System.Management.TextFormat)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.Management.TextFormat" />
+      </Parameters>
+      <Docs>
+        <param name="format">The requested textual format.</param>
+        <summary>Returns a textual representation of the object in the specified format.</summary>
+        <returns>The textual representation of the object in the specified format.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Currently, the only format that WMI supports is *Managed Object Format* (MOF). In the future, other formats will be supported, such as Extensible Markup Language (XML).  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example displays the MOF code for the **Win32_Process** class by using the <xref:System.Management.ManagementBaseObject.GetText%2A> method. For more information about the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ [!code-csharp[wminet_ManagementBaseObject_GetText#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetText/cs/ManagementBaseObject_GetText.cs#1)]
+ [!code-vb[wminet_ManagementBaseObject_GetText#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_GetText/vb/ManagementBaseObject_GetText.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[string propertyName] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property of interest.</param>
+        <summary>Gets access to property values through [] notation. This property is the indexer for the <see cref="T:System.Management.ManagementBaseObject" /> class. You can use the default indexed properties defined by a type, but you cannot explicitly define your own. However, specifying the **expando** attribute on a class automatically provides a default indexed property whose type is Object and whose index type is String.</summary>
+        <value>Returns an <see cref="T:System.Object" /> value that contains the management object for a specific class property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ An object instance that contains the value of the requested property.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to initialize a <xref:System.Management.ManagementClass> variable with a <xref:System.Management.ManagementClass> constructor and then get all the instances of a WMI class.  
+  
+ [!code-csharp[wminet_ManagementBaseObject_Item#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Item/cs/ManagementBaseObject_Item.cs#1)]
+ [!code-vb[wminet_ManagementBaseObject_Item#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Item/vb/ManagementBaseObject_Item.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Explicit">
+      <MemberSignature Language="C#" Value="public static IntPtr op_Explicit (System.Management.ManagementBaseObject managementObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(class System.Management.ManagementBaseObject managementObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.op_Explicit(System.Management.ManagementBaseObject)~System.IntPtr" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="managementObject" Type="System.Management.ManagementBaseObject" />
+      </Parameters>
+      <Docs>
+        <param name="managementObject">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public virtual System.Management.PropertyDataCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Management.PropertyDataCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.PropertyDataCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Management.PropertyData" /> objects describing the properties of the management object.</summary>
+        <value>Returns a <see cref="T:System.Management.PropertyDataCollection" /> that holds the properties for the management object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ A <xref:System.Management.PropertyDataCollection> that represents the properties of the management object.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Management.ManagementBaseObject.Properties%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
+  
+ [!code-csharp[wminet_ManagementBaseObject_Properties#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Properties/cs/ManagementBaseObject_Properties.cs#1)]
+ [!code-vb[wminet_ManagementBaseObject_Properties#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Properties/vb/ManagementBaseObject_Properties.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Qualifiers">
+      <MemberSignature Language="C#" Value="public virtual System.Management.QualifierDataCollection Qualifiers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Management.QualifierDataCollection Qualifiers" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.Qualifiers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.QualifierDataCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.Management.QualifierData" /> objects defined on the management object. Each element in the collection holds information such as the *qualifier* name, value, and *flavor*.</summary>
+        <value>Returns a <see cref="T:System.Management.QualifierDataCollection" /> that holds the qualifiers for the management object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ A <xref:System.Management.QualifierDataCollection> that represents the qualifiers defined on the management object.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Management.ManagementBaseObject.Qualifiers%2A> property to display the value of the **Description** qualifier for each of the properties in the **Win32_Process** class.  For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ [!code-csharp[wminet_ManagementBaseObject_Qualifiers#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Qualifiers/cs/ManagementBaseObject_Qualifiers.cs#1)]
+ [!code-vb[wminet_ManagementBaseObject_Qualifiers#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_Qualifiers/vb/ManagementBaseObject_Qualifiers.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropertyQualifierValue">
+      <MemberSignature Language="C#" Value="public void SetPropertyQualifierValue (string propertyName, string qualifierName, object qualifierValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPropertyQualifierValue(string propertyName, string qualifierName, object qualifierValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.SetPropertyQualifierValue(System.String,System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="qualifierName" Type="System.String" />
+        <Parameter Name="qualifierValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to which the qualifier belongs.</param>
+        <param name="qualifierName">The name of the property qualifier of interest.</param>
+        <param name="qualifierValue">The new value for the qualifier.</param>
+        <summary>Sets the value of the specified property qualifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropertyValue">
+      <MemberSignature Language="C#" Value="public void SetPropertyValue (string propertyName, object propertyValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPropertyValue(string propertyName, object propertyValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.SetPropertyValue(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to be changed.</param>
+        <param name="propertyValue">The new value for this property.</param>
+        <summary>Sets the value of the named property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetQualifierValue">
+      <MemberSignature Language="C#" Value="public void SetQualifierValue (string qualifierName, object qualifierValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetQualifierValue(string qualifierName, object qualifierValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.SetQualifierValue(System.String,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="qualifierName" Type="System.String" />
+        <Parameter Name="qualifierValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="qualifierName">The name of the qualifier to set. This parameter cannot be null.</param>
+        <param name="qualifierValue">The value to set.</param>
+        <summary>Sets the value of the named qualifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementBaseObject.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> containing the information required to serialize the <see cref="T:System.Management.ManagementBaseObject" />.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> containing the source and destination of the serialized stream associated with the <see cref="T:System.Management.ManagementBaseObject" />.</param>
+        <summary>Implements the <see cref="T:System.Runtime.Serialization.ISerializable" /> interface and returns the data needed to serialize the <see cref="T:System.Management.ManagementBaseObject" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="info" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemProperties">
+      <MemberSignature Language="C#" Value="public virtual System.Management.PropertyDataCollection SystemProperties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Management.PropertyDataCollection SystemProperties" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ManagementBaseObject.SystemProperties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.PropertyDataCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets  the collection of WMI system properties of the management object (for example, the class name, server, and namespace). WMI system property names begin with "__".</summary>
+        <value>Returns a <see cref="T:System.Management.PropertyDataCollection" /> that contains the system properties for a management object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ A <xref:System.Management.PropertyDataCollection> that represents the system properties of the management object.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Management.ManagementBaseObject.SystemProperties%2A> property to display the name and value of the system properties for the **Win32_Process** class. For more information on the **Win32_Process** class, see the Windows Management Instrumentation documentation in the MSDN Library at http://msdn.microsoft.com/library.  
+  
+ [!code-csharp[wminet_ManagementBaseObject_SystemProperties#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_SystemProperties/cs/ManagementBaseObject_SystemProperties.cs#1)]
+ [!code-vb[wminet_ManagementBaseObject_SystemProperties#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementBaseObject_SystemProperties/vb/ManagementBaseObject_SystemProperties.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

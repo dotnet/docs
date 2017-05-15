@@ -1,0 +1,239 @@
+<Type Name="IExtendedUIService" FullName="System.Workflow.ComponentModel.Design.IExtendedUIService">
+  <TypeSignature Language="C#" Value="public interface IExtendedUIService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendedUIService" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IExtendedUIService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the methods that workflow designer hosts can call to perform advanced UI operations.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The methods and properties provided by <xref:System.Workflow.ComponentModel.Design.IExtendedUIService> allow designer hosts to navigate to properties in the property browser window and allow the hosts to add task items to the task list.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddAssemblyReference">
+      <MemberSignature Language="C#" Value="public void AddAssemblyReference (System.Reflection.AssemblyName assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAssemblyReference(class System.Reflection.AssemblyName assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.AddAssemblyReference(System.Reflection.AssemblyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">An <see cref="T:System.Reflection.AssemblyName" /> that identifies the assembly to add.</param>
+        <summary>Instructs the workflow designer host to add an assembly reference for the current project to access.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddDesignerActions">
+      <MemberSignature Language="C#" Value="public void AddDesignerActions (System.Workflow.ComponentModel.Design.DesignerAction[] actions);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddDesignerActions(class System.Workflow.ComponentModel.Design.DesignerAction[] actions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.AddDesignerActions(System.Workflow.ComponentModel.Design.DesignerAction[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actions" Type="System.Workflow.ComponentModel.Design.DesignerAction[]" />
+      </Parameters>
+      <Docs>
+        <param name="actions">A <see cref="T:System.Workflow.ComponentModel.Design.DesignerAction" /> array that contains the actions to add.</param>
+        <summary>Adds an array of designer actions to the list of available user actions in the workflow designer host.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddWebReference">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DialogResult AddWebReference (out Uri url, out Type proxyClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.DialogResult AddWebReference(class System.Uri url, class System.Type proxyClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.AddWebReference(System.Uri@,System.Type@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.Uri&amp;" RefType="out" />
+        <Parameter Name="proxyClass" Type="System.Type&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="url">When this method returns, contains a <see cref="T:System.Uri" /> that represents the universal resource locator (URL) of the Web resource to provide the project access to. This parameter is passed uninitialized.</param>
+        <param name="proxyClass">When this method returns, contains a <see cref="T:System.Type" /> of the proxy class associated with the Web resource. This parameter is passed uninitialized.</param>
+        <summary>Adds a reference to a Web resource to a project in a workflow designer.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.DialogResult" /> value that indicates the return value of the **Add Web Reference** dialog box.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProxyClassForUrl">
+      <MemberSignature Language="C#" Value="public Type GetProxyClassForUrl (Uri url);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetProxyClassForUrl(class System.Uri url) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.GetProxyClassForUrl(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="url" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="url">A <see cref="T:System.Uri" /> that represents a URL.</param>
+        <summary>Returns the type of the proxy class associated with the specified universal resource locator (URL).</summary>
+        <returns>The <see cref="T:System.Type" /> of the proxy class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSelectedPropertyContext">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.ITypeDescriptorContext GetSelectedPropertyContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.ITypeDescriptorContext GetSelectedPropertyContext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.GetSelectedPropertyContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ITypeDescriptorContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides contextual information about the current component.</summary>
+        <returns>Returns property context.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUrlForProxyClass">
+      <MemberSignature Language="C#" Value="public Uri GetUrlForProxyClass (Type proxyClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Uri GetUrlForProxyClass(class System.Type proxyClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.GetUrlForProxyClass(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="proxyClass" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="proxyClass">The <see cref="T:System.Type" /> associated with the proxy class.</param>
+        <summary>Returns the universal resource locator (URL) for the Web resource associated with the specified proxy class.</summary>
+        <returns>The URL for the Web resource associated with the proxy class.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetXsdProjectItemsInfo">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,Type&gt; GetXsdProjectItemsInfo ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.Dictionary`2&lt;string, class System.Type&gt; GetXsdProjectItemsInfo() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.GetXsdProjectItemsInfo" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Type&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the types that are generated for the XSD schema that is added to the workflow project.</summary>
+        <returns>The types that are generated for the XSD schema that is added to the workflow project.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigateToProperty">
+      <MemberSignature Language="C#" Value="public bool NavigateToProperty (string propName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool NavigateToProperty(string propName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.NavigateToProperty(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propName">The name of the property to navigate to.</param>
+        <summary>Navigates to the specified property in the property browser of the workflow designer host.</summary>
+        <returns>
+          <see langword="true" /> if the property was navigated to successfully; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveDesignerActions">
+      <MemberSignature Language="C#" Value="public void RemoveDesignerActions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveDesignerActions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.RemoveDesignerActions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Deletes all designer actions in the task list associated with the workflow designer host.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowToolsOptions">
+      <MemberSignature Language="C#" Value="public void ShowToolsOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowToolsOptions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IExtendedUIService.ShowToolsOptions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays the tools options associated with the workflow designer host.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,59 @@
+<Type Name="HideModuleNameAttribute" FullName="Microsoft.VisualBasic.HideModuleNameAttribute">
+  <TypeSignature Language="C#" Value="public sealed class HideModuleNameAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HideModuleNameAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.HideModuleNameAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see langword="HideModuleNameAttribute" /> attribute, when applied to a module, allows the module members to be accessed using only the qualification needed for the module.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This attribute is useful for exposing module members without showing the module itself. When using IntelliSense in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Integrated Development Environment (IDE) for [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], the module does not show in the statement completion list. Instead, IntelliSense shows the module members.  
+  
+ Even when the module name is hidden, the module members are still accessible through the module.  
+  
+ If a member name conflicts with another identifier or with a member of another module with the `HideModuleNameAttribute` attribute, then the member does not show in IntelliSense at the level of the module.  
+  
+   
+  
+## Examples  
+ This example shows how to use the `HideModuleNameAttribute` attribute to add a Database object to `My`, which can be accessed through `My.Database`.  
+  
+ [!code-vb[VbCnAttributes#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbCnAttributes/VB/Class2.vb#26)]  
+  
+ The `Namespace` statement must appear outside of any classes or modules.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HideModuleNameAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.HideModuleNameAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.HideModuleNameAttribute" /> attribute.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

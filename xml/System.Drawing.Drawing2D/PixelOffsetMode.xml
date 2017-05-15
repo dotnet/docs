@@ -1,0 +1,121 @@
+<Type Name="PixelOffsetMode" FullName="System.Drawing.Drawing2D.PixelOffsetMode">
+  <TypeSignature Language="C#" Value="public enum PixelOffsetMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PixelOffsetMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.PixelOffsetMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how pixels are offset during rendering.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By offsetting pixels during rendering, you can improve render quality at the cost of render speed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PixelOffsetMode Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the default mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Half">
+      <MemberSignature Language="C#" Value="Half" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PixelOffsetMode Half = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.Half" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that pixels are offset by -.5 units, both horizontally and vertically, for high speed antialiasing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HighQuality">
+      <MemberSignature Language="C#" Value="HighQuality" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PixelOffsetMode HighQuality = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.HighQuality" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies high quality, low speed rendering.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HighSpeed">
+      <MemberSignature Language="C#" Value="HighSpeed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PixelOffsetMode HighSpeed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.HighSpeed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies high speed, low quality rendering.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalid">
+      <MemberSignature Language="C#" Value="Invalid" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PixelOffsetMode Invalid = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.Invalid" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an invalid mode.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.PixelOffsetMode None = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.PixelOffsetMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.PixelOffsetMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies no pixel offset.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

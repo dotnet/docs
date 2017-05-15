@@ -1,10 +1,10 @@
 ---
-title: Publishing Your Hello World Application with Visual Studio 2015
-description: Publishing Your Hello World Application with Visual Studio 2015
-keywords: .NET, .NET Core, .NET Core console application
-author: rpetrusha
-ms.author: ronpet
-ms.date: 10/24/2016
+title: Publishing your Hello World application with Visual Studio 2017
+description: Publishing creates the set of files that are needed to run your application.
+keywords: .NET, .NET Core, console application, publishing, deployment
+author: BillWagner
+ms.author: wiwagn
+ms.date: 04/17/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: devlang-csharp
@@ -12,40 +12,37 @@ ms.devlang: csharp
 ms.assetid: a19545d3-24af-4a32-9778-cfb5ae938287
 ---
 
-# Publishing Your Hello World Application with Visual Studio 2015 #
+# Publishing your Hello World application with Visual Studio 2017
 
-Now that you've created your console app (in the [Building a Hello World Appllication with .NET Core in Visual Studio 2015](.\with-visual-studio.md) topic) and debugged it (in the [Debugging Your Hello World Application with Visual Studio 2015](.\debugging-with-visual-studio.md) topic), you can publish your application. This allows you to distribute your application and to run it outside of Visual Studio. To publish and run your application:
+In [Building a C# Hello World application with .NET Core in Visual Studio 2017](with-visual-studio.md), you built a Hello World console application. In [Debugging your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio.md), you tested it using the Visual Studio debugger. Now that you're sure that it works as expected, you can publish it so that other users can run it. Publishing creates the set of files that are needed to run your application, and you can deploy the files by copying them to a target machine.
 
-1. Make sure that Visual Studio is building the release version of your application. If necessary, change change the build configuration setting on the toolbar from **Debug** to **Release**, as shown in the following figure.
+To publish and run your application: 
 
-![Image](.\media\release.jpg)
+1. Make sure that Visual Studio is building the Release version of your application. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
 
-2. Right-click on the HelloWorld project (not the HelloWorld solution) and select **Publish** from the menu. You can also select **Publish HelloWorld** from the main Visual Studio **Build** menu.
+   ![Visual Studio toolbar](media/publishing-with-visual-studio/toolbar.png)
 
-3. When the **Profile** tab of the **Publish** dialog box shown in the following figure appears, select the **File System** target.
+1. Right-click on the **HelloWorld** project (not the HelloWorld solution) and select **Publish** from the menu. You can also select **Publish HelloWorld** from the main Visual Studio **Build** menu.
 
-   ![Image](.\media\publish.jpg)
+   ![Visual Studio toolbar](media/publishing-with-visual-studio/publish1.png)
 
-4. In the **New Custom Profile** dialog box, enter a profile name, such as `Hello World Release`.
+1. In the **HelloWorld** publish window, the default publish output folder is supplied for you in the **Choose a folder** text box. Select the **Publish** button.
 
-5. The **Connection** tab of the **Publish** dialog box specifies the directory in which Visual Studio will publish your app. Select **Next** to accept the default location, the project's `bin\Release\PublishOutput` subdirectory. The following figure shows the **Connection** tab.
+   ![Visual Studio toolbar](media/publishing-with-visual-studio/publishwindow.png)
 
-   ![Image](.\media\connection.jpg)
+1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
 
-6. In the **Settings** tab of the **Publish** dialog, which is shown in the following figure, confirm that you are publishing the correct version of your app. In this case, we are publishihg the release version that targets .NET Core 1.0 and runs on all platforms that support .NET Core. Select **Publish** to publish your app to the target directory.
+1. Navigate to the published application in the `bin\release\PublishOutput` subdirectory of your application's project directory. As the following figure shows, the published output includes the following four files:
 
-   ![Image](.\media\settings.jpg)
+      * *HelloWorld.deps.json*
+      * *HelloWorld.dll*
+      * *HelloWorld.pdb* (optional for deployment)
+      * *HelloWorld.runtimeconfig.json*
 
-The project's .\bin\release\PublishOutput directory contains your published app. Because this application has no platform-specific dependencies (such as calls to a third-party library that is supported only on specific platforms, or calls to operating system APIs), it runs on any platform on which .NET Core has been installed.
+   The *HelloWorld.pdb* file contains debug symbols. You aren't required to deploy this file along with your application, although you should save it in the event that you need to debug the published version of your application.
 
-You run the app with the [.NET Core Command Line Interface](../../core/tools/index.md) (CLI) by using the following command:
+   ![Console window showing published files](media/publishing-with-visual-studio/publishedfiles.png)
 
+The publishing process creates a framework-dependent deployment, which is a type of deployment where the published application will run on any platform supported by .NET Core with .NET Core installed on the system. Users can run your application by issuing the `dotnet HelloWorld.dll` command from a console window.
 
-```console
-dotnet helloworld.dll
-```
-
-To distribute it, you can simply copy the files generated by the publishing operation to any computer that has .NET Core installed. Note that the output includes a symbol (.pdb) file that you do not have to distribute with your app.
-
-For more information on publishing and deploying a .NET Core application, see [.NET Core Application Deployment](../../core/deploying/index.md).
-
+For more information on publishing and deploying .NET Core applications, see [.NET Core Application Deployment](../../core/deploying/index.md).

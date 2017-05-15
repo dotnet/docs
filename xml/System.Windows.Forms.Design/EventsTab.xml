@@ -1,0 +1,185 @@
+<Type Name="EventsTab" FullName="System.Windows.Forms.Design.EventsTab">
+  <TypeSignature Language="C#" Value="public class EventsTab : System.Windows.Forms.Design.PropertyTab" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventsTab extends System.Windows.Forms.Design.PropertyTab" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.EventsTab" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Forms.Design.PropertyTab</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a <see cref="T:System.Windows.Forms.Design.PropertyTab" /> that can display events for selection and linking.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example provides an example <xref:System.Windows.Forms.Design.EventsTab>. When selected, the <xref:System.Windows.Forms.Design.EventsTab> lists any events on a component in order of delegate type.  
+  
+ [!code-cpp[EventsTabExample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/EventsTabExample/CPP/class1.cpp#1)]
+ [!code-csharp[EventsTabExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/EventsTabExample/CS/class1.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventsTab (IServiceProvider sp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider sp) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventsTab.#ctor(System.IServiceProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sp" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="sp">An <see cref="T:System.IServiceProvider" /> to use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.EventsTab" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanExtend">
+      <MemberSignature Language="C#" Value="public override bool CanExtend (object extendee);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanExtend(object extendee) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventsTab.CanExtend(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="extendee" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="extendee">The object to test for extensibility.</param>
+        <summary>Gets a value indicating whether the specified object can be extended.</summary>
+        <returns>
+          <see langword="true" /> if the specified object can be extended; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultProperty">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptor GetDefaultProperty (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptor GetDefaultProperty(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventsTab.GetDefaultProperty(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to retrieve the default property of.</param>
+        <summary>Gets the default property from the specified object.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> indicating the default property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetProperties (object component, Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(object component, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventsTab.GetProperties(System.Object,System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.Object" />
+        <Parameter Name="attributes" Type="System.Attribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to retrieve the properties of.</param>
+        <param name="attributes">An array of <see cref="T:System.Attribute" /> that indicates the attributes of the event properties to retrieve.</param>
+        <summary>Gets all the properties of the event tab that match the specified attributes.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the properties. This will be an empty <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> if the component does not implement an event service.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The event tab properties are determined from the event properties returned from a component's event service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetProperties (System.ComponentModel.ITypeDescriptorContext context, object component, Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.ComponentModel.ITypeDescriptorContext context, object component, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.EventsTab.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="component" Type="System.Object" />
+        <Parameter Name="attributes" Type="System.Attribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain context information.</param>
+        <param name="component">The component to retrieve the properties of.</param>
+        <param name="attributes">An array of type <see cref="T:System.Attribute" /> that indicates the attributes of the event properties to retrieve.</param>
+        <summary>Gets all the properties of the event tab that match the specified attributes and context.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the properties. This will be an empty <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> if the component does not implement an event service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HelpKeyword">
+      <MemberSignature Language="C#" Value="public override string HelpKeyword { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string HelpKeyword" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.EventsTab.HelpKeyword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the Help keyword for the tab.</summary>
+        <value>The Help keyword for the tab.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabName">
+      <MemberSignature Language="C#" Value="public override string TabName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TabName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.EventsTab.TabName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the tab.</summary>
+        <value>The name of the tab.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

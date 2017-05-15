@@ -1,0 +1,25 @@
+<Namespace Name="System.Speech.Recognition.SrgsGrammar">
+  <Docs>
+    <summary>With the members of the <see cref="N:System.Speech.Recognition.SrgsGrammar" /> namespace, you can programmatically create grammars that comply with the W3C <see href="http://go.microsoft.com/fwlink/?LinkId=201761">Speech Recognition Grammar Specification Version 1.0</see> (SRGS).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create an SRGS grammar programmatically, you construct an empty <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instance and add instances of classes that represent SRGS elements. The <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsOneOf>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag>, and <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken> classes represent elements defined in the SRGS specification. Some of the properties of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> class represent attributes in the SRGS specification, such as <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Root%2A>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Mode%2A>, <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.Culture%2A>, and <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.XmlBase%2A>. See [SRGS Grammar XML](http://msdn.microsoft.com/en-us/b888942f-637c-4243-b49f-1fbb6c12d9f1) for a reference to the elements and attributes of the SRGS specification as supported by System.Speech.  
+  
+ To add a grammar rule to a <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument>, use the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Add%2A> method of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> class. You can modify the text within an SRGS element using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsText.Text%2A> property of a <xref:System.Speech.Recognition.SrgsGrammar.SrgsText> instance.  
+  
+ With the <xref:System.Speech.Recognition.SrgsGrammar.SrgsSubset> class, you can optimize recognition of phrases in a grammar by specifying subsets of a complete phrase that will be allowed to constitute a match, and by selecting a matching mode from the <xref:System.Speech.Recognition.SubsetMatchingMode> enumeration.  
+  
+ See [Create Grammars Using SrgsGrammar](http://msdn.microsoft.com/en-us/e4d9f96e-2241-4c39-b9e0-ac9ef4e9a906) in the [System Speech Programming Guide for .NET Framework 4.0](http://msdn.microsoft.com/en-us/610116c7-3817-40ff-857b-5d41e8511043) for more information and examples.  
+  
+ You can also construct <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> instances from existing SRGS-compliant XML grammar files, from an instance of <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>, or from an instance of <xref:System.Speech.Recognition.GrammarBuilder>.  
+  
+ You can use the methods of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler> class to prepare completed <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> objects for consumption by a speech recognition engine.  
+  
+ Grammars created with members of the <xref:System.Speech.Recognition.SrgsGrammar> namespace can be used by constructors of the <xref:System.Speech.Recognition.Grammar> class to create <xref:System.Speech.Recognition.Grammar> objects.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

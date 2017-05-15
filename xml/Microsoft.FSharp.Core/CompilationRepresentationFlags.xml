@@ -1,0 +1,136 @@
+<Type Name="CompilationRepresentationFlags" FullName="Microsoft.FSharp.Core.CompilationRepresentationFlags">
+  <TypeSignature Language="C#" Value="public enum CompilationRepresentationFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CompilationRepresentationFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilationRepresentationFlags" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Event">
+      <MemberSignature Language="C#" Value="Event" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.CompilationRepresentationFlags Event = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.CompilationRepresentationFlags.Event" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.CompilationRepresentationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="Instance" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.CompilationRepresentationFlags Instance = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.CompilationRepresentationFlags.Instance" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.CompilationRepresentationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ModuleSuffix">
+      <MemberSignature Language="C#" Value="ModuleSuffix" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.CompilationRepresentationFlags ModuleSuffix = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.CompilationRepresentationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.CompilationRepresentationFlags None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.CompilationRepresentationFlags.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.CompilationRepresentationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Static">
+      <MemberSignature Language="C#" Value="Static" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.CompilationRepresentationFlags Static = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.CompilationRepresentationFlags.Static" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.CompilationRepresentationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UseNullAsTrueValue">
+      <MemberSignature Language="C#" Value="UseNullAsTrueValue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.CompilationRepresentationFlags UseNullAsTrueValue = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.CompilationRepresentationFlags.UseNullAsTrueValue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.CompilationRepresentationFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

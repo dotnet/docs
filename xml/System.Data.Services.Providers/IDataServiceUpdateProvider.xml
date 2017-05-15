@@ -1,0 +1,45 @@
+<Type Name="IDataServiceUpdateProvider" FullName="System.Data.Services.Providers.IDataServiceUpdateProvider">
+  <TypeSignature Language="C#" Value="public interface IDataServiceUpdateProvider : System.Data.Services.IUpdatable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataServiceUpdateProvider implements class System.Data.Services.IUpdatable" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.IDataServiceUpdateProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Data.Services.IUpdatable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines the methods that must be implemented to supply eTag values to a custom data service provider.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SetConcurrencyValues">
+      <MemberSignature Language="C#" Value="public void SetConcurrencyValues (object resourceCookie, Nullable&lt;bool&gt; checkForEquality, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; concurrencyValues);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetConcurrencyValues(object resourceCookie, valuetype System.Nullable`1&lt;bool&gt; checkForEquality, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; concurrencyValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.IDataServiceUpdateProvider.SetConcurrencyValues(System.Object,System.Nullable{System.Boolean},System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceCookie" Type="System.Object" />
+        <Parameter Name="checkForEquality" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="concurrencyValues" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="resourceCookie">Cookie that represents the resource.</param>
+        <param name="checkForEquality">A <see cref="T:System.Boolean" /> that is <see langword="true" /> when property values must be compared for equality; <see langword="false" /> when property values must be compared for inequality.</param>
+        <param name="concurrencyValues">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> list of the eTag property names and corresponding values.</param>
+        <summary>Supplies the eTag value for the given entity resource.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

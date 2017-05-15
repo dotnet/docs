@@ -1,13 +1,17 @@
-FROM microsoft/dotnet:latest
-
-COPY . /app
+FROM microsoft/dotnet:1.1-sdk-msbuild
 
 WORKDIR /app
 
-RUN ["dotnet", "restore"]
+# copy csproj and restore as distinct layers
 
-RUN ["dotnet", "build"]
+COPY WeatherMicroservice.csproj .
+RUN dotnet restore
 
-EXPOSE 5000/tcp
+# copy and build everything else
 
-ENTRYPOINT ["dotnet", "run", "--server.urls", "http://0.0.0.0:5000"]
+COPY . .
+
+# RUN dotnet restore
+RUN dotnet publish -c Release -o out
+
+ENTRYPOINT ["dotnet", "out/WeatherMicroservice.dll", "--server.urls", "http://0.0.0.0:5000"]

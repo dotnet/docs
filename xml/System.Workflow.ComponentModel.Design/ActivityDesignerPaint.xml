@@ -1,0 +1,322 @@
+<Type Name="ActivityDesignerPaint" FullName="System.Workflow.ComponentModel.Design.ActivityDesignerPaint">
+  <TypeSignature Language="C#" Value="public static class ActivityDesignerPaint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ActivityDesignerPaint extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerPaint" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides static methods used to draw user interface elements on activity designer surfaces. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+   
+  
+## Examples  
+ The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
+  
+ [!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
+ [!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Draw3DButton">
+      <MemberSignature Language="C#" Value="public static void Draw3DButton (System.Drawing.Graphics graphics, System.Drawing.Image image, System.Drawing.Rectangle bounds, float transparency, System.Windows.Forms.ButtonState buttonState);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Draw3DButton(class System.Drawing.Graphics graphics, class System.Drawing.Image image, valuetype System.Drawing.Rectangle bounds, float32 transparency, valuetype System.Windows.Forms.ButtonState buttonState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.Draw3DButton(System.Drawing.Graphics,System.Drawing.Image,System.Drawing.Rectangle,System.Single,System.Windows.Forms.ButtonState)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="image" Type="System.Drawing.Image" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="transparency" Type="System.Single" />
+        <Parameter Name="buttonState" Type="System.Windows.Forms.ButtonState" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> on which to draw the 3-dimensional button.</param>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to draw on the button.</param>
+        <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that defines the bounds of the button.</param>
+        <param name="transparency">The single-precision floating-point number to specify the transparency level of the button.</param>
+        <param name="buttonState">The <see cref="T:System.Windows.Forms.ButtonState" /> enumeration value to specify the appearance of the button.</param>
+        <summary>Draws a 3-dimensional button on the activity designer surface.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="graphics" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawExpandButton">
+      <MemberSignature Language="C#" Value="public static void DrawExpandButton (System.Drawing.Graphics graphics, System.Drawing.Rectangle boundingRect, bool drawExpanded, System.Workflow.ComponentModel.Design.CompositeDesignerTheme compositeDesignerTheme);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawExpandButton(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle boundingRect, bool drawExpanded, class System.Workflow.ComponentModel.Design.CompositeDesignerTheme compositeDesignerTheme) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean,System.Workflow.ComponentModel.Design.CompositeDesignerTheme)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="boundingRect" Type="System.Drawing.Rectangle" />
+        <Parameter Name="drawExpanded" Type="System.Boolean" />
+        <Parameter Name="compositeDesignerTheme" Type="System.Workflow.ComponentModel.Design.CompositeDesignerTheme" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> on which to draw the button.</param>
+        <param name="boundingRect">The <see cref="T:System.Drawing.Rectangle" /> that defines the bounds of the button.</param>
+        <param name="drawExpanded">
+          <see langword="true" /> to draw an expanded button; otherwise, <see langword="false" />.</param>
+        <param name="compositeDesignerTheme">The <see cref="T:System.Workflow.ComponentModel.Design.CompositeDesignerTheme" /> associated with the activity designer used to render the button.</param>
+        <summary>Draws a button that is used to expand and collapse composite designers on the activity designer surface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
+  
+ [!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
+ [!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="graphics" /> or <paramref name="compositeDesignerTheme" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawImage">
+      <MemberSignature Language="C#" Value="public static void DrawImage (System.Drawing.Graphics graphics, System.Drawing.Image image, System.Drawing.Rectangle destination, System.Workflow.ComponentModel.Design.DesignerContentAlignment alignment);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawImage(class System.Drawing.Graphics graphics, class System.Drawing.Image image, valuetype System.Drawing.Rectangle destination, valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment alignment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage(System.Drawing.Graphics,System.Drawing.Image,System.Drawing.Rectangle,System.Workflow.ComponentModel.Design.DesignerContentAlignment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="image" Type="System.Drawing.Image" />
+        <Parameter Name="destination" Type="System.Drawing.Rectangle" />
+        <Parameter Name="alignment" Type="System.Workflow.ComponentModel.Design.DesignerContentAlignment" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> on which to draw the image.</param>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to draw.</param>
+        <param name="destination">The <see cref="T:System.Drawing.Rectangle" /> that defines the bounds of the image to draw.</param>
+        <param name="alignment">The <see cref="T:System.Workflow.ComponentModel.Design.DesignerContentAlignment" /> that specifies how the image is aligned in the bounding rectangle.</param>
+        <summary>Draws an image on the activity designer surface by using a <see cref="T:System.Drawing.Graphics" />, an <see cref="T:System.Drawing.Image" />, a <see cref="T:System.Drawing.Rectangle" />, and a <see cref="T:System.Workflow.ComponentModel.Design.DesignerContentAlignment" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you use this version of <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A>, the source rectangle is set to the size, in pixels, of the image, the transparency setting is set to 1.0f, and drawing grayscales is not allowed.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
+  
+ [!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
+ [!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="graphics" />, <paramref name="image" />, or <paramref name="destination" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawImage">
+      <MemberSignature Language="C#" Value="public static void DrawImage (System.Drawing.Graphics graphics, System.Drawing.Image image, System.Drawing.Rectangle destination, System.Drawing.Rectangle source, System.Workflow.ComponentModel.Design.DesignerContentAlignment alignment, float transparency, bool grayscale);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawImage(class System.Drawing.Graphics graphics, class System.Drawing.Image image, valuetype System.Drawing.Rectangle destination, valuetype System.Drawing.Rectangle source, valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment alignment, float32 transparency, bool grayscale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage(System.Drawing.Graphics,System.Drawing.Image,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Workflow.ComponentModel.Design.DesignerContentAlignment,System.Single,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="image" Type="System.Drawing.Image" />
+        <Parameter Name="destination" Type="System.Drawing.Rectangle" />
+        <Parameter Name="source" Type="System.Drawing.Rectangle" />
+        <Parameter Name="alignment" Type="System.Workflow.ComponentModel.Design.DesignerContentAlignment" />
+        <Parameter Name="transparency" Type="System.Single" />
+        <Parameter Name="grayscale" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> on which to draw the image.</param>
+        <param name="image">The <see cref="T:System.Drawing.Image" /> to draw.</param>
+        <param name="destination">The <see cref="T:System.Drawing.Rectangle" /> that defines the bounds of the image.</param>
+        <param name="source">The <see cref="T:System.Drawing.Rectangle" /> that defines the source of the image.</param>
+        <param name="alignment">The <see cref="T:System.Workflow.ComponentModel.Design.DesignerContentAlignment" /> that specifies how the image is aligned in the bounding rectangle.</param>
+        <param name="transparency">A single-precision floating-point number that defines the transparency settings for the image.</param>
+        <param name="grayscale">
+          <see langword="true" /> to draw the image in grayscales; otherwise, <see langword="false" />.</param>
+        <summary>Draws an image on the activity designer surface by using a <see cref="T:System.Drawing.Graphics" />, an <see cref="T:System.Drawing.Image" />, a source and destination <see cref="T:System.Drawing.Rectangle" />, an <see cref="T:System.Workflow.ComponentModel.Design.DesignerContentAlignment" />, a single-precision floating-point number, and a Boolean value.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="graphics" />, <paramref name="image" />, <paramref name="destination" />, or <paramref name="source" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).  
+  
+ -or-  
+  
+ <paramref name="transparency" /> is less than 0, or greater than 1.0f.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawRoundedRectangle">
+      <MemberSignature Language="C#" Value="public static void DrawRoundedRectangle (System.Drawing.Graphics graphics, System.Drawing.Pen drawingPen, System.Drawing.Rectangle rectangle, int radius);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawRoundedRectangle(class System.Drawing.Graphics graphics, class System.Drawing.Pen drawingPen, valuetype System.Drawing.Rectangle rectangle, int32 radius) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle(System.Drawing.Graphics,System.Drawing.Pen,System.Drawing.Rectangle,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="drawingPen" Type="System.Drawing.Pen" />
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="radius" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> on which to draw the rectangle.</param>
+        <param name="drawingPen">The <see cref="T:System.Drawing.Pen" /> to draw the rectangle.</param>
+        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> that defines the bounds of the rounded rectangle.</param>
+        <param name="radius">The integer value of the radius to use for the rounded edges.</param>
+        <summary>Draws a rounded rectangle on the activity designer surface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> uses the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.GetRoundedRectanglePath%2A> method to obtain the path to draw.  
+  
+   
+  
+## Examples  
+ The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
+  
+ [!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
+ [!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="graphics" /> or <paramref name="drawingPen" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawText">
+      <MemberSignature Language="C#" Value="public static void DrawText (System.Drawing.Graphics graphics, System.Drawing.Font font, string text, System.Drawing.Rectangle boundingRect, System.Drawing.StringAlignment alignment, System.Workflow.ComponentModel.Design.TextQuality textQuality, System.Drawing.Brush textBrush);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawText(class System.Drawing.Graphics graphics, class System.Drawing.Font font, string text, valuetype System.Drawing.Rectangle boundingRect, valuetype System.Drawing.StringAlignment alignment, valuetype System.Workflow.ComponentModel.Design.TextQuality textQuality, class System.Drawing.Brush textBrush) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText(System.Drawing.Graphics,System.Drawing.Font,System.String,System.Drawing.Rectangle,System.Drawing.StringAlignment,System.Workflow.ComponentModel.Design.TextQuality,System.Drawing.Brush)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graphics" Type="System.Drawing.Graphics" />
+        <Parameter Name="font" Type="System.Drawing.Font" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="boundingRect" Type="System.Drawing.Rectangle" />
+        <Parameter Name="alignment" Type="System.Drawing.StringAlignment" />
+        <Parameter Name="textQuality" Type="System.Workflow.ComponentModel.Design.TextQuality" />
+        <Parameter Name="textBrush" Type="System.Drawing.Brush" />
+      </Parameters>
+      <Docs>
+        <param name="graphics">The <see cref="T:System.Drawing.Graphics" /> on which to draw the text.</param>
+        <param name="font">The <see cref="T:System.Drawing.Font" /> used to draw the text</param>
+        <param name="text">The text to draw.</param>
+        <param name="boundingRect">The bounding <see cref="T:System.Drawing.Rectangle" /> in which the text must be drawn.</param>
+        <param name="alignment">The <see cref="T:System.Drawing.StringAlignment" /> that specifies where the text is aligned in the bounding rectangle.</param>
+        <param name="textQuality">The <see cref="T:System.Workflow.ComponentModel.Design.TextQuality" /> that specifies the quality setting to draw the text.</param>
+        <param name="textBrush">The <see cref="T:System.Drawing.Brush" /> to draw the text.</param>
+        <summary>Draws text on the activity designer surface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates a way to use the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class to draw a custom activity on the workflow design surface. A rounded rectangle is first drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method. Text is then drawn using <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawText%2A> and is placed at the location of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.TextRectangle%2A> of the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner>. Additionally, the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.Image%2A> associated with the <xref:System.Workflow.ComponentModel.Design.ActivityDesigner> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawImage%2A> method of the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint> class.  Finally, an expand button used by a <xref:System.Workflow.ComponentModel.CompositeActivity> is drawn using the <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawExpandButton%2A>.  
+  
+ [!code-csharp[WF_Samples#78](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets.cs#78)]
+ [!code-vb[WF_Samples#78](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets.vb#78)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="graphics" />, <paramref name="font" />, <paramref name="text" />, or <paramref name="textBrush" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRoundedRectanglePath">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Drawing2D.GraphicsPath GetRoundedRectanglePath (System.Drawing.Rectangle rectangle, int radius);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Drawing2D.GraphicsPath GetRoundedRectanglePath(valuetype System.Drawing.Rectangle rectangle, int32 radius) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.GetRoundedRectanglePath(System.Drawing.Rectangle,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Drawing2D.GraphicsPath</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rectangle" Type="System.Drawing.Rectangle" />
+        <Parameter Name="radius" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="rectangle">The <see cref="T:System.Drawing.Rectangle" /> for which to obtain the graphics path.</param>
+        <param name="radius">An integer that defines the radius to use to draw the rounded corners.</param>
+        <summary>Returns the graphics path used to draw the specified rounded rectangle.</summary>
+        <returns>A <see cref="T:System.Drawing.Drawing2D.GraphicsPath" /> that draws the rounded path of the specified rectangle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.DrawRoundedRectangle%2A> method uses <xref:System.Workflow.ComponentModel.Design.ActivityDesignerPaint.GetRoundedRectanglePath%2A> to obtain the path to draw.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="rectangle" /> is set to <see cref="P:System.Drawing.Rectangle.IsEmpty" />.  
+  
+ -- or --  
+  
+ <paramref name="radius" /> is less than or equal to 0.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

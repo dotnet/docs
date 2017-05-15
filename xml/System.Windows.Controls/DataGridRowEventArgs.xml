@@ -1,0 +1,55 @@
+<Type Name="DataGridRowEventArgs" FullName="System.Windows.Controls.DataGridRowEventArgs">
+  <TypeSignature Language="C#" Value="public class DataGridRowEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridRowEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridRowEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.DataGrid.LoadingRow" /> and <see cref="E:System.Windows.Controls.DataGrid.UnloadingRow" /> events.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridRowEventArgs (System.Windows.Controls.DataGridRow row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.DataGridRow row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridRowEventArgs.#ctor(System.Windows.Controls.DataGridRow)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="row" Type="System.Windows.Controls.DataGridRow" />
+      </Parameters>
+      <Docs>
+        <param name="row">The row for which the event occurred.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridRowEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Row">
+      <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridRow Row { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataGridRow Row" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridRowEventArgs.Row" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridRow</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the row for which the event occurred.</summary>
+        <value>The row for which the event occurred.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

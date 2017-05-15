@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "data types [Visual Basic], Visual Basic"
 ms.assetid: 4ea2ef2a-3d4d-42d9-9f8f-173a37c96e53
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

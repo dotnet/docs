@@ -1,0 +1,30 @@
+<Type Name="CacheEntryUpdateCallback" FullName="System.Runtime.Caching.CacheEntryUpdateCallback">
+  <TypeSignature Language="C#" Value="public delegate void CacheEntryUpdateCallback(CacheEntryUpdateArguments arguments);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheEntryUpdateCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryUpdateCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Caching</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="arguments" Type="System.Runtime.Caching.CacheEntryUpdateArguments" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="arguments">The information about the entry that is about to be removed from the cache.</param>
+    <summary>Defines a reference to a method that is invoked when a cache entry is about to be removed from the cache.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Information about a cache entry to be removed is contained in a <xref:System.Runtime.Caching.CacheEntryUpdateArguments> object. A <xref:System.Runtime.Caching.CacheEntryUpdateArguments> object is passed to the <xref:System.Runtime.Caching.CacheEntryUpdateCallback> delegate. The method that implements the <xref:System.Runtime.Caching.CacheEntryUpdateCallback> delegate can pass an updated cache entry value back to the cache implementation. The updated cache entry replaces the cache item that is about to be removed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

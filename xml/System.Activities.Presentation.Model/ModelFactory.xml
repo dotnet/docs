@@ -1,0 +1,135 @@
+<Type Name="ModelFactory" FullName="System.Activities.Presentation.Model.ModelFactory">
+  <TypeSignature Language="C#" Value="public static class ModelFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ModelFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Creates instances of <see cref="T:System.Activities.Presentation.Model.ModelItem" /> objects in the designer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateItem">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.Model.ModelItem CreateItem (System.Activities.Presentation.EditingContext context, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.Model.ModelItem CreateItem(class System.Activities.Presentation.EditingContext context, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelFactory.CreateItem(System.Activities.Presentation.EditingContext,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">The designer’s editing context.</param>
+        <param name="item">The <see cref="T:System.Activities.Presentation.Model.ModelItem" /> to clone.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelItem" /> by creating a deep copy of the instance provided.</summary>
+        <returns>Returns the newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateItem">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.Model.ModelItem CreateItem (System.Activities.Presentation.EditingContext context, Type itemType, object[] arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.Model.ModelItem CreateItem(class System.Activities.Presentation.EditingContext context, class System.Type itemType, object[] arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelFactory.CreateItem(System.Activities.Presentation.EditingContext,System.Type,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+        <Parameter Name="itemType" Type="System.Type" />
+        <Parameter Name="arguments" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The designer’s editing context.</param>
+        <param name="itemType">The type of the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> to create.</param>
+        <param name="arguments">An optional array of arguments that should be passed to the constructor of the item.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelItem" /> for the given item type.</summary>
+        <returns>Returns the newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateItem">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.Model.ModelItem CreateItem (System.Activities.Presentation.EditingContext context, Type itemType, System.Activities.Presentation.Model.CreateOptions options, object[] arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.Model.ModelItem CreateItem(class System.Activities.Presentation.EditingContext context, class System.Type itemType, valuetype System.Activities.Presentation.Model.CreateOptions options, object[] arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelFactory.CreateItem(System.Activities.Presentation.EditingContext,System.Type,System.Activities.Presentation.Model.CreateOptions,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+        <Parameter Name="itemType" Type="System.Type" />
+        <Parameter Name="options" Type="System.Activities.Presentation.Model.CreateOptions" />
+        <Parameter Name="arguments" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="context">The designer’s editing context.</param>
+        <param name="itemType">The type of the <see cref="T:System.Activities.Presentation.Model.ModelItem" /> to create.</param>
+        <param name="options">A set of options used when creating the item.</param>
+        <param name="arguments">An optional array of arguments that should be passed to the constructor of the item.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelItem" /> for the given item type.</summary>
+        <returns>Returns the newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateStaticMemberItem">
+      <MemberSignature Language="C#" Value="public static System.Activities.Presentation.Model.ModelItem CreateStaticMemberItem (System.Activities.Presentation.EditingContext context, Type type, string memberName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Presentation.Model.ModelItem CreateStaticMemberItem(class System.Activities.Presentation.EditingContext context, class System.Type type, string memberName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelFactory.CreateStaticMemberItem(System.Activities.Presentation.EditingContext,System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.Model.ModelItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.Presentation.EditingContext" />
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="memberName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">The designer’s editing context.</param>
+        <param name="type">The type that contains the static member being referenced.</param>
+        <param name="memberName">The name of the static member being referenced.</param>
+        <summary>Creates a new <see cref="T:System.Activities.Presentation.Model.ModelItem" /> that represents the value of a static member of the given class.</summary>
+        <returns>Returns the newly created <see cref="T:System.Activities.Presentation.Model.ModelItem" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

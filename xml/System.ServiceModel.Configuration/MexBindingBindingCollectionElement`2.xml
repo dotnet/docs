@@ -1,0 +1,80 @@
+<Type Name="MexBindingBindingCollectionElement&lt;TStandardBinding,TBindingConfiguration&gt;" FullName="System.ServiceModel.Configuration.MexBindingBindingCollectionElement&lt;TStandardBinding,TBindingConfiguration&gt;">
+  <TypeSignature Language="C#" Value="public abstract class MexBindingBindingCollectionElement&lt;TStandardBinding,TBindingConfiguration&gt; : System.ServiceModel.Configuration.StandardBindingCollectionElement&lt;TStandardBinding,TBindingConfiguration&gt; where TStandardBinding : Binding where TBindingConfiguration : StandardBindingElementnew()" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MexBindingBindingCollectionElement`2&lt;(class System.ServiceModel.Channels.Binding) TStandardBinding, .ctor (class System.ServiceModel.Configuration.StandardBindingElement) TBindingConfiguration&gt; extends System.ServiceModel.Configuration.StandardBindingCollectionElement`2&lt;!TStandardBinding, !TBindingConfiguration&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MexBindingBindingCollectionElement`2" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TStandardBinding">
+      <Constraints>
+        <BaseTypeName>System.ServiceModel.Channels.Binding</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TBindingConfiguration">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <BaseTypeName>System.ServiceModel.Configuration.StandardBindingElement</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Configuration.StandardBindingCollectionElement&lt;TStandardBinding,TBindingConfiguration&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TStandardBinding">TStandardBinding</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TBindingConfiguration">TBindingConfiguration</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TStandardBinding">A standard binding element.</typeparam>
+    <typeparam name="TBindingConfiguration">A binding configuration element.</typeparam>
+    <summary>Represents a collection of MEX binding configuration elements.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MexBindingBindingCollectionElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexBindingBindingCollectionElement`2.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.MexBindingBindingCollectionElement`2" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryAdd">
+      <MemberSignature Language="C#" Value="protected override bool TryAdd (string name, System.ServiceModel.Channels.Binding binding, System.Configuration.Configuration config);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryAdd(string name, class System.ServiceModel.Channels.Binding binding, class System.Configuration.Configuration config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexBindingBindingCollectionElement`2.TryAdd(System.String,System.ServiceModel.Channels.Binding,System.Configuration.Configuration)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="config" Type="System.Configuration.Configuration" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the binding to be added.</param>
+        <param name="binding">A <see cref="T:System.ServiceModel.Channels.Binding" /> object that represents the binding to be added.</param>
+        <param name="config">The configuration settings for this binding.</param>
+        <summary>Adds the specified binding to the collection.</summary>
+        <returns>
+          <see langword="true" /> if the binding can be added to this collection; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

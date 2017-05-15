@@ -1,0 +1,47 @@
+<Type Name="GridViewSortEventHandler" FullName="System.Web.UI.WebControls.GridViewSortEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void GridViewSortEventHandler(object sender, GridViewSortEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridViewSortEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewSortEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.GridViewSortEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.GridViewSortEventArgs" /> object that contains the event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.GridView.Sorting" /> event of a <see cref="T:System.Web.UI.WebControls.GridView" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.GridView.Sorting> event is raised when the hyperlink to sort a column is clicked, but before the <xref:System.Web.UI.WebControls.GridView> control handles the sort operation. This allows you to provide an event-handling method that performs a custom routine, such as canceling the sorting operation, whenever this event occurs.  
+  
+ When you create a <xref:System.Web.UI.WebControls.GridViewSortEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to programmatically add a <xref:System.Web.UI.WebControls.GridViewSortEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.Sorting> event of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewSortEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSortEventHandler/CS/gridviewsorteventhandlercs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewSortEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSortEventHandler/VB/gridviewsorteventhandlervb.aspx#1)]  -->  
+  
+ The following example demonstrates how to declaratively add a <xref:System.Web.UI.WebControls.GridViewSortEventHandler> delegate to the <xref:System.Web.UI.WebControls.GridView.Sorting> event of a <xref:System.Web.UI.WebControls.GridView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[GridViewSorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/GridViewSorting/CS/gridviewsortingcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[GridViewSorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/GridViewSorting/VB/gridviewsortingvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

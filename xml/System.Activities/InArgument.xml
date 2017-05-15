@@ -1,0 +1,67 @@
+<Type Name="InArgument" FullName="System.Activities.InArgument">
+  <TypeSignature Language="C#" Value="public abstract class InArgument : System.Activities.Argument" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InArgument extends System.Activities.Argument" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.InArgument" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Argument</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The abstract base class that represents a binding terminal that supports the flow of data into an activity.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateReference">
+      <MemberSignature Language="C#" Value="public static System.Activities.InArgument CreateReference (System.Activities.InArgument argumentToReference, string referencedArgumentName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.InArgument CreateReference(class System.Activities.InArgument argumentToReference, string referencedArgumentName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.InArgument.CreateReference(System.Activities.InArgument,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argumentToReference" Type="System.Activities.InArgument" />
+        <Parameter Name="referencedArgumentName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="argumentToReference">The target <see langword="in" /> argument to reference.</param>
+        <param name="referencedArgumentName">The name of the referenced argument.</param>
+        <summary>Creates a new <see cref="T:System.Activities.InArgument" /> that references the specified target <see cref="T:System.Activities.InArgument" /> using the specified referenced argument name.</summary>
+        <returns>A new <see langword="in" /> argument that references the specified target <see cref="T:System.Activities.InArgument" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateReference">
+      <MemberSignature Language="C#" Value="public static System.Activities.InArgument CreateReference (System.Activities.InOutArgument argumentToReference, string referencedArgumentName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.InArgument CreateReference(class System.Activities.InOutArgument argumentToReference, string referencedArgumentName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.InArgument.CreateReference(System.Activities.InOutArgument,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.InArgument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argumentToReference" Type="System.Activities.InOutArgument" />
+        <Parameter Name="referencedArgumentName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="argumentToReference">The target <see langword="in/out" /> argument to reference.</param>
+        <param name="referencedArgumentName">The name of the referenced argument.</param>
+        <summary>Creates a new <see cref="T:System.Activities.InArgument" /> that references the specified target <see cref="T:System.Activities.InOutArgument" /> using the specified referenced argument name.</summary>
+        <returns>A new <see langword="in" /> argument that references the specified target <see cref="T:System.Activities.InOutArgument" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

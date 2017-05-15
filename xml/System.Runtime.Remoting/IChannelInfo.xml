@@ -1,0 +1,52 @@
+<Type Name="IChannelInfo" FullName="System.Runtime.Remoting.IChannelInfo">
+  <TypeSignature Language="C#" Value="public interface IChannelInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelInfo" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.IChannelInfo" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides custom channel information that is carried along with the <see cref="T:System.Runtime.Remoting.ObjRef" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is implemented by the <xref:System.Runtime.Remoting.ObjRef.ChannelInfo%2A?displayProperty=fullName> property. It provides access to transport specific information contributed by the channels that are able to receive calls in the process or application domain where the object lives. This interface might also be used when building custom <xref:System.Runtime.Remoting.ObjRef> classes.  
+  
+ When an existing object instance is marshaled to produce a <xref:System.Runtime.Remoting.ObjRef>, the <xref:System.Runtime.Remoting.IChannelInfo.ChannelData%2A> is copied from the channel (see <xref:System.Runtime.Remoting.Channels.IChannelReceiver>) for each registered channel and stored in the <xref:System.Runtime.Remoting.ObjRef>. When the <xref:System.Runtime.Remoting.ObjRef> is unmarshaled at its destination, the <xref:System.Runtime.Remoting.IChannelInfo.ChannelData%2A> provided through the <xref:System.Runtime.Remoting.IChannelInfo> interface can be examined and used by corresponding channels in that process or application domain to create a transport message sink that manages the communication between the proxy and the server object.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ChannelData">
+      <MemberSignature Language="C#" Value="public object[] ChannelData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object[] ChannelData" />
+      <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.IChannelInfo.ChannelData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the channel data for each channel.</summary>
+        <value>The channel data for each channel.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Security.SecurityException">The immediate caller makes the call through a reference to the interface and does not have infrastructure permission.</exception>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

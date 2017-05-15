@@ -1,0 +1,434 @@
+<Type Name="EntityConnectionStringBuilder" FullName="System.Data.EntityClient.EntityConnectionStringBuilder">
+  <TypeSignature Language="C#" Value="public sealed class EntityConnectionStringBuilder : System.Data.Common.DbConnectionStringBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityConnectionStringBuilder extends System.Data.Common.DbConnectionStringBuilder" />
+  <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityConnectionStringBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.DbConnectionStringBuilder</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a simple way to create and manage the contents of connection strings used by the EntityClient.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The connection string builder lets developers programmatically create syntactically correct connection strings, and parse and rebuild existing connection strings, by using properties and methods of the class. The connection string builder provides strongly typed properties corresponding to the known keyword/value pairs. Developers who must create connection strings as part of applications can use the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class to build and modify connection strings.  
+  
+ The <xref:System.Data.EntityClient.EntityConnectionStringBuilder> performs checks for valid keyword/value pairs, each of which is exposed as a <xref:System.Data.EntityClient.EntityConnectionStringBuilder> property value.  
+  
+> [!NOTE]
+>  The connection string for the underlying data source is supplied by the <xref:System.Data.EntityClient.EntityConnectionStringBuilder.ProviderConnectionString%2A> property. The supplied provider connection string is not checked for valid keyword/value pairs.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> in conjunction with a <xref:System.Data.SqlClient.SqlConnectionStringBuilder>.  
+  
+ [!code-csharp[eSQLBasicExamples#BuildingConnectionStringWithEntityCommand](~/samples/snippets/csharp/VS_Snippets_Data/eSQLBasicExamples/CS/Program.cs#buildingconnectionstringwithentitycommand)]
+ [!code-vb[eSQLBasicExamples#BuildingConnectionStringWithEntityCommand](~/samples/snippets/visualbasic/VS_Snippets_Data/eSQLBasicExamples/VB/Program.vb#buildingconnectionstringwithentitycommand)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityConnectionStringBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnectionStringBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> in conjunction with a <xref:System.Data.SqlClient.SqlConnectionStringBuilder>. The code sets properties of a `SqlConnectionStringBuilder` to create a <xref:System.Data.SqlClient.SqlConnection> connection string that supplies part of the underlying provider connection string. Note that the Provider name cannot be set using the `SqlConnectionStringBuilder` because it is not valid `SqlConnection` connection string syntax. The code creates the <xref:System.Data.EntityClient.EntityConnection> connection string by setting `EntityConnectionStringBuilder` properties.  
+  
+ [!code-csharp[eSQLBasicExamples#BuildingConnectionStringWithEntityCommand](~/samples/snippets/csharp/VS_Snippets_Data/eSQLBasicExamples/CS/Program.cs#buildingconnectionstringwithentitycommand)]
+ [!code-vb[eSQLBasicExamples#BuildingConnectionStringWithEntityCommand](~/samples/snippets/visualbasic/VS_Snippets_Data/eSQLBasicExamples/VB/Program.vb#buildingconnectionstringwithentitycommand)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityConnectionStringBuilder (string connectionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnectionStringBuilder.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="connectionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="connectionString">A provider-specific connection string to the underlying data source.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> class using the supplied connection string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The supplied `connectionString` is not checked for valid keyword/value pairs. For valid keyword/value syntax, see <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.  
+  
+ The invariant Provider name must be specified in the `connectionString` parameter. Supported providers include the following:  
+  
+-   `System.Data.Odbc`  
+  
+-   `System.Data.OleDb`  
+  
+-   `System.Data.OracleClient`  
+  
+-   `System.Data.SqlClient`  
+  
+-   `Microsoft.SqlServerCe.Client`  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> in conjunction with a <xref:System.Data.SqlClient.SqlConnectionStringBuilder>. The code sets properties of a `SqlConnectionStringBuilder` to create a <xref:System.Data.SqlClient.SqlConnection> connection string that supplies part of the underlying provider connection string. Note that the Provider name cannot be set using the `SqlConnectionStringBuilder` because it is not valid `SqlConnection` connection string syntax. The code creates the <xref:System.Data.EntityClient.EntityConnection> connection string by setting `EntityConnectionStringBuilder` properties. It does not use the `connectionString` overload.  
+  
+ [!code-csharp[eSQLBasicExamples#BuildingConnectionStringWithEntityCommand](~/samples/snippets/csharp/VS_Snippets_Data/eSQLBasicExamples/CS/Program.cs#buildingconnectionstringwithentitycommand)]
+ [!code-vb[eSQLBasicExamples#BuildingConnectionStringWithEntityCommand](~/samples/snippets/visualbasic/VS_Snippets_Data/eSQLBasicExamples/VB/Program.vb#buildingconnectionstringwithentitycommand)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public override void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnectionStringBuilder.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Clears the contents of the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.EntityClient.EntityConnectionStringBuilder.Clear%2A> method removes all keyword/value pairs from the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> and resets all corresponding properties to null (`Nothing` in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsKey">
+      <MemberSignature Language="C#" Value="public override bool ContainsKey (string keyword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ContainsKey(string keyword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnectionStringBuilder.ContainsKey(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="keyword">The key to locate in the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" />.</param>
+        <summary>Determines whether the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> contains a specific key.</summary>
+        <returns>Returns <see langword="true" /> if the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> contains an element that has the specified key; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFixedSize">
+      <MemberSignature Language="C#" Value="public override bool IsFixedSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnectionStringBuilder.IsFixedSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> has a fixed size.</summary>
+        <value>Returns <see langword="true" /> in every case, because the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> supplies a fixed-size collection of keyword/value pairs.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public override object this[string keyword] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnectionStringBuilder.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="keyword">The key of the item to get or set.</param>
+        <summary>Gets or sets the value associated with the specified key. In C#, this property is the indexer.</summary>
+        <value>The value associated with the specified key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> contains a fixed-size dictionary, trying to add a key that does not exist in the dictionary throws a <xref:System.Collections.Generic.KeyNotFoundException>.  
+  
+ For valid keyword/value syntax, see <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyword" /> is a null reference (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]).</exception>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Tried to add a key that does not exist in the available keys.</exception>
+        <exception cref="T:System.FormatException">Invalid value in the connection string (specifically, a Boolean or numeric value was expected but not supplied).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public override System.Collections.ICollection Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnectionStringBuilder.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.ICollection" /> that contains the keys in the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" />.</summary>
+        <value>An <see cref="T:System.Collections.ICollection" /> that contains the keys in the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For valid keyword/value syntax, see <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Metadata">
+      <MemberSignature Language="C#" Value="public string Metadata { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Metadata" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnectionStringBuilder.Metadata" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Metadata")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the metadata locations in the connection string.</summary>
+        <value>Gets or sets the metadata locations in the connection string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For valid keyword/value syntax, see <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnectionStringBuilder.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Name")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of a section as defined in a configuration file.</summary>
+        <value>The name of a section in a configuration file.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For valid keyword/value syntax, see <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Provider">
+      <MemberSignature Language="C#" Value="public string Provider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Provider" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnectionStringBuilder.Provider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Provider")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the underlying [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] data provider in the connection string.</summary>
+        <value>The invariant name of the underlying [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] data provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The invariant provider name is used retrieve the <xref:System.Data.Common.DbProviderFactory> object for the underlying provider.  
+  
+ For valid keyword/value syntax, see <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderConnectionString">
+      <MemberSignature Language="C#" Value="public string ProviderConnectionString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProviderConnectionString" />
+      <MemberSignature Language="DocId" Value="P:System.Data.EntityClient.EntityConnectionStringBuilder.ProviderConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DisplayName("Provider Connection String")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the inner, provider-specific connection string.</summary>
+        <value>The inner, provider-specific connection string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The provider-specific connection string is not checked for valid keyword/value pairs before it is set. Developers can create connection strings by using either a strongly typed connection string builder class, or they can use the <xref:System.Data.Common.DbConnectionStringBuilder> class. The <xref:System.Data.Common.DbConnectionStringBuilder> performs no checks for valid keyword/value pairs. Therefore, it is possible using this class to create invalid connection strings.  
+  
+ For valid keyword/value syntax, see <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public override bool Remove (string keyword);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Remove(string keyword) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnectionStringBuilder.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyword" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="keyword">The key of the keyword/value pair to be removed from the connection string in this <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" />.</param>
+        <summary>Removes the entry with the specified key from the <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" /> instance.</summary>
+        <returns>Returns <see langword="true" /> if the key existed in the connection string and was removed; <see langword="false" /> if the key did not exist.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the `Remove` method returns a value that indicates its success, it is not required to look for a key before trying to remove the keyword/value pair from the <xref:System.Data.EntityClient.EntityConnectionStringBuilder> instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyword" /> is null (<see langword="Nothing" /> in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)])</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue">
+      <MemberSignature Language="C#" Value="public override bool TryGetValue (string keyword, out object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool TryGetValue(string keyword, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityConnectionStringBuilder.TryGetValue(System.String,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keyword" Type="System.String" />
+        <Parameter Name="value" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="keyword">The key of the item to retrieve.</param>
+        <param name="value">The value corresponding to <c>keyword.</c></param>
+        <summary>Retrieves a value corresponding to the supplied key from this <see cref="T:System.Data.EntityClient.EntityConnectionStringBuilder" />.</summary>
+        <returns>Returns <see langword="true" /> if <paramref name="keyword" /> was found in the connection string; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.EntityClient.EntityConnectionStringBuilder.TryGetValue%2A> method lets developers safely retrieve a value from a <xref:System.Data.EntityClient.EntityConnectionStringBuilder> without having to verify that the supplied key name is a valid key name. `TryGetValue` does not raise an exception when it is passed a nonexistent key. Calling `TryGetValue` with a nonexistent key puts the value null (`Nothing` in Visual Basic) in the `value` parameter.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="keyword" /> contains a null value (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

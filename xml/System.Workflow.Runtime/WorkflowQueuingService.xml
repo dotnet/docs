@@ -1,0 +1,222 @@
+<Type Name="WorkflowQueuingService" FullName="System.Workflow.Runtime.WorkflowQueuingService">
+  <TypeSignature Language="C#" Value="public class WorkflowQueuingService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowQueuingService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowQueuingService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides the services for management of <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ <xref:System.Workflow.Runtime.WorkflowQueuingService> provides methods that you can use to manage the workflow queues associated with a workflow instance.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
+  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+  
+ [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
+ [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateWorkflowQueue">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowQueue CreateWorkflowQueue (IComparable queueName, bool transactional);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowQueue CreateWorkflowQueue(class System.IComparable queueName, bool transactional) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue(System.IComparable,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.WorkflowQueue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queueName" Type="System.IComparable" />
+        <Parameter Name="transactional" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="queueName">The name of the queue.</param>
+        <param name="transactional">A value that specifies whether the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> is visible outside the scope of the current transaction.</param>
+        <summary>Creates a <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> by using the specified name and transactional scope.</summary>
+        <returns>A <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Workflow.Runtime.WorkflowQueue> is created with the specified `queueName`. If transactional is `true`, the <xref:System.Workflow.Runtime.WorkflowQueue> is only visible inside the current transaction.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
+  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+  
+ [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
+ [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="queueName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.InvalidOperationException">A <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> with the name specified by <paramref name="queueName" /> already exists.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteWorkflowQueue">
+      <MemberSignature Language="C#" Value="public void DeleteWorkflowQueue (IComparable queueName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteWorkflowQueue(class System.IComparable queueName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.DeleteWorkflowQueue(System.IComparable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queueName" Type="System.IComparable" />
+      </Parameters>
+      <Docs>
+        <param name="queueName">The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> to delete.</param>
+        <summary>Deletes the specified <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates a method that writes a string to the console, creates an instance of <xref:System.Workflow.Runtime.WorkflowQueuingService> by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. Finally, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.DeleteWorkflowQueue%2A> method to delete the queue associated with a `QueueName` property on the current workflow.  
+  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+  
+ [!code-csharp[WF_Samples#224](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#224)]
+ [!code-vb[WF_Samples#224](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#224)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="queueName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Exists">
+      <MemberSignature Language="C#" Value="public bool Exists (IComparable queueName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Exists(class System.IComparable queueName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.Exists(System.IComparable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queueName" Type="System.IComparable" />
+      </Parameters>
+      <Docs>
+        <param name="queueName">The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</param>
+        <summary>Tests for the existence of the specified <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> exists; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
+  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+  
+ [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
+ [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="queueName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetWorkflowQueue">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowQueue GetWorkflowQueue (IComparable queueName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowQueue GetWorkflowQueue(class System.IComparable queueName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue(System.IComparable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.WorkflowQueue</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queueName" Type="System.IComparable" />
+      </Parameters>
+      <Docs>
+        <param name="queueName">The name of the <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> to retrieve.</param>
+        <summary>Retrieves the specified <see cref="T:System.Workflow.Runtime.WorkflowQueue" />.</summary>
+        <returns>A <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates a method, named `CreateQueue`, that initializes a <xref:System.Workflow.Runtime.WorkflowQueuingService> object by calling the <xref:System.Workflow.ComponentModel.ActivityExecutionContext.GetService%2A?displayProperty=fullName> method. The code then uses the <xref:System.Workflow.Runtime.WorkflowQueuingService.Exists%2A> method to determine if a <xref:System.Workflow.Runtime.WorkflowQueue> with a specified name exists. If it does not exist, the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue%2A> method; if it does the code calls the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A> method.  
+  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/en-us/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+  
+ [!code-csharp[WF_Samples#223](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#223)]
+ [!code-vb[WF_Samples#223](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#223)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="queueName" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.InvalidOperationException">The specified <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> was not found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PendingMessagesProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty PendingMessagesProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty PendingMessagesProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.WorkflowQueuingService.PendingMessagesProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Contains the unconsumed items in the workflow queues associated with this <see cref="T:System.Workflow.Runtime.WorkflowQueuingService" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a workflow instance completes or terminates all of the unconsumed items in its workflow queues that are associated with this <xref:System.Workflow.Runtime.WorkflowQueuingService> are moved to the <xref:System.Workflow.Runtime.WorkflowQueuingService.PendingMessagesProperty>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

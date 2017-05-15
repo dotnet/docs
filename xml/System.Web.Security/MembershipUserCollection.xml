@@ -1,0 +1,408 @@
+<Type Name="MembershipUserCollection" FullName="System.Web.Security.MembershipUserCollection">
+  <TypeSignature Language="C#" Value="public sealed class MembershipUserCollection : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit MembershipUserCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Security.MembershipUserCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web, Version=2.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A collection of <see cref="T:System.Web.Security.MembershipUser" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.Security.MembershipUserCollection?displayProperty=fullName> is returned from the <xref:System.Web.Security.Membership.GetAllUsers%2A>, <xref:System.Web.Security.Membership.FindUsersByName%2A>, and <xref:System.Web.Security.Membership.FindUsersByEmail%2A> methods of the <xref:System.Web.Security.Membership?displayProperty=fullName> class. The <xref:System.Web.Security.MembershipUserCollection> objects returned by the <xref:System.Web.Security.Membership.GetAllUsers%2A>, <xref:System.Web.Security.Membership.FindUsersByName%2A>, and <xref:System.Web.Security.Membership.FindUsersByEmail%2A> methods contain a snapshot of user information in the membership data store. That is, changes to the membership user information in a <xref:System.Web.Security.MembershipUserCollection> are not reflected in the membership data store. To modify membership user information in the membership data store, use the <xref:System.Web.Security.Membership.UpdateUser%2A>, <xref:System.Web.Security.Membership.CreateUser%2A> and <xref:System.Web.Security.Membership.DeleteUser%2A> methods of the <xref:System.Web.Security.Membership?displayProperty=fullName> class.  
+  
+> [!NOTE]
+>  If you are not familiar with the membership features of ASP.NET, see [Introduction to Membership](http://msdn.microsoft.com/library/79184d17-f4c7-4c9f-a073-cec4f5543980) before continuing. For a list of other topics related to membership, see [Managing Users by Using Membership](http://msdn.microsoft.com/library/824c3a24-f0af-427c-a652-0d2d1e9397cd).  
+  
+   
+  
+## Examples  
+ The following code example returns a list of membership users with a count of the number of users currently online. For an example of an ASP.NET application configured to use membership, see the <xref:System.Web.Security.Membership> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/CS/ShowUserscs.aspx#5)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.SqlMembershipProvider#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.SqlMembershipProvider/VB/ShowUsersvb.aspx#5)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MembershipUserCollection ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new, empty membership user collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Web.Security.MembershipUserCollection> is constructed by membership provider implementers and returned from the <xref:System.Web.Security.MembershipProvider.GetAllUsers%2A> and <xref:System.Web.Security.MembershipProvider.FindUsersByName%2A> methods of the <xref:System.Web.Security.MembershipProvider> abstract class.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample <xref:System.Web.Security.MembershipProvider.GetAllUsers%2A> implementation.  
+  
+ [!code-csharp[System.Web.Security.IMembershipProvider#15](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.IMembershipProvider/CS/imembershipprovidergetallusers.cs#15)]
+ [!code-vb[System.Web.Security.IMembershipProvider#15](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.IMembershipProvider/VB/imembershipprovidergetallusers.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (System.Web.Security.MembershipUser user);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Security.MembershipUser user) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.Add(System.Web.Security.MembershipUser)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="System.Web.Security.MembershipUser" />
+      </Parameters>
+      <Docs>
+        <param name="user">A <see cref="T:System.Web.Security.MembershipUser" /> object to add to the collection.</param>
+        <summary>Adds the specified membership user to the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.MembershipUserCollection.Add%2A> method is commonly used by membership provider implementations of the <xref:System.Web.Security.MembershipProvider.GetAllUsers%2A>, <xref:System.Web.Security.MembershipProvider.FindUsersByEmail%2A>, and <xref:System.Web.Security.MembershipProvider.FindUsersByName%2A> methods of the <xref:System.Web.Security.MembershipProvider> abstract class.  
+  
+   
+  
+## Examples  
+ The following code example shows a sample <xref:System.Web.Security.MembershipProvider.GetAllUsers%2A> implementation.  
+  
+ [!code-csharp[System.Web.Security.IMembershipProvider#15](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.IMembershipProvider/CS/imembershipprovidergetallusers.cs#15)]
+ [!code-vb[System.Web.Security.IMembershipProvider#15](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.IMembershipProvider/VB/imembershipprovidergetallusers.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+        <exception cref="T:System.ArgumentNullException">The <see cref="P:System.Web.Security.MembershipUser.UserName" /> of the <paramref name="user" /> is null.</exception>
+        <exception cref="T:System.ArgumentException">A <see cref="T:System.Web.Security.MembershipUser" /> object with the same <see cref="P:System.Web.Security.MembershipUser.UserName" /> value as <paramref name="user" /> already exists in the collection.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all membership user objects from the collection.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example clears a <xref:System.Web.Security.MembershipUserCollection> before replacing it with the results of the <xref:System.Web.Security.Membership.GetAllUsers%2A> method.  
+  
+ [!code-csharp[System.Web.Security.MembershipUserCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/snippetscs.aspx#4)]
+ [!code-vb[System.Web.Security.MembershipUserCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/snippetsvb.aspx#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Security.MembershipUser[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Security.MembershipUser[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.CopyTo(System.Web.Security.MembershipUser[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Web.Security.MembershipUser[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">A one-dimensional array of type <see cref="T:System.Web.Security.MembershipUser" /> that is the destination of the elements copied from the <see cref="T:System.Web.Security.MembershipUserCollection" />. The array must have zero-based indexing.</param>
+        <param name="index">The zero-based index in the array at which copying begins.</param>
+        <summary>Copies the membership user collection to a one-dimensional array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUserCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of membership user objects in the collection.</summary>
+        <value>The number of <see cref="T:System.Web.Security.MembershipUser" /> objects in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example lists all of the users from the membership user data source, including a count of the total number of users.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/countcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/countvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets an enumerator that can iterate through the membership user collection.</summary>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the entire <see cref="T:System.Web.Security.MembershipUserCollection" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Enumerators only allow reading the data in the collection. Enumerators cannot be used to modify the underlying collection. For more information, see <xref:System.Collections.IEnumerator>.  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Collections.IEnumerator> returned from the <xref:System.Web.Security.MembershipUserCollection.GetEnumerator%2A> method to iterate through a <xref:System.Web.Security.MembershipUserCollection>.  
+  
+ [!code-csharp[System.Web.Security.MembershipUserCollection#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/snippetscs.aspx#7)]
+ [!code-vb[System.Web.Security.MembershipUserCollection#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/snippetsvb.aspx#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUserCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the membership user collection is thread safe.</summary>
+        <value>Always <see langword="false" /> because thread-safe membership user collections are not supported.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Application code does not normally use this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Web.Security.MembershipUser this[string name] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Security.MembershipUser Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUserCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Security.MembershipUser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The <see cref="P:System.Web.Security.MembershipUser.UserName" /> of the <see cref="T:System.Web.Security.MembershipUser" /> to retrieve from the collection.</param>
+        <summary>Gets the membership user in the collection referenced by the specified user name.</summary>
+        <value>A <see cref="T:System.Web.Security.MembershipUser" /> object representing the user specified by <paramref name="name" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Security.MembershipUser> object returned by <xref:System.Web.Security.MembershipUserCollection.Item%2A> property contains a snapshot of user information in the membership data store. That is, changes to the membership user information in the <xref:System.Web.Security.MembershipUserCollection> are not reflected in the membership data store. To modify membership user information in the membership data store, use the <xref:System.Web.Security.Membership.UpdateUser%2A>, <xref:System.Web.Security.Membership.CreateUser%2A>, and <xref:System.Web.Security.Membership.DeleteUser%2A> methods.  
+  
+   
+  
+## Examples  
+ The following code example displays all membership user names in a <xref:System.Web.UI.WebControls.ListBox> and shows specific membership information for the selected user name.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/itemcs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Security.MembershipUserCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/itemvb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The user name of the <see cref="T:System.Web.Security.MembershipUser" /> object to remove from the collection.</param>
+        <summary>Removes the membership user object with the specified user name from the collection.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReadOnly">
+      <MemberSignature Language="C#" Value="public void SetReadOnly ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetReadOnly() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.SetReadOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Makes the contents of the membership user collection read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The contents of a <xref:System.Web.Security.MembershipUserCollection> are considered read-only, as they are a snapshot of the membership user information in the membership data store. Membership user information is modified using the <xref:System.Web.Security.Membership.UpdateUser%2A>, <xref:System.Web.Security.Membership.CreateUser%2A> and <xref:System.Web.Security.Membership.DeleteUser%2A> methods. The <xref:System.Web.Security.MembershipUserCollection.SetReadOnly%2A> method marks the <xref:System.Web.Security.MembershipUserCollection> as read-only so that <xref:System.Web.Security.MembershipUser> objects cannot be added to or removed from the collection. Property values for the <xref:System.Web.Security.MembershipUser> objects are not marked as read-only. That is, you can modify the property values of a <xref:System.Web.Security.MembershipUser> in the <xref:System.Web.Security.MembershipUserCollection> regardless of whether the collection has been marked as read-only by the <xref:System.Web.Security.MembershipUserCollection.SetReadOnly%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example returns all of the users from the membership data store. The <xref:System.Web.Security.MembershipUserCollection> returned is marked as read-only based on a `Boolean` parameter specified by the caller.  
+  
+ [!code-csharp[System.Web.Security.MembershipUserCollection#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/CS/snippetscs.aspx#5)]
+ [!code-vb[System.Web.Security.MembershipUserCollection#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Security.MembershipUserCollection/VB/snippetsvb.aspx#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Security.MembershipUserCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the synchronization root.</summary>
+        <value>Always <see langword="this" />, because synchronization of membership user collections is not supported.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Application code does not normally use this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.ICollection.CopyTo">
+      <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Security.MembershipUserCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination for the objects copied from the <see cref="T:System.Web.Security.MembershipUserCollection" /> object. The <see cref="T:System.Array" /> must have zero-based indexing.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the contents of the <see cref="T:System.Web.Security.MembershipUserCollection" /> object to an <see cref="T:System.Array" />, starting at a particular <see cref="T:System.Array" /> index.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than 0.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="array" /> is multidimensional.  
+  
+ -or-  
+  
+ <paramref name="index" /> is greater than or equal to the length of <paramref name="array" />.  
+  
+ -or-  
+  
+ The number of elements in the source <see cref="T:System.Web.Security.MembershipUserCollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination array.</exception>
+        <exception cref="T:System.InvalidCastException">The type of the source <see cref="T:System.Web.Security.MembershipUserCollection" /> cannot be cast automatically to the type of the destination array.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

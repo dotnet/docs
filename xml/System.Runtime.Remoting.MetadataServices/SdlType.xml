@@ -1,0 +1,50 @@
+<Type Name="SdlType" FullName="System.Runtime.Remoting.MetadataServices.SdlType">
+  <TypeSignature Language="C#" Value="public enum SdlType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SdlType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.MetadataServices.SdlType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the schema type that is used to describe services that are provided by an application.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Sdl">
+      <MemberSignature Language="C#" Value="Sdl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.MetadataServices.SdlType Sdl = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.MetadataServices.SdlType.Sdl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.MetadataServices.SdlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that basic Services Description Language (SDL) is used to describe services that are provided by an application. This value is obsolete.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Wsdl">
+      <MemberSignature Language="C#" Value="Wsdl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.MetadataServices.SdlType Wsdl = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.MetadataServices.SdlType.Wsdl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.MetadataServices.SdlType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the Web Services Description Language (WSDL) is used to describe services that are provided by an application.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

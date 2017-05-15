@@ -1,0 +1,90 @@
+<Type Name="InvokeFunc&lt;TResult&gt;" FullName="System.Activities.Expressions.InvokeFunc&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public sealed class InvokeFunc&lt;TResult&gt; : System.Activities.NativeActivity&lt;TResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InvokeFunc`1&lt;TResult&gt; extends System.Activities.NativeActivity`1&lt;!TResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.InvokeFunc`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.NativeActivity&lt;TResult&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TResult">TResult</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Func")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TResult">The type of the return <see cref="T:System.Activities.OutArgument`1" /> whose value is returned from the <see cref="T:System.Activities.ActivityFunc`1" />.</typeparam>
+    <summary>Invokes an <see cref="T:System.Activities.ActivityFunc`1" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InvokeFunc ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Expressions.InvokeFunc`1" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.InvokeFunc`1.Execute(System.Activities.NativeActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Activities.NativeActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Func">
+      <MemberSignature Language="C#" Value="public System.Activities.ActivityFunc&lt;TResult&gt; Func { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.ActivityFunc`1&lt;!TResult&gt; Func" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.InvokeFunc`1.Func" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.ActivityFunc&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Activities.ActivityFunc`1" /> to be invoked.</summary>
+        <value>The activity function to be invoked.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

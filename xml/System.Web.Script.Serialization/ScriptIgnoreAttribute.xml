@@ -1,0 +1,79 @@
+<Type Name="ScriptIgnoreAttribute" FullName="System.Web.Script.Serialization.ScriptIgnoreAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ScriptIgnoreAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScriptIgnoreAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Script.Serialization.ScriptIgnoreAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies that <see cref="T:System.Web.Script.Serialization.JavaScriptSerializer" /> will not serialize the public property or public field. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you apply <xref:System.Web.Script.Serialization.ScriptIgnoreAttribute> to a public property or public field of a class, then <xref:System.Web.Script.Serialization.JavaScriptSerializer> ignores, or skips, the member when serializing an instance of the class to JavaScript Object Notation (JSON) format.  
+  
+ The <xref:System.Web.Script.Serialization.ScriptIgnoreAttribute> will have no effect if the <xref:System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat%2A> property is set to `Xml`. If you want to have the same behavior when serializing to XML format, <xref:System.Xml.Serialization.XmlIgnoreAttribute> should be applied to the property or field instead. This is because the class will be serialized by using <xref:System.Xml.Serialization.XmlSerializer> instead of <xref:System.Web.Script.Serialization.JavaScriptSerializer>.  
+  
+ You can also apply both <xref:System.Web.Script.Serialization.ScriptIgnoreAttribute> and <xref:System.Xml.Serialization.XmlIgnoreAttribute> to a property or field. In this case, the property or field will be ignored for JSON and XML response formats.  
+  
+ For more information about how to use attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to apply <xref:System.Web.Script.Serialization.ScriptIgnoreAttribute> to the `Comment` field in the custom class named `Group`. This instructs <xref:System.Web.Script.Serialization.JavaScriptSerializer> to ignore the field when serializing an instance of the class to JSON format.  
+  
+ [!code-csharp[System.Web.Script.Serialization.ScriptIgnoreAttribute#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.Script.Serialization.ScriptIgnoreAttribute/CS/App_Code/ScriptIgnoreSample.cs#1)]
+ [!code-vb[System.Web.Script.Serialization.ScriptIgnoreAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.Script.Serialization.ScriptIgnoreAttribute/VB/App_Code/ScriptIgnoreSample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptIgnoreAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Script.Serialization.ScriptIgnoreAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Script.Serialization.ScriptIgnoreAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyToOverrides">
+      <MemberSignature Language="C#" Value="public bool ApplyToOverrides { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ApplyToOverrides" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Script.Serialization.ScriptIgnoreAttribute.ApplyToOverrides" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or set whether to override the <see cref="T:System.Web.Script.Serialization.ScriptIgnoreAttribute" /> so that the <see cref="T:System.Web.Script.Serialization.JavaScriptSerializer" /> will consider the serialization of the public property or public field.</summary>
+        <value>
+          <see langword="true" /> to override the <see cref="T:System.Web.Script.Serialization.ScriptIgnoreAttribute" />; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,603 @@
+<Type Name="WorkflowServiceHost" FullName="System.ServiceModel.Activities.WorkflowServiceHost">
+  <TypeSignature Language="C#" Value="public class WorkflowServiceHost : System.ServiceModel.ServiceHostBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowServiceHost extends System.ServiceModel.ServiceHostBase" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowServiceHost" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.ServiceHostBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a host for workflows. Supports features like messaging activities, multi-instancing, and configuration.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.ServiceModel.Activities.WorkflowServiceHost> class.  
+  
+ [!code-csharp[SendReceiveParameters#03](~/samples/snippets/csharp/VS_Snippets_CFX/sendreceiveparameters/cs/echoworkflowservice/program.cs#03)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WorkflowServiceHost ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowServiceHost (System.Activities.Activity activity, Uri[] baseAddresses);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity activity, class System.Uri[] baseAddresses) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.#ctor(System.Activities.Activity,System.Uri[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Activities.Activity" />
+        <Parameter Name="baseAddresses" Type="System.Uri[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="activity">The root activity of the workflow service.</param>
+        <param name="baseAddresses">An array of  base addresses for the workflow service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" /> class using the specified activity and base addresses.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this constructor.  
+  
+ [!code-csharp[CreationEndpoint#0](~/samples/snippets/csharp/VS_Snippets_CFX/creationendpoint/cs/creationendpoint.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowServiceHost (object serviceImplementation, Uri[] baseAddresses);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object serviceImplementation, class System.Uri[] baseAddresses) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.#ctor(System.Object,System.Uri[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serviceImplementation" Type="System.Object" />
+        <Parameter Name="baseAddresses" Type="System.Uri[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="serviceImplementation">The root activity of the workflow service to be hosted.</param>
+        <param name="baseAddresses">An array of base addresses for the workflow service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" /> class using the specified service object and base addresses.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowServiceHost (System.ServiceModel.Activities.WorkflowService serviceDefinition, Uri[] baseAddresses);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Activities.WorkflowService serviceDefinition, class System.Uri[] baseAddresses) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.#ctor(System.ServiceModel.Activities.WorkflowService,System.Uri[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serviceDefinition" Type="System.ServiceModel.Activities.WorkflowService" />
+        <Parameter Name="baseAddresses" Type="System.Uri[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="serviceDefinition">The workflow service to host.</param>
+        <param name="baseAddresses">An array of base addresses for the hosted workflow service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowServiceHost" /> class using the specified service definition and collection of base addresses.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activity">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity Activity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Activity" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowServiceHost.Activity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root activity of the hosted workflow service.</summary>
+        <value>The root activity of the hosted workflow service.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddServiceEndpoint">
+      <MemberSignature Language="C#" Value="public override void AddServiceEndpoint (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddServiceEndpoint(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">The service endpoint to add.</param>
+        <summary>Adds a service endpoint to the workflow service host.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint%2A> method.  
+  
+ [!code-csharp[CreationEndpoint#0](~/samples/snippets/csharp/VS_Snippets_CFX/creationendpoint/cs/creationendpoint.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddServiceEndpoint">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint (string implementedContract, System.ServiceModel.Channels.Binding binding, string address);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, string address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementedContract" Type="System.String" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="address" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="implementedContract">The service contract exposed by the endpoint.</param>
+        <param name="binding">The binding for the endpoint.</param>
+        <param name="address">The address of the endpoint..</param>
+        <summary>Adds a service endpoint to the workflow service host using the specified contract, binding, and address.</summary>
+        <returns>A service endpoint.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to add a service endpoint using this method.  
+  
+<!-- TODO: review snippet reference  [!CODE [WFSH#4](WFSH#4)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddServiceEndpoint">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint (string implementedContract, System.ServiceModel.Channels.Binding binding, Uri address);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, class System.Uri address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementedContract" Type="System.String" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="address" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="implementedContract">The service contract exposed by the endpoint.</param>
+        <param name="binding">The binding for the endpoint.</param>
+        <param name="address">The address of the endpoint.</param>
+        <summary>Adds a service endpoint to the workflow service host using the specified contract, binding, and address.</summary>
+        <returns>A service endpoint.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to add a service endpoint using this method.  
+  
+<!-- TODO: review snippet reference  [!CODE [WFSH#3](WFSH#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddServiceEndpoint">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint (string implementedContract, System.ServiceModel.Channels.Binding binding, string address, Uri listenUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, string address, class System.Uri listenUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.String,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementedContract" Type="System.String" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="listenUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="implementedContract">The service contract exposed by the endpoint.</param>
+        <param name="binding">The binding for the endpoint.</param>
+        <param name="address">The address of the endpoint.</param>
+        <param name="listenUri">The address at which the service endpoint listens for incoming messages.</param>
+        <summary>Adds a service endpoint to the workflow service host using the specified contract, binding, endpoint address, and listen URI.</summary>
+        <returns>A service endpoint.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to add a service endpoint using this method.  
+  
+<!-- TODO: review snippet reference  [!CODE [WFSH#2](WFSH#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddServiceEndpoint">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint (string implementedContract, System.ServiceModel.Channels.Binding binding, Uri address, Uri listenUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(string implementedContract, class System.ServiceModel.Channels.Binding binding, class System.Uri address, class System.Uri listenUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.String,System.ServiceModel.Channels.Binding,System.Uri,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementedContract" Type="System.String" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="listenUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="implementedContract">The contract exposed by the endpoint.</param>
+        <param name="binding">The binding for the endpoint.</param>
+        <param name="address">The address of the endpoint.l</param>
+        <param name="listenUri">The address at which the service endpoint listens for incoming messages.</param>
+        <summary>Adds a service endpoint to the workflow service host using the specified contract, binding, endpoint address, and listen URI.</summary>
+        <returns>A service endpoint.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to add a service endpoint using this method.  
+  
+<!-- TODO: review snippet reference  [!CODE [WFSH#5](WFSH#5)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddServiceEndpoint">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint (System.Xml.Linq.XName serviceContractName, System.ServiceModel.Channels.Binding binding, string address, Uri listenUri = null, string behaviorConfigurationName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Xml.Linq.XName serviceContractName, class System.ServiceModel.Channels.Binding binding, string address, class System.Uri listenUri, string behaviorConfigurationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.Xml.Linq.XName,System.ServiceModel.Channels.Binding,System.String,System.Uri,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceContractName" Type="System.Xml.Linq.XName" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="listenUri" Type="System.Uri" />
+        <Parameter Name="behaviorConfigurationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceContractName">The contract exposed by the endpoint</param>
+        <param name="binding">The binding for the endpoint.</param>
+        <param name="address">The address of the endpoint.</param>
+        <param name="listenUri">The address at which the service endpoint listens for incoming messages.</param>
+        <param name="behaviorConfigurationName">The endpoint behavior configuration name.</param>
+        <summary>Adds a service endpoint to the workflow service host using the specified contract, binding, endpoint address, listen URI, and behavior configuration name.</summary>
+        <returns>A service endpoint.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to add a service endpoint using this method.  
+  
+<!-- TODO: review snippet reference  [!CODE [WFSH#8](WFSH#8)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddServiceEndpoint">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint (System.Xml.Linq.XName serviceContractName, System.ServiceModel.Channels.Binding binding, Uri address, Uri listenUri = null, string behaviorConfigurationName = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint AddServiceEndpoint(class System.Xml.Linq.XName serviceContractName, class System.ServiceModel.Channels.Binding binding, class System.Uri address, class System.Uri listenUri, string behaviorConfigurationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.AddServiceEndpoint(System.Xml.Linq.XName,System.ServiceModel.Channels.Binding,System.Uri,System.Uri,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceEndpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceContractName" Type="System.Xml.Linq.XName" />
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="listenUri" Type="System.Uri" />
+        <Parameter Name="behaviorConfigurationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="serviceContractName">The contract exposed by the endpoint.</param>
+        <param name="binding">The binding for the endpoint.</param>
+        <param name="address">The address of the endpoint.</param>
+        <param name="listenUri">The address at which the service endpoint listens for incoming messages.</param>
+        <param name="behaviorConfigurationName">The behavior configuration name.</param>
+        <summary>Adds a service endpoint to the workflow service host using the specified implemented contract, binding, endpoint address, listen URI, and a behavior configuration name.</summary>
+        <returns>A service endpoint.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to add a service endpoint using this method.  
+  
+<!-- TODO: review snippet reference  [!CODE [WFSH#9](WFSH#9)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDescription">
+      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Description.ServiceDescription CreateDescription (out System.Collections.Generic.IDictionary&lt;string,System.ServiceModel.Description.ContractDescription&gt; implementedContracts);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Description.ServiceDescription CreateDescription(class System.Collections.Generic.IDictionary`2&lt;string, class System.ServiceModel.Description.ContractDescription&gt; implementedContracts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.CreateDescription(System.Collections.Generic.IDictionary{System.String,System.ServiceModel.Description.ContractDescription}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Description.ServiceDescription</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="implementedContracts" Type="System.Collections.Generic.IDictionary&lt;System.String,System.ServiceModel.Description.ContractDescription&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="implementedContracts">A collection of key/value pairs that contains the contract description for the hosted workflow service.</param>
+        <summary>Creates a service description of the hosted workflow service using the specified key/value pair collection of address, binding, contract and behavior service endpoint information.</summary>
+        <returns>A service for the hosted workflow service.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Override this method to control how the service description of the hosted workflow service is created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DurableInstancingOptions">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.DurableInstancingOptions DurableInstancingOptions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.DurableInstancingOptions DurableInstancingOptions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowServiceHost.DurableInstancingOptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.DurableInstancingOptions</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.ServiceModel.Activities.DurableInstancingOptions" /> associated with the workflow service host.</summary>
+        <value>The durable instancing options.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeRuntime">
+      <MemberSignature Language="C#" Value="protected override void InitializeRuntime ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeRuntime() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.InitializeRuntime" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes the runtime for the workflow service host.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAbort">
+      <MemberSignature Language="C#" Value="protected override void OnAbort ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAbort() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.OnAbort" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called when  the workflow service host is aborted.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBeginClose">
+      <MemberSignature Language="C#" Value="protected override IAsyncResult OnBeginClose (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.IAsyncResult OnBeginClose(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.OnBeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The period of time the asynchronous close operation has to complete before timing out.</param>
+        <param name="callback">The asynchronous callback delegate that receives notification of the completion of the asynchronous close operation.</param>
+        <param name="state">User-define state data that is associated with the asynchronous close operation.</param>
+        <summary>Begins an asynchronous operation invoked when the workflow service host is closed.</summary>
+        <returns>A reference to the asynchronous close operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnClose">
+      <MemberSignature Language="C#" Value="protected override void OnClose (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClose(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.OnClose(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The period of time the close operation has to complete before timing out.</param>
+        <summary>Closes down the hosted service, including the channel dispatchers and associated instance contexts and listeners.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The workflow runtime will try to persist any hosted workflow when <xref:System.ServiceModel.Activities.WorkflowServiceHost.OnClose%2A> is called, but persistence is not guaranteed in this scenario.  If important business data is being hosted, the instances should persist frequently (such as after each Send operation, or after an interval of time) to ensure that data is not lost.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndClose">
+      <MemberSignature Language="C#" Value="protected override void OnEndClose (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEndClose(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowServiceHost.OnEndClose(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the asynchronous operation.</param>
+        <summary>Completes an asynchronous operation invoked when the workflow service host is closed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportedVersions">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.ServiceModel.Activities.WorkflowService&gt; SupportedVersions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.ServiceModel.Activities.WorkflowService&gt; SupportedVersions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowServiceHost.SupportedVersions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ICollection&lt;System.ServiceModel.Activities.WorkflowService&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of workflow versions that are supported by this workflow service host.</summary>
+        <value>A list of workflow versions that are supported by this workflow service host.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowExtensions">
+      <MemberSignature Language="C#" Value="public System.Activities.Hosting.WorkflowInstanceExtensionManager WorkflowExtensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Hosting.WorkflowInstanceExtensionManager WorkflowExtensions" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.WorkflowServiceHost.WorkflowExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Hosting.WorkflowInstanceExtensionManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Activities.Hosting.WorkflowInstanceExtensionManager" /> object to add or remove extensions to the workflow service instance.</summary>
+        <value>workflow instance extension manager.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to add an extension to the workflow service host.  
+  
+<!-- TODO: review snippet reference  [!CODE [WFSH#10](WFSH#10)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,127 @@
+<Type Name="RibbonCommands" FullName="System.Windows.Controls.Ribbon.RibbonCommands">
+  <TypeSignature Language="C#" Value="public static class RibbonCommands" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed RibbonCommands extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonCommands" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides static access to standard ribbon commands.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddToQuickAccessToolBarCommand">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand AddToQuickAccessToolBarCommand { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand AddToQuickAccessToolBarCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.AddToQuickAccessToolBarCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the AddToQuickAccessToolBar command.</summary>
+        <value>A reference to the AddToQuickAccessToolBar command.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximizeRibbonCommand">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MaximizeRibbonCommand { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MaximizeRibbonCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.MaximizeRibbonCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the MaximizeRibbon command.</summary>
+        <value>A reference to the MaximizeRibbon command.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimizeRibbonCommand">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand MinimizeRibbonCommand { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand MinimizeRibbonCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.MinimizeRibbonCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the MinimizeRibbon command.</summary>
+        <value>A reference to the MinimizeRibbon command.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveFromQuickAccessToolBarCommand">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand RemoveFromQuickAccessToolBarCommand { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand RemoveFromQuickAccessToolBarCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.RemoveFromQuickAccessToolBarCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the RemoveFromQuickAccessToolbar command.</summary>
+        <value>A reference to the RemoveFromQuickAccessToolbar command.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowQuickAccessToolBarAboveRibbonCommand">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ShowQuickAccessToolBarAboveRibbonCommand { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ShowQuickAccessToolBarAboveRibbonCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.ShowQuickAccessToolBarAboveRibbonCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the ShowQuickAccessToolBarAboveRibbon command.</summary>
+        <value>A reference to the ShowQuickAccessToolBarAboveRibbon command.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowQuickAccessToolBarBelowRibbonCommand">
+      <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedUICommand ShowQuickAccessToolBarBelowRibbonCommand { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedUICommand ShowQuickAccessToolBarBelowRibbonCommand" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonCommands.ShowQuickAccessToolBarBelowRibbonCommand" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.RoutedUICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to the ShowQuickAccessToolBarBelowRibbon command.</summary>
+        <value>A reference to the ShowQuickAccessToolBarBelowRibbon command.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

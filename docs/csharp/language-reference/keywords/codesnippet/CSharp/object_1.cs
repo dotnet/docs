@@ -19,9 +19,10 @@ class MainClass2
       Console.WriteLine(classRef.i);
    }
 }
-/* Output
+/*
+    Output
     1
     System.Int32
     1
- * 10
+    10
 */

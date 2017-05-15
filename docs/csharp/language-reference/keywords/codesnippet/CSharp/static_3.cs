@@ -1,4 +1,4 @@
-    public class Employee4
+public class Employee4
 {
     public string id;
     public string name;
@@ -44,12 +44,12 @@ class MainClass : Employee4
                       Employee4.employeeCounter);
     }
 }
-    /*
+/*
     Input:
     Matthias Berndt
     AF643G
     15
-     * 
+    
     Sample Output:
     Enter the employee's name: Matthias Berndt
     Enter the employee's ID: AF643G
@@ -57,4 +57,4 @@ class MainClass : Employee4
     Name: Matthias Berndt
     ID:   AF643G
     New Number of Employees: 16
-    */
+*/

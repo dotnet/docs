@@ -1,10 +1,9 @@
-    
-    class TestClass
+class TestClass
+{
+    static void Main() 
     {
-        static void Main() 
-        {
-            bool a = false;
-            Console.WriteLine( a ? "yes" : "no" );
-        }
+        bool a = false;
+        Console.WriteLine( a ? "yes" : "no" );
     }
-    // Output: no
+}
+// Output: no

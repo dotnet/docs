@@ -1,13 +1,12 @@
-    
-    namespace ExampleNS
+namespace ExampleNS
+{
+    using System;
+    class C
     {
-        using System;
-        class C
+        void M()
         {
-            void M()
-            {
-                System.Console.WriteLine("hello");
-                Console.WriteLine("hello");   // Same as previous line.
-            }
+            System.Console.WriteLine("hello");
+            Console.WriteLine("hello");   // Same as previous line.
         }
     }
+}

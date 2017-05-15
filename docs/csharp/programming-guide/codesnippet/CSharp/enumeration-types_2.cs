@@ -1,3 +1,3 @@
-            Days meetingDay = Days.Monday;
-            //...
-            meetingDay = Days.Friday;
+Days meetingDay = Days.Monday;
+//...
+meetingDay = Days.Friday;

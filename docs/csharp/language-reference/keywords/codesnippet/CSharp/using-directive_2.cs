@@ -49,6 +49,8 @@ namespace NameSpace3
         }
     }
 }
-// Output: 
-//    You are in NameSpace1.MyClass.
-//    You are in NameSpace2.MyClass.
+/*
+    Output: 
+    You are in NameSpace1.MyClass.
+    You are in NameSpace2.MyClass.
+*/

@@ -1,9 +1,9 @@
-    namespace PC
+namespace PC
+{
+    partial class A
     {
-        partial class A
-        {
-            int num = 0;
-            void MethodA() { }
-            partial void MethodC();
-        }
+        int num = 0;
+        void MethodA() { }
+        partial void MethodC();
     }
+}

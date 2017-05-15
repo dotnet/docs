@@ -1,29 +1,28 @@
-    
-    class csrefKeywordsOperators
+class csrefKeywordsOperators
+{
+    class Base
     {
-        class Base
+        public override string ToString()
         {
-            public override string  ToString()
-            {
- 	             return "Base";
-            }
+            return "Base";
         }
-        class Derived : Base 
-        { }
+    }
+    
+    class Derived : Base
+    {
+    }
 
-        class Program
+    class Program
+    {
+        static void Main()
         {
-            static void Main()
+            Derived d = new Derived();
+
+            Base b = d as Base;
+            if (b != null)
             {
-
-                Derived d = new Derived();
-
-                Base b = d as Base;
-                if (b != null)
-                {
-                    Console.WriteLine(b.ToString());
-                }
-
+                Console.WriteLine(b.ToString());
             }
         }
     }
+}

@@ -1,7 +1,7 @@
-    class ItemFactory<T> where T : new()
+class ItemFactory<T> where T : new()
+{
+    public T GetNewItem()
     {
-        public T GetNewItem()
-        {
-            return new T();
-        }
+        return new T();
     }
+}

@@ -1,40 +1,40 @@
-    struct Digit
+struct Digit
+{
+    byte value;
+    public Digit(byte value)
     {
-        byte value;
-        public Digit(byte value)
+        if (value > 9)
         {
-            if (value > 9)
-            {
-                throw new ArgumentException();
-            }
-            this.value = value;
+            throw new ArgumentException();
         }
-
-        // Define explicit byte-to-Digit conversion operator:
-        public static explicit operator Digit(byte b)
-        {
-            Digit d = new Digit(b);
-            Console.WriteLine("conversion occurred");
-            return d;
-        }
+        this.value = value;
     }
 
-    class ExplicitTest
+    // Define explicit byte-to-Digit conversion operator:
+    public static explicit operator Digit(byte b)
     {
-        static void Main()
+        Digit d = new Digit(b);
+        Console.WriteLine("conversion occurred");
+        return d;
+    }
+}
+
+class ExplicitTest
+{
+    static void Main()
+    {
+        try
         {
-            try
-            {
-                byte b = 3;
-                Digit d = (Digit)b; // explicit conversion
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("{0} Exception caught.", e);
-            }
+            byte b = 3;
+            Digit d = (Digit)b; // explicit conversion
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("{0} Exception caught.", e);
         }
     }
-    /*
+}
+/*
     Output:
     conversion occurred
-    */
+*/

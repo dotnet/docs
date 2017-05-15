@@ -1,21 +1,21 @@
-    // Contravariant interface.
-    interface IContravariant<in A> { }
+// Contravariant interface.
+interface IContravariant<in A> { }
 
-    // Extending contravariant interface.
-    interface IExtContravariant<in A> : IContravariant<A> { }
+// Extending contravariant interface.
+interface IExtContravariant<in A> : IContravariant<A> { }
 
-    // Implementing contravariant interface.
-    class Sample<A> : IContravariant<A> { }
+// Implementing contravariant interface.
+class Sample<A> : IContravariant<A> { }
 
-    class Program
+class Program
+{
+    static void Test()
     {
-        static void Test()
-        {
-            IContravariant<Object> iobj = new Sample<Object>();
-            IContravariant<String> istr = new Sample<String>();
+        IContravariant<Object> iobj = new Sample<Object>();
+        IContravariant<String> istr = new Sample<String>();
 
-            // You can assign iobj to istr because
-            // the IContravariant interface is contravariant.
-            istr = iobj;
-        }
+        // You can assign iobj to istr because
+        // the IContravariant interface is contravariant.
+        istr = iobj;
     }
+}

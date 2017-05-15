@@ -1,4 +1,3 @@
-
 namespace AccessibilityDomainNamespace
 {
     public class T1
@@ -66,12 +65,9 @@ namespace AccessibilityDomainNamespace
             // Error CS0122: inaccessible outside M2:
             //    T1.M2.privateInt = 3;
 
-
-
             // Keep the console open in debug mode.
             System.Console.WriteLine("Press any key to exit.");
             System.Console.ReadKey();
-
         }
     }
 }

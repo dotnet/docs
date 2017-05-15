@@ -45,7 +45,9 @@ namespace DynamicExamples
         }
     }
 }
-// Results:
-// Local variable
-// 2
-// Local variable
+/*
+    Output:
+    Local variable
+    2
+    Local variable
+*/

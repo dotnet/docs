@@ -33,6 +33,8 @@ class WhereSample2
 
     }
 }
-// Output: 
-// 4 2 0
-// 4 2 0
+/*
+    Output: 
+    4 2 0
+    4 2 0
+*/

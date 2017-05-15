@@ -1,3 +1,3 @@
-        // using System.Diagnostics;
-        [Conditional("DEBUG")] 
-        void TraceMethod() {}
+// using System.Diagnostics;
+[Conditional("DEBUG")] 
+void TraceMethod() {}

@@ -1,4 +1,3 @@
-
 namespace SampleNamespace
 {
     class SampleClass { }

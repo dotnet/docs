@@ -89,18 +89,18 @@ The design-time experience for a custom control can be enhanced by authoring an 
   
 1.  Add a Windows Forms Control Library project to the solution. Name the project "MarqueeControlLibrary."  
   
-2.  Using **Solution Explorer**, delete the project's default control by deleting the source file named "UserControl1.cs" or "UserControl1.vb", depending on your language of choice.   
+2.  Using **Solution Explorer**, delete the project's default control by deleting the source file named "UserControl1.cs" or "UserControl1.vb", depending on your language of choice. For more information, see [Adding and Removing Project Items](/visualstudio/ide/adding-and-removing-project-items).  
   
-3.  Add a new <xref:System.Windows.Forms.UserControl> item to the `MarqueeControlLibrary` project. Give the new source file a base name of "MarqueeControl."  
+3.  Add a new <xref:System.Windows.Forms.UserControl> item to the `MarqueeControlLibrary` project. Give the new source file a base name of "MarqueeControl".  
   
-4.  Using **Solution Explorer**, create a new folder in the `MarqueeControlLibrary` project. Name the new folder "Design."  
+4.  Using **Solution Explorer**, create a new folder in the `MarqueeControlLibrary` project. Name the new folder *Design*. For more information, see [Adding and Removing Project Items](/visualstudio/ide/adding-and-removing-project-items).
   
-5.  Right-click the **Design** folder and add a new class. Give the source file a base name of "MarqueeControlRootDesigner."  
+5.  Right-click the *Design* folder and add a new class. Give the source file a base name of *MarqueeControlRootDesigner*.
   
-6.  You will need to use types from the System.Design assembly, so add this reference to the `MarqueeControlLibrary` project.  
+6.  You'll need to use types from the System.Design assembly, so add this reference to the `MarqueeControlLibrary` project.  
   
     > [!NOTE]
-    >  To use the System.Design assembly, your project must target the full version of the .NET Framework, not the .NET Framework Client Profile. To change the target framework, see [How to: Target a Version of the .NET Framework](http://msdn.microsoft.com/library/dea62d25-3d1b-492e-a6cc-b5154489800a).  
+    >  To use the System.Design assembly, your project must target the full version of the .NET Framework, not the .NET Framework Client Profile. To change the target framework, see [How to: Target a Version of the .NET Framework](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework).  
   
 ## Referencing the Custom Control Project  
  You will use the `MarqueeControlTest` project to test the custom control. The test project will become aware of the custom control when you add a project reference to the `MarqueeControlLibrary` assembly.  

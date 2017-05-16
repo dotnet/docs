@@ -23,9 +23,9 @@ The `<add>` element adds a predefined key that specifies whether your Windows Fo
 ## Syntax
 
 ```xml
-<System.Windows.Forms.ConfigurationSection>
+<System.Windows.Forms.ApplicationConfigurationSection>
   <add key="key-name" value="key-value" />
-</System.Windows.Forms.ConfigurationSection>
+</System.Windows.Forms.ApplicationConfigurationSection>
 ```
 
 ## Attributes and elements
@@ -61,7 +61,7 @@ None.
 
 | Element | Description |
 | ------- | ----------- |
-| [`<System.Windows.Forms.ConfigurationSection>`](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md) | Configures support for new Windows Forms application features. |
+| [`<System.Windows.Forms.ApplicationConfigurationSection>`](../../../../../docs/framework/configure-apps/file-schema/winforms/index.md) | Configures support for new Windows Forms application features. |
 
 ## <a name="remarks" /> Remarks
 
@@ -92,11 +92,11 @@ High DPI awareness is an opt-in feature; by default, the value of `DpiAwareness`
 The single default opt-in setting provided by setting `DpiAwareness` to `PerMonitorV2` is generally adequate for new Windows Forms applications. However, You can then opt out of individual high DPI improvements by adding the corresponding key to the application configuration file. For example, to take advantage of all the new DPI featuers except for dynamic DPI support, you would add the following to your application configuration file:
 
 ```xml
-<System.Windows.Forms.ConfigurationSection>
+<System.Windows.Forms.ApplicationConfigurationSection>
    <add key="DpiAwareness" value="PerMonitorV2" />
    <--! Disable dynamic DPI support -->
    <add key="EnableWindowsFormsHighDpiAutoResizing" value="false" />
-</System.Windows.Forms.ConfigurationSection>
+</System.Windows.Forms.ApplicationConfigurationSection>
 ```
 Typically, you opt out of a particular feature because you've chosen to handle it programmatically.
 

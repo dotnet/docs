@@ -96,7 +96,7 @@ manager: "erikre"
   
  `<system.serviceModel>`  
   
- `<serviceHostingEnvironment aspNetCompatibilityEnabled=”true” /> </system.serviceModel>`  
+ `<serviceHostingEnvironment aspNetCompatibilityEnabled="true" /> </system.serviceModel>`  
   
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md) topic.  
   

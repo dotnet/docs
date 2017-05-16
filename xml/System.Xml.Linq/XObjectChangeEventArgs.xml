@@ -6,6 +6,7 @@
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -41,6 +42,7 @@
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -61,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The read-only fields <xref:System.Xml.Linq.XObjectChangeEventArgs>, <xref:System.Xml.Linq.XObjectChangeEventArgs.Remove>, <xref:System.Xml.Linq.XObjectChangeEventArgs.Name>, and <xref:System.Xml.Linq.XObjectChangeEventArgs.Value> provide predefined instances for all the event arguments that are raised in [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]. A typical user will not need to construct event arguments.  
+ The read-only fields <xref:System.Xml.Linq.XObjectChangeEventArgs.Add>, <xref:System.Xml.Linq.XObjectChangeEventArgs.Remove>, <xref:System.Xml.Linq.XObjectChangeEventArgs.Name>, and <xref:System.Xml.Linq.XObjectChangeEventArgs.Value> provide predefined instances for all the event arguments that are raised in [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)]. A typical user will not need to construct event arguments.  
   
  ]]></format>
         </remarks>
@@ -76,6 +78,7 @@
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -95,7 +98,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] raises an <xref:System.Xml.Linq.XObjectChange> event, it passes the instance returned by this property as an argument.  
+ When [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] raises an <xref:System.Xml.Linq.XObjectChange.Add> event, it passes the instance returned by this property as an argument.  
   
  ]]></format>
         </remarks>
@@ -110,6 +113,7 @@
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -129,7 +133,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] raises an <xref:System.Xml.Linq.XObjectChange> event, it passes the instance returned by this property as an argument.  
+ When [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] raises an <xref:System.Xml.Linq.XObjectChange.Name> event, it passes the instance returned by this property as an argument.  
   
  ]]></format>
         </remarks>
@@ -144,6 +148,7 @@
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -172,6 +177,7 @@
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -191,7 +197,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] raises an <xref:System.Xml.Linq.XObjectChange> event, it passes the instance returned by this property as an argument.  
+ When [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] raises an <xref:System.Xml.Linq.XObjectChange.Remove> event, it passes the instance returned by this property as an argument.  
   
  ]]></format>
         </remarks>
@@ -206,6 +212,7 @@
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -225,7 +232,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] raises an <xref:System.Xml.Linq.XObjectChange> event, it passes the instance returned by this property as an argument.  
+ When [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] raises an <xref:System.Xml.Linq.XObjectChange.Value> event, it passes the instance returned by this property as an argument.  
   
  ]]></format>
         </remarks>

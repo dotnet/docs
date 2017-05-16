@@ -38,7 +38,7 @@
   
  The <xref:System.Data.OracleClient.OracleDataAdapter> serves as a bridge between a **DataSet** and database for retrieving and saving data. The <xref:System.Data.OracleClient.OracleDataAdapter> provides this bridge by using <xref:System.Data.Common.DbDataAdapter.Fill%2A> to load data from the database into the <xref:System.Data.DataSet>, and using <xref:System.Data.Common.DbDataAdapter.Update%2A> to send changes made in the <xref:System.Data.DataSet> back to the data source.  
   
- When the <xref:System.Data.OracleClient.OracleDataAdapter> fills a <xref:System.Data.DataSet>, it creates the necessary tables and columns for the returned data if they do not already exist. However, primary key information is not included in the implicitly created schema unless the <xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A> property is set to <xref:System.Data.MissingSchemaAction>. You may also have the <xref:System.Data.OracleClient.OracleDataAdapter> create the schema of the <xref:System.Data.DataSet>, including primary key information, before filling it with data using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>. For more information, see [Adding Existing Constraints to a DataSet](~/docs/framework/data/adonet/adding-existing-constraints-to-a-dataset.md).  
+ When the <xref:System.Data.OracleClient.OracleDataAdapter> fills a <xref:System.Data.DataSet>, it creates the necessary tables and columns for the returned data if they do not already exist. However, primary key information is not included in the implicitly created schema unless the <xref:System.Data.Common.DataAdapter.MissingSchemaAction%2A> property is set to <xref:System.Data.MissingSchemaAction.AddWithKey>. You may also have the <xref:System.Data.OracleClient.OracleDataAdapter> create the schema of the <xref:System.Data.DataSet>, including primary key information, before filling it with data using <xref:System.Data.Common.DbDataAdapter.FillSchema%2A>. For more information, see [Adding Existing Constraints to a DataSet](~/docs/framework/data/adonet/adding-existing-constraints-to-a-dataset.md).  
   
 > [!NOTE]
 >  By default, numeric fields imported to a <xref:System.Data.DataTable> with <xref:System.Data.Common.DbDataAdapter.Fill%2A> are mapped to <xref:System.Data.OracleClient.OracleNumber> objects. It is possible to overflow the <xref:System.Data.OracleClient.OracleNumber>, and throw an Oracle exception, by importing a non-integral numeric value that is either too large or too high precision for the <xref:System.Data.OracleClient.OracleNumber>'s precision limitations. Refer to the description of <xref:System.Data.OracleClient.OracleNumber> for more information.  
@@ -142,7 +142,7 @@ END CURSPKG;
   
  Create the following Oracle package body on the Oracle server.  
   
-```  
+``` 
 CREATE OR REPLACE PACKAGE BODY CURSPKG AS   
     PROCEDURE OPEN_ONE_CURSOR (N_EMPNO IN NUMBER,   
                                IO_CURSOR OUT T_CURSOR)   
@@ -242,9 +242,7 @@ END CURSPKG;
 ## Examples  
  The following example creates an <xref:System.Data.OracleClient.OracleDataAdapter> and sets some of its properties.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub CreateOracleDataAdapter()  
     Dim myOracleConnection As OracleConnection = New OracleConnection("Data Source=Oracle8i;Integrated Security=yes")  
     Dim custDA As OracleDataAdapter = New OracleDataAdapter  
@@ -268,9 +266,7 @@ Public Sub CreateOracleDataAdapter()
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public static void CreateOracleDataAdapter()   
 {  
     OracleConnection myOracleConnection = new OracleConnection("Data Source=Oracle8i;Integrated Security=yes");  
@@ -334,9 +330,7 @@ public static void CreateOracleDataAdapter()
 ## Examples  
  The following example creates an <xref:System.Data.OracleClient.OracleDataAdapter> and sets some of its properties.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub CreateOracleDataAdapter()  
     Dim myOracleConnection As OracleConnection = New OracleConnection("Data Source=Oracle8i;Integrated Security=yes")  
     Dim myOracleCommand As OracleCommand = New OracleCommand("SELECT DeptNo, DName FROM Dept", myOracleConnection)  
@@ -360,9 +354,7 @@ Public Sub CreateOracleDataAdapter()
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public static void CreateOracleDataAdapter()   
 {  
     OracleConnection myOracleConnection = new OracleConnection("Data Source=Oracle8i;Integrated Security=yes");  
@@ -419,9 +411,7 @@ public static void CreateOracleDataAdapter()
 ## Examples  
  The following example creates an <xref:System.Data.OracleClient.OracleDataAdapter> and sets some of its properties.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub CreateOracleDataAdapter()  
     Dim myOracleConnection As OracleConnection = New OracleConnection("Data Source=Oracle8i;Integrated Security=yes")  
     Dim mySelectText As String = "SELECT DeptNo, DName FROM Dept"  
@@ -445,9 +435,7 @@ Public Sub CreateOracleDataAdapter()
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public static void CreateOracleDataAdapter()   
 {  
     OracleConnection myOracleConnection = new OracleConnection("Data Source=Oracle8i;Integrated Security=yes");  
@@ -501,9 +489,7 @@ public static void CreateOracleDataAdapter()
 ## Examples  
  The following example creates an <xref:System.Data.OracleClient.OracleDataAdapter> and sets some of its properties.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub CreateOracleDataAdapter()  
     Dim myConnectionText As String = "Data Source=Oracle8i;Integrated Security=yes"  
     Dim mySelectText As String = "SELECT DeptNo, DName FROM Dept"  
@@ -529,9 +515,7 @@ Public Sub CreateOracleDataAdapter()
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public static void CreateOracleDataAdapter()   
 {  
     string myConnectionText = "Data Source=Oracle8i;Integrated Security=yes";  
@@ -696,9 +680,7 @@ public static void CreateOracleDataAdapter()
 ## Examples  
  The following example creates an <xref:System.Data.OracleClient.OracleDataAdapter> and sets the <xref:System.Data.OracleClient.OracleDataAdapter.SelectCommand%2A> and <xref:System.Data.OracleClient.OracleDataAdapter.DeleteCommand%2A> properties. It assumes you have already created an <xref:System.Data.OracleClient.OracleConnection> object.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As OracleDataAdapter   
   
   Dim da As OracleDataAdapter = New OracleDataAdapter()  
@@ -728,9 +710,7 @@ Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As Oracle
 End Function  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)  
 {  
   OracleDataAdapter da = new OracleDataAdapter();  
@@ -892,9 +872,7 @@ public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)
 ## Examples  
  The following example creates an <xref:System.Data.OracleClient.OracleDataAdapter> and sets the <xref:System.Data.OracleClient.OracleDataAdapter.SelectCommand%2A> and <xref:System.Data.OracleClient.OracleDataAdapter.InsertCommand%2A> properties. It assumes you have already created an <xref:System.Data.OracleClient.OracleConnection> object.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As OracleDataAdapter   
   
   Dim da As OracleDataAdapter = New OracleDataAdapter()  
@@ -924,9 +902,7 @@ Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As Oracle
 End Function  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)  
 {  
   OracleDataAdapter da = new OracleDataAdapter();  
@@ -1114,9 +1090,7 @@ public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)
 ## Examples  
  The following example creates an <xref:System.Data.OracleClient.OracleDataAdapter> and sets the <xref:System.Data.OracleClient.OracleDataAdapter.SelectCommand%2A> and <xref:System.Data.OracleClient.OracleDataAdapter.InsertCommand%2A> properties. It assumes you have already created an <xref:System.Data.OracleClient.OracleConnection> object.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As OracleDataAdapter   
   
   Dim da As OracleDataAdapter = New OracleDataAdapter()  
@@ -1146,9 +1120,7 @@ Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As Oracle
 End Function  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)  
 {  
   OracleDataAdapter da = new OracleDataAdapter();  
@@ -1342,40 +1314,23 @@ public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)
         <summary>Gets or sets a value that enables or disables batch processing support, and specifies the number of commands that can be executed in a batch.</summary>
         <value>The number of rows to process per batch.  
   
- <list type="table">  
-<listheader>  
-<term> Value:  
+ <list type="table"><listheader><term> Value:  
   
- </term>  
-<description> Effect:  
+ </term><description> Effect:  
   
- </description>  
-</listheader>  
-<item>  
-<term> 0  
+ </description></listheader><item><term> 0  
   
- </term>  
-<description> There is no limit on the batch size.  
+ </term><description> There is no limit on the batch size.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> Disables batch updating.  
+ </term><description> Disables batch updating.  
   
- </description>  
-</item>  
-<item>  
-<term> &gt; 1  
+ </description></item><item><term> &gt; 1  
   
- </term>  
-<description> Changes are sent using batches of <see cref="P:System.Data.OracleClient.OracleDataAdapter.UpdateBatchSize" /> operations at a time.  
+ </term><description> Changes are sent using batches of <see cref="P:System.Data.OracleClient.OracleDataAdapter.UpdateBatchSize" /> operations at a time.  
   
- </description>  
-</item>  
-</list>  
+ </description></item></list>  
   
  When setting this to a value other than 1 all the commands associated with the <see cref="T:System.Data.OracleClient.OracleDataAdapter" /> have to have their <see cref="P:System.Data.IDbCommand.UpdatedRowSource" /> property set to <see langword="None" /> or <see langword="OutputParameters" />. An exception is thrown otherwise.</value>
         <remarks>
@@ -1433,9 +1388,7 @@ public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)
 ## Examples  
  The following example creates an <xref:System.Data.OracleClient.OracleDataAdapter> and sets the <xref:System.Data.OracleClient.OracleDataAdapter.SelectCommand%2A> and <xref:System.Data.OracleClient.OracleDataAdapter.UpdateCommand%2A> properties. It assumes you have already created an <xref:System.Data.OracleClient.OracleConnection> object.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As OracleDataAdapter   
   
   Dim da As OracleDataAdapter = New OracleDataAdapter()  
@@ -1469,9 +1422,7 @@ Public Shared Function CreateCustomerAdapter(conn As OracleConnection) As Oracle
 End Function  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public static OracleDataAdapter CreateCustomerAdapter(OracleConnection conn)  
 {  
   OracleDataAdapter da = new OracleDataAdapter();  

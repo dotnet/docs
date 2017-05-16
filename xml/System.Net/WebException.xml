@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -52,6 +53,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,7 +71,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default constructor initializes a new instance of the <xref:System.Net.WebException> class. The <xref:System.Exception.Message%2A> property is initialized to a system-supplied message that describes the error. This message takes into account the current system culture. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`. The <xref:System.Net.WebException.Status%2A> property is initialized to <xref:System.Net.WebExceptionStatus>.  
+ The default constructor initializes a new instance of the <xref:System.Net.WebException> class. The <xref:System.Exception.Message%2A> property is initialized to a system-supplied message that describes the error. This message takes into account the current system culture. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`. The <xref:System.Net.WebException.Status%2A> property is initialized to <xref:System.Net.WebExceptionStatus.RequestCanceled>.  
   
    
   
@@ -92,6 +94,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.WebException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`. The <xref:System.Net.WebException.Status%2A> property is initialized to <xref:System.Net.WebExceptionStatus>.  
+ The <xref:System.Net.WebException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`. The <xref:System.Net.WebException.Status%2A> property is initialized to <xref:System.Net.WebExceptionStatus.RequestCanceled>.  
   
    
   
@@ -141,6 +144,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
@@ -167,6 +174,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -189,7 +197,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.WebException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.Exception.InnerException%2A> property set to the value of `innerException`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`. The <xref:System.Net.WebException.Status%2A> property is initialized to <xref:System.Net.WebExceptionStatus>.  
+ The <xref:System.Net.WebException> instance is initialized with the <xref:System.Exception.Message%2A> property set to the value of `message` and the <xref:System.Exception.InnerException%2A> property set to the value of `innerException`. If `message` is `null`, the <xref:System.Exception.Message%2A> property is initialized to a system-supplied message. The <xref:System.Exception.InnerException%2A> and <xref:System.Net.WebException.Response%2A> properties are initialized to `null`. The <xref:System.Net.WebException.Status%2A> property is initialized to <xref:System.Net.WebExceptionStatus.RequestCanceled>.  
   
    
   
@@ -212,6 +220,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -257,6 +266,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -312,6 +322,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -334,6 +348,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -377,6 +392,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -402,7 +418,7 @@
  The value of <xref:System.Net.WebException.Status%2A> is one of the <xref:System.Net.WebExceptionStatus> values.  
   
 > [!WARNING]
->  The <xref:System.Net.WebExceptionStatus> error is not returned to [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.  
+>  The <xref:System.Net.WebExceptionStatus.ProxyNameResolutionFailure> error is not returned to [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.  
   
    
   
@@ -430,6 +446,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

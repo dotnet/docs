@@ -36,7 +36,7 @@ Frees memory that was allocated with a previous call to a strong name method suc
 ## Syntax  
   
 ```  
-HRESULT StrongNameFreeBuffer (   
+HRESULT StrongNameFreeBuffer (   
    [in] BYTE   *pbMemory  
 );  
 ```  

@@ -24,10 +24,10 @@ This topic describes the activities and transfers for different synchronous requ
 ### Client  
   
 #### Establishing Communication with Service Endpoint  
- A client is constructed and opened. For each of these steps, the ambient activity (A) is transferred to a “Construct Client” (B) and “Open Client” (C) activity respectively. For each activity being transferred to, the ambient activity is suspended until there is a transfer back, that is, until ServiceModel code is executed.  
+ A client is constructed and opened. For each of these steps, the ambient activity (A) is transferred to a "Construct Client" (B) and "Open Client" (C) activity respectively. For each activity being transferred to, the ambient activity is suspended until there is a transfer back, that is, until ServiceModel code is executed.  
   
 #### Making a Request to Service Endpoint  
- The ambient activity is transferred to a ”ProcessAction” (D) activity. Within this activity, a request message is sent, and a response message is received. The activity ends when control returns to user code. Because this is a synchronous request, the ambient activity suspends until control returns.  
+ The ambient activity is transferred to a "ProcessAction" (D) activity. Within this activity, a request message is sent, and a response message is received. The activity ends when control returns to user code. Because this is a synchronous request, the ambient activity suspends until control returns.  
   
 #### Closing Communication with Service Endpoint  
  The client's close activity (I) is created from the ambient activity. This is identical to new and open.  
@@ -40,7 +40,7 @@ This topic describes the activities and transfers for different synchronous requ
  A listener activity (P) is created from opening a ServiceHost for each listener. The listener activity waits to receive and process data.  
   
 #### Receiving Data on the Wire  
- When data arrives on the wire, a “ReceiveBytes” activity is created if it does not already exist (Q) to process the received data. This activity can be reused for multiple messages within a connection or queue.  
+ When data arrives on the wire, a "ReceiveBytes" activity is created if it does not already exist (Q) to process the received data. This activity can be reused for multiple messages within a connection or queue.  
   
  The ReceiveBytes activity launches a ProcessMessage activity (R) if it has enough data to form a SOAP action message.  
   

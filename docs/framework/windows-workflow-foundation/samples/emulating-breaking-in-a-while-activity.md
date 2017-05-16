@@ -27,7 +27,7 @@ This sample demonstrates how to break the looping mechanism of the following act
  The following code example demonstrates how the sample breaks a while loop.  
   
 ```csharp  
-// Iterates while the “i” variable is lower than the size of the list   
+// Iterates while the "i" variable is lower than the size of the list   
 // and any reliable Vendor is found.        
 new While(env => i.Get(env) < this.Vendors.Get(env).Count && reliableVendor.Get(env) == null)  
 {  

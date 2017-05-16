@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
@@ -58,6 +59,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -73,7 +75,7 @@
 |<xref:System.DirectoryServices.DirectorySearcher.SearchRoot%2A>|A null reference (`Nothing` in Visual Basic)|  
 |<xref:System.DirectoryServices.DirectorySearcher.Filter%2A>|"(objectClass=*)"|  
 |<xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A>|An empty <xref:System.Collections.Specialized.StringCollection> object|  
-|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope>|  
+|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope.Subtree>|  
   
  ]]></format>
         </remarks>
@@ -90,6 +92,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="searchRoot" Type="System.DirectoryServices.DirectoryEntry" />
@@ -107,7 +110,7 @@
 |--------------|-------------------|  
 |<xref:System.DirectoryServices.DirectorySearcher.Filter%2A>|"(objectClass=*)"|  
 |<xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A>|An empty <xref:System.Collections.Specialized.StringCollection> object|  
-|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope>|  
+|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope.Subtree>|  
   
  ]]></format>
         </remarks>
@@ -124,6 +127,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="filter" Type="System.String" />
@@ -141,7 +145,7 @@
 |--------------|-------------------|  
 |<xref:System.DirectoryServices.DirectorySearcher.SearchRoot%2A>|A null reference (`Nothing` in Visual Basic)|  
 |<xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A>|An empty <xref:System.Collections.Specialized.StringCollection> object|  
-|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope>|  
+|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope.Subtree>|  
   
  ]]></format>
         </remarks>
@@ -158,6 +162,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="searchRoot" Type="System.DirectoryServices.DirectoryEntry" />
@@ -176,7 +181,7 @@
 |Property|Initial value|  
 |--------------|-------------------|  
 |<xref:System.DirectoryServices.DirectorySearcher.PropertiesToLoad%2A>|An empty <xref:System.Collections.Specialized.StringCollection> object.|  
-|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope>|  
+|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope.Subtree>|  
   
  ]]></format>
         </remarks>
@@ -193,6 +198,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="filter" Type="System.String" />
@@ -211,7 +217,7 @@
 |Property|Initial value|  
 |--------------|-------------------|  
 |<xref:System.DirectoryServices.DirectorySearcher.SearchRoot%2A>|A null reference (`Nothing` in Visual Basic)|  
-|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope>|  
+|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope.Subtree>|  
   
  ]]></format>
         </remarks>
@@ -228,6 +234,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="searchRoot" Type="System.DirectoryServices.DirectoryEntry" />
@@ -247,7 +254,7 @@
   
 |Property|Initial value|  
 |--------------|-------------------|  
-|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope>|  
+|<xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A>|<xref:System.DirectoryServices.SearchScope.Subtree>|  
   
  ]]></format>
         </remarks>
@@ -264,6 +271,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="filter" Type="System.String" />
@@ -300,6 +308,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="searchRoot" Type="System.DirectoryServices.DirectoryEntry" />
@@ -327,6 +336,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -385,6 +395,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -414,7 +425,7 @@ SearchResultCollection res = src.FindAll();
   
  The search is performed against the objects that are identified by the distinguished name that is specified in the attribute of the base object. For example, if the base object is an adschema group class and the <xref:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A> is set to "member," then the search will be performed against all objects that are members of the group. For more information, see the adschema "Group" class topic in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library).  
   
- When the <xref:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A> property is used, the <xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A> property must be set to <xref:System.DirectoryServices.SearchScope>. If the <xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A> property is set to any other value, setting the <xref:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A> property will throw an <xref:System.ArgumentException>.  
+ When the <xref:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A> property is used, the <xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A> property must be set to <xref:System.DirectoryServices.SearchScope.Base>. If the <xref:System.DirectoryServices.DirectorySearcher.SearchScope%2A> property is set to any other value, setting the <xref:System.DirectoryServices.DirectorySearcher.AttributeScopeQuery%2A> property will throw an <xref:System.ArgumentException>.  
   
  For more information, see the "Performing an Attribute Scope Query" topic in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library)).  
   
@@ -450,6 +461,7 @@ foreach(SearchResult res in src.FindAll())
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -484,6 +496,7 @@ foreach(SearchResult res in src.FindAll())
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -518,6 +531,7 @@ foreach(SearchResult res in src.FindAll())
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -540,7 +554,7 @@ foreach(SearchResult res in src.FindAll())
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following C# example shows how to set the <xref:System.DirectoryServices.DirectorySearcher.DerefAlias%2A> property to <xref:System.DirectoryServices.DereferenceAlias> , so that it dereferences aliases when both searching subordinates and locating base objects.  
+ The following C# example shows how to set the <xref:System.DirectoryServices.DirectorySearcher.DerefAlias%2A> property to <xref:System.DirectoryServices.DereferenceAlias.Always> , so that it dereferences aliases when both searching subordinates and locating base objects.  
   
 ```  
 using System.DirectoryServices;  
@@ -568,6 +582,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -609,6 +624,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -631,6 +647,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -677,6 +694,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -728,6 +746,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SearchResultCollection</ReturnType>
@@ -756,6 +775,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SearchResult</ReturnType>
@@ -782,6 +802,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -816,6 +837,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -856,6 +878,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -883,6 +906,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -917,6 +941,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -970,6 +995,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1000,6 +1026,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1045,6 +1072,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1082,6 +1110,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1121,6 +1150,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1158,6 +1188,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1188,6 +1219,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1237,6 +1269,7 @@ SearchResultCollection res = src.FindAll();
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

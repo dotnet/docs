@@ -168,9 +168,9 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
   
  This is accomplished through the `IXmlSerializable` implementation. In the generated `IXmlSerializable` type, the <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> implementation calls the <xref:System.Runtime.Serialization.XmlSerializableServices.ReadNodes%2A> method of the <xref:System.Runtime.Serialization.XmlSerializableServices> class. The method is a helper method that converts XML provided through an <xref:System.Xml.XmlReader> to an array of <xref:System.Xml.XmlNode> objects. The <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A> implementation does the opposite and converts the array of `XmlNode` objects to a sequence of <xref:System.Xml.XmlWriter> calls. This is accomplished using the <xref:System.Runtime.Serialization.XmlSerializableServices.WriteNodes%2A> method.  
   
- It is possible to run the schema export process on the generated `IXmlSerializable` classes. As previously stated, you will not get the original schema back. Instead, you will get the “anyType” standard XSD type, which is a wildcard for any XSD type.  
+ It is possible to run the schema export process on the generated `IXmlSerializable` classes. As previously stated, you will not get the original schema back. Instead, you will get the "anyType" standard XSD type, which is a wildcard for any XSD type.  
   
- This is accomplished by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute to the generated `IXmlSerializable` classes and specifying a method that calls the <xref:System.Runtime.Serialization.XmlSerializableServices.AddDefaultSchema%2A> method to generate the “anyType” type.  
+ This is accomplished by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute to the generated `IXmlSerializable` classes and specifying a method that calls the <xref:System.Runtime.Serialization.XmlSerializableServices.AddDefaultSchema%2A> method to generate the "anyType" type.  
   
 > [!NOTE]
 >  The <xref:System.Runtime.Serialization.XmlSerializableServices> type exists solely to support this particular feature. It is not recommended for use for any other purpose.  

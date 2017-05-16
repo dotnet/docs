@@ -213,6 +213,25 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <see cref="P:System.Net.PeerToPeer.PeerNameRegistration.Data" /> is greater than 4096 bytes.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a peer leaves a <xref:System.Net.PeerToPeer.Cloud>, the cloud no longer requires the <xref:System.Net.PeerToPeer.PeerNameRegistration> object associated with the peer.  Whether the registration object is stopped or disposed is dependent upon whether the cloud will reuse the object to register this peer or another peer. If there are any other endpoint(s) within the registration object with which the peer host expected to communicate, registering those endpoints within the cloud must occur before stopping or disposing of this object.  
+  
+ If the cloud expects to register more peers, the <xref:System.Net.PeerToPeer.PeerNameRegistration.Stop%2A> method is recommended; when the cloud no longer needs the memory, it should be returned to the operating system via the <xref:System.Net.PeerToPeer.PeerNameRegistration.Dispose%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
@@ -571,24 +590,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Net.PeerToPeer.PeerNameRegistration" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a peer leaves a <xref:System.Net.PeerToPeer.Cloud>, the cloud no longer requires the <xref:System.Net.PeerToPeer.PeerNameRegistration> object associated with the peer.  Whether the registration object is stopped or disposed is dependent upon whether the cloud will reuse the object to register this peer or another peer. If there are any other endpoint(s) within the registration object with which the peer host expected to communicate, registering those endpoints within the cloud must occur before stopping or disposing of this object.  
-  
- If the cloud expects to register more peers, the <xref:System.Net.PeerToPeer.PeerNameRegistration.Stop%2A> method is recommended; when the cloud no longer needs the memory, it should be returned to the operating system via the <xref:System.Net.PeerToPeer.PeerNameRegistration.Dispose%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -23,7 +23,7 @@
 ## Remarks  
   
 > [!NOTE]
->  By default, the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> of a <xref:System.Windows.Controls.ComboBoxItem> is set to <xref:System.Windows.HorizontalAlignment>. The default horizontal position of a <xref:System.Windows.Controls.StackPanel> is <xref:System.Windows.HorizontalAlignment>. If you set the <xref:System.Windows.FrameworkElement.Width%2A> property of a <xref:System.Windows.Controls.ComboBoxItem> through a <xref:System.Windows.Controls.StackPanel>, the panel's default is applied and the item will be centered.  
+>  By default, the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> of a <xref:System.Windows.Controls.ComboBoxItem> is set to <xref:System.Windows.HorizontalAlignment.Stretch>. The default horizontal position of a <xref:System.Windows.Controls.StackPanel> is <xref:System.Windows.HorizontalAlignment.Center>. If you set the <xref:System.Windows.FrameworkElement.Width%2A> property of a <xref:System.Windows.Controls.ComboBoxItem> through a <xref:System.Windows.Controls.StackPanel>, the panel's default is applied and the item will be centered.  
   
  A <xref:System.Windows.Controls.ComboBoxItem> is a <xref:System.Windows.Controls.ContentControl>, which means that it can contain a single object of any type (such as a string, an image, or a panel). For more information, see the <xref:System.Windows.Controls.ContentControl> class.  
   
@@ -83,7 +83,7 @@
   
 |||  
 |-|-|  
-|Identifier Field|<xref:System.Windows.Controls.ComboBoxItem>|  
+|Identifier Field|<xref:System.Windows.Controls.ComboBoxItem.IsHighlightedProperty>|  
 |Metadata properties set to `true`|None|  
   
    

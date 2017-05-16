@@ -1,4 +1,4 @@
-//<!--<snippet1>-->
+// <Snippet1>
 using System;
 using System.CodeDom;
 using System.Web.UI;
@@ -19,15 +19,15 @@ public class MyExpressionBuilder : ExpressionBuilder
         return expression;
     }
 
-    //<!--<snippet3>-->
+    // <Snippet3>
     public override object EvaluateExpression(object target, BoundPropertyEntry entry, 
 	object parsedData, ExpressionBuilderContext context)
     {
         return GetEvalData(entry.Expression, target.GetType(), entry.Name);
     }
-    //<!--</snippet3>-->
+    // </Snippet3>
 
-    //<!--<snippet4>-->
+    // <Snippet4>
     public override CodeExpression GetCodeExpression(BoundPropertyEntry entry, 
 	object parsedData, ExpressionBuilderContext context)
     {
@@ -40,16 +40,16 @@ public class MyExpressionBuilder : ExpressionBuilder
         return new CodeCastExpression(descriptor1.PropertyType, new CodeMethodInvokeExpression(new 
 	   CodeTypeReferenceExpression(base.GetType()), "GetEvalData", expressionArray1));
     }
-    //<!--</snippet4>-->
+    // </Snippet4>
 
-    //<!--<snippet2>-->
+    // <Snippet2> 
     public override bool SupportsEvaluate
     {
         get { return true; }
     }
-    //<!--</snippet2>-->
+    // </Snippet2> 
 }
-//<!--</snippet1>-->
+// </Snippet1> 
 
 
 /*
@@ -58,7 +58,7 @@ public class MyExpressionBuilder : ExpressionBuilder
 
 // web.config
 /*
-<!--<snippet5>-->
+<!-- <Snippet5> -->
 <configuration>
     <system.web>
        <compilation>
@@ -68,12 +68,12 @@ public class MyExpressionBuilder : ExpressionBuilder
        </compilation>
     </system.web>
 </configuration>
-<!--</snippet5>-->
+<!-- </Snippet5> -->
 */
 
 // ASPX page
 /*
-<!--<snippet6>-->
+<!-- <Snippet6> -->
 <asp:Label ID="Label1" runat="server" Text="<%$ MyCustomExpression:Hello, world! %>" />
-<!--</snippet6>-->
+<!-- </Snippet6> -->
 */

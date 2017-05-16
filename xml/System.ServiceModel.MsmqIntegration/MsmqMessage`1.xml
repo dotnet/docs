@@ -486,11 +486,11 @@
 ## Remarks  
  Message Queuing (MSMQ) sets this property when it sends a message. A message can have one of the following types:  
   
--   <xref:System.Messaging.MessageType>: A message sent by an application.  
+-   <xref:System.Messaging.MessageType.Normal>: A message sent by an application.  
   
--   <xref:System.Messaging.MessageType>: A message that Message Queuing generates when an application sends a normal message and requests an acknowledgment. For example, Message Queuing can generate a positive or negative acknowledgment to indicate whether the original message arrived at its destination queue, or whether it was retrieved from the destination queue by the receiving application. Message Queuing returns the appropriate acknowledgment message to the administration queue specified by the sending application.  
+-   <xref:System.Messaging.MessageType.Acknowledgment>: A message that Message Queuing generates when an application sends a normal message and requests an acknowledgment. For example, Message Queuing can generate a positive or negative acknowledgment to indicate whether the original message arrived at its destination queue, or whether it was retrieved from the destination queue by the receiving application. Message Queuing returns the appropriate acknowledgment message to the administration queue specified by the sending application.  
   
--   <xref:System.Messaging.MessageType>: Whenever an application sends a message, if the local Queue Manager has a report queue defined, Message Queuing generates a report message and sends it to the report queue. If tracing is enabled, Message Queuing sends a report message to the report queue each time the original message enters or leaves a Message Queuing server.  
+-   <xref:System.Messaging.MessageType.Report>: Whenever an application sends a message, if the local Queue Manager has a report queue defined, Message Queuing generates a report message and sends it to the report queue. If tracing is enabled, Message Queuing sends a report message to the report queue each time the original message enters or leaves a Message Queuing server.  
   
    
   
@@ -651,8 +651,8 @@
    
   
 ## Examples  
- <!-- TODO: review snippet reference [!code-csharp[UEMsmqMessage#21](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#21)]  -->
- <!-- TODO: review snippet reference [!code-vb[UEMsmqMessage#21](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#21)]  -->  
+ [!code-csharp[UEMsmqMessage#21](~/samples/snippets/csharp/VS_Snippets_CFX/uemsmqmessage/cs/program.cs#21)] 
+ [!code-vb[UEMsmqMessage#21](~/samples/snippets/visualbasic/VS_Snippets_CFX/uemsmqmessage/vb/program.vb#21)]   
   
  ]]></format>
         </remarks>

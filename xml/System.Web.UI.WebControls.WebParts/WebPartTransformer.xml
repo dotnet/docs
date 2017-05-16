@@ -46,9 +46,7 @@
   
  A customized transformer must be specified in the `<transformers>` section of the Web.config file to be available for use in a Web page. The third section of the code example shows how to add the customized transformer to the Web.config file.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 <webParts enableExport="true">  
     <transformers>  
        <add name="RowToStringTransformer"  
@@ -57,9 +55,7 @@
 </webParts>  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 <webParts enableExport="true">  
     <transformers>  
        <add name="RowToStringTransformer"  

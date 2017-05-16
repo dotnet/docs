@@ -40,6 +40,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PeerApplication ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -155,7 +172,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use of this event requires a value of <xref:System.Security.Permissions.PermissionState> in the <xref:System.Security.Permissions.PermissionState> of the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> object that was created when the peer collaboration session began.  
+ Use of this event requires a value of <xref:System.Security.Permissions.PermissionState.Unrestricted> in the <xref:System.Security.Permissions.PermissionState> of the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission> object that was created when the peer collaboration session began.  
   
  ]]></format>
         </remarks>
@@ -480,7 +497,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `Null` or <xref:System.String> values are not allowed.  
+ `Null` or <xref:System.String.Empty> values are not allowed.  
   
  ]]></format>
         </remarks>
@@ -601,22 +618,5 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> object has been disposed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The globally unique <xref:System.Net.PeerToPeer.Collaboration.PeerApplication.Id%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType> properties of this instance must be set before the application can successfully be registered.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

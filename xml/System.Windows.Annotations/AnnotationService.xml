@@ -25,6 +25,41 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationService" /> class for use with a specified document viewing control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Annotations.AnnotationService> can be used with the following document viewing controls:  
+  
+-   <xref:System.Windows.Controls.FlowDocumentReader>  
+  
+-   <xref:System.Windows.Controls.FlowDocumentScrollViewer>  
+  
+-   <xref:System.Windows.Controls.Primitives.DocumentViewerBase> derived subclasses  
+  
+    -   <xref:System.Windows.Controls.DocumentViewer>  
+  
+    -   <xref:System.Windows.Controls.FlowDocumentPageViewer>  
+  
+   
+  
+## Examples  
+ The following example shows use of the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> constructor.  
+  
+ [!code-csharp[DocViewerAnnotationsXml#DocViewXmlStartAnnotations](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXml/CSharp/Window1.xaml.cs#docviewxmlstartannotations)]
+ [!code-vb[DocViewerAnnotationsXml#DocViewXmlStartAnnotations](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXml/visualbasic/window1.xaml.vb#docviewxmlstartannotations)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AnnotationService (System.Windows.Controls.FlowDocumentReader viewer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.FlowDocumentReader viewer) cil managed" />
@@ -349,6 +384,35 @@
           <paramref name="annotationStore" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetService">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the <see cref="T:System.Windows.Annotations.AnnotationService" /> associated with a specified document viewing control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Annotations.AnnotationService.GetService%2A> method can be used to return the <xref:System.Windows.Annotations.AnnotationService> associated with the following document viewing controls:  
+  
+-   <xref:System.Windows.Controls.FlowDocumentReader>  
+  
+-   <xref:System.Windows.Controls.FlowDocumentScrollViewer>  
+  
+-   <xref:System.Windows.Controls.Primitives.DocumentViewerBase> derived subclasses  
+  
+    -   <xref:System.Windows.Controls.DocumentViewer>  
+  
+    -   <xref:System.Windows.Controls.FlowDocumentPageViewer>  
+  
+ The viewer control associated with the annotation service is specified in the parameter to the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetService">
       <MemberSignature Language="C#" Value="public static System.Windows.Annotations.AnnotationService GetService (System.Windows.Controls.FlowDocumentReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Annotations.AnnotationService GetService(class System.Windows.Controls.FlowDocumentReader reader) cil managed" />
@@ -540,69 +604,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetService">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the <see cref="T:System.Windows.Annotations.AnnotationService" /> associated with a specified document viewing control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Annotations.AnnotationService.GetService%2A> method can be used to return the <xref:System.Windows.Annotations.AnnotationService> associated with the following document viewing controls:  
-  
--   <xref:System.Windows.Controls.FlowDocumentReader>  
-  
--   <xref:System.Windows.Controls.FlowDocumentScrollViewer>  
-  
--   <xref:System.Windows.Controls.Primitives.DocumentViewerBase> derived subclasses  
-  
-    -   <xref:System.Windows.Controls.DocumentViewer>  
-  
-    -   <xref:System.Windows.Controls.FlowDocumentPageViewer>  
-  
- The viewer control associated with the annotation service is specified in the parameter to the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationService" /> class for use with a specified document viewing control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Annotations.AnnotationService> can be used with the following document viewing controls:  
-  
--   <xref:System.Windows.Controls.FlowDocumentReader>  
-  
--   <xref:System.Windows.Controls.FlowDocumentScrollViewer>  
-  
--   <xref:System.Windows.Controls.Primitives.DocumentViewerBase> derived subclasses  
-  
-    -   <xref:System.Windows.Controls.DocumentViewer>  
-  
-    -   <xref:System.Windows.Controls.FlowDocumentPageViewer>  
-  
-   
-  
-## Examples  
- The following example shows use of the <xref:System.Windows.Annotations.AnnotationService.%23ctor%2A> constructor.  
-  
- [!code-csharp[DocViewerAnnotationsXml#DocViewXmlStartAnnotations](~/samples/snippets/csharp/VS_Snippets_Wpf/DocViewerAnnotationsXml/CSharp/Window1.xaml.cs#docviewxmlstartannotations)]
- [!code-vb[DocViewerAnnotationsXml#DocViewXmlStartAnnotations](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DocViewerAnnotationsXml/visualbasic/window1.xaml.vb#docviewxmlstartannotations)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1045,10 +1045,10 @@
   
 |Style|Description|  
 |-----------|-----------------|  
-|<xref:System.Web.UI.WebControls.GridLines>|No grid lines.|  
-|<xref:System.Web.UI.WebControls.GridLines>|Displays the horizontal grid lines.|  
-|<xref:System.Web.UI.WebControls.GridLines>|Displays the vertical grid line.|  
-|<xref:System.Web.UI.WebControls.GridLines>|Displays both the horizontal and vertical grid lines.|  
+|<xref:System.Web.UI.WebControls.GridLines.None>|No grid lines.|  
+|<xref:System.Web.UI.WebControls.GridLines.Horizontal>|Displays the horizontal grid lines.|  
+|<xref:System.Web.UI.WebControls.GridLines.Vertical>|Displays the vertical grid line.|  
+|<xref:System.Web.UI.WebControls.GridLines.Both>|Displays both the horizontal and vertical grid lines.|  
   
 > [!NOTE]
 >  This property only applies if the <xref:System.Web.UI.WebControls.DataList.RepeatLayout%2A> property is set to `RepeatLayout.Table`.  
@@ -2162,7 +2162,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.DataList.RepeatLayout%2A> property to specify whether the items in the <xref:System.Web.UI.WebControls.DataList> control are displayed in a table. The only <xref:System.Web.UI.WebControls.RepeatLayout> values that are supported by the <xref:System.Web.UI.WebControls.DataList> control are <xref:System.Web.UI.WebControls.RepeatLayout> and <xref:System.Web.UI.WebControls.RepeatLayout>.  
+ Use the <xref:System.Web.UI.WebControls.DataList.RepeatLayout%2A> property to specify whether the items in the <xref:System.Web.UI.WebControls.DataList> control are displayed in a table. The only <xref:System.Web.UI.WebControls.RepeatLayout> values that are supported by the <xref:System.Web.UI.WebControls.DataList> control are <xref:System.Web.UI.WebControls.RepeatLayout.Table> and <xref:System.Web.UI.WebControls.RepeatLayout.Flow>.  
   
  If this property is set to `RepeatLayout.Table`, the items in the list are displayed in a table. If this property is set to `RepeatLayout.Flow`, the items in the list are displayed without a table structure.  
   

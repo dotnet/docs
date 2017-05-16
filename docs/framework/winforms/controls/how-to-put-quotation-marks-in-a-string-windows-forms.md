@@ -72,7 +72,7 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
     ```  
   
     > [!NOTE]
-    >  In this example, you cannot use \u0022 because you cannot use a universal character name that designates a character in the basic character set. Otherwise, you produce C3851. For more information, see [Compiler Error C3851](http://msdn.microsoft.com/library/da30c21c-33aa-4439-8fb3-2f5021ea4985).  
+    >  In this example, you cannot use \u0022 because you cannot use a universal character name that designates a character in the basic character set. Otherwise, you produce C3851. For more information, see [Compiler Error C3851](/cpp/error-messages/compiler-errors-2/compiler-error-c3851).  
   
      -or-  
   

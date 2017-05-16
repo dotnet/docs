@@ -855,7 +855,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Do not call the <xref:System.Windows.Forms.Form.CenterToParent%2A> method directly from your code. Instead, set the <xref:System.Windows.Forms.Form.StartPosition%2A> property to <xref:System.Windows.Forms.FormStartPosition>.  
+ Do not call the <xref:System.Windows.Forms.Form.CenterToParent%2A> method directly from your code. Instead, set the <xref:System.Windows.Forms.Form.StartPosition%2A> property to <xref:System.Windows.Forms.FormStartPosition.CenterParent>.  
   
  If the form or dialog is top-level, then <xref:System.Windows.Forms.Form.CenterToParent%2A> centers the form with respect to the screen or desktop.  
   
@@ -882,7 +882,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Do not call this directly from your code. Instead, set the <xref:System.Windows.Forms.Form.StartPosition%2A> property to <xref:System.Windows.Forms.FormStartPosition>.  
+ Do not call this directly from your code. Instead, set the <xref:System.Windows.Forms.Form.StartPosition%2A> property to <xref:System.Windows.Forms.FormStartPosition.CenterScreen>.  
   
  The <xref:System.Windows.Forms.Form.CenterToScreen%2A> method uses the following priority list to determine the screen used to center the form:  
   
@@ -1536,7 +1536,7 @@
  The border style of the form determines how the outer edge of the form appears. In addition to changing the border display for a form, certain border styles prevent the form from being sized. For example, the `FormBorderStyle.FixedDialog` border style changes the border of the form to that of a dialog box and prevents the form from being resized. The border style can also affect the size or availability of the caption bar section of a form.  
   
 > [!NOTE]
->  With the <xref:System.Windows.Forms.FormBorderStyle> style, it is impossible to resize the window below a certain minimum value, even if you have set <xref:System.Windows.Forms.Form.ControlBox%2A> to `false` and assigned a zero-length string to <xref:System.Windows.Forms.Form.Text%2A>. Consider working around this by using the <xref:System.Windows.Forms.FormBorderStyle> style instead.  
+>  With the <xref:System.Windows.Forms.FormBorderStyle.Sizable> style, it is impossible to resize the window below a certain minimum value, even if you have set <xref:System.Windows.Forms.Form.ControlBox%2A> to `false` and assigned a zero-length string to <xref:System.Windows.Forms.Form.Text%2A>. Consider working around this by using the <xref:System.Windows.Forms.FormBorderStyle.SizableToolWindow> style instead.  
   
    
   
@@ -1823,7 +1823,7 @@
 ## Remarks  
  A form's icon designates the picture that represents the form in the taskbar as well as the icon that is displayed for the control box of the form.  
   
- This property will have no effect if <xref:System.Windows.Forms.Form.FormBorderStyle%2A> is set to <xref:System.Windows.Forms.FormBorderStyle>. In that case, the form will not display an icon.  
+ This property will have no effect if <xref:System.Windows.Forms.Form.FormBorderStyle%2A> is set to <xref:System.Windows.Forms.FormBorderStyle.FixedDialog>. In that case, the form will not display an icon.  
   
  ]]></format>
         </remarks>
@@ -2012,7 +2012,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.Form.IsRestrictedWindow%2A> property determines whether the <xref:System.Security.Permissions.UIPermissionWindow> permission is granted. This property is set at run time in the form's constructor, and is cached for the lifetime of the form. Windows Forms applications running in partial trust cannot circumvent this check, as the common language runtime ensures that the parent constructor is always called in partial trust.  
+ The <xref:System.Windows.Forms.Form.IsRestrictedWindow%2A> property determines whether the <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> permission is granted. This property is set at run time in the form's constructor, and is cached for the lifetime of the form. Windows Forms applications running in partial trust cannot circumvent this check, as the common language runtime ensures that the parent constructor is always called in partial trust.  
   
  ]]></format>
         </remarks>
@@ -4027,7 +4027,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the current form or one of its parents is disposing of resources, the <xref:System.Windows.Forms.Form.OnRightToLeftLayoutChanged%2A> method will return without performing any action. If the <xref:System.Windows.Forms.Control.RightToLeft%2A> property of the form has a value of <xref:System.Windows.Forms.RightToLeft>, then the handles of the form and its child controls will be recreated through calls to the <xref:System.Windows.Forms.Control.RecreateHandle%2A> method.  
+ If the current form or one of its parents is disposing of resources, the <xref:System.Windows.Forms.Form.OnRightToLeftLayoutChanged%2A> method will return without performing any action. If the <xref:System.Windows.Forms.Control.RightToLeft%2A> property of the form has a value of <xref:System.Windows.Forms.RightToLeft.Yes>, then the handles of the form and its child controls will be recreated through calls to the <xref:System.Windows.Forms.Control.RecreateHandle%2A> method.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -4608,7 +4608,7 @@
  Typically, you use the <xref:System.Windows.Forms.Form.RestoreBounds%2A> property to track the user's window size and position preferences for the form in its normal window state. You should track both the value of the <xref:System.Windows.Forms.Form.WindowState%2A> and <xref:System.Windows.Forms.Form.RestoreBounds%2A> properties when tracking the user's window preferences.  
   
 > [!NOTE]
->  The value of the <xref:System.Windows.Forms.Form.RestoreBounds%2A> property is valid only when the <xref:System.Windows.Forms.Form.WindowState%2A> property of the <xref:System.Windows.Forms.Form> class is not equal to <xref:System.Windows.Forms.FormWindowState>.  
+>  The value of the <xref:System.Windows.Forms.Form.RestoreBounds%2A> property is valid only when the <xref:System.Windows.Forms.Form.WindowState%2A> property of the <xref:System.Windows.Forms.Form> class is not equal to <xref:System.Windows.Forms.FormWindowState.Normal>.  
   
  ]]></format>
         </remarks>
@@ -5143,7 +5143,7 @@
   
  If <xref:System.Windows.Forms.Form.ShowIcon%2A> is `false` when the primary form is shown, a generic icon will be displayed in the taskbar button for the application.  
   
- This property has no effect if <xref:System.Windows.Forms.Form.FormBorderStyle%2A> is set to <xref:System.Windows.Forms.FormBorderStyle>. In that case, the form does not display an icon.  
+ This property has no effect if <xref:System.Windows.Forms.Form.FormBorderStyle%2A> is set to <xref:System.Windows.Forms.FormBorderStyle.FixedDialog>. In that case, the form does not display an icon.  
   
  ]]></format>
         </remarks>
@@ -5178,7 +5178,7 @@
   
  You can use this property to prevent users from selecting your form through the Windows taskbar. For example, if you display a Find and Replace tool window in your application, you might want to prevent that window from being selected through the Windows taskbar because you would need both the application's main window and the Find and Replace tool window displayed in order to process searches appropriately.  
   
- You will often wish to use this property when creating a form with the <xref:System.Windows.Forms.FormBorderStyle> style. Setting the <xref:System.Windows.Forms.FormBorderStyle> style does not alone guarantee that a window will not appear in the taskbar.  
+ You will often wish to use this property when creating a form with the <xref:System.Windows.Forms.FormBorderStyle.FixedToolWindow> style. Setting the <xref:System.Windows.Forms.FormBorderStyle.FixedToolWindow> style does not alone guarantee that a window will not appear in the taskbar.  
   
    
   

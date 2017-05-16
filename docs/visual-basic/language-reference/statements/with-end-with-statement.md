@@ -51,7 +51,7 @@ Executes a series of statements that repeatedly refer to a single object or stru
   
 ```  
 With objectExpression  
-    [ statements ]  
+    [ statements ]  
 End With  
 ```  
   

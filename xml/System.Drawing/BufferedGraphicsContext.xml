@@ -23,7 +23,7 @@
  The <xref:System.Drawing.BufferedGraphicsContext> class allows you to implement custom double buffering for your graphics. Graphics that use double buffering can reduce or eliminate flicker that is caused by redrawing a display surface.  
   
 > [!NOTE]
->  The simplest way to use double buffering is to set the <xref:System.Windows.Forms.ControlStyles> control style flag on a control using the <xref:System.Windows.Forms.Control.SetStyle%2A> method. Setting the <xref:System.Windows.Forms.ControlStyles> control styles flag for a control redirects all painting for the control through a default graphics buffer, without requiring any additional code. This flag is set to `true` by default.  
+>  The simplest way to use double buffering is to set the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> control style flag on a control using the <xref:System.Windows.Forms.Control.SetStyle%2A> method. Setting the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> control styles flag for a control redirects all painting for the control through a default graphics buffer, without requiring any additional code. This flag is set to `true` by default.  
   
  The <xref:System.Drawing.BufferedGraphicsContext> class provides methods for creating and configuring a graphics buffer. The <xref:System.Drawing.BufferedGraphicsContext.Allocate%2A> method creates a <xref:System.Drawing.BufferedGraphics>, which is a wrapper for a graphics buffer that also provides methods you can use to write to the buffer and render its contents to an output device.  
   

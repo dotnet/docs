@@ -51,7 +51,7 @@ manager: "erikre"
   
  The type of an event log entry is used to indicate the severity of an event. Each event must be of a single type, which the application indicates when it reports the event. The Event Viewer uses this type to determine which icon to display in the list view of the log. For the different event type of an event log entry, see <xref:System.Diagnostics.EventLogEntryType>.  
   
- When you click “more information” when viewing an event in the Event Viewer, the Event Viewer may send information across the Internet. For more information, see the Event Viewer help.  
+ When you click "more information" when viewing an event in the Event Viewer, the Event Viewer may send information across the Internet. For more information, see the Event Viewer help.  
   
 ## See Also  
  [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)   

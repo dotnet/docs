@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -49,6 +53,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaDatatype" /> class.</summary>
@@ -75,6 +83,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -113,6 +125,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -154,6 +170,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -180,6 +200,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -244,6 +268,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
@@ -292,6 +320,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlTypeCode</ReturnType>
       </ReturnValue>
@@ -302,10 +334,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- W3C XML Schema list types such as xs:ENTITIES, xs:NMTOKENS and xs:IDREFS are not represented by the <xref:System.Xml.Schema.XmlTypeCode> enumeration. Instead they are represented by the <xref:System.Xml.Schema.XmlTypeCode> values for the xs:ENTITY, xs:NMTOKEN and xs:IDREF types with the <xref:System.Xml.Schema.XmlSchemaDatatype.Variety%2A> property of the <xref:System.Xml.Schema.XmlSchemaDatatype> object set to <xref:System.Xml.Schema.XmlSchemaDatatypeVariety>.  
+ W3C XML Schema list types such as xs:ENTITIES, xs:NMTOKENS and xs:IDREFS are not represented by the <xref:System.Xml.Schema.XmlTypeCode> enumeration. Instead they are represented by the <xref:System.Xml.Schema.XmlTypeCode> values for the xs:ENTITY, xs:NMTOKEN and xs:IDREF types with the <xref:System.Xml.Schema.XmlSchemaDatatype.Variety%2A> property of the <xref:System.Xml.Schema.XmlSchemaDatatype> object set to <xref:System.Xml.Schema.XmlSchemaDatatypeVariety.List>.  
   
 > [!NOTE]
->  Both the xs:anySimpleType and xs:anyType types are not represented by <xref:System.Xml.Schema.XmlTypeCode> enumeration. These are represented in an <xref:System.Xml.Schema.XmlSchemaDatatype> object with an <xref:System.Xml.Schema.XmlTypeCode> whose value is <xref:System.Xml.Schema.XmlTypeCode> for xs:anySimpleType or <xref:System.Xml.Schema.XmlTypeCode> for xs:anyType.  
+>  Both the xs:anySimpleType and xs:anyType types are not represented by <xref:System.Xml.Schema.XmlTypeCode> enumeration. These are represented in an <xref:System.Xml.Schema.XmlSchemaDatatype> object with an <xref:System.Xml.Schema.XmlTypeCode> whose value is <xref:System.Xml.Schema.XmlTypeCode.UntypedAtomic> for xs:anySimpleType or <xref:System.Xml.Schema.XmlTypeCode.Item> for xs:anyType.  
   
    
   
@@ -329,6 +361,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -366,6 +402,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaDatatypeVariety</ReturnType>

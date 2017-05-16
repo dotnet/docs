@@ -107,12 +107,12 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <block subset="none" type="note">  
-<para>  
+            <block subset="none" type="note">
+              <para>  
  The <see cref="T:System.Web.UI.Design.IControlDesignerBehavior" /> interface is obsolete. Use the <see cref="T:System.Web.UI.Design.IControlDesignerTag" /> and <see cref="T:System.Web.UI.Design.IControlDesignerView" /> interfaces for equivalent control designer functionality.  
   
-</para>  
-</block>  
+</para>
+            </block>  
   
  When overriding <see cref="M:System.Web.UI.Design.IControlDesignerBehavior.OnTemplateModeChanged" /> in a derived class, be sure to call the base class's <see cref="M:System.Web.UI.Design.IControlDesignerBehavior.OnTemplateModeChanged" /> method so that registered delegates receive the event.</para>
         </block>

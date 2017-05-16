@@ -33,7 +33,7 @@
    
   
 ## Examples  
- This code example demonstrates using the <xref:System.Windows.Forms.DragDropEffects> enumeration when the user moves the mouse over the drop target during a drag-and-drop operation. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method of the <xref:System.Windows.Forms.Control> class. See the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method for the complete code example.  
+ This code example demonstrates using the <xref:System.Windows.Forms.DragDropEffects.Copy> enumeration when the user moves the mouse over the drop target during a drag-and-drop operation. This code example is part of a larger example provided for the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method of the <xref:System.Windows.Forms.Control> class. See the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method for the complete code example.  
   
  [!code-cpp[System.Windows.Forms.Control.DoDragDrop#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Control.DoDragDrop/CPP/form1.cpp#4)]
  [!code-csharp[System.Windows.Forms.Control.DoDragDrop#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Control.DoDragDrop/CS/form1.cs#4)]

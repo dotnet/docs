@@ -28,13 +28,13 @@ WCF supports serializing data in JSON format. This topic describes how to tell W
  When working directly with untyped Message objects, you must explicitly set the properties on the untyped message to serialize it as JSON. The following code snippet shows how to do this.  
   
 ```  
- Message response = Message.CreateMessage(  
+ Message response = Message.CreateMessage(  
                   MessageVersion.None,    // No SOAP message version  
-                             "*",                     // SOAP action, ignored since this is JSON  
-                             "Response string: JSON format specified", // Message body  
-                             new DataContractJsonSerializer(typeof(string))); // Specify DataContractJsonSerializer  
+                             "*",                     // SOAP action, ignored since this is JSON  
+                             "Response string: JSON format specified", // Message body  
+                             new DataContractJsonSerializer(typeof(string))); // Specify DataContractJsonSerializer  
       response.Properties.Add( WebBodyFormatMessageProperty.Name,   
-                    new WebBodyFormatMessageProperty(WebContentFormat.Json)); // Use JSON format  
+                    new WebBodyFormatMessageProperty(WebContentFormat.Json)); // Use JSON format  
   
 ```  
   

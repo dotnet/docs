@@ -86,7 +86,7 @@
       </Parameters>
       <Docs>
         <param name="message">The request <see cref="T:System.ServiceModel.Channels.Message" /> to be transmitted.</param>
-        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time within which a response must be received. (For defaults, see the Remarks section.)</param>
+        <param name="timeout">The <see cref="T:System.TimeSpan" /> that specifies the interval of time within which a response must be received.</param>
         <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives the notification of the completion of the asynchronous operation transmitting a request message.</param>
         <param name="state">An object, specified by the application, that contains state information associated with the asynchronous operation transmitting a request message.</param>
         <summary>Begins an asynchronous operation to transmit a request message to the reply side of a request-reply message exchange within a specified interval of time.</summary>

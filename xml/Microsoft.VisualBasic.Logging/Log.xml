@@ -140,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method creates a new <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>, sets its name to `FileLog`, and configures it to log messages with severity level <xref:System.Diagnostics.SourceLevels> and greater. The new <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> object is then added to the <xref:System.Diagnostics.TraceSource.Listeners%2A> collection.  
+ This method creates a new <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>, sets its name to `FileLog`, and configures it to log messages with severity level <xref:System.Diagnostics.SourceLevels.Information> and greater. The new <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> object is then added to the <xref:System.Diagnostics.TraceSource.Listeners%2A> collection.  
   
  The <xref:Microsoft.VisualBasic.Logging.Log.%23ctor%2A> calls the method if the <xref:Microsoft.VisualBasic.Logging.Log.TraceSource%2A> property has not been configured. The trace source can be configured in the application's configuration file.  
   
@@ -232,16 +232,16 @@
   
 |`severity`|Default `id`|  
 |----------------|------------------|  
-|<xref:System.Diagnostics.TraceEventType>|0|  
-|<xref:System.Diagnostics.TraceEventType>|1|  
-|<xref:System.Diagnostics.TraceEventType>|2|  
-|<xref:System.Diagnostics.TraceEventType>|3|  
-|<xref:System.Diagnostics.TraceEventType>|4|  
-|<xref:System.Diagnostics.TraceEventType>|5|  
-|<xref:System.Diagnostics.TraceEventType>|6|  
-|<xref:System.Diagnostics.TraceEventType>|7|  
-|<xref:System.Diagnostics.TraceEventType>|8|  
-|<xref:System.Diagnostics.TraceEventType>|9|  
+|<xref:System.Diagnostics.TraceEventType.Information>|0|  
+|<xref:System.Diagnostics.TraceEventType.Warning>|1|  
+|<xref:System.Diagnostics.TraceEventType.Error>|2|  
+|<xref:System.Diagnostics.TraceEventType.Critical>|3|  
+|<xref:System.Diagnostics.TraceEventType.Start>|4|  
+|<xref:System.Diagnostics.TraceEventType.Stop>|5|  
+|<xref:System.Diagnostics.TraceEventType.Suspend>|6|  
+|<xref:System.Diagnostics.TraceEventType.Resume>|7|  
+|<xref:System.Diagnostics.TraceEventType.Verbose>|8|  
+|<xref:System.Diagnostics.TraceEventType.Transfer>|9|  
   
  The following table lists examples of tasks involving the `WriteEntry` method.  
   
@@ -311,16 +311,16 @@
   
 |`severity`|Default `id`|  
 |----------------|------------------|  
-|<xref:System.Diagnostics.TraceEventType>|0|  
-|<xref:System.Diagnostics.TraceEventType>|1|  
-|<xref:System.Diagnostics.TraceEventType>|2|  
-|<xref:System.Diagnostics.TraceEventType>|3|  
-|<xref:System.Diagnostics.TraceEventType>|4|  
-|<xref:System.Diagnostics.TraceEventType>|5|  
-|<xref:System.Diagnostics.TraceEventType>|6|  
-|<xref:System.Diagnostics.TraceEventType>|7|  
-|<xref:System.Diagnostics.TraceEventType>|8|  
-|<xref:System.Diagnostics.TraceEventType>|9|  
+|<xref:System.Diagnostics.TraceEventType.Information>|0|  
+|<xref:System.Diagnostics.TraceEventType.Warning>|1|  
+|<xref:System.Diagnostics.TraceEventType.Error>|2|  
+|<xref:System.Diagnostics.TraceEventType.Critical>|3|  
+|<xref:System.Diagnostics.TraceEventType.Start>|4|  
+|<xref:System.Diagnostics.TraceEventType.Stop>|5|  
+|<xref:System.Diagnostics.TraceEventType.Suspend>|6|  
+|<xref:System.Diagnostics.TraceEventType.Resume>|7|  
+|<xref:System.Diagnostics.TraceEventType.Verbose>|8|  
+|<xref:System.Diagnostics.TraceEventType.Transfer>|9|  
   
  The following table lists examples of tasks involving the `WriteEntry` method.  
   
@@ -393,16 +393,16 @@
   
 |`severity`|Default `id`|  
 |----------------|------------------|  
-|<xref:System.Diagnostics.TraceEventType>|0|  
-|<xref:System.Diagnostics.TraceEventType>|1|  
-|<xref:System.Diagnostics.TraceEventType>|2|  
-|<xref:System.Diagnostics.TraceEventType>|3|  
-|<xref:System.Diagnostics.TraceEventType>|4|  
-|<xref:System.Diagnostics.TraceEventType>|5|  
-|<xref:System.Diagnostics.TraceEventType>|6|  
-|<xref:System.Diagnostics.TraceEventType>|7|  
-|<xref:System.Diagnostics.TraceEventType>|8|  
-|<xref:System.Diagnostics.TraceEventType>|9|  
+|<xref:System.Diagnostics.TraceEventType.Information>|0|  
+|<xref:System.Diagnostics.TraceEventType.Warning>|1|  
+|<xref:System.Diagnostics.TraceEventType.Error>|2|  
+|<xref:System.Diagnostics.TraceEventType.Critical>|3|  
+|<xref:System.Diagnostics.TraceEventType.Start>|4|  
+|<xref:System.Diagnostics.TraceEventType.Stop>|5|  
+|<xref:System.Diagnostics.TraceEventType.Suspend>|6|  
+|<xref:System.Diagnostics.TraceEventType.Resume>|7|  
+|<xref:System.Diagnostics.TraceEventType.Verbose>|8|  
+|<xref:System.Diagnostics.TraceEventType.Transfer>|9|  
   
  The following table lists examples of tasks involving the `WriteEntry` method.  
   
@@ -471,16 +471,16 @@
   
 |`severity`|Default `id`|  
 |----------------|------------------|  
-|<xref:System.Diagnostics.TraceEventType>|0|  
-|<xref:System.Diagnostics.TraceEventType>|1|  
-|<xref:System.Diagnostics.TraceEventType>|2|  
-|<xref:System.Diagnostics.TraceEventType>|3|  
-|<xref:System.Diagnostics.TraceEventType>|4|  
-|<xref:System.Diagnostics.TraceEventType>|5|  
-|<xref:System.Diagnostics.TraceEventType>|6|  
-|<xref:System.Diagnostics.TraceEventType>|7|  
-|<xref:System.Diagnostics.TraceEventType>|8|  
-|<xref:System.Diagnostics.TraceEventType>|9|  
+|<xref:System.Diagnostics.TraceEventType.Information>|0|  
+|<xref:System.Diagnostics.TraceEventType.Warning>|1|  
+|<xref:System.Diagnostics.TraceEventType.Error>|2|  
+|<xref:System.Diagnostics.TraceEventType.Critical>|3|  
+|<xref:System.Diagnostics.TraceEventType.Start>|4|  
+|<xref:System.Diagnostics.TraceEventType.Stop>|5|  
+|<xref:System.Diagnostics.TraceEventType.Suspend>|6|  
+|<xref:System.Diagnostics.TraceEventType.Resume>|7|  
+|<xref:System.Diagnostics.TraceEventType.Verbose>|8|  
+|<xref:System.Diagnostics.TraceEventType.Transfer>|9|  
   
  The following table lists examples of tasks involving the `WriteException` method.  
   
@@ -554,16 +554,16 @@
   
 |`severity`|Default `id`|  
 |----------------|------------------|  
-|<xref:System.Diagnostics.TraceEventType>|0|  
-|<xref:System.Diagnostics.TraceEventType>|1|  
-|<xref:System.Diagnostics.TraceEventType>|2|  
-|<xref:System.Diagnostics.TraceEventType>|3|  
-|<xref:System.Diagnostics.TraceEventType>|4|  
-|<xref:System.Diagnostics.TraceEventType>|5|  
-|<xref:System.Diagnostics.TraceEventType>|6|  
-|<xref:System.Diagnostics.TraceEventType>|7|  
-|<xref:System.Diagnostics.TraceEventType>|8|  
-|<xref:System.Diagnostics.TraceEventType>|9|  
+|<xref:System.Diagnostics.TraceEventType.Information>|0|  
+|<xref:System.Diagnostics.TraceEventType.Warning>|1|  
+|<xref:System.Diagnostics.TraceEventType.Error>|2|  
+|<xref:System.Diagnostics.TraceEventType.Critical>|3|  
+|<xref:System.Diagnostics.TraceEventType.Start>|4|  
+|<xref:System.Diagnostics.TraceEventType.Stop>|5|  
+|<xref:System.Diagnostics.TraceEventType.Suspend>|6|  
+|<xref:System.Diagnostics.TraceEventType.Resume>|7|  
+|<xref:System.Diagnostics.TraceEventType.Verbose>|8|  
+|<xref:System.Diagnostics.TraceEventType.Transfer>|9|  
   
  The following table lists examples of tasks involving the `WriteException` method.  
   
@@ -640,16 +640,16 @@
   
 |`severity`|Default `id`|  
 |----------------|------------------|  
-|<xref:System.Diagnostics.TraceEventType>|0|  
-|<xref:System.Diagnostics.TraceEventType>|1|  
-|<xref:System.Diagnostics.TraceEventType>|2|  
-|<xref:System.Diagnostics.TraceEventType>|3|  
-|<xref:System.Diagnostics.TraceEventType>|4|  
-|<xref:System.Diagnostics.TraceEventType>|5|  
-|<xref:System.Diagnostics.TraceEventType>|6|  
-|<xref:System.Diagnostics.TraceEventType>|7|  
-|<xref:System.Diagnostics.TraceEventType>|8|  
-|<xref:System.Diagnostics.TraceEventType>|9|  
+|<xref:System.Diagnostics.TraceEventType.Information>|0|  
+|<xref:System.Diagnostics.TraceEventType.Warning>|1|  
+|<xref:System.Diagnostics.TraceEventType.Error>|2|  
+|<xref:System.Diagnostics.TraceEventType.Critical>|3|  
+|<xref:System.Diagnostics.TraceEventType.Start>|4|  
+|<xref:System.Diagnostics.TraceEventType.Stop>|5|  
+|<xref:System.Diagnostics.TraceEventType.Suspend>|6|  
+|<xref:System.Diagnostics.TraceEventType.Resume>|7|  
+|<xref:System.Diagnostics.TraceEventType.Verbose>|8|  
+|<xref:System.Diagnostics.TraceEventType.Transfer>|9|  
   
  The following table lists examples of tasks involving the `WriteException` method.  
   

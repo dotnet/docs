@@ -111,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Although the <xref:System.Web.Services.Protocols.SoapServerMessage.MethodInfo%2A> property can be accessed during any stage, the method information is only available during <xref:System.Web.Services.Protocols.SoapMessageStage> and <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+ Although the <xref:System.Web.Services.Protocols.SoapServerMessage.MethodInfo%2A> property can be accessed during any stage, the method information is only available during <xref:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize> and <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize>.  
   
    
   
@@ -178,7 +178,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Protocols.SoapServerMessage.Server%2A> property is an instance of the class implementing the XML Web service. If a SOAP extension knew ahead of time the type of the class, it could cast <xref:System.Web.Services.Protocols.SoapServerMessage.Server%2A> to that type and access properties and methods of the class implementing the XML Web service. The <xref:System.Web.Services.Protocols.SoapServerMessage.Server%2A> property can be accessed during <xref:System.Web.Services.Protocols.SoapMessageStage> or <xref:System.Web.Services.Protocols.SoapMessageStage>.  
+ The <xref:System.Web.Services.Protocols.SoapServerMessage.Server%2A> property is an instance of the class implementing the XML Web service. If a SOAP extension knew ahead of time the type of the class, it could cast <xref:System.Web.Services.Protocols.SoapServerMessage.Server%2A> to that type and access properties and methods of the class implementing the XML Web service. The <xref:System.Web.Services.Protocols.SoapServerMessage.Server%2A> property can be accessed during <xref:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize> or <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize>.  
   
    
   
@@ -217,7 +217,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Protocols.SoapServerMessage.SoapVersion%2A> property is guaranteed to be valid after the <xref:System.Web.Services.Protocols.SoapMessageStage> stage. In the <xref:System.Web.Services.Protocols.SoapMessageStage> stage the property is available, but the SOAP message has not been completely processed and SOAP extensions that may alter the contents of the SOAP message have not run.  
+ The <xref:System.Web.Services.Protocols.SoapServerMessage.SoapVersion%2A> property is guaranteed to be valid after the <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeDeserialize> stage. In the <xref:System.Web.Services.Protocols.SoapMessageStage.BeforeDeserialize> stage the property is available, but the SOAP message has not been completely processed and SOAP extensions that may alter the contents of the SOAP message have not run.  
   
  ]]></format>
         </remarks>

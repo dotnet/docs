@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> and <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> properties together determine how users can select items in a <xref:System.Windows.Controls.DataGrid>. For example, if the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is <xref:System.Windows.Controls.DataGridSelectionMode> and the <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> is Cell, the user can select only one cell at a time in the <xref:System.Windows.Controls.DataGrid>.  
+ The <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> and <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> properties together determine how users can select items in a <xref:System.Windows.Controls.DataGrid>. For example, if the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is <xref:System.Windows.Controls.DataGridSelectionMode.Single> and the <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> is Cell, the user can select only one cell at a time in the <xref:System.Windows.Controls.DataGridSelectionUnit.Cell>.  
   
  ]]></format>
     </remarks>

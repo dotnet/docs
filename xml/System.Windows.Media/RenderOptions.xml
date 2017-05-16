@@ -331,7 +331,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value for non-text drawing primitives, such as <xref:System.Windows.Shapes.Ellipse> and <xref:System.Windows.Shapes.Polygon>, is <xref:System.Windows.Media.EdgeMode>.  
+ The default value for non-text drawing primitives, such as <xref:System.Windows.Shapes.Ellipse> and <xref:System.Windows.Shapes.Polygon>, is <xref:System.Windows.Media.EdgeMode.Unspecified>.  
   
  ]]></format>
         </remarks>
@@ -369,7 +369,7 @@
   
  During application startup, if your application detects rendering issues, such as slow frame rates, you can set the rendering mode to software only. Also, you may want to enable the user setting while the application is running.  
   
- The <xref:System.Windows.Interop.RenderMode> preference overrides the <xref:System.Windows.Interop.HwndTarget.RenderMode%2A> setting. The precedence order for software rendering is:  
+ The <xref:System.Windows.Interop.RenderMode.SoftwareOnly> preference overrides the <xref:System.Windows.Interop.HwndTarget.RenderMode%2A> setting. The precedence order for software rendering is:  
   
 1.  DisableHWAcceleration registry key  
   
@@ -410,7 +410,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Media.RenderOptions.SetBitmapScalingMode%2A> method on a <xref:System.Windows.UIElement> or <xref:System.Windows.Media.DrawingGroup> descendant that is animating a bitmap.  
   
- When animating the scale of any bitmap, the default high-quality image re-sampling algorithm can sometimes consume sufficient system resources to cause frame rate degradation, effectively causing animations to stutter. By setting the <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A> property of the <xref:System.Windows.Media.RenderOptions> object to <xref:System.Windows.Media.BitmapScalingMode>, you can create a smoother animation when scaling a bitmap.  
+ When animating the scale of any bitmap, the default high-quality image re-sampling algorithm can sometimes consume sufficient system resources to cause frame rate degradation, effectively causing animations to stutter. By setting the <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A> property of the <xref:System.Windows.Media.RenderOptions> object to <xref:System.Windows.Media.BitmapScalingMode.LowQuality>, you can create a smoother animation when scaling a bitmap.  
   
    
   
@@ -529,7 +529,7 @@
 ## Remarks  
  By default, [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] does not cache the rendered contents of <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush> objects. In static scenarios, where neither the contents nor the use of the brush in the scene is changing, not caching provides a benefit because it conserves video memory. When a brush with static content is used in a non-static way, the default behavior of [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] is to re-render all the content of the brush every frame, even though the content is unchanging. For example, this will happen when a static <xref:System.Windows.Media.DrawingBrush> or <xref:System.Windows.Media.VisualBrush> is mapped to the surface of a rotating 3D object. Re-rendering the static content can have a negative impact on performance.  
   
- By setting the <xref:System.Windows.Media.RenderOptions.CachingHint%2A> attached property of the brush to <xref:System.Windows.Media.CachingHint>, you can increase performance by using cached versions of the tiled brush objects.  
+ By setting the <xref:System.Windows.Media.RenderOptions.CachingHint%2A> attached property of the brush to <xref:System.Windows.Media.CachingHint.Cache>, you can increase performance by using cached versions of the tiled brush objects.  
   
  The <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMinimum%2A> and <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> property values are relative-size values that determine when the <xref:System.Windows.Media.TileBrush> object should be regenerated because of changes in scale. For example, when the <xref:System.Windows.Media.RenderOptions.CacheInvalidationThresholdMaximum%2A> property is set to 2.0, the cache for the <xref:System.Windows.Media.TileBrush> needs to be regenerated only when its size exceeds two times the size of the current cache.  
   
@@ -601,7 +601,7 @@
    
   
 ## Examples  
- The following example shows how to use the <xref:System.Windows.Media.RenderOptions.SetEdgeMode%2A> method to set the edge mode for a visual object to <xref:System.Windows.Media.EdgeMode>.  
+ The following example shows how to use the <xref:System.Windows.Media.RenderOptions.SetEdgeMode%2A> method to set the edge mode for a visual object to <xref:System.Windows.Media.EdgeMode.Aliased>.  
   
  [!code-csharp[VisualSnippets#SetEdgeMode](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Snippets.cs#setedgemode)]
  [!code-vb[VisualSnippets#SetEdgeMode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualSnippets/visualbasic/snippets.vb#setedgemode)]  

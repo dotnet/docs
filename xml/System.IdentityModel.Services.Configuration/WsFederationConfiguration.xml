@@ -95,7 +95,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wauth parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wauth parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URI that specifies the authentication type. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,7 +236,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wfresh parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wfresh parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>The desired maximum age of authentication requests, in minutes. The default is <see cref="F:System.IdentityModel.Services.Configuration.WsFederationConfiguration.DefaultFreshness" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -254,7 +254,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the whr parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the whr parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>The address of the home realm identity provider. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -329,7 +329,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wp parameter to be used in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wp parameter to be used in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URL that identifies the policy to use. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -347,7 +347,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wtrealm parameter to be used for WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wtrealm parameter to be used for WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URI that identifies the relying party (RP) to the security token service (STS). Cannot be <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">An attempt to set the property to <see langword="null" /> occurs.</exception>
@@ -366,7 +366,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wreply parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wreply parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URL that identifies the address at which the relying party (RP) application would like to receive replies from the Security Token Service (STS). The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,7 +384,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wreq parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wreq parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>The token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -402,7 +402,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wreqptr parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Gets or sets the value of the wreqptr parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URL that specifies the location of the token issuance request expressed as a <see langword="&lt;wst:RequestSecurityToken&gt;" /> element</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -439,7 +439,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Get or sets the value of the wres parameter to use in WS-Federation sign-in requests (“wsignin1.0”).</summary>
+        <summary>Get or sets the value of the wres parameter to use in WS-Federation sign-in requests ("wsignin1.0").</summary>
         <value>A URI that identifies the resource being accessed, the relying party (RP), to the to the security token service (STS). The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -464,8 +464,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-in requests (“wsignin1.0”).</summary>
-        <value>A URL fragment that contains the additional message parameters in the following format: <c>“?param1=value1&amp;param2=value2&amp;paramN=valueN”</c>. The default is an empty string.</value>
+        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-in requests ("wsignin1.0").</summary>
+        <value>A URL fragment that contains the additional message parameters in the following format: <c>"?param1=value1&amp;param2=value2&amp;paramN=valueN"</c>. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,8 +482,8 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-out requests (“wsignout1.0”) during passive sign-out.</summary>
-        <value>A URL fragment that contains the additional message parameters in the following format: <c>“?param1=value1&amp;param2=value2&amp;paramN=valueN”</c>. The default is an empty string.</value>
+        <summary>Gets or sets a query string that contains any additional parameters to be sent in WS-Federation sign-out requests ("wsignout1.0") during passive sign-out.</summary>
+        <value>A URL fragment that contains the additional message parameters in the following format: <c>"?param1=value1&amp;param2=value2&amp;paramN=valueN"</c>. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -500,7 +500,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value of the wreply parameter to use during WS-Federation sign-out requests (“wsignout1.0”).</summary>
+        <summary>Gets or sets the value of the wreply parameter to use during WS-Federation sign-out requests ("wsignout1.0").</summary>
         <value>The URL to which the client should be redirected by the security token service (STS) during passive sign-out through the WS-Federation protocol. The default is an empty string.</value>
         <remarks>To be added.</remarks>
       </Docs>

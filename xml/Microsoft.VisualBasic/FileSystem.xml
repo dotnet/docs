@@ -242,7 +242,7 @@
  You must supply a `PathName` the first time that you call the `Dir` function. To retrieve the next item, you can make subsequent calls to the `Dir` function without parameters.  
   
 > [!IMPORTANT]
->  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess> and <xref:System.Security.Permissions.FileIOPermissionAccess>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  The `Attributes` argument enumeration values are as follows:  
   
@@ -303,7 +303,7 @@
  You must supply a `PathName` the first time that you call the `Dir` function. To retrieve the next item, you can make subsequent calls to the `Dir` function with no parameters.  
   
 > [!IMPORTANT]
->  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess> and <xref:System.Security.Permissions.FileIOPermissionAccess>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
+>  To run correctly, the `Dir` function requires the <xref:System.Security.Permissions.FileIOPermissionAccess.Read> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery>flags of <xref:System.Security.Permissions.FileIOPermission> to be granted to the executing code. For more information, see <xref:System.Security.Permissions.FileIOPermission>, <xref:System.Security.SecurityException>, and [Code Access Permissions](http://msdn.microsoft.com/en-us/e5ae402f-6dda-4732-bbe8-77296630f675).  
   
  The `Attributes` argument enumeration values are as follows:  
   
@@ -393,56 +393,21 @@
         <summary>Returns an enumeration representing the file mode for files opened using the <see langword="FileOpen" /> function. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than the <see langword="FileAttr " />function. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo(System.String)" /> for more information.</summary>
         <returns>The following enumeration values indicate the file access mode:  
   
- <list type="table">  
-<item>  
-<term> Value  
+ <list type="table"><item><term> Value  
   
- </term>  
-<description> Mode  
+ </term><description> Mode  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> <see langword="OpenMode.Input" />  
+ </term><description><see langword="OpenMode.Input" /></description></item><item><term> 2  
   
- </description>  
-</item>  
-<item>  
-<term> 2  
+ </term><description><see langword="OpenMode.Output" /></description></item><item><term> 4  
   
- </term>  
-<description> <see langword="OpenMode.Output" />  
+ </term><description><see langword="OpenMode.Random" /></description></item><item><term> 8  
   
- </description>  
-</item>  
-<item>  
-<term> 4  
+ </term><description><see langword="OpenMode.Append" /></description></item><item><term> 32  
   
- </term>  
-<description> <see langword="OpenMode.Random" />  
-  
- </description>  
-</item>  
-<item>  
-<term> 8  
-  
- </term>  
-<description> <see langword="OpenMode.Append" />  
-  
- </description>  
-</item>  
-<item>  
-<term> 32  
-  
- </term>  
-<description> <see langword="OpenMode.Binary" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </term><description><see langword="OpenMode.Binary" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -499,7 +464,7 @@
    
   
 ## Examples  
- This example uses the `FileClose`function to close a file opened for `Input`.  
+ This example uses the `FileClose` function to close a file opened for `Input`.  
   
  [!code-vb[VbVbalrCatRef#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrCatRef/VB/Class1.vb#69)]  
   
@@ -643,7 +608,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -706,7 +671,7 @@
   
 -   By default, if the variable being read into is a string, `FileGet` reads a two-byte descriptor that contains the string length and then reads the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause of the `FileOpen` function must be at least two bytes greater than the actual length of the string. Visual Basic 6.0 and earlier versions support fixed-length strings; when put to a file, the length descriptor is not written. If you want to read a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
--   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic`parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used. Then the size and bounds of the array passed into `FileGet` determine what to read.  
+-   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used. Then the size and bounds of the array passed into `FileGet` determine what to read.  
   
      The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` parameter in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -720,7 +685,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -783,7 +748,7 @@
   
 -   By default, if the variable being read into is a string, `FileGet` reads a two-byte descriptor that contains the string length and then reads the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause of the `FileOpen` function must be at least two bytes greater than the actual length of the string. Visual Basic 6.0 and earlier versions support fixed-length strings; when put to a file, the length descriptor is not written. If you want to read a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
--   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic`parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used, the size and bounds of the array passed into `FileGet` determine what to read.  
+-   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used, the size and bounds of the array passed into `FileGet` determine what to read.  
   
      The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` parameter in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -797,7 +762,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -874,7 +839,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -951,7 +916,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1028,7 +993,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1091,7 +1056,7 @@
   
 -   By default, if the variable being read into is a string, `FileGet` reads a two-byte descriptor that contains the string length and then reads the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause of the `FileOpen` function must be at least two bytes greater than the actual length of the string. Visual Basic 6.0 and earlier versions support fixed-length strings; when put to a file, the length descriptor is not written. If you want to read a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
--   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic`parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used, the size and bounds of the array passed into `FileGet` determine what to read.  
+-   If the variable being read into is an array, you can choose whether to read a descriptor for the size and dimension of the array. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When reading the array, you have to match the way the array was written. If it was written with the descriptor, you have to read the descriptor. If the descriptor is not used, the size and bounds of the array passed into `FileGet` determine what to read.  
   
      The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` parameter in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -1105,7 +1070,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1182,7 +1147,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1259,7 +1224,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1336,7 +1301,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1413,7 +1378,7 @@
   
 -   If the variable being read into is any other type of variable (not a variable-length string or an object), `FileGet` reads only the variable data. The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the length of the data being read.  
   
--   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen`function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
+-   `FileGet` reads elements of structures as if each were being read individually, except that there is no padding between elements. On disk, a dynamic array in a user-defined type (written with `FilePut`) is prefixed by a descriptor whose length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to read the individual elements. This includes any arrays and their descriptors. The `VBFixedString` attribute can be applied to string fields in the structures to indicate the size of a string when written to disk.  
   
 ## Binary Mode  
  For files opened in `Binary` mode, most of the `Random` mode rules apply, with some exceptions. The following rules for files opened in `Binary` mode differ from the rules for `Random` mode:  
@@ -1650,7 +1615,7 @@
 ## Binary Mode  
  For files opened in `Binary` mode, all of the `Random` rules apply, with these exceptions:  
   
--   The `RecordLength` clause in the `FileOpen` function has no effect. `FileGetObject`reads all variables from disk contiguously, that is, with no padding between records.  
+-   The `RecordLength` clause in the `FileOpen` function has no effect. `FileGetObject` reads all variables from disk contiguously, that is, with no padding between records.  
   
 -   For any array other than an array in a structure, `FileGetObject` reads only the data. No descriptor is read.  
   
@@ -1824,13 +1789,13 @@
 ## Random Mode  
  For files opened in `Random` mode, the following rules apply:  
   
--   If the length of the data being written is less than the length specified in the `RecordLength` clause of the `FileOpen` function, `FilePut` writes subsequent records on record-length boundaries. The space between the end of one record and the start of the next record is padded with the existing contents of the file buffer. Because the amount of padding data cannot be determined with any certainty, it is generally a good idea to have the record length match the length of the data being written. If the length of the data being written is greater than the length specified in the `RecordLength` clause of the `FileOpen`function, an exception will be thrown.  
+-   If the length of the data being written is less than the length specified in the `RecordLength` clause of the `FileOpen` function, `FilePut` writes subsequent records on record-length boundaries. The space between the end of one record and the start of the next record is padded with the existing contents of the file buffer. Because the amount of padding data cannot be determined with any certainty, it is generally a good idea to have the record length match the length of the data being written. If the length of the data being written is greater than the length specified in the `RecordLength` clause of the `FileOpen` function, an exception will be thrown.  
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -1911,9 +1876,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -1994,9 +1959,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -2077,9 +2042,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -2160,9 +2125,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -2243,9 +2208,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -2326,9 +2291,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the`VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the`VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -2409,9 +2374,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -2492,9 +2457,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -2571,13 +2536,13 @@
 ## Random Mode  
  For files opened in `Random` mode, the following rules apply:  
   
--   If the length of the data being written is less than the length specified in the `RecordLength` clause of the `FileOpen` function, `FilePut` writes subsequent records on record-length boundaries. The space between the end of one record and the start of the next record is padded with the existing contents of the file buffer. Because the amount of padding data cannot be determined with any certainty, it is generally a good idea to have the record length match the length of the data being written. If the length of the data being written is greater than the length specified in the `RecordLength` clause of the `FileOpen`function, an exception will be thrown.  
+-   If the length of the data being written is less than the length specified in the `RecordLength` clause of the `FileOpen` function, `FilePut` writes subsequent records on record-length boundaries. The space between the end of one record and the start of the next record is padded with the existing contents of the file buffer. Because the amount of padding data cannot be determined with any certainty, it is generally a good idea to have the record length match the length of the data being written. If the length of the data being written is greater than the length specified in the `RecordLength` clause of the `FileOpen` function, an exception will be thrown.  
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -2658,9 +2623,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -2746,9 +2711,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -2831,9 +2796,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -2918,9 +2883,9 @@
   
 -   If the variable being written is a string, `FilePut` writes a two-byte descriptor that contains the string length, and then writes the data that goes into the variable. Therefore, the record length specified by the `RecordLength` clause in the `FileOpen` function must be at least two bytes greater than the actual length of the string.  
   
--   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePut` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePut` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePut` writes a two byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, you have a choice as to whether or not to write a descriptor for the size and dimensions of the array. Visual Basic 6.0 and earlier versions write the file descriptor for a dynamic array but not for a fixed-size array. Visual Basic 2005 defaults to not writing the descriptor. To write the descriptor, set the `ArrayIsDynamic` parameter to `True`. When writing the array, you have to match the way the array will be read; if it will be read with the descriptor, you have to write the descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions). The record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. For example, the following array declaration requires 218 bytes when the array is written to disk.  
   
@@ -3003,9 +2968,9 @@
   
 -   If the length of the data being written is less than the length specified in the `RecordLength` clause of the `FileOpen` function, `FilePutObject` writes subsequent records on record-length boundaries. The space between the end of one record and the start of the next record is padded with the existing contents of the file buffer. Because the amount of padding data cannot be precisely determined, it is generally a good idea to have the record length match the length of the data being written. If the length of the data being written is greater than the length specified in the `RecordLength` clause of the `FileOpen` function, an exception is thrown.  
   
--   If the variable being written is an object that contains a numeric type, `FilePutObject` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePutObject` writes six bytes: two bytes that identify the object as `VarType(`3`)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
+-   If the variable being written is an object that contains a numeric type, `FilePutObject` writes two bytes identifying the `VarType` of the object and then writes the variable. For example, when writing an object that contains an integer, `FilePutObject` writes six bytes: two bytes that identify the object as `VarType(3)` (`Integer`) and four bytes that contain the data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least two bytes greater than the actual number of bytes required to store the variable.  
   
--   If the variable being written is an object that contains a string, `FilePutObject` writes a two-byte descriptor identifying the `VarType(`8`)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
+-   If the variable being written is an object that contains a string, `FilePutObject` writes a two-byte descriptor identifying the `VarType(8)` of the object, a two-byte descriptor indicating the length of the string, and then writes the string data. The record length specified by the `RecordLength` parameter in the `FileOpen` function must be at least four bytes greater than the actual length of the string. If you want to put a string without the descriptor, you should pass `True` to the `StringIsFixedLength` parameter, and the string you read into should be the correct length.  
   
 -   If the variable being written is an array, then the record length specified by the `RecordLength` clause in the `FileOpen` function must be greater than or equal to the sum of all the bytes required to write the array data and the array descriptor. The descriptor specifies the rank of the array, the size, and the lower bounds for each rank. Its length equals 2 plus 8 times the number of dimensions: (2 + 8 * NumberOfDimensions).  
   
@@ -3112,103 +3077,30 @@
         <summary>Returns a <see langword="FileAttribute" /> value that represents the attributes of a file, directory, or folder. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than <see langword="FileAttribute" />. For more information, see <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" />.</summary>
         <returns>The value returned by <see langword="GetAttr" /> is the sum of the following enumeration values:  
   
- <list type="table">  
-<item>  
-<term> Value  
+ <list type="table"><item><term> Value  
   
- </term>  
-<description> Constant  
+ </term><description> Constant  
   
- </description>  
-<description> Description  
+ </description><description> Description  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="Normal" />  
+ </description></item><item><term><see langword="Normal" /></term><description><see langword="vbNormal" /></description><description> Normal.  
   
- </term>  
-<description> <see langword="vbNormal" />  
+ </description></item><item><term><see langword="ReadOnly" /></term><description><see langword="vbReadOnly" /></description><description> Read-only.  
   
- </description>  
-<description> Normal.  
+ </description></item><item><term><see langword="Hidden" /></term><description><see langword="vbHidden" /></description><description> Hidden.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="ReadOnly" />  
+ </description></item><item><term><see langword="System" /></term><description><see langword="vbSystem" /></description><description> System file.  
   
- </term>  
-<description> <see langword="vbReadOnly" />  
+ </description></item><item><term><see langword="Directory" /></term><description><see langword="vbDirectory" /></description><description> Directory or folder.  
   
- </description>  
-<description> Read-only.  
+ </description></item><item><term><see langword="Archive" /></term><description><see langword="vbArchive" /></description><description> File has changed since last backup.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="Hidden" />  
+ </description></item><item><term><see langword="Alias" /></term><description><see langword="vbAlias" /></description><description> File has a different name.  
   
- </term>  
-<description> <see langword="vbHidden" />  
-  
- </description>  
-<description> Hidden.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="System" />  
-  
- </term>  
-<description> <see langword="vbSystem" />  
-  
- </description>  
-<description> System file.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="Directory" />  
-  
- </term>  
-<description> <see langword="vbDirectory" />  
-  
- </description>  
-<description> Directory or folder.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="Archive" />  
-  
- </term>  
-<description> <see langword="vbArchive" />  
-  
- </description>  
-<description> File has changed since last backup.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="Alias" />  
-  
- </term>  
-<description> <see langword="vbAlias" />  
-  
- </description>  
-<description> File has a different name.  
-  
- </description>  
-</item>  
-</list>  
-  
- <block subset="none" type="note">  
-<para>  
+ </description></item></list><block subset="none" type="note"><para>  
  These enumerations are specified by the Visual Basic language. The names can be used anywhere in your code in place of the actual values.  
   
-</para>  
-</block></returns>
+</para></block></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4088,7 +3980,7 @@ Result = GetAttr(FName) And vbArchive
 > [!IMPORTANT]
 >  When reading from files, do not make decisions about the contents of a file based on the file name extension. For example, a file that is named Form1.vb may not be a Visual Basic source file.  
   
- The `LineInput` function reads from a file one character at a time until it encounters a carriage return (`Chr(`13`)`) or carriage return/line feed (`Chr(`13`)` + `Chr(`10`)`) sequence. Carriage return/line feed sequences are skipped instead of appended to the character string.  
+ The `LineInput` function reads from a file one character at a time until it encounters a carriage return (`Chr(13)`) or carriage return/line feed (`Chr(13) + Chr(10)`) sequence. Carriage return/line feed sequences are skipped instead of appended to the character string.  
   
 > [!IMPORTANT]
 >  Reading from a file by using the `LineInput` function requires `Read` access from the <xref:System.Security.Permissions.FileIOPermissionAccess> enumeration.  
@@ -4812,7 +4704,7 @@ Result = GetAttr(FName) And vbArchive
   
  `currentprintposition`(+(`Count``Mod``width`))  
   
- For example, if the current print position is 24, the output line width is 80, and you specify `SPC(`90`)`, the next print will start at position 34 (current print position + the remainder of 90/80). If the difference between the current print position and the output line width is less than `Count` (or `Count` `Mod` *width*), the `SPC` function skips to the start of the next line and generates spaces equal to `Count` – (*width* – *currentprintposition*).  
+ For example, if the current print position is 24, the output line width is 80, and you specify `SPC(90)`, the next print will start at position 34 (current print position + the remainder of 90/80). If the difference between the current print position and the output line width is less than `Count` (or `Count` `Mod` *width*), the `SPC` function skips to the start of the next line and generates spaces equal to `Count` – (*width* – *currentprintposition*).  
   
 > [!NOTE]
 >  Make sure your tabular columns are wide enough to allow for wide letters.  
@@ -4852,7 +4744,7 @@ Result = GetAttr(FName) And vbArchive
   
  Column Mod width  
   
- For example, if *width* is 80 and you specify `TAB(`90`)`, the next print will start at column 10 (the remainder of 90/80). If `Column` is less than the current print position, printing starts on the next line at the calculated print position. If the calculated print position is larger than the current print position, printing starts at the calculated print position on the same line.  
+ For example, if *width* is 80 and you specify `TAB(90)`, the next print will start at column 10 (the remainder of 90/80). If `Column` is less than the current print position, printing starts on the next line at the calculated print position. If the calculated print position is larger than the current print position, printing starts at the calculated print position on the same line.  
   
  The leftmost print position on an output line is always 1. When you use the `Print` or `PrintLine` functions to print to files, the rightmost print position is the current width of the output file, which you can set using the `FileWidth` function.  
   
@@ -4899,7 +4791,7 @@ Result = GetAttr(FName) And vbArchive
   
  Column Mod width  
   
- For example, if *width* is 80 and you specify `TAB(`90`)`, the next print will start at column 10 (the remainder of 90/80). If `Column` is less than the current print position, printing starts on the next line at the calculated print position. If the calculated print position is greater than the current print position, printing starts at the calculated print position on the same line.  
+ For example, if *width* is 80 and you specify `TAB(90)`, the next print will start at column 10 (the remainder of 90/80). If `Column` is less than the current print position, printing starts on the next line at the calculated print position. If the calculated print position is greater than the current print position, printing starts at the calculated print position on the same line.  
   
  The leftmost print position on an output line is always 1. When you use the `Print` or `PrintLine` functions to print to files, the rightmost print position is the current width of the output file, which you can set using the `FileWidth` function.  
   

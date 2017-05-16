@@ -37,7 +37,7 @@ translation.priority.ht:
 The `~` operator performs a bitwise complement operation on its operand, which has the effect of reversing each bit. Bitwise complement operators are predefined for [int](../../../csharp/language-reference/keywords/int.md), [uint](../../../csharp/language-reference/keywords/uint.md), [long](../../../csharp/language-reference/keywords/long.md), and [ulong](../../../csharp/language-reference/keywords/ulong.md).  
   
 > [!NOTE]
->  The `~` symbol also is used to declare destructors. For more information, see [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md).  
+>  The `~` symbol also is used to declare finalizers. For more information, see [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md).  
   
 ## Remarks  
  User-defined types can overload the `~` operator. For more information, see [operator](../../../csharp/language-reference/keywords/operator.md). Operations on integral types are generally allowed on enumeration.  
@@ -49,4 +49,4 @@ The `~` operator performs a bitwise complement operation on its operand, which h
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [C# Operators](../../../csharp/language-reference/operators/index.md)   
- [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+ [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)

@@ -57,7 +57,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Drawing.Printing.PrintEventArgs.PrintAction%2A> does not reliably indicate the type of print operation occurring, and returns <xref:System.Drawing.Printing.PrintAction> in all cases.  
+ The <xref:System.Drawing.Printing.PrintEventArgs.PrintAction%2A> does not reliably indicate the type of print operation occurring, and returns <xref:System.Drawing.Printing.PrintAction.PrintToFile> in all cases.  
   
  ]]></format>
         </remarks>

@@ -114,44 +114,27 @@ public class Class1 {
         <summary>Compares this instance of <see cref="T:System.Data.OracleClient.OracleString" /> to the supplied object and returns an indication of their relative values.</summary>
         <returns>A signed number indicating the relative values of the instance and the object.  
   
- <list type="table">  
-<listheader>  
-<term> Return Value  
+ <list type="table"><listheader><term> Return Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance is less than object.  
+ </term><description> This instance is less than object.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance is the same as object.  
+ </term><description> This instance is the same as object.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance is greater than object  
+ </term><description> This instance is greater than object  
   
  -or-  
   
  object is a null reference (<see langword="Nothing" />)  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

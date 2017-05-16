@@ -337,6 +337,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateCertificateOverTransportBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a security binding element that expects clients to do certificate-based authentication using SOAP message security. This binding element expects the transport to provide server authentication as well as message protection (for example, HTTPS).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The client must be configured with a certificate it uses for authentication.  
+  
+> [!NOTE]
+>  Once a <xref:System.ServiceModel.Channels.SecurityBindingElement> object is created by calling this method, the <xref:System.ServiceModel.Channels.SecurityBindingElement.MessageSecurityVersion%2A> property should be treated as immutable. Inconsistent binding behavior may occur if this value is modified.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateCertificateOverTransportBindingElement">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.TransportSecurityBindingElement CreateCertificateOverTransportBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.TransportSecurityBindingElement CreateCertificateOverTransportBindingElement() cil managed" />
@@ -507,6 +527,25 @@
           <paramref name="issuedTokenParameters" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateIssuedTokenForSslBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a symmetric security binding element that is configured to require client authentication based on an issued token and server authentication based on the server certificate.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The issued token can have a symmetric or an asymmetric key. The client authenticates the server using the SOAP-level SSL protocol.  
+  
+ Both overloads use a <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters> parameter. One of them includes a parameter that specifies whether cancellation is required.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateIssuedTokenForSslBindingElement">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.SymmetricSecurityBindingElement CreateIssuedTokenForSslBindingElement (System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters issuedTokenParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.SymmetricSecurityBindingElement CreateIssuedTokenForSslBindingElement(class System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters issuedTokenParameters) cil managed" />
@@ -668,6 +707,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMutualCertificateBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an asymmetric security binding element that is configured to require certificate-based client authentication as well as certificate-based server authentication.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The client must be configured with its certificate as well as the server's certificate. The server must be configured with its certificate.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateMutualCertificateBindingElement">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.SecurityBindingElement CreateMutualCertificateBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Channels.SecurityBindingElement CreateMutualCertificateBindingElement() cil managed" />
@@ -1284,7 +1340,7 @@
 ## Examples  
  The following code shows how to set this property.  
   
- <!-- TODO: review snippet reference [!code-csharp[c_CustomBindingsAuthMode#8](~/samples/snippets/csharp/VS_Snippets_CFX/c_custombindingsauthmode/cs/source.cs#8)]  -->  
+ [!code-csharp[c_CustomBindingsAuthMode#8](~/samples/snippets/csharp/VS_Snippets_CFX/c_custombindingsauthmode/cs/source.cs#8)]   
   
  ]]></format>
         </remarks>
@@ -1662,13 +1718,13 @@
 ## Remarks  
  The <xref:System.ServiceModel.Channels.SecurityHeaderLayout> enumeration contains the following members:  
   
--   <xref:System.ServiceModel.Channels.SecurityHeaderLayout>: Items are added to the security header according to the general principle of “declare before use”.  
+-   <xref:System.ServiceModel.Channels.SecurityHeaderLayout.Strict>: Items are added to the security header according to the general principle of "declare before use".  
   
--   <xref:System.ServiceModel.Channels.SecurityHeaderLayout>: Items are added to the security header in any order that conforms to WSS: SOAP Message security.  
+-   <xref:System.ServiceModel.Channels.SecurityHeaderLayout.Lax>: Items are added to the security header in any order that conforms to WSS: SOAP Message security.  
   
--   <xref:System.ServiceModel.Channels.SecurityHeaderLayout>: Items are added to the security header in any order that conforms to WSS: SOAP message security except that the first element in the security header must be a `wsse:Timestamp` element.  
+-   <xref:System.ServiceModel.Channels.SecurityHeaderLayout.LaxTimestampFirst>: Items are added to the security header in any order that conforms to WSS: SOAP message security except that the first element in the security header must be a `wsse:Timestamp` element.  
   
--   <xref:System.ServiceModel.Channels.SecurityHeaderLayout>: Items are added to the security header in any order that conforms to WSS: SOAP message security except that the last element in the security header must be a `wsse:Timestamp` element.  
+-   <xref:System.ServiceModel.Channels.SecurityHeaderLayout.LaxTimestampLast>: Items are added to the security header in any order that conforms to WSS: SOAP message security except that the last element in the security header must be a `wsse:Timestamp` element.  
   
  ]]></format>
         </remarks>
@@ -1762,61 +1818,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateMutualCertificateBindingElement">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an asymmetric security binding element that is configured to require certificate-based client authentication as well as certificate-based server authentication.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The client must be configured with its certificate as well as the server's certificate. The server must be configured with its certificate.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateCertificateOverTransportBindingElement">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a security binding element that expects clients to do certificate-based authentication using SOAP message security. This binding element expects the transport to provide server authentication as well as message protection (for example, HTTPS).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The client must be configured with a certificate it uses for authentication.  
-  
-> [!NOTE]
->  Once a <xref:System.ServiceModel.Channels.SecurityBindingElement> object is created by calling this method, the <xref:System.ServiceModel.Channels.SecurityBindingElement.MessageSecurityVersion%2A> property should be treated as immutable. Inconsistent binding behavior may occur if this value is modified.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateIssuedTokenForSslBindingElement">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a symmetric security binding element that is configured to require client authentication based on an issued token and server authentication based on the server certificate.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The issued token can have a symmetric or an asymmetric key. The client authenticates the server using the SOAP-level SSL protocol.  
-  
- Both overloads use a <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters> parameter. One of them includes a parameter that specifies whether cancellation is required.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

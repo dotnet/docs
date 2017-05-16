@@ -34,7 +34,7 @@ public sealed class CommentOut : CodeActivity
   
 ```  
   
- The `Designer` attribute specifies the class that implements the visual interface of the activity at design time. The `ContentProperty` attribute declares that the `“Body”` property can be skipped in the XAML representation of an instance of this activity.  
+ The `Designer` attribute specifies the class that implements the visual interface of the activity at design time. The `ContentProperty` attribute declares that the `"Body"` property can be skipped in the XAML representation of an instance of this activity.  
   
 ```  
 <Border x:Uid="Border_1" BorderThickness ="1">  

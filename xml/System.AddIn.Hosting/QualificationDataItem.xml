@@ -181,7 +181,7 @@
  When you enumerate qualification data, use this property to identify the qualification data that belongs to a particular segment of the pipeline.  
   
 > [!NOTE]
->  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, when you enumerate qualification data you will not find any items whose <xref:System.AddIn.Hosting.QualificationDataItem.Segment%2A> property is <xref:System.AddIn.Hosting.AddInSegmentType>.  
+>  The add-in model does not use qualification data that is applied to the host view of the add-in. As a result, when you enumerate qualification data you will not find any items whose <xref:System.AddIn.Hosting.QualificationDataItem.Segment%2A> property is <xref:System.AddIn.Hosting.AddInSegmentType.HostViewOfAddIn>.  
   
    
   

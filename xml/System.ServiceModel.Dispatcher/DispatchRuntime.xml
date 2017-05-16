@@ -266,9 +266,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ImpersonateCallerForAllOperations%2A> property to control whether impersonation is performed when an operation's <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A> property value is <xref:System.ServiceModel.ImpersonationOption>. An exception is thrown if the property is `true` but an operation's <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A> property value is <xref:System.ServiceModel.ImpersonationOption>.  
+ Use the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ImpersonateCallerForAllOperations%2A> property to control whether impersonation is performed when an operation's <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A> property value is <xref:System.ServiceModel.ImpersonationOption.Allowed>. An exception is thrown if the property is `true` but an operation's <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A> property value is <xref:System.ServiceModel.ImpersonationOption.NotAllowed>.  
   
- If an operation's <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A> property value is <xref:System.ServiceModel.ImpersonationOption> impersonation is always attempted.  
+ If an operation's <xref:System.ServiceModel.Dispatcher.DispatchOperation.Impersonation%2A> property value is <xref:System.ServiceModel.ImpersonationOption.Required> impersonation is always attempted.  
   
  ]]></format>
         </remarks>
@@ -528,13 +528,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.PrincipalPermissionMode%2A> is <xref:System.ServiceModel.Description.PrincipalPermissionMode>, the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is not set.  
+ When the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.PrincipalPermissionMode%2A> is <xref:System.ServiceModel.Description.PrincipalPermissionMode.None>, the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is not set.  
   
- When the value is <xref:System.ServiceModel.Description.PrincipalPermissionMode> the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is populated with a <xref:System.Security.Principal.WindowsPrincipal> based on the user credentials of the incoming message.  
+ When the value is <xref:System.ServiceModel.Description.PrincipalPermissionMode.UseWindowsGroups> the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is populated with a <xref:System.Security.Principal.WindowsPrincipal> based on the user credentials of the incoming message.  
   
- When the value is <xref:System.ServiceModel.Description.PrincipalPermissionMode> the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is populated with an <xref:System.Security.Principal.IPrincipal> object based on [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] role information.  
+ When the value is <xref:System.ServiceModel.Description.PrincipalPermissionMode.UseAspNetRoles> the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is populated with an <xref:System.Security.Principal.IPrincipal> object based on [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] role information.  
   
- When the value is <xref:System.ServiceModel.Description.PrincipalPermissionMode> the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is populated by a custom <xref:System.IdentityModel.Policy.IAuthorizationPolicy> implementation.  
+ When the value is <xref:System.ServiceModel.Description.PrincipalPermissionMode.Custom> the <xref:System.Threading.Thread.CurrentPrincipal%2A> property is populated by a custom <xref:System.IdentityModel.Policy.IAuthorizationPolicy> implementation.  
   
  ]]></format>
         </remarks>
@@ -646,7 +646,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In the default case, no service authorization events are audited. If the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationAuditLevel%2A> value is <xref:System.ServiceModel.AuditLevel>, only successful service authorization events are written to the audit log specified by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation%2A> property. If this property has a value of <xref:System.ServiceModel.AuditLevel>, only unsuccessful service authorization events are written to the audit log specified by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation%2A> property. If the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationAuditLevel%2A> value is <xref:System.ServiceModel.AuditLevel>, both successful and failed service authorization events are written to the audit log.  
+ In the default case, no service authorization events are audited. If the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationAuditLevel%2A> value is <xref:System.ServiceModel.AuditLevel.Success>, only successful service authorization events are written to the audit log specified by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation%2A> property. If this property has a value of <xref:System.ServiceModel.AuditLevel.Failure>, only unsuccessful service authorization events are written to the audit log specified by the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation%2A> property. If the <xref:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationAuditLevel%2A> value is <xref:System.ServiceModel.AuditLevel.SuccessOrFailure>, both successful and failed service authorization events are written to the audit log.  
   
  ]]></format>
         </remarks>

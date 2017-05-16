@@ -6,6 +6,7 @@
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -43,6 +44,7 @@
         <AssemblyName>System.ObjectModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -63,7 +65,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An <xref:System.String> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
+ An <xref:System.String.Empty> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
   
  ]]></format>
         </remarks>
@@ -78,6 +80,7 @@
         <AssemblyName>System.ObjectModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,7 +101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An <xref:System.String> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
+ An <xref:System.String.Empty> value or `null` for the `propertyName` parameter indicates that all of the properties have changed.  
   
  ]]></format>
         </remarks>

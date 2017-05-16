@@ -37,7 +37,7 @@
 |--------------|-------------------|  
 |<xref:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType%2A>|<xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType?displayProperty=fullName>|  
 |<xref:System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm%2A>|1.3.14.3.2.26 (szOID_OIWSEC_sha1)|  
-|<xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A>|<xref:System.Security.Cryptography.X509Certificates.X509IncludeOption> if <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType%2A> is <xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType>,<br /><br /> <xref:System.Security.Cryptography.X509Certificates.X509IncludeOption> otherwise|  
+|<xref:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption%2A>|<xref:System.Security.Cryptography.X509Certificates.X509IncludeOption.None> if <xref:System.Security.Cryptography.Pkcs.CmsSigner.SignerIdentifierType%2A> is <xref:System.Security.Cryptography.Pkcs.SubjectIdentifierType>,<br /><br /> <xref:System.Security.Cryptography.X509Certificates.X509IncludeOption.ExcludeRoot> otherwise|  
   
  ]]></format>
         </remarks>
@@ -224,63 +224,29 @@
         <summary>The <see cref="P:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption" /> property sets or retrieves the option that controls whether the root and entire chain associated with the signing certificate are included with the created CMS/PKCS #7 message.</summary>
         <value>A member of the <see cref="T:System.Security.Cryptography.X509Certificates.X509IncludeOption" /> enumeration that specifies how much of the X509 certificate chain should be included in the <see cref="T:System.Security.Cryptography.Pkcs.CmsSigner" /> object. The <see cref="P:System.Security.Cryptography.Pkcs.CmsSigner.IncludeOption" /> property can be one of the following <see cref="T:System.Security.Cryptography.X509Certificates.X509IncludeOption" /> members.  
   
- <list type="table">  
-<listheader>  
-<term> Name  
+ <list type="table"><listheader><term> Name  
   
- </term>  
-<description> Value  
+ </term><description> Value  
   
- </description>  
-<description> Meaning  
+ </description><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.None" />  
+ </description></listheader><item><term><see cref="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.None" /></term><description> 0  
   
- </term>  
-<description> 0  
+ </description><description> The certificate chain is not included.  
   
- </description>  
-<description> The certificate chain is not included.  
+ </description></item><item><term><see cref="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.ExcludeRoot" /></term><description> 1  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.ExcludeRoot" />  
+ </description><description> The certificate chain, except for the root certificate, is included.  
   
- </term>  
-<description> 1  
+ </description></item><item><term><see cref="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.EndCertOnly" /></term><description> 2  
   
- </description>  
-<description> The certificate chain, except for the root certificate, is included.  
+ </description><description> Only the end certificate is included.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.EndCertOnly" />  
+ </description></item><item><term><see cref="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.WholeChain" /></term><description> 3  
   
- </term>  
-<description> 2  
+ </description><description> The certificate chain, including the root certificate, is included.  
   
- </description>  
-<description> Only the end certificate is included.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="F:System.Security.Cryptography.X509Certificates.X509IncludeOption.WholeChain" />  
-  
- </term>  
-<description> 3  
-  
- </description>  
-<description> The certificate chain, including the root certificate, is included.  
-  
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">One of the arguments provided to a method was not valid.</exception>
       </Docs>

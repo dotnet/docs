@@ -200,7 +200,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Web.SessionState.HttpSessionState.IsCookieless%2A> is `true`, the <xref:System.Web.SessionState.HttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode>; otherwise, the <xref:System.Web.SessionState.HttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode>.  
+ When <xref:System.Web.SessionState.HttpSessionState.IsCookieless%2A> is `true`, the <xref:System.Web.SessionState.HttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode.UseUri>; otherwise, the <xref:System.Web.SessionState.HttpSessionState.CookieMode%2A> property returns <xref:System.Web.HttpCookieMode.UseCookies>.  
   
  ]]></format>
         </remarks>
@@ -482,7 +482,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For information about how to configure your server for <xref:System.Web.SessionState.SessionStateMode> or <xref:System.Web.SessionState.SessionStateMode> session-state storage mode, see [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
+ For information about how to configure your server for <xref:System.Web.SessionState.SessionStateMode.StateServer> or <xref:System.Web.SessionState.SessionStateMode.SQLServer> session-state storage mode, see [ASP.NET Session State Overview](http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc).  
   
  ]]></format>
         </remarks>
@@ -605,7 +605,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If an object on a page does not support serialization and <xref:System.Web.SessionState.HttpSessionStateContainer.Mode%2A> is out-of-process (<xref:System.Web.SessionState.SessionStateMode> or <xref:System.Web.SessionState.SessionStateMode>), the object will not be created and will not be added to this collection.  
+ If an object on a page does not support serialization and <xref:System.Web.SessionState.HttpSessionStateContainer.Mode%2A> is out-of-process (<xref:System.Web.SessionState.SessionStateMode.SQLServer> or <xref:System.Web.SessionState.SessionStateMode.StateServer>), the object will not be created and will not be added to this collection.  
   
  <xref:System.Web.SessionState.HttpSessionStateContainer.StaticObjects%2A> is provided for compatibility with earlier versions of ASP.  
   

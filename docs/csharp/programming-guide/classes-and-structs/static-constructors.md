@@ -65,4 +65,4 @@ A static constructor is used to initialize any [static](../../../csharp/language
  [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
  [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
  [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md)   
- [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+ [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)

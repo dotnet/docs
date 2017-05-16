@@ -61,9 +61,7 @@ C# provides many operators, which are symbols that specify which operations (mat
  [f(x)](../../../csharp/language-reference/operators/invocation-operator.md) – function invocation.  
   
  [a&#91;x&#93;](../../../csharp/language-reference/operators/index-operator.md) – aggregate object indexing.  
-  
- [a?&#91;x&#93;](../../../csharp/language-reference/operators/null-conditional-operators.md) – null conditional indexing.  Returns `null` if the left-hand operand is `null`.  
-  
+   
  [x++](../../../csharp/language-reference/operators/increment-operator.md) – postfix increment.  Returns the value of x and then updates the storage location with the value of x that is one greater (typically adds the integer 1).  
   
  [x--](../../../csharp/language-reference/operators/decrement-operator.md) –  postfix decrement.  Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).  

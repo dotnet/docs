@@ -438,7 +438,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `ColumnClick` event occurs when the user clicks one of the column headers in a details view of the items in a <xref:System.Windows.Forms.ListView> control (when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>). The `ColumnClick` event is typically handled to sort the items in the <xref:System.Windows.Forms.ListView>, using the clicked column as the column to sort by.  
+ The `ColumnClick` event occurs when the user clicks one of the column headers in a details view of the items in a <xref:System.Windows.Forms.ListView> control (when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details>). The `ColumnClick` event is typically handled to sort the items in the <xref:System.Windows.Forms.ListView>, using the clicked column as the column to sort by.  
   
  For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   

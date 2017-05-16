@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -56,6 +57,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,6 +95,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.KeyedHashAlgorithm</ReturnType>
       </ReturnValue>
@@ -124,6 +130,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.KeyedHashAlgorithm</ReturnType>
       </ReturnValue>
@@ -133,144 +143,43 @@
       <Docs>
         <param name="algName">The keyed hash algorithm implementation to use. The following table shows the valid values for the <c>algName</c> parameter and the algorithms they map to.  
   
- <list type="table">  
-<listheader>  
-<term> Parameter value  
+ <list type="table"><listheader><term> Parameter value  
   
- </term>  
-<description> Implements  
+ </term><description> Implements  
   
- </description>  
-</listheader>  
-<item>  
-<term> System.Security.Cryptography.HMAC  
+ </description></listheader><item><term> System.Security.Cryptography.HMAC  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACSHA1" />  
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.KeyedHashAlgorithm  
   
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.KeyedHashAlgorithm  
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACMD5  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACSHA1" />  
+ </term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> System.Security.Cryptography.HMACMD5  
   
- </description>  
-</item>  
-<item>  
-<term> HMACMD5  
+ </term><description><see cref="T:System.Security.Cryptography.HMACMD5" /></description></item><item><term> HMACRIPEMD160  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACMD5" />  
+ </term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> System.Security.Cryptography.HMACRIPEMD160  
   
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.HMACMD5  
+ </term><description><see cref="T:System.Security.Cryptography.HMACRIPEMD160" /></description></item><item><term> HMACSHA1  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACMD5" />  
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> System.Security.Cryptography.HMACSHA1  
   
- </description>  
-</item>  
-<item>  
-<term> HMACRIPEMD160  
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA1" /></description></item><item><term> HMACSHA256  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACRIPEMD160" />  
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> System.Security.Cryptography.HMACSHA256  
   
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.HMACRIPEMD160  
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA256" /></description></item><item><term> HMACSHA384  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACRIPEMD160" />  
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> System.Security.Cryptography.HMACSHA384  
   
- </description>  
-</item>  
-<item>  
-<term> HMACSHA1  
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA384" /></description></item><item><term> HMACSHA512  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACSHA1" />  
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> System.Security.Cryptography.HMACSHA512  
   
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.HMACSHA1  
+ </term><description><see cref="T:System.Security.Cryptography.HMACSHA512" /></description></item><item><term> MACTripleDES  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACSHA1" />  
+ </term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item><item><term> System.Security.Cryptography.MACTripleDES  
   
- </description>  
-</item>  
-<item>  
-<term> HMACSHA256  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACSHA256" />  
-  
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.HMACSHA256  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACSHA256" />  
-  
- </description>  
-</item>  
-<item>  
-<term> HMACSHA384  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACSHA384" />  
-  
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.HMACSHA384  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACSHA384" />  
-  
- </description>  
-</item>  
-<item>  
-<term> HMACSHA512  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACSHA512" />  
-  
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.HMACSHA512  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.HMACSHA512" />  
-  
- </description>  
-</item>  
-<item>  
-<term> MACTripleDES  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.MACTripleDES" />  
-  
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.MACTripleDES  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.MACTripleDES" />  
-  
- </description>  
-</item>  
-</list></param>
+ </term><description><see cref="T:System.Security.Cryptography.MACTripleDES" /></description></item></list></param>
         <summary>Creates an instance of the specified implementation of a keyed hash algorithm.</summary>
         <returns>A new instance of the specified keyed hash algorithm.</returns>
         <remarks>
@@ -291,6 +200,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -337,6 +247,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -386,6 +297,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>

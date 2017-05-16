@@ -15,7 +15,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> and <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> properties together determine how users can select items in a <xref:System.Windows.Controls.DataGrid>. For example, if the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is Single and the <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> is <xref:System.Windows.Controls.DataGridSelectionUnit>, the user can select one cell at a time in the <xref:System.Windows.Controls.DataGrid>.  
+ The <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> and <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> properties together determine how users can select items in a <xref:System.Windows.Controls.DataGrid>. For example, if the <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> is Single and the <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> is <xref:System.Windows.Controls.DataGridSelectionUnit>, the user can select one cell at a time in the <xref:System.Windows.Controls.DataGridSelectionUnit.Cell>.  
   
  InExtended mode, select multiple items by holding down the SHIFT key to extend the selection from an anchor point or the CTRL key to individually select additional items.  
   

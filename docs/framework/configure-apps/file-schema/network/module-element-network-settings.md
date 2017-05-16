@@ -38,8 +38,8 @@ Adds a new proxy module to the application.
   
 ```  
   
-      <module   
-   type = "name", System, Version="version number", Culture="culture", PublicKeyToken="token" "   
+      <module   
+   type = "name", System, Version="version number", Culture="culture", PublicKeyToken="token" "   
 />  
 ```  
   

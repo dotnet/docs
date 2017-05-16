@@ -453,7 +453,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> must be set to <xref:System.Windows.Controls.MediaState> in order to interactively control media with the <xref:System.Windows.Controls.MediaElement.Play%2A>, <xref:System.Windows.Controls.MediaElement.Pause%2A>, and <xref:System.Windows.Controls.MediaElement.Stop%2A> methods.  
+ <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> must be set to <xref:System.Windows.Controls.MediaState.Manual> in order to interactively control media with the <xref:System.Windows.Controls.MediaElement.Play%2A>, <xref:System.Windows.Controls.MediaElement.Pause%2A>, and <xref:System.Windows.Controls.MediaElement.Stop%2A> methods.  
   
 <a name="dependencyPropertyInfo_LoadedBehavior"></a>   
 ## Dependency Property Information  
@@ -793,7 +793,7 @@
   
  This method can be used only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
   
- This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState>.  
+ This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState.Manual>.  
   
  ]]></format>
         </remarks>
@@ -823,7 +823,7 @@
   
  This method can be used only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
   
- This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState>.  
+ This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState.Manual>.  
   
  ]]></format>
         </remarks>
@@ -938,7 +938,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MediaElement>|  
+|Identifier field|<xref:System.Windows.Controls.MediaElement.ScrubbingEnabledProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -1064,7 +1064,7 @@
 ## Remarks  
  This method can be used only when the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is `null`. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> property is non-`null`, the timing engine controls media playback behavior.  
   
- This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState>.  
+ This method has an effect only if the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> property is set to <xref:System.Windows.Controls.MediaState.Manual>.  
   
  ]]></format>
         </remarks>
@@ -1100,7 +1100,7 @@ Different gradient spread methods
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MediaElement>|  
+|Identifier field|<xref:System.Windows.Controls.MediaElement.StretchProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
   
    

@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,6 +24,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object[]</ReturnType>
@@ -41,80 +43,43 @@
         <exception cref="T:System.ArgumentException">The <paramref name="format" /> parameter contains an undefined character.</exception>
         <exception cref="T:System.DirectoryServices.Protocols.BerConversionException">The underlying decoding fails. The decoding rules include the following.  
   
- <list type="table">  
-<listheader>  
-<term> Code  
+ <list type="table"><listheader><term> Code  
   
- </term>  
-<description> Corresponding Result  
+ </term><description> Corresponding Result  
   
- </description>  
-</listheader>  
-<item>  
-<term> '{' '}' '[' ']' 'n' 'x'  
+ </description></listheader><item><term> '{' '}' '[' ']' 'n' 'x'  
   
- </term>  
-<description> No corresponding result  
+ </term><description> No corresponding result  
   
- </description>  
-</item>  
-<item>  
-<term> 'i' 'e'  
+ </description></item><item><term> 'i' 'e'  
   
- </term>  
-<description> int  
+ </term><description> int  
   
- </description>  
-</item>  
-<item>  
-<term> 'b'  
+ </description></item><item><term> 'b'  
   
- </term>  
-<description> bool  
+ </term><description> bool  
   
- </description>  
-</item>  
-<item>  
-<term> 'a'  
+ </description></item><item><term> 'a'  
   
- </term>  
-<description> string  
+ </term><description> string  
   
- </description>  
-</item>  
-<item>  
-<term> 'O'  
+ </description></item><item><term> 'O'  
   
- </term>  
-<description> byte[]  
+ </term><description> byte[]  
   
- </description>  
-</item>  
-<item>  
-<term> 'B'  
+ </description></item><item><term> 'B'  
   
- </term>  
-<description> byte[] containing bit strings  
+ </term><description> byte[] containing bit strings  
   
- </description>  
-</item>  
-<item>  
-<term> 'v'  
+ </description></item><item><term> 'v'  
   
- </term>  
-<description> string[]  
+ </term><description> string[]  
   
- </description>  
-</item>  
-<item>  
-<term> 'V'  
+ </description></item><item><term> 'V'  
   
- </term>  
-<description> byte[][]  
+ </term><description> byte[][]  
   
- </description>  
-</item>  
-</list></exception>
+ </description></item></list></exception>
       </Docs>
     </Member>
     <Member MemberName="Encode">
@@ -125,6 +90,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>

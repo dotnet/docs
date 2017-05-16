@@ -6,6 +6,10 @@
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.CodeDom</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.CodeDom.CodeObject</BaseTypeName>
   </Base>
@@ -39,6 +43,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeMember" /> class.</summary>
@@ -54,6 +62,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.MemberAttributes</ReturnType>
       </ReturnValue>
@@ -66,7 +78,7 @@
 ## Remarks  
  This property is used to specify the attributes of the type member.  
   
- Member attributes are classified in groups, with a mask for each group. The access group consists of flags containing the terms `Public`, `Private`, `Family`, or `Assembly`.  The scope group includes flags for <xref:System.CodeDom.MemberAttributes>, <xref:System.CodeDom.MemberAttributes>, <xref:System.CodeDom.MemberAttributes>, <xref:System.CodeDom.MemberAttributes>, and <xref:System.CodeDom.MemberAttributes>. The <xref:System.CodeDom.MemberAttributes> mask identifies the access attributes. The <xref:System.CodeDom.MemberAttributes> mask identifies the scope attributes. The default value for the <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property includes flags from both access and scope. To change either access or scope, first mask out the existing flags and then set the new value. For example, the code statement to identify a constructor (named `constructor1`) as public is `constructor1.Attributes = (constructor1.Attributes & ~MemberAttributes.AccessMask) | MemberAttributes.Public;`.  
+ Member attributes are classified in groups, with a mask for each group. The access group consists of flags containing the terms `Public`, `Private`, `Family`, or `Assembly`.  The scope group includes flags for <xref:System.CodeDom.MemberAttributes.Abstract>, <xref:System.CodeDom.MemberAttributes.Final>, <xref:System.CodeDom.MemberAttributes.Static>, <xref:System.CodeDom.MemberAttributes.Override>, and <xref:System.CodeDom.MemberAttributes.Const>. The <xref:System.CodeDom.MemberAttributes.AccessMask> mask identifies the access attributes. The <xref:System.CodeDom.MemberAttributes.ScopeMask> mask identifies the scope attributes. The default value for the <xref:System.CodeDom.CodeTypeMember.Attributes%2A> property includes flags from both access and scope. To change either access or scope, first mask out the existing flags and then set the new value. For example, the code statement to identify a constructor (named `constructor1`) as public is `constructor1.Attributes = (constructor1.Attributes & ~MemberAttributes.AccessMask) | MemberAttributes.Public;`.  
   
  ]]></format>
         </remarks>
@@ -79,6 +91,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,6 +120,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -134,6 +154,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeDirectiveCollection</ReturnType>
       </ReturnValue>
@@ -150,6 +174,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,6 +208,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -196,6 +228,10 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

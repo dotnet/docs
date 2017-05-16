@@ -19,7 +19,7 @@
  The <xref:System.Web.Configuration.SessionPageStateSection> refers to the `sessionPageState` section of the configuration file.  
   
 > [!NOTE]
->  The <xref:System.Web.Configuration.SessionPageStateSection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition>.  
+>  The <xref:System.Web.Configuration.SessionPageStateSection> can read and write information from and to the related section of the configuration file according to the section property <xref:System.Configuration.SectionInformation.AllowDefinition%2A> whose value is <xref:System.Configuration.ConfigurationAllowDefinition.Everywhere>.  
   
    
   

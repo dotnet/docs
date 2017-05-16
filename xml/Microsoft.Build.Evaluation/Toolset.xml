@@ -128,7 +128,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If [!INCLUDE[vs_dev10_long](~/includes/vs-dev10-long-md.md)] is installed, use the base toolset and return a sub toolset version of “10.0”.  
+ If [!INCLUDE[vs_dev10_long](~/includes/vs-dev10-long-md.md)] is installed, use the base toolset and return a sub toolset version of "10.0".  
   
  Otherwise, use the highest-versioned sub toolset found. Sub toolsets with numbered versions are ordered numerically; any additional sub toolsets are prepended to the beginning of the list in the order found. Returns null if there is no sub toolset available and [!INCLUDE[vs_dev10_long](~/includes/vs-dev10-long-md.md)] is not installed.  
   
@@ -156,7 +156,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If “VisualStudioVersion” is set as a property on the toolset itself, then sub toolset version is set to “VisualStudioVersion”.  
+ If "VisualStudioVersion" is set as a property on the toolset itself, then sub toolset version is set to "VisualStudioVersion".  
   
  Otherwise, sub toolset version is set to the DefaultSubToolsetVersion of the toolset.  
   
@@ -189,9 +189,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the “VisualStudioVersion” global property exists in the set of global properties passed in, then sub toolset version is set to “VisualStudioVersion”.  
+ If the "VisualStudioVersion" global property exists in the set of global properties passed in, then sub toolset version is set to "VisualStudioVersion".  
   
- Otherwise, if “VisualStudioVersion” is set as a property on the toolset itself, then sub toolset version is set to “VisualStudioVersion”.  
+ Otherwise, if "VisualStudioVersion" is set as a property on the toolset itself, then sub toolset version is set to "VisualStudioVersion".  
   
  Otherwise, if the Visual Studio version corresponding to the solution version (Visual Studio version = solution version – 1) passed in maps to an existing sub toolset, then sub toolset version is set to the Visual Studio version.  
   

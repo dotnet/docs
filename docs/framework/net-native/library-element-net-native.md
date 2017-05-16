@@ -67,9 +67,9 @@ Defines the assembly that contains types and type members whose metadata is avai
 ```xml  
   
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
-  <Library Name=”*Utilities*”>  
-   ...  
-  </Library>  
+  <Library Name="*Utilities*">  
+   ...  
+  </Library>  
 </Directives>  
   
 ```  

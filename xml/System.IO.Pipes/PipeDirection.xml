@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
@@ -24,7 +25,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Anonymous pipes must have a pipe direction of In or Out. A <xref:System.IO.Pipes.PipeDirection> value of InOut is not supported by anonymous pipes because they are defined to be one-way only.  
+ Anonymous pipes must have a pipe direction of In or Out. A <xref:System.IO.Pipes.PipeDirection.In> value of InOut is not supported by anonymous pipes because they are defined to be one-way only.  
   
  ]]></format>
     </remarks>
@@ -38,6 +39,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -63,6 +65,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -88,6 +91,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

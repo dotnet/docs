@@ -19,7 +19,7 @@
 ## Remarks  
  The <xref:System.ServiceModel.BasicHttpBinding> uses HTTP as the transport for sending SOAP 1.1 messages. A service can use this binding to expose endpoints that conform to WS-I BP 1.1, such as those that ASMX clients access. Similarly, a client can use the <xref:System.ServiceModel.BasicHttpBinding> to communicate with services exposing endpoints that conform to WS-I BP 1.1, such as ASMX Web services or [!INCLUDE[indigo1](~/includes/indigo1-md.md)] services configured with the <xref:System.ServiceModel.BasicHttpBinding>.  
   
- Security is turned off by default, but can be added setting the <xref:System.ServiceModel.BasicHttpSecurityMode> to a value other than <xref:System.ServiceModel.BasicHttpSecurityMode> in the <xref:System.ServiceModel.BasicHttpBinding.%23ctor%28System.ServiceModel.BasicHttpSecurityMode%29> constructor. It uses a "Text" message encoding and UTF-8 text encoding by default.  
+ Security is turned off by default, but can be added setting the <xref:System.ServiceModel.BasicHttpSecurityMode> to a value other than <xref:System.ServiceModel.BasicHttpSecurityMode.None> in the <xref:System.ServiceModel.BasicHttpBinding.%23ctor%28System.ServiceModel.BasicHttpSecurityMode%29> constructor. It uses a "Text" message encoding and UTF-8 text encoding by default.  
   
    
   
@@ -54,7 +54,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of <xref:System.ServiceModel.BasicHttpSecurityMode> used is <xref:System.ServiceModel.BasicHttpSecurityMode>, which specifies that the SOAP message is not secured and the client is not authenticated.  
+ The default value of <xref:System.ServiceModel.BasicHttpSecurityMode> used is <xref:System.ServiceModel.BasicHttpSecurityMode.None>, which specifies that the SOAP message is not secured and the client is not authenticated.  
   
    
   
@@ -86,7 +86,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default value of <xref:System.ServiceModel.BasicHttpSecurityMode> used is <xref:System.ServiceModel.BasicHttpSecurityMode>, which specifies that the SOAP message is not secured and the client is not authenticated.  
+ The default value of <xref:System.ServiceModel.BasicHttpSecurityMode> used is <xref:System.ServiceModel.BasicHttpSecurityMode.None>, which specifies that the SOAP message is not secured and the client is not authenticated.  
   
    
   

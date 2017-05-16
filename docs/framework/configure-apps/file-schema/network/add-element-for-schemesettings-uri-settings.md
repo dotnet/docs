@@ -32,7 +32,7 @@ Adds a scheme setting for a scheme name.
   
 ```  
   
-      <add   
+      <add   
    name = "http|https" genericUriParserOptions="DontUnescapePathDotsAndSlashes"  
 />  
 ```  

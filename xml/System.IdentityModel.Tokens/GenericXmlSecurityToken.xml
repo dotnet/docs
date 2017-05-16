@@ -240,7 +240,7 @@
         <param name="skiClause">To be added.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance is equal to the specified key identifier.</summary>
         <returns>
-          <see langword="true" /> when <paramref name="keyIdentifierClause" /> is not <see langword="null" /> and matches either the <see cref="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference" /> or <see cref="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.ExternalTokenReference" /> property values; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> when <paramref name="skiClause" /> is not <see langword="null" /> and matches either the <see cref="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.InternalTokenReference" /> or <see cref="P:System.IdentityModel.Tokens.GenericXmlSecurityToken.ExternalTokenReference" /> property values; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

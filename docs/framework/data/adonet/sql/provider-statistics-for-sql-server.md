@@ -124,9 +124,7 @@ Module Module1
 End Module  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 using System;  
 using System.Collections;  
 using System.Collections.Generic;  

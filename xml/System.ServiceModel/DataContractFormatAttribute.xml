@@ -31,7 +31,7 @@
    
   
 ## Examples  
- The following example applies the <xref:System.ServiceModel.DataContractFormatAttribute> and sets the <xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> property to <xref:System.ServiceModel.OperationFormatStyle>. The RPC style is described in the Web Service Description Language specification (WSDL).  
+ The following example applies the <xref:System.ServiceModel.DataContractFormatAttribute> and sets the <xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> property to <xref:System.ServiceModel.OperationFormatStyle.Rpc>. The RPC style is described in the Web Service Description Language specification (WSDL).  
   
  [!code-csharp[DataContractFormatAttribute#1](~/samples/snippets/csharp/VS_Snippets_CFX/datacontractformatattribute/cs/source.cs#1)]
  [!code-vb[DataContractFormatAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/datacontractformatattribute/vb/source.vb#1)]

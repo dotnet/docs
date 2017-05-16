@@ -1,4 +1,4 @@
-// <snippet10>
+// <Snippet10>
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -8,12 +8,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-// <snippet20>
+// <Snippet20>
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using System.Windows.Forms.Integration;
-// </snippet20>
+// </Snippet20>
 
 namespace PropertyMappingWithWfh
 {
@@ -28,7 +28,7 @@ namespace PropertyMappingWithWfh
             InitializeComponent();
         }
 
-        // <snippet11>
+        // <Snippet11>
         // The WindowLoaded method handles the Loaded event.
         // It enables Windows Forms visual styles, creates 
         // a Windows Forms checkbox control, and assigns the
@@ -69,9 +69,9 @@ namespace PropertyMappingWithWfh
             // Cause the OnBackgroundChange delegate to be called.
             wfHost.Background = new ImageBrush();
         }
-        // </snippet11>
+        // </Snippet11>
 
-        // <snippet12>
+        // <Snippet12>
         // The ReplaceFlowDirectionMapping method replaces the  
         // default mapping for the FlowDirection property.
         private void ReplaceFlowDirectionMapping()
@@ -109,18 +109,18 @@ namespace PropertyMappingWithWfh
                     System.Windows.FlowDirection.RightToLeft : 
                     System.Windows.FlowDirection.LeftToRight;
         }
-        // </snippet12>
+        // </Snippet12>
 
-        // <snippet13>
+        // <Snippet13>
         // The RemoveCursorMapping method deletes the default
         // mapping for the Cursor property.
         private void RemoveCursorMapping()
         {
             wfHost.PropertyMap.Remove("Cursor");
         }
-        // </snippet13>
+        // </Snippet13>
 
-        // <snippet14>
+        // <Snippet14>
         // The AddClipMapping method adds a custom 
         // mapping for the Clip property.
         private void AddClipMapping()
@@ -169,9 +169,9 @@ namespace PropertyMappingWithWfh
 
             return( new Region(path) );
         }
-        // </snippet14>
+        // </Snippet14>
 
-        // <snippet15>
+        // <Snippet15>
         // The ExtendBackgroundMapping method adds a property
         // translator if a mapping already exists.
         private void ExtendBackgroundMapping()
@@ -195,8 +195,8 @@ namespace PropertyMappingWithWfh
                 cb.BackgroundImage = new System.Drawing.Bitmap(@"C:\WINDOWS\Santa Fe Stucco.bmp");
             }
         }
-        // </snippet15>
+        // </Snippet15>
 
     }
 }
-// </snippet10>
+// </Snippet10>

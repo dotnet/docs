@@ -25,7 +25,7 @@ Specifies a method other than a constructor that a XAML processor should use to 
 ## XAML Attribute Usage, no x:Arguments  
   
 ```  
-<object x:FactoryMethod="methodname"...>  
+<object x:FactoryMethod="methodname"...>  
   ...  
 </object>  
 ```  
@@ -33,7 +33,7 @@ Specifies a method other than a constructor that a XAML processor should use to 
 ## XAML Attribute Usage, x:Arguments as Element(s)  
   
 ```  
-<object x:FactoryMethod="methodname"...>  
+<object x:FactoryMethod="methodname"...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
   </x:Arguments>  

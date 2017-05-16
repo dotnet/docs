@@ -31,7 +31,7 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
   
  These constraints also apply to the use of Windows Forms controls through Component Object Model COM interop. The use of a Windows Forms control through a COM callable wrapper (CCW) is supported only in Internet Explorer. For more information about COM interop, see  
   
- [COM Interop](http://msdn.microsoft.com/library/3ffd1bdf-1b8d-47f5-87eb-75b659f64294).  
+ [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md).  
   
  The following table shows the available ActiveX hosting support for Windows Forms controls.  
   
@@ -65,7 +65,7 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
   
 ## See Also  
  [Windows Forms and Unmanaged Applications](../../../../docs/framework/winforms/advanced/windows-forms-and-unmanaged-applications.md)   
- [COM Interop](http://msdn.microsoft.com/library/3ffd1bdf-1b8d-47f5-87eb-75b659f64294)   
+ [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)   
  [COM Interoperability in .NET Framework Applications](~/docs/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)   
  [COM Interoperability Samples](http://msdn.microsoft.com/en-us/09c38567-6380-4d70-848a-e896a4ca05f4)   
  [Aximp.exe (Windows Forms ActiveX Control Importer)](../../../../docs/framework/tools/aximp-exe-windows-forms-activex-control-importer.md)   

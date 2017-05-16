@@ -79,9 +79,7 @@
   
  The underlying binding must support flowed transactions for the following code example to execute properly. To support flowed transactions using the <xref:System.ServiceModel.WSHttpBinding>, for example, set the <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> property to `true` in code or in an application configuration file. The following code example shows the configuration file for the preceding sample.  
   
- <!-- TODO: review snippet reference [!code[OperationBehaviorAttribute1#1](~/samples/snippets/common/VS_Snippets_CFX/operationbehaviorattribute1/common/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-csharp[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[OperationBehaviorAttribute1#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/hostapplication.exe.config#1)]  -->  
+ [!code-xml[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]   
   
  ]]></format>
     </remarks>
@@ -105,11 +103,11 @@
 ## Remarks  
  The default values for the <xref:System.ServiceModel.ServiceBehaviorAttribute> are:  
   
--   The <xref:System.ServiceModel.ServiceBehaviorAttribute.AddressFilterMode%2A> is set to <xref:System.ServiceModel.AddressFilterMode>.  
+-   The <xref:System.ServiceModel.ServiceBehaviorAttribute.AddressFilterMode%2A> is set to <xref:System.ServiceModel.AddressFilterMode.Exact>.  
   
 -   The <xref:System.ServiceModel.ServiceBehaviorAttribute.AutomaticSessionShutdown%2A> property is `true`.  
   
--   The <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is set to <xref:System.ServiceModel.ConcurrencyMode>.  
+-   The <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is set to <xref:System.ServiceModel.ConcurrencyMode.Single>.  
   
 -   The <xref:System.ServiceModel.ServiceBehaviorAttribute.ConfigurationName%2A> property is the namespace-qualified name of the type without the assembly information.  
   
@@ -129,7 +127,7 @@
   
 -   The <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionAutoCompleteOnSessionClose%2A> property is `false`.  
   
--   The <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> property is <xref:System.Transactions.IsolationLevel>.  
+-   The <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionIsolationLevel%2A> property is <xref:System.Transactions.IsolationLevel.Unspecified>.  
   
 -   The <xref:System.ServiceModel.ServiceBehaviorAttribute.TransactionTimeout%2A> property is set to <xref:System.TimeSpan.Zero>.  
   
@@ -221,14 +219,14 @@
  This property indicates whether an instance of a service can handle one thread or multiple threads that execute concurrently, and if single-threaded, whether reentrancy is supported.  
   
 > [!NOTE]
->  The <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property interacts with some other settings. For example, if the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to <xref:System.ServiceModel.InstanceContextMode> the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode>. This property also produces behavior in combination with the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property. For details, see [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
+>  The <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property interacts with some other settings. For example, if the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to <xref:System.ServiceModel.InstanceContextMode.Single> the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode.Multiple>. This property also produces behavior in combination with the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property. For details, see [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
- Setting <xref:System.ServiceModel.ConcurrencyMode> to <xref:System.ServiceModel.ConcurrencyMode> instructs the system to restrict instances of the service to one thread of execution at a time, which frees you from dealing with threading issues. A value of <xref:System.ServiceModel.ConcurrencyMode> means that service objects can be executed by multiple threads at any one time. In this case, you must ensure thread safety.  
+ Setting <xref:System.ServiceModel.ConcurrencyMode> to <xref:System.ServiceModel.ConcurrencyMode.Single> instructs the system to restrict instances of the service to one thread of execution at a time, which frees you from dealing with threading issues. A value of <xref:System.ServiceModel.ConcurrencyMode.Multiple> means that service objects can be executed by multiple threads at any one time. In this case, you must ensure thread safety.  
   
- <xref:System.ServiceModel.ConcurrencyMode> also restricts access to a single thread at a time; while the operation is processing, no other message can enter the operation. If during the operation a call to another service leaves, the current message loses the lock on the operation, which is free to process other messages. When the service call out returns, the lock is reestablished and the original message can continue processing to its conclusion or until another call out of the operation occurs.  
+ <xref:System.ServiceModel.ConcurrencyMode.Reentrant> also restricts access to a single thread at a time; while the operation is processing, no other message can enter the operation. If during the operation a call to another service leaves, the current message loses the lock on the operation, which is free to process other messages. When the service call out returns, the lock is reestablished and the original message can continue processing to its conclusion or until another call out of the operation occurs.  
   
 > [!IMPORTANT]
->  Even though <xref:System.ServiceModel.ConcurrencyMode> restricts instances of the service to one thread of execution at a time, you must also set <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> to 1 to guarantee no out-of-order messages.  
+>  Even though <xref:System.ServiceModel.ConcurrencyMode.Single> restricts instances of the service to one thread of execution at a time, you must also set <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> to 1 to guarantee no out-of-order messages.  
 >   
 >  Also, it is your responsibility to leave your object state consistent before callouts and you must confirm that operation-local data is valid after callouts. Note that the service instance is unlocked only by calling another service over a [!INCLUDE[indigo2](~/includes/indigo2-md.md)] channel. In this case, the called service can reenter the first service via a callback. If the first service is not reentrant, the sequence of calls results in a deadlock. For details, see <xref:System.ServiceModel.ConcurrencyMode>.  
   
@@ -250,23 +248,23 @@ public void MyMethod()
   
 ```  
   
- Using the Begin/End asynchronous call pattern for an outbound call when the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is <xref:System.ServiceModel.ConcurrencyMode> triggers an exception. Asynchronous outbound calls require an operation in which <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is <xref:System.ServiceModel.ConcurrencyMode>, in which case you must handle synchronization issues.  
+ Using the Begin/End asynchronous call pattern for an outbound call when the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is <xref:System.ServiceModel.ConcurrencyMode.Reentrant> triggers an exception. Asynchronous outbound calls require an operation in which <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is <xref:System.ServiceModel.ConcurrencyMode.Multiple>, in which case you must handle synchronization issues.  
   
  Generally, if a message arrives for an instance that violates its concurrency mode, the message waits until the instance is available, or until it times out.  
   
- In addition, if the <xref:System.ServiceModel.ConcurrencyMode> is set to <xref:System.ServiceModel.ConcurrencyMode> and a reentrant call is blocked while waiting for the instance to be freed, the system detects the deadlock and throws an exception.  
+ In addition, if the <xref:System.ServiceModel.ConcurrencyMode> is set to <xref:System.ServiceModel.ConcurrencyMode.Single> and a reentrant call is blocked while waiting for the instance to be freed, the system detects the deadlock and throws an exception.  
   
 > [!NOTE]
->  A <xref:System.InvalidOperationException> is thrown at runtime if <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true` when the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property is set to <xref:System.ServiceModel.ConcurrencyMode>.  
+>  A <xref:System.InvalidOperationException> is thrown at runtime if <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true` when the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property is set to <xref:System.ServiceModel.ConcurrencyMode.Single>.  
   
- Note that you must explicitly set <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> to `false` if there is an operation with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to true and you set <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> to <xref:System.ServiceModel.ConcurrencyMode>. Otherwise a validation exception is thrown because the default value of <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true`.  
+ Note that you must explicitly set <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> to `false` if there is an operation with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to true and you set <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> to <xref:System.ServiceModel.ConcurrencyMode.Reentrant>. Otherwise a validation exception is thrown because the default value of <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true`.  
   
  There is an interaction of the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> and other properties that can alter runtime behavior. For a complete description of these interactions, see [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
    
   
 ## Examples  
- The following code example demonstrates the different between using <xref:System.ServiceModel.ConcurrencyMode>, <xref:System.ServiceModel.ConcurrencyMode>, and <xref:System.ServiceModel.ConcurrencyMode>. This sample does not compile without a real implementation behind it, but does demonstrate the kind of threading guarantees that [!INCLUDE[indigo1](~/includes/indigo1-md.md)] makes and what that means for your operation code.  
+ The following code example demonstrates the different between using <xref:System.ServiceModel.ConcurrencyMode.Single>, <xref:System.ServiceModel.ConcurrencyMode.Reentrant>, and <xref:System.ServiceModel.ConcurrencyMode.Multiple>. This sample does not compile without a real implementation behind it, but does demonstrate the kind of threading guarantees that [!INCLUDE[indigo1](~/includes/indigo1-md.md)] makes and what that means for your operation code.  
   
  [!code-csharp[C_BestPractices-Concurrency#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_bestpractices-concurrency/cs/reentrantandmultiple.cs#1)]  
   
@@ -437,9 +435,7 @@ public void MyMethod()
   
  Setting this property to `true` can also be done using an application configuration file and the [\&lt;serviceDebug\&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicedebug.md) element, as the following code example shows.  
   
- <!-- TODO: review snippet reference [!code-csharp[OperationBehaviorAttribute1#10](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#10)]  -->
- <!-- TODO: review snippet reference [!code-vb[OperationBehaviorAttribute1#10](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/hostapplication.exe.config#10)]  -->  
-  
+ [!code-xml[OperationBehaviorAttribute1#10](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#10)]   
    
   
 ## Examples  
@@ -458,9 +454,7 @@ public void MyMethod()
   
  The underlying binding must support flowed transactions for the following code example to execute properly. To support flowed transactions using the <xref:System.ServiceModel.WSHttpBinding>, for example, set the <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> property to `true` in code or in an application configuration file. The following code example shows the configuration file for the preceding sample.  
   
- <!-- TODO: review snippet reference [!code[OperationBehaviorAttribute1#1](~/samples/snippets/common/VS_Snippets_CFX/operationbehaviorattribute1/common/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-csharp[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[OperationBehaviorAttribute1#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/hostapplication.exe.config#1)]  -->  
+ [!code-xml[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]   
   
  ]]></format>
         </remarks>
@@ -490,12 +484,12 @@ public void MyMethod()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.InstanceContextMode> property to specify when new service objects are created. Because the service object is not directly connected to the communicating channel, the lifetime of the service objects is independent of the lifetime of the channel between a client and the service application. The default value, <xref:System.ServiceModel.InstanceContextMode>, instructs the service application to create a new service object when a new communication session is established between a client and the service application. Subsequent calls in the same session are handled by the same object.  
+ Use the <xref:System.ServiceModel.InstanceContextMode> property to specify when new service objects are created. Because the service object is not directly connected to the communicating channel, the lifetime of the service objects is independent of the lifetime of the channel between a client and the service application. The default value, <xref:System.ServiceModel.InstanceContextMode.PerSession>, instructs the service application to create a new service object when a new communication session is established between a client and the service application. Subsequent calls in the same session are handled by the same object.  
   
- <xref:System.ServiceModel.InstanceContextMode> indicates that each service object handles requests from one client channel.  
+ <xref:System.ServiceModel.InstanceContextMode.PerSession> indicates that each service object handles requests from one client channel.  
   
 > [!NOTE]
->  The <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property interacts with some other settings. For example, if the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to <xref:System.ServiceModel.InstanceContextMode> the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode>. This property also produces behavior in combination with the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property. For details, see [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
+>  The <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property interacts with some other settings. For example, if the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value is set to <xref:System.ServiceModel.InstanceContextMode.Single> the result is that your service can only process one message at a time unless you also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> value to <xref:System.ServiceModel.ConcurrencyMode.Multiple>. This property also produces behavior in combination with the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property. For details, see [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
  For singleton lifetime behavior (for example, if the host application calls the <xref:System.ServiceModel.ServiceHost.%23ctor%2A> constructor and passes an object to use as the service), the service class must set <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> to `Single`, or an exception is thrown at run time.  
   
@@ -517,9 +511,7 @@ public void MyMethod()
   
  The underlying binding must support flowed transactions for the following code example to execute properly. To support flowed transactions using the <xref:System.ServiceModel.WSHttpBinding>, for example, set the <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> property to `true` in code or in an application configuration file. The following code example shows the configuration file for the preceding sample.  
   
- <!-- TODO: review snippet reference [!code[OperationBehaviorAttribute1#1](~/samples/snippets/common/VS_Snippets_CFX/operationbehaviorattribute1/common/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-csharp[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[OperationBehaviorAttribute1#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute1/vb/hostapplication.exe.config#1)]  -->  
+ [!code-xml[OperationBehaviorAttribute1#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute1/cs/hostapplication.exe.config#1)]   
   
  ]]></format>
         </remarks>
@@ -622,23 +614,21 @@ public void MyMethod()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Note that you must explicitly set <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> to `false` if there is an operation with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to true and you set <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> to <xref:System.ServiceModel.ConcurrencyMode>. Otherwise a validation exception is thrown because the default value of <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true`.  
+ Note that you must explicitly set <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> to `false` if there is an operation with <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A?displayProperty=fullName> set to true and you set <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> to <xref:System.ServiceModel.ConcurrencyMode.Reentrant>. Otherwise a validation exception is thrown because the default value of <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> is `true`.  
   
  In addition, it is important to realize that if the service is created by passing a service object to the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=fullName> constructor, the value of this property is treated as if it were `false`.  
   
    
   
 ## Examples  
- The following code example sets the transaction isolation level to <xref:System.Transactions.IsolationLevel>, disables support for concurrent transactions, requires a flowed transaction from the operation call, and commits the transaction on the service automatically if no unhandled exception occurs.  
+ The following code example sets the transaction isolation level to <xref:System.Transactions.IsolationLevel.ReadCommitted>, disables support for concurrent transactions, requires a flowed transaction from the operation call, and commits the transaction on the service automatically if no unhandled exception occurs.  
   
  [!code-csharp[SBA.Transactions#2](~/samples/snippets/csharp/VS_Snippets_CFX/sba.transactions/cs/services.cs#2)]
  [!code-vb[SBA.Transactions#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/sba.transactions/vb/services.vb#2)]  
   
  The underlying binding must support flowed transactions for the following code example to execute properly. To support flowed transactions using the <xref:System.ServiceModel.WSHttpBinding>, for example, set the <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> property to `true` in code or in an application configuration file. The following code example shows a configuration file for the preceding sample.  
   
- <!-- TODO: review snippet reference [!code[SBA.Transactions#1](~/samples/snippets/common/VS_Snippets_CFX/sba.transactions/common/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-csharp[SBA.Transactions#1](~/samples/snippets/csharp/VS_Snippets_CFX/sba.transactions/cs/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[SBA.Transactions#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sba.transactions/vb/hostapplication.exe.config#1)]  -->  
+ [!code-xml[SBA.Transactions#1](~/samples/snippets/csharp/VS_Snippets_CFX/sba.transactions/cs/hostapplication.exe.config#1)]   
   
  ]]></format>
         </remarks>
@@ -668,7 +658,7 @@ public void MyMethod()
 ## Remarks  
  This provides the service instance to which all messages addressed to the service will be dispatched.  
   
- If <xref:System.ServiceModel.ServiceBehaviorAttribute.SetWellKnownSingleton%2A> is set to a non-`null` value, then the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> must be set to <xref:System.ServiceModel.InstanceContextMode> or an <xref:System.InvalidOperationException> is thrown.  
+ If <xref:System.ServiceModel.ServiceBehaviorAttribute.SetWellKnownSingleton%2A> is set to a non-`null` value, then the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> must be set to <xref:System.ServiceModel.InstanceContextMode.Single> or an <xref:System.InvalidOperationException> is thrown.  
   
  ]]></format>
         </remarks>
@@ -886,23 +876,21 @@ public void MyMethod()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The isolation level in which your transaction runs determines how data is treated when changes are made in other transactions and how long your transaction must hold locks to protect against these changes. For example, the default value, <xref:System.Transactions.IsolationLevel>, specifies that no updating or inserting can occur until the transaction is complete.  
+ The isolation level in which your transaction runs determines how data is treated when changes are made in other transactions and how long your transaction must hold locks to protect against these changes. For example, the default value, <xref:System.Transactions.IsolationLevel.Unspecified>, specifies that no updating or inserting can occur until the transaction is complete.  
   
  This property can also be used to restrict the isolation level of incoming transactions flowed from a client.  
   
    
   
 ## Examples  
- The following code example sets the transaction isolation level to <xref:System.Transactions.IsolationLevel>, does not support concurrent transactions, requires a flowed transaction from the method call, and commits the transaction automatically if no unhandled exception occurs.  
+ The following code example sets the transaction isolation level to <xref:System.Transactions.IsolationLevel.ReadCommitted>, does not support concurrent transactions, requires a flowed transaction from the method call, and commits the transaction automatically if no unhandled exception occurs.  
   
  [!code-csharp[SBA.Transactions#2](~/samples/snippets/csharp/VS_Snippets_CFX/sba.transactions/cs/services.cs#2)]
  [!code-vb[SBA.Transactions#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/sba.transactions/vb/services.vb#2)]  
   
  The underlying binding must support flowed transactions for the following code example to execute properly. To support flowed transactions using the <xref:System.ServiceModel.WSHttpBinding>, for example, set the <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> property to `true` in code or in an application configuration file. The following code example shows a configuration file for the preceding sample.  
   
- <!-- TODO: review snippet reference [!code[SBA.Transactions#1](~/samples/snippets/common/VS_Snippets_CFX/sba.transactions/common/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-csharp[SBA.Transactions#1](~/samples/snippets/csharp/VS_Snippets_CFX/sba.transactions/cs/hostapplication.exe.config#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[SBA.Transactions#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sba.transactions/vb/hostapplication.exe.config#1)]  -->  
+ [!code-xml[SBA.Transactions#1](~/samples/snippets/csharp/VS_Snippets_CFX/sba.transactions/cs/hostapplication.exe.config#1)]   
   
  ]]></format>
         </remarks>

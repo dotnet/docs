@@ -53,14 +53,14 @@
       </Parameters>
       <Docs>
         <param name="applicationName">The name of the application.</param>
-        <param name="primaryPurpose">The primary purpose for the protected data. See Remarks for additional important information.</param>
-        <param name="specificPurposes">The specific purposes for the protected data. See Remarks for additional important information.</param>
+        <param name="primaryPurpose">The primary purpose for the protected data.</param>
+        <param name="specificPurposes">The specific purposes for the protected data.</param>
         <summary>Creates a new instance of the <see cref="T:System.Security.Cryptography.DataProtector" /> class by using the provided application name, primary purpose, and specific purposes.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor sets the <xref:System.Security.Cryptography.DataProtector.ApplicationName%2A>, <xref:System.Security.Cryptography.DataProtector.PrimaryPurpose%2A>, and <xref:System.Security.Cryptography.DataProtector.SpecificPurposes%2A> properties. The combination of these three properties must uniquely identify the data you are protecting. If the data is not uniquely identified, you might inadvertently read the wrong data, or other data might be substituted for yours. Examples of primary and specific purpose pairs are “invoice” and invoice number, “gift card” and gift card number, “password” and URL string.  
+ This constructor sets the <xref:System.Security.Cryptography.DataProtector.ApplicationName%2A>, <xref:System.Security.Cryptography.DataProtector.PrimaryPurpose%2A>, and <xref:System.Security.Cryptography.DataProtector.SpecificPurposes%2A> properties. The combination of these three properties must uniquely identify the data you are protecting. If the data is not uniquely identified, you might inadvertently read the wrong data, or other data might be substituted for yours. Examples of primary and specific purpose pairs are "invoice" and invoice number, "gift card" and gift card number, "password" and URL string.  
   
  ]]></format>
         </remarks>

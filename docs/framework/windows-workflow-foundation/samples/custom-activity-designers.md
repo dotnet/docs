@@ -18,7 +18,7 @@ This section contains activity samples that use custom designers for display in 
   
 ## In This Section  
  [Custom Composite Designers - Workflow Item Presenter](../../../../docs/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-item-presenter.md)  
- This sample shows how to build an activity designer that surfaces such a “drop zone.”  
+ This sample shows how to build an activity designer that surfaces such a "drop zone."  
   
  [Custom Composite Designers - Workflow Items Presenter](../../../../docs/framework/windows-workflow-foundation/samples/custom-composite-designers-workflow-items-presenter.md)  
  This sample shows how to build an activity designer that surfaces such an editable collection.  

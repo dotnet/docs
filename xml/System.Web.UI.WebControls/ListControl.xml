@@ -985,7 +985,7 @@ if(DropDownList1.Items.FindByValue("2") != null) {
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not in the list of available values and view state or other state has been loaded (a postback has been performed). For more information, see the Remarks section.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not in the list of available values and view state or other state has been loaded (a postback has been performed).</exception>
       </Docs>
     </Member>
     <Member MemberName="SetPostDataSelection">

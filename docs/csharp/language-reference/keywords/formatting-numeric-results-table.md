@@ -50,6 +50,6 @@ You can format numeric results by using the <xref:System.String.Format%2A?displa
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
- [Standard Numeric Format Strings](http://msdn.microsoft.com/library/580e57eb-ac47-4ffd-bccd-3a1637c2f467)   
+ [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)   
  [Reference Tables for Types](../../../csharp/language-reference/keywords/reference-tables-for-types.md)   
  [string](../../../csharp/language-reference/keywords/string.md)

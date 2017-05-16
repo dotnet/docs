@@ -54,9 +54,9 @@
       </Parameters>
       <Docs>
         <param name="value">The current value of <see cref="P:System.Windows.Controls.DocumentViewer.Zoom" />.</param>
-        <param name="targetType">The type to which <c>value</c> is to be converted. This must be <see cref="T:System.Double" /> or <see cref="T:System.String" />. See Remarks.</param>
+        <param name="targetType">The type to which <c>value</c> is to be converted. This must be <see cref="T:System.Double" /> or <see cref="T:System.String" />.</param>
         <param name="parameter">
-          <see langword="null" />. See Remarks.</param>
+          <see langword="null" />.</param>
         <param name="culture">The language and culture assumed during the conversion.</param>
         <summary>Converts the <see cref="T:System.Double" /> (used as the value of <see cref="P:System.Windows.Controls.DocumentViewer.Zoom" />) to an object of the specified type.</summary>
         <returns>
@@ -97,9 +97,9 @@
       </Parameters>
       <Docs>
         <param name="value">The object that is to be converted back to a <see cref="T:System.Double" />.</param>
-        <param name="targetType">The type of <c>value</c>. This must be <see cref="T:System.Double" /> or <see cref="T:System.String" />. See Remarks.</param>
+        <param name="targetType">The type of <c>value</c>. This must be <see cref="T:System.Double" /> or <see cref="T:System.String" />.</param>
         <param name="parameter">
-          <see langword="null" />. See Remarks.</param>
+          <see langword="null" />.</param>
         <param name="culture">The language and culture assumed during the conversion.</param>
         <summary>Returns a previously converted value of <see cref="P:System.Windows.Controls.DocumentViewer.Zoom" /> back to a <see cref="T:System.Double" /> that can be assigned to <see cref="P:System.Windows.Controls.DocumentViewer.Zoom" />.</summary>
         <returns>

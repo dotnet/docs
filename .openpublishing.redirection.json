@@ -19,11 +19,16 @@
         {
             "source_path": "docs/core/app-types.md", 
             "redirect_url": "/dotnet/articles/core/deploying/index"
-        },   
+        },
         {
             "source_path": "docs/core/deploying/applications.md", 
             "redirect_url": "/dotnet/articles/core/deploying/index"
-        },        
+        },
+        {
+            "source_path": "docs/core/getting-started.md",
+            "redirect_url": "/dotnet/articles/core/get-started",
+            "redirect_document_id": true
+        },
         {
             "source_path": "docs/core/migrating-from-dnx.md",
             "redirect_url": "/dotnet/articles/core/migration/from-dnx",
@@ -675,6 +680,11 @@
             "source_path": "docs/standard/garbagecollection/weak-references.md",
             "redirect_url": "/dotnet/articles/standard/garbage-collection/weak-references"
         },
+        {
+            "source_path": "docs/standard/getting-started.md",
+            "redirect_url": "/dotnet/articles/standard/get-started",
+            "redirect_document_id": true
+        },        
         {
             "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",
             "redirect_url": "/dotnet/articles/csharp/tutorials/microservices"

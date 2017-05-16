@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Visual Basic | Microsoft Docs"
 
-ms.date: "2015-07-20"
+ms.date: "2017-05-01"
 ms.prod: .net
 
 
@@ -39,7 +39,11 @@ translation.priority.mt:
 This section of the documentation helps you get started with Visual Basic application development.  
   
 ## In this section  
- [Visual Basic Breaking Changes in Visual Studio 2015](../../visual-basic/getting-started/breaking-changes-in-visual-studio-2015.md)  
+
+[What's new for Visual Basic](whats-new.md)   
+Lists new features in each of the versions of Visual Basic .NET.
+
+[Visual Basic Breaking Changes in Visual Studio](breaking-changes-in-visual-studio.md)  
  Lists changes in this   release that might prevent an application from compiling or change its run-time behavior.  
   
  [Additional Resources for Visual Basic Programmers](../../visual-basic/getting-started/additional-resources.md)  
@@ -48,7 +52,7 @@ This section of the documentation helps you get started with Visual Basic applic
  [Learn Visual Basic](http://msdn.microsoft.com/vstudio/hh388573.aspx)  
  Provides links to resources for learning how to program in Visual Basic.  
   
- [Get Visual Basic](https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx)  
+ [Get Visual Basic](https://www.visualstudio.com/downloads/)  
  Provides download links for Visual Studio versions that include Visual basic support, including free versions.  
   
 ## Related sections  
@@ -64,7 +68,7 @@ This section of the documentation helps you get started with Visual Basic applic
  [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)  
  Covers how to receive support and give feedback.  
   
- [Visual Studio](http://msdn.microsoft.com/en-us/06ddebea-2c83-4a45-bb48-6264c797ed93)  
+ [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/)  
  Provides links into the [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] documentation.  
   
  [C#](../../csharp/csharp.md)  

@@ -281,9 +281,8 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the print server beeps in response to an error condition in the printer.</summary>
         <value>
-          <see cref="T:System.Boolean" />  
-  
- <see langword="true" /> if the print server beeps in response to an error; otherwise, <see langword="false" />.</value>
+          <see cref="T:System.Boolean" />
+          <see langword="true" /> if the print server beeps in response to an error; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,7 +305,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method requires that the <xref:System.Printing.PrintServer> object be created with <xref:System.Printing.PrintSystemDesiredAccess> rights.  
+ The method requires that the <xref:System.Printing.PrintServer> object be created with <xref:System.Printing.PrintSystemDesiredAccess.AdministrateServer> rights.  
   
  ]]></format>
         </remarks>
@@ -315,7 +314,7 @@
   
  \- or -  
   
- The <see cref="T:System.Printing.PrintServer" /> object was not created with sufficient rights. See Remarks.</exception>
+ The <see cref="T:System.Printing.PrintServer" /> object was not created with sufficient rights.</exception>
       </Docs>
     </Member>
     <Member MemberName="DefaultPortThreadPriority">

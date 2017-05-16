@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo2::GetStaticFieldInfo method [.NET Framework profiling]"
   - "GetStaticFieldInfo method [.NET Framework profiling]"
 ms.assetid: fc663e76-e23f-49a8-bdd5-52cdf1a3b2b3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

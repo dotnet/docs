@@ -593,7 +593,7 @@ private static IEnumerable<int> EvenSequence(
  [Programming Concepts (C#)](../../../csharp/programming-guide/concepts/index.md)   
  [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)   
  [LINQ to Objects (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)   
- [Parallel LINQ (PLINQ)](http://msdn.microsoft.com/library/3d4d0cd3-bde4-490b-99e7-f4e41be96455)   
+ [Parallel LINQ (PLINQ)](../../../standard/parallel-programming/parallel-linq-plinq.md)   
  [Collections and Data Structures](../../../standard/collections/index.md)   
  [Creating and Manipulating Collections](http://msdn.microsoft.com/en-us/2065398e-eb1a-4821-9188-75f16e42e069)   
  [Selecting a Collection Class](../../../standard/collections/selecting-a-collection-class.md)   

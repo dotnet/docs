@@ -49,7 +49,7 @@ SendReply ReplyToStartOrder = new SendReply
 ```  
   
 > [!NOTE]
->  In this example, there are actually two types of correlation being used: context correlation and request-reply correlation. The context correlation is used so that calls from clients are routed to the correct instance. The request-reply correlation is used by the <xref:System.ServiceModel.Activities.Receive> and the <xref:System.ServiceModel.Activities.SendReply> activities together to implement the two-way operation modeled by these activities. In this example, only the context correlation is explicitly configured, and the <xref:System.ServiceModel.Activities.Receive>/<xref:System.ServiceModel.Activities.SendReply> pair is using the default request-reply correlation that is provided by the implicit <xref:System.ServiceModel.Activities.CorrelationHandle> management of <xref:System.ServiceModel.Activities.WorkflowServiceHost>. When using the **ReceiveAndSendReply** activity template in the workflow designer, request-reply correlation is explicitly configured. [!INCLUDE[crabout](../../../../includes/crabout-md.md)]request-reply correlation and implicit correlation handle management, see [Request-Reply](../../../../docs/framework/wcf/feature-details/request-reply-correlation.md) and [Correlation Overview](../../../../docs/framework/wcf/feature-details/correlation-overview.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the **ReceiveAndSendReply** activity template, see [ReceiveAndSendReply](http://msdn.microsoft.com/library/d1d9a058-df7e-48f5-a2e7-3caeeba7eaa6).  
+>  In this example, there are actually two types of correlation being used: context correlation and request-reply correlation. The context correlation is used so that calls from clients are routed to the correct instance. The request-reply correlation is used by the <xref:System.ServiceModel.Activities.Receive> and the <xref:System.ServiceModel.Activities.SendReply> activities together to implement the two-way operation modeled by these activities. In this example, only the context correlation is explicitly configured, and the <xref:System.ServiceModel.Activities.Receive>/<xref:System.ServiceModel.Activities.SendReply> pair is using the default request-reply correlation that is provided by the implicit <xref:System.ServiceModel.Activities.CorrelationHandle> management of <xref:System.ServiceModel.Activities.WorkflowServiceHost>. When using the **ReceiveAndSendReply** activity template in the workflow designer, request-reply correlation is explicitly configured. [!INCLUDE[crabout](../../../../includes/crabout-md.md)]request-reply correlation and implicit correlation handle management, see [Request-Reply](../../../../docs/framework/wcf/feature-details/request-reply-correlation.md) and [Correlation Overview](../../../../docs/framework/wcf/feature-details/correlation-overview.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the **ReceiveAndSendReply** activity template, see [ReceiveAndSendReply](/visualstudio/workflow-designer/receiveandsendreply-template-designer).  
   
  Subsequent <xref:System.ServiceModel.Activities.Receive> activities in the workflow service can reference the <xref:System.ServiceModel.Activities.CorrelationHandle> that was initialized by the <xref:System.ServiceModel.Activities.SendReply> in the previous example.  
   
@@ -66,9 +66,9 @@ Receive AddItem = new Receive
   
 ```xml  
 <endpoint  
-  contract=”IOrderContract”  
-  binding = “basicHttpContextBinding”  
-  address=”http://localhost:8080/OrderService” />  
+  contract="IOrderContract"  
+  binding = "basicHttpContextBinding"  
+  address="http://localhost:8080/OrderService" />  
 ```  
   
 ### Configuring Context Correlation in a Workflow Client  

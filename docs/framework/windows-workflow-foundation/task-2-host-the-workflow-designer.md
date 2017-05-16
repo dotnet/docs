@@ -24,13 +24,13 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
   
 2.  Adjust the size of the window to make it easier to use the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)]. To do this, select **MainWindow** in the designer, press F4 to display the **Properties** window, and, in the **Layout** section there, set the **Width** to a value of 600 and the **Height** to a value of 350.  
   
-3.  Set the grid name by selecting the **Grid** panel in the designer (click the box inside the **MainWindow**) and setting the **Name** property at the top of the **Properties** window to “grid1”.  
+3.  Set the grid name by selecting the **Grid** panel in the designer (click the box inside the **MainWindow**) and setting the **Name** property at the top of the **Properties** window to "grid1".  
   
 4.  In the **Properties** window, click the ellipsis (**…**) next to the `ColumnDefinitions` property to open the **Collection Editor** dialog box.  
   
 5.  In the **Collection Editor** dialog box, click the **Add** button three times to insert three columns into the layout. The first column will contain the **Toolbox**, the second column will host the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)], and the third column will be used for the property inspector.  
   
-6.  Set the `Width` property of the middle column to the value “4*”.  
+6.  Set the `Width` property of the middle column to the value "4*".  
   
 7.  Click **OK** to save the changes. The following XAML is added to your MainWindow.xaml file:  
   

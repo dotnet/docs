@@ -41,7 +41,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.IndexedString> constructor ensures that the string passed is not `null` or <xref:System.String>, and then assigns it to the <xref:System.Web.UI.IndexedString.Value%2A> property.  
+ The <xref:System.Web.UI.IndexedString> constructor ensures that the string passed is not `null` or <xref:System.String.Empty>, and then assigns it to the <xref:System.Web.UI.IndexedString.Value%2A> property.  
   
  ]]></format>
         </remarks>

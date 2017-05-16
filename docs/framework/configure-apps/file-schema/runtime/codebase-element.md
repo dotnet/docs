@@ -2,7 +2,7 @@
 title: "&lt;codeBase&gt; Element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,7 +40,7 @@ Specifies where the common language runtime can find an assembly.
   
 ```  
   
-   <codeBase    
+   <codeBase    
 version="Assembly version"  
 href="URL of assembly"/>  
 ```  

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetReason method [.NET Framework debugging]"
   - "ICorDebugChain::GetReason method [.NET Framework debugging]"
 ms.assetid: 9f9f62b9-113a-4a98-8f9b-b593cef27b03
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

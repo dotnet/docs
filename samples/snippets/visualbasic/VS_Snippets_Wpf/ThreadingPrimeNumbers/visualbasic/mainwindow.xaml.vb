@@ -30,9 +30,9 @@ Namespace SDKSamples
             Else
                 continueCalculating = True
                 startStopButton.Content = "Stop"
-                '<SnippetThreadingPrimeNumberBeingInvoke>
+                '<SnippetThreadingPrimeNumberBeginInvoke>
                 startStopButton.Dispatcher.BeginInvoke(DispatcherPriority.Normal, New NextPrimeDelegate(AddressOf CheckNextNumber))
-                '</SnippetThreadingPrimeNumberBeingInvoke>
+                '</SnippetThreadingPrimeNumberBeginInvoke>
             End If
         End Sub
         '</SnippetThreadingPrimeNumberStartOrStop>

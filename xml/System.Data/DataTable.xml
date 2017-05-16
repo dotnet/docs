@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
@@ -118,6 +119,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.DataTable" /> class with no arguments.</summary>
@@ -162,6 +167,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="tableName" Type="System.String" />
       </Parameters>
@@ -195,6 +204,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -227,6 +240,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="tableName" Type="System.String" />
         <Parameter Name="tableNamespace" Type="System.String" />
@@ -251,6 +268,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -292,6 +313,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -322,6 +347,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -351,6 +380,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -390,6 +423,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -437,6 +474,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -477,6 +518,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
@@ -505,7 +550,7 @@
   
  C# and Visual Basic projects with this code sample can be found on [Developer Code Samples](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=SearchText&f%5B0%5D.Value=How%20to%20automically%20update%20the%20structure%20of%20a%20cloned%20DataTable).  
   
-```  
+```csharp  
 using System;  
 using System.Linq;  
 using System.Data;  
@@ -840,7 +885,7 @@ GO
   
  You can now compile and run the sample. [How to modify data in DataTable and update to the data source](http://code.msdn.microsoft.com/How-to-modify-data-in-c68d35f4) has Visual Basic and C# projects of this sample.  
   
-```  
+```csharp  
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  
@@ -1025,6 +1070,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataColumnChangeEventHandler</ReturnType>
       </ReturnValue>
@@ -1060,6 +1109,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataColumnChangeEventHandler</ReturnType>
       </ReturnValue>
@@ -1094,6 +1147,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1137,6 +1194,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1202,6 +1263,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
@@ -1255,6 +1320,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
@@ -1292,6 +1361,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTableReader</ReturnType>
@@ -1337,6 +1410,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
@@ -1360,6 +1437,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1407,6 +1488,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -1450,6 +1535,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
@@ -1477,6 +1566,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1508,6 +1601,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1537,6 +1634,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1583,6 +1684,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1604,6 +1709,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -1641,6 +1750,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -1684,6 +1797,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaComplexType</ReturnType>
       </ReturnValue>
@@ -1710,6 +1827,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
@@ -1750,6 +1871,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1779,6 +1904,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -1803,6 +1932,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
       </ReturnValue>
@@ -1826,6 +1959,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1875,6 +2012,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1914,6 +2055,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
@@ -1943,6 +2088,10 @@ class Program {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -1965,6 +2114,55 @@ class Program {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Fills a <see cref="T:System.Data.DataTable" /> with values from a data source using the supplied <see cref="T:System.Data.IDataReader" />. If the <see langword="DataTable" /> already contains rows, the incoming data from the data source is merged with the existing rows.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Load` method can be used in several common scenarios, all centered around getting data from a specified data source and adding it to the current data container (in this case, a `DataTable`). These scenarios describe standard usage for a `DataTable`, describing its update and merge behavior.  
+  
+ A `DataTable` synchronizes or updates with a single primary data source. The `DataTable` tracks changes, allowing synchronization with the primary data source. In addition, a `DataTable` can accept incremental data from one or more secondary data sources. The `DataTable` isn't responsible for tracking changes in order to allow synchronization with the secondary data source.  
+  
+ Given these two hypothetical data sources, a user is likely to require one of the following behaviors:  
+  
+-   Initialize `DataTable` from a primary data source. In this scenario, the user wants to initialize an empty `DataTable` with values from the primary data source. Later the user intends to propagate changes back to the primary data source.  
+  
+-   Preserve changes and re-synchronize from the primary data source. In this scenario, the user wants to take the `DataTable` filled in the previous scenario and perform an incremental synchronization with the primary data source, preserving modifications made in the `DataTable`.  
+  
+-   Incremental data feed from secondary data sources. In this scenario, the user wants to merge changes from one or more secondary data sources, and propagate those changes back to the primary data source.  
+  
+ The `Load` method makes all these scenarios possible. All but one of the overloads for this method allows you to specify a load option parameter, indicating how rows already in a <xref:System.Data.DataTable> combine with rows being loaded. (The overload that doesn't allow you to specify the behavior uses the default load option.) The following table describes the three load options provided by the <xref:System.Data.LoadOption> enumeration. In each case, the description indicates the behavior when the primary key of a row in the incoming data matches the primary key of an existing row.  
+  
+|Load Option|Description|  
+|-----------------|-----------------|  
+|`PreserveChanges` (default)|Updates the original version of the row with the value of the incoming row.|  
+|`OverwriteChanges`|Updates the current and original versions of the row with the value of the incoming row.|  
+|`Upsert`|Updates the current version of the row with the value of the incoming row.|  
+  
+ In general, the `PreserveChanges` and `OverwriteChanges` options are intended for scenarios in which the user needs to synchronize the `DataSet` and its changes with the primary data source. The `Upsert` option facilitates aggregating changes from one or more secondary data sources.  
+  
+   
+  
+## Examples  
+ The following example demonstrates several of the issues involved with calling the <xref:System.Data.DataTable.Load%2A> method. First, the example focuses on schema issues, including inferring a schema from the loaded <xref:System.Data.IDataReader>, and then handling incompatible schemas, and schemas with missing or additional columns. The example then focuses on data issues, including handling the various loading options.  
+  
+> [!NOTE]
+>  This example shows how to use one of the overloaded versions of `Load`. For other examples that might be available, see the individual overload topics.  
+  
+ [!code-csharp[DataWorks DataTableLoad#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTableLoad/CS/source.cs#1)]
+ [!code-vb[DataWorks DataTableLoad#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTableLoad/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public void Load (System.Data.IDataReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Data.IDataReader reader) cil managed" />
@@ -1978,6 +2176,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2048,6 +2250,10 @@ class Program {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2128,6 +2334,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2211,6 +2421,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow</ReturnType>
       </ReturnValue>
@@ -2268,6 +2482,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow</ReturnType>
       </ReturnValue>
@@ -2312,6 +2530,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
@@ -2327,7 +2549,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
  When used for string comparisons, the <xref:System.Globalization.CultureInfo> affects sorting, comparisons, and filtering.  
   
 > [!NOTE]
->  In columns that contain expressions, the <xref:System.StringComparison> is used. The <xref:System.StringComparison> is ignored.  
+>  In columns that contain expressions, the <xref:System.StringComparison.InvariantCulture> is used. The <xref:System.StringComparison.CurrentCulture> is ignored.  
   
    
   
@@ -2341,6 +2563,37 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Merge">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Merge the specified <see cref="T:System.Data.DataTable" /> with the current <see cref="T:System.Data.DataTable" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Merge` method is used to merge two <xref:System.Data.DataTable> objects that have largely similar schemas. A merge is typically used on a client application to incorporate the latest changes from a data source into an existing <xref:System.Data.DataTable>. This allows the client application to have a refreshed <xref:System.Data.DataTable> with the latest data from the data source.  
+  
+ The merge operation takes into account only the original table, and the table to be merged. Child tables are not affected or included. If a table has one or more child tables, defined as part of a relationship, each child table must be merged individually.  
+  
+   
+  
+## Examples  
+ The following console application demonstrates the behavior of the `missingSchemaAction` parameter of the <xref:System.Data.DataTable.Merge%2A> method. This example creates two versions of the same table, modifying the schema for the second version. The code then attempts to merge the second table into the first.  
+  
+> [!NOTE]
+>  This example shows how to use one of the overloaded versions of Merge. For other examples that might be available, see the individual overload topics.  
+  
+ [!code-csharp[DataWorks DataTableMergeOverload#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTableMergeOverload/CS/source.cs#1)]
+ [!code-vb[DataWorks DataTableMergeOverload#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTableMergeOverload/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Merge">
       <MemberSignature Language="C#" Value="public void Merge (System.Data.DataTable table);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Merge(class System.Data.DataTable table) cil managed" />
@@ -2354,6 +2607,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2405,6 +2662,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2459,6 +2720,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2520,6 +2785,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(50)</AttributeName>
@@ -2563,6 +2832,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -2585,6 +2858,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow</ReturnType>
@@ -2625,6 +2902,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
       </ReturnValue>
@@ -2652,6 +2933,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow</ReturnType>
       </ReturnValue>
@@ -2678,6 +2963,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2715,6 +3004,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2750,6 +3043,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2787,6 +3084,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2822,6 +3123,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2859,6 +3164,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2894,6 +3203,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2931,6 +3244,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2967,6 +3284,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3001,6 +3322,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3037,6 +3362,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3071,6 +3400,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3113,6 +3446,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
@@ -3140,6 +3477,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3174,6 +3515,29 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <exception cref="T:System.Data.DataException">The key is a foreign key.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadXml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads XML schema and data into the <see cref="T:System.Data.DataTable" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataTable.ReadXml%2A> method provides a way to read either data only, or both data and schema into a <xref:System.Data.DataTable> from an XML document, whereas the <xref:System.Data.DataTable.ReadXmlSchema%2A> method reads only the schema. To read both data and schema, use one of the `ReadXML` overloads that include the `XmlReadMode` parameter, and set its value to `ReadSchema`.  
+  
+ Note that the same is true for the <xref:System.Data.DataTable.WriteXml%2A> and <xref:System.Data.DataTable.WriteXmlSchema%2A> methods, respectively. To write XML data, or both schema and data from the `DataTable`, use the `WriteXml` method. To write just the schema, use the `WriteXmlSchema` method.  
+  
+> [!NOTE]
+>  An <xref:System.InvalidOperationException> will be thrown if a column type in the `DataRow` being read from or written to implements <xref:System.Dynamic.IDynamicMetaObjectProvider> and does not implement <xref:System.Xml.Serialization.IXmlSerializable>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadXml">
       <MemberSignature Language="C#" Value="public System.Data.XmlReadMode ReadXml (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.XmlReadMode ReadXml(class System.IO.Stream stream) cil managed" />
@@ -3187,6 +3551,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.XmlReadMode</ReturnType>
@@ -3244,6 +3612,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.XmlReadMode</ReturnType>
       </ReturnValue>
@@ -3300,6 +3672,10 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.XmlReadMode</ReturnType>
       </ReturnValue>
@@ -3330,7 +3706,7 @@ Not present)|Current = \<Incoming><br /><br /> Original = \<Not available><br />
 > [!NOTE]
 >  The `DataSet` does not associate an XML element with its corresponding `DataColumn` or `DataTable` when legal XML characters like ("_") are escaped in the serialized XML. The `DataSet` itself only escapes illegal XML characters in XML element names and hence can only consume the same. When legal characters in XML element name are escaped, the element is ignored while processing.  
   
-```  
+```csharp  
 using System.Data;  
 public class A {  
    static void Main(string[] args) {  
@@ -3374,6 +3750,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.XmlReadMode</ReturnType>
       </ReturnValue>
@@ -3416,6 +3796,30 @@ public class A {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadXmlSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads an XML schema into the <see cref="T:System.Data.DataTable" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the `ReadXmlSchema` method to create the schema for a <xref:System.Data.DataTable>. The schema includes table, relation, and constraint definitions.  
+  
+ To write a schema to an XML document, use the <xref:System.Data.DataTable.WriteXmlSchema%2A> method.  
+  
+ The XML schema is interpreted according to the XSD standard.  
+  
+ The `ReadXmlSchema` method is generally invoked before invoking the <xref:System.Data.DataTable.ReadXml%2A> method which is used to fill the <xref:System.Data.DataTable>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadXmlSchema">
       <MemberSignature Language="C#" Value="public void ReadXmlSchema (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReadXmlSchema(class System.IO.Stream stream) cil managed" />
@@ -3429,6 +3833,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3481,6 +3889,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3532,6 +3944,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3582,6 +3998,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3635,6 +4055,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3660,6 +4084,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3699,6 +4127,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
@@ -3727,6 +4159,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3749,6 +4185,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRowChangeEventHandler</ReturnType>
@@ -3785,6 +4225,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRowChangeEventHandler</ReturnType>
       </ReturnValue>
@@ -3819,6 +4263,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRowChangeEventHandler</ReturnType>
@@ -3855,6 +4303,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRowChangeEventHandler</ReturnType>
       </ReturnValue>
@@ -3889,6 +4341,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3935,6 +4391,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
       </ReturnValue>
@@ -3973,6 +4433,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
@@ -4020,6 +4484,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
       </ReturnValue>
@@ -4065,6 +4533,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataRow[]</ReturnType>
@@ -4114,6 +4586,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -4152,6 +4628,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4182,6 +4662,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
@@ -4214,6 +4698,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchema</ReturnType>
       </ReturnValue>
@@ -4244,6 +4732,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4278,6 +4770,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4311,6 +4807,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTableClearEventHandler</ReturnType>
       </ReturnValue>
@@ -4340,6 +4840,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTableClearEventHandler</ReturnType>
       </ReturnValue>
@@ -4368,6 +4872,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -4418,6 +4926,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTableNewRowEventHandler</ReturnType>
       </ReturnValue>
@@ -4447,6 +4959,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -4472,6 +4988,178 @@ public class A {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteXml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the current contents of the <see cref="T:System.Data.DataTable" /> as XML.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Data.DataTable.WriteXml%2A> method provides a way to write either data only, or both data and schema from a <xref:System.Data.DataTable> into an XML document, whereas the <xref:System.Data.DataTable.WriteXmlSchema%2A> method writes only the schema. To write both data and schema, use one of the overloads that include the <xref:System.Data.XmlWriteMode> parameter, and set its value to `WriteSchema`.  
+  
+ Note that the same is true for the <xref:System.Data.DataTable.ReadXml%2A> and <xref:System.Data.DataTable.ReadXmlSchema%2A> methods, respectively. To read XML data, or both schema and data into the `DataTable`, use the `ReadXml` method. To read just the schema, use the `ReadXmlSchema` method.  
+  
+> [!NOTE]
+>  An <xref:System.InvalidOperationException> will be thrown if a column type in the `DataRow` being read from or written to implements <xref:System.Dynamic.IDynamicMetaObjectProvider> and does not implement <xref:System.Xml.Serialization.IXmlSerializable>.  
+  
+   
+  
+## Examples  
+ The following console application creates two <xref:System.Data.DataTable> instances, adds each to a <xref:System.Data.DataSet>, creates a <xref:System.Data.DataRelation> relating the two tables, and then uses the <xref:System.Data.DataTable.WriteXml%2A> method to write the data contained within the parent table to a <xref:System.IO.TextWriter>. The example demonstrates the behavior when setting the `writeHierarchy` parameter to each of its values.  
+  
+> [!NOTE]
+>  This example shows how to use one of the overloaded versions of WriteXml. For other examples that might be available, see the individual overload topics.  
+  
+ [!code-csharp[DataWorks DataTable.WriteXmlOverload#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTable.WriteXmlOverload/CS/source.cs#1)]
+ [!code-vb[DataWorks DataTable.WriteXmlOverload#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTable.WriteXmlOverload/VB/source.vb#1)]  
+  
+ The example displays the following output in the console window:  
+  
+```  
+==============================  
+Customer table, without hierarchy  
+==============================  
+<NewDataSet>  
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
+" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
+      <xs:complexType>  
+        <xs:choice minOccurs="0" maxOccurs="unbounded">  
+          <xs:element name="Table1">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element name="ID" type="xs:int" />  
+                <xs:element name="Name" type="xs:string" minOccurs="0" />  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:choice>  
+      </xs:complexType>  
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+        <xs:selector xpath=".//Table1" />  
+        <xs:field xpath="ID" />  
+      </xs:unique>  
+    </xs:element>  
+  </xs:schema>  
+  <Table1>  
+    <ID>1</ID>  
+    <Name>Mary</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>2</ID>  
+    <Name>Andy</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>3</ID>  
+    <Name>Peter</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>4</ID>  
+    <Name>Russ</Name>  
+  </Table1>  
+</NewDataSet>  
+==============================  
+Customer table, with hierarchy  
+==============================  
+<NewDataSet>  
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
+" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
+      <xs:complexType>  
+        <xs:choice minOccurs="0" maxOccurs="unbounded">  
+          <xs:element name="Table1">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element name="ID" type="xs:int" />  
+                <xs:element name="Name" type="xs:string" minOccurs="0" />  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+          <xs:element name="Table2">  
+            <xs:complexType>  
+              <xs:sequence>  
+                <xs:element name="OrderID" type="xs:int" />  
+                <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
+                <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
+  
+              </xs:sequence>  
+            </xs:complexType>  
+          </xs:element>  
+        </xs:choice>  
+      </xs:complexType>  
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+        <xs:selector xpath=".//Table1" />  
+        <xs:field xpath="ID" />  
+      </xs:unique>  
+      <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" m  
+sdata:PrimaryKey="true">  
+        <xs:selector xpath=".//Table2" />  
+        <xs:field xpath="OrderID" />  
+      </xs:unique>  
+      <xs:keyref name="CustomerOrder" refer="Constraint1">  
+        <xs:selector xpath=".//Table2" />  
+        <xs:field xpath="CustomerID" />  
+      </xs:keyref>  
+    </xs:element>  
+  </xs:schema>  
+  <Table1>  
+    <ID>1</ID>  
+    <Name>Mary</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>2</ID>  
+    <Name>Andy</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>3</ID>  
+    <Name>Peter</Name>  
+  </Table1>  
+  <Table1>  
+    <ID>4</ID>  
+    <Name>Russ</Name>  
+  </Table1>  
+  <Table2>  
+    <OrderID>1</OrderID>  
+    <CustomerID>1</CustomerID>  
+    <OrderDate>2003-12-02T00:00:00.0000000-08:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>2</OrderID>  
+    <CustomerID>1</CustomerID>  
+    <OrderDate>2004-01-03T00:00:00.0000000-08:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>3</OrderID>  
+    <CustomerID>2</CustomerID>  
+    <OrderDate>2004-11-13T00:00:00.0000000-08:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>4</OrderID>  
+    <CustomerID>3</CustomerID>  
+    <OrderDate>2004-05-16T00:00:00.0000000-07:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>5</OrderID>  
+    <CustomerID>3</CustomerID>  
+    <OrderDate>2004-05-22T00:00:00.0000000-07:00</OrderDate>  
+  </Table2>  
+  <Table2>  
+    <OrderID>6</OrderID>  
+    <CustomerID>4</CustomerID>  
+    <OrderDate>2004-06-15T00:00:00.0000000-07:00</OrderDate>  
+  </Table2>  
+</NewDataSet>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteXml">
       <MemberSignature Language="C#" Value="public void WriteXml (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteXml(class System.IO.Stream stream) cil managed" />
@@ -4485,6 +5173,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4524,6 +5216,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4561,6 +5257,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4600,6 +5300,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4637,6 +5341,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4682,6 +5390,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4721,6 +5433,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4770,6 +5486,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4809,6 +5529,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4852,6 +5576,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4891,6 +5619,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4934,6 +5666,10 @@ public class A {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -4973,6 +5709,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5021,6 +5761,10 @@ public class A {
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5216,6 +5960,10 @@ sdata:PrimaryKey="true">
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5264,6 +6012,10 @@ sdata:PrimaryKey="true">
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5294,6 +6046,112 @@ sdata:PrimaryKey="true">
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteXmlSchema">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the current data structure of the <see cref="T:System.Data.DataTable" /> as an XML schema.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Data.DataTable.WriteXmlSchema%2A> method to write the schema for a <xref:System.Data.DataTable> to an XML document. The schema includes table, relation, and constraint definitions.  
+  
+ The XML schema is written using the XSD standard.  
+  
+ To write the data to an XML document, use the <xref:System.Data.DataTable.WriteXml%2A> method.  
+  
+   
+  
+## Examples  
+ The following console application creates two <xref:System.Data.DataTable> instances, adds each to a <xref:System.Data.DataSet>, creates a <xref:System.Data.DataRelation> relating the two tables, and then uses the <xref:System.Data.DataTable.WriteXmlSchema%2A> method to write the data contained within the parent table to a <xref:System.IO.TextWriter>. The example demonstrates the behavior when setting the `writeHierarchy` parameter to each of its values.  
+  
+> [!NOTE]
+>  This example shows how to use one of the overloaded versions of `WriteXmlSchema` For other examples that might be available, see the individual overload topics.  
+  
+ [!code-csharp[DataWorks DataTable.WriteXmlSchemaOverload#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTable.WriteXmlSchemaOverload/CS/source.cs#1)]
+ [!code-vb[DataWorks DataTable.WriteXmlSchemaOverload#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTable.WriteXmlSchemaOverload/VB/source.vb#1)]  
+  
+ The example displays the following output in the console window:  
+  
+```  
+==============================  
+Customer table, without hierarchy  
+==============================  
+<?xml version="1.0" encoding="utf-16"?>  
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema"  
+xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Ta  
+ble1">  
+    <xs:complexType>  
+      <xs:choice minOccurs="0" maxOccurs="unbounded">  
+        <xs:element name="Table1">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element name="ID" type="xs:int" />  
+              <xs:element name="Name" type="xs:string" minOccurs="0" />  
+            </xs:sequence>  
+          </xs:complexType>  
+        </xs:element>  
+      </xs:choice>  
+    </xs:complexType>  
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+      <xs:selector xpath=".//Table1" />  
+      <xs:field xpath="ID" />  
+    </xs:unique>  
+  </xs:element>  
+</xs:schema>  
+==============================  
+Customer table, with hierarchy  
+==============================  
+<?xml version="1.0" encoding="utf-16"?>  
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema"  
+xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
+    <xs:complexType>  
+      <xs:choice minOccurs="0" maxOccurs="unbounded">  
+        <xs:element name="Table1">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element name="ID" type="xs:int" />  
+              <xs:element name="Name" type="xs:string" minOccurs="0" />  
+            </xs:sequence>  
+          </xs:complexType>  
+        </xs:element>  
+        <xs:element name="Table2">  
+          <xs:complexType>  
+            <xs:sequence>  
+              <xs:element name="OrderID" type="xs:int" />  
+              <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
+              <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
+            </xs:sequence>  
+          </xs:complexType>  
+        </xs:element>  
+      </xs:choice>  
+    </xs:complexType>  
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
+      <xs:selector xpath=".//Table1" />  
+      <xs:field xpath="ID" />  
+    </xs:unique>  
+    <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">  
+      <xs:selector xpath=".//Table2" />  
+      <xs:field xpath="OrderID" />  
+    </xs:unique>  
+    <xs:keyref name="CustomerOrder" refer="Constraint1">  
+      <xs:selector xpath=".//Table2" />  
+      <xs:field xpath="CustomerID" />  
+    </xs:keyref>  
+  </xs:element>  
+</xs:schema>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteXmlSchema">
       <MemberSignature Language="C#" Value="public void WriteXmlSchema (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteXmlSchema(class System.IO.Stream stream) cil managed" />
@@ -5307,6 +6165,10 @@ sdata:PrimaryKey="true">
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5345,6 +6207,10 @@ sdata:PrimaryKey="true">
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5381,6 +6247,10 @@ sdata:PrimaryKey="true">
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5419,6 +6289,10 @@ sdata:PrimaryKey="true">
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5455,6 +6329,10 @@ sdata:PrimaryKey="true">
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5496,6 +6374,10 @@ sdata:PrimaryKey="true">
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5619,6 +6501,10 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5660,6 +6546,10 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5687,410 +6577,5 @@ xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteXmlSchema">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the current data structure of the <see cref="T:System.Data.DataTable" /> as an XML schema.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Data.DataTable.WriteXmlSchema%2A> method to write the schema for a <xref:System.Data.DataTable> to an XML document. The schema includes table, relation, and constraint definitions.  
-  
- The XML schema is written using the XSD standard.  
-  
- To write the data to an XML document, use the <xref:System.Data.DataTable.WriteXml%2A> method.  
-  
-   
-  
-## Examples  
- The following console application creates two <xref:System.Data.DataTable> instances, adds each to a <xref:System.Data.DataSet>, creates a <xref:System.Data.DataRelation> relating the two tables, and then uses the <xref:System.Data.DataTable.WriteXmlSchema%2A> method to write the data contained within the parent table to a <xref:System.IO.TextWriter>. The example demonstrates the behavior when setting the `writeHierarchy` parameter to each of its values.  
-  
-> [!NOTE]
->  This example shows how to use one of the overloaded versions of `WriteXmlSchema` For other examples that might be available, see the individual overload topics.  
-  
- [!code-csharp[DataWorks DataTable.WriteXmlSchemaOverload#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTable.WriteXmlSchemaOverload/CS/source.cs#1)]
- [!code-vb[DataWorks DataTable.WriteXmlSchemaOverload#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTable.WriteXmlSchemaOverload/VB/source.vb#1)]  
-  
- The example displays the following output in the console window:  
-  
-```  
-==============================  
-Customer table, without hierarchy  
-==============================  
-<?xml version="1.0" encoding="utf-16"?>  
-<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema"  
-xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Ta  
-ble1">  
-    <xs:complexType>  
-      <xs:choice minOccurs="0" maxOccurs="unbounded">  
-        <xs:element name="Table1">  
-          <xs:complexType>  
-            <xs:sequence>  
-              <xs:element name="ID" type="xs:int" />  
-              <xs:element name="Name" type="xs:string" minOccurs="0" />  
-            </xs:sequence>  
-          </xs:complexType>  
-        </xs:element>  
-      </xs:choice>  
-    </xs:complexType>  
-    <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-      <xs:selector xpath=".//Table1" />  
-      <xs:field xpath="ID" />  
-    </xs:unique>  
-  </xs:element>  
-</xs:schema>  
-==============================  
-Customer table, with hierarchy  
-==============================  
-<?xml version="1.0" encoding="utf-16"?>  
-<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema"  
-xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
-    <xs:complexType>  
-      <xs:choice minOccurs="0" maxOccurs="unbounded">  
-        <xs:element name="Table1">  
-          <xs:complexType>  
-            <xs:sequence>  
-              <xs:element name="ID" type="xs:int" />  
-              <xs:element name="Name" type="xs:string" minOccurs="0" />  
-            </xs:sequence>  
-          </xs:complexType>  
-        </xs:element>  
-        <xs:element name="Table2">  
-          <xs:complexType>  
-            <xs:sequence>  
-              <xs:element name="OrderID" type="xs:int" />  
-              <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
-              <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
-            </xs:sequence>  
-          </xs:complexType>  
-        </xs:element>  
-      </xs:choice>  
-    </xs:complexType>  
-    <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-      <xs:selector xpath=".//Table1" />  
-      <xs:field xpath="ID" />  
-    </xs:unique>  
-    <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">  
-      <xs:selector xpath=".//Table2" />  
-      <xs:field xpath="OrderID" />  
-    </xs:unique>  
-    <xs:keyref name="CustomerOrder" refer="Constraint1">  
-      <xs:selector xpath=".//Table2" />  
-      <xs:field xpath="CustomerID" />  
-    </xs:keyref>  
-  </xs:element>  
-</xs:schema>  
-```  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadXmlSchema">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads an XML schema into the <see cref="T:System.Data.DataTable" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the `ReadXmlSchema` method to create the schema for a <xref:System.Data.DataTable>. The schema includes table, relation, and constraint definitions.  
-  
- To write a schema to an XML document, use the <xref:System.Data.DataTable.WriteXmlSchema%2A> method.  
-  
- The XML schema is interpreted according to the XSD standard.  
-  
- The `ReadXmlSchema` method is generally invoked before invoking the <xref:System.Data.DataTable.ReadXml%2A> method which is used to fill the <xref:System.Data.DataTable>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteXml">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the current contents of the <see cref="T:System.Data.DataTable" /> as XML.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataTable.WriteXml%2A> method provides a way to write either data only, or both data and schema from a <xref:System.Data.DataTable> into an XML document, whereas the <xref:System.Data.DataTable.WriteXmlSchema%2A> method writes only the schema. To write both data and schema, use one of the overloads that include the <xref:System.Data.XmlWriteMode> parameter, and set its value to `WriteSchema`.  
-  
- Note that the same is true for the <xref:System.Data.DataTable.ReadXml%2A> and <xref:System.Data.DataTable.ReadXmlSchema%2A> methods, respectively. To read XML data, or both schema and data into the `DataTable`, use the `ReadXml` method. To read just the schema, use the `ReadXmlSchema` method.  
-  
-> [!NOTE]
->  An <xref:System.InvalidOperationException> will be thrown if a column type in the `DataRow` being read from or written to implements <xref:System.Dynamic.IDynamicMetaObjectProvider> and does not implement <xref:System.Xml.Serialization.IXmlSerializable>.  
-  
-   
-  
-## Examples  
- The following console application creates two <xref:System.Data.DataTable> instances, adds each to a <xref:System.Data.DataSet>, creates a <xref:System.Data.DataRelation> relating the two tables, and then uses the <xref:System.Data.DataTable.WriteXml%2A> method to write the data contained within the parent table to a <xref:System.IO.TextWriter>. The example demonstrates the behavior when setting the `writeHierarchy` parameter to each of its values.  
-  
-> [!NOTE]
->  This example shows how to use one of the overloaded versions of WriteXml. For other examples that might be available, see the individual overload topics.  
-  
- [!code-csharp[DataWorks DataTable.WriteXmlOverload#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTable.WriteXmlOverload/CS/source.cs#1)]
- [!code-vb[DataWorks DataTable.WriteXmlOverload#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTable.WriteXmlOverload/VB/source.vb#1)]  
-  
- The example displays the following output in the console window:  
-  
-```  
-==============================  
-Customer table, without hierarchy  
-==============================  
-<NewDataSet>  
-  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
-" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
-      <xs:complexType>  
-        <xs:choice minOccurs="0" maxOccurs="unbounded">  
-          <xs:element name="Table1">  
-            <xs:complexType>  
-              <xs:sequence>  
-                <xs:element name="ID" type="xs:int" />  
-                <xs:element name="Name" type="xs:string" minOccurs="0" />  
-              </xs:sequence>  
-            </xs:complexType>  
-          </xs:element>  
-        </xs:choice>  
-      </xs:complexType>  
-      <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-        <xs:selector xpath=".//Table1" />  
-        <xs:field xpath="ID" />  
-      </xs:unique>  
-    </xs:element>  
-  </xs:schema>  
-  <Table1>  
-    <ID>1</ID>  
-    <Name>Mary</Name>  
-  </Table1>  
-  <Table1>  
-    <ID>2</ID>  
-    <Name>Andy</Name>  
-  </Table1>  
-  <Table1>  
-    <ID>3</ID>  
-    <Name>Peter</Name>  
-  </Table1>  
-  <Table1>  
-    <ID>4</ID>  
-    <Name>Russ</Name>  
-  </Table1>  
-</NewDataSet>  
-==============================  
-Customer table, with hierarchy  
-==============================  
-<NewDataSet>  
-  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema  
-" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
-    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="Table1">  
-      <xs:complexType>  
-        <xs:choice minOccurs="0" maxOccurs="unbounded">  
-          <xs:element name="Table1">  
-            <xs:complexType>  
-              <xs:sequence>  
-                <xs:element name="ID" type="xs:int" />  
-                <xs:element name="Name" type="xs:string" minOccurs="0" />  
-              </xs:sequence>  
-            </xs:complexType>  
-          </xs:element>  
-          <xs:element name="Table2">  
-            <xs:complexType>  
-              <xs:sequence>  
-                <xs:element name="OrderID" type="xs:int" />  
-                <xs:element name="CustomerID" type="xs:int" minOccurs="0" />  
-                <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />  
-  
-              </xs:sequence>  
-            </xs:complexType>  
-          </xs:element>  
-        </xs:choice>  
-      </xs:complexType>  
-      <xs:unique name="Constraint1" msdata:PrimaryKey="true">  
-        <xs:selector xpath=".//Table1" />  
-        <xs:field xpath="ID" />  
-      </xs:unique>  
-      <xs:unique name="Table2_Constraint1" msdata:ConstraintName="Constraint1" m  
-sdata:PrimaryKey="true">  
-        <xs:selector xpath=".//Table2" />  
-        <xs:field xpath="OrderID" />  
-      </xs:unique>  
-      <xs:keyref name="CustomerOrder" refer="Constraint1">  
-        <xs:selector xpath=".//Table2" />  
-        <xs:field xpath="CustomerID" />  
-      </xs:keyref>  
-    </xs:element>  
-  </xs:schema>  
-  <Table1>  
-    <ID>1</ID>  
-    <Name>Mary</Name>  
-  </Table1>  
-  <Table1>  
-    <ID>2</ID>  
-    <Name>Andy</Name>  
-  </Table1>  
-  <Table1>  
-    <ID>3</ID>  
-    <Name>Peter</Name>  
-  </Table1>  
-  <Table1>  
-    <ID>4</ID>  
-    <Name>Russ</Name>  
-  </Table1>  
-  <Table2>  
-    <OrderID>1</OrderID>  
-    <CustomerID>1</CustomerID>  
-    <OrderDate>2003-12-02T00:00:00.0000000-08:00</OrderDate>  
-  </Table2>  
-  <Table2>  
-    <OrderID>2</OrderID>  
-    <CustomerID>1</CustomerID>  
-    <OrderDate>2004-01-03T00:00:00.0000000-08:00</OrderDate>  
-  </Table2>  
-  <Table2>  
-    <OrderID>3</OrderID>  
-    <CustomerID>2</CustomerID>  
-    <OrderDate>2004-11-13T00:00:00.0000000-08:00</OrderDate>  
-  </Table2>  
-  <Table2>  
-    <OrderID>4</OrderID>  
-    <CustomerID>3</CustomerID>  
-    <OrderDate>2004-05-16T00:00:00.0000000-07:00</OrderDate>  
-  </Table2>  
-  <Table2>  
-    <OrderID>5</OrderID>  
-    <CustomerID>3</CustomerID>  
-    <OrderDate>2004-05-22T00:00:00.0000000-07:00</OrderDate>  
-  </Table2>  
-  <Table2>  
-    <OrderID>6</OrderID>  
-    <CustomerID>4</CustomerID>  
-    <OrderDate>2004-06-15T00:00:00.0000000-07:00</OrderDate>  
-  </Table2>  
-</NewDataSet>  
-```  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Merge">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Merge the specified <see cref="T:System.Data.DataTable" /> with the current <see cref="T:System.Data.DataTable" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `Merge` method is used to merge two <xref:System.Data.DataTable> objects that have largely similar schemas. A merge is typically used on a client application to incorporate the latest changes from a data source into an existing <xref:System.Data.DataTable>. This allows the client application to have a refreshed <xref:System.Data.DataTable> with the latest data from the data source.  
-  
- The merge operation takes into account only the original table, and the table to be merged. Child tables are not affected or included. If a table has one or more child tables, defined as part of a relationship, each child table must be merged individually.  
-  
-   
-  
-## Examples  
- The following console application demonstrates the behavior of the `missingSchemaAction` parameter of the <xref:System.Data.DataTable.Merge%2A> method. This example creates two versions of the same table, modifying the schema for the second version. The code then attempts to merge the second table into the first.  
-  
-> [!NOTE]
->  This example shows how to use one of the overloaded versions of Merge. For other examples that might be available, see the individual overload topics.  
-  
- [!code-csharp[DataWorks DataTableMergeOverload#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTableMergeOverload/CS/source.cs#1)]
- [!code-vb[DataWorks DataTableMergeOverload#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTableMergeOverload/VB/source.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Fills a <see cref="T:System.Data.DataTable" /> with values from a data source using the supplied <see cref="T:System.Data.IDataReader" />. If the <see langword="DataTable" /> already contains rows, the incoming data from the data source is merged with the existing rows.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `Load` method can be used in several common scenarios, all centered around getting data from a specified data source and adding it to the current data container (in this case, a `DataTable`). These scenarios describe standard usage for a `DataTable`, describing its update and merge behavior.  
-  
- A `DataTable` synchronizes or updates with a single primary data source. The `DataTable` tracks changes, allowing synchronization with the primary data source. In addition, a `DataTable` can accept incremental data from one or more secondary data sources. The `DataTable` isn't responsible for tracking changes in order to allow synchronization with the secondary data source.  
-  
- Given these two hypothetical data sources, a user is likely to require one of the following behaviors:  
-  
--   Initialize `DataTable` from a primary data source. In this scenario, the user wants to initialize an empty `DataTable` with values from the primary data source. Later the user intends to propagate changes back to the primary data source.  
-  
--   Preserve changes and re-synchronize from the primary data source. In this scenario, the user wants to take the `DataTable` filled in the previous scenario and perform an incremental synchronization with the primary data source, preserving modifications made in the `DataTable`.  
-  
--   Incremental data feed from secondary data sources. In this scenario, the user wants to merge changes from one or more secondary data sources, and propagate those changes back to the primary data source.  
-  
- The `Load` method makes all these scenarios possible. All but one of the overloads for this method allows you to specify a load option parameter, indicating how rows already in a <xref:System.Data.DataTable> combine with rows being loaded. (The overload that doesn't allow you to specify the behavior uses the default load option.) The following table describes the three load options provided by the <xref:System.Data.LoadOption> enumeration. In each case, the description indicates the behavior when the primary key of a row in the incoming data matches the primary key of an existing row.  
-  
-|Load Option|Description|  
-|-----------------|-----------------|  
-|`PreserveChanges` (default)|Updates the original version of the row with the value of the incoming row.|  
-|`OverwriteChanges`|Updates the current and original versions of the row with the value of the incoming row.|  
-|`Upsert`|Updates the current version of the row with the value of the incoming row.|  
-  
- In general, the `PreserveChanges` and `OverwriteChanges` options are intended for scenarios in which the user needs to synchronize the `DataSet` and its changes with the primary data source. The `Upsert` option facilitates aggregating changes from one or more secondary data sources.  
-  
-   
-  
-## Examples  
- The following example demonstrates several of the issues involved with calling the <xref:System.Data.DataTable.Load%2A> method. First, the example focuses on schema issues, including inferring a schema from the loaded <xref:System.Data.IDataReader>, and then handling incompatible schemas, and schemas with missing or additional columns. The example then focuses on data issues, including handling the various loading options.  
-  
-> [!NOTE]
->  This example shows how to use one of the overloaded versions of `Load`. For other examples that might be available, see the individual overload topics.  
-  
- [!code-csharp[DataWorks DataTableLoad#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks DataTableLoad/CS/source.cs#1)]
- [!code-vb[DataWorks DataTableLoad#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks DataTableLoad/VB/source.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadXml">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads XML schema and data into the <see cref="T:System.Data.DataTable" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Data.DataTable.ReadXml%2A> method provides a way to read either data only, or both data and schema into a <xref:System.Data.DataTable> from an XML document, whereas the <xref:System.Data.DataTable.ReadXmlSchema%2A> method reads only the schema. To read both data and schema, use one of the `ReadXML` overloads that include the `XmlReadMode` parameter, and set its value to `ReadSchema`.  
-  
- Note that the same is true for the <xref:System.Data.DataTable.WriteXml%2A> and <xref:System.Data.DataTable.WriteXmlSchema%2A> methods, respectively. To write XML data, or both schema and data from the `DataTable`, use the `WriteXml` method. To write just the schema, use the `WriteXmlSchema` method.  
-  
-> [!NOTE]
->  An <xref:System.InvalidOperationException> will be thrown if a column type in the `DataRow` being read from or written to implements <xref:System.Dynamic.IDynamicMetaObjectProvider> and does not implement <xref:System.Xml.Serialization.IXmlSerializable>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

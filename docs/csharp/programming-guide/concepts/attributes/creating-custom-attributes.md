@@ -82,7 +82,7 @@ class SampleClass
 ## See Also  
  <xref:System.Reflection>   
  [C# Programming Guide](../../../../csharp/programming-guide/index.md)   
- [Writing Custom Attributes](http://msdn.microsoft.com/library/97216f69-bde8-49fd-ac40-f18c500ef5dc)   
+ [Writing Custom Attributes](../../../../standard/attributes/writing-custom-attributes.md)   
  [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)   
  [Attributes (C#)](../../../../csharp/programming-guide/concepts/attributes/index.md)   
  [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)   

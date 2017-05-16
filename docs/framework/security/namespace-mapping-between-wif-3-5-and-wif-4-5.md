@@ -2,6 +2,7 @@
 title: "Namespace Mapping between WIF 3.5 and WIF 4.5 | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 

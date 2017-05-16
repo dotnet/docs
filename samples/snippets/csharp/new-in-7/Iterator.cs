@@ -11,9 +11,9 @@ namespace new_in_7
         #region 25_IteratorMethod
         public static IEnumerable<char> AlphabetSubset(char start, char end)
         {
-            if ((start < 'a') || (start > 'z'))
+            if (start < 'a' || start > 'z')
                 throw new ArgumentOutOfRangeException(paramName: nameof(start), message: "start must be a letter");
-            if ((end < 'a') || (end > 'z'))
+            if (end < 'a' || end > 'z')
                 throw new ArgumentOutOfRangeException(paramName: nameof(end), message: "end must be a letter");
 
             if (end <= start)
@@ -26,9 +26,9 @@ namespace new_in_7
         #region 27_IteratorMethodRefactored
         public static IEnumerable<char> AlphabetSubset2(char start, char end)
         {
-            if ((start < 'a') || (start > 'z'))
+            if (start < 'a' || start > 'z')
                 throw new ArgumentOutOfRangeException(paramName: nameof(start), message: "start must be a letter");
-            if ((end < 'a') || (end > 'z'))
+            if (end < 'a' || end > 'z')
                 throw new ArgumentOutOfRangeException(paramName: nameof(end), message: "end must be a letter");
 
             if (end <= start)
@@ -46,9 +46,9 @@ namespace new_in_7
         #region 28_IteratorMethodLocal
         public static IEnumerable<char> AlphabetSubset3(char start, char end)
         {
-            if ((start < 'a') || (start > 'z'))
+            if (start < 'a' || start > 'z')
                 throw new ArgumentOutOfRangeException(paramName: nameof(start), message: "start must be a letter");
-            if ((end < 'a') || (end > 'z'))
+            if (end < 'a' || end > 'z')
                 throw new ArgumentOutOfRangeException(paramName: nameof(end), message: "end must be a letter");
 
             if (end <= start)

@@ -21,7 +21,7 @@ When tracking the execution of a workflow, it is often useful to extract data. T
   
 -   If a variable is specified by the variable name, then tracking looks for the variable within the current activity being tracked and in parent activities. The variable is searched in current activity scope and in parent scope.  
   
--   If variables to be extracted are specified by using name=”*”, then all variables within the current activity being tracked are extracted. In this case variables that are in scope but defined in parent activities are not extracted.  
+-   If variables to be extracted are specified by using name="*", then all variables within the current activity being tracked are extracted. In this case variables that are in scope but defined in parent activities are not extracted.  
   
  When extracting arguments, the arguments extracted depend on the state of the activity. When the state of an activity is Executing, then only the `InArguments` are available for extraction. For any other activity state (Closed, Faulted, Canceled), all arguments, both InArguments and OutArguments, are available for extraction.  
   
@@ -29,12 +29,12 @@ When tracking the execution of a workflow, it is often useful to extract data. T
   
 ```  
 <activityStateQuery activityName="SendEmailActivity">  
-  <states>  
-    <state name="Closed"/>  
-  </states>  
-  <variables>  
-    <variable name="FromAddress"/>  
-  </variables>  
+  <states>  
+    <state name="Closed"/>  
+  </states>  
+  <variables>  
+    <variable name="FromAddress"/>  
+  </variables>  
   <arguments>  
     <argument name="Result"/>  
   </arguments>  

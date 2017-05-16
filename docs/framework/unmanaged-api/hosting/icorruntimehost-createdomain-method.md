@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateDomain method [.NET Framework hosting]"
   - "ICorRuntimeHost::CreateDomain method [.NET Framework hosting]"
 ms.assetid: b96c5ef3-a9df-4c7c-9952-432d3272cb5c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

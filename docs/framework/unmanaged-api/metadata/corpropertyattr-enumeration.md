@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorPropertyAttr enumeration [.NET Framework metadata]"
 ms.assetid: 58ac8202-854d-4efd-acfb-d2da8b446e12
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

@@ -15,6 +15,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Xml.XPath.XPathItem</BaseTypeName>
   </Base>
@@ -116,6 +120,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.XPath.XPathNavigator" /> class.</summary>
@@ -146,6 +154,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlWriter</ReturnType>
@@ -235,6 +247,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -326,6 +342,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -419,6 +439,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -508,6 +532,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -612,6 +640,10 @@ navigator.AppendChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navig
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -650,6 +682,10 @@ navigator.AppendChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navig
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -729,6 +765,10 @@ navigator.AppendChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navig
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -781,6 +821,10 @@ navigator.AppendChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navig
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
@@ -860,6 +904,10 @@ navigator.AppendChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navig
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeOrder</ReturnType>
       </ReturnValue>
@@ -878,18 +926,18 @@ navigator.AppendChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navig
   
 |XmlNodeOrder|Description|  
 |------------------|-----------------|  
-|<xref:System.Xml.XmlNodeOrder>|The current node of this <xref:System.Xml.XPath.XPathNavigator> is before the current node of the supplied <xref:System.Xml.XPath.XPathNavigator>.|  
-|<xref:System.Xml.XmlNodeOrder>|The current node of this <xref:System.Xml.XPath.XPathNavigator> is after the current node of the supplied <xref:System.Xml.XPath.XPathNavigator>.|  
-|<xref:System.Xml.XmlNodeOrder>|The two <xref:System.Xml.XPath.XPathNavigator> objects are positioned on the same node.|  
-|<xref:System.Xml.XmlNodeOrder>|The node positions cannot be determined relative to each other in the document order, or `null` is specified as the <xref:System.Xml.XPath.XPathNavigator> parameter. This could occur if the two nodes reside in different trees.|  
+|<xref:System.Xml.XmlNodeOrder.Before>|The current node of this <xref:System.Xml.XPath.XPathNavigator> is before the current node of the supplied <xref:System.Xml.XPath.XPathNavigator>.|  
+|<xref:System.Xml.XmlNodeOrder.After>|The current node of this <xref:System.Xml.XPath.XPathNavigator> is after the current node of the supplied <xref:System.Xml.XPath.XPathNavigator>.|  
+|<xref:System.Xml.XmlNodeOrder.Same>|The two <xref:System.Xml.XPath.XPathNavigator> objects are positioned on the same node.|  
+|<xref:System.Xml.XmlNodeOrder.Unknown>|The node positions cannot be determined relative to each other in the document order, or `null` is specified as the <xref:System.Xml.XPath.XPathNavigator> parameter. This could occur if the two nodes reside in different trees.|  
   
  The <xref:System.Xml.XPath.XPathNavigator.ComparePosition%2A> method's behavior is dependent on the <xref:System.Xml.XPath.XPathNodeType> the <xref:System.Xml.XPath.XPathNavigator> is currently positioned on. When comparing nodes in the XML document, the following rules apply:  
   
--   <xref:System.Xml.XPath.XPathNodeType> nodes: These nodes are returned in document order from the source document.  
+-   <xref:System.Xml.XPath.XPathNodeType.Element> nodes: These nodes are returned in document order from the source document.  
   
--   <xref:System.Xml.XPath.XPathNodeType> nodes: These nodes may be returned in document order and are always before the <xref:System.Xml.XPath.XPathNodeType> nodes of the parent element.  
+-   <xref:System.Xml.XPath.XPathNodeType.Namespace> nodes: These nodes may be returned in document order and are always before the <xref:System.Xml.XPath.XPathNodeType.Attribute> nodes of the parent element.  
   
--   <xref:System.Xml.XPath.XPathNodeType> nodes: These nodes may be returned in document order. They always come after the <xref:System.Xml.XPath.XPathNodeType> nodes and before any child nodes of the parent node.  
+-   <xref:System.Xml.XPath.XPathNodeType.Attribute> nodes: These nodes may be returned in document order. They always come after the <xref:System.Xml.XPath.XPathNodeType.Namespace> nodes and before any child nodes of the parent node.  
   
 > [!NOTE]
 >  For more information about the XPath data model and details about each of the node types, see section 5 of the W3C XML Path Language (XPath) recommendation located at http://www.w3.org/TR/xpath#data-model.  
@@ -920,6 +968,10 @@ navigator.AppendChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navig
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathExpression</ReturnType>
@@ -970,6 +1022,10 @@ navigator.AppendChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navig
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1072,6 +1128,10 @@ editor.CreateAttribute(navigator.Prefix, "attributeName", LookupNamespace(naviga
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlWriter</ReturnType>
       </ReturnValue>
@@ -1163,6 +1223,10 @@ editor.CreateAttribute(navigator.Prefix, "attributeName", LookupNamespace(naviga
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
       </ReturnValue>
@@ -1197,6 +1261,10 @@ editor.CreateAttribute(navigator.Prefix, "attributeName", LookupNamespace(naviga
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1280,6 +1348,10 @@ editor.CreateAttribute(navigator.Prefix, "attributeName", LookupNamespace(naviga
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1362,6 +1434,10 @@ editor.CreateAttribute(navigator.Prefix, "attributeName", LookupNamespace(naviga
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1454,6 +1530,10 @@ nav.Evaluate("Price/text()*10");
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1545,6 +1625,10 @@ nav.Evaluate(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1640,6 +1724,10 @@ nav.Evaluate(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1734,6 +1822,10 @@ nav.Evaluate(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1775,6 +1867,10 @@ nav.Evaluate(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1818,6 +1914,10 @@ nav.Evaluate(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;</ReturnType>
       </ReturnValue>
@@ -1836,9 +1936,9 @@ nav.Evaluate(expr);
   
 |XmlNamespaceScope Value|Namespaces Returned|  
 |-----------------------------|-------------------------|  
-|<xref:System.Xml.XmlNamespaceScope>|All namespaces defined in the scope of the current node. This includes the `xmlns:xml` namespace, which is always declared implicitly. The order of the namespaces returned is not defined.|  
-|<xref:System.Xml.XmlNamespaceScope>|All namespaces defined in the scope of the current node, excluding the `xmlns:xml` namespace, which is always declared implicitly. The order of the namespaces returned is not defined.|  
-|<xref:System.Xml.XmlNamespaceScope>|All namespaces that are defined locally at the current node.|  
+|<xref:System.Xml.XmlNamespaceScope.All>|All namespaces defined in the scope of the current node. This includes the `xmlns:xml` namespace, which is always declared implicitly. The order of the namespaces returned is not defined.|  
+|<xref:System.Xml.XmlNamespaceScope.ExcludeXml>|All namespaces defined in the scope of the current node, excluding the `xmlns:xml` namespace, which is always declared implicitly. The order of the namespaces returned is not defined.|  
+|<xref:System.Xml.XmlNamespaceScope.Local>|All namespaces that are defined locally at the current node.|  
   
  ]]></format>
         </remarks>
@@ -1861,6 +1961,10 @@ nav.Evaluate(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1889,6 +1993,10 @@ nav.Evaluate(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1906,8 +2014,8 @@ nav.Evaluate(expr);
   
 |XPathNodeType Node|Child XPathNodeType Nodes|  
 |------------------------|-------------------------------|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, or <xref:System.Xml.XPath.XPathNodeType> nodes. **Note:**  <xref:System.Xml.XmlNodeType> is equivalent to <xref:System.Xml.XPath.XPathNodeType> when using the <xref:System.Xml.XmlDocument> class and can have the same children as an element.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType> or <xref:System.Xml.XPath.XPathNodeType> nodes.|  
+|<xref:System.Xml.XPath.XPathNodeType.Root>|<xref:System.Xml.XPath.XPathNodeType.Element>, <xref:System.Xml.XPath.XPathNodeType.Comment>, or <xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction> nodes. **Note:**  <xref:System.Xml.XmlNodeType.DocumentFragment> is equivalent to <xref:System.Xml.XPath.XPathNodeType.Root> when using the <xref:System.Xml.XmlDocument> class and can have the same children as an element.|  
+|<xref:System.Xml.XPath.XPathNodeType.Element>|<xref:System.Xml.XPath.XPathNodeType.Element>, <xref:System.Xml.XPath.XPathNodeType.Text>, <xref:System.Xml.XPath.XPathNodeType.Comment>, <xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>, <xref:System.Xml.XPath.XPathNodeType.Whitespace> or <xref:System.Xml.XPath.XPathNodeType.SignificantWhitespace> nodes.|  
 |All other <xref:System.Xml.XPath.XPathNodeType> nodes|Cannot have child nodes.|  
   
  ]]></format>
@@ -1931,6 +2039,10 @@ nav.Evaluate(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -2010,6 +2122,10 @@ nav.Evaluate(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlWriter</ReturnType>
@@ -2095,6 +2211,10 @@ nav.Evaluate(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2184,6 +2304,10 @@ nav.Evaluate(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2275,6 +2399,10 @@ nav.Evaluate(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2363,6 +2491,10 @@ nav.Evaluate(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlWriter</ReturnType>
       </ReturnValue>
@@ -2447,6 +2579,10 @@ nav.Evaluate(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2536,6 +2672,10 @@ nav.Evaluate(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2627,6 +2767,10 @@ nav.Evaluate(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2714,6 +2858,10 @@ nav.Evaluate(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2816,6 +2964,10 @@ navigator.InsertElementAfter(navigator.Prefix, "pages", LookupNamespaceURI(navig
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2917,6 +3069,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2966,6 +3122,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3007,6 +3167,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3033,6 +3197,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3079,6 +3247,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -3095,16 +3267,16 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
 |XPathNodeType|Property Value|  
 |-------------------|--------------------|  
-|<xref:System.Xml.XPath.XPathNodeType>|The local name of the element.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The local name of the attribute.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The prefix associated with the namespace URI.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The target of the processing instruction.|  
+|<xref:System.Xml.XPath.XPathNodeType.Element>|The local name of the element.|  
+|<xref:System.Xml.XPath.XPathNodeType.Attribute>|The local name of the attribute.|  
+|<xref:System.Xml.XPath.XPathNodeType.Namespace>|The prefix associated with the namespace URI.|  
+|<xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>|The target of the processing instruction.|  
 |All other <xref:System.Xml.XPath.XPathNodeType> nodes|<xref:System.String.Empty?displayProperty=fullName>.|  
   
    
   
 ## Examples  
- The following example iterates over the node tree recursively, and displays information about <xref:System.Xml.XPath.XPathNodeType> and <xref:System.Xml.XPath.XPathNodeType> nodes.  
+ The following example iterates over the node tree recursively, and displays information about <xref:System.Xml.XPath.XPathNodeType.Element> and <xref:System.Xml.XPath.XPathNodeType.Text> nodes.  
   
  [!code-cpp[XPathNavigatorMethods#29](~/samples/snippets/cpp/VS_Snippets_Data/XPathNavigatorMethods/CPP/xpathnavigatormethods.cpp#29)]
  [!code-csharp[XPathNavigatorMethods#29](~/samples/snippets/csharp/VS_Snippets_Data/XPathNavigatorMethods/CS/xpathnavigatormethods.cs#29)]
@@ -3165,6 +3337,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -3211,6 +3387,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -3251,6 +3431,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3297,6 +3481,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3381,6 +3569,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3420,6 +3612,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3465,6 +3661,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3485,8 +3685,8 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
 |Current Node's XPathNodeType|Child Node's XPathNodeType|  
 |----------------------------------|--------------------------------|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, or <xref:System.Xml.XPath.XPathNodeType>.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, or <xref:System.Xml.XPath.XPathNodeType>.|  
+|<xref:System.Xml.XPath.XPathNodeType.Root>|<xref:System.Xml.XPath.XPathNodeType.Element>, <xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>, <xref:System.Xml.XPath.XPathNodeType.Comment>, or <xref:System.Xml.XPath.XPathNodeType.Text>.|  
+|<xref:System.Xml.XPath.XPathNodeType.Element>|<xref:System.Xml.XPath.XPathNodeType.Element>, <xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>, <xref:System.Xml.XPath.XPathNodeType.Comment>, or <xref:System.Xml.XPath.XPathNodeType.Text>.|  
 |All other <xref:System.Xml.XPath.XPathNodeType> values|None.|  
   
  ]]></format>
@@ -3510,6 +3710,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3551,6 +3755,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3580,6 +3788,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3662,6 +3874,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3673,7 +3889,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Xml.XPath.XPathNodeType> and <xref:System.Xml.XPath.XPathNodeType> are the only two <xref:System.Xml.XPath.XPathNodeType> values that can have children. This property always returns `false` for all other <xref:System.Xml.XPath.XPathNodeType> node types.  
+ <xref:System.Xml.XPath.XPathNodeType.Root> and <xref:System.Xml.XPath.XPathNodeType.Element> are the only two <xref:System.Xml.XPath.XPathNodeType> values that can have children. This property always returns `false` for all other <xref:System.Xml.XPath.XPathNodeType> node types.  
   
    
   
@@ -3701,6 +3917,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3744,6 +3964,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3807,6 +4031,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3823,7 +4051,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
 ## Remarks  
   
--   The <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method does not move to attribute or namespace nodes. If the <xref:System.Xml.XPath.XPathNodeType> parameter value is <xref:System.Xml.XPath.XPathNodeType> or <xref:System.Xml.XPath.XPathNodeType>, the <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method returns `false` and the position of the <xref:System.Xml.XPath.XPathNavigator> is unchanged.  
+-   The <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method does not move to attribute or namespace nodes. If the <xref:System.Xml.XPath.XPathNodeType> parameter value is <xref:System.Xml.XPath.XPathNodeType.Attribute> or <xref:System.Xml.XPath.XPathNodeType.Namespace>, the <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method returns `false` and the position of the <xref:System.Xml.XPath.XPathNavigator> is unchanged.  
   
 -   If the <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method returns `false`, the position of the <xref:System.Xml.XPath.XPathNavigator> is unchanged.  
   
@@ -3890,6 +4118,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -3974,6 +4206,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -3992,7 +4228,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
 ## Remarks  
   
--   The <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method does not move to attribute or namespace nodes. If the <xref:System.Xml.XPath.XPathNodeType> parameter value is <xref:System.Xml.XPath.XPathNodeType> or <xref:System.Xml.XPath.XPathNodeType>, the <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method returns `false` and the position of the <xref:System.Xml.XPath.XPathNavigator> is unchanged.  
+-   The <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method does not move to attribute or namespace nodes. If the <xref:System.Xml.XPath.XPathNodeType> parameter value is <xref:System.Xml.XPath.XPathNodeType.Attribute> or <xref:System.Xml.XPath.XPathNodeType.Namespace>, the <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method returns `false` and the position of the <xref:System.Xml.XPath.XPathNavigator> is unchanged.  
   
 -   If the <xref:System.Xml.XPath.XPathNavigator> boundary passed as a parameter is not positioned after the position of the current <xref:System.Xml.XPath.XPathNavigator> it is ignored.  
   
@@ -4005,7 +4241,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
    
   
 ## Examples  
- In the following example, the <xref:System.Xml.XPath.XPathNavigator> is moved from the root of the `contosoBooks.xml` file to the following `price` element. A clone of the <xref:System.Xml.XPath.XPathNavigator> object is made using the <xref:System.Xml.XPath.XPathNavigator.Clone%2A> method. The cloned <xref:System.Xml.XPath.XPathNavigator>, positioned on the `price` element, will be used as a boundary. Changes in the position of the cloned <xref:System.Xml.XPath.XPathNavigator> do not affect the original <xref:System.Xml.XPath.XPathNavigator>. The original <xref:System.Xml.XPath.XPathNavigator> is moved back to the root of the `contosoBooks.xml` file using the <xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A> method. The title and first and last name of the author are retrieved using the <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method and an <xref:System.Xml.XPath.XPathNodeType> of <xref:System.Xml.XPath.XPathNodeType>. The <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method will return true until the `price` element boundary is reached.  
+ In the following example, the <xref:System.Xml.XPath.XPathNavigator> is moved from the root of the `contosoBooks.xml` file to the following `price` element. A clone of the <xref:System.Xml.XPath.XPathNavigator> object is made using the <xref:System.Xml.XPath.XPathNavigator.Clone%2A> method. The cloned <xref:System.Xml.XPath.XPathNavigator>, positioned on the `price` element, will be used as a boundary. Changes in the position of the cloned <xref:System.Xml.XPath.XPathNavigator> do not affect the original <xref:System.Xml.XPath.XPathNavigator>. The original <xref:System.Xml.XPath.XPathNavigator> is moved back to the root of the `contosoBooks.xml` file using the <xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A> method. The title and first and last name of the author are retrieved using the <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method and an <xref:System.Xml.XPath.XPathNodeType> of <xref:System.Xml.XPath.XPathNodeType.Text>. The <xref:System.Xml.XPath.XPathNavigator.MoveToFollowing%2A> method will return true until the `price` element boundary is reached.  
   
  [!code-cpp[XPathNavigatorMethods#27](~/samples/snippets/cpp/VS_Snippets_Data/XPathNavigatorMethods/CPP/xpathnavigatormethods.cpp#27)]
  [!code-csharp[XPathNavigatorMethods#27](~/samples/snippets/csharp/VS_Snippets_Data/XPathNavigatorMethods/CS/xpathnavigatormethods.cs#27)]
@@ -4065,6 +4301,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4158,6 +4398,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4200,6 +4444,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4245,6 +4493,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4319,6 +4571,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4340,10 +4596,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
 |Current Node's XPathNodeType|Sibling Node's XPathNodeType|  
 |----------------------------------|----------------------------------|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, or <xref:System.Xml.XPath.XPathNodeType>.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, or <xref:System.Xml.XPath.XPathNodeType>.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, or <xref:System.Xml.XPath.XPathNodeType>.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, or <xref:System.Xml.XPath.XPathNodeType>.|  
+|<xref:System.Xml.XPath.XPathNodeType.Element>|<xref:System.Xml.XPath.XPathNodeType.Element>, <xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>, <xref:System.Xml.XPath.XPathNodeType.Comment>, or <xref:System.Xml.XPath.XPathNodeType.Text>.|  
+|<xref:System.Xml.XPath.XPathNodeType.Text>|<xref:System.Xml.XPath.XPathNodeType.Element>, <xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>, <xref:System.Xml.XPath.XPathNodeType.Comment>, or <xref:System.Xml.XPath.XPathNodeType.Text>.|  
+|<xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>|<xref:System.Xml.XPath.XPathNodeType.Element>, <xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>, <xref:System.Xml.XPath.XPathNodeType.Comment>, or <xref:System.Xml.XPath.XPathNodeType.Text>.|  
+|<xref:System.Xml.XPath.XPathNodeType.Comment>|<xref:System.Xml.XPath.XPathNodeType.Element>, <xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>, <xref:System.Xml.XPath.XPathNodeType.Comment>, or <xref:System.Xml.XPath.XPathNodeType.Text>.|  
 |All other <xref:System.Xml.XPath.XPathNodeType> values|None.|  
   
  ]]></format>
@@ -4367,6 +4623,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4400,6 +4660,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4482,6 +4746,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4524,6 +4792,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -4571,6 +4843,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4588,15 +4864,15 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
 |XPathNodeType|Parent Node|  
 |-------------------|-----------------|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType> nodes do not have parents.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType> or <xref:System.Xml.XPath.XPathNodeType> node.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType> node.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType> node.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType> node.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType> or <xref:System.Xml.XPath.XPathNodeType> node.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType> or <xref:System.Xml.XPath.XPathNodeType> node.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType> or <xref:System.Xml.XPath.XPathNodeType> node.|  
-|<xref:System.Xml.XPath.XPathNodeType>|<xref:System.Xml.XPath.XPathNodeType> or <xref:System.Xml.XPath.XPathNodeType> node.|  
+|<xref:System.Xml.XPath.XPathNodeType.Root>|<xref:System.Xml.XPath.XPathNodeType.Root> nodes do not have parents.|  
+|<xref:System.Xml.XPath.XPathNodeType.Element>|<xref:System.Xml.XPath.XPathNodeType.Element> or <xref:System.Xml.XPath.XPathNodeType.Root> node.|  
+|<xref:System.Xml.XPath.XPathNodeType.Attribute>|<xref:System.Xml.XPath.XPathNodeType.Element> node.|  
+|<xref:System.Xml.XPath.XPathNodeType.Text>|<xref:System.Xml.XPath.XPathNodeType.Element> node.|  
+|<xref:System.Xml.XPath.XPathNodeType.Namespace>|<xref:System.Xml.XPath.XPathNodeType.Element> node.|  
+|<xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>|<xref:System.Xml.XPath.XPathNodeType.Element> or <xref:System.Xml.XPath.XPathNodeType.Root> node.|  
+|<xref:System.Xml.XPath.XPathNodeType.Comment>|<xref:System.Xml.XPath.XPathNodeType.Element> or <xref:System.Xml.XPath.XPathNodeType.Root> node.|  
+|<xref:System.Xml.XPath.XPathNodeType.Whitespace>|<xref:System.Xml.XPath.XPathNodeType.Element> or <xref:System.Xml.XPath.XPathNodeType.Root> node.|  
+|<xref:System.Xml.XPath.XPathNodeType.SignificantWhitespace>|<xref:System.Xml.XPath.XPathNodeType.Element> or <xref:System.Xml.XPath.XPathNodeType.Root> node.|  
   
    
   
@@ -4625,6 +4901,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -4652,6 +4932,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -4692,6 +4976,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -4708,16 +4996,16 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
 |XPathNodeType|Property Value|  
 |-------------------|--------------------|  
-|<xref:System.Xml.XPath.XPathNodeType>|The qualified name of the <xref:System.Xml.XPath.XPathNodeType>. In the following example, `<bk:book>`, the name of the element node is `bk:book`.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The qualified name of the <xref:System.Xml.XPath.XPathNodeType>. In the following example, `<book bk:genre='novel'>`, the name of the <xref:System.Xml.XPath.XPathNodeType> node is `bk:genre`.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The prefix associated with the namespace URI. In the following namespace declaration, `xmlns:bk='urn:samples'`, the <xref:System.Xml.XPath.XPathNavigator.Name%2A> property returns `bk`.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The target of the <xref:System.Xml.XPath.XPathNodeType>. In the following example, `<?xml-stylesheet type='text/xsl' href= 'books.xsl'?>`, the <xref:System.Xml.XPath.XPathNavigator.Name%2A> property returns `xml-stylesheet`.|  
+|<xref:System.Xml.XPath.XPathNodeType.Element>|The qualified name of the <xref:System.Xml.XPath.XPathNodeType.Element>. In the following example, `<bk:book>`, the name of the element node is `bk:book`.|  
+|<xref:System.Xml.XPath.XPathNodeType.Attribute>|The qualified name of the <xref:System.Xml.XPath.XPathNodeType.Attribute>. In the following example, `<book bk:genre='novel'>`, the name of the <xref:System.Xml.XPath.XPathNodeType.Attribute> node is `bk:genre`.|  
+|<xref:System.Xml.XPath.XPathNodeType.Namespace>|The prefix associated with the namespace URI. In the following namespace declaration, `xmlns:bk='urn:samples'`, the <xref:System.Xml.XPath.XPathNavigator.Name%2A> property returns `bk`.|  
+|<xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>|The target of the <xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>. In the following example, `<?xml-stylesheet type='text/xsl' href= 'books.xsl'?>`, the <xref:System.Xml.XPath.XPathNavigator.Name%2A> property returns `xml-stylesheet`.|  
 |All other <xref:System.Xml.XPath.XPathNodeType> nodes|<xref:System.String.Empty?displayProperty=fullName>.|  
   
    
   
 ## Examples  
- The following example iterates over the node tree recursively, and displays information about <xref:System.Xml.XPath.XPathNodeType> and <xref:System.Xml.XPath.XPathNodeType> nodes.  
+ The following example iterates over the node tree recursively, and displays information about <xref:System.Xml.XPath.XPathNodeType.Element> and <xref:System.Xml.XPath.XPathNodeType.Text> nodes.  
   
  [!code-cpp[XPathNavigatorMethods#29](~/samples/snippets/cpp/VS_Snippets_Data/XPathNavigatorMethods/CPP/xpathnavigatormethods.cpp#29)]
  [!code-csharp[XPathNavigatorMethods#29](~/samples/snippets/csharp/VS_Snippets_Data/XPathNavigatorMethods/CS/xpathnavigatormethods.cs#29)]
@@ -4778,6 +5066,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -4792,12 +5084,12 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
   
  The <xref:System.Xml.XPath.XPathNavigator.NamespaceURI%2A> property returns `urn:samples` for the node `<bk:book xmlns:bk='urn:samples'>`.  
   
- Only <xref:System.Xml.XPath.XPathNodeType> and <xref:System.Xml.XPath.XPathNodeType><xref:System.Xml.XPath.XPathNodeType> nodes can have a namespace URI.  
+ Only <xref:System.Xml.XPath.XPathNodeType.Element> and <xref:System.Xml.XPath.XPathNodeType.Attribute><xref:System.Xml.XPath.XPathNodeType> nodes can have a namespace URI.  
   
    
   
 ## Examples  
- The following example iterates over the node tree recursively, and displays information about <xref:System.Xml.XPath.XPathNodeType> and <xref:System.Xml.XPath.XPathNodeType> nodes.  
+ The following example iterates over the node tree recursively, and displays information about <xref:System.Xml.XPath.XPathNodeType.Element> and <xref:System.Xml.XPath.XPathNodeType.Text> nodes.  
   
  [!code-cpp[XPathNavigatorMethods#29](~/samples/snippets/cpp/VS_Snippets_Data/XPathNavigatorMethods/CPP/xpathnavigatormethods.cpp#29)]
  [!code-csharp[XPathNavigatorMethods#29](~/samples/snippets/csharp/VS_Snippets_Data/XPathNavigatorMethods/CS/xpathnavigatormethods.cs#29)]
@@ -4858,6 +5150,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNameTable</ReturnType>
       </ReturnValue>
@@ -4891,6 +5187,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEqualityComparer</ReturnType>
@@ -4968,6 +5268,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeType</ReturnType>
       </ReturnValue>
@@ -4978,7 +5282,7 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example iterates over the node tree recursively, and displays information about <xref:System.Xml.XPath.XPathNodeType> and <xref:System.Xml.XPath.XPathNodeType> nodes.  
+ The following example iterates over the node tree recursively, and displays information about <xref:System.Xml.XPath.XPathNodeType.Element> and <xref:System.Xml.XPath.XPathNodeType.Text> nodes.  
   
  [!code-cpp[XPathNavigatorMethods#29](~/samples/snippets/cpp/VS_Snippets_Data/XPathNavigatorMethods/CPP/xpathnavigatormethods.cpp#29)]
  [!code-csharp[XPathNavigatorMethods#29](~/samples/snippets/csharp/VS_Snippets_Data/XPathNavigatorMethods/CS/xpathnavigatormethods.cs#29)]
@@ -5038,6 +5342,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -5117,6 +5425,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -5127,12 +5439,12 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Xml.XPath.XPathNavigator.Prefix%2A> property gets the namespace prefix associated with the current node. For example, the <xref:System.Xml.XPath.XPathNavigator.Prefix%2A> property returns `bk` for the `<bk:book>` element. If a prefix does not exist, or the <xref:System.Xml.XPath.XPathNodeType> of the current node is not <xref:System.Xml.XPath.XPathNodeType> or <xref:System.Xml.XPath.XPathNodeType>, the <xref:System.Xml.XPath.XPathNavigator.Prefix%2A> property returns <xref:System.String.Empty?displayProperty=fullName>.  
+ The <xref:System.Xml.XPath.XPathNavigator.Prefix%2A> property gets the namespace prefix associated with the current node. For example, the <xref:System.Xml.XPath.XPathNavigator.Prefix%2A> property returns `bk` for the `<bk:book>` element. If a prefix does not exist, or the <xref:System.Xml.XPath.XPathNodeType> of the current node is not <xref:System.Xml.XPath.XPathNodeType.Element> or <xref:System.Xml.XPath.XPathNodeType.Attribute>, the <xref:System.Xml.XPath.XPathNavigator.Prefix%2A> property returns <xref:System.String.Empty?displayProperty=fullName>.  
   
    
   
 ## Examples  
- The following example iterates over the node tree recursively, and displays information about <xref:System.Xml.XPath.XPathNodeType> and <xref:System.Xml.XPath.XPathNodeType> nodes.  
+ The following example iterates over the node tree recursively, and displays information about <xref:System.Xml.XPath.XPathNodeType.Element> and <xref:System.Xml.XPath.XPathNodeType.Text> nodes.  
   
  [!code-cpp[XPathNavigatorMethods#29](~/samples/snippets/cpp/VS_Snippets_Data/XPathNavigatorMethods/CPP/xpathnavigatormethods.cpp#29)]
  [!code-csharp[XPathNavigatorMethods#29](~/samples/snippets/csharp/VS_Snippets_Data/XPathNavigatorMethods/CS/xpathnavigatormethods.cs#29)]
@@ -5192,6 +5504,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlWriter</ReturnType>
@@ -5279,6 +5595,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5370,6 +5690,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5463,6 +5787,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5552,6 +5880,10 @@ navigator.InsertElementBefore(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5656,6 +5988,10 @@ navigator.PrependChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlReader</ReturnType>
       </ReturnValue>
@@ -5667,7 +6003,7 @@ navigator.PrependChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Xml.XmlReader> object is created with the current node and its child nodes, the <xref:System.Xml.XmlReader> object's <xref:System.Xml.XmlReader.ReadState%2A> property is set to <xref:System.Xml.ReadState>. When the <xref:System.Xml.XmlReader> object's <xref:System.Xml.XmlReader.Read%2A> method is called for the first time, the <xref:System.Xml.XmlReader> is moved to the current node of the <xref:System.Xml.XPath.XPathNavigator>. The new <xref:System.Xml.XmlReader> object continues to read until the end of the XML tree is reached. At this point, the <xref:System.Xml.XmlReader.Read%2A> method returns `false` and the <xref:System.Xml.XmlReader> object's <xref:System.Xml.XmlReader.ReadState%2A> property is set to <xref:System.Xml.ReadState>.  
+ When the <xref:System.Xml.XmlReader> object is created with the current node and its child nodes, the <xref:System.Xml.XmlReader> object's <xref:System.Xml.XmlReader.ReadState%2A> property is set to <xref:System.Xml.ReadState.Initial>. When the <xref:System.Xml.XmlReader> object's <xref:System.Xml.XmlReader.Read%2A> method is called for the first time, the <xref:System.Xml.XmlReader> is moved to the current node of the <xref:System.Xml.XPath.XPathNavigator>. The new <xref:System.Xml.XmlReader> object continues to read until the end of the XML tree is reached. At this point, the <xref:System.Xml.XmlReader.Read%2A> method returns `false` and the <xref:System.Xml.XmlReader> object's <xref:System.Xml.XmlReader.ReadState%2A> property is set to <xref:System.Xml.ReadState.EndOfFile>.  
   
 > [!NOTE]
 >  Changing the position of the <xref:System.Xml.XmlReader> object does not affect the position of the <xref:System.Xml.XPath.XPathNavigator>.  
@@ -5745,6 +6081,10 @@ navigator.PrependChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlWriter</ReturnType>
@@ -5831,6 +6171,10 @@ navigator.PrependChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -5922,6 +6266,10 @@ navigator.PrependChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -6015,6 +6363,10 @@ navigator.PrependChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -6102,6 +6454,10 @@ navigator.PrependChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navi
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.IXmlSchemaInfo</ReturnType>
       </ReturnValue>
@@ -6112,7 +6468,7 @@ navigator.PrependChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navi
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Schema information can be set on <xref:System.Xml.XPath.XPathNodeType>, <xref:System.Xml.XPath.XPathNodeType>, or on <xref:System.Xml.XPath.XPathNodeType> nodes with a non-`null`<xref:System.Xml.XPath.XPathNavigator.ValueType%2A>. If the current node is not one of the above node types, or if the <xref:System.Xml.XPath.XPathNavigator> instance does not report schema information, the <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> property returns `null`.  
+ Schema information can be set on <xref:System.Xml.XPath.XPathNodeType.Element>, <xref:System.Xml.XPath.XPathNodeType.Attribute>, or on <xref:System.Xml.XPath.XPathNodeType.Text> nodes with a non-`null`<xref:System.Xml.XPath.XPathNavigator.ValueType%2A>. If the current node is not one of the above node types, or if the <xref:System.Xml.XPath.XPathNavigator> instance does not report schema information, the <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> property returns `null`.  
   
  ]]></format>
         </remarks>
@@ -6135,6 +6491,10 @@ navigator.PrependChildElement(navigator.Prefix, "pages", LookupNamespaceURI(navi
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeIterator</ReturnType>
@@ -6237,6 +6597,10 @@ while (iterator.MoveNext())
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeIterator</ReturnType>
@@ -6384,6 +6748,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeIterator</ReturnType>
       </ReturnValue>
@@ -6463,6 +6831,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeIterator</ReturnType>
       </ReturnValue>
@@ -6507,6 +6879,10 @@ XPathNodeIterator ni = nav.Select(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeIterator</ReturnType>
@@ -6596,6 +6972,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeIterator</ReturnType>
       </ReturnValue>
@@ -6638,6 +7018,10 @@ XPathNodeIterator ni = nav.Select(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeIterator</ReturnType>
@@ -6688,6 +7072,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeIterator</ReturnType>
       </ReturnValue>
@@ -6733,6 +7121,10 @@ XPathNodeIterator ni = nav.Select(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNodeIterator</ReturnType>
@@ -6787,6 +7179,10 @@ XPathNodeIterator ni = nav.Select(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
@@ -6870,6 +7266,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
       </ReturnValue>
@@ -6951,6 +7351,10 @@ XPathNodeIterator ni = nav.Select(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
@@ -7039,6 +7443,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -7124,6 +7532,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -7205,6 +7617,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -7242,6 +7658,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -7257,14 +7677,14 @@ XPathNodeIterator ni = nav.Select(expr);
   
 |XPathNodeType|Property Value|  
 |-------------------|--------------------|  
-|<xref:System.Xml.XPath.XPathNodeType>|The <xref:System.Xml.XmlNode.InnerText%2A> of the root node.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The <xref:System.Xml.XmlNode.InnerText%2A> of the element.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The value of the attribute.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The content of the text node.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The entire content excluding the target.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The content of the comment.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The white space between mark-up.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The white space between markup in a mixed content model, or white space within an `xml:space='preserve'` scope.|  
+|<xref:System.Xml.XPath.XPathNodeType.Root>|The <xref:System.Xml.XmlNode.InnerText%2A> of the root node.|  
+|<xref:System.Xml.XPath.XPathNodeType.Element>|The <xref:System.Xml.XmlNode.InnerText%2A> of the element.|  
+|<xref:System.Xml.XPath.XPathNodeType.Attribute>|The value of the attribute.|  
+|<xref:System.Xml.XPath.XPathNodeType.Text>|The content of the text node.|  
+|<xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>|The entire content excluding the target.|  
+|<xref:System.Xml.XPath.XPathNodeType.Comment>|The content of the comment.|  
+|<xref:System.Xml.XPath.XPathNodeType.Whitespace>|The white space between mark-up.|  
+|<xref:System.Xml.XPath.XPathNodeType.SignificantWhitespace>|The white space between markup in a mixed content model, or white space within an `xml:space='preserve'` scope.|  
   
  ]]></format>
         </remarks>
@@ -7288,6 +7708,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -7304,16 +7728,16 @@ XPathNodeIterator ni = nav.Select(expr);
   
 |XPathNodeType|TypedValue Returned|  
 |-------------------|-------------------------|  
-|<xref:System.Xml.XPath.XPathNodeType>|Returns a <xref:System.String> object containing all <xref:System.Xml.XPath.XPathNodeType> node descendants of the document, concatenated and separated by white space. If the document does not have any <xref:System.Xml.XPath.XPathNodeType> node children, <xref:System.String.Empty?displayProperty=fullName> is returned.|  
-|<xref:System.Xml.XPath.XPathNodeType><br /><br /> (typed or simple content)|Returns an <xref:System.Object> that represents the typed value of the <xref:System.Xml.XPath.XPathNodeType>.<br /><br /> If the <xref:System.Xml.XPath.XPathNodeType> is defined as an XML Schema list data type, then the node value is exposed as an array of objects. Each <xref:System.Object> in the array contains the typed value of a child of the element.|  
-|<xref:System.Xml.XPath.XPathNodeType><br /><br /> (untyped, mixed, or complex content)|Returns a <xref:System.String> object containing all <xref:System.Xml.XPath.XPathNodeType> node descendants of the <xref:System.Xml.XPath.XPathNodeType> (including string representations of typed values), concatenated and separated by white space. If the <xref:System.Xml.XPath.XPathNodeType> does not have any <xref:System.Xml.XPath.XPathNodeType> node children, <xref:System.String.Empty?displayProperty=fullName> is returned.|  
-|<xref:System.Xml.XPath.XPathNodeType><br /><br /> (typed or simple content)|Returns an <xref:System.Object> that represents the typed value of the <xref:System.Xml.XPath.XPathNodeType>. The <xref:System.Object> is boxed as a .NET Framework <xref:System.Type> value.<br /><br /> If the <xref:System.Xml.XPath.XPathNodeType> is defined as an XML Schema list data type, the node value is exposed as an array of objects. Each <xref:System.Object> in the array contains the typed value of a child of the <xref:System.Xml.XPath.XPathNodeType>.|  
-|<xref:System.Xml.XPath.XPathNodeType>|A <xref:System.String> object containing the text.|  
-|<xref:System.Xml.XPath.XPathNodeType>|A <xref:System.String> object containing the content of the comments, excluding the surrounding `<!--` and `-->`.|  
-|<xref:System.Xml.XPath.XPathNodeType>|A <xref:System.String> object containing the content of the processing instruction, excluding the target and surrounding `<?` and `?>`.|  
-|<xref:System.Xml.XPath.XPathNodeType>|A <xref:System.String> object containing the namespace name.|  
-|<xref:System.Xml.XPath.XPathNodeType>|A <xref:System.String> object containing the text of the node.|  
-|<xref:System.Xml.XPath.XPathNodeType>|A <xref:System.String> object containing the text of the node.|  
+|<xref:System.Xml.XPath.XPathNodeType.Root>|Returns a <xref:System.String> object containing all <xref:System.Xml.XPath.XPathNodeType.Text> node descendants of the document, concatenated and separated by white space. If the document does not have any <xref:System.Xml.XPath.XPathNodeType.Text> node children, <xref:System.String.Empty?displayProperty=fullName> is returned.|  
+|<xref:System.Xml.XPath.XPathNodeType.Element><br /><br /> (typed or simple content)|Returns an <xref:System.Object> that represents the typed value of the <xref:System.Xml.XPath.XPathNodeType.Element>.<br /><br /> If the <xref:System.Xml.XPath.XPathNodeType.Element> is defined as an XML Schema list data type, then the node value is exposed as an array of objects. Each <xref:System.Object> in the array contains the typed value of a child of the element.|  
+|<xref:System.Xml.XPath.XPathNodeType.Element><br /><br /> (untyped, mixed, or complex content)|Returns a <xref:System.String> object containing all <xref:System.Xml.XPath.XPathNodeType.Text> node descendants of the <xref:System.Xml.XPath.XPathNodeType.Element> (including string representations of typed values), concatenated and separated by white space. If the <xref:System.Xml.XPath.XPathNodeType.Element> does not have any <xref:System.Xml.XPath.XPathNodeType.Text> node children, <xref:System.String.Empty?displayProperty=fullName> is returned.|  
+|<xref:System.Xml.XPath.XPathNodeType.Attribute><br /><br /> (typed or simple content)|Returns an <xref:System.Object> that represents the typed value of the <xref:System.Xml.XPath.XPathNodeType.Attribute>. The <xref:System.Object> is boxed as a .NET Framework <xref:System.Type> value.<br /><br /> If the <xref:System.Xml.XPath.XPathNodeType.Attribute> is defined as an XML Schema list data type, the node value is exposed as an array of objects. Each <xref:System.Object> in the array contains the typed value of a child of the <xref:System.Xml.XPath.XPathNodeType.Attribute>.|  
+|<xref:System.Xml.XPath.XPathNodeType.Text>|A <xref:System.String> object containing the text.|  
+|<xref:System.Xml.XPath.XPathNodeType.Comment>|A <xref:System.String> object containing the content of the comments, excluding the surrounding `<!--` and `-->`.|  
+|<xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>|A <xref:System.String> object containing the content of the processing instruction, excluding the target and surrounding `<?` and `?>`.|  
+|<xref:System.Xml.XPath.XPathNodeType.Namespace>|A <xref:System.String> object containing the namespace name.|  
+|<xref:System.Xml.XPath.XPathNodeType.Whitespace>|A <xref:System.String> object containing the text of the node.|  
+|<xref:System.Xml.XPath.XPathNodeType.SignificantWhitespace>|A <xref:System.String> object containing the text of the node.|  
   
  ]]></format>
         </remarks>
@@ -7336,6 +7760,10 @@ XPathNodeIterator ni = nav.Select(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -7377,6 +7805,10 @@ XPathNodeIterator ni = nav.Select(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -7421,6 +7853,10 @@ XPathNodeIterator ni = nav.Select(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -7480,6 +7916,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
@@ -7522,6 +7962,10 @@ XPathNodeIterator ni = nav.Select(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -7566,6 +8010,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -7609,6 +8057,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -7651,6 +8103,10 @@ XPathNodeIterator ni = nav.Select(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
@@ -7768,6 +8224,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -7864,6 +8324,10 @@ XPathNodeIterator ni = nav.Select(expr);
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -7899,6 +8363,10 @@ XPathNodeIterator ni = nav.Select(expr);
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaType</ReturnType>

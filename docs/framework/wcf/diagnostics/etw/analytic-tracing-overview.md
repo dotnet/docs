@@ -2,7 +2,7 @@
 title: "Analytic Tracing Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -33,7 +33,7 @@ Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-
 ```  
   
 <system.serviceModel>  
-  <diagnostics>  
+  <diagnostics>  
   
 ```  
   

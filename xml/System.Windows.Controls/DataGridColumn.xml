@@ -662,8 +662,7 @@
 ## Examples  
  The following example uses a style resource to change the style of column headers in the <xref:System.Windows.Controls.DataGrid>. The style of the first column header is then set with an inline style that overrides the <xref:System.Windows.Controls.DataGrid.ColumnHeaderStyle%2A?displayProperty=fullName>.  
   
- [!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnheaderstyle/CS/mainwindow.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datagrid_columnheaderstyle/xaml/mainwindow.xaml#1)]  -->  
+ [!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnheaderstyle/CS/mainwindow.xaml#1)]   
   
  ]]></format>
         </remarks>
@@ -1270,7 +1269,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To hide a column, set its <xref:System.Windows.Controls.DataGridColumn.Visibility%2A> property to <xref:System.Windows.Visibility>.  
+ To hide a column, set its <xref:System.Windows.Controls.DataGridColumn.Visibility%2A> property to <xref:System.Windows.Visibility.Collapsed>.  
   
    
   

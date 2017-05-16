@@ -333,9 +333,9 @@
 ## Remarks  
  The <xref:System.Web.Compilation.BuildProvider.GetResultFlags%2A> method is used by the ASP.NET build environment when using instances of the <xref:System.Web.Compilation.BuildProvider> class to build files and load the compiled assemblies.  
   
- The base <xref:System.Web.Compilation.BuildProvider> class method returns the <xref:System.Web.Compilation.BuildProviderResultFlags> field value, indicating that no special action is required when the virtual path is built.  
+ The base <xref:System.Web.Compilation.BuildProvider> class method returns the <xref:System.Web.Compilation.BuildProviderResultFlags.Default> field value, indicating that no special action is required when the virtual path is built.  
   
- When deriving from the <xref:System.Web.Compilation.BuildProvider> class, you can implement the <xref:System.Web.Compilation.BuildProvider.GetResultFlags%2A> method to return a different <xref:System.Web.Compilation.BuildProviderResultFlags> value for your custom file type or virtual path. For example, if a rebuild of your virtual path requires the containing <xref:System.AppDomain> object to be reloaded, you can return the <xref:System.Web.Compilation.BuildProviderResultFlags> enumeration value from your <xref:System.Web.Compilation.BuildProvider.GetResultFlags%2A> method.  
+ When deriving from the <xref:System.Web.Compilation.BuildProvider> class, you can implement the <xref:System.Web.Compilation.BuildProvider.GetResultFlags%2A> method to return a different <xref:System.Web.Compilation.BuildProviderResultFlags> value for your custom file type or virtual path. For example, if a rebuild of your virtual path requires the containing <xref:System.AppDomain> object to be reloaded, you can return the <xref:System.Web.Compilation.BuildProviderResultFlags.ShutdownAppDomainOnChange> enumeration value from your <xref:System.Web.Compilation.BuildProvider.GetResultFlags%2A> method.  
   
  ]]></format>
         </remarks>

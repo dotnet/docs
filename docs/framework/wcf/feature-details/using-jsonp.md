@@ -2,7 +2,7 @@
 title: "Using JSONP | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,7 +22,7 @@ JSON Padding (JSONP) is a mechanism that enables cross-site scripting support in
 callback({"a" = \"b\" });  
 ```  
   
- In the preceding example the JSON payload, `{"a" = \"b\"}`, is wrapped in a function call, `callback`. The callback function must already be defined in the current Web page. The content type of a JSONP response is “application/javascript”.  
+ In the preceding example the JSON payload, `{"a" = \"b\"}`, is wrapped in a function call, `callback`. The callback function must already be defined in the current Web page. The content type of a JSONP response is "application/javascript".  
   
 ## Using JSONP  
  JSONP is not automatically enabled. To enable it, set the `javascriptCallbackEnabled` attribute to `true` on one of the HTTP standard endpoints (<xref:System.ServiceModel.Description.WebHttpEndpoint> or <xref:System.ServiceModel.Description.WebScriptEndpoint>), as shown in the following example.  

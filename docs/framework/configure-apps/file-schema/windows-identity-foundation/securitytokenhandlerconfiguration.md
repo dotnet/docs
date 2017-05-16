@@ -2,6 +2,7 @@
 title: "&lt;securityTokenHandlerConfiguration&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,13 +27,13 @@ Provides configuration for the collection of token handlers.
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <securityTokenHandlerConfiguration saveBootstrapContext=xs:boolean  
-          maximumClockSkew=TimeSpan>  
-      </securityTokenHandlerConfiguration>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <securityTokenHandlerConfiguration saveBootstrapContext=xs:boolean  
+          maximumClockSkew=TimeSpan>  
+      </securityTokenHandlerConfiguration>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   
@@ -44,7 +45,7 @@ Provides configuration for the collection of token handlers.
 |Attribute|Description|  
 |---------------|-----------------|  
 |saveBootstrapContext|Specifies whether bootstrap tokens should be included in the session token. The value may also be set on a token handler collection by setting the `saveBootstrapContext` attribute on the [\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element. A value set on the token handler collection overrides the value set on the service.|  
-|maximumClockSkew|A <xref:System.TimeSpan> that specifies the maximum allowed clock skew. Controls the maximum allowed clock skew when performing time-sensitive operations, such as validating the expiration time of a sign-in session. The default is 5 minutes, “00:05:00”. For more information about how to specify <xref:System.TimeSpan> values, see [Timespan Values](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md). The maximum clock skew may also be set at the service level by setting the `maximumClockSkew` attribute on the [\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element. A value set on the token handler collection overrides the value set on the service.|  
+|maximumClockSkew|A <xref:System.TimeSpan> that specifies the maximum allowed clock skew. Controls the maximum allowed clock skew when performing time-sensitive operations, such as validating the expiration time of a sign-in session. The default is 5 minutes, "00:05:00". For more information about how to specify <xref:System.TimeSpan> values, see [Timespan Values](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md). The maximum clock skew may also be set at the service level by setting the `maximumClockSkew` attribute on the [\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md) element. A value set on the token handler collection overrides the value set on the service.|  
   
 ### Child Elements  
   

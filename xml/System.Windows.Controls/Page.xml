@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Encapsulates a page of content that can be navigated to and hosted by [!INCLUDE[TLA#tla_iegeneric](~/includes/tlasharptla-iegeneric-md.md)], <see cref="T:System.Windows.Navigation.NavigationWindow" />, and <see cref="T:System.Windows.Controls.Frame" />.</summary>
+    <summary>Encapsulates a page of content that can be navigated to and hosted by Windows Internet Explorer, <see cref="T:System.Windows.Navigation.NavigationWindow" />, and <see cref="T:System.Windows.Controls.Frame" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -166,7 +166,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Page>|  
+|Identifier field|<xref:System.Windows.Controls.Page.BackgroundProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>|  
   
  ]]></format>
@@ -276,7 +276,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Page>|  
+|Identifier field|<xref:System.Windows.Controls.Page.FontFamilyProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
   
  ]]></format>
@@ -421,7 +421,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Page>|  
+|Identifier field|<xref:System.Windows.Controls.Page.ForegroundProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
   
  ]]></format>

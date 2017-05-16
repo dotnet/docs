@@ -453,6 +453,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetIsShared">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsShared" /> property of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control or the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared" /> property of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.SetIsShared%2A> method calls a method in a base class to set a property that indicates whether a particular instance of a control is shared. In the Web Parts control set, a shared control means a control that is visible to all users of a page. This is in contrast to a per-user control, which is visible only to the specific user who added the control to the page.  
+  
+> [!NOTE]
+>  For more on personalization and shared versus per-user controls, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetIsShared">
       <MemberSignature Language="C#" Value="public void SetIsShared (System.Web.UI.WebControls.WebParts.WebPart webPart, bool isShared);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIsShared(class System.Web.UI.WebControls.WebParts.WebPart webPart, bool isShared) cil managed" />
@@ -543,6 +563,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetIsStatic">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsStatic" /> property of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control or the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic" /> property of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.SetIsStatic%2A> method calls a method in a base class to set a property that indicates whether a particular instance of a control is static. In the Web Parts control set, a static control is a control that is declared in the markup of a Web page. This is in contrast to a dynamic control, which is either added to a page programmatically, or added by a user from a catalog of controls. A static control is inherently a shared control, meaning that it is visible to all users of a page, and although users can close a static control, they can never delete (permanently remove) it.  
+  
+> [!NOTE]
+>  For more on personalization, static versus dynamic controls, and shared versus per-user controls, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetIsStatic">
       <MemberSignature Language="C#" Value="public void SetIsStatic (System.Web.UI.WebControls.WebParts.WebPart webPart, bool isStatic);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetIsStatic(class System.Web.UI.WebControls.WebParts.WebPart webPart, bool isStatic) cil managed" />
@@ -695,45 +735,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetIsStatic">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsStatic" /> property of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control or the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsStatic" /> property of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.SetIsStatic%2A> method calls a method in a base class to set a property that indicates whether a particular instance of a control is static. In the Web Parts control set, a static control is a control that is declared in the markup of a Web page. This is in contrast to a dynamic control, which is either added to a page programmatically, or added by a user from a catalog of controls. A static control is inherently a shared control, meaning that it is visible to all users of a page, and although users can close a static control, they can never delete (permanently remove) it.  
-  
-> [!NOTE]
->  For more on personalization, static versus dynamic controls, and shared versus per-user controls, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetIsShared">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the <see cref="P:System.Web.UI.WebControls.WebParts.WebPart.IsShared" /> property of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control or the <see cref="P:System.Web.UI.WebControls.WebParts.WebPartConnection.IsShared" /> property of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartConnection" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.WebPartManagerInternals.SetIsShared%2A> method calls a method in a base class to set a property that indicates whether a particular instance of a control is shared. In the Web Parts control set, a shared control means a control that is visible to all users of a page. This is in contrast to a per-user control, which is visible only to the specific user who added the control to the page.  
-  
-> [!NOTE]
->  For more on personalization and shared versus per-user controls, see [Web Parts Personalization Overview](http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

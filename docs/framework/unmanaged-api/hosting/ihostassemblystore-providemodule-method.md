@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostAssemblyStore::ProvideModule method [.NET Framework hosting]"
   - "ProvideModule method [.NET Framework hosting]"
 ms.assetid: f42e3dd0-c88e-4748-b6c0-4c515a633180
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

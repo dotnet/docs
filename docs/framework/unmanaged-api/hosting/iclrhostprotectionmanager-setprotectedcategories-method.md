@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetProtectedCategories method [.NET Framework hosting]"
   - "ICLRHostProtectionManager::SetProtectedCategories method [.NET Framework hosting]"
 ms.assetid: fa21dc7b-5da7-440b-b59e-9180e5181f9d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

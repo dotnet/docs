@@ -2,7 +2,7 @@
 title: "ICorDebugNativeFrame::GetLocalRegisterValue Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetLocalRegisterValue method [.NET Framework debugging]"
   - "ICorDebugNativeFrame::GetLocalRegisterValue method [.NET Framework debugging]"
 ms.assetid: 5ccb74f3-f891-430c-b70a-e370624edde2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -79,6 +80,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +118,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -158,6 +164,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.AsymmetricAlgorithm</ReturnType>
       </ReturnValue>
@@ -193,6 +203,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.AsymmetricAlgorithm</ReturnType>
       </ReturnValue>
@@ -202,112 +216,35 @@
       <Docs>
         <param name="algName">The asymmetric algorithm implementation to use. The following table shows the valid values for the <c>algName</c> parameter and the algorithms they map to.  
   
- <list type="table">  
-<listheader>  
-<term> Parameter value  
+ <list type="table"><listheader><term> Parameter value  
   
- </term>  
-<description> Implements  
+ </term><description> Implements  
   
- </description>  
-</listheader>  
-<item>  
-<term> System.Security.Cryptography.AsymmetricAlgorithm  
+ </description></listheader><item><term> System.Security.Cryptography.AsymmetricAlgorithm  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" />  
+ </term><description><see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /></description></item><item><term> RSA  
   
- </description>  
-</item>  
-<item>  
-<term> RSA  
+ </term><description><see cref="T:System.Security.Cryptography.RSA" /></description></item><item><term> System.Security.Cryptography.RSA  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.RSA" />  
+ </term><description><see cref="T:System.Security.Cryptography.RSA" /></description></item><item><term> DSA  
   
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.RSA  
+ </term><description><see cref="T:System.Security.Cryptography.DSA" /></description></item><item><term> System.Security.Cryptography.DSA  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.RSA" />  
+ </term><description><see cref="T:System.Security.Cryptography.DSA" /></description></item><item><term> ECDsa  
   
- </description>  
-</item>  
-<item>  
-<term> DSA  
+ </term><description><see cref="T:System.Security.Cryptography.ECDsa" /></description></item><item><term> ECDsaCng  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.DSA" />  
+ </term><description><see cref="T:System.Security.Cryptography.ECDsaCng" /></description></item><item><term> System.Security.Cryptography.ECDsaCng  
   
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.DSA  
+ </term><description><see cref="T:System.Security.Cryptography.ECDsaCng" /></description></item><item><term> ECDH  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.DSA" />  
+ </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellman" /></description></item><item><term> ECDiffieHellman  
   
- </description>  
-</item>  
-<item>  
-<term> ECDsa  
+ </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellman" /></description></item><item><term> ECDiffieHellmanCng  
   
- </term>  
-<description> <see cref="T:System.Security.Cryptography.ECDsa" />  
+ </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /></description></item><item><term> System.Security.Cryptography.ECDiffieHellmanCng  
   
- </description>  
-</item>  
-<item>  
-<term> ECDsaCng  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.ECDsaCng" />  
-  
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.ECDsaCng  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.ECDsaCng" />  
-  
- </description>  
-</item>  
-<item>  
-<term> ECDH  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.ECDiffieHellman" />  
-  
- </description>  
-</item>  
-<item>  
-<term> ECDiffieHellman  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.ECDiffieHellman" />  
-  
- </description>  
-</item>  
-<item>  
-<term> ECDiffieHellmanCng  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" />  
-  
- </description>  
-</item>  
-<item>  
-<term> System.Security.Cryptography.ECDiffieHellmanCng  
-  
- </term>  
-<description> <see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" />  
-  
- </description>  
-</item>  
-</list></param>
+ </term><description><see cref="T:System.Security.Cryptography.ECDiffieHellmanCng" /></description></item></list></param>
         <summary>Creates an instance of the specified implementation of an asymmetric algorithm.</summary>
         <returns>A new instance of the specified asymmetric algorithm implementation.</returns>
         <remarks>
@@ -332,6 +269,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -371,6 +309,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -423,6 +362,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -460,6 +403,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -488,6 +435,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -532,6 +480,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -567,6 +516,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -610,6 +560,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -651,6 +602,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -684,6 +639,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

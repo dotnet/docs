@@ -24,7 +24,7 @@
   
 -   The <xref:System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.X%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.Y%2A> properties, which are used to get the mouse coordinates.  
   
--   The <xref:System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.Text%2A> property, which is used to get the tooltip for the chart element that the event is raised for. Note that many of the chart elements have a `ToolTip`, `LegendToolTip`, and/or `LabelToolTip`vproperty that you can use to assign a tooltip. These elements include legends, annotations, data points, series, axes, titles, custom labels, and strip lines. This property can also be used to override the tooltip for a chart element, or to set a tooltip for a chart element that doesn't have a `ToolTip` property.  
+-   The <xref:System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.Text%2A> property, which is used to get the tooltip for the chart element that the event is raised for. Note that many of the chart elements have a `ToolTip`, `LegendToolTip`, and/or `LabelToolTip` property that you can use to assign a tooltip. These elements include legends, annotations, data points, series, axes, titles, custom labels, and strip lines. This property can also be used to override the tooltip for a chart element, or to set a tooltip for a chart element that doesn't have a `ToolTip` property.  
   
 -   The <xref:System.Windows.Forms.DataVisualization.Charting.ToolTipEventArgs.HitTestResult%2A> property, which provides information on the chart element for which the event was raised.  
   

@@ -354,7 +354,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
     for student in db.Student do
     join selection in db.CourseSelection
         on (student.StudentID = selection.StudentID)
-    distinct       
+    distinct       
 }
 </code></pre>
 
@@ -536,7 +536,7 @@ Count records in a table.<br/>
 
 <pre><code class="lang-fsharp">// Count of students.
 query {
-    for student in db.Student do       
+    for student in db.Student do       
     count
 }
 </code></pre>
@@ -641,7 +641,7 @@ GROUP BY Student.Age
 <pre><code class="lang-fsharp">// Group students by age and sum ages.
 query {
     for student in db.Student do
-    groupBy student.Age into g       
+    groupBy student.Age into g       
     let total =
         query {
             for student in g do
@@ -669,7 +669,7 @@ ORDER BY COUNT( * ) DESC
 query {
     for student in db.Student do
     groupBy student.Age into g
-    where (g.Count() > 1)       
+    where (g.Count() > 1)       
     sortByDescending (g.Count())
     select (g.Key, g.Count())
 }
@@ -729,7 +729,7 @@ WHERE Student.Name LIKE '[abc]%'
 <pre><code class="lang-fsharp">query {
     for student in db.Student do
     where (SqlMethods.Like( student.Name, "[abc]%") )
-    select student 
+    select student 
 }
 </code></pre>
 
@@ -764,7 +764,7 @@ WHERE Student.Name LIKE '[^abc]%'
 <pre><code class="lang-fsharp">query {
     for n in db.Student do
     where (SqlMethods.Like( n.Name, "[^abc]%") )
-    select n.StudentID   
+    select n.StudentID   
 }
 </code></pre>
 
@@ -1135,31 +1135,31 @@ USE MyDatabase;
 GO
 
 CREATE TABLE [dbo].[Course] (
-[CourseID]   INT           NOT NULL,
+[CourseID]   INT           NOT NULL,
 [CourseName] NVARCHAR (50) NOT NULL,
 PRIMARY KEY CLUSTERED ([CourseID] ASC)
 );
 
 CREATE TABLE [dbo].[Student] (
-[StudentID] INT           NOT NULL,
-[Name]      NVARCHAR (50) NOT NULL,
-[Age]       INT           NULL,
+[StudentID] INT           NOT NULL,
+[Name]      NVARCHAR (50) NOT NULL,
+[Age]       INT           NULL,
 PRIMARY KEY CLUSTERED ([StudentID] ASC)
 );
 
 CREATE TABLE [dbo].[CourseSelection] (
-[ID]        INT NOT NULL,
+[ID]        INT NOT NULL,
 [StudentID] INT NOT NULL,
-[CourseID]  INT NOT NULL,
+[CourseID]  INT NOT NULL,
 PRIMARY KEY CLUSTERED ([ID] ASC),
 CONSTRAINT [FK_CourseSelection_ToTable] FOREIGN KEY ([StudentID]) REFERENCES [dbo].[Student] ([StudentID]) ON DELETE NO ACTION ON UPDATE NO ACTION,
 CONSTRAINT [FK_CourseSelection_Course_1] FOREIGN KEY ([CourseID]) REFERENCES [dbo].[Course] ([CourseID]) ON DELETE NO ACTION ON UPDATE NO ACTION
 );
 
 CREATE TABLE [dbo].[LastStudent] (
-[StudentID] INT           NOT NULL,
-[Name]      NVARCHAR (50) NOT NULL,
-[Age]       INT           NULL,
+[StudentID] INT           NOT NULL,
+[Name]      NVARCHAR (50) NOT NULL,
+[Age]       INT           NULL,
 PRIMARY KEY CLUSTERED ([StudentID] ASC)
 );
 

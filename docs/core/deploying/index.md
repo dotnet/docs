@@ -67,7 +67,6 @@ For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deplo
 - Framework-dependent deployment with third-party dependencies
 - Self-contained deployment
 - Self-contained deployment with third-party dependencies
-- Small footprint self-contained deployment
 
 # See also
 

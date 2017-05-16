@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CustomDumpItem structure [.NET Framework hosting]"
 ms.assetid: fd9085ff-7beb-4c38-97f0-037cd8ba4f65
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

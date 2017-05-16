@@ -1,7 +1,7 @@
 ﻿'<SnippetContractCode>
 
-Imports System.AddIn.Contract ' INativeHandleContract
-Imports System.AddIn.Pipeline ' AddInContractAttribute
+Imports System.AddIn.Contract
+Imports System.AddIn.Pipeline
 
 Namespace Contracts
 	''' <summary>

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "INotifySource2::SetNotifyFilter method [.NET Framework debugging]"
   - "SetNotifyFilter method [.NET Framework debugging]"
 ms.assetid: 6351fc92-b126-4af6-9bf3-0a8ce92845fc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

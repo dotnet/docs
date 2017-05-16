@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
@@ -43,6 +44,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -74,6 +76,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -104,6 +107,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -159,6 +163,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -189,6 +194,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -208,7 +214,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.AddAccessRule%2A> method adds a new rule to the list of rules that a <xref:System.IO.Pipes.PipeSecurity> object contains.If an access control list (ACL) already exists for the specified rule, the <xref:System.IO.Pipes.PipeSecurity.AddAccessRule%2A> method will still add the rule, with one exception: a <xref:System.IO.Pipes.PipeAccessRule> object that is created using the <xref:System.Security.AccessControl.AccessControlType> value supersedes an object that is created using the <xref:System.Security.AccessControl.AccessControlType> value.  
+ The <xref:System.IO.Pipes.PipeSecurity.AddAccessRule%2A> method adds a new rule to the list of rules that a <xref:System.IO.Pipes.PipeSecurity> object contains.If an access control list (ACL) already exists for the specified rule, the <xref:System.IO.Pipes.PipeSecurity.AddAccessRule%2A> method will still add the rule, with one exception: a <xref:System.IO.Pipes.PipeAccessRule> object that is created using the <xref:System.Security.AccessControl.AccessControlType.Deny> value supersedes an object that is created using the <xref:System.Security.AccessControl.AccessControlType.Allow> value.  
   
  ]]></format>
         </remarks>
@@ -223,6 +229,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -259,6 +266,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -311,6 +319,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -341,6 +350,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -367,6 +377,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -393,6 +404,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -414,7 +426,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> access rules or all matching <xref:System.Security.AccessControl.AccessControlType> access rules from the current <xref:System.IO.Pipes.PipeSecurity> object. For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> access rules for a user by passing a <xref:System.IO.Pipes.PipeAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.IO.Pipes.PipeAccessRights> value, and a user account. The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes any deny rules that specify the <xref:System.IO.Pipes.PipeAccessRights> value or the <xref:System.IO.Pipes.PipeAccessRights> value.  
+ The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType.Deny> access rules or all matching <xref:System.Security.AccessControl.AccessControlType.Allow> access rules from the current <xref:System.IO.Pipes.PipeSecurity> object. For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType.Deny> access rules for a user by passing a <xref:System.IO.Pipes.PipeAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType.Deny> value, the <xref:System.IO.Pipes.PipeAccessRights.Read> value, and a user account. The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes any deny rules that specify the <xref:System.IO.Pipes.PipeAccessRights.Read> value or the <xref:System.IO.Pipes.PipeAccessRights.Write> value.  
   
  ]]></format>
         </remarks>
@@ -429,6 +441,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -448,7 +461,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> access rules or all matching <xref:System.Security.AccessControl.AccessControlType> access rules from the current <xref:System.IO.Pipes.PipeSecurity> object. For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> access rules for a user by passing a <xref:System.IO.Pipes.PipeAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.IO.Pipes.PipeAccessRights> value, and a user account. The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes any deny rules that specify the <xref:System.IO.Pipes.PipeAccessRights> value or the <xref:System.IO.Pipes.PipeAccessRights> value.  
+ The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType.Deny> access rules or all matching <xref:System.Security.AccessControl.AccessControlType.Allow> access rules from the current <xref:System.IO.Pipes.PipeSecurity> object. For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType.Deny> access rules for a user by passing a <xref:System.IO.Pipes.PipeAccessRule> object created using the <xref:System.Security.AccessControl.AccessControlType.Deny> value, the <xref:System.IO.Pipes.PipeAccessRights.Read> value, and a user account. The <xref:System.IO.Pipes.PipeSecurity.RemoveAccessRule%2A> method removes any deny rules that specify the <xref:System.IO.Pipes.PipeAccessRights.Read> value or the <xref:System.IO.Pipes.PipeAccessRights.Write> value.  
   
  ]]></format>
         </remarks>
@@ -463,6 +476,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -484,7 +498,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType> audit rules or all matching <xref:System.Security.AccessControl.AccessControlType> audit rules from the current <xref:System.IO.Pipes.PipeSecurity> object.  For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType> audit rules for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.AuditFlags> value, and a user account.  When you do this, the <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRule%2A> method removes any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags> value or the <xref:System.Security.AccessControl.AuditFlags> value.  
+ The <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRule%2A> method removes either all matching <xref:System.Security.AccessControl.AccessControlType.Deny> audit rules or all matching <xref:System.Security.AccessControl.AccessControlType.Allow> audit rules from the current <xref:System.IO.Pipes.PipeSecurity> object.  For example, you can use this method to remove all <xref:System.Security.AccessControl.AccessControlType.Deny> audit rules for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType.Deny> value, the <xref:System.Security.AccessControl.AuditFlags.Failure> value, and a user account.  When you do this, the <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRule%2A> method removes any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags.Failure> value or the <xref:System.Security.AccessControl.AuditFlags.Success> value.  
   
  ]]></format>
         </remarks>
@@ -499,6 +513,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -533,6 +548,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -552,7 +568,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific%2A> method removes the specified matching <xref:System.Security.AccessControl.AccessControlType> audit rule or the specified matching <xref:System.Security.AccessControl.AccessControlType> audit rule from the current <xref:System.IO.Pipes.PipeSecurity> object.  For example, you can use this method to remove a specified <xref:System.Security.AccessControl.AccessControlType> audit rule for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType> value, the <xref:System.Security.AccessControl.AuditFlags> value, and a user account.  When you do this, the <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific%2A> method removes only a deny rule that specifies the <xref:System.Security.AccessControl.AuditFlags> value.  It does not remove any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags> value.  
+ The <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific%2A> method removes the specified matching <xref:System.Security.AccessControl.AccessControlType.Deny> audit rule or the specified matching <xref:System.Security.AccessControl.AccessControlType.Allow> audit rule from the current <xref:System.IO.Pipes.PipeSecurity> object.  For example, you can use this method to remove a specified <xref:System.Security.AccessControl.AccessControlType.Deny> audit rule for a user by passing a <xref:System.Security.AccessControl.FileSystemAuditRule> object created using the <xref:System.Security.AccessControl.AccessControlType.Deny> value, the <xref:System.Security.AccessControl.AuditFlags.Failure> value, and a user account.  When you do this, the <xref:System.IO.Pipes.PipeSecurity.RemoveAuditRuleSpecific%2A> method removes only a deny rule that specifies the <xref:System.Security.AccessControl.AuditFlags.Failure> value.  It does not remove any deny rules that specify the <xref:System.Security.AccessControl.AuditFlags.Success> value.  
   
  ]]></format>
         </remarks>
@@ -567,6 +583,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -586,7 +603,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights> value and the <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will also be overwritten.  
+ The <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights.Read> value and the <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights.Read> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.ResetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights.Write> value, the identical rule will also be overwritten.  
   
  ]]></format>
         </remarks>
@@ -601,6 +618,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -620,7 +638,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the <xref:System.IO.Pipes.PipeAccessRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights> value and the <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will not be overwritten.  
+ The <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method adds the specified access control list (ACL) rule or overwrites any identical ACL rules that match the <xref:System.IO.Pipes.PipeAccessRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights.Read> value and the <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights.Read> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.SetAccessRule%2A> method finds an identical ACL rule that specifies the <xref:System.IO.Pipes.PipeAccessRights.Write> value, the identical rule will not be overwritten.  
   
  ]]></format>
         </remarks>
@@ -635,6 +653,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -654,7 +673,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method adds the specified audit rule or overwrites any identical audit rules that match the <xref:System.IO.Pipes.PipeAccessRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights> value and the <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.IO.Pipes.PipeAccessRights> value, the identical rule will not be overwritten.  
+ The <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method adds the specified audit rule or overwrites any identical audit rules that match the <xref:System.IO.Pipes.PipeAccessRights> value of the `rule` parameter.  For example, if the `rule` parameter specifies a <xref:System.IO.Pipes.PipeAccessRights.Read> value and the <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.IO.Pipes.PipeAccessRights.Read> value, the identical rule will be overwritten.  If the <xref:System.IO.Pipes.PipeSecurity.SetAuditRule%2A> method finds an identical audit rule that specifies the <xref:System.IO.Pipes.PipeAccessRights.Write> value, the identical rule will not be overwritten.  
   
  ]]></format>
         </remarks>

@@ -61,7 +61,7 @@ Reallocates storage space for an array variable.
 ## Syntax  
   
 ```  
-ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]  
+ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]  
 ```  
   
 ## Parts  

@@ -218,6 +218,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDataFormat">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.DataFormat" /> object that defines a name and numeric ID for a specified data format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method can also be used to register new formats. If the specified format cannot be found, it is automatically registered as a new data format.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDataFormat">
       <MemberSignature Language="C#" Value="public static System.Windows.DataFormat GetDataFormat (int id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DataFormat GetDataFormat(int32 id) cil managed" />
@@ -754,22 +771,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetDataFormat">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Windows.DataFormat" /> object that defines a name and numeric ID for a specified data format.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method can also be used to register new formats. If the specified format cannot be found, it is automatically registered as a new data format.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

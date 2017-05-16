@@ -2,7 +2,7 @@
 title: "How To: Dynamic Update | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -71,7 +71,7 @@ This topic outlines the basic steps required to create and dynamically update th
   
     ```  
   
-3.  To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating “filterTable1” with the service endpoint.  
+3.  To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating "filterTable1" with the service endpoint.  
   
     ```xml  
     <behaviors>  

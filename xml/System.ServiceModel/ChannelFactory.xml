@@ -266,7 +266,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Before opening the channel factory, checks that it is not <xref:System.ServiceModel.CommunicationState>, <xref:System.ServiceModel.CommunicationState>, or <xref:System.ServiceModel.CommunicationState>.  
+ Before opening the channel factory, checks that it is not <xref:System.ServiceModel.CommunicationState.Closed>, <xref:System.ServiceModel.CommunicationState.Closing>, or <xref:System.ServiceModel.CommunicationState.Opened>.  
   
  ]]></format>
         </remarks>
@@ -310,6 +310,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InitializeEndpoint">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes the service endpoint of the channel factory.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must have an address to initialize an endpoint, but can have just the binding or configuration instead of the full endpoint.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InitializeEndpoint">
       <MemberSignature Language="C#" Value="protected void InitializeEndpoint (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializeEndpoint(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
@@ -651,23 +669,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="InitializeEndpoint">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes the service endpoint of the channel factory.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You must have an address to initialize an endpoint, but can have just the binding or configuration instead of the full endpoint.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

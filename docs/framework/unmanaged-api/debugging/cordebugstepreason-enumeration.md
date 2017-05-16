@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugStepReason enumeration [.NET Framework debugging]"
 ms.assetid: fe248069-b33c-48e1-a777-06ac9b239c54
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

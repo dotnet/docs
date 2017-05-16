@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Ping</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ComponentModel.AsyncCompletedEventArgs</BaseTypeName>
   </Base>
@@ -49,6 +53,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Ping</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.PingReply</ReturnType>
       </ReturnValue>
@@ -59,7 +67,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value of <xref:System.Net.NetworkInformation.PingReply.Status%2A> is not <xref:System.Net.NetworkInformation.IPStatus>, you should not use the values that are returned by the <xref:System.Net.NetworkInformation.PingReply.RoundtripTime%2A>, <xref:System.Net.NetworkInformation.PingReply.Options%2A>, and <xref:System.Net.NetworkInformation.PingReply.Buffer%2A> properties. The <xref:System.Net.NetworkInformation.PingReply.RoundtripTime%2A> and <xref:System.Net.NetworkInformation.PingReply.Buffer%2A> properties will return zero, and the <xref:System.Net.NetworkInformation.PingReply.Options%2A> property will return `null`.  
+ If the value of <xref:System.Net.NetworkInformation.PingReply.Status%2A> is not <xref:System.Net.NetworkInformation.IPStatus.Success>, you should not use the values that are returned by the <xref:System.Net.NetworkInformation.PingReply.RoundtripTime%2A>, <xref:System.Net.NetworkInformation.PingReply.Options%2A>, and <xref:System.Net.NetworkInformation.PingReply.Buffer%2A> properties. The <xref:System.Net.NetworkInformation.PingReply.RoundtripTime%2A> and <xref:System.Net.NetworkInformation.PingReply.Buffer%2A> properties will return zero, and the <xref:System.Net.NetworkInformation.PingReply.Options%2A> property will return `null`.  
   
    
   

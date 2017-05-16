@@ -2,7 +2,7 @@
 title: "How to: Configure Tracking with WorkflowServiceHost | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -27,7 +27,7 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
        <serviceBehaviors>  
          <behavior>  
            <etwTracking profileName="Sample Tracking Profile" />  
-         </behavior>              
+         </behavior>              
        </serviceBehaviors>  
     <behaviors>  
   

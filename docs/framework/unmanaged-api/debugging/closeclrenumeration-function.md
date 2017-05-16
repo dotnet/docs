@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "Silverlight, debugging"
   - "CloseCLR Enumeration function"
 ms.assetid: 5e3c3958-80bb-43b1-a96b-dd3e6dbd9cd7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -7,6 +7,7 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
@@ -29,7 +30,7 @@
 ## Remarks  
  Use the <xref:System.Linq.Expressions.Expression.Bind%2A> factory methods to create a <xref:System.Linq.Expressions.MemberAssignment>.  
   
- A <xref:System.Linq.Expressions.MemberAssignment> has the <xref:System.Linq.Expressions.MemberBinding.BindingType%2A> property equal to <xref:System.Linq.Expressions.MemberBindingType>.  
+ A <xref:System.Linq.Expressions.MemberAssignment> has the <xref:System.Linq.Expressions.MemberBinding.BindingType%2A> property equal to <xref:System.Linq.Expressions.MemberBindingType.Assignment>.  
   
  ]]></format>
     </remarks>
@@ -45,6 +46,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -74,6 +76,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

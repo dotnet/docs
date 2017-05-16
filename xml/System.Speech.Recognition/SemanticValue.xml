@@ -101,7 +101,7 @@ newGrammar.SpeechRecognized +=
       {  
         // Signifies recognition by a grammar with no semantics.  
         // Parse the string, assuming that the last word is color,  
-        // and search for “background” or “foreground” in the input.  
+        // and search for "background" or "foreground" in the input.  
         if (eventArgs.Result.Text.Contains("foreground"))   
         {  
           changeBackGround = false;  
@@ -187,6 +187,23 @@ newGrammar.SpeechRecognized +=
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SemanticValue" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you will not create <xref:System.Speech.Recognition.SemanticValue> objects explicitly, except to support the building of strongly-typed grammars.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SemanticValue (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
@@ -1099,22 +1116,5 @@ internal static void CreateSemanticsTreeNodes(
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SemanticValue" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Typically, you will not create <xref:System.Speech.Recognition.SemanticValue> objects explicitly, except to support the building of strongly-typed grammars.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

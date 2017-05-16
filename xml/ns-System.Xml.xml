@@ -189,7 +189,7 @@
   
 -   Writing XML documents and fragments from data sources to the file system, streams, a <xref:System.IO.TextWriter>, or a <xref:System.Text.StringBuilder>.  
   
--   Loading documents into the Document Object Model (DOM) object if you are using an <xref:System.Xml.XmlReader> object and <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> set to <xref:System.Xml.DtdProcessing>.  
+-   Loading documents into the Document Object Model (DOM) object if you are using an <xref:System.Xml.XmlReader> object and <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> set to <xref:System.Xml.DtdProcessing.Prohibit>.  
   
 -   Navigating the DOM object.  
   

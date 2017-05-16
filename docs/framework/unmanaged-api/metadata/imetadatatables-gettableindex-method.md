@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetTableIndex method [.NET Framework metadata]"
   - "IMetaDataTables::GetTableIndex method [.NET Framework metadata]"
 ms.assetid: c6ec3800-e0d9-4387-afb8-ddc0b818114c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

@@ -160,7 +160,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For attributes that store flags, which is true for <xref:System.ComponentModel.PropertyFilterAttribute>, a <xref:System.ComponentModel.PropertyFilterAttribute.Match%2A> result may be different from an <xref:System.ComponentModel.PropertyFilterAttribute.Equals%2A> result. For example, a filter of <xref:System.ComponentModel.PropertyFilterOptions> matches a filter of <xref:System.ComponentModel.PropertyFilterOptions>, because <xref:System.ComponentModel.PropertyFilterOptions> is a merge of all filter values.  
+ For attributes that store flags, which is true for <xref:System.ComponentModel.PropertyFilterAttribute>, a <xref:System.ComponentModel.PropertyFilterAttribute.Match%2A> result may be different from an <xref:System.ComponentModel.PropertyFilterAttribute.Equals%2A> result. For example, a filter of <xref:System.ComponentModel.PropertyFilterOptions.SetValues> matches a filter of <xref:System.ComponentModel.PropertyFilterOptions.All>, because <xref:System.ComponentModel.PropertyFilterOptions.All> is a merge of all filter values.  
   
  ]]></format>
         </remarks>

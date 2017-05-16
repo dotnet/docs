@@ -15,6 +15,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
   </Base>
@@ -63,6 +67,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="node" Type="System.Xml.XmlNode" />
         <Parameter Name="oldParent" Type="System.Xml.XmlNode" />
@@ -100,6 +108,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeChangedAction</ReturnType>
       </ReturnValue>
@@ -107,47 +119,26 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <summary>Gets a value indicating what type of node change event is occurring.</summary>
         <value>An <see langword="XmlNodeChangedAction" /> value describing the node change event.  
   
- <list type="table">  
-<listheader>  
-<term> XmlNodeChangedAction Value  
+ <list type="table"><listheader><term> XmlNodeChangedAction Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Insert  
+ </description></listheader><item><term> Insert  
   
- </term>  
-<description> A node has been or will be inserted.  
+ </term><description> A node has been or will be inserted.  
   
- </description>  
-</item>  
-<item>  
-<term> Remove  
+ </description></item><item><term> Remove  
   
- </term>  
-<description> A node has been or will be removed.  
+ </term><description> A node has been or will be removed.  
   
- </description>  
-</item>  
-<item>  
-<term> Change  
+ </description></item><item><term> Change  
   
- </term>  
-<description> A node has been or will be changed.  
+ </term><description> A node has been or will be changed.  
   
- </description>  
-</item>  
-</list>  
-  
- <block subset="none" type="note">  
-<para>  
+ </description></item></list><block subset="none" type="note"><para>  
  The <see langword="Action" /> value does not differentiate between when the event occurred (before or after). You can create separate event handlers to handle both instances.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,6 +160,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
@@ -176,12 +171,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <summary>Gets the value of the <see cref="P:System.Xml.XmlNode.ParentNode" /> after the operation completes.</summary>
         <value>The value of the <see langword="ParentNode" /> after the operation completes. This property returns <see langword="null" /> if the node is being removed.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  For attribute nodes this property returns the <see cref="P:System.Xml.XmlAttribute.OwnerElement" />.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,6 +195,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -232,6 +229,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
@@ -259,6 +260,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
@@ -266,12 +271,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
         <summary>Gets the value of the <see cref="P:System.Xml.XmlNode.ParentNode" /> before the operation began.</summary>
         <value>The value of the <see langword="ParentNode" /> before the operation began. This property returns <see langword="null" /> if the node did not have a parent.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  For attribute nodes this property returns the <see cref="P:System.Xml.XmlAttribute.OwnerElement" />.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -292,6 +295,10 @@ void NodeInsertedHandler(Object src, XmlNodeChangedEventArgs args)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

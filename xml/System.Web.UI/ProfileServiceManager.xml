@@ -145,7 +145,7 @@
 ## Remarks  
  Relative virtual paths, absolute virtual paths, and fully-qualified paths are allowed.  
   
- If the <xref:System.Web.UI.ProfileServiceManager.Path%2A> property is not set, the return value is <xref:System.String>. In this case, the AJAX features of ASP.NET will then use the built-in profile Web service that corresponds to the following internal default path: ~/ScriptServices_ProfileService.asmx. The same behavior occurs if you set <xref:System.Web.UI.ProfileServiceManager.Path%2A> to be an empty value or `null`.  
+ If the <xref:System.Web.UI.ProfileServiceManager.Path%2A> property is not set, the return value is <xref:System.String.Empty>. In this case, the AJAX features of ASP.NET will then use the built-in profile Web service that corresponds to the following internal default path: ~/ScriptServices_ProfileService.asmx. The same behavior occurs if you set <xref:System.Web.UI.ProfileServiceManager.Path%2A> to be an empty value or `null`.  
   
  <xref:System.Web.UI.ProfileServiceManager.Path%2A> can be specified in the <xref:System.Web.UI.ScriptManager> control or in an associated <xref:System.Web.UI.ScriptManagerProxy> control. When <xref:System.Web.UI.ProfileServiceManager.Path%2A> is set at the <xref:System.Web.UI.ScriptManagerProxy> level, the following caveats apply:  
   

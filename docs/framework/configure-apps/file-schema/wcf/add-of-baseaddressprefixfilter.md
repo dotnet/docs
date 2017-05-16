@@ -2,7 +2,7 @@
 title: "&lt;add&gt; of &lt;baseAddressPrefixFilter&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -72,9 +72,9 @@ http://test2.fabrikam.com/Service.svc
 <system.serviceModel>  
   <serviceHostingEnvironment>  
      <baseAddressPrefixFilters>  
-        <add prefix=”net.tcp://test1.fabrikam.com:8000”/>  
-        <add prefix=”http://test2.fabrikam.com:9000”/>  
-    </baseAddressPrefixFilters>  
+        <add prefix="net.tcp://test1.fabrikam.com:8000"/>  
+        <add prefix="http://test2.fabrikam.com:9000"/>  
+    </baseAddressPrefixFilters>  
   </serviceHostingEnvironment>  
 </system.serviceModel>  
 ```  

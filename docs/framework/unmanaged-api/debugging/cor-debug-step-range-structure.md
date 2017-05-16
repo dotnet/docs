@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_DEBUG_STEP_RANGE structure [.NET Framework debugging]"
 ms.assetid: 8809d00e-beaa-4dcf-b4e8-e89d0a5406b7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

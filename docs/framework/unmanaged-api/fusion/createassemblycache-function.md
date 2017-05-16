@@ -24,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CreateAssemblyCache function [.NET Framework fusion]"
 ms.assetid: 348c7c8c-8578-46ae-97cf-480d6015c3c6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

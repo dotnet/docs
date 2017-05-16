@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ProvideAssembly method [.NET Framework hosting]"
   - "IHostAssemblyStore::ProvideAssembly method [.NET Framework hosting]"
 ms.assetid: 625c3dd5-a3f0-442c-adde-310dadbb5054
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -40,9 +40,7 @@ The Windows Forms <xref:System.Windows.Forms.NotifyIcon> component displays a si
   
      In the following code example, the path set for the location of the icon is the **My Documents** folder. This location is used because you can assume that most computers running the Windows operating system will include this folder. Choosing this location also enables users with minimal system access levels to safely run the application. The following example requires a form with a <xref:System.Windows.Forms.NotifyIcon> control already added. It also requires an icon file named `Icon.ico`.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     ' You should replace the bold icon in the sample below  
     ' with an icon of your own choosing.  
     NotifyIcon1.Icon = New _   
@@ -51,12 +49,9 @@ The Windows Forms <xref:System.Windows.Forms.NotifyIcon> component displays a si
        & "\Icon.ico")  
     NotifyIcon1.Visible = True  
     NotifyIcon1.Text = "Antivirus program"  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     // You should replace the bold icon in the sample below  
     // with an icon of your own choosing.  
     // Note the escape character used (@) when specifying the path.  
@@ -66,12 +61,9 @@ The Windows Forms <xref:System.Windows.Forms.NotifyIcon> component displays a si
        + @"\Icon.ico");  
     notifyIcon1.Visible = true;  
     notifyIcon1.Text = "Antivirus program";  
-  
     ```  
   
-     [cpp]  
-  
-    ```  
+    ```cpp  
     // You should replace the bold icon in the sample below  
     // with an icon of your own choosing.  
     notifyIcon1->Icon = gcnew   

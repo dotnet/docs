@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -24,7 +28,7 @@
   
  You enable partially trusted assemblies that are identified as NotVisibleByDefault by adding them to the <xref:System.AppDomainSetup.PartialTrustVisibleAssemblies%2A> property of their application domain. If you enable an assembly that references (directly or indirectly) other partially trusted assemblies that are NotVisibleByDefault, those other assemblies should be enabled as well.  
   
- When an APTCA library that specifies a <xref:System.Security.PartialTrustVisibilityLevel> and that is eligible for code sharing is loaded for the first time, it is loaded into the shared domain. Whenever that assembly is loaded with the same <xref:System.Security.PartialTrustVisibilityLevel> into another domain, it will be shared. However, if the assembly is loaded with a different <xref:System.Security.PartialTrustVisibilityLevel>, it will not be shared.  
+ When an APTCA library that specifies a <xref:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault> and that is eligible for code sharing is loaded for the first time, it is loaded into the shared domain. Whenever that assembly is loaded with the same <xref:System.Security.PartialTrustVisibilityLevel> into another domain, it will be shared. However, if the assembly is loaded with a different <xref:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault>, it will not be shared.  
   
  ]]></format>
     </remarks>
@@ -43,6 +47,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.PartialTrustVisibilityLevel</ReturnType>
@@ -64,6 +72,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.PartialTrustVisibilityLevel</ReturnType>

@@ -2,7 +2,7 @@
 title: "&lt;protocolMapping&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,7 +24,7 @@ Represents a configuration section for defining a set of default protocol mappin
 ## Syntax  
   
 ```vb  
-   <protocolMapping>    <add binding="String”         bindingConfiguration="String”         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
+   <protocolMapping>    <add binding="String"         bindingConfiguration="String"         scheme="http/net.msmq/net.pipe/net.tcp"/></protocolMapping>  
 ```  
   
 ```csharp  
@@ -55,10 +55,10 @@ Represents a configuration section for defining a set of default protocol mappin
 ```  
   
 <protocolMapping>  
-        <add scheme="http" binding="basicHttpBinding"/>  
-        <add scheme="net.tcp" binding="netTcpBinding"/>  
-        <add scheme="net.pipe" binding="netNamedPipeBinding"/>  
-        <add scheme="net.msmq" binding="netMsmqBinding"/>  
+        <add scheme="http" binding="basicHttpBinding"/>  
+        <add scheme="net.tcp" binding="netTcpBinding"/>  
+        <add scheme="net.pipe" binding="netNamedPipeBinding"/>  
+        <add scheme="net.msmq" binding="netMsmqBinding"/>  
 </protocolMapping>  
   
 ```  

@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "AddImport method"
 ms.assetid: 4fedf8a0-08c8-43d0-aa00-20f2a521c991
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

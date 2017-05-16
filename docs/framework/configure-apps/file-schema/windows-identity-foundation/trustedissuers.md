@@ -2,6 +2,7 @@
 title: "&lt;trustedIssuers&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,19 +29,19 @@ Configures the list of trusted issuer certificates used by the configuration-bas
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <securityTokenHandlerConfiguration>  
-        <issuerNameRegistry>  
-          <trustedIssuers>  
-            <add thumbprint=xs:string name=xs:string>  
-            <clear>  
-            <remove thumbprint=xs:string>  
-          </trustedIssuers>  
-        </issuerNameRegistry>  
-      </securityTokenHandlerConfiguration>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <securityTokenHandlerConfiguration>  
+        <issuerNameRegistry>  
+          <trustedIssuers>  
+            <add thumbprint=xs:string name=xs:string>  
+            <clear>  
+            <remove thumbprint=xs:string>  
+          </trustedIssuers>  
+        </issuerNameRegistry>  
+      </securityTokenHandlerConfiguration>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

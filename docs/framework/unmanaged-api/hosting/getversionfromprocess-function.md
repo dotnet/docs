@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetVersionFromProcess function [.NET Framework hosting]"
 ms.assetid: a9f7f824-64a1-408d-8607-91c7f19d21fe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

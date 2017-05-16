@@ -61,6 +61,74 @@ public partial class DataClasses1DataContext : System.Data.Linq.DataContext {
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Attach">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attaches an entity to the <see cref="T:System.Data.Linq.DataContext" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the `Attach` methods with entities that have been created in one <xref:System.Data.Linq.DataContext>, serialized to a client, and then deserialized back (with the intention to perform an update or delete operation). For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](~/docs/framework/data/adonet/sql/linq/data-retrieval-and-cud-operations-in-n-tier-applications.md).  
+  
+ Do not try to `Attach` an entity that has not been detached through serialization. Entities that have not been serialized still maintain associations with deferred loaders that can cause unexpected results if the entity becomes tracked by a second data context.  
+  
+ When a new entity is attached, deferred loaders for any child collections (for example, `EntitySet` collections of entities from associated tables) are initialized. When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, members of the child collections are put into an `Unmodified` state. To update members of a child collection, you must explicitly call `Attach` and specify that entity.  
+  
+ `Attach` attaches all entities in the object graph of the provided object. For example, the following C# code:  
+  
+```  
+using (SampleDataContext db = new SampleDataContext()) {  
+    Employee employee = new Employee { employeeId = 1 };  
+  
+    Master master = new Master();  
+    master.Employee = employee;  
+  
+    Child child = new Child();  
+    child.Employee = employee;  
+  
+    db.Employees.Attach(employee);  
+  
+    master.Child = child;  
+  
+    db.Masters.InsertOnSubmit(master);  
+  
+    db.SubmitChanges();  
+}  
+  
+```  
+  
+ The equivalent Visual Basic code is:  
+  
+```  
+Using db As New SampleDataContext()    Dim employee As New Employee With { .employeeId = 1 }  
+  
+    Dim master As New Master()  
+    master.Employee = employee  
+  
+    Dim child As New Child()  
+    child.Employee = employee  
+  
+    db.Employees.Attach(employee)  
+  
+    master.Child = child  
+  
+    db.Masters.InsertOnSubmit(master)  
+  
+    db.SubmitChanges()  
+  
+End Using  
+```  
+  
+ Calling `Attach` on `Employee` attaches employee, master, and child, because the `Employee` has relationships to both master and child. You must explicitly call `InsertOnSubmit` to change the state from attached to inserted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Attach">
       <MemberSignature Language="C#" Value="public void Attach (TEntity entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Attach(!TEntity entity) cil managed" />
@@ -164,6 +232,27 @@ public partial class DataClasses1DataContext : System.Data.Linq.DataContext {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AttachAll&lt;TSubEntity&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If attaching as modified, the entity must either declare a version member or must not participate in update conflict checking.  
+  
+ When a new entity is attached, deferred loaders for any child collections (for example, `EntitySet` collections of entities from associated tables) are initialized. When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, members of the child collections are put into an `Unmodified` state. To update members of a child collection, you must explicitly call `Attach` and specify that entity.  
+  
+ For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](~/docs/framework/data/adonet/sql/linq/data-retrieval-and-cud-operations-in-n-tier-applications.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AttachAll&lt;TSubEntity&gt;">
       <MemberSignature Language="C#" Value="public void AttachAll&lt;TSubEntity&gt; (System.Collections.Generic.IEnumerable&lt;TSubEntity&gt; entities) where TSubEntity : TEntity;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AttachAll&lt;(!TEntity) TSubEntity&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSubEntity&gt; entities) cil managed" />
@@ -1205,94 +1294,5 @@ db.SubmitChanges()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AttachAll&lt;TSubEntity&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Attaches all entities of a collection to the <see cref="T:System.Data.Linq.DataContext" /> in either a modified or unmodified state.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If attaching as modified, the entity must either declare a version member or must not participate in update conflict checking.  
-  
- When a new entity is attached, deferred loaders for any child collections (for example, `EntitySet` collections of entities from associated tables) are initialized. When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, members of the child collections are put into an `Unmodified` state. To update members of a child collection, you must explicitly call `Attach` and specify that entity.  
-  
- For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](~/docs/framework/data/adonet/sql/linq/data-retrieval-and-cud-operations-in-n-tier-applications.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Attach">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Attaches an entity to the <see cref="T:System.Data.Linq.DataContext" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the `Attach` methods with entities that have been created in one <xref:System.Data.Linq.DataContext>, serialized to a client, and then deserialized back (with the intention to perform an update or delete operation). For more information, see [Data Retrieval and CUD Operations in N-Tier Applications (LINQ to SQL)](~/docs/framework/data/adonet/sql/linq/data-retrieval-and-cud-operations-in-n-tier-applications.md).  
-  
- Do not try to `Attach` an entity that has not been detached through serialization. Entities that have not been serialized still maintain associations with deferred loaders that can cause unexpected results if the entity becomes tracked by a second data context.  
-  
- When a new entity is attached, deferred loaders for any child collections (for example, `EntitySet` collections of entities from associated tables) are initialized. When <xref:System.Data.Linq.DataContext.SubmitChanges%2A> is called, members of the child collections are put into an `Unmodified` state. To update members of a child collection, you must explicitly call `Attach` and specify that entity.  
-  
- `Attach` attaches all entities in the object graph of the provided object. For example, the following C# code:  
-  
-```  
-using (SampleDataContext db = new SampleDataContext()) {  
-    Employee employee = new Employee { employeeId = 1 };  
-  
-    Master master = new Master();  
-    master.Employee = employee;  
-  
-    Child child = new Child();  
-    child.Employee = employee;  
-  
-    db.Employees.Attach(employee);  
-  
-    master.Child = child;  
-  
-    db.Masters.InsertOnSubmit(master);  
-  
-    db.SubmitChanges();  
-}  
-  
-```  
-  
- The equivalent Visual Basic code is:  
-  
-```  
-Using db As New SampleDataContext()    Dim employee As New Employee With { .employeeId = 1 }  
-  
-    Dim master As New Master()  
-    master.Employee = employee  
-  
-    Dim child As New Child()  
-    child.Employee = employee  
-  
-    db.Employees.Attach(employee)  
-  
-    master.Child = child  
-  
-    db.Masters.InsertOnSubmit(master)  
-  
-    db.SubmitChanges()  
-  
-End Using  
-```  
-  
- Calling `Attach` on `Employee` attaches employee, master, and child, because the `Employee` has relationships to both master and child. You must explicitly call `InsertOnSubmit` to change the state from attached to inserted.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

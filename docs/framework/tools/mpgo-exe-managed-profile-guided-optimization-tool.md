@@ -80,7 +80,7 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
   
  If an assembly in the list is in the global assembly cache, it will not be updated to contain the profile information.  Remove it from the global assembly cache to collect profile information.  
   
- The use of Ngen.exe and Mpgo.exe is recommended only for large managed applications, because the benefit of precompiled native images is typically seen only when it eliminates significant JIT compilation at run time. Running Mpgo.exe on “Hello World” style applications that aren’t working-set intensive will not provide any benefits, and Mpgo.exe may even fail to gather profile data.  
+ The use of Ngen.exe and Mpgo.exe is recommended only for large managed applications, because the benefit of precompiled native images is typically seen only when it eliminates significant JIT compilation at run time. Running Mpgo.exe on "Hello World" style applications that aren’t working-set intensive will not provide any benefits, and Mpgo.exe may even fail to gather profile data.  
   
 > [!NOTE]
 >  Ngen.exe and Mpgo.exe are not recommended for ASP.NET applications and Windows Communication Foundation (WCF) services.  

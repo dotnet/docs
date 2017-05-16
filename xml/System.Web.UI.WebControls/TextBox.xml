@@ -920,7 +920,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.TextBox.Render%2A> method renders the begin tag and end tag of the <xref:System.Web.UI.WebControls.TextBox> control to the <xref:System.Web.UI.HtmlTextWriter> object for output on the client. If the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property is set to <xref:System.Web.UI.WebControls.TextBoxMode>, the content of the <xref:System.Web.UI.WebControls.TextBox> control is rendered as an HTML `<textarea>` element.  
+ The <xref:System.Web.UI.WebControls.TextBox.Render%2A> method renders the begin tag and end tag of the <xref:System.Web.UI.WebControls.TextBox> control to the <xref:System.Web.UI.HtmlTextWriter> object for output on the client. If the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property is set to <xref:System.Web.UI.WebControls.TextBoxMode.MultiLine>, the content of the <xref:System.Web.UI.WebControls.TextBox> control is rendered as an HTML `<textarea>` element.  
   
  The <xref:System.Web.UI.WebControls.TextBox.Render%2A> method is used primarily by control developers extending the functionality of the <xref:System.Web.UI.WebControls.TextBox> control.  
   

@@ -63,7 +63,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is intended to be an extensibility mechanism that can be used to override how content types are mapped to Web content formats. For example, if all incoming messages are processed as “raw binary data” without ever doing XML or JSON parsing, you could implement a <xref:System.ServiceModel.Channels.WebContentTypeMapper> that always returned <xref:System.ServiceModel.Channels.WebContentFormat> regardless of the content type that was passed in.  
+ This is intended to be an extensibility mechanism that can be used to override how content types are mapped to Web content formats. For example, if all incoming messages are processed as "raw binary data" without ever doing XML or JSON parsing, you could implement a <xref:System.ServiceModel.Channels.WebContentTypeMapper> that always returned <xref:System.ServiceModel.Channels.WebContentFormat.Raw> regardless of the content type that was passed in.  
   
  ]]></format>
         </remarks>

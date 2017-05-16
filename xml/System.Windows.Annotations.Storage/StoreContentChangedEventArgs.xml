@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Annotations.Storage.StoreContentChangedEventArgs> data includes the <xref:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Annotation%2A> associated with the event and the <xref:System.Windows.Annotations.Storage.StoreContentAction> of <xref:System.Windows.Annotations.Storage.StoreContentAction> or <xref:System.Windows.Annotations.Storage.StoreContentAction>.  
+ The <xref:System.Windows.Annotations.Storage.StoreContentChangedEventArgs> data includes the <xref:System.Windows.Annotations.Storage.StoreContentChangedEventArgs.Annotation%2A> associated with the event and the <xref:System.Windows.Annotations.Storage.StoreContentAction> of <xref:System.Windows.Annotations.Storage.StoreContentAction.Added> or <xref:System.Windows.Annotations.Storage.StoreContentAction.Deleted>.  
   
  ]]></format>
     </remarks>

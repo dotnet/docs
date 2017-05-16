@@ -90,6 +90,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Match">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a message’s action matches the <see cref="P:System.ServiceModel.CorrelationActionMessageFilter.Action" /> of this <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Match">
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
@@ -176,22 +193,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Match">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a message’s action matches the <see cref="P:System.ServiceModel.CorrelationActionMessageFilter.Action" /> of this <see cref="T:System.ServiceModel.CorrelationActionMessageFilter" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A message’s action is specified by the <xref:System.ServiceModel.Channels.MessageHeaders.Action%2A> property of the message’s <xref:System.ServiceModel.Channels.Message.Headers%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

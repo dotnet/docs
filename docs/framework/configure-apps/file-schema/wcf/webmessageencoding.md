@@ -2,7 +2,7 @@
 title: "&lt;webMessageEncoding&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +32,7 @@ Enables plain-text XML, JavaScript Object Notation (JSON) message encodings and 
       maxReadPoolSize="Integer"  
    maxWritePoolSize="Integer"  
   
-writeEncoding=”UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding" />  
+writeEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding" />  
 ```  
   
 ## Attributes and Elements  
@@ -78,7 +78,7 @@ writeEncoding=”UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding" />
     maxReadPoolSize="256"  
     maxWritePoolSize="128"  
     messageVersion="None"  
-    textEncoding=”utf-8”   
+    textEncoding="utf-8"   
 />  
 ```  
   

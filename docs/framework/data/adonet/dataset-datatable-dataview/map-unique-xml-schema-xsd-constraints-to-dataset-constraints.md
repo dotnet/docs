@@ -2,7 +2,7 @@
 title: "Map unique XML Schema (XSD) Constraints to DataSet Constraints | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -83,12 +83,12 @@ TableName: Customers
   
 ```  
   
-      <xs:unique     
-         msdata:ConstraintName="SomeName"    
-         name="UniqueCustIDConstr" >   
-  <xs:selector xpath=".//Customers" />   
-  <xs:field xpath="CustomerID" />   
-  <xs:field xpath="CompanyName" />   
+      <xs:unique     
+         msdata:ConstraintName="SomeName"    
+         name="UniqueCustIDConstr" >   
+  <xs:selector xpath=".//Customers" />   
+  <xs:field xpath="CustomerID" />   
+  <xs:field xpath="CompanyName" />   
 </xs:unique>  
 ```  
   

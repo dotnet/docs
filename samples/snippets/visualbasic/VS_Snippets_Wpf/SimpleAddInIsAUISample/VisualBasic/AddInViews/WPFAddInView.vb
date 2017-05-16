@@ -1,7 +1,7 @@
 ﻿'<SnippetAddInViewCode>
 
-Imports System.AddIn.Pipeline ' AddInBaseAttribute
-Imports System.Windows.Controls ' UserControl
+Imports System.AddIn.Pipeline
+Imports System.Windows.Controls
 
 Namespace AddInViews
 	''' <summary>

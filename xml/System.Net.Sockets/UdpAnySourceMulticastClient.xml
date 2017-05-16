@@ -109,13 +109,13 @@
   
  The method specified in the `callback` parameter is invoked when the operation to join the multicast group has completed.  
   
- If required by the runtime, the  <xref:System.Net.Sockets.UdpAnySourceMulticastClient.BeginJoinGroup%2A> method also performs a policy check to verify that the client is allowed to access the multicast group. If the client is not allowed access, a <xref:System.Net.Sockets.SocketException> is thrown with <xref:System.Net.Sockets.SocketError>.  
+ If required by the runtime, the  <xref:System.Net.Sockets.UdpAnySourceMulticastClient.BeginJoinGroup%2A> method also performs a policy check to verify that the client is allowed to access the multicast group. If the client is not allowed access, a <xref:System.Net.Sockets.SocketException> is thrown with <xref:System.Net.Sockets.SocketError.AccessDenied>.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The multicast group has already been joined or a join operation is currently in progress.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpAnySourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginReceiveFromGroup">
@@ -185,7 +185,7 @@
  <paramref name="offset" /> plus the count is greater than the length of the <paramref name="buffer" />.</exception>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpAnySourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginSendTo">
@@ -237,9 +237,9 @@
   
  The method specified in the `callback` parameter is invoked when a packet has received.  
   
- The transmission is only allowed if the address specified in the `remoteEndPoint` parameter has already sent a multicast packet to this receiver. If the client is not allowed access, a <xref:System.Net.Sockets.SocketException> is thrown with <xref:System.Net.Sockets.SocketError>.  
+ The transmission is only allowed if the address specified in the `remoteEndPoint` parameter has already sent a multicast packet to this receiver. If the client is not allowed access, a <xref:System.Net.Sockets.SocketException> is thrown with <xref:System.Net.Sockets.SocketError.AccessDenied>.  
   
- If the destination port specified in the `remoteEndPoint` parameter is less than 1,024, a <xref:System.Net.Sockets.SocketException>is thrown with <xref:System.Net.Sockets.SocketError>.  
+ If the destination port specified in the `remoteEndPoint` parameter is less than 1,024, a <xref:System.Net.Sockets.SocketException>is thrown with <xref:System.Net.Sockets.SocketError.AccessDenied>.  
   
  It is possible to have a socket failure if a receive operation fails synchronously, although this is uncommon with UDP. If a socket failure occurs, a <xref:System.Net.Sockets.SocketException> is thrown. The error received is specified as a member of the <xref:System.Net.Sockets.SocketError> enumeration.  
   
@@ -263,7 +263,7 @@
  <paramref name="offset" /> plus the count is greater than the length of the <paramref name="buffer" />.</exception>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpAnySourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginSendToGroup">
@@ -335,7 +335,7 @@
  <paramref name="offset" /> plus the count is greater than the length of the <paramref name="buffer" />.</exception>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpAnySourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BlockSource">
@@ -380,7 +380,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpAnySourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -450,7 +450,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.UdpAnySourceMulticastClient.EndJoinGroup%2A> method completes an asynchronous bind to a socket and join operation to a multicast group.  
   
- If required by the runtime, the  <xref:System.Net.Sockets.UdpAnySourceMulticastClient.EndJoinGroup%2A> method also performs a policy check to verify that the client is allowed to access the multicast group. If the client is not allowed access, a <xref:System.Net.Sockets.SocketException> is thrown with <xref:System.Net.Sockets.SocketError>.  
+ If required by the runtime, the  <xref:System.Net.Sockets.UdpAnySourceMulticastClient.EndJoinGroup%2A> method also performs a policy check to verify that the client is allowed to access the multicast group. If the client is not allowed access, a <xref:System.Net.Sockets.SocketException> is thrown with <xref:System.Net.Sockets.SocketError.AccessDenied>.  
   
  If there is a socket failure while performing the join group operation, a <xref:System.Net.Sockets.SocketException> is thrown. The error received is specified as a member of the <xref:System.Net.Sockets.SocketError> enumeration.  
   
@@ -459,7 +459,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="result" /> is a null reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpAnySourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndReceiveFromGroup">
@@ -505,7 +505,7 @@
           <paramref name="result" /> is a null reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpAnySourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndSendTo">
@@ -548,7 +548,7 @@
           <paramref name="result" /> is a null reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpAnySourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndSendToGroup">
@@ -591,7 +591,7 @@
           <paramref name="result" /> is a null reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpAnySourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="MulticastLoopback">
@@ -749,7 +749,7 @@
   
  The `sourceAddress` parameter may be either an IPv6 or IPv4 multicast address.  
   
- If the specified source address in the `sourceAddress` parameter was not previously blocked by a call to the <xref:System.Net.Sockets.UdpAnySourceMulticastClient.BlockSource%2A> method, a <xref:System.Net.Sockets.SocketException> is thrown with <xref:System.Net.Sockets.SocketError>.  
+ If the specified source address in the `sourceAddress` parameter was not previously blocked by a call to the <xref:System.Net.Sockets.UdpAnySourceMulticastClient.BlockSource%2A> method, a <xref:System.Net.Sockets.SocketException> is thrown with <xref:System.Net.Sockets.SocketError.AddressNotAvailable>.  
   
  If there is a socket failure while performing the unblock source operation, a <xref:System.Net.Sockets.SocketException> is thrown. The error received is specified as a member of the <xref:System.Net.Sockets.SocketError> enumeration.  
   
@@ -757,7 +757,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The multicast group has not yet been joined.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.UdpAnySourceMulticastClient" /> has been disposed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
   </Members>

@@ -2,7 +2,7 @@
 title: "WCF Web HTTP Programming Model Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -96,7 +96,7 @@ interface ICustomer
     [WebGet( UriTemplate="customers/{id}" )]  
   Customer GetCustomer( string id ):  
   
-  //"Do It“ -> HTTP PUT  
+  //"Do It" -> HTTP PUT  
   [WebInvoke( UriTemplate="customers/{id}", Method="PUT" )]  
   Customer UpdateCustomer( string id, Customer newCustomer );  
 }  

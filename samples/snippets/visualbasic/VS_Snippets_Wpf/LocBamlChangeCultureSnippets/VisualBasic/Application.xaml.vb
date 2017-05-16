@@ -1,8 +1,8 @@
 '<SnippetLocBamlChangeCultureCODEBEHIND>
 
-Imports System.Windows ' Application
-Imports System.Globalization ' CultureInfo
-Imports System.Threading ' Thread
+Imports System.Windows
+Imports System.Globalization
+Imports System.Threading
 
 Namespace SDKSample
 	Partial Public Class App

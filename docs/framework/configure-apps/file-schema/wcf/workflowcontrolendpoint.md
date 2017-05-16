@@ -2,7 +2,7 @@
 title: "&lt;workflowControlEndpoint&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,7 +26,7 @@ This configuration element defines a standard endpoint for controlling the execu
 ```  
   
 <system.serviceModel>  
-    <standardEndpoints>       <workflowControlEndpoint>           <standardEndpoint                  name="String" />        </workflowControlEndpoint>            </standardEndpoints>  
+    <standardEndpoints>       <workflowControlEndpoint>           <standardEndpoint                  name="String" />        </workflowControlEndpoint>            </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

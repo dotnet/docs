@@ -1,6 +1,6 @@
 ﻿//<SnippetAddInUICodeBehind>
-using System.Windows; // MessageBox, RoutedEventArgs
-using System.Windows.Controls; // UserControl
+using System.Windows;
+using System.Windows.Controls;
 
 namespace WPFAddIn1
 {

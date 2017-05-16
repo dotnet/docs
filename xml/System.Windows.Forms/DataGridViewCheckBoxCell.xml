@@ -28,7 +28,7 @@
   
  When the current cell is a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, the <xref:System.Windows.Forms.DataGridView.IsCurrentCellInEditMode%2A?displayProperty=fullName> property is always `true`.  
   
- Typically, check box cell values are intended either for storage, like any other data, or for performing bulk operations. If you want to respond immediately when users click a check box cell, you can handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event, but this event occurs before the cell value is updated. If you need the new value at the time of the click, one option is to calculate what the expected value will be based on the current value. Another approach is to commit the change immediately, and handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=fullName> event to respond to it. To commit the change when the cell is clicked, you must handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=fullName> event. In the handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=fullName> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value.  
+ Typically, check box cell values are intended either for storage, like any other data, or for performing bulk operations. If you want to respond immediately when users click a check box cell, you can handle the <xref:System.Windows.Forms.DataGridView.CellClick?displayProperty=fullName> event, but this event occurs before the cell value is updated. If you need the new value at the time of the click, one option is to calculate what the expected value will be based on the current value. Another approach is to commit the change immediately, and handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged?displayProperty=fullName> event to respond to it. To commit the change when the cell is clicked, you must handle the <xref:System.Windows.Forms.DataGridView.CurrentCellDirtyStateChanged?displayProperty=fullName> event. In the handler, if the current cell is a check box cell, call the <xref:System.Windows.Forms.DataGridView.CommitEdit%2A?displayProperty=fullName> method and pass in the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.Commit> value.  
   
    
   
@@ -360,7 +360,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.FlatStyle> flat style is not supported by this cell type.  
+ The <xref:System.Windows.Forms.FlatStyle.Popup> flat style is not supported by this cell type.  
   
  Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.FlatStyle%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FlatStyle%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
   
@@ -460,7 +460,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When `context` includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value, this method returns an <xref:System.Object> that you can cast to a <xref:System.String> representation of the value. Otherwise, this method returns a <xref:System.Boolean> or a <xref:System.Windows.Forms.CheckState> value, depending on the value of the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType%2A> property.  
+ When `context` includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value, this method returns an <xref:System.Object> that you can cast to a <xref:System.String> representation of the value. Otherwise, this method returns a <xref:System.Boolean> or a <xref:System.Windows.Forms.CheckState> value, depending on the value of the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.FormattedValueType%2A> property.  
   
  ]]></format>
         </remarks>
@@ -536,7 +536,7 @@
   
  A <xref:System.Windows.Forms.DataGridView.CellFormatting> event handler can modify both `value` and `cellStyle`. If the handler does not set the <xref:System.Windows.Forms.DataGridViewCellFormattingEventArgs.FormattingApplied%2A?displayProperty=fullName> property to `true`, however, this method formats `value` using the formatting properties of the `cellStyle` object. This can result in an additional <xref:System.Windows.Forms.DataGridView.DataError> event.  
   
- If formatting is successful and the `context` parameter value includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts> value, this method returns the <xref:System.String> version of the formatted value for copying to the Clipboard. Otherwise, this method returns the formatted value for display in the <xref:System.Windows.Forms.DataGridView> control.  
+ If formatting is successful and the `context` parameter value includes the <xref:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent> value, this method returns the <xref:System.String> version of the formatted value for copying to the Clipboard. Otherwise, this method returns the formatted value for display in the <xref:System.Windows.Forms.DataGridView> control.  
   
  ]]></format>
         </remarks>
@@ -1212,7 +1212,7 @@
   
  Setting the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property of the owning column also sets the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property of every cell in the column and refreshes the column display. To override the specified value for individual cells, set the cell values after you set the column value.  
   
- Unlike the column <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property, the cell <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property does not automatically update the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the associated cell style when you change its value. When you change the cell <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value to `true`, be sure to set the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the object returned by the <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property to <xref:System.Windows.Forms.CheckState>. When you change the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value to `false`, be sure to set the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property to `false`.  
+ Unlike the column <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A> property, the cell <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property does not automatically update the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the associated cell style when you change its value. When you change the cell <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value to `true`, be sure to set the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the object returned by the <xref:System.Windows.Forms.DataGridViewCell.Style%2A> property to <xref:System.Windows.Forms.CheckState.Indeterminate>. When you change the <xref:System.Windows.Forms.DataGridViewCheckBoxCell.ThreeState%2A> property value to `false`, be sure to set the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property to `false`.  
   
    
   

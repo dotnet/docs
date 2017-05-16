@@ -30,7 +30,7 @@
    
   
 ## Examples  
- The following example demonstrates using the ManagementQualifier attribute to indicate that a class implements a WMI association class. In this case, the qualifier has a <xref:System.Management.Instrumentation.ManagementQualifierFlavors> flavor that specifies that the effect of the qualifier cannot be overridden in subclasses.  
+ The following example demonstrates using the ManagementQualifier attribute to indicate that a class implements a WMI association class. In this case, the qualifier has a <xref:System.Management.Instrumentation.ManagementQualifierFlavors.DisableOverride> flavor that specifies that the effect of the qualifier cannot be overridden in subclasses.  
   
 ```  
 [ManagementQualifier("Association", Flavor = ManagementQualifierFlavors.DisableOverride)]  

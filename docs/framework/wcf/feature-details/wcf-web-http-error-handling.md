@@ -2,7 +2,7 @@
 title: "WCF Web HTTP Error Handling | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +36,7 @@ Public string Operation2()
    // Operation logic  
    // ...   MyErrorDetail detail = new MyErrorDetail  
    {  
-      Message = “Error Message”,  
+      Message = "Error Message",  
       ErrorCode = 123,  
    }  
    throw new WebFaultException<MyErrorDetail>(detail, HttpStatusCode.Forbidden);  

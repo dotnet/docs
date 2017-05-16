@@ -55,7 +55,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Controls.InkCanvas.Gesture> event occurs, the value of the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> property depends on the first <xref:System.Windows.Ink.GestureRecognitionResult> in the collection returned by the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> method. If the value of the <xref:System.Windows.Ink.GestureRecognitionResult.ApplicationGesture%2A> property is <xref:System.Windows.Ink.ApplicationGesture>, or if it is a gesture whose <xref:System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence%2A> is a value other than <xref:System.Windows.Ink.RecognitionConfidence>, then <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `true`. Otherwise, <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `false`. When <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `false`, the <xref:System.Windows.Controls.InkCanvas> adds the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Strokes%2A> to its <xref:System.Windows.Ink.StrokeCollection>. When <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `true`, the strokes are not added to the <xref:System.Windows.Controls.InkCanvas>.  
+ When the <xref:System.Windows.Controls.InkCanvas.Gesture> event occurs, the value of the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> property depends on the first <xref:System.Windows.Ink.GestureRecognitionResult> in the collection returned by the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> method. If the value of the <xref:System.Windows.Ink.GestureRecognitionResult.ApplicationGesture%2A> property is <xref:System.Windows.Ink.ApplicationGesture.NoGesture>, or if it is a gesture whose <xref:System.Windows.Ink.GestureRecognitionResult.RecognitionConfidence%2A> is a value other than <xref:System.Windows.Ink.RecognitionConfidence.Strong>, then <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `true`. Otherwise, <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `false`. When <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `false`, the <xref:System.Windows.Controls.InkCanvas> adds the <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Strokes%2A> to its <xref:System.Windows.Ink.StrokeCollection>. When <xref:System.Windows.Controls.InkCanvasGestureEventArgs.Cancel%2A> is `true`, the strokes are not added to the <xref:System.Windows.Controls.InkCanvas>.  
   
  ]]></format>
         </remarks>
@@ -85,15 +85,15 @@
   
 |Index|ApplicationGesture|RecognitionConfidence|  
 |-----------|------------------------|---------------------------|  
-|0|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
-|1|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
-|2|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
-|3|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
+|0|<xref:System.Windows.Ink.ApplicationGesture.Check>|<xref:System.Windows.Ink.RecognitionConfidence.Strong>|  
+|1|<xref:System.Windows.Ink.ApplicationGesture.NoGesture>|<xref:System.Windows.Ink.RecognitionConfidence.Intermediate>|  
+|2|<xref:System.Windows.Ink.ApplicationGesture.Curlicue>|<xref:System.Windows.Ink.RecognitionConfidence.Poor>|  
+|3|<xref:System.Windows.Ink.ApplicationGesture.DoubleCurlicue>|<xref:System.Windows.Ink.RecognitionConfidence.Poor>|  
   
  This means that the <xref:System.Windows.Ink.GestureRecognizer> recognizes that it is very likely that the <xref:System.Windows.Ink.Stroke> is a check mark, relatively likely that the <xref:System.Windows.Ink.Stroke> in not a gesture, and not at all likely that the <xref:System.Windows.Ink.Stroke> is a curlicue or a double curlicue.  
   
 > [!NOTE]
->  The <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> method can return an array with <xref:System.Windows.Ink.ApplicationGesture> with a higher degree of <xref:System.Windows.Ink.RecognitionConfidence> than it has for other application gestures. This means that it is more likely that the <xref:System.Windows.Ink.Stroke> is not a gesture, as opposed to a gesture that has a lower <xref:System.Windows.Ink.RecognitionConfidence>.  
+>  The <xref:System.Windows.Controls.InkCanvasGestureEventArgs.GetGestureRecognitionResults%2A> method can return an array with <xref:System.Windows.Ink.ApplicationGesture.NoGesture> with a higher degree of <xref:System.Windows.Ink.RecognitionConfidence> than it has for other application gestures. This means that it is more likely that the <xref:System.Windows.Ink.Stroke> is not a gesture, as opposed to a gesture that has a lower <xref:System.Windows.Ink.RecognitionConfidence>.  
   
  ]]></format>
         </remarks>

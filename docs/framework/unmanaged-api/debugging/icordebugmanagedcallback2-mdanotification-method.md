@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "MDANotification method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::MDANotification method [.NET Framework debugging]"
 ms.assetid: 93f79627-bd31-4f4f-b95d-46a032a52fe4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

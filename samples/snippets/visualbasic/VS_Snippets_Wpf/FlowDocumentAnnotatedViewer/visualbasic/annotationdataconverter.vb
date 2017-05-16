@@ -1,9 +1,9 @@
-Imports System ' Type
-Imports System.Globalization ' CultureInfo
-Imports System.IO ' MemoryStream
-Imports System.Windows.Data ' IValueConverter
-Imports System.Windows.Documents ' Section, TextRange
-Imports System.Windows.Markup ' XamlReader
+Imports System
+Imports System.Globalization
+Imports System.IO
+Imports System.Windows.Data
+Imports System.Windows.Documents
+Imports System.Windows.Markup
 
 Namespace FlowDocumentAnnotatedReader
 	Public Class AnnotationDataConverter

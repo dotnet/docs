@@ -2,7 +2,7 @@
 title: "&lt;remove&gt; Element for connectionManagement (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,8 +40,8 @@ Removes an IP address or DNS name from the connection management list.
   
 ```  
   
-      <remove   
-   name = "server name or IP address"   
+      <remove   
+   name = "server name or IP address"   
 />  
 ```  
   

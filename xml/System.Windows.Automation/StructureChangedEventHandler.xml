@@ -19,7 +19,7 @@
   <Docs>
     <param name="sender">The object that raised the event.</param>
     <param name="e">Information about the event.</param>
-    <summary>Represents the method implemented by the client application to handle the event raised when the [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] tree structure has changed.</summary>
+    <summary>Represents the method implemented by the client application to handle the event raised when the UI Automation tree structure has changed.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -28,11 +28,11 @@
   
 |`e.structureChangeType`|`sender`|`e.runtimeId`|  
 |-----------------------------|--------------|-------------------|  
-|<xref:System.Windows.Automation.StructureChangeType>|The child that was added.|The child that was added.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the child that was removed.|The child that was removed.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were added.|The parent of the children that were added.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were removed.|The parent of the children that were removed.|  
-|<xref:System.Windows.Automation.StructureChangeType>|The parent of the children that were invalidated.|The parent of the children that were invalidated|  
+|<xref:System.Windows.Automation.StructureChangeType.ChildAdded>|The child that was added.|The child that was added.|  
+|<xref:System.Windows.Automation.StructureChangeType.ChildRemoved>|The parent of the child that was removed.|The child that was removed.|  
+|<xref:System.Windows.Automation.StructureChangeType.ChildrenBulkAdded>|The parent of the children that were added.|The parent of the children that were added.|  
+|<xref:System.Windows.Automation.StructureChangeType.ChildrenBulkRemoved>|The parent of the children that were removed.|The parent of the children that were removed.|  
+|<xref:System.Windows.Automation.StructureChangeType.ChildrenInvalidated>|The parent of the children that were invalidated.|The parent of the children that were invalidated|  
   
  ]]></format>
     </remarks>

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ThreadAssignedToOSThread method [.NET Framework profiling]"
   - "ICorProfilerCallback::ThreadAssignedToOSThread method [.NET Framework profiling]"
 ms.assetid: f9671e5a-7b14-4f5b-8404-58136422c8b2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

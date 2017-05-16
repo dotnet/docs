@@ -2,7 +2,7 @@
 title: "Walkthrough: Updating Status Bar Information at Run Time | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -85,7 +85,7 @@ manager: "wpickett"
   
 ### To test the application  
   
-1.  Debug the application and press F5 to run it. For details about debugging, see [Debugging in Visual Studio](http://msdn.microsoft.com/library/590f152d-31e2-4e13-b808-a1b13e421483).  
+1.  Debug the application and press F5 to run it. For details about debugging, see [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio).  
   
     > [!NOTE]
     >  It will take approximately 30 seconds for the clock to appear in the status bar. This is to get the most accurate time possible. Conversely, to make the clock appear sooner, you can reduce the value of the <xref:System.Windows.Forms.Timer.Interval%2A> property you set in step 7 in the previous procedure.  

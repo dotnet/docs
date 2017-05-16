@@ -76,6 +76,6 @@ For more information, see the [C# language specification](https://msdn.microsoft
 [Class and struct members](https://msdn.microsoft.com/library/ms173113.aspx)   
 [Class and struct methods](https://msdn.microsoft.com/library/ms173114.aspx)   
 [Constructors](https://msdn.microsoft.com/library/ace5hbzh.aspx)   
-[Destructors](https://msdn.microsoft.com/library/66x5fx1b.aspx)   
+[Finalizers](https://msdn.microsoft.com/library/66x5fx1b.aspx)   
 [Objects](https://msdn.microsoft.com/library/ms173110.aspx)
 

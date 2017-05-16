@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Xml.Schema.XmlSchemaAnnotated</BaseTypeName>
   </Base>
@@ -41,6 +45,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaType" /> class.</summary>
@@ -60,6 +68,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -102,6 +114,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
@@ -137,6 +153,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
@@ -165,6 +185,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
@@ -184,12 +208,12 @@
   
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod> value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|No derivation method specified.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by Substitution.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by Extension.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by Restriction.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by List.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Derived by Union.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.None>|No derivation method specified.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Substitution>|Derived by Substitution.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Extension>|Derived by Extension.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Restriction>|Derived by Restriction.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.List>|Derived by List.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Union>|Derived by Union.|  
   
  ]]></format>
         </remarks>
@@ -208,6 +232,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -231,23 +259,23 @@
   
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod> value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Overrides the schema `blockDefault` setting allowing any derivations by restriction, extension, or substitution to take place.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|No derivation method is specified. This is the default. Derivation rules are taken from the schema blockDefault setting.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Substitution.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Extension.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Restriction.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|`#all`. Cannot be replaced by a type derived by any derivation method.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Empty>|Overrides the schema `blockDefault` setting allowing any derivations by restriction, extension, or substitution to take place.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.None>|No derivation method is specified. This is the default. Derivation rules are taken from the schema blockDefault setting.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Substitution>|Cannot be replaced by a type derived by Substitution.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Extension>|Cannot be replaced by a type derived by Extension.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Restriction>|Cannot be replaced by a type derived by Restriction.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.All>|`#all`. Cannot be replaced by a type derived by any derivation method.|  
   
  The following table shows the values that this property can contain for complex type.  
   
 |<xref:System.Xml.Schema.XmlSchemaDerivationMethod> value|Description|  
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Overrides the schema `blockDefault` setting allowing any derivations by restriction, extension, or substitution to take place.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|No derivation method is specified. This is the default. Derivation rules are taken from the schema `blockDefault` setting.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Substitution.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Extension.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|Cannot be replaced by a type derived by Restriction.|  
-|<xref:System.Xml.Schema.XmlSchemaDerivationMethod>|`#all`. Cannot be replaced by a type derived by any derivation method.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Empty>|Overrides the schema `blockDefault` setting allowing any derivations by restriction, extension, or substitution to take place.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.None>|No derivation method is specified. This is the default. Derivation rules are taken from the schema `blockDefault` setting.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Substitution>|Cannot be replaced by a type derived by Substitution.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Extension>|Cannot be replaced by a type derived by Extension.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.Restriction>|Cannot be replaced by a type derived by Restriction.|  
+|<xref:System.Xml.Schema.XmlSchemaDerivationMethod.All>|`#all`. Cannot be replaced by a type derived by any derivation method.|  
   
  ]]></format>
         </remarks>
@@ -266,6 +294,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -302,6 +334,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaComplexType</ReturnType>
       </ReturnValue>
@@ -328,6 +364,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaComplexType</ReturnType>
@@ -356,6 +396,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaSimpleType</ReturnType>
@@ -399,6 +443,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaSimpleType</ReturnType>
       </ReturnValue>
@@ -441,6 +489,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -503,6 +555,10 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
@@ -539,6 +595,10 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Xml.Serialization.XmlAttribute("name")</AttributeName>
@@ -574,6 +634,10 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
@@ -601,6 +665,10 @@ Console.WriteLine(XmlSchemaType.IsDerivedFrom(xsdPositiveInteger, xsdInteger, Xm
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

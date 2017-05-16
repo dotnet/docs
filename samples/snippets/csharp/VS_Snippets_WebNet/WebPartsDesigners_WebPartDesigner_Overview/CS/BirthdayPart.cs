@@ -1,4 +1,5 @@
-//<snippet1><snippet2>
+// <Snippet1>
+// <Snippet2>
 using System;
 using System.Security.Permissions;
 using System.Web;
@@ -73,7 +74,8 @@ namespace Samples.AspNet.CS.Controls
     }
   }
 
-//</snippet2><snippet3>
+  // </Snippet2>
+  // <Snippet3>
   public class BirthdayPartDesigner : WebPartDesigner
   {
     public override void Initialize(IComponent component)
@@ -132,4 +134,5 @@ namespace Samples.AspNet.CS.Controls
     }
   }
 }
-//</snippet3></snippet1>
+// </Snippet3>
+// </Snippet1>

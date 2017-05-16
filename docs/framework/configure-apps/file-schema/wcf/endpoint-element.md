@@ -2,7 +2,7 @@
 title: "&lt;endpoint&gt; element | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -36,7 +36,7 @@ Specifies binding, contract, and address properties for a service endpoint, whic
    bindingName="String"  
    bindingNamespace="String"  
    contract="String"  
-   endpointConfiguration=”String”   isSystemEndpoint=”Boolean”   kind=”String”   listenUriMode="Explicit/Unique"  
+   endpointConfiguration="String"   isSystemEndpoint="Boolean"   kind="String"   listenUriMode="Explicit/Unique"  
    listenUri="Uri"  
 </endpoint>  
 ```  

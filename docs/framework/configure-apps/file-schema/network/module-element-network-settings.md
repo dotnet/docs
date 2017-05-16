@@ -2,7 +2,7 @@
 title: "&lt;module&gt; Element (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -38,8 +38,8 @@ Adds a new proxy module to the application.
   
 ```  
   
-      <module   
-   type = "name", System, Version="version number", Culture="culture", PublicKeyToken="token" "   
+      <module   
+   type = "name", System, Version="version number", Culture="culture", PublicKeyToken="token" "   
 />  
 ```  
   

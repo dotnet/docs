@@ -22,8 +22,6 @@
   
  If the data source is a <xref:System.Data.DataTable> containing <xref:System.Data.DataColumn> objects, the <xref:System.Data.DataColumn.DataType%2A> property of the <xref:System.Data.DataColumn> should be set to a data type that can logically be edited in a text box control. The following data types are automatically associated with a <xref:System.Windows.Forms.DataGridTextBoxColumn> : <xref:System.Byte>, <xref:System.DateTime>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Single>, and <xref:System.String>.  
   
- [Visual Basic]  
-  
 > [!NOTE]
 >  The following types are not fully supported by Visual Basic: <xref:System.DateTime>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, and <xref:System.TimeSpan>. (Operators are not allowed.)  
   
@@ -821,7 +819,7 @@
 ## Examples  
  The following example sets the <xref:System.ComponentModel.PropertyDescriptor> property of the <xref:System.Windows.Forms.DataGridTextBoxColumn>.  
   
-```  
+```csharp  
 [SampleID='Classic DataGridTextBoxColumn.PropertyDescriptor Example' SnippetID='1']  
 ```  
   

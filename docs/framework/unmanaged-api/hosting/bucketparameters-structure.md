@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "BucketParameters structure [.NET Framework hosting]"
 ms.assetid: 9432487e-f276-45d6-9a13-9a68024dbd46
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

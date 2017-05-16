@@ -49,11 +49,11 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" /> class using the specified thumbprint for an X.509 certificate.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="thumbprint" /> is <see langword="null" />.  
+          <paramref name="certificateThumbprint" /> is <see langword="null" />.  
   
  -or-  
   
- <paramref name="thumbprint" /> is zero length.</exception>
+ <paramref name="certificateThumbprint" /> is zero length.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

@@ -366,6 +366,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EncryptPassword">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encrypts a password.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a byte array that contains the encrypted password.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EncryptPassword">
       <MemberSignature Language="C#" Value="protected virtual byte[] EncryptPassword (byte[] password);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] EncryptPassword(unsigned int8[] password) cil managed" />
@@ -1083,7 +1100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.MembershipProvider.RequiresUniqueEmail%2A> property indicates whether users must supply a unique e-mail address value when creating a user. If a user already exists in the data source for the current <xref:System.Web.Security.MembershipProvider.ApplicationName%2A>, then the <xref:System.Web.Security.MembershipProvider.CreateUser%2A> method returns `null` and a status value of <xref:System.Web.Security.MembershipCreateStatus>.  
+ The <xref:System.Web.Security.MembershipProvider.RequiresUniqueEmail%2A> property indicates whether users must supply a unique e-mail address value when creating a user. If a user already exists in the data source for the current <xref:System.Web.Security.MembershipProvider.ApplicationName%2A>, then the <xref:System.Web.Security.MembershipProvider.CreateUser%2A> method returns `null` and a status value of <xref:System.Web.Security.MembershipCreateStatus.DuplicateEmail>.  
   
    
   
@@ -1279,22 +1296,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="EncryptPassword">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.ApplicationServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Encrypts a password.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method returns a byte array that contains the encrypted password.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

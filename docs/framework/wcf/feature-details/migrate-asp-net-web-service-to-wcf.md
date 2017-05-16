@@ -2,7 +2,7 @@
 title: "How to: Migrate ASP.NET Web Service Code to the Windows Communication Foundation | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -192,7 +192,7 @@ The following procedure describes how to migrate an ASP.NET Web Service to [!INC
       <service name="MyOrganization.Adder "  
         behaviorConfiguration="AdderBehavior">  
        <endpoint   
-        address="”  
+        address=""  
         binding="basicHttpBinding"  
         contract="AdderSoap "/>  
        </service>  

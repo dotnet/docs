@@ -2,7 +2,7 @@
 title: "&lt;webHttpEndpoint&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -26,7 +26,7 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
 ```  
   
 <system.serviceModel>  
-    <standardEndpoints>       <webHttpEndpoint>           <standardEndpoint             automaticFormatSelectionEnabled="String"              defaultOutgoingResponseFormat=”Xml/Json”             helpEnabled=”Boolean”             webEndpointType=”String”/>             </webHttpEndpoint>     </standardEndpoints>  
+    <standardEndpoints>       <webHttpEndpoint>           <standardEndpoint             automaticFormatSelectionEnabled="String"              defaultOutgoingResponseFormat="Xml/Json"             helpEnabled="Boolean"             webEndpointType="String"/>             </webHttpEndpoint>     </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

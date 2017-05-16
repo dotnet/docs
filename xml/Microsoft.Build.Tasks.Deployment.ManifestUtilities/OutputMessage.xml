@@ -94,7 +94,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values can be <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType>, <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType>, or <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType>. For more information, see <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType>.  
+ The values can be <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType.Error>, <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType.Info>, or <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType.Warning>. For more information, see <xref:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType>.  
   
  ]]></format>
         </remarks>

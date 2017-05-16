@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Computes the logical AND of two values. Both values are converted into Boolean, and if both are true then this expression returns <see langword="true" />. If one or both values evaluate to false, this expression returns <see langword="false" />. <see cref="T:System.Activities.Expressions.AndAlso" /> is the “short circuit” version of the logical AND operator, returning false as soon as one of operands is evaluated to be <see langword="false" />.</summary>
+    <summary>Computes the logical AND of two values. Both values are converted into Boolean, and if both are true then this expression returns <see langword="true" />. If one or both values evaluate to false, this expression returns <see langword="false" />. <see cref="T:System.Activities.Expressions.AndAlso" /> is the "short circuit" version of the logical AND operator, returning false as soon as one of operands is evaluated to be <see langword="false" />.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

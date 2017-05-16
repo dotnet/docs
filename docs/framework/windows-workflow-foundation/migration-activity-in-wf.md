@@ -14,7 +14,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Migration Activity in WF
-[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] provides the <xref:System.Activities.Statements.Interop> activity for executing activities that derive from <xref:System.WorkflowModel.Activities.Activity> within a workflow that is based on <xref:System.Activities.Activity>. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] the [Migration Guidance](../../../docs/framework/windows-workflow-foundation/migration-guidance.md) section.  
+[!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] provides the <xref:System.Activities.Statements.Interop> activity for executing activities that derive from Activity within a workflow that is based on <xref:System.Activities.Activity>. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)] the [Migration Guidance](../../../docs/framework/windows-workflow-foundation/migration-guidance.md) section.  
   
 > [!NOTE]
 >  The <xref:System.Activities.Statements.Interop> activity does not appear in the workflow designer toolbox unless the workflow's project has its **Target Framework** setting set to **.Net Framework 4** or higher.

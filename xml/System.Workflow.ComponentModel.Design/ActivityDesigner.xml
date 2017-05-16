@@ -741,6 +741,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invalidate">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invalidates the designer.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use Invalidate to cause the designer to be repainted.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Invalidate">
       <MemberSignature Language="C#" Value="public void Invalidate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate() cil managed" />
@@ -2648,6 +2665,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowInfoTip">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the specified info tip for the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unless overridden in a derived class, <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.ShowInfoTip%2A> uses the <xref:System.Workflow.ComponentModel.Design.WorkflowView.ShowInfoTip%2A?displayProperty=fullName> logic to display info tips.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ShowInfoTip">
       <MemberSignature Language="C#" Value="protected void ShowInfoTip (string infoTip);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ShowInfoTip(string infoTip) cil managed" />
@@ -3363,39 +3397,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ShowInfoTip">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Displays the specified info tip for the <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesigner" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unless overridden in a derived class, <xref:System.Workflow.ComponentModel.Design.ActivityDesigner.ShowInfoTip%2A> uses the <xref:System.Workflow.ComponentModel.Design.WorkflowView.ShowInfoTip%2A?displayProperty=fullName> logic to display info tips.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Invalidate">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invalidates the designer.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use Invalidate to cause the designer to be repainted.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

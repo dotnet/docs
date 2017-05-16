@@ -2,7 +2,7 @@
 title: "ICorDebugModule::EnableJITDebugging Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule::EnableJITDebugging method [.NET Framework debugging]"
   - "EnableJITDebugging method [.NET Framework debugging]"
 ms.assetid: 0a65e2a4-5bb6-496c-ae6f-40474426b5a6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

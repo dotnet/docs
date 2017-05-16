@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the insertion point for classes that extend the functionality of [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client objects for all messages handled by a client application.</summary>
+    <summary>Represents the insertion point for classes that extend the functionality of Windows Communication Foundation (WCF) client objects for all messages handled by a client application.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -68,9 +68,7 @@
   
  The following code example shows a configuration file that loads the endpoint behavior into the client endpoint.  
   
- <!-- TODO: review snippet reference [!code[Interceptors#3](~/samples/snippets/common/VS_Snippets_CFX/interceptors/common/client.exe.config#3)]  -->
- <!-- TODO: review snippet reference [!code-csharp[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[Interceptors#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/client.exe.config#3)]  -->  
+ [!code-xml[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]   
   
  ]]></format>
     </remarks>
@@ -298,7 +296,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the client adds addressing headers to request-reply messages.</summary>
         <value>
-          <see langword="true" /> if the client does not add any addressing headers; otherwise, <see langword="false" />. The default is <see langword="false" />. See Remarks.</value>
+          <see langword="true" /> if the client does not add any addressing headers; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -370,9 +368,7 @@
   
  The following code example shows a configuration file that loads the endpoint behavior into the client endpoint.  
   
- <!-- TODO: review snippet reference [!code[Interceptors#3](~/samples/snippets/common/VS_Snippets_CFX/interceptors/common/client.exe.config#3)]  -->
- <!-- TODO: review snippet reference [!code-csharp[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[Interceptors#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/interceptors/vb/client.exe.config#3)]  -->  
+ [!code-xml[Interceptors#3](~/samples/snippets/csharp/VS_Snippets_CFX/interceptors/cs/client.exe.config#3)]   
   
  ]]></format>
         </remarks>

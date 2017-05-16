@@ -6,6 +6,7 @@
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -71,6 +72,7 @@
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,7 +101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the initial state of the event is nonsignaled, threads that wait on the event will block. If the initial state is signaled, and the <xref:System.Threading.EventResetMode> flag is specified for `mode`, threads that wait on the event will not block. If the initial state is signaled, and `mode` is <xref:System.Threading.EventResetMode>, the first thread that waits on the event will be released immediately, after which the event will reset, and subsequent threads will block.  
+ If the initial state of the event is nonsignaled, threads that wait on the event will block. If the initial state is signaled, and the <xref:System.Threading.EventResetMode.ManualReset> flag is specified for `mode`, threads that wait on the event will not block. If the initial state is signaled, and `mode` is <xref:System.Threading.EventResetMode.AutoReset>, the first thread that waits on the event will be released immediately, after which the event will reset, and subsequent threads will block.  
   
    
   
@@ -125,6 +127,7 @@
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,7 +165,7 @@
 > [!IMPORTANT]
 >  When using this constructor for named system events, specify `false` for `initialState`. This constructor provides no way to determine whether a named system event was created, so you cannot make any assumptions about the state of the named event. To determine whether a named event was created, use the <xref:System.Threading.EventWaitHandle.%23ctor%28System.Boolean%2CSystem.Threading.EventResetMode%2CSystem.String%2CSystem.Boolean%40%29> constructor or the <xref:System.Threading.EventWaitHandle.%23ctor%28System.Boolean%2CSystem.Threading.EventResetMode%2CSystem.String%2CSystem.Boolean%40%2CSystem.Security.AccessControl.EventWaitHandleSecurity%29> constructor.  
   
- If the initial state of the event is nonsignaled, threads that wait on the event will block. If the initial state is signaled, and the <xref:System.Threading.EventResetMode> flag is specified for `mode`, threads that wait on the event will not block. If the initial state is signaled, and `mode` is <xref:System.Threading.EventResetMode>, the first thread that waits on the event will be released immediately, after which the event will reset, and subsequent threads will block.  
+ If the initial state of the event is nonsignaled, threads that wait on the event will block. If the initial state is signaled, and the <xref:System.Threading.EventResetMode.ManualReset> flag is specified for `mode`, threads that wait on the event will not block. If the initial state is signaled, and `mode` is <xref:System.Threading.EventResetMode.AutoReset>, the first thread that waits on the event will be released immediately, after which the event will reset, and subsequent threads will block.  
   
  ]]></format>
         </remarks>
@@ -183,6 +186,7 @@
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -217,7 +221,7 @@
 ## Remarks  
  If a system event with the name specified for the `name` parameter already exists, the `initialState` parameter is ignored. After calling this constructor, use the value in the variable specified for the `ref` parameter (`ByRef` parameter in Visual Basic)`createdNew` to determine whether the named system event already existed or was created.  
   
- If the initial state of the event is nonsignaled, threads that wait on the event will block. If the initial state is signaled, and the <xref:System.Threading.EventResetMode> flag is specified for `mode`, threads that wait on the event will not block. If the initial state is signaled, and `mode` is <xref:System.Threading.EventResetMode>, the first thread that waits on the event will be released immediately, after which the event will reset, and subsequent threads will block.  
+ If the initial state of the event is nonsignaled, threads that wait on the event will block. If the initial state is signaled, and the <xref:System.Threading.EventResetMode.ManualReset> flag is specified for `mode`, threads that wait on the event will not block. If the initial state is signaled, and `mode` is <xref:System.Threading.EventResetMode.AutoReset>, the first thread that waits on the event will be released immediately, after which the event will reset, and subsequent threads will block.  
   
  ]]></format>
         </remarks>
@@ -274,7 +278,7 @@
   
  If a system event with the name specified for the `name` parameter already exists, the `initialState` parameter is ignored. After calling this constructor, use the value in the variable specified for the `ref` parameter (`ByRef` parameter in Visual Basic) `createdNew` to determine whether the named system event already existed or was created.  
   
- If the initial state of the event is nonsignaled, threads that wait on the event will block. If the initial state is signaled, and the <xref:System.Threading.EventResetMode> flag is specified for `mode`, threads that wait on the event will not block. If the initial state is signaled, and `mode` is <xref:System.Threading.EventResetMode>, the first thread that waits on the event will be released immediately, after which the event will reset, and subsequent threads will block.  
+ If the initial state of the event is nonsignaled, threads that wait on the event will block. If the initial state is signaled, and the <xref:System.Threading.EventResetMode.ManualReset> flag is specified for `mode`, threads that wait on the event will not block. If the initial state is signaled, and `mode` is <xref:System.Threading.EventResetMode.AutoReset>, the first thread that waits on the event will be released immediately, after which the event will reset, and subsequent threads will block.  
   
    
   
@@ -366,6 +370,7 @@
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -511,6 +516,7 @@
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -547,6 +553,7 @@
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -663,6 +670,7 @@
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

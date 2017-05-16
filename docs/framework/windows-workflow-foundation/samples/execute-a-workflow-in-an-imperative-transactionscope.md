@@ -2,7 +2,7 @@
 title: "Execute a Workflow in an Imperative TransactionScope | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -23,7 +23,7 @@ This sample shows how to execute a workflow using <xref:System.Activities.Workfl
   
  A workflow can have only a single ambient transaction for each workflow instance; nested transactions are not available. Even if the workflow contains a <xref:System.Activities.Statements.TransactionScope> activity, this does not create a new inner transaction. Instead, this reuses the ambient transaction that was created outside the workflow.  
   
- The sample begins a new <xref:System.Transactions.Transaction.TransactionScope>, prints the transaction ID and begins a workflow using <xref:System.Activities.WorkflowInvoker>. The workflow prints the transaction ID again, showing that it is the same transaction, then runs a <xref:System.Activities.Statements.TransactionScope>, then completes. The <xref:System.Activities.WorkflowInvoker.Invoke%2A> call on <xref:System.Activities.WorkflowInvoker> is synchronous so the original thread blocks until the workflow completes. Once the workflow is complete, the transaction is completed and resources disposed.  
+ The sample begins a new <xref:System.Transactions.TransactionScope>, prints the transaction ID and begins a workflow using <xref:System.Activities.WorkflowInvoker>. The workflow prints the transaction ID again, showing that it is the same transaction, then runs a <xref:System.Activities.Statements.TransactionScope>, then completes. The <xref:System.Activities.WorkflowInvoker.Invoke%2A> call on <xref:System.Activities.WorkflowInvoker> is synchronous so the original thread blocks until the workflow completes. Once the workflow is complete, the transaction is completed and resources disposed.  
   
 #### To use this sample  
   

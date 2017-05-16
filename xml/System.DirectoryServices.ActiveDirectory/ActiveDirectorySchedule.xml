@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,6 +24,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,6 +40,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="schedule" Type="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
@@ -58,6 +61,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean[,,]</ReturnType>
@@ -70,119 +74,65 @@
   
  The following are the valid values for the day-of-week.  
   
- <list type="table">  
-<listheader>  
-<term> Day-of-week value  
+ <list type="table"><listheader><term> Day-of-week value  
   
- </term>  
-<description> Indicated day of the week.  
+ </term><description> Indicated day of the week.  
   
- </description>  
-</listheader>  
-<item>  
-<term> 0  
+ </description></listheader><item><term> 0  
   
- </term>  
-<description> Sunday  
+ </term><description> Sunday  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> Monday  
+ </term><description> Monday  
   
- </description>  
-</item>  
-<item>  
-<term> 2  
+ </description></item><item><term> 2  
   
- </term>  
-<description> Tuesday  
+ </term><description> Tuesday  
   
- </description>  
-</item>  
-<item>  
-<term> 3  
+ </description></item><item><term> 3  
   
- </term>  
-<description> Wednesday  
+ </term><description> Wednesday  
   
- </description>  
-</item>  
-<item>  
-<term> 4  
+ </description></item><item><term> 4  
   
- </term>  
-<description> Thursday  
+ </term><description> Thursday  
   
- </description>  
-</item>  
-<item>  
-<term> 5  
+ </description></item><item><term> 5  
   
- </term>  
-<description> Friday  
+ </term><description> Friday  
   
- </description>  
-</item>  
-<item>  
-<term> 6  
+ </description></item><item><term> 6  
   
- </term>  
-<description> Saturday  
+ </term><description> Saturday  
   
- </description>  
-</item>  
-</list>  
+ </description></item></list>  
   
  The hour is zero-based and specified in 24-hour format. For example, 2 P.M. would be specified as 14. Valid values are 0-23.  
   
  The 15-minute interval specifies the 15-minute block within the hour that the source is available for replication. The following table identifies the possible values for the 15-minute interval.  
   
- <list type="table">  
-<listheader>  
-<term> 15-minute interval  
+ <list type="table"><listheader><term> 15-minute interval  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> 0  
+ </description></listheader><item><term> 0  
   
- </term>  
-<description> The source is available for replication from 0 to 14 minutes after the hour.  
+ </term><description> The source is available for replication from 0 to 14 minutes after the hour.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> The source is available for replication from 15 to 29 minutes after the hour.  
+ </term><description> The source is available for replication from 15 to 29 minutes after the hour.  
   
- </description>  
-</item>  
-<item>  
-<term> 2  
+ </description></item><item><term> 2  
   
- </term>  
-<description> The source is available for replication from 30 to 44 minutes after the hour.  
+ </term><description> The source is available for replication from 30 to 44 minutes after the hour.  
   
- </description>  
-</item>  
-<item>  
-<term> 3  
+ </description></item><item><term> 3  
   
- </term>  
-<description> The source is available for replication from 45 to 59 minutes after the hour.  
+ </term><description> The source is available for replication from 45 to 59 minutes after the hour.  
   
- </description>  
-</item>  
-</list>  
+ </description></item></list>  
   
  The following C# example shows how to use this property to determine if the source is available for replication at 15:50 Coordinated Universal Time on Tuesday.  
   
@@ -206,6 +156,7 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -224,6 +175,7 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -260,6 +212,7 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -302,6 +255,7 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

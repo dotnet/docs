@@ -1,11 +1,11 @@
 ﻿//<SnippetAddInSideAdapterCode>
-using System; // IntPtr
-using System.AddIn.Contract; // INativeHandleContract
-using System.AddIn.Pipeline; // AddInAdapterAttribute, FrameworkElementAdapters, ContractBase
+using System;
+using System.AddIn.Contract;
+using System.AddIn.Pipeline;
 using System.Security.Permissions;
 
-using AddInViews; // WPFAddInView
-using Contracts; // IWPFAddInContract
+using AddInViews;
+using Contracts;
 
 namespace AddInSideAdapters
 {

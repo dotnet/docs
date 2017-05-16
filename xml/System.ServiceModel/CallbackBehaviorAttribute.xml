@@ -31,7 +31,7 @@
  The <xref:System.ServiceModel.CallbackBehaviorAttribute> must be applied to the class that implements the callback contract. If applied to a non-duplex contract implementation an <xref:System.InvalidOperationException> exception is thrown at runtime.  
   
 > [!NOTE]
->  You can also use the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute for the callback operation implementations. However, if <xref:System.ServiceModel.OperationBehaviorAttribute> is used on a callback operation, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property must be <xref:System.ServiceModel.ReleaseInstanceMode> or an <xref:System.InvalidOperationException> exception is thrown at runtime.  
+>  You can also use the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute for the callback operation implementations. However, if <xref:System.ServiceModel.OperationBehaviorAttribute> is used on a callback operation, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property must be <xref:System.ServiceModel.ReleaseInstanceMode.None> or an <xref:System.InvalidOperationException> exception is thrown at runtime.  
   
  The following properties are available:  
   
@@ -86,7 +86,7 @@
   
 -   The <xref:System.ServiceModel.CallbackBehaviorAttribute.AutomaticSessionShutdown%2A> property is `true`.  
   
--   The <xref:System.ServiceModel.CallbackBehaviorAttribute.ConcurrencyMode%2A> is set to <xref:System.ServiceModel.ConcurrencyMode>.  
+-   The <xref:System.ServiceModel.CallbackBehaviorAttribute.ConcurrencyMode%2A> is set to <xref:System.ServiceModel.ConcurrencyMode.Single>.  
   
 -   The <xref:System.ServiceModel.CallbackBehaviorAttribute.IgnoreExtensionDataObject%2A> property is `false`.  
   
@@ -157,13 +157,13 @@
 ## Remarks  
  This property indicates whether an instance of a callback object supports one thread or multiple threads that execute concurrently, and if single-threaded, whether reentrancy is supported.  
   
- Setting <xref:System.ServiceModel.ConcurrencyMode> to <xref:System.ServiceModel.ConcurrencyMode> instructs the system to restrict instances of the service to one thread of execution at a time, which frees you from dealing with threading issues. This is the default value. A value of <xref:System.ServiceModel.ConcurrencyMode> means that service objects can be executed by multiple threads at any one time. In this case, you must ensure thread safety and state consistency.  
+ Setting <xref:System.ServiceModel.ConcurrencyMode> to <xref:System.ServiceModel.ConcurrencyMode.Single> instructs the system to restrict instances of the service to one thread of execution at a time, which frees you from dealing with threading issues. This is the default value. A value of <xref:System.ServiceModel.ConcurrencyMode.Multiple> means that service objects can be executed by multiple threads at any one time. In this case, you must ensure thread safety and state consistency.  
   
- <xref:System.ServiceModel.ConcurrencyMode> also restricts access to a single thread at a time. However, it enables calls out from an executing service method to return and reenter the executing service. A reentrant call can execute on a different managed thread, but in this case the original thread is blocked for the duration of the reentrant call.  
+ <xref:System.ServiceModel.ConcurrencyMode.Reentrant> also restricts access to a single thread at a time. However, it enables calls out from an executing service method to return and reenter the executing service. A reentrant call can execute on a different managed thread, but in this case the original thread is blocked for the duration of the reentrant call.  
   
  Generally, if a message arrives for an instance that violates its concurrency mode, the message waits until the instance is available, or until it times out.  
   
- In addition, if the <xref:System.ServiceModel.ConcurrencyMode> is set to <xref:System.ServiceModel.ConcurrencyMode> and a reentrant call is blocked while waiting for the instance to be freed, the system detects the deadlock and throws an exception.  
+ In addition, if the <xref:System.ServiceModel.ConcurrencyMode> is set to <xref:System.ServiceModel.ConcurrencyMode.Single> and a reentrant call is blocked while waiting for the instance to be freed, the system detects the deadlock and throws an exception.  
   
  [!INCLUDE[crabout](~/includes/crabout-md.md)] concurrency, see <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A?displayProperty=fullName> and [Sessions, Instancing, and Concurrency](~/docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md).  
   
@@ -380,7 +380,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The isolation level in which your transaction runs determines how data is treated when changes are made in other transactions and how long your transaction must hold locks to protect against these changes. For example, the default value, <xref:System.Transactions.IsolationLevel>, specifies that no updating or inserting can occur until the transaction is complete.  
+ The isolation level in which your transaction runs determines how data is treated when changes are made in other transactions and how long your transaction must hold locks to protect against these changes. For example, the default value, <xref:System.Transactions.IsolationLevel.Unspecified>, specifies that no updating or inserting can occur until the transaction is complete.  
   
  ]]></format>
         </remarks>

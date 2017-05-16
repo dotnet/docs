@@ -23,7 +23,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The read-write properties of a class are marked with the <xref:System.Management.Instrumentation.ManagementConfigurationAttribute> attribute. In addition, each read-write property can be one of two types: <xref:System.Management.Instrumentation.ManagementConfigurationType> or <xref:System.Management.Instrumentation.ManagementConfigurationType>. If a class has read-write properties that are configured as OnCommit, the class should have a method that is marked with the ManagementCommit attribute. The associated method will be called when all OnCommit properties have been set.  
+ The read-write properties of a class are marked with the <xref:System.Management.Instrumentation.ManagementConfigurationAttribute> attribute. In addition, each read-write property can be one of two types: <xref:System.Management.Instrumentation.ManagementConfigurationType.Apply> or <xref:System.Management.Instrumentation.ManagementConfigurationType.OnCommit>. If a class has read-write properties that are configured as OnCommit, the class should have a method that is marked with the ManagementCommit attribute. The associated method will be called when all OnCommit properties have been set.  
   
  The marked method is not thread safe.  
   
@@ -34,9 +34,8 @@
    
   
 ## Examples  
- [C#]  
   
-```  
+```csharp  
 public class Process  
 {  
     /// Key attribute marks a key property. Keys are not changeable.  

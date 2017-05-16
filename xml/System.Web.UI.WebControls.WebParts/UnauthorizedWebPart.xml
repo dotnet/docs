@@ -59,6 +59,27 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes property data for a new instance of an <see cref="T:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart" /> control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart.%23ctor%2A> constructor, in both of its overloads, calls base constructors in the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> class. These constructors each initialize property data and create a new instance of an <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control.  
+  
+ When the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control is adding <xref:System.Web.UI.WebControls.WebParts.WebPart> controls (and other server or user controls) to its collection of controls, it checks each control using the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A> method. If a control instance is not authorized, certain property values from the control (such as its ID) are assigned to properties in a new <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control, and the <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control is then added to the control tree of the page in place of the control that failed authorization.  
+  
+ An <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control is never rendered in a page, and a user has no way of knowing it is there. However, an <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control also acts as a placeholder, maintaining the position of the original control in the control tree, and maintaining any preexisting personalization data for the original control. That way, if a user previously personalized a control, it then becomes unauthorized for some reason, and later it is authorized again, the user's personalization data can be restored.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UnauthorizedWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
@@ -115,26 +136,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes property data for a new instance of an <see cref="T:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart" /> control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart.%23ctor%2A> constructor, in both of its overloads, calls base constructors in the <xref:System.Web.UI.WebControls.WebParts.ProxyWebPart> class. These constructors each initialize property data and create a new instance of an <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control.  
-  
- When the <xref:System.Web.UI.WebControls.WebParts.WebPartManager> control is adding <xref:System.Web.UI.WebControls.WebParts.WebPart> controls (and other server or user controls) to its collection of controls, it checks each control using the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%2A> method. If a control instance is not authorized, certain property values from the control (such as its ID) are assigned to properties in a new <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control, and the <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control is then added to the control tree of the page in place of the control that failed authorization.  
-  
- An <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control is never rendered in a page, and a user has no way of knowing it is there. However, an <xref:System.Web.UI.WebControls.WebParts.UnauthorizedWebPart> control also acts as a placeholder, maintaining the position of the original control in the control tree, and maintaining any preexisting personalization data for the original control. That way, if a user previously personalized a control, it then becomes unauthorized for some reason, and later it is authorized again, the user's personalization data can be restored.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

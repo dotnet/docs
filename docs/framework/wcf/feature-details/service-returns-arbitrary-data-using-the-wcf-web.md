@@ -2,7 +2,7 @@
 title: "How to: Create a Service That Returns Arbitrary Data Using The WCF Web HTTP Programming Model | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -59,7 +59,7 @@ Sometimes developers must have full control of how data is returned from a servi
   
      Notice the second to last line of code: `WebOperationContext.Current.OutgoingResponse.ContentType = "image/jpeg";`  
   
-     This sets the content type header to `“image/jpeg”`. Although this sample shows how to return a .jpg file, it can be modified to return any type of data that is required, in any format. The operation must retrieve or generate the data and then write it to a stream.  
+     This sets the content type header to `"image/jpeg"`. Although this sample shows how to return a .jpg file, it can be modified to return any type of data that is required, in any format. The operation must retrieve or generate the data and then write it to a stream.  
   
 ### To host the service  
   

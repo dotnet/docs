@@ -2,7 +2,7 @@
 title: "WorkflowHostingEndpoint Resume Bookmark | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -32,7 +32,7 @@ This sample demonstrates how the <xref:System.ServiceModel.Activities.WorkflowHo
   
 1.  Build the solution.  
   
-2.  Run the application. The `CreationEndpoint` console shows a message that includes the instance ID when the workflow instance is created. The message “Hello World!” is printed by the workflow on successful resumption of the bookmark.  
+2.  Run the application. The `CreationEndpoint` console shows a message that includes the instance ID when the workflow instance is created. The message "Hello World!" is printed by the workflow on successful resumption of the bookmark.  
   
 > [!IMPORTANT]
 >  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  

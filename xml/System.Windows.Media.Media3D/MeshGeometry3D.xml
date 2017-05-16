@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Triangle primitive for building a [!INCLUDE[TLA#tla_3d](~/includes/tlasharptla-3d-md.md)] shape.</summary>
+    <summary>Triangle primitive for building a 3-D shape.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -178,7 +178,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.Media3D.MeshGeometry3D>|  
+|Identifier field|<xref:System.Windows.Media.Media3D.MeshGeometry3D.NormalsProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -257,7 +257,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.Media3D.MeshGeometry3D>|  
+|Identifier field|<xref:System.Windows.Media.Media3D.MeshGeometry3D.PositionsProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -374,7 +374,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.Media3D.MeshGeometry3D>|  
+|Identifier field|<xref:System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndicesProperty>|  
 |Metadata properties set to `true`|None|  
   
    

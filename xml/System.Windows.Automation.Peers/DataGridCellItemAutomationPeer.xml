@@ -30,7 +30,7 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Exposes <see cref="T:System.Windows.Controls.DataGridCell" /> types to [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)].</summary>
+    <summary>Exposes <see cref="T:System.Windows.Controls.DataGridCell" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -338,7 +338,7 @@
       <Docs>
         <param name="patternInterface">An enumeration that specifies the control pattern.</param>
         <summary>Returns the object that supports the specified control pattern of the element that is associated with this automation peer.</summary>
-        <returns>The current <see cref="T:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer" /> object, if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />. For more information, see Remarks.</returns>
+        <returns>The current <see cref="T:System.Windows.Automation.Peers.DataGridCellItemAutomationPeer" /> object, if <paramref name="patternInterface" /> is a supported value; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -594,8 +594,8 @@
         <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a [UI Automation provider](GTMT) that implements <see cref="T:System.Windows.Automation.Provider.IGridProvider" /> and represents the container of the cell or item.</summary>
-        <value>A [UI Automation provider](GTMT) that implements the <see cref="T:System.Windows.Automation.GridPattern" /> and represents the cell or item container.</value>
+        <summary>Gets a UI Automation provider that implements <see cref="T:System.Windows.Automation.Provider.IGridProvider" /> and represents the container of the cell or item.</summary>
+        <value>A UI Automation provider that implements the <see cref="T:System.Windows.Automation.GridPattern" /> and represents the cell or item container.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -820,7 +820,7 @@
         <ReturnType>System.Windows.Automation.Provider.IRawElementProviderSimple</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the [UI Automation provider](GTMT) that implements <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> and acts as the container for the calling object.</summary>
+        <summary>Gets the UI Automation provider that implements <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" /> and acts as the container for the calling object.</summary>
         <value>The provider that supports <see cref="T:System.Windows.Automation.Provider.ISelectionProvider" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

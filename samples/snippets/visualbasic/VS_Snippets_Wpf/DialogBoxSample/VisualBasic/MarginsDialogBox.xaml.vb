@@ -2,9 +2,9 @@
 '<SnippetMarginsDialogBoxValidationCODEBEHIND1>
 '<SnippetMarginsDialogBoxOKResultSetCODEBEHIND1>
 '<SnippetMarginsDialogBoxCancelResultSetCODEBEHIND1>
-Imports System.Windows ' Window, RoutedEventArgs, IInputElement, DependencyObject
-Imports System.Windows.Controls ' Validation
-Imports System.Windows.Input ' Keyboard
+Imports System.Windows
+Imports System.Windows.Controls
+Imports System.Windows.Input
 
 Namespace SDKSample
 

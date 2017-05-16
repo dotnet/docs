@@ -2,7 +2,7 @@
 title: "&lt;add&gt; Element for webRequestModules (Network Settings) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -40,9 +40,9 @@ Adds a custom Web request module to the application.
   
 ```  
   
-      <add   
-  prefix = "URI prefix"   
-  type = "module name, Version, Culture, PublicKeyToken"   
+      <add   
+  prefix = "URI prefix"   
+  type = "module name, Version, Culture, PublicKeyToken"   
 />  
 ```  
   

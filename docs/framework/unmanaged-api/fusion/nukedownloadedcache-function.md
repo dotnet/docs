@@ -24,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "NukeDownloadedCache function [.NET Framework fusion]"
 ms.assetid: fac2b1c6-6fa3-4818-805b-b63972024c86
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

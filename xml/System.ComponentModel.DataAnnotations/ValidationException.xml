@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -21,7 +22,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A validation exception occurs if an input value does not match the expected data type, range or pattern of the data field. For example, if a user enters an integer value in a data field that expects a <xref:System.Data.SqlDbType> value, a validation exception occurs.  
+ A validation exception occurs if an input value does not match the expected data type, range or pattern of the data field. For example, if a user enters an integer value in a data field that expects a <xref:System.Data.SqlDbType.DateTime> value, a validation exception occurs.  
   
  This class uses the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute> class to customize validations. A <xref:System.ComponentModel.DataAnnotations.ValidationException> is thrown if a validation error occurs. The exception is thrown when the <xref:System.ComponentModel.DataAnnotations.ValidationAttribute.Validate%2A> method is called. All the exceptions that are thrown during validation are contained in the <xref:System.Web.DynamicData.IDynamicValidatorException.InnerExceptions%2A> collection. You can retrieve each validation exception by iterating through the <xref:System.Web.DynamicData.IDynamicValidatorException.InnerExceptions%2A> collection.  
   
@@ -37,6 +38,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -64,6 +66,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -96,6 +99,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -122,6 +129,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -154,6 +162,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -181,6 +190,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -215,6 +225,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -249,6 +260,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -272,6 +284,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>

@@ -2,7 +2,7 @@
 title: "ICorPublishProcessEnum::Next Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorPublishProcessEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorPublishProcessEnum interface [.NET Framework debugging]"
 ms.assetid: 6c399f37-1e38-4ca1-b70d-8ae41f7228b7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

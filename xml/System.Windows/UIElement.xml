@@ -24,7 +24,7 @@
   </Attributes>
   <Docs>
     <summary>
-      <see cref="T:System.Windows.UIElement" /> is a base class for WPF core level implementations building on [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] elements and basic presentation characteristics.</summary>
+      <see cref="T:System.Windows.UIElement" /> is a base class for WPF core level implementations building on Windows Presentation Foundation (WPF) elements and basic presentation characteristics.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -149,7 +149,7 @@
   
  The default is <see langword="false" />.  
   
- Do not routinely ask to rehandle a routed event. For more information, see Remarks.</param>
+ Do not routinely ask to rehandle a routed event.</param>
         <summary>Adds a routed event handler for a specified routed event, adding the handler to the handler collection on the current element. Specify <paramref name="handledEventsToo" /> as <see langword="true" /> to have the provided handler be invoked for routed event that had already been marked as handled by another element along the event route.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -265,6 +265,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ApplyAnimationClock">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Applies an animation to a specified dependency property on this element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is sealed and cannot be overridden.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ApplyAnimationClock">
       <MemberSignature Language="C#" Value="public void ApplyAnimationClock (System.Windows.DependencyProperty dp, System.Windows.Media.Animation.AnimationClock clock);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyAnimationClock(class System.Windows.DependencyProperty dp, class System.Windows.Media.Animation.AnimationClock clock) cil managed" />
@@ -1433,7 +1450,7 @@ Image with an Elliptical Clip Region
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.UIElement>|  
+|Identifier field|<xref:System.Windows.UIElement.EffectProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -1524,7 +1541,7 @@ Image with an Elliptical Clip Region
       <Docs>
         <summary>Gets or sets a value that indicates whether the element can receive focus.  This is a dependency property.</summary>
         <value>
-          <see langword="true" /> if the element is focusable; otherwise <see langword="false" />. The default is <see langword="false" />, but see Remarks.</value>
+          <see langword="true" /> if the element is focusable; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -10741,7 +10758,7 @@ Image with an Elliptical Clip Region
         <ReturnType>System.Windows.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets (or sets, but see Remarks) the final render size of this element.</summary>
+        <summary>Gets (or sets) the final render size of this element.</summary>
         <value>The rendered size for this element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12335,9 +12352,9 @@ Image with an Elliptical Clip Region
 ## Remarks  
  Setting this property affects the value of <xref:System.Windows.UIElement.IsVisible%2A>, which in turn may raise the <xref:System.Windows.UIElement.IsVisibleChanged> event. However, <xref:System.Windows.UIElement.IsVisible%2A> has other factors that influence it, for instance the visibility settings of parents that contain it.  
   
- Elements where <xref:System.Windows.UIElement.Visibility%2A> is not <xref:System.Windows.Visibility> do not participate in input events (or commands), do not influence either the Measure or Arrange passes of layout, are not in a tab sequence, and will not be reported in hit testing.  
+ Elements where <xref:System.Windows.UIElement.Visibility%2A> is not <xref:System.Windows.Visibility.Visible> do not participate in input events (or commands), do not influence either the Measure or Arrange passes of layout, are not in a tab sequence, and will not be reported in hit testing.  
   
- When inherited by <xref:System.Windows.Window> or its derived classes, <xref:System.Windows.Window> redefines the default value of this property to be <xref:System.Windows.Visibility>. This has the effect of not running the Measure pass of layout on an initially created <xref:System.Windows.Window>, and <xref:System.Windows.UIElement.RenderSize%2A> returns (0,0). For details, see <xref:System.Windows.Window>. <xref:System.Windows.Controls.Primitives.Popup> also redefines the default value to be <xref:System.Windows.Visibility>, with similar resulting behavior for <xref:System.Windows.Controls.Primitives.Popup> and its derived classes.  
+ When inherited by <xref:System.Windows.Window> or its derived classes, <xref:System.Windows.Window> redefines the default value of this property to be <xref:System.Windows.Visibility.Collapsed>. This has the effect of not running the Measure pass of layout on an initially created <xref:System.Windows.Window>, and <xref:System.Windows.UIElement.RenderSize%2A> returns (0,0). For details, see <xref:System.Windows.Window>. <xref:System.Windows.Controls.Primitives.Popup> also redefines the default value to be <xref:System.Windows.Visibility.Collapsed>, with similar resulting behavior for <xref:System.Windows.Controls.Primitives.Popup> and its derived classes.  
   
 <a name="dependencyPropertyInfo_Visibility"></a>   
 ## Dependency Property Information  
@@ -12376,22 +12393,5 @@ Image with an Elliptical Clip Region
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ApplyAnimationClock">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Applies an animation to a specified dependency property on this element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is sealed and cannot be overridden.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

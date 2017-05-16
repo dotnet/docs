@@ -1,8 +1,8 @@
 ﻿//<SnippetAddInCode>
-using System.AddIn; // AddInAttribute
-using System.Windows; // FrameworkElement
+using System.AddIn;
+using System.Windows;
 
-using AddInViews; // IWPFAddInView
+using AddInViews;
 
 namespace WPFAddIn1
 {

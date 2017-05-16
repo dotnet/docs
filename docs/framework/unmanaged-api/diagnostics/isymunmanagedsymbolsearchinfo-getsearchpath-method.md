@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSearchPath method [.NET Framework debugging]"
   - "ISymUnmanagedSymbolSearchInfo::GetSearchPath method [.NET Framework debugging]"
 ms.assetid: b588d470-53c2-4492-be8c-957323eaca0b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

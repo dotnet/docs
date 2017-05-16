@@ -2,7 +2,7 @@
 title: "XAML Syntax In Detail | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -123,7 +123,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ```  
 \<!--This will not compile, because Visibility is not a flagwise enumeration.-->  
 ...  
-<Trigger Property="Visibility" Value="Collapsed,Hidden">  
+<Trigger Property="Visibility" Value="Collapsed,Hidden">  
   \<Setter ... />  
 </Trigger>  
 ...  

@@ -2,7 +2,7 @@
 title: "ICorPublishProcess::IsManaged Method | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsManaged method, ICorPublishProcess interface [.NET Framework debugging]"
   - "ICorPublishProcess::IsManaged method [.NET Framework debugging]"
 ms.assetid: 06b1f7cc-acdf-47a6-9d53-d9dec2424152
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorImportOptions enumeration [.NET Framework metadata]"
 ms.assetid: 4e5d03cb-97c9-4ff4-8dbd-17d94ee374d3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

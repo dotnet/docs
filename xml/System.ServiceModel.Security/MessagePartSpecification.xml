@@ -292,7 +292,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">This <see cref="T:System.ServiceModel.Security.MessagePartSpecification" /> is read only.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="specification" /> is <see langword="null" />.</exception>
+          <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

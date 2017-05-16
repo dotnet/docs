@@ -9,6 +9,7 @@
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -39,16 +40,16 @@
 ## Remarks  
  You can apply this attribute to parameters, fields, or return values.  
   
- This attribute is optional, as each data type has a default marshaling behavior. This attribute is only necessary when a given type can be marshaled to multiple types. For example, you can marshal a string to unmanaged code as either a <xref:System.Runtime.InteropServices.UnmanagedType>, a <xref:System.Runtime.InteropServices.UnmanagedType>, a <xref:System.Runtime.InteropServices.UnmanagedType>, or a <xref:System.Runtime.InteropServices.UnmanagedType>. By default, the common language runtime marshals a string parameter as a <xref:System.Runtime.InteropServices.UnmanagedType> to COM methods. You can apply the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to an individual field or parameter to cause that particular string to be marshaled as a <xref:System.Runtime.InteropServices.UnmanagedType> instead of a <xref:System.Runtime.InteropServices.UnmanagedType>. The [Tlbexp.exe (Type Library Exporter)](~/docs/framework/tools/tlbexp-exe-type-library-exporter.md) passes your marshaling preferences to the common language runtime.  
+ This attribute is optional, as each data type has a default marshaling behavior. This attribute is only necessary when a given type can be marshaled to multiple types. For example, you can marshal a string to unmanaged code as either a <xref:System.Runtime.InteropServices.UnmanagedType.LPStr>, a <xref:System.Runtime.InteropServices.UnmanagedType.LPWStr>, a <xref:System.Runtime.InteropServices.UnmanagedType.LPTStr>, or a <xref:System.Runtime.InteropServices.UnmanagedType.BStr>. By default, the common language runtime marshals a string parameter as a <xref:System.Runtime.InteropServices.UnmanagedType.BStr> to COM methods. You can apply the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to an individual field or parameter to cause that particular string to be marshaled as a <xref:System.Runtime.InteropServices.UnmanagedType.LPStr> instead of a <xref:System.Runtime.InteropServices.UnmanagedType.BStr>. The [Tlbexp.exe (Type Library Exporter)](~/docs/framework/tools/tlbexp-exe-type-library-exporter.md) passes your marshaling preferences to the common language runtime.  
   
- Some parameters and return values have different default marshaling behavior when used with COM interop or platform invoke. By default, the runtime marshals a string parameter (and fields in a value type) as a <xref:System.Runtime.InteropServices.UnmanagedType> to a platform invoke method or function. For additional information, see [Default Marshaling Behavior](~/docs/framework/interop/default-marshaling-behavior.md).  
+ Some parameters and return values have different default marshaling behavior when used with COM interop or platform invoke. By default, the runtime marshals a string parameter (and fields in a value type) as a <xref:System.Runtime.InteropServices.UnmanagedType.LPStr> to a platform invoke method or function. For additional information, see [Default Marshaling Behavior](~/docs/framework/interop/default-marshaling-behavior.md).  
   
  In most cases, the attribute simply identifies the format of the unmanaged data using the <xref:System.Runtime.InteropServices.UnmanagedType> enumeration, as shown in the following C# signature:  
   
  [!code-csharp[system.runtime.interopservices.MarshalAsAttribute#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.runtime.interopservices.MarshalAsAttribute/cs/Signature1.cs#2)]
  [!code-vb[system.runtime.interopservices.MarshalAsAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.runtime.interopservices.MarshalAsAttribute/vb/Signature1.vb#2)]  
   
- Some <xref:System.Runtime.InteropServices.UnmanagedType> enumeration members require additional information. For example, additional information is needed when the <xref:System.Runtime.InteropServices.UnmanagedType> is <xref:System.Runtime.InteropServices.UnmanagedType>. For a complete description of how to use this attribute with arrays, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
+ Some <xref:System.Runtime.InteropServices.UnmanagedType> enumeration members require additional information. For example, additional information is needed when the <xref:System.Runtime.InteropServices.UnmanagedType> is <xref:System.Runtime.InteropServices.UnmanagedType.LPArray>. For a complete description of how to use this attribute with arrays, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
   
  The [Tlbimp.exe (Type Library Importer)](~/docs/framework/tools/tlbimp-exe-type-library-importer.md) also applies this attribute to parameters, fields, and return values to indicate that the data type in the input type library is not the default type for the corresponding managed data type. Tlbimp.exe always applies the <xref:System.Runtime.InteropServices.MarshalAsAttribute> to <xref:System.String> and <xref:System.Object> types for clarity, regardless of the type specified in the input type library.  
   
@@ -84,6 +85,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -122,6 +124,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -160,6 +163,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -197,6 +201,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +232,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -266,6 +272,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -308,6 +315,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -360,6 +368,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -379,7 +388,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can set this field to a value from the <xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName> enumeration to specify the type of the safe array's elements. If a type is not specified, the managed element type's default type (if passed as a VARIANT) is used. For example, the `SafeArraySubType` for an `int` array in COM is <xref:System.Runtime.InteropServices.VarEnum>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
+ You can set this field to a value from the <xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName> enumeration to specify the type of the safe array's elements. If a type is not specified, the managed element type's default type (if passed as a VARIANT) is used. For example, the `SafeArraySubType` for an `int` array in COM is <xref:System.Runtime.InteropServices.VarEnum.VT_I4>. For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
   
  ]]></format>
         </remarks>
@@ -397,6 +406,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -434,6 +444,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -453,7 +464,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This field is required for the <xref:System.Runtime.InteropServices.UnmanagedType> and <xref:System.Runtime.InteropServices.UnmanagedType> members of the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> enumeration. Because the compressed format of the metadata is limited to 0x1FFFFFFF, the range of allowed values for <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst> are (>= 0 and <= 0x1FFFFFFF).  
+ This field is required for the <xref:System.Runtime.InteropServices.UnmanagedType.ByValArray> and <xref:System.Runtime.InteropServices.UnmanagedType.ByValTStr> members of the <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> enumeration. Because the compressed format of the metadata is limited to 0x1FFFFFFF, the range of allowed values for <xref:System.Runtime.InteropServices.MarshalAsAttribute.SizeConst> are (>= 0 and <= 0x1FFFFFFF).  
   
  For additional information, see [Default Marshaling for Arrays](~/docs/framework/interop/default-marshaling-for-arrays.md).  
   
@@ -473,6 +484,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -531,6 +543,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -551,7 +564,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This value is used with <xref:System.Runtime.InteropServices.MarshalAsAttribute> to indicate how types should be marshaled between managed and unmanaged code. In some cases, you can use this field with certain `UnmanagedType` enumeration members. For <xref:System.Runtime.InteropServices.UnmanagedType> and <xref:System.Runtime.InteropServices.UnmanagedType>, you must use additional named parameters.  
+ This value is used with <xref:System.Runtime.InteropServices.MarshalAsAttribute> to indicate how types should be marshaled between managed and unmanaged code. In some cases, you can use this field with certain `UnmanagedType` enumeration members. For <xref:System.Runtime.InteropServices.UnmanagedType.CustomMarshaler> and <xref:System.Runtime.InteropServices.UnmanagedType.ByValArray>, you must use additional named parameters.  
   
  ]]></format>
         </remarks>

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerFunctionEnum::Clone method [.NET Framework profiling]"
   - "Clone method, ICorProfilerFunctionEnum interface [.NET Framework profiling]"
 ms.assetid: 0c3d4835-e111-4e82-af6d-53f140b8f2c9
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

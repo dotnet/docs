@@ -6,6 +6,7 @@
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -50,6 +51,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +93,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -119,6 +122,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +162,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -197,6 +202,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +253,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -292,6 +299,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -337,6 +345,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -381,6 +390,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -425,6 +435,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -458,15 +469,15 @@
 ## Remarks  
  This method supports the following <xref:System.Security.Cryptography.X509Certificates.X509ContentType> types:  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pfx>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedStore>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs7>  
   
  ]]></format>
         </remarks>
@@ -482,6 +493,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -544,6 +556,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -580,6 +593,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -610,17 +624,17 @@
 ## Remarks  
  This method imports a certificate in the form of a byte array into a <xref:System.Security.Cryptography.X509Certificates.X509Certificate2Collection> object. This method supports the following <xref:System.Security.Cryptography.X509Certificates.X509ContentType> types:  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pfx>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedStore>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs7>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Authenticode>  
   
  ]]></format>
         </remarks>
@@ -635,6 +649,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -665,17 +680,17 @@
 ## Remarks  
  This method supports the following <xref:System.Security.Cryptography.X509Certificates.X509ContentType> types:  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pfx>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedStore>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs7>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Authenticode>  
   
  ]]></format>
         </remarks>
@@ -690,6 +705,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -726,15 +742,15 @@
   
  This method imports a certificate byte array into a collection of certificates. This method supports the following <xref:System.Security.Cryptography.X509Certificates.X509ContentType> types:  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pfx>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedStore>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs7>  
   
  ]]></format>
         </remarks>
@@ -749,6 +765,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -787,17 +804,17 @@
   
  This method supports the following <xref:System.Security.Cryptography.X509Certificates.X509ContentType> types:  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Cert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedCert>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pfx>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.SerializedStore>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Pkcs7>  
   
--   <xref:System.Security.Cryptography.X509Certificates.X509ContentType>  
+-   <xref:System.Security.Cryptography.X509Certificates.X509ContentType.Authenticode>  
   
  ]]></format>
         </remarks>
@@ -812,6 +829,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -867,6 +885,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -923,6 +942,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -963,6 +983,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1008,6 +1029,7 @@
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

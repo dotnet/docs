@@ -1,7 +1,7 @@
 Imports Microsoft.VisualBasic
 Imports System
-Imports System.Windows 'uielement
-Imports System.Windows.Media 'visual operations
+Imports System.Windows
+Imports System.Windows.Media
 Imports System.Windows.Media.Animation
 Imports System.Windows.Controls
 Imports System.Collections.Generic

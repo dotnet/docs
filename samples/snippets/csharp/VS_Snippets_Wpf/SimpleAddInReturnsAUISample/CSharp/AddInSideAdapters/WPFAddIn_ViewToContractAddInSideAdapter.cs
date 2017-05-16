@@ -1,10 +1,10 @@
 ﻿//<SnippetAddInSideAdapterCode>
-using System.AddIn.Contract; // INativeHandleContract
-using System.AddIn.Pipeline; // AddInAdapterAttribute, FrameworkElementAdapters, ContractBase
-using System.Windows; // FrameworkElement
+using System.AddIn.Contract;
+using System.AddIn.Pipeline;
+using System.Windows;
 
-using AddInViews; // IWPFAddInView
-using Contracts; // IWPFAddInContract
+using AddInViews;
+using Contracts;
 
 namespace AddInSideAdapters
 {

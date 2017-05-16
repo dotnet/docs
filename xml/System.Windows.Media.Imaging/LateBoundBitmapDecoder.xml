@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> is used when <xref:System.Windows.Media.Imaging.BitmapCreateOptions> is specified. The <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder.Decoder%2A> property creates the necessary "real decoder" on an on-demand basis. All decoder properties return `null` while content is downloading.  
+ A <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> is used when <xref:System.Windows.Media.Imaging.BitmapCreateOptions.DelayCreation> is specified. The <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder.Decoder%2A> property creates the necessary "real decoder" on an on-demand basis. All decoder properties return `null` while content is downloading.  
   
  A <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> can also be created when the system has an image that is being asynchronously downloaded locally. In this case, the decoder also returns `null` for properties until the image has been downloaded. The application can check the <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder.IsDownloading%2A> property or add a delegate for the <xref:System.Windows.Media.Imaging.BitmapDecoder.DownloadCompleted> event to monitor the download status. Furthermore, any frames obtained from a <xref:System.Windows.Media.Imaging.LateBoundBitmapDecoder> while the image is downloading will return a width/height of 1,1 until the frames have finished downloading.  
   

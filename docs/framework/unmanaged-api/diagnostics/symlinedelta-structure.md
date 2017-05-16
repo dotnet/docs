@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "SYMLINEDELTA structure [.NET Framework debugging]"
 ms.assetid: 9634e995-d46d-4397-ab66-cc5781d11e4e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

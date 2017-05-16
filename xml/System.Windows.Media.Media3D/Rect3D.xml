@@ -216,6 +216,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Rect3D" /> instances for equality.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that values of type <xref:System.Double> might acquire error when operated upon; an exact comparison between two logically-equal values might fail.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
@@ -448,7 +465,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether this <see cref="T:System.Windows.Media.Media3D.Rect3D" /> is the <see cref="P:System.Windows.Media.Media3D.Rect3D.Empty" /> <see cref="T:System.Windows.Media.Media3D.Rect3D" />.</summary>
+        <summary>Gets a value that indicates whether this <see cref="T:System.Windows.Media.Media3D.Rect3D" /> is the <see cref="P:System.Windows.Media.Media3D.Rect3D.Empty" /><see cref="T:System.Windows.Media.Media3D.Rect3D" />.</summary>
         <value>
           <see langword="true" /> if this <see cref="T:System.Windows.Media.Media3D.Rect3D" /> is the empty rectangle; <see langword="false" /> otherwise.</value>
         <remarks>
@@ -1125,22 +1142,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares two <see cref="T:System.Windows.Media.Media3D.Rect3D" /> instances for equality.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Note that values of type <xref:System.Double> might acquire error when operated upon; an exact comparison between two logically-equal values might fail.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

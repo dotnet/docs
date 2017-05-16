@@ -2,7 +2,7 @@
 title: "Hiring Process | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -209,7 +209,7 @@ This sample demonstrates how to implement a business process using messaging act
   
 1.  The job position should appear on the external Web site. As a person interested in applying for the job, you may apply for this position and submit your resume.  
   
-2.  If you go back to the Job Postings List service, you can “view resumes” that have been collected so far.  
+2.  If you go back to the Job Postings List service, you can "view resumes" that have been collected so far.  
   
 3.  HR can also stop collecting resumes (for example, once the right candidate has been identified).  
   

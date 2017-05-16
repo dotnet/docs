@@ -2,7 +2,7 @@
 title: "&lt;discoveryClient&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,7 +28,7 @@ A configuration element for creating a custom binding that enables a client appl
   
 ```  
   
-<discoveryClient discoveryEndpoint=”String” >   <findCriteria duration=”TimeSpan”       maxResults=”Integer”        scopeMatchBy=”Uri” >       <contractTypeNames>          <add name="String" namespace="String" />       <contractTypeNames>       <extensions />       <scopes>          <add scope="URI"/>       </scopes>   </findCriteria></discoveryClient>  
+<discoveryClient discoveryEndpoint="String" >   <findCriteria duration="TimeSpan"       maxResults="Integer"        scopeMatchBy="Uri" >       <contractTypeNames>          <add name="String" namespace="String" />       <contractTypeNames>       <extensions />       <scopes>          <add scope="URI"/>       </scopes>   </findCriteria></discoveryClient>  
 ```  
   
 ## Attributes and Elements  

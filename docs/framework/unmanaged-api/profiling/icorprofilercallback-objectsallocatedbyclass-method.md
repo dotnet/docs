@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ObjectsAllocatedByClass method [.NET Framework profiling]"
   - "ICorProfilerCallback::ObjectsAllocatedByClass method [.NET Framework profiling]"
 ms.assetid: 91d688f3-a80e-419d-9755-ff94bc04188a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

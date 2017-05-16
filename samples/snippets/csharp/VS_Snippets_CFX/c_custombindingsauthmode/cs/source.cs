@@ -1,5 +1,5 @@
-//<snippet0>
-//<snippet1>
+// <Snippet0>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.ServiceModel;
@@ -7,7 +7,7 @@ using System.ServiceModel.Channels;
 using System.ServiceModel.Security;
 using System.ServiceModel.Security.Tokens;
 using System.Security.Permissions;
-//</snippet1>
+// </Snippet1>
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]
 namespace Samples
@@ -17,7 +17,7 @@ namespace Samples
     {
         private CustomBindingCreator() { }
 
-        //<snippet2>
+        // <Snippet2>
         // These public methods create custom bindings based on the built-in 
         // authentication modes that use the static methods of 
         // the System.ServiceModel.Channels.SecurityBindingElement class.
@@ -204,10 +204,10 @@ namespace Samples
             bec.Add(new HttpsTransportBindingElement());
             return new CustomBinding(bec);
         }
-        //</snippet2>
+        // </Snippet2>
     }
 }
-//</snippet0>
+// </Snippet0>
 
 namespace samples2
 {
@@ -221,36 +221,36 @@ namespace samples2
 
         public static Binding CreateCustomBinding()
         {
-            //<snippet8>
-            //<snippet3>
+            // <Snippet8>
+            // <Snippet3>
             SymmetricSecurityBindingElement b =
                 SecurityBindingElement.
                 CreateAnonymousForCertificateBindingElement();
-            //</snippet3>
+            // </Snippet3>
 
-            //<snippet4>
+            // <Snippet4>
             BindingElementCollection outputBindings = 
                 new BindingElementCollection();
-            //</snippet4>
+            // </Snippet4>
             
-            //<snippet5>
+            // <Snippet5>
             b.DefaultAlgorithmSuite = SecurityAlgorithmSuite.Basic128;
             b.MessageProtectionOrder = 
                 MessageProtectionOrder.SignBeforeEncrypt;
             b.ProtectionTokenParameters = 
                 new KerberosSecurityTokenParameters();
-            //<snippet5>
-            //<snippet8>
+            // </Snippet5>
+            // </Snippet8>
             
-            //<snippet6>
+            // <Snippet6>
             outputBindings.Add(b);
             outputBindings.Add(new TextMessageEncodingBindingElement());
             outputBindings.Add(new HttpTransportBindingElement());
-            //</snippet6>
+            // </Snippet6>
 
-            //<snippet7>
+            // <Snippet7>
             return new CustomBinding(outputBindings);
-            //</snippet7>
+            // </Snippet7>
         }
     }
 }

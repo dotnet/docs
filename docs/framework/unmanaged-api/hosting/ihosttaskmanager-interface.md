@@ -2,7 +2,7 @@
 title: "IHostTaskManager Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework-4.6"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostTaskManager interface [.NET Framework hosting]"
 ms.assetid: 4a0b05b9-3ef1-4607-b7c8-bd4dd43647a0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

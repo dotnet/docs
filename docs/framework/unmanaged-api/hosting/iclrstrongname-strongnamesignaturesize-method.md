@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameSignatureSize method [.NET Framework hosting]"
   - "StrongNameSignatureSize method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: 76d4f93a-5e25-4399-abcc-a1389549481d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,7 +36,7 @@ Returns the size of the strong name signature. This method is typically used by 
 ## Syntax  
   
 ```  
-HRESULT StrongNameSignatureSize (   
+HRESULT StrongNameSignatureSize (   
     [in]  BYTE   *pbPublicKeyBlob,  
     [in]  ULONG  cbPublicKeyBlob,   
     [in]  DWORD  *pcbSize  

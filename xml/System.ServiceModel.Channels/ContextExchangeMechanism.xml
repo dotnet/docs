@@ -27,15 +27,15 @@
 -   For HttpCookie, the following assertion is generated:  
   
     ```  
-    <HttpUseCookie xmlns=”http://schemas.xmlsoap.org/soap/http”/>  
+    <HttpUseCookie xmlns="http://schemas.xmlsoap.org/soap/http"/>  
     ```  
   
 -   For ContextSoapHeader, the following assertion is generated:  
   
     ```  
     <IncludeContext   
-    xmlns=”http://schemas.microsoft.com/ws/2006/05/context”  
-    protectionLevel=”Sign” />  
+    xmlns="http://schemas.microsoft.com/ws/2006/05/context"  
+    protectionLevel="Sign" />  
     ```  
   
  The HttpCookie enumeration is implemented at the transport layer. This can be used in the case of simplex communication, where the client makes an initial request and the context is provided by the service on the corresponding reply. All subsequent messages between the service and client for the lifetime of that conversation contain the context. For service endpoints that use an HTTP transport and clients that agree to allow the use of HTTP cookies, the HttpCookie enumeration can be utilized to exchange the application context. When HTTP cookies are used to propagate context, they should be protected using transport security. This mechanism cannot be used with non-HTTP transports.  

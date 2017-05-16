@@ -36,7 +36,7 @@
  When an <xref:System.ServiceModel.OperationContextScope> is created, the current <xref:System.ServiceModel.OperationContext> is stored and the new <xref:System.ServiceModel.OperationContext> becomes the one returned by the <xref:System.ServiceModel.OperationContext.Current%2A> property. When the <xref:System.ServiceModel.OperationContextScope> is disposed, the original <xref:System.ServiceModel.OperationContext> is restored.  
   
 > [!WARNING]
->  Do not use the asynchronous “await” pattern within a OperationContextScope block. When the continuation occurs, it may run on a different thread and OperationContextScope is thread specific. If you need to call “await” for an async call, use it outside of the OperationContextScope block.  
+>  Do not use the asynchronous "await" pattern within a OperationContextScope block. When the continuation occurs, it may run on a different thread and OperationContextScope is thread specific. If you need to call "await" for an async call, use it outside of the OperationContextScope block.  
   
    
   

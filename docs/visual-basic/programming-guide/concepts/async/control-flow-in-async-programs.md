@@ -282,7 +282,7 @@ Length of the downloaded string: 33946.
 Dim getStringTask As Task(Of String) = client.GetStringAsync("http://msdn.microsoft.com")  
 ```  
   
- You can think of the task as a promise by `client.GetStringAsync` to produce an actual string eventually. In the meantime, if `AccessTheWebAsync` has work to do that doesn't depend on the promised string from `client.GetStringAsync`, that work can continue while  `client.GetStringAsync` waits. In the example, the following lines of output, which are labeled "THREE,” represent the opportunity to do independent work  
+ You can think of the task as a promise by `client.GetStringAsync` to produce an actual string eventually. In the meantime, if `AccessTheWebAsync` has work to do that doesn't depend on the promised string from `client.GetStringAsync`, that work can continue while  `client.GetStringAsync` waits. In the example, the following lines of output, which are labeled "THREE," represent the opportunity to do independent work  
   
 ```  
   

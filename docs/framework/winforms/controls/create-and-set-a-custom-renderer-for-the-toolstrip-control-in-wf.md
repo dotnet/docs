@@ -46,12 +46,9 @@ manager: "wpickett"
             MyBase.OnRenderItemText(e)  
         End Sub  
     End Class  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     public class RedTextRenderer : _  
         System.Windows.Forms.ToolStripRenderer  
     {  
@@ -63,7 +60,6 @@ manager: "wpickett"
            base.OnRenderItemText(e);  
         }  
     }  
-  
     ```  
   
 ### To set the custom renderer to be the current renderer  
@@ -72,14 +68,10 @@ manager: "wpickett"
   
     ```vb  
     toolStrip1.Renderer = New RedTextRenderer()  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     toolStrip1.Renderer = new RedTextRenderer();  
-  
     ```  
   
 2.  Or to set the custom renderer for all <xref:System.Windows.Forms.ToolStrip> classes contained in your application: Set the <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=fullName> property to the custom renderer and set the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> property to <xref:System.Windows.Forms.ToolStripRenderMode>.  
@@ -87,15 +79,11 @@ manager: "wpickett"
     ```vb  
     toolStrip1.RenderMode = ToolStripRenderMode.ManagerRenderMode  
     ToolStripManager.Renderer = New RedTextRenderer()  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     toolStrip1.RenderMode = ToolStripRenderMode.ManagerRenderMode;  
     ToolStripManager.Renderer = new RedTextRenderer();  
-  
     ```  
   
 ## See Also  

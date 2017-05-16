@@ -64,7 +64,7 @@ catch (InvalidCastException e)
  Using `catch` arguments is one way to filter for the exceptions you want to handle.  You can also use a predicate expression that further examines the exception to decide whether to handle it.  If the predicate expression returns false, then the search for a handler continues.  
   
 ```csharp  
-catch (ArgumentException e) when (e.ParamName == “…”)  
+catch (ArgumentException e) when (e.ParamName == "…")  
 {  
 }  
 ```  
@@ -76,13 +76,13 @@ catch (ArgumentException e) when (e.ParamName == “…”)
 ```csharp  
 catch (FileNotFoundException e)  
 {  
-    // FileNotFoundExceptions are handled here.  
+    // FileNotFoundExceptions are handled here.  
 }  
 catch (IOException e)  
 {  
     // Extract some information from this exception, and then   
     // throw it to the parent method.  
-    whenDo not initialize (e.Source != null)  
+    if (e.Source != null)  
         Console.WriteLine("IOException source: {0}", e.Source);  
     throw;  
 }  
@@ -101,7 +101,6 @@ catch (InvalidCastException e)
  You can also re-throw an exception when a specified condition is true, as shown in the following example.  
   
 ```csharp  
-  
 catch (InvalidCastException e)  
 {  
     if (e.Data == null)  

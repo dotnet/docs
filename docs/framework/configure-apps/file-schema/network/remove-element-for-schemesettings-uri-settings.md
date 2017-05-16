@@ -32,7 +32,7 @@ Removes a scheme setting for a scheme name.
   
 ```  
   
-      <remove   
+      <remove   
    <name = "http|https"/>  
 />  
 ```  

@@ -1519,9 +1519,9 @@ End Class
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example shows two ways to get the value of a query string variable named “fullname”. In each case, if the URL is `http://www.contoso.com/default.aspx?fullname=Fadi%20Fakhouri`, then the value returned is "Fadi Fakhouri" because the `%20` is URL-decoded into a space character. If the URL doesn’t have a `fullname` query string ID, the returned value would be `null`.  
+ The following code example shows two ways to get the value of a query string variable named "fullname". In each case, if the URL is `http://www.contoso.com/default.aspx?fullname=Fadi%20Fakhouri`, then the value returned is "Fadi Fakhouri" because the `%20` is URL-decoded into a space character. If the URL doesn’t have a `fullname` query string ID, the returned value would be `null`.  
   
- The first line of code looks for the key “fullname” only in the query string; the second line looks for the key “fullname” in all of the HTTP request collections. For more information about the second line, see <xref:System.Web.HttpRequest.Item%2A>.  
+ The first line of code looks for the key "fullname" only in the query string; the second line looks for the key "fullname" in all of the HTTP request collections. For more information about the second line, see <xref:System.Web.HttpRequest.Item%2A>.  
   
 ```csharp  
 string fullname1 = Request.QueryString["fullname"];  

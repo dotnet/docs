@@ -31,7 +31,7 @@ This sample demonstrates how to create a custom scope match using logic and how 
 -   Implementing a custom scope match by algorithm.  
   
 ## Discussion  
- The client is looking for “OR” type matching criteria. A service responds back if the scopes on its endpoints match any of the scopes provided by the client. In this case, the client is looking for a calculator service that has any of the scopes in the following list:  
+ The client is looking for "OR" type matching criteria. A service responds back if the scopes on its endpoints match any of the scopes provided by the client. In this case, the client is looking for a calculator service that has any of the scopes in the following list:  
   
 1.  `net.tcp://Microsoft.Samples.Discovery/RedmondLocation`  
   
@@ -47,7 +47,7 @@ This sample demonstrates how to create a custom scope match using logic and how 
   
 1.  **AsyncResult.cs**: This is the implementation of the `AsyncResult` that is required by Discovery methods.  
   
-2.  **CustomDiscoveryService.cs**: This file implements the custom discovery service. The implementation extends the <xref:System.ServiceModel.Discovery.DiscoveryService> class and overrides the necessary methods. Note the implementation of the <xref:System.ServiceModel.Discovery.DiscoveryService.OnBeginFind%2A> method. The method checks to see whether the custom scope match by rule was specified by the client. This is the same custom URI that the client specified previously. If the custom rule is specified, the code path that implements the “OR” match logic is followed.  
+2.  **CustomDiscoveryService.cs**: This file implements the custom discovery service. The implementation extends the <xref:System.ServiceModel.Discovery.DiscoveryService> class and overrides the necessary methods. Note the implementation of the <xref:System.ServiceModel.Discovery.DiscoveryService.OnBeginFind%2A> method. The method checks to see whether the custom scope match by rule was specified by the client. This is the same custom URI that the client specified previously. If the custom rule is specified, the code path that implements the "OR" match logic is followed.  
   
      This custom logic goes through all of the scopes on each of the endpoints that the service has. If any of the endpoint's scopes match any of the scopes provided by the client, the discovery service adds that endpoint to the response that is sent back to the client.  
   

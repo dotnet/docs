@@ -62,13 +62,13 @@ Declares a reference to a procedure implemented in an external file.
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ] [ Shadows ] [ Overloads ] _  
-Declare [ charsetmodifier ] [ Sub ] name Lib "libname" _  
-[ Alias "aliasname" ] [ ([ parameterlist ]) ]  
+[ <attributelist> ] [ accessmodifier ] [ Shadows ] [ Overloads ] _  
+Declare [ charsetmodifier ] [ Sub ] name Lib "libname" _  
+[ Alias "aliasname" ] [ ([ parameterlist ]) ]  
 ' -or-  
-[ <attributelist> ] [ accessmodifier ] [ Shadows ] [ Overloads ] _  
-Declare [ charsetmodifier ] [ Function ] name Lib "libname" _  
-[ Alias "aliasname" ] [ ([ parameterlist ]) ] [ As returntype ]  
+[ <attributelist> ] [ accessmodifier ] [ Shadows ] [ Overloads ] _  
+Declare [ charsetmodifier ] [ Function ] name Lib "libname" _  
+[ Alias "aliasname" ] [ ([ parameterlist ]) ] [ As returntype ]  
 ```  
   
 ## Parts  

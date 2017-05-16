@@ -45,11 +45,11 @@ Runs a series of statements as long as a given condition is `True`.
   
 ```  
 While condition  
-    [ statements ]  
+    [ statements ]  
     [ Continue While ]  
     [ statements ]  
-    [ Exit While ]  
-    [ statements ]  
+    [ Exit While ]  
+    [ statements ]  
 End While  
 ```  
   

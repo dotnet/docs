@@ -29,20 +29,20 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
 ## XAML Attribute Usage  
   
 ```  
-<object x:Key="stringKeyValue".../>  
+<object x:Key="stringKeyValue".../>  
 -or-  
-<object x:Key="{markupExtensionUsage}".../>  
+<object x:Key="{markupExtensionUsage}".../>  
 ```  
   
 ## XAML Attribute Usage (WPF-specific)  
   
 ```  
 <object.Resources>  
-  <object x:Key="stringKeyValue".../>  
+  <object x:Key="stringKeyValue".../>  
 </object.Resources>  
 -or-  
 <object.Resources>  
-  <object x:Key="{markupExtensionUsage}".../>  
+  <object x:Key="{markupExtensionUsage}".../>  
 </object.Resources>  
 ```  
   

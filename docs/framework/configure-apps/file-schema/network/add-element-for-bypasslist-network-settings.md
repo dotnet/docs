@@ -41,8 +41,8 @@ Adds an IP address or DNS name to the proxy bypass list.
   
 ```  
   
-      <add   
-   address = "regular expression"   
+      <add   
+   address = "regular expression"   
 />  
 ```  
   

@@ -29,16 +29,16 @@ Specifies the claim type that defines the role type claims in the collection of 
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <add>  
-        <samlSecurityTokenRequirement>  
-          <roleClaimType value=xs:string>  
-          </roleClaimType>  
-        </samlSecurityTokenRequirement>  
-      </add>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <add>  
+        <samlSecurityTokenRequirement>  
+          <roleClaimType value=xs:string>  
+          </roleClaimType>  
+        </samlSecurityTokenRequirement>  
+      </add>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

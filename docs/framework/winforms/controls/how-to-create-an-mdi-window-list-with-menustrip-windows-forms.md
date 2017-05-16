@@ -53,12 +53,9 @@ Use the multiple-document interface (MDI) to create applications that can open s
         'Display the new form.  
             NewMDIChild.Show()  
     End Sub  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     private void newToolStripMenuItem_Click(object sender, EventArgs e)  
     {  
         Form2 newMDIChild = new Form2();  
@@ -67,7 +64,6 @@ Use the multiple-document interface (MDI) to create applications that can open s
         // Display the new form.  
             newMDIChild.Show();  
     }  
-  
     ```  
   
 9. Place code like the following in the `&New`<xref:System.Windows.Forms.ToolStripMenuItem> to register the event handler.  
@@ -75,12 +71,10 @@ Use the multiple-document interface (MDI) to create applications that can open s
     ```vb  
     Private Sub newToolStripMenuItem_Click(sender As Object, e As _  
     EventArgs) Handles newToolStripMenuItem.Click  
-  
     ```  
   
     ```csharp  
     this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);  
-  
     ```  
   
 ## Compiling the Code  

@@ -79,9 +79,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 7.  Modify the code so that it resembles the following code sample. Be sure to change the access modifier from `private` to `protected`.  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     protected void timer1_Tick(object sender, System.EventArgs e)  
     {  
         // Causes the label to display the current time.  
@@ -93,7 +91,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 8.  Modify the method to be overridable with the `virtual` keyword. For more information, see the  "Inheriting from a User Control" section below.  
   
-    ```  
+    ```csharp  
     protected virtual void timer1_Tick(object sender, System.EventArgs e)  
     ```  
   
@@ -110,9 +108,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 2.  Locate the `public partial class ctlClock` statement. Beneath the opening brace (`{)`, type the following code.  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     private Color colFColor;  
     private Color colBColor;  
     ```  
@@ -121,9 +117,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 3.  Type the following code beneath the variable declarations from step 2.  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     // Declares the name and type of the property.  
     public Color ClockBackColor  
     {  
@@ -209,9 +203,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 2.  Locate the `public class` statement. Note that your control inherits from `ctlClockLib.ctlClock`. Beneath the opening brace (`{)` statement, type the following code.  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     private DateTime dteAlarmTime;  
     private bool blnAlarmSet;  
     // These properties will be declared as public to allow future   
@@ -275,17 +267,13 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 1.  In the **Code Editor**, locate the `private bool blnAlarmSet;` statement. Immediately beneath it, add the following statement.  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     private bool blnColorTicker;  
     ```  
   
 2.  In the **Code Editor**, locate the closing brace (`})` at the end of the class. Just before the brace, add the following code.  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     protected override void timer1_Tick(object sender, System.EventArgs e)  
     {  
         // Calls the Timer1_Tick method of ctlClock.  
@@ -348,9 +336,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 4.  Modify this method so that it resembles the following code.  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     private void btnAlarmOff_Click(object sender, System.EventArgs e)  
     {  
         // Turns off the alarm.  
@@ -400,9 +386,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 11. Modify the code so that it resembles the following.  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     private void dtpTest_ValueChanged(object sender, System.EventArgs e)  
     {  
         ctlAlarmClock1.AlarmTime = dtpTest.Value;  

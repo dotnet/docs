@@ -30,9 +30,9 @@ Specifies additional connection pool settings for a Named Pipe binding.
 ```  
   
 <connectionPoolSettings  
-        groupName=”String”  
+        groupName="String"  
     idleTimeout"TimeSpan"  
-    maxOutboundConnectionsPerEndpopint=”Integer” />  
+    maxOutboundConnectionsPerEndpopint="Integer" />  
 ```  
   
 ## Attributes and Elements  

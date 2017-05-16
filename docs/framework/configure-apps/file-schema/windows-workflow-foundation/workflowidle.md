@@ -25,7 +25,7 @@ A service behavior that controls when idle workflow instances are unloaded and p
 ## Syntax  
   
 ```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <workflowIdle timeToPersist=”TimeSpan”          timeToUnload=”TimeSpan” />    </behavior>  </serviceBehaviors></behaviors>  
+<behaviors>  <serviceBehaviors>    <behavior name=String">      <workflowIdle timeToPersist="TimeSpan"          timeToUnload="TimeSpan" />    </behavior>  </serviceBehaviors></behaviors>  
 ```  
   
 ## Attributes and Elements  

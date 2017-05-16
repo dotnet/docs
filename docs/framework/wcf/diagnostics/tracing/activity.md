@@ -49,7 +49,7 @@ This topic describes activity traces in the [!INCLUDE[indigo1](../../../../../in
 -   `Local` scope, per endpoint. In this scope, the activity is identified by its gAId, along with the trace source name emitting the activity traces and the process Id. This triplet constitutes the local activity id, lAId. The lAId is used to define the (local) boundaries of an activity.  
   
 ## Trace Schema  
- Traces can be emitted using any schema, and across Microsoft platforms. “e2e” (for “End to End”) is a commonly used schema. This schema includes a 128 bit identifier (gAId), the trace source name, and process ID. In managed code, <xref:System.Diagnostics.XmlWriterTraceListener> emits traces in the E2E schema.  
+ Traces can be emitted using any schema, and across Microsoft platforms. "e2e" (for "End to End") is a commonly used schema. This schema includes a 128 bit identifier (gAId), the trace source name, and process ID. In managed code, <xref:System.Diagnostics.XmlWriterTraceListener> emits traces in the E2E schema.  
   
  Developers can set the AID that is emitted with a trace by setting the <xref:System.Diagnostics.CorrelationManager.ActivityId%2A> property with a Guid on Thread Local Storage (TLS). The following example demonstrates this.  
   
@@ -70,15 +70,15 @@ traceSource.TraceEvent(TraceEventType.Warning, eventId, "Information");
 ## Activity Lifetime  
  In strictest terms, evidence of an activity starts the first time the activity ID is used in an emitted trace, and ends the last time it is used in an emitted trace. A predefined set of trace types are provided by <xref:System.Diagnostics>, including Start and Stop, to explicitly mark the activity lifetime boundaries.  
   
--   Start: Indicates the beginning of an activity. A “Start” trace provides a record of beginning a new processing milestone. It contains a new activity ID for a given trace source in a given process, except when the activity ID is propagated across endpoints, in which case we see one "Start" per endpoint. Examples of starting a new activity include creating a new thread for processing, or entering a new public method.  
+-   Start: Indicates the beginning of an activity. A "Start" trace provides a record of beginning a new processing milestone. It contains a new activity ID for a given trace source in a given process, except when the activity ID is propagated across endpoints, in which case we see one "Start" per endpoint. Examples of starting a new activity include creating a new thread for processing, or entering a new public method.  
   
--   Stop: Indicates the end of an activity. A “Stop” trace provides a record of ending an existing processing milestone. It contains an existing activity ID for a given trace source in a given process, except when the activity ID is propagated across endpoints, in which case we see one "Stop" per endpoint.  Examples of stopping an activity include terminating a processing thread, or exiting a method whose beginning was denoted with a “Start” trace.  
+-   Stop: Indicates the end of an activity. A "Stop" trace provides a record of ending an existing processing milestone. It contains an existing activity ID for a given trace source in a given process, except when the activity ID is propagated across endpoints, in which case we see one "Stop" per endpoint.  Examples of stopping an activity include terminating a processing thread, or exiting a method whose beginning was denoted with a "Start" trace.  
   
--   Suspend: Indicates suspension of processing of an activity. A “Suspend” trace contains an existing activity ID whose processing is expected to resume at a later time. No traces are emitted with this ID between the Suspend and Resume events from the current trace source. Examples include pausing an activity when calling into an external library function, or when waiting on a resource such as an I/O completion port.  
+-   Suspend: Indicates suspension of processing of an activity. A "Suspend" trace contains an existing activity ID whose processing is expected to resume at a later time. No traces are emitted with this ID between the Suspend and Resume events from the current trace source. Examples include pausing an activity when calling into an external library function, or when waiting on a resource such as an I/O completion port.  
   
--   Resume: Indicates the resumption of processing of an activity. A “Resume” trace contains an existing activity id whose last emitted trace from the current trace source was a “Suspend” trace. Examples include returning from a call to an external library function, or when signaled to resume processing by a resource such as an I/O completion port.  
+-   Resume: Indicates the resumption of processing of an activity. A "Resume" trace contains an existing activity id whose last emitted trace from the current trace source was a "Suspend" trace. Examples include returning from a call to an external library function, or when signaled to resume processing by a resource such as an I/O completion port.  
   
--   Transfer: Because some activities are caused by others, or relate to others, activities can be related to other activities through “Transfer” traces. A transfer records the directed relationship of one activity to another  
+-   Transfer: Because some activities are caused by others, or relate to others, activities can be related to other activities through "Transfer" traces. A transfer records the directed relationship of one activity to another  
   
  Start and Stop traces are not critical for correlation. However, they can help in increasing performance, profiling, and activity scope validation.  
   
@@ -101,7 +101,7 @@ traceSource.TraceEvent(TraceEventType.Warning, eventId, "Information");
   
 -   Activities triggered by the receipt or processing of a message are represented by trace boundaries.  
   
--   Activities represent activities, not necessarily objects. An activity should be interpreted as “this was happening when . . . (meaningful trace emission occurred)."  
+-   Activities represent activities, not necessarily objects. An activity should be interpreted as "this was happening when . . . (meaningful trace emission occurred)."  
   
 ## See Also  
  [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md)   

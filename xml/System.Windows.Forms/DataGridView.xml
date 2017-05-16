@@ -14528,16 +14528,12 @@
 ## Remarks  
  You can use the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection to manually populate a <xref:System.Windows.Forms.DataGridView> control instead of binding it to a data source. The following example shows you how to manually add and insert rows. This example assumes that you have added four <xref:System.Windows.Forms.DataGridViewTextBoxColumn> instances to the control's <xref:System.Windows.Forms.DataGridView.Columns%2A> collection.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Me.dataGridView1.Rows.Add("five", "six", "seven", "eight")  
 Me.dataGridView1.Rows.Insert(0, "one", "two", "three", "four")  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 this.dataGridView1.Rows.Add("five", "six", "seven", "eight");this.dataGridView1.Rows.Insert(0, "one", "two", "three", "four");  
 ```  
   
@@ -14549,9 +14545,7 @@ this.dataGridView1.Rows.Add("five", "six", "seven", "eight");this.dataGridView1.
   
  The following example shows you how to modify cell values programmatically.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 ' Modify the value in the first cell of the second row.  
 Me.dataGridView1.Rows[1].Cells[0].Value = "new value"  
   
@@ -14559,9 +14553,7 @@ Me.dataGridView1.Rows[1].Cells[0].Value = "new value"
 Me.dataGridView1[0, 1].Value = "new value"  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 // Modify the value in the first cell of the second row.  
 this.dataGridView1.Rows[1].Cells[0].Value = "new value";  
   
@@ -14573,9 +14565,7 @@ this.dataGridView1[0, 1].Value = "new value";
   
  The following example shows you how to retrieve the index of the first selected row, and then use it to programmatically delete the row.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim rowToDelete As Int32 = Me.dataGridView1.Rows.GetFirstRow( _  
     DataGridViewElementStates.Selected)  
 If rowToDelete > -1 Then  
@@ -14583,9 +14573,7 @@ If rowToDelete > -1 Then
 End If  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 Int32 rowToDelete = this.dataGridView1.Rows.GetFirstRow(  
     DataGridViewElementStates.Selected);  
 if (rowToDelete > -1)  

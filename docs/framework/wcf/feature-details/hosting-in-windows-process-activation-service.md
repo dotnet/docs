@@ -39,7 +39,7 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
 ## Elements of the WAS Addressing Model  
  Applications have Uniform Resource Identifier (URI) addresses, which are the code units whose lifetime and execution environment are managed by the server. A single WAS server instance can be home to many different applications. Servers organize applications into groups called *sites*. Within a site, applications are arranged in a hierarchical manner that reflects the structure of the URIs that serve as their external addresses.  
   
- Application addresses have two parts: a base URI prefix and an application-specific, relative address (path), which provide the external address for an application when joined together. The base URI prefix is constructed from the site binding and is used for all the applications under the site. Application addresses are then constructed by taking application-specific path fragments (such as, “/applicationOne”) and appending them to the base URI prefix (for example, “net.tcp://localhost”) to arrive at the full application URI.  
+ Application addresses have two parts: a base URI prefix and an application-specific, relative address (path), which provide the external address for an application when joined together. The base URI prefix is constructed from the site binding and is used for all the applications under the site. Application addresses are then constructed by taking application-specific path fragments (such as, "/applicationOne") and appending them to the base URI prefix (for example, "net.tcp://localhost") to arrive at the full application URI.  
   
  The following table illustrates several possible addressing scenarios for WAS sites with both HTTP and non-HTTP site bindings.  
   

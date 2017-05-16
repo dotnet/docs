@@ -36,7 +36,7 @@ Public string Operation2()
    // Operation logic  
    // ...   MyErrorDetail detail = new MyErrorDetail  
    {  
-      Message = “Error Message”,  
+      Message = "Error Message",  
       ErrorCode = 123,  
    }  
    throw new WebFaultException<MyErrorDetail>(detail, HttpStatusCode.Forbidden);  

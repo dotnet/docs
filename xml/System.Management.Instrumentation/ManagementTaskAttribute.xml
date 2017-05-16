@@ -34,9 +34,7 @@
 ## Examples  
  The following example shows how to mark a method with the ManagementTask attribute to expose the method to WMI. The method will show up in WMI as ResetCounters.  
   
- [C#]  
-  
-```  
+```csharp  
 // Use the ManagementTask attribute to specify that a method  
 // is exposed to WMI through this provider. Consumers will be  
 // able to execute this method through WMI.  
@@ -44,9 +42,8 @@
 public void ResetCounters()  
 {  
     counter.Reset();  
+}  
 ```  
-  
- }  
   
  ]]></format>
     </remarks>

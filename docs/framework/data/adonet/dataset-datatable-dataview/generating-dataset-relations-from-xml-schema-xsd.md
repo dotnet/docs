@@ -46,10 +46,10 @@ In a <xref:System.Data.DataSet>, you form an association between two or more col
   
 ```  
   
-<msdata:Relationship name="CustOrderRelationship"    
-msdata:parent=""    
-msdata:child=""    
-msdata:parentkey=""    
+<msdata:Relationship name="CustOrderRelationship"    
+msdata:parent=""    
+msdata:child=""    
+msdata:parentkey=""    
 msdata:childkey="" />  
 ```  
   

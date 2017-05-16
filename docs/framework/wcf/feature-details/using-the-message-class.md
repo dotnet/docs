@@ -136,12 +136,12 @@ The <xref:System.ServiceModel.Channels.Message> class is fundamental to [!INCLUD
  The `MessageBuffer` class has other members worth noting. The <xref:System.ServiceModel.Channels.MessageBuffer.Close%2A> method can be called to free resources when the buffer contents are no longer required. The <xref:System.ServiceModel.Channels.MessageBuffer.BufferSize%2A> property returns the size of the allocated buffer. The <xref:System.ServiceModel.Channels.MessageBuffer.MessageContentType%2A> property returns the MIME content type of the message.  
   
 ## Accessing the Message Body for Debugging  
- For debugging purposes, you can call the <xref:System.ServiceModel.Channels.Message.ToString%2A> method to get a representation of the message as a string. This representation generally matches the way a message would look on the wire if it were encoded with the text encoder, except that the XML would be better formatted for human readability. The one exception to this is the message body. The body can be read only once, and `ToString` does not change the message state. Therefore, the `ToString` method might not be able to access the body and might substitute a placeholder (for example, “…” or three dots) instead of the message body. Therefore, do not use `ToString` to log messages if the body content of the messages is important.  
+ For debugging purposes, you can call the <xref:System.ServiceModel.Channels.Message.ToString%2A> method to get a representation of the message as a string. This representation generally matches the way a message would look on the wire if it were encoded with the text encoder, except that the XML would be better formatted for human readability. The one exception to this is the message body. The body can be read only once, and `ToString` does not change the message state. Therefore, the `ToString` method might not be able to access the body and might substitute a placeholder (for example, "…" or three dots) instead of the message body. Therefore, do not use `ToString` to log messages if the body content of the messages is important.  
   
 ## Accessing Other Message Parts  
  Various properties are provided to access information about the message other than its body contents. However, these cannot be called once the message has been closed:  
   
--   The <xref:System.ServiceModel.Channels.Message.Headers%2A> property represents the message headers. See the section on “Working with Headers” later in this topic.  
+-   The <xref:System.ServiceModel.Channels.Message.Headers%2A> property represents the message headers. See the section on "Working with Headers" later in this topic.  
   
 -   The <xref:System.ServiceModel.Channels.Message.Properties%2A> property represents the message properties, which are pieces of named data attached to the message that do not generally get emitted when the message is sent. See the section on "Working with Properties" later in this topic.  
   

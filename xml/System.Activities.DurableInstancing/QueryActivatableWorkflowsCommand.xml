@@ -37,7 +37,7 @@
  A generic host is a host that has an XName parameter named **ActivationType**, which should be set to a value supported by the instance store. Currently, the SQL Workflow Instance Store supports generic hosts with ActivationType parameter set to value: **WAS**. If the ActivationType is not set at all, the SQL Workflow Instance Store treats the host as a generic host.  
   
 > [!NOTE]
->  The Workflow Management Service that ships with the code named “Dublin” (Application Server Extensions for .NET 4.0) is a generic host that has the activation type set to **WAS**.  
+>  The Workflow Management Service that ships with the code named "Dublin" (Application Server Extensions for .NET 4.0) is a generic host that has the activation type set to **WAS**.  
   
  ]]></format>
     </remarks>

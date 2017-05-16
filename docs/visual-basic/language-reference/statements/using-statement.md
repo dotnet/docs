@@ -44,8 +44,8 @@ Declares the beginning of a `Using` block and optionally acquires the system res
 ## Syntax  
   
 ```  
-Using { resourcelist | resourceexpression }  
-    [ statements ]  
+Using { resourcelist | resourceexpression }  
+    [ statements ]  
 End Using  
 ```  
   

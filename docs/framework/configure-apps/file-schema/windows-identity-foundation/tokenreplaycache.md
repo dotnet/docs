@@ -27,12 +27,12 @@ Registers a token replay cache with a service or a security token handler collec
   
 ```  
 \<system.identityModel>  
-  <identityConfiguration>  
-    <caches>  
-      \<tokenReplayCache type=xs:string>  
-      </tokenReplayCache>  
-    </caches>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <caches>  
+      \<tokenReplayCache type=xs:string>  
+      </tokenReplayCache>  
+    </caches>  
+  </identityConfiguration>  
 \</system.identityModel>  
 ```  
   

@@ -27,12 +27,12 @@ Specifies a single optional or required claim for incoming security tokens.
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <claimTypeRequired>  
-      <claimType type=URI optional=xs:boolean >  
-      </claimType>  
-    </claimTypeRequired>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <claimTypeRequired>  
+      <claimType type=URI optional=xs:boolean >  
+      </claimType>  
+    </claimTypeRequired>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

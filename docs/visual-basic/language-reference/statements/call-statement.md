@@ -43,7 +43,7 @@ Transfers control to a `Function`, `Sub`, or dynamic-link library (DLL) procedur
 ## Syntax  
   
 ```  
-[ Call ] procedureName [ (argumentList) ]  
+[ Call ] procedureName [ (argumentList) ]  
 ```  
   
 ## Parts  

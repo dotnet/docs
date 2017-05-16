@@ -158,4 +158,4 @@ manager: "mbaldwin"
   
 1.  In Visual Studio, press **F5** to start debugging your application. If no errors are found, a new browser window will open.  
   
-2.  You may notice that the browser silently redirects your request to the STS, and then opens the Default.aspx page. If WIF is properly configured, you should see the site display the following text: **“You are signed in”**.
+2.  You may notice that the browser silently redirects your request to the STS, and then opens the Default.aspx page. If WIF is properly configured, you should see the site display the following text: **"You are signed in"**.

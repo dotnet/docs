@@ -27,7 +27,7 @@ Provides a workflow configuration element that establishes at the service level 
 ## Syntax  
   
 ```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <serviceAuthenticationManager serviceAuthenticationManagerType =”String”/>    </behavior>  </serviceBehaviors></behaviors>  
+<behaviors>  <serviceBehaviors>    <behavior name=String">      <serviceAuthenticationManager serviceAuthenticationManagerType ="String"/>    </behavior>  </serviceBehaviors></behaviors>  
 ```  
   
 ## Attributes and Elements  

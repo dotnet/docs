@@ -25,7 +25,7 @@ This sample demonstrates how to use [!INCLUDE[indigo1](../../../../includes/indi
   
  The service in the following sample is a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service with no AJAX-specific code.  
   
- If the <xref:System.ServiceModel.Web.WebInvokeAttribute> attribute is applied on an operation, or the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is not applied, the default HTTP verb (“POST”) is used. POST requests are harder to construct than GET requests, but they are not cached; use POST requests for all operations where caching is not appropriate.  
+ If the <xref:System.ServiceModel.Web.WebInvokeAttribute> attribute is applied on an operation, or the <xref:System.ServiceModel.Web.WebGetAttribute> attribute is not applied, the default HTTP verb ("POST") is used. POST requests are harder to construct than GET requests, but they are not cached; use POST requests for all operations where caching is not appropriate.  
   
 ```  
 [ServiceContract(Namespace = "PostAjaxService")]  

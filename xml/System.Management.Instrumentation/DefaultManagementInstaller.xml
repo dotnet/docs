@@ -25,9 +25,7 @@
 ## Examples  
  The following example shows how to derive a class from the <xref:System.Management.Instrumentation.DefaultManagementInstaller> class to install a WMI provider.  
   
- [C#]  
-  
-```  
+```csharp  
 // This is the installer class that installs an instrumented assembly.  
 // To use the default project installer, simply derive a class from  
 // DefaultManagementInstaller.  No methods need to be overridden.  

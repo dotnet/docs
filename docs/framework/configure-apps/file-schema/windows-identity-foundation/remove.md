@@ -27,12 +27,12 @@ Removes the specified security token handler from the token handler collection.
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <remove type=xs:string >  
-      </remove>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <remove type=xs:string >  
+      </remove>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

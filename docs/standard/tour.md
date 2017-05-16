@@ -22,7 +22,7 @@ See the [.NET Architectural Components](components.md) to learn about each of th
 
 ## How to run the code samples
 
-To learn how to set up a development environment to run the code samples, check out [Getting Started](getting-started.md).  You can copy and paste code samples from this page into your environment to execute them. 
+To learn how to set up a development environment to run the code samples, check out [Getting Started](get-started.md).  You can copy and paste code samples from this page into your environment to execute them. 
 
 > [!NOTE]
 In the future, this documentation site will have the ability to run these code samples in your browser.
@@ -145,6 +145,6 @@ If you're interested in a tour of C# features, check out [Tour of C#](../csharp/
 
 If you're interested in a tour of F# features, check out [Tour of F#](../fsharp/tour.md).
 
-If you want to get started with writing code of your own, check out [Getting Started](getting-started.md).
+If you want to get started with writing code of your own, check out [Getting Started](get-started.md).
 
 To learn about important components of .NET, check out [.NET Architectural Components](components.md).

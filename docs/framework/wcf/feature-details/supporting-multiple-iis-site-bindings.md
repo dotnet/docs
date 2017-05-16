@@ -25,7 +25,7 @@ When hosting a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service u
  This feature is only available to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services that are hosted under IIS. This feature is not enabled by default. To enable it you must add the `multipleSiteBindingsEnabled` attribute to the <`serviceHostingEnvironment`> element in your Web.config file and set it to `true`, as shown in the following example.  
   
 ```xml  
-<serviceHostingEnvironment multipleSiteBindingsEnabled=”true”/>  
+<serviceHostingEnvironment multipleSiteBindingsEnabled="true"/>  
 ```  
   
  When hosting a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service under IIS, IIS creates one base address for you based on the URI to the virtual directory that contains the application. You can add additional base addresses that use the same protocol by using Internet Information Services Manager to add one or more bindings to your Web site. For each binding specify a protocol (HTTP or HTTPS), an IP address, a port, and a host name. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] using Internet Information Services Manager, see [IIS Manager (IIS 7)](http://go.microsoft.com/fwlink/?LinkId=164057). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] adding bindings to a site, see [Create a Web Site (IIS 7)](http://go.microsoft.com/fwlink/?LinkId=164060)  

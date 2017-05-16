@@ -58,13 +58,13 @@ Repeats a group of statements for each element in a collection.
 ## Syntax  
   
 ```  
-For Each element [ As datatype ] In group  
-    [ statements ]  
-    [ Continue For ]  
-    [ statements ]  
-    [ Exit For ]  
-    [ statements ]  
-Next [ element ]  
+For Each element [ As datatype ] In group  
+    [ statements ]  
+    [ Continue For ]  
+    [ statements ]  
+    [ Exit For ]  
+    [ statements ]  
+Next [ element ]  
 ```  
   
 ## Parts  

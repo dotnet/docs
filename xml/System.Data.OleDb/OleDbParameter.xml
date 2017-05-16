@@ -143,7 +143,7 @@ OleDbDataReader reader = command.ExecuteReader();
 ## Remarks  
  Use caution when you are using this overload of the <xref:System.Data.OleDb.OleDbParameter> constructor to specify integer parameter values. Because this overload takes a `value` of type <xref:System.Object>, you must convert the integral value to an <xref:System.Object> type when the value is zero, as the following C# example demonstrates.  
   
-```  
+```csharp  
 Parameter = new OleDbParameter("@pname", Convert.ToInt32(0));  
 ```  
   
@@ -579,18 +579,14 @@ public void CreateOleDbParameter()
 ## Examples  
  The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub CreateOleDbParameter()  
     Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
     parameter.Direction = ParameterDirection.Output  
 End Sub 'CreateOleDbParameter  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public void CreateOleDbParameter()   
  {  
     OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
@@ -645,9 +641,7 @@ public void CreateOleDbParameter()
 ## Examples  
  The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub CreateOleDbParameter()  
     Dim parameter As New OleDbParameter("Price", OleDbType.Decimal)  
     parameter.Value = 3.1416  
@@ -656,9 +650,7 @@ Public Sub CreateOleDbParameter()
 End Sub 'CreateOleDbParameter  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public void CreateOleDbParameter()   
  {  
     OleDbParameter parameter = new OleDbParameter("Price", OleDbType.Decimal);  
@@ -763,9 +755,7 @@ public void CreateOleDbParameter()
 ## Examples  
  The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub CreateOleDbParameter()  
     Dim parameter As New OleDbParameter("Price", OleDbType.Decimal)  
     parameter.Value = 3.1416  
@@ -774,9 +764,7 @@ Public Sub CreateOleDbParameter()
 End Sub 'CreateOleDbParameter  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public void CreateOleDbParameter()   
  {  
     OleDbParameter parameter = new OleDbParameter("Price", OleDbType.Decimal);  
@@ -828,9 +816,7 @@ public void CreateOleDbParameter()
 ## Examples  
  The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub CreateOleDbParameter()  
     Dim myValue As String = "12 foot scarf - multiple colors, one previous owner"  
     Dim parameter As New OleDbParameter("Description", OleDbType.VarChar)  
@@ -840,9 +826,7 @@ Public Sub CreateOleDbParameter()
 End Sub 'CreateOleDbParameter  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public void CreateOleDbParameter()   
  {  
     string myValue = "12 foot scarf - multiple colors, one previous owner";  
@@ -885,18 +869,14 @@ public void CreateOleDbParameter()
 ## Examples  
  The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub CreateOleDbParameter()  
     Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
     parameter.SourceColumn = "Description"  
 End Sub 'CreateOleDbParameter  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public void CreateOleDbParameter()   
  {  
     OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
@@ -975,9 +955,7 @@ FieldName = @OriginalFieldName
 ## Examples  
  The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub CreateOleDbParameter()  
     Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
     parameter.SourceColumn = "Description"  
@@ -985,9 +963,7 @@ Public Sub CreateOleDbParameter()
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public void CreateOleDbParameter()   
  {  
     OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  
@@ -1088,18 +1064,14 @@ public void CreateOleDbParameter()
 ## Examples  
  The following example creates an <xref:System.Data.OleDb.OleDbParameter> and sets some of its properties.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub CreateOleDbParameter()  
     Dim parameter As New OleDbParameter("Description", OleDbType.VarChar, 88)  
     parameter.Value = "garden hose"  
 End Sub 'CreateOleDbParameter  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public void CreateOleDbParameter()   
  {  
     OleDbParameter parameter = new OleDbParameter("Description", OleDbType.VarChar, 88);  

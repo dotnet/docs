@@ -26,10 +26,10 @@ Specifies the set of required claims for incoming security tokens.
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <claimTypeRequired>  
-    </claimTypeRequired>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <claimTypeRequired>  
+    </claimTypeRequired>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

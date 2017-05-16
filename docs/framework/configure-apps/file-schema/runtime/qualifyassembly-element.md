@@ -41,7 +41,7 @@ Specifies the full name of the assembly that should be dynamically loaded when a
   
       <qualifyAssembly partialName=  
       "PartialAssemblyName"  
-                 fullName="FullAssemblyName"/>  
+                 fullName="FullAssemblyName"/>  
 ```  
   
 ## Attributes and Elements  
@@ -88,4 +88,3 @@ Specifies the full name of the assembly that should be dynamically loaded when a
 ## See Also  
  [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
  [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)   
-

@@ -26,7 +26,7 @@ This configuration element defines a standard endpoint with a fixed announcement
 ```  
   
 <system.serviceModel>  
-    <standardEndpoints>       <announcementEndpoint>           <standardEndpoint                  discoveryVersion=”WSDiscovery11/WSDiscoveryApril2005”                  maxAnnouncementDelay=”Timespan”                   name="String" />        </announcementEndpoint>            </standardEndpoints>  
+    <standardEndpoints>       <announcementEndpoint>           <standardEndpoint                  discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"                  maxAnnouncementDelay="Timespan"                   name="String" />        </announcementEndpoint>            </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

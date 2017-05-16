@@ -32,9 +32,7 @@
 ## Examples  
  The following example shows how to use the ManagementConfiguration attribute to mark a property. This property is exposed to WMI.  
   
- [C#]  
-  
-```  
+```csharp  
 // Use the ManagementConfiguration attribute to specify that a property  
 // is a read/write property in the provider. Consumers will be  
 // able to get and set this property value through WMI.  

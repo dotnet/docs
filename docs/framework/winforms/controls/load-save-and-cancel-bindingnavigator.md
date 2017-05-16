@@ -63,17 +63,13 @@ The <xref:System.Windows.Forms.BindingNavigator> control is a special-purpose <x
   
      Your code should now look similar to the following:  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Private Sub LoadButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles LoadButton.Click  
         TableAdapterName.Fill(DataSetName.TableName)  
     End Sub  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     private void LoadButton_Click(System.Object sender,   
         System.EventArgs e)  
     {  
@@ -83,17 +79,13 @@ The <xref:System.Windows.Forms.BindingNavigator> control is a special-purpose <x
   
 11. Create an event handler for the <xref:System.Windows.Forms.ToolStripItem.Click> event of the **Save**<xref:System.Windows.Forms.ToolStripButton> you created earlier and write code to update the data within the table the control is bound to.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Private Sub SaveButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SaveButton.Click  
         TableAdapterName.Update(DataSetName.TableName)  
     End Sub  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     private void SaveButton_Click(System.Object sender,   
         System.EventArgs e)  
     {  
@@ -106,17 +98,13 @@ The <xref:System.Windows.Forms.BindingNavigator> control is a special-purpose <x
   
 12. Create an event handler for the <xref:System.Windows.Forms.ToolStripItem.Click> event of the**Cancel**<xref:System.Windows.Forms.ToolStripButton> you created earlier and write code to cancel any changes to the data record that is displayed.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Private Sub CancelButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CancelButton.Click  
         BindingSourceName.CancelEdit()  
     End Sub  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     private void CancelButton_Click(System.Object sender, System.EventArgs e)  
     {  
         BindingSourceName.CancelEdit();  

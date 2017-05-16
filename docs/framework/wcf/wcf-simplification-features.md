@@ -120,7 +120,7 @@ This topic discusses new features that make writing WCF applications simpler.
 |<xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A>|Int32.MaxValue|This quota limits the maximum string size that the XML reader returns. This quota does not limit memory consumption in the XML reader itself, but in the component that is using the reader. For example, when the <xref:System.Runtime.Serialization.DataContractSerializer> uses a reader secured with <xref:System.Xml.XmlDictionaryReaderQuotas.MaxStringContentLength%2A>, it does not deserialize strings larger than this quota.|  
   
 > [!IMPORTANT]
->  Refer to “Using XML Safely” under [Security Considerations for Data](../../../docs/framework/wcf/feature-details/security-considerations-for-data.md) for more information about securing your data.  
+>  Refer to "Using XML Safely" under [Security Considerations for Data](../../../docs/framework/wcf/feature-details/security-considerations-for-data.md) for more information about securing your data.  
   
 > [!NOTE]
 >  These new defaults are used only if you deploy the WCF service on a machine with .NET Framework 4.5. If you deploy the same service on a machine with .NET Framework 4.0, then the .NET Framework 4.0 defaults are used. In such cases it is recommended to configure these settings explicitly.  

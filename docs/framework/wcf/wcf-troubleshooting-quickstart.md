@@ -53,7 +53,7 @@ This topic lists a number of known issues customers have run into while developi
   
  HTTP Error 404.3 – Not FoundThe page you are requesting cannot be served because of the extension configuration. If the page is a script, add a handler. If the file should be downloaded, add a MIME map. Detailed Error InformationModule StaticFileModule.  
   
- This error message occurs when “Windows Communication Foundation HTTP Activation” is not explicitly set in the Control Panel. To set this go to the Control Panel, click Programs in the lower left hand corner of the window. Click Turn Windows features on or off. Expand Microsoft .NET Framework 3.5.1 and select Windows Communication Foundation HTTP Activation.  
+ This error message occurs when "Windows Communication Foundation HTTP Activation" is not explicitly set in the Control Panel. To set this go to the Control Panel, click Programs in the lower left hand corner of the window. Click Turn Windows features on or off. Expand Microsoft .NET Framework 3.5.1 and select Windows Communication Foundation HTTP Activation.  
   
 <a name="BKMK_q1"></a>   
 ## Sometimes I receive a MessageSecurityException on the second request if my client is idle for a while after the first request. What is happening?  
@@ -72,7 +72,7 @@ This topic lists a number of known issues customers have run into while developi
 ```  
 public class MyServiceHost : ServiceHost  
 {  
-  public MyServiceHost(Type serviceType, params Uri[] baseAddresses)    
+  public MyServiceHost(Type serviceType, params Uri[] baseAddresses)    
     : base(serviceType, baseAddresses)  
   { Console.WriteLine("MyServiceHost Constructor"); }  
   

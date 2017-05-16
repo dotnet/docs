@@ -41,8 +41,8 @@ Removes an IP address or DNS name from the proxy bypass list.
   
 ```  
   
-      <remove   
-   name = "regular expression"   
+      <remove   
+   name = "regular expression"   
 />  
 ```  
   

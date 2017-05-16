@@ -38,7 +38,7 @@ Gets the public key from a private/public key pair. The key pair can be supplied
 ## Syntax  
   
 ```  
-BOOLEAN StrongNameGetPublicKey (   
+BOOLEAN StrongNameGetPublicKey (   
     [in]  LPCWSTR   szKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  
     [in]  ULONG     cbKeyBlob,  

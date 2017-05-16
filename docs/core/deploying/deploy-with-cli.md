@@ -21,7 +21,6 @@ The following sections show how to use [.NET Core command-line interface tools](
 - Framework-dependent deployment with third-party dependencies
 - Self-contained deployment
 - Self-contained deployment with third-party dependencies
-- Small footprint self-contained deployment
 
 When working from the command line, you can use a program editor of your choice. If your program editor is [Visual Studio Code](https://code.visualstudio.com), you can open a command console inside your Visual Studio Code environment by selecting **View** > **Integrated Terminal**.
 
@@ -112,7 +111,7 @@ Deploying a self-contained deployment without third-party dependencies involves 
      </PropertyGroup>
      ```
 
-   Note that the `<RuntimeIdentifier>` element can appear in any `<PropertyGroup>` in your *csproj* file. A complete sample *csproj* file appears later in this section.
+   Note that the `<RuntimeIdentifiers>` element can appear in any `<PropertyGroup>` in your *csproj* file. A complete sample *csproj* file appears later in this section.
 
 1. Update the project's dependencies and tools.
 
@@ -182,73 +181,6 @@ When you deploy your application, any third-party dependencies used in your app 
 
 Note that you can only deploy a self-contained deployment with a third-party library to platforms supported by that library. This is similar to having third-party dependencies with native dependencies in a framework-dependent deployment, where the native dependencies must be compatible with the platform to which the app is deployed.
 
-## Small footprint self-contained deployment
-
-If adequate storage space on target systems is an issue, you can reduce the overall footprint of your app by excluding some system components. To do this, you explicitly define the necessary .NET Core components in your *csproj* file rather than include unnecessary components that are added to a normal SCD by default.
-
-To create a self-contained deployment with a smaller footprint, start by following the first two steps for creating a self-contained deployment. From the command line, once you've run the `dotnet new console` command and added the C# source code to your app, open the *csproj* file. Then do the following:
-
-1. Replace the `<TargetFramework>` element with the following:
-
-  ```xml
-  <TargetFramework>netstandard1.6</TargetFramework>
-  ```
-
-   Instead of using the entire `netcoreapp1.1` framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, this indicates that our app uses only the .NET Standard Library.
-
-1. Add the following `<ItemGroup>` section to add package references to the project:
-
-   ```xml
-   <ItemGroup>
-      <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="1.1.1" />
-      <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy" Version="1.1.0" />
-   </ItemGroup>
-   ```
-
-   This defines the system components used by the app. The system components packaged with the app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host. This produces a self-contained deployment with a smaller footprint.
-
-1. As you did in the [Deploying a simple self-contained deployment](#simpleSelf) example, create a `<RuntimeIdentifiers>` element within a `<PropertyGroup>` section in your *csproj* file that defines the platforms your app targets and specify the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. For example, the following `<PropertyGroup>` section indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
-
-    ```xml
-    <PropertyGroup>
-      <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-    </PropertyGroup>
-    ```
-
-   A complete sample *csproj* file appears later in this section.
-
-1. From the command line, run the `dotnet restore` command to restore the dependencies specified in your project.
-
-1. After you've debugged and tested the program, create the files to be deployed with your app for each platform that it targets.
-
-   To do this, use the `dotnet publish` command for both target platforms as follows:
-
-      ```console
-      dotnet publish -c Release -r win10-x64
-      dotnet publish -c Release -r osx.10.11-x64
-      ```
-
-   This creates a Release (rather than a Debug) version of your app for each target platform. The resulting files are placed in a subdirectory named *publish* that is in a subdirectory of your project's *.\bin\Release\netstandard1.6\<runtime_identifier>* subdirectory. Note that each subdirectory contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
-
-Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to package it with your application's files. You should, however, save it in the event that you want to debug the Release build of your app.
-
-Deploy the published files in any way you like. For example, you can package them in a Zip file, use a simple `copy` command, or deploy them with any installation package of your choice.
-
-The following is the complete *csproj* file for this project.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netstandard1.6</TargetFramework>
-    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="1.1.1" />
-    <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy" Version="1.1.0" />
-  </ItemGroup>
-</Project>
-```
 # See also
 
 [.NET Core Application Deployment](index.md)   

@@ -43,7 +43,7 @@ namespace Prime.Services
 
 ### Creating the test project
 
-Change the directory back to the *unit-testing-using-mstest* directory and create the *PrimeServices.Tests* directory. The directory structure is shown below:
+Change the directory back to the *unit-testing-using-mstest* directory and create the *PrimeService.Tests* directory. The directory structure is shown below:
 
 ```
 /unit-testing-using-mstest

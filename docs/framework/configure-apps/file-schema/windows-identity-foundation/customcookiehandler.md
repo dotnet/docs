@@ -16,7 +16,7 @@ ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;customCookieHandler&gt;
-Sets the custom cookie handler type. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is “Custom”. The custom type must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.  
+Sets the custom cookie handler type. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Custom". The custom type must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.  
   
  \<system.identityModel.services>  
 \<federationConfiguration>  
@@ -27,12 +27,12 @@ Sets the custom cookie handler type. This element may only be present if the `mo
   
 ```  
 \<system.identityModel.services>  
-  <federationConfiguration>  
-    \<cookieHandler mode=”Custom”>  
-      <customCookieHandler type="MyNamespace.MyCustomCookieHandler, MyAssembly" >  
-      </customCookieHandler>  
-    </cookieHandler>  
-  </federationConfiguration>  
+  <federationConfiguration>  
+    \<cookieHandler mode="Custom">  
+      <customCookieHandler type="MyNamespace.MyCustomCookieHandler, MyAssembly" >  
+      </customCookieHandler>  
+    </cookieHandler>  
+  </federationConfiguration>  
 \</system.identityModel.services>  
 ```  
   
@@ -55,7 +55,7 @@ Sets the custom cookie handler type. This element may only be present if the `mo
 |[\<cookieHandler>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md)|Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref:System.IdentityModel.Services.SessionAuthenticationModule> uses to read and write cookies.|  
   
 ## Remarks  
- When you specify a custom cookie handler by setting the `mode` attribute of the `<cookieHandler>` element to “Custom”, you must specify the type of the custom cookie handler by including a `<customCookieHandler>` child element that references the cookie handler type. This element cannot be specified when the `mode` attribute is set to “Chunked” or “Default”. Custom cookie handlers must derive from the <xref:System.IdentityModel.Services.CookieHandler> class.  
+ When you specify a custom cookie handler by setting the `mode` attribute of the `<cookieHandler>` element to "Custom", you must specify the type of the custom cookie handler by including a `<customCookieHandler>` child element that references the cookie handler type. This element cannot be specified when the `mode` attribute is set to "Chunked" or "Default". Custom cookie handlers must derive from the <xref:System.IdentityModel.Services.CookieHandler> class.  
   
  The `<customCookieHandler>` element is represented by the <xref:System.IdentityModel.Configuration.CustomTypeElement> class.  
   

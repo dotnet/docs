@@ -2746,9 +2746,7 @@
   
  The second step is to override the <xref:System.Web.UI.WebControls.WebParts.WebPartManager.IsAuthorized%28System.Type%2CSystem.String%2CSystem.String%2CSystem.Boolean%29> method, and create custom handling for authorization filters. Note that the code first checks whether the property has a value, so that any control that does not assign the <xref:System.Web.UI.WebControls.WebParts.WebPart.AuthorizationFilter%2A> property will be added automatically. If a control has a filter, the code returns `true` only if the filter value is equal to `admin`. This demonstrates a simple mechanism you can use for displaying certain controls to certain users, depending on their role. While a full example using roles is beyond the scope of this topic, you could use the same logic as the overridden method in this code example, except that you could check whether the current user is in a role that matches the authorization filter value, and then add the control only for that user. This would enable you to create pages where some users would see all the controls, and other users would see only selected controls. This is how the logic that checks the filter might look if you used roles:  
   
- [Visual Basic]  
-  
-```  
+```vb  
 If Roles.IsUserInRole(Page.User.Identity.Name, authorizationFilter) Then  
   return True  
 Else  
@@ -2756,9 +2754,7 @@ Else
 End If  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 if(Roles.IsUserInRole(Page.User.Identity.Name, authorizationFilter))  
     return true;  
 else  
@@ -3071,9 +3067,7 @@ else
   
  Because setting up users in roles is beyond the scope of this topic, this code example does not check user roles in the filtering. However, the scenario of filtering controls according to user roles is likely to be one of the most common uses of this filtering feature. If you have roles on your site, and you want to check user roles in this method to filter controls, the method would resemble the following code block (versus the simpler approach in the preceding code example, which does not use roles).  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Protected Sub WebPartManager1_AuthorizeWebPart(ByVal sender _  
   As Object, ByVal e As WebPartAuthorizationEventArgs)  
   
@@ -3090,9 +3084,7 @@ Protected Sub WebPartManager1_AuthorizeWebPart(ByVal sender _
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 protected void mgr1_AuthorizeWebPart(object sender,   
   WebPartAuthorizationEventArgs e)  
 {  

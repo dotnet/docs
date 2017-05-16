@@ -27,9 +27,7 @@ In most asynchronous processing scenarios, you want to start a database operatio
   
  To set up this example, create a new Windows application. Place a <xref:System.Windows.Forms.Button> control and two <xref:System.Windows.Forms.Label> controls on the form (accepting the default name for each control). Add the following code to the form's class, modifying the connection string as necessary for your environment.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 ' Add these to the top of the class:  
 Imports System  
 Imports System.Data  

@@ -24,7 +24,7 @@ Provides a way to specify a bitmap source that does not have an embedded profile
 ## XAML Attribute Usage  
   
 ```  
-<object property="{ColorConvertedBitmap imageSource sourceIIC destinationIIC}" .../>  
+<object property="{ColorConvertedBitmap imageSource sourceIIC destinationIIC}" .../>  
 ```  
   
 ## XAML Values  

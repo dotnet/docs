@@ -1,7 +1,7 @@
 ---
 title: "Getting started with Visual Basic | Microsoft Docs"
 
-ms.date: "2015-07-20"
+ms.date: "2017-05-01"
 ms.prod: .net
 
 
@@ -39,7 +39,11 @@ translation.priority.mt:
 This section of the documentation helps you get started with Visual Basic application development.  
   
 ## In this section  
- [Visual Basic Breaking Changes in Visual Studio](breaking-changes-in-visual-studio.md)  
+
+[What's new for Visual Basic](whats-new.md)   
+Lists new features in each of the versions of Visual Basic .NET.
+
+[Visual Basic Breaking Changes in Visual Studio](breaking-changes-in-visual-studio.md)  
  Lists changes in this   release that might prevent an application from compiling or change its run-time behavior.  
   
  [Additional Resources for Visual Basic Programmers](../../visual-basic/getting-started/additional-resources.md)  

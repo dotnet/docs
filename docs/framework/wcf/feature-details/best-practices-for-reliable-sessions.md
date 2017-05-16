@@ -78,4 +78,4 @@ This section discusses best practices for reliable sessions.
 </configuration>  
 ```  
   
- Where “XX” is the number of connections needed. The minimum in this case should be 4.
+ Where "XX" is the number of connections needed. The minimum in this case should be 4.

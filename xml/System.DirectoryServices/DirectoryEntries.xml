@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +31,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectoryEntry</ReturnType>
@@ -68,9 +70,7 @@ Console.WriteLine(myDirectoryEntry.Name + " entry is created in container.")
   
  The following C# example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
   
- [C#]  
-  
-```  
+```csharp  
 String strPath = "IIS://localhost/W3SVC/1/Root";  
   
 // Create a new 'DirectoryEntry' object with the given path.  
@@ -87,7 +87,7 @@ Console.WriteLine (myDirectoryEntry.Name + " entry is created in container.");
   
  The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
   
-```  
+```cpp  
 String* strPath = S"IIS://localhost/W3SVC/1/Root";  
   
 // Create a new 'DirectoryEntry' object with the given path.  
@@ -115,6 +115,7 @@ Console::WriteLine("{0} entry is created in container.", myDirectoryEntry->Name)
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectoryEntry</ReturnType>
@@ -151,6 +152,7 @@ Console::WriteLine("{0} entry is created in container.", myDirectoryEntry->Name)
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectoryEntry</ReturnType>
@@ -242,7 +244,7 @@ class MyClass1
   
  The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. It attempts to retrieve the new entry.  
   
-```cpp#  
+```cpp  
 #using <mscorlib.dll>  
 #using <System.dll>  
 #using <System.Directoryservices.dll>  
@@ -290,6 +292,7 @@ int main() {
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -309,6 +312,7 @@ int main() {
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -414,7 +418,7 @@ class MyClass1
   
  The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. Finally, it retrieves the new entry and deletes it.  
   
-```cpp#  
+```cpp  
 #using <mscorlib.dll>  
 #using <System.dll>  
 #using <System.Directoryservices.dll>  
@@ -464,6 +468,7 @@ int main() {
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.SchemaNameCollection</ReturnType>

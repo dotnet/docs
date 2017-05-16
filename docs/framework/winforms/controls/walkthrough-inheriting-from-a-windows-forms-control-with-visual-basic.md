@@ -66,9 +66,7 @@ With [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], you can create power
   
 2.  Locate the `Public Class ValueButton` statement. Immediately beneath this statement, type the following code:  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     ' Creates the private variable that will store the value of your   
     ' property.  
     Private varValue as integer  
@@ -140,9 +138,7 @@ With [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], you can create power
   
 9. Type the following line of code.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Label1.Text = CStr(ValueButton1.ButtonValue)  
     ```  
   

@@ -37,7 +37,7 @@ Contains cryptography settings.
   
 ```  
   
-      <cryptographySettings>   
+      <cryptographySettings>   
 </crytopgraphySettings>  
 ```  
   

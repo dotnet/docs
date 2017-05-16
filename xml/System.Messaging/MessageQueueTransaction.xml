@@ -28,17 +28,11 @@
   
  If you instantiate a <xref:System.Messaging.MessageQueueTransaction> and pass it to an applicable overload of the <xref:System.Messaging.MessageQueue.Send%2A> method or <xref:System.Messaging.MessageQueue.Receive%2A> method to send a message to a non-transactional queue or receive a message from a non-transactional queue, the method throws an exception that indicates "Wrong Transaction Usage."  
   
- [Visual Basic]  
-  
  <xref:System.Messaging.MessageQueueTransaction> is threading apartment aware, so if your apartment state is `STA`, you cannot use the transaction in multiple threads. Visual Basic sets the state of the main thread to `STA`, so you must apply the <xref:System.MTAThreadAttribute> in the `Main` subroutine. Otherwise, sending a transactional message using another thread throws a <xref:System.Messaging.MessageQueueException> exception. You apply the <xref:System.MTAThreadAttribute> by using the following fragment.  
   
-```  
+```vb  
 <System.MTAThreadAttribute>  
  public sub Main()  
-```  
-  
-```vb  
-  
 ```  
   
  ]]></format>

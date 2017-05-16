@@ -41,7 +41,7 @@
 ### [Private Constructors](private-constructors.md)
 ### [Static Constructors](static-constructors.md)
 ### [How to: Write a Copy Constructor](how-to-write-a-copy-constructor.md)
-## [Destructors](destructors.md)
+## [Finalizers](destructors.md)
 ## [Object and Collection Initializers](object-and-collection-initializers.md)
 ### [How to: Initialize Objects by Using an Object Initializer](how-to-initialize-objects-by-using-an-object-initializer.md)
 ### [How to: Initialize a Dictionary with a Collection Initializer](how-to-initialize-a-dictionary-with-a-collection-initializer.md)

@@ -99,7 +99,7 @@ When developing a secure service or client using [!INCLUDE[indigo1](../../../../
   
     ```  
   
- In the configuration file for a client, use the following XML to specify that the certificate is found in the user’s store, and can be found by searching the SubjectName field for the value “CohoWinery.”  
+ In the configuration file for a client, use the following XML to specify that the certificate is found in the user’s store, and can be found by searching the SubjectName field for the value "CohoWinery."  
   
 ```xml  
   

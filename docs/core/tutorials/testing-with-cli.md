@@ -4,7 +4,7 @@ description: This tutorial explains how to organize and test .NET Core projects 
 keywords: .NET, .NET Core, unit testing, .NET CLI, xUnit
 author: cartermp
 ms.author: mairaw
-ms.date: 04/17/2017
+ms.date: 05/16/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -14,7 +14,7 @@ ms.assetid: 52ff1be3-d92e-4477-9c84-8c1771e87ab5
 
 # Organizing and testing projects with the .NET Core command line
 
-This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md) taking you beyond the creation of a simple console app to pave the way for the development of advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend a console application with the [xUnit](https://xunit.github.io/) testing framework.
+This tutorial follows [Getting started with .NET Core on Windows/Linux/macOS using the command line](using-with-xplat-cli.md), taking you beyond the creation of a simple console app to develop advanced and well-organized applications. After showing you how to use folders to organize your code, this tutorial shows you how to extend a console application with the [xUnit](https://xunit.github.io/) testing framework.
 
 ## Using folders to organize code
 
@@ -99,7 +99,7 @@ Woof!
 Meow!
 ```
 
-Optional exercise: You can add a new pet type, such as a `Bird`, extending this project. Make the bird's `TalkToOwner` method give a `Tweet!` to the owner. Run the app again. The output will include `Tweet!`
+Optional exercise: You can add a new pet type, such as a `Bird`, by extending this project. Make the bird's `TalkToOwner` method give a `Tweet!` to the owner. Run the app again. The output will include `Tweet!`
 
 ### Testing the sample
 
@@ -163,7 +163,8 @@ public class PetTests
 
 Optional exercise: If you added a `Bird` type earlier that yields a `Tweet!` to the owner, add a test method to the *PetTests.cs* file, `BirdTalkToOwnerReturnsTweet`, to check that the `TalkToOwner` method works correctly for the `Bird` type.
 
-Note that although you expect the `expected` and `actual` values are equal that the initial assertions are that they are *not equal* with `Assert.NotEqual` checks. Always initially create your tests to fail once in order to check the logic of the tests. This is an important step in test-driven design (TDD) methodology. After you confirm the tests fail, you adjust the assertions to allow them to pass.
+> [!NOTE]
+> Although you expect that the `expected` and `actual` values are equal, the initial assertions with the `Assert.NotEqual` checks specify that they are *not equal*. Always initially create your tests to fail once in order to check the logic of the tests. This is an important step in test-driven design (TDD) methodology. After you confirm the tests fail, you adjust the assertions to allow them to pass.
 
 The following shows the complete project structure:
 
@@ -183,12 +184,7 @@ The following shows the complete project structure:
       |__NewTypesTests.csproj
 ```
 
-Start in the *test/NewTypesTests* directory. Restore the test project with the [`dotnet restore`](../tools/dotnet-restore.md) command. Run the tests with the [`dotnet test`](../tools/dotnet-test.md) command. This command starts the test runner specified in the project file. Execute the following commands:
- 
-```console
-dotnet restore
-dotnet test
-```
+Start in the *test/NewTypesTests* directory. Restore the test project with the [`dotnet restore`](../tools/dotnet-restore.md) command. Run the tests with the [`dotnet test`](../tools/dotnet-test.md) command. This command starts the test runner specified in the project file.
  
 As expected, testing fails, and the console displays the following output:
  

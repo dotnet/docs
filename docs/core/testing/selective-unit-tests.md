@@ -16,6 +16,7 @@ ms.assetid: 13d01272-bbf8-456c-a97a-560001d1a7f2
 The following examples use `dotnet test`. If you're using `vstest.console.exe`, replace `--filter ` with `--testcasefilter:`.
 
 ## MSTest
+
 ```csharp
 namespace MSTestNamespace
 {
@@ -41,7 +42,7 @@ namespace MSTestNamespace
 ```
 
 | Expression | Result |
-| --- | --- |
+| ---------- | ------ |
 | `dotnet test --filter Method` | Runs tests whose `FullyQualifiedName` contains `Method`. Available in `vstest 15.1+`. |
 | `dotnet test --filter Name~TestMethod1` | Runs tests whose name contains `TestMethod1`. |
 | `dotnet test --filter ClassName=MSTestNamespace.UnitTestClass1` | Runs tests which are in class `MSTestNamespace.UnitTestClass1`.<br>**Note:** The `ClassName` value should have namespace, so `ClassName=UnitTestClass1` won't work. |
@@ -52,12 +53,13 @@ namespace MSTestNamespace
 **Using conditional operators | and &amp;**
 
 | Expression | Result |
-| --- | --- |
+| ---------- | ------ |
 | <code>dotnet test --filter "FullyQualifiedName~UnitTestClass1&#124;TestCategory=CategoryA"</code> | Runs tests which have `UnitTestClass1` in `FullyQualifiedName` **or** `TestCategory` is `CategoryA`. |
 | `dotnet test --filter "FullyQualifiedName~UnitTestClass1&TestCategory=CategoryA"` | Runs tests which have `UnitTestClass1` in `FullyQualifiedName` **and** `TestCategory` is `CategoryA`. |
-| `dotnet test --filter "(FullyQualifiedName~UnitTestClass1&TestCategory=CategoryA)|Priority=1"` | Runs tests which have either `FullyQualifiedName` containing `UnitTestClass1` **and** `TestCategory` is `CategoryA` **or** `Priority` is 1. |
+| `dotnet test --filter "(FullyQualifiedName~UnitTestClass1&TestCategory=CategoryA)%7CPriority=1"` | Runs tests which have either `FullyQualifiedName` containing `UnitTestClass1` **and** `TestCategory` is `CategoryA` **or** `Priority` is 1. |
 
 ## xUnit
+
 ```csharp
 namespace XUnitNamespace
 {
@@ -81,7 +83,7 @@ namespace XUnitNamespace
 ```
 
 | Expression | Result |
-| --- | --- |
+| ---------- | ------ |
 | `dotnet test --filter DisplayName=XUnitNamespace.TestClass1.Test1` | Runs only one test, `XUnitNamespace.TestClass1.Test1`. |
 | `dotnet test --filter FullyQualifiedName!=XUnitNamespace.TestClass1.Test1` | Runs all tests except `XUnitNamespace.TestClass1.Test1`. |
 | `dotnet test --filter DisplayName~TestClass1` | Runs tests whose display name contains `TestClass1`. |
@@ -89,14 +91,14 @@ namespace XUnitNamespace
 In the code example, the defined traits with keys `Category` and `Priority` can be used for filtering.
 
 | Expression | Result |
-| --- | --- |
+| ---------- | ------ |
 | `dotnet test --filter XUnit` | Runs tests whose `FullyQualifiedName` contains `XUnit`.  Available in `vstest 15.1+`. |
-| `dotnet test --filter Category=bvt` | Runs tests which has `[Trait("Category", "bvt")]`. |
+| `dotnet test --filter Category=bvt` | Runs tests which have `[Trait("Category", "bvt")]`. |
 
 **Using conditional operators | and &amp;**
 
 | Expression | Result |
-| --- | --- |
+| ---------- | ------ |
 | <code>dotnet test --filter "FullyQualifiedName~TestClass1&#124;Category=Nightly"</code> | Runs tests which has `TestClass1` in `FullyQualifiedName` **or** `Category` is `Nightly`. |
 | `dotnet test --filter "FullyQualifiedName~TestClass1&Category=Nightly"` | Runs tests which has `TestClass1` in `FullyQualifiedName` **and** `Category` is `Nightly`. |
 | <code>dotnet test --filter "(FullyQualifiedName~TestClass1&Category=Nightly)&#124;Priority=1"</code> | Runs tests which have either `FullyQualifiedName` containing `TestClass1` **and** `Category` is `CategoryA` **or** `Priority` is 1. |

@@ -50,7 +50,7 @@ List all of the discovered tests in the current project.
 
 `--filter <EXPRESSION>`
 
-Filters out tests in the current project using the given expression. For option details, see the [Filter option details](#filter-option-details) section. For a additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
+Filters out tests in the current project using the given expression. For for information, see the [Filter option details](#filter-option-details) section. For additional information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
 `-a|--test-adapter-path <PATH_TO_ADAPTER>`
 
@@ -98,33 +98,33 @@ Run the tests in the `test1` project:
 
 `--filter <EXPRESSION>`
 
-`<Expression>` is of the format `<property><operator><value>[|&<Expression>]`.
+`<Expression>` has the format `<property><operator><value>[|&<Expression>]`.
 
 `<property>` is an attribute of the `Test Case`. The following are the properties supported by popular unit test frameworks:
 
-| Test Framework | Supported properties |
-| --- | --- |
-| MSTest | <ul><li>FullyQualifiedName</li><li>Name</li><li>ClassName</li><li>Priority</li><li>TestCategory</li></ul> |
-| Xunit | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Traits</li></ul> |
+| Test Framework | Supported properties                                                                                      |
+| :------------: | --------------------------------------------------------------------------------------------------------- |
+| MSTest         | <ul><li>FullyQualifiedName</li><li>Name</li><li>ClassName</li><li>Priority</li><li>TestCategory</li></ul> |
+| Xunit          | <ul><li>FullyQualifiedName</li><li>DisplayName</li><li>Traits</li></ul>                                   |
 
-The `<operator>` describes the relationship between the property and the value.
+The `<operator>` describes the relationship between the property and the value:
 
-| Operator | Function |
-| --- | --- |
-| `=` | Exact match |
-| `!=` | Not exact match |
-| `~` | Contains |
+| Operator | Function        |
+| :------: | --------------- |
+| `=`      | Exact match     |
+| `!=`     | Not exact match |
+| `~`      | Contains        |
 
 `<value>` is a string. All the lookups are case insensitive.
 
 An expression without an `<operator>` is automatically considered as a `contains` on `FullyQualifiedName` property (for example, `dotnet test --filter xyz` is same as `dotnet test --filter FullyQualifiedName~xyz`).
 
-Expressions can be joined with conditional operators.
+Expressions can be joined with conditional operators:
 
 | Operator | Function |
-| --- | --- |
-| `|` | OR |
-| `&` | AND |
+| :------: | :------: |
+| `|`      | OR       |
+| `&`      | AND      |
 
 You can enclose expressions in paranthesis when using conditional operators (for example, `(Name~TestMethod1) | (Name~TestMethod2)`).
 
@@ -132,5 +132,5 @@ For a additional information and examples on how to use selective unit test filt
 
 ## See also
 
-* [Target frameworks](../../standard/frameworks.md)
-* [Runtime IDentifier (RID) catalog](../rid-catalog.md)
+[Frameworks and Targets](../../standard/frameworks.md)   
+[.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

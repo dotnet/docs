@@ -43,13 +43,13 @@ In addition, because an asynchronous method may return before it has finished ex
  
 ## Defining a ref return value
 
-You define a ref return value by adding the [ref](language-reference/keywords/ref.md) keyword to the return type of the method signature. For example, the following signature indicates that the `GetContactInformation` property returns a reference to a `Person` object to the caller:
+You define a ref return value by adding the [ref](../../language-reference/keywords/ref.md) keyword to the return type of the method signature. For example, the following signature indicates that the `GetContactInformation` property returns a reference to a `Person` object to the caller:
 
 ```csharp
 public ref Person GetContactInformation(string fname, string lname);
 ```
 
-In addition, the name of the object returned by each [return](language-reference/keywords/return.md) statement in the method body must be preceded by the [ref](language-reference/keywords/ref.md) keyword. For example, the following `return` statement returns a `Person` object named `p` by reference:
+In addition, the name of the object returned by each [return](../../language-reference/keywords/return.md) statement in the method body must be preceded by the [ref](../../language-reference/keywords/ref.md) keyword. For example, the following `return` statement returns a `Person` object named `p` by reference:
 
 ```csharp
 return ref p;
@@ -81,14 +81,14 @@ If `p` is not defined as a ref local by using the `ref` keyword, any changes mad
 
 The following example defines a `NumberStore` class that stores an array of integer values. The `FindNumber` method returns by reference the first number that is greater than or equal to the number passed as an argument. If no number is greater than or equal to the argument, the method returns the number in index 0. 
 
-[!CODE-cs[ref-returns](../../samples/snippets/csharp/programming-guide/ref-returns/ref-returns1.cs#1)]
+[!CODE-cs[ref-returns](../../../../samples/snippets/csharp/programming-guide/ref-returns/ref-returns1.cs#1)]
 
 The following example calls the `NumberStore.FindNumber` method to retrieve the first value that is greater than or equal to 16. The caller then doubles the value returned by the method. As the output from the example shows, this change is reflected in the value of the array elements of the `NumberStore` instance.
 
-[!CODE-cs[ref-returns](../../samples/snippets/csharp/programming-guide/ref-returns/ref-returns1.cs#2)]
+[!CODE-cs[ref-returns](../../../../samples/snippets/csharp/programming-guide/ref-returns/ref-returns1.cs#2)]
 
 Without support for reference return values, such an operation is usually performed by returning the index of the array element along with its value. The caller can then use this index to modify the value in a separate method call. However, the caller can also modify the index to access and possibly modify other array values.  
  
 ## See also
 
-[ref keyword](language-reference/keywords/ref.md)
+[ref keyword](../../language-reference/keywords/ref.md)

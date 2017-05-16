@@ -12,9 +12,7 @@ ms.devlang: dotnet
 ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
 ---
 
-# Using .NET Core SDK and tools in Continuous Integration (CI) (.NET Core Tools RC4)
-
-[!INCLUDE[preview-warning](../../../includes/warning.md)]
+# Using .NET Core SDK and tools in Continuous Integration (CI)
 
 ## Overview
 This document outlines the usage of .NET Core SDK and its tools on the build server. When we started building the .NET Core SDK and its command-line tools, we have envisioned the toolset being able to be used both interactively, by a human being sitting at a command line, as well as automatically, that is by a CI server. The commands, options, inputs and outputs would be the same and the only thing you would add on top is a way to acquire the tooling as well as choosing how to do your build.

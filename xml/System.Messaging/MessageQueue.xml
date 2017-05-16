@@ -6419,7 +6419,7 @@ myMessageQueue.Send("Text 2."); //Resources are re-acquired.
    
   
 ## Examples  
-<!-- TODO: review snippet reference  [!CODE [The following code example demonstrates the use of this method.](The following code example demonstrates the use of this method.)]  -->  
+ The following code example demonstrates the use of <xref:System.Messaging.MessageQueue.SetPermissions%28System.Messaging.AccessControlList%29>.      
   
  [!code-cpp[MessageQueue2#26](~/samples/snippets/cpp/VS_Snippets_Remoting/MessageQueue2/cpp/class1.cpp#26)]
  [!code-csharp[MessageQueue2#26](~/samples/snippets/csharp/VS_Snippets_Remoting/MessageQueue2/CS/class1.cs#26)]  

@@ -1,0 +1,59 @@
+<Type Name="StickyNoteType" FullName="System.Windows.Controls.StickyNoteType">
+  <TypeSignature Language="C#" Value="public enum StickyNoteType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StickyNoteType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.StickyNoteType" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether a <see cref="T:System.Windows.Controls.StickyNoteControl" /> accepts text or ink.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this enumeration primarily to provide values for the <xref:System.Windows.Controls.StickyNoteControl.StickyNoteType%2A> property of a <xref:System.Windows.Controls.StickyNoteControl>.  
+  
+ An ink <xref:System.Windows.Controls.StickyNoteControl> can be handwritten on a [!INCLUDE[TLA#tla_tpc](~/includes/tlasharptla-tpc-md.md)] or other hardware that supports handwritten input.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ink">
+      <MemberSignature Language="C#" Value="Ink" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.StickyNoteType Ink = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteType.Ink" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.StickyNoteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An ink sticky note.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="Text" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.StickyNoteType Text = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteType.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.StickyNoteType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A text sticky note.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

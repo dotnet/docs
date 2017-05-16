@@ -1,0 +1,131 @@
+<Type Name="TagPrefixAttribute" FullName="System.Web.UI.TagPrefixAttribute">
+  <TypeSignature Language="C#" Value="public sealed class TagPrefixAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TagPrefixAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.TagPrefixAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the tag prefix used in a Web page to identify custom controls. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.TagPrefixAttribute> class defines an assembly-level attribute needed to specify tag prefix aliases for custom controls. This attribute is used by tools such as Microsoft Visual Studio to automatically generate a `Register` directive in the ASP.NET page where the custom controls are used.  
+  
+ This directive registers the tag prefix with a namespace. Moreover, it specifies the assembly where the custom control code implementation resides. With this directive in place, you can use custom controls in a Web page declaratively.  
+  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ [!code-csharp[SystemWebUI_TagPrefixAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_TagPrefixAttribute/CS/tagprefixattribute.cs#1)]
+ [!code-vb[SystemWebUI_TagPrefixAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_TagPrefixAttribute/VB/tagprefixattribute.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TagPrefixAttribute (string namespaceName, string tagPrefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string namespaceName, string tagPrefix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.TagPrefixAttribute.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="namespaceName" Type="System.String" />
+        <Parameter Name="tagPrefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="namespaceName">A string that identifies the custom control namespace.</param>
+        <param name="tagPrefix">A string that identifies the custom control prefix.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.TagPrefixAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In defining your custom control, and prior to any code, you should invoke this class constructor as follows:  
+  
+ `[assembly:TagPrefix(namespace, tag)]`  
+  
+   
+  
+## Examples  
+ The following code example shows how to define an assembly-level attribute that enables you to specify a tag prefix alias for a custom control. This attribute is used by tools such as Microsoft Visual Studio to automatically generate a `@ Register` directive in Web pages where the custom controls are used.  
+  
+ [!code-csharp[SystemWebUI_TagPrefixAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_TagPrefixAttribute/CS/tagprefixattribute.cs#1)]
+ [!code-vb[SystemWebUI_TagPrefixAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_TagPrefixAttribute/VB/tagprefixattribute.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <paramref name="namespaceName" /> or the <paramref name="tagPrefix" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceName">
+      <MemberSignature Language="C#" Value="public string NamespaceName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NamespaceName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.TagPrefixAttribute.NamespaceName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the namespace prefix for the specified control.</summary>
+        <value>The namespace name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[SystemWebUI_TagPrefixAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_TagPrefixAttribute/CS/tagprefixattribute.cs#1)]
+ [!code-vb[SystemWebUI_TagPrefixAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_TagPrefixAttribute/VB/tagprefixattribute.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TagPrefix">
+      <MemberSignature Language="C#" Value="public string TagPrefix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TagPrefix" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.TagPrefixAttribute.TagPrefix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the tag prefix for the specified control.</summary>
+        <value>The tag prefix.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-csharp[SystemWebUI_TagPrefixAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SystemWebUI_TagPrefixAttribute/CS/tagprefixattribute.cs#1)]
+ [!code-vb[SystemWebUI_TagPrefixAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SystemWebUI_TagPrefixAttribute/VB/tagprefixattribute.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

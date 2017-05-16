@@ -1,0 +1,133 @@
+<Type Name="DialogPropertyValueEditor" FullName="System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor">
+  <TypeSignature Language="C#" Value="public class DialogPropertyValueEditor : System.Activities.Presentation.PropertyEditing.PropertyValueEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DialogPropertyValueEditor extends System.Activities.Presentation.PropertyEditing.PropertyValueEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Presentation.PropertyEditing.PropertyValueEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Container for all dialog-editing logic for <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyContainer.PropertyEntry" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor> class to show an inline editor that can have an associated dialog box editor.  
+  
+ The <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor> class can hold either a <xref:System.Windows.DataTemplate> for a dialog box editor or custom logic that is called when the dialog box is invoked.  
+  
+ Use the <xref:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton> in your <xref:System.Windows.DataTemplate> to invoke your custom <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor> class.  
+  
+ You can provide a <xref:System.Windows.DataTemplate> which is shown in a host dialog box, or you can override the <xref:Systems.Windows.Forms.ShowDialog> method, which enables the reuse of existing or system dialog boxes.  
+  
+ The following list shows the rules for determining whether the <xref:System.Windows.DataTemplate> or <xref:Systems.Windows.Forms.ShowDialog> method is used.  
+  
+ If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is not a [!INCLUDE[null](~/includes/null-md.md)] reference (Nothing in Visual Basic), that <xref:System.Windows.DataTemplate> is hosted in a host-specific dialog box, which provides host styling. The <xref:Systems.Windows.Forms.ShowDialog> is not called.  
+  
+ If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is a [!INCLUDE[null](~/includes/null-md.md)] reference (Nothing in Visual Basic), the virtual <xref:Systems.Windows.Forms.ShowDialog> method is called and you can override this method to show any dialog box.  
+  
+   
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_DialogPropertyValueEditor#0](WFD_DialogPropertyValueEditor#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogPropertyValueEditor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor" /> class with no specific templates.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DialogPropertyValueEditor (System.Windows.DataTemplate dialogEditorTemplate, System.Windows.DataTemplate inlineEditorTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.DataTemplate dialogEditorTemplate, class System.Windows.DataTemplate inlineEditorTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.#ctor(System.Windows.DataTemplate,System.Windows.DataTemplate)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dialogEditorTemplate" Type="System.Windows.DataTemplate" />
+        <Parameter Name="inlineEditorTemplate" Type="System.Windows.DataTemplate" />
+      </Parameters>
+      <Docs>
+        <param name="dialogEditorTemplate">A <see cref="T:System.Window.DataTemplate" /> that is hosted in a host-specific dialog chrome and has its <see cref="P:System.Activities.ActivityContext.DataContext" /> set to the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> that corresponds to the property being edited.</param>
+        <param name="inlineEditorTemplate">A <see cref="T:System.Windows.DataTemplate" /> that is used for the inline editor user interface. If used, its <see cref="P:System.Activities.ActivityContext.DataContext" /> is set to the <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValue" /> that corresponds to the property being edited.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Design.PropertyEditing.DialogPropertyValueEditor" /> class with the specified dialog editor and inline editor templates.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DialogEditorTemplate">
+      <MemberSignature Language="C#" Value="public System.Windows.DataTemplate DialogEditorTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate DialogEditorTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Windows.DataTemplate" /> that is hosted by a host-specific dialog and has its <see cref="P:System.Activities.ActivityContext.DataContext" /> set to a <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyValue" />.</summary>
+        <value>The <see cref="T:System.Windows.DataTemplate" /> object that is hosted by a host-specific dialog.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property returns `null`, the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.ShowDialog%2A> method is called instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowDialog">
+      <MemberSignature Language="C#" Value="public virtual void ShowDialog (System.Activities.Presentation.PropertyEditing.PropertyValue propertyValue, System.Windows.IInputElement commandSource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowDialog(class System.Activities.Presentation.PropertyEditing.PropertyValue propertyValue, class System.Windows.IInputElement commandSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.ShowDialog(System.Activities.Presentation.PropertyEditing.PropertyValue,System.Windows.IInputElement)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyValue" Type="System.Activities.Presentation.PropertyEditing.PropertyValue" />
+        <Parameter Name="commandSource" Type="System.Windows.IInputElement" />
+      </Parameters>
+      <Docs>
+        <param name="propertyValue">The <see cref="P:System.Activities.Presentation.PropertyEditing.PropertyEntry.PropertyValue" /> for the property being edited.</param>
+        <param name="commandSource">The <see cref="T:System.Windows.IinputElement" /> that can be used as a source for execution of <see cref="T:System.Activities.Presentation.PropertyEditing.PropertyValueEditorCommands" />.</param>
+        <summary>Called when the <see cref="P:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate" /> is null and a dialog has been invoked by the user.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Since the commands get handled by the host and since custom dialogs are not going to be part of that visual tree, the `commandSource` exposes an <xref:System.Windows.IInputElement> that is part of the host's visual tree and that, therefore, can be used to execute property editing commands in such a way that they are handled correctly. Overriding this method enables you to implement any custom dialog logic, such as invoking existing system dialogs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

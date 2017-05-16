@@ -1,0 +1,89 @@
+<Type Name="PopupAnimation" FullName="System.Windows.Controls.Primitives.PopupAnimation">
+  <TypeSignature Language="C#" Value="public enum PopupAnimation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PopupAnimation extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.PopupAnimation" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes how a <see cref="T:System.Windows.Controls.Primitives.Popup" /> control animates when it opens.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To specify a type of animation for a <xref:System.Windows.Controls.Primitives.Popup> control, set the <xref:System.Windows.Controls.Primitives.Popup.PopupAnimation%2A> property to one of the enumeration values.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Fade">
+      <MemberSignature Language="C#" Value="Fade" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PopupAnimation Fade = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PopupAnimation.Fade" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PopupAnimation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.Primitives.Popup" /> control gradually appears, or fades in. This effect is created by increasing the opacity of the <see cref="T:System.Windows.Controls.Primitives.Popup" /> window over time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PopupAnimation None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PopupAnimation.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PopupAnimation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.Primitives.Popup" /> control appears without animation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scroll">
+      <MemberSignature Language="C#" Value="Scroll" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PopupAnimation Scroll = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PopupAnimation.Scroll" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PopupAnimation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.Primitives.Popup" /> control scrolls from the upper-left corner of its parent. If the screen does not provide enough room to allow the <see cref="T:System.Windows.Controls.Primitives.Popup" /> default behavior, the <see cref="T:System.Windows.Controls.Primitives.Popup" /> scrolls from the lower-right corner instead.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Slide">
+      <MemberSignature Language="C#" Value="Slide" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.PopupAnimation Slide = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.PopupAnimation.Slide" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.PopupAnimation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Controls.Primitives.Popup" /> control slides down or up into place. By default, a <see cref="T:System.Windows.Controls.Primitives.Popup" /> slides down. However, if the screen does not provide enough room for the <see cref="T:System.Windows.Controls.Primitives.Popup" /> to slide down, it slides up instead.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

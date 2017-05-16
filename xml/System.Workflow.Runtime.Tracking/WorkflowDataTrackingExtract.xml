@@ -1,0 +1,139 @@
+<Type Name="WorkflowDataTrackingExtract" FullName="System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract">
+  <TypeSignature Language="C#" Value="public class WorkflowDataTrackingExtract : System.Workflow.Runtime.Tracking.TrackingExtract" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WorkflowDataTrackingExtract extends System.Workflow.Runtime.Tracking.TrackingExtract" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.Runtime.Tracking.TrackingExtract</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies a property or a field to be extracted from the root activity of the workflow and sent to the tracking service together with and an associated collection of annotations when a track point is matched.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ A <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> specifies a property or a field to be extracted from the root activity of a workflow. You can add a <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> to either <xref:System.Workflow.Runtime.Tracking.UserTrackPoint.Extracts%2A?displayProperty=fullName> or <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A?displayProperty=fullName> to instruct the runtime tracking infrastructure to extract the member from the root activity of the workflow when the runtime tracking infrastructure matches an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> or a <xref:System.Workflow.Runtime.Tracking.UserTrackPoint>. The runtime tracking infrastructure puts the extracted data and any associated annotations in the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> or the <xref:System.Workflow.Runtime.Tracking.UserTrackingRecord> that it returns to the tracking service.  
+  
+ Set <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A> to specify the field or property for the runtime tracking infrastructure to extract from the root activity. You can associate additional information with the extracted data by adding to <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Annotations%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowDataTrackingExtract ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you use the default constructor you must explicitly set <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A> to a value different from a null reference (`Nothing` in Visual Basic) in your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WorkflowDataTrackingExtract (string member);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string member) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="member" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="member">The dot delineated name of the field or property of the root activity that should be extracted and sent to the tracking service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract" /> class by using the specified name of a member of the root activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A?displayProperty=fullName> is initialized to the `string` specified by `member`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="member" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotations">
+      <MemberSignature Language="C#" Value="public override System.Workflow.Runtime.Tracking.TrackingAnnotationCollection Annotations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.TrackingAnnotationCollection Annotations" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Annotations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingAnnotationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of annotations associated with the extracted data.</summary>
+        <value>The <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" /> associated with the activity property or field to be extracted. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Annotations are `strings` that you define that contain information to associate with the extracted data. When a track point is matched, the runtime tracking infrastructure includes both the extracted data and the annotation collection in the tracking record that it sends to the tracking service. You can add to <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Annotations%2A> to associate additional information with the extracted data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Member">
+      <MemberSignature Language="C#" Value="public override string Member { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Member" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the field or the property to be extracted from the root activity when a track point is matched.</summary>
+        <value>A dot delineated name that specifies a field or a property of the root activity. The default is a null reference (<see langword="Nothing" /> in Visual Basic).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A> can be set to specify a field or property of the root activity; a member of such a field or property; or a single element of a field or property (or a member of either) that implements the <xref:System.Collections.IEnumerable> interface. For example, if the root activity has a `string` property named "MyString" and you want the runtime tracking infrastructure to return its length, you can set <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A> to "MyString.length". Alternatively, to return the second char in "MyString", you can set <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A> to "MyString[1]".  
+  
+> [!NOTE]
+>  <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member%2A> must be the real name of a property on the activity type. This name may be different from what you see in the designer because the designer supports the ability to localize and map property names.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,71 @@
+<Type Name="ViewFlags" FullName="System.Web.UI.Design.ViewFlags">
+  <TypeSignature Language="C#" Value="public enum ViewFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ViewFlags extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ViewFlags" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates which features are enabled with the <see cref="M:System.Web.UI.Design.ControlDesigner.SetViewFlags(System.Web.UI.Design.ViewFlags,System.Boolean)" /> method of a designer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CustomPaint">
+      <MemberSignature Language="C#" Value="CustomPaint" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ViewFlags CustomPaint = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewFlags.CustomPaint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ViewFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enables painting events for displaying a custom control at design time.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DesignTimeHtmlRequiresLoadComplete">
+      <MemberSignature Language="C#" Value="DesignTimeHtmlRequiresLoadComplete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ViewFlags DesignTimeHtmlRequiresLoadComplete = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewFlags.DesignTimeHtmlRequiresLoadComplete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ViewFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Postpones all events until after the control is completely loaded.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateEditing">
+      <MemberSignature Language="C#" Value="TemplateEditing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.Design.ViewFlags TemplateEditing = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ViewFlags.TemplateEditing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.Design.ViewFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enables template editing at design time.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

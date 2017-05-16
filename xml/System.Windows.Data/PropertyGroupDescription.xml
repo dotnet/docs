@@ -1,0 +1,310 @@
+<Type Name="PropertyGroupDescription" FullName="System.Windows.Data.PropertyGroupDescription">
+  <TypeSignature Language="C#" Value="public class PropertyGroupDescription : System.ComponentModel.GroupDescription" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyGroupDescription extends System.ComponentModel.GroupDescription" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Data.PropertyGroupDescription" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.GroupDescription</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Describes the grouping of items using a property name as the criteria.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Views support the functionality of grouping, which allows the user to partition the collection in the collection view into logical groups. The groups can be explicit, where the user supplies a list of groups, or implicit, where the groups are generated dynamically depending on the data.  
+  
+ <xref:System.Windows.Data.PropertyGroupDescription> allows you to create implicit groups based on a <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A>. If you simply want to group by a property you can set the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property. If you want to change the value that is eventually used for group you can use the <xref:System.Windows.Data.PropertyGroupDescription.Converter%2A> property to supply a value converter. For example, you may want to group items based on the first letter of a name. If the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property is not set, the item itself is passed to the value converter. The converter may return a collection, which indicates the items can appear in more than one group.  
+  
+ You can also define how string comparison should take place using the <xref:System.Windows.Data.PropertyGroupDescription.StringComparison%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyGroupDescription ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.PropertyGroupDescription" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this constructor.  
+  
+ [!code-csharp[DataBindingLab#6](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/MainWindow.xaml.cs#6)]
+ [!code-vb[DataBindingLab#6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/MainWindow.xaml.vb#6)]  
+  
+ For the complete example see [Data Binding Demo](http://go.microsoft.com/fwlink/?LinkID=163703).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyGroupDescription (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property that specifies which group an item belongs to.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.PropertyGroupDescription" /> class with the specified property name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyGroupDescription (string propertyName, System.Windows.Data.IValueConverter converter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName, class System.Windows.Data.IValueConverter converter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.#ctor(System.String,System.Windows.Data.IValueConverter)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="converter" Type="System.Windows.Data.IValueConverter" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property that specifies which group an item belongs to. If this is <see langword="null" />, the item itself is passed to the value converter.</param>
+        <param name="converter">An <see cref="T:System.Windows.Data.IValueConverter" /> object to apply to the property value or the item to produce the final value that is used to determine which group(s) an item belongs to. The converter may return a collection, which indicates the items can appear in more than one group.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.PropertyGroupDescription" /> class with the specified property name and converter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyGroupDescription (string propertyName, System.Windows.Data.IValueConverter converter, StringComparison stringComparison);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName, class System.Windows.Data.IValueConverter converter, valuetype System.StringComparison stringComparison) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.#ctor(System.String,System.Windows.Data.IValueConverter,System.StringComparison)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="converter" Type="System.Windows.Data.IValueConverter" />
+        <Parameter Name="stringComparison" Type="System.StringComparison" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property that specifies which group an item belongs to. If this is <see langword="null" />, the item itself is passed to the value converter.</param>
+        <param name="converter">An <see cref="T:System.Windows.Data.IValueConverter" /> object to apply to the property value or the item to produce the final value that is used to determine which group(s) an item belongs to. The converter may return a collection, which indicates the items can appear in more than one group.</param>
+        <param name="stringComparison">A <see cref="T:System.StringComparison" /> value that specifies the comparison between the value of an item and the name of a group.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Data.PropertyGroupDescription" /> class with the specified parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareNameAscending">
+      <MemberSignature Language="C#" Value="public static System.Collections.IComparer CompareNameAscending { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.IComparer CompareNameAscending" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.PropertyGroupDescription.CompareNameAscending" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.IComparer" /> value that orders groups in ascending order of name.</summary>
+        <value>An <see cref="T:System.Collections.IComparer" /> value that orders groups in ascending order of name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Data.PropertyGroupDescription.CompareNameAscending%2A> can be used as a value for <xref:System.ComponentModel.GroupDescription.CustomSort%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompareNameDescending">
+      <MemberSignature Language="C#" Value="public static System.Collections.IComparer CompareNameDescending { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.IComparer CompareNameDescending" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.PropertyGroupDescription.CompareNameDescending" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IComparer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Collections.IComparer" /> value that orders groups in descending order of name.</summary>
+        <value>An <see cref="T:System.Collections.IComparer" /> value that orders groups in descending order of name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Data.PropertyGroupDescription.CompareNameDescending%2A> can be used as a value for <xref:System.ComponentModel.GroupDescription.CustomSort%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Converter">
+      <MemberSignature Language="C#" Value="public System.Windows.Data.IValueConverter Converter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.IValueConverter Converter" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.PropertyGroupDescription.Converter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Data.IValueConverter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a converter to apply to the property value or the item to produce the final value that is used to determine which group(s) an item belongs to.</summary>
+        <value>The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you want to change the value that is eventually used for group you can use the <xref:System.Windows.Data.PropertyGroupDescription.Converter%2A> property to supply a value converter. For example, you may want to group items based on the first letter of a name. If the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property is not set, the item itself is passed to the value converter. The converter may return a collection, which indicates the items can appear in more than one group.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupNameFromItem">
+      <MemberSignature Language="C#" Value="public override object GroupNameFromItem (object item, int level, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GroupNameFromItem(object item, int32 level, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.GroupNameFromItem(System.Object,System.Int32,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+        <Parameter Name="level" Type="System.Int32" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="item">The item to return group names for.</param>
+        <param name="level">The level of grouping.</param>
+        <param name="culture">The <see cref="T:System.Globalization.CultureInfo" /> to supply to the converter.</param>
+        <summary>Returns the group name(s) for the given item.</summary>
+        <returns>The group name(s) for the given item.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamesMatch">
+      <MemberSignature Language="C#" Value="public override bool NamesMatch (object groupName, object itemName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool NamesMatch(object groupName, object itemName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Data.PropertyGroupDescription.NamesMatch(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="groupName" Type="System.Object" />
+        <Parameter Name="itemName" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="groupName">The name of the group to check.</param>
+        <param name="itemName">The name of the item to check.</param>
+        <summary>Returns a value that indicates whether the group name and the item name match so that the item belongs to the group.</summary>
+        <returns>
+          <see langword="true" /> if the names match and the item belongs to the group; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyName">
+      <MemberSignature Language="C#" Value="public string PropertyName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.PropertyGroupDescription.PropertyName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the property that is used to determine which group(s) an item belongs to.</summary>
+        <value>The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Data.PropertyGroupDescription> allows you to create implicit groups based on a <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A>. If you simply want to group by a property you can set the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property. If you want to change the value that is eventually used for group you can use the <xref:System.Windows.Data.PropertyGroupDescription.Converter%2A> property to supply a value converter. For example, you may want to group items based on the first letter of a name. If the <xref:System.Windows.Data.PropertyGroupDescription.PropertyName%2A> property is not set, the item itself is passed to the value converter. The converter may return a collection, which indicates the items can appear in more than one group.  
+  
+ You can also define how string comparison should take place using the <xref:System.Windows.Data.PropertyGroupDescription.StringComparison%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StringComparison">
+      <MemberSignature Language="C#" Value="public StringComparison StringComparison { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.StringComparison StringComparison" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Data.PropertyGroupDescription.StringComparison" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.StringComparison</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.StringComparison" /> value that specifies the comparison between the value of an item (as determined by <see cref="P:System.Windows.Data.PropertyGroupDescription.PropertyName" /> and <see cref="P:System.Windows.Data.PropertyGroupDescription.Converter" />) and the name of a group.</summary>
+        <value>The default value is <see cref="T:System.StringComparison" />.<see langword="Ordinal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is ignored unless both values in the comparison are strings.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

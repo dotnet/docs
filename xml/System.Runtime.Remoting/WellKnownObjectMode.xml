@@ -1,0 +1,65 @@
+<Type Name="WellKnownObjectMode" FullName="System.Runtime.Remoting.WellKnownObjectMode">
+  <TypeSignature Language="C#" Value="public enum WellKnownObjectMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed WellKnownObjectMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.WellKnownObjectMode" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines how well-known objects are activated.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Well-known objects are objects exposed on the server end. The current enumerator is used by the <xref:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownServiceType%2A?displayProperty=fullName> method on the server side.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SingleCall">
+      <MemberSignature Language="C#" Value="SingleCall" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.WellKnownObjectMode SingleCall = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.WellKnownObjectMode.SingleCall" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.WellKnownObjectMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Every incoming message is serviced by a new object instance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Singleton">
+      <MemberSignature Language="C#" Value="Singleton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.WellKnownObjectMode Singleton = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.WellKnownObjectMode.Singleton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.WellKnownObjectMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Every incoming message is serviced by the same object instance.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

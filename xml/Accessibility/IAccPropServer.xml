@@ -1,0 +1,67 @@
+<Type Name="IAccPropServer" FullName="Accessibility.IAccPropServer">
+  <TypeSignature Language="C#" Value="public interface IAccPropServer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAccPropServer" />
+  <TypeSignature Language="DocId" Value="T:Accessibility.IAccPropServer" />
+  <AssemblyInfo>
+    <AssemblyName>Accessibility</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("76C0DBBB-15E0-4E7B-B61B-20EEEA2001E0")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see cref="T:Accessibility.IAccPropServer" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServer" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about <xref:Accessibility.IAccPropServer>, see the documentation for `Dynamic Properties` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetPropValue">
+      <MemberSignature Language="C#" Value="public void GetPropValue (ref byte pIDString, uint dwIDStringLen, Guid idProp, out object pvarValue, out int pfHasProp);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetPropValue(unsigned int8 pIDString, unsigned int32 dwIDStringLen, valuetype System.Guid idProp, object pvarValue, int32 pfHasProp) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Accessibility.IAccPropServer.GetPropValue(System.Byte@,System.UInt32,System.Guid,System.Object@,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Accessibility</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pIDString" Type="System.Byte&amp;" RefType="ref" />
+        <Parameter Name="dwIDStringLen" Type="System.UInt32" />
+        <Parameter Name="idProp" Type="System.Guid" />
+        <Parameter Name="pvarValue" Type="System.Object&amp;" RefType="out" />
+        <Parameter Name="pfHasProp" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="pIDString">Contains a string that identifies the property being requested.</param>
+        <param name="dwIDStringLen">Specifies the length of the identity string specified by the <c>pIDString</c> parameter.</param>
+        <param name="idProp">Specifies a GUID indicating the desired property.</param>
+        <param name="pvarValue">Specifies the value of the overridden property. This parameter is valid only if <c>pfHasProp</c> is TRUE. The server must set this to VT_EMPTY if <c>pfHasProp</c> is set to FALSE.</param>
+        <param name="pfHasProp">Indicates whether the server is supplying a value for the requested property. The server should set this to TRUE if it is returning an overriding property or to FALSE if it is not returning a property (in which case it should also set <c>pvarValue</c> to VT_EMPTY).</param>
+        <summary>The <see cref="T:Accessibility.IAccPropServer" /> and all of its exposed members are part of a managed wrapper for the Component Object Model (COM) <see langword="IAccPropServer" /> interface.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about <xref:Accessibility.IAccPropServer>, see the documentation for `IAccPropServer::GetPropValue` in the Microsoft Active Accessibility documentation in the MSDN library at http://msdn.microsoft.com/library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

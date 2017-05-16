@@ -1,0 +1,98 @@
+<Type Name="IHierarchicalDataSource" FullName="System.Web.UI.IHierarchicalDataSource">
+  <TypeSignature Language="C#" Value="public interface IHierarchicalDataSource" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHierarchicalDataSource" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IHierarchicalDataSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a hierarchical data source that hierarchical data-bound controls such as <see cref="T:System.Web.UI.WebControls.TreeView" /> can bind to.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET supports a control data-binding architecture that enables Web server controls to bind to data and present it in a consistent fashion. Web server controls that bind to data are called data-bound controls, and the classes that facilitate binding are called data source controls. Data source controls can represent any data source: a file, a stream, a relational database, a business object, and so on. Data source controls present data in a consistent way to data-bound controls, regardless of the source or format of the underlying data.  
+  
+ Data source controls that represent hierarchical data derive from the <xref:System.Web.UI.HierarchicalDataSourceControl> class, which is the base ASP.NET implementation of the <xref:System.Web.UI.IHierarchicalDataSource> interface. The <xref:System.Web.UI.IHierarchicalDataSource> interface is used to define data source controls that expose hierarchical data, rather than tabular or list-style data, to Web server controls that derive from the <xref:System.Web.UI.WebControls.HierarchicalDataBoundControl> class, such as the <xref:System.Web.UI.WebControls.TreeView> control. The interface defines a single method, <xref:System.Web.UI.IHierarchicalDataSource.GetHierarchicalView%2A>, which retrieves a strongly typed <xref:System.Web.UI.HierarchicalDataSourceView> object. Data source controls that implement this interface support a hierarchical view for each hierarchical level of data they represent. The data source views are not named, like <xref:System.Web.UI.DataSourceView> objects, but are identified by their unique hierarchical path, which is the `viewPath` parameter passed to the <xref:System.Web.UI.IHierarchicalDataSource.GetHierarchicalView%2A> method.  
+  
+ You can think of a data source control as the combination of the <xref:System.Web.UI.IHierarchicalDataSource> object and its associated views on the underlying data. Each associated <xref:System.Web.UI.HierarchicalDataSourceView> object defines the capabilities of a data source control for the hierarchical level represented, and, like all ASP.NET data source view objects, performs operations such as insert, update, delete, and sort.  
+  
+ Data source controls that expose only hierarchical data, such as <xref:System.Web.UI.WebControls.SiteMapDataSource>, are derived from the <xref:System.Web.UI.HierarchicalDataSourceControl> class. Other data source controls that expose their data as both hierarchical data and tabular data, such as <xref:System.Web.UI.WebControls.XmlDataSource>, are derived from <xref:System.Web.UI.HierarchicalDataSourceControl> but implement the <xref:System.Web.UI.IDataSource> and <xref:System.ComponentModel.IListSource> interfaces.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to extend the abstract <xref:System.Web.UI.HierarchicalDataSourceControl> class, which implements the <xref:System.Web.UI.IHierarchicalDataSource> interface, to create a data source control that displays file system information. The `FileSystemDataSource` class provides an implementation of the <xref:System.Web.UI.IHierarchicalDataSource.GetHierarchicalView%2A> method, which retrieves a strongly typed view object for a specified file system path. This code example is part of a larger example provided for the <xref:System.Web.UI.HierarchicalDataSourceControl> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.FileSystemDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/CS/filesystemdatasource.cs#1)]
+ [!code-vb[Urtue.Samples.Alexkr.FileSystemDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/VB/filesystemdatasource.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DataSourceChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.IHierarchicalDataSource.DataSourceChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the data storage that the <see cref="T:System.Web.UI.IHierarchicalDataSource" /> interface represents has changed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IHierarchicalDataSource.DataSourceChanged> event is raised when a change is made to the data source control's properties, such as changing the <xref:System.Web.UI.WebControls.XmlDataSource.DataFile%2A> property of an <xref:System.Web.UI.WebControls.XmlDataSource> control, or changing the data in the underlying data storage, which happens when XML nodes are changed by an edit action performed by an <xref:System.Web.UI.WebControls.XmlDataSource> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHierarchicalView">
+      <MemberSignature Language="C#" Value="public System.Web.UI.HierarchicalDataSourceView GetHierarchicalView (string viewPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.HierarchicalDataSourceView GetHierarchicalView(string viewPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IHierarchicalDataSource.GetHierarchicalView(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.HierarchicalDataSourceView</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="viewPath">The hierarchical path of the view to retrieve.</param>
+        <summary>Gets the view helper object for the <see cref="T:System.Web.UI.IHierarchicalDataSource" /> interface for the specified path.</summary>
+        <returns>Returns a <see cref="T:System.Web.UI.HierarchicalDataSourceView" /> that represents a single view of the data at the hierarchical level identified by the <paramref name="viewPath" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IHierarchicalDataSource> interface, like the <xref:System.Web.UI.IDataSource> interface, defines a method that hierarchical data source controls use to retrieve a data source view. Like all <xref:System.Web.UI.DataSourceView> helper objects that are associated with data source controls, a <xref:System.Web.UI.HierarchicalDataSourceView> object defines the operations that the data source can perform with the underlying data. However, although data source controls that represent tabular data typically have only one named view, hierarchical data source controls support a view for each level of hierarchical data that the data source control represents. The level of hierarchical data is identified by a unique hierarchical path, passed as the `viewPath` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.IHierarchicalDataSource.GetHierarchicalView%2A> method in a class that extends the <xref:System.Web.UI.HierarchicalDataSourceControl> class to retrieve a strongly typed <xref:System.Web.UI.HierarchicalDataSourceView> object for a unique hierarchical path. The `FileSystemDataSource` class's implementation of <xref:System.Web.UI.IHierarchicalDataSource.GetHierarchicalView%2A> retrieves a `FileSystemDataSourceView` object for a specified file system path. This code example is part of a larger example provided for the <xref:System.Web.UI.HierarchicalDataSourceControl> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.FileSystemDataSource_1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/CS/filesystemdatasource.cs#1)]
+ [!code-vb[Urtue.Samples.Alexkr.FileSystemDataSource_1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/VB/filesystemdatasource.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

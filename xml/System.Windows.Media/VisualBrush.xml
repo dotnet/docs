@@ -1,0 +1,358 @@
+<Type Name="VisualBrush" FullName="System.Windows.Media.VisualBrush">
+  <TypeSignature Language="C#" Value="public sealed class VisualBrush : System.Windows.Media.TileBrush" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VisualBrush extends System.Windows.Media.TileBrush" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.VisualBrush" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.TileBrush</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Paints an area with a <see cref="P:System.Windows.Media.VisualBrush.Visual" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are two ways to specify the <xref:System.Windows.Media.VisualBrush.Visual%2A> content of a <xref:System.Windows.Media.VisualBrush>.  
+  
+-   Create a new <xref:System.Windows.Media.Visual> and use it to set the <xref:System.Windows.Media.VisualBrush.Visual%2A> property of the <xref:System.Windows.Media.VisualBrush>.  
+  
+-   Use an existing <xref:System.Windows.Media.Visual>, which creates a duplicate image of the target <xref:System.Windows.Media.Visual>. You can then use the <xref:System.Windows.Media.VisualBrush> to create interesting effects, such as reflection and magnification.  
+  
+ When you define a new <xref:System.Windows.Media.VisualBrush.Visual%2A> for a <xref:System.Windows.Media.VisualBrush> and that <xref:System.Windows.Media.Visual> is a <xref:System.Windows.UIElement> (such as a panel or control), the layout system runs on the <xref:System.Windows.UIElement> and its child elements when the <xref:System.Windows.Media.VisualBrush.AutoLayoutContent%2A> property is set to `true`. However, the root <xref:System.Windows.UIElement> is essentially isolated from the rest of the system; styles, storyboards, and external layout can't permeate this boundary. Therefore, you should explicitly specify the size of the root <xref:System.Windows.UIElement>, because its only parent is the <xref:System.Windows.Media.VisualBrush> and therefore it cannot automatically size itself to the area being painted. For more information about layout in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)], see the [Layout](~/docs/framework/wpf/advanced/layout.md).  
+  
+ Updates to the visual tree of a <xref:System.Windows.Media.VisualBrush> will not propagate if a <xref:System.Windows.Media.Effects.BitmapEffect> is in the brush's parent chain. You can workaround this limitation by forcing an update of the scene on the object above the effect. You can call <xref:System.Windows.UIElement.InvalidateVisual%2A> or include an animation to force a scene update.  
+  
+ **Freezable Features:** Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.VisualBrush> class provides several special features: <xref:System.Windows.Media.VisualBrush> objects can be declared as  and shared among multiple objects. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](~/docs/framework/wpf/advanced/freezable-objects-overview.md).  
+  
+> [!NOTE]
+>  A <xref:System.Windows.Media.VisualBrush> cannot be made read-only (frozen) when its <xref:System.Windows.Media.VisualBrush.Visual%2A> property is set to any value other than `null.`  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VisualBrush ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.VisualBrush" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VisualBrush (System.Windows.Media.Visual visual);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Visual visual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.#ctor(System.Windows.Media.Visual)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="visual">The contents of the new <see cref="T:System.Windows.Media.VisualBrush" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.VisualBrush" /> class that contains the specified <see cref="P:System.Windows.Media.VisualBrush.Visual" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoLayoutContent">
+      <MemberSignature Language="C#" Value="public bool AutoLayoutContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AutoLayoutContent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualBrush.AutoLayoutContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether this <see cref="T:System.Windows.Media.VisualBrush" /> will run layout its <see cref="P:System.Windows.Media.VisualBrush.Visual" />.</summary>
+        <value>
+          <see langword="true" /> if this Brush should run layout on its <see cref="P:System.Windows.Media.VisualBrush.Visual" />; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting this property to `true` has an effect only when this brush's <xref:System.Windows.Media.VisualBrush.Visual%2A> is a non-parented <xref:System.Windows.UIElement>.  
+  
+<a name="dependencyPropertyInfo_AutoLayoutContent"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.VisualBrush.AutoLayoutContentProperty>|  
+|Metadata properties set to `true`|None|  
+  
+   
+  
+## Examples  
+ The following example shows the effects of the <xref:System.Windows.Media.VisualBrush.AutoLayoutContent%2A> property on a non-parented <xref:System.Windows.UIElement>.  
+  
+ [!code-csharp[visualbrush_markup_snip#AutoLayoutContentNonParentedUIElementExample](~/samples/snippets/csharp/VS_Snippets_Wpf/visualbrush_markup_snip/CSharp/AutoLayoutContentExample.cs#autolayoutcontentnonparenteduielementexample)]
+ [!code-vb[visualbrush_markup_snip#AutoLayoutContentNonParentedUIElementExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/visualbrush_markup_snip/visualbasic/autolayoutcontentexample.vb#autolayoutcontentnonparenteduielementexample)]
+ [!code-xml[visualbrush_markup_snip#AutoLayoutContentNonParentedUIElementExample](~/samples/snippets/xaml/VS_Snippets_Wpf/visualbrush_markup_snip/XAML/AutoLayoutContentExample.xaml#autolayoutcontentnonparenteduielementexample)]  
+  
+ The following illustration shows the example's output:  
+  
+ ![AutoLayoutContent with a non&#45;parented UIElement](~/add/media/graphicsmm-visualbrush-autolayoutcontentproperty-nonparented.png "AutoLayoutContent with a non-parented UIElement")  
+  
+ The next example shows the effects of the <xref:System.Windows.Media.VisualBrush.AutoLayoutContent%2A> property on a parented <xref:System.Windows.UIElement>.  
+  
+ [!code-csharp[visualbrush_markup_snip#AutoLayoutContentParentedUIElementExample](~/samples/snippets/csharp/VS_Snippets_Wpf/visualbrush_markup_snip/CSharp/AutoLayoutContentExample.cs#autolayoutcontentparenteduielementexample)]
+ [!code-vb[visualbrush_markup_snip#AutoLayoutContentParentedUIElementExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/visualbrush_markup_snip/visualbasic/autolayoutcontentexample.vb#autolayoutcontentparenteduielementexample)]
+ [!code-xml[visualbrush_markup_snip#AutoLayoutContentParentedUIElementExample](~/samples/snippets/xaml/VS_Snippets_Wpf/visualbrush_markup_snip/XAML/AutoLayoutContentExample.xaml#autolayoutcontentparenteduielementexample)]  
+  
+ The following illustration shows the example's output:  
+  
+ ![AutoLayoutContent with a parented UIElement](~/add/media/graphicsmm-visualbrush-autolayoutcontentproperty-parented.png "AutoLayoutContent with a parented UIElement")  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoLayoutContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AutoLayoutContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AutoLayoutContentProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.VisualBrush.AutoLayoutContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.VisualBrush.AutoLayoutContent" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.VisualBrush Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.VisualBrush Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.VisualBrush</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.VisualBrush" />, making deep copies of this object's values.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property is <see langword="true." /></returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.Clone%2A?displayProperty=fullName>.  
+  
+ When copying dependency properties, this method copies resource references and data bindings (but they might no longer resolve) but not animations or their current values.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CloneCurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.VisualBrush CloneCurrentValue ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.VisualBrush CloneCurrentValue() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.CloneCurrentValue" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.VisualBrush</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a modifiable clone of this <see cref="T:System.Windows.Media.VisualBrush" /> object, making deep copies of this object's current values. Resource references, data bindings, and animations are not copied, but their current values are.</summary>
+        <returns>A modifiable clone of the current object. The cloned object's <see cref="P:System.Windows.Freezable.IsFrozen" /> property will be <see langword="false" /> even if the source's <see cref="P:System.Windows.Freezable.IsFrozen" /> property was <see langword="true" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used to produce modifiable copies of frozen <xref:System.Windows.Freezable> objects (or any <xref:System.Windows.Freezable> object). For convenience, this method shadows the inherited version with a strongly typed implementation.  
+  
+ For more information, see <xref:System.Windows.Freezable.CloneCurrentValue%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstanceCore">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.CreateInstanceCore" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Freezable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContentBounds">
+      <MemberSignature Language="C#" Value="protected override void GetContentBounds (out System.Windows.Rect contentBounds);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetContentBounds(valuetype System.Windows.Rect contentBounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.GetContentBounds(System.Windows.Rect@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contentBounds" Type="System.Windows.Rect&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="contentBounds">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualBrush.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.Windows.DependencyPropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visual">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Visual Visual { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Visual Visual" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualBrush.Visual" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Visual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the brush's content.</summary>
+        <value>The brush's content. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are two ways to specify the <xref:System.Windows.Media.VisualBrush.Visual%2A> content of a <xref:System.Windows.Media.VisualBrush>.  
+  
+-   Create a new <xref:System.Windows.Media.Visual> and use it to set the <xref:System.Windows.Media.VisualBrush.Visual%2A> property of the <xref:System.Windows.Media.VisualBrush>.  
+  
+-   Use an existing <xref:System.Windows.Media.Visual>, which creates a duplicate image of the target <xref:System.Windows.Media.Visual>. You can then use the <xref:System.Windows.Media.VisualBrush> to create interesting effects, such as reflection and magnification.  
+  
+ <xref:System.Windows.Media.Visual> is quite high in the overall WPF class hierarchy, so a very large number of objects could possibly serve as the visual that you use for a <xref:System.Windows.Media.VisualBrush>; the entire list cannot be shown here. See <xref:System.Windows.Media.Visual>; refer to the "Inheritance Hierarchy" section, which will show the immediately derived classes. You can then click on the immediately derived classes and traverse the hierarchies to get a sense of the full range of possibilities. At a top level, the two most common categories of objects you might use for a <xref:System.Windows.Media.VisualBrush> are <xref:System.Windows.UIElement> or <xref:System.Windows.Media.ContainerVisual>. <xref:System.Windows.UIElement> encompasses basically any UI element that can otherwise participate in the UI for a WPF application. <xref:System.Windows.Media.ContainerVisual> contains a <xref:System.Windows.Media.DrawingGroup> that includes one or more <xref:System.Windows.Media.Drawing>-derived objects.  
+  
+ When you define a new <xref:System.Windows.Media.VisualBrush.Visual%2A> for a <xref:System.Windows.Media.VisualBrush> and that <xref:System.Windows.Media.Visual> is a <xref:System.Windows.UIElement> (such as a panel or control), the layout system runs on the <xref:System.Windows.UIElement> and its child elements when the <xref:System.Windows.Media.VisualBrush.AutoLayoutContent%2A> property is set to `true`. However, the root <xref:System.Windows.UIElement> is essentially isolated from the rest of the system; styles, storyboards, and external layout dictated by the parent where the brush is applied cannot permeate this boundary. Therefore, you should explicitly specify the size of the root <xref:System.Windows.UIElement>, because its only parent is the <xref:System.Windows.Media.VisualBrush> and therefore it cannot automatically size itself to the area being painted. For more information about layout in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)], see the [Layout](~/docs/framework/wpf/advanced/layout.md).  
+  
+ Updates to the visual tree of a <xref:System.Windows.Media.VisualBrush> will not propagate if a <xref:System.Windows.Media.Effects.BitmapEffect> is in the brush's parent chain. You can workaround this limitation by forcing an update of the scene on the object above the effect. You can call <xref:System.Windows.UIElement.InvalidateVisual%2A> or include an animation to force a scene update.  
+  
+> [!NOTE]
+>  A <xref:System.Windows.Media.VisualBrush> cannot be made read-only (frozen) when its <xref:System.Windows.Media.VisualBrush.Visual%2A> property is set to any value other than `null.`  
+  
+<a name="xamlPropertyElementUsage_Visual"></a>   
+## XAML Property Element Usage  
+  
+```  
+<object>  
+  <object.Visual>  
+    singleVisualRoot  
+  </object.Visual>  
+</object>  
+```  
+  
+<a name="xamlAttributeUsage_Visual"></a>   
+## XAML Attribute Usage  
+ <*object* `Visual`="{*bindingExpression*}"/>  
+  
+ \- or -  
+  
+ <*object* `Visual`="{*resourceExpression*}"/>  
+  
+<a name="xamlValues_Visual"></a>   
+## XAML Values  
+ `singleVisualRoot`  
+ A single object element that defines a new visual element for the brush. This must be an object that derives from <xref:System.Windows.Media.Visual>. See Remarks.  
+  
+ `bindingExpression`  
+ A  that evaluates to an existing <xref:System.Windows.Media.Visual> instance.  
+  
+ `resourceExpression`  
+ A `StaticResource` or `DynamicResource` that evaluates to an existing <xref:System.Windows.Media.Visual> instance. See [XAML Resources](~/docs/framework/wpf/advanced/xaml-resources.md)  
+  
+<a name="dependencyPropertyInfo_Visual"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Media.VisualBrush.VisualProperty>|  
+|Metadata properties set to `true`|None|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VisualProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty VisualProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty VisualProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.VisualBrush.VisualProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Media.VisualBrush.Visual" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

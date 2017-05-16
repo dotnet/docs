@@ -1,0 +1,182 @@
+<Type Name="NodeLabelEditEventArgs" FullName="System.Windows.Forms.NodeLabelEditEventArgs">
+  <TypeSignature Language="C#" Value="public class NodeLabelEditEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NodeLabelEditEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NodeLabelEditEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.TreeView.BeforeLabelEdit" /> and <see cref="E:System.Windows.Forms.TreeView.AfterLabelEdit" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeView.AfterLabelEdit> event occurs when the user finishes editing the text for a tree node. The <xref:System.Windows.Forms.TreeView.BeforeLabelEdit> event occurs when the user begins editing the text for a tree node. A <xref:System.Windows.Forms.NodeLabelEditEventArgs> object specifies the new text to associate with the tree node, the tree node that contains the label to edit, and whether the edit operation has been canceled.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
+  
+ [!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
+ [!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
+ [!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NodeLabelEditEventArgs (System.Windows.Forms.TreeNode node);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.TreeNode node) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NodeLabelEditEventArgs.#ctor(System.Windows.Forms.TreeNode)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="node" Type="System.Windows.Forms.TreeNode" />
+      </Parameters>
+      <Docs>
+        <param name="node">The tree node containing the text to edit.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.NodeLabelEditEventArgs" /> class for the specified <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.NodeLabelEditEventArgs.Node%2A> property is assigned the `node` parameter value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NodeLabelEditEventArgs (System.Windows.Forms.TreeNode node, string label);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.TreeNode node, string label) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NodeLabelEditEventArgs.#ctor(System.Windows.Forms.TreeNode,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="node" Type="System.Windows.Forms.TreeNode" />
+        <Parameter Name="label" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="node">The tree node containing the text to edit.</param>
+        <param name="label">The new text to associate with the tree node.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.NodeLabelEditEventArgs" /> class for the specified <see cref="T:System.Windows.Forms.TreeNode" /> and the specified text with which to update the tree node label.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.NodeLabelEditEventArgs.Node%2A> property is assigned the `node` parameter value, and the <xref:System.Windows.Forms.NodeLabelEditEventArgs.Label%2A> property is assigned the `label` parameter value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelEdit">
+      <MemberSignature Language="C#" Value="public bool CancelEdit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CancelEdit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NodeLabelEditEventArgs.CancelEdit" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the edit has been canceled.</summary>
+        <value>
+          <see langword="true" /> if the edit has been canceled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
+  
+ [!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
+ [!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
+ [!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="public string Label { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Label" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NodeLabelEditEventArgs.Label" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new text to associate with the tree node.</summary>
+        <value>The string value that represents the new <see cref="T:System.Windows.Forms.TreeNode" /> label or <see langword="null" /> if the user cancels the edit.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property is `null` if the user presses ESC to cancel the edit or presses ENTER without modifying the label text. If the user edits the label text, the value of this property is the new label text. This is true even if the final value of edited label text is the same as its original value.  
+  
+   
+  
+## Examples  
+ The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
+  
+ [!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
+ [!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
+ [!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Node">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode Node { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode Node" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NodeLabelEditEventArgs.Node" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the tree node containing the text to edit.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the tree node containing the text to edit.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example allows the user to edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
+  
+ [!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
+ [!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
+ [!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

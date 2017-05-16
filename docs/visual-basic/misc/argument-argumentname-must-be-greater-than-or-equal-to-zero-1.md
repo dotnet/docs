@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArgument_GEZero1"
 ms.assetid: 6f54fdc6-e263-4b2f-a66f-f206f3a59818
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

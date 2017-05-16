@@ -1,0 +1,63 @@
+<Type Name="CommandInfo" FullName="System.Activities.Presentation.Hosting.CommandInfo">
+  <TypeSignature Language="C#" Value="public sealed class CommandInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CommandInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.CommandInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Describes a command on the designer, such as copy or paste.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand Command { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand Command" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.CommandInfo.Command" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A unique identifier that represents some behavior or action.</summary>
+        <value>Returns <see cref="T:System.Windows.Input.ICommand" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A few examples of commands are copy, paste, and undo.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBindingEnabledInDesigner">
+      <MemberSignature Language="C#" Value="public bool IsBindingEnabledInDesigner { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsBindingEnabledInDesigner" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.CommandInfo.IsBindingEnabledInDesigner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Determines whether binding is enabled in the designer for the specified command.</summary>
+        <value>
+          <see langword="true" /> if binding is enabled in the designer for the specified command; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

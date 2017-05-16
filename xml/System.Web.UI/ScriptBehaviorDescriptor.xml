@@ -1,0 +1,127 @@
+<Type Name="ScriptBehaviorDescriptor" FullName="System.Web.UI.ScriptBehaviorDescriptor">
+  <TypeSignature Language="C#" Value="public class ScriptBehaviorDescriptor : System.Web.UI.ScriptComponentDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptBehaviorDescriptor extends System.Web.UI.ScriptComponentDescriptor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptBehaviorDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.ScriptComponentDescriptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Extends the <see cref="T:System.Web.UI.ScriptComponentDescriptor" /> class to provide a wrapper for defining behaviors that are converted into client script.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ScriptBehaviorDescriptor (string type, string elementID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string elementID) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptBehaviorDescriptor.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.String" />
+        <Parameter Name="elementID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">A string representation of the type of the client behavior to describe.</param>
+        <param name="elementID">The client ID of the target control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.ScriptBehaviorDescriptor" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="type" /> or <paramref name="elementID" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientID">
+      <MemberSignature Language="C#" Value="public override string ClientID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ClientID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptBehaviorDescriptor.ClientID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the identifier for the current <see cref="T:System.Web.UI.ScriptBehaviorDescriptor" /> instance.</summary>
+        <value>The ID or a generated value, depending on the conditions described in the following table.  
+  
+ The <see cref="P:System.Web.UI.ScriptComponentDescriptor.ID" /> property has been set.  
+ The value of the <see cref="P:System.Web.UI.ScriptComponentDescriptor.ID" /> property.  
+  
+ The <see cref="P:System.Web.UI.ScriptComponentDescriptor.ID" /> property has not been set.  
+ A generated ID that consists of the value of the <see cref="P:System.Web.UI.ScriptBehaviorDescriptor.ElementID" /> property, followed by a dollar sign ($), followed by the value of the <see cref="P:System.Web.UI.ScriptBehaviorDescriptor.Name" /> property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementID">
+      <MemberSignature Language="C#" Value="public string ElementID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ElementID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptBehaviorDescriptor.ElementID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="id" /> attribute of the associated element, as set in the constructor.</summary>
+        <value>The client ID of the target control, as set in the constructor.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetScript">
+      <MemberSignature Language="C#" Value="protected override string GetScript ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string GetScript() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptBehaviorDescriptor.GetScript" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the client script that implements the target control on the page.</summary>
+        <returns>The client script that implements the target control on the page.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptBehaviorDescriptor.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the current <see cref="T:System.Web.UI.ScriptBehaviorDescriptor" /> instance.</summary>
+        <value>The name of the current <see cref="T:System.Web.UI.ScriptBehaviorDescriptor" /> instance, if set; otherwise, a generated name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.ScriptBehaviorDescriptor.Name%2A> property has not been set, getting the property will set it to a generated value that consists of the last segment of the `type` argument that is passed to the constructor. For example, if `type` is "System.Object", the <xref:System.Web.UI.ScriptBehaviorDescriptor.Name%2A> property defaults to "Object".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

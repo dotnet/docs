@@ -1,0 +1,230 @@
+<Type Name="Instrumentation" FullName="System.Management.Instrumentation.Instrumentation">
+  <TypeSignature Language="C#" Value="public class Instrumentation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Instrumentation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.Instrumentation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides helper functions for exposing events and data for management. There is a single instance of this class per application domain.  
+  
+ Note: the WMI .NET libraries are now considered in final state, and no further development, enhancements, or updates will be available for non-security related issues affecting these libraries. The [MI APIs](https://msdn.microsoft.com/en-us/library/jj152383%28v=vs.80%29.aspx) should be used for all new development.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Instrumentation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.Instrumentation" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes any fields to their default values.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fire">
+      <MemberSignature Language="C#" Value="public static void Fire (object eventData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Fire(object eventData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.Fire(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="eventData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="eventData">The object that determines the class, properties, and values of the event.</param>
+        <summary>Raises a management event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAssemblyRegistered">
+      <MemberSignature Language="C#" Value="public static bool IsAssemblyRegistered (System.Reflection.Assembly assemblyToRegister);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsAssemblyRegistered(class System.Reflection.Assembly assemblyToRegister) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.IsAssemblyRegistered(System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyToRegister" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyToRegister">The <see cref="T:System.Reflection.Assembly" /> containing instrumentation instance or event types.</param>
+        <summary>Determines if the instrumentation schema of the specified assembly has already been correctly registered with WMI.</summary>
+        <returns>
+          <see langword="true" /> if the instrumentation schema in the specified assembly is registered with WMI; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Publish">
+      <MemberSignature Language="C#" Value="public static void Publish (object instanceData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Publish(object instanceData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.Publish(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceData">The object that is to be visible through management instrumentation.</param>
+        <summary>Makes an instance visible through management instrumentation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAssembly">
+      <MemberSignature Language="C#" Value="public static void RegisterAssembly (System.Reflection.Assembly assemblyToRegister);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterAssembly(class System.Reflection.Assembly assemblyToRegister) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.RegisterAssembly(System.Reflection.Assembly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyToRegister" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyToRegister">The <see cref="T:System.Reflection.Assembly" /> containing instrumentation instance or event types.</param>
+        <summary>Registers the management instance or event classes in the specified assembly with WMI. This ensures that the instrumentation schema is accessible to <see cref="N:System.Management" /> client applications.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Revoke">
+      <MemberSignature Language="C#" Value="public static void Revoke (object instanceData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Revoke(object instanceData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.Revoke(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instanceData" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instanceData">The object to remove from visibility for management instrumentation.</param>
+        <summary>Makes an instance that was previously published through the <see cref="M:System.Management.Instrumentation.Instrumentation.Publish(System.Object)" /> method no longer visible through management instrumentation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBatchSize">
+      <MemberSignature Language="C#" Value="public static void SetBatchSize (Type instrumentationClass, int batchSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBatchSize(class System.Type instrumentationClass, int32 batchSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.SetBatchSize(System.Type,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instrumentationClass" Type="System.Type" />
+        <Parameter Name="batchSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="instrumentationClass">The class for which the batch size is being set.</param>
+        <param name="batchSize">The maximum number of objects to be provided at a time.</param>
+        <summary>Specifies the maximum number of objects of the specified type to be provided at a time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

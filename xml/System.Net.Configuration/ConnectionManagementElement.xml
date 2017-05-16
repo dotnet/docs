@@ -1,0 +1,154 @@
+<Type Name="ConnectionManagementElement" FullName="System.Net.Configuration.ConnectionManagementElement">
+  <TypeSignature Language="C#" Value="public sealed class ConnectionManagementElement : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConnectionManagementElement extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Configuration.ConnectionManagementElement" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the maximum number of connections to a remote computer. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class corresponds to the [\&lt;add\&gt; Element for connectionManagement (Network Settings)](~/docs/framework/configure-apps/file-schema/network/add-element-for-connectionmanagement-network-settings.md) configuration element.  
+  
+ This class is used to specify the maximum number of simultaneous connections to a remote computer.  
+  
+ This class provides programmatic access to information that can be stored in configuration files.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectionManagementElement ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementElement.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ConnectionManagementElement" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectionManagementElement (string address, int maxConnection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string address, int32 maxConnection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Net.Configuration.ConnectionManagementElement.#ctor(System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="maxConnection" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="address">A string that identifies the address of a remote computer.</param>
+        <param name="maxConnection">An integer that identifies the maximum number of connections allowed to <c>address</c> from the local computer.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.ConnectionManagementElement" /> class with the specified address and connection limit information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor sets the <xref:System.Net.Configuration.ConnectionManagementElement.Address%2A> property to `address` and the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property to `maxConnection`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public string Address { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Address" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ConnectionManagementElement.Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("address", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the address for remote computers.</summary>
+        <value>A string that contains a regular expression describing an IP address or DNS name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can set this property using an asterisk (*) to set the default number of connections for unspecified computers.  
+  
+ This property identifies one or more remote computers and the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property specifies how many simultaneous connections are allowed between the local computer and the remote computers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxConnection">
+      <MemberSignature Language="C#" Value="public int MaxConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConnection" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ConnectionManagementElement.MaxConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxconnection", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of connections that can be made to a remote computer.</summary>
+        <value>An integer that specifies the maximum number of connections.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property specifies how many simultaneous connections are allowed between the local computer and the remote computer. The remote computer is specified using the <xref:System.Net.Configuration.ConnectionManagementElement.Address%2A> property.  
+  
+ The <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property is per <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=fullName>. If an application is not changing <xref:System.Net.WebRequest.ConnectionGroupName%2A?displayProperty=fullName> from the default, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property applies to the entire application domain. If only a single application domain is running in your application, then the <xref:System.Net.Configuration.ConnectionManagementElement.MaxConnection%2A> property setting is application-wide.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Net.Configuration.ConnectionManagementElement.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

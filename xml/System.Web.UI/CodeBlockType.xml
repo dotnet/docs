@@ -1,0 +1,82 @@
+<Type Name="CodeBlockType" FullName="System.Web.UI.CodeBlockType">
+  <TypeSignature Language="C#" Value="public enum CodeBlockType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CodeBlockType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.CodeBlockType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of the code block.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Code">
+      <MemberSignature Language="C#" Value="Code" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeBlockType Code = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeBlockType.Code" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeBlockType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the block type is for code. A <see cref="F:System.Web.UI.CodeBlockType.Code" /> block type is contained inside the <c>&lt;%   %&gt;</c> characters.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DataBinding">
+      <MemberSignature Language="C#" Value="DataBinding" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeBlockType DataBinding = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeBlockType.DataBinding" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeBlockType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the block type is for data binding. A <see cref="F:System.Web.UI.CodeBlockType.DataBinding" /> block type is contained inside the <c>&lt;%#   %&gt;</c> characters.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodedExpression">
+      <MemberSignature Language="C#" Value="EncodedExpression" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeBlockType EncodedExpression = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeBlockType.EncodedExpression" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeBlockType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the block type is for encoded expressions. A <see cref="F:System.Web.UI.CodeBlockType.EncodedExpression" /> block type is contained inside the <c>&lt;%:   %&gt;</c> characters.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Expression">
+      <MemberSignature Language="C#" Value="Expression" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.CodeBlockType Expression = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.CodeBlockType.Expression" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CodeBlockType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the block type is for data expressions. A <see cref="F:System.Web.UI.CodeBlockType.Expression" /> block type is contained inside the <c>&lt;%=   %&gt;</c> characters.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,302 @@
+<Type Name="GetSDKReferenceFiles" FullName="Microsoft.Build.Tasks.GetSDKReferenceFiles">
+  <TypeSignature Language="C#" Value="public class GetSDKReferenceFiles : Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GetSDKReferenceFiles extends Microsoft.Build.Tasks.TaskExtension" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.GetSDKReferenceFiles" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Build.Tasks.TaskExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Resolves an SDKReference to a full path on disk</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GetSDKReferenceFiles ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetSDKReferenceFiles.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of GetSDKReferenceFiles.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheFileFolderPath">
+      <MemberSignature Language="C#" Value="public string CacheFileFolderPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CacheFileFolderPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.CacheFileFolderPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path where the cache files are stored.</summary>
+        <value>Returns the cache file folder path.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyLocalFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] CopyLocalFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] CopyLocalFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.CopyLocalFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Files that need to be copied locally. These are the reference assemblies and the xml intellisense files.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public override bool Execute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GetSDKReferenceFiles.Execute" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Execute the task</summary>
+        <returns>Returns <see cref="T:System.Boolean" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogCacheFileExceptions">
+      <MemberSignature Language="C#" Value="public bool LogCacheFileExceptions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LogCacheFileExceptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogCacheFileExceptions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag indicating whether to log cache file reading or writing exceptions.</summary>
+        <value>Returns the flag.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogRedistConflictBetweenSDKsAsWarning">
+      <MemberSignature Language="C#" Value="public bool LogRedistConflictBetweenSDKsAsWarning { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LogRedistConflictBetweenSDKsAsWarning" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogRedistConflictBetweenSDKsAsWarning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag specifying whether to log conflicts between <see langword="redist" /> files across different referenced SDKs as messages or warnings. Default is <see langword="true" />, they are logged as warnings.</summary>
+        <value>Returns the flag.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogRedistConflictWithinSDKAsWarning">
+      <MemberSignature Language="C#" Value="public bool LogRedistConflictWithinSDKAsWarning { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LogRedistConflictWithinSDKAsWarning" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogRedistConflictWithinSDKAsWarning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag specifying whether to log conflicts between reference files within an SDK as messages or warnings. Default is <see langword="false" />, they are logged as messages.</summary>
+        <value>Returns the flag.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogRedistFilesList">
+      <MemberSignature Language="C#" Value="public bool LogRedistFilesList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LogRedistFilesList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogRedistFilesList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag specifying whether to log <see langword="redist" /> files found as a part of resolving the SDK. Default is <see langword="true" />, <see langword="redist" /> files are logged.</summary>
+        <value>Returns the flag.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogReferenceConflictBetweenSDKsAsWarning">
+      <MemberSignature Language="C#" Value="public bool LogReferenceConflictBetweenSDKsAsWarning { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LogReferenceConflictBetweenSDKsAsWarning" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogReferenceConflictBetweenSDKsAsWarning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag specifying whether to log conflicts between reference files across different referenced SDKs as messages or warnings. Default is <see langword="true" />, they are logged as warnings.</summary>
+        <value>Returns the flag.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogReferenceConflictWithinSDKAsWarning">
+      <MemberSignature Language="C#" Value="public bool LogReferenceConflictWithinSDKAsWarning { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LogReferenceConflictWithinSDKAsWarning" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogReferenceConflictWithinSDKAsWarning" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag specifying whether to log conflicts between reference files across different referenced SDKs as messages or warnings. Default is <see langword="false" />, they are logged as messages.</summary>
+        <value>Returns the flag.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogReferencesList">
+      <MemberSignature Language="C#" Value="public bool LogReferencesList { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LogReferencesList" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.LogReferencesList" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a flag specifying whether to log references found as a part of resolving the SDK. Default is <see langword="true" />, references are logged.</summary>
+        <value>Returns the flag.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RedistFiles">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] RedistFiles { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] RedistFiles" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.RedistFiles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the resolved <see langword="redist" /> files.</summary>
+        <value>Returns an array of<see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferenceExtensions">
+      <MemberSignature Language="C#" Value="public string[] ReferenceExtensions { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ReferenceExtensions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.ReferenceExtensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Extensions which should be considered reference files</summary>
+        <value>Returns <see cref="T:System.String" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="References">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] References { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] References" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.References" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.Build.Framework.Output</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Resolved reference items.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolvedSDKReferences">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ResolvedSDKReferences { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ResolvedSDKReferences" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GetSDKReferenceFiles.ResolvedSDKReferences" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Resolved SDK references which we will get the reference assemblies from.</summary>
+        <value>Returns <see cref="T:Microsoft.Build.Framework.ITaskItem" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

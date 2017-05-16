@@ -1,0 +1,259 @@
+<Type Name="InstallContext" FullName="System.Configuration.Install.InstallContext">
+  <TypeSignature Language="C#" Value="public class InstallContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InstallContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Configuration.Install.InstallContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration.Install</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information about the current installation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, an <xref:System.Configuration.Install.InstallContext> is created by an installation executable, such as InstallUtil.exe, that installs assemblies. The installation program invokes the <xref:System.Configuration.Install.InstallContext> constructor, passing it the default log-file path and command-line parameters.  
+  
+ Prior to calling its <xref:System.Configuration.Install.Installer.Install%2A>, <xref:System.Configuration.Install.Installer.Commit%2A>, <xref:System.Configuration.Install.Installer.Rollback%2A>, or <xref:System.Configuration.Install.Installer.Uninstall%2A> methods, the installation program sets the <xref:System.Configuration.Install.Installer.Context%2A> property of an <xref:System.Configuration.Install.Installer> to the instance of <xref:System.Configuration.Install.InstallContext>. Before calling these methods, an <xref:System.Configuration.Install.Installer> that contains an installer collection in the <xref:System.Configuration.Install.Installer.Installers%2A> property sets the <xref:System.Configuration.Install.Installer.Context%2A> property of each contained installer.  
+  
+ The <xref:System.Configuration.Install.InstallContext.Parameters%2A> property contains a parsed version of the command line that is entered to run the installation executable. The property contains information such as the path to a log file, whether to display log information on the console, and whether to show a user interface during the installation. Call the <xref:System.Configuration.Install.InstallContext.IsParameterTrue%2A> method to find out whether a command-line parameter is `true`.  
+  
+ Use the <xref:System.Configuration.Install.InstallContext.LogMessage%2A> method to write status messages to the installation log file and the console.  
+  
+   
+  
+## Examples  
+ The following example demonstrates the <xref:System.Configuration.Install.InstallContext.%23ctor%2A> constructors, the <xref:System.Configuration.Install.InstallContext.Parameters%2A> property and the <xref:System.Configuration.Install.InstallContext.LogMessage%2A> and <xref:System.Configuration.Install.InstallContext.IsParameterTrue%2A> methods of the <xref:System.Configuration.Install.InstallContext> class.  
+  
+ When the <xref:System.Configuration.Install.Installer.Install%2A> method of the installer is called, it checks for parameters from the command line. Depending on that, it displays the progress messages onto the console and also saves it to the specified log file.  
+  
+ When the program is invoked without any arguments, an empty <xref:System.Configuration.Install.InstallContext> is created. When "/LogFile" and "/LogtoConsole" are specified, the <xref:System.Configuration.Install.InstallContext> is created by passing the respective arguments to <xref:System.Configuration.Install.InstallContext.%23ctor%2A>.  
+  
+ [!code-cpp[InstallContext_InstallContext#1](~/samples/snippets/cpp/VS_Snippets_CLR/InstallContext_InstallContext/CPP/installcontext_installcontext.cpp#1)]
+ [!code-csharp[InstallContext_InstallContext#1](~/samples/snippets/csharp/VS_Snippets_CLR/InstallContext_InstallContext/CS/installcontext_installcontext.cs#1)]
+ [!code-vb[InstallContext_InstallContext#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallContext_InstallContext/VB/installcontext_installcontext.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstallContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallContext.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.InstallContext" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overload does not create a log file for the installation.  
+  
+   
+  
+## Examples  
+  
+> [!NOTE]
+>  This example shows how to use one of the overloaded versions of the <xref:System.Configuration.Install.InstallContext> constructor. For other examples that might be available, see the individual overload topics.  
+  
+ When the program is invoked without any arguments, an empty <xref:System.Configuration.Install.InstallContext> is created.  
+  
+ [!code-cpp[InstallContext_InstallContext#2](~/samples/snippets/cpp/VS_Snippets_CLR/InstallContext_InstallContext/CPP/installcontext_installcontext.cpp#2)]
+ [!code-csharp[InstallContext_InstallContext#2](~/samples/snippets/csharp/VS_Snippets_CLR/InstallContext_InstallContext/CS/installcontext_installcontext.cs#2)]
+ [!code-vb[InstallContext_InstallContext#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallContext_InstallContext/VB/installcontext_installcontext.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InstallContext (string logFilePath, string[] commandLine);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string logFilePath, string[] commandLine) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallContext.#ctor(System.String,System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="logFilePath" Type="System.String" />
+        <Parameter Name="commandLine" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="logFilePath">The path to the log file for this installation, or <see langword="null" /> if no log file should be created.</param>
+        <param name="commandLine">The command-line parameters entered when running the installation program, or <see langword="null" /> if none were entered.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.Install.InstallContext" /> class, and creates a log file for the installation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the installation uses [Installutil.exe (Installer Tool)](~/docs/framework/tools/installutil-exe-installer-tool.md), this constructor creates a log file at the specified path and parses the array of command-line parameters into the <xref:System.Configuration.Install.InstallContext.Parameters%2A> property. If a log-file path is specified in the command-line parameters, it is used to create the file. If the log file argument is not specified in the command line, the value of the `logFilePath` parameter is used. To suppress the creation of a log file, pass the "/logfile= " command-line parameter.  
+  
+   
+  
+## Examples  
+ This example is an excerpt of the example in the class overview of <xref:System.Configuration.Install.InstallContext> class.  
+  
+ When "/LogFile" and "/LogtoConsole" are specified, the <xref:System.Configuration.Install.InstallContext> is created by passing the respective arguments to <xref:System.Configuration.Install.InstallContext.%23ctor%2A>.  
+  
+ [!code-cpp[InstallContext_InstallContext#3](~/samples/snippets/cpp/VS_Snippets_CLR/InstallContext_InstallContext/CPP/installcontext_installcontext.cpp#3)]
+ [!code-csharp[InstallContext_InstallContext#3](~/samples/snippets/csharp/VS_Snippets_CLR/InstallContext_InstallContext/CS/installcontext_installcontext.cs#3)]
+ [!code-vb[InstallContext_InstallContext#3](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallContext_InstallContext/VB/installcontext_installcontext.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="usage">
+          <para>Pass your default log-file path in the <paramref name="logFilePath" /> parameter when you call this constructor. This is the where the log file is created, unless the /logfile command-line parameter is used when the installation executable is run.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="IsParameterTrue">
+      <MemberSignature Language="C#" Value="public bool IsParameterTrue (string paramName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsParameterTrue(string paramName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallContext.IsParameterTrue(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="paramName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="paramName">The name of the command-line parameter to check.</param>
+        <summary>Determines whether the specified command-line parameter is <see langword="true" />.</summary>
+        <returns>
+          <see langword="true" /> if the specified parameter is set to "yes", "true", "1", or an empty string (""); otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method accesses the <xref:System.Configuration.Install.InstallContext.Parameters%2A> property, which contains a parsed version of the command-line parameters, to determine whether the specified parameter is `true`.  
+  
+   
+  
+## Examples  
+ This example is an excerpt of the sample in the class overview of the <xref:System.Configuration.Install.InstallContext> class.  
+  
+ It uses the <xref:System.Configuration.Install.InstallContext.IsParameterTrue%2A> method to find out if the `LogtoConsole` parameter has been set. If `yes`, it will then use the <xref:System.Configuration.Install.InstallContext.LogMessage%2A> method to write status messages to the installation log file and the console.  
+  
+ [!code-cpp[InstallContext_InstallContext#4](~/samples/snippets/cpp/VS_Snippets_CLR/InstallContext_InstallContext/CPP/installcontext_installcontext.cpp#4)]
+ [!code-csharp[InstallContext_InstallContext#4](~/samples/snippets/csharp/VS_Snippets_CLR/InstallContext_InstallContext/CS/installcontext_installcontext.cs#4)]
+ [!code-vb[InstallContext_InstallContext#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallContext_InstallContext/VB/installcontext_installcontext.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogMessage">
+      <MemberSignature Language="C#" Value="public void LogMessage (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LogMessage(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallContext.LogMessage(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The message to write.</param>
+        <summary>Writes a message to the console and to the log file for the installation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An installer can call this method to write progress or other status information to the log file. If the command-line parameters specify that a user interface should be displayed, the installer should show message boxes or make queries in addition to calling the <xref:System.Configuration.Install.InstallContext.LogMessage%2A> method. Text written to the log file will not be seen by the user unless InstallUtil.exe is used to run the installation and "/LogToConsole= true" is specified in the command line.  
+  
+   
+  
+## Examples  
+ This example is an excerpt of the example in the class overview of <xref:System.Configuration.Install.InstallContext> class.  
+  
+ It uses the <xref:System.Configuration.Install.InstallContext.IsParameterTrue%2A> method to find out if the `LogtoConsole` parameter has been set. If `yes`, it will then use the <xref:System.Configuration.Install.InstallContext.LogMessage%2A> method to write status messages to the installation log file and the console.  
+  
+ [!code-cpp[InstallContext_InstallContext#4](~/samples/snippets/cpp/VS_Snippets_CLR/InstallContext_InstallContext/CPP/installcontext_installcontext.cpp#4)]
+ [!code-csharp[InstallContext_InstallContext#4](~/samples/snippets/csharp/VS_Snippets_CLR/InstallContext_InstallContext/CS/installcontext_installcontext.cs#4)]
+ [!code-vb[InstallContext_InstallContext#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallContext_InstallContext/VB/installcontext_installcontext.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringDictionary Parameters { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringDictionary Parameters" />
+      <MemberSignature Language="DocId" Value="P:System.Configuration.Install.InstallContext.Parameters" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the command-line parameters that were entered when InstallUtil.exe was run.</summary>
+        <value>A <see cref="T:System.Collections.Specialized.StringDictionary" /> that represents the command-line parameters that were entered when the installation executable was run.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a new <xref:System.Configuration.Install.InstallContext> is created, the command-line parameters are parsed into the <xref:System.Configuration.Install.InstallContext.Parameters%2A> property. Both the keys and the values of the parameters are strings.  
+  
+   
+  
+## Examples  
+ This example is an excerpt of the example in the class overview of <xref:System.Configuration.Install.InstallContext> class.  
+  
+ The sample retrieves the <xref:System.Configuration.Install.InstallContext.Parameters%2A> property to see if any command line argument has been entered by the user. It also uses the <xref:System.Configuration.Install.InstallContext.IsParameterTrue%2A> method to find out if the `LogtoConsole` parameter has been set. If `yes`, it will then use the <xref:System.Configuration.Install.InstallContext.LogMessage%2A> method to write status messages to the installation log file and the console.  
+  
+ [!code-cpp[InstallContext_InstallContext#6](~/samples/snippets/cpp/VS_Snippets_CLR/InstallContext_InstallContext/CPP/installcontext_installcontext.cpp#6)]
+ [!code-csharp[InstallContext_InstallContext#6](~/samples/snippets/csharp/VS_Snippets_CLR/InstallContext_InstallContext/CS/installcontext_installcontext.cs#6)]
+ [!code-vb[InstallContext_InstallContext#6](~/samples/snippets/visualbasic/VS_Snippets_CLR/InstallContext_InstallContext/VB/installcontext_installcontext.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseCommandLine">
+      <MemberSignature Language="C#" Value="protected static System.Collections.Specialized.StringDictionary ParseCommandLine (string[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Collections.Specialized.StringDictionary ParseCommandLine(string[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.Install.InstallContext.ParseCommandLine(System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.Install</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.StringDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="args">An array containing the command-line parameters.</param>
+        <summary>Parses the command-line parameters into a string dictionary.</summary>
+        <returns>A <see cref="T:System.Collections.Specialized.StringDictionary" /> containing the parsed command-line parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

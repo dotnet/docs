@@ -1,0 +1,50 @@
+<Type Name="PriorityGroup" FullName="System.Web.Services.Configuration.PriorityGroup">
+  <TypeSignature Language="C#" Value="public enum PriorityGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PriorityGroup extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.PriorityGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the values that can be used to set the priority and group attributes for a SOAP extension in the Web Services configuration file.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="High">
+      <MemberSignature Language="C#" Value="High" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.PriorityGroup High = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.PriorityGroup.High" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.PriorityGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the value 1. Indicates that the SOAP extension executes in the group of SOAP extensions with the highest priority.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Low">
+      <MemberSignature Language="C#" Value="Low" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Configuration.PriorityGroup Low = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Configuration.PriorityGroup.Low" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Configuration.PriorityGroup</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the value 0. Indicates that the SOAP extension executes in the group of SOAP extensions with the lowest priority.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

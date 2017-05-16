@@ -1,0 +1,84 @@
+<Type Name="IWebActionable" FullName="System.Web.UI.WebControls.WebParts.IWebActionable">
+  <TypeSignature Language="C#" Value="public interface IWebActionable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebActionable" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IWebActionable" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Enables <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls or other server controls to contain collections of verbs.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A verb in <xref:System.Web.UI.WebControls.WebParts.WebPart> controls is an action that a user can carry out in the user interface (UI). Typically, a verb is represented in the UI by a clickable control such as a button, a link, or a menu item. The Web Parts control set provides standard verbs that are available by default to <xref:System.Web.UI.WebControls.WebParts.WebPart> controls and other server controls (such as custom, ASP.NET, and user controls) that can act like <xref:System.Web.UI.WebControls.WebParts.WebPart> controls when placed in <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zones. Standard verbs include close, minimize, restore, delete, edit, and export.  
+  
+ You can also create custom verbs for use with <xref:System.Web.UI.WebControls.WebParts.WebPart> and server controls. The <xref:System.Web.UI.WebControls.WebParts.IWebActionable> interface, with its <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> property, gives you a way to integrate custom verbs into your controls. The <xref:System.Web.UI.WebControls.WebParts.WebPart> class implements the <xref:System.Web.UI.WebControls.WebParts.IWebActionable> interface and implements its single property. To add custom verbs to a control that inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class, you must override the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A?displayProperty=fullName> property, add custom verbs to a collection, and return the collection. The collection referenced by the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A?displayProperty=fullName> property contains only custom verbs; standard verbs are not included in this collection. The default return value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A?displayProperty=fullName> property in a <xref:System.Web.UI.WebControls.WebParts.WebPart> control is `null`, because by default there are no custom verbs in the collection.  
+  
+ Adding custom verbs to server controls that are not <xref:System.Web.UI.WebControls.WebParts.WebPart> controls requires one extra step. In those cases, the controls must also implement the <xref:System.Web.UI.WebControls.WebParts.IWebActionable> interface and implement the <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> property.  
+  
+ After you have added custom verbs to the <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> collection, the Web Parts control set automatically handles the other steps necessary to create and render the custom verbs.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a simple implementation of the <xref:System.Web.UI.WebControls.WebParts.IWebActionable> interface. The first part of the code example shows how the interface is implemented in a user control. The user control implements the <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> property by creating two custom verbs and defining a method that is called when a user clicks either of the verbs. For simplicity, the same method is used for both verbs. The method updates the value of a property named `VerbCounterClicks`. The code for the `Page_Load` method accesses the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs%2A> property of the control to display the total count of custom verbs in the collection. This count does not include the standard Web Parts verbs.  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebActionable_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/CS/usercontrolverbcs.ascx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IWebActionable_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/VB/usercontrolverbvb.ascx#2)]  -->  
+  
+ The second part of the code example is an .aspx page that hosts the user control. Because the control is referenced in a <xref:System.Web.UI.WebControls.WebParts.WebPartZone> control, at run time ASP.NET wraps the user control in a <xref:System.Web.UI.WebControls.WebParts.GenericWebPart> control and treats it as a <xref:System.Web.UI.WebControls.WebParts.WebPart> control. After you load the page in a browser, notice that the label at the bottom of the control displays how many custom verbs are in the collection referenced by the <xref:System.Web.UI.WebControls.WebParts.GenericWebPart.Verbs%2A> property. Also note that if you click the verbs menu in the control, and click either of the verbs, another label appears showing the total number of times the custom verbs have been clicked.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebActionable_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/CS/usercontrolverbhostcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IWebActionable_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/VB/usercontrolverbhostvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Verbs">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerbCollection Verbs" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.WebParts.WebPartVerbCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a reference to a collection of custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> objects.</summary>
+        <value>A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerbCollection" /> that contains custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" /> objects.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> property references a collection of custom verbs (if any) that are added to a verbs menu in the header of a <xref:System.Web.UI.WebControls.WebParts.WebPart> or other server control. The <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> collection does not contain references to the standard <xref:System.Web.UI.WebControls.WebParts.WebPartVerb> objects provided with the Web Parts control set, such as <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseVerb%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteVerb%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditVerb%2A>, <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb%2A>, or <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeVerb%2A>.  
+  
+ Developers who want to add custom verbs to a custom control that derives from the <xref:System.Web.UI.WebControls.WebParts.WebPart> class can simply override the <xref:System.Web.UI.WebControls.WebParts.WebPart.Verbs%2A> property that the <xref:System.Web.UI.WebControls.WebParts.WebPart> class implements.  
+  
+ Developers who want to add custom verbs to a user control, or a custom control that is not a <xref:System.Web.UI.WebControls.WebParts.WebPart> control, must implement the <xref:System.Web.UI.WebControls.WebParts.IWebActionable> interface by providing an implementation of the <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> property as implemented in a user control. The full code for this code example can be found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.IWebActionable> class overview topic.  
+  
+ The following portion of the code example demonstrates a custom implementation of the <xref:System.Web.UI.WebControls.WebParts.IWebActionable.Verbs%2A> property within a user control.  
+  
+ [!code-csharp[WebParts_IWebActionable_Overview#3](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/CS/usercontrolverbcs.ascx#3)]
+ [!code-vb[WebParts_IWebActionable_Overview#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebActionable_Overview/VB/usercontrolverbvb.ascx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

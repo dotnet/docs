@@ -1,0 +1,256 @@
+<Type Name="TypeValidationEventArgs" FullName="System.Windows.Forms.TypeValidationEventArgs">
+  <TypeSignature Language="C#" Value="public class TypeValidationEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TypeValidationEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TypeValidationEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event occurs when a <xref:System.Windows.Forms.MaskedTextBox> control performs optional type validation. Type validation occurs only when the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A?displayProperty=fullName> property is not `null` and a causal action occurs, such as the <xref:System.Windows.Forms.MaskedTextBox> control losing focus. *Type validation* is the ability to convert the formatted input string to the type represented by the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property. For more information about the type validation process, see the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event.  
+  
+ If an event handler is implemented for <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted>, the handler receives a parameter of type <xref:System.Windows.Forms.TypeValidationEventArgs>. This parameter contains information about the event, such as whether the type conversion process succeeded, the validating type, and so on.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this type. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#488](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#488)]
+ [!code-vb[System.Windows.Forms.EventExamples#488](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#488)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypeValidationEventArgs (Type validatingType, bool isValidInput, object returnValue, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type validatingType, bool isValidInput, object returnValue, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TypeValidationEventArgs.#ctor(System.Type,System.Boolean,System.Object,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="validatingType" Type="System.Type" />
+        <Parameter Name="isValidInput" Type="System.Boolean" />
+        <Parameter Name="returnValue" Type="System.Object" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="validatingType">The <see cref="T:System.Type" /> that the formatted input string was being validated against.</param>
+        <param name="isValidInput">A <see cref="T:System.Boolean" /> value indicating whether the formatted string was successfully converted to the validating type.</param>
+        <param name="returnValue">An <see cref="T:System.Object" /> that is the result of the formatted string being converted to the target type.</param>
+        <param name="message">A <see cref="T:System.String" /> containing a description of the conversion process.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TypeValidationEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The parameters to the <xref:System.Windows.Forms.TypeValidationEventArgs.%23ctor%2A> constructor are used to initialize the corresponding read-only properties of this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TypeValidationEventArgs.Cancel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the event should be canceled.</summary>
+        <value>
+          <see langword="true" /> if the event should be canceled and focus retained by the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control; otherwise, <see langword="false" /> to continue validation processing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event occurs just before the <xref:System.Windows.Forms.Control.Validating> event.  
+  
+ Setting the <xref:System.Windows.Forms.TypeValidationEventArgs.Cancel%2A> property to `true` in the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event handler will cancel the event, causing the <xref:System.Windows.Forms.MaskedTextBox> control to retain focus, unless the subsequent <xref:System.Windows.Forms.Control.Validating> event sets its version of the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A?displayProperty=fullName> property to `false`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#488](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#488)]
+ [!code-vb[System.Windows.Forms.EventExamples#488](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#488)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidInput">
+      <MemberSignature Language="C#" Value="public bool IsValidInput { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValidInput" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TypeValidationEventArgs.IsValidInput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the formatted input string was successfully converted to the validating type.</summary>
+        <value>
+          <see langword="true" /> if the formatted input string can be converted into the type specified by the <see cref="P:System.Windows.Forms.TypeValidationEventArgs.ValidatingType" /> property; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TypeValidationEventArgs.IsValidInput%2A> property indicates the success of the `Parse` method found in the <xref:System.Type> represented by the <xref:System.Windows.Forms.TypeValidationEventArgs.ValidatingType%2A> property. This type must contain `Parse` method(s) having one or both of the following signatures:  
+  
+ `public static Object Parse(string)`  
+  
+ `public static Object Parse(string, IFormatProvider)`  
+  
+ `Parse` is called before the <xref:System.Windows.Forms.MaskedTextBox> control raises the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event. This method is invoked with the contents, minus the prompt characters, of the <xref:System.Windows.Forms.MaskedTextBox.Text%2A> property of the <xref:System.Windows.Forms.MaskedTextBox> class. If successful, it returns the converted object; otherwise, it returns `null`.  
+  
+ For more information about the type validation process, see the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted> event.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#488](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#488)]
+ [!code-vb[System.Windows.Forms.EventExamples#488](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#488)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public string Message { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Message" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TypeValidationEventArgs.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a text message describing the conversion process.</summary>
+        <value>A <see cref="T:System.String" /> containing a description of the conversion process.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The validation process entails converting the formatted user input to the type defined by the <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property. The <xref:System.Windows.Forms.TypeValidationEventArgs.Message%2A> property contains a text description of the conversion process. <xref:System.Windows.Forms.TypeValidationEventArgs.Message%2A> is primarily useful when conversion fails, as indicated by an <xref:System.Windows.Forms.TypeValidationEventArgs.IsValidInput%2A> property value of `false`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#488](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#488)]
+ [!code-vb[System.Windows.Forms.EventExamples#488](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#488)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnValue">
+      <MemberSignature Language="C#" Value="public object ReturnValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ReturnValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TypeValidationEventArgs.ReturnValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that results from the conversion of the formatted input string.</summary>
+        <value>If the validation is successful, an <see cref="T:System.Object" /> that represents the converted type; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The type validation process attempts to convert the formatted input string, not including prompt characters, to the type specified by the <xref:System.Windows.Forms.TypeValidationEventArgs.ValidatingType%2A> property. The <xref:System.Windows.Forms.TypeValidationEventArgs.ReturnValue%2A> property represents the result of the conversion attempt, and is equivalent to the value returned by the <xref:System.Windows.Forms.MaskedTextBox.ValidateText%2A> method of the <xref:System.Windows.Forms.MaskedTextBox> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#488](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#488)]
+ [!code-vb[System.Windows.Forms.EventExamples#488](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#488)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidatingType">
+      <MemberSignature Language="C#" Value="public Type ValidatingType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ValidatingType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TypeValidationEventArgs.ValidatingType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type that the formatted input string is being validated against.</summary>
+        <value>The target <see cref="T:System.Type" /> of the conversion process. This should never be <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The validation process only occurs if <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A?displayProperty=fullName> property of the <xref:System.Windows.Forms.MaskedTextBox> class is not `null`. The <xref:System.Windows.Forms.TypeValidationEventArgs.ValidatingType%2A> property references the same type, which represents the target type of the conversion process.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.MaskedTextBox> named `MaskedTextBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#488](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#488)]
+ [!code-vb[System.Windows.Forms.EventExamples#488](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#488)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

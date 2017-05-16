@@ -1,0 +1,137 @@
+<Type Name="RichTextBoxScrollBars" FullName="System.Windows.Forms.RichTextBoxScrollBars">
+  <TypeSignature Language="C#" Value="public enum RichTextBoxScrollBars" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RichTextBoxScrollBars extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RichTextBoxScrollBars" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of scroll bars to display in a <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.RichTextBox.ScrollBars%2A> property of the <xref:System.Windows.Forms.RichTextBox> control.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Both">
+      <MemberSignature Language="C#" Value="Both" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxScrollBars Both = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.Both" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Display both a horizontal and a vertical scroll bar when needed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ForcedBoth">
+      <MemberSignature Language="C#" Value="ForcedBoth" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxScrollBars ForcedBoth = int32(19)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.ForcedBoth" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Always display both a horizontal and a vertical scroll bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ForcedHorizontal">
+      <MemberSignature Language="C#" Value="ForcedHorizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxScrollBars ForcedHorizontal = int32(17)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.ForcedHorizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Always display a horizontal scroll bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ForcedVertical">
+      <MemberSignature Language="C#" Value="ForcedVertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxScrollBars ForcedVertical = int32(18)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Always display a vertical scroll bar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Horizontal">
+      <MemberSignature Language="C#" Value="Horizontal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxScrollBars Horizontal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.Horizontal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Display a horizontal scroll bar only when text is longer than the width of the control.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxScrollBars None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No scroll bars are displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vertical">
+      <MemberSignature Language="C#" Value="Vertical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxScrollBars Vertical = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxScrollBars.Vertical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.RichTextBoxScrollBars</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Display a vertical scroll bar only when text is longer than the height of the control.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

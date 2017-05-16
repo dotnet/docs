@@ -1,0 +1,119 @@
+<Type Name="FormStartPosition" FullName="System.Windows.Forms.FormStartPosition">
+  <TypeSignature Language="C#" Value="public enum FormStartPosition" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormStartPosition extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormStartPosition" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the initial position of a form.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.Form.StartPosition%2A> property of the <xref:System.Windows.Forms.Form> class. It represents the different start positions of the form. The default start position is `WindowsDefaultLocation`.  
+  
+   
+  
+## Examples  
+ In this example, you change the form's start position to the center of the screen and display the position information using a label. This example assumes that you have already created a <xref:System.Windows.Forms.Form> named `Form1`.  
+  
+ [!code-cpp[FormStartPosition#1](~/samples/snippets/cpp/VS_Snippets_Winforms/FormStartPosition/CPP/formstartposition.cpp#1)]
+ [!code-csharp[FormStartPosition#1](~/samples/snippets/csharp/VS_Snippets_Winforms/FormStartPosition/CS/formstartposition.cs#1)]
+ [!code-vb[FormStartPosition#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/FormStartPosition/VB/formstartposition.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CenterParent">
+      <MemberSignature Language="C#" Value="CenterParent" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormStartPosition CenterParent = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.CenterParent" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The form is centered within the bounds of its parent form.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CenterScreen">
+      <MemberSignature Language="C#" Value="CenterScreen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormStartPosition CenterScreen = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.CenterScreen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The form is centered on the current display, and has the dimensions specified in the form's size.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Manual">
+      <MemberSignature Language="C#" Value="Manual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormStartPosition Manual = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.Manual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The position of the form is determined by the <see cref="P:System.Windows.Forms.Control.Location" /> property.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsDefaultBounds">
+      <MemberSignature Language="C#" Value="WindowsDefaultBounds" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormStartPosition WindowsDefaultBounds = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.WindowsDefaultBounds" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The form is positioned at the Windows default location and has the bounds determined by Windows default.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsDefaultLocation">
+      <MemberSignature Language="C#" Value="WindowsDefaultLocation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormStartPosition WindowsDefaultLocation = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.WindowsDefaultLocation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The form is positioned at the Windows default location and has the dimensions specified in the form's size.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

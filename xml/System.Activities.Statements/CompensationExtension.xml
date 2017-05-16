@@ -1,0 +1,122 @@
+<Type Name="CompensationExtension" FullName="System.Activities.Statements.CompensationExtension">
+  <TypeSignature Language="C#" Value="public class CompensationExtension : System.Activities.Persistence.PersistenceParticipant, System.Activities.Hosting.IWorkflowInstanceExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompensationExtension extends System.Activities.Persistence.PersistenceParticipant implements class System.Activities.Hosting.IWorkflowInstanceExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Statements.CompensationExtension" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Persistence.PersistenceParticipant</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Activities.Hosting.IWorkflowInstanceExtension</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an extension that hooks up with compensation activities and persists compensation-related instance state.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CompensationExtension ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.CompensationExtension.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Statements.CompensationExtension" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollectValues">
+      <MemberSignature Language="C#" Value="protected override void CollectValues (out System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; readWriteValues, out System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; writeOnlyValues);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CollectValues(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; readWriteValues, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; writeOnlyValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.CompensationExtension.CollectValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@,System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="readWriteValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;&amp;" RefType="out" />
+        <Parameter Name="writeOnlyValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="readWriteValues">The read-write values to be persisted.</param>
+        <param name="writeOnlyValues">The write-only values to be persisted.</param>
+        <summary>Called by the host to collect read-write values and write-only values related to compensation to be persisted.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PublishValues">
+      <MemberSignature Language="C#" Value="protected override void PublishValues (System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; readWriteValues);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PublishValues(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; readWriteValues) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.CompensationExtension.PublishValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="readWriteValues" Type="System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="readWriteValues">The read-write values that were loaded from the persistence store.</param>
+        <summary>Called by the host to pass all of the loaded values related to compensation that were part of the most recent persistence episode.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Activities.Hosting.IWorkflowInstanceExtension.GetAdditionalExtensions">
+      <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerable&lt;object&gt; IWorkflowInstanceExtension.GetAdditionalExtensions ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; System.Activities.Hosting.IWorkflowInstanceExtension.GetAdditionalExtensions() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.CompensationExtension.System#Activities#Hosting#IWorkflowInstanceExtension#GetAdditionalExtensions" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns any additional extensions to compensation activities.</summary>
+        <returns>A collection of additional workflow extensions.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Activities.Hosting.IWorkflowInstanceExtension.SetInstance">
+      <MemberSignature Language="C#" Value="void IWorkflowInstanceExtension.SetInstance (System.Activities.Hosting.WorkflowInstanceProxy instance);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Activities.Hosting.IWorkflowInstanceExtension.SetInstance(class System.Activities.Hosting.WorkflowInstanceProxy instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.CompensationExtension.System#Activities#Hosting#IWorkflowInstanceExtension#SetInstance(System.Activities.Hosting.WorkflowInstanceProxy)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Activities.Hosting.WorkflowInstanceProxy" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The target workflow instance to set.</param>
+        <summary>Sets any additional extensions to compensation activities.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

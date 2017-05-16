@@ -1,0 +1,243 @@
+<Type Name="ManagementOperationObserver" FullName="System.Management.ManagementOperationObserver">
+  <TypeSignature Language="C#" Value="public class ManagementOperationObserver" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManagementOperationObserver extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Management.ManagementOperationObserver" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Manages asynchronous operations and handles management information and events received asynchronously.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example demonstrates how to perform an asynchronous instance enumeration. The example uses the <xref:System.Management.ManagementOperationObserver> class to handle management information and events asynchronously.  
+  
+ [!code-csharp[wminet_ManagementOperationObserver#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver/cs/ManagementOperationObserver.cs#1)]
+ [!code-vb[wminet_ManagementOperationObserver#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver/vb/ManagementOperationObserver.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ManagementOperationObserver ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementOperationObserver.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ManagementOperationObserver" /> class. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to perform an asynchronous instance enumeration. The example uses the <xref:System.Management.ManagementOperationObserver> class to handle management information and events asynchronously.  
+  
+ [!code-csharp[wminet_ManagementOperationObserver()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver()/cs/ManagementOperationObserver().cs#1)]
+ [!code-vb[wminet_ManagementOperationObserver()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver()/vb/ManagementOperationObserver().vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public void Cancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Cancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ManagementOperationObserver.Cancel" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Cancels all outstanding operations.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="public event System.Management.CompletedEventHandler Completed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Management.CompletedEventHandler Completed" />
+      <MemberSignature Language="DocId" Value="E:System.Management.ManagementOperationObserver.Completed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.CompletedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an operation has completed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Event Data  
+ The event handler receives an argument of type <xref:System.Management.CompletedEventArgs> containing data related to this event. The following <xref:System.Management.CompletedEventArgs> properties provide information specific to this event.  
+  
+|Property|Description|  
+|--------------|-----------------|  
+|<xref:System.Management.ManagementEventArgs.Context%2A> (inherited from <xref:System.Management.ManagementEventArgs>)|Gets the operation context echoed back from the operation that triggered the event.|  
+|<xref:System.Management.CompletedEventArgs.Status%2A>|Gets the completion status of the operation.|  
+|<xref:System.Management.CompletedEventArgs.StatusObject%2A>|Gets or sets additional status information within a WMI object. This may be null.|  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to perform an asynchronous instance enumeration. The example uses the <xref:System.Management.ManagementOperationObserver> class to handle management information and events asynchronously.  
+  
+ [!code-csharp[wminet_ManagementOperationObserver_Completed#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver_Completed/cs/ManagementOperationObserver_Completed.cs#1)]
+ [!code-vb[wminet_ManagementOperationObserver_Completed#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver_Completed/vb/ManagementOperationObserver_Completed.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectPut">
+      <MemberSignature Language="C#" Value="public event System.Management.ObjectPutEventHandler ObjectPut;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Management.ObjectPutEventHandler ObjectPut" />
+      <MemberSignature Language="DocId" Value="E:System.Management.ManagementOperationObserver.ObjectPut" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ObjectPutEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when an object has been successfully committed.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Event Data  
+ The event handler receives an argument of type <xref:System.Management.ObjectPutEventArgs> containing data related to this event. The following <xref:System.Management.ObjectPutEventArgs> properties provide   information specific to this event.  
+  
+|Property|Description|  
+|--------------|-----------------|  
+|<xref:System.Management.ManagementEventArgs.Context%2A> (inherited from <xref:System.Management.ManagementEventArgs>)|Gets the operation context echoed back from the operation that triggered the event.|  
+|<xref:System.Management.ObjectPutEventArgs.Path%2A>|Gets the identity of the object that has been put.|  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ObjectReady">
+      <MemberSignature Language="C#" Value="public event System.Management.ObjectReadyEventHandler ObjectReady;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Management.ObjectReadyEventHandler ObjectReady" />
+      <MemberSignature Language="DocId" Value="E:System.Management.ManagementOperationObserver.ObjectReady" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ObjectReadyEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a new object is available.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Event Data  
+ The event handler receives an argument of type <xref:System.Management.ObjectReadyEventArgs> containing data related to this event. The following <xref:System.Management.ObjectReadyEventArgs> properties provide   information specific to this event.  
+  
+|Property|Description|  
+|--------------|-----------------|  
+|<xref:System.Management.ManagementEventArgs.Context%2A> (inherited from <xref:System.Management.ManagementEventArgs>)|Gets the operation context echoed back from the operation that triggered the event.|  
+|<xref:System.Management.ObjectReadyEventArgs.NewObject%2A>|Gets the newly-returned object.|  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to perform an asynchronous instance enumeration. The example uses the <xref:System.Management.ManagementOperationObserver> class to handle management information and events asynchronously.  
+  
+ [!code-csharp[wminet_ManagementOperationObserver_ObjectReady#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver_ObjectReady/cs/ManagementOperationObserver_ObjectReady.cs#1)]
+ [!code-vb[wminet_ManagementOperationObserver_ObjectReady#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ManagementOperationObserver_ObjectReady/vb/ManagementOperationObserver_ObjectReady.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Progress">
+      <MemberSignature Language="C#" Value="public event System.Management.ProgressEventHandler Progress;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Management.ProgressEventHandler Progress" />
+      <MemberSignature Language="DocId" Value="E:System.Management.ManagementOperationObserver.Progress" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ProgressEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs to indicate the progress of an ongoing operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Event Data  
+ The event handler receives an argument of type <xref:System.Management.ProgressEventArgs> containing data related to this event. The following <xref:System.Management.ProgressEventArgs> properties provide information specific to this event.  
+  
+|Property|Description|  
+|--------------|-----------------|  
+|<xref:System.Management.ManagementEventArgs.Context%2A> (inherited from <xref:System.Management.ManagementEventArgs>)|Gets the operation context echoed back from the operation that triggered the event.|  
+|<xref:System.Management.ProgressEventArgs.Current%2A>|Gets the current amount of work done by the operation. This is always less than or equal to <xref:System.Management.ProgressEventArgs.UpperBound%2A>.|  
+|<xref:System.Management.ProgressEventArgs.Message%2A>|Gets or sets optional additional information regarding the operation's progress.|  
+|<xref:System.Management.ProgressEventArgs.UpperBound%2A>|Gets the total amount of work required to be done by the operation.|  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

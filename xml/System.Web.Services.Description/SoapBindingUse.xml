@@ -1,0 +1,94 @@
+<Type Name="SoapBindingUse" FullName="System.Web.Services.Description.SoapBindingUse">
+  <TypeSignature Language="C#" Value="public enum SoapBindingUse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SoapBindingUse extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapBindingUse" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether the message parts are encoded as abstract type definitions or concrete schema definitions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration applies to extensibility elements which specify that data transmissions use the SOAP protocol, and which are added to <xref:System.Web.Services.Description.FaultBinding>, <xref:System.Web.Services.Description.InputBinding> and <xref:System.Web.Services.Description.OutputBinding> instances.  
+  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.SoapBindingUse Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.SoapBindingUse.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.SoapBindingUse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies an empty string ("") value for the corresponding XML <see langword="use" /> attribute.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Encoded">
+      <MemberSignature Language="C#" Value="Encoded" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.SoapBindingUse Encoded = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.SoapBindingUse.Encoded" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlEnum("encoded")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.SoapBindingUse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message parts are encoded using given encoding rules.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Literal">
+      <MemberSignature Language="C#" Value="Literal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.SoapBindingUse Literal = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.SoapBindingUse.Literal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlEnum("literal")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.SoapBindingUse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message parts represent a concrete schema.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

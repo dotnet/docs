@@ -1,0 +1,60 @@
+<Type Name="LoginFailureAction" FullName="System.Web.UI.WebControls.LoginFailureAction">
+  <TypeSignature Language="C#" Value="public enum LoginFailureAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoginFailureAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginFailureAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines the page that the user will go to when a login attempt is not successful.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Web.UI.WebControls.LoginFailureAction> enumeration to set the <xref:System.Web.UI.WebControls.Login.FailureAction%2A> property to redirect the user to the login page defined in the Web.config file when a login attempt fails.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[LoginLoginFailureAction#1](~/samples/snippets/csharp/VS_Snippets_WebNet/LoginLoginFailureAction/CS/loginloginfailureactioncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[LoginLoginFailureAction#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/LoginLoginFailureAction/VB/loginloginfailureactionvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RedirectToLoginPage">
+      <MemberSignature Language="C#" Value="RedirectToLoginPage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.LoginFailureAction RedirectToLoginPage = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LoginFailureAction.RedirectToLoginPage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.LoginFailureAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Redirects the user to the login page defined in the site's configuration files (Machine.config and Web.config).</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="Refresh" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.LoginFailureAction Refresh = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LoginFailureAction.Refresh" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.LoginFailureAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Refreshes the current page so that the <see cref="T:System.Web.UI.WebControls.Login" /> control can display an error message.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,2450 @@
+<Type Name="Message" FullName="System.Messaging.Message">
+  <TypeSignature Language="C#" Value="public class Message : System.ComponentModel.Component" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Message extends System.ComponentModel.Component" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.Message" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Component</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Designer("System.Messaging.Design.MessageDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides access to the properties needed to define a Message Queuing message.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Messaging.Message> class to peek or receive messages from a queue, or to have fine control over message properties when sending a message to a queue.  
+  
+ <xref:System.Messaging.MessageQueue> uses the <xref:System.Messaging.Message> class when it peeks or receives messages from queues, because both the <xref:System.Messaging.MessageQueue.Peek%2A?displayProperty=fullName> and <xref:System.Messaging.MessageQueue.Receive%2A?displayProperty=fullName> methods create a new instance of the <xref:System.Messaging.Message> class and set the instance's properties. The <xref:System.Messaging.Message> class's read-only properties apply to retrieving messages from a queue, while the read/write properties apply to sending and retrieving messages. When <xref:System.Messaging.MessageQueue> peeks or receives a message from a queue, its <xref:System.Messaging.MessageQueue.MessageReadPropertyFilter%2A> property determines which of the message's properties are retrieved.  
+  
+ The <xref:System.Messaging.MessageQueue> class's <xref:System.Messaging.MessageQueue.Send%2A> method allows you to specify any object type for a message being sent to that queue. You can use the <xref:System.Messaging.MessageQueue> instance's <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property to specify settings for generic messages sent to the queue. The types of settings include formatter, label, encryption, and authentication. You can also specify values for the appropriate <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> members when you coordinate your messaging application to respond to acknowledgment and report messages. Using a <xref:System.Messaging.Message> instance to send a message to the queue gives you the flexibility to access and modify many of these properties—either for a single message or on a message-by-message basis. <xref:System.Messaging.Message> properties take precedence over <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A>.  
+  
+ Message data is stored in the <xref:System.Messaging.Message.Body%2A> property and to a lesser extent, the <xref:System.Messaging.Message.AppSpecific%2A> and <xref:System.Messaging.Message.Extension%2A> properties. When message data is encrypted, serialized, or deserialized, only the contents of the <xref:System.Messaging.Message.Body%2A> property are affected.  
+  
+ The contents of the <xref:System.Messaging.Message.Body%2A> property are serialized when the message is sent, using the <xref:System.Messaging.Message.Formatter%2A> property you specify. The serialized contents are found in the <xref:System.Messaging.Message.BodyStream%2A> property. You can also set the <xref:System.Messaging.Message.BodyStream%2A> property directly, for example, to send a file as the data content of a message. You can change the <xref:System.Messaging.Message.Body%2A> or <xref:System.Messaging.Message.Formatter%2A> properties at any time before sending the message, and the data will be serialized appropriately when you call <xref:System.Messaging.MessageQueue.Send%2A>.  
+  
+ The properties defined by the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A?displayProperty=fullName> property apply only to messages that are not of type <xref:System.Messaging.Message>. If you specify the <xref:System.Messaging.MessageQueue.DefaultPropertiesToSend%2A> property for a <xref:System.Messaging.MessageQueue>, the identically named properties in a <xref:System.Messaging.Message> instance sent to that queue cause these default properties to be ignored.  
+  
+ For a list of initial property values for an instance of <xref:System.Messaging.Message>, see the <xref:System.Messaging.Message.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates formatting a message body using <xref:System.Messaging.BinaryMessageFormatter>.  
+  
+ [!code-cpp[MessagingBinaryFormatter#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagingBinaryFormatter/CPP/message_binaryformatter.cpp#1)]
+ [!code-csharp[MessagingBinaryFormatter#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagingBinaryFormatter/CS/message_binaryformatter.cs#1)]
+ [!code-vb[MessagingBinaryFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagingBinaryFormatter/VB/message_binaryformatter.vb#1)]  
+  
+ The following code example demonstrates formatting a message body using <xref:System.Messaging.XmlMessageFormatter>.  
+  
+ [!code-cpp[Message.Body#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.Body/CPP/message_sendreceive.cpp#1)]
+ [!code-csharp[Message.Body#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.Body/CS/message_sendreceive.cs#1)]
+ [!code-vb[Message.Body#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.Body/VB/message_sendreceive.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Message ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.Message.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.Message" /> class with an empty body.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this overload to create a new instance of the <xref:System.Messaging.Message> class that has an empty body.  
+  
+ Specify either the <xref:System.Messaging.Message.Body%2A> property or the <xref:System.Messaging.Message.BodyStream%2A> property before sending the <xref:System.Messaging.Message> object. The <xref:System.Messaging.Message.Body%2A> property can be any object that can be serialized, such as a text string, a structure object, a class instance, or an embedded object.  
+  
+ Unless you write the contents of the message directly to the <xref:System.Messaging.Message.BodyStream%2A> property, set the <xref:System.Messaging.Message.Formatter%2A> property before you send the message. The body is serialized using the <xref:System.Messaging.Message.Formatter%2A> property's value at the time the <xref:System.Messaging.MessageQueue.Send%2A> method is called on the <xref:System.Messaging.MessageQueue> instance.  
+  
+ The <xref:System.Messaging.XmlMessageFormatter> is loosely coupled, so it is not necessary to have the same object type on the sender and receiver when using this format. The <xref:System.Messaging.ActiveXMessageFormatter> and <xref:System.Messaging.BinaryMessageFormatter> serialize the data into binary representation. The <xref:System.Messaging.ActiveXMessageFormatter> is used when sending or receiving COM components.  
+  
+ The following table shows initial property values for an instance of <xref:System.Messaging.Message>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Messaging.Message.AcknowledgeType%2A>|`AcknowledgeType.None`|  
+|<xref:System.Messaging.Message.AdministrationQueue%2A>|`null`|  
+|<xref:System.Messaging.Message.AppSpecific%2A>|0|  
+|<xref:System.Messaging.Message.AttachSenderId%2A>|`true`|  
+|<xref:System.Messaging.Message.AuthenticationProviderName%2A>|Microsoft Base Cryptographic Provider version 1.0|  
+|<xref:System.Messaging.Message.AuthenticationProviderType%2A>|`CryptoProviderType.RSA_FULL`|  
+|<xref:System.Messaging.Message.Body%2A>|`null`|  
+|<xref:System.Messaging.Message.BodyStream%2A>|`Stream.null`|  
+|<xref:System.Messaging.Message.BodyType%2A>|0|  
+|<xref:System.Messaging.Message.ConnectorType%2A>|`Guid.Empty`|  
+|<xref:System.Messaging.Message.CorrelationId%2A>|An empty string ("")|  
+|<xref:System.Messaging.Message.DestinationSymmetricKey%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.DigitalSignature%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.EncryptionAlgorithm%2A>|`EncryptionAlgorithm.RC2`|  
+|<xref:System.Messaging.Message.Extension%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.Formatter%2A>|`XmlMessageFormatter`|  
+|<xref:System.Messaging.Message.HashAlgorithm%2A>|`HashAlgorithm.MD5`|  
+|<xref:System.Messaging.Message.Label%2A>|An empty string ("")|  
+|<xref:System.Messaging.Message.Priority%2A>|`MessagePriority.Normal`|  
+|<xref:System.Messaging.Message.Recoverable%2A>|`false`|  
+|<xref:System.Messaging.Message.ResponseQueue%2A>|`null`|  
+|<xref:System.Messaging.Message.SenderCertificate%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.TimeToBeReceived%2A>|`Message.InfiniteTimeout`|  
+|<xref:System.Messaging.Message.TimeToReachQueue%2A>|`Message.InfiniteTimeout`|  
+|<xref:System.Messaging.Message.TransactionStatusQueue%2A>|`null`|  
+|<xref:System.Messaging.Message.UseAuthentication%2A>|`false`|  
+|<xref:System.Messaging.Message.UseDeadLetterQueue%2A>|`false`|  
+|<xref:System.Messaging.Message.UseEncryption%2A>|`false`|  
+|<xref:System.Messaging.Message.UseJournalQueue%2A>|`false`|  
+|<xref:System.Messaging.Message.UseTracing%2A>|`false`|  
+  
+   
+  
+## Examples  
+ The following code example sends two messages of different priorities to the queue, and retrieves them subsequently.  
+  
+ [!code-cpp[Message.DefaultPropertiesToSend#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/CPP/message_defaultandpriority.cpp#1)]
+ [!code-csharp[Message.DefaultPropertiesToSend#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/CS/message_defaultandpriority.cs#1)]
+ [!code-vb[Message.DefaultPropertiesToSend#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/VB/message_defaultandpriority.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Message (object body);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.Message.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="body" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="body">The object to be serialized into the body of the message.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.Message" /> class, using the <see cref="T:System.Messaging.XmlMessageFormatter" /> to serialize the specified object into the body of the message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this overload to create a new instance of the <xref:System.Messaging.Message> class that contains the <xref:System.Messaging.Message.Body%2A> specified by the `body` parameter. The `body` parameter can be any object that can be serialized, such as a text string, a structure object, a class instance, or an embedded object. The body is serialized using the <xref:System.Messaging.XmlMessageFormatter> unless you change the <xref:System.Messaging.Message.Formatter%2A> property before the <xref:System.Messaging.Message> is sent. If you change the <xref:System.Messaging.Message.Body%2A> or <xref:System.Messaging.Message.Formatter%2A> property at any time before calling <xref:System.Messaging.MessageQueue.Send%2A>, the message will be serialized according to the new property value.  
+  
+ The <xref:System.Messaging.XmlMessageFormatter> is loosely coupled, so it is not necessary to have the same object type on the sender and receiver when using this format. The <xref:System.Messaging.ActiveXMessageFormatter> and <xref:System.Messaging.BinaryMessageFormatter> serialize the data into binary representation. The <xref:System.Messaging.ActiveXMessageFormatter> is used when sending or receiving COM components.  
+  
+ The following table shows initial property values for an instance of <xref:System.Messaging.Message>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Messaging.Message.AcknowledgeType%2A>|`AcknowledgeType.None`|  
+|<xref:System.Messaging.Message.AdministrationQueue%2A>|`null`|  
+|<xref:System.Messaging.Message.AppSpecific%2A>|0|  
+|<xref:System.Messaging.Message.AttachSenderId%2A>|`true`|  
+|<xref:System.Messaging.Message.AuthenticationProviderName%2A>|Microsoft Base Cryptographic Provider version 1.0|  
+|<xref:System.Messaging.Message.AuthenticationProviderType%2A>|`CryptoProviderType.RSA_FULL`|  
+|<xref:System.Messaging.Message.Body%2A>|The `body` parameter.|  
+|<xref:System.Messaging.Message.BodyStream%2A>|`Stream.null`|  
+|<xref:System.Messaging.Message.BodyType%2A>|0|  
+|<xref:System.Messaging.Message.ConnectorType%2A>|`Guid.Empty`|  
+|<xref:System.Messaging.Message.CorrelationId%2A>|An empty string ("")|  
+|<xref:System.Messaging.Message.DestinationSymmetricKey%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.DigitalSignature%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.EncryptionAlgorithm%2A>|`EncryptionAlgorithm.RC2`|  
+|<xref:System.Messaging.Message.Extension%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.Formatter%2A>|`XmlMessageFormatter`|  
+|<xref:System.Messaging.Message.HashAlgorithm%2A>|`HashAlgorithm.MD5`|  
+|<xref:System.Messaging.Message.Label%2A>|An empty string ("")|  
+|<xref:System.Messaging.Message.Priority%2A>|`MessagePriority.Normal`|  
+|<xref:System.Messaging.Message.Recoverable%2A>|`false`|  
+|<xref:System.Messaging.Message.ResponseQueue%2A>|`null`|  
+|<xref:System.Messaging.Message.SenderCertificate%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.TimeToBeReceived%2A>|`Message.InfiniteTimeout`|  
+|<xref:System.Messaging.Message.TimeToReachQueue%2A>|`Message.InfiniteTimeout`|  
+|<xref:System.Messaging.Message.TransactionStatusQueue%2A>|`null`|  
+|<xref:System.Messaging.Message.UseAuthentication%2A>|`false`|  
+|<xref:System.Messaging.Message.UseDeadLetterQueue%2A>|`false`|  
+|<xref:System.Messaging.Message.UseEncryption%2A>|`false`|  
+|<xref:System.Messaging.Message.UseJournalQueue%2A>|`false`|  
+|<xref:System.Messaging.Message.UseTracing%2A>|`false`|  
+  
+   
+  
+## Examples  
+ The following code example creates a new queue, sends a message that contains an order to it, and then retrieves it.  
+  
+ [!code-cpp[Message.Body#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.Body/CPP/message_sendreceive.cpp#1)]
+ [!code-csharp[Message.Body#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.Body/CS/message_sendreceive.cs#1)]
+ [!code-vb[Message.Body#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.Body/VB/message_sendreceive.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Message (object body, System.Messaging.IMessageFormatter formatter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object body, class System.Messaging.IMessageFormatter formatter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.Message.#ctor(System.Object,System.Messaging.IMessageFormatter)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="body" Type="System.Object" />
+        <Parameter Name="formatter" Type="System.Messaging.IMessageFormatter" />
+      </Parameters>
+      <Docs>
+        <param name="body">The object to be serialized into the body of the message.</param>
+        <param name="formatter">A <see cref="T:System.Messaging.IMessageFormatter" /> that specifies the formatter with which to serialize the message body.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.Message" /> class using the specified formatter to serialize the specified object into the body of the message.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this overload to create a new instance of the <xref:System.Messaging.Message> class that contains the <xref:System.Messaging.Message.Body%2A> specified by the `body` parameter and that uses any valid formatter to serialize the body. The `body` parameter is any object that can be serialized, such as a text string, a structure object, a class instance, or an embedded object. If you change the <xref:System.Messaging.Message.Body%2A> or <xref:System.Messaging.Message.Formatter%2A> property at any time before calling <xref:System.Messaging.MessageQueue.Send%2A>, the message will be serialized according to the new property value.  
+  
+ The <xref:System.Messaging.XmlMessageFormatter> is loosely coupled, so it is not necessary to have the same object type on the sender and receiver when using this format. The <xref:System.Messaging.ActiveXMessageFormatter> and <xref:System.Messaging.BinaryMessageFormatter> serialize the data into binary representation. The <xref:System.Messaging.ActiveXMessageFormatter> is used when sending or receiving COM components.  
+  
+ The following table shows initial property values for an instance of <xref:System.Messaging.Message>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Messaging.Message.AcknowledgeType%2A>|`AcknowledgeType.None`|  
+|<xref:System.Messaging.Message.AdministrationQueue%2A>|`null`|  
+|<xref:System.Messaging.Message.AppSpecific%2A>|0|  
+|<xref:System.Messaging.Message.AttachSenderId%2A>|`true`|  
+|<xref:System.Messaging.Message.AuthenticationProviderName%2A>|Microsoft Base Cryptographic Provider version 1.0|  
+|<xref:System.Messaging.Message.AuthenticationProviderType%2A>|`CryptoProviderType.RSA_FULL`|  
+|<xref:System.Messaging.Message.Body%2A>|The `body` parameter.|  
+|<xref:System.Messaging.Message.BodyStream%2A>|`Stream.null`|  
+|<xref:System.Messaging.Message.BodyType%2A>|0|  
+|<xref:System.Messaging.Message.ConnectorType%2A>|`Guid.Empty`|  
+|<xref:System.Messaging.Message.CorrelationId%2A>|An empty string ("")|  
+|<xref:System.Messaging.Message.DestinationSymmetricKey%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.DigitalSignature%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.EncryptionAlgorithm%2A>|`EncryptionAlgorithm.RC2`|  
+|<xref:System.Messaging.Message.Extension%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.Formatter%2A>|The `formatter` parameter.|  
+|<xref:System.Messaging.Message.HashAlgorithm%2A>|`HashAlgorithm.MD5`|  
+|<xref:System.Messaging.Message.Label%2A>|An empty string ("")|  
+|<xref:System.Messaging.Message.Priority%2A>|`MessagePriority.Normal`|  
+|<xref:System.Messaging.Message.Recoverable%2A>|`false`|  
+|<xref:System.Messaging.Message.ResponseQueue%2A>|`null`|  
+|<xref:System.Messaging.Message.SenderCertificate%2A>|A zero-length array of bytes|  
+|<xref:System.Messaging.Message.TimeToBeReceived%2A>|`Message.InfiniteTimeout`|  
+|<xref:System.Messaging.Message.TimeToReachQueue%2A>|`Message.InfiniteTimeout`|  
+|<xref:System.Messaging.Message.TransactionStatusQueue%2A>|`null`|  
+|<xref:System.Messaging.Message.UseAuthentication%2A>|`false`|  
+|<xref:System.Messaging.Message.UseDeadLetterQueue%2A>|`false`|  
+|<xref:System.Messaging.Message.UseEncryption%2A>|`false`|  
+|<xref:System.Messaging.Message.UseJournalQueue%2A>|`false`|  
+|<xref:System.Messaging.Message.UseTracing%2A>|`false`|  
+  
+   
+  
+## Examples  
+ [!code-cpp[MessagingBinaryFormatter#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagingBinaryFormatter/CPP/message_binaryformatter.cpp#1)]
+ [!code-csharp[MessagingBinaryFormatter#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagingBinaryFormatter/CS/message_binaryformatter.cs#1)]
+ [!code-vb[MessagingBinaryFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagingBinaryFormatter/VB/message_binaryformatter.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AcknowledgeType">
+      <MemberSignature Language="C#" Value="public System.Messaging.AcknowledgeTypes AcknowledgeType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.AcknowledgeTypes AcknowledgeType" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.AcknowledgeType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAcknowledgeType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of acknowledgment message to be returned to the sending application.</summary>
+        <value>One of the <see cref="T:System.Messaging.AcknowledgeTypes" /> values, which represent both the types of acknowledgment messages the system posts in the administration queue and the conditions under which acknowledgments are returned to the sending application. The default is <see langword="None" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.AcknowledgeType%2A> property specifies the type of acknowledgment messages requested by the sending application. Set the <xref:System.Messaging.Message.AcknowledgeType%2A> property before sending the message to request notification of certain occurrences—for example, a message reaching its destination queue, a message being retrieved, or a time-out preventing a message from reaching or being retrieved from the destination queue.  
+  
+ Message Queuing returns notification by sending acknowledgment messages to the <xref:System.Messaging.Message.AdministrationQueue%2A> property specified by the original message. An acknowledgment message's <xref:System.Messaging.Message.Acknowledgment%2A> property indicates the type of acknowledgment that it represents. For example, if an acknowledgment message was sent because a message did not reach the destination before the <xref:System.Messaging.Message.TimeToReachQueue%2A> interval expired, the <xref:System.Messaging.Message.Acknowledgment%2A> property of the acknowledgment message would contain the value `ReachQueueTimeout`.  
+  
+   
+  
+## Examples  
+ The following code example sends and receives a message containing an order to and from a queue. It specifically requests a positive acknowledgment when the original message reaches or is retrieved from the queue.  
+  
+ [!code-cpp[Message.Acknowledgment#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.Acknowledgment/CPP/message_acknowledgment.cpp#1)]
+ [!code-csharp[Message.Acknowledgment#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.Acknowledgment/CS/message_acknowledgment.cs#1)]
+ [!code-vb[Message.Acknowledgment#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.Acknowledgment/VB/message_acknowledgment.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message is filtered to ignore the <see cref="P:System.Messaging.Message.AcknowledgeType" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Acknowledgment">
+      <MemberSignature Language="C#" Value="public System.Messaging.Acknowledgment Acknowledgment { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.Acknowledgment Acknowledgment" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.Acknowledgment" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAcknowledgement")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.Acknowledgment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the classification of acknowledgment that this message represents.</summary>
+        <value>One of the <see cref="T:System.Messaging.Acknowledgment" /> enumeration values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you receive a message from an administration queue, read the <xref:System.Messaging.Message.Acknowledgment%2A> property to verify the status of the original message.  
+  
+ When a message is sent to its destination queue, Message Queuing can be requested to post an acknowledgment message. Such a message can indicate, for example, whether the message arrived and was retrieved within specified time-outs, or it can indicate what went wrong in the case of delivery failure. The destination queue returns acknowledgment messages and posts them to the administration queue specified in the original message's <xref:System.Messaging.Message.AdministrationQueue%2A> property. The <xref:System.Messaging.Message.Id%2A> property of an acknowledgment message identifies the acknowledgment message, not the original message. You can find the identifier of the original message in the acknowledgment <xref:System.Messaging.Message> instance's <xref:System.Messaging.Message.CorrelationId%2A> property.  
+  
+ If this <xref:System.Messaging.Message> instance represents an acknowledgment message, the <xref:System.Messaging.Message.Acknowledgment%2A> property specifies the type of acknowledgment. Otherwise, the <xref:System.Messaging.Message.Acknowledgment%2A> property contains the value `Normal`.  
+  
+ Use the <xref:System.Messaging.Message.AcknowledgeType%2A> property of the original message to specify the circumstances under which acknowledgments will be returned.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.MessagePropertyFilter.Acknowledgment" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AdministrationQueue">
+      <MemberSignature Language="C#" Value="public System.Messaging.MessageQueue AdministrationQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.MessageQueue AdministrationQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.AdministrationQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAdministrationQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the queue that receives the acknowledgement messages that Message Queuing generates.</summary>
+        <value>The <see cref="T:System.Messaging.MessageQueue" /> that specifies the administration queue used for system-generated acknowledgment messages. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The queue specified in the <xref:System.Messaging.Message.AdministrationQueue%2A> property can be any non-transactional queue. The acknowledgment messages sent to the administration queue can indicate whether the original message reached its destination queue and whether it was removed from the queue.  
+  
+ When the <xref:System.Messaging.Message.AcknowledgeType%2A> property has any value other than `None`, the sending application must specify the queue to use as the administration queue.  
+  
+   
+  
+## Examples  
+ The following code example sends and receives a message containing an order to and from a queue. It specifically requests a positive acknowledgment when the original message reaches or is retrieved from the queue.  
+  
+ [!code-cpp[Message.Acknowledgment#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.Acknowledgment/CPP/message_acknowledgment.cpp#1)]
+ [!code-csharp[Message.Acknowledgment#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.Acknowledgment/CS/message_acknowledgment.cs#1)]
+ [!code-vb[Message.Acknowledgment#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.Acknowledgment/VB/message_acknowledgment.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.AdministrationQueue" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AppSpecific">
+      <MemberSignature Language="C#" Value="public int AppSpecific { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AppSpecific" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.AppSpecific" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAppSpecific")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets additional, application-specific information.</summary>
+        <value>Information that is specific to the application. The default is zero.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.AppSpecific%2A> property contains application-specific information that you can use to organize different types of messages. For example, you can use application-specific indexes. It is the responsibility of the application to interpret <xref:System.Messaging.Message.AppSpecific%2A> property information.  
+  
+ Whenever possible, you should include message data in the body of the message rather than the <xref:System.Messaging.Message.AppSpecific%2A> property.  
+  
+ When working with foreign queues, use the <xref:System.Messaging.Message.Extension%2A> property to specify message properties that do not exist in Message Queuing. As with the <xref:System.Messaging.Message.AppSpecific%2A> property, it is the responsibility of the application to understand the content of the <xref:System.Messaging.Message.Extension%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.AppSpecific" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrivedTime">
+      <MemberSignature Language="C#" Value="public DateTime ArrivedTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ArrivedTime" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.ArrivedTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgArrivedTime")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the time that the message arrived in the destination queue.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the message's arrival time in the destination queue. The time is adjusted from GMT to the local time of the computer on which the destination queue resides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The message's <xref:System.Messaging.Message.TimeToBeReceived%2A> property indicates how quickly the message must be received from the destination queue. The <xref:System.Messaging.Message.TimeToBeReceived%2A> property timer starts when the message is sent, not when the message arrives in the queue.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.ArrivedTime%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.ArrivedTime" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AttachSenderId">
+      <MemberSignature Language="C#" Value="public bool AttachSenderId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AttachSenderId" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.AttachSenderId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAttachSenderId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the sender ID should be attached to the message.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="P:System.Messaging.Message.SenderId" /> should be attached to the message; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.SenderId%2A> property is an array of bytes that represents the identifier of the sending user. The sender ID is set by Message Queuing and is used by the receiving Queue Manager to verify whether the sender has access rights to a queue.  
+  
+ The absence of the sender ID is an indication by the sending application that Message Queuing should not validate the message's sender nor verify the sender's access rights to the receiving queue. The <xref:System.Messaging.Message.SenderId%2A> is trustworthy only if the message was authenticated when it reached the destination queue. The message is rejected when it reaches the destination queue if the queue accepts only authenticated messages and either the <xref:System.Messaging.DefaultPropertiesToSend.UseAuthentication%2A> or the <xref:System.Messaging.DefaultPropertiesToSend.AttachSenderId%2A> property is `false`.  
+  
+> [!CAUTION]
+>  If a message is rejected, it is either sent to the dead-letter queue (if <xref:System.Messaging.Message.UseDeadLetterQueue%2A> is `true`), or it is ignored. You can request acknowledgments when a message fails to reach a queue. Otherwise, when <xref:System.Messaging.Message.UseDeadLetterQueue%2A> is `false` the message might be lost without warning.  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of a message's <xref:System.Messaging.Message.AttachSenderId%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.AttachSenderId" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Authenticated">
+      <MemberSignature Language="C#" Value="public bool Authenticated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Authenticated" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.Authenticated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAuthenticated")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the message was authenticated.</summary>
+        <value>
+          <see langword="true" /> if authentication was requested for the message when it entered the queue; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.Authenticated%2A> property is used only by the application while it is interacting with the message and trying to determine if authentication was requested. If the message is in the queue, the message was authenticated. Conversely, if the <xref:System.Messaging.Message.Authenticated%2A> property is `true`, the receiving Queue Manager authenticated the message when it received that message.  
+  
+ You cannot determine if a message failed authentication by looking at its properties. Message Queuing discards messages that fail authentication before they are delivered to the queue. However, you can request that an acknowledgment message be sent if a delivery failure prevents the message from arriving in the queue.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.Authenticated%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.Authenticated" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationProviderName">
+      <MemberSignature Language="C#" Value="public string AuthenticationProviderName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationProviderName" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.AuthenticationProviderName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAuthenticationProviderName")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the cryptographic provider used to generate the digital signature of the message.</summary>
+        <value>The name of the cryptographic provider used to generate the digital signature of the message. The default is Microsoft Base Cryptographic Provider version 1.0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You typically use the <xref:System.Messaging.Message.AuthenticationProviderName%2A> when working with foreign queues. Message Queuing requires the authentication provider name and authentication provider type of the cryptographic provider (authentication provider) to validate the digital signatures of both messages sent to a foreign queue and messages passed to Message Queuing from a foreign queue.  
+  
+ When sending a message, always set the <xref:System.Messaging.Message.AuthenticationProviderName%2A> and <xref:System.Messaging.Message.ConnectorType%2A> properties together. When the message is sent, Message Queuing ignores the authentication provider name if the connector type is not also set.  
+  
+ The <xref:System.Messaging.Message.AuthenticationProviderName%2A> property cannot be `null`, but it can be an empty string ("").  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Messaging.Message.AuthenticationProviderName" /> property could not be set.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.AuthenticationProviderName" /> property.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Messaging.Message.AuthenticationProviderName" /> was set to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticationProviderType">
+      <MemberSignature Language="C#" Value="public System.Messaging.CryptographicProviderType AuthenticationProviderType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.CryptographicProviderType AuthenticationProviderType" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.AuthenticationProviderType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgAuthenticationProviderType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.CryptographicProviderType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of cryptographic provider used to generate the digital signature of the message.</summary>
+        <value>One of the <see cref="T:System.Messaging.CryptographicProviderType" /> values. The default is <see langword="RSA_FULL" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You typically use the <xref:System.Messaging.Message.AuthenticationProviderType%2A> property when working with foreign queues to specify which cryptographic service provider is associated with a message. Message Queuing requires the authentication provider name and authentication provider type of the cryptographic provider (authentication provider) to validate the digital signatures of both messages sent to a foreign queue and messages passed to Message Queuing from a foreign queue.  
+  
+ Only `RsaFull` is intended to be used with messaging.  
+  
+ When sending a message, always set the <xref:System.Messaging.Message.AuthenticationProviderType%2A> and <xref:System.Messaging.Message.ConnectorType%2A> properties together. When the message is sent, Message Queuing ignores the authentication provider type if the connector type is not also set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Messaging.Message.AuthenticationProviderType" /> property could not be set.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.AuthenticationProviderType" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Body">
+      <MemberSignature Language="C#" Value="public object Body { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Body" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.Body" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content of the message.</summary>
+        <value>An object that specifies the message contents. The object can be a string, a date, a currency, a number, an array of bytes, or any managed object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The message's <xref:System.Messaging.Message.Body%2A> property usually contains the data associated with the message. Although you can also send application-specific data in the <xref:System.Messaging.Message.AppSpecific%2A> and <xref:System.Messaging.Message.Extension%2A> properties, you should include message data in the <xref:System.Messaging.Message.Body%2A> of the message whenever possible. Only the <xref:System.Messaging.Message.Body%2A> property contents are serialized or encrypted.  
+  
+ The <xref:System.Messaging.Message.Body%2A> property can contain any object whose size does not exceed 4 MB. If you use <xref:System.Messaging.MessageQueue.Send%2A?displayProperty=fullName> to send any object that is not of type <xref:System.Messaging.Message> to the <xref:System.Messaging.MessageQueue>, that object will be located in the <xref:System.Messaging.Message.Body%2A> property of the <xref:System.Messaging.Message> instance returned by <xref:System.Messaging.MessageQueue.Peek%2A> or <xref:System.Messaging.MessageQueue.Receive%2A>.  
+  
+ The string argument in `MessageQueue.Send("hello.")` is an example of such a generic object.  
+  
+ The <xref:System.Messaging.Message.BodyType%2A> property indicates the type of information that is stored in the message body. Message Queuing uses this information to identify the type of the <xref:System.Messaging.Message.Body%2A> property contents.  
+  
+ Specify either the <xref:System.Messaging.Message.Body%2A> property or the <xref:System.Messaging.Message.BodyStream%2A> property before sending the <xref:System.Messaging.Message> object. The <xref:System.Messaging.Message.Body%2A> property can be any serializable object, such as a text string, structure object, class instance, or embedded object.  
+  
+ Unless you write the contents of the message directly to the <xref:System.Messaging.Message.BodyStream%2A> property, set the <xref:System.Messaging.Message.Formatter%2A> property before you send the message. When the <xref:System.Messaging.MessageQueue.Send%2A> method is called on the <xref:System.Messaging.MessageQueue> instance, the body is serialized using the formatter contained in the <xref:System.Messaging.Message.Formatter%2A> property. If you send the message without specifying a value for the <xref:System.Messaging.Message.Formatter%2A> property, the formatter defaults to <xref:System.Messaging.XmlMessageFormatter>.  
+  
+> [!NOTE]
+>  Attempting to set the body of a message to <xref:System.Decimal.MaxValue> will cause a <xref:System.OverflowException> when the `Send` method of the <xref:System.Messaging.MessageQueue> class is called and the <xref:System.Messaging.ActiveXMessageFormatter> is used.  
+  
+   
+  
+## Examples  
+ The following code example sends two messages of different priorities to the queue, and retrieves them subsequently.  
+  
+ [!code-cpp[Message.DefaultPropertiesToSend#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/CPP/message_defaultandpriority.cpp#1)]
+ [!code-csharp[Message.DefaultPropertiesToSend#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/CS/message_defaultandpriority.cs#1)]
+ [!code-vb[Message.DefaultPropertiesToSend#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/VB/message_defaultandpriority.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Messaging.Message.Formatter" /> property is <see langword="null" />.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.Body" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyStream">
+      <MemberSignature Language="C#" Value="public System.IO.Stream BodyStream { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream BodyStream" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.BodyStream" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.ComponentModel.Design.BinaryEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgBodyStream")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the information in the body of the message.</summary>
+        <value>A <see cref="T:System.IO.Stream" /> that contains the serialized information included in the <see cref="P:System.Messaging.Message.Body" /> of the message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The body of a message can consist of any type of information—for example, a string, a date, a currency, a number, an array of bytes, or any managed object. This information is serialized into a <xref:System.IO.Stream> to be passed to the queue.  
+  
+ Specify either the <xref:System.Messaging.Message.Body%2A> property or the <xref:System.Messaging.Message.BodyStream%2A> property before sending the <xref:System.Messaging.Message> object. If you set the <xref:System.Messaging.Message.Body%2A> property, the contents are serialized into the <xref:System.Messaging.Message.BodyStream%2A> property. However, you can choose to write the <xref:System.Messaging.Message.BodyStream%2A> property directly. This is useful, for example, when you want to open a connection to a file and stream its contents as the body of your message.  
+  
+ Unless you write the contents of the message directly to the <xref:System.Messaging.Message.BodyStream%2A> property, set the <xref:System.Messaging.Message.Formatter%2A> property before you send the message. When the <xref:System.Messaging.MessageQueue.Send%2A> method is called on the <xref:System.Messaging.MessageQueue> instance, the body is serialized using the formatter contained in the <xref:System.Messaging.Message.Formatter%2A> property. If you send the message without specifying a value for the <xref:System.Messaging.Message.Formatter%2A> property, the formatter defaults to <xref:System.Messaging.XmlMessageFormatter>.  
+  
+ If you set the <xref:System.Messaging.Message.UseEncryption%2A> property to `true` for the body of this message, the message will be encrypted when it is sent, not when you set the <xref:System.Messaging.Message.Body%2A> property. Therefore, the <xref:System.Messaging.Message.BodyStream%2A> property is never encrypted.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.Body" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BodyType">
+      <MemberSignature Language="C#" Value="public int BodyType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BodyType" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.BodyType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgBodyType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of data that the message body contains.</summary>
+        <value>The message body's true type, such as a string, a date, a currency, or a number.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing recognizes the body contents as an object or as a serialized stream. The <xref:System.Messaging.Message.BodyType%2A> property indicates the type of the object within the <xref:System.Messaging.Message.Body%2A> property of the message.  
+  
+ The <xref:System.Messaging.XmlMessageFormatter> performs binding between native types and the object in a message body. If you use the <xref:System.Messaging.XmlMessageFormatter>, the formatter sets the <xref:System.Messaging.Message.BodyType%2A> property for you.  
+  
+ Other formatters can provide binding functionality also, as shown in the following C# code.  
+  
+```  
+message.Formatter = new ActiveXMessageFormatter();  
+object myObject message.Body;  
+if (myObject is string) {  
+}  
+if (myObject is int) {  
+}  
+if (myObject is float) {  
+}  
+```  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.BodyType%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.Body" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectorType">
+      <MemberSignature Language="C#" Value="public Guid ConnectorType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ConnectorType" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.ConnectorType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgConnectorType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates that some message properties typically set by Message Queuing were set by the sending application.</summary>
+        <value>A <see cref="T:System.Guid" /> defined by the application and used in conjunction with connector applications or message encryption. This <see cref="T:System.Guid" /> allows a receiving application to interpret message properties that were set by the sending application but that are usually set by Message Queuing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing requires the <xref:System.Messaging.Message.ConnectorType%2A> property be set whenever an application sets a message property that is usually set by Message Queuing. An application typically uses a <xref:System.Messaging.Message.ConnectorType%2A> in the following two cases:  
+  
+-   Whenever a connector application passes a message. The <xref:System.Messaging.Message.ConnectorType%2A> tells the sending and receiving applications how to interpret the security and acknowledgment properties of the message.  
+  
+-   Whenever the sending application, rather than Message Queuing, encrypts a message. The <xref:System.Messaging.Message.ConnectorType%2A> tells Message Queuing to use the <xref:System.Messaging.Message.DestinationSymmetricKey%2A> property value to decrypt the message.  
+  
+ You must set the <xref:System.Messaging.Message.ConnectorType%2A> property if you set any of the following properties (otherwise, the queue ignores these properties when the message is sent):  
+  
+-   <xref:System.Messaging.Message.AuthenticationProviderName%2A>  
+  
+-   <xref:System.Messaging.Message.AuthenticationProviderType%2A>  
+  
+-   <xref:System.Messaging.Message.DestinationSymmetricKey%2A>  
+  
+-   <xref:System.Messaging.Message.DigitalSignature%2A>  
+  
+-   <xref:System.Messaging.Message.MessageType%2A>  
+  
+-   <xref:System.Messaging.Message.SenderId%2A>  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.ConnectorType" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrelationId">
+      <MemberSignature Language="C#" Value="public string CorrelationId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CorrelationId" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.CorrelationId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgCorrelationId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the message identifier used by acknowledgment, report, and response messages to reference the original message.</summary>
+        <value>The message identifier specified by the <see cref="P:System.Messaging.Message.Id" /> property of the original message. The correlation identifier is used by Message Queuing when it generates an acknowledgment or report message, and by an application when it generates a response message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When Message Queuing generates an acknowledgment or report message, it uses the correlation identifier property to specify the message identifier of the original message. In this manner, the correlation identifier ties the report or acknowledgment message to the original message.  
+  
+ The sending application can then match the acknowledgment or report with the original message by using the <xref:System.Messaging.Message.CorrelationId%2A> property to identify the original message's <xref:System.Messaging.Message.Id%2A> property.  
+  
+ Connector applications also must set the <xref:System.Messaging.Message.CorrelationId%2A> property of the acknowledgment and report messages to the message identifier of the original message.  
+  
+ When your application sends a response message to the sending application, you can set the <xref:System.Messaging.Message.CorrelationId%2A> property of the response message to the message identifier of the original message. The sending application can then match your response message to the message that was sent.  
+  
+   
+  
+## Examples  
+ The following code example sends and receives a message that contains an order to and from a queue. It specifically requests a positive acknowledgment when the original message reaches or is retrieved from the queue.  
+  
+ [!code-cpp[Message.Acknowledgment#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.Acknowledgment/CPP/message_acknowledgment.cpp#1)]
+ [!code-csharp[Message.Acknowledgment#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.Acknowledgment/CS/message_acknowledgment.cs#1)]
+ [!code-vb[Message.Acknowledgment#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.Acknowledgment/VB/message_acknowledgment.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.CorrelationId" /> property.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Messaging.Message.CorrelationId" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationQueue">
+      <MemberSignature Language="C#" Value="public System.Messaging.MessageQueue DestinationQueue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.MessageQueue DestinationQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.DestinationQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgDestinationQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the intended destination queue for a message.</summary>
+        <value>A <see cref="T:System.Messaging.MessageQueue" /> that specifies the intended destination queue for the message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.DestinationQueue%2A> property is most commonly used to determine the original destination of a message that arrived in a journal or dead-letter queue. Usually, you do not need to examine this property, because you typically retrieve the message from its destination queue.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.DestinationQueue%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.DestinationQueue" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DestinationSymmetricKey">
+      <MemberSignature Language="C#" Value="public byte[] DestinationSymmetricKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] DestinationSymmetricKey" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.DestinationSymmetricKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgDestinationSymmetricKey")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the symmetric key used to encrypt application-encrypted messages or messages sent to foreign queues.</summary>
+        <value>An array of byte values that specifies the destination symmetric key used to encrypt the message. The default is a zero-length array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two scenarios require you to use the <xref:System.Messaging.Message.DestinationSymmetricKey%2A> property. The first is when your application, rather than Message Queuing, encrypts a message. The second is when you send an encrypted message to a queuing system other than Message Queuing.  
+  
+ Before you set this property, you must encrypt the symmetric key with the public key of the receiving queue manager. When you send an application-encrypted message, the receiving queue manager uses the symmetric key to decrypt the message before sending it to its destination queue.  
+  
+ If you send a message to a foreign queue, the message is first received by the appropriate connector application, which forwards the encrypted message with the attached symmetric key to the receiving application. It is then the responsibility of the receiving application to decrypt the message using the symmetric key.  
+  
+ When you set the <xref:System.Messaging.Message.DestinationSymmetricKey%2A> property, you must also set the <xref:System.Messaging.Message.ConnectorType%2A> property. When the message is sent, Message Queuing ignores the <xref:System.Messaging.Message.DestinationSymmetricKey%2A> property if the <xref:System.Messaging.Message.ConnectorType%2A> property is not also set.  
+  
+ The <xref:System.Messaging.Message.DestinationSymmetricKey%2A> property has a maximum array size of 256.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.DestinationSymmetricKey" /> property.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Messaging.Message.DestinationSymmetricKey" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DigitalSignature">
+      <MemberSignature Language="C#" Value="public byte[] DigitalSignature { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] DigitalSignature" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.DigitalSignature" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgDigitalSignature")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the digital signature that Message Queuing uses to authenticate the message.</summary>
+        <value>An array of byte values that specifies the Message Queuing 1.0 digital signature used to authenticate the message. The default is a zero-length array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing uses the digital signature when authenticating messages that were sent by Message Queuing version 1.0. In most cases, Message Queuing generates and sets the <xref:System.Messaging.Message.DigitalSignature%2A> property when the sending application requests authentication. The receiving application uses this property to retrieve the digital signature attached to the message.  
+  
+ You can only use the <xref:System.Messaging.Message.DigitalSignature%2A> property when running Message Queuing version 2.0. The sending application must specify Message Queuing version 1.0 signatures when requesting authentication. If the sending application sends a Message Queuing version 2.0 signature, this property contains a buffer of four bytes, each containing zero.  
+  
+ The <xref:System.Messaging.Message.DigitalSignature%2A> property, together with the <xref:System.Messaging.Message.SenderCertificate%2A> property, is also used by connector applications when a message is sent. In this scenario, the connector application—rather than Message Queuing—generates the digital signature, which it bases on the certificate of the user sending the message.  
+  
+ The <xref:System.Messaging.Message.DigitalSignature%2A> property has a maximum array size of 256.  
+  
+ When you set the <xref:System.Messaging.Message.DigitalSignature%2A> property, you must also set the <xref:System.Messaging.Message.ConnectorType%2A> property. When a message is sent, Message Queuing ignores the <xref:System.Messaging.Message.DigitalSignature%2A> property if the <xref:System.Messaging.Message.ConnectorType%2A> property is not also set.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.DigitalSignature" /> property.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Messaging.Message.DigitalSignature" /> property is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptionAlgorithm">
+      <MemberSignature Language="C#" Value="public System.Messaging.EncryptionAlgorithm EncryptionAlgorithm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.EncryptionAlgorithm EncryptionAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.EncryptionAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgEncryptionAlgorithm")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.EncryptionAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the encryption algorithm used to encrypt the body of a private message.</summary>
+        <value>One of the <see cref="T:System.Messaging.EncryptionAlgorithm" /> enumeration values. The default is <see langword="RC2" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a message is private (encrypted), it is encrypted before it is sent and decrypted upon receipt. The <xref:System.Messaging.Message.EncryptionAlgorithm%2A> property specifies the algorithm used to encrypt the message body of a private message.  
+  
+ A queue can require that incoming messages be encrypted. If an application sends a non-encrypted (non-private) message to a queue that accepts only private messages, or if it sends a private message to a queue that accepts only non-private messages, the queue rejects the message. The sending application can request that a negative acknowledgment message be returned in such a case.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.EncryptionAlgorithm" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Extension">
+      <MemberSignature Language="C#" Value="public byte[] Extension { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Extension" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.Extension" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgExtension")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets additional, application-defined information associated with the message.</summary>
+        <value>An array of byte values that provides application-defined information associated with the message. The default is a zero-length array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.Extension%2A> property provides for application-defined information, like a large binary object, that is associated with the message. It is the responsibility of the receiving application to interpret the contents of the <xref:System.Messaging.Message.Extension%2A> property.  
+  
+ Where possible, you should include message data in the <xref:System.Messaging.Message.Body%2A> property of the message rather than the <xref:System.Messaging.Message.Extension%2A> property.  
+  
+ When working with foreign queues, use the <xref:System.Messaging.Message.Extension%2A> property to specify message properties that do not exist in Message Queuing.  
+  
+ A foreign queue exists in a queuing system other than Microsoft Message Queuing. Message Queuing communicates with such queues through a connector application.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.Extension" /> property.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Messaging.Message.Extension" /> property is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Formatter">
+      <MemberSignature Language="C#" Value="public System.Messaging.IMessageFormatter Formatter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.IMessageFormatter Formatter" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.Formatter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.IMessageFormatter</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the formatter used to serialize an object into or deserialize an object from the message body.</summary>
+        <value>The <see cref="T:System.Messaging.IMessageFormatter" /> that produces a stream to be written to or read from the message body. The default is <see cref="T:System.Messaging.XmlMessageFormatter" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Messaging.Message.Formatter%2A> property when reading and writing a message. When a message is sent to the queue, the formatter serializes the <xref:System.Messaging.Message.Body%2A> property into a stream that can be sent to the message queue. When reading from a queue, the formatter deserializes the message data into the <xref:System.Messaging.Message.Body%2A> property.  
+  
+ Unless you write the contents of the message directly to the <xref:System.Messaging.Message.BodyStream%2A> property, set the <xref:System.Messaging.Message.Formatter%2A> property before you send the message. When the <xref:System.Messaging.MessageQueue.Send%2A> method is called on the <xref:System.Messaging.MessageQueue> instance, the body is serialized using the formatter contained in the <xref:System.Messaging.Message.Formatter%2A> property. If you send the message without specifying a value for the <xref:System.Messaging.Message.Formatter%2A> property, the formatter defaults to <xref:System.Messaging.XmlMessageFormatter>.  
+  
+ The <xref:System.Messaging.XmlMessageFormatter> is loosely coupled, so it is not necessary to have the same object type on the sender and receiver when using this format. The <xref:System.Messaging.ActiveXMessageFormatter> and <xref:System.Messaging.BinaryMessageFormatter> serialize the data into binary representation. The <xref:System.Messaging.ActiveXMessageFormatter> is used when sending or receiving COM components.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates formatting a message body using <xref:System.Messaging.BinaryMessageFormatter>.  
+  
+ [!code-cpp[MessagingBinaryFormatter#1](~/samples/snippets/cpp/VS_Snippets_Remoting/MessagingBinaryFormatter/CPP/message_binaryformatter.cpp#1)]
+ [!code-csharp[MessagingBinaryFormatter#1](~/samples/snippets/csharp/VS_Snippets_Remoting/MessagingBinaryFormatter/CS/message_binaryformatter.cs#1)]
+ [!code-vb[MessagingBinaryFormatter#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/MessagingBinaryFormatter/VB/message_binaryformatter.vb#1)]  
+  
+ The following code example demonstrates formatting a message body using <xref:System.Messaging.XmlMessageFormatter>.  
+  
+ [!code-cpp[Message.Body#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.Body/CPP/message_sendreceive.cpp#1)]
+ [!code-csharp[Message.Body#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.Body/CS/message_sendreceive.cs#1)]
+ [!code-vb[Message.Body#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.Body/VB/message_sendreceive.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.Messaging.Message.Formatter" /> property is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HashAlgorithm">
+      <MemberSignature Language="C#" Value="public System.Messaging.HashAlgorithm HashAlgorithm { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.HashAlgorithm HashAlgorithm" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.HashAlgorithm" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgHashAlgorithm")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.HashAlgorithm</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the hashing algorithm that Message Queuing uses when authenticating a message or creating a digital signature for a message.</summary>
+        <value>One of the <see cref="T:System.Messaging.HashAlgorithm" /> enumeration values. For Windows XP, the default is <see langword="SHA" />. Otherwise, the default is <see langword="MD5" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ On the source computer, Message Queuing uses the hashing algorithm when creating a digital signature for a message. The target Queue Manager then uses the same hashing algorithm to authenticate the message when it is received.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.HashAlgorithm" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the message's identifier.</summary>
+        <value>The message's unique identifier, which is generated by Message Queuing.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing generates a message identifier when the message is sent. The identifier is composed of 20 bytes and includes two items: the machine <xref:System.Guid> of the sending computer and a unique identifier for the message on the computer. The combination of the two items produces a message identifier that is unique on the network.  
+  
+ Message Queuing generates message identifiers for all messages—including acknowledgment and report messages. An acknowledgment message is generally sent by Message Queuing in reaction to the arrival or failure of an original, sent message. You can find the <xref:System.Messaging.Message.Id%2A> property value of the original message in the <xref:System.Messaging.Message.CorrelationId%2A> property of an acknowledgment message.  
+  
+ You can also use the <xref:System.Messaging.Message.Id%2A> property when sending a response message to a response queue. To include the identifier of the original message in a response message, set the <xref:System.Messaging.Message.CorrelationId%2A> property of the response message to the <xref:System.Messaging.Message.Id%2A> property of the original message. The application reading the response message can then use the correlation identifier of the response message to identify the original message.  
+  
+   
+  
+## Examples  
+ The following code example sends and receives a message containing an order to and from a queue. It specifically requests a positive acknowledgment when the original message reaches or is retrieved from the queue.  
+  
+ [!code-cpp[Message.Acknowledgment#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.Acknowledgment/CPP/message_acknowledgment.cpp#1)]
+ [!code-csharp[Message.Acknowledgment#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.Acknowledgment/CS/message_acknowledgment.cs#1)]
+ [!code-vb[Message.Acknowledgment#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.Acknowledgment/VB/message_acknowledgment.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.Id" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InfiniteTimeout">
+      <MemberSignature Language="C#" Value="public static readonly TimeSpan InfiniteTimeout;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan InfiniteTimeout" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.Message.InfiniteTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that no time-out exists.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Messaging.Message.TimeToBeReceived%2A> and <xref:System.Messaging.Message.TimeToReachQueue%2A> require a value that specifies a time-out. For the former, the time-out is the maximum time allowed for a message to be received from the queue. For the latter, the time-out is the time allowed for a message to reach the queue. In both cases, you can specify the time-out as a number of seconds or use <xref:System.Messaging.Message.InfiniteTimeout> to indicate that no time-out exists.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of the <xref:System.Messaging.Message.InfiniteTimeout> field.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFirstInTransaction">
+      <MemberSignature Language="C#" Value="public bool IsFirstInTransaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFirstInTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.IsFirstInTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgIsFirstInTransaction")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the message was the first message sent in a transaction.</summary>
+        <value>
+          <see langword="true" /> if the message was the first message sent in a transaction; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Receiving applications use the <xref:System.Messaging.Message.IsFirstInTransaction%2A> property to verify that a message was the first message sent in a single transaction to a single queue.  
+  
+ This property is available only with Message Queuing version 2.0 and later.  
+  
+ To verify transaction boundaries, you can use the <xref:System.Messaging.Message.IsFirstInTransaction%2A> property along with two other properties: <xref:System.Messaging.Message.IsLastInTransaction%2A> and <xref:System.Messaging.Message.TransactionId%2A>. Use the former to check whether a message was the last message sent in the transaction, and use the latter to retrieve the identifier of the transaction.  
+  
+ If only one message is sent in a transaction, the <xref:System.Messaging.Message.IsFirstInTransaction%2A> and <xref:System.Messaging.Message.IsLastInTransaction%2A> properties are both set to `true`.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.IsFirstInTransaction%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.IsFirstInTransaction" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLastInTransaction">
+      <MemberSignature Language="C#" Value="public bool IsLastInTransaction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLastInTransaction" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.IsLastInTransaction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgIsLastInTransaction")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the message was the last message sent in a transaction.</summary>
+        <value>
+          <see langword="true" /> if the message was the last message sent in a single transaction; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Receiving applications use the <xref:System.Messaging.Message.IsLastInTransaction%2A> property to verify that a message was the last message sent in a single transaction to a single queue.  
+  
+ This property is available only with Message Queuing version 2.0 and later.  
+  
+ To verify transaction boundaries, you can use the <xref:System.Messaging.Message.IsLastInTransaction%2A> property along with two other properties: <xref:System.Messaging.Message.IsFirstInTransaction%2A> and <xref:System.Messaging.Message.TransactionId%2A>. Use the former to check whether a message was the first message sent in the transaction, and use the latter to retrieve the identifier of the transaction.  
+  
+ If only one message is sent in a transaction, the <xref:System.Messaging.Message.IsFirstInTransaction%2A> and <xref:System.Messaging.Message.IsLastInTransaction%2A> properties are both set to `true`.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.IsLastInTransaction%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.IsLastInTransaction" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="public string Label { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Label" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.Label" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgLabel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an application-defined Unicode string that describes the message.</summary>
+        <value>The label of the message. The default is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use a message label for several purposes. For example, you can use it for display purposes or to selectively process messages based on the label value. The label does not need to be unique across messages.  
+  
+ Message queue and message labels represent an application-defined value that can help identify the queue or message in human-readable terms. It is the responsibility of the application to interpret the label contents, which have no intrinsic meaning to the Message Queuing application.  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of a message's <xref:System.Messaging.Message.Label%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.Label" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="LookupId">
+      <MemberSignature Language="C#" Value="public long LookupId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 LookupId" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.LookupId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Introduced in MSMQ 3.0. Gets the message's lookup identifier.</summary>
+        <value>The message's lookup identifier, which is generated by Message Queuing and is unique to the queue where the message resides.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.LookupId%2A> property provides read-only access to a message's lookup identifier. The lookup identifier, introduced in MSMQ 3.0, is a 64-bit identifier that is generated by Message Queuing and assigned to each message when the message is placed in the queue. The lookup identifier is not the same as the message identifier that is generated when the message is sent.  
+  
+ Message Queuing generates a lookup identifier for all messages that are placed in any queue, including application-generated destination, administration, and report queues, as well as system-generated journal, dead-letter, connector, and outgoing queues. In other words, this includes both messages sent by sending applications and by Message Queuing. The lookup identifier is unique to the queue and has no meaning outside the queue.  
+  
+ If a message is sent to several destination queues, or if a copy of a message is stored in a computer journal or queue journal, each copy of the message will have its own lookup identifier when it is placed in its respective queue.  
+  
+ The <xref:System.Messaging.Message.LookupId%2A> property can only be read on messages retrieved from a queue.  
+  
+ A lookup identifier is used to read a specific message in the queue. Once the lookup identifier of a message is known, the receiving application can call the <xref:System.Messaging.MessageQueue.PeekByLookupId%2A> or <xref:System.Messaging.MessageQueue.ReceiveByLookupId%2A> function to go directly to that message and peek at or retrieve it from the queue, unlike cursors that must start at the front of the queue and navigate towards the end of the queue,  
+  
+ Obtaining the lookup identifiers of the messages in the queue is the responsibility of the application. One possible way to obtain the lookup identifiers is to create a trigger for the destination queue that invokes a component that caches the identifiers of each message as they are placed in the queue.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.PlatformNotSupportedException">MSMQ 3.0 is not installed.</exception>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.LookupId" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MessageType">
+      <MemberSignature Language="C#" Value="public System.Messaging.MessageType MessageType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.MessageType MessageType" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.MessageType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgMessageType")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the message type: <see langword="Normal" />, <see langword="Acknowledgment" />, or <see langword="Report" />.</summary>
+        <value>One of the <see cref="P:System.Messaging.Message.MessageType" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Message Queuing typically sets this property when it sends the message. A Message Queuing message can be one of the following types:  
+  
+-   `Normal`, which is either a typical message sent from an application to a queue, or a response message returned to the sending application.  
+  
+-   `Acknowledgement`, which Message Queuing generates whenever the sending application requests one. For example, Message Queuing can generate positive or negative messages to indicate that the original message arrived or was read. Message Queuing returns the appropriate acknowledgment message to the administration queue specified by the sending application.  
+  
+-   `Report`, which Message Queuing generates whenever a report queue is defined at the source Queue Manager. When tracing is enabled, Message Queuing sends a report message to the Message Queuing report queue each time the original message enters or leaves a Message Queuing server.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.MessageType%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.MessageType" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Priority">
+      <MemberSignature Language="C#" Value="public System.Messaging.MessagePriority Priority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.MessagePriority Priority" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.Priority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgPriority")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessagePriority</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the message priority, which determines where in the queue the message is placed.</summary>
+        <value>One of the <see cref="T:System.Messaging.MessagePriority" /> values, which represent the priority levels of non-transactional messages. The default is <see langword="Normal" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.Priority%2A> property affects how Message Queuing handles the message both while it is en route and once it reaches its destination. Higher-priority messages are given preference during routing and inserted toward the front of the destination queue. Messages with the same priority are placed in the queue according to their arrival time.  
+  
+ You can set a meaningful priority only for non-transactional messages. Message Queuing automatically sets the priority for transactional messages to `Lowest`, which causes transactional message priority to be ignored.  
+  
+   
+  
+## Examples  
+ The following code example sends two messages of different priorities to the queue, and retrieves them subsequently.  
+  
+ [!code-cpp[Message.DefaultPropertiesToSend#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/CPP/message_defaultandpriority.cpp#1)]
+ [!code-csharp[Message.DefaultPropertiesToSend#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/CS/message_defaultandpriority.cs#1)]
+ [!code-vb[Message.DefaultPropertiesToSend#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/Message.DefaultPropertiesToSend/VB/message_defaultandpriority.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.Priority" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Recoverable">
+      <MemberSignature Language="C#" Value="public bool Recoverable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Recoverable" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.Recoverable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgRecoverable")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the message is guaranteed to be delivered in the event of a computer failure or network problem.</summary>
+        <value>
+          <see langword="true" /> if delivery of the message is guaranteed (through saving the message to disk while en route); <see langword="false" /> if delivery is not assured. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.Recoverable%2A> property indicates whether the delivery of a message is guaranteed—even if a computer crashes while the message is en route to the destination queue.  
+  
+ If delivery of a message is guaranteed, the message is stored locally at every step along the route, until the message is successfully forwarded to the next computer. Setting the <xref:System.Messaging.Message.Recoverable%2A> property to `true` could affect throughput.  
+  
+ If the message is transactional, Message Queuing automatically treats the message as recoverable, regardless of the value of the <xref:System.Messaging.Message.Recoverable%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of a message's <xref:System.Messaging.Message.Recoverable%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.Recoverable" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ResponseQueue">
+      <MemberSignature Language="C#" Value="public System.Messaging.MessageQueue ResponseQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.MessageQueue ResponseQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.ResponseQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgResponseQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the queue that receives application-generated response messages.</summary>
+        <value>The <see cref="T:System.Messaging.MessageQueue" /> to which application-generated response messages are returned. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.ResponseQueue%2A> property identifies the queue that receives application-generated response messages, which the receiving application returns to the sending application. The sending application specifies response queues when the application sends its messages. Any available queue can be specified as a response queue.  
+  
+ Messages returned to the response queue are application-specific. The application must define the contents of the messages as well as the action to take upon receipt of a message.  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of a message's <xref:System.Messaging.Message.ResponseQueue%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.ResponseQueue" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityContext">
+      <MemberSignature Language="C#" Value="public System.Messaging.SecurityContext SecurityContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.SecurityContext SecurityContext" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.SecurityContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.SecurityContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the security context for a message.</summary>
+        <value>A <see cref="T:System.Messaging.SecurityContext" /> object that contains the security context for a message, if the property has previously been set; otherwise NULL.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderCertificate">
+      <MemberSignature Language="C#" Value="public byte[] SenderCertificate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SenderCertificate" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.SenderCertificate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgSenderCertificate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the security certificate used to authenticate messages.</summary>
+        <value>An array of byte values that represents a security certificate, which Message Queuing uses to verify the sender of the message. The default is a zero-length array.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The receiving application uses the <xref:System.Messaging.Message.SenderCertificate%2A> property when the message includes an external security certificate.  
+  
+ Message Queuing can authenticate a message using either an internal or external security certificate. Message Queuing provides internal certificates, which are used to verify message integrity. A certification authority provides an external certificate, which you can access through the <xref:System.Messaging.Message.SenderCertificate%2A> property of the message. In addition to allowing Message Queuing to authenticate the message, an external certificate allows the receiving application to further verify the sender. An internal certificate has no usable value to a receiving application.  
+  
+ An external certificate must be registered with the directory service of the Message Queuing system. An external certificate contains information about the certification authority, the certificate user, the validity period of the certificate, the public key of the certificate user, and the certification authority's signature.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.SenderCertificate" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderId">
+      <MemberSignature Language="C#" Value="public byte[] SenderId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SenderId" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.SenderId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgSenderId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the identifier of the sending user.</summary>
+        <value>An array of byte values that identifies the sender. The receiving Queue Manager uses the identifier when it authenticates the message to verify the sender of the message and the sender's access rights to the queue.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Messaging.Message.AttachSenderId%2A> property is `false`, the sender identifier specified in the <xref:System.Messaging.Message.SenderId%2A> property is not attached to the message when it is sent. This indicates to Message Queuing that the sender should not be validated when it sends the message to the destination queue. If the <xref:System.Messaging.Message.AttachSenderId%2A> property is `true`, the <xref:System.Messaging.Message.SenderId%2A> property value is trustworthy only if the message was authenticated. Use the <xref:System.Messaging.Message.Authenticated%2A> property in conjunction with the <xref:System.Messaging.Message.SenderId%2A> property to verify the sender's access rights.  
+  
+ A connector application is an application that uses a connector server to provide communication between Message Queuing and other queuing systems. Message Queuing requires connector applications to provide sender identification. You must set the <xref:System.Messaging.Message.ConnectorType%2A> property when sending a message through a connector application.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.SenderId" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SenderVersion">
+      <MemberSignature Language="C#" Value="public long SenderVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 SenderVersion" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.SenderVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgSenderVersion")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the version of Message Queuing used to send the message.</summary>
+        <value>The version of Message Queuing used to send the message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.SenderVersion%2A> property is important for certain features. For example, transaction processing is supported only by Message Queuing 2.0 and later, and digital signatures are used to authenticate messages sent by MSMQ 1.0.  
+  
+ The sending Queue Manager sets the <xref:System.Messaging.Message.SenderVersion%2A> property when the message is sent.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.SenderVersion%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.SenderVersion" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SentTime">
+      <MemberSignature Language="C#" Value="public DateTime SentTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime SentTime" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.SentTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgSentTime")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the date and time on the sending computer that the message was sent by the source queue manager.</summary>
+        <value>A <see cref="T:System.DateTime" /> that represents the time the message was sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.SentTime%2A> property is adjusted to the local time of the computer on which this instance of the <xref:System.Messaging.Message> class was created. This time zone could be different from those of the source and destination queues.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.SentTime%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.SentTime" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceMachine">
+      <MemberSignature Language="C#" Value="public string SourceMachine { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SourceMachine" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.SourceMachine" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgSourceMachine")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the computer from which the message originated.</summary>
+        <value>The name of the computer from which the message was sent.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The format of the <xref:System.Messaging.Message.SourceMachine%2A> property does not include preceding two forward slashes (\\\\). For example, `myServer` is a valid <xref:System.Messaging.Message.SourceMachine%2A>.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.SourceMachine%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.SourceMachine" /> property.</exception>
+        <exception cref="T:System.Messaging.MessageQueueException">The computer information or directory service could not be accessed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeToBeReceived">
+      <MemberSignature Language="C#" Value="public TimeSpan TimeToBeReceived { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimeToBeReceived" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.TimeToBeReceived" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Messaging.TimeoutConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgTimeToBeReceived")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum amount of time for the message to be received from the destination queue.</summary>
+        <value>The total time for a sent message to be received from the destination queue. The default is <see cref="F:System.Messaging.Message.InfiniteTimeout" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.TimeToBeReceived%2A> property specifies the total time for a sent message to be received from the destination queue. The time limit includes the time spent getting to the destination queue and the time spent waiting in the queue before the message is received.  
+  
+> [!CAUTION]
+>  When using dependent client computers, be sure the clock on the client computer is synchronized with the clock on the server that is running Message Queuing. Otherwise, unpredictable behavior might result when sending a message whose <xref:System.Messaging.Message.TimeToBeReceived%2A> property is not <xref:System.Messaging.Message.InfiniteTimeout>.  
+  
+ If the interval specified by the <xref:System.Messaging.Message.TimeToBeReceived%2A> property expires before the message is removed from the queue, Message Queuing discards the message in one of two ways. If the message's <xref:System.Messaging.Message.UseDeadLetterQueue%2A> property is `true`, the message is sent to the dead-letter queue. If <xref:System.Messaging.Message.UseDeadLetterQueue%2A> is `false`, the message is ignored.  
+  
+ You can set the message's <xref:System.Messaging.Message.AcknowledgeType%2A> property to request that Message Queuing send a negative acknowledgment message back to the sending application if the message is not retrieved before the timer expires.  
+  
+ If the value specified by the <xref:System.Messaging.Message.TimeToBeReceived%2A> property is less than the value specified by the <xref:System.Messaging.Message.TimeToReachQueue%2A> property, <xref:System.Messaging.Message.TimeToBeReceived%2A> takes precedence.  
+  
+ When several messages are sent in a single transaction, Message Queuing uses the <xref:System.Messaging.Message.TimeToBeReceived%2A> property of the first message.  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of a message's <xref:System.Messaging.Message.TimeToBeReceived%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.TimeToBeReceived" /> property.</exception>
+        <exception cref="T:System.ArgumentException">The value specified for <see cref="P:System.Messaging.Message.TimeToBeReceived" /> is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TimeToReachQueue">
+      <MemberSignature Language="C#" Value="public TimeSpan TimeToReachQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimeToReachQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.TimeToReachQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Messaging.TimeoutConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgTimeToReachQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum amount of time for the message to reach the queue.</summary>
+        <value>The time limit for the message to reach the destination queue, beginning from the time the message is sent. The default is <see cref="F:System.Messaging.Message.InfiniteTimeout" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the interval specified by the <xref:System.Messaging.Message.TimeToReachQueue%2A> property expires before the message reaches its destination, Message Queuing discards the message in one of two ways. If the message's <xref:System.Messaging.Message.UseDeadLetterQueue%2A> property is `true`, the message is sent to the dead-letter queue. If <xref:System.Messaging.Message.UseDeadLetterQueue%2A> is `false`, the message is ignored  
+  
+ You can set he message's <xref:System.Messaging.Message.AcknowledgeType%2A> property to request that Message Queuing send a negative acknowledgment message back to the sending application if the message does not arrive before the timer expires.  
+  
+ If the <xref:System.Messaging.Message.TimeToReachQueue%2A> property is set to 0 seconds, Message Queuing tries once to send the message to its destination—if the queue is waiting for the message. If the queue is local, the message always reaches it.  
+  
+ If the value specified by the <xref:System.Messaging.Message.TimeToReachQueue%2A> property is greater than the value specified by the <xref:System.Messaging.Message.TimeToBeReceived%2A> property, <xref:System.Messaging.Message.TimeToBeReceived%2A> takes precedence.  
+  
+ When several messages are sent in a single transaction, Message Queuing uses the <xref:System.Messaging.Message.TimeToReachQueue%2A> property of the first message.  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of a message's <xref:System.Messaging.Message.TimeToReachQueue%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.TimeToReachQueue" /> property.</exception>
+        <exception cref="T:System.ArgumentException">The value specified for <see cref="P:System.Messaging.Message.TimeToReachQueue" /> is invalid. It might represent a negative number.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionId">
+      <MemberSignature Language="C#" Value="public string TransactionId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TransactionId" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.TransactionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgTransactionId")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the identifier for the transaction of which the message was a part.</summary>
+        <value>The identifier for the transaction associated with the message.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Receiving applications use the <xref:System.Messaging.Message.TransactionId%2A> property to verify that a message was sent as part of a specific transaction. The transaction identifier contains the identifier of the sending computer (first 16 bits) followed by a 4-byte transaction sequence number.  
+  
+ This property is available only for Message Queuing version 2.0 and later.  
+  
+ Transaction identifiers are not guaranteed to be unique, because transaction sequence numbers are not persistent, and they start over again at 2 <sup>20</sup>. Message Queuing guarantees only that subsequent transactions will have different transaction sequence numbers.  
+  
+ You can use the <xref:System.Messaging.Message.TransactionId%2A> property along with the <xref:System.Messaging.Message.IsFirstInTransaction%2A> and <xref:System.Messaging.Message.IsLastInTransaction%2A> properties to verify transaction boundaries.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.TransactionId%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.TransactionId" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TransactionStatusQueue">
+      <MemberSignature Language="C#" Value="public System.Messaging.MessageQueue TransactionStatusQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.MessageQueue TransactionStatusQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.TransactionStatusQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgTransactionStatusQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Messaging.MessageQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the transaction status queue on the source computer.</summary>
+        <value>The transaction status queue on the source computer, which is used for sending acknowledgement messages back to the sending application. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.TransactionStatusQueue%2A> property identifies the transactional queue on the source computer that receives read-receipt acknowledgments from connector applications. Message Queuing sets the property, and connector applications use the property when retrieving transactional messages sent to foreign queues.  
+  
+ A foreign queue exists in a queuing system other than Microsoft Message Queuing. Message Queuing communicates with such queues through a connector application.  
+  
+ The connector application can use the transaction status queue to send acknowledgment messages back to the sending application. The transaction status queue should receive these acknowledgments even if the sending application does not request other acknowledgments.  
+  
+   
+  
+## Examples  
+ The following code example displays the value of a message's <xref:System.Messaging.Message.TransactionStatusQueue%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message has not been sent. This property can only be read on messages retrieved from a queue.  
+  
+ -or-  
+  
+ The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.TransactionStatusQueue" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseAuthentication">
+      <MemberSignature Language="C#" Value="public bool UseAuthentication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseAuthentication" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.UseAuthentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgUseAuthentication")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the message was (or must be) authenticated before being sent.</summary>
+        <value>
+          <see langword="true" /> if the sending application requested authentication for the message; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.UseAuthentication%2A> property specifies whether the message needs to be authenticated. If the sending application requests authentication, Message Queuing creates a digital signature and uses it to sign the message when it is sent and authenticate the message when it is received.  
+  
+ If <xref:System.Messaging.Message.UseAuthentication%2A> is `false` and a message is sent to a queue that accepts only authenticated messages, the message will be rejected when it reaches the queue.  
+  
+ You cannot determine if a message failed authentication by looking at its properties. Message Queuing discards such messages before they are delivered to the queue. However, you can request that an acknowledgment message be sent if a delivery failure prevents a message from arriving in the queue.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.UseAuthentication" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseDeadLetterQueue">
+      <MemberSignature Language="C#" Value="public bool UseDeadLetterQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseDeadLetterQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.UseDeadLetterQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgUseDeadLetterQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a copy of the message that could not be delivered should be sent to a dead-letter queue.</summary>
+        <value>
+          <see langword="true" /> if message-delivery failure should result in a copy of the message being sent to a dead-letter queue; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.UseJournalQueue%2A> and <xref:System.Messaging.Message.UseDeadLetterQueue%2A> properties specify how Message Queuing tracks a message. If <xref:System.Messaging.Message.UseDeadLetterQueue%2A> is `true`, delivery failure (of a non-transactional message), causes the message to be sent to the non-transactional dead-letter queue on the computer that could not deliver the message. Delivery failure could be caused by a message timer expiring, for example.  
+  
+ In the case of delivery failure for a transactional message, Message Queuing sends the message to the transactional dead-letter queue on the source machine in all negative and in-doubt cases.  
+  
+ When you store messages in a dead-letter queue, you should clear the queue periodically to remove messages that are no longer needed. Messages stored in dead-letter queues count against the size quota for the computer where the queue resides. The computer quota is set by the administrator and refers to the size allocated for storing messages on the whole computer, not just in a single queue.  
+  
+ You do not create a journal or dead-letter queue. These are both system queues that Message Queuing generates.  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of a message's <xref:System.Messaging.Message.UseDeadLetterQueue%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.UseDeadLetterQueue" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseEncryption">
+      <MemberSignature Language="C#" Value="public bool UseEncryption { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseEncryption" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.UseEncryption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgUseEncryption")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to make the message private.</summary>
+        <value>
+          <see langword="true" /> to require Message Queuing to encrypt the message; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a message is private, its body is encrypted before it is sent and decrypted when it is received. To send a private message, the sending application must specify that encryption be used and, optionally, the encryption algorithm.  
+  
+ When sending private messages, your application does not need to perform the message encryption. Message Queuing can encrypt the message body for you if your application is sending messages within a Microsoft Windows 2000 enterprise, which has access to the directory service. When receiving private messages, the receiving Queue Manager always decrypts the message body.  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of a message's <xref:System.Messaging.Message.UseEncryption%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.UseEncryption" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseJournalQueue">
+      <MemberSignature Language="C#" Value="public bool UseJournalQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseJournalQueue" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.UseJournalQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgUseJournalQueue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether a copy of the message should be kept in a machine journal on the originating computer.</summary>
+        <value>
+          <see langword="true" /> to require that a copy of a message be kept in the originating computer's machine journal after the message has been successfully transmitted (from the originating computer to the next server); otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.UseJournalQueue%2A> and <xref:System.Messaging.Message.UseDeadLetterQueue%2A> properties specify how Message Queuing tracks a message. If <xref:System.Messaging.Message.UseJournalQueue%2A> is `true`, then a copy is kept in the computer journal on the originating machine at each step that a message is transmitted.  
+  
+ The sent message is only copied to the journal queue if the destination queue is on a remote computer. If the destination is on the local computer, the message is sent directly to the queue; there are no intermediate steps to require journaling.  
+  
+ When you store messages in a journal queue, clear the queue periodically to remove messages that are no longer needed. Messages stored in journal queues count against the quota for the computer where the queue resides. (The computer quota is set by the administrator.)  
+  
+ You do not create a journal or dead-letter queue. These are both system queues that Message Queuing generates.  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of a message's <xref:System.Messaging.Message.UseJournalQueue%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.UseJournalQueue" /> property.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseTracing">
+      <MemberSignature Language="C#" Value="public bool UseTracing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseTracing" />
+      <MemberSignature Language="DocId" Value="P:System.Messaging.Message.UseTracing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ReadOnly(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Messaging.MessagingDescription("MsgUseTracing")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to trace a message as it moves toward its destination queue.</summary>
+        <value>
+          <see langword="true" /> if each intermediate step made by the original message en route to the destination queue generates a report to be sent to the system's report queue; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Messaging.Message.UseTracing%2A> property specifies whether to track the route of a message as it moves toward its destination queue. If `true`, a report message (generated by Message Queuing) is sent to a report queue each time the message passes through a Message Queuing routing server. The report queue is specified by the source Queue Manager. Report queues are not limited to report messages generated by Message Queuing; your application-generated messages can also be sent to report queues.  
+  
+ Using tracing involves setting up Active Directory and specifying a report queue for the Message Queuing enterprise. The administrator configures these settings.  
+  
+   
+  
+## Examples  
+ The following code example gets and sets the value of a message's <xref:System.Messaging.Message.UseTracing%2A> property.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The message queue is filtered to ignore the <see cref="P:System.Messaging.Message.UseTracing" /> property.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

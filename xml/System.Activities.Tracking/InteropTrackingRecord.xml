@@ -1,0 +1,99 @@
+<Type Name="InteropTrackingRecord" FullName="System.Activities.Tracking.InteropTrackingRecord">
+  <TypeSignature Language="C#" Value="public class InteropTrackingRecord : System.Activities.Tracking.CustomTrackingRecord" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InteropTrackingRecord extends System.Activities.Tracking.CustomTrackingRecord" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.InteropTrackingRecord" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Tracking.CustomTrackingRecord</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The WF3 Types are deprecated. Instead, please use the new WF4 Types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the data sent to tracking participants when tracked records occur in an <see cref="T:System.Activities.Statements.Interop" /> activity within a workflow.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected InteropTrackingRecord (System.Activities.Tracking.InteropTrackingRecord record);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Activities.Tracking.InteropTrackingRecord record) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.InteropTrackingRecord.#ctor(System.Activities.Tracking.InteropTrackingRecord)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="record" Type="System.Activities.Tracking.InteropTrackingRecord" />
+      </Parameters>
+      <Docs>
+        <param name="record">The tracking record.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.InteropTrackingRecord" /> class using the specified <see cref="T:System.Activities.Tracking.InteropTrackingRecord" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InteropTrackingRecord (string activityDisplayName, System.Workflow.Runtime.Tracking.TrackingRecord v1TrackingRecord);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string activityDisplayName, class System.Workflow.Runtime.Tracking.TrackingRecord v1TrackingRecord) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.InteropTrackingRecord.#ctor(System.String,System.Workflow.Runtime.Tracking.TrackingRecord)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activityDisplayName" Type="System.String" />
+        <Parameter Name="v1TrackingRecord" Type="System.Workflow.Runtime.Tracking.TrackingRecord" />
+      </Parameters>
+      <Docs>
+        <param name="activityDisplayName">The activity name</param>
+        <param name="v1TrackingRecord">The tracking record of the <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Tracking.InteropTrackingRecord" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="protected override System.Activities.Tracking.TrackingRecord Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Activities.Tracking.TrackingRecord Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.InteropTrackingRecord.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Tracking.TrackingRecord</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a copy of the <see cref="T:System.Activities.Tracking.InteropTrackingRecord" />.</summary>
+        <returns>A copy of the <see cref="T:System.Activities.Tracking.InteropTrackingRecord" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackingRecord">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.TrackingRecord TrackingRecord { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.TrackingRecord TrackingRecord" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.InteropTrackingRecord.TrackingRecord" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingRecord</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Returns a tracking record that represents the data sent to tracking participants when tracked events occur.</summary>
+        <value>The data sent to tracking participants when tracked events occur.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

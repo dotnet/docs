@@ -1,0 +1,397 @@
+<Type Name="DsmlSoapHttpConnection" FullName="System.DirectoryServices.Protocols.DsmlSoapHttpConnection">
+  <TypeSignature Language="C#" Value="public class DsmlSoapHttpConnection : System.DirectoryServices.Protocols.DsmlSoapConnection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DsmlSoapHttpConnection extends System.DirectoryServices.Protocols.DsmlSoapConnection" />
+  <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" />
+  <AssemblyInfo>
+    <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.DirectoryServices.Protocols.DsmlSoapConnection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The <see cref="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" /> class represents a connection to a DSML Gateway using SOAP over HTTP.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DsmlSoapHttpConnection (System.DirectoryServices.Protocols.DsmlDirectoryIdentifier identifier);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.Protocols.DsmlDirectoryIdentifier identifier) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.DirectoryServices.Protocols.DsmlDirectoryIdentifier)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identifier" Type="System.DirectoryServices.Protocols.DsmlDirectoryIdentifier" />
+      </Parameters>
+      <Docs>
+        <param name="identifier">A <see cref="T:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier" /> object that specifies server for the connection.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.DirectoryServices.Protocols.DsmlDirectoryIdentifier)" /> constructor initializes a new instance of a <see cref="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identifier" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DsmlSoapHttpConnection (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">A <see cref="T:System.Uri" /> object that specifies server for the connection.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.Uri)" /> constructor initializes a new instance of a <see cref="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="uri" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DsmlSoapHttpConnection (System.DirectoryServices.Protocols.DsmlDirectoryIdentifier identifier, System.Net.NetworkCredential credential);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.Protocols.DsmlDirectoryIdentifier identifier, class System.Net.NetworkCredential credential) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.DirectoryServices.Protocols.DsmlDirectoryIdentifier,System.Net.NetworkCredential)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identifier" Type="System.DirectoryServices.Protocols.DsmlDirectoryIdentifier" />
+        <Parameter Name="credential" Type="System.Net.NetworkCredential" />
+      </Parameters>
+      <Docs>
+        <param name="identifier">A <see cref="T:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier" /> object that specifies server for the connection.</param>
+        <param name="credential">A <see cref="T:System.Net.NetworkCredential" /> object that contains the network credentials.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.DirectoryServices.Protocols.DsmlDirectoryIdentifier,System.Net.NetworkCredential)" /> constructor initializes a new instance of a <see cref="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identifier" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DsmlSoapHttpConnection (System.DirectoryServices.Protocols.DsmlDirectoryIdentifier identifier, System.Net.NetworkCredential credential, System.DirectoryServices.Protocols.AuthType authType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.Protocols.DsmlDirectoryIdentifier identifier, class System.Net.NetworkCredential credential, valuetype System.DirectoryServices.Protocols.AuthType authType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.DirectoryServices.Protocols.DsmlDirectoryIdentifier,System.Net.NetworkCredential,System.DirectoryServices.Protocols.AuthType)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="identifier" Type="System.DirectoryServices.Protocols.DsmlDirectoryIdentifier" />
+        <Parameter Name="credential" Type="System.Net.NetworkCredential" />
+        <Parameter Name="authType" Type="System.DirectoryServices.Protocols.AuthType" />
+      </Parameters>
+      <Docs>
+        <param name="identifier">A <see cref="T:System.DirectoryServices.Protocols.DsmlDirectoryIdentifier" /> object that specifies the server for the connection.</param>
+        <param name="credential">A <see cref="T:System.Net.NetworkCredential" /> object that contains the Network Credentials.</param>
+        <param name="authType">The <see cref="T:System.DirectoryServices.Protocols.AuthType" /> value that specifies the authentication type to use for this connection.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.#ctor(System.DirectoryServices.Protocols.DsmlDirectoryIdentifier,System.Net.NetworkCredential,System.DirectoryServices.Protocols.AuthType)" /> constructor creates and initializes a new instance of a <see cref="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" /> class using the specified identifier, network credentials, and authentication type.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="identifier" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="authType" /> value is not one of the DSML supported values. DSML only supports Anonymous, Ntlm, Basic, Negotiate and digest.</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="authType" /> value is not one of the constants defined in the <see cref="T:System.DirectoryServices.Protocols.AuthType" /> enumeration.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">Demand value: <see cref="F:System.Security.Permissions.SecurityAction.Demand" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Abort">
+      <MemberSignature Language="C#" Value="public void Abort (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abort(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.Abort(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">An object derived from <see cref="T:System.IAsyncResult" /> that references the asynchronous request.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.Abort(System.IAsyncResult)" /> method cancels the asynchronous request.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="asyncResult" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="asyncResult" /> was not returned by the corresponding call to <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.BeginSendRequest(System.DirectoryServices.Protocols.DsmlRequestDocument,System.AsyncCallback,System.Object)" />.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
+          <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
+        </permission>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthType">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.AuthType AuthType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.AuthType AuthType" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.AuthType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.AuthType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.AuthType" /> property contains one of the values of <see cref="T:System.DirectoryServices.Protocols.AuthType" /> enumeration that specifies the authentication type.</summary>
+        <value>One of the values of <see cref="T:System.DirectoryServices.Protocols.AuthType" /> enumeration that specifies the authentication type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginSendRequest">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginSendRequest (System.DirectoryServices.Protocols.DsmlRequestDocument request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSendRequest(class System.DirectoryServices.Protocols.DsmlRequestDocument request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.BeginSendRequest(System.DirectoryServices.Protocols.DsmlRequestDocument,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.DirectoryServices.Protocols.DsmlRequestDocument" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> object to send.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> function.</param>
+        <param name="state">An <see cref="T:System.Object" /> that contains the state data for this request.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.BeginSendRequest(System.DirectoryServices.Protocols.DsmlRequestDocument,System.AsyncCallback,System.Object)" /> method begins asynchronously sending the specified <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> object to the server.</summary>
+        <returns>An object derived from <see cref="T:System.IAsyncResult" /> that references the asynchronous send.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="request" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
+          <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
+        </permission>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginSession">
+      <MemberSignature Language="C#" Value="public override void BeginSession ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void BeginSession() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.BeginSession" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.BeginSession" /> method instructs the DSML server to start a new session.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method will block while waiting for a response from the DSML server and will time out according to the <xref:System.DirectoryServices.Protocols.DirectoryConnection.Timeout%2A> property.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when a session is already open on the connection.</exception>
+        <exception cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException">Thrown when the XML returned from the Server in response to the <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.BeginSession" /> is not well-formed.</exception>
+        <exception cref="T:System.Net.WebException">Thrown when there is a communications failure with the DSML server or when the server is out of available sessions.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
+          <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
+        </permission>
+      </Docs>
+    </Member>
+    <Member MemberName="EndSendRequest">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DsmlResponseDocument EndSendRequest (IAsyncResult asyncResult);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.Protocols.DsmlResponseDocument EndSendRequest(class System.IAsyncResult asyncResult) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.EndSendRequest(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DsmlResponseDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="asyncResult" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="asyncResult">An object derived from <see cref="T:System.IAsyncResult" /> that contains state data for this request.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.EndSendRequest(System.IAsyncResult)" /> method completes an asynchronous send request.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" /> object that contains the results of the request.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">Thrown if <paramref name="asyncResult" /> was not returned by the current instance from a call to <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.BeginSendRequest(System.DirectoryServices.Protocols.DsmlRequestDocument,System.AsyncCallback,System.Object)" />.</exception>
+        <exception cref="T:System.IO.IOException">The request did not complete. No stream is available.</exception>
+        <exception cref="T:System.DirectoryServices.Protocols.DsmlInvalidDocumentException">Thrown when the response returned by server is not valid.</exception>
+        <exception cref="T:System.Net.WebException">Thrown when abort was previously called or when an error occurred while processing the request.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndSession">
+      <MemberSignature Language="C#" Value="public override void EndSession ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndSession() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.EndSession" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.EndSession" /> method ends the session with the DSML server and clears the <see cref="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SessionId" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method will block while waiting for a response from the DSML server and will time out according to the <xref:System.DirectoryServices.Protocols.DirectoryConnection.Timeout%2A> property.  
+  
+ If the DSML server has already terminated the session on its own, a <xref:System.Net.WebException> will be thrown.  If the <xref:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SessionId%2A> is still valid after the exception is thrown, the request never reached the server and the connection is still considered valid.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Net.WebException">Thrown when there is a communications failure with the DSML server.</exception>
+        <exception cref="T:System.InvalidOperationException">Thrown when there is no open session.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
+          <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
+        </permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SendRequest">
+      <MemberSignature Language="C#" Value="public override System.DirectoryServices.Protocols.DirectoryResponse SendRequest (System.DirectoryServices.Protocols.DirectoryRequest request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.DirectoryServices.Protocols.DirectoryResponse SendRequest(class System.DirectoryServices.Protocols.DirectoryRequest request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SendRequest(System.DirectoryServices.Protocols.DirectoryRequest)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DirectoryResponse</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.DirectoryServices.Protocols.DirectoryRequest" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object that contains the request.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SendRequest(System.DirectoryServices.Protocols.DirectoryRequest)" /> method sends a single <see cref="T:System.DirectoryServices.Protocols.DirectoryRequest" /> object.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.Protocols.DirectoryResponse" /> object that contains the results of the request.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="request" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
+        <exception cref="T:System.DirectoryServices.Protocols.ErrorResponseException">The DSML server returned an error response.</exception>
+        <exception cref="T:System.DirectoryServices.Protocols.DirectoryOperationException">The operation returned a failure code.</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
+          <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
+        </permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SendRequest">
+      <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DsmlResponseDocument SendRequest (System.DirectoryServices.Protocols.DsmlRequestDocument request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.Protocols.DsmlResponseDocument SendRequest(class System.DirectoryServices.Protocols.DsmlRequestDocument request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SendRequest(System.DirectoryServices.Protocols.DsmlRequestDocument)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DirectoryServices.Protocols.DsmlResponseDocument</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.DirectoryServices.Protocols.DsmlRequestDocument" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> object sent to the server.</param>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SendRequest(System.DirectoryServices.Protocols.DsmlRequestDocument)" /> method sends a <see cref="T:System.DirectoryServices.Protocols.DsmlRequestDocument" /> object to the DSML server.</summary>
+        <returns>A <see cref="T:System.DirectoryServices.Protocols.DsmlResponseDocument" /> object that contains the results of the request.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="request" /> is null (<see langword="Nothing" /> in Visual Basic).</exception>
+        <permission cref="T:System.DirectoryServices.DirectoryServicesPermission">
+          <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />
+        </permission>
+      </Docs>
+    </Member>
+    <Member MemberName="SessionId">
+      <MemberSignature Language="C#" Value="public override string SessionId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SessionId" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SessionId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SessionId" /> property contains the active session ID.</summary>
+        <value>The active session ID.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SoapActionHeader">
+      <MemberSignature Language="C#" Value="public string SoapActionHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SoapActionHeader" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SoapActionHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.SoapActionHeader" /> property contains the SOAP Action Header sent with other HTTP headers.</summary>
+        <value>The SOAP Action Header sent with other HTTP headers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is "#batchRequest".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public override TimeSpan Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Timeout" />
+      <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.DirectoryServices.Protocols.DsmlSoapHttpConnection.Timeout" /> property contains the length of time, in seconds, before the <see cref="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" /> times out.</summary>
+        <value>The length of time, in seconds, before the <see cref="T:System.DirectoryServices.Protocols.DsmlSoapHttpConnection" /> times out.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

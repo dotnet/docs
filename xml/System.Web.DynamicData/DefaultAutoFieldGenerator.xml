@@ -1,0 +1,111 @@
+<Type Name="DefaultAutoFieldGenerator" FullName="System.Web.DynamicData.DefaultAutoFieldGenerator">
+  <TypeSignature Language="C#" Value="public class DefaultAutoFieldGenerator : System.Web.UI.IAutoFieldGenerator" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DefaultAutoFieldGenerator extends System.Object implements class System.Web.UI.IAutoFieldGenerator" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DefaultAutoFieldGenerator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IAutoFieldGenerator</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Generates dynamic data fields (columns) for data-bound controls automatically.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override the <xref:System.Web.DynamicData.DefaultAutoFieldGenerator> class to customize how Dynamic Data generates data fields.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DefaultAutoFieldGenerator (System.Web.DynamicData.MetaTable table);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.DynamicData.MetaTable table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DefaultAutoFieldGenerator.#ctor(System.Web.DynamicData.MetaTable)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" />
+      </Parameters>
+      <Docs>
+        <param name="table">The metadata for the table to generate dynamic fields for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DefaultAutoFieldGenerator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.DefaultAutoFieldGenerator.%23ctor%2A> constructor calls the <xref:System.Web.DynamicData.MetaTable.GetScaffoldColumns%2A> method to generate fields dynamically.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The table is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateField">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.DynamicData.DynamicField CreateField (System.Web.DynamicData.MetaColumn column, System.Web.DynamicData.ContainerType containerType, System.Web.UI.WebControls.DataBoundControlMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.DynamicData.DynamicField CreateField(class System.Web.DynamicData.MetaColumn column, valuetype System.Web.DynamicData.ContainerType containerType, valuetype System.Web.UI.WebControls.DataBoundControlMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DefaultAutoFieldGenerator.CreateField(System.Web.DynamicData.MetaColumn,System.Web.DynamicData.ContainerType,System.Web.UI.WebControls.DataBoundControlMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.DynamicField</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Web.DynamicData.MetaColumn" />
+        <Parameter Name="containerType" Type="System.Web.DynamicData.ContainerType" />
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
+      </Parameters>
+      <Docs>
+        <param name="column">The metadata for the column to create the dynamic field for.</param>
+        <param name="containerType">The data-bound control that contains the dynamic field.</param>
+        <param name="mode">The access mode for the dynamic field.</param>
+        <summary>Generates a dynamic data field.</summary>
+        <returns>The dynamic field to create.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can override this method to customize dynamic-field options such as the access mode. The access <xref:System.Web.UI.WebControls.DataBoundControlMode> mode specifies the data-entry modes for a data field, such as `ReadOnly`, `Edit`, and `Insert`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateFields">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection GenerateFields (System.Web.UI.Control control);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GenerateFields(class System.Web.UI.Control control) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DefaultAutoFieldGenerator.GenerateFields(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="control" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="control">The data-bound control that contains the dynamic data field.</param>
+        <summary>Generates <see cref="T:System.Web.DynamicData.DynamicField" /> objects based on metadata information for the table.</summary>
+        <returns>A collection of <see cref="T:System.Web.DynamicData.DynamicField" /> objects.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

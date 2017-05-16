@@ -1,0 +1,164 @@
+<Type Name="PrintThreadPriorityProperty" FullName="System.Printing.IndexedProperties.PrintThreadPriorityProperty">
+  <TypeSignature Language="C#" Value="public sealed class PrintThreadPriorityProperty : System.Printing.IndexedProperties.PrintProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintThreadPriorityProperty extends System.Printing.IndexedProperties.PrintProperty" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Printing.IndexedProperties.PrintProperty</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a <see cref="T:System.Threading.ThreadPriority" /> property (and its value) of a printing system hardware or software component.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintThreadPriorityProperty (string attributeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintThreadPriorityProperty.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="attributeName">The name of the <see cref="T:System.Threading.ThreadPriority" /> property that the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> class for the specified property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Threading.ThreadPriority> property of a print system object, including casing. For example, the <xref:System.Printing.PrintServer.PortThreadPriority%2A> property of a <xref:System.Printing.PrintServer> object must be spelled "PortThreadPriority", not "ThreadPriority" or "Portthreadpriority".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintThreadPriorityProperty (string attributeName, object attributeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName, object attributeValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintThreadPriorityProperty.#ctor(System.String,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeName" Type="System.String" />
+        <Parameter Name="attributeValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="attributeName">The name of the <see cref="T:System.Threading.ThreadPriority" /> property that the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> represents.</param>
+        <param name="attributeValue">The value of the property that the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> class that has the specified value for the specified property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Threading.ThreadPriority> property of a print system object, including casing. For example, the <xref:System.Printing.PrintServer.PortThreadPriority%2A> property of a <xref:System.Printing.PrintServer> object must be spelled "PortThreadPriority", not "ThreadPriority" or "Portthreadpriority".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalDispose">
+      <MemberSignature Language="C#" Value="protected override sealed void InternalDispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InternalDispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintThreadPriorityProperty.InternalDispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptions</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static System.Threading.ThreadPriority op_Implicit (System.Printing.IndexedProperties.PrintThreadPriorityProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Threading.ThreadPriority op_Implicit(class System.Printing.IndexedProperties.PrintThreadPriorityProperty attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintThreadPriorityProperty.op_Implicit(System.Printing.IndexedProperties.PrintThreadPriorityProperty)~System.Threading.ThreadPriority" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.ThreadPriority</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintThreadPriorityProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static System.Threading.ThreadPriority op_Implicit (System.Printing.IndexedProperties.PrintThreadPriorityProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Threading.ThreadPriority op_Implicit(class System.Printing.IndexedProperties.PrintThreadPriorityProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintThreadPriorityProperty.op_Implicit(System.Printing.IndexedProperties.PrintThreadPriorityProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Threading.ThreadPriority" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.ThreadPriority</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintThreadPriorityProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintThreadPriorityProperty.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>set: System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the property that the <see cref="T:System.Printing.IndexedProperties.PrintThreadPriorityProperty" /> represents.</summary>
+        <value>A boxed <see cref="T:System.Threading.ThreadPriority" /> value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

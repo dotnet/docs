@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 589f2adc-69f9-404d-b9d6-4c28dabea7f7
 caps.latest.revision: 4
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Performance of Chained Queries (LINQ to XML) (Visual Basic)

@@ -1,0 +1,144 @@
+<Type Name="OutputCache" FullName="System.Web.Caching.OutputCache">
+  <TypeSignature Language="C#" Value="public static class OutputCache" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit OutputCache extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Caching.OutputCache" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides programmatic access to the output-cache providers that are specified in the configuration file for a Web site.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Output caching stores the generated output of pages, controls, and HTTP responses in memory. Output caching enables you to cache different versions of content depending on the query string and on form-post parameters to a page, on browser type, or on the language of the user. You can configure ASP.NET to cache an output-cache entry for a specific period. You can also configure ASP.NET to evict a cache entry automatically based on an external event such as changes in the database that the cache depends on.  
+  
+ The <xref:System.Web.Caching.OutputCache> class enables you to extend output caching. For example, you can configure one or more custom output-cache providers that target other storage devices such as local or remote disks, databases, cloud storage, and distributed cache engines.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DefaultProviderName">
+      <MemberSignature Language="C#" Value="public static string DefaultProviderName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property string DefaultProviderName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Caching.OutputCache.DefaultProviderName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the default provider that is configured for the output cache.</summary>
+        <value>The name of the default provider.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, all HTTP responses, rendered pages, and controls use `AspNetInternalProvider`, the in-memory output cache provider. To use a different provider, set the `defaultProvider` attribute to the name of the alternative provider.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="public static object Deserialize (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Deserialize(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCache.Deserialize(System.IO.Stream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The data to deserialize.</param>
+        <summary>Deserializes a binary object into output-cache data.</summary>
+        <returns>An object that contains the deserialized data.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used by output-cache providers that are operating under partial trust.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The deserialized object that is returned by the method is not a valid output-cache type.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="stream" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public static System.Web.Caching.OutputCacheProviderCollection Providers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.Caching.OutputCacheProviderCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Caching.OutputCache.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Caching.OutputCacheProviderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the output-cache providers that are specified in the configuration file for a Web site.</summary>
+        <value>The collection of configured providers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You configure one or more custom output-cache providers that target other storage devices, such as local or remote disks, databases, cloud storage, and distributed cache engines. To configure custom output-cache providers, you add a provider to the collection that is represented by the <xref:System.Web.Caching.OutputCache.Providers%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="public static void Serialize (System.IO.Stream stream, object data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Serialize(class System.IO.Stream stream, object data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCache.Serialize(System.IO.Stream,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+        <Parameter Name="data" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The object to contain the serialized binary data.</param>
+        <param name="data">The output-cache data to serialize.</param>
+        <summary>Serializes output-cache data into binary data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is used by output-cache providers that are operating under partial trust.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="data" /> is not one of the specified output-cache types.</exception>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="data" /> is <see langword="null" /> or <paramref name="stream" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

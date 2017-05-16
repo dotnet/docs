@@ -1,0 +1,70 @@
+<Type Name="KeyTypes" FullName="System.IdentityModel.Protocols.WSTrust.KeyTypes">
+  <TypeSignature Language="C#" Value="public static class KeyTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit KeyTypes extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.KeyTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines protocol-agnostic URIs that are used in the token request (RST) or response (RSTR) to indicate the desired or required key type.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Asymmetric">
+      <MemberSignature Language="C#" Value="public const string Asymmetric;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Asymmetric" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.KeyTypes.Asymmetric" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A URI that represents the asymmetric key type; http://schemas.System.com/idfx/keytype/asymmetric.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bearer">
+      <MemberSignature Language="C#" Value="public const string Bearer;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Bearer" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.KeyTypes.Bearer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A URI that represents the bearer key type; http://schemas.System.com/idfx/keytype/bearer.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Symmetric">
+      <MemberSignature Language="C#" Value="public const string Symmetric;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string Symmetric" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Protocols.WSTrust.KeyTypes.Symmetric" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A URI that represents the symmetric key type; http://schemas.System.com/idfx/keytype/symmetric.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

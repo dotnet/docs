@@ -1,0 +1,92 @@
+<Type Name="IDesignerDataSchema" FullName="System.ComponentModel.Design.Data.IDesignerDataSchema">
+  <TypeSignature Language="C#" Value="public interface IDesignerDataSchema" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignerDataSchema" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.IDesignerDataSchema" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines methods for retrieving data-store schema information.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that implement the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema> interface retrieve schema information from a data store and return it to the user interface, typically to populate UI elements that enable the user to specify the data-store object that they  want to work with.  
+  
+ The <xref:System.ComponentModel.Design.Data.IDesignerDataSchema> interface provides two methods: the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.GetSchemaItems%2A> method, which returns the requested schema objects, and the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.SupportsSchemaClass%2A> method, which indicates whether a specified data-schema object is supported by the data store.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSchemaItems">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection GetSchemaItems (System.ComponentModel.Design.Data.DesignerDataSchemaClass schemaClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetSchemaItems(class System.ComponentModel.Design.Data.DesignerDataSchemaClass schemaClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.IDesignerDataSchema.GetSchemaItems(System.ComponentModel.Design.Data.DesignerDataSchemaClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schemaClass" Type="System.ComponentModel.Design.Data.DesignerDataSchemaClass" />
+      </Parameters>
+      <Docs>
+        <param name="schemaClass">The schema objects to return.</param>
+        <summary>Gets a collection of specified schema items.</summary>
+        <returns>A collection of schema objects of the specified type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.GetSchemaItems%2A> method returns a collection of all the specified schema objects in the data store.  
+  
+ See the <xref:System.ComponentModel.Design.Data.DesignerDataSchemaClass> class for the list of schema objects supported by the .NET Framework. Additional schema objects can be added to the <xref:System.ComponentModel.Design.Data.DesignerDataSchemaClass> class by creating a derived type.  
+  
+ If the data store does not support the requested schema object, the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.GetSchemaItems%2A> method should return `null`. You can use the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.SupportsSchemaClass%2A> method to determine whether a data store supports the requested schema object before calling the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.GetSchemaItems%2A> method, to avoid returning `null` to your application.  
+  
+ If the data store supports the requested object, but does not contain any instances, the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.GetSchemaItems%2A> method should return an empty collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsSchemaClass">
+      <MemberSignature Language="C#" Value="public bool SupportsSchemaClass (System.ComponentModel.Design.Data.DesignerDataSchemaClass schemaClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsSchemaClass(class System.ComponentModel.Design.Data.DesignerDataSchemaClass schemaClass) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.IDesignerDataSchema.SupportsSchemaClass(System.ComponentModel.Design.Data.DesignerDataSchemaClass)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="schemaClass" Type="System.ComponentModel.Design.Data.DesignerDataSchemaClass" />
+      </Parameters>
+      <Docs>
+        <param name="schemaClass">The schema objects to return.</param>
+        <summary>Returns a value indicating whether the data store contains the specified data-schema object.</summary>
+        <returns>
+          <see langword="true" /> if the data store supports the specified data-schema object; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.SupportsSchemaClass%2A> method indicates whether the data store supports a specified data-schema object. If the data store does not support the specified object, the <xref:System.ComponentModel.Design.Data.IDesignerDataSchema.SupportsSchemaClass%2A> method should return `false`.  
+  
+ You can add tests for additional data-schema objects by deriving from the <xref:System.ComponentModel.Design.Data.DesignerDataSchemaClass> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

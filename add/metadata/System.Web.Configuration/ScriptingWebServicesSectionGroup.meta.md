@@ -1,0 +1,35 @@
+---
+uid: System.Web.Configuration.ScriptingWebServicesSectionGroup
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.ScriptingWebServicesSectionGroup.ProfileService
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.ScriptingWebServicesSectionGroup.#ctor
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.ScriptingWebServicesSectionGroup.AuthenticationService
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.ScriptingWebServicesSectionGroup.JsonSerialization
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.ScriptingWebServicesSectionGroup.RoleService
+ms.author: "riande"
+manager: "wpickett"
+---

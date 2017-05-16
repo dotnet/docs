@@ -1,0 +1,26 @@
+<Type Name="GroupStyleSelector" FullName="System.Windows.Controls.GroupStyleSelector">
+  <TypeSignature Language="C#" Value="public delegate System.Windows.Controls.GroupStyle GroupStyleSelector(CollectionViewGroup group, int level);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GroupStyleSelector extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GroupStyleSelector" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="group" Type="System.Windows.Data.CollectionViewGroup" />
+    <Parameter Name="level" Type="System.Int32" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Windows.Controls.GroupStyle</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="group">Group whose style is to be selected.</param>
+    <param name="level">Level of the group.</param>
+    <summary>Delegate used to select the group style as a function of the parent group and its level.</summary>
+    <returns>The appropriate group style.</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

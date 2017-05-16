@@ -1,0 +1,243 @@
+<Type Name="AssociatedMetadataProvider" FullName="System.Web.ModelBinding.AssociatedMetadataProvider">
+  <TypeSignature Language="C#" Value="public abstract class AssociatedMetadataProvider : System.Web.ModelBinding.ModelMetadataProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AssociatedMetadataProvider extends System.Web.ModelBinding.ModelMetadataProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.AssociatedMetadataProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.ModelBinding.ModelMetadataProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an abstract class to implement a metadata provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A metadata provider provides metadata for a model. Metadata providers must derive from <xref:System.Web.ModelBinding.ModelMetadataProvider>. You can inherit from this class if you want to use a custom validator or a third-party validator that uses attribute-based metadata.  
+  
+ This class implements the abstract methods of the <xref:System.Web.ModelBinding.ModelMetadataProvider> class and contains additional abstract methods. When you implement this class, use the <xref:System.Web.ModelBinding.AssociatedValidatorProvider> class to implement the validator.  
+  
+ Model provider classes and validator provider classes are loosely coupled. Therefore, they work independently and have no dependencies on each other.  
+  
+ However, the metadata provider exposes metadata that can be accessed and used by validation providers. For example, the default metadata provider (the <xref:System.Web.ModelBinding.DataAnnotationsModelMetadataProvider> class) reads the display name of an object. This display name is used by the <xref:System.Web.ModelBinding.DataAnnotationsModelValidatorProvider> validation provider when it creates a validation error message.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AssociatedMetadataProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>When overridden in a derived class, initializes a new instance of the class that derives from the <see cref="T:System.Web.ModelBinding.AssociatedMetadataProvider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateMetadata">
+      <MemberSignature Language="C#" Value="protected abstract System.Web.ModelBinding.ModelMetadata CreateMetadata (System.Collections.Generic.IEnumerable&lt;Attribute&gt; attributes, Type containerType, Func&lt;object&gt; modelAccessor, Type modelType, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.ModelBinding.ModelMetadata CreateMetadata(class System.Collections.Generic.IEnumerable`1&lt;class System.Attribute&gt; attributes, class System.Type containerType, class System.Func`1&lt;object&gt; modelAccessor, class System.Type modelType, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.CreateMetadata(System.Collections.Generic.IEnumerable{System.Attribute},System.Type,System.Func{System.Object},System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributes" Type="System.Collections.Generic.IEnumerable&lt;System.Attribute&gt;" />
+        <Parameter Name="containerType" Type="System.Type" />
+        <Parameter Name="modelAccessor" Type="System.Func&lt;System.Object&gt;" />
+        <Parameter Name="modelType" Type="System.Type" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="attributes">The attributes.</param>
+        <param name="containerType">The type of the container, or <see langword="null" /> if there is no container.</param>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="modelType">The type of the model.</param>
+        <param name="propertyName">The name of the property, or <see langword="null" /> if the model is not a property.</param>
+        <summary>When overridden in a derived class, creates metadata for a model.</summary>
+        <returns>Metadata for a model.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FilterAttributes">
+      <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IEnumerable&lt;Attribute&gt; FilterAttributes (Type containerType, System.ComponentModel.PropertyDescriptor propertyDescriptor, System.Collections.Generic.IEnumerable&lt;Attribute&gt; attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Attribute&gt; FilterAttributes(class System.Type containerType, class System.ComponentModel.PropertyDescriptor propertyDescriptor, class System.Collections.Generic.IEnumerable`1&lt;class System.Attribute&gt; attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.FilterAttributes(System.Type,System.ComponentModel.PropertyDescriptor,System.Collections.Generic.IEnumerable{System.Attribute})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Attribute&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containerType" Type="System.Type" />
+        <Parameter Name="propertyDescriptor" Type="System.ComponentModel.PropertyDescriptor" />
+        <Parameter Name="attributes" Type="System.Collections.Generic.IEnumerable&lt;System.Attribute&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="containerType">The type of the container.</param>
+        <param name="propertyDescriptor">The property descriptor.</param>
+        <param name="attributes">The attributes.</param>
+        <summary>Enables derived classes to filter the list of attributes.</summary>
+        <returns>A list of attributes.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The code in the <xref:System.Web.ModelBinding.AssociatedMetadataProvider> base class returns all attributes. This method lets derived classes filter the attributes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadataForProperties">
+      <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelMetadata&gt; GetMetadataForProperties (object container, Type containerType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelMetadata&gt; GetMetadataForProperties(object container, class System.Type containerType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.GetMetadataForProperties(System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelMetadata&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Object" />
+        <Parameter Name="containerType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="container">The container.</param>
+        <param name="containerType">The type of the container.</param>
+        <summary>When overridden in a derived class, returns metadata for all properties.</summary>
+        <returns>Metadata for all properties.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="containerType" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadataForProperty">
+      <MemberSignature Language="C#" Value="protected virtual System.Web.ModelBinding.ModelMetadata GetMetadataForProperty (Func&lt;object&gt; modelAccessor, Type containerType, System.ComponentModel.PropertyDescriptor propertyDescriptor);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.ModelBinding.ModelMetadata GetMetadataForProperty(class System.Func`1&lt;object&gt; modelAccessor, class System.Type containerType, class System.ComponentModel.PropertyDescriptor propertyDescriptor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.GetMetadataForProperty(System.Func{System.Object},System.Type,System.ComponentModel.PropertyDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelAccessor" Type="System.Func&lt;System.Object&gt;" />
+        <Parameter Name="containerType" Type="System.Type" />
+        <Parameter Name="propertyDescriptor" Type="System.ComponentModel.PropertyDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="containerType">The type of the container.</param>
+        <param name="propertyDescriptor">The property descriptor.</param>
+        <summary>When overridden in a derived class, returns metadata for a property specified by a property descriptor object.</summary>
+        <returns>Metadata for the specified property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadataForProperty">
+      <MemberSignature Language="C#" Value="public override System.Web.ModelBinding.ModelMetadata GetMetadataForProperty (Func&lt;object&gt; modelAccessor, Type containerType, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.ModelBinding.ModelMetadata GetMetadataForProperty(class System.Func`1&lt;object&gt; modelAccessor, class System.Type containerType, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.GetMetadataForProperty(System.Func{System.Object},System.Type,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelAccessor" Type="System.Func&lt;System.Object&gt;" />
+        <Parameter Name="containerType" Type="System.Type" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="containerType">The type of the container.</param>
+        <param name="propertyName">The name of the property.</param>
+        <summary>When overridden in a derived class, returns metadata for a property specified by a property name.</summary>
+        <returns>Metadata for the specified property.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="containerType" /> parameter is <see langword="null" />.  
+  
+ -or-  
+  
+ The <paramref name="propertyName" /> parameter is <see langword="null" /> or empty.  
+  
+ -or-  
+  
+ A property that has the name specified by <paramref name="propertyName" /> cannot be found in the <paramref name="containerType" /> type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMetadataForType">
+      <MemberSignature Language="C#" Value="public override System.Web.ModelBinding.ModelMetadata GetMetadataForType (Func&lt;object&gt; modelAccessor, Type modelType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.ModelBinding.ModelMetadata GetMetadataForType(class System.Func`1&lt;object&gt; modelAccessor, class System.Type modelType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.GetMetadataForType(System.Func{System.Object},System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelMetadata</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="modelAccessor" Type="System.Func&lt;System.Object&gt;" />
+        <Parameter Name="modelType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="modelAccessor">The model accessor.</param>
+        <param name="modelType">The type of the model.</param>
+        <summary>When overridden in a derived class, returns metadata for the model type.</summary>
+        <returns>Metadata for the model type.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="modelType" /> parameter is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual System.ComponentModel.ICustomTypeDescriptor GetTypeDescriptor (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ComponentModel.ICustomTypeDescriptor GetTypeDescriptor(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.AssociatedMetadataProvider.GetTypeDescriptor(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.ICustomTypeDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type.</param>
+        <summary>When overridden in a derived class, returns a descriptor object for a specified type.</summary>
+        <returns>The type descriptor object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

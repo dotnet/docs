@@ -1,0 +1,85 @@
+<Type Name="IDispatchImplType" FullName="System.Runtime.InteropServices.IDispatchImplType">
+  <TypeSignature Language="C#" Value="public enum IDispatchImplType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed IDispatchImplType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.IDispatchImplType" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The IDispatchImplAttribute is deprecated.", false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Indicates which <see langword="IDispatch" /> implementation to use for a particular class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See <xref:System.Runtime.InteropServices.IDispatchImplAttribute> for more information.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CompatibleImpl">
+      <MemberSignature Language="C#" Value="CompatibleImpl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IDispatchImplType CompatibleImpl = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDispatchImplType.CompatibleImpl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.IDispatchImplType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the <see langword="IDispatch" /> implementation is supplied by passing the type information for the object to the COM <see langword="CreateStdDispatch" /> API method.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalImpl">
+      <MemberSignature Language="C#" Value="InternalImpl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IDispatchImplType InternalImpl = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDispatchImplType.InternalImpl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.IDispatchImplType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the <see langword="IDispatch" /> implementation is supplied by the runtime.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemDefinedImpl">
+      <MemberSignature Language="C#" Value="SystemDefinedImpl" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IDispatchImplType SystemDefinedImpl = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDispatchImplType.SystemDefinedImpl" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.IDispatchImplType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the common language runtime decides which <see langword="IDispatch" /> implementation to use.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,267 @@
+<Type Name="ColorTypeConverter" FullName="System.Windows.Xps.Serialization.ColorTypeConverter">
+  <TypeSignature Language="C#" Value="public class ColorTypeConverter : System.ComponentModel.ExpandableObjectConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColorTypeConverter extends System.ComponentModel.ExpandableObjectConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.ColorTypeConverter" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.ExpandableObjectConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides type converters for converting <see cref="T:System.Windows.Media.Color" /> objects to and from objects of other types.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class also has methods for writing a <xref:System.Windows.Media.ColorContext> to an [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] package and reading a <xref:System.Windows.Media.ColorContext> from an [!INCLUDE[TLA2#tla_metro](~/includes/tla2sharptla-metro-md.md)] package that is given a string that represents the [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] of the <xref:System.Windows.Media.ColorContext>.  
+  
+ See the base classes <xref:System.ComponentModel.TypeConverter> and <xref:System.ComponentModel.ExpandableObjectConverter> for important usage notes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ColorTypeConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ColorTypeConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Xps.Serialization.ColorTypeConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See the base classes <xref:System.ComponentModel.TypeConverter> and <xref:System.ComponentModel.ExpandableObjectConverter> for important usage notes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ColorTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="sourceType">The type of object that is a candidate for conversion.</param>
+        <summary>Returns a value that indicates whether this converter can convert an instance of a specified type to a <see cref="T:System.Windows.Media.Color" />.</summary>
+        <returns>
+          <see langword="true" /> if objects of the specified type can be converted; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As implemented in this class, this method returns `true` only if `sourceType` is a <xref:System.String>.  
+  
+ The `context` parameter is not used. See **Notes for Inheritors**.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide your own conversion requirements. Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. This parameter can be <see langword="null" />; therefore, always check it. Also, properties on the <paramref name="context" /> object can return a null reference (<see langword="Nothing" />).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertTo">
+      <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext context, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ColorTypeConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="destinationType">The type of object that you want to convert a color to.</param>
+        <summary>Returns a value that indicates whether this <see cref="T:System.Windows.Xps.Serialization.ColorTypeConverter" /> can convert a <see cref="T:System.Windows.Media.Color" /> to an instance of a specified type.</summary>
+        <returns>
+          <see langword="true" /> if conversion is possible; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As implemented in this class, this method returns `true` only if `destinationType` is a <xref:System.String>.  
+  
+ The `context` parameter is not used. See **Notes for Inheritors**.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide your own conversion requirements. Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. This parameter can be <see langword="null" />; therefore, always check it. Also, properties on the <paramref name="context" /> object can return a null reference (<see langword="Nothing" />).</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ColorTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="culture">The language and culture that are used during the conversion.</param>
+        <param name="value">The object that is converted.</param>
+        <summary>Converts a specified object to a <see cref="T:System.Windows.Media.Color" />.</summary>
+        <returns>The new <see cref="T:System.Windows.Media.Color" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not implemented in this class—except to throw exceptions. See **Notes for Inheritors**.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">This method is called from this class instead of from a derived class.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <paramref name="value" /> is not a type that can be converted.</exception>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide a conversion method. Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. Use the <paramref name="culture" /> parameter to provide information about the language or culture.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ColorTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="culture">The language and culture that are used during the conversion.</param>
+        <param name="value">The object you want to convert.</param>
+        <param name="destinationType">The type that <c>value</c> is converted to.</param>
+        <summary>Converts a <see cref="T:System.Windows.Media.Color" /> to an object of the specified type.</summary>
+        <returns>The new <see cref="T:System.Object" /> of the designated type.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ As implemented in this class, `destinationType` must be a <xref:System.String> or the exception is thrown. The format of the string varies according to the value of `context` and `culture`.  
+  
+ If `culture` is `null`, the current system culture is used.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotSupportedException">The <paramref name="destinationType" /> is not a type that <paramref name="value" /> can be converted to.  
+  
+ -or-  
+  
+ The <paramref name="culture" /> is a neutral culture.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetProperties (System.ComponentModel.ITypeDescriptorContext context, object value, Attribute[] attributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.ComponentModel.ITypeDescriptorContext context, object value, class System.Attribute[] attributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ColorTypeConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="attributes" Type="System.Attribute[]" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="value">An object of the type for which you need property descriptions.</param>
+        <param name="attributes">An array of attributes that filter the returned collection to exclude irrelevant properties.</param>
+        <summary>Gets a collection of property descriptions for the specified type.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the property descriptions that are exposed for the component; or <see langword="null" /> if no property descriptions are returned.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not implemented in this class—except to throw the exception. See **Notes for Inheritors**.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.NotImplementedException">This method is called from this class instead of from a derived class.</exception>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide a method for obtaining selected <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects for the types. Use the <paramref name="context" /> parameter to extract additional information about the environment from which this converter is invoked. Use the <paramref name="attributes" /> array to designate the properties to include or to exclude.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="SerializeColorContext">
+      <MemberSignature Language="C#" Value="public static string SerializeColorContext (IServiceProvider context, System.Windows.Media.ColorContext colorContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string SerializeColorContext(class System.IServiceProvider context, class System.Windows.Media.ColorContext colorContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.ColorTypeConverter.SerializeColorContext(System.IServiceProvider,System.Windows.Media.ColorContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.IServiceProvider" />
+        <Parameter Name="colorContext" Type="System.Windows.Media.ColorContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An object that provides contextual information.</param>
+        <param name="colorContext">The object to be serialized.</param>
+        <summary>Serializes a <see cref="T:System.Windows.Media.ColorContext" /> to the [!INCLUDE[TLA#tla_metro](~/includes/tlasharptla-metro-md.md)] package and returns its [!INCLUDE[TLA#tla_uri](~/includes/tlasharptla-uri-md.md)] as a string.</summary>
+        <returns>A <see cref="T:System.String" /> that represents the [!INCLUDE[TLA2#tla_uri](~/includes/tla2sharptla-uri-md.md)] of the color context.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="colorContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

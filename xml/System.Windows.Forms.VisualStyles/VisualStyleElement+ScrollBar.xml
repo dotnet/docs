@@ -1,0 +1,47 @@
+<Type Name="VisualStyleElement+ScrollBar" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ScrollBar">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.ScrollBar" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ScrollBar extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of the scroll bar control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.ArrowButton>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.GripperHorizontal>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.GripperVertical>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.LeftTrackHorizontal>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.LowerTrackVertical>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.RightTrackHorizontal>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.SizeBox>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.ThumbButtonHorizontal>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.ThumbButtonVertical>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.UpperTrackVertical>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for each state of the scroll bar part specified by the class name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

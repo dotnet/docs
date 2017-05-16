@@ -1,0 +1,149 @@
+<Type Name="ListViewSortEventArgs" FullName="System.Web.UI.WebControls.ListViewSortEventArgs">
+  <TypeSignature Language="C#" Value="public class ListViewSortEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewSortEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewSortEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ListView.Sorting" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListView> control raises the <xref:System.Web.UI.WebControls.ListView.Sorting> event when a Sort button is clicked, but before the <xref:System.Web.UI.WebControls.ListView> control handles the sort operation. (A Sort button is a button whose `CommandName` property set to "Sort".) This enables you to provide an event-handling method that performs a custom routine whenever this event occurs, such as customizing the sort expression.  
+  
+ A <xref:System.Web.UI.WebControls.ListViewSortEventArgs> object is passed to the event-handling method. This object enables you to specify or determine the sort expression and sort direction for the <xref:System.Web.UI.WebControls.ListView> control. To determine the sort expression, use the <xref:System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression%2A> property. To determine the sort direction, use the <xref:System.Web.UI.WebControls.ListViewSortEventArgs.SortDirection%2A> property. You can also cancel a sorting operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+  
+ For a list of initial property values for an instance of the <xref:System.Web.UI.WebControls.ListViewSortEventArgs> class, see the <xref:System.Web.UI.WebControls.ListViewSelectEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewSortEventArgs> object to display the sort direction and the column that is being sorted.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/CS/ListViewSortingCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListView.Sorting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/VB/ListViewSortingVB.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewSortEventArgs (string sortExpression, System.Web.UI.WebControls.SortDirection sortDirection);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sortExpression, valuetype System.Web.UI.WebControls.SortDirection sortDirection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewSortEventArgs.#ctor(System.String,System.Web.UI.WebControls.SortDirection)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="sortExpression" Type="System.String" />
+        <Parameter Name="sortDirection" Type="System.Web.UI.WebControls.SortDirection" />
+      </Parameters>
+      <Docs>
+        <param name="sortExpression">The sort expression that is used to sort the items in the control.</param>
+        <param name="sortDirection">A <see cref="T:System.Web.UI.WebControls.SortDirection" /> value that indicates the direction in which to sort the items in the control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListViewSortEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ListViewSortEventArgs> class.  
+  
+> [!NOTE]
+>  This constructor is primarily used by control developers when they raise events.  
+  
+ The following table shows the initial property values for an instance of the <xref:System.Web.UI.WebControls.ListViewSortEventArgs> class.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression%2A>|The value of the `sortExpression` parameter.|  
+|<xref:System.Web.UI.WebControls.ListViewSortEventArgs.SortDirection%2A>|The value of the `sortDirection` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortDirection">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SortDirection SortDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.SortDirection SortDirection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewSortEventArgs.SortDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.SortDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the direction in which to sort the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+        <value>One of the <see cref="T:System.Web.UI.WebControls.SortDirection" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.ListView.Sorting> event is raised, you can use the <xref:System.Web.UI.WebControls.ListViewSortEventArgs.SortDirection%2A> property to specify or determine the order in which the <xref:System.Web.UI.WebControls.ListView> control will sort items.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewSortEventArgs> object to display the sort direction and the column being sorted. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewSortEventArgs> class.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListView.Sorting#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/CS/ListViewSortingCS.aspx#2)]
+ [!code-vb[System.Web.UI.WebControls.ListView.Sorting#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/VB/ListViewSortingVB.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortExpression">
+      <MemberSignature Language="C#" Value="public string SortExpression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SortExpression" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the expression that is used to sort the items in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
+        <value>The expression that is used to sort the items in the <see cref="T:System.Web.UI.WebControls.ListView" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.ListView.Sorting> event is raised, you can use the <xref:System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression%2A> property to specify the sort expression that will be used to sort the <xref:System.Web.UI.WebControls.ListView> control. The sort expression contains the name of the field to sort. You can also sort multiple columns at a time by programmatically setting this property to a comma-separated list of field names.  
+  
+> [!NOTE]
+>  By default, the <xref:System.Web.UI.WebControls.ListView> control applies the sort direction to the complete list of columns. As a result, the sort direction applies to only the last column in the list.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewSortEventArgs> object to display the sort direction and the column being sorted. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.ListViewSortEventArgs> class.  
+  
+ [!code-csharp[System.Web.UI.WebControls.ListView.Sorting#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/CS/ListViewSortingCS.aspx#2)]
+ [!code-vb[System.Web.UI.WebControls.ListView.Sorting#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListView.Sorting/VB/ListViewSortingVB.aspx#2)]  
+  
+ The following example shows how to set the <xref:System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression%2A> property in order to sort multiple columns with different sort directions applied to each column.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression/CS/SortExpressionCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewSortEventArgs.SortExpression/VB/SortExpressionVB.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

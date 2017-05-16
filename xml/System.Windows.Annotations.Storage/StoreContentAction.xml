@@ -1,0 +1,50 @@
+<Type Name="StoreContentAction" FullName="System.Windows.Annotations.Storage.StoreContentAction">
+  <TypeSignature Language="C#" Value="public enum StoreContentAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StoreContentAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.StoreContentAction" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the actions performed on an <see cref="T:System.Windows.Annotations.Annotation" /> in an <see cref="T:System.Windows.Annotations.Storage.AnnotationStore" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Added">
+      <MemberSignature Language="C#" Value="Added" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Annotations.Storage.StoreContentAction Added = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.Storage.StoreContentAction.Added" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.Storage.StoreContentAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Annotations.Annotation" /> was added to the store.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Deleted">
+      <MemberSignature Language="C#" Value="Deleted" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Annotations.Storage.StoreContentAction Deleted = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.Storage.StoreContentAction.Deleted" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.Storage.StoreContentAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="T:System.Windows.Annotations.Annotation" /> was deleted from the store.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

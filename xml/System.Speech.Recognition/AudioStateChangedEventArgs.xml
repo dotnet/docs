@@ -1,0 +1,83 @@
+<Type Name="AudioStateChangedEventArgs" FullName="System.Speech.Recognition.AudioStateChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class AudioStateChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AudioStateChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.AudioStateChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see langword="AudioStateChanged" /> event of the <see cref="T:System.Speech.Recognition.SpeechRecognizer" /> or the <see cref="T:System.Speech.Recognition.SpeechRecognitionEngine" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Recognition.AudioStateChangedEventArgs.AudioState%2A> property gets a new instance of the <xref:System.Speech.Recognition.AudioState> enumeration when a <xref:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged?displayProperty=fullName> or a <xref:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged?displayProperty=fullName> event is raised.  
+  
+ You can obtain the current state of the audio input using the `AudioState` property of the <xref:System.Speech.Recognition.SpeechRecognizer> or <xref:System.Speech.Recognition.SpeechRecognitionEngine> classes.  
+  
+   
+  
+## Examples  
+ The following example demonstrates an event handler for handling the changing audio state of a speech recognition engine.  
+  
+```csharp  
+  
+private SpeechRecognitionEngine sre;  
+  
+// Initialize the SpeechRecognitionEngine object.   
+private void Initialize()  
+{  
+  sre = new SpeechRecognitionEngine();  
+  
+  // Add a handler for the AudioStateChanged event.  
+  sre.AudioStateChanged += new EventHandler<AudioStateChangedEventArgs>(sre_AudioStateChanged);  
+  
+  // Add other initialization code here.  
+}  
+  
+// Handle the AudioStateChanged event.   
+void sre_AudioStateChanged(object sender, AudioStateChangedEventArgs e)  
+{  
+  AudioState newState = e.AudioState;  
+  
+  // Handle event here.  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AudioState">
+      <MemberSignature Language="C#" Value="public System.Speech.Recognition.AudioState AudioState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Recognition.AudioState AudioState" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.AudioStateChangedEventArgs.AudioState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Recognition.AudioState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new state of audio input to the recognizer.</summary>
+        <value>The state of audio input after a <see cref="E:System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged" /> or a <see cref="E:System.Speech.Recognition.SpeechRecognizer.AudioStateChanged" /> event is raised.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Speech.Recognition.AudioStateChangedEventArgs.AudioState%2A> property contains one of three values from the <xref:System.Speech.Recognition.AudioState> enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

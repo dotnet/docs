@@ -1,0 +1,160 @@
+<Type Name="PrintQueueAttributeProperty" FullName="System.Printing.IndexedProperties.PrintQueueAttributeProperty">
+  <TypeSignature Language="C#" Value="public sealed class PrintQueueAttributeProperty : System.Printing.IndexedProperties.PrintProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintQueueAttributeProperty extends System.Printing.IndexedProperties.PrintProperty" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.IndexedProperties.PrintQueueAttributeProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Printing.IndexedProperties.PrintProperty</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a <see cref="T:System.Printing.PrintQueueAttributes" /> property (and its value) of a printing system hardware or software component.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintQueueAttributeProperty (string attributeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueAttributeProperty.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="attributeName">The name of the <see cref="T:System.Printing.PrintQueueAttributes" /> property that the <see cref="T:System.Printing.IndexedProperties.PrintQueueAttributeProperty" /> represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintQueueAttributeProperty" /> class for the specified property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintQueueAttributes> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.QueueAttributes%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "QueueAttributes", not "Attributes" or "Queueattributes".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintQueueAttributeProperty (string attributeName, object attributeValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName, object attributeValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueAttributeProperty.#ctor(System.String,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="attributeName" Type="System.String" />
+        <Parameter Name="attributeValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="attributeName">The name of the <see cref="T:System.Printing.PrintQueueAttributes" /> property that the <see cref="T:System.Printing.IndexedProperties.PrintQueueAttributeProperty" /> represents.</param>
+        <param name="attributeValue">The value of <see cref="T:System.Object" /> the property that the <see cref="T:System.Printing.IndexedProperties.PrintQueueAttributeProperty" /> represents.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintQueueAttributeProperty" /> class that has the specified value for the specified property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `attributeName` should be spelled exactly the same as the name of some particular <xref:System.Printing.PrintQueueAttributes> property of a print system object, including casing. For example, the <xref:System.Printing.PrintQueue.QueueAttributes%2A> property of a <xref:System.Printing.PrintQueue> object must be spelled "QueueAttributes", not "Attributes" or "Queueattributes".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalDispose">
+      <MemberSignature Language="C#" Value="protected override sealed void InternalDispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InternalDispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueAttributeProperty.InternalDispose(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptions</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static System.Printing.PrintQueueAttributes op_Implicit (System.Printing.IndexedProperties.PrintQueueAttributeProperty attributeRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintQueueAttributes op_Implicit(class System.Printing.IndexedProperties.PrintQueueAttributeProperty attributeRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueAttributeProperty.op_Implicit(System.Printing.IndexedProperties.PrintQueueAttributeProperty)~System.Printing.PrintQueueAttributes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributeRef" Type="System.Printing.IndexedProperties.PrintQueueAttributeProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attributeRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static System.Printing.PrintQueueAttributes op_Implicit (System.Printing.IndexedProperties.PrintQueueAttributeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Printing.PrintQueueAttributes op_Implicit(class System.Printing.IndexedProperties.PrintQueueAttributeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attributeRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintQueueAttributeProperty.op_Implicit(System.Printing.IndexedProperties.PrintQueueAttributeProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintQueueAttributes" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintQueueAttributes</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attributeRef" Type="System.Printing.IndexedProperties.PrintQueueAttributeProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+      </Parameters>
+      <Docs>
+        <param name="attributeRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Value" />
+      <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintQueueAttributeProperty.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the property that the <see cref="T:System.Printing.IndexedProperties.PrintQueueAttributeProperty" /> represents.</summary>
+        <value>A boxed <see cref="T:System.Printing.PrintQueueAttributes" /> value.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">The property cannot be set by using the value that is provided by the calling code.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

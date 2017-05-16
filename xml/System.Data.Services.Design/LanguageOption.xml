@@ -1,0 +1,57 @@
+<Type Name="LanguageOption" FullName="System.Data.Services.Design.LanguageOption">
+  <TypeSignature Language="C#" Value="public enum LanguageOption" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LanguageOption extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Design.LanguageOption" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Used by the code generation command line tools and tools in Visual Studio to generate strongly typed client-side objects for communicating with data services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is not intended for public use and is used by the code generation command line tools and tools in Visual Studio to generate strongly typed client-side objects for communicating with data services.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GenerateCSharpCode">
+      <MemberSignature Language="C#" Value="GenerateCSharpCode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Design.LanguageOption GenerateCSharpCode = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Design.LanguageOption.GenerateCSharpCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Design.LanguageOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Generates C# code.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateVBCode">
+      <MemberSignature Language="C#" Value="GenerateVBCode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Design.LanguageOption GenerateVBCode = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Services.Design.LanguageOption.GenerateVBCode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Design.LanguageOption</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Generates Visual Basic code.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

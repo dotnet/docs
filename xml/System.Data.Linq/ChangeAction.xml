@@ -1,0 +1,95 @@
+<Type Name="ChangeAction" FullName="System.Data.Linq.ChangeAction">
+  <TypeSignature Language="C#" Value="public enum ChangeAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChangeAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.ChangeAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the type of change the entity will undergo when changes are submitted to the database.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use with `OnValidate()` in [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] applications to specify or omit validation based on the type of change being submitted.  
+  
+   
+  
+## Examples  
+ [!code-csharp[System.Data.Linq.ChangeAction#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Data.Linq.ChangeAction/cs/Program.cs#1)]
+ [!code-vb[System.Data.Linq.ChangeAction#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Data.Linq.ChangeAction/vb/Module1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="Delete" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.ChangeAction Delete = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.ChangeAction.Delete" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity will be deleted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="Insert" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.ChangeAction Insert = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.ChangeAction.Insert" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity will be inserted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.ChangeAction None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.ChangeAction.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity will not be submitted.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="Update" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.ChangeAction Update = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Data.Linq.ChangeAction.Update" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Linq.ChangeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The entity will be updated.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

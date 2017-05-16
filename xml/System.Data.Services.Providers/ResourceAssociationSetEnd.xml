@@ -1,0 +1,115 @@
+<Type Name="ResourceAssociationSetEnd" FullName="System.Data.Services.Providers.ResourceAssociationSetEnd">
+  <TypeSignature Language="C#" Value="public sealed class ResourceAssociationSetEnd" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResourceAssociationSetEnd extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ResourceAssociationSetEnd" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("ResourceAssociationSetEnd: {Name}: ({ResourceSet.Name}, {ResourceType.Name}, {ResourceProperty.Name})")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Describes an end point of a resource association set.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ResourceAssociationSetEnd (System.Data.Services.Providers.ResourceSet resourceSet, System.Data.Services.Providers.ResourceType resourceType, System.Data.Services.Providers.ResourceProperty resourceProperty);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Services.Providers.ResourceSet resourceSet, class System.Data.Services.Providers.ResourceType resourceType, class System.Data.Services.Providers.ResourceProperty resourceProperty) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ResourceAssociationSetEnd.#ctor(System.Data.Services.Providers.ResourceSet,System.Data.Services.Providers.ResourceType,System.Data.Services.Providers.ResourceProperty)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="resourceSet" Type="System.Data.Services.Providers.ResourceSet" />
+        <Parameter Name="resourceType" Type="System.Data.Services.Providers.ResourceType" />
+        <Parameter Name="resourceProperty" Type="System.Data.Services.Providers.ResourceProperty" />
+      </Parameters>
+      <Docs>
+        <param name="resourceSet">Resource set to which the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> end belongs.</param>
+        <param name="resourceType">Resource type to which the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> end belongs.</param>
+        <param name="resourceProperty">Resource property that returns the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> end.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceProperty">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceProperty ResourceProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceProperty ResourceProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceAssociationSetEnd.ResourceProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the resource property that returns the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" />.</summary>
+        <value>The resource property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceSet">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceSet ResourceSet { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceSet ResourceSet" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceAssociationSetEnd.ResourceSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the resource set for the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" />.</summary>
+        <value>The resource set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResourceType">
+      <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceType ResourceType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceType ResourceType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceAssociationSetEnd.ResourceType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.Services.Providers.ResourceType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the resource type for the <see cref="T:System.Data.Services.Providers.ResourceAssociationSetEnd" />.</summary>
+        <value>The resource type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

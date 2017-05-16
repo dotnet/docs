@@ -1,0 +1,5 @@
+# [Tlbexp Helper Functions](index.md)
+## [GetTypeLibInfo Function](gettypelibinfo-function.md)
+## [LoadTypeLibWithResolver Function](loadtypelibwithresolver-function.md)
+## [ITypeLibResolver Interface](itypelibresolver-interface.md)
+### [ResolveTypeLib Method](resolvetypelib-method.md)

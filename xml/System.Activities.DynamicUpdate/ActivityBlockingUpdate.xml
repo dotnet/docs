@@ -1,0 +1,231 @@
+<Type Name="ActivityBlockingUpdate" FullName="System.Activities.DynamicUpdate.ActivityBlockingUpdate">
+  <TypeSignature Language="C#" Value="public class ActivityBlockingUpdate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ActivityBlockingUpdate extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.ActivityBlockingUpdate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an activity blocking update.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the versioning and dynamic update functionality of Windows Workflow Foundation. [!INCLUDE[crabout](~/includes/crabout-md.md)] workflow versioning, workflow identity, and dynamic update, see the following topics.  
+  
+ [Workflow Versioning](http://go.microsoft.com/fwlink/?LinkID=271561)  
+ Describes the workflow versioning functionality introduced in [!INCLUDE[net_v45](~/includes/net-v45-md.md)].  
+  
+ [Dynamic Update](http://go.microsoft.com/fwlink/?LinkId=271563)  
+ Describes how to update the workflow definition of a persisted workflow instance by using dynamic update.  
+  
+ [Using WorkflowApplication Identity and Versioning](http://go.microsoft.com/fwlink/?LinkId=271564)  
+ Describes how to use <xref:System.Activities.WorkflowIdentity> to host multiple versions of a workflow side-by-side.  
+  
+ [Side by Side Versioning in WorkflowServiceHost](http://go.microsoft.com/fwlink/?LinkId=271565)  
+ Describes how to host multiple versions of a workflow on a single endpoint.  
+  
+ [How to: Host Multiple Versions of a Workflow Side-by-Side](http://go.microsoft.com/fwlink/?LinkId=271566)  
+ This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating a workflow definition, and hosting workflows using both the old and new definition at the same time.  
+  
+ [How to: Update the Definition of a Running Workflow Instance](http://go.microsoft.com/fwlink/?LinkId=271567)  
+ This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating persisted workflow instances to use a new workflow definition.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityBlockingUpdate (System.Activities.Activity activity, string originalActivityId, string reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity activity, string originalActivityId, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.ActivityBlockingUpdate.#ctor(System.Activities.Activity,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Activities.Activity" />
+        <Parameter Name="originalActivityId" Type="System.String" />
+        <Parameter Name="reason" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The activity workflow definition.</param>
+        <param name="originalActivityId">The original activity identifier.</param>
+        <param name="reason">The reason to block activities.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DynamicUpdate.ActivityBlockingUpdate" /> class with the specified activity, original activity identifier and reason.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityBlockingUpdate (string updatedActivityId, string originalActivityId, string reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string updatedActivityId, string originalActivityId, string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.ActivityBlockingUpdate.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="updatedActivityId" Type="System.String" />
+        <Parameter Name="originalActivityId" Type="System.String" />
+        <Parameter Name="reason" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="updatedActivityId">The updated activity identifier.</param>
+        <param name="originalActivityId">The original activity identifier.</param>
+        <param name="reason">The reason to block activities.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DynamicUpdate.ActivityBlockingUpdate" /> class with the specified updated activity identifier, original activity identifier and reason.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityBlockingUpdate (System.Activities.Activity activity, string originalActivityId, string reason, string activityInstanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity activity, string originalActivityId, string reason, string activityInstanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.ActivityBlockingUpdate.#ctor(System.Activities.Activity,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Activities.Activity" />
+        <Parameter Name="originalActivityId" Type="System.String" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="activityInstanceId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The activity workflow definition.</param>
+        <param name="originalActivityId">The original activity identifier.</param>
+        <param name="reason">The reason to block activities.</param>
+        <param name="activityInstanceId">The identifier of executing activity instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DynamicUpdate.ActivityBlockingUpdate" /> class with the specified activity, original activity identifier, reason and activity instance identifier.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityBlockingUpdate (string updatedActivityId, string originalActivityId, string reason, string activityInstanceId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string updatedActivityId, string originalActivityId, string reason, string activityInstanceId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.ActivityBlockingUpdate.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="updatedActivityId" Type="System.String" />
+        <Parameter Name="originalActivityId" Type="System.String" />
+        <Parameter Name="reason" Type="System.String" />
+        <Parameter Name="activityInstanceId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="updatedActivityId">The updated activity identifier.</param>
+        <param name="originalActivityId">The original activity identifier.</param>
+        <param name="reason">The reason to block activities.</param>
+        <param name="activityInstanceId">The identifier of executing activity instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DynamicUpdate.ActivityBlockingUpdate" /> class with the specified updated activity identifier, original activity identifier, reason and activity instance identifier.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Activity">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity Activity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Activity" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.ActivityBlockingUpdate.Activity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the activity of the workflow definition.</summary>
+        <value>The activity of the workflow definition.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivityInstanceId">
+      <MemberSignature Language="C#" Value="public string ActivityInstanceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ActivityInstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.ActivityBlockingUpdate.ActivityInstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the unique identifier of the currently executing activity instance.</summary>
+        <value>The unique identifier of the currently executing activity instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalActivityId">
+      <MemberSignature Language="C#" Value="public string OriginalActivityId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OriginalActivityId" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.ActivityBlockingUpdate.OriginalActivityId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the identifier of the original activity in the workflow definition.</summary>
+        <value>The identifier of the original activity in the workflow definition.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reason">
+      <MemberSignature Language="C#" Value="public string Reason { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Reason" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.ActivityBlockingUpdate.Reason" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the reason for the activity blocking.</summary>
+        <value>The reason for the activity blocking.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdatedActivityId">
+      <MemberSignature Language="C#" Value="public string UpdatedActivityId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UpdatedActivityId" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.DynamicUpdate.ActivityBlockingUpdate.UpdatedActivityId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the updated activity identifier in the workflow definition.</summary>
+        <value>The updated activity identifier in the workflow definition.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

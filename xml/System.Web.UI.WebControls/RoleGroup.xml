@@ -1,0 +1,200 @@
+<Type Name="RoleGroup" FullName="System.Web.UI.WebControls.RoleGroup">
+  <TypeSignature Language="C#" Value="public sealed class RoleGroup" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RoleGroup extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RoleGroup" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Associates a content template in a <see cref="T:System.Web.UI.WebControls.LoginView" /> control with one or more roles defined for the Web site. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.UI.WebControls.LoginView> control to define a set of content templates that contain the content that is displayed to Web site users based on the role assigned by Web site administrators. The <xref:System.Web.UI.WebControls.RoleGroup> class is used by the <xref:System.Web.UI.WebControls.LoginView> control to associate a content template with a set of roles.  
+  
+ To dynamically assign a template to the role group, set the <xref:System.Web.UI.WebControls.RoleGroup.ContentTemplate%2A> property to a reference to an object that implements the <xref:System.Web.UI.ITemplate> interface.  
+  
+ You must configure role management to use the <xref:System.Web.UI.WebControls.RoleGroup> class. For more information, see [Understanding Role Management](http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
+  
+   
+  
+## Examples  
+ The following code example assigns a custom template to the <xref:System.Web.UI.WebControls.RoleGroup.ContentTemplate%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[RoleGroupClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/RoleGroupClass/CS/rolegroupclasscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[RoleGroupClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/RoleGroupClass/VB/rolegroupclassvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoleGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroup.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.RoleGroup" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create a new instance of the <xref:System.Web.UI.WebControls.RoleGroup> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsUser">
+      <MemberSignature Language="C#" Value="public bool ContainsUser (System.Security.Principal.IPrincipal user);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsUser(class System.Security.Principal.IPrincipal user) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroup.ContainsUser(System.Security.Principal.IPrincipal)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="System.Security.Principal.IPrincipal" />
+      </Parameters>
+      <Docs>
+        <param name="user">The user name to look for in the role group.</param>
+        <summary>Indicates whether the specified user is a member of any of the roles in the role group.</summary>
+        <returns>
+          <see langword="true" /> if the user is a member of one of the roles associated with this role group; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RoleGroup.ContainsUser%2A> method returns `true` if the specified user is a member of any of the roles associated with this role group. Roles are searched in the order they are listed in the <xref:System.Web.UI.WebControls.RoleGroup.Roles%2A> property, and searching stops after the first match is found.  
+  
+ This method uses the <xref:System.Web.Security.Roles.IsUserInRole%2A> method to determine whether a user is a member of a role. You must configure role management to use the <xref:System.Web.UI.WebControls.RoleGroup.ContainsUser%2A> method. For more information, see [Understanding Role Management](http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="User" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentTemplate">
+      <MemberSignature Language="C#" Value="public System.Web.UI.ITemplate ContentTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate ContentTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RoleGroup.ContentTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.LoginView))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content template associated with this role group.</summary>
+        <value>The <see cref="T:System.Web.UI.ITemplate" /> associated with this role group. The default value is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RoleGroup.ContentTemplate%2A> property contains the content that is displayed to users who are members of this role group.  
+  
+   
+  
+## Examples  
+ The following code example dynamically creates a content template.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[RoleGroupClass#1](~/samples/snippets/csharp/VS_Snippets_WebNet/RoleGroupClass/CS/rolegroupclasscs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[RoleGroupClass#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/RoleGroupClass/VB/rolegroupclassvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Roles">
+      <MemberSignature Language="C#" Value="public string[] Roles { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] Roles" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RoleGroup.Roles" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.StringArrayConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the roles associated with this role group.</summary>
+        <value>A comma-separated list of roles associated with this role group. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example assigns a list of roles to associate with a role group. This code example is part of a larger example provided for the <xref:System.Web.UI.WebControls.RoleGroup> class.  
+  
+ [!code-csharp[RoleGroupClass#3](~/samples/snippets/csharp/VS_Snippets_WebNet/RoleGroupClass/CS/rolegroupclasscs.aspx#3)]
+ [!code-vb[RoleGroupClass#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/RoleGroupClass/VB/rolegroupclassvb.aspx#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RoleGroup.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a comma-separated list of the roles associated with this role group.</summary>
+        <returns>A comma-separated list of the roles associated with this role group.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.RoleGroup.ToString%2A> method returns the contents of the <xref:System.Web.UI.WebControls.RoleGroup.Roles%2A> property as a comma-separated list of roles associated with the role group.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

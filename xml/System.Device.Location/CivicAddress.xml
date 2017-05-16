@@ -1,0 +1,310 @@
+<Type Name="CivicAddress" FullName="System.Device.Location.CivicAddress">
+  <TypeSignature Language="C#" Value="public class CivicAddress" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CivicAddress extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Device.Location.CivicAddress" />
+  <AssemblyInfo>
+    <AssemblyName>System.Device</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a civic address. A civic address can include fields such as street address, postal code, state/province, and country or region.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A civic address for a location can be obtained from a <xref:System.Device.Location.GeoCoordinate> by using a class that implements <xref:System.Device.Location.ICivicAddressResolver>.  
+  
+ The <xref:System.Device.Location.CivicAddressResolver> class provides a default implementation that returns the civic address that corresponds to a <xref:System.Device.Location.GeoCoordinate>, if the location source provides both coordinate data as well as civic address data.  
+  
+ <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> returns a <xref:System.Device.Location.CivicAddress> for the current location.  If the location source is unable to resolve the coordinate position to a civic address, <xref:System.Device.Location.CivicAddress.Unknown> is returned.  
+  
+   
+  
+## Examples  
+ The following example shows how to resolve a <xref:System.Device.Location.CivicAddress> from a <xref:System.Device.Location.GeoCoordinate> location synchronously.  
+  
+ [!code-csharp[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#1)]
+ [!code-vb[System.Device.Location.ResolveCivicAddressSync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#1)]  
+  
+ The following example shows how to resolve a <xref:System.Device.Location.CivicAddress> from a <xref:System.Device.Location.GeoCoordinate> location asynchronously.  
+  
+ [!code-csharp[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/cs/resolvecivicaddressasync.cs#1)]
+ [!code-vb[System.Device.Location.ResolveCivicAddressAsync#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddressasync/vb/resolvecivicaddressasync.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CivicAddress ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.CivicAddress.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Device.Location.CivicAddress" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All fields are initialized to <xref:System.String.Empty>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public CivicAddress (string addressLine1, string addressLine2, string building, string city, string countryRegion, string floorLevel, string postalCode, string stateProvince);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string addressLine1, string addressLine2, string building, string city, string countryRegion, string floorLevel, string postalCode, string stateProvince) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Device.Location.CivicAddress.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="addressLine1" Type="System.String" />
+        <Parameter Name="addressLine2" Type="System.String" />
+        <Parameter Name="building" Type="System.String" />
+        <Parameter Name="city" Type="System.String" />
+        <Parameter Name="countryRegion" Type="System.String" />
+        <Parameter Name="floorLevel" Type="System.String" />
+        <Parameter Name="postalCode" Type="System.String" />
+        <Parameter Name="stateProvince" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="addressLine1">A string containing the first line of the street address.</param>
+        <param name="addressLine2">A string containing the second line of the street address.</param>
+        <param name="building">A string containing the building name or number.</param>
+        <param name="city">A string containing the city.</param>
+        <param name="countryRegion">A string containing the country or region.</param>
+        <param name="floorLevel">A string containing the floor number.</param>
+        <param name="postalCode">A string containing the postal code.</param>
+        <param name="stateProvince">A string containing the state or province.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Device.Location.CivicAddress" /> class using address information.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">At least one parameter must be a non-empty string.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressLine1">
+      <MemberSignature Language="C#" Value="public string AddressLine1 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AddressLine1" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.AddressLine1" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the first line of the address.</summary>
+        <value>Returns the first line of the address. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressLine2">
+      <MemberSignature Language="C#" Value="public string AddressLine2 { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AddressLine2" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.AddressLine2" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the second line of the address.</summary>
+        <value>Returns the second line of the address. If the data is not provided, returns <see cref="F:System.String.Empty." /></value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Building">
+      <MemberSignature Language="C#" Value="public string Building { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Building" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.Building" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the building name or number.</summary>
+        <value>Returns the building name or number. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="City">
+      <MemberSignature Language="C#" Value="public string City { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string City" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.City" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the city.</summary>
+        <value>Returns the name of the city. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CountryRegion">
+      <MemberSignature Language="C#" Value="public string CountryRegion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CountryRegion" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.CountryRegion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the country or region of the location.</summary>
+        <value>Returns the country or region code. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The country or region is typically represented by a two-letter ISO-3166 country code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FloorLevel">
+      <MemberSignature Language="C#" Value="public string FloorLevel { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FloorLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.FloorLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the floor level of the location.</summary>
+        <value>Returns a string that contains the floor level. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUnknown">
+      <MemberSignature Language="C#" Value="public bool IsUnknown { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsUnknown" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.IsUnknown" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Device.Location.CivicAddress" /> contains data.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Device.Location.CivicAddress" /> is equal to <see cref="F:System.Device.Location.CivicAddress.Unknown" />; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example uses <xref:System.Device.Location.CivicAddress.IsUnknown%2A> to check the <xref:System.Device.Location.CivicAddress> that is returned from <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> before the civic address is printed out.  
+  
+ [!code-csharp[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#2)]
+ [!code-vb[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostalCode">
+      <MemberSignature Language="C#" Value="public string PostalCode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PostalCode" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.PostalCode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the postal code of the location.</summary>
+        <value>Returns the postal code of the location. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateProvince">
+      <MemberSignature Language="C#" Value="public string StateProvince { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StateProvince" />
+      <MemberSignature Language="DocId" Value="P:System.Device.Location.CivicAddress.StateProvince" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the state or province of the location.</summary>
+        <value>Returns the state or province of the location. If the data is not provided, returns <see cref="F:System.String.Empty" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="public static readonly System.Device.Location.CivicAddress Unknown;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Device.Location.CivicAddress Unknown" />
+      <MemberSignature Language="DocId" Value="F:System.Device.Location.CivicAddress.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Device.Location.CivicAddress</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents a <see cref="T:System.Device.Location.CivicAddress" /> that contains no data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use <xref:System.Device.Location.CivicAddress.IsUnknown%2A> to verify whether a <xref:System.Device.Location.CivicAddress> contains data.  
+  
+   
+  
+## Examples  
+ The following example uses <xref:System.Device.Location.CivicAddress.IsUnknown%2A> to check the <xref:System.Device.Location.CivicAddress> that is returned from <xref:System.Device.Location.CivicAddressResolver.ResolveAddress%2A> before the civic address is printed out.  
+  
+ [!code-csharp[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/csharp/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/cs/resolvecivicaddresssync.cs#2)]
+ [!code-vb[System.Device.Location.ResolveCivicAddressSync#2](~/samples/snippets/visualbasic/VS_Snippets_Misc/system.device.location.resolvecivicaddresssync/vb/resolvecivicaddresssync.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

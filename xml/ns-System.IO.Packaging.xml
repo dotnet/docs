@@ -1,0 +1,47 @@
+<Namespace Name="System.IO.Packaging">
+  <Docs>
+    <summary>Provides classes that support storage of multiple data objects in a single container.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.IO.Packaging.Package> is an abstract class that can be used to organize objects into a single entity of a defined physical format for portability and efficient access.  
+  
+ A ZIP file is the primary physical format for the <xref:System.IO.Packaging.Package>.  Other <xref:System.IO.Packaging.Package> implementations might use other physical formats such as an XML document, a database, or Web service.  
+  
+ Like a file system, items contained in a <xref:System.IO.Packaging.Package> are referenced in a hierarchical organization of folders and files.  
+  
+ Although <xref:System.IO.Packaging.Package> is an abstract class, the <xref:System.IO.Packaging.ZipPackage> derived class is used as default by the <xref:System.IO.Packaging.Package.Open%2A?displayProperty=fullName> method.  
+  
+ A <xref:System.IO.Packaging.PackagePart> ("part") is the abstract class that represents an object that is stored in a <xref:System.IO.Packaging.Package>.  
+  
+ A <xref:System.IO.Packaging.PackageRelationship> ("relationship") defines an association between a source <xref:System.IO.Packaging.Package> or <xref:System.IO.Packaging.PackagePart> and a target object.  A <xref:System.IO.Packaging.PackageRelationship> can be one of two types, each of which can be one of two forms:  
+  
+-   Package-level relationship (created by <xref:System.IO.Packaging.Package.CreateRelationship%2A?displayProperty=fullName>)  
+  
+    -   Between a <xref:System.IO.Packaging.Package> and a target part in the package.  
+  
+    -   Between a <xref:System.IO.Packaging.Package> and a target resource outside the package.  
+  
+-   Part-level relationship (created by <xref:System.IO.Packaging.PackagePart.CreateRelationship%2A?displayProperty=fullName>)  
+  
+    -   Between a source <xref:System.IO.Packaging.PackagePart> and another target part in the package.  
+  
+    -   Between a source <xref:System.IO.Packaging.PackagePart> and a target resource outside the package.  
+  
+ The relationship's source <xref:System.IO.Packaging.Package> or source <xref:System.IO.Packaging.PackagePart> is considered the "owner" of the relationship.  When the source object is deleted, all the relationships owned by the source object are also deleted.  The process of creating or deleting a relationship does not physically change either the source or target objects in any way.  
+  
+ A <xref:System.IO.Packaging.PackageDigitalSignature> ("digital signature") is a composition of parts and relationships representing a digital signature included with a <xref:System.IO.Packaging.Package>.  The digital signature identifies the originator and validates that the signed parts and relationships contained in the <xref:System.IO.Packaging.Package> have not been modified.  
+  
+ Packages also support Digital Rights Management (DRM), which allows content elements in a <xref:System.IO.Packaging.Package> to be encrypted with specific access rights granted to authorized users.  
+  
+ Based on the <xref:System.IO.Packaging.Package> architecture, an <xref:System.Windows.Xps.Packaging.XpsDocument> is a package type designed for storing documents based on the open [XML Paper Specification (XPS)](http://go.microsoft.com/fwlink/?LinkID=65761).  
+  
+ [!INCLUDE[TLA#tla_wpf](~/includes/tlasharptla-wpf-md.md)] uses packages to store content, resources, and relationships for pages and documents using a standard ZIP file by default. As with any ZIP file, your application can use the <xref:System.IO.Packaging> classes to store and optionally protect any type or number of data files in a single efficient-to-access container.  
+  
+ For more information, see the Open Packaging Conventions (OPC) specification, available for download at the XPS section of [Windows Hardware Developer Central](http://go.microsoft.com/fwlink/?LinkID=71255).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,221 @@
+<Type Name="BaseValueSource" FullName="System.Windows.BaseValueSource">
+  <TypeSignature Language="C#" Value="public enum BaseValueSource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BaseValueSource extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.BaseValueSource" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Identifies the property system source of a particular dependency property value.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by a property within the <xref:System.Windows.ValueSource> structure, which in turn is obtained by calling a <xref:System.Windows.DependencyPropertyHelper.GetValueSource%2A> method against a particular dependency property.  
+  
+ Each value of this enumeration indicates that a particular aspect of the overall [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system was responsible for the effective value determination of a certain dependency property value on a specific dependency object. To learn more about the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] property system and the precedence at which each aspect of the property system operates, see [Dependency Property Value Precedence](~/docs/framework/wpf/advanced/dependency-property-value-precedence.md).  
+  
+ The value Default is not the default value of the enumeration.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource Default = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is the default value, as defined by property metadata.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultStyle">
+      <MemberSignature Language="C#" Value="DefaultStyle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource DefaultStyle = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.DefaultStyle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is from a setter in the default style. The default style comes from the current theme.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultStyleTrigger">
+      <MemberSignature Language="C#" Value="DefaultStyleTrigger" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource DefaultStyleTrigger = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.DefaultStyleTrigger" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is from a trigger in the default style. The default style comes from the current theme.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ImplicitStyleReference">
+      <MemberSignature Language="C#" Value="ImplicitStyleReference" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource ImplicitStyleReference = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.ImplicitStyleReference" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is an implicit style reference (style was based on detected type or based type). This value is only returned for the Style property itself, not for properties that are set through setters or triggers of such a style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inherited">
+      <MemberSignature Language="C#" Value="Inherited" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource Inherited = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.Inherited" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is a value through property value inheritance.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Local">
+      <MemberSignature Language="C#" Value="Local" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource Local = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.Local" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is a locally set value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentTemplate">
+      <MemberSignature Language="C#" Value="ParentTemplate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource ParentTemplate = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.ParentTemplate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is based on a parent template being used by an element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentTemplateTrigger">
+      <MemberSignature Language="C#" Value="ParentTemplateTrigger" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource ParentTemplateTrigger = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.ParentTemplateTrigger" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is a trigger-based value from a parent template that created the element.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Style">
+      <MemberSignature Language="C#" Value="Style" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource Style = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.Style" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is from a style setter of a non-theme style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="StyleTrigger">
+      <MemberSignature Language="C#" Value="StyleTrigger" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource StyleTrigger = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.StyleTrigger" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is a trigger-based value of a non-theme style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TemplateTrigger">
+      <MemberSignature Language="C#" Value="TemplateTrigger" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource TemplateTrigger = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.TemplateTrigger" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is a trigger-based value in a template that is from a non-theme style.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.BaseValueSource Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.BaseValueSource.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.BaseValueSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Source is not known. This is the default value.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

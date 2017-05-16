@@ -1,0 +1,97 @@
+<Type Name="IBuildEngine3" FullName="Microsoft.Build.Framework.IBuildEngine3">
+  <TypeSignature Language="C#" Value="public interface IBuildEngine3 : Microsoft.Build.Framework.IBuildEngine2" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBuildEngine3 implements class Microsoft.Build.Framework.IBuildEngine, class Microsoft.Build.Framework.IBuildEngine2" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IBuildEngine3" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Build.Framework.IBuildEngine2</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>This interface extends IBuildEngine to provide a method allowing building project files in parallel.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BuildProjectFilesInParallel">
+      <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.BuildEngineResult BuildProjectFilesInParallel (string[] projectFileNames, string[] targetNames, System.Collections.IDictionary[] globalProperties, System.Collections.Generic.IList&lt;string&gt;[] removeGlobalProperties, string[] toolsVersion, bool returnTargetOutputs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Build.Framework.BuildEngineResult BuildProjectFilesInParallel(string[] projectFileNames, string[] targetNames, class System.Collections.IDictionary[] globalProperties, class System.Collections.Generic.IList`1&lt;string&gt;[] removeGlobalProperties, string[] toolsVersion, bool returnTargetOutputs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine3.BuildProjectFilesInParallel(System.String[],System.String[],System.Collections.IDictionary[],System.Collections.Generic.IList{System.String}[],System.String[],System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.BuildEngineResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="projectFileNames" Type="System.String[]" />
+        <Parameter Name="targetNames" Type="System.String[]" />
+        <Parameter Name="globalProperties" Type="System.Collections.IDictionary[]" />
+        <Parameter Name="removeGlobalProperties" Type="System.Collections.Generic.IList&lt;System.String&gt;[]" />
+        <Parameter Name="toolsVersion" Type="System.String[]" />
+        <Parameter Name="returnTargetOutputs" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="projectFileNames">The project to build.</param>
+        <param name="targetNames">The targets in the project to build (can be null).</param>
+        <param name="globalProperties">An array of <see cref="T:System.Collections.IDictionary" /> of additional global properties to apply to the child project (array entries can be null).  
+  
+ The keys and should both be strings.</param>
+        <param name="removeGlobalProperties">A list of global properties which should be removed.</param>
+        <param name="toolsVersion">A tools version recognized by the Engine that will be used during this build (can be null).</param>
+        <param name="returnTargetOutputs">Should the target outputs be returned in the BuildEngineResult.</param>
+        <summary>Allows tasks to initiate a build on a project file</summary>
+        <returns>If the build is successful, the outputs of the specified targets are returned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reacquire">
+      <MemberSignature Language="C#" Value="public void Reacquire ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reacquire() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine3.Reacquire" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Waits to reacquire control after yielding.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Yield">
+      <MemberSignature Language="C#" Value="public void Yield ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Yield() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine3.Yield" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Informs the system that this task has a long-running out-of-process component and other work can be done in the build while that work completes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There is only one node (msbuild.exe process) per CPU. Only one project, target, and task can build at any time on a node. If a task is waiting, for example, for a spawned tool or some other event to complete, the task can call Yield, which returns immediately. This lets the node build a target in another project, if any are available.  When the task is ready to continue, it should call <xref:Microsoft.Build.Framework.IBuildEngine3.Reacquire%2A>. As a rough rule, if a task expects that an operation will take more than 20 or 30 seconds, it can choose to call `Yield` before it starts the operation, and `Reaquire` when the operation is complete.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

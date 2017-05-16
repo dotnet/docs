@@ -1,0 +1,522 @@
+<Type Name="EventBindingService" FullName="System.ComponentModel.Design.EventBindingService">
+  <TypeSignature Language="C#" Value="public abstract class EventBindingService : System.ComponentModel.Design.IEventBindingService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EventBindingService extends System.Object implements class System.ComponentModel.Design.IEventBindingService" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.EventBindingService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.Design.IEventBindingService</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Security.SecurityCritical</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A default implementation of the <see cref="T:System.ComponentModel.Design.IEventBindingService" /> interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By providing a service for registering event handlers for component events, <xref:System.ComponentModel.Design.EventBindingService> provides a way to link an event handler with a component event from designer code.  
+  
+ ]]></format>
+    </remarks>
+    <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected EventBindingService (IServiceProvider provider);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider provider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.#ctor(System.IServiceProvider)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="provider">The service provider from which <see cref="T:System.ComponentModel.Design.EventBindingService" /> will query for services.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.EventBindingService" /> class.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="provider" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateUniqueMethodName">
+      <MemberSignature Language="C#" Value="protected abstract string CreateUniqueMethodName (System.ComponentModel.IComponent component, System.ComponentModel.EventDescriptor e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string CreateUniqueMethodName(class System.ComponentModel.IComponent component, class System.ComponentModel.EventDescriptor e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.CreateUniqueMethodName(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component for which the method name will be created.</param>
+        <param name="e">The event to create a name for.</param>
+        <summary>Creates a unique method name.</summary>
+        <returns>The unique method name.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The name returned by the <xref:System.ComponentModel.Design.EventBindingService.CreateUniqueMethodName%2A> method must be compatible with the script language being used and it must not conflict with any other name in your code.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="component" /> or <paramref name="e" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="FreeMethod">
+      <MemberSignature Language="C#" Value="protected virtual void FreeMethod (System.ComponentModel.IComponent component, System.ComponentModel.EventDescriptor e, string methodName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FreeMethod(class System.ComponentModel.IComponent component, class System.ComponentModel.EventDescriptor e, string methodName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.FreeMethod(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+        <Parameter Name="methodName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to which the method is bound.</param>
+        <param name="e">The <see cref="T:System.ComponentModel.EventDescriptor" /> for the event handler.</param>
+        <param name="methodName">The name of the method to be freed.</param>
+        <summary>Provides a notification that a particular method is no longer being used by an event handler.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some implementations may intend to remove the event hander when no events are using it. By overriding <xref:System.ComponentModel.Design.EventBindingService.UseMethod%2A> and <xref:System.ComponentModel.Design.EventBindingService.FreeMethod%2A>, an implementation can infer when a method is no longer needed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCompatibleMethods">
+      <MemberSignature Language="C#" Value="protected abstract System.Collections.ICollection GetCompatibleMethods (System.ComponentModel.EventDescriptor e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.ICollection GetCompatibleMethods(class System.ComponentModel.EventDescriptor e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.GetCompatibleMethods(System.ComponentModel.EventDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="e">The <see cref="T:System.ComponentModel.EventDescriptor" /> containing the compatible delegate.</param>
+        <summary>Returns a collection of names of compatible methods.</summary>
+        <returns>A collection of strings that are names of compatible methods.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each string returned in the collection is the method name of a method whose signature is compatible with the delegate contained in `e`. <xref:System.ComponentModel.Design.EventBindingService.GetCompatibleMethods%2A> should return an empty collection if no names are compatible.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="e" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="protected object GetService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.GetService(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">The type of service to retrieve.</param>
+        <summary>Gets the requested service from the service provider.</summary>
+        <returns>A reference to the service specified by <paramref name="serviceType" />, or <see langword="null" /> if the requested service is not available.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowCode">
+      <MemberSignature Language="C#" Value="protected abstract bool ShowCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShowCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.ShowCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays user code.</summary>
+        <returns>
+          <see langword="true" /> if it is possible to display the code; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.EventBindingService.ShowCode%2A> method does not display any particular code; generally it displays the last code the user typed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowCode">
+      <MemberSignature Language="C#" Value="protected abstract bool ShowCode (int lineNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShowCode(int32 lineNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.ShowCode(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lineNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lineNumber">The line number to show.</param>
+        <summary>Displays the user code at the given line number.</summary>
+        <returns>
+          <see langword="true" /> if it is possible to display the code; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Line numbers are one-based.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowCode">
+      <MemberSignature Language="C#" Value="protected abstract bool ShowCode (System.ComponentModel.IComponent component, System.ComponentModel.EventDescriptor e, string methodName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShowCode(class System.ComponentModel.IComponent component, class System.ComponentModel.EventDescriptor e, string methodName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+        <Parameter Name="methodName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to which the method is bound.</param>
+        <param name="e">The <see cref="T:System.ComponentModel.EventDescriptor" /> for the event handler.</param>
+        <param name="methodName">The name of the method for which to display code.</param>
+        <summary>Displays the user code for the specified method.</summary>
+        <returns>
+          <see langword="true" /> if it is possible to display the code; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.EventBindingService.ShowCode%2A> method displays the body of the user code with the given method name.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName">
+      <MemberSignature Language="C#" Value="string IEventBindingService.CreateUniqueMethodName (System.ComponentModel.IComponent component, System.ComponentModel.EventDescriptor e);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.Design.IEventBindingService.CreateUniqueMethodName(class System.ComponentModel.IComponent component, class System.ComponentModel.EventDescriptor e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#CreateUniqueMethodName(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component instance the event is connected to.</param>
+        <param name="e">The event to create a name for.</param>
+        <summary>Creates a unique name for an event-handler method for the specified component and event.</summary>
+        <returns>The recommended name for the event-handler method for this event.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="component" /> or <paramref name="e" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods">
+      <MemberSignature Language="C#" Value="System.Collections.ICollection IEventBindingService.GetCompatibleMethods (System.ComponentModel.EventDescriptor e);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.ICollection System.ComponentModel.Design.IEventBindingService.GetCompatibleMethods(class System.ComponentModel.EventDescriptor e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#GetCompatibleMethods(System.ComponentModel.EventDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event to get the compatible event-handler methods for.</param>
+        <summary>Gets a collection of event-handler methods that have a method signature compatible with the specified event.</summary>
+        <returns>A collection of strings that are names of compatible methods.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Each string returned in the collection is the method name of a method whose signature is compatible with the delegate contained in `e`. <xref:System.ComponentModel.Design.EventBindingService.GetCompatibleMethods%2A> should return an empty collection if no names are compatible.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="e" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.Design.IEventBindingService.GetEvent">
+      <MemberSignature Language="C#" Value="System.ComponentModel.EventDescriptor IEventBindingService.GetEvent (System.ComponentModel.PropertyDescriptor property);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptor System.ComponentModel.Design.IEventBindingService.GetEvent(class System.ComponentModel.PropertyDescriptor property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#GetEvent(System.ComponentModel.PropertyDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.EventDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.ComponentModel.PropertyDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="property">The property that represents an event.</param>
+        <summary>Gets an <see cref="T:System.ComponentModel.EventDescriptor" /> for the event that the specified property descriptor represents, if it represents an event.</summary>
+        <returns>An <see cref="T:System.ComponentModel.EventDescriptor" /> for the event that the property represents, or <see langword="null" /> if the property does not represent an event.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.Design.IEventBindingService.GetEventProperties">
+      <MemberSignature Language="C#" Value="System.ComponentModel.PropertyDescriptorCollection IEventBindingService.GetEventProperties (System.ComponentModel.EventDescriptorCollection events);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.Design.IEventBindingService.GetEventProperties(class System.ComponentModel.EventDescriptorCollection events) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#GetEventProperties(System.ComponentModel.EventDescriptorCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="events" Type="System.ComponentModel.EventDescriptorCollection" />
+      </Parameters>
+      <Docs>
+        <param name="events">The events to convert to properties.</param>
+        <summary>Converts a set of event descriptors to a set of property descriptors.</summary>
+        <returns>An array of <see cref="T:System.ComponentModel.PropertyDescriptor" /> objects that describe the event set.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="events" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.Design.IEventBindingService.GetEventProperty">
+      <MemberSignature Language="C#" Value="System.ComponentModel.PropertyDescriptor IEventBindingService.GetEventProperty (System.ComponentModel.EventDescriptor e);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptor System.ComponentModel.Design.IEventBindingService.GetEventProperty(class System.ComponentModel.EventDescriptor e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#GetEventProperty(System.ComponentModel.EventDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="e">The event to convert.</param>
+        <summary>Converts a single event descriptor to a property descriptor.</summary>
+        <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that describes the event.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="e" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.Design.IEventBindingService.ShowCode">
+      <MemberSignature Language="C#" Value="bool IEventBindingService.ShowCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.Design.IEventBindingService.ShowCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#ShowCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays the user code for the designer.</summary>
+        <returns>
+          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.Design.IEventBindingService.ShowCode">
+      <MemberSignature Language="C#" Value="bool IEventBindingService.ShowCode (int lineNumber);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.Design.IEventBindingService.ShowCode(int32 lineNumber) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#ShowCode(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lineNumber" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="lineNumber">The line number to place the caret on.</param>
+        <summary>Displays the user code for the designer at the specified line.</summary>
+        <returns>
+          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.Design.IEventBindingService.ShowCode">
+      <MemberSignature Language="C#" Value="bool IEventBindingService.ShowCode (System.ComponentModel.IComponent component, System.ComponentModel.EventDescriptor e);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.Design.IEventBindingService.ShowCode(class System.ComponentModel.IComponent component, class System.ComponentModel.EventDescriptor e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component that the event is connected to.</param>
+        <param name="e">The event to display.</param>
+        <summary>Displays the user code for the specified event.</summary>
+        <returns>
+          <see langword="true" /> if the code is displayed; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="events" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UseMethod">
+      <MemberSignature Language="C#" Value="protected virtual void UseMethod (System.ComponentModel.IComponent component, System.ComponentModel.EventDescriptor e, string methodName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UseMethod(class System.ComponentModel.IComponent component, class System.ComponentModel.EventDescriptor e, string methodName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.UseMethod(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="e" Type="System.ComponentModel.EventDescriptor" />
+        <Parameter Name="methodName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="component">The component to which the method is bound.</param>
+        <param name="e">The <see cref="T:System.ComponentModel.EventDescriptor" /> for the event handler.</param>
+        <param name="methodName">The name of the method.</param>
+        <summary>Provides a notification that a particular method is being used by an event handler.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Some implementations may intend to remove the event hander when no events are using it. By overriding <xref:System.ComponentModel.Design.EventBindingService.UseMethod%2A> and <xref:System.ComponentModel.Design.EventBindingService.FreeMethod%2A>, an implementation can infer when a method is no longer needed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateMethodName">
+      <MemberSignature Language="C#" Value="protected virtual void ValidateMethodName (string methodName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateMethodName(string methodName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.EventBindingService.ValidateMethodName(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="methodName">The method name to validate.</param>
+        <summary>Validates that the provided method name is valid for the language or script being used.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation does nothing. You may override this and throw an exception if the name is invalid for your use.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,50 @@
+<Type Name="GiveFeedbackEventHandler" FullName="System.Windows.GiveFeedbackEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void GiveFeedbackEventHandler(object sender, GiveFeedbackEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GiveFeedbackEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.GiveFeedbackEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.GiveFeedbackEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents a method that will handle the feedback routed event from in-process drag-and-drop operations, for instance <see cref="E:System.Windows.UIElement.GiveFeedback" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is used with the following attached events.  
+  
+-   <xref:System.Windows.DragDrop.GiveFeedback?displayProperty=fullName>  
+  
+-   <xref:System.Windows.DragDrop.PreviewGiveFeedback?displayProperty=fullName>  
+  
+ This delegate is also used with the following routed events on base elements. These routed events forward the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
+  
+-   <xref:System.Windows.UIElement.GiveFeedback?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.PreviewGiveFeedback?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.GiveFeedback?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.PreviewGiveFeedback?displayProperty=fullName>  
+  
+ The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+  
+ The <xref:System.Windows.DragDrop.GiveFeedback?displayProperty=fullName> attached event occurs when a drag-and-drop operation is started. The <xref:System.Windows.DragDrop.GiveFeedback?displayProperty=fullName> attached event enables the source of a drag event to modify the appearance of the mouse pointer to provide the user with visual feedback during a drag-and-drop operation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

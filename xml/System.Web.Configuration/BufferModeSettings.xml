@@ -1,0 +1,460 @@
+<Type Name="BufferModeSettings" FullName="System.Web.Configuration.BufferModeSettings">
+  <TypeSignature Language="C#" Value="public sealed class BufferModeSettings : System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BufferModeSettings extends System.Configuration.ConfigurationElement" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.BufferModeSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.ConfigurationElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Configures the ASP.NET event-buffering settings for event providers. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.BufferModeSettings> class is used to define roles for event providers, such as Critical, Notification, Analysis, and Logging. Each role would buffer events differently, as appropriate for that role. For example a Critical role would keep the <xref:System.Web.Configuration.BufferModeSettings.MaxBufferSize%2A>, <xref:System.Web.Configuration.BufferModeSettings.MaxFlushSize%2A>, and <xref:System.Web.Configuration.BufferModeSettings.UrgentFlushInterval%2A> properties small, whereas an Analysis role would set those properties to higher values.  
+  
+ This class corresponds to the `bufferModes` configuration-file element.  
+  
+   
+  
+## Examples  
+ The following configuration file excerpt shows how to declaratively specify values for several properties of the <xref:System.Web.Configuration.BufferModeSettings> class.  
+  
+```  
+<healthMonitoring>  
+  <bufferModes>  
+    <add name="Critical Notification"  
+      maxBufferSize="100"  
+      maxFlushSize="20"  
+      urgentFlushThreshold="1"  
+      regularFlushInterval="Infinite"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Notification"  
+      maxBufferSize="300"  
+      maxFlushSize="20"  
+      urgentFlushThreshold="1"  
+      regularFlushInterval="Infinite"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Analysis"  
+      maxBufferSize="1000"  
+      maxFlushSize="100"  
+      urgentFlushThreshold="100"  
+      regularFlushInterval="00:05:00"  
+      urgentFlushInterval="00:01:00"  
+      maxBufferThreads="1"  
+    />  
+    <add name="Logging"  
+      maxBufferSize="1000"  
+      maxFlushSize="200"  
+      urgentFlushThreshold="800"  
+      regularFlushInterval="00:30:00"  
+      urgentFlushInterval="00:05:00"  
+      maxBufferThreads="1"  
+    />  
+  </bufferModes>  
+</healthMonitoring>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BufferModeSettings (string name, int maxBufferSize, int maxFlushSize, int urgentFlushThreshold, TimeSpan regularFlushInterval, TimeSpan urgentFlushInterval, int maxBufferThreads);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, int32 maxBufferSize, int32 maxFlushSize, int32 urgentFlushThreshold, valuetype System.TimeSpan regularFlushInterval, valuetype System.TimeSpan urgentFlushInterval, int32 maxBufferThreads) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Configuration.BufferModeSettings.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.TimeSpan,System.TimeSpan,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="maxBufferSize" Type="System.Int32" />
+        <Parameter Name="maxFlushSize" Type="System.Int32" />
+        <Parameter Name="urgentFlushThreshold" Type="System.Int32" />
+        <Parameter Name="regularFlushInterval" Type="System.TimeSpan" />
+        <Parameter Name="urgentFlushInterval" Type="System.TimeSpan" />
+        <Parameter Name="maxBufferThreads" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Web.Configuration.BufferModeSettings" /> object being created.</param>
+        <param name="maxBufferSize">The maximum number of events buffered at one time. The value must be greater than zero.</param>
+        <param name="maxFlushSize">The maximum number of events per buffer flush. Must be greater than zero.</param>
+        <param name="urgentFlushThreshold">The number of events buffered before a buffer flush is triggered. The value must be greater than zero and less than or equal to <c>maxBufferSize</c>.</param>
+        <param name="regularFlushInterval">The standard amount of time between buffer flushes. The value can be made infinite by setting it to <see cref="F:System.Int32.MaxValue" /> ticks.</param>
+        <param name="urgentFlushInterval">The minimum length of time that can pass between buffer flushes. The value must be less than or equal to <c>regularFlushInterval</c>.</param>
+        <param name="maxBufferThreads">The maximum number of buffer-flushing threads that can be active at one time.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.BufferModeSettings" /> class using specified settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.BufferModeSettings.%23ctor%2A> constructor. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#10](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#10)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#10](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementProperty">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElementProperty ElementProperty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationElementProperty ElementProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BufferModeSettings.ElementProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationElementProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBufferSize">
+      <MemberSignature Language="C#" Value="public int MaxBufferSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxBufferSize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BufferModeSettings.MaxBufferSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.InfiniteIntConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxBufferSize", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of events that can be buffered at one time.</summary>
+        <value>The maximum number of events that can be buffered at one time.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must have a value greater than zero. Invalid values may cause an exception to be thrown when the configuration section is saved.  
+  
+ The default value varies based on the provider. The <xref:System.Web.Configuration.BufferModeSettings> objects in the <xref:System.Web.Configuration.HealthMonitoringSection.BufferModes%2A> collection are referred to by name by the providers in the <xref:System.Web.Configuration.HealthMonitoringSection.Providers%2A> collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.BufferModeSettings.MaxBufferSize%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#16](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#16)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#16](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxBufferThreads">
+      <MemberSignature Language="C#" Value="public int MaxBufferThreads { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxBufferThreads" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BufferModeSettings.MaxBufferThreads" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.InfiniteIntConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxBufferThreads", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of flushing threads that can be active at one time.</summary>
+        <value>The maximum number of flushing threads that can be active at one time. The default is 1.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must have a value greater than zero. Invalid values may cause an exception to be thrown when the configuration section is saved.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.BufferModeSettings.MaxBufferSize%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#17](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#17)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#17](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#17)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxFlushSize">
+      <MemberSignature Language="C#" Value="public int MaxFlushSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxFlushSize" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BufferModeSettings.MaxFlushSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.InfiniteIntConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("maxFlushSize", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the maximum number of events per flush.</summary>
+        <value>The maximum number of events per flush.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must have a value greater than zero. Invalid values may cause an exception to be thrown when the configuration section is saved.  
+  
+ The default value varies based on the provider. The <xref:System.Web.Configuration.BufferModeSettings> objects in the <xref:System.Web.Configuration.HealthMonitoringSection.BufferModes%2A> collection are referred to by name by the providers in the <xref:System.Web.Configuration.HealthMonitoringSection.Providers%2A> collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.BufferModeSettings.MaxBufferSize%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#18](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#18)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#18](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#18)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BufferModeSettings.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the <see cref="T:System.Web.Configuration.BufferModeSettings" /> object.</summary>
+        <value>The name of the <see cref="T:System.Web.Configuration.BufferModeSettings" /> object. The default value is an empty string.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A unique name is required.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.BufferModeSettings.MaxBufferSize%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#15](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#15)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#15](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BufferModeSettings.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegularFlushInterval">
+      <MemberSignature Language="C#" Value="public TimeSpan RegularFlushInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RegularFlushInterval" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BufferModeSettings.RegularFlushInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.InfiniteTimeSpanConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("regularFlushInterval", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.TimeSpanValidator(MaxValueString="10675199.02:48:05.4775807", MinValueString="00:00:00")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of time between buffer flushes.</summary>
+        <value>The regular amount of time between buffer flushes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must have a value greater than zero. The value can be made infinite by setting it to <xref:System.Int32.MaxValue> ticks. Invalid values may cause an exception when the configuration section is saved.  
+  
+ The default value varies based on the provider. The <xref:System.Web.Configuration.BufferModeSettings> objects in the <xref:System.Web.Configuration.HealthMonitoringSection.BufferModes%2A> collection are referred to by name by the providers in the <xref:System.Web.Configuration.HealthMonitoringSection.Providers%2A> collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.BufferModeSettings.MaxBufferSize%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#19](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#19)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#19](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrgentFlushInterval">
+      <MemberSignature Language="C#" Value="public TimeSpan UrgentFlushInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan UrgentFlushInterval" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BufferModeSettings.UrgentFlushInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.InfiniteTimeSpanConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("urgentFlushInterval", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the minimum amount of time that can pass between buffer flushes.</summary>
+        <value>The minimum amount of time that can pass between buffer flushes.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must have a value greater than zero and less than or equal to the value of the <xref:System.Web.Configuration.BufferModeSettings.RegularFlushInterval%2A> property. Invalid values may cause an exception to be thrown when the configuration section is saved.  
+  
+ The default value varies based on the provider. The <xref:System.Web.Configuration.BufferModeSettings> objects in the <xref:System.Web.Configuration.HealthMonitoringSection.BufferModes%2A> collection are referred to by name by the providers in the <xref:System.Web.Configuration.HealthMonitoringSection.Providers%2A> collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.BufferModeSettings.MaxBufferSize%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#20](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#20)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#20](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#20)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UrgentFlushThreshold">
+      <MemberSignature Language="C#" Value="public int UrgentFlushThreshold { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 UrgentFlushThreshold" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Configuration.BufferModeSettings.UrgentFlushThreshold" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.InfiniteIntConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.ConfigurationProperty("urgentFlushThreshold", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of events that can be buffered before a flush is triggered.</summary>
+        <value>The number of events that can be buffered before a flush is triggered.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must have a value greater than zero and less than or equal to the value of the <xref:System.Web.Configuration.BufferModeSettings.MaxBufferSize%2A> property. Invalid values may cause an exception when the configuration section is saved.  
+  
+ The default value varies based on the provider. The <xref:System.Web.Configuration.BufferModeSettings> objects in the <xref:System.Web.Configuration.HealthMonitoringSection.BufferModes%2A> collection are referred to by name by the providers in the <xref:System.Web.Configuration.HealthMonitoringSection.Providers%2A> collection.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Configuration.BufferModeSettings.MaxBufferSize%2A> property. This code example is part of a larger example provided for the <xref:System.Web.Configuration.HealthMonitoringSection> class.  
+  
+ [!code-csharp[System.Web.Configuration.HealthMonitoringSection#21](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/CS/healthmonitoringsection.cs#21)]
+ [!code-vb[System.Web.Configuration.HealthMonitoringSection#21](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.HealthMonitoringSection/VB/healthmonitoringsection.vb#21)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

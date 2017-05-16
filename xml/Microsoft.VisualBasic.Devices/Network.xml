@@ -1,0 +1,1779 @@
+<Type Name="Network" FullName="Microsoft.VisualBasic.Devices.Network">
+  <TypeSignature Language="C#" Value="public class Network" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi Network extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Network" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a property, event, and methods for interacting with the network to which the computer is connected.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table lists examples of tasks involving the `My.Computer.Network` object.  
+  
+|To|See|  
+|-|-|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+|Check connection status|[How to: Check Connection Status](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-check-connection-status.md)|  
+  
+   
+  
+## Examples  
+ This example uploads the file `Order.txt` to http://www.cohowinery.com/uploads.  
+  
+ [!code-vb[VbVbalrMyNetwork#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#6)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Network ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Devices.Network" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public void DownloadFile (string address, string destinationFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(string address, string destinationFileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="destinationFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="address">Path of the file to download, including file name and host address.</param>
+        <param name="destinationFileName">File name and path of the downloaded file.</param>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the destination file already exists, the `DownloadFile` method will not overwrite the existing file. You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A> method to instruct it to overwrite existing files, provide user credentials, or specify a specific timeout value.  
+  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.DownloadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`.  
+  
+ [!code-vb[VbVbalrMyNetwork#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#7)]  
+  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`, specifying a timeout interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the default timeout (100 seconds).</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="destinationFileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="address">Path of the file to download, including file name and host address.</param>
+        <param name="destinationFileName">File name and path of the downloaded file.</param>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the destination file already exists, the `DownloadFile` method will not overwrite the existing file. You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A> method to instruct it to overwrite existing files, provide user credentials, or specify a specific timeout value. `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.DownloadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`.  
+  
+ [!code-vb[VbVbalrMyNetwork#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#7)]  
+  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`, specifying a timeout interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the default timeout (100 seconds).</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public void DownloadFile (string address, string destinationFileName, string userName, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(string address, string destinationFileName, string userName, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="destinationFileName" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="address">Path of the file to download, including file name and host address.</param>
+        <param name="destinationFileName">File name and path of the downloaded file.</param>
+        <param name="userName">User name to authenticate. Default is an empty string, "".</param>
+        <param name="password">Password to authenticate. Default is an empty string, "".</param>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the destination file already exists, the `DownloadFile` method will not overwrite the existing file. You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A> method to instruct it to overwrite existing files or specify a specific timeout value.  
+  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.DownloadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`.  
+  
+ [!code-vb[VbVbalrMyNetwork#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#7)]  
+  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`, specifying a timeout interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the default timeout (100 seconds).</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName, string userName, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName, string userName, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="destinationFileName" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="address">Path of the file to download, including file name and host address.</param>
+        <param name="destinationFileName">File name and path of the downloaded file.</param>
+        <param name="userName">User name to authenticate. Default is an empty string, "".</param>
+        <param name="password">Password to authenticate. Default is an empty string, "".</param>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the destination file already exists, the `DownloadFile` method will not overwrite the existing file. You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.DownloadFile%2A> method to instruct it to overwrite existing files or specify a specific timeout value.  
+  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.DownloadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`.  
+  
+ [!code-vb[VbVbalrMyNetwork#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#7)]  
+  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`, specifying a timeout interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the default timeout (100 seconds).</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName, System.Net.ICredentials networkCredentials, bool showUI, int connectionTimeout, bool overwrite);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName, class System.Net.ICredentials networkCredentials, bool showUI, int32 connectionTimeout, bool overwrite) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String,System.Net.ICredentials,System.Boolean,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="destinationFileName" Type="System.String" />
+        <Parameter Name="networkCredentials" Type="System.Net.ICredentials" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+        <Parameter Name="overwrite" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="address">
+          <see langword="String" /> or <see cref="T:System.Uri" />. Path of the file to download, including file name and host address.</param>
+        <param name="destinationFileName">
+          <see langword="String" />. File name and path of the downloaded file.</param>
+        <param name="networkCredentials">
+          <see cref="T:System.Net.ICredentials" />. Credentials to be supplied.</param>
+        <param name="showUI">
+          <see langword="True" /> to display the progress of the operation; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">Timeout interval, in milliseconds. Default is 100 seconds.</param>
+        <param name="overwrite">
+          <see langword="True" /> to overwrite existing files; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box appears that shows the progress of the operation; the dialog box contains a **Cancel** button that can be used to cancel the operation. The dialog box is not modal, and therefore does not block user input to other windows in the program.  
+  
+ If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
+  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.DownloadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`.  
+  
+ [!code-vb[VbVbalrMyNetwork#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#7)]  
+  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`, specifying a timeout interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="overwrite" /> is set to <see langword="False" /> and the destination file already exists.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public void DownloadFile (string address, string destinationFileName, string userName, string password, bool showUI, int connectionTimeout, bool overwrite);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(string address, string destinationFileName, string userName, string password, bool showUI, int32 connectionTimeout, bool overwrite) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.String,System.String,System.String,System.String,System.Boolean,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="destinationFileName" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+        <Parameter Name="overwrite" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="address">Path of the file to download, including file name and host address.</param>
+        <param name="destinationFileName">File name and path of the downloaded file.</param>
+        <param name="userName">User name to authenticate. Default is an empty string, "".</param>
+        <param name="password">Password to authenticate. Default is an empty string, "".</param>
+        <param name="showUI">
+          <see langword="True" /> to display the progress of the operation; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">
+          <see cref="T:System.Int32" />. Timeout interval, in milliseconds. Default is 100 seconds.</param>
+        <param name="overwrite">
+          <see langword="True" /> to overwrite existing files; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box appears that shows the progress of the operation; the dialog box contains a **Cancel** button that can be used to cancel the operation. The dialog box is not modal, and therefore does not block user input to other windows in the program.  
+  
+ If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
+  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.DownloadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`.  
+  
+ [!code-vb[VbVbalrMyNetwork#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#7)]  
+  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`, specifying a timeout interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="overwrite" /> is set to <see langword="False" /> and the destination file already exists.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName, System.Net.ICredentials networkCredentials, bool showUI, int connectionTimeout, bool overwrite, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName, class System.Net.ICredentials networkCredentials, bool showUI, int32 connectionTimeout, bool overwrite, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String,System.Net.ICredentials,System.Boolean,System.Int32,System.Boolean,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="destinationFileName" Type="System.String" />
+        <Parameter Name="networkCredentials" Type="System.Net.ICredentials" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+        <Parameter Name="overwrite" Type="System.Boolean" />
+        <Parameter Name="onUserCancel" Type="Microsoft.VisualBasic.FileIO.UICancelOption" />
+      </Parameters>
+      <Docs>
+        <param name="address">Path of the file to download, including file name and host address.</param>
+        <param name="destinationFileName">File name and path of the downloaded file.</param>
+        <param name="networkCredentials">Credentials to be supplied.</param>
+        <param name="showUI">
+          <see langword="True" /> to display the progress of the operation; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">Timeout interval, in milliseconds. Default is 100 seconds.</param>
+        <param name="overwrite">
+          <see langword="True" /> to overwrite existing files; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="onUserCancel">Specifies behavior when the user clicks **Cancel** or **No** on the dialog box shown as a result of <c>showUI</c> set to <see langword="True" />. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box appears that shows the progress of the operation; the dialog box contains a **Cancel** button that can be used to cancel the operation. The dialog box is not modal, and therefore does not block user input to other windows in the program.  
+  
+ If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
+  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.DownloadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`.  
+  
+ [!code-vb[VbVbalrMyNetwork#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#7)]  
+  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`, specifying a timeout interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="overwrite" /> is set to <see langword="False" /> and the destination file already exists.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName, string userName, string password, bool showUI, int connectionTimeout, bool overwrite);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName, string userName, string password, bool showUI, int32 connectionTimeout, bool overwrite) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String,System.String,System.String,System.Boolean,System.Int32,System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="destinationFileName" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+        <Parameter Name="overwrite" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="address">Path of the file to download, including file name and host address.</param>
+        <param name="destinationFileName">File name and path of the downloaded file.</param>
+        <param name="userName">User name to authenticate. Default is an empty string, "".</param>
+        <param name="password">Password to authenticate. Default is an empty string, "".</param>
+        <param name="showUI">
+          <see langword="True" /> to display the progress of the operation; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">Timeout interval, in milliseconds. Default is 100 seconds.</param>
+        <param name="overwrite">
+          <see langword="True" /> to overwrite existing files; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box appears that shows the progress of the operation; the dialog box contains a **Cancel** button that can be used to cancel the operation. The dialog box is not modal, and therefore does not block user input to other windows in the program.  
+  
+ If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
+  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.DownloadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`.  
+  
+ [!code-vb[VbVbalrMyNetwork#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#7)]  
+  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`, specifying a timeout interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="overwrite" /> is set to <see langword="False" /> and the destination file already exists.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public void DownloadFile (string address, string destinationFileName, string userName, string password, bool showUI, int connectionTimeout, bool overwrite, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(string address, string destinationFileName, string userName, string password, bool showUI, int32 connectionTimeout, bool overwrite, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.String,System.String,System.String,System.String,System.Boolean,System.Int32,System.Boolean,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="destinationFileName" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+        <Parameter Name="overwrite" Type="System.Boolean" />
+        <Parameter Name="onUserCancel" Type="Microsoft.VisualBasic.FileIO.UICancelOption" />
+      </Parameters>
+      <Docs>
+        <param name="address">Path of the file to download, including file name and host address.</param>
+        <param name="destinationFileName">File name and path of the downloaded file.</param>
+        <param name="userName">User name to authenticate. Default is an empty string, "".</param>
+        <param name="password">Password to authenticate. Default is an empty string, "".</param>
+        <param name="showUI">
+          <see langword="True" /> to display the progress of the operation; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">Timeout interval, in milliseconds. Default is 100 seconds.</param>
+        <param name="overwrite">
+          <see langword="True" /> to overwrite existing files; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="onUserCancel">Specifies behavior when the user clicks **Cancel** or **No** on the dialog box shown as a result of <c>ShowUI</c> set to <see langword="True" />. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box appears that shows the progress of the operation; the dialog box contains a **Cancel** button that can be used to cancel the operation. The dialog box is not modal, and therefore does not block user input to other windows in the program.  
+  
+ If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
+  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.DownloadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`.  
+  
+ [!code-vb[VbVbalrMyNetwork#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#7)]  
+  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`, specifying a timeout interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="overwrite" /> is set to <see langword="False" /> and the destination file already exists.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadFile">
+      <MemberSignature Language="C#" Value="public void DownloadFile (Uri address, string destinationFileName, string userName, string password, bool showUI, int connectionTimeout, bool overwrite, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void DownloadFile(class System.Uri address, string destinationFileName, string userName, string password, bool showUI, int32 connectionTimeout, bool overwrite, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.DownloadFile(System.Uri,System.String,System.String,System.String,System.Boolean,System.Int32,System.Boolean,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="destinationFileName" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+        <Parameter Name="overwrite" Type="System.Boolean" />
+        <Parameter Name="onUserCancel" Type="Microsoft.VisualBasic.FileIO.UICancelOption" />
+      </Parameters>
+      <Docs>
+        <param name="address">Path of the file to download, including file name and host address.</param>
+        <param name="destinationFileName">File name and path of the downloaded file.</param>
+        <param name="userName">User name to authenticate. Default is an empty string, "".</param>
+        <param name="password">Password to authenticate. Default is an empty string, "".</param>
+        <param name="showUI">
+          <see langword="True" /> to display the progress of the operation; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">Timeout interval, in milliseconds. Default is 100 seconds.</param>
+        <param name="overwrite">
+          <see langword="True" /> to overwrite existing files; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="onUserCancel">Specifies behavior when the user clicks **Cancel** or **No** on the dialog box shown as a result of <c>ShowUI</c> set to <see langword="True" />. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+        <summary>Downloads the specified remote file and saves it in the specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box appears that shows the progress of the operation; the dialog box contains a **Cancel** button that can be used to cancel the operation. The dialog box is not modal, and therefore does not block user input to other windows in the program.  
+  
+ If the server does not respond within the specified `connectionTimeout`, the operation is cancelled, and an exception is thrown.  
+  
+ `DownloadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The `DownloadFile` method does not send optional HTTP headers. Some servers may return 500 (Internal Server Error) if the optional user agent header is missing. To send optional headers, you must construct a request using the <xref:System.Net.WebClient> class.  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.DownloadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Download a file|[How to: Download a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-download-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`.  
+  
+ [!code-vb[VbVbalrMyNetwork#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#7)]  
+  
+ This example downloads the file `WineList.txt` from `http://www.cohowinery.com/downloads` and saves it to `C:\Documents and Settings\All Users\Documents`, specifying a timeout interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="destinationFileName" /> ends with a trailing slash.</exception>
+        <exception cref="T:System.IO.IOException">
+          <paramref name="overwrite" /> is set to <see langword="False" /> and the destination file already exists.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAvailable">
+      <MemberSignature Language="C#" Value="public bool IsAvailable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAvailable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Network.IsAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates whether a computer is connected to a network.</summary>
+        <value>
+          <see langword="True" /> if the computer is connected to a network; otherwise <see langword="False" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `IsAvailable` always returns `False` when called from a `Click Once` application or if the user does not have <xref:System.Net.NetworkInformation.NetworkInformationPermission>.  
+  
+ The following table lists examples of tasks involving the `My.Computer.Network.IsAvailable` property.  
+  
+|To|See|  
+|-|-|  
+|Check whether a computer is connected to a network|[How to: Check Connection Status](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-check-connection-status.md)|  
+  
+   
+  
+## Examples  
+ This example checks the property's status and reports it.  
+  
+ [!code-vb[VbVbalrMyNetwork#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="NetworkAvailabilityChanged">
+      <MemberSignature Language="C#" Value="public event Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler NetworkAvailabilityChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler NetworkAvailabilityChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Devices.Network.NetworkAvailabilityChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when the network availability changes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An application raises the `NetworkAvailabilityChanged` event every time the availability of the network changes. You can use the <xref:Microsoft.VisualBasic.Devices.NetworkAvailableEventArgs.IsNetworkAvailable%2A> property of the `e` parameter to get the new state of the network connection. To get the current state of the network connection, use the <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property.  
+  
+ In a Windows Forms application, this event is raised on the application's main thread with the other user-interface events. This allows the event handler to access directly the application's user interface. However, if the application is busy handling another user-interface event when this event is raised, this event cannot be processed until the other event handler finishes or calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.DoEvents%2A> method.  
+  
+ You cannot use the `Handles` statement to handle the `NetworkAvailabilityChanged` event; you must use the `AddHandler` statement.  
+  
+ In Windows Forms applications, the `MyApplication` object exposes a `NetworkAvailabilityChanged` event that provides the same functionality as this event, but you can handle it with the `Handles` statement.  
+  
+> [!NOTE]
+>  Many network hubs provide a network connection, even if the hub is disconnected from a larger network. Consequently, for wired connections, this event indicates a change in the connection between the computer and a hub.  
+  
+> [!NOTE]
+>  The `NetworkAvailabilityChanged` event is not raised by applications that run on Windows 95 and Windows 98 or by applications that are run on Windows 2000 by a non-administrator. If your application might run on those platforms, use the <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property.  
+  
+   
+  
+## Examples  
+ This example uses the `My.Computer.Network.NetworkAvailabilityChanged` event to update the user interface of a form or control.  
+  
+ This code should to be in a form or control that has a <xref:System.Windows.Forms.Label> named `Label1`.  
+  
+ [!code-vb[VbVbalrMyApplication#50](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyApplication/VB/Form1.vb#50)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ping">
+      <MemberSignature Language="C#" Value="public bool Ping (string hostNameOrAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance bool Ping(string hostNameOrAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.Ping(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hostNameOrAddress" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="hostNameOrAddress">The URL, computer name, or IP number of the server to ping.</param>
+        <summary>Pings the specified server.</summary>
+        <returns>
+          <see langword="True" /> if the operation was successful; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Ping` method is not a fail-safe method for determining the availability of a remote computer: the ping port on the target computer may be turned off or the ping request may be blocked by a firewall or router.  
+  
+ The address passed to the `Ping` method must be DNS resolvable and cannot be preceded by "http://".  
+  
+   
+  
+## Examples  
+ This example reports whether or not the server can be pinged by determining whether the `Ping` method returns `True`.  
+  
+ [!code-vb[VbVbalrMyNetwork#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#4)]  
+  
+ Replace `"198.01.01.01"` with the IP address, URL, or computer name of the server to ping.  
+  
+ This example reports whether or not the server can be pinged by determining whether the `Ping` method returned `True` and specifies a timeout interval of 1000 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#5)]  
+  
+ Replace `"www.cohowinery.com"` with the IP address, URL, or computer name of the server to ping.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No network connection is available.</exception>
+        <exception cref="T:System.Net.NetworkInformation.PingException">URL was not valid.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.SocketPermission">Controls rights to make or accept connections on a transport address. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">Controls access to a Windows NT performance counter component. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.NetworkInformation.NetworkInformationPermission">Controls access to network information and traffic statistics for the local computer. Associated enumeration: <see cref="F:System.Net.NetworkInformation.NetworkInformationAccess.Ping" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Ping">
+      <MemberSignature Language="C#" Value="public bool Ping (Uri address);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance bool Ping(class System.Uri address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.Ping(System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="address">The URI of the server to ping.</param>
+        <summary>Pings the specified server.</summary>
+        <returns>
+          <see langword="True" /> if the operation was successful; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Ping` method is not a fail-safe method for determining the availability of a remote computer: the ping port on the target computer may be turned off or the ping request may be blocked by a firewall or router.  
+  
+ The address passed to the `Ping` method must be DNS resolvable and cannot be preceded by "http://".  
+  
+   
+  
+## Examples  
+ This example reports whether or not the server can be pinged by determining whether the `Ping` method returns `True`.  
+  
+ [!code-vb[VbVbalrMyNetwork#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#4)]  
+  
+ Replace `"198.01.01.01"` with the IP address, URL, or computer name of the server to ping.  
+  
+ This example reports whether or not the server can be pinged by determining whether the `Ping` method returned `True` and specifies a timeout interval of 1000 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#5)]  
+  
+ Replace `"www.cohowinery.com"` with the IP address, URL, or computer name of the server to ping.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No network connection is available.</exception>
+        <exception cref="T:System.Net.NetworkInformation.PingException">URL was not valid.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.SocketPermission">Controls rights to make or accept connections on a transport address. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">Controls access to a Windows NT performance counter component. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.NetworkInformation.NetworkInformationPermission">Controls access to network information and traffic statistics for the local computer. Associated enumeration: <see cref="F:System.Net.NetworkInformation.NetworkInformationAccess.Ping" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Ping">
+      <MemberSignature Language="C#" Value="public bool Ping (string hostNameOrAddress, int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance bool Ping(string hostNameOrAddress, int32 timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.Ping(System.String,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hostNameOrAddress" Type="System.String" />
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="hostNameOrAddress">The URL, computer name, or IP number of the server to ping.</param>
+        <param name="timeout">Time threshold in milliseconds for contacting the destination. Default is 500.</param>
+        <summary>Pings the specified server.</summary>
+        <returns>
+          <see langword="True" /> if the operation was successful; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Ping` method is not a fail-safe method for determining the availability of a remote computer: the ping port on the target computer may be turned off or the ping request may be blocked by a firewall or router.  
+  
+ The address passed to the `Ping` method must be DNS resolvable and cannot be preceded by "http://".  
+  
+   
+  
+## Examples  
+ This example reports whether or not the server can be pinged by determining whether the `Ping` method returns `True`.  
+  
+ [!code-vb[VbVbalrMyNetwork#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#4)]  
+  
+ Replace `"198.01.01.01"` with the IP address, URL, or computer name of the server to ping.  
+  
+ This example reports whether or not the server can be pinged by determining whether the `Ping` method returned `True` and specifies a timeout interval of 1000 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#5)]  
+  
+ Replace `"www.cohowinery.com"` with the IP address, URL, or computer name of the server to ping.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No network connection is available.</exception>
+        <exception cref="T:System.Net.NetworkInformation.PingException">URL was not valid.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.SocketPermission">Controls rights to make or accept connections on a transport address. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">Controls access to a Windows NT performance counter component. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.NetworkInformation.NetworkInformationPermission">Controls access to network information and traffic statistics for the local computer. Associated enumeration: <see cref="F:System.Net.NetworkInformation.NetworkInformationAccess.Ping" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Ping">
+      <MemberSignature Language="C#" Value="public bool Ping (Uri address, int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance bool Ping(class System.Uri address, int32 timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.Ping(System.Uri,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="address">The URI of the server to ping.</param>
+        <param name="timeout">Time threshold in milliseconds for contacting the destination. Default is 500.</param>
+        <summary>Pings the specified server.</summary>
+        <returns>
+          <see langword="True" /> if the operation was successful; otherwise <see langword="False" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `Ping` method is not a fail-safe method for determining the availability of a remote computer: the ping port on the target computer may be turned off or the ping request may be blocked by a firewall or router.  
+  
+ The address passed to the `Ping` method must be DNS resolvable and cannot be preceded by "http://".  
+  
+   
+  
+## Examples  
+ This example reports whether or not the server can be pinged by determining whether the `Ping` method returns `True`.  
+  
+ [!code-vb[VbVbalrMyNetwork#4](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#4)]  
+  
+ Replace `"198.01.01.01"` with the IP address, URL, or computer name of the server to ping.  
+  
+ This example reports whether or not the server can be pinged by determining whether the `Ping` method returned `True` and specifies a timeout interval of 1000 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#5)]  
+  
+ Replace `"www.cohowinery.com"` with the IP address, URL, or computer name of the server to ping.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">No network connection is available.</exception>
+        <exception cref="T:System.Net.NetworkInformation.PingException">URL was not valid.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">Describes a set of security permissions applied to code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.SocketPermission">Controls rights to make or accept connections on a transport address. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Diagnostics.PerformanceCounterPermission">Controls access to a Windows NT performance counter component. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.NetworkInformation.NetworkInformationPermission">Controls access to network information and traffic statistics for the local computer. Associated enumeration: <see cref="F:System.Net.NetworkInformation.NetworkInformationAccess.Ping" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFile">
+      <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, string address);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, string address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFileName" Type="System.String" />
+        <Parameter Name="address" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFileName">Path and name of file to upload.</param>
+        <param name="address">URL, IP address, or URI of destination server.</param>
+        <summary>Sends the specified file to the specified host address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method to provide user credentials or specify a specific timeout value.  
+  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads`.  
+  
+ [!code-vb[VbVbalrMyNetwork#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#2)]  
+  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads` without supplying a user name or password, shows the progress of the upload, and has a time-out interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The source file path is not valid.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="address" /> does not include a file name.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the default timeout (100 seconds).</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFile">
+      <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFileName" Type="System.String" />
+        <Parameter Name="address" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFileName">Path and name of file to upload.</param>
+        <param name="address">URL, IP address, or URI of destination server.</param>
+        <summary>Sends the specified file to the specified host address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method to provide user credentials or specify a specific timeout value.  
+  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads`.  
+  
+ [!code-vb[VbVbalrMyNetwork#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#2)]  
+  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads` without supplying a user name or password, shows the progress of the upload, and has a time-out interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The source file path is not valid.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="address" /> does not include a file name.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the default timeout (100 seconds).</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFile">
+      <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, string address, string userName, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, string address, string userName, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFileName" Type="System.String" />
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFileName">Path and name of file to upload.</param>
+        <param name="address">URL, IP address, or URI of destination server.</param>
+        <param name="userName">User name to authenticate. Default is an empty string: <c>""</c>.</param>
+        <param name="password">Password to authenticate. Default is an empty string: <c>""</c>.</param>
+        <summary>Sends the specified file to the specified host address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method to specify a specific timeout value.  
+  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads`.  
+  
+ [!code-vb[VbVbalrMyNetwork#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#2)]  
+  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads` without supplying a user name or password, shows the progress of the upload, and has a time-out interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionTimeout" /> is less than or equal to zero.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="address" /> does not include a file name.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the default timeout (100 seconds).</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFile">
+      <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address, string userName, string password);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address, string userName, string password) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFileName" Type="System.String" />
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFileName">Path and name of file to upload.</param>
+        <param name="address">URL, IP address, or URI of destination server.</param>
+        <param name="userName">User name to authenticate. Default is an empty string: <c>""</c>.</param>
+        <param name="password">Password to authenticate. Default is an empty string: <c>""</c>.</param>
+        <summary>Sends the specified file to the specified host address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use one of the other overloads of the <xref:Microsoft.VisualBasic.Devices.Network.UploadFile%2A> method to specify a specific timeout value.  
+  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads`.  
+  
+ [!code-vb[VbVbalrMyNetwork#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#2)]  
+  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads` without supplying a user name or password, shows the progress of the upload, and has a time-out interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionTimeout" /> is less than or equal to zero.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="address" /> does not include a file name.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the default timeout (100 seconds).</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFile">
+      <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address, System.Net.ICredentials networkCredentials, bool showUI, int connectionTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address, class System.Net.ICredentials networkCredentials, bool showUI, int32 connectionTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri,System.Net.ICredentials,System.Boolean,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFileName" Type="System.String" />
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="networkCredentials" Type="System.Net.ICredentials" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFileName">Path and name of file to upload.</param>
+        <param name="address">URL, IP address, or URI of destination server.</param>
+        <param name="networkCredentials">Credentials for authentication.</param>
+        <param name="showUI">
+          <see langword="True" /> to display progress of the operation; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">Timeout interval in milliseconds. Default is 100 seconds.</param>
+        <summary>Sends the specified file to the specified host address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box shows the progress of the operation and includes a **Cancel** button that the user can click to cancel the operation. Because the dialog box is not modal, it does not block user input to other windows in the program.  
+  
+ If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
+  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads`.  
+  
+ [!code-vb[VbVbalrMyNetwork#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#2)]  
+  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads` without supplying a user name or password, shows the progress of the upload, and has a time-out interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionTimeout" /> is less than or equal to zero.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="address" /> does not include a file name.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFile">
+      <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, string address, string userName, string password, bool showUI, int connectionTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, string address, string userName, string password, bool showUI, int32 connectionTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.String,System.String,System.String,System.Boolean,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFileName" Type="System.String" />
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFileName">Path and name of file to upload.</param>
+        <param name="address">URL, IP address, or URI of destination server.</param>
+        <param name="userName">User name to authenticate. Default is an empty string: <c>""</c>.</param>
+        <param name="password">Password to authenticate. Default is an empty string: <c>""</c>.</param>
+        <param name="showUI">
+          <see langword="True" /> to display progress of the operation; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">Timeout interval in milliseconds. Default is 100 seconds.</param>
+        <summary>Sends the specified file to the specified host address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box shows the progress of the operation and includes a **Cancel** button that the user can click to cancel the operation. Because the dialog box is not modal, it does not block user input to other windows in the program.  
+  
+ If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
+  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads`.  
+  
+ [!code-vb[VbVbalrMyNetwork#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#2)]  
+  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads` without supplying a user name or password, shows the progress of the upload, and has a time-out interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionTimeout" /> is less than or equal to zero.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="address" /> does not include a file name.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFile">
+      <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address, System.Net.ICredentials networkCredentials, bool showUI, int connectionTimeout, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address, class System.Net.ICredentials networkCredentials, bool showUI, int32 connectionTimeout, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri,System.Net.ICredentials,System.Boolean,System.Int32,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFileName" Type="System.String" />
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="networkCredentials" Type="System.Net.ICredentials" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+        <Parameter Name="onUserCancel" Type="Microsoft.VisualBasic.FileIO.UICancelOption" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFileName">Path and name of file to upload.</param>
+        <param name="address">URL, IP address, or URI of destination server.</param>
+        <param name="networkCredentials">Credentials for authentication.</param>
+        <param name="showUI">
+          <see langword="True" /> to display progress of the operation; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">Timeout interval in milliseconds. Default is 100 seconds.</param>
+        <param name="onUserCancel">Action to be taken when the user clicks **Cancel**. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+        <summary>Sends the specified file to the specified host address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box shows the progress of the operation and includes a **Cancel** button that the user can click to cancel the operation. Because the dialog box is not modal, it does not block user input to other windows in the program.  
+  
+ If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
+  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads`.  
+  
+ [!code-vb[VbVbalrMyNetwork#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#2)]  
+  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads` without supplying a user name or password, shows the progress of the upload, and has a time-out interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionTimeout" /> is less than or equal to zero.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="address" /> does not include a file name.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFile">
+      <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address, string userName, string password, bool showUI, int connectionTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address, string userName, string password, bool showUI, int32 connectionTimeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri,System.String,System.String,System.Boolean,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFileName" Type="System.String" />
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFileName">Path and name of file to upload.</param>
+        <param name="address">URL, IP address, or URI of destination server.</param>
+        <param name="userName">User name to authenticate. Default is an empty string: <c>""</c>.</param>
+        <param name="password">Password to authenticate. Default is an empty string: <c>""</c>.</param>
+        <param name="showUI">
+          <see langword="True" /> to display progress of the operation; otherwise <see langword="False" />. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">Timeout interval in milliseconds. Default is 100 seconds.</param>
+        <summary>Sends the specified file to the specified host address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box shows the progress of the operation and includes a **Cancel** button that the user can click to cancel the operation. Because the dialog box is not modal, it does not block user input to other windows in the program.  
+  
+ If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
+  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads`.  
+  
+ [!code-vb[VbVbalrMyNetwork#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#2)]  
+  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads` without supplying a user name or password, shows the progress of the upload, and has a time-out interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionTimeout" /> is less than or equal to zero.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="address" /> does not include a file name.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFile">
+      <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, string address, string userName, string password, bool showUI, int connectionTimeout, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, string address, string userName, string password, bool showUI, int32 connectionTimeout, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.String,System.String,System.String,System.Boolean,System.Int32,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFileName" Type="System.String" />
+        <Parameter Name="address" Type="System.String" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+        <Parameter Name="onUserCancel" Type="Microsoft.VisualBasic.FileIO.UICancelOption" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFileName">Path and name of file to upload.</param>
+        <param name="address">URL, IP address, or URI of destination server.</param>
+        <param name="userName">User name to authenticate. Default is an empty string: <c>""</c>.</param>
+        <param name="password">Password to authenticate. Default is an empty string: <c>""</c>.</param>
+        <param name="showUI">Whether to display progress of the operation. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">Timeout interval in milliseconds. Default is 100 seconds.</param>
+        <param name="onUserCancel">Action to be taken when the user clicks **Cancel**. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+        <summary>Sends the specified file to the specified host address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box shows the progress of the operation and includes a **Cancel** button that the user can click to cancel the operation. Because the dialog box is not modal, it does not block user input to other windows in the program.  
+  
+ If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
+  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads`.  
+  
+ [!code-vb[VbVbalrMyNetwork#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#2)]  
+  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads` without supplying a user name or password, shows the progress of the upload, and has a time-out interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionTimeout" /> is less than or equal to zero.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="address" /> does not include a file name.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFile">
+      <MemberSignature Language="C#" Value="public void UploadFile (string sourceFileName, Uri address, string userName, string password, bool showUI, int connectionTimeout, Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public instance void UploadFile(string sourceFileName, class System.Uri address, string userName, string password, bool showUI, int32 connectionTimeout, valuetype Microsoft.VisualBasic.FileIO.UICancelOption onUserCancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Network.UploadFile(System.String,System.Uri,System.String,System.String,System.Boolean,System.Int32,Microsoft.VisualBasic.FileIO.UICancelOption)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceFileName" Type="System.String" />
+        <Parameter Name="address" Type="System.Uri" />
+        <Parameter Name="userName" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="showUI" Type="System.Boolean" />
+        <Parameter Name="connectionTimeout" Type="System.Int32" />
+        <Parameter Name="onUserCancel" Type="Microsoft.VisualBasic.FileIO.UICancelOption" />
+      </Parameters>
+      <Docs>
+        <param name="sourceFileName">Path and name of file to upload.</param>
+        <param name="address">URL, IP address, or URI of destination server.</param>
+        <param name="userName">User name to authenticate. Default is an empty string: <c>""</c>.</param>
+        <param name="password">Password to authenticate. Default is an empty string: <c>""</c>.</param>
+        <param name="showUI">Whether to display progress of the operation. Default is <see langword="False" />.</param>
+        <param name="connectionTimeout">Timeout interval in milliseconds. Default is 100 seconds.</param>
+        <param name="onUserCancel">Action to be taken when the user clicks **Cancel**. Default is <see cref="F:Microsoft.VisualBasic.FileIO.UICancelOption.ThrowException" />.</param>
+        <summary>Sends the specified file to the specified host address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `showUI` is set to `True`, a dialog box shows the progress of the operation and includes a **Cancel** button that the user can click to cancel the operation. Because the dialog box is not modal, it does not block user input to other windows in the program.  
+  
+ If the server does not respond within the interval specified in `connectionTimeout`, the operation is cancelled and an exception is thrown.  
+  
+ `My.Computer.Network.UploadFile` outputs trace information when you enable network tracing in your application. For more information, see [Enabling Network Tracing](~/docs/framework/network-programming/enabling-network-tracing.md).  
+  
+> [!NOTE]
+>  The FTP protocol sends information, including passwords, in plain text and should not be used for transmitting sensitive information.  
+  
+ The following table lists an example of a task involving the `My.Computer.Network.UploadFile` method.  
+  
+|To|See|  
+|-|-|  
+|Upload a file|[How to: Upload a File](~/docs/visual-basic/developing-apps/programming/computer-resources/how-to-upload-a-file.md)|  
+  
+   
+  
+## Examples  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads`.  
+  
+ [!code-vb[VbVbalrMyNetwork#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#2)]  
+  
+ This example uploads the file `Order.txt` to `http://www.cohowinery.com/uploads` without supplying a user name or password, shows the progress of the upload, and has a time-out interval of 500 milliseconds.  
+  
+ [!code-vb[VbVbalrMyNetwork#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyNetwork/VB/Class1.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="connectionTimeout" /> is less than or equal to zero.</exception>
+        <exception cref="T:System.InvalidOperationException">
+          <paramref name="address" /> does not include a file name.</exception>
+        <exception cref="T:System.Security.SecurityException">User lacks necessary permissions to perform a network operation.</exception>
+        <exception cref="T:System.TimeoutException">The server does not respond within the specified <paramref name="connectionTimeout" />.</exception>
+        <exception cref="T:System.Net.WebException">The request is denied by the target web server.</exception>
+        <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">Controls the permissions related to user interfaces and the clipboard. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
+        <permission cref="T:System.Net.WebPermission">Controls rights to access HTTP Internet resources. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

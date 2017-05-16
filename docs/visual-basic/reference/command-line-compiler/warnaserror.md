@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "-warnaserror compiler option [Visual Basic]"
 ms.assetid: 49819f1d-a1bd-4201-affe-5afe6d9712e1
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

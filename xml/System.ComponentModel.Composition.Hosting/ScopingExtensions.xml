@@ -1,0 +1,183 @@
+<Type Name="ScopingExtensions" FullName="System.ComponentModel.Composition.Hosting.ScopingExtensions">
+  <TypeSignature Language="C#" Value="public static class ScopingExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ScopingExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.ScopingExtensions" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines static convenience methods for scoping.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContainsPartMetadata&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool ContainsPartMetadata&lt;T&gt; (this System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, string key, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsPartMetadata&lt;T&gt;(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, string key, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.ContainsPartMetadata``1(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.String,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" RefType="this" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the metadata value.</typeparam>
+        <param name="part">The part to search.</param>
+        <param name="key">The metadata key.</param>
+        <param name="value">The metadata value.</param>
+        <summary>Gets a value that indicates whether the specified part contains metadata that has the specified key and value.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="part" /> contains metadata that has the specified key, value type, and value; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsPartMetadataWithKey">
+      <MemberSignature Language="C#" Value="public static bool ContainsPartMetadataWithKey (this System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ContainsPartMetadataWithKey(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.ContainsPartMetadataWithKey(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" RefType="this" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="part">The part to search.</param>
+        <param name="key">The metadata key.</param>
+        <summary>Gets a value that indicates whether the specified part contains metadata that has the specified key.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="part" /> contains metadata that has the specified key; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exports">
+      <MemberSignature Language="C#" Value="public static bool Exports (this System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, string contractName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Exports(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, string contractName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.Exports(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" RefType="this" />
+        <Parameter Name="contractName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="part">The part to search.</param>
+        <param name="contractName">The name of the contract.</param>
+        <summary>Gets a value that indicates whether the specified part exports the specified contract.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="part" /> exports the specified contract; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="public static System.ComponentModel.Composition.Hosting.FilteredCatalog Filter (this System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, Func&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition,bool&gt; filter);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.Composition.Hosting.FilteredCatalog Filter(class System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, class System.Func`2&lt;class System.ComponentModel.Composition.Primitives.ComposablePartDefinition, bool&gt; filter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.Filter(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.Func{System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Composition.Hosting.FilteredCatalog</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="catalog" Type="System.ComponentModel.Composition.Primitives.ComposablePartCatalog" RefType="this" />
+        <Parameter Name="filter" Type="System.Func&lt;System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="catalog">The catalog to filter.</param>
+        <param name="filter">The filter function.</param>
+        <summary>Filters the specified catalog with the specified filter function.</summary>
+        <returns>A new catalog filtered by using the specified filter.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Imports">
+      <MemberSignature Language="C#" Value="public static bool Imports (this System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, string contractName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Imports(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, string contractName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.Imports(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" RefType="this" />
+        <Parameter Name="contractName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="part">The part to search.</param>
+        <param name="contractName">The name of the contract.</param>
+        <summary>Determines whether the specified part imports the specified contract.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="part" /> imports the specified contract; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Imports">
+      <MemberSignature Language="C#" Value="public static bool Imports (this System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, string contractName, System.ComponentModel.Composition.Primitives.ImportCardinality importCardinality);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Imports(class System.ComponentModel.Composition.Primitives.ComposablePartDefinition part, string contractName, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality importCardinality) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.ScopingExtensions.Imports(System.ComponentModel.Composition.Primitives.ComposablePartDefinition,System.String,System.ComponentModel.Composition.Primitives.ImportCardinality)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="part" Type="System.ComponentModel.Composition.Primitives.ComposablePartDefinition" RefType="this" />
+        <Parameter Name="contractName" Type="System.String" />
+        <Parameter Name="importCardinality" Type="System.ComponentModel.Composition.Primitives.ImportCardinality" />
+      </Parameters>
+      <Docs>
+        <param name="part">The part to search.</param>
+        <param name="contractName">The name of the contract.</param>
+        <param name="importCardinality">The cardinality of the contract.</param>
+        <summary>Determines whether the specified part imports the specified contract with the specified cardinality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="part" /> imports a contract that has the specified name and cardinality; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

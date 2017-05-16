@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC31020"
 ms.assetid: 23996dca-250f-4320-8211-1560e90172df
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

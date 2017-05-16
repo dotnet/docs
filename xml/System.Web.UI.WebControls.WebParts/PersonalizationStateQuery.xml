@@ -1,0 +1,168 @@
+<Type Name="PersonalizationStateQuery" FullName="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery">
+  <TypeSignature Language="C#" Value="public sealed class PersonalizationStateQuery" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PersonalizationStateQuery extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a set of query parameters that can be passed to a personalization provider using the various get and find methods. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used as a parameter value for various get and find methods of a personalization provider, such as <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.FindState%2A> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.GetCountOfState%2A>. The default indexer allows generic access to the query parameters maintained by this object. The three properties that are explicitly exposed by this class, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, are stored using query key values that are the same as the property names of this class. For more information, see <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.Item%2A>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PersonalizationStateQuery ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A instance of this class is used as a parameter value for various get and find methods of a personalization provider, such as <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.FindState%2A> and <xref:System.Web.UI.WebControls.WebParts.PersonalizationProvider.GetCountOfState%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public object this[string queryKey] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="queryKey" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="queryKey">A case-insensitive query string. The value should be one of the following: "PathToMatch", "UserInactiveSinceDate", or "UsernameToMatch".</param>
+        <summary>Gets or sets the value of the query parameter.</summary>
+        <value>The value of the query parameter indicated by the <paramref name="queryKey" /> parameter.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is the default indexer for the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery> class. It returns the value of the query parameter indicated by `queryKey`. You can use `PersonalizationStateQuery.this["UsernameToMatch"]`, `PersonalizationStateQuery.this["PathToMatch"]` and `PersonalizationStateQuery.this["UserInactiveSinceDate"]` to set the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> properties, respectively. When these three properties are set in the indexer, they are validated against the proper type.  
+  
+ This property returns `null` if `queryKey` does not exist.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="queryKey" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="queryKey" /> is an empty string ("").  
+  
+ \- or -  
+  
+ When trimmed, <paramref name="queryKey" /> results in an empty string.  
+  
+ \- or -  
+  
+ A value provided for one of the three properties on <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery" /> was of the wrong type.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="PathToMatch">
+      <MemberSignature Language="C#" Value="public string PathToMatch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PathToMatch" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the path to be used for a query.</summary>
+        <value>The path to be used for a query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property contains a path to match when executing queries. If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A> contains wildcard characters, they are passed through to the underlying data store. This property can be set to `null`, indicating that a query should not filter based on path. If this property is non-`null`, its value is trimmed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserInactiveSinceDate">
+      <MemberSignature Language="C#" Value="public DateTime UserInactiveSinceDate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime UserInactiveSinceDate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the last active date used in a query.</summary>
+        <value>The last active date to be used in a query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property indicates the value of the <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property to filter against. The exact comparison is to include records where the value of <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> is less than or equal to the value of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> property.  
+  
+ This property can be set to <xref:System.DateTime.MaxValue>, indicating that a query should not filter based on the last activity date.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsernameToMatch">
+      <MemberSignature Language="C#" Value="public string UsernameToMatch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UsernameToMatch" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the user name in a query.</summary>
+        <value>The user name to be used in a query.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property represents the user name to filter against when executing a query. If <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A> contains wildcard characters, they are passed through to the underlying data store. This property can be set to `null`, indicating that a query should not filter based on the user name. If this property is non-`null`, its value is trimmed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

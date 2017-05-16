@@ -1,0 +1,80 @@
+<Type Name="SetStoryboardSpeedRatio" FullName="System.Windows.Media.Animation.SetStoryboardSpeedRatio">
+  <TypeSignature Language="C#" Value="public sealed class SetStoryboardSpeedRatio : System.Windows.Media.Animation.ControllableStoryboardAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SetStoryboardSpeedRatio extends System.Windows.Media.Animation.ControllableStoryboardAction" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SetStoryboardSpeedRatio" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.ControllableStoryboardAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A trigger action that changes the speed of a <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio> action with an <xref:System.Windows.EventTrigger> or a  <xref:System.Windows.Trigger> to interactively control a storyboard's speed ratio.  
+  
+ Use the <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio.SpeedRatio%2A> property of <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio> to specify a new <xref:System.Windows.Media.Animation.Storyboard> animation speed as a ratio of the old animation speed. For example, if you set the <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio.SpeedRatio%2A> to 2, you double the speed of the <xref:System.Windows.Media.Animation.Storyboard> animations and if you set a value of 0.5, you reduce the speed by 50 percent.  
+  
+ This object affects the <xref:System.Windows.Media.Animation.Storyboard> at anytime after the <xref:System.Windows.Media.Animation.Storyboard> begins. For example, if you pause the <xref:System.Windows.Media.Animation.Storyboard> and use the <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio>, when you resume the <xref:System.Windows.Media.Animation.Storyboard>, it uses the new speed ratio.  
+  
+ <xref:System.Windows.Media.Animation.PauseStoryboard> does not control a <xref:System.Windows.Media.Animation.Storyboard> directly. Rather, <xref:System.Windows.Media.Animation.PauseStoryboard> must reference the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> of the <xref:System.Windows.Media.Animation.BeginStoryboard>, which controls the <xref:System.Windows.Media.Animation.Storyboard>.  
+  
+## Pause, Resume, Stop, or Otherwise Control a Storyboard Interactively  
+ To be able to pause, resume, or otherwise control a <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> interactively, set the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> property of its <xref:System.Windows.Media.Animation.BeginStoryboard> and use a <xref:System.Windows.Media.Animation.ControllableStoryboardAction> object (such as <xref:System.Windows.Media.Animation.PauseStoryboard>, <xref:System.Windows.Media.Animation.ResumeStoryboard>, or <xref:System.Windows.Media.Animation.StopStoryboard>) to control it by referencing its <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A>. If the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> of <xref:System.Windows.Media.Animation.BeginStoryboard> is unspecified, the <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> cannot be interactively controlled after it is begun. See [How to: Use Event Triggers to Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-use-event-triggers-to-control-a-storyboard-after-it-starts.md) for more information.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SetStoryboardSpeedRatio ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SetStoryboardSpeedRatio.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.SetStoryboardSpeedRatio" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpeedRatio">
+      <MemberSignature Language="C#" Value="public double SpeedRatio { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 SpeedRatio" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SetStoryboardSpeedRatio.SpeedRatio" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a new <see cref="T:System.Windows.Media.Animation.Storyboard" /> animation speed as a ratio of the old animation speed.</summary>
+        <value>The speed ratio for the <see cref="T:System.Windows.Media.Animation.Storyboard" />. The default value is 1.0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to specify a new <xref:System.Windows.Media.Animation.Storyboard> animation speed as a ratio of the old animation speed. For example, if you set the <xref:System.Windows.Media.Animation.SetStoryboardSpeedRatio.SpeedRatio%2A> to 2, you double the speed of the <xref:System.Windows.Media.Animation.Storyboard> animations and if you set a value of 0.5, you reduce the speed by 50 percent.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

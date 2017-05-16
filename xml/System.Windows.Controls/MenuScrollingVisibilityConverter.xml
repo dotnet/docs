@@ -1,0 +1,121 @@
+<Type Name="MenuScrollingVisibilityConverter" FullName="System.Windows.Controls.MenuScrollingVisibilityConverter">
+  <TypeSignature Language="C#" Value="public sealed class MenuScrollingVisibilityConverter : System.Windows.Data.IMultiValueConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MenuScrollingVisibilityConverter extends System.Object implements class System.Windows.Data.IMultiValueConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.MenuScrollingVisibilityConverter" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Windows.Data.IMultiValueConverter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents a data-binding converter to handle the visibility of repeat buttons in scrolling menus.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Controls.MenuScrollingVisibilityConverter> determines whether a menu should display the repeat buttons when a menu has too many items to fit on the screen at once.  Use the converter with a <xref:System.Windows.Data.MultiBinding> that has four bindings.  The four bindings should be to properties of the parent <xref:System.Windows.Controls.ScrollViewer>:  If the menu items are organized vertically (which is the default for menus), bind to <xref:System.Windows.Controls.ScrollViewer.ComputedVerticalScrollBarVisibility%2A>, <xref:System.Windows.Controls.ScrollViewer.VerticalOffset%2A>, <xref:System.Windows.Controls.ScrollViewer.ExtentHeight%2A>, and <xref:System.Windows.Controls.ScrollViewer.ViewportHeight%2A>.  If the menu items are organized horizontally, bind to <xref:System.Windows.Controls.ScrollViewer.ComputedHorizontalScrollBarVisibility%2A>, <xref:System.Windows.Controls.ScrollViewer.HorizontalOffset%2A>, <xref:System.Windows.Controls.ScrollViewer.ExtentWidth%2A>, and <xref:System.Windows.Controls.ScrollViewer.ViewportWidth%2A>.  
+  
+ Set <xref:System.Windows.Data.MultiBinding.ConverterParameter%2A?displayProperty=fullName> to 0 or 100.  The value is treated as a percentage and determines whether a button is hidden when the <xref:System.Windows.Controls.ScrollViewer> is at the given location.  When the <xref:System.Windows.Controls.ScrollViewer> is at the top, the position of the <xref:System.Windows.Controls.ScrollViewer> is 0% and the top button is hidden.  When the <xref:System.Windows.Controls.ScrollViewer> is at the bottom, the position of the <xref:System.Windows.Controls.ScrollViewer> is 100% and the bottom button is hidden.  
+  
+   
+  
+## Examples  
+ The following example uses the <xref:System.Windows.Controls.MenuScrollingVisibilityConverter> in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.ScrollViewer> for a menu.  For the complete example, see [Styling with ControlTemplates Sample](http://go.microsoft.com/fwlink/?LinkID=160041).  
+  
+ [!code-xml[ControlTemplateExamples#MenuScrollViewer](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/menu.xaml#menuscrollviewer)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MenuScrollingVisibilityConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuScrollingVisibilityConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.MenuScrollingVisibilityConverter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public object Convert (object[] values, Type targetType, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object[] values, class System.Type targetType, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuScrollingVisibilityConverter.Convert(System.Object[],System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="values" Type="System.Object[]" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="values">Values produced by the source binding.</param>
+        <param name="targetType">Type of the target. Type that the source will be converted into.</param>
+        <param name="parameter">Converter parameter.</param>
+        <param name="culture">Culture information.</param>
+        <summary>Called when moving a value from a source to a target.</summary>
+        <returns>Converted value.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.DependencyProperty.UnsetValue> may be returned to indicate that the converter produced no value and that the default value should be used.  
+  
+ <xref:System.Windows.Data.Binding.DoNothing> may be returned to indicate that the binding should not transfer the value or use the default value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertBack">
+      <MemberSignature Language="C#" Value="public object[] ConvertBack (object value, Type[] targetTypes, object parameter, System.Globalization.CultureInfo culture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] ConvertBack(object value, class System.Type[] targetTypes, object parameter, class System.Globalization.CultureInfo culture) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.MenuScrollingVisibilityConverter.ConvertBack(System.Object,System.Type[],System.Object,System.Globalization.CultureInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="targetTypes" Type="System.Type[]" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+      </Parameters>
+      <Docs>
+        <param name="value">This parameter is not used.</param>
+        <param name="targetTypes">This parameter is not used.</param>
+        <param name="parameter">This parameter is not used.</param>
+        <param name="culture">This parameter is not used.</param>
+        <summary>Not supported.</summary>
+        <returns>
+          <see cref="F:System.Windows.Data.Binding.DoNothing" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

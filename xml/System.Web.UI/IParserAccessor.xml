@@ -1,0 +1,46 @@
+<Type Name="IParserAccessor" FullName="System.Web.UI.IParserAccessor">
+  <TypeSignature Language="C#" Value="public interface IParserAccessor" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IParserAccessor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IParserAccessor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the method that ASP.NET server controls must implement to recognize when elements, either HTML or XML, are parsed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When elements are parsed, they are recognized as child controls of the server control that implements this interface. These elements are converted to objects. When you implement this interface, the control you create defines what processing occurs once it has been notified that an element has been parsed.  
+  
+ Because the <xref:System.Web.UI.Control> class implements this interface, it is easier to extend that class and override its implementation of the <xref:System.Web.UI.IParserAccessor.AddParsedSubObject%2A> method than to implement this interface yourself.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddParsedSubObject">
+      <MemberSignature Language="C#" Value="public void AddParsedSubObject (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddParsedSubObject(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> that was parsed.</param>
+        <summary>When implemented by an ASP.NET server control, notifies the server control that an element, either XML or HTML, was parsed.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,176 @@
+<Type Name="ItemCheckEventArgs" FullName="System.Windows.Forms.ItemCheckEventArgs">
+  <TypeSignature Language="C#" Value="public class ItemCheckEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemCheckEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemCheckEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Forms.CheckedListBox.ItemCheck" /> event of the <see cref="T:System.Windows.Forms.CheckedListBox" /> and <see cref="T:System.Windows.Forms.ListView" /> controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.CheckedListBox.ItemCheck> event occurs when the checked state of an item in a checked list box changes. The <xref:System.Windows.Forms.ItemCheckEventArgs> class specifies the index of the item to change, the current value of the check box for the item, and the new value to set for the check box.  
+  
+ For more information about handling events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a checked <xref:System.Windows.Forms.ListView> control that handles the <xref:System.Windows.Forms.ListView.ItemCheck?displayProperty=fullName> event. The method uses the <xref:System.Windows.Forms.ItemCheckEventArgs.CurrentValue%2A> and <xref:System.Windows.Forms.ItemCheckEventArgs.Index%2A> properties of the <xref:System.Windows.Forms.ItemCheckEventArgs> object to retrieve and tally the price of the menu items selected. To run this example paste the following code in a form containing a <xref:System.Windows.Forms.ListView> named `ListView1` and a <xref:System.Windows.Forms.TextBox> named `Textbox1`. Call the `InititalizeListView` method from the form's constructor or `Load` method. Ensure all events are associated with their event-handling methods.  
+  
+ [!code-cpp[System.Windows.Forms.ListView2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListView2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListView2#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView2/VB/form1.vb#1)]  
+[!code-cpp[System.Windows.Forms.ListView2#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CPP/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.ListView2#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ListView2#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView2/VB/form1.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ItemCheckEventArgs (int index, System.Windows.Forms.CheckState newCheckValue, System.Windows.Forms.CheckState currentValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 index, valuetype System.Windows.Forms.CheckState newCheckValue, valuetype System.Windows.Forms.CheckState currentValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ItemCheckEventArgs.#ctor(System.Int32,System.Windows.Forms.CheckState,System.Windows.Forms.CheckState)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="newCheckValue" Type="System.Windows.Forms.CheckState" />
+        <Parameter Name="currentValue" Type="System.Windows.Forms.CheckState" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the item to change.</param>
+        <param name="newCheckValue">One of the <see cref="T:System.Windows.Forms.CheckState" /> values that indicates whether to change the check box for the item to be checked, unchecked, or indeterminate.</param>
+        <param name="currentValue">One of the <see cref="T:System.Windows.Forms.CheckState" /> values that indicates whether the check box for the item is currently checked, unchecked, or indeterminate.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ItemCheckEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.CheckState CurrentValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.CheckState CurrentValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ItemCheckEventArgs.CurrentValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CheckState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating the current state of the item's check box.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.CheckState" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to determine the check state of the specified item in the <xref:System.Windows.Forms.CheckedListBox> before the check state change to apply is made.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a checked <xref:System.Windows.Forms.ListView> control that handles the <xref:System.Windows.Forms.ListView.ItemChecked?displayProperty=fullName> event. The method uses the <xref:System.Windows.Forms.ItemCheckEventArgs.CurrentValue%2A> and <xref:System.Windows.Forms.ItemCheckEventArgs.Index%2A> properties of the <xref:System.Windows.Forms.ItemCheckEventArgs> object to retrieve and tally the price of the menu items selected. To run this example paste the following code in a form containing a <xref:System.Windows.Forms.ListView> named `ListView1` and a <xref:System.Windows.Forms.TextBox> named `Textbox1`. Call the `InititalizeListView` method from the form's constructor or `Load` method. Ensure all events are associated with their event-handling methods.  
+  
+ [!code-cpp[System.Windows.Forms.ListView2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListView2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListView2#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView2/VB/form1.vb#1)]  
+[!code-cpp[System.Windows.Forms.ListView2#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CPP/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.ListView2#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ListView2#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView2/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ItemCheckEventArgs.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the zero-based index of the item to change.</summary>
+        <value>The zero-based index of the item to change.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this property to determine which item's check box in the <xref:System.Windows.Forms.CheckedListBox> is being changed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates a checked <xref:System.Windows.Forms.ListView> control that handles the <xref:System.Windows.Forms.ListView.ItemChecked?displayProperty=fullName> event. The method uses the <xref:System.Windows.Forms.ItemCheckEventArgs.CurrentValue%2A> and <xref:System.Windows.Forms.ItemCheckEventArgs.Index%2A> properties of the <xref:System.Windows.Forms.ItemCheckEventArgs> object to retrieve and tally the price of the menu items selected. To run this example paste the following code in a form containing a <xref:System.Windows.Forms.ListView> named `ListView1` and a <xref:System.Windows.Forms.TextBox> named `Textbox1`. Call the `InititalizeListView` method from the form's constructor or `Load` method. Ensure all events are associated with their event-handling methods.  
+  
+ [!code-cpp[System.Windows.Forms.ListView2#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CPP/form1.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListView2#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CS/form1.cs#1)]
+ [!code-vb[System.Windows.Forms.ListView2#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView2/VB/form1.vb#1)]  
+[!code-cpp[System.Windows.Forms.ListView2#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CPP/form1.cpp#2)]
+[!code-csharp[System.Windows.Forms.ListView2#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView2/CS/form1.cs#2)]
+[!code-vb[System.Windows.Forms.ListView2#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView2/VB/form1.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewValue">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.CheckState NewValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.CheckState NewValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ItemCheckEventArgs.NewValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.CheckState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether to set the check box for the item to be checked, unchecked, or indeterminate.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.CheckState" /> values.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property enables you to determine the new check state for the specified item before the check state is changed by the <xref:System.Windows.Forms.CheckedListBox> control. In addition to determining the new check state, you can use this property in an event handler for the <xref:System.Windows.Forms.CheckedListBox.ItemCheck> event to change the state to a different check state than the one specified. For example, if the user placed a check mark next to an item in the <xref:System.Windows.Forms.CheckedListBox> that you have determined should not be checked based on the state of your application, you can override the change in the check mark state by setting this property to its previous setting or to a different check state.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the use of this member. In the example, an event handler reports on the occurrence of the <xref:System.Windows.Forms.CheckedListBox.ItemCheck?displayProperty=fullName> event. This report helps you to learn when the event occurs and can assist you in debugging. To report on multiple events or on events that occur frequently, consider replacing <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> with <xref:System.Console.WriteLine%2A?displayProperty=fullName> or appending the message to a multiline <xref:System.Windows.Forms.TextBox>.  
+  
+ To run the example code, paste it into a project that contains an instance of type <xref:System.Windows.Forms.CheckedListBox> named `CheckedListBox1`. Then ensure that the event handler is associated with the <xref:System.Windows.Forms.CheckedListBox.ItemCheck?displayProperty=fullName> event.  
+  
+ [!code-csharp[System.Windows.Forms.EventExamples#156](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/CS/EventExamples.cs#156)]
+ [!code-vb[System.Windows.Forms.EventExamples#156](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.EventExamples/VB/EventExamples.vb#156)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

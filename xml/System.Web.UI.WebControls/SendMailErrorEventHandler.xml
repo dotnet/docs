@@ -1,0 +1,57 @@
+<Type Name="SendMailErrorEventHandler" FullName="System.Web.UI.WebControls.SendMailErrorEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void SendMailErrorEventHandler(object sender, SendMailErrorEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SendMailErrorEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SendMailErrorEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.SendMailErrorEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">A <see cref="T:System.Web.UI.WebControls.SendMailErrorEventArgs" /> object that contains the event data.</param>
+    <summary>Represents the method that handles the <see langword="SendMailError" /> event of controls such as the <see cref="T:System.Web.UI.WebControls.ChangePassword" /> control, the <see cref="T:System.Web.UI.WebControls.CreateUserWizard" /> control, and the <see cref="T:System.Web.UI.WebControls.PasswordRecovery" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you create a <xref:System.Web.UI.WebControls.SendMailErrorEventHandler> delegate, you identify the method that will handle the event. To associate the event with the event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate from the event. For more information about event-handler delegates, see [Server Event Handling in ASP.NET Web Forms Pages](http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9).  
+  
+ Handling the `SendMailError` event allows your Web application to continue running, even if an exception occurs when trying to send an e-mail message. For example, this is useful if the exception occurs when a user is working through a multi-step wizard. It is preferable to log the error, display an informative message to the user, and allow the user to complete the wizard rather than terminate the application.  
+  
+ If you do not create an event handler for the <xref:System.Web.UI.WebControls.ChangePassword.SendMailError> event, or if you create an event handler but leave the <xref:System.Web.UI.WebControls.SendMailErrorEventArgs.Handled%2A> property set to `false`, your Web application will stop running if an error occurs when sending an e-mail message, and ASP.NET will display an error message.  
+  
+ The <xref:System.Web.UI.WebControls.ChangePassword.OnSendMailError%2A> method also allows derived classes to handle the event instead of the <xref:System.Web.UI.WebControls.SendMailErrorEventHandler>. This is the preferred technique for handling the event in a class that is derived from <xref:System.Web.UI.WebControls.ChangePassword> or <xref:System.Web.UI.WebControls.CreateUserWizard>.  
+  
+ For more information about handling events, see [Server Event Handling in ASP.NET Web Forms Pages](http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates an ASP.NET page that uses a <xref:System.Web.UI.WebControls.ChangePassword> Web control, and includes an event handler for the <xref:System.Web.UI.WebControls.ChangePassword.SendMailError> event named `SendMailError`. The code example assumes that the ASP.NET Web site has been configured to use ASP.NET membership and Forms authentication, and that a user has been created whose name and password are known to you. For more information, see [How to: Implement Simple Forms Authentication](http://msdn.microsoft.com/library/9522bc8d-1a41-480a-aa11-c389a4ac2d2e).  
+  
+ If the password change succeeds, the code attempts to use SMTP to send an e-mail message to the user to confirm the change. This is done in the `SendingMail` event handler. For information about how to configure an SMTP server, see [NIB: How to: Install and Configure SMTP Virtual Servers in IIS 6.0](http://msdn.microsoft.com/en-us/ed204b58-24af-47d0-9687-60e5df5f17f8). For the purposes of this example, it is not necessary to configure an SMTP server; the example is constructed to test for a failure to send an e-mail message.  
+  
+ If a mail server is not configured correctly or some other error occurs and the e-mail message cannot be sent, the `SendMailError` function is called. A message is displayed to the user. In addition, an event is logged to the Windows Application event log with the assumption that an event source named MySamplesSite already exists. See the code example below to create the specified event source. For more information about creating an event source, see [Server Event Handling in ASP.NET Web Forms Pages](http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9). The <xref:System.Web.UI.WebControls.SendMailErrorEventArgs.Handled%2A> property of the <xref:System.Web.UI.WebControls.SendMailErrorEventArgs> object is set to `true` to indicate that the error has been handled.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SendMailErrorEventHandler#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SendMailErrorEventHandler/CS/changepassword_cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SendMailErrorEventHandler#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SendMailErrorEventHandler/VB/changepassword_vb.aspx#1)]  -->  
+  
+ Use the following code example if you need to programmatically add the event source named MySamplesSite to your Application log. This event source must exist in order for the first code example to work correctly. The following code example requires Administrator privileges.  
+  
+ [!code-csharp[System.Diagnostics.EventLog.CreateEventSource#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Diagnostics.EventLog.CreateEventSource/CS/createeventsource.cs#1)]
+ [!code-vb[System.Diagnostics.EventLog.CreateEventSource#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Diagnostics.EventLog.CreateEventSource/VB/createeventsource.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

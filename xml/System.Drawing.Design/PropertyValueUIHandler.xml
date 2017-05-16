@@ -1,0 +1,43 @@
+<Type Name="PropertyValueUIHandler" FullName="System.Drawing.Design.PropertyValueUIHandler">
+  <TypeSignature Language="C#" Value="public delegate void PropertyValueUIHandler(ITypeDescriptorContext context, PropertyDescriptor propDesc, ArrayList valueUIItemList);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyValueUIHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Design.PropertyValueUIHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+    <Parameter Name="propDesc" Type="System.ComponentModel.PropertyDescriptor" />
+    <Parameter Name="valueUIItemList" Type="System.Collections.ArrayList" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to obtain context information.</param>
+    <param name="propDesc">A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that represents the property being queried.</param>
+    <param name="valueUIItemList">An <see cref="T:System.Collections.ArrayList" /> of <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> objects containing the UI items associated with the property.</param>
+    <summary>Represents the method that adds a delegate to an implementation of <see cref="T:System.Drawing.Design.IPropertyValueUIService" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When this delegate is invoked, it can add a <xref:System.Drawing.Design.PropertyValueUIItem> containing UI items for the specified property to the <xref:System.Collections.ArrayList> passed as the `valueUIItemList` parameter.  
+  
+   
+  
+## Examples  
+ This following code example demonstrates creating a <xref:System.Drawing.Design.PropertyValueUIHandler> event handler method that provides <xref:System.Drawing.Design.PropertyValueUIItem> objects for any properties named `HorizontalMargin` or `VerticalMargin`.  
+  
+ [!code-cpp[IPropertyValueUIServiceExample#2](~/samples/snippets/cpp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CPP/propertyuicomponent.cpp#2)]
+ [!code-csharp[IPropertyValueUIServiceExample#2](~/samples/snippets/csharp/VS_Snippets_Winforms/IPropertyValueUIServiceExample/CS/propertyuicomponent.cs#2)]
+ [!code-vb[IPropertyValueUIServiceExample#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IPropertyValueUIServiceExample/VB/propertyuicomponent.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

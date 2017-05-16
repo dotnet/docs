@@ -1,0 +1,179 @@
+<Type Name="ActivityTrackPoint" FullName="System.Workflow.Runtime.Tracking.ActivityTrackPoint">
+  <TypeSignature Language="C#" Value="public sealed class ActivityTrackPoint" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityTrackPoint extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ActivityTrackPoint" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a point, associated with an activity execution status change, to be tracked that is in the potential execution path of a workflow instance. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ Whenever the execution status of an activity changes, the workflow instance emits an activity status event to the runtime tracking infrastructure. An <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> defines a point of interest in the potential execution path of a workflow, qualified by such an activity status event. An <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> contains locations that are included in matching, locations that are excluded from matching, and the data that should be extracted from the workflow instance when the track point is matched. You can add an <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> to <xref:System.Workflow.Runtime.Tracking.TrackingProfile.ActivityTrackPoints%2A> to instruct the runtime tracking infrastructure to send an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> to the tracking service when the specified set of activity status events occur. A single <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> may be matched at multiple points in the workflow instance.  
+  
+ An <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> contains match conditions for a location or locations in the potential execution path of a workflow instance. You can add <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> objects to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A> to define locations that should be included in matching by the track point. Similarly, you can add <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> objects to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A> to define locations that should be excluded from matching by the track point.  
+  
+ You can add <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> objects and <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> objects to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A> to specify data that should be extracted from the workflow instance when the track point is matched. The extracted data will be included in the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord>.  
+  
+ You can add to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Annotations%2A> to specify additional information associated with the track point. These annotations will be included in the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> sent when the track point is matched.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityTrackPoint ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackPoint.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackPoint" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default constructor initializes an empty track point. No matching locations, excluded locations, data extracts or annotations are specified. You must configure the track point by adding at least one <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A>. You may optionally add objects to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A>, <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A>, and <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Annotations%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotations">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.TrackingAnnotationCollection Annotations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.TrackingAnnotationCollection Annotations" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Annotations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.TrackingAnnotationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of annotations associated with the track point.</summary>
+        <value>An <see cref="T:System.Workflow.Runtime.Tracking.TrackingAnnotationCollection" />. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Annotations%2A> to specify annotations to be returned in the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> sent to the tracking service when the track point is matched. If <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Annotations%2A> is empty, no annotations are associated with the track point.  
+  
+ Annotations are `strings` that you define that contain information associated with the track point. For example, an annotation could contain information about the possible execution path the workflow can take from this track point, or it could contain information to be displayed in a user interface.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExcludedLocations">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection ExcludedLocations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection ExcludedLocations" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of locations that should be excluded from the track point by the runtime tracking infrastructure.</summary>
+        <value>An <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" /> that specifies locations to be excluded from the track point. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If any <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> in <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A> is matched for a particular activity status event, the track point will not be matched and no <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> will be sent to the tracking service. If <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A> is empty, there are no excluded locations.  
+  
+ You can use <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A> to specifically exclude locations from being tracked by the runtime tracking infrastructure. For example, if you want to track all <xref:System.Workflow.Activities.CodeActivity> activities except the <xref:System.Workflow.Activities.CodeActivity> activity with an <xref:System.Workflow.ComponentModel.Activity.Name%2A> property of "Code1", you can define an <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> that matches all <xref:System.Workflow.Activities.CodeActivity> activities and add it to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A>. Then you can define another <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> that matches <xref:System.Workflow.Activities.CodeActivity> activities with an <xref:System.Workflow.ComponentModel.Activity.Name%2A> property set to "Code1" and add it to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A>. The track point will then match all <xref:System.Workflow.Activities.CodeActivity> activities except the "Code1" activity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extracts">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.ExtractCollection Extracts { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.ExtractCollection Extracts" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.ExtractCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection that specifies data to be extracted from the workflow instance and sent to the tracking service.</summary>
+        <value>An <see cref="T:System.Workflow.Runtime.Tracking.ExtractCollection" /> that specifies the data to be extracted and sent to the tracking service. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a track point is matched, the runtime tracking infrastructure can extract data from the workflow instance. The runtime tracking infrastructure encapsulates the extracted data in <xref:System.Workflow.Runtime.Tracking.TrackingDataItem> objects that it puts in the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord.Body%2A> of the <xref:System.Workflow.Runtime.Tracking.ActivityTrackingRecord> that it sends to the tracking service. If <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A> is empty, no data will be extracted.  
+  
+ You can add <xref:System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract> objects to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A> to specify member data that should be extracted from the activity associated with this track point, and you can add <xref:System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract> objects to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.Extracts%2A> to specify member data that should be extracted from the activity of the workflow.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MatchingLocations">
+      <MemberSignature Language="C#" Value="public System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection MatchingLocations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection MatchingLocations" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of locations that should be included in matching for the track point by the runtime tracking infrastructure.</summary>
+        <value>An <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackingLocationCollection" /> that specifies the locations to be matched for the track point. The default is an empty collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A> is empty, the track point cannot be matched by the runtime tracking infrastructure. You must add at least one <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> to <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A> for the <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint> to participate in matching.  
+  
+ The track point will be matched if any <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> in <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A> is matched by the runtime tracking infrastructure and no <xref:System.Workflow.Runtime.Tracking.ActivityTrackingLocation> in <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.ExcludedLocations%2A> is matched.  
+  
+   
+  
+## Examples  
+ The following example demonstrates accessing the <xref:System.Workflow.Runtime.Tracking.ActivityTrackPoint.MatchingLocations%2A> property. This example is from the TrackingProfileDesigner SDK sample. For more information, see [Tracking Profile Designer Sample](http://msdn.microsoft.com/en-us/a280199c-3000-4148-ac63-cb5aaeac07c8).  
+  
+ [!code-csharp[WF_Samples#120](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets1.cs#120)]
+ [!code-vb[WF_Samples#120](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets1.vb#120)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

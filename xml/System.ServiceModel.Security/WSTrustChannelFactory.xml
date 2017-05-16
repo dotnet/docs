@@ -1,0 +1,405 @@
+<Type Name="WSTrustChannelFactory" FullName="System.ServiceModel.Security.WSTrustChannelFactory">
+  <TypeSignature Language="C#" Value="public class WSTrustChannelFactory : System.ServiceModel.ChannelFactory&lt;System.ServiceModel.Security.IWSTrustChannelContract&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSTrustChannelFactory extends System.ServiceModel.ChannelFactory`1&lt;class System.ServiceModel.Security.IWSTrustChannelContract&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.WSTrustChannelFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.ChannelFactory&lt;System.ServiceModel.Security.IWSTrustChannelContract&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TChannel">System.ServiceModel.Security.IWSTrustChannelContract</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A factory that produces channels (<see cref="T:System.ServiceModel.Security.WSTrustChannel" /> objects) used to communicate to a WS-Trust endpoint.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSTrustChannelFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustChannelFactory" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSTrustChannelFactory (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Channels.Binding)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> specified for the channels produced by the factory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustChannelFactory" /> class with the specified binding.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSTrustChannelFactory (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" />for the channels produced by the factory.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustChannelFactory" /> class with a specified endpoint.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSTrustChannelFactory (string endpointConfigurationName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="endpointConfigurationName">The configuration name used for the endpoint.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustChannelFactory" /> class with a specified endpoint configuration name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSTrustChannelFactory (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> specified for the channels produced by the factory.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustChannelFactory" /> class with a specified binding and endpoint address.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSTrustChannelFactory (System.ServiceModel.Channels.Binding binding, string remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, string remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.ServiceModel.Channels.Binding,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="binding" Type="System.ServiceModel.Channels.Binding" />
+        <Parameter Name="remoteAddress" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="binding">The <see cref="T:System.ServiceModel.Channels.Binding" /> specified for the channels produced by the factory</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustChannelFactory" /> class with a specified binding and remote address.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSTrustChannelFactory (string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.String,System.ServiceModel.EndpointAddress)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="endpointConfigurationName" Type="System.String" />
+        <Parameter Name="remoteAddress" Type="System.ServiceModel.EndpointAddress" />
+      </Parameters>
+      <Docs>
+        <param name="endpointConfigurationName">The configuration name used for the endpoint.</param>
+        <param name="remoteAddress">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustChannelFactory" /> class associated with a specified endpoint configuration name and endpoint address.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateChannel">
+      <MemberSignature Language="C#" Value="public override System.ServiceModel.Security.IWSTrustChannelContract CreateChannel (System.ServiceModel.EndpointAddress address, Uri via);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Security.IWSTrustChannelContract CreateChannel(class System.ServiceModel.EndpointAddress address, class System.Uri via) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.IWSTrustChannelContract</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.ServiceModel.EndpointAddress" />
+        <Parameter Name="via" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="address">The <see cref="T:System.ServiceModel.EndpointAddress" /> that provides the location of the service.</param>
+        <param name="via">The <see cref="T:System.Uri" /> that contains the transport address to which the channel sends messages.</param>
+        <summary>Creates a <see cref="T:System.ServiceModel.Security.WSTrustChannel" /> object that is used to send messages to a service at a specific endpoint address through a specified transport address.</summary>
+        <returns>A <see cref="P:System.ServiceModel.Security.WSTrustChannel.Contract" /> object that represents the new channel.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The object returned is an instance of the <xref:System.ServiceModel.Security.WSTrustChannel> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSerializationContext">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext CreateSerializationContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext CreateSerializationContext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.CreateSerializationContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> object used by channels created by the factory.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> initialized with the properties of the trust client.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ServiceModel.Security.WSTrustChannelFactory.SecurityTokenResolver%2A> property is set to `null`, the ClientCertificate set on the factory Endpoint's ClientCredentials behavior will be used to create a resolver. If no such certificate is found, an empty resolver is used.  
+  
+ If <xref:System.ServiceModel.Security.WSTrustChannelFactory.UseKeyTokenResolver%2A> is set to `null`, an empty resolver will be used.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTrustChannel">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Security.WSTrustChannel CreateTrustChannel (System.ServiceModel.Security.IWSTrustChannelContract innerChannel, System.ServiceModel.Security.TrustVersion trustVersion, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context, System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Security.WSTrustChannel CreateTrustChannel(class System.ServiceModel.Security.IWSTrustChannelContract innerChannel, class System.ServiceModel.Security.TrustVersion trustVersion, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext context, class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustChannelFactory.CreateTrustChannel(System.ServiceModel.Security.IWSTrustChannelContract,System.ServiceModel.Security.TrustVersion,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext,System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.WSTrustChannel</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="innerChannel" Type="System.ServiceModel.Security.IWSTrustChannelContract" />
+        <Parameter Name="trustVersion" Type="System.ServiceModel.Security.TrustVersion" />
+        <Parameter Name="context" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
+        <Parameter Name="requestSerializer" Type="System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" />
+        <Parameter Name="responseSerializer" Type="System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="innerChannel">The channel created by the base class capable of sending and receiving messages.</param>
+        <param name="trustVersion">The version of WS-Trust that should be used.</param>
+        <param name="context">The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> object that should be used to serialize WS-Trust messages.</param>
+        <param name="requestSerializer">The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" /> object  that should be used to serialize WS-Trust request messages.</param>
+        <param name="responseSerializer">The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" /> object that should be used to serialize WS-Trust response messages.</param>
+        <summary>Creates a <see cref="T:System.ServiceModel.Security.WSTrustChannel" /> object using parameters that reflect the configuration of this factory.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Security.WSTrustChannel" /> that represents the new channel.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityTokenHandlerCollectionManager">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager SecurityTokenHandlerCollectionManager { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager SecurityTokenHandlerCollectionManager" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.SecurityTokenHandlerCollectionManager" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" /> that contains the set of <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandler" /> objects used by channels created by this factory for serializing and validating tokens found in WS-Trust messages.</summary>
+        <value>The <see cref="T:System.IdentityModel.Tokens.SecurityTokenHandlerCollectionManager" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You cannot change the value of this property after a channel has been created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityTokenResolver">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.SecurityTokenResolver SecurityTokenResolver { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.SecurityTokenResolver SecurityTokenResolver" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.SecurityTokenResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Selectors.SecurityTokenResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> used to resolve security token references found in most elements of WS-Trust messages.</summary>
+        <value>The <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not set, channels created by this factory will use the ClientCertificate set on the factory Endpoint's ClientCredentials behavior to create a resolver. If no such certificate is found, an empty resolver is used.  
+  
+ You cannot change the value of this property after a channel has been created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrustVersion">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Security.TrustVersion TrustVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.TrustVersion TrustVersion" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.TrustVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the version of WS-Trust that channels created by this factory use for serializing messages.</summary>
+        <value>The version of WS-Trust that channels created by this factory use for serializing messages.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not set, channels created by this factory will use the <xref:System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion%2A> set on any <xref:System.ServiceModel.Channels.SecurityBindingElement> found on the channel factory's Endpoint object if one exists.  
+  
+ You cannot change the value of this property after a channel has been created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseKeyTokenResolver">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.SecurityTokenResolver UseKeyTokenResolver { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.SecurityTokenResolver UseKeyTokenResolver" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.UseKeyTokenResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Selectors.SecurityTokenResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> used to resolve security token references found in the wst:UseKey element of RST messages as well as the wst:RenewTarget element found in RST messages.</summary>
+        <value>The <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not set an empty resolver is used.  
+  
+ You cannot change the value of this property after a channel has been created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WSTrustRequestSerializer">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer WSTrustRequestSerializer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer WSTrustRequestSerializer" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.WSTrustRequestSerializer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" /> used for serializing wst:RequestSecurityToken messages.</summary>
+        <value>The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not set, either a <xref:System.IdentityModel.Protocols.WSTrust.WSTrust13RequestSerializer> object or a <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005RequestSerializer> object will be used. The serializer that is used will correspond to the version of WS-Trust indicated by the <xref:System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion%2A> property.  
+  
+ You cannot change the value of this property after a channel has been created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WSTrustResponseSerializer">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer WSTrustResponseSerializer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer WSTrustResponseSerializer" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustChannelFactory.WSTrustResponseSerializer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" /> used for serializing wst:RequestSecurityTokensResponse messages.</summary>
+        <value>The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" /> object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If this property is not set, either a <xref:System.IdentityModel.Protocols.WSTrust.WSTrust13ResponseSerializer> object or a <xref:System.IdentityModel.Protocols.WSTrust.WSTrustFeb2005ResponseSerializer> object will be used. The serializer that is used will correspond to the version of WS-Trust indicated by the <xref:System.ServiceModel.Security.WSTrustChannelFactory.TrustVersion%2A> property.  
+  
+ You cannot change the value of this property after a channel has been created.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,242 @@
+<Type Name="MimeFormatter" FullName="System.Web.Services.Protocols.MimeFormatter">
+  <TypeSignature Language="C#" Value="public abstract class MimeFormatter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MimeFormatter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.MimeFormatter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an abstract base class for all readers and writers for Web services and clients implemented using HTTP but without SOAP.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Web service writers and readers serialize and deserialize, respectively, between the parameter or return objects of Web methods and the HTTP request or response streams. The <xref:System.Web.Services.Protocols.MimeFormatter> class establishes a common interface and functionality for reader and writer classes, in both client and service-side .  
+  
+ The <xref:System.Web.Services.Protocols.MimeFormatter> class supports the .NET Framework's implementations of Web services via the HTTP-GET and HTTP-POST operations. In HTTP-GET operations request parameters are encoded in the HTTP request's Uniform Resource Locator (URL). In HTTP-POST operations, request parameters are encoded in the HTTP request body, as with an HTML form. With both implementations, the return value appears in the HTTP response body as a non-SOAP XML document.  
+  
+ A developer typically does not need to directly use <xref:System.Web.Services.Protocols.MimeFormatter> or its descendant classes. Instead, when the Wsdl.exe tool generates client proxy code according to the HTTP-GET or HTTP-POST implementations, it applies the <xref:System.Web.Services.Protocols.HttpMethodAttribute> to each Web method and sets the attribute's <xref:System.Web.Services.Protocols.HttpMethodAttribute.ParameterFormatter%2A> and <xref:System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter%2A> properties to the appropriate type derived from the <xref:System.Web.Services.Protocols.MimeFormatter> class. On the server, the appropriate derived types are used according to settings in an ASP.NET configuration file (Web.config). On the client the appropriate derived types are determined from the WSDL.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected MimeFormatter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.MimeFormatter" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateInstance">
+      <MemberSignature Language="C#" Value="public static System.Web.Services.Protocols.MimeFormatter CreateInstance (Type type, object initializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Protocols.MimeFormatter CreateInstance(class System.Type type, object initializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.CreateInstance(System.Type,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Protocols.MimeFormatter</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="initializer" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="type">The Type, derived from <see cref="T:System.Web.Services.Protocols.MimeFormatter" />, of which to create an instance.</param>
+        <param name="initializer">An object used to initialize the instance obtained earlier through the derived class's implementation of the <see cref="M:System.Web.Services.Protocols.MimeFormatter.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" /> method.</param>
+        <summary>Creates and initializes an instance of a concrete class derived from <see cref="T:System.Web.Services.Protocols.MimeFormatter" />.</summary>
+        <returns>A <see cref="T:System.Web.Services.Protocols.MimeFormatter" /> object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.MimeFormatter.CreateInstance%2A> method creates an instance of the derived class and invokes the derived class's implementation of the abstract <xref:System.Web.Services.Protocols.MimeFormatter.Initialize%2A> method. The <xref:System.Web.Services.Protocols.MimeFormatter.CreateInstance%2A> method is invoked at the time a request or response is processed.  
+  
+ An initializer is an object passed as a parameter to the <xref:System.Web.Services.Protocols.MimeFormatter.Initialize%2A> method. The initializer passed as a parameter to the <xref:System.Web.Services.Protocols.MimeFormatter.CreateInstance%2A> method is obtained from another instance of the derived class, by invoking the <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializer%2A> method during client or service initialization.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInitializer">
+      <MemberSignature Language="C#" Value="public abstract object GetInitializer (System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetInitializer(class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodInfo" Type="System.Web.Services.Protocols.LogicalMethodInfo" />
+      </Parameters>
+      <Docs>
+        <param name="methodInfo">A <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> that specifies the Web method for which the initializer is obtained.</param>
+        <summary>When overridden in a derived class, returns an initializer for the specified method.</summary>
+        <returns>An <see cref="T:System.Object" /> that contains the initializer for the specified method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An initializer is an object passed as a parameter to the <xref:System.Web.Services.Protocols.MimeFormatter.Initialize%2A> method.  
+  
+ A derived class's implementation of the <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializer%2A> instance method is invoked during client or service initialization. Later, at the time a request or response is processed, the initializer object is passed to the static <xref:System.Web.Services.Protocols.MimeFormatter.CreateInstance%2A> method, which creates an instance of another object of the derived class, and then to the <xref:System.Web.Services.Protocols.MimeFormatter.Initialize%2A> method to initialize it. The other object performs the actual reading or writing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInitializer">
+      <MemberSignature Language="C#" Value="public static object GetInitializer (Type type, System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetInitializer(class System.Type type, class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.GetInitializer(System.Type,System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="methodInfo" Type="System.Web.Services.Protocols.LogicalMethodInfo" />
+      </Parameters>
+      <Docs>
+        <param name="type">The Type, derived from <see cref="T:System.Web.Services.Protocols.MimeFormatter" />,- for which an initializer is obtained.</param>
+        <param name="methodInfo">A <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> that specifies the Web method for which the initializer is obtained.</param>
+        <summary>Returns an initializer for the specified method.</summary>
+        <returns>A <see cref="T:System.Object" /> object that contains the initializer for the specified method.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An initializer is an object passed as a parameter to the <xref:System.Web.Services.Protocols.MimeFormatter.Initialize%2A> method.  
+  
+ The static <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializer%2A> method invokes the derived class's <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializer%2A> method, implicitly creating an instance of the derived class. At the time a request or response is processed, the initializer object is passed to the <xref:System.Web.Services.Protocols.MimeFormatter.Initialize%2A> method of another instance of the derived class. The latter object performs the actual reading or writing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInitializers">
+      <MemberSignature Language="C#" Value="public virtual object[] GetInitializers (System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetInitializers(class System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.GetInitializers(System.Web.Services.Protocols.LogicalMethodInfo[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="methodInfos" Type="System.Web.Services.Protocols.LogicalMethodInfo[]" />
+      </Parameters>
+      <Docs>
+        <param name="methodInfos">An array of Web methods where, for each method, the object of the corresponding index in the returned initializer array is obtained.</param>
+        <summary>When overridden in a derived class, returns an array of initializer objects corresponding to an input array of method definitions.</summary>
+        <returns>An array of initializer objects corresponding to the input array of method definitions.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An initializer is an object passed as a parameter to the <xref:System.Web.Services.Protocols.MimeFormatter.Initialize%2A> method.  
+  
+ The <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializers%2A> instance method invokes the <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializer%2A> instance method for each input Web method. This means an instance of a class derived from <xref:System.Web.Services.Protocols.MimeFormatter> has already been created. At the time a request or response is processed, the initializer is passed to the <xref:System.Web.Services.Protocols.MimeFormatter.Initialize%2A> method of another instance of the derived class. The latter object performs the actual reading or writing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInitializers">
+      <MemberSignature Language="C#" Value="public static object[] GetInitializers (Type type, System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object[] GetInitializers(class System.Type type, class System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.GetInitializers(System.Type,System.Web.Services.Protocols.LogicalMethodInfo[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="methodInfos" Type="System.Web.Services.Protocols.LogicalMethodInfo[]" />
+      </Parameters>
+      <Docs>
+        <param name="type">The Type, derived from <see cref="T:System.Web.Services.Protocols.MimeFormatter" />, for which initializers are obtained.</param>
+        <param name="methodInfos">An array of type <see cref="T:System.Web.Services.Protocols.LogicalMethodInfo" /> that specifies the Web methods for which the initializers are obtained.</param>
+        <summary>Returns an array of initializer objects corresponding to an input array of method definitions for a specified class derived from <see cref="T:System.Web.Services.Protocols.MimeFormatter" />.</summary>
+        <returns>An array of initializer objects corresponding to the input array of method definitions for a specified class derived from <see cref="T:System.Web.Services.Protocols.MimeFormatter" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An initializer is an object passed as a parameter to the <xref:System.Web.Services.Protocols.MimeFormatter.Initialize%2A> method.  
+  
+ The static <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializers%2A>method causes the invocation of the <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializer%2A> method belonging to the derived class specified by the `type` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public abstract void Initialize (object initializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(object initializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeFormatter.Initialize(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="initializer" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="initializer">An object of a type appropriate to the particular class that is implementing the method.</param>
+        <summary>When overridden in a derived class, initializes an instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.Protocols.MimeFormatter.Initialize%2A> method is invoked at the time a request or response is processed; however, the initializer is obtained by calling the <xref:System.Web.Services.Protocols.MimeFormatter.GetInitializer%2A> method on another instance during client or service initialization.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

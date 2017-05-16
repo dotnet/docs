@@ -1,0 +1,32 @@
+<Type Name="IInputSessionChannel" FullName="System.ServiceModel.Channels.IInputSessionChannel">
+  <TypeSignature Language="C#" Value="public interface IInputSessionChannel : System.ServiceModel.Channels.IInputChannel, System.ServiceModel.Channels.ISessionChannel&lt;System.ServiceModel.Channels.IInputSession&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInputSessionChannel implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.Channels.IInputChannel, class System.ServiceModel.Channels.ISessionChannel`1&lt;class System.ServiceModel.Channels.IInputSession&gt;, class System.ServiceModel.ICommunicationObject" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IInputSessionChannel" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.IInputChannel</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Channels.ISessionChannel&lt;System.ServiceModel.Channels.IInputSession&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines the interface that associates an input channel with a session.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ServiceModel.Channels.IInputSessionChannel> interface indicates that an <xref:System.ServiceModel.Channels.IInputChannel> implements <xref:System.ServiceModel.Channels.IInputSession> semantics.  
+  
+ The <xref:System.ServiceModel.Channels.IInputSession> associated with an <xref:System.ServiceModel.Channels.IInputSessionChannel> can be retrieved through the <xref:System.ServiceModel.Channels.ISessionChannel%601.Session%2A> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

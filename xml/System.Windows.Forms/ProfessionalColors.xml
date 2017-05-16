@@ -1,0 +1,1069 @@
+<Type Name="ProfessionalColors" FullName="System.Windows.Forms.ProfessionalColors">
+  <TypeSignature Language="C#" Value="public sealed class ProfessionalColors" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProfessionalColors extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ProfessionalColors" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides <see cref="T:System.Drawing.Color" /> structures that are colors of a Windows display element. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ButtonCheckedGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonCheckedGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonCheckedGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used when the button is checked.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the gradient used when the button is checked.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonCheckedGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonCheckedGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonCheckedGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used when the button is checked.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used when the button is checked.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonCheckedGradientMiddle">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonCheckedGradientMiddle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonCheckedGradientMiddle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedGradientMiddle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the middle color of the gradient used when the button is checked.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the middle color of the gradient used when the button is checked.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonCheckedHighlight">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonCheckedHighlight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonCheckedHighlight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedHighlight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid color used when the button is checked.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the solid color used when the button is checked.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonCheckedHighlightBorder">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonCheckedHighlightBorder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonCheckedHighlightBorder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedHighlightBorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the border color to use with <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedHighlight" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the border color to use with <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonCheckedHighlight" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonPressedBorder">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonPressedBorder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonPressedBorder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedBorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the border color to use with the <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientBegin" />, <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientMiddle" />, and <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientEnd" /> colors.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the border color to use with the <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientBegin" />, <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientMiddle" />, and <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientEnd" /> colors.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonPressedGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonPressedGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonPressedGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used when the button is pressed down.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used when the button is pressed down.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonPressedGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonPressedGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonPressedGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used when the button is pressed down.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used when the button is pressed down.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonPressedGradientMiddle">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonPressedGradientMiddle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonPressedGradientMiddle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedGradientMiddle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the middle color of the gradient used when the button is pressed down.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the middle color of the gradient used when the button is pressed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonPressedHighlight">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonPressedHighlight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonPressedHighlight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedHighlight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid color used when the button is pressed down.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the solid color used when the button is pressed down.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonPressedHighlightBorder">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonPressedHighlightBorder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonPressedHighlightBorder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonPressedHighlightBorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the border color to use with <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonPressedHighlight" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the border color to use with <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonPressedHighlight" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonSelectedBorder">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonSelectedBorder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonSelectedBorder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedBorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the border color to use with the <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientBegin" />, <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientMiddle" />, and <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientEnd" /> colors.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the border color to use with the <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientBegin" />, <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientMiddle" />, and <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientEnd" /> colors.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonSelectedGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonSelectedGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonSelectedGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used when the button is selected.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used when the button is selected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonSelectedGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonSelectedGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonSelectedGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used when the button is selected.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used when the button is selected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonSelectedGradientMiddle">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonSelectedGradientMiddle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonSelectedGradientMiddle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedGradientMiddle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the middle color of the gradient used when the button is selected.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the middle color of the gradient used when the button is selected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonSelectedHighlight">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonSelectedHighlight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonSelectedHighlight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedHighlight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid color used when the button is selected.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the solid color used when the button is selected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ButtonSelectedHighlightBorder">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ButtonSelectedHighlightBorder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ButtonSelectedHighlightBorder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedHighlightBorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the border color to use with <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedHighlight" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the border color to use with <see cref="P:System.Windows.Forms.ProfessionalColors.ButtonSelectedHighlight" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckBackground">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color CheckBackground { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color CheckBackground" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.CheckBackground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid color to use when the check box is selected and gradients are being used.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the solid color to use when the check box is selected and gradients are being used.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckPressedBackground">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color CheckPressedBackground { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color CheckPressedBackground" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.CheckPressedBackground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid color to use when the check box is selected and gradients are being used.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the solid color to use when the check box is selected and gradients are being used.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckSelectedBackground">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color CheckSelectedBackground { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color CheckSelectedBackground" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.CheckSelectedBackground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid color to use when the check box is selected and gradients are being used.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the solid color to use when the check box is selected and gradients are being used.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GripDark">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color GripDark { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color GripDark" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.GripDark" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the color to use for shadow effects on the grip or move handle.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color to use for shadow effects on the grip or move handle.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GripLight">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color GripLight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color GripLight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.GripLight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the color to use for highlight effects on the grip or move handle.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color to use for highlight effects on the grip or move handle.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageMarginGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ImageMarginGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ImageMarginGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageMarginGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ImageMarginGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ImageMarginGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageMarginGradientMiddle">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ImageMarginGradientMiddle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ImageMarginGradientMiddle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginGradientMiddle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the middle color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the middle color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageMarginRevealedGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ImageMarginRevealedGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ImageMarginRevealedGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginRevealedGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> when an item is revealed.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> when an item is revealed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageMarginRevealedGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ImageMarginRevealedGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ImageMarginRevealedGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginRevealedGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> when an item is revealed.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> when an item is revealed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageMarginRevealedGradientMiddle">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ImageMarginRevealedGradientMiddle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ImageMarginRevealedGradientMiddle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ImageMarginRevealedGradientMiddle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the middle color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> when an item is revealed.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the middle color of the gradient used in the image margin of a <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> when an item is revealed.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> must be set to `true` for this color to be displayed.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuBorder">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuBorder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuBorder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuBorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the border color or a <see cref="T:System.Windows.Forms.MenuStrip" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the border color or a <see cref="T:System.Windows.Forms.MenuStrip" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuItemBorder">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuItemBorder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuItemBorder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemBorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the border color to use with a <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the border color to use with a <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuItemPressedGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuItemPressedGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuItemPressedGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemPressedGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used when a top-level <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is pressed down.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used when a top-level <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is pressed down.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuItemPressedGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuItemPressedGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuItemPressedGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemPressedGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used when a top-level <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is pressed down.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used when a top-level <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is pressed down.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuItemPressedGradientMiddle">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuItemPressedGradientMiddle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuItemPressedGradientMiddle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemPressedGradientMiddle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the middle color of the gradient used when a top-level <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is pressed down.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the middle color of the gradient used when a top-level <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is pressed down.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuItemSelected">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuItemSelected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuItemSelected" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemSelected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid color to use when a <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> other than the top-level <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is selected.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the solid color to use when a <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> other than the top-level <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is selected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuItemSelectedGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuItemSelectedGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuItemSelectedGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemSelectedGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used when the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is selected.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used when the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is selected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuItemSelectedGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuItemSelectedGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuItemSelectedGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuItemSelectedGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used when the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is selected.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used when the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is selected.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuStripGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuStripGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuStripGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuStripGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used in the <see cref="T:System.Windows.Forms.MenuStrip" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used in the <see cref="T:System.Windows.Forms.MenuStrip" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MenuStripGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color MenuStripGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color MenuStripGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.MenuStripGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used in the <see cref="T:System.Windows.Forms.MenuStrip" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used in the <see cref="T:System.Windows.Forms.MenuStrip" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverflowButtonGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color OverflowButtonGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color OverflowButtonGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.OverflowButtonGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripOverflowButton" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripOverflowButton" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverflowButtonGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color OverflowButtonGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color OverflowButtonGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.OverflowButtonGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripOverflowButton" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripOverflowButton" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OverflowButtonGradientMiddle">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color OverflowButtonGradientMiddle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color OverflowButtonGradientMiddle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.OverflowButtonGradientMiddle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the middle color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripOverflowButton" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the middle color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripOverflowButton" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaftingContainerGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color RaftingContainerGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color RaftingContainerGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.RaftingContainerGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripContainer" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripContainer" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RaftingContainerGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color RaftingContainerGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color RaftingContainerGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.RaftingContainerGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripContainer" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripContainer" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeparatorDark">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color SeparatorDark { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color SeparatorDark" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.SeparatorDark" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the color to use to for shadow effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color to use to for shadow effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SeparatorLight">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color SeparatorLight { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color SeparatorLight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.SeparatorLight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the color to use to for highlight effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the color to use to create highlight effects on the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusStripGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color StatusStripGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color StatusStripGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.StatusStripGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StatusStripGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color StatusStripGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color StatusStripGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.StatusStripGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used on the <see cref="T:System.Windows.Forms.StatusStrip" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripBorder">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ToolStripBorder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ToolStripBorder" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripBorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the border color to use on the bottom edge of the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the border color to use on the bottom edge of the <see cref="T:System.Windows.Forms.ToolStrip" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripContentPanelGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ToolStripContentPanelGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ToolStripContentPanelGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripContentPanelGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripContentPanel" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripContentPanel" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripContentPanelGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ToolStripContentPanelGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ToolStripContentPanelGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripContentPanelGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripContentPanel" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripContentPanel" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripDropDownBackground">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ToolStripDropDownBackground { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ToolStripDropDownBackground" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripDropDownBackground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the solid background color of the <see cref="T:System.Windows.Forms.ToolStripDropDown" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the solid background color of the <see cref="T:System.Windows.Forms.ToolStripDropDown" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ToolStripGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ToolStripGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStrip" /> background.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStrip" /> background.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ToolStripGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ToolStripGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStrip" /> background.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStrip" /> background.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripGradientMiddle">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ToolStripGradientMiddle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ToolStripGradientMiddle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripGradientMiddle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the middle color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStrip" /> background.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the middle color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStrip" /> background.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripPanelGradientBegin">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ToolStripPanelGradientBegin { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ToolStripPanelGradientBegin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripPanelGradientBegin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the starting color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the starting color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolStripPanelGradientEnd">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Color ToolStripPanelGradientEnd { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Color ToolStripPanelGradientEnd" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColors.ToolStripPanelGradientEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the end color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> that is the end color of the gradient used in the <see cref="T:System.Windows.Forms.ToolStripPanel" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

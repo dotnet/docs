@@ -1,0 +1,103 @@
+<Type Name="TabItemState" FullName="System.Windows.Forms.VisualStyles.TabItemState">
+  <TypeSignature Language="C#" Value="public enum TabItemState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabItemState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TabItemState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the visual state of a tab item that is drawn with visual styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.TabItemState> values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the following classes:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItem>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemLeftEdge>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemRightEdge>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItem>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemLeftEdge>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemRightEdge>  
+  
+ The <xref:System.Windows.Forms.VisualStyles.TabItemState> values are also used as an argument in the <xref:System.Windows.Forms.TabRenderer.DrawTabItem%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TabItemState Disabled = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TabItemState.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TabItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The tab item is disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hot">
+      <MemberSignature Language="C#" Value="Hot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TabItemState Hot = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TabItemState.Hot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TabItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The tab item is hot.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TabItemState Normal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TabItemState.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TabItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The tab item is normal.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Selected">
+      <MemberSignature Language="C#" Value="Selected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TabItemState Selected = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TabItemState.Selected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TabItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The tab item is selected.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

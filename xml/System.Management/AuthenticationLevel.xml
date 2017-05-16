@@ -1,0 +1,146 @@
+<Type Name="AuthenticationLevel" FullName="System.Management.AuthenticationLevel">
+  <TypeSignature Language="C#" Value="public enum AuthenticationLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Management.AuthenticationLevel" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Describes the authentication level to be used to connect to WMI. This is used for the COM connection to WMI.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Call">
+      <MemberSignature Language="C#" Value="Call" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel Call = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Call" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.AuthenticationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Call-level COM authentication.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="Connect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel Connect = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Connect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.AuthenticationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Connect-level COM authentication.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.AuthenticationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default COM authentication level. WMI uses the default Windows Authentication setting.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel None = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.AuthenticationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No COM authentication.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Packet">
+      <MemberSignature Language="C#" Value="Packet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel Packet = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Packet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.AuthenticationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Packet-level COM authentication.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PacketIntegrity">
+      <MemberSignature Language="C#" Value="PacketIntegrity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel PacketIntegrity = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.PacketIntegrity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.AuthenticationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Packet Integrity-level COM authentication.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PacketPrivacy">
+      <MemberSignature Language="C#" Value="PacketPrivacy" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel PacketPrivacy = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.PacketPrivacy" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.AuthenticationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Packet Privacy-level COM authentication.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unchanged">
+      <MemberSignature Language="C#" Value="Unchanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel Unchanged = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Unchanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.AuthenticationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Authentication level should remain as it was before.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -28,7 +28,7 @@ By using attributes you can customize how structs are laid out in memory. For ex
 ## Example  
  In this code segment, all of the fields of `TestUnion` start at the same location in memory.  
   
-```cs  
+```csharp  
 // Add a using directive for System.Runtime.InteropServices.  
   
        [System.Runtime.InteropServices.StructLayout(LayoutKind.Explicit)]  
@@ -51,7 +51,7 @@ By using attributes you can customize how structs are laid out in memory. For ex
 ## Example  
  The following is another example where fields start at different explicitly set locations.  
   
-```cs  
+```csharp  
 // Add a using directive for System.Runtime.InteropServices.  
   
        [System.Runtime.InteropServices.StructLayout(LayoutKind.Explicit)]  

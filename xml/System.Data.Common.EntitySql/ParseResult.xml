@@ -1,0 +1,55 @@
+<Type Name="ParseResult" FullName="System.Data.Common.EntitySql.ParseResult">
+  <TypeSignature Language="C#" Value="public sealed class ParseResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ParseResult extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.EntitySql.ParseResult" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Entity SQL Parser result information.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CommandTree">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbCommandTree CommandTree { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbCommandTree CommandTree" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.EntitySql.ParseResult.CommandTree" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbCommandTree</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A command tree produced during parsing.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FunctionDefinitions">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.EntitySql.FunctionDefinition&gt; FunctionDefinitions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Common.EntitySql.FunctionDefinition&gt; FunctionDefinitions" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.EntitySql.ParseResult.FunctionDefinitions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.EntitySql.FunctionDefinition&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>List of <see cref="T:System.Data.Common.EntitySql.FunctionDefinition" /> objects describing query inline function definitions.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

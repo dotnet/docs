@@ -1,0 +1,231 @@
+<Type Name="DrawItemState" FullName="System.Windows.Forms.DrawItemState">
+  <TypeSignature Language="C#" Value="public enum DrawItemState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DrawItemState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawItemState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the state of an item that is being drawn.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by members such as <xref:System.Windows.Forms.DrawItemEventArgs.State%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates using the <xref:System.Drawing.Graphics> property to perform custom drawing of the items in a <xref:System.Windows.Forms.ListBox>.  
+  
+ [!code-cpp[MeasureItemEventArgs#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MeasureItemEventArgs/CPP/form1.cpp#1)]
+ [!code-csharp[MeasureItemEventArgs#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MeasureItemEventArgs/CS/form1.cs#1)]
+ [!code-vb[MeasureItemEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MeasureItemEventArgs/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Checked">
+      <MemberSignature Language="C#" Value="Checked" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState Checked = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Checked" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is checked. Only menu controls use this value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ComboBoxEdit">
+      <MemberSignature Language="C#" Value="ComboBoxEdit" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState ComboBoxEdit = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.ComboBoxEdit" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is the editing portion of a <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState Default = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is in its default visual state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Disabled">
+      <MemberSignature Language="C#" Value="Disabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState Disabled = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Disabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is unavailable.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Focus">
+      <MemberSignature Language="C#" Value="Focus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState Focus = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Focus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item has focus.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Grayed">
+      <MemberSignature Language="C#" Value="Grayed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState Grayed = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Grayed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is grayed. Only menu controls use this value.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="HotLight">
+      <MemberSignature Language="C#" Value="HotLight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState HotLight = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.HotLight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is being hot-tracked, that is, the item is highlighted as the mouse pointer passes over it.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Inactive">
+      <MemberSignature Language="C#" Value="Inactive" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState Inactive = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Inactive" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is inactive.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoAccelerator">
+      <MemberSignature Language="C#" Value="NoAccelerator" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState NoAccelerator = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.NoAccelerator" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item displays without a keyboard accelerator.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NoFocusRect">
+      <MemberSignature Language="C#" Value="NoFocusRect" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState NoFocusRect = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.NoFocusRect" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item displays without the visual cue that indicates it has focus.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item currently has no state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Selected">
+      <MemberSignature Language="C#" Value="Selected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DrawItemState Selected = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DrawItemState.Selected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The item is selected.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

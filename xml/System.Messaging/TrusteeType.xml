@@ -1,0 +1,121 @@
+<Type Name="TrusteeType" FullName="System.Messaging.TrusteeType">
+  <TypeSignature Language="C#" Value="public enum TrusteeType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TrusteeType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.TrusteeType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of a trustee.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A trustee is often a user or group, but it might also be a computer on the network or a recognized domain. When you want to grant or set access rights, specify the trustee type in the <xref:System.Messaging.Trustee.TrusteeType%2A> member of a <xref:System.Messaging.Trustee>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Alias">
+      <MemberSignature Language="C#" Value="Alias" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.TrusteeType Alias = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.TrusteeType.Alias" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.TrusteeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trustee is an alias.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Computer">
+      <MemberSignature Language="C#" Value="Computer" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.TrusteeType Computer = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.TrusteeType.Computer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.TrusteeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trustee is a computer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Domain">
+      <MemberSignature Language="C#" Value="Domain" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.TrusteeType Domain = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.TrusteeType.Domain" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.TrusteeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trustee is a domain.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Group">
+      <MemberSignature Language="C#" Value="Group" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.TrusteeType Group = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.TrusteeType.Group" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.TrusteeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trustee is a group.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.TrusteeType Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.TrusteeType.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.TrusteeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trustee type is unknown, but not necessarily invalid.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="User" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.TrusteeType User = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Messaging.TrusteeType.User" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Messaging.TrusteeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The trustee is a user.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "BC36647"
 ms.assetid: 0e0050f2-2039-4311-b260-f0ebfde84189
 caps.latest.revision: 6
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

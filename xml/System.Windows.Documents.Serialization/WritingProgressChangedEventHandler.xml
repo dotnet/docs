@@ -1,0 +1,32 @@
+<Type Name="WritingProgressChangedEventHandler" FullName="System.Windows.Documents.Serialization.WritingProgressChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void WritingProgressChangedEventHandler(object sender, WritingProgressChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WritingProgressChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingProgressChangedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Documents.Serialization.WritingProgressChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents a method that will handle the <see cref="E:System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged" /> event of an <see cref="T:System.Windows.Xps.XpsDocumentWriter" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged> event occurs when the <xref:System.Windows.Xps.XpsDocumentWriter> updates its progress during a writing operation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

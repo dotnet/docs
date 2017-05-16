@@ -1,0 +1,99 @@
+<Type Name="EdmMember" FullName="System.Data.Metadata.Edm.EdmMember">
+  <TypeSignature Language="C#" Value="public abstract class EdmMember : System.Data.Metadata.Edm.MetadataItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EdmMember extends System.Data.Metadata.Edm.MetadataItem" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.EdmMember" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Metadata.Edm.MetadataItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a member that can be declared in any <see cref="T:System.Data.Metadata.Edm.StructuralType" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Data.Metadata.Edm.EdmMember> class is a base class for <xref:System.Data.Metadata.Edm.EdmProperty>, <xref:System.Data.Metadata.Edm.NavigationProperty>, and <xref:System.Data.Metadata.Edm.RelationshipEndMember>. The <xref:System.Data.Metadata.Edm.EdmMember> class represents a member that can be declared in any <xref:System.Data.Metadata.Edm.StructuralType>. For more information about members, see [Structural Types (Metadata)](http://msdn.microsoft.com/en-us/c0c54fe0-e0ba-4e1d-8572-dfd2fbf788fa).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeclaringType">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.StructuralType DeclaringType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.StructuralType DeclaringType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmMember.DeclaringType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.StructuralType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type on which this member is declared.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.StructuralType" /> object that represents the type on which this member is declared.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmMember.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of this member.</summary>
+        <value>The name of this member.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.EdmMember.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the name of this member.</summary>
+        <returns>The name of this member.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeUsage">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.TypeUsage TypeUsage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.TypeUsage TypeUsage" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.EdmMember.TypeUsage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.TypeUsage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the instance of the <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> class that contains both the type of the member and facets for the type.</summary>
+        <value>A <see cref="T:System.Data.Metadata.Edm.TypeUsage" /> object that contains both the type of the member and facets for the type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,175 @@
+<Type Name="SqlNotificationRequest" FullName="System.Data.Sql.SqlNotificationRequest">
+  <TypeSignature Language="C#" Value="public sealed class SqlNotificationRequest" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlNotificationRequest extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Sql.SqlNotificationRequest" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a request for notification for a given command.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides low-level access to the query notification services exposed by SQL Server 2005. For most applications the <xref:System.Data.SqlClient.SqlDependency> class provides a simpler way of using query notifications. However, if you need fine control over when notifications occur, or you need to customize the message data returned as part of a notification, the <xref:System.Data.Sql.SqlNotificationRequest> class is the one to use.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlNotificationRequest ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Sql.SqlNotificationRequest.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Sql.SqlNotificationRequest" /> class with default values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the default constructor is used to create a <xref:System.Data.Sql.SqlNotificationRequest> object, that instance must have its <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A> and <xref:System.Data.Sql.SqlNotificationRequest.Options%2A> properties initialized before assigning the object to a <xref:System.Data.SqlClient.SqlCommand> object's <xref:System.Data.SqlClient.SqlCommand.Notification%2A> property. The default values used by the constructor are NULL (`Nothing` in Visual Basic) for the <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A>, an empty string for the <xref:System.Data.Sql.SqlNotificationRequest.Options%2A>, and zero for the <xref:System.Data.Sql.SqlNotificationRequest.Timeout%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlNotificationRequest (string userData, string options, int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string userData, string options, int32 timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Sql.SqlNotificationRequest.#ctor(System.String,System.String,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="userData" Type="System.String" />
+        <Parameter Name="options" Type="System.String" />
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="userData">A string that contains an application-specific identifier for this notification. It is not used by the notifications infrastructure, but it allows you to associate notifications with the application state. The value indicated in this parameter is included in the Service Broker queue message.</param>
+        <param name="options">A string that contains the Service Broker service name where notification messages are posted, and it must include a database name or a Service Broker instance GUID that restricts the scope of the service name lookup to a particular database.  
+  
+ For more information about the format of the <c>options</c> parameter, see <see cref="P:System.Data.Sql.SqlNotificationRequest.Options" />.</param>
+        <param name="timeout">The time, in seconds, to wait for a notification message.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Sql.SqlNotificationRequest" /> class with a user-defined string that identifies a particular notification request, the name of a predefined SQL Server 2005 Service Broker service name, and the time-out period, measured in seconds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor allows you to initialize a new <xref:System.Data.Sql.SqlNotificationRequest> instance, providing your own identifier, the SQL Server 2005 Service Broker service name, and a time-out value.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value of the <paramref name="options" /> parameter is NULL.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="options" /> or <paramref name="userData" /> parameter is longer than <see langword="uint16.MaxValue" /> or the value in the <paramref name="timeout" /> parameter is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Options">
+      <MemberSignature Language="C#" Value="public string Options { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Options" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.Options" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the SQL Server Service Broker service name where notification messages are posted.</summary>
+        <value>
+          <see langword="string" /> that contains the SQL Server 2005 Service Broker service name where notification messages are posted and the database or service broker instance GUID to scope the server name lookup.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Data.Sql.SqlNotificationRequest.Options%2A> property has the following format:  
+  
+ `service=<service-name>{;(local database=<database>|broker instance=<broker instance>)}`  
+  
+ For example, if you use the service "myservice" in the database "AdventureWorks" the format is:  
+  
+ `service=myservice;local database=AdventureWorks`  
+  
+ The SQL Server Service Broker service must be previously configured on the server. In addition, a Service Broker service and queue must be defined and security access granted as needed. See the SQL Server 2005 documentation for more information.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">The value is NULL.</exception>
+        <exception cref="T:System.ArgumentException">The value is longer than <see langword="uint16.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Timeout">
+      <MemberSignature Language="C#" Value="public int Timeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.Timeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies how long SQL Server waits for a change to occur before the operation times out.</summary>
+        <value>A signed integer value that specifies, in seconds, how long SQL Server waits for a change to occur before the operation times out.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After the time-out period expires, the notification is sent even if no change takes place. The <xref:System.Data.Sql.SqlNotificationRequest.Timeout%2A> property defaults to the value set on the server.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The value is less than zero.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="UserData">
+      <MemberSignature Language="C#" Value="public string UserData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserData" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Sql.SqlNotificationRequest.UserData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an application-specific identifier for this notification.</summary>
+        <value>A <see langword="string" /> value of the application-specific identifier for this notification.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This value is not used by the notifications infrastructure. Instead, it is a mechanism that allows an application to associate notifications with application state. The value specified in the <xref:System.Data.Sql.SqlNotificationRequest.UserData%2A> property is included in the SQL Server 2005 queue message.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">The value is longer than <see langword="uint16.MaxValue" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

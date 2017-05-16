@@ -1,0 +1,246 @@
+<Type Name="DataGridView+HitTestInfo" FullName="System.Windows.Forms.DataGridView+HitTestInfo">
+  <TypeSignature Language="C#" Value="public sealed class DataGridView.HitTestInfo" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit DataGridView/HitTestInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridView.HitTestInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains information, such as the row and column indexes, about a specific coordinate pair in the <see cref="T:System.Windows.Forms.DataGridView" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.HitTest%2A> method of the <xref:System.Windows.Forms.DataGridView> class returns a <xref:System.Windows.Forms.DataGridView.HitTestInfo>. You can use this method to determine which part of the <xref:System.Windows.Forms.DataGridView> control is located at the specified coordinates. For example, you can call this method specifying the coordinates of a mouse click to determine the row and column indexes of the clicked cell or whether a header cell or scroll bar was clicked.  
+  
+   
+  
+## Examples  
+ The following code example illustrates the use of this type. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
+  
+ [!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
+ [!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ColumnIndex">
+      <MemberSignature Language="C#" Value="public int ColumnIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.ColumnIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the column that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <value>The index of the column in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
+  
+ [!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
+ [!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnX">
+      <MemberSignature Language="C#" Value="public int ColumnX { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.ColumnX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the x-coordinate of the beginning of the column that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <value>The x-coordinate of the column in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.HitTestInfo.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</param>
+        <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="value" /> is a <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" /> in which the values of the <see cref="P:System.Windows.Forms.DataGridView.HitTestInfo.Type" />, <see cref="P:System.Windows.Forms.DataGridView.HitTestInfo.RowIndex" />, and <see cref="P:System.Windows.Forms.DataGridView.HitTestInfo.ColumnIndex" /> properties are the same as the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.HitTestInfo.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as a hash function for a particular type.</summary>
+        <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nowhere">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Forms.DataGridView.HitTestInfo Nowhere;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Forms.DataGridView/HitTestInfo Nowhere" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridView.HitTestInfo.Nowhere" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridView+HitTestInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the point is not on a cell or cell header. This field is read-only.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.HitTest%2A> method returns <xref:System.Windows.Forms.DataGridView.HitTestInfo.Nowhere> when the specified point is at an empty area of the <xref:System.Windows.Forms.DataGridView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowIndex">
+      <MemberSignature Language="C#" Value="public int RowIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.RowIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the row that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <value>The index of the row in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
+  
+ [!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
+ [!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowY">
+      <MemberSignature Language="C#" Value="public int RowY { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RowY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.RowY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the y-coordinate of the top of the row that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <value>The y-coordinate of the row in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.HitTestInfo.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents a <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <returns>A string that represents a <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.DataGridView.HitTestInfo.ToString%2A> method returns a string that includes the value of the <xref:System.Windows.Forms.DataGridView.HitTestInfo.Type%2A>, <xref:System.Windows.Forms.DataGridView.HitTestInfo.ColumnIndex%2A>, and <xref:System.Windows.Forms.DataGridView.HitTestInfo.RowIndex%2A> properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewHitTestType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewHitTestType Type" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridViewHitTestType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Windows.Forms.DataGridViewHitTestType" /> that indicates which part of the <see cref="T:System.Windows.Forms.DataGridView" /> the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" /> belong to.</summary>
+        <value>A <see cref="T:System.Windows.Forms.DataGridViewHitTestType" /> value that indicates the control part at the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example illustrates the use of this property. This example is part of a larger example available in the <xref:System.Windows.Forms.DataGridView.Columns%2A?displayProperty=fullName> property reference topic.  
+  
+ [!code-csharp[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/CS/form1.cs#4)]
+ [!code-vb[System.Windows.Forms.GridViewAutoSize#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.GridViewAutoSize/VB/form1.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

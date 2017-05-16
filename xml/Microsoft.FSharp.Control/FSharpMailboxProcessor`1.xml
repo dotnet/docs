@@ -1,0 +1,492 @@
+<Type Name="FSharpMailboxProcessor&lt;TMsg&gt;" FullName="Microsoft.FSharp.Control.FSharpMailboxProcessor&lt;TMsg&gt;">
+  <TypeSignature Language="C#" Value="public sealed class FSharpMailboxProcessor&lt;TMsg&gt; : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FSharpMailboxProcessor`1&lt;TMsg&gt; extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.FSharpMailboxProcessor`1" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TMsg" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AutoSerializable(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompiledName("FSharpMailboxProcessor`1")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Sealed</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TMsg">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FSharpMailboxProcessor (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpMailboxProcessor&lt;TMsg&gt;,Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;&gt; body, Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt; cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Control.FSharpMailboxProcessor`1&lt;!TMsg&gt;, class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt;&gt; body, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.#ctor(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Control.FSharpMailboxProcessor{`0},Microsoft.FSharp.Control.FSharpAsync{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpOption{System.Threading.CancellationToken})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="body" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpMailboxProcessor&lt;TMsg&gt;,Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="body">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentQueueLength">
+      <MemberSignature Language="C#" Value="public int CurrentQueueLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentQueueLength" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.CurrentQueueLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultTimeout">
+      <MemberSignature Language="C#" Value="public int DefaultTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.DefaultTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="public event Microsoft.FSharp.Control.FSharpHandler&lt;Exception&gt; Error;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.FSharp.Control.FSharpHandler`1&lt;class System.Exception&gt; Error" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.Error" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CLIEvent</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>add: Microsoft.FSharp.Core.CLIEvent</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>remove: Microsoft.FSharp.Core.CLIEvent</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpHandler&lt;System.Exception&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Post">
+      <MemberSignature Language="C#" Value="public void Post (TMsg message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Post(!TMsg message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.Post(`0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="TMsg" />
+      </Parameters>
+      <Docs>
+        <param name="message">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostAndAsyncReply&lt;TReply&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;TReply&gt; PostAndAsyncReply&lt;TReply&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpAsyncReplyChannel&lt;TReply&gt;,TMsg&gt; buildMessage, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!TReply&gt; PostAndAsyncReply&lt;TReply&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Control.FSharpAsyncReplyChannel`1&lt;!!TReply&gt;, !TMsg&gt; buildMessage, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.PostAndAsyncReply``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Control.FSharpAsyncReplyChannel{``0},`0},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;TReply&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TReply" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="buildMessage" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpAsyncReplyChannel&lt;TReply&gt;,TMsg&gt;" />
+        <Parameter Name="timeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TReply">To be added.</typeparam>
+        <param name="buildMessage">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostAndReply&lt;TReply&gt;">
+      <MemberSignature Language="C#" Value="public TReply PostAndReply&lt;TReply&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpAsyncReplyChannel&lt;TReply&gt;,TMsg&gt; buildMessage, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!TReply PostAndReply&lt;TReply&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Control.FSharpAsyncReplyChannel`1&lt;!!TReply&gt;, !TMsg&gt; buildMessage, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.PostAndReply``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Control.FSharpAsyncReplyChannel{``0},`0},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TReply</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TReply" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="buildMessage" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpAsyncReplyChannel&lt;TReply&gt;,TMsg&gt;" />
+        <Parameter Name="timeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TReply">To be added.</typeparam>
+        <param name="buildMessage">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostAndTryAsyncReply&lt;TReply&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.FSharpOption&lt;TReply&gt;&gt; PostAndTryAsyncReply&lt;TReply&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpAsyncReplyChannel&lt;TReply&gt;,TMsg&gt; buildMessage, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TReply&gt;&gt; PostAndTryAsyncReply&lt;TReply&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Control.FSharpAsyncReplyChannel`1&lt;!!TReply&gt;, !TMsg&gt; buildMessage, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.PostAndTryAsyncReply``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Control.FSharpAsyncReplyChannel{``0},`0},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.FSharpOption&lt;TReply&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TReply" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="buildMessage" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpAsyncReplyChannel&lt;TReply&gt;,TMsg&gt;" />
+        <Parameter Name="timeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TReply">To be added.</typeparam>
+        <param name="buildMessage">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Receive">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;TMsg&gt; Receive (Microsoft.FSharp.Core.FSharpOption&lt;int&gt; timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!TMsg&gt; Receive(class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.Receive(Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;TMsg&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scan&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; Scan&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TMsg,Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;&gt; scanner, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; Scan&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!TMsg, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt;&gt; scanner, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.Scan``1(Microsoft.FSharp.Core.FSharpFunc{`0,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Control.FSharpAsync{``0}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="scanner" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TMsg,Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;&gt;" />
+        <Parameter Name="timeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="scanner">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.Start" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpMailboxProcessor&lt;TMsg&gt; Start (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpMailboxProcessor&lt;TMsg&gt;,Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;&gt; body, Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt; cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpMailboxProcessor`1&lt;!TMsg&gt; Start(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Control.FSharpMailboxProcessor`1&lt;!TMsg&gt;, class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt;&gt; body, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Threading.CancellationToken&gt; cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.Start(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Control.FSharpMailboxProcessor{`0},Microsoft.FSharp.Control.FSharpAsync{Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Core.FSharpOption{System.Threading.CancellationToken})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpMailboxProcessor&lt;TMsg&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="body" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpMailboxProcessor&lt;TMsg&gt;,Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;&gt;" />
+        <Parameter Name="cancellationToken" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Threading.CancellationToken&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="body">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryPostAndReply&lt;TReply&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Core.FSharpOption&lt;TReply&gt; TryPostAndReply&lt;TReply&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpAsyncReplyChannel&lt;TReply&gt;,TMsg&gt; buildMessage, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TReply&gt; TryPostAndReply&lt;TReply&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Control.FSharpAsyncReplyChannel`1&lt;!!TReply&gt;, !TMsg&gt; buildMessage, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.TryPostAndReply``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Control.FSharpAsyncReplyChannel{``0},`0},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;TReply&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TReply" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="buildMessage" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.FSharpAsyncReplyChannel&lt;TReply&gt;,TMsg&gt;" />
+        <Parameter Name="timeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TReply">To be added.</typeparam>
+        <param name="buildMessage">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryReceive">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.FSharpOption&lt;TMsg&gt;&gt; TryReceive (Microsoft.FSharp.Core.FSharpOption&lt;int&gt; timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.FSharpOption`1&lt;!TMsg&gt;&gt; TryReceive(class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.TryReceive(Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.FSharpOption&lt;TMsg&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryScan&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.FSharpOption&lt;T&gt;&gt; TryScan&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TMsg,Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;&gt; scanner, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt;&gt; TryScan&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!TMsg, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt;&gt; scanner, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpMailboxProcessor`1.TryScan``1(Microsoft.FSharp.Core.FSharpFunc{`0,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Control.FSharpAsync{``0}}},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.FSharpOption&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="scanner" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TMsg,Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;&gt;" />
+        <Parameter Name="timeout" Type="Microsoft.FSharp.Core.FSharpOption&lt;System.Int32&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>Microsoft.FSharp.Core.OptionalArgument</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="scanner">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

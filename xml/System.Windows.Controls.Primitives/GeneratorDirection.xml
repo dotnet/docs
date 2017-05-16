@@ -1,0 +1,50 @@
+<Type Name="GeneratorDirection" FullName="System.Windows.Controls.Primitives.GeneratorDirection">
+  <TypeSignature Language="C#" Value="public enum GeneratorDirection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GeneratorDirection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.GeneratorDirection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the direction in which item generation will occur. <see cref="T:System.Windows.Controls.Primitives.GeneratorDirection" /> is used by <see cref="Overload:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Backward">
+      <MemberSignature Language="C#" Value="Backward" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.GeneratorDirection Backward = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.GeneratorDirection.Backward" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.GeneratorDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies to generate items in a backward direction.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Forward">
+      <MemberSignature Language="C#" Value="Forward" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.GeneratorDirection Forward = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.GeneratorDirection.Forward" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.Primitives.GeneratorDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies to generate items in a forward direction.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

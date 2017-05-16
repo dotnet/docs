@@ -1,0 +1,291 @@
+<Type Name="WebResourceAttribute" FullName="System.Web.UI.WebResourceAttribute">
+  <TypeSignature Language="C#" Value="public sealed class WebResourceAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebResourceAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebResourceAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the metadata attribute that enables an embedded resource in an assembly. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebResourceAttribute> class is valid only when used on assembly declarations. It is used to enable a specified embedded resource in an assembly for use as a Web resource.  
+  
+ For more information on resources, see [ASP.NET Web Page Resources Overview](http://msdn.microsoft.com/library/0936b3b2-9e6e-4abe-9c06-364efef9dbbd).  
+  
+   
+  
+## Examples  
+ This section contains two code examples. The first code example demonstrates how to apply the <xref:System.Web.UI.WebResourceAttribute> attribute to a namespace that defines a custom control, `MyCustomControl`. The second code example demonstrates how to use the `MyCustomControl` class in a Web page.  
+  
+ The following code example demonstrates how to apply the <xref:System.Web.UI.WebResourceAttribute> attribute on a custom assembly to define an image Web resource and an HTML Web resource. The `MyCustomControl` class defines a composite control that uses the resources to set the value of the <xref:System.Web.UI.WebControls.Image.ImageUrl%2A> property of an <xref:System.Web.UI.WebControls.Image> control that is contained within the composite control and to set the <xref:System.Web.UI.HtmlControls.HtmlAnchor.HRef%2A> property of an <xref:System.Web.UI.HtmlControls.HtmlAnchor> control linking to the HTML resource.  
+  
+ [!code-csharp[System.Web.UI.WebResourceAttribute#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.cs#2)]
+ [!code-vb[System.Web.UI.WebResourceAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.vb#2)]  
+  
+ The following code example demonstrates how to use the `MyCustomControl` class in a Web page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+  
+ This example requires that you compile the Image1.jpg and Help.htm resources with the assembly that contains `MyCustomControl`. For more information, see, [/resource (C# Compiler Options)](~/docs/csharp/language-reference/compiler-options/resource-compiler-option.md) or [/resource (Visual Basic)](~/docs/visual-basic/reference/command-line-compiler/resource.md).  
+  
+ An example of an HTML Web resource that could be used in this example is shown next. Note the use of the `WebResource` syntax, which is used when you set the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property to `true` for a Web resource.  
+  
+ `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">`  
+  
+ `<html >`  
+  
+ `<head>`  
+  
+ `<title>Included Help Page</title>`  
+  
+ `</head>`  
+  
+ `<body>`  
+  
+ `<div>`  
+  
+ `<img alt="help image" src=<% = WebResource("image1.jpg") %> />`  
+  
+ `Included help file.`  
+  
+ `</div>`  
+  
+ `</body>`  
+  
+ `</html>`  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebResourceAttribute (string webResource, string contentType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string webResource, string contentType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebResourceAttribute.#ctor(System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="webResource" Type="System.String" />
+        <Parameter Name="contentType" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="webResource">The name of the of Web resource.</param>
+        <param name="contentType">The type of resource, such as <c>"image/gif"</c> or <c>"text/javascript"</c>.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebResourceAttribute" /> class with the specified Web resource and resource content type.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="webResource" /> is <see langword="null" /> or an empty string ("").  
+  
+ \- or -  
+  
+ <paramref name="contentType" /> is <see langword="null" /> or an empty string ("").</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CdnPath">
+      <MemberSignature Language="C#" Value="public string CdnPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CdnPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.CdnPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or set the path of a Content Delivery Network (CDN) that contains Web resources.</summary>
+        <value>The path of a Content Delivery Network (CDN).</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CdnSupportsSecureConnection">
+      <MemberSignature Language="C#" Value="public bool CdnSupportsSecureConnection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CdnSupportsSecureConnection" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.CdnSupportsSecureConnection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or set a value that indicates to the <see cref="T:System.Web.UI.ScriptManager" /> whether a script resource should be accessed using a secure connection to the content delivery network (CDN) path when the page is accessed using HTTPS.</summary>
+        <value>
+          <see langword="true" /> if the CDN should be accessed using HTTPS; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebResourceAttribute.CdnSupportsSecureConnection%2A> property to check whether the associated script resource should be accessed by the <xref:System.Web.UI.ScriptManager> using a secure connection (using SSL) to a CDN. By using the <xref:System.Web.UI.WebResourceAttribute.CdnSupportsSecureConnection%2A> property, you can avoid a warning message from the browser when your Web application attempts to request secure content from a CDN that supports SSL.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string containing the MIME type of the resource that is referenced by the <see cref="T:System.Web.UI.WebResourceAttribute" /> class.</summary>
+        <value>The content type of the resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Examples of content types are `"image/jpeg"` and `"text/xml"`. For more information on MIME types, go to the [Internet Assigned Numbers Authority](http://go.microsoft.com/fwlink/?LinkId=43988) Web site and refer to the section on media types.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to query the value of the <xref:System.Web.UI.WebResourceAttribute.ContentType%2A> property.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadSuccessExpression">
+      <MemberSignature Language="C#" Value="public string LoadSuccessExpression { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LoadSuccessExpression" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.LoadSuccessExpression" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets an expression that is used when a Web resource has successfully loaded.</summary>
+        <value>An expression that is used when a Web resource has successfully loaded.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PerformSubstitution">
+      <MemberSignature Language="C#" Value="public bool PerformSubstitution { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PerformSubstitution" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.PerformSubstitution" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a Boolean value that determines whether, during processing of the embedded resource referenced by the <see cref="T:System.Web.UI.WebResourceAttribute" /> class, other Web resource URLs are parsed and replaced with the full path to the resource.</summary>
+        <value>
+          <see langword="true" /> if embedded resources are resolved during processing of the resource; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a resource is streamed from the assembly to the response, references to other Web resources in the embedded resources can be resolved at this time, if the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property is set to `true`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to query the value of the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property. In this example, the <xref:System.Web.UI.WebResourceAttribute> attribute of the HTML file Help.htm is defined with the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property set to `true`.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+  
+ An example of an HTML Web resource that could be used in this example is shown next. Note that the `WebResource` syntax is used when you set the <xref:System.Web.UI.WebResourceAttribute.PerformSubstitution%2A> property to `true` for the resource.  
+  
+ `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">`  
+  
+ `<html >`  
+  
+ `<head>`  
+  
+ `<title>Included Help Page</title>`  
+  
+ `</head>`  
+  
+ `<body>`  
+  
+ `<div>`  
+  
+ `<img alt="help image" src=<% = WebResource("image1.jpg") %> />`  
+  
+ `Included help file.`  
+  
+ `</div>`  
+  
+ `</body>`  
+  
+ `</html>`  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WebResource">
+      <MemberSignature Language="C#" Value="public string WebResource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WebResource" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebResourceAttribute.WebResource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a string containing the name of the resource that is referenced by the <see cref="T:System.Web.UI.WebResourceAttribute" /> class.</summary>
+        <value>The name of the resource.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to query the value of the <xref:System.Web.UI.WebResourceAttribute.WebResource%2A> property.  
+  
+ This code example is part of a larger example provided for the <xref:System.Web.UI.WebResourceAttribute> class.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/cs/WebResourceAttribute.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebResourceAttribute#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebResourceAttribute/vb/WebResourceAttribute.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,61 @@
+<Type Name="IDataKeysControl" FullName="System.Web.UI.IDataKeysControl">
+  <TypeSignature Language="C#" Value="public interface IDataKeysControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataKeysControl" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IDataKeysControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines properties that specify how ASP.NET creates client IDs for a data-bound control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IDataKeysControl> interface defines two properties that data-bound controls implement to let you specify how a client ID is created. A data-bound control that displays multiple instances of a control must create an ID for each instance of the control. That ID must be unique in order to enable access to the control from client script.  
+  
+ The <xref:System.Web.UI.IDataKeysControl.ClientIDRowSuffix%2A> property lets you specify the name or names of data fields whose values are included in the generated value for the <xref:System.Web.UI.Control.ClientID%2A> property. These values are used to uniquely identify each instance of the control in a way that corresponds to a meaningful data value, instead of to an arbitrary value such as the order in which the controls are rendered on the page. For example, when you display records from a products data table, you can assign `ProductID` to the <xref:System.Web.UI.IDataKeysControl.ClientIDRowSuffix%2A> property. In that case, each instance of the data-bound control can be identified by the value from the `ProductID` field.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClientIDRowSuffix">
+      <MemberSignature Language="C#" Value="public string[] ClientIDRowSuffix { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ClientIDRowSuffix" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataKeysControl.ClientIDRowSuffix" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the names of the data fields whose values are used to uniquely identify each instance of a data-bound control when ASP.NET generates the <see cref="P:System.Web.UI.Control.ClientID" /> value by using the <see cref="F:System.Web.UI.ClientIDMode.Predictable" /> algorithm.</summary>
+        <value>A collection of data-field names.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClientIDRowSuffixDataKeys">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataKeyArray ClientIDRowSuffixDataKeys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataKeyArray ClientIDRowSuffixDataKeys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IDataKeysControl.ClientIDRowSuffixDataKeys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.DataKeyArray</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the data values that are used to uniquely identify each instance of a data-bound control when ASP.NET generates the <see cref="P:System.Web.UI.Control.ClientID" /> value.</summary>
+        <value>A collection of data-field values.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "concatenation operators, Visual Basic strings"
 ms.assetid: d787368b-3713-47ff-bce8-f112720a673a
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,221 @@
+<Type Name="DayRenderEventArgs" FullName="System.Web.UI.WebControls.DayRenderEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class DayRenderEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DayRenderEventArgs extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DayRenderEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.Calendar.DayRender" /> event of the <see cref="T:System.Web.UI.WebControls.Calendar" /> control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although data binding is not supported for the <xref:System.Web.UI.WebControls.Calendar> control, it is possible to modify the content and formatting of the individual date cells. Before the <xref:System.Web.UI.WebControls.Calendar> control is displayed on the Web page, it creates and assembles the components that make up the control. The <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised when each date cell in the <xref:System.Web.UI.WebControls.Calendar> control is created. You can control the contents and formatting of a date cell when it is created by providing code in the event handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event.  
+  
+ The event handler receives a <xref:System.Web.UI.WebControls.DayRenderEventArgs> object that contains event data. Use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property to access the cell being rendered. To access the properties of the day being rendered, use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A> property. When customizing the content for a cell, you might want to preserve the postback behavior when the user selects the date being rendered. This is typically done by rendering the script used to post the page as part of the custom content. To retrieve the script used to post the page back to the server, use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl%2A> property.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.DayRenderEventArgs>, see the <xref:System.Web.UI.WebControls.DayRenderEventArgs.%23ctor%2A> constructor.  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.DayRender> event to make the background color yellow for the days in the displayed month. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=fullName> control to the cell.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic Calendar.DayRender Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic Calendar.DayRender Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic Calendar.DayRender Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic Calendar.DayRender Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DayRenderEventArgs (System.Web.UI.WebControls.TableCell cell, System.Web.UI.WebControls.CalendarDay day);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.TableCell cell, class System.Web.UI.WebControls.CalendarDay day) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DayRenderEventArgs.#ctor(System.Web.UI.WebControls.TableCell,System.Web.UI.WebControls.CalendarDay)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cell" Type="System.Web.UI.WebControls.TableCell" />
+        <Parameter Name="day" Type="System.Web.UI.WebControls.CalendarDay" />
+      </Parameters>
+      <Docs>
+        <param name="cell">A <see cref="T:System.Web.UI.WebControls.TableCell" /> that represents a cell in the <see cref="T:System.Web.UI.WebControls.Calendar" />.</param>
+        <param name="day">A <see cref="T:System.Web.UI.WebControls.CalendarDay" /> that represents the day to render in the <see cref="T:System.Web.UI.WebControls.Calendar" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DayRenderEventArgs" /> class using the specified cell and calendar day.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DayRenderEventArgs> class.  
+  
+ When an instance of <xref:System.Web.UI.WebControls.DayRenderEventArgs> is created by a call to this constructor, the properties shown in the following table are initialized to the specified values.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A>|The value of the `cell` parameter.|  
+|<xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A>|The value of the `day` parameter.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DayRenderEventArgs (System.Web.UI.WebControls.TableCell cell, System.Web.UI.WebControls.CalendarDay day, string selectUrl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.TableCell cell, class System.Web.UI.WebControls.CalendarDay day, string selectUrl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DayRenderEventArgs.#ctor(System.Web.UI.WebControls.TableCell,System.Web.UI.WebControls.CalendarDay,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cell" Type="System.Web.UI.WebControls.TableCell" />
+        <Parameter Name="day" Type="System.Web.UI.WebControls.CalendarDay" />
+        <Parameter Name="selectUrl" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="cell">A <see cref="T:System.Web.UI.WebControls.TableCell" /> that represents a cell in the <see cref="T:System.Web.UI.WebControls.Calendar" />.</param>
+        <param name="day">A <see cref="T:System.Web.UI.WebControls.CalendarDay" /> that represents the day to render in the <see cref="T:System.Web.UI.WebControls.Calendar" />.</param>
+        <param name="selectUrl">The script used to post the page back to the server when the user selects the date being rendered.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.DayRenderEventArgs" /> class using the specified cell, calendar day, and selection URL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.DayRenderEventArgs> class.  
+  
+ When an instance of <xref:System.Web.UI.WebControls.DayRenderEventArgs> is created by a call to this constructor, the properties shown in the following table are initialized to the specified values.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A>|The value of the `cell` parameter.|  
+|<xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A>|The value of the `day` parameter.|  
+|<xref:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl%2A>|The value of the `selectUrl` parameter.|  
+  
+> [!NOTE]
+>  This constructor is used primarily by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cell">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TableCell Cell { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableCell Cell" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DayRenderEventArgs.Cell" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.TableCell</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.WebControls.TableCell" /> object that represents the cell being rendered in the <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.TableCell" /> that represents the cell being rendered in the <see cref="T:System.Web.UI.WebControls.Calendar" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property to programmatically control the cell being rendered in the <xref:System.Web.UI.WebControls.Calendar> control.  
+  
+ You can customize the contents of a cell by dynamically adding controls to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
+  
+> [!NOTE]
+>  Because the <xref:System.Web.UI.WebControls.Calendar.DayRender> event is raised while the <xref:System.Web.UI.WebControls.Calendar> control is being rendered, you cannot add a control that can also raise an event, such as <xref:System.Web.UI.WebControls.LinkButton>. You can add only static controls, such as <xref:System.Web.UI.LiteralControl>, <xref:System.Web.UI.WebControls.Label>, <xref:System.Web.UI.WebControls.Image>, and <xref:System.Web.UI.WebControls.HyperLink>.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property to programmatically change the background color of the days in the displayed month to yellow. It also demonstrates how to customize the contents of a cell by adding a <xref:System.Web.UI.LiteralControl?displayProperty=fullName> control to the <xref:System.Web.UI.Control.Controls%2A?displayProperty=fullName> collection of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Cell%2A> property.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DayRenderEventArgs.Cell Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DayRenderEventArgs.Cell Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DayRenderEventArgs.Cell Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DayRenderEventArgs.Cell Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Day">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.CalendarDay Day { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.CalendarDay Day" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DayRenderEventArgs.Day" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.CalendarDay</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.UI.WebControls.CalendarDay" /> object that represents the day being rendered in the <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
+        <value>The <see cref="T:System.Web.UI.WebControls.CalendarDay" /> that represents the day being rendered in the <see cref="T:System.Web.UI.WebControls.Calendar" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A> property to get information about the day being rendered in the <xref:System.Web.UI.WebControls.Calendar> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.Day%2A> property to determine whether the day being rendered in the <xref:System.Web.UI.WebControls.Calendar> control is in the current month and also a weekday.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic DayRenderEventArgs.Day Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic DayRenderEventArgs.Day Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic DayRenderEventArgs.Day Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic DayRenderEventArgs.Day Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectUrl">
+      <MemberSignature Language="C#" Value="public string SelectUrl { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelectUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the script used to post the page back to the server when the date being rendered is selected in a <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
+        <value>The script used to post the page back to the server when the date being rendered is selected.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl%2A> property to retrieve the script used to post the page back to the server when the date being rendered is selected in a <xref:System.Web.UI.WebControls.Calendar> control. This property is typically used when you want to customize the content rendered for a date, but still want to retain the postback behavior.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to customize the content rendered for today's date. The value of the <xref:System.Web.UI.WebControls.DayRenderEventArgs.SelectUrl%2A> property is inserted into the rendered content so that the <xref:System.Web.UI.WebControls.Calendar> control will post back to the server when the user selects today's date.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[DayRenderEventArgsSelectUrl#1](~/samples/snippets/csharp/VS_Snippets_WebNet/dayrendereventargsselecturl/CS/DayRenderEventArgsSelectUrlcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DayRenderEventArgsSelectUrl#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/dayrendereventargsselecturl/VB/DayRenderEventArgsSelectUrlvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

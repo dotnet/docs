@@ -1,0 +1,131 @@
+<Type Name="ITypeProviderCreator" FullName="System.Workflow.ComponentModel.Design.ITypeProviderCreator">
+  <TypeSignature Language="C#" Value="public interface ITypeProviderCreator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypeProviderCreator" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ITypeProviderCreator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0E6DF9D7-B4B5-4af7-9647-FC335CCE393F")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines a group of methods that classes can use to create a type provider for an activity or workflow designer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetLocalAssembly">
+      <MemberSignature Language="C#" Value="public System.Reflection.Assembly GetLocalAssembly (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly GetLocalAssembly(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ITypeProviderCreator.GetLocalAssembly(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> for which to obtain the local assembly.</param>
+        <summary>Returns the local assembly associated with the specified object.</summary>
+        <returns>The <see cref="T:System.Reflection.Assembly" /> associated with <paramref name="obj" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GetLocalAssembly provides the assembly returned by the <xref:System.Workflow.ComponentModel.Compiler.ITypeProvider.LocalAssembly%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTransientAssembly">
+      <MemberSignature Language="C#" Value="public System.Reflection.Assembly GetTransientAssembly (System.Reflection.AssemblyName assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly GetTransientAssembly(class System.Reflection.AssemblyName assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ITypeProviderCreator.GetTransientAssembly(System.Reflection.AssemblyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.Assembly</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.Reflection.AssemblyName" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The <see cref="T:System.Reflection.AssemblyName" /> for which to retrieve the transient assembly.</param>
+        <summary>Returns the transient assembly associated with the specified assembly name.</summary>
+        <returns>The transient <see cref="T:System.Reflection.Assembly" /> associated with <paramref name="assemblyName" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeProvider">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.ITypeProvider GetTypeProvider (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Workflow.ComponentModel.Compiler.ITypeProvider GetTypeProvider(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ITypeProviderCreator.GetTypeProvider(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Compiler.ITypeProvider</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> for which to return the type provider.</param>
+        <summary>Returns the type provider associated with the specified object.</summary>
+        <returns>An <see cref="T:System.Workflow.ComponentModel.Compiler.ITypeProvider" /> to perform type provider tasks for <paramref name="obj" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTypeResolutionService">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.ITypeResolutionService GetTypeResolutionService (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.ITypeResolutionService GetTypeResolutionService(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ITypeProviderCreator.GetTypeResolutionService(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.ITypeResolutionService</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Object" /> for which to retrieve the type resolution service.</param>
+        <summary>Returns a service that can retrieve an assembly or type by name for the specified object.</summary>
+        <returns>The <see cref="T:System.ComponentModel.Design.ITypeResolutionService" /> to use to retrieve an assembly or type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

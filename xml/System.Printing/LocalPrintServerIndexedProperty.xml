@@ -1,0 +1,226 @@
+<Type Name="LocalPrintServerIndexedProperty" FullName="System.Printing.LocalPrintServerIndexedProperty">
+  <TypeSignature Language="C#" Value="public enum LocalPrintServerIndexedProperty" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LocalPrintServerIndexedProperty extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.LocalPrintServerIndexedProperty" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the properties of a <see cref="T:System.Printing.LocalPrintServer" /> object that are initialized when it is constructed.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeepEnabled">
+      <MemberSignature Language="C#" Value="BeepEnabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty BeepEnabled = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.BeepEnabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies whether a printer error causes the local print server to beep.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPortThreadPriority">
+      <MemberSignature Language="C#" Value="DefaultPortThreadPriority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty DefaultPortThreadPriority = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.DefaultPortThreadPriority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies the default priority for the thread that manages port I/0.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultPrintQueue">
+      <MemberSignature Language="C#" Value="DefaultPrintQueue" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty DefaultPrintQueue = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.DefaultPrintQueue" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies the default print queue for the local print server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSchedulerPriority">
+      <MemberSignature Language="C#" Value="DefaultSchedulerPriority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty DefaultSchedulerPriority = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.DefaultSchedulerPriority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies the default priority for the scheduler.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultSpoolDirectory">
+      <MemberSignature Language="C#" Value="DefaultSpoolDirectory" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty DefaultSpoolDirectory = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.DefaultSpoolDirectory" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies the path to the folder where spool jobs are located as temporary files.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EventLog">
+      <MemberSignature Language="C#" Value="EventLog" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty EventLog = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.EventLog" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies the kind of event logging that is provided by the local print server.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MajorVersion">
+      <MemberSignature Language="C#" Value="MajorVersion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty MajorVersion = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.MajorVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies the major version of the operating system.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MinorVersion">
+      <MemberSignature Language="C#" Value="MinorVersion" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty MinorVersion = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.MinorVersion" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies the minor version of the operating system.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="NetPopup">
+      <MemberSignature Language="C#" Value="NetPopup" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty NetPopup = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.NetPopup" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies whether the client computer or the print server receives notifications that a job is finished.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PortThreadPriority">
+      <MemberSignature Language="C#" Value="PortThreadPriority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty PortThreadPriority = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.PortThreadPriority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies the priority of the thread that manages port I/O.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RestartJobOnPoolEnabled">
+      <MemberSignature Language="C#" Value="RestartJobOnPoolEnabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty RestartJobOnPoolEnabled = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.RestartJobOnPoolEnabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies whether users can restart jobs when printer pooling is being used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RestartJobOnPoolTimeout">
+      <MemberSignature Language="C#" Value="RestartJobOnPoolTimeout" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty RestartJobOnPoolTimeout = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.RestartJobOnPoolTimeout" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies the wait time before jobs can be restarted when printer pooling is being used.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SchedulerPriority">
+      <MemberSignature Language="C#" Value="SchedulerPriority" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.LocalPrintServerIndexedProperty SchedulerPriority = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.LocalPrintServerIndexedProperty.SchedulerPriority" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.LocalPrintServerIndexedProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The property that specifies the priority of the scheduler.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

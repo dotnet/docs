@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "Auto keyword, marshaling strings"
 ms.assetid: bf79ba95-a62c-48a5-916f-0ac7a52c13ec
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

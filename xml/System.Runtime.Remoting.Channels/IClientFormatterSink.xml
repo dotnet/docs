@@ -1,0 +1,35 @@
+<Type Name="IClientFormatterSink" FullName="System.Runtime.Remoting.Channels.IClientFormatterSink">
+  <TypeSignature Language="C#" Value="public interface IClientFormatterSink : System.Runtime.Remoting.Channels.IClientChannelSink, System.Runtime.Remoting.Messaging.IMessageSink" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClientFormatterSink implements class System.Runtime.Remoting.Channels.IChannelSinkBase, class System.Runtime.Remoting.Channels.IClientChannelSink, class System.Runtime.Remoting.Messaging.IMessageSink" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IClientFormatterSink" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Channels.IClientChannelSink</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Messaging.IMessageSink</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Marks a sink as a client formatter sink that serializes messages into a stream.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Formatter sinks must implement both <xref:System.Runtime.Remoting.Messaging.IMessageSink> and <xref:System.Runtime.Remoting.Channels.IClientChannelSink>. <xref:System.Runtime.Remoting.Channels.IClientFormatterSink> combines these into one interface.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

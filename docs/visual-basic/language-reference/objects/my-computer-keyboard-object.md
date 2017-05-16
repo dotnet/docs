@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "My.Computer.Keyboard object"
 ms.assetid: 78dec9be-4e69-4ede-b9be-2ac34bec2b26
 caps.latest.revision: 20
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

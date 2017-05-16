@@ -1,0 +1,114 @@
+<Type Name="IWebEventCustomEvaluator" FullName="System.Web.Management.IWebEventCustomEvaluator">
+  <TypeSignature Language="C#" Value="public interface IWebEventCustomEvaluator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebEventCustomEvaluator" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.IWebEventCustomEvaluator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Evaluates whether an event should be sent to the related provider for processing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ This interface allows enabling or disabling the firing of a specific event. This is especially useful when you implement your own custom event and want to control the rate at which it is sent to the related provider for processing.  
+  
+> [!NOTE]
+>  This interface does not control how often the event is raised. It only controls how often the event information is sent to the provider for processing.  
+  
+   
+  
+## Examples  
+ The following code example shows how to derive from the <xref:System.Web.Management.IWebEventCustomEvaluator> interface when creating a custom event.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEvent#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/CS/webbaseevent.cs#1)]
+ [!code-vb[System.Web.Management.WebBaseEvent#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/VB/webbaseevent.vb#1)]  
+  
+ The following is an excerpt of the configuration file that enables ASP.NET to use the <xref:System.Web.Management.IWebEventCustomEvaluator.CanFire%2A> method to decide whether the raised event must be sent to the provider for processing.  
+  
+```  
+<healthMonitoring   
+  heartBeatInterval="0" enabled="true">  
+  
+    <providers>  
+      <add name="SampleWebEventProvider"   
+        type="SamplesAspNet.SampleEventProvider, webeventprovider, Version=1.0.1741.20369, Culture=neutral, PublicKeyToken=cf85aa6c978d9dea, processorArchitecture=MSIL" />  
+    </providers>  
+  
+    <profiles>  
+      <add   
+        name="Custom"   
+        minInstances="1"   
+        maxLimit="Infinite"   
+        minInterval="00:00:00"   
+        custom ="SamplesAspNet.SampleWebRequestEvent,webrequestevent"   
+        />  
+    </profiles>  
+  
+    <eventMappings>  
+  
+      <add name="SampleWebRequestEvent" type="SamplesAspNet.SampleWebRequestEvent,webrequestevent, Version=1.0.1759.20533, Culture=neutral, PublicKeyToken=0d72899b07049076, processorArchitecture=MSIL" />  
+  
+    </eventMappings>  
+  
+    <rules>  
+      <clear />  
+  
+        <add name="Custom Web Request Event"   
+          eventName="SampleWebRequestEvent"  
+          provider="SampleWebEventProvider" profile="Custom" />  
+    </rules>  
+  
+</healthMonitoring>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanFire">
+      <MemberSignature Language="C#" Value="public bool CanFire (System.Web.Management.WebBaseEvent raisedEvent, System.Web.Management.RuleFiringRecord record);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanFire(class System.Web.Management.WebBaseEvent raisedEvent, class System.Web.Management.RuleFiringRecord record) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.IWebEventCustomEvaluator.CanFire(System.Web.Management.WebBaseEvent,System.Web.Management.RuleFiringRecord)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="raisedEvent" Type="System.Web.Management.WebBaseEvent" />
+        <Parameter Name="record" Type="System.Web.Management.RuleFiringRecord" />
+      </Parameters>
+      <Docs>
+        <param name="raisedEvent">The event to raise.</param>
+        <param name="record">The <see cref="T:System.Web.Management.RuleFiringRecord" /> containing information about the event.</param>
+        <summary>Evaluates whether an event should be raised.</summary>
+        <returns>
+          <see langword="true" /> if the event should be raised; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the custom event evaluator returns `true`, the event is raised and then processed by the associated provider.  
+  
+   
+  
+## Examples  
+ The following code example shows a custom implementation of the <xref:System.Web.Management.IWebEventCustomEvaluator.CanFire%2A> method.  
+  
+ [!code-csharp[System.Web.Management.WebBaseEvent#22](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/CS/webbaseevent.cs#22)]
+ [!code-vb[System.Web.Management.WebBaseEvent#22](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebBaseEvent/VB/webbaseevent.vb#22)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,106 @@
+<Type Name="BindableTemplateBuilder" FullName="System.Web.UI.BindableTemplateBuilder">
+  <TypeSignature Language="C#" Value="public sealed class BindableTemplateBuilder : System.Web.UI.TemplateBuilder, System.Web.UI.IBindableTemplate" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BindableTemplateBuilder extends System.Web.UI.TemplateBuilder implements class System.Web.UI.IBindableTemplate, class System.Web.UI.ITemplate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.BindableTemplateBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.TemplateBuilder</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.IBindableTemplate</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Supports page parsing of data-bound controls that automatically bind to an ASP.NET data source control within templated content sections. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.BindableTemplateBuilder> class is used in design-time and in no-compile pages to support extracting the values of two-way bound control properties in a data-bound template. The <xref:System.Web.UI.BindableTemplateBuilder> object generates the code that implements the <xref:System.Web.UI.IBindableTemplate.ExtractValues%2A?displayProperty=fullName> method for the template.  
+  
+ The <xref:System.Web.UI.BindableTemplateBuilder> is a <xref:System.Web.UI.TemplateBuilder> for data-bound controls that include templated content. If the data-bound control is used in design-time or in a no-compile page, the <xref:System.Web.UI.IBindableTemplate> interface on the <xref:System.Web.UI.BindableTemplateBuilder> is used to parse the two-way data-binding within the templated control. If the data-bound control is compiled, an instance of the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class is created and assigned to the value of the <xref:System.Web.UI.IBindableTemplate> object.  
+  
+ For more information about ASP.NET data binding, expressions, and syntax, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BindableTemplateBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.BindableTemplateBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.BindableTemplateBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary ExtractValues (System.Web.UI.Control container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Specialized.IOrderedDictionary ExtractValues(class System.Web.UI.Control container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.BindableTemplateBuilder.ExtractValues(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="container">The <see cref="T:System.Web.UI.Control" /> from which to extract name/value pairs, which are passed by the data-bound control to an associated data source control in two-way data-binding scenarios.</param>
+        <summary>Retrieves a set of name/value pairs for values that are bound using two-way ASP.NET data-binding syntax within the templated content at design-time and in no-compile pages.</summary>
+        <returns>An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> of name/value pairs, where the name represents the data item field specified as the first parameter to bind within the templated content and the value is the current value of a property value bound using two-way ASP.NET data-binding syntax.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.BindableTemplateBuilder.ExtractValues%2A> method is the <xref:System.Web.UI.BindableTemplateBuilder> class implementation of the <xref:System.Web.UI.IBindableTemplate.ExtractValues%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAppendToParentBuilder">
+      <MemberSignature Language="C#" Value="public override void OnAppendToParentBuilder (System.Web.UI.ControlBuilder parentBuilder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnAppendToParentBuilder(class System.Web.UI.ControlBuilder parentBuilder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.BindableTemplateBuilder.OnAppendToParentBuilder(System.Web.UI.ControlBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentBuilder" Type="System.Web.UI.ControlBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="parentBuilder">The <see cref="T:System.Web.UI.BindableTemplateBuilder" /> to which to add the current builder.</param>
+        <summary>Notifies the <see cref="T:System.Web.UI.BindableTemplateBuilder" /> object that it is being added to a parent control builder.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the data-bound control includes templated content that support two-way data-binding, the <xref:System.Web.UI.BindableTemplateBuilder.OnAppendToParentBuilder%2A> method, in addition to calling the <xref:System.Web.UI.ControlBuilder.OnAppendToParentBuilder%2A?displayProperty=fullName> method of the base class, also creates an instance of the <xref:System.Web.UI.ExtractTemplateValuesMethod> delegate.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

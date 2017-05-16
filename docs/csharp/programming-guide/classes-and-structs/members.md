@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Members (C# Programming Guide)
-Classes and structs have members that represent their data and behavior. A class's members include all the members declared in the class, along with all members (except constructors and destructors) declared in all classes in its inheritance hierarchy. Private members in base classes are inherited but are not accessible from derived classes.  
+Classes and structs have members that represent their data and behavior. A class's members include all the members declared in the class, along with all members (except constructors and finalizers) declared in all classes in its inheritance hierarchy. Private members in base classes are inherited but are not accessible from derived classes.  
   
  The following table lists the kinds of members a class or struct may contain:  
   
@@ -49,7 +49,7 @@ Classes and structs have members that represent their data and behavior. A class
 |[Operators](../../../csharp/programming-guide/statements-expressions-operators/operators.md)|Overloaded operators are considered class members. When you overload an operator, you define it as a public static method in a class. The predefined operators (`+`, `*`, `<`, and so on) are not considered members. For more information, see [Overloadable Operators](../../../csharp/programming-guide/statements-expressions-operators/overloadable-operators.md).|  
 |[Indexers](../../../csharp/programming-guide/indexers/index.md)|Indexers enable an object to be indexed in a manner similar to arrays.|  
 |[Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)|Constructors are methods that are called when the object is first created. They are often used to initialize the data of an object.|  
-|[Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)|Destructors are used very rarely in C#. They are methods that are called by the runtime execution engine when the object is about to be removed from memory. They are generally used to make sure that any resources which must be released are handled appropriately.|  
+|[Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)|Finalizers are used very rarely in C#. They are methods that are called by the runtime execution engine when the object is about to be removed from memory. They are generally used to make sure that any resources which must be released are handled appropriately.|  
 |[Nested Types](../../../csharp/programming-guide/classes-and-structs/nested-types.md)|Nested types are types declared within another type. Nested types are often used to describe objects that are used only by the types that contain them.|  
   
 ## See Also  
@@ -57,7 +57,7 @@ Classes and structs have members that represent their data and behavior. A class
  [Classes](../../../csharp/programming-guide/classes-and-structs/classes.md)   
  [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)   
  [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
+ [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)   
  [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)   
  [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)   
  [Indexers](../../../csharp/programming-guide/indexers/index.md)   

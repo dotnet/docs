@@ -1,0 +1,269 @@
+<Type Name="TemplateColumn" FullName="System.Web.UI.WebControls.TemplateColumn">
+  <TypeSignature Language="C#" Value="public class TemplateColumn : System.Web.UI.WebControls.DataGridColumn" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateColumn extends System.Web.UI.WebControls.DataGridColumn" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TemplateColumn" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.DataGridColumn</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a column type for the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control that allows you to customize the layout of controls in the column.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TemplateColumn> column type in a <xref:System.Web.UI.WebControls.DataGrid> control to create a column with a customized control layout. You can provide a custom appearance for the heading section, the footer section, and the items section of the column by using the <xref:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate%2A>, <xref:System.Web.UI.WebControls.TemplateColumn.FooterTemplate%2A>, and <xref:System.Web.UI.WebControls.TemplateColumn.ItemTemplate%2A> properties, respectively. You can also control how an item being edited is displayed in the <xref:System.Web.UI.WebControls.TemplateColumn> object by setting the <xref:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateColumn> class to create a column in the <xref:System.Web.UI.WebControls.DataGrid> control with a custom layout.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TemplateColumn ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplateColumn.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.TemplateColumn" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.TemplateColumn> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EditItemTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate EditItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate EditItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.DataGridItem))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the template for displaying the item selected for editing in a <see cref="T:System.Web.UI.WebControls.TemplateColumn" /> object.</summary>
+        <value>A <see cref="T:System.Web.UI.ITemplate" />-implemented object that contains the template for displaying the item being edited in the <see cref="T:System.Web.UI.WebControls.TemplateColumn" />. The default value is <see langword="null" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate%2A> property to control the appearance of the item selected for editing in the <xref:System.Web.UI.WebControls.TemplateColumn> object. The appearance is specified by creating a template that defines how the item is rendered in the column. To specify a template for the item selected for editing, first place opening and closing `<EditItemTemplate>` tags between the opening and closing tags of the `<TemplateColumn>` element. You can then list the content that controls the appearance of the item between the opening and closing `<EditItemTemplate>` tags. The content can be as simple as plain text, or it can be made more complex by embedding other controls in the template.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateColumn.EditItemTemplate%2A> property to control the appearance of the item being edited in the <xref:System.Web.UI.WebControls.TemplateColumn> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FooterTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate FooterTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate FooterTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateColumn.FooterTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.DataGridItem))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the template for displaying the footer section of the <see cref="T:System.Web.UI.WebControls.TemplateColumn" /> object.</summary>
+        <value>A <see cref="T:System.Web.UI.ITemplate" />-implemented object that contains the template for displaying the footer section of the <see cref="T:System.Web.UI.WebControls.TemplateColumn" />. The default value is <see langword="null" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TemplateColumn.FooterTemplate%2A> property to control the appearance of the footer section in the <xref:System.Web.UI.WebControls.TemplateColumn> object. The appearance is specified by creating a template that defines how the item is rendered in the column. To specify a template for the item selected for editing, first place opening and closing `<FooterTemplate>` tags between the opening and closing tags of the `<TemplateColumn>` element. You can then list the content that controls the appearance of the item between the opening and closing `<FooterTemplate>` tags. The content can be as simple as plain text, or it can be made more complex by embedding other controls in the template.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateColumn.FooterTemplate%2A> property to control the appearance of the footer section in the <xref:System.Web.UI.WebControls.TemplateColumn> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate HeaderTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate HeaderTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.DataGridItem))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the template for displaying the heading section of the <see cref="T:System.Web.UI.WebControls.TemplateColumn" /> object.</summary>
+        <value>A <see cref="T:System.Web.UI.ITemplate" />-implemented object that contains the template for displaying the heading section of the <see cref="T:System.Web.UI.WebControls.TemplateColumn" />. The default value is <see langword="null" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate%2A> property to control the appearance of the heading section in the <xref:System.Web.UI.WebControls.TemplateColumn> object. The appearance is specified by creating a template that defines how the item is rendered in the column. To specify a template for the item selected for editing, first place opening and closing `<HeaderTemplate>` tags between the opening and closing tags of the `<TemplateColumn>` element. You can then list the content that controls the appearance of the item between the opening and closing `<HeaderTemplate>` tags. The content can be as simple as plain text, or can be made more complex by embedding other controls in the template.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateColumn.HeaderTemplate%2A> property to control the appearance of the heading section in the <xref:System.Web.UI.WebControls.TemplateColumn> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeCell">
+      <MemberSignature Language="C#" Value="public override void InitializeCell (System.Web.UI.WebControls.TableCell cell, int columnIndex, System.Web.UI.WebControls.ListItemType itemType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeCell(class System.Web.UI.WebControls.TableCell cell, int32 columnIndex, valuetype System.Web.UI.WebControls.ListItemType itemType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplateColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="System.Web.UI.WebControls.TableCell" />
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
+      </Parameters>
+      <Docs>
+        <param name="cell">A <see cref="T:System.Web.UI.WebControls.TableCell" /> object that represents the cell to reset.</param>
+        <param name="columnIndex">The column number where the cell is located.</param>
+        <param name="itemType">One of the <see cref="T:System.Web.UI.WebControls.ListItemType" /> values.</param>
+        <summary>Calls a <see cref="T:System.Web.UI.WebControls.TableCell" /> object's base class to initialize the instance and then applies a <see cref="T:System.Web.UI.WebControls.ListItemType" /> to the cell.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate ItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate ItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplateColumn.ItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.DataGridItem))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.ITemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the template for displaying a data item in a <see cref="T:System.Web.UI.WebControls.TemplateColumn" /> object.</summary>
+        <value>A <see cref="T:System.Web.UI.ITemplate" />-implemented object that contains the template for displaying a data item in the <see cref="T:System.Web.UI.WebControls.TemplateColumn" />. The default value is <see langword="null" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.TemplateColumn.ItemTemplate%2A> property to control the appearance of a data item in the <xref:System.Web.UI.WebControls.TemplateColumn> object. The appearance is specified by creating a template that defines how the item is rendered in the column. To specify a template for the item selected for editing, first place opening and closing `<ItemTemplate>` tags between the opening and closing tags of the `<TemplateColumn>` element. You can then list the content that controls the appearance of the item between the opening and closing `<ItemTemplate>` tags. The content can be as simple as plain text, or can be made more complex by embedding other controls in the template.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Web.UI.WebControls.TemplateColumn.ItemTemplate%2A> property to control the appearance of a data item in the <xref:System.Web.UI.WebControls.TemplateColumn> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[TemplateColumnEdit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/TemplateColumnEdit/CS/templatecolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[TemplateColumnEdit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/TemplateColumnEdit/VB/templatecolumnvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

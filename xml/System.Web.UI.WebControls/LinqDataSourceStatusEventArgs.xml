@@ -1,0 +1,263 @@
+<Type Name="LinqDataSourceStatusEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceStatusEventArgs">
+  <TypeSignature Language="C#" Value="public class LinqDataSourceStatusEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSourceStatusEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.LinqDataSource.ContextCreated" />, <see cref="E:System.Web.UI.WebControls.LinqDataSource.Deleted" />, <see cref="E:System.Web.UI.WebControls.LinqDataSource.Inserted" />, <see cref="E:System.Web.UI.WebControls.LinqDataSource.Selected" />, and <see cref="E:System.Web.UI.WebControls.LinqDataSource.Updated" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs> class enables you to examine the results of data operations that have been performed by a <xref:System.Web.UI.WebControls.LinqDataSource> control. A <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs> object is passed to event handlers for the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreated>, <xref:System.Web.UI.WebControls.LinqDataSource.Deleted>, <xref:System.Web.UI.WebControls.LinqDataSource.Inserted>, <xref:System.Web.UI.WebControls.LinqDataSource.Selected>, and <xref:System.Web.UI.WebControls.LinqDataSource.Updated> events of the <xref:System.Web.UI.WebControls.LinqDataSource> control.  
+  
+ If the data operation completed successfully, the resulting data object is stored in the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property and the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property is `null`. If the data operation failed, the exception that occurred during the data operation is stored in the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property and the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property is `null`. If you handled the exception represented by the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property, set the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.ExceptionHandled%2A> property to `true` so that the exception will not be thrown.  
+  
+ You retrieve the total number of data records returned from a query through the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserted> event. In the event handler, if the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property is `null`, the product ID is retrieved from the object in the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property. The product ID is a primary key for the table and is set by the database, therefore the value is not known until the insert operation has finished. The exception message is logged if the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property is not equal to `null`. The <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.ExceptionHandled%2A> property is then set to `true`.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/cs/Default.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/vb/Default.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinqDataSourceStatusEventArgs (Exception exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.#ctor(System.Exception)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="exception">The error that occurred during the data operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" /> class by using an exception that occurred as a result of the data operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used when an exception is thrown during the data operation. The <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property is automatically set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinqDataSourceStatusEventArgs (object result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="result" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="result">An object that contains the data that results from a data operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" /> class by using an object that contains the data from the data operation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is used when the data operation has finished without an error. The `result` parameter contains an object that represents the result of the data operation. The <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property is automatically set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinqDataSourceStatusEventArgs (object result, int totalRowCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object result, int32 totalRowCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.#ctor(System.Object,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="result" Type="System.Object" />
+        <Parameter Name="totalRowCount" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="result">An object that contains the data that results from a data operation.</param>
+        <param name="totalRowCount">The number of rows that were returned from a data retrieval operation.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" /> class with an object that contains the data from the data operation and the number of rows returned.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception that was thrown during the data operation.</summary>
+        <value>An <see cref="T:System.Exception" /> object that represents the exception, if an error occurred; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If an exception is raised during the data operation, the exception is stored in the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property. You can create event handlers for the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreated>, <xref:System.Web.UI.WebControls.LinqDataSource.Deleted>, <xref:System.Web.UI.WebControls.LinqDataSource.Inserted>, <xref:System.Web.UI.WebControls.LinqDataSource.Selected>, and <xref:System.Web.UI.WebControls.LinqDataSource.Updated> events and retrieve the exception, if any, through the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserted> event. In the event handler, if the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property is `null`, the product ID is retrieved from the object in the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property. The product ID is a primary key for the table and is set by the database, so the value is not known until the insert operation has finished. The exception message is logged if the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property is not equal to `null`. The <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.ExceptionHandled%2A> property is then set to `true`.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/cs/Default.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/vb/Default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionHandled">
+      <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.ExceptionHandled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the exception was handled and that it should not be thrown again.</summary>
+        <value>
+          <see langword="true" /> if the exception was handled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create event handlers for the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreated>, <xref:System.Web.UI.WebControls.LinqDataSource.Deleted>, <xref:System.Web.UI.WebControls.LinqDataSource.Inserted>, <xref:System.Web.UI.WebControls.LinqDataSource.Selected>, and <xref:System.Web.UI.WebControls.LinqDataSource.Updated> events to examine any exceptions that occurred during those operations. If you handle the exception and do not want it to be thrown again, set the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.ExceptionHandled%2A> property to `true`. If you do not set the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.ExceptionHandled%2A> property to `true`, the exception will be propagated to the next event handler in the call stack.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserted> event. In the event handler, if the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property is `null`, the product ID is retrieved from the object in the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property. The product ID is a primary key for the table and is set by the database, therefore the value is not known until the insert operation has finished. The exception message is logged if the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property is not equal to `null`. The <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.ExceptionHandled%2A> property is then set to `true`.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/cs/Default.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/vb/Default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public object Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Result" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that represents the result of a data operation.</summary>
+        <value>An object that contains the data from the data operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property to examine values returned from a data operation. You can retrieve output parameters from a data operation or modify the values returned from a query.  
+  
+ The data stored in the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property depends on the type of data operation that has been performed. When you delete data, the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property contains an object of the type specified in the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property, with the original values that were deleted from the data source. When you insert or update data, the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property contains an object of the type specified in the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property, with the new values that were saved to the data source. When you select data, the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property contains the results of the query.  
+  
+ If the select query involves grouping the data or selecting a subset of properties from the type specified in the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property, the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property contains an object of a dynamically created type. Otherwise, the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property contains an object of the type specified in the <xref:System.Web.UI.WebControls.LinqDataSource.TableName%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Inserted> event. In the event handler, if the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property is `null`, the product ID is retrieved from the object in the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Result%2A> property. The product ID is a primary key for the table and is set by the database, therefore the value is not known until the insert operation has finished. The exception message is logged if the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.Exception%2A> property is not equal to `null`. The <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.ExceptionHandled%2A> property is then set to `true`.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/cs/Default.aspx#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs/vb/Default.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalRowCount">
+      <MemberSignature Language="C#" Value="public int TotalRowCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TotalRowCount" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the total number of rows in a data set from a data-retrieval operation.</summary>
+        <value>The total number of rows in a data set from the data retrieval operation; -1 if the <see cref="T:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs" /> object was created during a data modification operation; -1 if you enabled customized paging by setting <see cref="P:System.Web.UI.WebControls.LinqDataSource.AutoPage" /> to <see langword="true" /> and by setting <see cref="P:System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount" /> to <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You use the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount%2A> property to get the number of records in the data set during a data retrieval operation. Typically, you retrieve this property when you are displaying pages of data and want to show the total number of records.  
+  
+ When data is being paged, the value in the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount%2A> property might be different from the actual number of rows that are returned by the query. This is because the query returns only the number of rows that are needed for that page of data.  
+  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount%2A> property contains the number of records from a query only when it is accessed in an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Selected> event. When the property is accessed from an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.ContextCreated>, <xref:System.Web.UI.WebControls.LinqDataSource.Deleted>, <xref:System.Web.UI.WebControls.LinqDataSource.Inserted>, or <xref:System.Web.UI.WebControls.LinqDataSource.Updated> event, the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount%2A> property contains -1.  
+  
+ The value of the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount%2A> property depends on the <xref:System.Web.UI.WebControls.LinqDataSource.AutoPage%2A> property of the <xref:System.Web.UI.WebControls.LinqDataSource> control, and on the `AllowPaging` property of the data-bound control. The following table summarizes the possible values for the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount%2A> property.  
+  
+|AutoPage Property of LinqDataSource control|AllowPaging Property of data-bound control|TotalRowCount property|Outcome|  
+|-------------------------------------------------|-------------------------------------------------|----------------------------|-------------|  
+|`true`|`true`|Number of records for a query.|Data is automatically paged.|  
+|`false`|`false`|Number of records for a query.|Data is not paged.|  
+|`true`|`false`|-1|Data is not paged.|  
+|`false`|`true`|The value that you assigned to the <xref:System.Web.UI.DataSourceSelectArguments.TotalRowCount%2A> property in the event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Selecting> event.|Data is paged according to the values that you specified when you customized paging.|  
+  
+   
+  
+## Examples  
+ The following example shows a Web page with a <xref:System.Web.UI.WebControls.LinqDataSource> control, a <xref:System.Web.UI.WebControls.GridView> control, and a <xref:System.Web.UI.WebControls.Literal> control. The <xref:System.Web.UI.WebControls.LinqDataSource> control defines an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Selected> event.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount/cs/Default.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount/vb/Default.aspx#1)]  -->  
+  
+ The following example shows the code for the event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Selected> event. The value of the <xref:System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount%2A> property is assigned to the <xref:System.Web.UI.WebControls.Literal> control.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount/cs/Default.aspx.cs#2)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSourceStatusEventArgs.TotalRowCount/vb/Default.aspx.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

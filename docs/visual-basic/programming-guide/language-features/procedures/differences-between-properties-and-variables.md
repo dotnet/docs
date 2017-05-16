@@ -25,8 +25,8 @@ helpviewer_keywords:
   - "properties [Visual Basic], and variables"
 ms.assetid: 7a03a8be-5381-431f-bd7c-16e887e4e07b
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

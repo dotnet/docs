@@ -1,0 +1,77 @@
+<Type Name="BootMode" FullName="System.Windows.Forms.BootMode">
+  <TypeSignature Language="C#" Value="public enum BootMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BootMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BootMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the boot mode in which the system was started.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration defines identifiers that represent the standard operating system startup modes.  
+  
+ This enumeration is used by the <xref:System.Windows.Forms.SystemInformation.BootMode%2A> property of the <xref:System.Windows.Forms.SystemInformation> class.  
+  
+ The Normal boot mode is the standard system startup mode. The FailSafe boot mode is also called safe mode. The FailSafeWithNetwork boot mode is also called safe mode with networking.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FailSafe">
+      <MemberSignature Language="C#" Value="FailSafe" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BootMode FailSafe = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BootMode.FailSafe" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BootMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The computer was started in safe mode without network support. This mode uses a limited drivers and settings profile.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FailSafeWithNetwork">
+      <MemberSignature Language="C#" Value="FailSafeWithNetwork" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BootMode FailSafeWithNetwork = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BootMode.FailSafeWithNetwork" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BootMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The computer was started in safe mode with network support. This mode uses a limited drivers and settings profile, and loads the services needed to start networking.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.BootMode Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.BootMode.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.BootMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The computer was started in the standard boot mode. This mode uses the normal drivers and settings for the system.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,230 @@
+<Type Name="GeneratorPosition" FullName="System.Windows.Controls.Primitives.GeneratorPosition">
+  <TypeSignature Language="C#" Value="public struct GeneratorPosition" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit GeneratorPosition extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.GeneratorPosition" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+      <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" /> is used to describe the position of an item that is managed by <see cref="T:System.Windows.Controls.ItemContainerGenerator" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Controls.Primitives.GeneratorPosition> is used by <xref:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt%2A>.  
+  
+   
+  
+## Examples  
+ The following example illustrates how to use <xref:System.Windows.Controls.Primitives.GeneratorPosition> to start generating forward from the beginning of an item list.  
+  
+ [!code-csharp[GeneratorPositionSnippets#GenerateForwardFromBeginningCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/GeneratorPositionSnippets/CSharp/Window1.xaml.cs#generateforwardfrombeginningcode)]
+ [!code-vb[GeneratorPositionSnippets#GenerateForwardFromBeginningCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeneratorPositionSnippets/visualbasic/window1.xaml.vb#generateforwardfrombeginningcode)]  
+  
+ The following example illustrates how to use <xref:System.Windows.Controls.Primitives.GeneratorPosition> to start generating backward from the end of an item list.  
+  
+ [!code-csharp[GeneratorPositionSnippets#GenerateBackwardFromEndCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/GeneratorPositionSnippets/CSharp/Window1.xaml.cs#generatebackwardfromendcode)]
+ [!code-vb[GeneratorPositionSnippets#GenerateBackwardFromEndCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeneratorPositionSnippets/visualbasic/window1.xaml.vb#generatebackwardfromendcode)]  
+  
+ The following example illustrates how to use <xref:System.Windows.Controls.Primitives.GeneratorPosition> to start generating forward from the middle of an item list.  
+  
+ [!code-csharp[GeneratorPositionSnippets#GenerateForwardFromMiddleCODE](~/samples/snippets/csharp/VS_Snippets_Wpf/GeneratorPositionSnippets/CSharp/Window1.xaml.cs#generateforwardfrommiddlecode)]
+ [!code-vb[GeneratorPositionSnippets#GenerateForwardFromMiddleCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeneratorPositionSnippets/visualbasic/window1.xaml.vb#generateforwardfrommiddlecode)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public GeneratorPosition (int index, int offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 index, int32 offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.#ctor(System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="offset" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">An <see cref="T:System.Int32" /> index that is relative to the generated (realized) items. -1 is a special value that refers to a fictitious item at the beginning or the end of the items list.</param>
+        <param name="offset">An <see cref="T:System.Int32" /> offset that is relative to the ungenerated (unrealized) items near the indexed item. An offset of 0 refers to the indexed element itself, an offset 1 refers to the next ungenerated (unrealized) item, and an offset of -1 refers to the previous item.</param>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" /> with the specified index and offset.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" /> instance to compare.</param>
+        <summary>Compares the specified instance and the current instance of <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" /> for value equality.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="o" /> and this instance of <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" /> have the same values.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />.</summary>
+        <returns>The hash code for this <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.GeneratorPosition.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Int32" /> index that is relative to the generated (realized) items.</summary>
+        <value>An <see cref="T:System.Int32" /> index that is relative to the generated (realized) items.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **-1** is a special value that refers to a fictitious item at the beginning or the end of the items list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public int Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.GeneratorPosition.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Int32" /> offset that is relative to the ungenerated (unrealized) items near the indexed item.</summary>
+        <value>An <see cref="T:System.Int32" /> offset that is relative to the ungenerated (unrealized) items near the indexed item.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An offset of **0** refers to the indexed element itself, an offset **1** refers to the next ungenerated (unrealized) item, and an offset of **-1** refers to the previous item.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Controls.Primitives.GeneratorPosition gp1, System.Windows.Controls.Primitives.GeneratorPosition gp2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.Primitives.GeneratorPosition gp1, valuetype System.Windows.Controls.Primitives.GeneratorPosition gp2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.op_Equality(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorPosition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gp1" Type="System.Windows.Controls.Primitives.GeneratorPosition" />
+        <Parameter Name="gp2" Type="System.Windows.Controls.Primitives.GeneratorPosition" />
+      </Parameters>
+      <Docs>
+        <param name="gp1">The first instance to compare.</param>
+        <param name="gp2">The second instance to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" /> objects for value equality.</summary>
+        <returns>
+          <see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Controls.Primitives.GeneratorPosition.Equals%28System.Windows.Controls.Primitives.GeneratorPosition%2CSystem.Windows.Controls.Primitives.GeneratorPosition%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Controls.Primitives.GeneratorPosition gp1, System.Windows.Controls.Primitives.GeneratorPosition gp2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.Primitives.GeneratorPosition gp1, valuetype System.Windows.Controls.Primitives.GeneratorPosition gp2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.op_Inequality(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorPosition)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="gp1" Type="System.Windows.Controls.Primitives.GeneratorPosition" />
+        <Parameter Name="gp2" Type="System.Windows.Controls.Primitives.GeneratorPosition" />
+      </Parameters>
+      <Docs>
+        <param name="gp1">The first instance to compare.</param>
+        <param name="gp2">The second instance to compare.</param>
+        <summary>Compares two <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" /> objects for value inequality.</summary>
+        <returns>
+          <see langword="true" /> if the values are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Controls.Primitives.GeneratorPosition.Compare%28System.Windows.Controls.Primitives.GeneratorPosition%2CSystem.Windows.Controls.Primitives.GeneratorPosition%29?displayProperty=fullName>]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string representation of this instance of <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />.</summary>
+        <returns>A string representation of this instance of <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

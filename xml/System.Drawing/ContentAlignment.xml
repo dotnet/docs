@@ -1,0 +1,178 @@
+<Type Name="ContentAlignment" FullName="System.Drawing.ContentAlignment">
+  <TypeSignature Language="C#" Value="public enum ContentAlignment" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContentAlignment extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.ContentAlignment" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor("System.Drawing.Design.ContentAlignmentEditor, System.Drawing.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies alignment of content on the drawing surface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Drawing.Point.%23ctor%2A?displayProperty=fullName> and <xref:System.Drawing.Size.%23ctor%2A> constructors and the <xref:System.Drawing.ContentAlignment?displayProperty=fullName> enumeration. To run this example paste this code into a Windows Form that contains a label named `Label1` and call the `IntializeLabel1` method in the form's constructor.  
+  
+ [!code-cpp[System.Drawing.PointsAndSizes#7](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CPP/form1.cpp#7)]
+ [!code-csharp[System.Drawing.PointsAndSizes#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/CS/form1.cs#7)]
+ [!code-vb[System.Drawing.PointsAndSizes#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.PointsAndSizes/VB/form1.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BottomCenter">
+      <MemberSignature Language="C#" Value="BottomCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.ContentAlignment BottomCenter = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.BottomCenter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.ContentAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Content is vertically aligned at the bottom, and horizontally aligned at the center.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomLeft">
+      <MemberSignature Language="C#" Value="BottomLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.ContentAlignment BottomLeft = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.BottomLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.ContentAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Content is vertically aligned at the bottom, and horizontally aligned on the left.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="BottomRight">
+      <MemberSignature Language="C#" Value="BottomRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.ContentAlignment BottomRight = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.BottomRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.ContentAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Content is vertically aligned at the bottom, and horizontally aligned on the right.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleCenter">
+      <MemberSignature Language="C#" Value="MiddleCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.ContentAlignment MiddleCenter = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.MiddleCenter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.ContentAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Content is vertically aligned in the middle, and horizontally aligned at the center.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleLeft">
+      <MemberSignature Language="C#" Value="MiddleLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.ContentAlignment MiddleLeft = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.MiddleLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.ContentAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Content is vertically aligned in the middle, and horizontally aligned on the left.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleRight">
+      <MemberSignature Language="C#" Value="MiddleRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.ContentAlignment MiddleRight = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.MiddleRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.ContentAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Content is vertically aligned in the middle, and horizontally aligned on the right.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopCenter">
+      <MemberSignature Language="C#" Value="TopCenter" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.ContentAlignment TopCenter = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.TopCenter" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.ContentAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Content is vertically aligned at the top, and horizontally aligned at the center.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopLeft">
+      <MemberSignature Language="C#" Value="TopLeft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.ContentAlignment TopLeft = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.TopLeft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.ContentAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Content is vertically aligned at the top, and horizontally aligned on the left.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TopRight">
+      <MemberSignature Language="C#" Value="TopRight" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.ContentAlignment TopRight = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.ContentAlignment.TopRight" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.ContentAlignment</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Content is vertically aligned at the top, and horizontally aligned on the right.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

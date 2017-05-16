@@ -1,0 +1,43 @@
+<Type Name="HttpResponseSubstitutionCallback" FullName="System.Web.HttpResponseSubstitutionCallback">
+  <TypeSignature Language="C#" Value="public delegate string HttpResponseSubstitutionCallback(HttpContext context);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpResponseSubstitutionCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.HttpResponseSubstitutionCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="context" Type="System.Web.HttpContext" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.String</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="context">The <see cref="T:System.Web.HttpContext" /> that contains the HTTP request information for the page with the control that requires post-cache substitution.</param>
+    <summary>Represents the method that handles post-cache substitution.</summary>
+    <returns>The content inserted into the cached response before being sent to the client.</returns>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.HttpResponseSubstitutionCallback> delegate, in combination with the <xref:System.Web.HttpResponse.WriteSubstitution%2A> method, is used for rendering post-cache content for the <xref:System.Web.UI.WebControls.Substitution> and <xref:System.Web.UI.WebControls.AdRotator> controls.  
+  
+ For the <xref:System.Web.UI.WebControls.Substitution> control, use the <xref:System.Web.UI.WebControls.Substitution.MethodName%2A> property to specify the name of the callback method to invoke when the <xref:System.Web.UI.WebControls.Substitution> control executes. The callback method that you specify must be a static method on the page or on the user control that contains the <xref:System.Web.UI.WebControls.Substitution> control. The signature for the callback method must match the signature for an <xref:System.Web.HttpResponseSubstitutionCallback> delegate that takes an <xref:System.Web.HttpContext> parameter and returns a string.  
+  
+ For the <xref:System.Web.UI.WebControls.AdRotator> control, rendering is independent of the page caching unless an event handler is provided for the <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event. If no <xref:System.Web.UI.WebControls.AdRotator.AdCreated> event handler is present, post-cache substitution is used to render the <xref:System.Web.UI.WebControls.AdRotator> content.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to add a <xref:System.Web.UI.WebControls.Substitution> control programmatically to an output-cached Web page. When the page loads, the current date and time are displayed to the user in a label. This section of the page is cached and updated every 60 seconds. When the <xref:System.Web.UI.WebControls.Substitution> control executes, it calls the `GetCurrentDateTime` method, which must match the signature for the <xref:System.Web.HttpResponseSubstitutionCallback> delegate. The string that is returned by the `GetCurrentDateTime` method is displayed to the user. This section of the page is not cached and is updated each time the page is refreshed. The <xref:System.Web.UI.WebControls.Substitution.MethodName%2A> property of the <xref:System.Web.UI.WebControls.Substitution> control gets or sets the name of the callback method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[SubstitutionCstr#1](~/samples/snippets/csharp/VS_Snippets_WebNet/SubstitutionCstr/CS/substitutioncstrcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[SubstitutionCstr#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/SubstitutionCstr/VB/substitutioncstrvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

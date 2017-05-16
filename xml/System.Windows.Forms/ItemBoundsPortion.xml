@@ -1,0 +1,89 @@
+<Type Name="ItemBoundsPortion" FullName="System.Windows.Forms.ItemBoundsPortion">
+  <TypeSignature Language="C#" Value="public enum ItemBoundsPortion" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ItemBoundsPortion extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemBoundsPortion" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies a portion of the list view item from which to retrieve the bounding rectangle.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration when calling the <xref:System.Windows.Forms.ListView.GetItemRect%2A> method of the <xref:System.Windows.Forms.ListView> control. This enumeration is also used when calling the <xref:System.Windows.Forms.ListViewItem.GetBounds%2A> method of the <xref:System.Windows.Forms.ListViewItem> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Entire">
+      <MemberSignature Language="C#" Value="Entire" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ItemBoundsPortion Entire = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemBoundsPortion.Entire" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ItemBoundsPortion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bounding rectangle of the entire item, including the icon, the item text, and the subitem text (if displayed), should be retrieved.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Icon">
+      <MemberSignature Language="C#" Value="Icon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ItemBoundsPortion Icon = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemBoundsPortion.Icon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ItemBoundsPortion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bounding rectangle of the icon or small icon should be retrieved.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemOnly">
+      <MemberSignature Language="C#" Value="ItemOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ItemBoundsPortion ItemOnly = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemBoundsPortion.ItemOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ItemBoundsPortion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bounding rectangle of the icon or small icon and the item text should be retrieved. In all views except the details view of the <see cref="T:System.Windows.Forms.ListView" />, this value specifies the same bounding rectangle as the <see langword="Entire" /> value. In details view, this value specifies the bounding rectangle specified by the <see langword="Entire" /> value without the subitems. If the <see cref="P:System.Windows.Forms.ListView.CheckBoxes" /> property is set to <see langword="true" />, this property does not include the area of the check boxes in its bounding rectangle. To include the entire item, including the check boxes, use the <see langword="Entire" /> value when calling the <see cref="M:System.Windows.Forms.ListView.GetItemRect(System.Int32)" /> method.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Label">
+      <MemberSignature Language="C#" Value="Label" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ItemBoundsPortion Label = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ItemBoundsPortion.Label" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ItemBoundsPortion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bounding rectangle of the item text should be retrieved.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

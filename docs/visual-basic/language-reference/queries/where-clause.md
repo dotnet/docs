@@ -19,8 +19,8 @@ helpviewer_keywords:
   - "Where clause"
 ms.assetid: 48b5c2c5-3181-429c-8545-894296798c89
 caps.latest.revision: 18
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "Visual Basic code, operators"
 ms.assetid: f760e828-8704-4256-bc2d-c22a4c93b524
 caps.latest.revision: 11
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

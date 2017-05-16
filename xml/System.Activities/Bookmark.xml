@@ -1,0 +1,256 @@
+<Type Name="Bookmark" FullName="System.Activities.Bookmark">
+  <TypeSignature Language="C#" Value="public class Bookmark : IEquatable&lt;System.Activities.Bookmark&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Bookmark extends System.Object implements class System.IEquatable`1&lt;class System.Activities.Bookmark&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Bookmark" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;System.Activities.Bookmark&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a point at which a workflow or activity can passively wait to be resumed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When an activity creates a <xref:System.Activities.Bookmark>, it becomes idle and waits for the <xref:System.Activities.Bookmark> to be resumed. If there are other activities in parallel with the activity that created the <xref:System.Activities.Bookmark>, they will be scheduled for execution.  
+  
+ Bookmarks can be resumed by the host application using one of the <xref:System.Activities.WorkflowApplication.ResumeBookmark%2A> overloads.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] bookmarks, see [Using WorkflowInvoker and WorkflowApplication](~/docs/framework/windows-workflow-foundation/using-workflowinvoker-and-workflowapplication.md), [Bookmarks](~/docs/framework/windows-workflow-foundation/bookmarks.md), and the [Bookmarks &#91; WF Samples&#93;](~/docs/framework/windows-workflow-foundation/samples/bookmarks.md) and [Wait For Input Activity &#91;WF Samples&#93;](~/docs/framework/windows-workflow-foundation/samples/wait-for-input-activity.md) samples.  
+  
+   
+  
+## Examples  
+ In the following example, a `ReadLine` activity is created. When executed, the `ReadLine` activity creates a <xref:System.Activities.Bookmark>, registers a callback, and then waits for the <xref:System.Activities.Bookmark> to be resumed. When it is resumed, the `ReadLine` activity assigns the data that was passed with the <xref:System.Activities.Bookmark> to its <xref:System.Activities.Activity%601.Result%2A> argument.  
+  
+```csharp  
+public sealed class ReadLine : NativeActivity<string>  
+{  
+    [RequiredArgument]  
+    public  InArgument<string> BookmarkName { get; set; }  
+  
+    protected override void Execute(NativeActivityContext context)  
+    {  
+        // Create a Bookmark and wait for it to be resumed.  
+        context.CreateBookmark(BookmarkName.Get(context),   
+            new BookmarkCallback(OnResumeBookmark));  
+    }  
+  
+    // NativeActivity derived activities that do asynchronous operations by calling   
+    // one of the CreateBookmark overloads defined on System.Activities.NativeActivityContext   
+    // must override the CanInduceIdle property and return true.  
+    protected override bool CanInduceIdle  
+    {  
+        get { return true; }  
+    }  
+  
+    public void OnResumeBookmark(NativeActivityContext context, Bookmark bookmark, object obj)  
+    {  
+        // When the Bookmark is resumed, assign its value to  
+        // the Result argument.  
+        Result.Set(context, (string)obj);  
+    }  
+}  
+```  
+  
+ In the following example, a workflow is created that uses the `ReadLine` activity to gather the user’s name and display it to the console window. The host application performs the actual work of gathering the input and passes it to the workflow by resuming the <xref:System.Activities.Bookmark>.  
+  
+```csharp  
+Variable<string> name = new Variable<string>  
+{  
+    Name = "name"  
+};  
+  
+Activity wf = new Sequence  
+{  
+    Variables =  
+    {  
+        name  
+    },  
+    Activities =  
+    {  
+        new WriteLine()  
+        {  
+            Text = "What is your name?"  
+        },  
+        new ReadLine()  
+        {  
+            BookmarkName = "UserName",  
+            Result = name  
+        },  
+        new WriteLine()  
+        {  
+            Text = new InArgument<string>((env) => "Hello, " + name.Get(env))  
+        }  
+    }  
+};  
+  
+AutoResetEvent syncEvent = new AutoResetEvent(false);  
+  
+// Create the WorkflowApplication using the desired  
+// workflow definition.  
+WorkflowApplication wfApp = new WorkflowApplication(wf);  
+  
+// Handle the desired lifecycle events.  
+wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)  
+{  
+    // Signal the host that the workflow is complete.  
+    syncEvent.Set();  
+};  
+  
+// Start the workflow.  
+wfApp.Run();  
+  
+// Collect the user's name and resume the bookmark.  
+// Bookmark resumption only occurs when the workflow  
+// is idle. If a call to ResumeBookmark is made and the workflow  
+// is not idle, ResumeBookmark blocks until the workflow becomes  
+// idle before resuming the bookmark.  
+wfApp.ResumeBookmark("UserName", Console.ReadLine());  
+  
+// Wait for Completed to arrive and signal that  
+// the workflow is complete.  
+syncEvent.WaitOne();  
+```  
+  
+ When the `ReadLine` activity is executed, it creates a <xref:System.Activities.Bookmark> named `UserName` and then waits for the bookmark to be resumed. The host collects the desired data and then resumes the <xref:System.Activities.Bookmark>. The workflow resumes, displays the name, and then completes. Note that no synchronization code is required with regard to resuming the bookmark. A <xref:System.Activities.Bookmark> can only be resumed when the workflow is idle, and if the workflow is not idle, the call to <xref:System.Activities.WorkflowApplication.ResumeBookmark%2A> blocks until the workflow becomes idle.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Bookmark (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Bookmark.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">A name that identifies the bookmark.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Bookmark" /> class using the specified name.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (System.Activities.Bookmark other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Activities.Bookmark other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Bookmark.Equals(System.Activities.Bookmark)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="System.Activities.Bookmark" />
+      </Parameters>
+      <Docs>
+        <param name="other">The bookmark to compare.</param>
+        <summary>Determines whether the current <see cref="T:System.Activities.Bookmark" /> and the specified <see cref="T:System.Activities.Bookmark" /> refer to the same continuation point in a workflow.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Activities.Bookmark" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Bookmark.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare.</param>
+        <summary>Determines whether the current <see cref="T:System.Activities.Bookmark" /> and the specified object refer to the same continuation point in a workflow.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:System.Activities.Bookmark" /> objects are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Bookmark.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a unique identifier for this <see cref="T:System.Activities.Bookmark" /> instance.</summary>
+        <returns>The unique identifier of this <see cref="T:System.Activities.Bookmark" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Bookmark.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bookmark name.</summary>
+        <value>The bookmark name.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Bookmark.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the bookmark name for a named bookmark or the bookmark ID for an unnamed bookmark.</summary>
+        <returns>The bookmark name or ID.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

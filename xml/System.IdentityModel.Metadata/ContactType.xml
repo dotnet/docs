@@ -1,0 +1,114 @@
+<Type Name="ContactType" FullName="System.IdentityModel.Metadata.ContactType">
+  <TypeSignature Language="C#" Value="public enum ContactType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContactType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.ContactType" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of a contact.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Administrative">
+      <MemberSignature Language="C#" Value="Administrative" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Administrative = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Administrative" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An administrative contact.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Billing">
+      <MemberSignature Language="C#" Value="Billing" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Billing = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Billing" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A billing contact.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Other">
+      <MemberSignature Language="C#" Value="Other" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Other = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Other" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A contact with a type other than administrative, billing, support, technical, or unspecified.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Support">
+      <MemberSignature Language="C#" Value="Support" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Support = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Support" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A support contact.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Technical">
+      <MemberSignature Language="C#" Value="Technical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Technical = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Technical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A technical contact.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unspecified">
+      <MemberSignature Language="C#" Value="Unspecified" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IdentityModel.Metadata.ContactType Unspecified = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.IdentityModel.Metadata.ContactType.Unspecified" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Metadata.ContactType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A contact with a type that is not specified.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -32,7 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # static (C# Reference)
-Use the `static` modifier to declare a static member, which belongs to the type itself rather than to a specific object. The `static` modifier can be used with classes, fields, methods, properties, operators, events, and constructors, but it cannot be used with indexers, destructors, or types other than classes. For more information, see [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md).  
+Use the `static` modifier to declare a static member, which belongs to the type itself rather than to a specific object. The `static` modifier can be used with classes, fields, methods, properties, operators, events, and constructors, but it cannot be used with indexers, finalizers, or types other than classes. For more information, see [Static Classes and Static Class Members](../../../csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members.md).  
   
 ## Example  
  The following class is declared as `static` and contains only `static` methods:  
@@ -47,7 +47,7 @@ Use the `static` modifier to declare a static member, which belongs to the type 
   
  To refer to the static member `x`, use the fully qualified name, `MyBaseC.MyStruct.x`, unless the member is accessible from the same scope:  
   
-```cs  
+```csharp  
 Console.WriteLine(MyBaseC.MyStruct.x);  
 ```  
   
@@ -60,7 +60,7 @@ Console.WriteLine(MyBaseC.MyStruct.x);
  Classes and static classes may have static constructors. Static constructors are called at some point between when the program starts and the class is instantiated.  
   
 > [!NOTE]
->  The `static` keyword has more limited uses than in C++. To compare with the C++ keyword, see [Static](https://docs.microsoft.com/cpp/misc/static-cpp).  
+>  The `static` keyword has more limited uses than in C++. To compare with the C++ keyword, see [Storage classes (C++)](https://docs.microsoft.com/cpp/cpp/storage-classes-cpp#static).
   
  To demonstrate static members, consider a class that represents a company employee. Assume that the class contains a method to count employees and a field to store the number of employees. Both the method and the field do not belong to any instance employee. Instead they belong to the company class. Therefore, they should be declared as static members of the class.  
   

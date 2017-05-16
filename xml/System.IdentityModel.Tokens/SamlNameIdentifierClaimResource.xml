@@ -1,0 +1,199 @@
+<Type Name="SamlNameIdentifierClaimResource" FullName="System.IdentityModel.Tokens.SamlNameIdentifierClaimResource">
+  <TypeSignature Language="C#" Value="public class SamlNameIdentifierClaimResource" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SamlNameIdentifierClaimResource extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a claim for a SAML security token that asserts the subject's name.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource> class to create a <xref:System.IdentityModel.Claims.Claim> instance for a <xref:System.IdentityModel.Tokens.SamlSecurityToken> subject name claim. The <xref:System.IdentityModel.Claims.Claim> class has a constructor that takes a resource, which this class can be passed to.  
+  
+ <xref:System.IdentityModel.Tokens.SamlSecurityToken> security tokens specify their claims using SAML assertions, which can specify the subject of the security token. The claims in a SAML assertion are represented by SAML statements. The SAML specification defines a set of SAML statement types and one of them is a <xref:System.IdentityModel.Tokens.SamlSubjectStatement>. A <xref:System.IdentityModel.Tokens.SamlSubjectStatement> asserts the principal that is the subject of the <xref:System.IdentityModel.Tokens.SamlSecurityToken> security token. This principal is specified using a <xref:System.IdentityModel.Tokens.SamlSubject> class.  The <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource> class represents the name identifier for a <xref:System.IdentityModel.Tokens.SamlSubject>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SamlNameIdentifierClaimResource (string name, string nameQualifier, string format);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string nameQualifier, string format) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="nameQualifier" Type="System.String" />
+        <Parameter Name="format" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The subject name. Sets the <see cref="P:System.IdentityModel.Tokens.SamlSubject.Name" /> property.</param>
+        <param name="nameQualifier">The domain in which the <c>name</c> parameter resides. Sets the <see cref="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.NameQualifier" /> property.</param>
+        <param name="format">A URI reference that represents the format that the <c>name</c> parameter is in. Sets the <see cref="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Format" /> property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource" /> class using the specified name, the domain in which the name resides, and the format the name is in.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the format used to specify a name is extensible, the following table lists the formats defined by the SAML specification.  
+  
+|Format|Description|  
+|------------|-----------------|  
+|<xref:System.IdentityModel.Tokens.SamlConstants.EmailNamespace%2A>|A URI that states the subject of a SAML assertion is specified as an email address.|  
+|<xref:System.IdentityModel.Tokens.SamlConstants.UserNameNamespace%2A>|A URI that states the subject of a SAML assertion is specified using a Windows domain account.|  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="name" /> is <see langword="null" /> or is <see cref="F:System.String.Empty" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">An object to compare to this instance.</param>
+        <summary>Returns a value that indicates whether the instance is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="obj" /> is a <see cref="T:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource" /> and has the same value as this instance; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="public string Format { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Format" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Format" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a URI reference that represents the format that the subject name of a SAML security token is in.</summary>
+        <value>A URI reference that represents the format that the subject name of a SAML security token is in.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Format%2A> property specifies the format that the <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Name%2A> property is in.  
+  
+ Although the format used to specify a name is extensible, the following table lists the formats defined by the SAML specification.  
+  
+|Format|Description|  
+|------------|-----------------|  
+|<xref:System.IdentityModel.Tokens.SamlConstants.EmailNamespace%2A>|A URI that states the subject of a SAML assertion is specified as an email address.|  
+|<xref:System.IdentityModel.Tokens.SamlConstants.UserNameNamespace%2A>|A URI that states the subject of a SAML assertion is specified using a Windows domain account.|  
+  
+ The <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Format%2A> property corresponds to the `Format` attribute of the `<saml:NameIdentifier>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for the <see cref="T:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource" />.</summary>
+        <returns>A hash code for the <see cref="T:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the subject name of a SAML security token.</summary>
+        <value>The subject name of a <see cref="T:System.IdentityModel.Tokens.SamlSecurityToken" /> security token.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Format%2A> property specifies the format that the <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Name%2A> property is in and the <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.NameQualifier%2A> property specifies the domain in which the <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Name%2A> property resides in.  
+  
+ The <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Name%2A> property corresponds to the `Format` attribute of the `<saml:NameIdentifier>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NameQualifier">
+      <MemberSignature Language="C#" Value="public string NameQualifier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NameQualifier" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.NameQualifier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the domain in which the subject name of a SAML security token resides in.</summary>
+        <value>The domain in which the subject name of a SAML security token resides in.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.NameQualifier%2A> property specifies the domain in which the <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.Name%2A> property resides in.  
+  
+ The <xref:System.IdentityModel.Tokens.SamlNameIdentifierClaimResource.NameQualifier%2A> property corresponds to the `NameQualifier` attribute of the `<saml:NameIdentifier>` element that is defined in the Assertions and Protocol for the OASIS Security Assertion Markup Language (SAML) specification.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

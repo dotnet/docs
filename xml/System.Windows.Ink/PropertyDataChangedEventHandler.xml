@@ -1,0 +1,25 @@
+<Type Name="PropertyDataChangedEventHandler" FullName="System.Windows.Ink.PropertyDataChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void PropertyDataChangedEventHandler(object sender, PropertyDataChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyDataChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.PropertyDataChangedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Ink.PropertyDataChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The <see cref="T:System.Windows.Ink.PropertyDataChangedEventArgs" /> object that contains information about the event.</param>
+    <summary>Represents the method that handles the <see langword="PropertyDataChanged" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

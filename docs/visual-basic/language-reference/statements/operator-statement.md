@@ -28,8 +28,8 @@ helpviewer_keywords:
   - "CType function, Operator statement"
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
 caps.latest.revision: 28
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -52,11 +52,11 @@ Declares the operator symbol, operands, and code that define an operator procedu
 ## Syntax  
   
 ```  
-[ <attrlist> ] Public [ Overloads ] Shared [ Shadows ] [ Widening | Narrowing ]   
-Operator operatorsymbol ( operand1 [, operand2 ]) [ As [ <attrlist> ] type ]  
+[ <attrlist> ] Public [ Overloads ] Shared [ Shadows ] [ Widening | Narrowing ]   
+Operator operatorsymbol ( operand1 [, operand2 ]) [ As [ <attrlist> ] type ]  
     [ statements ]  
     [ statements ]  
-    Return returnvalue  
+    Return returnvalue  
     [ statements ]  
 End Operator  
 ```  

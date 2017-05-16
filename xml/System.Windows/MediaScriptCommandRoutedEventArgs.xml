@@ -1,0 +1,55 @@
+<Type Name="MediaScriptCommandRoutedEventArgs" FullName="System.Windows.MediaScriptCommandRoutedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class MediaScriptCommandRoutedEventArgs : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MediaScriptCommandRoutedEventArgs extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.MediaScriptCommandRoutedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.MediaElement.ScriptCommand" /> and <see cref="E:System.Windows.Media.MediaPlayer.ScriptCommand" /> events.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ParameterType">
+      <MemberSignature Language="C#" Value="public string ParameterType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParameterType" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.MediaScriptCommandRoutedEventArgs.ParameterType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the type of script command that was raised.</summary>
+        <value>The type of script command that was raised.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParameterValue">
+      <MemberSignature Language="C#" Value="public string ParameterValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ParameterValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.MediaScriptCommandRoutedEventArgs.ParameterValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the arguments associated with the script command type.</summary>
+        <value>The arguments associated with the script command type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

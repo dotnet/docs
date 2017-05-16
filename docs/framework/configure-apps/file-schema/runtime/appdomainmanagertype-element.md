@@ -1,0 +1,91 @@
+---
+title: "&lt;appDomainManagerType&gt; Element | Microsoft Docs"
+ms.custom: ""
+ms.date: "03/30/2017"
+ms.prod: ".net-framework"
+ms.reviewer: ""
+ms.suite: ""
+ms.technology: 
+  - "dotnet-clr"
+ms.tgt_pltfrm: ""
+ms.topic: "article"
+dev_langs: 
+  - "VB"
+  - "CSharp"
+  - "C++"
+  - "jsharp"
+helpviewer_keywords: 
+  - "appDomainManagerType element"
+  - "<appDomainManagerType> element"
+ms.assetid: ae8d5a7e-e7f7-47f7-98d9-455cc243a322
+caps.latest.revision: 7
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+# &lt;appDomainManagerType&gt; Element
+Specifies the type that serves as the application domain manager for the default application domain.  
+  
+ \<configuration>  
+\<runtime>  
+\<appDomainManagerType>  
+  
+## Syntax  
+  
+```  
+<appDomainManagerAssembly   
+   value="type name" />  
+```  
+  
+## Attributes and Elements  
+ The following sections describe attributes, child elements, and parent elements.  
+  
+### Attributes  
+  
+|Attribute|Description|  
+|---------------|-----------------|  
+|`value`|Required attribute. Specifies the name of the type, including the namespace, that serves as the application domain manager for the default application domain in the process.|  
+  
+### Child Elements  
+ None.  
+  
+### Parent Elements  
+  
+|Element|Description|  
+|-------------|-----------------|  
+|`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
+|`runtime`|Contains information about assembly binding and garbage collection.|  
+  
+## Remarks  
+ To specify the type of the application domain manager, you must specify both this element and the [\<appDomainManagerAssembly>](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) element. If either of these elements is not specified, the other is ignored.  
+  
+ When the default application domain is loaded, <xref:System.TypeLoadException> is thrown if the specified type does not exist in the assembly that is specified by the [\<appDomainManagerAssembly>](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md) element; and the process fails to start.  
+  
+ When you specify the application domain manager type for the default application domain, other application domains created from the default application domain inherit the application domain manager type. Use the <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=fullName> and <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=fullName> properties to specify a different application domain manager type for a new application domain.  
+  
+ Specifying the application domain manager type requires the application to have full trust. (For example, an application running on the desktop has full trust.) If the application does not have full trust, a <xref:System.TypeLoadException> is thrown.  
+  
+ The format of the type and namespace is the same format that is used for the <xref:System.Type.FullName%2A?displayProperty=fullName> property.  
+  
+ This configuration element is available only in the [!INCLUDE[net_v40_long](../../../../../includes/net-v40-long-md.md)] and later.  
+  
+## Example  
+ The following example shows how to specify that the application domain manager for the default application domain of a process is the `MyMgr` type in the `AdMgrExample` assembly.  
+  
+```  
+<configuration>  
+   <runtime>  
+      <appDomainManagerType value="MyMgr" />  
+      <appDomainManagerAssembly   
+         value="AdMgrExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6856bccf150f00b3" />  
+   </runtime>  
+</configuration>  
+```  
+  
+## See Also  
+ <xref:System.AppDomainSetup.AppDomainManagerType%2A?displayProperty=fullName>   
+ <xref:System.AppDomainSetup.AppDomainManagerAssembly%2A?displayProperty=fullName>   
+ [\<appDomainManagerAssembly> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/appdomainmanagerassembly-element.md)   
+ [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)   
+ [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)   
+ [SetAppDomainManagerType Method](../../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)

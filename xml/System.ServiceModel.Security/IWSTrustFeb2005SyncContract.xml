@@ -1,0 +1,237 @@
+<Type Name="IWSTrustFeb2005SyncContract" FullName="System.ServiceModel.Security.IWSTrustFeb2005SyncContract">
+  <TypeSignature Language="C#" Value="public interface IWSTrustFeb2005SyncContract" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWSTrustFeb2005SyncContract" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IWSTrustFeb2005SyncContract" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.ServiceContract(Name="IWSTrustFeb2005Sync", Namespace="http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines the service contract for the WS-Trust Feb 2005 protocol.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ProcessTrustFeb2005Cancel">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005Cancel (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Cancel(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Cancel(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Cancel", Name="TrustFeb2005Cancel", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the Cancel method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005CancelResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005CancelResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005CancelResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005CancelResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel", Name="TrustFeb2005CancelResponse", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the RSTR/Cancel method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005Issue">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005Issue (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Issue(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Issue(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue", Name="TrustFeb2005Issue", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the Issue method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005IssueResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005IssueResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005IssueResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005IssueResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue", Name="TrustFeb2005IssueResponse", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the RSTR/Issue method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005Renew">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005Renew (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Renew(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Renew(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Renew", Name="TrustFeb2005Renew", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the Renew method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005RenewResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005RenewResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005RenewResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005RenewResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew", Name="TrustFeb2005RenewResponse", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the RSTR/Renew method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005Validate">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005Validate (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Validate(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005Validate(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Validate", Name="TrustFeb2005Validate", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the Validate method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005ValidateResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005ValidateResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005ValidateResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005SyncContract.ProcessTrustFeb2005ValidateResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate", Name="TrustFeb2005ValidateResponse", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <summary>Defines the RSTR/Validate method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

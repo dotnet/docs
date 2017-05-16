@@ -1,0 +1,180 @@
+<Type Name="ContextItem" FullName="System.IdentityModel.Protocols.WSTrust.ContextItem">
+  <TypeSignature Language="C#" Value="public class ContextItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContextItem extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.ContextItem" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the auth:ContextItem element defined in the authorization extensions to WS-Trust. These extensions are defined in the WS-Federation specification.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The auth:ContextItem element is a subelement of the auth:AdditionalContext element that is represented by the <xref:System.IdentityModel.Protocols.WSTrust.AdditionalContext> class.  
+  
+ For more information about the element that this class represents, see the WS-Federation specification.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContextItem (Uri name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.ContextItem.#ctor(System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="name">A <see cref="T:System.Uri" /> that indicates the context item name.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> class with the specified Name URI.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Value%2A> property and the <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Scope%2A> property are set to `null` in the new instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNull">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Argument">
+          <paramref name="name" /> is not an absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContextItem (Uri name, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri name, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.ContextItem.#ctor(System.Uri,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.Uri" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">A <see cref="T:System.Uri" /> that indicates the context item name.</param>
+        <param name="value">The context item value. Can be <see langword="null" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> class with the specified Name URI and value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Protocols.WSTrust.ContextItem.Scope%2A> property is set to `null` in the new instance.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNull">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Argument">
+          <paramref name="name" /> is not an absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ContextItem (Uri name, string value, Uri scope);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri name, string value, class System.Uri scope) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.ContextItem.#ctor(System.Uri,System.String,System.Uri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.Uri" />
+        <Parameter Name="value" Type="System.String" />
+        <Parameter Name="scope" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="name">A <see cref="T:System.Uri" /> that indicates the context item name.</param>
+        <param name="value">The context item value. Can be <see langword="null" />.</param>
+        <param name="scope">The context item scope. Can be <see langword="null" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.ContextItem" /> class with the specified Name URI, value, and Scope URI.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNull">
+          <paramref name="name" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Argument">
+          <paramref name="name" /> is not an absolute URI.  
+  
+ -or-  
+  
+ <paramref name="scope" /> is not <see langword="null" /> and is not an absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public Uri Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Name" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.ContextItem.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Name URI.</summary>
+        <value>A <see cref="T:System.Uri" /> that contains the value of the Name attribute.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scope">
+      <MemberSignature Language="C#" Value="public Uri Scope { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Scope" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.ContextItem.Scope" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the Scope URI.</summary>
+        <value>A <see cref="T:System.Uri" /> that contains the value of the Scope attribute. Can be <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">An attempt is made to set a value that is not <see langword="null" /> and is not an absolute URI.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public string Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Value" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.ContextItem.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the context item.</summary>
+        <value>The value of the ContextItem element. Can be <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property can be set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,142 @@
+<Type Name="DesignerCommandSet" FullName="System.ComponentModel.Design.DesignerCommandSet">
+  <TypeSignature Language="C#" Value="public class DesignerCommandSet" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerCommandSet extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerCommandSet" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a base class for design-time tools, not derived from <see cref="T:System.ComponentModel.Design.ComponentDesigner" />, that provide smart tag or designer verb capabilities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.ComponentDesigner> class provides the <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> and <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> properties to query for the <xref:System.ComponentModel.Design.DesignerActionList> and <xref:System.ComponentModel.Design.DesignerVerb> collections, respectively. However, if a design-time tool author decides not to derive from this class, the <xref:System.ComponentModel.Design.DesignerCommandSet> class represents an alternative base class to provide this functionality.  
+  
+ The <xref:System.ComponentModel.Design.DesignerCommandSet> class contains only three members, described in the following table.  
+  
+|Public member|Description|  
+|-------------------|-----------------|  
+|<xref:System.ComponentModel.Design.DesignerCommandSet.GetCommands%2A>|Returns the collection of either the smart tags or designer verbs associated with the designed component. The base implementation returns `null`.|  
+|<xref:System.ComponentModel.Design.DesignerCommandSet.ActionLists%2A>|Gets the collection of all the smart tags associated with the designed component. The base implementation simply calls <xref:System.ComponentModel.Design.DesignerCommandSet.GetCommands%2A>.|  
+|<xref:System.ComponentModel.Design.DesignerCommandSet.Verbs%2A>|Gets the collection of all the designer verbs associated with the designed component. The base implementation simply calls <xref:System.ComponentModel.Design.DesignerCommandSet.GetCommands%2A>.|  
+  
+ A <xref:System.ComponentModel.Design.DesignerCommandSet> should be added as a site-specific service. Externally, a service of this type should first be queried to discover smart tag and designer verb functionality. If this service is not found, then the <xref:System.ComponentModel.Design.IDesigner.Verbs%2A?displayProperty=fullName> property should be used instead. This procedure provides a path for backwards compatibility.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerCommandSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerCommandSet.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.ComponentModel.Design.DesignerCommandSet" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because this base class contains no state, the default constructor does nothing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActionLists">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerCommandSet.ActionLists" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of all the smart tags associated with the designed component.</summary>
+        <value>A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> that contains the smart tags for the associated designed component.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The base implementation simply calls <xref:System.ComponentModel.Design.DesignerCommandSet.GetCommands%2A> with the string parameter "ActionLists".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCommands">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.ICollection GetCommands (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetCommands(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerCommandSet.GetCommands(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The type of collection to return, indicating either a <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> or a <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" />.</param>
+        <summary>Returns a collection of command objects.</summary>
+        <returns>A collection that contains the specified type—either <see cref="T:System.ComponentModel.Design.DesignerActionList" /> or <see cref="T:System.ComponentModel.Design.DesignerVerb" />—of command objects. The base implementation always returns <see langword="null" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Although the base implementation always returns `null`, the overridden version supplied by the programmer should return a collection of command objects of the type described by `name`. The base implementation of the <xref:System.ComponentModel.Design.DesignerCommandSet.Verbs%2A> and <xref:System.ComponentModel.Design.DesignerCommandSet.ActionLists%2A> properties specify the following values and meanings for this parameter.  
+  
+|String|Meaning|  
+|------------|-------------|  
+|"ActionLists"|Return a collection of all the smart tags associated with the component.|  
+|"Verbs"|Return a collection of all the designer verbs associated with the component.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Verbs">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.Design.DesignerVerbCollection Verbs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerVerbCollection Verbs" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerCommandSet.Verbs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.Design.DesignerVerbCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of all the designer verbs associated with the designed component.</summary>
+        <value>A <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" /> that contains the designer verbs for the associated designed component.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The base implementation simply calls <xref:System.ComponentModel.Design.DesignerCommandSet.GetCommands%2A> with the string parameter "Verbs".  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

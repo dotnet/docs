@@ -1,0 +1,75 @@
+<Type Name="DrawingAttributesReplacedEventArgs" FullName="System.Windows.Ink.DrawingAttributesReplacedEventArgs">
+  <TypeSignature Language="C#" Value="public class DrawingAttributesReplacedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DrawingAttributesReplacedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Ink.DrawingAttributesReplacedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.InkCanvas.DefaultDrawingAttributesReplaced" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DrawingAttributesReplacedEventArgs (System.Windows.Ink.DrawingAttributes newDrawingAttributes, System.Windows.Ink.DrawingAttributes previousDrawingAttributes);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Ink.DrawingAttributes newDrawingAttributes, class System.Windows.Ink.DrawingAttributes previousDrawingAttributes) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Ink.DrawingAttributesReplacedEventArgs.#ctor(System.Windows.Ink.DrawingAttributes,System.Windows.Ink.DrawingAttributes)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newDrawingAttributes" Type="System.Windows.Ink.DrawingAttributes" />
+        <Parameter Name="previousDrawingAttributes" Type="System.Windows.Ink.DrawingAttributes" />
+      </Parameters>
+      <Docs>
+        <param name="newDrawingAttributes">The new <see cref="T:System.Windows.Ink.DrawingAttributes" />.</param>
+        <param name="previousDrawingAttributes">The old <see cref="T:System.Windows.Ink.DrawingAttributes" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Ink.DrawingAttributesReplacedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewDrawingAttributes">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.DrawingAttributes NewDrawingAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.DrawingAttributes NewDrawingAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributesReplacedEventArgs.NewDrawingAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.DrawingAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new <see cref="T:System.Windows.Ink.DrawingAttributes" />.</summary>
+        <value>The new <see cref="T:System.Windows.Ink.DrawingAttributes" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousDrawingAttributes">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.DrawingAttributes PreviousDrawingAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.DrawingAttributes PreviousDrawingAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Ink.DrawingAttributesReplacedEventArgs.PreviousDrawingAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.DrawingAttributes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the old <see cref="T:System.Windows.Ink.DrawingAttributes" />.</summary>
+        <value>The old <see cref="T:System.Windows.Ink.DrawingAttributes" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

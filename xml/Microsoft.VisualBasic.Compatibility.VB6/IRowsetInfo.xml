@@ -1,0 +1,138 @@
+<Type Name="IRowsetInfo" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo">
+  <TypeSignature Language="C#" Value="public interface IRowsetInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowsetInfo" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0C733A55-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an implementation of the OLE DB <see langword="IRowsetInfo" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetProperties">
+      <MemberSignature Language="C#" Value="public void GetProperties (int cPropertyIDSets, Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[] rgPropertyIDSets, out int cPropertySets, out IntPtr prgPropertySets);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetProperties(int32 cPropertyIDSets, valuetype Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[] rgPropertyIDSets, int32 cPropertySets, native int prgPropertySets) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo.GetProperties(System.Int32,Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[],System.Int32@,System.IntPtr@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cPropertyIDSets" Type="System.Int32" />
+        <Parameter Name="rgPropertyIDSets" Type="Microsoft.VisualBasic.Compatibility.VB6.DBPROPIDSET[]" />
+        <Parameter Name="cPropertySets" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="prgPropertySets" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="cPropertyIDSets">The number of <see langword="DBPROPIDSET" /> structures in <c>rgPropertyIDSets</c>.</param>
+        <param name="rgPropertyIDSets">An array of <see langword="DBPROPIDSET" /> structures.</param>
+        <param name="cPropertySets">A pointer to memory in which to return the number of <see langword="DBPROPSET" /> structures returned in <c>prgPropertySets</c>.</param>
+        <param name="prgPropertySets">A pointer to memory in which to return an array of <see langword="DBPROPSET" /> structures.</param>
+        <summary>Returns the current settings of all properties supported by the rowset.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencedRowset">
+      <MemberSignature Language="C#" Value="public void GetReferencedRowset (int iOrdinal, Guid riid, out object referencedRowset);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetReferencedRowset(int32 iOrdinal, valuetype System.Guid riid, object referencedRowset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo.GetReferencedRowset(System.Int32,System.Guid,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iOrdinal" Type="System.Int32" />
+        <Parameter Name="riid" Type="System.Guid" />
+        <Parameter Name="referencedRowset" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="iOrdinal">The bookmark or chapter column for which to get the related rowset.</param>
+        <param name="riid">The IID of the interface pointer to return in <c>referencedRowset</c>.</param>
+        <param name="referencedRowset">A pointer to memory in which to return an <see langword="IUnknown" /> interface pointer on the rowset that interprets values from this column.</param>
+        <summary>Returns an interface pointer to the rowset to which a bookmark or chapter applies.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSpecification">
+      <MemberSignature Language="C#" Value="public void GetSpecification (Guid riid, out object specification);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetSpecification(valuetype System.Guid riid, object specification) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetInfo.GetSpecification(System.Guid,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="riid" Type="System.Guid" />
+        <Parameter Name="specification" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="riid">The IID of the interface on which to return a pointer.</param>
+        <param name="specification">A pointer to memory in which to return the interface pointer.</param>
+        <summary>Returns an interface pointer on the object (command or session) that created this rowset.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Functions and objects in the <xref:Microsoft.VisualBasic.Compatibility.VB6> namespace are provided for use by the tools for upgrading from Visual Basic 6.0 to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. In most cases, these functions and objects duplicate functionality that you can find in other namespaces in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. They are necessary only when the Visual Basic 6.0 code model differs significantly from the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] implementation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

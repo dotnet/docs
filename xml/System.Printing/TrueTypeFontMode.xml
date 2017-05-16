@@ -1,0 +1,152 @@
+<Type Name="TrueTypeFontMode" FullName="System.Printing.TrueTypeFontMode">
+  <TypeSignature Language="C#" Value="public enum TrueTypeFontMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrueTypeFontMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.TrueTypeFontMode" />
+  <AssemblyInfo>
+    <AssemblyName>ReachFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how a printer handles text that is formatted with a TrueType font.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ TrueType fonts are *vector* fonts, which instruct printer drivers and screen drivers how to draw the shapes of the letters and fill them in. Vector fonts contrast with *raster* fonts, which are simply lists. A raster font has a list for each letter of each available font size, and the lists determine, for every pixel in the letter, whether it prints.  
+  
+ You can enlarge or reduce vector fonts to almost any point size; however, vector fonts can slow printing because they occupy a large amount of printer memory. Also, some printers do not support TrueType fonts.  
+  
+ Newer printers often avoid these problems by doing the following.  
+  
+-   Converting a TrueType font into an outline font, which is a generic vector font. Many printers that do not support TrueType fonts, do support outline fonts.  
+  
+-   Creating a temporary raster font that looks just like a TrueType font. The printer must create a separate temporary raster font for each font size that the document uses. For that reason, if a print job uses many font sizes, the total memory that the printer uses might be greater than what a TrueType font would use.  
+  
+-   Treating each text area in the document as a graphic. If a device needs to print a document that contains very little text, downloading text as a graphic can use less printer memory than downloading a font.  
+  
+ Use the values of this type for these purposes:  
+  
+-   As members of the <xref:System.Printing.PrintCapabilities.TrueTypeFontModeCapability%2A> collection, which is a property of <xref:System.Printing.PrintCapabilities>, these values indicate which of the preceding techniques is available for a particular printer. Many printers support more than one of these techniques.  
+  
+-   As the value of the <xref:System.Printing.PrintTicket.TrueTypeFontMode%2A> property of a <xref:System.Printing.PrintTicket>, the value instructs the printer to handle TrueType fonts in a particular way.  
+  
+ The **Unknown** value is never used in properties of <xref:System.Printing.PrintCapabilities> objects.  
+  
+ You should never set a <xref:System.Printing.PrintTicket> property to **Unknown**. If some other <xref:System.Printing.PrintTicket> producing application has created a *PrintTicket document* that sets the TrueType font handling feature to an unrecognized option (that is, an option that is not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397), then a <xref:System.Printing.PrintTicket> object in your application that is constructed with that document will have **Unknown** as the value of the <xref:System.Printing.PrintTicket.TrueTypeFontMode%2A> property.  
+  
+ Although the <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintCapabilities> classes cannot be inherited, you can extend the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) to recognize print device features that are not accounted for in the <xref:System.Printing.PrintTicket> or <xref:System.Printing.PrintCapabilities> classes. For more information see [NOTINBUILD: How to: Extend the Print Schema and Create New Print System Classes](http://msdn.microsoft.com/en-us/a3600218-1ea5-478a-9853-6560464f2885).  
+  
+   
+  
+## Examples  
+ The following example shows how to test a printer's capabilities and configure the print job to take advantage of them.  
+  
+ [!code-cpp[XpsCreate#PrinterCapabilities](~/samples/snippets/cpp/VS_Snippets_Wpf/XpsCreate/CPP/XpsCreate.cpp#printercapabilities)]
+ [!code-csharp[XpsCreate#PrinterCapabilities](~/samples/snippets/csharp/VS_Snippets_Wpf/XpsCreate/CSharp/XpsCreate.cs#printercapabilities)]
+ [!code-vb[XpsCreate#PrinterCapabilities](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XpsCreate/visualbasic/xpscreate.vb#printercapabilities)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Automatic">
+      <MemberSignature Language="C#" Value="Automatic" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode Automatic = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.Automatic" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer driver decides the best method for handling TrueType fonts.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadAsNativeTrueTypeFont">
+      <MemberSignature Language="C#" Value="DownloadAsNativeTrueTypeFont" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode DownloadAsNativeTrueTypeFont = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.DownloadAsNativeTrueTypeFont" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer driver downloads the TrueType font.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadAsOutlineFont">
+      <MemberSignature Language="C#" Value="DownloadAsOutlineFont" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode DownloadAsOutlineFont = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.DownloadAsOutlineFont" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer driver downloads the TrueType font as an outline font.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="DownloadAsRasterFont">
+      <MemberSignature Language="C#" Value="DownloadAsRasterFont" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode DownloadAsRasterFont = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.DownloadAsRasterFont" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer driver creates a raster font for each size of the TrueType font that it needs and downloads them all.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderAsBitmap">
+      <MemberSignature Language="C#" Value="RenderAsBitmap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode RenderAsBitmap = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.RenderAsBitmap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer driver downloads each area of text as a graphic.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Unknown">
+      <MemberSignature Language="C#" Value="Unknown" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode Unknown = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.Unknown" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The feature (whose options are represented by this enumeration) is set to an option not defined. in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

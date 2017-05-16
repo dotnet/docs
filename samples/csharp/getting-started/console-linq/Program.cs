@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace LinqFaroShuffle
 {
+    #region snippet2
     public enum Suit
     {
         Clubs,
@@ -11,7 +12,9 @@ namespace LinqFaroShuffle
         Hearts,
         Spades
     }
+    #endregion
     
+    #region snippet3
     public enum Rank
     {
         Two,
@@ -28,8 +31,11 @@ namespace LinqFaroShuffle
         King,
         Ace
     }
+    #endregion
+
     public class Program
     {
+        #region snippet4
         static IEnumerable<Suit> Suits()
         {
             yield return Suit.Clubs;
@@ -37,7 +43,9 @@ namespace LinqFaroShuffle
             yield return Suit.Hearts;
             yield return Suit.Spades;
         }
+        #endregion
 
+        #region snippet5
         static IEnumerable<Rank> Ranks()
         {
             yield return Rank.Two;
@@ -54,7 +62,9 @@ namespace LinqFaroShuffle
             yield return Rank.King;
             yield return Rank.Ace;
         }
+        #endregion
 
+        #region snippet1
         public static void Main(string[] args)
         {
             var startingDeck = (from s in Suits().LogQuery("Suit Generation")
@@ -62,26 +72,44 @@ namespace LinqFaroShuffle
                                 select new PlayingCard(s, r))
                                 .LogQuery("Starting Deck")
                                 .ToArray();
+
             foreach (var c in startingDeck)
+            {
                 Console.WriteLine(c);
-                
+            }
+
             Console.WriteLine();
+
             var times = 0;
             var shuffle = startingDeck;
+
             do
             {
-                //shuffle = shuffle.Take(26).LogQuery("Top Half")
-                //    .InterleaveSequenceWith(shuffle.Skip(26).LogQuery("Bottom Half")).LogQuery("Shuffle").ToArray();
+                /*
+                shuffle = shuffle.Take(26)
+                    .LogQuery("Top Half")
+                    .InterleaveSequenceWith(shuffle.Skip(26).LogQuery("Bottom Half"))
+                    .LogQuery("Shuffle")
+                    .ToArray();
+                */
 
-                shuffle = shuffle.Skip(26).LogQuery("Bottom Half")
-                    .InterleaveSequenceWith(shuffle.Take(26).LogQuery("Top Half")).LogQuery("Shuffle").ToArray();
+                shuffle = shuffle.Skip(26)
+                    .LogQuery("Bottom Half")
+                    .InterleaveSequenceWith(shuffle.Take(26).LogQuery("Top Half"))
+                    .LogQuery("Shuffle")
+                    .ToArray();
 
                 foreach (var c in shuffle)
+                {
                     Console.WriteLine(c);
+                }
+
                 times++;
                 Console.WriteLine(times);
             } while (!startingDeck.SequenceEquals(shuffle));
+
             Console.WriteLine(times);
         }
+        #endregion
     }
 }

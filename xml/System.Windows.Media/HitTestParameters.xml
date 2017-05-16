@@ -1,0 +1,25 @@
+<Type Name="HitTestParameters" FullName="System.Windows.Media.HitTestParameters">
+  <TypeSignature Language="C#" Value="public abstract class HitTestParameters" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HitTestParameters extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestParameters" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines parameters for hit testing. Classes derived from this common base class that can be used for practical hit testing include <see cref="T:System.Windows.Media.PointHitTestParameters" /> and <see cref="T:System.Windows.Media.GeometryHitTestParameters" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.PointHitTestParameters> and <xref:System.Windows.Media.GeometryHitTestParameters> classes derive from <xref:System.Windows.Media.HitTestParameters>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

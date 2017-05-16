@@ -1,0 +1,47 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ClickMode_Snips" Height="300" Width="300"
+    >
+
+  <Grid ShowGridLines ="false" Background ="White" >
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="300"/>
+      <ColumnDefinition Width="250"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Margin="10,10,3,3" Grid.Column="0" Grid.Row="0" FontSize="24">Buttons</TextBlock>
+    <TextBlock Margin="10,10,3,3" Grid.Column="0" Grid.Row="1" FontSize="14" Grid.ColumnSpan="2">
+      The following button
+      examples demonstrate:
+    </TextBlock>
+    <DockPanel Margin="30,10,3,3" Grid.Column="0" Grid.Row="2">
+
+      <Button Name="btn1" Background="Pink" 
+              BorderBrush="Black" BorderThickness="1" 
+              Click="OnClick1" ClickMode="Hover">
+        ClickMe1
+      </Button>
+
+      <Button Name="btn2" Background="LightBlue" 
+              BorderBrush="Black" BorderThickness="1" 
+              Click="OnClick2" ClickMode="Press">
+        ClickMe2
+      </Button>
+
+      <Button Name="btn3" 
+              Click="OnClick3" ClickMode="Release">
+        Reset
+      </Button>
+
+    </DockPanel>
+    <TextBlock Margin="10,10,3,3" Grid.Column="1" Grid.Row="2" FontSize="12" VerticalAlignment="Center" TextWrapping="WrapWithOverflow">ClickModes - the first button uses the Hover mode, the second the Press mode and the third the Release mode.</TextBlock>
+  </Grid>
+</Window>

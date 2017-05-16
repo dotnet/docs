@@ -1,0 +1,55 @@
+<Type Name="InkCanvasStrokesReplacedEventArgs" FullName="System.Windows.Controls.InkCanvasStrokesReplacedEventArgs">
+  <TypeSignature Language="C#" Value="public class InkCanvasStrokesReplacedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InkCanvasStrokesReplacedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasStrokesReplacedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Controls.InkCanvas.StrokesReplaced" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NewStrokes">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection NewStrokes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection NewStrokes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.NewStrokes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new strokes of the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
+        <value>The new strokes of the <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousStrokes">
+      <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection PreviousStrokes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection PreviousStrokes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.PreviousStrokes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Ink.StrokeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the previous strokes of the <see cref="T:System.Windows.Controls.InkCanvas" />.</summary>
+        <value>The previous strokes of the <see cref="T:System.Windows.Controls.InkCanvas" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

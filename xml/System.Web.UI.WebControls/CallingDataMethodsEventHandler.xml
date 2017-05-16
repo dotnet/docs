@@ -1,0 +1,25 @@
+<Type Name="CallingDataMethodsEventHandler" FullName="System.Web.UI.WebControls.CallingDataMethodsEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void CallingDataMethodsEventHandler(object sender, CallingDataMethodsEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CallingDataMethodsEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CallingDataMethodsEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Web.UI.WebControls.CallingDataMethodsEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that handles the <see cref="E:System.Web.UI.WebControls.ModelDataSource.CallingDataMethods" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

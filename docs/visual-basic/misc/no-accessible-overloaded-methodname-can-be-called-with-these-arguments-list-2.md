@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrAmbiguousCall2"
 ms.assetid: 13b20ffa-9f02-4971-a3cb-e08b402fd971
 caps.latest.revision: 9
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

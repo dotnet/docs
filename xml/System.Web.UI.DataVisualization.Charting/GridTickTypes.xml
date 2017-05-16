@@ -1,0 +1,94 @@
+<Type Name="GridTickTypes" FullName="System.Web.UI.DataVisualization.Charting.GridTickTypes">
+  <TypeSignature Language="C#" Value="public enum GridTickTypes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridTickTypes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.GridTickTypes" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the options for displaying a grid line or a tick mark for a custom label.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.GridTickTypes> enumeration is used in conjunction with the <xref:System.Web.UI.DataVisualization.Charting.CustomLabel.GridTicks%2A> property to display a grid line and/or a tick mark for a custom label.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.GridTickTypes All = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.GridTickTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A tick mark and a grid line are shown.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Gridline">
+      <MemberSignature Language="C#" Value="Gridline" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.GridTickTypes Gridline = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.Gridline" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.GridTickTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A grid line is shown.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.GridTickTypes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.GridTickTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No tick mark or grid line is shown.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TickMark">
+      <MemberSignature Language="C#" Value="TickMark" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.GridTickTypes TickMark = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.TickMark" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.GridTickTypes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A tick mark is shown.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

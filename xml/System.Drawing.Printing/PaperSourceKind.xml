@@ -1,0 +1,251 @@
+<Type Name="PaperSourceKind" FullName="System.Drawing.Printing.PaperSourceKind">
+  <TypeSignature Language="C#" Value="public enum PaperSourceKind" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PaperSourceKind extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PaperSourceKind" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Standard paper sources.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Drawing.Printing.PaperSource.Kind%2A?displayProperty=fullName> property.  
+  
+ For more information on printing, see the <xref:System.Drawing.Printing> namespace overview.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AutomaticFeed">
+      <MemberSignature Language="C#" Value="AutomaticFeed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind AutomaticFeed = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.AutomaticFeed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Automatically fed paper.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Cassette">
+      <MemberSignature Language="C#" Value="Cassette" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind Cassette = int32(14)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.Cassette" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A paper cassette.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Custom">
+      <MemberSignature Language="C#" Value="Custom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind Custom = int32(257)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.Custom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A printer-specific paper source.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Envelope">
+      <MemberSignature Language="C#" Value="Envelope" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind Envelope = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.Envelope" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>An envelope.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FormSource">
+      <MemberSignature Language="C#" Value="FormSource" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind FormSource = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.FormSource" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer's default input bin.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LargeCapacity">
+      <MemberSignature Language="C#" Value="LargeCapacity" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind LargeCapacity = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.LargeCapacity" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The printer's large-capacity bin.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LargeFormat">
+      <MemberSignature Language="C#" Value="LargeFormat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind LargeFormat = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.LargeFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Large-format paper.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Lower">
+      <MemberSignature Language="C#" Value="Lower" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind Lower = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.Lower" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The lower bin of a printer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Manual">
+      <MemberSignature Language="C#" Value="Manual" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind Manual = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.Manual" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Manually fed paper.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ManualFeed">
+      <MemberSignature Language="C#" Value="ManualFeed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind ManualFeed = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.ManualFeed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Manually fed envelope.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Middle">
+      <MemberSignature Language="C#" Value="Middle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind Middle = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.Middle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The middle bin of a printer.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SmallFormat">
+      <MemberSignature Language="C#" Value="SmallFormat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind SmallFormat = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.SmallFormat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Small-format paper.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TractorFeed">
+      <MemberSignature Language="C#" Value="TractorFeed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind TractorFeed = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.TractorFeed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A tractor feed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Upper">
+      <MemberSignature Language="C#" Value="Upper" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperSourceKind Upper = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperSourceKind.Upper" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Printing.PaperSourceKind</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The upper bin of a printer (or the default bin, if the printer only has one bin).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

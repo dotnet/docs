@@ -31,8 +31,8 @@ helpviewer_keywords:
   - "Loop keyword, Do...Loop statement"
 ms.assetid: 892f9096-b3e2-4aee-834d-83bc4e2c379d
 caps.latest.revision: 37
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -55,21 +55,21 @@ Repeats a block of statements while a `Boolean` condition is `True` or until the
 ## Syntax  
   
 ```  
-Do { While | Until } condition  
-    [ statements ]  
+Do { While | Until } condition  
+    [ statements ]  
     [ Continue Do ]  
     [ statements ]  
-    [ Exit Do ]  
-    [ statements ]  
+    [ Exit Do ]  
+    [ statements ]  
 Loop  
 -or-  
 Do  
-    [ statements ]  
+    [ statements ]  
     [ Continue Do ]  
     [ statements ]  
-    [ Exit Do ]  
-    [ statements ]  
-Loop { While | Until } condition  
+    [ Exit Do ]  
+    [ statements ]  
+Loop { While | Until } condition  
 ```  
   
 ## Parts  

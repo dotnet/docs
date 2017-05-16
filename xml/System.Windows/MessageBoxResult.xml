@@ -1,0 +1,120 @@
+<Type Name="MessageBoxResult" FullName="System.Windows.MessageBoxResult">
+  <TypeSignature Language="C#" Value="public enum MessageBoxResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageBoxResult extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.MessageBoxResult" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies which message box button that a user clicks. <see cref="T:System.Windows.MessageBoxResult" /> is returned by the <see cref="Overload:System.Windows.MessageBox.Show" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.MessageBox.Show%2A> returns a <xref:System.Windows.MessageBoxResult> value that specifies which button on a message box a user clicked. <xref:System.Windows.MessageBoxButton> specifies which buttons are displayed on a message box.  
+  
+ The result value that is returned from a message box depends on what buttons the message box has and how a user closes a message box:  
+  
+-   On a message box that has an **OK** button, OK is returned if a user clicks the **OK** button, clicks the **Close** button in the title bar, or presses the **ESC** key.  
+  
+-   On a message box that has an **OK** button and a **Cancel** button, OK is returned if a user clicks the **OK** button. If a user clicks the **Cancel** button or the **Close** button in the title bar, Cancel is returned.  
+  
+-   On a message box that has a **Yes** button and a **No** button, the **Close** button in the title bar is disabled. Consequently, Yes is returned if a user clicks the **Yes** button, and No is returned if a user clicks the **No** button.  
+  
+-   On a message box that has a **Yes** button, a **No** button, and a **Cancel** button, Yes is returned if the **Yes** button is clicked and No is returned if the **No** button is clicked. If a user clicks the **Cancel** button or the **Close** button in the title bar, Cancel is returned.  
+  
+   
+  
+## Examples  
+ For more information, see [MessageBox Sample](http://go.microsoft.com/fwlink/?LinkID=160023).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="Cancel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxResult Cancel = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxResult.Cancel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The result value of the message box is **Cancel**.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="No">
+      <MemberSignature Language="C#" Value="No" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxResult No = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxResult.No" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The result value of the message box is **No**.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxResult None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxResult.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box returns no result.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OK">
+      <MemberSignature Language="C#" Value="OK" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxResult OK = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxResult.OK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The result value of the message box is **OK**.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Yes">
+      <MemberSignature Language="C#" Value="Yes" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxResult Yes = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxResult.Yes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The result value of the message box is **Yes**.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

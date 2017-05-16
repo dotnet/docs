@@ -1,0 +1,32 @@
+<Type Name="FieldCallback" FullName="System.Web.UI.WebControls.WebParts.FieldCallback">
+  <TypeSignature Language="C#" Value="public delegate void FieldCallback(object fieldValue);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FieldCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.FieldCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="fieldValue" Type="System.Object" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="fieldValue">The callback method.</param>
+    <summary>References the method to call when retrieving field data from a provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a Web Parts control provides data through the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface, the consumer or transformer must retrieve and process the field data from the provider. The <xref:System.Web.UI.WebControls.WebParts.FieldCallback> delegate represents the method to call for processing the provider data.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue%2A?displayProperty=fullName> method contains a <xref:System.Web.UI.WebControls.WebParts.FieldCallback> delegate parameter.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

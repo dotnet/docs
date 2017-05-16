@@ -1,0 +1,120 @@
+<Type Name="ProfileEventArgs" FullName="System.Web.Profile.ProfileEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ProfileEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProfileEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.Profile.ProfileModule.Personalize" /> event of the <see cref="T:System.Web.Profile.ProfileModule" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.Profile.ProfileEventArgs> class during the <xref:System.Web.Profile.ProfileModule.Personalize> event to specify a custom user profile. If, when the <xref:System.Web.Profile.ProfileModule.Personalize> event completes, the <xref:System.Web.Profile.ProfileEventArgs> parameter of the <xref:System.Web.Profile.ProfileEventHandler> has its <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property set to a value that’s not `null`, then the <xref:System.Web.Profile.ProfileModule> uses the value of the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property in the current <xref:System.Web.HttpContext>.  
+  
+   
+  
+## Examples  
+ The following code example shows the <xref:System.Web.Profile.ProfileModule.Personalize> event declared in the Global.asax file for an application. The event code loads a user profile based on role membership.  
+  
+ [!code-csharp[System.Web.Profile.ProfileManager.Personalize#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.Personalize/CS/global.asax#12)]
+ [!code-vb[System.Web.Profile.ProfileManager.Personalize#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.Personalize/VB/global.asax#12)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ProfileEventArgs (System.Web.HttpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileEventArgs.#ctor(System.Web.HttpContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:System.Web.HttpContext" /> of the current request.</param>
+        <summary>Creates an instance of the <see cref="T:System.Web.Profile.ProfileEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.ProfileEventArgs.%23ctor%2A> creates an instance of the <xref:System.Web.Profile.ProfileEventArgs> class and sets the <xref:System.Web.Profile.ProfileEventArgs.Context%2A> property to the specified <xref:System.Web.HttpContext>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Context">
+      <MemberSignature Language="C#" Value="public System.Web.HttpContext Context { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileEventArgs.Context" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.HttpContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.HttpContext" /> for the current request.</summary>
+        <value>The <see cref="T:System.Web.HttpContext" /> for the current request</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Profile.ProfileEventArgs> object provides event information to the <xref:System.Web.Profile.ProfileModule.Personalize> event of the <xref:System.Web.Profile.ProfileModule> class. The <xref:System.Web.Profile.ProfileEventArgs.Context%2A> property provides access to the <xref:System.Web.HttpContext> of the current request.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Profile">
+      <MemberSignature Language="C#" Value="public System.Web.Profile.ProfileBase Profile { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Profile.ProfileBase Profile" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileEventArgs.Profile" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Profile.ProfileBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the user profile for the current request.</summary>
+        <value>The user profile to use for the current request. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property during the <xref:System.Web.Profile.ProfileModule.Personalize> event to specify a custom user profile. If, when the <xref:System.Web.Profile.ProfileModule.Personalize> event completes, the <xref:System.Web.Profile.ProfileEventArgs> parameter of the <xref:System.Web.Profile.ProfileEventHandler> has its <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property set to a value that’s not `null`, then the <xref:System.Web.Profile.ProfileModule> uses the value of the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property in the current <xref:System.Web.HttpContext>.  
+  
+> [!NOTE]
+>  The <xref:System.Web.Profile.ProfileModule> does not set the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property for the <xref:System.Web.Profile.ProfileModule.Personalize> event. The <xref:System.Web.Profile.ProfileModule> only gets the value of the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property when the code in the <xref:System.Web.Profile.ProfileModule.Personalize> event completes. If the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A?displayProperty=fullName> property is not explicitly set by application code during the <xref:System.Web.Profile.ProfileModule.Personalize> event, the <xref:System.Web.Profile.ProfileEventArgs.Profile%2A> property value will be `null`.  
+  
+   
+  
+## Examples  
+ The following code example shows the <xref:System.Web.Profile.ProfileModule.Personalize> event declared in the Global.asax file for an application. The event code loads a user profile based on role membership.  
+  
+ [!code-csharp[System.Web.Profile.ProfileManager.Personalize#12](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.Personalize/CS/global.asax#12)]
+ [!code-vb[System.Web.Profile.ProfileManager.Personalize#12](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Profile.ProfileManager.Personalize/VB/global.asax#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

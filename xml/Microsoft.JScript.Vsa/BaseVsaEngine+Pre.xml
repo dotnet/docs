@@ -1,0 +1,231 @@
+<Type Name="BaseVsaEngine+Pre" FullName="Microsoft.JScript.Vsa.BaseVsaEngine+Pre">
+  <TypeSignature Language="C#" Value="protected enum BaseVsaEngine.Pre" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed BaseVsaEngine/Pre extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.BaseVsaEngine.Pre" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.JScript</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides enumeration for the <see cref="T:Microsoft.JScript.Vsa.BaseVsaEngine" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EngineCompiled">
+      <MemberSignature Language="C#" Value="EngineCompiled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre EngineCompiled = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.EngineCompiled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The engine is compiled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineInitialised">
+      <MemberSignature Language="C#" Value="EngineInitialised" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre EngineInitialised = int32(1024)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.EngineInitialised" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The engine is initialized.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotClosed">
+      <MemberSignature Language="C#" Value="EngineNotClosed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre EngineNotClosed = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.EngineNotClosed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The engine is not closed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotInitialised">
+      <MemberSignature Language="C#" Value="EngineNotInitialised" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre EngineNotInitialised = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.EngineNotInitialised" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The engine is not initialized.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineNotRunning">
+      <MemberSignature Language="C#" Value="EngineNotRunning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre EngineNotRunning = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.EngineNotRunning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The engine is not running.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="EngineRunning">
+      <MemberSignature Language="C#" Value="EngineRunning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre EngineRunning = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.EngineRunning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The engine is running.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No engine is set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerNotSet">
+      <MemberSignature Language="C#" Value="RootMonikerNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre RootMonikerNotSet = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.RootMonikerNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The root moniker is not set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootMonikerSet">
+      <MemberSignature Language="C#" Value="RootMonikerSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre RootMonikerSet = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.RootMonikerSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The root moniker is set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RootNamespaceSet">
+      <MemberSignature Language="C#" Value="RootNamespaceSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre RootNamespaceSet = int32(128)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.RootNamespaceSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The root namespace is set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteNotSet">
+      <MemberSignature Language="C#" Value="SiteNotSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre SiteNotSet = int32(512)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.SiteNotSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The site is not set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SiteSet">
+      <MemberSignature Language="C#" Value="SiteSet" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre SiteSet = int32(256)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.SiteSet" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The site is set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportForDebug">
+      <MemberSignature Language="C#" Value="SupportForDebug" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.Vsa.BaseVsaEngine/Pre SupportForDebug = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Vsa.BaseVsaEngine.Pre.SupportForDebug" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.JScript.Vsa.BaseVsaEngine+Pre</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The debug features are switched on.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

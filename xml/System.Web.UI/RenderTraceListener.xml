@@ -1,0 +1,167 @@
+<Type Name="RenderTraceListener" FullName="System.Web.UI.RenderTraceListener">
+  <TypeSignature Language="C#" Value="public abstract class RenderTraceListener" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RenderTraceListener extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.RenderTraceListener" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the abstract base class for an object that monitors as controls are rendering during a page request.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RenderTraceListener ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.RenderTraceListener.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.RenderTraceListener" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginRendering">
+      <MemberSignature Language="C#" Value="public virtual void BeginRendering (System.IO.TextWriter writer, object renderedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginRendering(class System.IO.TextWriter writer, object renderedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.RenderTraceListener.BeginRendering(System.IO.TextWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.IO.TextWriter" />
+        <Parameter Name="renderedObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An object that can write a sequential series of characters.</param>
+        <param name="renderedObject">The rendered object.</param>
+        <summary>Called when an object is about to be rendered.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndRendering">
+      <MemberSignature Language="C#" Value="public virtual void EndRendering (System.IO.TextWriter writer, object renderedObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndRendering(class System.IO.TextWriter writer, object renderedObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.RenderTraceListener.EndRendering(System.IO.TextWriter,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.IO.TextWriter" />
+        <Parameter Name="renderedObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An object that can write a sequential series of characters.</param>
+        <param name="renderedObject">The rendered object.</param>
+        <summary>Called when an object is finished rendering.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public virtual void Initialize (System.Web.HttpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.RenderTraceListener.Initialize(System.Web.HttpContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">The HTTP-specific information about an individual HTTP request.</param>
+        <summary>Initializes the listener objects.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListenerFactories">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;Func&lt;System.Web.UI.RenderTraceListener&gt;&gt; ListenerFactories { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IList`1&lt;class System.Func`1&lt;class System.Web.UI.RenderTraceListener&gt;&gt; ListenerFactories" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.RenderTraceListener.ListenerFactories" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Func&lt;System.Web.UI.RenderTraceListener&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a list of functions that are called to instantiate <see cref="T:System.Web.UI.RenderTraceListener" /> objects for each request.</summary>
+        <value>A list of functions that are called to instantiate <see cref="T:System.Web.UI.RenderTraceListener" /> objects for each request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTraceData">
+      <MemberSignature Language="C#" Value="public virtual void SetTraceData (object tracedObject, object traceDataKey, object traceDataValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetTraceData(object tracedObject, object traceDataKey, object traceDataValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.RenderTraceListener.SetTraceData(System.Object,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tracedObject" Type="System.Object" />
+        <Parameter Name="traceDataKey" Type="System.Object" />
+        <Parameter Name="traceDataValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="tracedObject">The object to be traced.</param>
+        <param name="traceDataKey">The key field of a record in a data-bound control.</param>
+        <param name="traceDataValue">The value of the extracted data.</param>
+        <summary>Associates a data object with either the controls or other object that will be rendered.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShareTraceData">
+      <MemberSignature Language="C#" Value="public virtual void ShareTraceData (object source, object destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShareTraceData(object source, object destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.RenderTraceListener.ShareTraceData(System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.Object" />
+        <Parameter Name="destination" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="source">The object from which to share trace data.</param>
+        <param name="destination">The object to which trace data is shared.</param>
+        <summary>Associates the trace data from one object to another object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

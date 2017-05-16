@@ -1,0 +1,359 @@
+<Type Name="Scope" FullName="System.IdentityModel.Scope">
+  <TypeSignature Language="C#" Value="public class Scope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Scope extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Scope" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the configuration for the token issuance request.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.IdentityModel.Scope> class encapsulates information about the relying party (RP) associated with a security token request (RST). This information is used by implementations of the <xref:System.IdentityModel.SecurityTokenService> class (STS) in the token issuance pipeline to return a response (RSTR) to a security token request (RST).  
+  
+ <xref:System.IdentityModel.Scope> objects contain information about the address of the RP, the encrypting and signing credentials to be used with the issued security token, and whether the token itself or symmetric keys issued with the token should be encrypted. By default, both the token and symmetric keys are encrypted. You can extend the <xref:System.IdentityModel.Scope> class to carry additional information about the request, such as token types accepted by the RP, default token lifetime, maximum token lifetime, algorithm suites used by the RP, and so on; however, the information encapsulated in this class should not vary for individual requests.  
+  
+ The token issuance pipeline is implemented in the <xref:System.IdentityModel.SecurityTokenService.Issue%2A> method and this method invokes the <xref:System.IdentityModel.SecurityTokenService.GetScope%2A> method to get the configuration for the RST. You must implement a <xref:System.IdentityModel.SecurityTokenService.GetScope%2A> method in your custom STS and return a <xref:System.IdentityModel.Scope> object appropriate for the RP and your STS implementation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Scope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Scope.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Scope" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for the new <xref:System.IdentityModel.Scope> instance.  
+  
+|Property|Value.|  
+|--------------|------------|  
+|<xref:System.IdentityModel.Scope.AppliesToAddress%2A>|`null` .|  
+|<xref:System.IdentityModel.Scope.EncryptingCredentials%2A>|`null`.|  
+|<xref:System.IdentityModel.Scope.Properties%2A>|An empty dictionary.|  
+|<xref:System.IdentityModel.Scope.ReplyToAddress%2A>|`null`.|  
+|<xref:System.IdentityModel.Scope.SigningCredentials%2A>|`null`.|  
+|<xref:System.IdentityModel.Scope.SymmetricKeyEncryptionRequired%2A>|`true`.|  
+|<xref:System.IdentityModel.Scope.TokenEncryptionRequired%2A>|`true`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Scope (string appliesToAddress);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appliesToAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Scope.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="appliesToAddress" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appliesToAddress">The appliesTo address of the relying party. This is typically a URI.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Scope" /> class with the specified appliesTo address.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for the new <xref:System.IdentityModel.Scope> instance.  
+  
+|Property|Value.|  
+|--------------|------------|  
+|<xref:System.IdentityModel.Scope.AppliesToAddress%2A>|The value of the `appliesToAddress` parameter.|  
+|<xref:System.IdentityModel.Scope.EncryptingCredentials%2A>|`null`.|  
+|<xref:System.IdentityModel.Scope.Properties%2A>|An empty dictionary.|  
+|<xref:System.IdentityModel.Scope.ReplyToAddress%2A>|`null`.|  
+|<xref:System.IdentityModel.Scope.SigningCredentials%2A>|`null`.|  
+|<xref:System.IdentityModel.Scope.SymmetricKeyEncryptionRequired%2A>|`true`.|  
+|<xref:System.IdentityModel.Scope.TokenEncryptionRequired%2A>|`true`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Scope (string appliesToAddress, System.IdentityModel.Tokens.EncryptingCredentials encryptingCredentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appliesToAddress, class System.IdentityModel.Tokens.EncryptingCredentials encryptingCredentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Scope.#ctor(System.String,System.IdentityModel.Tokens.EncryptingCredentials)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="appliesToAddress" Type="System.String" />
+        <Parameter Name="encryptingCredentials" Type="System.IdentityModel.Tokens.EncryptingCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="appliesToAddress">The appliesTo address of the relying party. This is typically a URI.</param>
+        <param name="encryptingCredentials">The encrypting credentials for the relying party.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Scope" /> class with the specified appliesTo address and encrypting credentials.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for the new <xref:System.IdentityModel.Scope> instance.  
+  
+|Property|Value.|  
+|--------------|------------|  
+|<xref:System.IdentityModel.Scope.AppliesToAddress%2A>|The value of the `appliesToAddress` parameter.|  
+|<xref:System.IdentityModel.Scope.EncryptingCredentials%2A>|`null`.|  
+|<xref:System.IdentityModel.Scope.Properties%2A>|An empty dictionary.|  
+|<xref:System.IdentityModel.Scope.ReplyToAddress%2A>|`null`.|  
+|<xref:System.IdentityModel.Scope.SigningCredentials%2A>|The value of the `signingCredentials` parameter.|  
+|<xref:System.IdentityModel.Scope.SymmetricKeyEncryptionRequired%2A>|`true`.|  
+|<xref:System.IdentityModel.Scope.TokenEncryptionRequired%2A>|`true`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Scope (string appliesToAddress, System.IdentityModel.Tokens.SigningCredentials signingCredentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appliesToAddress, class System.IdentityModel.Tokens.SigningCredentials signingCredentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Scope.#ctor(System.String,System.IdentityModel.Tokens.SigningCredentials)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="appliesToAddress" Type="System.String" />
+        <Parameter Name="signingCredentials" Type="System.IdentityModel.Tokens.SigningCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="appliesToAddress">The appliesTo address of the relying party. This is typically a URI.</param>
+        <param name="signingCredentials">The signing credentials for the relying party.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Scope" /> class with the specified appliesTo address and signing credentials.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for the new <xref:System.IdentityModel.Scope> instance.  
+  
+|Property|Value.|  
+|--------------|------------|  
+|<xref:System.IdentityModel.Scope.AppliesToAddress%2A>|The value of the `appliesToAddress` parameter.|  
+|<xref:System.IdentityModel.Scope.EncryptingCredentials%2A>|`null`.|  
+|<xref:System.IdentityModel.Scope.Properties%2A>|An empty dictionary.|  
+|<xref:System.IdentityModel.Scope.ReplyToAddress%2A>|`null`.|  
+|<xref:System.IdentityModel.Scope.SigningCredentials%2A>|The value of the `signingCredentials` parameter.|  
+|<xref:System.IdentityModel.Scope.SymmetricKeyEncryptionRequired%2A>|`true`.|  
+|<xref:System.IdentityModel.Scope.TokenEncryptionRequired%2A>|`true`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Scope (string appliesToAddress, System.IdentityModel.Tokens.SigningCredentials signingCredentials, System.IdentityModel.Tokens.EncryptingCredentials encryptingCredentials);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appliesToAddress, class System.IdentityModel.Tokens.SigningCredentials signingCredentials, class System.IdentityModel.Tokens.EncryptingCredentials encryptingCredentials) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Scope.#ctor(System.String,System.IdentityModel.Tokens.SigningCredentials,System.IdentityModel.Tokens.EncryptingCredentials)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="appliesToAddress" Type="System.String" />
+        <Parameter Name="signingCredentials" Type="System.IdentityModel.Tokens.SigningCredentials" />
+        <Parameter Name="encryptingCredentials" Type="System.IdentityModel.Tokens.EncryptingCredentials" />
+      </Parameters>
+      <Docs>
+        <param name="appliesToAddress">The appliesTo address of the relying party. This is typically a URI.</param>
+        <param name="signingCredentials">The signing credentials for the relying party.</param>
+        <param name="encryptingCredentials">The encrypting credentials for the relying party.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Scope" /> class with the specified appliesTo address, signing credentials, and encrypting credentials.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the initial property values for the new <xref:System.IdentityModel.Scope> instance.  
+  
+|Property|Value|  
+|--------------|-----------|  
+|<xref:System.IdentityModel.Scope.AppliesToAddress%2A>|The value of the `appliesToAddress` parameter.|  
+|<xref:System.IdentityModel.Scope.EncryptingCredentials%2A>|The value of the `encryptingCredentials` parameter.|  
+|<xref:System.IdentityModel.Scope.Properties%2A>|An empty dictionary.|  
+|<xref:System.IdentityModel.Scope.ReplyToAddress%2A>|`null`.|  
+|<xref:System.IdentityModel.Scope.SigningCredentials%2A>|The value of the `signingCredentials` parameter.|  
+|<xref:System.IdentityModel.Scope.SymmetricKeyEncryptionRequired%2A>|`true`.|  
+|<xref:System.IdentityModel.Scope.TokenEncryptionRequired%2A>|`true`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppliesToAddress">
+      <MemberSignature Language="C#" Value="public virtual string AppliesToAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AppliesToAddress" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.AppliesToAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the appliesTo address of the relying party.</summary>
+        <value>The appliesTo address of the relying party. This is typically a URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncryptingCredentials">
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.EncryptingCredentials EncryptingCredentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.EncryptingCredentials EncryptingCredentials" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.EncryptingCredentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.EncryptingCredentials</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the encrypting credentials for the relying party.</summary>
+        <value>The encrypting credentials to be used for the relying party.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.IdentityModel.Scope.TokenEncryptionRequired%2A> property is `true`, the credentials are used to encrypt issued security tokens. If the <xref:System.IdentityModel.Scope.SymmetricKeyEncryptionRequired%2A> property is `true`, the credentials are used to encrypt symmetric keys issued with security tokens.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Properties">
+      <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.Dictionary&lt;string,object&gt; Properties { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; Properties" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.Properties" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the properties bag to extend the object.</summary>
+        <value>The properties bag.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplyToAddress">
+      <MemberSignature Language="C#" Value="public virtual string ReplyToAddress { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ReplyToAddress" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.ReplyToAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the replyTo address of the relying party.</summary>
+        <value>The replyTo address of the relying party. This is typically a URI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SigningCredentials">
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SigningCredentials SigningCredentials { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SigningCredentials SigningCredentials" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.SigningCredentials" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Tokens.SigningCredentials</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the signing credentials for the relying party.</summary>
+        <value>The signing credentials to be used for the relying party.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SymmetricKeyEncryptionRequired">
+      <MemberSignature Language="C#" Value="public virtual bool SymmetricKeyEncryptionRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SymmetricKeyEncryptionRequired" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.SymmetricKeyEncryptionRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether issued symmetric keys must be encrypted.</summary>
+        <value>
+          <see langword="true" /> if symmetric keys must be encrypted; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.IdentityModel.Scope.SymmetricKeyEncryptionRequired%2A> property is `true`, symmetric keys are encrypted using the credentials in the <xref:System.IdentityModel.Scope.EncryptingCredentials%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenEncryptionRequired">
+      <MemberSignature Language="C#" Value="public virtual bool TokenEncryptionRequired { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TokenEncryptionRequired" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Scope.TokenEncryptionRequired" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether issued security tokens must be encrypted.</summary>
+        <value>
+          <see langword="true" /> if security tokens must be encrypted; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.IdentityModel.Scope.TokenEncryptionRequired%2A> property is `true`, security tokens are encrypted using the credentials in the <xref:System.IdentityModel.Scope.EncryptingCredentials%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

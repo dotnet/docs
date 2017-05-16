@@ -1,0 +1,328 @@
+<Type Name="SpeechAudioFormatInfo" FullName="System.Speech.AudioFormat.SpeechAudioFormatInfo">
+  <TypeSignature Language="C#" Value="public class SpeechAudioFormatInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SpeechAudioFormatInfo extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents information about an audio format.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SpeechAudioFormatInfo (int samplesPerSecond, System.Speech.AudioFormat.AudioBitsPerSample bitsPerSample, System.Speech.AudioFormat.AudioChannel channel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 samplesPerSecond, valuetype System.Speech.AudioFormat.AudioBitsPerSample bitsPerSample, valuetype System.Speech.AudioFormat.AudioChannel channel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.AudioFormat.SpeechAudioFormatInfo.#ctor(System.Int32,System.Speech.AudioFormat.AudioBitsPerSample,System.Speech.AudioFormat.AudioChannel)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="samplesPerSecond" Type="System.Int32" />
+        <Parameter Name="bitsPerSample" Type="System.Speech.AudioFormat.AudioBitsPerSample" />
+        <Parameter Name="channel" Type="System.Speech.AudioFormat.AudioChannel" />
+      </Parameters>
+      <Docs>
+        <param name="samplesPerSecond">The value for the samples per second.</param>
+        <param name="bitsPerSample">The value for the bits per sample.</param>
+        <param name="channel">A member of the <see cref="T:System.Speech.AudioFormat.AudioChannel" /> enumeration (indicating <c>Mono</c> or <c>Stereo</c>).</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" /> class and specifies the samples per second, bits per sample, and the number of channels.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows a typical use of <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.%23ctor%2A> to specify the format of audio to output to a WAV file. The <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.%23ctor%2A> instance is an argument to the <xref:System.Speech.Synthesis.SpeechSynthesizer.SetOutputToWaveFile%2A> method.  
+  
+```csharp  
+using System;  
+using System.IO;  
+using System.Speech.Synthesis;  
+using System.Speech.AudioFormat;  
+  
+namespace SampleSynthesis  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+    {  
+  
+      // Initialize a new instance of the SpeechSynthesizer.  
+      using (SpeechSynthesizer synth = new SpeechSynthesizer())  
+      {  
+  
+        // Configure the audio output.   
+        synth.SetOutputToWaveFile(@"C:\temp\test.wav",   
+          new SpeechAudioFormatInfo(32000, AudioBitsPerSample.Sixteen, AudioChannel.Mono));  
+  
+        // Create a SoundPlayer instance to play output audio file.  
+        System.Media.SoundPlayer m_SoundPlayer =   
+          new System.Media.SoundPlayer(@"C:\temp\test.wav");  
+  
+        // Build a prompt.  
+        PromptBuilder builder = new PromptBuilder();  
+        builder.AppendText("This is sample output to a WAVE file.");  
+  
+        // Speak the prompt.  
+        synth.Speak(builder);  
+        m_SoundPlayer.Play();  
+      }  
+  
+      Console.WriteLine();  
+      Console.WriteLine("Press any key to exit...");  
+      Console.ReadKey();  
+    }  
+  }  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SpeechAudioFormatInfo (System.Speech.AudioFormat.EncodingFormat encodingFormat, int samplesPerSecond, int bitsPerSample, int channelCount, int averageBytesPerSecond, int blockAlign, byte[] formatSpecificData);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Speech.AudioFormat.EncodingFormat encodingFormat, int32 samplesPerSecond, int32 bitsPerSample, int32 channelCount, int32 averageBytesPerSecond, int32 blockAlign, unsigned int8[] formatSpecificData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.AudioFormat.SpeechAudioFormatInfo.#ctor(System.Speech.AudioFormat.EncodingFormat,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Byte[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="encodingFormat" Type="System.Speech.AudioFormat.EncodingFormat" />
+        <Parameter Name="samplesPerSecond" Type="System.Int32" />
+        <Parameter Name="bitsPerSample" Type="System.Int32" />
+        <Parameter Name="channelCount" Type="System.Int32" />
+        <Parameter Name="averageBytesPerSecond" Type="System.Int32" />
+        <Parameter Name="blockAlign" Type="System.Int32" />
+        <Parameter Name="formatSpecificData" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="encodingFormat">The encoding format.</param>
+        <param name="samplesPerSecond">The value for the samples per second.</param>
+        <param name="bitsPerSample">The value for the bits per sample.</param>
+        <param name="channelCount">The value for the channel count.</param>
+        <param name="averageBytesPerSecond">The value for the average bytes per second.</param>
+        <param name="blockAlign">The value for the BlockAlign.</param>
+        <param name="formatSpecificData">A byte array containing the format-specific data.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" /> class and specifies the encoding format, samples per second, bits per sample, number of channels, average bytes per second, block alignment value, and an array containing format-specific data.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AverageBytesPerSecond">
+      <MemberSignature Language="C#" Value="public int AverageBytesPerSecond { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AverageBytesPerSecond" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.AverageBytesPerSecond" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the average bytes per second of the audio.</summary>
+        <value>The value for the average bytes per second.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BitsPerSample">
+      <MemberSignature Language="C#" Value="public int BitsPerSample { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BitsPerSample" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.BitsPerSample" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bits per sample of the audio.</summary>
+        <value>The value for the bits per sample.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockAlign">
+      <MemberSignature Language="C#" Value="public int BlockAlign { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BlockAlign" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.BlockAlign" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the block alignment in bytes.</summary>
+        <value>The value for the block alignment.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Software for playback and recording of audio handles audio data in blocks. The sizes of these blocks are multiples of the value of the <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo.BlockAlign%2A> property. Block alignment value is the number of bytes in an atomic unit (that is, a block) of audio for a particular format. For Pulse Code Modulation (PCM) formats, the formula for calculating block alignment is as follows:  
+  
+-   Block Alignment = Bytes per Sample x Number of Channels  
+  
+ For example, the block alignment value for 16-bit PCM format mono audio is 2 (2 bytes per sample x 1 channel). For 16-bit PCM format stereo audio, the block alignment value is 4.  
+  
+ Data written and read from a device must always start at the beginning of a block. For example, it is illegal to start playback of PCM data in the middle of a sample (meaning on a boundary that is not block-aligned).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelCount">
+      <MemberSignature Language="C#" Value="public int ChannelCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ChannelCount" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.ChannelCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the channel count of the audio.</summary>
+        <value>The value for the channel count.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EncodingFormat">
+      <MemberSignature Language="C#" Value="public System.Speech.AudioFormat.EncodingFormat EncodingFormat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.AudioFormat.EncodingFormat EncodingFormat" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.EncodingFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.AudioFormat.EncodingFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the encoding format of the audio.</summary>
+        <value>The encoding format of the audio.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.AudioFormat.SpeechAudioFormatInfo.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to be compared.</param>
+        <summary>Returns whether a given object is an instance of <see cref="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" /> and equal to the current instance of <see cref="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" />.</summary>
+        <returns>Returns <see langword="true" /> if the current instance of <see cref="T:System.Speech.AudioFormat.SpeechAudioFormatInfo" /> and that obtained from the <paramref name="obj" /> argument are equal, otherwise returns <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The method returns `false` if the <xref:System.Object> provided by the `obj` argument cannot be cast to <xref:System.Speech.AudioFormat.SpeechAudioFormatInfo>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatSpecificData">
+      <MemberSignature Language="C#" Value="public byte[] FormatSpecificData ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] FormatSpecificData() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.AudioFormat.SpeechAudioFormatInfo.FormatSpecificData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the format-specific data of the audio format.</summary>
+        <returns>A byte array containing the format-specific data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.AudioFormat.SpeechAudioFormatInfo.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code of the audio format.</summary>
+        <returns>The value for the hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SamplesPerSecond">
+      <MemberSignature Language="C#" Value="public int SamplesPerSecond { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SamplesPerSecond" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.AudioFormat.SpeechAudioFormatInfo.SamplesPerSecond" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the samples per second of the audio format.</summary>
+        <value>The value for the samples per second.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

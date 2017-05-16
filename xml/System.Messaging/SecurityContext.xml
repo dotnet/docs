@@ -1,0 +1,58 @@
+<Type Name="SecurityContext" FullName="System.Messaging.SecurityContext">
+  <TypeSignature Language="C#" Value="public sealed class SecurityContext : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SecurityContext extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Messaging.SecurityContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Messaging</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents the security context for a message in a queue.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The security context contains cached security information such as an internal certificate, the corresponding private key, the user's SID, needed to attach a certificate and the sender identifier to a message when requesting authentication.  
+  
+ If a client, such as an ASP.NET application, impersonates a user to send a message to a queue, the identity of the user is used to access the queue. If the queue is remote, these credentials are cached and used for messages that are subsequently sent to the queue. Therefore, the SID in subsequent messages will be the cached identity of the first user that sent a message to the queue. The cached identity of the first user that sent a message to the queue will be used for subsequent users.  
+  
+ To overcome this problem, set the security context using <xref:System.Messaging.Message.SecurityContext%2A> before sending a message to a remote queue to ensure that the current user's credentials are used to gain access to the queue. However, the suggested best practice is to:  
+  
+1.  Make the queue an authenticated queue.  
+  
+2.  Run the ASP.NET application as a domain identity and authorize that application to write to the queue.  
+  
+3.  Do not impersonate the user when using the queue. Instead, get the caller’s identity and either perform authorization checking in the ASP.NET application or include the caller’s identity as part of the message and perform authorization checking in the receiver application.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Messaging.SecurityContext.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Messaging.SecurityContext" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,160 @@
+<Type Name="OutputCacheProvider" FullName="System.Web.Caching.OutputCacheProvider">
+  <TypeSignature Language="C#" Value="public abstract class OutputCacheProvider : System.Configuration.Provider.ProviderBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit OutputCacheProvider extends System.Configuration.Provider.ProviderBase" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Caching.OutputCacheProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Configuration.Provider.ProviderBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Serves as a base class that contains abstract methods for implementing an output-cache provider.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ All output-cache providers must implement the abstract methods in the <xref:System.Web.Caching.OutputCacheProvider> class.  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Web.Caching.OutputCacheProvider" />, you must override the following members:  
+  
+-   <see cref="M:System.Web.Caching.OutputCacheProvider.Add(System.String,System.Object,System.DateTime)" />  
+  
+-   <see cref="M:System.Web.Caching.OutputCacheProvider.Get(System.String)" />  
+  
+-   <see cref="M:System.Web.Caching.OutputCacheProvider.Remove(System.String)" />  
+  
+-   <see cref="M:System.Web.Caching.OutputCacheProvider.Set(System.String,System.Object,System.DateTime)" /></para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected OutputCacheProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.OutputCacheProvider" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public abstract object Add (string key, object entry, DateTime utcExpiry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Add(string key, object entry, valuetype System.DateTime utcExpiry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Add(System.String,System.Object,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="entry" Type="System.Object" />
+        <Parameter Name="utcExpiry" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="key">A unique identifier for <c>entry</c>.</param>
+        <param name="entry">The content to add to the output cache.</param>
+        <param name="utcExpiry">The time and date on which the cached entry expires.</param>
+        <summary>Inserts the specified entry into the output cache.</summary>
+        <returns>A reference to the specified provider.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If there is already a value in the cache for the specified key, the provider must return that value. The provider must not store the data passed by using the <xref:System.Web.Caching.OutputCacheProvider.Add%2A> method parameters. The <xref:System.Web.Caching.OutputCacheProvider.Add%2A> method stores the data if it is not already in the cache. If the data is in the cache, the <xref:System.Web.Caching.OutputCacheProvider.Add%2A> method returns it.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public abstract object Get (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Get(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Get(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">A unique identifier for a cached entry in the output cache.</param>
+        <summary>Returns a reference to the specified entry in the output cache.</summary>
+        <returns>The <paramref name="key" /> value that identifies the specified entry in the cache, or <see langword="null" /> if the specified entry is not in the cache.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public abstract void Remove (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The unique identifier for the entry to remove from the output cache.</param>
+        <summary>Removes the specified entry from the output cache.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Set">
+      <MemberSignature Language="C#" Value="public abstract void Set (string key, object entry, DateTime utcExpiry);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Set(string key, object entry, valuetype System.DateTime utcExpiry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProvider.Set(System.String,System.Object,System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="entry" Type="System.Object" />
+        <Parameter Name="utcExpiry" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="key">A unique identifier for <c>entry</c>.</param>
+        <param name="entry">The content to add to the output cache.</param>
+        <param name="utcExpiry">The time and date on which the cached <c>entry</c> expires.</param>
+        <summary>Inserts the specified entry into the output cache, overwriting the entry if it is already cached.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The expiration date specified in `utcExpiry` is always an absolute expiration date.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

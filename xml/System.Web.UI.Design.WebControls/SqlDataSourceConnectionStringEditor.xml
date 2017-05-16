@@ -1,0 +1,90 @@
+<Type Name="SqlDataSourceConnectionStringEditor" FullName="System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor">
+  <TypeSignature Language="C#" Value="public class SqlDataSourceConnectionStringEditor : System.Web.UI.Design.ConnectionStringEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataSourceConnectionStringEditor extends System.Web.UI.Design.ConnectionStringEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.ConnectionStringEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a user interface for selecting and editing a connection string property of a <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> object at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor> class is a <xref:System.Drawing.Design.UITypeEditor> object that can be used at design time to select and edit a connection string expression and to assign the expression to a control property. The <xref:System.Web.UI.WebControls.SqlDataSource> object uses the <xref:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor> class at design time to set the value of the <xref:System.Web.UI.WebControls.SqlDataSource.ConnectionString%2A> property.  
+  
+ If an <xref:System.ComponentModel.Design.Data.IDataEnvironment> interface is available, connection strings are retrieved from the data services of the visual designer. If an <xref:System.ComponentModel.Design.Data.IDataEnvironment> interface is not available, a modal dialog box is shown to allow editing of the connection string.  
+  
+ Use the <xref:System.ComponentModel.EditorAttribute> attribute to associate the <xref:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor> with a property. When the associated property is edited on the design surface, the designer host calls the <xref:System.Web.UI.Design.ConnectionStringEditor.EditValue%2A> method. The <xref:System.Web.UI.Design.ConnectionStringEditor.EditValue%2A> method displays a user interface for building the connection string expression and returns the connection string that is selected by the user. The <xref:System.Web.UI.Design.ConnectionStringEditor.GetEditStyle%2A> method indicates the display style of the user interface.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SqlDataSourceConnectionStringEditor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetProviderName">
+      <MemberSignature Language="C#" Value="protected override string GetProviderName (object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetProviderName(object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor.GetProviderName(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> that the connection string applies to.</param>
+        <summary>Returns the <see cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" /> property of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> object.</summary>
+        <returns>The <see cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" /> property of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />, if the <paramref name="instance" /> is not <see langword="null" />; otherwise, an empty string ("").</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProviderName">
+      <MemberSignature Language="C#" Value="protected override void SetProviderName (object instance, System.ComponentModel.Design.Data.DesignerDataConnection connection);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetProviderName(object instance, class System.ComponentModel.Design.Data.DesignerDataConnection connection) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor.SetProviderName(System.Object,System.ComponentModel.Design.Data.DesignerDataConnection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="connection" Type="System.ComponentModel.Design.Data.DesignerDataConnection" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> that the connection string applies to.</param>
+        <param name="connection">The <see cref="T:System.ComponentModel.Design.Data.DesignerDataConnection" /> associated with the <see cref="T:System.Web.UI.WebControls.SqlDataSource" />.</param>
+        <summary>Sets the <see cref="P:System.Web.UI.WebControls.SqlDataSource.ProviderName" /> property of the <see cref="T:System.Web.UI.WebControls.SqlDataSource" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

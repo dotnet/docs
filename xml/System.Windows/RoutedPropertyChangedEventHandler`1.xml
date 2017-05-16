@@ -1,0 +1,51 @@
+<Type Name="RoutedPropertyChangedEventHandler&lt;T&gt;" FullName="System.Windows.RoutedPropertyChangedEventHandler&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate void RoutedPropertyChangedEventHandler&lt;T&gt;(object sender, RoutedPropertyChangedEventArgs&lt;T&gt; e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RoutedPropertyChangedEventHandler`1&lt;T&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.RoutedPropertyChangedEventHandler`1" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.RoutedPropertyChangedEventArgs&lt;T&gt;" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T">The type of the property value where changes in value are reported.</typeparam>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data. Specific event definitions will constrain <see cref="T:System.Windows.RoutedPropertyChangedEventArgs`1" /> to a type, with the type parameter of the constraint matching the type parameter constraint of a delegate implementation.</param>
+    <summary>Represents methods that will handle various routed events that track property value changes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Examples of events that use type-constrained delegates based on <xref:System.Windows.RoutedPropertyChangedEventHandler%601> include <xref:System.Windows.Controls.TreeView.SelectedItemChanged?displayProperty=fullName> and <xref:System.Windows.Controls.Primitives.RangeBase.ValueChanged?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example defines and attaches a handler method for the <xref:System.Windows.Controls.Primitives.RangeBase.ValueChanged> event.  
+  
+ The handler is based on <xref:System.Windows.RoutedPropertyChangedEventHandler%601>, and is defined in the second segment of the code example, with the type parameter of the generic constrained to <xref:System.Double>.  
+  
+ [!code-csharp[AutoGrid#2](~/samples/snippets/csharp/VS_Snippets_Wpf/AutoGrid/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[AutoGrid#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/AutoGrid/visualbasic/window1.xaml.vb#2)]  
+  
+ [!code-csharp[AutoGrid#RoutedPropertyChangedEvent](~/samples/snippets/csharp/VS_Snippets_Wpf/AutoGrid/CSharp/Window1.xaml.cs#routedpropertychangedevent)]
+ [!code-vb[AutoGrid#RoutedPropertyChangedEvent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/AutoGrid/visualbasic/window1.xaml.vb#routedpropertychangedevent)]  
+  
+ This particular example does not use the routed-event characteristic of the event; the event is handled on the same element that it is raised on. This is not always the case. For a routed event, it is possible that the source of the event is a different object than the object where the handler is attached.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

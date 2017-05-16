@@ -1,0 +1,73 @@
+<Type Name="VirtualizationCacheLengthUnit" FullName="System.Windows.Controls.VirtualizationCacheLengthUnit">
+  <TypeSignature Language="C#" Value="public enum VirtualizationCacheLengthUnit" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VirtualizationCacheLengthUnit extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.VirtualizationCacheLengthUnit" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of unit that is used by the <see cref="P:System.Windows.Controls.VirtualizingPanel.CacheLength" /> attached property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit%2A?displayProperty=fullName> attached property to specify the units of the <xref:System.Windows.Controls.VirtualizingPanel.CacheLength%2A?displayProperty=fullName>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="Item" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.VirtualizationCacheLengthUnit Item = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizationCacheLengthUnit.Item" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.VirtualizationCacheLengthUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.Windows.Controls.VirtualizingPanel.CacheLength" /> is measured in terms of the items that are displayed in the panel.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Page">
+      <MemberSignature Language="C#" Value="Page" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.VirtualizationCacheLengthUnit Page = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizationCacheLengthUnit.Page" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.VirtualizationCacheLengthUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.Windows.Controls.VirtualizingPanel.CacheLength" /> is measured in terms of a page, which is equal to the size of the panel's viewport.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Pixel">
+      <MemberSignature Language="C#" Value="Pixel" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.VirtualizationCacheLengthUnit Pixel = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizationCacheLengthUnit.Pixel" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.VirtualizationCacheLengthUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The <see cref="P:System.Windows.Controls.VirtualizingPanel.CacheLength" /> is measured in terms of [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)].</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,163 @@
+<Type Name="WorkflowDesignerIcons+ContextMenuItems" FullName="System.Activities.Presentation.WorkflowDesignerIcons+ContextMenuItems">
+  <TypeSignature Language="C#" Value="public static class WorkflowDesignerIcons.ContextMenuItems" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit WorkflowDesignerIcons/ContextMenuItems extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the items within the context menu.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Copy">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Copy { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Copy" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.Copy" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the copy menu item.</summary>
+        <value>The copy menu item.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyDisabled">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush CopyDisabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush CopyDisabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.CopyDisabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the disabled copy menu item.</summary>
+        <value>The disabled copy menu item.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cut">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Cut { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Cut" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.Cut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the cut menu item.</summary>
+        <value>The cut menu item.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CutDisabled">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush CutDisabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush CutDisabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.CutDisabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the disabled cut menu item.</summary>
+        <value>The disabled cut menu item.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Delete { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Delete" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.Delete" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the delete menu item.</summary>
+        <value>The delete menu item.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteDisabled">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush DeleteDisabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush DeleteDisabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.DeleteDisabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the disabled delete menu item.</summary>
+        <value>The disabled delete menu item.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Paste">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Paste { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Paste" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.Paste" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the paste menu item.</summary>
+        <value>The paste menu item.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PasteDisabled">
+      <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush PasteDisabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush PasteDisabled" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.ContextMenuItems.PasteDisabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.DrawingBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the disabled paste menu item.</summary>
+        <value>The disabled paste menu item.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

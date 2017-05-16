@@ -1,0 +1,89 @@
+<Type Name="MailFileEditor" FullName="System.Web.UI.Design.MailFileEditor">
+  <TypeSignature Language="C#" Value="public class MailFileEditor : System.Web.UI.Design.UrlEditor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MailFileEditor extends System.Web.UI.Design.UrlEditor" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.MailFileEditor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.Design.UrlEditor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a user interface for selecting and editing a mail file name for a property at design time.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.Design.MailFileEditor> class is an <xref:System.Drawing.Design.UITypeEditor> object that can be used at design time to select and edit a mail file name as a string, and assign the string to a control property. For example, the <xref:System.Web.UI.WebControls.EmbeddedMailObject> control uses the <xref:System.Web.UI.Design.MailFileEditor> class at design time to set the value of the <xref:System.Web.UI.WebControls.EmbeddedMailObject.Path%2A> property.  
+  
+ Use the <xref:System.ComponentModel.EditorAttribute> attribute to associate the <xref:System.Web.UI.Design.MailFileEditor> with a property. When the associated property is edited in the design surface, the designer host calls the <xref:System.Web.UI.Design.UrlEditor.EditValue%2A> method. The <xref:System.Web.UI.Design.UrlEditor.EditValue%2A> method displays a dialog box for selecting a mail file name from a filtered list of files, and returns the file name that is selected by the user. The <xref:System.Web.UI.Design.UrlEditor.GetEditStyle%2A> method indicates the display style of the user interface.  
+  
+ Derive a class from the <xref:System.Web.UI.Design.MailFileEditor> to define a custom editor for a mail file name property. For example, a derived class can override the <xref:System.Web.UI.Design.UrlEditor.EditValue%2A> method, and display an <xref:System.Windows.Forms.OpenFileDialog> instance with a custom mail file filter or title.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to associate an instance of the <xref:System.Web.UI.Design.MailFileEditor> class with a property that is contained within a custom control. When the control property is edited in the design surface, the <xref:System.Web.UI.Design.MailFileEditor> class provides the user interface to select and edit a mail file name for the property value.  
+  
+ [!code-csharp[System.Web.UI.Design.FileEditor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.Design.FileEditor/CS/simplecontrolwithfilename.cs#1)]
+ [!code-vb[System.Web.UI.Design.FileEditor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.Design.FileEditor/VB/simplecontrolwithfilename.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MailFileEditor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.MailFileEditor.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.MailFileEditor" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Caption">
+      <MemberSignature Language="C#" Value="protected override string Caption { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.MailFileEditor.Caption" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the caption for the editor dialog.</summary>
+        <value>The caption for the design-time dialog box.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter">
+      <MemberSignature Language="C#" Value="protected override string Filter { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.MailFileEditor.Filter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the file filter string for the dialog (such as "*.txt").</summary>
+        <value>The filter for selecting files in the design-time dialog box.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

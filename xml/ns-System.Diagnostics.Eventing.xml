@@ -1,0 +1,13 @@
+<Namespace Name="System.Diagnostics.Eventing">
+  <Docs>
+    <summary>Contains the classes used to instrument your application. The instrumentation, when enabled, logs the event data to the Event Tracing for Windows (ETW) tracing subsystem. For a complete description of ETW, see <see href="https://msdn.microsoft.com/en-us/library/windows/desktop/bb968803(v=vs.85).aspx">Event Tracing for Windows</see>.aspx).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The classes in this namespace work only on Windows Vista and later.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

@@ -1,0 +1,166 @@
+<Type Name="EventWatcherOptions" FullName="System.Management.EventWatcherOptions">
+  <TypeSignature Language="C#" Value="public class EventWatcherOptions : System.Management.ManagementOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventWatcherOptions extends System.Management.ManagementOptions" />
+  <TypeSignature Language="DocId" Value="T:System.Management.EventWatcherOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Management.ManagementOptions</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies options for management event watching.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library). The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+  
+ [!code-csharp[wminet_EventWatcherOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventWatcherOptions/cs/EventWatcherOptions.cs#1)]
+ [!code-vb[wminet_EventWatcherOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventWatcherOptions/vb/EventWatcherOptions.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventWatcherOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.EventWatcherOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.EventWatcherOptions" /> class for event watching, using default values. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library). The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+  
+ [!code-csharp[wminet_EventWatcherOptions()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventWatcherOptions()/cs/EventWatcherOptions().cs#1)]
+ [!code-vb[wminet_EventWatcherOptions()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventWatcherOptions()/vb/EventWatcherOptions().vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventWatcherOptions (System.Management.ManagementNamedValueCollection context, TimeSpan timeout, int blockSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementNamedValueCollection context, valuetype System.TimeSpan timeout, int32 blockSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.EventWatcherOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Management.ManagementNamedValueCollection" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="blockSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="context">The options context object containing provider-specific information to be passed through to the provider.</param>
+        <param name="timeout">The time-out to wait for the next events.</param>
+        <param name="blockSize">The number of events to wait for in each block.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.EventWatcherOptions" /> class with the given values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library). The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+  
+ [!code-csharp[wminet_EventWatcherOptions(3)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventWatcherOptions(3)/cs/EventWatcherOptions(3).cs#1)]
+ [!code-vb[wminet_EventWatcherOptions(3)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventWatcherOptions(3)/vb/EventWatcherOptions(3).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BlockSize">
+      <MemberSignature Language="C#" Value="public int BlockSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BlockSize" />
+      <MemberSignature Language="DocId" Value="P:System.Management.EventWatcherOptions.BlockSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the block size for block operations. When waiting for events, this value specifies how many events to wait for before returning.</summary>
+        <value>Returns an <see cref="T:System.Int32" /> value indicating the block size for a block of operations.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ The default value is 1.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example shows how the client receives notification when an instance of **Win32_Process** is created because the event class is **__InstanceCreationEvent**. For more information, see the Windows Management Instrumentation documentation in the MSDN Library at [http://msdn.microsoft.com/library](http://msdn.microsoft.com/library). The client receives events synchronously by calling the <xref:System.Management.ManagementEventWatcher.WaitForNextEvent%2A> method. This example can be tested by starting a process, such as Notepad, while the example code is running.  
+  
+ [!code-csharp[wminet_EventWatcherOptions_BlockSize#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_EventWatcherOptions_BlockSize/cs/EventWatcherOptions_BlockSize.cs#1)]
+ [!code-vb[wminet_EventWatcherOptions_BlockSize#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_EventWatcherOptions_BlockSize/vb/EventWatcherOptions_BlockSize.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.EventWatcherOptions.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a copy of the object.</summary>
+        <returns>The cloned object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

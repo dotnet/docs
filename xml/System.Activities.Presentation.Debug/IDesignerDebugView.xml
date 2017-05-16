@@ -1,0 +1,255 @@
+<Type Name="IDesignerDebugView" FullName="System.Activities.Presentation.Debug.IDesignerDebugView">
+  <TypeSignature Language="C#" Value="public interface IDesignerDebugView" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignerDebugView" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Debug.IDesignerDebugView" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides functionality for an activity designer debugger view.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CurrentContext">
+      <MemberSignature Language="C#" Value="public System.Activities.Debugger.SourceLocation CurrentContext { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Debugger.SourceLocation CurrentContext" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Debug.IDesignerDebugView.CurrentContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented in a derived class, gets or sets the scope of execution within the source file.</summary>
+        <value>The starting point location for execution within the source file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentLocation">
+      <MemberSignature Language="C#" Value="public System.Activities.Debugger.SourceLocation CurrentLocation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Debugger.SourceLocation CurrentLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Debug.IDesignerDebugView.CurrentLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented in a derived class, gets or sets the current location of execution in a file being processed by the debugger.</summary>
+        <value>The current location of execution in a file being processed by the debugger.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteBreakpoint">
+      <MemberSignature Language="C#" Value="public void DeleteBreakpoint (System.Activities.Debugger.SourceLocation sourceLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteBreakpoint(class System.Activities.Debugger.SourceLocation sourceLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.IDesignerDebugView.DeleteBreakpoint(System.Activities.Debugger.SourceLocation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
+      </Parameters>
+      <Docs>
+        <param name="sourceLocation">A specific location in a target source code file.</param>
+        <summary>When implemented in a derived class, removes a breakpoint at the specified location in the source file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureVisible">
+      <MemberSignature Language="C#" Value="public void EnsureVisible (System.Activities.Debugger.SourceLocation sourceLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnsureVisible(class System.Activities.Debugger.SourceLocation sourceLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.IDesignerDebugView.EnsureVisible(System.Activities.Debugger.SourceLocation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
+      </Parameters>
+      <Docs>
+        <param name="sourceLocation">A specific location in a target source code file.</param>
+        <summary>Ensures that the <see cref="T:System.Activities.Presentation.Debug.IDesignerDebugView" /> is visible.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBreakpointLocations">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.Activities.Debugger.SourceLocation,System.Activities.Presentation.Debug.BreakpointTypes&gt; GetBreakpointLocations ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IDictionary`2&lt;class System.Activities.Debugger.SourceLocation, valuetype System.Activities.Presentation.Debug.BreakpointTypes&gt; GetBreakpointLocations() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.IDesignerDebugView.GetBreakpointLocations" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.Activities.Debugger.SourceLocation,System.Activities.Presentation.Debug.BreakpointTypes&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, returns a list of currently set breakpoint location-and-type pairs.</summary>
+        <returns>A list of currently set breakpoint location-and-type pairs.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExactLocation">
+      <MemberSignature Language="C#" Value="public System.Activities.Debugger.SourceLocation GetExactLocation (System.Activities.Debugger.SourceLocation approximateLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Debugger.SourceLocation GetExactLocation(class System.Activities.Debugger.SourceLocation approximateLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.IDesignerDebugView.GetExactLocation(System.Activities.Debugger.SourceLocation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="approximateLocation" Type="System.Activities.Debugger.SourceLocation" />
+      </Parameters>
+      <Docs>
+        <param name="approximateLocation">A position within a source file that is known to be inexact.</param>
+        <summary>When implemented in a derived class, returns an exact location in a source file based upon an approximate location.</summary>
+        <returns>An exact location within the source file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HideSourceFileName">
+      <MemberSignature Language="C#" Value="public bool HideSourceFileName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HideSourceFileName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Debug.IDesignerDebugView.HideSourceFileName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the Xaml source file name should be hidden.</summary>
+        <value>
+          <see langword="true" /> if the Xaml source file name should be hidden; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertBreakpoint">
+      <MemberSignature Language="C#" Value="public void InsertBreakpoint (System.Activities.Debugger.SourceLocation sourceLocation, System.Activities.Presentation.Debug.BreakpointTypes breakpointType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertBreakpoint(class System.Activities.Debugger.SourceLocation sourceLocation, valuetype System.Activities.Presentation.Debug.BreakpointTypes breakpointType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.IDesignerDebugView.InsertBreakpoint(System.Activities.Debugger.SourceLocation,System.Activities.Presentation.Debug.BreakpointTypes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
+        <Parameter Name="breakpointType" Type="System.Activities.Presentation.Debug.BreakpointTypes" />
+      </Parameters>
+      <Docs>
+        <param name="sourceLocation">A specific location in a target source code file.</param>
+        <param name="breakpointType">The member of an enumeration of breakpoint types which may include Bounded, Conditional, Enabled, and None.</param>
+        <summary>When implemented in a derived class, places a breakpoint at the specified location in a file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDebugging">
+      <MemberSignature Language="C#" Value="public bool IsDebugging { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsDebugging" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Debug.IDesignerDebugView.IsDebugging" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented in a derived class, gets or sets a value that indicates whether debugging is enabled.</summary>
+        <value>
+          <see langword="true" /> if debugging is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetBreakpoints">
+      <MemberSignature Language="C#" Value="public void ResetBreakpoints ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetBreakpoints() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.IDesignerDebugView.ResetBreakpoints" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented in a derived class, resets the position of the breakpoint in a file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedLocation">
+      <MemberSignature Language="C#" Value="public System.Activities.Debugger.SourceLocation SelectedLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Debugger.SourceLocation SelectedLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Debug.IDesignerDebugView.SelectedLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented in a derived class, gets the selected <see cref="T:System.Activities.Debugger.SourceLocation" />.</summary>
+        <value>The selected source location.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBreakpoint">
+      <MemberSignature Language="C#" Value="public void UpdateBreakpoint (System.Activities.Debugger.SourceLocation sourceLocation, System.Activities.Presentation.Debug.BreakpointTypes breakpointType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateBreakpoint(class System.Activities.Debugger.SourceLocation sourceLocation, valuetype System.Activities.Presentation.Debug.BreakpointTypes breakpointType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Debug.IDesignerDebugView.UpdateBreakpoint(System.Activities.Debugger.SourceLocation,System.Activities.Presentation.Debug.BreakpointTypes)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
+        <Parameter Name="breakpointType" Type="System.Activities.Presentation.Debug.BreakpointTypes" />
+      </Parameters>
+      <Docs>
+        <param name="sourceLocation">A specific location in a target source code file.</param>
+        <param name="breakpointType">A specified type of breakpoint; for example, line, method, or exception breakpoints.</param>
+        <summary>When implemented in a derived class, updates the type of the breakpoint at a specified location in a file.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

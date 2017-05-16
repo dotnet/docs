@@ -1,0 +1,98 @@
+<Type Name="DataGridParentRowsLabelStyle" FullName="System.Windows.Forms.DataGridParentRowsLabelStyle">
+  <TypeSignature Language="C#" Value="public enum DataGridParentRowsLabelStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridParentRowsLabelStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridParentRowsLabelStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how the parent row labels of a <see cref="T:System.Windows.Forms.DataGrid" /> control are displayed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the members of this enumeration to set the value of the <xref:System.Windows.Forms.DataGrid.ParentRowsLabelStyle%2A> property.  
+  
+ Parent rows can be displayed only if the <xref:System.Windows.Forms.DataGrid> contains at least one <xref:System.Data.DataRelation> to a second <xref:System.Data.DataTable>, and if the <xref:System.Windows.Forms.DataGrid.AllowNavigation%2A> property is set to a value that allows navigation.  
+  
+   
+  
+## Examples  
+ The following example iterates through each of the possible values for the <xref:System.Windows.Forms.DataGridParentRowsLabelStyle>.  
+  
+ [!code-vb[Classic DataGridParentRowsLabelStyle Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Classic DataGridParentRowsLabelStyle Example/VB/source.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Both">
+      <MemberSignature Language="C#" Value="Both" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridParentRowsLabelStyle Both = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.Both" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Displays both the parent table and column names.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnName">
+      <MemberSignature Language="C#" Value="ColumnName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridParentRowsLabelStyle ColumnName = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.ColumnName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Displays the parent column name.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridParentRowsLabelStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Display no parent row labels.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TableName">
+      <MemberSignature Language="C#" Value="TableName" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridParentRowsLabelStyle TableName = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridParentRowsLabelStyle.TableName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.DataGridParentRowsLabelStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Displays the parent table name.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

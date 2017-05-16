@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "BC30560"
 ms.assetid: 7f032293-054b-4eae-8d97-3db8e7ddde3b
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

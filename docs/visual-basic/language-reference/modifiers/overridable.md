@@ -27,8 +27,8 @@ helpviewer_keywords:
   - "properties [Visual Basic], overriding"
 ms.assetid: 612581e7-8a4c-4a5d-beff-3402fffa6f35
 caps.latest.revision: 17
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,105 @@
+<Type Name="TableAttribute" FullName="System.Data.Linq.Mapping.TableAttribute">
+  <TypeSignature Language="C#" Value="public sealed class TableAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TableAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.TableAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Linq</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Designates a class as an entity class that is associated with a database table.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this attribute to designate a class as an entity class that is associated with a database table or view. [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] treats classes that have the <xref:System.Data.Linq.Mapping.TableAttribute> attribute as persistent classes.  
+  
+ [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] supports only single-table mapping. That is, an entity class must be mapped to exactly one database table, and you cannot map a database table to multiple classes at the same time.  
+  
+ You can use the <xref:System.Data.Linq.Mapping.TableAttribute.Name%2A> property of the <xref:System.Data.Linq.Mapping.TableAttribute> attribute to specify a name for the table, and you can optionally use the schema name to qualify a table name. If you do not specify a name by using the <xref:System.Data.Linq.Mapping.TableAttribute.Name%2A> property, the table name is assumed to be the same as the class name.  
+  
+## Schema-qualified Names  
+ You can optionally use the schema name to qualify a table name. By default, the token to the left of the first period in the <xref:System.Data.Linq.Mapping.TableAttribute.Name%2A> string is considered to be the schema name. The remainder of the name is considered to be the table name. The provider quotes the table name as appropriate. For example, the [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] provider for SQL Server makes sure that brackets are used at least where they are needed.  
+  
+> [!NOTE]
+>  In some cases, you must explicitly quote attributes because the SQL Server provider cannot auto-quote. The following table shows some examples.  
+  
+|Case|Example: Identifier Name|Example: Expected String in Attributes|Otherwise…|  
+|----------|------------------------------|--------------------------------------------|----------------|  
+|Schema name contains a period|Schema: "A.B"<br /><br /> Table: "C"|"[A.B].C"|The first period is assumed to separate the schema name from the table name.|  
+|Schema/Table name starts with `@`|"@SomeName"|"[@SomeName]"|Assumed to be a parameter name.|  
+|Schema starts with `[` and ends with `]`|"[Schema.Table]"|"[[Schema].[Table]]]"|The unquoted identifier resembles a quoted identifier.|  
+|Table starts with `[` and ends with `]`|"[Table]"|"[[Table]]]"|The unquoted identifier resembles a quoted identifier.|  
+  
+   
+  
+## Examples  
+ [!code-csharp[DLinqCustomize#1](~/samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs/Program.cs#1)]
+ [!code-vb[DLinqCustomize#1](~/samples/snippets/visualbasic/VS_Snippets_Data/DLinqCustomize/vb/Module1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TableAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.TableAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.Mapping.TableAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.TableAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the table or view.</summary>
+        <value>By default, the value is the same as the name of the class.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you do not specify a name by using <xref:System.Data.Linq.Mapping.TableAttribute.Name%2A>, the table name is assumed to be the same as the class name.  
+  
+> [!NOTE]
+>  You can optionally use a schema name to qualify the table name (for example, Schema3.Table5). By default, the token to the left of the first period in the <xref:System.Data.Linq.Mapping.TableAttribute.Name%2A> string is considered to be the schema name, and the rest to be the table name.  
+  
+ In the following example, the default table name, `Customer`, is changed to `Customers`.  
+  
+   
+  
+## Examples  
+ [!code-csharp[DLinqCustomize#1](~/samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs/Program.cs#1)]
+ [!code-vb[DLinqCustomize#1](~/samples/snippets/visualbasic/VS_Snippets_Data/DLinqCustomize/vb/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

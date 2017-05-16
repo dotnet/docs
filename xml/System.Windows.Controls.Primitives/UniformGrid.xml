@@ -1,0 +1,246 @@
+<Type Name="UniformGrid" FullName="System.Windows.Controls.Primitives.UniformGrid">
+  <TypeSignature Language="C#" Value="public class UniformGrid : System.Windows.Controls.Panel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UniformGrid extends System.Windows.Controls.Panel" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.UniformGrid" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Controls.Panel</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a way to arrange content in a grid where all the cells in the grid have the same size.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public UniformGrid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.UniformGrid.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Primitives.UniformGrid" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrangeOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.UniformGrid.ArrangeOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arrangeSize" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="arrangeSize">The <see cref="T:System.Windows.Size" /> of the area for the grid to use.</param>
+        <summary>Defines the layout of the <see cref="T:System.Windows.Controls.Primitives.UniformGrid" /> by distributing space evenly among all of the child elements.</summary>
+        <returns>The actual <see cref="T:System.Windows.Size" /> of the grid that is rendered to display the child elements that are visible.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `arrangeSize` parameter defines the space in the layout area that is available for the grid. For example, if there are two rows and four columns in a grid, the possible height for each cell is 0.5\**arrangeSizeHeight* and the maximum width is 0.25**arrangeSizeWidth*. For these calculations, *arrangeSizeHeight* is the <xref:System.Windows.Size.Height%2A> value of the `arrangeSize` parameter and *arrangeSizeWidth* is the <xref:System.Windows.Size.Width%2A> value of the `arrangeSize` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public int Columns { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Columns" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.UniformGrid.Columns" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of columns that are in the grid.</summary>
+        <value>The number of columns that are in the grid. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A value of zero (0) for the <xref:System.Windows.Controls.Primitives.UniformGrid.Columns%2A> property specifies that the column count is computed based on the number of rows and the number of visible child elements that are in the <xref:System.Windows.Controls.Grid>.  
+  
+ The value of the <xref:System.Windows.Controls.Primitives.UniformGrid.FirstColumn%2A> must be less than the value of the <xref:System.Windows.Controls.Primitives.UniformGrid.Columns%2A> property for the <xref:System.Windows.Controls.Primitives.UniformGrid> to work correctly.  
+  
+<a name="dependencyPropertyInfo_Columns"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.UniformGrid.ColumnsProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColumnsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColumnsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColumnsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.UniformGrid.ColumnsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.UniformGrid.Columns" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstColumn">
+      <MemberSignature Language="C#" Value="public int FirstColumn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FirstColumn" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.UniformGrid.FirstColumn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of leading blank cells in the first row of the grid.</summary>
+        <value>The number of empty cells that are in the first row of the grid. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of the <xref:System.Windows.Controls.Primitives.UniformGrid.FirstColumn%2A> must be less than the value of the <xref:System.Windows.Controls.Primitives.UniformGrid.Columns%2A> property for the <xref:System.Windows.Controls.Primitives.UniformGrid> to work correctly.  
+  
+<a name="dependencyPropertyInfo_FirstColumn"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.UniformGrid.FirstColumnProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstColumnProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FirstColumnProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FirstColumnProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.UniformGrid.FirstColumnProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.UniformGrid.FirstColumn" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.UniformGrid.MeasureOverride(System.Windows.Size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="constraint" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="constraint">The <see cref="T:System.Windows.Size" /> of the available area for the grid.</param>
+        <summary>Computes the desired size of the <see cref="T:System.Windows.Controls.Primitives.UniformGrid" /> by measuring all of the child elements.</summary>
+        <returns>The desired <see cref="T:System.Windows.Size" /> based on the child content of the grid and the <paramref name="constraint" /> parameter.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `constraint` parameter defines the maximum amount of space that is available for the grid. This space is divided up equally based on the number of rows and columns in the grid. The size of each child is measured to determine the maximum width of all the child elements of the grid. The maximum values cannot exceed the maximum cell size that is computed from the `constraint`. A desired grid <xref:System.Windows.Size> is computed based on the maximum child dimensions. The <xref:System.Windows.Size.Width%2A> is the maximum child width multiplied by the number of columns. The <xref:System.Windows.Size.Height%2A> is the maximum child height multiplied by the number of rows. This method returns the desired <xref:System.Windows.Size>.  
+  
+ For example, if there are two rows and four columns in a grid, the maximum height for each cell is 0.5\**constraintHeight* and the maximum width is 0.25**constraintWidth*. For these calculations, *constraintHeight* is the <xref:System.Windows.Size.Height%2A> value of the `constraint` parameter and *constraintWidth* is the <xref:System.Windows.Size.Width%2A> value of the `constraint` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rows">
+      <MemberSignature Language="C#" Value="public int Rows { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Rows" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.UniformGrid.Rows" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of rows that are in the grid.</summary>
+        <value>The number of rows that are in the grid. The default is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A value of zero (0) for the <xref:System.Windows.Controls.Primitives.UniformGrid.Rows%2A> property specifies that the row count is computed based on the number of columns and the number of visible child elements that are in the grid.  
+  
+<a name="dependencyPropertyInfo_Rows"></a>   
+## Dependency Property Information  
+  
+|||  
+|-|-|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.UniformGrid.RowsProperty>|  
+|Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RowsProperty">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RowsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RowsProperty" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.UniformGrid.RowsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="P:System.Windows.Controls.Primitives.UniformGrid.Rows" /> dependency property.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,81 @@
+<Type Name="ButtonType" FullName="System.Web.UI.WebControls.ButtonType">
+  <TypeSignature Language="C#" Value="public enum ButtonType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ButtonType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ButtonType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the different types of buttons that can be rendered in a Web Forms page.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ButtonType> enumeration is used to represent the different types of buttons (such as command button, image button, link button, and so on) that can be rendered on an ASP.NET page. It is commonly used by properties such as the <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property of the <xref:System.Web.UI.WebControls.ButtonFieldBase> class to indicate which button type is being used by the parent control.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.ButtonType> enumeration to specify that link buttons are displayed in a <xref:System.Web.UI.WebControls.ButtonField> field column of a <xref:System.Web.UI.WebControls.GridView> control. The <xref:System.Web.UI.WebControls.ButtonFieldBase.ButtonType%2A> property of a <xref:System.Web.UI.WebControls.ButtonField> object is declaratively set to `ButtonType.Link`.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[ButtonType#1](~/samples/snippets/csharp/VS_Snippets_WebNet/ButtonType/CS/buttontypecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[ButtonType#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/ButtonType/VB/buttontypevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Button">
+      <MemberSignature Language="C#" Value="Button" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ButtonType Button = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ButtonType.Button" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A command button.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Image">
+      <MemberSignature Language="C#" Value="Image" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ButtonType Image = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ButtonType.Image" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A button that displays an image.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Link">
+      <MemberSignature Language="C#" Value="Link" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ButtonType Link = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ButtonType.Link" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ButtonType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A hyperlink-style button.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

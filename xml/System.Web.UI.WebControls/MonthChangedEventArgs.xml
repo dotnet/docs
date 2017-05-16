@@ -1,0 +1,147 @@
+<Type Name="MonthChangedEventArgs" FullName="System.Web.UI.WebControls.MonthChangedEventArgs">
+  <TypeSignature Language="C#" Value="public class MonthChangedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MonthChangedEventArgs extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MonthChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.Calendar.VisibleMonthChanged" /> event of a <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event is raised when the user clicks the <xref:System.Web.UI.WebControls.Calendar> navigation controls to display the next or previous month.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.MonthChangedEventArgs>, see the <xref:System.Web.UI.WebControls.MonthChangedEventArgs.%23ctor%2A> constructor.  
+  
+ For more information about handling events, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to specify and code a handler for the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event that displays in a <xref:System.Web.UI.WebControls.Label> control whether the <xref:System.Web.UI.WebControls.Calendar> control has moved forward or backward one month.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CalendarVisibleMonthChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged/CS/calendarvisiblemonthchangedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CalendarVisibleMonthChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged/VB/calendarvisiblemonthchangedvb.aspx#1)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CalendarVisibleMonthChanged2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged2/CS/calendarvisiblemonthchanged2cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CalendarVisibleMonthChanged2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged2/VB/calendarvisiblemonthchanged2vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MonthChangedEventArgs (DateTime newDate, DateTime previousDate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime newDate, valuetype System.DateTime previousDate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.MonthChangedEventArgs.#ctor(System.DateTime,System.DateTime)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="newDate" Type="System.DateTime" />
+        <Parameter Name="previousDate" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="newDate">The date that determines the month currently displayed by the <see cref="T:System.Web.UI.WebControls.Calendar" />.</param>
+        <param name="previousDate">The date that determines the month previously displayed by the <see cref="T:System.Web.UI.WebControls.Calendar" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.MonthChangedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows initial property values for an instance of <xref:System.Web.UI.WebControls.MonthChangedEventArgs>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|`NewDate`|`newDate`|  
+|`PreviousDate`|`previousDate`|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewDate">
+      <MemberSignature Language="C#" Value="public DateTime NewDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime NewDate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MonthChangedEventArgs.NewDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the date that determines the currently displayed month in the <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
+        <value>The date that determines the month currently displayed by the <see cref="T:System.Web.UI.WebControls.Calendar" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to get the month currently displayed by the <xref:System.Web.UI.WebControls.Calendar> control and to compare the currently displayed month with another month. For example, you can use this property to calculate the number of months until or since a certain date.  
+  
+ This date is normally the first date of the currently displayed month; however, it can be programmatically changed to any date within the month.  
+  
+ The <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A> property can be assigned to this property programmatically to override the month change when the user clicks the navigation controls for the <xref:System.Web.UI.WebControls.Calendar> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to compare the months of the <xref:System.Web.UI.WebControls.MonthChangedEventArgs.NewDate%2A> property and the <xref:System.Web.UI.WebControls.MonthChangedEventArgs.PreviousDate%2A> property to determine whether the <xref:System.Web.UI.WebControls.Calendar> control moved forward one month or backward one month.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CalendarVisibleMonthChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged/CS/calendarvisiblemonthchangedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CalendarVisibleMonthChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged/VB/calendarvisiblemonthchangedvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousDate">
+      <MemberSignature Language="C#" Value="public DateTime PreviousDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime PreviousDate" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.MonthChangedEventArgs.PreviousDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the date that determines the previously displayed month in the <see cref="T:System.Web.UI.WebControls.Calendar" /> control.</summary>
+        <value>The date that determines the month previously displayed by the <see cref="T:System.Web.UI.WebControls.Calendar" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to determine the previously displayed month on the <xref:System.Web.UI.WebControls.Calendar> control. You can restore the <xref:System.Web.UI.WebControls.Calendar> control to the previously displayed month by setting the <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A> property to <xref:System.Web.UI.WebControls.MonthChangedEventArgs.PreviousDate%2A>.  
+  
+ This date is normally the first date of the previously displayed month; however, it can be programmatically changed to any date within the month.  
+  
+ The <xref:System.Web.UI.WebControls.Calendar.VisibleDate%2A> property is updated to the date in this property before the <xref:System.Web.UI.WebControls.Calendar.VisibleMonthChanged> event is raised.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to compare the months of the <xref:System.Web.UI.WebControls.MonthChangedEventArgs.NewDate%2A> property and the <xref:System.Web.UI.WebControls.MonthChangedEventArgs.PreviousDate%2A> property to determine whether the <xref:System.Web.UI.WebControls.Calendar> control moved forward one month or backward one month.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[CalendarVisibleMonthChanged#1](~/samples/snippets/csharp/VS_Snippets_WebNet/CalendarVisibleMonthChanged/CS/calendarvisiblemonthchangedcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[CalendarVisibleMonthChanged#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/CalendarVisibleMonthChanged/VB/calendarvisiblemonthchangedvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

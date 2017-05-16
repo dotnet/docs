@@ -1,0 +1,74 @@
+<Type Name="WindowVisualState" FullName="System.Windows.Automation.WindowVisualState">
+  <TypeSignature Language="C#" Value="public enum WindowVisualState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WindowVisualState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.WindowVisualState" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("fdc8f176-aed2-477a-8c89-ea04cc5f278d")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains values that specify the visual state of a window.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Maximized">
+      <MemberSignature Language="C#" Value="Maximized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.WindowVisualState Maximized = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowVisualState.Maximized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the window is maximized.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimized">
+      <MemberSignature Language="C#" Value="Minimized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.WindowVisualState Minimized = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowVisualState.Minimized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the window is minimized.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Normal">
+      <MemberSignature Language="C#" Value="Normal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.WindowVisualState Normal = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowVisualState.Normal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the window is normal (restored).</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

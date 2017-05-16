@@ -1,0 +1,161 @@
+<Type Name="ListViewDeleteEventArgs" FullName="System.Web.UI.WebControls.ListViewDeleteEventArgs">
+  <TypeSignature Language="C#" Value="public class ListViewDeleteEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewDeleteEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewDeleteEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.ListView.ItemDeleting" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.ListView> control raises the <xref:System.Web.UI.WebControls.ListView.ItemDeleting> event when a Delete button is clicked or the <xref:System.Web.UI.WebControls.ListView.DeleteItem%2A> method is called, but before the <xref:System.Web.UI.WebControls.ListView> control deletes the item. (A Delete button is one whose `CommandName` property is set to "Delete".) This enables you to provide an event-handling method that performs a custom routine whenever this event occurs, such as canceling the delete operation.  
+  
+ A <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs> object is passed to the event-handling method, which enables you to determine the index of the item that is being deleted. You can also cancel the delete operation. To do so, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs> object to `true`. If necessary, you can also work with the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> and <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Values%2A> collections before the values are passed to the data source.  
+  
+ For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs>, see the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.%23ctor%2A> constructor.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs> object to cancel the delete operation if the user tries to remove the last item from a <xref:System.Web.UI.WebControls.ListView> control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/CS/ListViewItemItemDeletingCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.ListViewItemDeleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.ListViewItemDeleting/VB/ListViewItemItemDeletingVB.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListViewDeleteEventArgs (int itemIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 itemIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewDeleteEventArgs.#ctor(System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="itemIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="itemIndex">The index of the item that contains the Delete button that raised the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListViewDeleteEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to initialize a new instance of the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs> class.  
+  
+> [!NOTE]
+>  This constructor is primarily used by control developers when raising events.  
+  
+ The following table shows the initial property value for an instance of <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs>.  
+  
+|Property|Initial value|  
+|--------------|-------------------|  
+|<xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.ItemIndex%2A>|The value of the `itemIndex` parameter.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemIndex">
+      <MemberSignature Language="C#" Value="public int ItemIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ItemIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeleteEventArgs.ItemIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the item being deleted.</summary>
+        <value>The zero-based index of the item being deleted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.ItemIndex%2A> property to determine the index of the item being deleted. The item index is typically used to retrieve the specified item from the <xref:System.Web.UI.WebControls.ListView.Items%2A> collection of the <xref:System.Web.UI.WebControls.ListView> control, which enables you to access the item's properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary of field name/value pairs that represent the primary key or keys of the item to delete.</summary>
+        <value>An object that contains the name/value pairs that represent the primary key or keys of the item to delete.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A> property of a <xref:System.Web.UI.WebControls.ListView> control is set, use the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> property to access the value of the primary key or keys in the item to delete.  
+  
+> [!NOTE]
+>  This property contains only the key fields. To access the values of the non-key fields, use the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Values%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> dictionary is automatically populated with the name/value pairs of the field or fields that are specified in the <xref:System.Web.UI.WebControls.ListView.DataKeyNames%2A> property. If the primary key contains multiple fields, a separate entry is added to the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> dictionary for each key field.  
+  
+ To determine the name of a key field, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry> object that is contained in the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> dictionary. To determine the value of a key field, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Values">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Values { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Values" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeleteEventArgs.Values" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a dictionary of the non-key field name/value pairs in the item to delete.</summary>
+        <value>An object that contains the non-key field name/value pairs of the item to delete.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the dictionary in the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Values%2A> property to access the values of the non-key fields in the item to delete.  
+  
+> [!NOTE]
+>  This property does not contain the primary key field or fields. To access the values of the primary key or keys, use the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> property.  
+  
+ The <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Values%2A> property is automatically populated with the name/value pairs of the non-key fields in the item. A separate entry is added to the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Keys%2A> property for each key field in the item.  
+  
+ To determine the field name of an entry, use the <xref:System.Collections.DictionaryEntry.Key%2A?displayProperty=fullName> property of a <xref:System.Collections.DictionaryEntry> object that is contained in the <xref:System.Web.UI.WebControls.ListViewDeleteEventArgs.Values%2A> dictionary. To determine the value of an entry, use the <xref:System.Collections.DictionaryEntry.Value%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

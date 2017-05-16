@@ -1,0 +1,240 @@
+<Type Name="IExecutorExtensionContract" FullName="System.AddIn.Contract.IExecutorExtensionContract">
+  <TypeSignature Language="C#" Value="public interface IExecutorExtensionContract : System.AddIn.Contract.IContract" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExecutorExtensionContract implements class System.AddIn.Contract.IContract" />
+  <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.IExecutorExtensionContract" />
+  <AssemblyInfo>
+    <AssemblyName>System.AddIn.Contract</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.AddIn.Contract.IContract</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines an interface that host applications can implement to extend add-in executors.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This type is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AssemblyLoaded">
+      <MemberSignature Language="C#" Value="public void AssemblyLoaded (string assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AssemblyLoaded(string assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoaded(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The name of the assembly that was loaded.</param>
+        <summary>Called after an add-in executor loads an add-in assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyLoadedFrom">
+      <MemberSignature Language="C#" Value="public void AssemblyLoadedFrom (string assemblyFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AssemblyLoadedFrom(string assemblyFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoadedFrom(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyFile">The name of the assembly that was loaded.</param>
+        <summary>Called after an add-in executor loads an add-in assembly from a specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyLoading">
+      <MemberSignature Language="C#" Value="public void AssemblyLoading (string assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AssemblyLoading(string assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoading(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The name of the assembly to be loaded.</param>
+        <summary>Called just before an add-in executor loads an add-in assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AssemblyLoadingFrom">
+      <MemberSignature Language="C#" Value="public void AssemblyLoadingFrom (string assemblyFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AssemblyLoadingFrom(string assemblyFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.AssemblyLoadingFrom(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyFile">The name of the assembly to be loaded.</param>
+        <summary>Called just before an add-in executor loads an add-in assembly from a specified location.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntryPointStarted">
+      <MemberSignature Language="C#" Value="public void EntryPointStarted (System.AddIn.Contract.IContract entryPoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EntryPointStarted(class System.AddIn.Contract.IContract entryPoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.EntryPointStarted(System.AddIn.Contract.IContract)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entryPoint" Type="System.AddIn.Contract.IContract" />
+      </Parameters>
+      <Docs>
+        <param name="entryPoint">An <see cref="T:System.AddIn.Contract.IContract" /> that represents the entry point that was instantiated.</param>
+        <summary>Called after an add-in executor instantiates the entry point of an add-in assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntryPointStarting">
+      <MemberSignature Language="C#" Value="public void EntryPointStarting (string assemblyName, string startupClass, System.AddIn.Contract.Collections.IRemoteArgumentArrayContract initArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EntryPointStarting(string assemblyName, string startupClass, class System.AddIn.Contract.Collections.IRemoteArgumentArrayContract initArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.EntryPointStarting(System.String,System.String,System.AddIn.Contract.Collections.IRemoteArgumentArrayContract)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="startupClass" Type="System.String" />
+        <Parameter Name="initArgs" Type="System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The name of the add-in assembly.</param>
+        <param name="startupClass">The name of the class that is the entry point for the add-in assembly.</param>
+        <param name="initArgs">An <see cref="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" /> that contains the arguments that will be passed to the constructor for <c>startupClass</c>.</param>
+        <summary>Called just before an add-in executor instantiates the entry point in an add-in assembly.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutorCreated">
+      <MemberSignature Language="C#" Value="public void ExecutorCreated ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExecutorCreated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.IExecutorExtensionContract.ExecutorCreated" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Called after an add-in loader creates a new add-in executor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  This member is no longer used by the managed add-in infrastructure, and may be marked obsolete in a future release.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

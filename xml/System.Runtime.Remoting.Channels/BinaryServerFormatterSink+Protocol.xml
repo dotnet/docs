@@ -1,0 +1,50 @@
+<Type Name="BinaryServerFormatterSink+Protocol" FullName="System.Runtime.Remoting.Channels.BinaryServerFormatterSink+Protocol">
+  <TypeSignature Language="C#" Value="public enum BinaryServerFormatterSink.Protocol" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed BinaryServerFormatterSink/Protocol extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSink.Protocol" />
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Remoting</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the protocol to use with the <see cref="T:System.Runtime.Remoting.Channels.BinaryServerFormatterSink" /> class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Http">
+      <MemberSignature Language="C#" Value="Http" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.BinaryServerFormatterSink/Protocol Http = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.BinaryServerFormatterSink.Protocol.Http" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.BinaryServerFormatterSink+Protocol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the current formatter sink is using the HTTP protocol, and therefore requires special processing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Other">
+      <MemberSignature Language="C#" Value="Other" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.BinaryServerFormatterSink/Protocol Other = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.BinaryServerFormatterSink.Protocol.Other" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.Channels.BinaryServerFormatterSink+Protocol</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that a protocol other than HTTP is used with the current formatter sink.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,85 @@
+<Type Name="ParameterImportBuilder" FullName="System.ComponentModel.Composition.Registration.ParameterImportBuilder">
+  <TypeSignature Language="C#" Value="public class ParameterImportBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParameterImportBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Registration.ParameterImportBuilder" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents configuration for a rule-based constructor parameter import.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ParameterImportBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ParameterImportBuilder.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Registration.ParameterImportBuilder" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Import&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Import&lt;T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Import&lt;T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ParameterImportBuilder.Import``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">The type of the parameter to define.</typeparam>
+        <summary>Defines the specified parameter as an imported parameter.</summary>
+        <returns>Default of <paramref name="T" />, but this method should only be referenced and never invoked.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Import&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Import&lt;T&gt; (Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt; configure);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Import&lt;T&gt;(class System.Action`1&lt;class System.ComponentModel.Composition.Registration.ImportBuilder&gt; configure) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.ParameterImportBuilder.Import``1(System.Action{System.ComponentModel.Composition.Registration.ImportBuilder})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="configure" Type="System.Action&lt;System.ComponentModel.Composition.Registration.ImportBuilder&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the parameter to define.</typeparam>
+        <param name="configure">An object that contains configuration information for the imported parameter.</param>
+        <summary>Defines the specified parameter as an imported parameter that has the specified configuration.</summary>
+        <returns>Default of <paramref name="T" />, but this method should only be referenced and never invoked.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="configure" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,80 @@
+<Type Name="ActivityCollectionChangeAction" FullName="System.Workflow.ComponentModel.ActivityCollectionChangeAction">
+  <TypeSignature Language="C#" Value="public enum ActivityCollectionChangeAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActivityCollectionChangeAction extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityCollectionChangeAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an enumeration of the permissible actions which may be performed on an <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />, which typically represents the collection of all child activities of a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="Add" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityCollectionChangeAction Add = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityCollectionChangeAction.Add" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityCollectionChangeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The enumerator corresponding to adding a new <see cref="T:System.Workflow.ComponentModel.Activity" /> to the <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="Remove" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityCollectionChangeAction Remove = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityCollectionChangeAction.Remove" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityCollectionChangeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The enumerator corresponding to removing an <see cref="T:System.Workflow.ComponentModel.Activity" /> from the <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Replace">
+      <MemberSignature Language="C#" Value="Replace" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.ActivityCollectionChangeAction Replace = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.ActivityCollectionChangeAction.Replace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityCollectionChangeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The enumerator corresponding to replacing an <see cref="T:System.Workflow.ComponentModel.Activity" /> in the <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

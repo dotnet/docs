@@ -1,0 +1,31 @@
+<Type Name="DebugEngineCallback" FullName="System.Workflow.Runtime.DebugEngine.DebugEngineCallback">
+  <TypeSignature Language="C#" Value="public delegate void DebugEngineCallback();" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DebugEngineCallback extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.DebugEngineCallback" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters />
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <summary>References a callback method that is invoked by the workflow expression evaluation component.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ The default callback is implemented internally in the workflow runtime engine by an object that runs on an independent thread and provides context for workflow expression evaluation.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

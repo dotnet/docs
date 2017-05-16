@@ -1,0 +1,81 @@
+<Type Name="CustomErrorsMode" FullName="System.Web.Configuration.CustomErrorsMode">
+  <TypeSignature Language="C#" Value="public enum CustomErrorsMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomErrorsMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CustomErrorsMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the values for the custom errors modality.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Configuration.CustomErrorsMode> enumerates the values you can use when setting the <xref:System.Web.Configuration.CustomErrorsSection.Mode%2A> property. These values define whether custom errors are enabled, disabled, or shown only to remote clients.  
+  
+   
+  
+## Examples  
+ The following code example shows how to set the <xref:System.Web.Configuration.CustomErrorsSection.Mode%2A> property.  
+  
+ [!code-csharp[System.Web.Configuration.CustomErrorsSection#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Configuration.CustomErrorsSection/CS/customerrorssection.cs#9)]
+ [!code-vb[System.Web.Configuration.CustomErrorsSection#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Configuration.CustomErrorsSection/VB/customerrorssection.vb#9)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Off">
+      <MemberSignature Language="C#" Value="Off" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.CustomErrorsMode Off = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsMode.Off" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.CustomErrorsMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Disables custom errors, allowing display of standard errors.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="On">
+      <MemberSignature Language="C#" Value="On" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.CustomErrorsMode On = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsMode.On" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.CustomErrorsMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enables custom errors. If no <see cref="P:System.Web.Configuration.CustomErrorsSection.DefaultRedirect" /> is specified, standard errors are issued.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteOnly">
+      <MemberSignature Language="C#" Value="RemoteOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.CustomErrorsMode RemoteOnly = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Configuration.CustomErrorsMode.RemoteOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Configuration.CustomErrorsMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Enables custom errors on remote clients only. Custom errors are shown only to remote clients and ASP.NET errors are shown to the local host.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

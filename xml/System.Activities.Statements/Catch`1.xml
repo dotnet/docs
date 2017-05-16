@@ -1,0 +1,125 @@
+<Type Name="Catch&lt;TException&gt;" FullName="System.Activities.Statements.Catch&lt;TException&gt;">
+  <TypeSignature Language="C#" Value="public sealed class Catch&lt;TException&gt; : System.Activities.Statements.Catch where TException : Exception" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Catch`1&lt;(class System.Exception) TException&gt; extends System.Activities.Statements.Catch" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Catch`1" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TException">
+      <Constraints>
+        <BaseTypeName>System.Exception</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Activities.Statements.Catch</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Action")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TException">The type of exception that the <see cref="T:System.Activities.Statements.Catch`1" /> block is handling.</typeparam>
+    <summary>Contains the actions to be executed after an exception is raised in the corresponding Try block of a <see cref="T:System.Activities.Statements.TryCatchFinally" /> activity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Once placed in the designer, <xref:System.Activities.Statements.Catch> activities cannot be reordered in the designer.  To reorder the collection of <xref:System.Activities.Statements.Catch> activities, either delete and re-add them in the correct order, or use the xaml (code) view for the workflow.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.Catch%601> activity. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+  
+ [!code-csharp[wfs_FlowChartWithFaultHandling#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Catch ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Catch`1.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.Catch`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.Catch%601>activity. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+  
+ [!code-csharp[wfs_FlowChartWithFaultHandling#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public System.Activities.ActivityAction&lt;TException&gt; Action { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.ActivityAction`1&lt;!TException&gt; Action" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Catch`1.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Activities.ActivityAction&lt;TException&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The handler for the exception being caught.</summary>
+        <value>The activity action.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The exception handler is represented by a <xref:System.WorkflowModel.ActivityAction> object.  
+  
+   
+  
+## Examples  
+ The following code sample demonstrates assigning the Action property of a <xref:System.Activities.Statements.Catch%601> activity. This example is from the [Fault Handling in a Flowchart Activity Using TryCatch](~/docs/framework/windows-workflow-foundation/samples/fault-handling-in-a-flowchart-activity-using-trycatch.md) sample.  
+  
+ [!code-csharp[wfs_FlowChartWithFaultHandling#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_flowchartwithfaulthandling/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionType">
+      <MemberSignature Language="C#" Value="public override Type ExceptionType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Type ExceptionType" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Catch`1.ExceptionType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The type of exception that the <see cref="T:System.Activities.Statements.Catch" /> block is handling.</summary>
+        <value>The exception type.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

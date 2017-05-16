@@ -1,0 +1,150 @@
+<Type Name="PostBackTrigger" FullName="System.Web.UI.PostBackTrigger">
+  <TypeSignature Language="C#" Value="public class PostBackTrigger : System.Web.UI.UpdatePanelControlTrigger" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PostBackTrigger extends System.Web.UI.UpdatePanelControlTrigger" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.PostBackTrigger" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.UpdatePanelControlTrigger</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a control inside a <see cref="T:System.Web.UI.UpdatePanel" /> control as a postback control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.PostBackTrigger> control to enable controls inside an <xref:System.Web.UI.UpdatePanel> to cause a postback instead of performing an asynchronous postback.  
+  
+ Use the <xref:System.Web.UI.ScriptManager.RegisterPostBackControl%2A> method of the <xref:System.Web.UI.ScriptManager> control to programmatically register a postback control. You can then call the <xref:System.Web.UI.UpdatePanel.Update%2A> method of the <xref:System.Web.UI.UpdatePanel> control when the trigger control performs a postback.  
+  
+> [!NOTE]
+>  Programmatically adding <xref:System.Web.UI.PostBackTrigger> controls is not supported.  
+  
+ If a control is set as both a <xref:System.Web.UI.PostBackTrigger> and <xref:System.Web.UI.AsyncPostBackTrigger> control, an exception is thrown.  
+  
+   
+  
+## Examples  
+ The following example shows how to declaratively define a <xref:System.Web.UI.PostBackTrigger> control for an <xref:System.Web.UI.UpdatePanel> control. In the panel, a <xref:System.Web.UI.WebControls.FileUpload> control enables users to upload a file. Users must first check whether the file to upload exists. The <xref:System.Web.UI.WebControls.Button> control that calls the event handler to check the file name causes an asynchronous postback. However, the <xref:System.Web.UI.WebControls.Button> control that uploads the file is registered as a <xref:System.Web.UI.PostBackTrigger>, because files cannot be uploaded asynchronously.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.PostBackTrigger#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.WEb.UI.PostBackTrigger/CS/PostBackTriggerCS.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.UI.PostBackTrigger#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.WEb.UI.PostBackTrigger/VB/PostBackTriggerVB.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PostBackTrigger ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PostBackTrigger.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.PostBackTrigger" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a new <xref:System.Web.UI.PostBackTrigger> object, use the **UpdatePanelTrigger Collection Editor** dialog box in the designer or create a `<Triggers>` element declaratively in the <xref:System.Web.UI.UpdatePanel> control. Programmatically adding <xref:System.Web.UI.PostBackTrigger> controls is not supported.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlID">
+      <MemberSignature Language="C#" Value="public string ControlID { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ControlID" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.PostBackTrigger.ControlID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter("System.Web.UI.Design.PostBackTriggerControlIDConverter, System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the control that is an <see cref="T:System.Web.UI.PostBackTrigger" /> control for an <see cref="T:System.Web.UI.UpdatePanel" /> control.</summary>
+        <value>A string that represents a server control ID.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasTriggered">
+      <MemberSignature Language="C#" Value="protected override bool HasTriggered ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool HasTriggered() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PostBackTrigger.HasTriggered" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the trigger was activated.</summary>
+        <returns>
+          <see langword="true" /> if the trigger was activated; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control developers can override the <xref:System.Web.UI.PostBackTrigger.HasTriggered%2A> property to provide custom logic for determining whether the trigger was activated. To see your custom trigger appear at design time in the `<Triggers>` element of the <xref:System.Web.UI.UpdatePanel> control, you can add an  directive on the page or in the  section of the Web.config file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected override void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PostBackTrigger.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initializes the <see cref="T:System.Web.UI.PostBackTrigger" /> object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.PostBackTrigger.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current <see cref="T:System.Web.UI.PostBackTrigger" /> object.</summary>
+        <returns>A string that represents the current <see cref="T:System.Web.UI.PostBackTrigger" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

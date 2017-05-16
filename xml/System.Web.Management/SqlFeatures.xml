@@ -1,0 +1,150 @@
+<Type Name="SqlFeatures" FullName="System.Web.Management.SqlFeatures">
+  <TypeSignature Language="C#" Value="public enum SqlFeatures" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlFeatures extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlFeatures" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the ASP.Net features to install or remove using the methods provided by the <see cref="T:System.Web.Management.SqlServices" /> class.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration has a <xref:System.FlagsAttribute>, which means you can select two or more features by combining them with the `&` (and) operator (the `And` operator in Visual Basic).  
+  
+   
+  
+## Examples  
+ The following code example shows how to use the <xref:System.Web.Management.SqlFeatures> enumeration with the <xref:System.Web.Management.SqlServices.Install%28System.String%2CSystem.Web.Management.SqlFeatures%2CSystem.String%29> method of the <xref:System.Web.Management.SqlServices> class.  
+  
+ [!code-csharp[System.Web.Management.SqlServices#2](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.SqlServices/CS/usingsqlservices.cs#2)]
+ [!code-vb[System.Web.Management.SqlServices#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.SqlServices/VB/usingsqlservices.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures All = int32(1073741855)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All features.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Membership">
+      <MemberSignature Language="C#" Value="Membership" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures Membership = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.Membership" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The membership feature.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No features.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Personalization">
+      <MemberSignature Language="C#" Value="Personalization" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures Personalization = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.Personalization" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The personalization feature.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Profile">
+      <MemberSignature Language="C#" Value="Profile" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures Profile = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.Profile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The profile feature.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RoleManager">
+      <MemberSignature Language="C#" Value="RoleManager" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures RoleManager = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.RoleManager" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The role manager feature.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SqlWebEventProvider">
+      <MemberSignature Language="C#" Value="SqlWebEventProvider" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures SqlWebEventProvider = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.SqlWebEventProvider" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The Web event provider feature.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

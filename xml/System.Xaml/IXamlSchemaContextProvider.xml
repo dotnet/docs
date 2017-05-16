@@ -1,0 +1,52 @@
+<Type Name="IXamlSchemaContextProvider" FullName="System.Xaml.IXamlSchemaContextProvider">
+  <TypeSignature Language="C#" Value="public interface IXamlSchemaContextProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlSchemaContextProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlSchemaContextProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a service that provides XAML schema context information to type converters and markup extensions.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xaml.IXamlSchemaContextProvider> service provides one property, <xref:System.Xaml.IXamlSchemaContextProvider.SchemaContext%2A>.  
+  
+ Use the <xref:System.Xaml.IXamlSchemaContextProvider> service and its <xref:System.Xaml.IXamlSchemaContextProvider.SchemaContext%2A> property when you need the active XAML schema context from a markup extension or type converter implementation. Many XAML-related operations, most notably resolving a XAML type into its backing type for object graph creation, rely on having an available XAML schema context. However, for many scenarios, you can use the XAML schema context that is provided by a particular framework. Or you can use the default XAML schema context provided by .NET Framework XAML Services, which uses CLR and reflection backing and can provide the necessary XAML schema context for any CLR-defined type.  
+  
+ The <xref:System.Xaml.IXamlSchemaContextProvider> service is mainly relevant for implementations that anticipate that their value converter implementation might be called when it is supported by custom XAML schema contexts. You can get the service from the entry-point parameters of the virtual methods of <xref:System.ComponentModel.TypeConverter> or <xref:System.Windows.Markup.MarkupExtension> that report service context. Or you can instead get the schema context directly from dedicated properties of specific XAML readers or XAML writers.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SchemaContext">
+      <MemberSignature Language="C#" Value="public System.Xaml.XamlSchemaContext SchemaContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlSchemaContext SchemaContext" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.IXamlSchemaContextProvider.SchemaContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Xaml.XamlSchemaContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Xaml.XamlSchemaContext" /> that is reported by the service context.</summary>
+        <value>The XAML schema context that is reported by the service context.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the returned <xref:System.Xaml.XamlSchemaContext> for operations such as obtaining lists of all the types in an assembly or for obtaining specifics about assembly mapping.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

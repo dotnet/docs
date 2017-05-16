@@ -1,0 +1,82 @@
+<Type Name="MemoryProtectionScope" FullName="System.Security.Cryptography.MemoryProtectionScope">
+  <TypeSignature Language="C#" Value="public enum MemoryProtectionScope" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MemoryProtectionScope extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.MemoryProtectionScope" />
+  <AssemblyInfo>
+    <AssemblyName>System.Security</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the scope of memory protection to be applied by the <see cref="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" /> method.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used with the <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> and <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A> methods to protect data in memory.  
+  
+   
+  
+## Examples  
+ The following code example shows how to use data protection.  
+  
+ [!code-cpp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/cpp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CPP/memoryprotectionsample.cpp#1)]
+ [!code-csharp[Cryptography.MemoryProtectionSample#1](~/samples/snippets/csharp/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/CS/memoryprotectionsample.cs#1)]
+ [!code-vb[Cryptography.MemoryProtectionSample#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/Cryptography.MemoryProtectionSample/vb/memoryprotectionsample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CrossProcess">
+      <MemberSignature Language="C#" Value="CrossProcess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.MemoryProtectionScope CrossProcess = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.MemoryProtectionScope.CrossProcess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.MemoryProtectionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All code in any process can unprotect memory that was protected using the <see cref="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" /> method.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SameLogon">
+      <MemberSignature Language="C#" Value="SameLogon" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.MemoryProtectionScope SameLogon = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.MemoryProtectionScope.SameLogon" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.MemoryProtectionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only code running in the same user context as the code that called the <see cref="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" /> method can unprotect memory.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SameProcess">
+      <MemberSignature Language="C#" Value="SameProcess" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.MemoryProtectionScope SameProcess = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.MemoryProtectionScope.SameProcess" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.Cryptography.MemoryProtectionScope</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Only code running in the same process as the code that called the <see cref="M:System.Security.Cryptography.ProtectedMemory.Protect(System.Byte[],System.Security.Cryptography.MemoryProtectionScope)" /> method can unprotect memory.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

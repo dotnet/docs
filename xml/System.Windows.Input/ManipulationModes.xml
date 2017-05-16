@@ -1,0 +1,135 @@
+<Type Name="ManipulationModes" FullName="System.Windows.Input.ManipulationModes">
+  <TypeSignature Language="C#" Value="public enum ManipulationModes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ManipulationModes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationModes" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how manipulation events are interpreted.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ManipulationModes All = int32(15)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ManipulationModes.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A manipulation can scale, translate, or rotate an object and can occur with one point of input.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ManipulationModes None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ManipulationModes.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Manipulation events do not occur.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate">
+      <MemberSignature Language="C#" Value="Rotate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ManipulationModes Rotate = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ManipulationModes.Rotate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A manipulation can rotate an object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Scale">
+      <MemberSignature Language="C#" Value="Scale" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ManipulationModes Scale = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ManipulationModes.Scale" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A manipulation can scale an object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Translate">
+      <MemberSignature Language="C#" Value="Translate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ManipulationModes Translate = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ManipulationModes.Translate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A manipulation can translate an object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateX">
+      <MemberSignature Language="C#" Value="TranslateX" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ManipulationModes TranslateX = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ManipulationModes.TranslateX" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A manipulation can translate an object horizontally.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateY">
+      <MemberSignature Language="C#" Value="TranslateY" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ManipulationModes TranslateY = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.ManipulationModes.TranslateY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ManipulationModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A manipulation can translate an object vertically.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

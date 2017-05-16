@@ -84,7 +84,7 @@ An `interface` type defines a contract as a named set of public function members
 
 A `delegate` type represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are analogous to function types provided by functional languages. They are also similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
 
-Class, `struct`, `interface` and `delegate` types all support generics, whereby they can be parameterized with other types.
+The `class`, `struct`, `interface` and `delegate` types all support generics, whereby they can be parameterized with other types.
 
 An `enum` type is a distinct type with named constants. Every `enum` type has an underlying type, which must be one of the eight integral types. The set of values of an `enum` type is the same as the set of values of the underlying type.
 
@@ -96,9 +96,9 @@ C#’s type system is unified such that a value of any type can be treated as an
 
 [!code-csharp[Boxing](../../../samples/snippets/csharp/tour/types-and-variables/Program.cs#L1-L10)]
 
-When a value of a value type is converted to type `object`, an `object` instance, also called a “box”, is allocated to hold the value, and the value is copied into that box. Conversely, when an `object` reference is cast to a value type, a check is made that the referenced `object` is a box of the correct value type, and, if the check succeeds, the value in the box is copied out.
+When a value of a value type is converted to type `object`, an `object` instance, also called a "box", is allocated to hold the value, and the value is copied into that box. Conversely, when an `object` reference is cast to a value type, a check is made that the referenced `object` is a box of the correct value type, and, if the check succeeds, the value in the box is copied out.
 
-C#’s unified type system effectively means that value types can become objects “on demand.” Because of the unification, general-purpose libraries that use type `object` can be used with both reference types and value types.
+C#’s unified type system effectively means that value types can become objects "on demand." Because of the unification, general-purpose libraries that use type `object` can be used with both reference types and value types.
 
 There are several kinds of *variables* in C#, including fields, array elements, local variables, and parameters. Variables represent storage locations, and every variable has a type that determines what values can be stored in the variable, as shown below.
 
@@ -115,7 +115,7 @@ There are several kinds of *variables* in C#, including fields, array elements, 
 * Array type
     - A `null` reference, a reference to an instance of that array type, or a reference to an instance of a compatible array type
 * Delegate type
-    - A `null` reference or a reference to an instance of a compatible that delegate type
+    - A `null` reference or a reference to an instance of a compatible delegate type
 
 >[!div class="step-by-step"]
 [Previous](program-structure.md)

@@ -1,0 +1,124 @@
+<Type Name="VisualBasic" FullName="Microsoft.VisualBasic.Activities.VisualBasic">
+  <TypeSignature Language="C#" Value="public static class VisualBasic" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VisualBasic extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Activities.VisualBasic" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an attached property store for <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.VisualBasic.Activities.VisualBasic> allows for an instance of <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> to be attached to the top level activity in a workflow defined in a XAML file, thus defining the settings for all <xref:Microsoft.VisualBasic.Activities.VisualBasicReference%601> and <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> expressions in that workflow.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSettings">
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.Activities.VisualBasicSettings GetSettings (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.VisualBasic.Activities.VisualBasicSettings GetSettings(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasic.GetSettings(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Activities.VisualBasicSettings</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object to inspect.</param>
+        <summary>Retrieves the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance attached to the specified object.</summary>
+        <returns>The <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance attached to the specified object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSettings">
+      <MemberSignature Language="C#" Value="public static void SetSettings (object target, Microsoft.VisualBasic.Activities.VisualBasicSettings value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSettings(object target, class Microsoft.VisualBasic.Activities.VisualBasicSettings value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasic.SetSettings(System.Object,Microsoft.VisualBasic.Activities.VisualBasicSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="value" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object to which the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance is attached.</param>
+        <param name="value">The <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance to attach.</param>
+        <summary>Attaches a <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance to the specified object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSettingsForImplementation">
+      <MemberSignature Language="C#" Value="public static void SetSettingsForImplementation (object target, Microsoft.VisualBasic.Activities.VisualBasicSettings value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSettingsForImplementation(object target, class Microsoft.VisualBasic.Activities.VisualBasicSettings value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation(System.Object,Microsoft.VisualBasic.Activities.VisualBasicSettings)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="value" Type="Microsoft.VisualBasic.Activities.VisualBasicSettings" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object to which the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance is attached.</param>
+        <param name="value">The <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance to attach.</param>
+        <summary>Attaches a <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance to an object for use by its implementation.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation%2A> exists for the activity author who is creating a new activity in a class. Any <xref:Microsoft.VisualBasic.Activities.VisualBasicSettings> required by the new activity’s implementation should be attached to the activity in the constructor using <xref:Microsoft.VisualBasic.Activities.VisualBasic.SetSettingsForImplementation%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeSettings">
+      <MemberSignature Language="C#" Value="public static bool ShouldSerializeSettings (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShouldSerializeSettings(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasic.ShouldSerializeSettings(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The object to inspect.</param>
+        <summary>Returns a value that indicates whether the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance associated with the specified object should be serialized.</summary>
+        <returns>
+          <see langword="true" /> if the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> instance should be serialized; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

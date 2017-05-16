@@ -1,0 +1,111 @@
+<Type Name="ServiceContractImporter" FullName="System.ServiceModel.Activities.Presentation.ServiceContractImporter">
+  <TypeSignature Language="C#" Value="public static class ServiceContractImporter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ServiceContractImporter extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Presentation.ServiceContractImporter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a service contract importer.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ContractTypeViewStateKey">
+      <MemberSignature Language="C#" Value="public const string ContractTypeViewStateKey;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ContractTypeViewStateKey" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.Presentation.ServiceContractImporter.ContractTypeViewStateKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the contract type view state key.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateActivityTemplates">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder&gt; GenerateActivityTemplates (Type contractType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder&gt; GenerateActivityTemplates(class System.Type contractType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Presentation.ServiceContractImporter.GenerateActivityTemplates(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.ServiceModel.Activities.Presentation.ServiceContractImporter/&lt;GenerateActivityTemplates&gt;d__9))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contractType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="contractType">The service contract type.</param>
+        <summary>Generates a service activity templates with a specified contract type.</summary>
+        <returns>A collection of service activity templates.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveActivityTemplate">
+      <MemberSignature Language="C#" Value="public static string SaveActivityTemplate (System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder activityTemplate);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string SaveActivityTemplate(class System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder activityTemplate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Presentation.ServiceContractImporter.SaveActivityTemplate(System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activityTemplate" Type="System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="activityTemplate">The activity template to save.</param>
+        <summary>Saves an activity template from the service contract.</summary>
+        <returns>The activity template.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectContractType">
+      <MemberSignature Language="C#" Value="public static Type SelectContractType (System.Reflection.AssemblyName localAssemblyName, System.Collections.Generic.IList&lt;System.Reflection.AssemblyName&gt; referencedAssemblies, System.Activities.Presentation.EditingContext editingContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type SelectContractType(class System.Reflection.AssemblyName localAssemblyName, class System.Collections.Generic.IList`1&lt;class System.Reflection.AssemblyName&gt; referencedAssemblies, class System.Activities.Presentation.EditingContext editingContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Presentation.ServiceContractImporter.SelectContractType(System.Reflection.AssemblyName,System.Collections.Generic.IList{System.Reflection.AssemblyName},System.Activities.Presentation.EditingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Core.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="localAssemblyName" Type="System.Reflection.AssemblyName" />
+        <Parameter Name="referencedAssemblies" Type="System.Collections.Generic.IList&lt;System.Reflection.AssemblyName&gt;" />
+        <Parameter Name="editingContext" Type="System.Activities.Presentation.EditingContext" />
+      </Parameters>
+      <Docs>
+        <param name="localAssemblyName">The local assembly name.</param>
+        <param name="referencedAssemblies">The referenced assemblies.</param>
+        <param name="editingContext">The editing context.</param>
+        <summary>Retrieves a contract type with a specified local assembly name from the list of referenced assemblies.</summary>
+        <returns>The service contract type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

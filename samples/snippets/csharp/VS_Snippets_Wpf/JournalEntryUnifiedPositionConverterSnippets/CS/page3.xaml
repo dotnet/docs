@@ -1,0 +1,13 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    WindowTitle="Page3"
+    >
+    <Grid Background="LightCoral">
+        <TextBlock FontSize="40">
+            Page 3
+            <LineBreak />
+            <Hyperlink NavigateUri="HomePage.xaml">Home Page</Hyperlink>
+        </TextBlock>
+    </Grid>
+</Page>

@@ -1,0 +1,357 @@
+<Type Name="TraceContext" FullName="System.Web.TraceContext">
+  <TypeSignature Language="C#" Value="public sealed class TraceContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.TraceContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Captures and presents execution details about a Web request. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use this class to append messages to specific trace categories. For example, if you are creating an instance of the <xref:System.Web.UI.WebControls.Calendar> class for your application, you might include the trace message "Starting To Render" in a rendering procedure, and "Raising OnChange Event" in an event handler procedure.  
+  
+ You can also use the <xref:System.Web.TraceContext> class to obtain a set of trace records at the end of request execution for custom processing. For more information, see [ASP.NET Tracing Overview](http://msdn.microsoft.com/library/1552561d-887c-4002-8770-f92662cdf416).  
+  
+ To enable tracing, set the `Trace` attribute in the [@ Page](http://msdn.microsoft.com/en-us/f06cf9e5-22bb-461d-8b8f-549e53ff40a4) directive or the <xref:System.Web.TraceContext.IsEnabled%2A> property to `true`. When tracing is enabled, in addition to showing user-provided trace content, the <xref:System.Web.UI.Page> class automatically includes performance data, control-tree structure information, and state management content for every request.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TraceContext (System.Web.HttpContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.#ctor(System.Web.HttpContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="context" Type="System.Web.HttpContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">An <see cref="T:System.Web.HttpContext" /> that contains information about the current Web request.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.TraceContext" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.TraceContext.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether tracing is enabled for the current Web request.</summary>
+        <value>
+          <see langword="true" /> if tracing is enabled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this flag to check whether your page or application should output tracing information before it writes anything to the trace log.  
+  
+ The value of the <xref:System.Web.TraceContext.IsEnabled%2A> property depends on the settings in the  subsection of the `system.web` configuration section and the value of the `trace` attribute of the  directive. The tracing option set in the page directive takes precedence over the option set in the configuration file. Setting the <xref:System.Web.TraceContext.IsEnabled%2A> value programmatically takes precedence over both the page directive attribute and the configuration setting.  
+  
+> [!NOTE]
+>  If you set the <xref:System.Web.TraceContext.IsEnabled%2A> property to `true` for an entire application, you must explicitly set this property to `false` for any page in the application for which you do not want tracing information displayed.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can determine whether tracing is enabled for a page. The code iterates through the rows in a dataset, writing trace statements for each row in that dataset.  
+  
+ [!code-csharp[Classic TraceContext.IsEnabled Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TraceContext.IsEnabled Example/CS/source.cs#1)]
+ [!code-vb[Classic TraceContext.IsEnabled Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TraceContext.IsEnabled Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceFinished">
+      <MemberSignature Language="C#" Value="public event System.Web.TraceContextEventHandler TraceFinished;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Web.TraceContextEventHandler TraceFinished" />
+      <MemberSignature Language="DocId" Value="E:System.Web.TraceContext.TraceFinished" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.TraceContextEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Raised by the <see cref="T:System.Web.TraceContext" /> object to expose trace messages after all request information is gathered.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.TraceContext.TraceFinished> event is raised during the `EndRequest` stage of HTTP request processing. It is raised by a <xref:System.Web.TraceContext> object after all request information is gathered, to expose the collection of <xref:System.Web.TraceContextRecord> messages to registered <xref:System.Web.TraceContextEventHandler> delegates.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can register a <xref:System.Web.TraceContextEventHandler> to handle the <xref:System.Web.TraceContext.TraceFinished> event. In this example, the delegate iterates through the trace messages and writes them to the response stream; however, you could write the same information to a database or a profiling tool consumer.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_3#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_3/CS/form3cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_3#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_3/VB/form3vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TraceMode">
+      <MemberSignature Language="C#" Value="public System.Web.TraceMode TraceMode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.TraceMode TraceMode" />
+      <MemberSignature Language="DocId" Value="P:System.Web.TraceContext.TraceMode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.TraceMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the sorted order in which trace messages should be output to a requesting browser.</summary>
+        <value>One of the <see cref="T:System.Web.TraceMode" /> enumeration values. The default is the setting specified by the <see langword="traceMode" /> attribute in the <see langword="trace" /> section of a configuration file, whose default is <see langword="SortByTime" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Trace messages can be sorted in the order they were processed, or alphabetically by user-defined category.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how you can sort a page's trace statements alphabetically by the categories that you have assigned to the statements.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic TraceContext.TraceMode Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic TraceContext.TraceMode Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic TraceContext.TraceMode Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic TraceContext.TraceMode Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The selected value is not one of the <see cref="T:System.Web.TraceMode" /> enumeration values.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Warn">
+      <MemberSignature Language="C#" Value="public void Warn (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Warn(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Warn(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The trace message to write to the log.</param>
+        <summary>Writes a trace message to the trace log. All warnings appear in the log as red text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every time the <xref:System.Web.TraceContext.Warn%2A> method is called, a <xref:System.Web.TraceContext> trace message is added to the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> messages collection, which is accessible when you handle the <xref:System.Web.TraceContext.TraceFinished> event. The message is added with its <xref:System.Web.TraceContextRecord.IsWarning%2A> property set to `true` and its <xref:System.Web.TraceContextRecord.ErrorInfo%2A> property set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Warn">
+      <MemberSignature Language="C#" Value="public void Warn (string category, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Warn(string category, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Warn(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="category">The trace category that receives the message.</param>
+        <param name="message">The trace message to write to the log.</param>
+        <summary>Writes trace information to the trace log, including any user-defined categories and trace messages. All warnings appear in the log as red text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every time the <xref:System.Web.TraceContext.Warn%2A> method is called, a <xref:System.Web.TraceContext> trace message is added to the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> messages collection, which is accessible when you handle the <xref:System.Web.TraceContext.TraceFinished> event. The message is added with its <xref:System.Web.TraceContextRecord.IsWarning%2A> property set to `true` and its <xref:System.Web.TraceContextRecord.ErrorInfo%2A> property set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Warn">
+      <MemberSignature Language="C#" Value="public void Warn (string category, string message, Exception errorInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Warn(string category, string message, class System.Exception errorInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Warn(System.String,System.String,System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="errorInfo" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="category">The trace category that receives the message.</param>
+        <param name="message">The trace message to write to the log.</param>
+        <param name="errorInfo">An <see cref="T:System.Exception" /> that contains information about the error.</param>
+        <summary>Writes trace information to the trace log, including any user-defined categories, trace messages, and error information. All warnings appear in the log as red text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every time the <xref:System.Web.TraceContext.Warn%2A> method is called, a <xref:System.Web.TraceContext> trace message is added to the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> messages collection, which is accessible when you handle the <xref:System.Web.TraceContext.TraceFinished> event. The message is added with its <xref:System.Web.TraceContextRecord.IsWarning%2A> property set to `true`, and the <xref:System.Web.TraceContextRecord.ErrorInfo%2A> property is set to the object passed by the `errorInfo` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Web.TraceContext.Write%2A> method to write an error trace message to the trace log. In this example, different exceptions are traced as errors and warnings. When the page throws an <xref:System.ArgumentException>, it writes a warning message using the <xref:System.Web.TraceContext.Warn%2A> method. When the page throws an <xref:System.InvalidOperationException>, it writes an error message using the <xref:System.Web.TraceContext.Write%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Write(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="message">The trace message to write to the log.</param>
+        <summary>Writes a trace message to the trace log.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every time the <xref:System.Web.TraceContext.Write%2A> method is called, a <xref:System.Web.TraceContext> trace message is added to the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> messages collection, which is accessible when you handle the <xref:System.Web.TraceContext.TraceFinished> event. The message is added with its <xref:System.Web.TraceContextRecord.IsWarning%2A> property set to `false` and its <xref:System.Web.TraceContextRecord.ErrorInfo%2A> property set to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (string category, string message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string category, string message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Write(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="category">The trace category that receives the message.</param>
+        <param name="message">The trace message to write to the log.</param>
+        <summary>Writes trace information to the trace log, including a message and any user-defined categories.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every time the <xref:System.Web.TraceContext.Write%2A> method is called, a <xref:System.Web.TraceContext> trace message is added to the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> messages collection, which is accessible when you handle the <xref:System.Web.TraceContext.TraceFinished> event. The message is added with its <xref:System.Web.TraceContextRecord.IsWarning%2A> property set to `false` and its <xref:System.Web.TraceContextRecord.ErrorInfo%2A> property set to `null`.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Web.TraceContext.Write%2A> method to write an error trace message to the trace log. In this example, the delegate iterates through the trace messages and writes them as an HTML table; however, you can write the same information to a database or a profiling tool consumer.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_5#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_5/CS/form5cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_5#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_5/VB/form5vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public void Write (string category, string message, Exception errorInfo);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string category, string message, class System.Exception errorInfo) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Write(System.String,System.String,System.Exception)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="errorInfo" Type="System.Exception" />
+      </Parameters>
+      <Docs>
+        <param name="category">The trace category that receives the message.</param>
+        <param name="message">The trace message to write to the log.</param>
+        <param name="errorInfo">An <see cref="T:System.Exception" /> that contains information about the error.</param>
+        <summary>Writes trace information to the trace log, including any user-defined categories, trace messages, and error information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Every time the <xref:System.Web.TraceContext.Write%2A> method is called, a <xref:System.Web.TraceContext> trace message is added to the <xref:System.Web.TraceContextEventArgs.TraceRecords%2A> messages collection, which is accessible when you handle the <xref:System.Web.TraceContext.TraceFinished> event. The message is added with its <xref:System.Web.TraceContextRecord.IsWarning%2A> property set to `false`, and the <xref:System.Web.TraceContextRecord.ErrorInfo%2A> property is set to the object passed by the `errorInfo` parameter.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to call the <xref:System.Web.TraceContext.Write%2A> method to write an error trace message to the trace log. In this example, different exceptions are traced as errors and warnings. When the page throws an <xref:System.ArgumentException>, it writes a warning message using the <xref:System.Web.TraceContext.Warn%2A> method. When the page throws an <xref:System.InvalidOperationException>, it writes an error message using the <xref:System.Web.TraceContext.Write%2A> method.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.Trace_4#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Trace_4/CS/form4cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.Trace_4#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Trace_4/VB/form4vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

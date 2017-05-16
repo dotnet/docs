@@ -1,0 +1,127 @@
+<Type Name="EntityTemplateFactory" FullName="System.Web.DynamicData.EntityTemplateFactory">
+  <TypeSignature Language="C#" Value="public class EntityTemplateFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityTemplateFactory extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.EntityTemplateFactory" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DynamicData</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Creates an entity template.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.EntityTemplateFactory> class is used at run time by Dynamic Data to get an instance of an entity template for a table. Entity templates are user controls that apply to a whole table row instead of a single data field, as with field templates. The entity templates are displayed on a page by using the <xref:System.Web.DynamicData.DynamicEntity> class. They use field templates to display values from the data model.  
+  
+ Dynamic Data provides default entity templates that are found in the ~\DynamicData\EntityTemplates folder. You can modify these default entity templates or create custom ones to change the appearance and behavior for a table. There are templates for display, edit, and insert operations.  
+  
+   
+  
+## Examples  
+ For an example of how to use entity templates, see [Walkthrough: Customizing Table Layout Using Entity Templates](http://msdn.microsoft.com/library/03d33a22-d3c0-41df-a717-82ce86329a08).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntityTemplateFactory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateFactory.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.EntityTemplateFactory" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildEntityTemplateVirtualPath">
+      <MemberSignature Language="C#" Value="public virtual string BuildEntityTemplateVirtualPath (string templateName, System.Web.UI.WebControls.DataBoundControlMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string BuildEntityTemplateVirtualPath(string templateName, valuetype System.Web.UI.WebControls.DataBoundControlMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateFactory.BuildEntityTemplateVirtualPath(System.String,System.Web.UI.WebControls.DataBoundControlMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="templateName" Type="System.String" />
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
+      </Parameters>
+      <Docs>
+        <param name="templateName">The name of the entity template for which to build the path.</param>
+        <param name="mode">The display mode of the entity template.</param>
+        <summary>Builds the path of the entity template for the specified table.</summary>
+        <returns>The path of the entity template for the specified table.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="templateName" /> is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateEntityTemplate">
+      <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.EntityTemplateUserControl CreateEntityTemplate (System.Web.DynamicData.MetaTable table, System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.DynamicData.EntityTemplateUserControl CreateEntityTemplate(class System.Web.DynamicData.MetaTable table, valuetype System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateFactory.CreateEntityTemplate(System.Web.DynamicData.MetaTable,System.Web.UI.WebControls.DataBoundControlMode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.DynamicData.EntityTemplateUserControl</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" />
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
+        <Parameter Name="uiHint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">The metadata for the table to which the entity template applies.</param>
+        <param name="mode">The display mode of the entity template.</param>
+        <param name="uiHint">The name of the template to use.</param>
+        <summary>Creates an instance of the entity template for the specified table.</summary>
+        <returns>An instance of the <see cref="T:System.Web.DynamicData.EntityTemplateUserControl" /> class.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The table is **null**.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEntityTemplateVirtualPath">
+      <MemberSignature Language="C#" Value="public virtual string GetEntityTemplateVirtualPath (System.Web.DynamicData.MetaTable table, System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetEntityTemplateVirtualPath(class System.Web.DynamicData.MetaTable table, valuetype System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateFactory.GetEntityTemplateVirtualPath(System.Web.DynamicData.MetaTable,System.Web.UI.WebControls.DataBoundControlMode,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.Web.DynamicData.MetaTable" />
+        <Parameter Name="mode" Type="System.Web.UI.WebControls.DataBoundControlMode" />
+        <Parameter Name="uiHint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="table">The metadata for the table to which the entity template applies.</param>
+        <param name="mode">The display mode of the entity template.</param>
+        <param name="uiHint">The name of the template to use.</param>
+        <summary>Gets the virtual path of the entity template for the specified table.</summary>
+        <returns>The virtual path of the entity template for the specified table.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">The table is **null**.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

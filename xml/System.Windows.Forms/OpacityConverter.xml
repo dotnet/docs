@@ -1,0 +1,178 @@
+<Type Name="OpacityConverter" FullName="System.Windows.Forms.OpacityConverter">
+  <TypeSignature Language="C#" Value="public class OpacityConverter : System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OpacityConverter extends System.ComponentModel.TypeConverter" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.OpacityConverter" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.TypeConverter</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a type converter to convert opacity values to and from a string.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Typically, you do not directly create an instance of an <xref:System.Windows.Forms.OpacityConverter>. Instead, you call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of <xref:System.ComponentModel.TypeDescriptor> class. For more information about type converters and to view code examples, see the <xref:System.ComponentModel.TypeConverter> base class and [How to: Implement a Type Converter](http://msdn.microsoft.com/library/90373a3f-d8c8-492d-841c-945d62393c56).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OpacityConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OpacityConverter.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.OpacityConverter" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is the default constructor supplied by the compiler.  
+  
+ Typically, you do not directly create an instance of an <xref:System.Windows.Forms.OpacityConverter>. Instead, call the <xref:System.ComponentModel.TypeDescriptor.GetConverter%2A> method of <xref:System.ComponentModel.TypeDescriptor> class. For more information, see the code examples in the <xref:System.ComponentModel.TypeConverter> base class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanConvertFrom">
+      <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OpacityConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="sourceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides information about the context of a type converter.</param>
+        <param name="sourceType">The <see cref="T:System.Type" /> that represents the type you want to convert from.</param>
+        <summary>Returns a value indicating whether this converter can convert an object of the specified source type to the native type of the converter that uses the specified context.</summary>
+        <returns>
+          <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `sourceType` is expected to be a <xref:System.String>.  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide your own conversion requirements.  
+  
+ You can use the <paramref name="context" /> parameter to extract additional information about the environment this converter is being invoked from. The parameter may be <see langword="null" />, so you should always verify the contents. Also, properties on the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> may also return <see langword="null" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertFrom">
+      <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OpacityConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides information about the context of a type converter.</param>
+        <param name="culture">The locale information for the conversion.</param>
+        <param name="value">The object to convert.</param>
+        <summary>Converts the specified object to the converter's native type.</summary>
+        <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.OpacityConverter.ConvertFrom%2A> method is specialized to convert <xref:System.String> values that represent percentages or decimal fractions to their corresponding <xref:System.Double> values, which represent the opacity as a percentage. Types other than <xref:System.String> are passed to the base class implementation of this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">The object was not a supported type for the conversion.</exception>
+        <exception cref="T:System.FormatException">
+          <paramref name="value" /> could not be properly converted to type <see cref="T:System.Double" />.  
+  
+ -or-  
+  
+ The resulting converted <paramref name="value" /> was less than zero percent or greater than one hundred percent.</exception>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide your own conversion requirements.  
+  
+ You can use the <paramref name="context" /> parameter to extract additional information about the environment this converter is being invoked from. The parameter may be <see langword="null" />, so you should always verify the contents. Also, properties on the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> may also return <see langword="null" />.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertTo">
+      <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.OpacityConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides information about the context of a type converter.</param>
+        <param name="culture">The locale information for the conversion.</param>
+        <param name="value">The value to convert.</param>
+        <param name="destinationType">The type to convert the object to.</param>
+        <summary>Converts from the converter's native type to a value of the destination type.</summary>
+        <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.OpacityConverter.ConvertTo%2A> method is specialized to convert integral values to their <xref:System.String> percentage representations. Other types are passed to the base class implementation of this method.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destinationType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.NotSupportedException">
+          <paramref name="value" /> cannot be converted to the <paramref name="destinationType" />.</exception>
+        <block subset="none" type="overrides">
+          <para>Override this method to provide your own conversion requirements.  
+  
+ You can use the <paramref name="context" /> parameter to extract additional information about the environment this converter is being invoked from. The parameter may be <see langword="null" />, so you should always verify the contents. Also, properties on the <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> may also return <see langword="null" />.  
+  
+ The resultant object is a <see cref="T:System.String" /> representing the percentage of opacity.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

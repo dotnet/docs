@@ -1,0 +1,151 @@
+<Type Name="FormBorderStyle" FullName="System.Windows.Forms.FormBorderStyle">
+  <TypeSignature Language="C#" Value="public enum FormBorderStyle" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormBorderStyle extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormBorderStyle" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the border styles for a form.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Forms.Form> class. It represents the different styles of the form. The default style is `Sizable`.  
+  
+   
+  
+## Examples  
+ In this example, you change the form border style to `Fixed3d` and display the border's information using a label. This example assumes that you have already created a <xref:System.Windows.Forms.Form> named `Form1`.  
+  
+ [!code-cpp[FormBorderStyle#1](~/samples/snippets/cpp/VS_Snippets_Winforms/FormBorderStyle/CPP/form1.cpp#1)]
+ [!code-csharp[FormBorderStyle#1](~/samples/snippets/csharp/VS_Snippets_Winforms/FormBorderStyle/CS/form1.cs#1)]
+ [!code-vb[FormBorderStyle#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/FormBorderStyle/VB/form1.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Fixed3D">
+      <MemberSignature Language="C#" Value="Fixed3D" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle Fixed3D = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.Fixed3D" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A fixed, three-dimensional border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedDialog">
+      <MemberSignature Language="C#" Value="FixedDialog" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle FixedDialog = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.FixedDialog" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A thick, fixed dialog-style border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedSingle">
+      <MemberSignature Language="C#" Value="FixedSingle" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle FixedSingle = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.FixedSingle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A fixed, single-line border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="FixedToolWindow">
+      <MemberSignature Language="C#" Value="FixedToolWindow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle FixedToolWindow = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.FixedToolWindow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A tool window border that is not resizable. A tool window does not appear in the taskbar or in the window that appears when the user presses ALT+TAB. Although forms that specify <see cref="F:System.Windows.Forms.FormBorderStyle.FixedToolWindow" /> typically are not shown in the taskbar, you must also ensure that the <see cref="P:System.Windows.Forms.Form.ShowInTaskbar" /> property is set to <see langword="false" />, since its default value is <see langword="true" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Sizable">
+      <MemberSignature Language="C#" Value="Sizable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle Sizable = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.Sizable" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A resizable border.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SizableToolWindow">
+      <MemberSignature Language="C#" Value="SizableToolWindow" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormBorderStyle SizableToolWindow = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormBorderStyle.SizableToolWindow" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A resizable tool window border. A tool window does not appear in the taskbar or in the window that appears when the user presses ALT+TAB.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

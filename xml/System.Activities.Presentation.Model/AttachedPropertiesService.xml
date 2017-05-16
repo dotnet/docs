@@ -1,0 +1,55 @@
+<Type Name="AttachedPropertiesService" FullName="System.Activities.Presentation.Model.AttachedPropertiesService">
+  <TypeSignature Language="C#" Value="public class AttachedPropertiesService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AttachedPropertiesService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.AttachedPropertiesService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Attaches properties to the current instance.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttachedPropertiesService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.AttachedPropertiesService.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Model.AttachedPropertiesService" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddProperty">
+      <MemberSignature Language="C#" Value="public void AddProperty (System.Activities.Presentation.Model.AttachedProperty property);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddProperty(class System.Activities.Presentation.Model.AttachedProperty property) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.AttachedPropertiesService.AddProperty(System.Activities.Presentation.Model.AttachedProperty)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="property" Type="System.Activities.Presentation.Model.AttachedProperty" />
+      </Parameters>
+      <Docs>
+        <param name="property">The property to add.</param>
+        <summary>Adds the specified property to the properties of the current instance.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,156 @@
+<Type Name="Port" FullName="System.Web.Services.Description.Port">
+  <TypeSignature Language="C#" Value="public sealed class Port : System.Web.Services.Description.NamedItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Port extends System.Web.Services.Description.NamedItem" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Port" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.NamedItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtensionPoint("Extensions")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines an individual endpoint contained in the XML Web service. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class specifies a single address (URI) for a <xref:System.Web.Services.Description.Binding>, which defines message format and protocol details for operations and messages for a given <xref:System.Web.Services.Description.PortType>. The <xref:System.Web.Services.Description.Port.Binding%2A> property gets or sets those values for a specified `Port`.  
+  
+ This class corresponds to the Web Services Description Language (WSDL) `<port>` element, which is enclosed by the `<service>` element. For more information about WSDL, see the specification at http://www.w3.org/TR/wsdl.  
+  
+   
+  
+## Examples  
+ The following examples creates a <xref:System.Web.Services.Description.Port> and adds it to the <xref:System.Web.Services.Description.Service.Ports%2A> collection of an existing <xref:System.Web.Services.Description.ServiceDescription> named `myDescription`.  
+  
+ [!code-cpp[PortClass#1](~/samples/snippets/cpp/VS_Snippets_Remoting/PortClass/CPP/portclass.cpp#1)]
+ [!code-csharp[PortClass#1](~/samples/snippets/csharp/VS_Snippets_Remoting/PortClass/CS/portclass.cs#1)]
+ [!code-vb[PortClass#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortClass/VB/portclass.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Port ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Port.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.Port" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Binding">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName Binding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName Binding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Port.Binding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("binding")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the XML <see langword="&lt;binding&gt;" /> attribute of the <see cref="T:System.Web.Services.Description.Port" />.</summary>
+        <value>The value of the XML binding.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A binding defines message format and protocol details for operations and messages for a <xref:System.Web.Services.Description.PortType>. This property gets or sets those values for a specific `Port`.  
+  
+   
+  
+## Examples  
+ [!code-cpp[PortClass#2](~/samples/snippets/cpp/VS_Snippets_Remoting/PortClass/CPP/portclass.cpp#2)]
+ [!code-csharp[PortClass#2](~/samples/snippets/csharp/VS_Snippets_Remoting/PortClass/CS/portclass.cs#2)]
+ [!code-vb[PortClass#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortClass/VB/portclass.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extensions">
+      <MemberSignature Language="C#" Value="public override System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection Extensions" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Port.Extensions" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.ServiceDescriptionFormatExtensionCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of extensibility elements associated with the <see cref="T:System.Web.Services.Description.Port" />.</summary>
+        <value>The collection of extensibility elements associated with the port.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[PortClass#3](~/samples/snippets/cpp/VS_Snippets_Remoting/PortClass/CPP/portclass.cpp#3)]
+ [!code-csharp[PortClass#3](~/samples/snippets/csharp/VS_Snippets_Remoting/PortClass/CS/portclass.cs#3)]
+ [!code-vb[PortClass#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/PortClass/VB/portclass.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Service">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.Service Service { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Service Service" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Port.Service" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.Service</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Web.Services.Description.Service" /> of which the <see cref="T:System.Web.Services.Description.Port" /> is a member.</summary>
+        <value>The <see cref="T:System.Web.Services.Description.Service" /> of which the <see cref="T:System.Web.Services.Description.Port" /> is a member.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ PortClass#5  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

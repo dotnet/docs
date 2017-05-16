@@ -1,0 +1,90 @@
+<Type Name="ICertificateValidator" FullName="Mono.Security.Interface.ICertificateValidator">
+  <TypeSignature Language="C#" Value="public interface ICertificateValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICertificateValidator" />
+  <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.ICertificateValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="SelectClientCertificate">
+      <MemberSignature Language="C#" Value="public bool SelectClientCertificate (string targetHost, System.Security.Cryptography.X509Certificates.X509CertificateCollection localCertificates, System.Security.Cryptography.X509Certificates.X509Certificate remoteCertificate, string[] acceptableIssuers, out System.Security.Cryptography.X509Certificates.X509Certificate clientCertificate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SelectClientCertificate(string targetHost, class System.Security.Cryptography.X509Certificates.X509CertificateCollection localCertificates, class System.Security.Cryptography.X509Certificates.X509Certificate remoteCertificate, string[] acceptableIssuers, class System.Security.Cryptography.X509Certificates.X509Certificate clientCertificate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.ICertificateValidator.SelectClientCertificate(System.String,System.Security.Cryptography.X509Certificates.X509CertificateCollection,System.Security.Cryptography.X509Certificates.X509Certificate,System.String[],System.Security.Cryptography.X509Certificates.X509Certificate@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetHost" Type="System.String" />
+        <Parameter Name="localCertificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" />
+        <Parameter Name="remoteCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate" />
+        <Parameter Name="acceptableIssuers" Type="System.String[]" />
+        <Parameter Name="clientCertificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="targetHost">To be added.</param>
+        <param name="localCertificates">To be added.</param>
+        <param name="remoteCertificate">To be added.</param>
+        <param name="acceptableIssuers">To be added.</param>
+        <param name="clientCertificate">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Settings">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.MonoTlsSettings Settings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Mono.Security.Interface.MonoTlsSettings Settings" />
+      <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.ICertificateValidator.Settings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.MonoTlsSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateCertificate">
+      <MemberSignature Language="C#" Value="public Mono.Security.Interface.ValidationResult ValidateCertificate (string targetHost, bool serverMode, System.Security.Cryptography.X509Certificates.X509CertificateCollection certificates);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Mono.Security.Interface.ValidationResult ValidateCertificate(string targetHost, bool serverMode, class System.Security.Cryptography.X509Certificates.X509CertificateCollection certificates) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.ICertificateValidator.ValidateCertificate(System.String,System.Boolean,System.Security.Cryptography.X509Certificates.X509CertificateCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Mono.Security.Interface.ValidationResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="targetHost" Type="System.String" />
+        <Parameter Name="serverMode" Type="System.Boolean" />
+        <Parameter Name="certificates" Type="System.Security.Cryptography.X509Certificates.X509CertificateCollection" />
+      </Parameters>
+      <Docs>
+        <param name="targetHost">To be added.</param>
+        <param name="serverMode">To be added.</param>
+        <param name="certificates">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,10 +1,10 @@
 ---
-title: dotnet-run command | Microsoft Docs
+title: dotnet-run command - .NET Core CLI | Microsoft Docs
 description: The dotnet-run command provides a convenient option to run your application from the source code.
 keywords: dotnet-run, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -58,9 +58,12 @@ Configuration to use for building the project. The default value is `Debug`.
 
 Builds and runs the app using the specified [framework](../../standard/frameworks.md). The framework must be specified in the project file.
 
-`-p|--project <PATH>`
+`-p|--project <PATH/PROJECT.csproj>`
 
-Specifies the path to the project file. It can be a path to a [csproj](csproj.md) file or to a directory containing a [csproj](csproj.md) file. It defaults to current directory if not specified. 
+Specifies the path and name of the project file. (See the NOTE.) It defaults to the current directory if not specified.
+
+> [!NOTE]
+> Use the path and name of the project file with the `-p|--project` option. A regression in the CLI prevents providing a folder path at this time. For more information and to track this issue, see [dotnet run -p, can not start a project (dotnet/cli #5992)](https://github.com/dotnet/cli/issues/5992).
 
 ## Examples
 

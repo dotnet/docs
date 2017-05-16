@@ -1,0 +1,217 @@
+<Type Name="CheckBoxState" FullName="System.Windows.Forms.VisualStyles.CheckBoxState">
+  <TypeSignature Language="C#" Value="public enum CheckBoxState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CheckBoxState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.CheckBoxState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the visual state of a check box that is drawn with visual styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.CheckBoxState> values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Button.CheckBox> class. The <xref:System.Windows.Forms.VisualStyles.CheckBoxState> values are also used as an argument in the <xref:System.Windows.Forms.CheckBoxRenderer.DrawCheckBox%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CheckedDisabled">
+      <MemberSignature Language="C#" Value="CheckedDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState CheckedDisabled = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is checked and disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckedHot">
+      <MemberSignature Language="C#" Value="CheckedHot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState CheckedHot = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedHot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is checked and hot.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckedNormal">
+      <MemberSignature Language="C#" Value="CheckedNormal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState CheckedNormal = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedNormal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is checked.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckedPressed">
+      <MemberSignature Language="C#" Value="CheckedPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState CheckedPressed = int32(7)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.CheckedPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is checked and pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MixedDisabled">
+      <MemberSignature Language="C#" Value="MixedDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState MixedDisabled = int32(12)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is three-state and disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MixedHot">
+      <MemberSignature Language="C#" Value="MixedHot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState MixedHot = int32(10)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedHot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is three-state and hot.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MixedNormal">
+      <MemberSignature Language="C#" Value="MixedNormal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState MixedNormal = int32(9)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedNormal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is three-state.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MixedPressed">
+      <MemberSignature Language="C#" Value="MixedPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState MixedPressed = int32(11)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.MixedPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is three-state and pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UncheckedDisabled">
+      <MemberSignature Language="C#" Value="UncheckedDisabled" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState UncheckedDisabled = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedDisabled" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is unchecked and disabled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UncheckedHot">
+      <MemberSignature Language="C#" Value="UncheckedHot" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState UncheckedHot = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedHot" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is unchecked and hot.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UncheckedNormal">
+      <MemberSignature Language="C#" Value="UncheckedNormal" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState UncheckedNormal = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedNormal" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is unchecked.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UncheckedPressed">
+      <MemberSignature Language="C#" Value="UncheckedPressed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.CheckBoxState UncheckedPressed = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.CheckBoxState.UncheckedPressed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.CheckBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The check box is unchecked and pressed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

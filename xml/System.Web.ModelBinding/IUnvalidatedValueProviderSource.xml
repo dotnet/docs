@@ -1,0 +1,39 @@
+<Type Name="IUnvalidatedValueProviderSource" FullName="System.Web.ModelBinding.IUnvalidatedValueProviderSource">
+  <TypeSignature Language="C#" Value="public interface IUnvalidatedValueProviderSource : System.Web.ModelBinding.IValueProviderSource" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUnvalidatedValueProviderSource implements class System.Web.ModelBinding.IValueProviderSource" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.IUnvalidatedValueProviderSource" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.ModelBinding.IValueProviderSource</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines the methods that are required for a value provider that supports skipping request validation.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ValidateInput">
+      <MemberSignature Language="C#" Value="public bool ValidateInput { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ValidateInput" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.IUnvalidatedValueProviderSource.ValidateInput" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the provider validates input.</summary>
+        <value>
+          <see langword="true" /> if the provider validates input; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

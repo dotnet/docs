@@ -24,7 +24,7 @@ Core has a more relaxed pattern. In this version, the
 This increases flexibility for you, and is backwards compatible. Let's
 start with the flexibility. The class System.EventArgs introduces one
 method: `MemberwiseClone()`, which creates a shallow copy of the object.
-That method must use [reflection](reflection.md) in order to implement
+That method must use reflection in order to implement
 its functionality for any class derived from `EventArgs`. That
 functionality is easier to create in a specific derived class. That
 effectively means that deriving from System.EventArgs is a constraint
@@ -36,7 +36,7 @@ The program will work exactly the same.
 You could also change the `SearchDirectoryArgs` to a struct, if you
 also make one more change:
 
-```cs  
+```csharp  
 internal struct SearchDirectoryArgs  
 {  
     internal string CurrentSearchDirectory { get; }  
@@ -92,7 +92,7 @@ You need to reconcile this opposing guidance. Somehow, you must
 create a safe `async void` method. The basics of the pattern you need
 to implement are below:
 
-```cs
+```csharp
 worker.StartWorking += async (sender, eventArgs) =>
 {
     try 

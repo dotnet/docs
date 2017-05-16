@@ -1,0 +1,425 @@
+<Type Name="IncomingWebRequestContext" FullName="System.ServiceModel.Web.IncomingWebRequestContext">
+  <TypeSignature Language="C#" Value="public class IncomingWebRequestContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IncomingWebRequestContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.IncomingWebRequestContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides programmatic access to the context of the incoming Web request.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Accept">
+      <MemberSignature Language="C#" Value="public string Accept { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Accept" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebRequestContext.Accept" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="Accept" /> header value from the incoming Web request.</summary>
+        <value>The <see langword="Accept" /> header from the incoming Web request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckConditionalRetrieve">
+      <MemberSignature Language="C#" Value="public void CheckConditionalRetrieve (DateTime lastModified);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckConditionalRetrieve(valuetype System.DateTime lastModified) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve(System.DateTime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lastModified" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="lastModified">The time at which the resource was last modified.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckConditionalRetrieve">
+      <MemberSignature Language="C#" Value="public void CheckConditionalRetrieve (Guid entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckConditionalRetrieve(valuetype System.Guid entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">An entity tag.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckConditionalRetrieve">
+      <MemberSignature Language="C#" Value="public void CheckConditionalRetrieve (int entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckConditionalRetrieve(int32 entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">An entity tag.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckConditionalRetrieve">
+      <MemberSignature Language="C#" Value="public void CheckConditionalRetrieve (long entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckConditionalRetrieve(int64 entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckConditionalRetrieve">
+      <MemberSignature Language="C#" Value="public void CheckConditionalRetrieve (string entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckConditionalRetrieve(string entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalRetrieve(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckConditionalUpdate">
+      <MemberSignature Language="C#" Value="public void CheckConditionalUpdate (Guid entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckConditionalUpdate(valuetype System.Guid entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(System.Guid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional receive request is made for a resource.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckConditionalUpdate">
+      <MemberSignature Language="C#" Value="public void CheckConditionalUpdate (int entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckConditionalUpdate(int32 entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional update request is made for a resource.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckConditionalUpdate">
+      <MemberSignature Language="C#" Value="public void CheckConditionalUpdate (long entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckConditionalUpdate(int64 entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(System.Int64)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional update request is made for a resource.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckConditionalUpdate">
+      <MemberSignature Language="C#" Value="public void CheckConditionalUpdate (string entityTag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckConditionalUpdate(string entityTag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.IncomingWebRequestContext.CheckConditionalUpdate(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entityTag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="entityTag">The entity tag.</param>
+        <summary>Called when a conditional update request is made for a resource.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentLength">
+      <MemberSignature Language="C#" Value="public long ContentLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebRequestContext.ContentLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="ContentLength" /> header value of the incoming Web request.</summary>
+        <value>The  <see langword="ContentLength" /> header of the incoming Web request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentType">
+      <MemberSignature Language="C#" Value="public string ContentType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebRequestContext.ContentType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="ContentType" /> header value from the incoming Web request.</summary>
+        <value>The <see langword="ContentType" /> header from the incoming Web request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAcceptHeaderElements">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Net.Mime.ContentType&gt; GetAcceptHeaderElements ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Net.Mime.ContentType&gt; GetAcceptHeaderElements() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Web.IncomingWebRequestContext.GetAcceptHeaderElements" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.Net.Mime.ContentType&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a collection of the <see langword="Accept" /> header elements.</summary>
+        <returns>A collection of the <see langword="Accept" /> header elements.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Headers">
+      <MemberSignature Language="C#" Value="public System.Net.WebHeaderCollection Headers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebRequestContext.Headers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.WebHeaderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the headers for the incoming Web request.</summary>
+        <value>A <see cref="T:System.Net.WebHeaderCollection" /> instance that contains the headers of the incoming Web request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfMatch">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; IfMatch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; IfMatch" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebRequestContext.IfMatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of the items contained in the requests <see langword="If-Match" /> header.</summary>
+        <value>A collection of items contained in the requests <see langword="If-Match" /> header.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfModifiedSince">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; IfModifiedSince { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; IfModifiedSince" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebRequestContext.IfModifiedSince" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the request’s <see langword="If-Modified-Since" /> header.</summary>
+        <value>The request’s <see langword="If-Modified-Since" /> header value.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfNoneMatch">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; IfNoneMatch { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; IfNoneMatch" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebRequestContext.IfNoneMatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the values contained in the request’s <see langword="If-None-Match" /> header.</summary>
+        <value>The values contained in the request’s <see langword="If-None-Match" /> header.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IfUnmodifiedSince">
+      <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; IfUnmodifiedSince { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; IfUnmodifiedSince" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebRequestContext.IfUnmodifiedSince" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.DateTime&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the value of the request’s <see langword="If-Unmatched-Since" /> header.</summary>
+        <value>The request’s <see langword="If-Unmatched-Since" /> header..</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Method">
+      <MemberSignature Language="C#" Value="public string Method { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Method" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebRequestContext.Method" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the HTTP method of the incoming Web request.</summary>
+        <value>The HTTP method of the incoming Web request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UriTemplateMatch">
+      <MemberSignature Language="C#" Value="public UriTemplateMatch UriTemplateMatch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.UriTemplateMatch UriTemplateMatch" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebRequestContext.UriTemplateMatch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UriTemplateMatch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the <see cref="T:System.UriTemplateMatch" /> instance created during the dispatch of the incoming Web request.</summary>
+        <value>A <see cref="T:System.UriTemplateMatch" /> instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserAgent">
+      <MemberSignature Language="C#" Value="public string UserAgent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string UserAgent" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.IncomingWebRequestContext.UserAgent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see langword="UserAgent" /> header value from the incoming Web request.</summary>
+        <value>The <see langword="UserAgent" /> header from the incoming Web request.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

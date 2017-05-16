@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "procedures, parameter lists"
 ms.assetid: 5d737319-0c34-4df9-a23d-188fc840becd
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -45,8 +45,8 @@ Specifies the parameters a procedure expects when it is called. Multiple paramet
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ Optional ] [{ ByVal | ByRef }] [ ParamArray ]   
-parametername[( )] [ As parametertype ] [ = defaultvalue ]  
+[ <attributelist> ] [ Optional ] [{ ByVal | ByRef }] [ ParamArray ]   
+parametername[( )] [ As parametertype ] [ = defaultvalue ]  
 ```  
   
 ## Parts  

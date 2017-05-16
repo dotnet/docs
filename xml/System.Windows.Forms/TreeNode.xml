@@ -1,0 +1,2118 @@
+<Type Name="TreeNode" FullName="System.Windows.Forms.TreeNode">
+  <TypeSignature Language="C#" Value="public class TreeNode : MarshalByRefObject, ICloneable, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TreeNode extends System.MarshalByRefObject implements class System.ICloneable, class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeNode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.MarshalByRefObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ICloneable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DefaultProperty("Text")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.TreeNodeConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a node of a <see cref="T:System.Windows.Forms.TreeView" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.Nodes%2A> collection holds all the child <xref:System.Windows.Forms.TreeNode> objects assigned to the current <xref:System.Windows.Forms.TreeNode>. You can add, remove, or clone a <xref:System.Windows.Forms.TreeNode>; when you do this, all child tree nodes are added, removed, or cloned. Each <xref:System.Windows.Forms.TreeNode> can contain a collection of other <xref:System.Windows.Forms.TreeNode> objects. This can make it difficult to determine where you are in the <xref:System.Windows.Forms.TreeView> when iterating through the collection. To determine your location in a tree structure, use the <xref:System.Windows.Forms.TreeNode.FullPath%2A> property. The <xref:System.Windows.Forms.TreeNode.FullPath%2A> string can be parsed using the <xref:System.Windows.Forms.TreeView.PathSeparator%2A> string value to determine where a <xref:System.Windows.Forms.TreeNode> label begins and ends.  
+  
+ The <xref:System.Windows.Forms.TreeNode> label is set by setting the <xref:System.Windows.Forms.TreeNode.Text%2A> property explicitly. The alternative is to create the tree node using one of the <xref:System.Windows.Forms.TreeNode.%23ctor%2A> constructors that has a string parameter that represents the <xref:System.Windows.Forms.TreeNode.Text%2A> property. The label is displayed next to the <xref:System.Windows.Forms.TreeNode> image, if one is displayed.  
+  
+ To display images next to the tree nodes, assign an <xref:System.Windows.Forms.ImageList> to the <xref:System.Windows.Forms.TreeView.ImageList%2A> property of the parent <xref:System.Windows.Forms.TreeView> control and assign an <xref:System.Drawing.Image> by referencing its index value in the <xref:System.Windows.Forms.ImageList> property. Set the <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> property to the index value of the <xref:System.Drawing.Image> you want to display when the <xref:System.Windows.Forms.TreeNode> is in an unselected state. Likewise, set the <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> property to the index value of the <xref:System.Drawing.Image> you want to display when the <xref:System.Windows.Forms.TreeNode> is selected.  
+  
+ Selecting specific tree nodes and iterating through the <xref:System.Windows.Forms.TreeView.Nodes%2A> collection can be achieved by using the following property values: <xref:System.Windows.Forms.TreeNode.FirstNode%2A>, <xref:System.Windows.Forms.TreeNode.LastNode%2A>, <xref:System.Windows.Forms.TreeNode.NextNode%2A>, <xref:System.Windows.Forms.TreeNode.PrevNode%2A>, <xref:System.Windows.Forms.TreeNode.NextVisibleNode%2A>, <xref:System.Windows.Forms.TreeNode.PrevVisibleNode%2A>. Assign the <xref:System.Windows.Forms.TreeNode> returned by one of aforementioned properties to the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=fullName> property to select that tree node in the <xref:System.Windows.Forms.TreeView> control.  
+  
+ Tree nodes can be expanded to display the next level of child tree nodes. The user can expand the <xref:System.Windows.Forms.TreeNode> by pressing the plus (+) button next to the <xref:System.Windows.Forms.TreeNode>, if one is displayed, or you can expand the <xref:System.Windows.Forms.TreeNode> by calling the <xref:System.Windows.Forms.TreeNode.Expand%2A> method. To expand all child tree node levels in the <xref:System.Windows.Forms.TreeNode.Nodes%2A> collection, call the <xref:System.Windows.Forms.TreeNode.ExpandAll%2A> method. You can collapse the child <xref:System.Windows.Forms.TreeNode> level by calling the <xref:System.Windows.Forms.TreeNode.Collapse%2A> method, or the user can press the minus (-) button next to the <xref:System.Windows.Forms.TreeNode>, if one is displayed. You can also call the <xref:System.Windows.Forms.TreeNode.Toggle%2A> method to alternate the <xref:System.Windows.Forms.TreeNode> between the expanded and collapsed states.  
+  
+ Tree nodes can optionally display a check box. To display the check boxes, set the <xref:System.Windows.Forms.TreeView.CheckBoxes%2A> property of the <xref:System.Windows.Forms.TreeView> to `true`. The <xref:System.Windows.Forms.TreeNode.Checked%2A> property is set to `true` for tree nodes that are in a checked state.  
+  
+   
+  
+## Examples  
+ The following code example displays customer information in a <xref:System.Windows.Forms.TreeView> control. The root tree nodes display customer names, and the child tree nodes display the order numbers assigned to each customer. In this example, 1,000 customers are displayed with 15 orders each. The repainting of the <xref:System.Windows.Forms.TreeView> is suppressed by using the <xref:System.Windows.Forms.TreeView.BeginUpdate%2A> and <xref:System.Windows.Forms.TreeView.EndUpdate%2A> methods, and a wait <xref:System.Windows.Forms.Cursor> is displayed while the <xref:System.Windows.Forms.TreeView> creates and paints the <xref:System.Windows.Forms.TreeNode> objects. This example requires that you have a `Customer` object that can hold a collection of `Order` objects. It also requires that you have created an instance of a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[TreeView#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeView/CPP/treeview.cpp#1)]
+ [!code-csharp[TreeView#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeView/CS/treeview.cs#1)]
+ [!code-vb[TreeView#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeView/VB/treeview.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TreeNode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a root tree node to assign child tree nodes to. A child tree node for each `Customer` object in an <xref:System.Collections.ArrayList> is added to the root tree node as well as a child tree node for each `Order` object assigned to the `Customer` object. The `Customer` object is assigned to the <xref:System.Windows.Forms.TreeNode.Tag%2A> property, and the tree nodes representing `Customer` objects are displayed with <xref:System.Drawing.Color.Orange%2A> text. This example requires that you have a `Customer` and `Order` object defined, a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form>, and an <xref:System.Collections.ArrayList> named `customerArray` that contains `Customer` objects.  
+  
+ [!code-cpp[TreeNode_Bounds#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Bounds/CPP/treenode_bounds.cpp#1)]
+ [!code-csharp[TreeNode_Bounds#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Bounds/CS/treenode_bounds.cs#1)]
+ [!code-vb[TreeNode_Bounds#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Bounds/VB/treenode_bounds.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TreeNode (string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">The label <see cref="P:System.Windows.Forms.TreeNode.Text" /> of the new tree node.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class with the specified label text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `text` parameter value is assigned to the node's <xref:System.Windows.Forms.TreeNode.Text%2A> property and becomes the tree node label.  
+  
+   
+  
+## Examples  
+ The following code example displays customer information in a <xref:System.Windows.Forms.TreeView> control. The root tree nodes display customer names, and the child tree nodes display the order numbers assigned to each customer. In this example, 1,000 customers are displayed with 15 orders each. The repainting of the <xref:System.Windows.Forms.TreeView> is suppressed by using the <xref:System.Windows.Forms.TreeView.BeginUpdate%2A> and <xref:System.Windows.Forms.TreeView.EndUpdate%2A> methods, and a wait <xref:System.Windows.Forms.Cursor> is displayed while the <xref:System.Windows.Forms.TreeView> creates and paints the <xref:System.Windows.Forms.TreeNode> objects. This example requires that you have a `Customer` object that can hold a collection of `Order` objects. It also requires that you have created an instance of a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[TreeView#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeView/CPP/treeview.cpp#1)]
+ [!code-csharp[TreeView#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeView/CS/treeview.cs#1)]
+ [!code-vb[TreeView#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeView/VB/treeview.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected TreeNode (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains the data to deserialize the class.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains the source and destination of the serialized stream.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class using the specified serialization information and context.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TreeNode (string text, System.Windows.Forms.TreeNode[] children);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Windows.Forms.TreeNode[] children) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor(System.String,System.Windows.Forms.TreeNode[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="children" Type="System.Windows.Forms.TreeNode[]" />
+      </Parameters>
+      <Docs>
+        <param name="text">The label <see cref="P:System.Windows.Forms.TreeNode.Text" /> of the new tree node.</param>
+        <param name="children">An array of child <see cref="T:System.Windows.Forms.TreeNode" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class with the specified label text and child tree nodes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `text` parameter value is assigned to the node's <xref:System.Windows.Forms.TreeNode.Text%2A> property and becomes the tree node label. The tree nodes that are contained in the `children` array are added to the <xref:System.Windows.Forms.TreeNodeCollection> that is stored in the <xref:System.Windows.Forms.TreeNode.Nodes%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example creates a root tree node to assign child tree nodes to. A child tree node for each `Customer` object in an <xref:System.Collections.ArrayList> is added to the root tree node as well as a child tree node for each `Order` object assigned to the `Customer` object. The `Customer` object is assigned to the <xref:System.Windows.Forms.TreeNode.Tag%2A> property, and the tree nodes representing `Customer` objects are displayed with <xref:System.Drawing.Color.Orange%2A> text. This example requires that you have a `Customer` and `Order` object defined, a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form>, and an <xref:System.Collections.ArrayList> named `customerArray` that contains `Customer` objects.  
+  
+ [!code-cpp[TreeNode_Bounds#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Bounds/CPP/treenode_bounds.cpp#1)]
+ [!code-csharp[TreeNode_Bounds#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Bounds/CS/treenode_bounds.cs#1)]
+ [!code-vb[TreeNode_Bounds#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Bounds/VB/treenode_bounds.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TreeNode (string text, int imageIndex, int selectedImageIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 imageIndex, int32 selectedImageIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor(System.String,System.Int32,System.Int32)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+        <Parameter Name="selectedImageIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="text">The label <see cref="P:System.Windows.Forms.TreeNode.Text" /> of the new tree node.</param>
+        <param name="imageIndex">The index value of <see cref="T:System.Drawing.Image" /> to display when the tree node is unselected.</param>
+        <param name="selectedImageIndex">The index value of <see cref="T:System.Drawing.Image" /> to display when the tree node is selected.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class with the specified label text and images to display when the tree node is in a selected and unselected state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `text` parameter value is assigned to the node's <xref:System.Windows.Forms.TreeNode.Text%2A> property and becomes the tree node label. The `imageIndex` and `selectedImageIndex` values are the index values of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=fullName> property. The image referenced in the `imageIndex` property is displayed when the tree node is not selected. Likewise, the image referenced in the `selectedImageIndex` property is displayed when the tree node is in a selected state.  
+  
+   
+  
+## Examples  
+ The following code example creates and assigns an <xref:System.Windows.Forms.ImageList> to a <xref:System.Windows.Forms.TreeView> control and fills the <xref:System.Windows.Forms.TreeView> control with <xref:System.Windows.Forms.TreeNode> objects. The tree nodes are assigned images from the <xref:System.Windows.Forms.ImageList> that is displayed when the tree node is in a selected or unselected state. This example requires that you have a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.TreeView>, and an <xref:System.Collections.ArrayList> that contains `Customer` objects that each contain `Order` objects. It also requires that the `Customer` and `Order` objects are defined.  
+  
+ [!code-cpp[TreeNode_TreeNode#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_TreeNode/CPP/treenode_treenode.cpp#1)]
+ [!code-csharp[TreeNode_TreeNode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_TreeNode/CS/treenode_treenode.cs#1)]
+ [!code-vb[TreeNode_TreeNode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_TreeNode/VB/treenode_treenode.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TreeNode (string text, int imageIndex, int selectedImageIndex, System.Windows.Forms.TreeNode[] children);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 imageIndex, int32 selectedImageIndex, class System.Windows.Forms.TreeNode[] children) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor(System.String,System.Int32,System.Int32,System.Windows.Forms.TreeNode[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
+        <Parameter Name="selectedImageIndex" Type="System.Int32" />
+        <Parameter Name="children" Type="System.Windows.Forms.TreeNode[]" />
+      </Parameters>
+      <Docs>
+        <param name="text">The label <see cref="P:System.Windows.Forms.TreeNode.Text" /> of the new tree node.</param>
+        <param name="imageIndex">The index value of <see cref="T:System.Drawing.Image" /> to display when the tree node is unselected.</param>
+        <param name="selectedImageIndex">The index value of <see cref="T:System.Drawing.Image" /> to display when the tree node is selected.</param>
+        <param name="children">An array of child <see cref="T:System.Windows.Forms.TreeNode" /> objects.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class with the specified label text, child tree nodes, and images to display when the tree node is in a selected and unselected state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `text` parameter value is assigned to the node's <xref:System.Windows.Forms.TreeNode.Text%2A> property and becomes the tree node label. The `imageIndex` and `selectedImageIndex` values are the index values of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=fullName> property. The image referenced in the `imageIndex` parameter is displayed when the tree node is not selected. Likewise, the image referenced in the `selectedImageIndex` parameter is displayed when the tree node is in a selected state. The tree nodes that are contained in the `children` array are added to the <xref:System.Windows.Forms.TreeNodeCollection> that is stored in the <xref:System.Windows.Forms.TreeNode.Nodes%2A> property.  
+  
+   
+  
+## Examples  
+ The following code example creates and assigns an <xref:System.Windows.Forms.ImageList> to a <xref:System.Windows.Forms.TreeView> control and fills the <xref:System.Windows.Forms.TreeView> control with <xref:System.Windows.Forms.TreeNode> objects. The tree nodes are assigned images from the <xref:System.Windows.Forms.ImageList> that is displayed when the tree node is in a selected or unselected state. This example requires that you have a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.TreeView>, and an <xref:System.Collections.ArrayList> that contains `Customer` objects that each contain `Order` objects. It also requires that the `Customer` and `Order` objects are defined.  
+  
+ [!code-cpp[TreeNode_TreeNode#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_TreeNode/CPP/treenode_treenode.cpp#1)]
+ [!code-csharp[TreeNode_TreeNode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_TreeNode/CS/treenode_treenode.cs#1)]
+ [!code-vb[TreeNode_TreeNode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_TreeNode/VB/treenode_treenode.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.BackColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the background color of the tree node.</summary>
+        <value>The background <see cref="T:System.Drawing.Color" /> of the tree node. The default is <see cref="F:System.Drawing.Color.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Forms.TreeNode.BackColor%2A> property is set to <xref:System.Drawing.Color?displayProperty=fullName>, the <xref:System.Drawing.Color> used is the <xref:System.Windows.Forms.Control.BackColor%2A> property value of the <xref:System.Windows.Forms.TreeView> control that the tree node is assigned to.  
+  
+   
+  
+## Examples  
+ The following code example highlights any <xref:System.Windows.Forms.TreeNode> objects a <xref:System.Windows.Forms.TreeView> control that has its <xref:System.Windows.Forms.TreeNode.Checked%2A> property set to `true` by setting its <xref:System.Windows.Forms.TreeNode.BackColor%2A> property to <xref:System.Drawing.Color.Yellow%2A>. This code requires that you have a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form> with a collection of <xref:System.Windows.Forms.TreeNode> objects.  
+  
+ [!code-cpp[TreeNode_Checked#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Checked/CPP/treenode_checked.cpp#1)]
+ [!code-csharp[TreeNode_Checked#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Checked/CS/treenode_checked.cs#1)]
+ [!code-vb[TreeNode_Checked#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Checked/VB/treenode_checked.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginEdit">
+      <MemberSignature Language="C#" Value="public void BeginEdit ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginEdit() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.BeginEdit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Initiates the editing of the tree node label.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A typical scenario to use this method is to call it on the <xref:System.Windows.Forms.MenuItem.Click> event of a <xref:System.Windows.Forms.MenuItem> or <xref:System.Windows.Forms.ContextMenu>.  
+  
+> [!NOTE]
+>  This method only works if the <xref:System.Windows.Forms.TreeView.LabelEdit%2A> property of the <xref:System.Windows.Forms.TreeView> is set to `true`. If <xref:System.Windows.Forms.TreeView.LabelEdit%2A> is set to `false`, an exception is thrown and the tree node will not be put into an editable state.  
+  
+   
+  
+## Examples  
+ The following code example lets the user edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right-clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
+  
+ [!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
+ [!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
+ [!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">
+          <see cref="P:System.Windows.Forms.TreeView.LabelEdit" /> is set to <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bounds of the tree node.</summary>
+        <value>The <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The coordinates are relative to the upper-left corner of the <xref:System.Windows.Forms.TreeView> control.  
+  
+   
+  
+## Examples  
+ The following code example changes the size <xref:System.Windows.Forms.TreeNode.NodeFont%2A> to the specified size and adjusts the <xref:System.Windows.Forms.TreeView.ItemHeight%2A> of the tree node's parent <xref:System.Windows.Forms.TreeView> control. This example requires that you have a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.TreeView> control with a collection of <xref:System.Windows.Forms.TreeNode> objects, and a <xref:System.Windows.Forms.ComboBox> that contains font sizes.  
+  
+ [!code-cpp[TreeNode_Bounds#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Bounds/CPP/treenode_bounds.cpp#2)]
+ [!code-csharp[TreeNode_Bounds#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Bounds/CS/treenode_bounds.cs#2)]
+ [!code-vb[TreeNode_Bounds#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Bounds/VB/treenode_bounds.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Checked">
+      <MemberSignature Language="C#" Value="public bool Checked { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Checked" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Checked" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the tree node is in a checked state.</summary>
+        <value>
+          <see langword="true" /> if the tree node is in a checked state; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example highlights any <xref:System.Windows.Forms.TreeNode> objects a <xref:System.Windows.Forms.TreeView> control that has its <xref:System.Windows.Forms.TreeNode.Checked%2A> property set to `true` by setting its <xref:System.Windows.Forms.TreeNode.BackColor%2A> property to <xref:System.Drawing.Color.Yellow%2A>. This code requires that you have a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form> with a collection of <xref:System.Windows.Forms.TreeNode> objects.  
+  
+ [!code-cpp[TreeNode_Checked#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Checked/CPP/treenode_checked.cpp#1)]
+ [!code-csharp[TreeNode_Checked#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Checked/CS/treenode_checked.cs#1)]
+ [!code-vb[TreeNode_Checked#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Checked/VB/treenode_checked.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public virtual object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copies the tree node and the entire subtree rooted at this tree node.</summary>
+        <returns>The <see cref="T:System.Object" /> that represents the cloned <see cref="T:System.Windows.Forms.TreeNode" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The tree structure from the tree node being cloned and below is copied. Any child tree nodes assigned to the <xref:System.Windows.Forms.TreeNode> being cloned are included in the new tree node and subtree.  
+  
+ The <xref:System.Windows.Forms.TreeNode.Clone%2A> method performs a shallow copy of the node. If the value of the <xref:System.Windows.Forms.TreeNode.Tag%2A> property is a reference type, both the original and cloned copy will point to the same single instance of the <xref:System.Windows.Forms.TreeNode.Tag%2A> value.  
+  
+   
+  
+## Examples  
+ The following code example clones the last child tree node of the last root tree node and inserts the clone as the first root tree node in the `TreeNodeCollection`. This example requires that you have a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form> that contains a collection of <xref:System.Windows.Forms.TreeNode> objects and a <xref:System.Windows.Forms.Button>.  
+  
+ [!code-cpp[TreeNode_EnsureVisible_4#3](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CPP/treenode_ensurevisible_4.cpp#3)]
+ [!code-csharp[TreeNode_EnsureVisible_4#3](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CS/treenode_ensurevisible_4.cs#3)]
+ [!code-vb[TreeNode_EnsureVisible_4#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/VB/treenode_ensurevisible_4.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collapse">
+      <MemberSignature Language="C#" Value="public void Collapse ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Collapse() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Collapse" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Collapses the tree node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.Collapse%2A> method collapses the current <xref:System.Windows.Forms.TreeNode> and its child nodes. If you want to collapse only the current <xref:System.Windows.Forms.TreeNode>, use the <xref:System.Windows.Forms.TreeNode.Collapse%28System.Boolean%29?displayProperty=fullName> overload, passing `true` to ignore its child nodes.  
+  
+> [!NOTE]
+>  The state of a <xref:System.Windows.Forms.TreeNode> is persisted. For example, if the next level of child nodes was not collapsed previously, when the <xref:System.Windows.Forms.TreeNode.Expand%2A> method is called, the child nodes appear in their previously expanded state.  
+  
+   
+  
+## Examples  
+ The following code example toggles the selected node when a button is clicked. If the selected node is collapsed, it is expanded, if it is expanded by calling the <xref:System.Windows.Forms.TreeNode.Expand%2A> method, it is collapsed by calling the <xref:System.Windows.Forms.TreeNode.Collapse%2A> method. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that has at least one <xref:System.Windows.Forms.TreeNode> with at least one child <xref:System.Windows.Forms.TreeNode>.  
+  
+ [!code-cpp[TreeNode_EnsureVisible_4#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CPP/treenode_ensurevisible_4.cpp#1)]
+ [!code-csharp[TreeNode_EnsureVisible_4#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CS/treenode_ensurevisible_4.cs#1)]
+ [!code-vb[TreeNode_EnsureVisible_4#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/VB/treenode_ensurevisible_4.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collapse">
+      <MemberSignature Language="C#" Value="public void Collapse (bool ignoreChildren);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Collapse(bool ignoreChildren) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Collapse(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ignoreChildren" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="ignoreChildren">
+          <see langword="true" /> to leave the child nodes in their current state; <see langword="false" /> to collapse the child nodes.</param>
+        <summary>Collapses the <see cref="T:System.Windows.Forms.TreeNode" /> and optionally collapses its children.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Windows.Forms.TreeNode.Collapse%2A> method, passing `true`, when you want to collapse a node but leave its child nodes in their expanded state.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenu">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ContextMenu ContextMenu { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContextMenu ContextMenu" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ContextMenu" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ContextMenu</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the shortcut menu that is associated with this tree node.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ContextMenu" /> that is associated with the tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The preferred way to associate a shortcut menu with a tree node is with the <xref:System.Windows.Forms.TreeNode.ContextMenuStrip%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuStrip">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ContextMenuStrip ContextMenuStrip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContextMenuStrip ContextMenuStrip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ContextMenuStrip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ContextMenuStrip</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the shortcut menu associated with this tree node.</summary>
+        <value>The <see cref="T:System.Windows.Forms.ContextMenuStrip" /> associated with the tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The shortcut menu is shown when the user right-clicks the tree node.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize">
+      <MemberSignature Language="C#" Value="protected virtual void Deserialize (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Deserialize(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Deserialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that describes the <see cref="T:System.Windows.Forms.TreeNode" />.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that indicates the state of the stream during deserialization.</param>
+        <summary>Loads the state of the <see cref="T:System.Windows.Forms.TreeNode" /> from the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndEdit">
+      <MemberSignature Language="C#" Value="public void EndEdit (bool cancel);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndEdit(bool cancel) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.EndEdit(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancel" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="cancel">
+          <see langword="true" /> if the editing of the tree node label text was canceled without being saved; otherwise, <see langword="false" />.</param>
+        <summary>Ends the editing of the tree node label.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example lets the user edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, allowing the user to edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
+  
+ [!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
+ [!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
+ [!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnsureVisible">
+      <MemberSignature Language="C#" Value="public void EnsureVisible ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnsureVisible() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.EnsureVisible" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Ensures that the tree node is visible, expanding tree nodes and scrolling the tree view control as necessary.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.TreeNode.EnsureVisible%2A> method is called, the tree is expanded and scrolled to ensure that the current tree node is visible in the <xref:System.Windows.Forms.TreeView>. This method is useful if you are selecting a tree node in code based on certain criteria. By calling this method after you select the node, the user can see and interact with the selected node.  
+  
+> [!NOTE]
+>  If the <xref:System.Windows.Forms.TreeView.ItemHeight%2A?displayProperty=fullName> property is set to a value that is larger than the height of the tree view control, calling this method has unexpected results.  
+  
+   
+  
+## Examples  
+ The following code example brings the last child tree node of the last root tree node into view in the tree view when a button is clicked. This example requires that you have a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form> that contains a collection of <xref:System.Windows.Forms.TreeNode> objects, and a <xref:System.Windows.Forms.Button>. There should be enough tree nodes so that they are not all visible in the tree view control.  
+  
+ [!code-cpp[TreeNode_EnsureVisible_4#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CPP/treenode_ensurevisible_4.cpp#2)]
+ [!code-csharp[TreeNode_EnsureVisible_4#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CS/treenode_ensurevisible_4.cs#2)]
+ [!code-vb[TreeNode_EnsureVisible_4#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/VB/treenode_ensurevisible_4.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expand">
+      <MemberSignature Language="C#" Value="public void Expand ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Expand() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Expand" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Expands the tree node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.Expand%2A> method expands the current <xref:System.Windows.Forms.TreeNode> down to the next level of nodes.  
+  
+> [!NOTE]
+>  The state of a <xref:System.Windows.Forms.TreeNode> is persisted. For example, if the next level of child nodes was not collapsed previously, when the <xref:System.Windows.Forms.TreeNode.Expand%2A> method is called, the child nodes appear in their previously expanded state.  
+  
+   
+  
+## Examples  
+ The following code example toggles the selected node when a button is clicked. If the selected node is collapsed, it is expanded, if it is expanded by calling the <xref:System.Windows.Forms.TreeNode.Expand%2A> method, it is collapsed by calling the <xref:System.Windows.Forms.TreeNode.Collapse%2A> method. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that has at least one <xref:System.Windows.Forms.TreeNode> with at least one child <xref:System.Windows.Forms.TreeNode>.  
+  
+ [!code-cpp[TreeNode_EnsureVisible_4#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CPP/treenode_ensurevisible_4.cpp#1)]
+ [!code-csharp[TreeNode_EnsureVisible_4#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CS/treenode_ensurevisible_4.cs#1)]
+ [!code-vb[TreeNode_EnsureVisible_4#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/VB/treenode_ensurevisible_4.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandAll">
+      <MemberSignature Language="C#" Value="public void ExpandAll ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExpandAll() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.ExpandAll" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Expands all the child tree nodes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.ExpandAll%2A> method expands all the child tree nodes assigned to the <xref:System.Windows.Forms.TreeNode.Nodes%2A> collection.  
+  
+> [!NOTE]
+>  The state of a <xref:System.Windows.Forms.TreeNode> is persisted. For example, if the next level of child nodes was not collapsed previously, when the <xref:System.Windows.Forms.TreeNode.Expand%2A> method is called, the child nodes appear in their previously expanded state.  
+  
+   
+  
+## Examples  
+ The following code example expands all the tree nodes in a <xref:System.Windows.Forms.TreeView> control when a <xref:System.Windows.Forms.CheckBox> is checked, and collapses the <xref:System.Windows.Forms.TreeNode.FirstNode%2A> when the <xref:System.Windows.Forms.CheckBox> is cleared. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.CheckBox>, and a <xref:System.Windows.Forms.TreeView> control with a <xref:System.Windows.Forms.TreeNodeCollection> that has several <xref:System.Windows.Forms.TreeNode> objects (preferably with three or more levels).  
+  
+ [!code-cpp[TreeNode_ForeColor#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_ForeColor/CPP/treenode_forecolor.cpp#1)]
+ [!code-csharp[TreeNode_ForeColor#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_ForeColor/CS/treenode_forecolor.cs#1)]
+ [!code-vb[TreeNode_ForeColor#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_ForeColor/VB/treenode_forecolor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstNode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode FirstNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode FirstNode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.FirstNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the first child tree node in the tree node collection.</summary>
+        <value>The first child <see cref="T:System.Windows.Forms.TreeNode" /> in the <see cref="P:System.Windows.Forms.TreeNode.Nodes" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.FirstNode%2A> is the first child <xref:System.Windows.Forms.TreeNode> in the <xref:System.Windows.Forms.TreeNodeCollection> stored in the <xref:System.Windows.Forms.TreeNode.Nodes%2A> property of the current tree node. If the <xref:System.Windows.Forms.TreeNode> has no child tree node, the <xref:System.Windows.Forms.TreeNode.FirstNode%2A> property returns `null`.  
+  
+   
+  
+## Examples  
+ The following code example selects the appropriate <xref:System.Windows.Forms.TreeNode> after determining if the <xref:System.Windows.Forms.TreeNode> passed in is selected and which <xref:System.Windows.Forms.TreeNode> to select. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that has a <xref:System.Windows.Forms.TreeNodeCollection> that contains several <xref:System.Windows.Forms.TreeNode> objects. It also requires that you have a <xref:System.Windows.Forms.ComboBox> with the following items: "Previous", "PreviousVisible", "Next", "NextVisible", "First", and "Last".  
+  
+ [!code-cpp[TreeNode_Parent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Parent/CPP/treenode_parent.cpp#1)]
+ [!code-csharp[TreeNode_Parent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Parent/CS/treenode_parent.cs#1)]
+ [!code-vb[TreeNode_Parent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Parent/VB/treenode_parent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ForeColor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the foreground color of the tree node.</summary>
+        <value>The foreground <see cref="T:System.Drawing.Color" /> of the tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `null`, the <xref:System.Drawing.Color> used is the <xref:System.Windows.Forms.Control.ForeColor%2A> property value of the <xref:System.Windows.Forms.TreeView> control that the tree node is assigned to.  
+  
+   
+  
+## Examples  
+ The following code example creates a root tree node to assign child tree nodes to. A child tree node for each `Customer` object in an <xref:System.Collections.ArrayList> is added to the root tree node as well as a child tree node for each `Order` object assigned to the `Customer` object. The `Customer` object is assigned to the <xref:System.Windows.Forms.TreeNode.Tag%2A> property, and the tree nodes representing `Customer` objects are displayed with <xref:System.Drawing.Color.Orange%2A> text. This example requires that you have a `Customer` and `Order` object defined, a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form>, and an <xref:System.Collections.ArrayList> named `customerArray` that contains `Customer` objects.  
+  
+ [!code-cpp[TreeNode_Bounds#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Bounds/CPP/treenode_bounds.cpp#1)]
+ [!code-csharp[TreeNode_Bounds#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Bounds/CS/treenode_bounds.cs#1)]
+ [!code-vb[TreeNode_Bounds#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Bounds/VB/treenode_bounds.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromHandle">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.TreeNode FromHandle (System.Windows.Forms.TreeView tree, IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.TreeNode FromHandle(class System.Windows.Forms.TreeView tree, native int handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.FromHandle(System.Windows.Forms.TreeView,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tree" Type="System.Windows.Forms.TreeView" />
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="tree">The <see cref="T:System.Windows.Forms.TreeView" /> that contains the tree node.</param>
+        <param name="handle">The handle of the tree node.</param>
+        <summary>Returns the tree node with the specified handle and assigned to the specified tree view control.</summary>
+        <returns>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the tree node assigned to the specified <see cref="T:System.Windows.Forms.TreeView" /> control with the specified handle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a node is added to the <xref:System.Windows.Forms.TreeView.Nodes%2A?displayProperty=fullName> collection, the <xref:System.Windows.Forms.TreeView> control sends an NM_CUSTOMDRAW notification before the node handle is available. If you override the <xref:System.Windows.Forms.Control.WndProc%2A> method of the <xref:System.Windows.Forms.TreeView> to provide custom drawing in response to this notification, you should always check the return value of this method for `null` before you attempt to access the node.  
+  
+   
+  
+## Examples  
+ The following code example gets the <xref:System.Windows.Forms.TreeNode> that was collapsed and creates a copy of it using its <xref:System.Windows.Forms.TreeNode.Handle%2A> property. The original <xref:System.Windows.Forms.TreeNode> is removed from the <xref:System.Windows.Forms.TreeNodeCollection>, and the copy is added to the collection. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control on it. The <xref:System.Windows.Forms.TreeView> control should have two or more root nodes, each having at least one child node.  
+  
+ [!code-cpp[Windows.Forms.TreeNode#3](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CPP/treenode.cpp#3)]
+ [!code-csharp[Windows.Forms.TreeNode#3](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CS/treenode.cs#3)]
+ [!code-vb[Windows.Forms.TreeNode#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.TreeNode/VB/treenode.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FullPath">
+      <MemberSignature Language="C#" Value="public string FullPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string FullPath" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.FullPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the path from the root tree node to the current tree node.</summary>
+        <value>The path from the root tree node to the current tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The path consists of the labels of all the tree nodes that must be navigated to reach this tree node, starting at the root tree node. The node labels are separated by the delimiter character specified in the <xref:System.Windows.Forms.TreeView.PathSeparator%2A> property of the <xref:System.Windows.Forms.TreeView> control that contains this node. For example, if the delimiter character of the tree view control named "Location" is set to the backslash character, (\\), the <xref:System.Windows.Forms.TreeNode.FullPath%2A> property value is "Country\Region\State".  
+  
+   
+  
+## Examples  
+ The following code example sets the <xref:System.Windows.Forms.TreeView.PathSeparator%2A> property of a <xref:System.Windows.Forms.TreeView> and displays the number of child tree nodes that are contained in the <xref:System.Windows.Forms.TreeNodeCollection> of the <xref:System.Windows.Forms.TreeView.SelectedNode%2A>. The percentage of child tree node to total tree nodes in the tree view control is also displayed. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.Button>, and a <xref:System.Windows.Forms.TreeView> control with a <xref:System.Windows.Forms.TreeNodeCollection> that has several <xref:System.Windows.Forms.TreeNode> objects (preferably with three or more levels).  
+  
+ [!code-cpp[TreeNode_ForeColor#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_ForeColor/CPP/treenode_forecolor.cpp#2)]
+ [!code-csharp[TreeNode_ForeColor#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_ForeColor/CS/treenode_forecolor.cs#2)]
+ [!code-vb[TreeNode_ForeColor#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_ForeColor/VB/treenode_forecolor.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The node is not contained in a <see cref="T:System.Windows.Forms.TreeView" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNodeCount">
+      <MemberSignature Language="C#" Value="public int GetNodeCount (bool includeSubTrees);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetNodeCount(bool includeSubTrees) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.GetNodeCount(System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="includeSubTrees" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="includeSubTrees">
+          <see langword="true" /> if the resulting count includes all tree nodes indirectly rooted at this tree node; otherwise, <see langword="false" />.</param>
+        <summary>Returns the number of child tree nodes.</summary>
+        <returns>The number of child tree nodes assigned to the <see cref="P:System.Windows.Forms.TreeNode.Nodes" /> collection.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example sets the <xref:System.Windows.Forms.TreeView.PathSeparator%2A> property of a <xref:System.Windows.Forms.TreeView> and displays the number of child tree nodes that are contained in the <xref:System.Windows.Forms.TreeNodeCollection> of the <xref:System.Windows.Forms.TreeView.SelectedNode%2A>. The percentage of child tree node to total tree nodes in the tree view control is also displayed. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.Button>, and a <xref:System.Windows.Forms.TreeView> control with a <xref:System.Windows.Forms.TreeNodeCollection> that has several <xref:System.Windows.Forms.TreeNode> objects (preferably with three or more levels).  
+  
+ [!code-cpp[TreeNode_ForeColor#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_ForeColor/CPP/treenode_forecolor.cpp#2)]
+ [!code-csharp[TreeNode_ForeColor#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_ForeColor/CS/treenode_forecolor.cs#2)]
+ [!code-vb[TreeNode_ForeColor#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_ForeColor/VB/treenode_forecolor.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Handle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the handle of the tree node.</summary>
+        <value>The tree node handle.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a handle is not already created when the <xref:System.Windows.Forms.TreeNode.Handle%2A> property is referenced, it is created.  
+  
+   
+  
+## Examples  
+ The following code example gets the <xref:System.Windows.Forms.TreeNode> that was collapsed and creates a copy of it using its <xref:System.Windows.Forms.TreeNode.Handle%2A> property. The original <xref:System.Windows.Forms.TreeNode> is removed from the <xref:System.Windows.Forms.TreeNodeCollection>, and the copy is added to the collection. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control on it. The <xref:System.Windows.Forms.TreeView> control should have two or more root nodes, each having at least one child node.  
+  
+ [!code-cpp[Windows.Forms.TreeNode#3](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CPP/treenode.cpp#3)]
+ [!code-csharp[Windows.Forms.TreeNode#3](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CS/treenode.cs#3)]
+ [!code-vb[Windows.Forms.TreeNode#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.TreeNode/VB/treenode.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageIndex">
+      <MemberSignature Language="C#" Value="public int ImageIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ImageIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ImageIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.TreeViewImageIndexConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.ImageList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the image list index value of the image displayed when the tree node is in the unselected state.</summary>
+        <value>A zero-based index value that represents the image position in the assigned <see cref="T:System.Windows.Forms.ImageList" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> value is the index value of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=fullName> property.  
+  
+> [!NOTE]
+>  The default value of the <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> property is the same as the <xref:System.Windows.Forms.TreeView.ImageIndex%2A> property of the <xref:System.Windows.Forms.TreeView> control that the <xref:System.Windows.Forms.TreeNode> is assigned to.  
+  
+ The <xref:System.Windows.Forms.TreeNode.ImageKey%2A> and <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> properties are mutually exclusive; therefore, if one property is set, the other is ignored. If you set the <xref:System.Windows.Forms.TreeNode.ImageKey%2A> property, the <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> property is automatically set to -1. Alternatively, if you set <xref:System.Windows.Forms.TreeNode.ImageIndex%2A>, <xref:System.Windows.Forms.TreeNode.ImageKey%2A> is automatically set to an empty string ("").  
+  
+   
+  
+## Examples  
+ The following code example creates and assigns an <xref:System.Windows.Forms.ImageList> to a <xref:System.Windows.Forms.TreeView> control and fills the <xref:System.Windows.Forms.TreeView> control with <xref:System.Windows.Forms.TreeNode> objects. The tree nodes are assigned images from the <xref:System.Windows.Forms.ImageList> that is displayed when the tree node is in a selected or unselected state. This example requires that you have a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.TreeView>, and an <xref:System.Collections.ArrayList> that contains `Customer` objects that each contain `Order` objects. It also requires that the `Customer` and `Order` objects are defined.  
+  
+ [!code-cpp[TreeNode_TreeNode#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_TreeNode/CPP/treenode_treenode.cpp#1)]
+ [!code-csharp[TreeNode_TreeNode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_TreeNode/CS/treenode_treenode.cs#1)]
+ [!code-vb[TreeNode_TreeNode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_TreeNode/VB/treenode_treenode.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageKey">
+      <MemberSignature Language="C#" Value="public string ImageKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ImageKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ImageKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.TreeViewImageKeyConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.ImageList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key for the image associated with this tree node when the node is in an unselected state.</summary>
+        <value>The key for the image associated with this tree node when the node is in an unselected state.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The image key returned by this property is contained in the <xref:System.Windows.Forms.TreeView.ImageList%2A> property of the containing <xref:System.Windows.Forms.TreeView> control.  
+  
+ The <xref:System.Windows.Forms.TreeNode.ImageKey%2A> is case-insensitive.  
+  
+ The <xref:System.Windows.Forms.TreeNode.ImageKey%2A> and <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> properties are mutually exclusive; if one property is set, the other is ignored. If you set the <xref:System.Windows.Forms.TreeNode.ImageKey%2A> property, the <xref:System.Windows.Forms.TreeNode.ImageIndex%2A> property is automatically set to -1. Alternatively, if you set <xref:System.Windows.Forms.TreeNode.ImageIndex%2A>, <xref:System.Windows.Forms.TreeNode.ImageKey%2A> is automatically set to an empty string ("").  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the position of the tree node in the tree node collection.</summary>
+        <value>A zero-based index value that represents the position of the tree node in the <see cref="P:System.Windows.Forms.TreeNode.Nodes" /> collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example displays the <xref:System.Windows.Forms.TreeNode.Text%2A> and <xref:System.Windows.Forms.TreeNode.Index%2A> property values of the <xref:System.Windows.Forms.TreeNode> represented by the <xref:System.Windows.Forms.TreeNode.Parent%2A> property of the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=fullName>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control on it. The <xref:System.Windows.Forms.TreeView> should have at least two root nodes, each having at least one child node.  
+  
+ [!code-cpp[Windows.Forms.TreeNode#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CPP/treenode.cpp#2)]
+ [!code-csharp[Windows.Forms.TreeNode#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CS/treenode.cs#2)]
+ [!code-vb[Windows.Forms.TreeNode#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.TreeNode/VB/treenode.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEditing">
+      <MemberSignature Language="C#" Value="public bool IsEditing { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEditing" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.IsEditing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the tree node is in an editable state.</summary>
+        <value>
+          <see langword="true" /> if the tree node is in editable state; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example lets the user edit nonroot tree nodes by using a <xref:System.Windows.Forms.ContextMenu>. When the user right clicks the mouse, the <xref:System.Windows.Forms.TreeNode> at that position is determined and stored in a variable named `mySelectedNode`. If a nonroot tree node was selected, it is put into an editable state, letting the user edit the node label. After the user stops editing the tree node label, the new label text is evaluated and saved. For this example, several characters are considered not valid in the label text. If one of the invalid characters is in the label string, or the string is empty, the user is notified of the error and the label is returned to its previous text.  
+  
+ [!code-cpp[classic treenode.beginedit example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CPP/source.cpp#1)]
+ [!code-csharp[classic treenode.beginedit example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/CS/source.cs#1)]
+ [!code-vb[classic treenode.beginedit example#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_Classic/classic TreeNode.BeginEdit Example/VB/source.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExpanded">
+      <MemberSignature Language="C#" Value="public bool IsExpanded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsExpanded" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.IsExpanded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the tree node is in the expanded state.</summary>
+        <value>
+          <see langword="true" /> if the tree node is in the expanded state; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example toggles the selected node when a button is clicked. If the selected node is collapsed, it is expanded, if it is expanded by calling the <xref:System.Windows.Forms.TreeNode.Expand%2A> method, it is collapsed by calling the <xref:System.Windows.Forms.TreeNode.Collapse%2A> method. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that has at least one <xref:System.Windows.Forms.TreeNode> with at least one child <xref:System.Windows.Forms.TreeNode>.  
+  
+ [!code-cpp[TreeNode_EnsureVisible_4#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CPP/treenode_ensurevisible_4.cpp#1)]
+ [!code-csharp[TreeNode_EnsureVisible_4#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CS/treenode_ensurevisible_4.cs#1)]
+ [!code-vb[TreeNode_EnsureVisible_4#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/VB/treenode_ensurevisible_4.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSelected">
+      <MemberSignature Language="C#" Value="public bool IsSelected { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSelected" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.IsSelected" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the tree node is in the selected state.</summary>
+        <value>
+          <see langword="true" /> if the tree node is in the selected state; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example selects the appropriate <xref:System.Windows.Forms.TreeNode> after determining if the <xref:System.Windows.Forms.TreeNode> passed in is selected and which <xref:System.Windows.Forms.TreeNode> to select. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that has a <xref:System.Windows.Forms.TreeNodeCollection> containing several <xref:System.Windows.Forms.TreeNode> objects. It also requires that you have a <xref:System.Windows.Forms.ComboBox> with the following items: "Previous", "PreviousVisible", "Next", "NextVisible", "First", and "Last".  
+  
+ [!code-cpp[TreeNode_Parent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Parent/CPP/treenode_parent.cpp#1)]
+ [!code-csharp[TreeNode_Parent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Parent/CS/treenode_parent.cs#1)]
+ [!code-vb[TreeNode_Parent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Parent/VB/treenode_parent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsVisible">
+      <MemberSignature Language="C#" Value="public bool IsVisible { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsVisible" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.IsVisible" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the tree node is visible or partially visible.</summary>
+        <value>
+          <see langword="true" /> if the tree node is visible or partially visible; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example brings the last child tree node of the last root tree node into view in the tree view when a button is clicked. This example requires that you have a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form> that contains a collection of <xref:System.Windows.Forms.TreeNode> objects, and a <xref:System.Windows.Forms.Button>. There should be enough tree nodes so that they are not all visible in the tree view control.  
+  
+ [!code-cpp[TreeNode_EnsureVisible_4#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CPP/treenode_ensurevisible_4.cpp#2)]
+ [!code-csharp[TreeNode_EnsureVisible_4#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/CS/treenode_ensurevisible_4.cs#2)]
+ [!code-vb[TreeNode_EnsureVisible_4#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_EnsureVisible_4/VB/treenode_ensurevisible_4.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastNode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode LastNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode LastNode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.LastNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the last child tree node.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the last child tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.LastNode%2A> is the last child <xref:System.Windows.Forms.TreeNode> in the <xref:System.Windows.Forms.TreeNodeCollection> stored in the <xref:System.Windows.Forms.TreeNode.Nodes%2A> property of the current tree node. If the <xref:System.Windows.Forms.TreeNode> has no child tree node, the <xref:System.Windows.Forms.TreeNode.LastNode%2A> property returns `null`.  
+  
+   
+  
+## Examples  
+ The following code example selects the appropriate <xref:System.Windows.Forms.TreeNode> after determining if the <xref:System.Windows.Forms.TreeNode> passed in is selected and which <xref:System.Windows.Forms.TreeNode> to select. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that has a <xref:System.Windows.Forms.TreeNodeCollection> that contains several <xref:System.Windows.Forms.TreeNode> objects. It also requires that you have a <xref:System.Windows.Forms.ComboBox> with the following items: "Previous", "PreviousVisible", "Next", "NextVisible", "First", and "Last".  
+  
+ [!code-cpp[TreeNode_Parent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Parent/CPP/treenode_parent.cpp#1)]
+ [!code-csharp[TreeNode_Parent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Parent/CS/treenode_parent.cs#1)]
+ [!code-vb[TreeNode_Parent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Parent/VB/treenode_parent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Level">
+      <MemberSignature Language="C#" Value="public int Level { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Level" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Level" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the zero-based depth of the tree node in the <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+        <value>The zero-based depth of the tree node in the <see cref="T:System.Windows.Forms.TreeView" /> control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the <xref:System.Windows.Forms.TreeNode.Level%2A> property, the root node is considered the first level of nesting and returns 0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the tree node.</summary>
+        <value>A <see cref="T:System.String" /> that represents the name of the tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.Name%2A> of a <xref:System.Windows.Forms.TreeNode> is also the node's key, when the node is part of a <xref:System.Windows.Forms.TreeNodeCollection>. If the node does not have a name, <xref:System.Windows.Forms.TreeNode.Name%2A> returns an empty string ("").  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextNode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode NextNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode NextNode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.NextNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the next sibling tree node.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the next sibling tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.NextNode%2A> is the next sibling <xref:System.Windows.Forms.TreeNode> in the <xref:System.Windows.Forms.TreeNodeCollection> stored in the <xref:System.Windows.Forms.TreeNode.Nodes%2A> property of the tree node's parent <xref:System.Windows.Forms.TreeNode>. If there is no next tree node, the <xref:System.Windows.Forms.TreeNode.NextNode%2A> property returns `null`.  
+  
+   
+  
+## Examples  
+ The following code example selects the appropriate <xref:System.Windows.Forms.TreeNode> after determining if the <xref:System.Windows.Forms.TreeNode> passed in is selected and which <xref:System.Windows.Forms.TreeNode> to select. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that has a <xref:System.Windows.Forms.TreeNodeCollection> that contains several <xref:System.Windows.Forms.TreeNode> objects. It also requires that you have a <xref:System.Windows.Forms.ComboBox> with the following items: "Previous", "PreviousVisible", "Next", "NextVisible", "First", and "Last".  
+  
+ [!code-cpp[TreeNode_Parent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Parent/CPP/treenode_parent.cpp#1)]
+ [!code-csharp[TreeNode_Parent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Parent/CS/treenode_parent.cs#1)]
+ [!code-vb[TreeNode_Parent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Parent/VB/treenode_parent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextVisibleNode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode NextVisibleNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode NextVisibleNode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.NextVisibleNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the next visible tree node.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the next visible tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.NextVisibleNode%2A> can be a child, sibling, or a tree node from another branch. If there is no next tree node, the <xref:System.Windows.Forms.TreeNode.NextVisibleNode%2A> property returns `null`.  
+  
+   
+  
+## Examples  
+ The following code example selects the appropriate <xref:System.Windows.Forms.TreeNode> after determining if the <xref:System.Windows.Forms.TreeNode> passed in is selected and which <xref:System.Windows.Forms.TreeNode> to select. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that has a <xref:System.Windows.Forms.TreeNodeCollection> that contains several <xref:System.Windows.Forms.TreeNode> objects. It also requires that you have a <xref:System.Windows.Forms.ComboBox> with the following items: "Previous", "PreviousVisible", "Next", "NextVisible", "First", and "Last".  
+  
+ [!code-cpp[TreeNode_Parent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Parent/CPP/treenode_parent.cpp#1)]
+ [!code-csharp[TreeNode_Parent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Parent/CS/treenode_parent.cs#1)]
+ [!code-vb[TreeNode_Parent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Parent/VB/treenode_parent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeFont">
+      <MemberSignature Language="C#" Value="public System.Drawing.Font NodeFont { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font NodeFont" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.NodeFont" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Font</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the font that is used to display the text on the tree node label.</summary>
+        <value>The <see cref="T:System.Drawing.Font" /> that is used to display the text on the tree node label.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `null`, the <xref:System.Drawing.Font> used is the <xref:System.Windows.Forms.Control.Font%2A> property value of the <xref:System.Windows.Forms.TreeView> control that this node is attached to.  
+  
+> [!NOTE]
+>  If the node font is larger than the <xref:System.Windows.Forms.Control.Font%2A> property value that is set in the <xref:System.Windows.Forms.TreeView> control, the tree node label text is clipped.  
+  
+   
+  
+## Examples  
+ The following code example changes the size of <xref:System.Windows.Forms.TreeNode.NodeFont%2A> to the specified size and adjusts the <xref:System.Windows.Forms.TreeView.ItemHeight%2A> of the tree node's parent <xref:System.Windows.Forms.TreeView> control. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that contains a collection of <xref:System.Windows.Forms.TreeNode> objects, and a <xref:System.Windows.Forms.ComboBox> that contains font sizes.  
+  
+ [!code-cpp[TreeNode_Bounds#2](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Bounds/CPP/treenode_bounds.cpp#2)]
+ [!code-csharp[TreeNode_Bounds#2](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Bounds/CS/treenode_bounds.cs#2)]
+ [!code-vb[TreeNode_Bounds#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Bounds/VB/treenode_bounds.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nodes">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNodeCollection Nodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNodeCollection Nodes" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Nodes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.ListBindable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNodeCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the collection of <see cref="T:System.Windows.Forms.TreeNode" /> objects assigned to the current tree node.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TreeNodeCollection" /> that represents the tree nodes assigned to the current tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.Nodes%2A> property can hold a collection of other <xref:System.Windows.Forms.TreeNode> objects. Each of the tree node in the collection has a <xref:System.Windows.Forms.TreeNode.Nodes%2A> property that can contain its own <xref:System.Windows.Forms.TreeNodeCollection>. This nesting of tree nodes can make it difficult to navigate a tree structure. The <xref:System.Windows.Forms.TreeNode.FullPath%2A> property makes it easier to determine your location in a tree.  
+  
+   
+  
+## Examples  
+ The following code example removes the selected tree node from one <xref:System.Windows.Forms.TreeView> and adds it to another if both tree node collections are not read-only. When a <xref:System.Windows.Forms.Button> is clicked, the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=fullName> is deleted from one <xref:System.Windows.Forms.TreeView> using the <xref:System.Windows.Forms.TreeNodeCollection.Remove%2A> method and added to the other <xref:System.Windows.Forms.TreeView> using the <xref:System.Windows.Forms.TreeNodeCollection.Insert%2A> method. This example requires that you have two <xref:System.Windows.Forms.TreeView> controls named `treeView1` and `treeView2`, and a <xref:System.Windows.Forms.Button> on a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[TreeNodeCollection#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNodeCollection/CPP/treenodecollection.cpp#1)]
+ [!code-csharp[TreeNodeCollection#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNodeCollection/CS/treenodecollection.cs#1)]
+ [!code-vb[TreeNodeCollection#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNodeCollection/VB/treenodecollection.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode Parent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parent tree node of the current tree node.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the parent of the current tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the tree node is at the root level, the <xref:System.Windows.Forms.TreeNode.Parent%2A> property returns `null`.  
+  
+   
+  
+## Examples  
+ The following code example displays the <xref:System.Windows.Forms.TreeNode.Text%2A> and <xref:System.Windows.Forms.TreeNode.Index%2A> property values of the <xref:System.Windows.Forms.TreeNode> represented by the <xref:System.Windows.Forms.TreeNode.Parent%2A> property of the <xref:System.Windows.Forms.TreeView.SelectedNode%2A?displayProperty=fullName>. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control on it. The <xref:System.Windows.Forms.TreeView> should have at least two root nodes, each having at least one child node.  
+  
+ [!code-cpp[Windows.Forms.TreeNode#2](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CPP/treenode.cpp#2)]
+ [!code-csharp[Windows.Forms.TreeNode#2](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CS/treenode.cs#2)]
+ [!code-vb[Windows.Forms.TreeNode#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.TreeNode/VB/treenode.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrevNode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode PrevNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode PrevNode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.PrevNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the previous sibling tree node.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the previous sibling tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.PrevNode%2A> is the previous sibling <xref:System.Windows.Forms.TreeNode> in the <xref:System.Windows.Forms.TreeNodeCollection> stored in the <xref:System.Windows.Forms.TreeNode.Nodes%2A> property of the tree node's parent <xref:System.Windows.Forms.TreeNode>. If there is no previous tree node, the <xref:System.Windows.Forms.TreeNode.PrevNode%2A> property returns `null`.  
+  
+   
+  
+## Examples  
+ The following code example selects the appropriate <xref:System.Windows.Forms.TreeNode> after determining if the <xref:System.Windows.Forms.TreeNode> passed in is selected and which <xref:System.Windows.Forms.TreeNode> to select. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that has a <xref:System.Windows.Forms.TreeNodeCollection> that contains several <xref:System.Windows.Forms.TreeNode> objects. It also requires that you have a <xref:System.Windows.Forms.ComboBox> with the following items: "Previous", "PreviousVisible", "Next", "NextVisible", "First", and "Last".  
+  
+ [!code-cpp[TreeNode_Parent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Parent/CPP/treenode_parent.cpp#1)]
+ [!code-csharp[TreeNode_Parent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Parent/CS/treenode_parent.cs#1)]
+ [!code-vb[TreeNode_Parent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Parent/VB/treenode_parent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrevVisibleNode">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode PrevVisibleNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode PrevVisibleNode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.PrevVisibleNode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the previous visible tree node.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the previous visible tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.PrevVisibleNode%2A> can be a child, sibling, or a tree node from another branch. If there is no previous tree node, the <xref:System.Windows.Forms.TreeNode.PrevVisibleNode%2A> property returns `null`.  
+  
+   
+  
+## Examples  
+ The following code example selects the appropriate <xref:System.Windows.Forms.TreeNode> after determining if the <xref:System.Windows.Forms.TreeNode> passed in is selected and which <xref:System.Windows.Forms.TreeNode> to select. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that has a <xref:System.Windows.Forms.TreeNodeCollection> that contains several <xref:System.Windows.Forms.TreeNode> objects. It also requires that you have a <xref:System.Windows.Forms.ComboBox> with the following items: "Previous", "PreviousVisible", "Next", "NextVisible", "First", and "Last".  
+  
+ [!code-cpp[TreeNode_Parent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Parent/CPP/treenode_parent.cpp#1)]
+ [!code-csharp[TreeNode_Parent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Parent/CS/treenode_parent.cs#1)]
+ [!code-vb[TreeNode_Parent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Parent/VB/treenode_parent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Remove" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes the current tree node from the tree view control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When the <xref:System.Windows.Forms.TreeNode.Remove%2A> method is called, the tree node, and any child tree nodes that are assigned to the <xref:System.Windows.Forms.TreeNode>, are removed from the <xref:System.Windows.Forms.TreeView>. The removed child nodes are removed from the <xref:System.Windows.Forms.TreeView> but are still attached to this tree node.  
+  
+   
+  
+## Examples  
+ The following code example removes a <xref:System.Windows.Forms.TreeNode> when the user right-clicks the mouse over it and toggles it from expanded to collapsed when the user clicks the mouse wheel over it. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control on it. The <xref:System.Windows.Forms.TreeView> should have two or more root tree nodes, each having at least one child node.  
+  
+ [!code-cpp[Windows.Forms.TreeNode#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CPP/treenode.cpp#1)]
+ [!code-csharp[Windows.Forms.TreeNode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CS/treenode.cs#1)]
+ [!code-vb[Windows.Forms.TreeNode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.TreeNode/VB/treenode.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedImageIndex">
+      <MemberSignature Language="C#" Value="public int SelectedImageIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedImageIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.SelectedImageIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.TreeViewImageIndexConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.ImageList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the image list index value of the image that is displayed when the tree node is in the selected state.</summary>
+        <value>A zero-based index value that represents the image position in an <see cref="T:System.Windows.Forms.ImageList" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> value is the index value of an <xref:System.Drawing.Image> stored in the <xref:System.Windows.Forms.ImageList> assigned to the <xref:System.Windows.Forms.TreeView.ImageList%2A?displayProperty=fullName> property.  
+  
+> [!NOTE]
+>  The default value of the <xref:System.Windows.Forms.TreeNode.SelectedImageIndex%2A> property is the same as the <xref:System.Windows.Forms.TreeView.SelectedImageIndex%2A> property of the <xref:System.Windows.Forms.TreeView> control that the <xref:System.Windows.Forms.TreeNode> is assigned to.  
+  
+   
+  
+## Examples  
+ The following code example creates and assigns an <xref:System.Windows.Forms.ImageList> to a <xref:System.Windows.Forms.TreeView> control and fills the <xref:System.Windows.Forms.TreeView> control with <xref:System.Windows.Forms.TreeNode> objects. The tree nodes are assigned images from the <xref:System.Windows.Forms.ImageList> that is displayed when the tree node is in a selected or unselected state. This example requires that you have a <xref:System.Windows.Forms.Form> containing a <xref:System.Windows.Forms.TreeView>, and an <xref:System.Collections.ArrayList> containing `Customer` objects that each contain `Order` objects. It also requires that the `Customer` and `Order` objects are defined.  
+  
+ [!code-cpp[TreeNode_TreeNode#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_TreeNode/CPP/treenode_treenode.cpp#1)]
+ [!code-csharp[TreeNode_TreeNode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_TreeNode/CS/treenode_treenode.cs#1)]
+ [!code-vb[TreeNode_TreeNode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_TreeNode/VB/treenode_treenode.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedImageKey">
+      <MemberSignature Language="C#" Value="public string SelectedImageKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelectedImageKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.SelectedImageKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.TreeViewImageKeyConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.ImageList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key of the image displayed in the tree node when it is in a selected state.</summary>
+        <value>The key of the image displayed when the tree node is in a selected state.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The image key returned by this property is contained in the <xref:System.Windows.Forms.TreeView.ImageList%2A> property of the parent <xref:System.Windows.Forms.TreeView> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize">
+      <MemberSignature Language="C#" Value="protected virtual void Serialize (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Serialize(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="si" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="si">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that describes the <see cref="T:System.Windows.Forms.TreeNode" />.</param>
+        <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that indicates the state of the stream during serialization</param>
+        <summary>Saves the state of the <see cref="T:System.Windows.Forms.TreeNode" /> to the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for serialization services. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="StateImageIndex">
+      <MemberSignature Language="C#" Value="public int StateImageIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 StateImageIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.StateImageIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.NoneExcludedImageIndexConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.StateImageList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the image that is used to indicate the state of the <see cref="T:System.Windows.Forms.TreeNode" /> when the parent <see cref="T:System.Windows.Forms.TreeView" /> has its <see cref="P:System.Windows.Forms.TreeView.CheckBoxes" /> property set to <see langword="false" />.</summary>
+        <value>The index of the image that is used to indicate the state of the <see cref="T:System.Windows.Forms.TreeNode" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The image index that is returned by this property is contained in the <xref:System.Windows.Forms.TreeView.StateImageList%2A> property of the parent <xref:System.Windows.Forms.TreeView> control.  
+  
+ If the parent <xref:System.Windows.Forms.TreeView> has check boxes enabled, the <xref:System.Windows.Forms.TreeNode.StateImageIndex%2A> is ignored and the node will display the first or second image in the <xref:System.Windows.Forms.TreeView.StateImageList%2A> set on the parent <xref:System.Windows.Forms.TreeView> to indicate an unchecked or checked state, respectively. Toggling the <xref:System.Windows.Forms.TreeNode.Checked%2A> property does not affect the value of the <xref:System.Windows.Forms.TreeNode.StateImageIndex%2A>.  
+  
+ The <xref:System.Windows.Forms.TreeNode.StateImageIndex%2A> returns -1 when not set. The <xref:System.Windows.Forms.TreeNode.StateImageKey%2A> and <xref:System.Windows.Forms.TreeNode.StateImageIndex%2A> properties are mutually exclusive, meaning if one is set, the other is ignored. If you set the <xref:System.Windows.Forms.TreeNode.StateImageKey%2A> property, the <xref:System.Windows.Forms.TreeNode.StateImageIndex%2A> property is automatically set to -1. Alternatively, if you set <xref:System.Windows.Forms.TreeNode.StateImageIndex%2A>, <xref:System.Windows.Forms.TreeNode.StateImageKey%2A> is automatically set to an empty string ("").  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">The specified index is less than -1 or greater than 14.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StateImageKey">
+      <MemberSignature Language="C#" Value="public string StateImageKey { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string StateImageKey" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.StateImageKey" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ImageKeyConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.StateImageList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the key of the image that is used to indicate the state of the <see cref="T:System.Windows.Forms.TreeNode" /> when the parent <see cref="T:System.Windows.Forms.TreeView" /> has its <see cref="P:System.Windows.Forms.TreeView.CheckBoxes" /> property set to <see langword="false" />.</summary>
+        <value>The key of the image that is used to indicate the state of the <see cref="T:System.Windows.Forms.TreeNode" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The image key that is returned by this property is contained in the <xref:System.Windows.Forms.TreeView.StateImageList%2A> property of the parent <xref:System.Windows.Forms.TreeView> control.  
+  
+ If the parent <xref:System.Windows.Forms.TreeView> has check boxes enabled, the <xref:System.Windows.Forms.TreeNode.StateImageKey%2A> is ignored and the node will display the first or second image in the <xref:System.Windows.Forms.TreeView.StateImageList%2A> set on the parent <xref:System.Windows.Forms.TreeView> to indicate an unchecked or checked state, respectively. Toggling the <xref:System.Windows.Forms.TreeNode.Checked%2A> property does not affect the value of the <xref:System.Windows.Forms.TreeNode.StateImageKey%2A>.  
+  
+ The <xref:System.Windows.Forms.TreeNode.StateImageKey%2A> and <xref:System.Windows.Forms.TreeNode.StateImageIndex%2A> properties are mutually exclusive, meaning if one is set, the other is ignored. If you set the <xref:System.Windows.Forms.TreeNode.StateImageKey%2A> property, the <xref:System.Windows.Forms.TreeNode.StateImageIndex%2A> property is automatically set to -1. Alternatively, if you set <xref:System.Windows.Forms.TreeNode.StateImageIndex%2A>, <xref:System.Windows.Forms.TreeNode.StateImageKey%2A> is automatically set to an empty string (""). You should set the <xref:System.Windows.Forms.TreeNode.StateImageKey%2A> to an image with a corresponding index between 0 and 14. You can set the <xref:System.Windows.Forms.TreeNode.StateImageKey%2A> to an image with an index value greater than 14 (an exception will not be thrown), but the image may not be displayed  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="si" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="si">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains the data to serialize the <see cref="T:System.Windows.Forms.TreeNode" />.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains the destination information for this serialization.</param>
+        <summary>Populates a serialization information object with the data needed to serialize the <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <remarks>To be added.</remarks>
+        <permission cref="T:System.Security.Permissions.SecurityPermission">for serialization services. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Tag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object that contains data about the tree node.</summary>
+        <value>An <see cref="T:System.Object" /> that contains data about the tree node. The default is <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any <xref:System.Object> derived type can be assigned to this property. If this property is being set through the Windows Forms designer, only text can be assigned.  
+  
+> [!CAUTION]
+>  The <xref:System.Windows.Forms.TreeNode.Clone%2A> method performs a shallow copy of the node. If the value of the <xref:System.Windows.Forms.TreeNode.Tag%2A> property is a reference type, both the original and cloned copy will point to the same single instance of the <xref:System.Windows.Forms.TreeNode.Tag%2A> value.  
+  
+   
+  
+## Examples  
+ The following code example creates a root tree node to assign child tree nodes to. A child tree node for each `Customer` object in an <xref:System.Collections.ArrayList> is added to the root tree node as well as a child tree node for each `Order` object assigned to the `Customer` object. The `Customer` object is assigned to the <xref:System.Windows.Forms.TreeNode.Tag%2A> property, and the tree nodes representing `Customer` objects are displayed with <xref:System.Drawing.Color.Orange%2A> text. This example requires that you have a `Customer` and `Order` object defined, a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form>, and an <xref:System.Collections.ArrayList> named `customerArray` that contains `Customer` objects.  
+  
+ [!code-cpp[TreeNode_Bounds#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Bounds/CPP/treenode_bounds.cpp#1)]
+ [!code-csharp[TreeNode_Bounds#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Bounds/CS/treenode_bounds.cs#1)]
+ [!code-vb[TreeNode_Bounds#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Bounds/VB/treenode_bounds.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text displayed in the label of the tree node.</summary>
+        <value>The text displayed in the label of the tree node.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The maximum number of characters that a <xref:System.Windows.Forms.TreeNode> can display is 259. If a <xref:System.String> that has more than 259 characters is assigned to this property, only the first 259 characters are displayed.  
+  
+ This property cannot be set by the user if the <xref:System.Windows.Forms.TreeView.LabelEdit%2A> property of the parent <xref:System.Windows.Forms.TreeView> is set to `false`. The alternative to explicitly setting this property is to create the tree node by using one of the <xref:System.Windows.Forms.TreeNode.%23ctor%2A> constructors that has a string parameter that represents the <xref:System.Windows.Forms.TreeNode.Text%2A> property. The label is displayed next to the <xref:System.Windows.Forms.TreeNode> image, if one is displayed.  
+  
+   
+  
+## Examples  
+ The following code example creates a root tree node to assign child tree nodes to. A child tree node for each `Customer` object in an <xref:System.Collections.ArrayList> is added to the root tree node as well as a child tree node for each `Order` object assigned to the `Customer` object. The `Customer` object is assigned to the <xref:System.Windows.Forms.TreeNode.Tag%2A> property, and the tree nodes representing `Customer` objects are displayed with <xref:System.Drawing.Color.Orange%2A> text. This example requires that you have a `Customer` and `Order` object defined, a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form>, and an <xref:System.Collections.ArrayList> named `customerArray` that contains `Customer` objects.  
+  
+ [!code-cpp[TreeNode_Bounds#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Bounds/CPP/treenode_bounds.cpp#1)]
+ [!code-csharp[TreeNode_Bounds#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Bounds/CS/treenode_bounds.cs#1)]
+ [!code-vb[TreeNode_Bounds#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Bounds/VB/treenode_bounds.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Toggle">
+      <MemberSignature Language="C#" Value="public void Toggle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Toggle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Toggle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Toggles the tree node to either the expanded or collapsed state.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The tree node is toggled to the state opposite its current state, either expanded or collapsed.  
+  
+> [!NOTE]
+>  The state of a <xref:System.Windows.Forms.TreeNode> is persisted. For example, if the next level of child nodes was not collapsed previously, when the <xref:System.Windows.Forms.TreeNode.Expand%2A> method is called, the child nodes appear in their previously expanded state.  
+  
+   
+  
+## Examples  
+ The following code example removes a <xref:System.Windows.Forms.TreeNode> when the user right-clicks the mouse over it and toggles it from expanded to collapsed when the user clicks the mouse wheel over it. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control on it. The <xref:System.Windows.Forms.TreeView> should have two or more root tree nodes, each having at least one child node.  
+  
+ [!code-cpp[Windows.Forms.TreeNode#1](~/samples/snippets/cpp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CPP/treenode.cpp#1)]
+ [!code-csharp[Windows.Forms.TreeNode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/Windows.Forms.TreeNode/CS/treenode.cs#1)]
+ [!code-vb[Windows.Forms.TreeNode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Windows.Forms.TreeNode/VB/treenode.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToolTipText">
+      <MemberSignature Language="C#" Value="public string ToolTipText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ToolTipText" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ToolTipText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text that appears when the mouse pointer hovers over a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <value>Gets the text that appears when the mouse pointer hovers over a <see cref="T:System.Windows.Forms.TreeNode" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must set the <xref:System.Windows.Forms.TreeView.ShowNodeToolTips%2A> property of the parent <xref:System.Windows.Forms.TreeView> to `true` for the <xref:System.Windows.Forms.TreeNode.ToolTipText%2A> to be visible at run time.  
+  
+ If the <xref:System.Windows.Forms.TreeView> control has a ToolTip and also contains a <xref:System.Windows.Forms.TreeNode> that has a <xref:System.Windows.Forms.ToolTip>, only the <xref:System.Windows.Forms.ToolTip> for the node will be shown.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.TreeNode.ToolTipText%2A> and <xref:System.Windows.Forms.TreeView.ShowNodeToolTips%2A> properties. To run this example, paste the following code into a Windows Form and call `InitializeTreeViewWithToolTips` from the form's constructor or <xref:System.Windows.Forms.Form.Load> event handler.  
+  
+ [!code-csharp[System.Windows.Forms.TreeViewWhidbeyMembers#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TreeViewWhidbeyMembers/CS/Form1.cs#7)]
+ [!code-vb[System.Windows.Forms.TreeViewWhidbeyMembers#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TreeViewWhidbeyMembers/VB/Form1.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TreeView">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeView TreeView { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeView TreeView" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.TreeView" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.TreeView</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the parent tree view that the tree node is assigned to.</summary>
+        <value>A <see cref="T:System.Windows.Forms.TreeView" /> that represents the parent tree view that the tree node is assigned to, or <see langword="null" /> if the node has not been assigned to a tree view.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example selects the appropriate <xref:System.Windows.Forms.TreeNode> after determining if the <xref:System.Windows.Forms.TreeNode> passed in is selected and which <xref:System.Windows.Forms.TreeNode> to select. This example requires that you have a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.TreeView> control that has a <xref:System.Windows.Forms.TreeNodeCollection> that contains several <xref:System.Windows.Forms.TreeNode> objects. It also requires that you have a <xref:System.Windows.Forms.ComboBox> with the following items: "Previous", "PreviousVisible", "Next", "NextVisible", "First", and "Last".  
+  
+ [!code-cpp[TreeNode_Parent#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeNode_Parent/CPP/treenode_parent.cpp#1)]
+ [!code-csharp[TreeNode_Parent#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeNode_Parent/CS/treenode_parent.cs#1)]
+ [!code-vb[TreeNode_Parent#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeNode_Parent/VB/treenode_parent.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,609 @@
+<Type Name="HyperLinkColumn" FullName="System.Web.UI.WebControls.HyperLinkColumn">
+  <TypeSignature Language="C#" Value="public class HyperLinkColumn : System.Web.UI.WebControls.DataGridColumn" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HyperLinkColumn extends System.Web.UI.WebControls.DataGridColumn" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HyperLinkColumn" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.WebControls.DataGridColumn</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A column type for the <see cref="T:System.Web.UI.WebControls.DataGrid" /> control that contains a hyperlink for each item in the column.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkColumn> column type in a <xref:System.Web.UI.WebControls.DataGrid> control to create a hyperlink for each row in the <xref:System.Web.UI.WebControls.DataGrid>. Set the <xref:System.Web.UI.WebControls.HyperLinkColumn.Text%2A> property to specify the caption text for the hyperlink. To specify the URL to link to when the hyperlink is clicked, set the <xref:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl%2A> property.  
+  
+> [!NOTE]
+>  If you set the <xref:System.Web.UI.WebControls.HyperLinkColumn.Text%2A> and <xref:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl%2A> properties, all hyperlinks in the column will share the same caption and URL.  
+  
+ You can also bind the text caption and URL of the hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkColumn> to a field in a data source instead of setting the <xref:System.Web.UI.WebControls.ButtonColumn.Text%2A> and <xref:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl%2A> properties. This allows you to display a different caption and to specify a different URL for each hyperlink in the column.  
+  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> property to specify a field in a data source to bind to the text caption of the hyperlinks in the column.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> and <xref:System.Web.UI.WebControls.HyperLinkColumn.Text%2A> properties cannot both be set at the same time. If both properties are set, the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> property takes precedence.  
+  
+ Specify the field to bind to the URL of the hyperlink by setting the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> property.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> and <xref:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl%2A> properties cannot both be set at the same time. If both properties are set, the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> property takes precedence.  
+  
+ The <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> property allows you to specify the window or frame to display the Web page content linked to when the hyperlink is clicked.  
+  
+ When using data binding, you can format the text caption and URL of the hyperlink by setting the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextFormatString%2A> and <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlFormatString%2A> properties, respectively.  
+  
+> [!CAUTION]
+>  This control can be used to display user input, which might include malicious client script. Check any information that is sent from a client for executable script, SQL statements, or other code before displaying it in your application. You can use validation controls to verify user input before displaying the input text in a control. ASP.NET provides an input request validation feature to block script and HTML in user input. For more information, see [Securing Standard Controls](http://msdn.microsoft.com/library/f3e7718f-63d0-44a3-bd5f-48cc2059c2a8), [How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings](http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b), and [Validating User Input in ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to create a <xref:System.Web.UI.WebControls.HyperLinkColumn> that links to a separate page.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnMain#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnMain/CS/hyperlinkcolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnMain#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnMain/VB/hyperlinkcolumnvb.aspx#1)]  -->  
+  
+ The following corresponding example displays the item selected in the previous example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnDetails#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnDetails/CS/detailspagecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnDetails#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnDetails/VB/detailspagevb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HyperLinkColumn ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkColumn.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.HyperLinkColumn" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create and initialize a new instance of the <xref:System.Web.UI.WebControls.HyperLinkColumn> class.  
+  
+   
+  
+## Examples  
+ <!-- TODO: review snippet reference [!code-csharp[DataGridCtor#1](~/samples/snippets/csharp/VS_Snippets_WebNet/DataGridCtor/CS/datagridctorcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[DataGridCtor#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/DataGridCtor/VB/datagridctorvb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataNavigateUrlField">
+      <MemberSignature Language="C#" Value="public virtual string DataNavigateUrlField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataNavigateUrlField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the field from a data source to bind to the URL of the hyperlinks in the <see cref="T:System.Web.UI.WebControls.HyperLinkColumn" />.</summary>
+        <value>The field from a data source to bind to the URL of the hyperlinks in the <see cref="T:System.Web.UI.WebControls.HyperLinkColumn" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> property to specify the field from a data source to bind to the URL of the hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkColumn>. When the URL is data bound to a field, the URL of each hyperlink in the column is set with a corresponding value in the specified field. This allows you to set a different URL for each hyperlink in the column. To specify the same URL for each row in the column, set the <xref:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl%2A> property instead of this property.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> and <xref:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl%2A> properties cannot both be set at the same time. If both properties are set, the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> property takes precedence.  
+  
+ When you are using data binding, you can specify a custom display format for the URL of the hyperlinks by setting the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlFormatString%2A> property.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> property to specify the field in a data source to bind to the URL of the hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkColumn>.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnMain#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnMain/CS/hyperlinkcolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnMain#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnMain/VB/hyperlinkcolumnvb.aspx#1)]  -->  
+  
+ The following corresponding example displays the item selected in the previous example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnDetails#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnDetails/CS/detailspagecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnDetails#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnDetails/VB/detailspagevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataNavigateUrlFormatString">
+      <MemberSignature Language="C#" Value="public virtual string DataNavigateUrlFormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataNavigateUrlFormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlFormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Description("The formatting applied to the value bound to the NavigateUrl property.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the display format for the URL of the hyperlinks in the <see cref="T:System.Web.UI.WebControls.HyperLinkColumn" /> when the URL is data-bound to a field in a data source.</summary>
+        <value>The string that specifies the display format for the URL of the hyperlinks in the <see cref="T:System.Web.UI.WebControls.HyperLinkColumn" /> when the URL is data-bound to a field in a data source. The default value is <see cref="F:System.String.Empty" />, which indicates that this property is not set.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlFormatString%2A> property to provide a custom display format for the URL of the hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkColumn>. The specified format is only applied to the URL when the URL is data-bound to a field in a data source. Specify the field to bind to the URL of the hyperlinks in the column by setting the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> property.  
+  
+ For information on the syntax of formatting strings, see <xref:System.String.Format%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlFormatString%2A> property to format the data-bound hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkColumn>.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnMain#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnMain/CS/hyperlinkcolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnMain#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnMain/VB/hyperlinkcolumnvb.aspx#1)]  -->  
+  
+ The following corresponding example displays the item selected in the previous example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnDetails#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnDetails/CS/detailspagecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnDetails#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnDetails/VB/detailspagevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataTextField">
+      <MemberSignature Language="C#" Value="public virtual string DataTextField { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataTextField" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkColumn.DataTextField" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the field from a data source to bind to the text caption of the hyperlinks in the <see cref="T:System.Web.UI.WebControls.HyperLinkColumn" />.</summary>
+        <value>The field name from a data source to bind to the text caption of the hyperlinks in <see cref="T:System.Web.UI.WebControls.HyperLinkColumn" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> property to specify the field name from a data source to bind to the text caption of the hyperlinks in <xref:System.Web.UI.WebControls.HyperLinkColumn>. When the text caption is data bound to a field, the text caption of each hyperlink in the column is set with a corresponding value in the specified field. This allows you to set a different text caption for each hyperlink in the column. To specify the same text caption for each row in the column, set the <xref:System.Web.UI.WebControls.HyperLinkColumn.Text%2A> property instead of this property.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> and <xref:System.Web.UI.WebControls.HyperLinkColumn.Text%2A> properties cannot both be set at the same time. If both properties are set, the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> property takes precedence.  
+  
+ When you using data binding, you can specify a custom display format for the text caption of the hyperlinks by setting the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextFormatString%2A> property.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> property to specify the field in the data source to bind to the text caption of the hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkColumn>.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnMain#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnMain/CS/hyperlinkcolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnMain#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnMain/VB/hyperlinkcolumnvb.aspx#1)]  -->  
+  
+ The following corresponding example displays the item selected in the previous example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnDetails#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnDetails/CS/detailspagecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnDetails#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnDetails/VB/detailspagevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataTextFormatString">
+      <MemberSignature Language="C#" Value="public virtual string DataTextFormatString { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DataTextFormatString" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkColumn.DataTextFormatString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Description("The formatting applied to the value bound to the Text property.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the display format for the text caption of the hyperlinks in the <see cref="T:System.Web.UI.WebControls.HyperLinkColumn" /> column.</summary>
+        <value>The string that specifies the display format for the text caption of the hyperlinks in the column. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextFormatString%2A> property to provide a custom display format for the text caption of the hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkColumn>. The specified format is applied to the text caption only when the text caption is data bound to a field in a data source. Specify the field to bind to the text caption of the hyperlinks in the column by setting the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> property.  
+  
+ For information on the syntax of formatting strings, see <xref:System.String.Format%2A?displayProperty=fullName>.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextFormatString%2A> property to format the data-bound text captions in the <xref:System.Web.UI.WebControls.HyperLinkColumn>.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnMain#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnMain/CS/hyperlinkcolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnMain#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnMain/VB/hyperlinkcolumnvb.aspx#1)]  -->  
+  
+ The following corresponding example displays the item selected in the previous example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnDetails#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnDetails/CS/detailspagecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnDetails#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnDetails/VB/detailspagevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatDataNavigateUrlValue">
+      <MemberSignature Language="C#" Value="protected virtual string FormatDataNavigateUrlValue (object dataUrlValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string FormatDataNavigateUrlValue(object dataUrlValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkColumn.FormatDataNavigateUrlValue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataUrlValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dataUrlValue">The data-bound URL to format.</param>
+        <summary>Formats a data-bound URL using the format specified by the <see cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlFormatString" /> property.</summary>
+        <returns>The data-bound URL in the format specified by the <see cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlFormatString" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.FormatDataNavigateUrlValue%2A> method to format a data-bound URL value with the format specified by the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlFormatString%2A> property.  
+  
+   
+  
+## Examples  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumn2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumn2/CS/hypertextcolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumn2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumn2/VB/hypertextcolumnvb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[HyperLinkColumn2#3](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumn2/CS/hypertextcolumncs.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[HyperLinkColumn2#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumn2/VB/hypertextcolumnvb.aspx#3)]  -->  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnDetailsPage#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnDetailsPage/CS/detailspagecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnDetailsPage#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnDetailsPage/VB/detailspagevb.aspx#1)]  -->  
+<!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnDetailsPage#3](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnDetailsPage/CS/detailspagecs.aspx#3)]  -->
+<!-- TODO: review snippet reference [!code-vb[HyperLinkColumnDetailsPage#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnDetailsPage/VB/detailspagevb.aspx#3)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatDataTextValue">
+      <MemberSignature Language="C#" Value="protected virtual string FormatDataTextValue (object dataTextValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string FormatDataTextValue(object dataTextValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkColumn.FormatDataTextValue(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataTextValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dataTextValue">The data-bound URL to format.</param>
+        <summary>Formats a data-bound text caption using the format specified by the <see cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataTextFormatString" /> property.</summary>
+        <returns>The data-bound text caption in the format specified by the <see cref="P:System.Web.UI.WebControls.HyperLinkColumn.DataTextFormatString" /> property.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.FormatDataTextValue%2A> method to format a data-bound text caption value with the format specified by the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextFormatString%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public override void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkColumn.Initialize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Provides the base implementation to reset a column derived from the <see cref="T:System.Web.UI.WebControls.DataGridColumn" /> class to its initial state.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeCell">
+      <MemberSignature Language="C#" Value="public override void InitializeCell (System.Web.UI.WebControls.TableCell cell, int columnIndex, System.Web.UI.WebControls.ListItemType itemType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeCell(class System.Web.UI.WebControls.TableCell cell, int32 columnIndex, valuetype System.Web.UI.WebControls.ListItemType itemType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLinkColumn.InitializeCell(System.Web.UI.WebControls.TableCell,System.Int32,System.Web.UI.WebControls.ListItemType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="System.Web.UI.WebControls.TableCell" />
+        <Parameter Name="columnIndex" Type="System.Int32" />
+        <Parameter Name="itemType" Type="System.Web.UI.WebControls.ListItemType" />
+      </Parameters>
+      <Docs>
+        <param name="cell">The cell to be initialized.</param>
+        <param name="columnIndex">The index of the column that contains the cell.</param>
+        <param name="itemType">The type of item that the cell is part of.</param>
+        <summary>Initializes the cell representing this column with the contained hyperlink.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ HyperLinks are created for all items in the DataGrid except the Header and Footer items.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NavigateUrl">
+      <MemberSignature Language="C#" Value="public virtual string NavigateUrl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrl" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the URL to link to when a hyperlink in the column is clicked.</summary>
+        <value>The URL to link to when a hyperlink in the column is clicked.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl%2A> property to specify the URL to link to when a hyperlink in the column is clicked.  
+  
+> [!NOTE]
+>  When this property is set, all hyperlinks in the column share the same URL link.  
+  
+ To provide a separate URL for each hyperlink in the column, use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> property.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> and <xref:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl%2A> properties cannot both be set at the same time. If both properties are set, the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataNavigateUrlField%2A> property takes precedence.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkColumn.NavigateUrl%2A> property to specify the URL to link to for hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkColumn>. Notice that all hyperlinks in the column link to the same page.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnSingle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnSingle/CS/hyperlinkcolumnsinglecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnSingle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnSingle/VB/hyperlinkcolumnsinglevb.aspx#1)]  -->  
+  
+ The following corresponding example is a sample Web Forms page to link to when a hyperlink in the previous example is clicked.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnSingleDetails#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnSingleDetails/CS/detailspagesinglecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnSingleDetails#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnSingleDetails/VB/detailspagesinglevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public virtual string Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Target" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkColumn.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.TargetConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the target window or frame to display the Web page content that is linked to when the hyperlink in the column is clicked.</summary>
+        <value>The target window or frame to load the Web page linked to when a hyperlink in the column is clicked. The default value is an empty string (""), which refreshes the window or frame with focus.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> property to specify the frame or window that displays the Web page linked to when a hyperlink in the column is clicked.  
+  
+ If this property is not set, the browser or window with focus refreshes when a hyperlink in the column is clicked.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> property renders as a `target` attribute. The `target` attribute on `anchor` elements is not allowed in the XHTML 1.1 document type definition. Do not set the <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> property if the rendered output for the <xref:System.Web.UI.WebControls.HyperLinkColumn> must be XHTML 1.1 compliant. For more information, refer to the topic [XHTML Standards in Visual Studio and ASP.NET](http://msdn.microsoft.com/library/1b78d416-66bb-43a5-ac77-c703aab55b97).  
+>   
+>  When creating accessible Web pages, it is strongly recommended you avoid using the <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> property to target another window. For more information, see [NIB: ASP.NET Accessibility](http://msdn.microsoft.com/en-us/9b5f3e05-e88d-4248-a5f4-9e64850fa0ae).  
+  
+ The <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> value must begin with a letter in the range of A to Z (case-insensitive), except for the following special values, which begin with an underscore.  
+  
+|Target value|Description|  
+|------------------|-----------------|  
+|`_blank`|Renders the content in a new window without frames.|  
+|`_parent`|Renders the content in the immediate frameset parent.|  
+|`_search`|Renders the content in the search pane.|  
+|`_self`|Renders the content in the frame with focus.|  
+|`_top`|Renders the content in the full window without frames.|  
+  
+> [!NOTE]
+>  Check your browser documentation to determine if the `_search` value is supported.  For example, Internet Explorer 5.0 and above support the `_search` target value.  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkColumn.Target%2A> property to specify the window to display the contents of the Web page linked to when the hyperlink in the column is clicked. This example displays the linked Web page in a new window.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnMain#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnMain/CS/hyperlinkcolumncs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnMain#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnMain/VB/hyperlinkcolumnvb.aspx#1)]  -->  
+  
+ The following corresponding example displays the item selected in the previous example.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnDetails#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnDetails/CS/detailspagecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnDetails#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnDetails/VB/detailspagevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLinkColumn.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the text caption to display for the hyperlinks in the column.</summary>
+        <value>The text caption for the hyperlinks in the column. The default value is <see cref="F:System.String.Empty" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.WebControls.HyperLinkColumn.Text%2A> property to specify the text caption to display for the hyperlinks in the column.  
+  
+> [!NOTE]
+>  When this property is set, all hyperlinks in the column share the same text caption.  
+  
+ To provide a separate text caption for each hyperlink in the column, use the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> property.  
+  
+> [!NOTE]
+>  The <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> and <xref:System.Web.UI.WebControls.HyperLinkColumn.Text%2A> properties cannot both be set at the same time. If both properties are set, the <xref:System.Web.UI.WebControls.HyperLinkColumn.DataTextField%2A> property takes precedence.  
+  
+> [!CAUTION]
+>  Text is not HTML encoded before it is displayed in the <xref:System.Web.UI.WebControls.HyperLinkColumn>. This makes it possible to embed script within HTML tags in the text. If the values for this column come from user input, be sure to validate the values to reduce security vulnerabilities.  
+  
+ The value of this property, when set, can be saved automatically to a resource file by using a designer tool. For more information, see <xref:System.ComponentModel.LocalizableAttribute> and [Globalization and Localization](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d).  
+  
+   
+  
+## Examples  
+ The following example demonstrates how to use the <xref:System.Web.UI.WebControls.HyperLinkColumn.Text%2A> property to specify the text caption for hyperlinks in the <xref:System.Web.UI.WebControls.HyperLinkColumn>. Notice that all hyperlinks in the column have the same text caption.  
+  
+> [!NOTE]
+>  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the Web Forms code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnSingle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnSingle/CS/hyperlinkcolumnsinglecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnSingle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnSingle/VB/hyperlinkcolumnsinglevb.aspx#1)]  -->  
+  
+ The following corresponding example is a sample Web Forms page to link to when a hyperlink in the previous example is clicked.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[HyperLinkColumnSingleDetails#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HyperLinkColumnSingleDetails/CS/detailspagesinglecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[HyperLinkColumnSingleDetails#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/HyperLinkColumnSingleDetails/VB/detailspagesinglevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

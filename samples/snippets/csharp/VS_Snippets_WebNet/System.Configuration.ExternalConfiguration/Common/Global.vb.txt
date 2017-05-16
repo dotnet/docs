@@ -1,0 +1,14 @@
+
+ ' Code that runs on application startup.
+Sub Application_Start(ByVal sender As Object, ByVal e As EventArgs) 
+    
+    ' Set the post back counter to 0.
+    ' This counter is set to 0 the first time 
+    ' the application starts and, thereafter, every 
+    ' time it restarts.
+    Dim postBackCount As Integer = 0
+    
+    Dim appState As HttpApplicationState = Application.Contents
+    appState.Add("postBackKey", postBackCount)
+
+End Sub 'Application_Start 

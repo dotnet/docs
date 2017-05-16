@@ -1,0 +1,101 @@
+<Type Name="PageRangeSelection" FullName="System.Windows.Controls.PageRangeSelection">
+  <TypeSignature Language="C#" Value="public enum PageRangeSelection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PageRangeSelection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.PageRangeSelection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether all the pages or only a limited range will be processed by an operation, usually printing.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is primarily used as the value of the <xref:System.Windows.Controls.PrintDialog.PageRangeSelection%2A> property of the [PrintDialog](~/docs/framework/wpf/controls/printdialog.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the enumeration to set the <xref:System.Windows.Controls.PrintDialog.PageRangeSelection%2A> property by using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)] and code.  
+  
+ [!code-xml[PrintDialog#2](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml#2)]  
+  
+ ...  
+  
+ [!code-csharp[PrintDialog#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml.cs#1)]
+ [!code-vb[PrintDialog#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintDialog/visualbasic/window1.xaml.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllPages">
+      <MemberSignature Language="C#" Value="AllPages" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PageRangeSelection AllPages = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PageRangeSelection.AllPages" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All pages.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentPage">
+      <MemberSignature Language="C#" Value="CurrentPage" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PageRangeSelection CurrentPage = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PageRangeSelection.CurrentPage" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The current page.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedPages">
+      <MemberSignature Language="C#" Value="SelectedPages" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PageRangeSelection SelectedPages = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PageRangeSelection.SelectedPages" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The selected pages.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="UserPages">
+      <MemberSignature Language="C#" Value="UserPages" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PageRangeSelection UserPages = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PageRangeSelection.UserPages" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A user-specified range of pages.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

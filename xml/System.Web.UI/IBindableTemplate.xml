@@ -1,0 +1,90 @@
+<Type Name="IBindableTemplate" FullName="System.Web.UI.IBindableTemplate">
+  <TypeSignature Language="C#" Value="public interface IBindableTemplate : System.Web.UI.ITemplate" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBindableTemplate implements class System.Web.UI.ITemplate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IBindableTemplate" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.ITemplate</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Provides a way for ASP.NET data-bound controls, such as <see cref="T:System.Web.UI.WebControls.DetailsView" /> and <see cref="T:System.Web.UI.WebControls.FormView" />, to automatically bind to an ASP.NET data source control within templated content sections.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.IBindableTemplate> interface provides a way for ASP.NET data-bound controls, such as <xref:System.Web.UI.WebControls.DetailsView>, <xref:System.Web.UI.WebControls.GridView>, and <xref:System.Web.UI.WebControls.FormView>, to bind to data supplied by an ASP.NET data source control, such as <xref:System.Web.UI.WebControls.ObjectDataSource> or <xref:System.Web.UI.WebControls.SqlDataSource>, when the data-bound control includes templated content.  
+  
+> [!NOTE]
+>  Page developers do not implement the <xref:System.Web.UI.IBindableTemplate> interface. Developers creating custom data-bound controls might manipulate <xref:System.Web.UI.IBindableTemplate> objects in implementations of the <xref:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding%2A> and <xref:System.Web.UI.WebControls.GridView.ExtractRowValues%2A> methods, but do not implement their own <xref:System.Web.UI.IBindableTemplate> objects.  
+  
+ Data-bound controls such as <xref:System.Web.UI.WebControls.GridView> typically are aware of their child control trees, and can therefore bind values to them, extract values from them, and pass these values between the data-bound control and a data source control whenever data binding occurs. However, when a page developer defines templated content for a data-bound control, the child controls within the template are not visible to the parent data-bound control: the parent can render the child content (because controls effectively render themselves), but it cannot extract the values of these child controls to pass to an associated data source control's update, insert, or delete operation. In data-binding scenarios, templated content is opaque to a parent data-bound control. The `Bind` syntax makes it possible for the data-bound control to extract the values from a control data-bound inside an <xref:System.Web.UI.IBindableTemplate> instance.  
+  
+ The data binding can be one-way or two-way. (These binding directions are defined by the <xref:System.ComponentModel.BindingDirection> enumeration.) One-way data binding is any data binding performed in an outbound direction, from data source control to data-bound control; for example, any data-reading scenario involves one-way data binding. For one-way data binding, you can use one-way data binding syntax (`<%# Eval("fieldname") %>`) inside templated content, and do not need to use two-way ASP.NET data-binding syntax. Two-way data-binding describes data-binding in the inbound direction, from the data-bound control to the data source control. Automatic edit, insert, and delete scenarios using ASP.NET data-bound and data source controls are two-way data-binding scenarios. These scenarios use two-way data-binding expressions (`<%# Bind("fieldname") %>`). The <xref:System.Web.UI.IBindableTemplate> interface and the ASP.NET infrastructure support automatic, declarative, two-way data binding between ASP.NET data source controls and templated content. For more information about ASP.NET data-binding expressions and syntax, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742) and [Data-Binding Expressions Overview](http://msdn.microsoft.com/library/14cdd57d-0f82-4667-b503-73e1a96f136a).  
+  
+ Templated content for data-bound controls is most often defined declaratively. The following table describes the processes most commonly used to bind templated data to data-bound controls.  
+  
+|Data-bound control|Process|  
+|-------------------------|-------------|  
+|<xref:System.Web.UI.WebControls.DetailsView>|The data-bound control is bound to data using the `DataSourceID` property of the data source control, and the templated content is defined in an <xref:System.Web.UI.WebControls.TemplateField.ItemTemplate%2A>, <xref:System.Web.UI.WebControls.TemplateField.EditItemTemplate%2A> or <xref:System.Web.UI.WebControls.TemplateField.InsertItemTemplate%2A> property.|  
+|<xref:System.Web.UI.WebControls.GridView>|The data-bound control is bound to data using the `DataSourceID` property of the data source control, and the templated content is defined in an <xref:System.Web.UI.WebControls.TemplateField.ItemTemplate%2A> or <xref:System.Web.UI.WebControls.TemplateField.EditItemTemplate%2A> property. The <xref:System.Web.UI.WebControls.GridView> control does not support an insert operation.|  
+|<xref:System.Web.UI.WebControls.FormView>|The data-bound control is bound to data using the `DataSourceID` property, and the templated content is defined in an <xref:System.Web.UI.WebControls.FormView.ItemTemplate%2A>, <xref:System.Web.UI.WebControls.FormView.InsertItemTemplate%2A>, or <xref:System.Web.UI.WebControls.FormView.EditItemTemplate%2A> property, or in a <xref:System.Web.UI.WebControls.TemplateField> object.|  
+  
+ The <xref:System.Web.UI.WebControls.DataList> and <xref:System.Web.UI.WebControls.Repeater> controls do not support automatic two-way data-binding scenarios.  
+  
+ ASP.NET implicitly creates an <xref:System.Web.UI.IBindableTemplate> object when templated content that binds to an ASP.NET data source control within the template is parsed. Specifically, the ASP.NET parser creates an instance of the <xref:System.Web.UI.CompiledBindableTemplateBuilder> class when it parses templated content that uses ASP.NET data-binding syntax and contains ASP.NET Web server controls that support data binding. These ASP.NET sever controls are marked by the <xref:System.ComponentModel.BindableAttribute> attribute.  
+  
+ The <xref:System.Web.UI.IBindableTemplate> interface defines one method, <xref:System.Web.UI.IBindableTemplate.ExtractValues%2A>. This method is defined for two-way data binding, so that a data-bound control can automatically extract name/value pairs from templated content and pass the pairs to a data source control at run time. For automatic data binding to succeed, the field names extracted from the templated content by the <xref:System.Web.UI.IBindableTemplate.ExtractValues%2A> method must match parameter names in an associated data source control. Control developers call the <xref:System.Web.UI.IBindableTemplate.ExtractValues%2A> method explicitly only within their implementations of <xref:System.Web.UI.WebControls.FormView.ExtractRowValues%2A> or some other similar method of a custom data-bound control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how a <xref:System.Web.UI.WebControls.FormView> control can declaratively define templated content, bind to data provided by a <xref:System.Web.UI.WebControls.SqlDataSource> control, and display and edit existing records. The ASP.NET parser parses the templated content and creates an <xref:System.Web.UI.IBindableTemplate> object at run time that is able to bind values from the <xref:System.Web.UI.WebControls.SqlDataSource> control to the data-binding areas defined in the template by both one-way ASP.NET data-binding syntax (`<%# Eval("fieldname") %>`) and two-way data-binding syntax (`<%# Bind("fieldname") %>`).  
+  
+> [!IMPORTANT]
+>  This control has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[FormView#1](~/samples/snippets/csharp/VS_Snippets_WebNet/FormView/CS/formvieweditcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[FormView#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/FormView/VB/formvieweditvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExtractValues">
+      <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary ExtractValues (System.Web.UI.Control container);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Specialized.IOrderedDictionary ExtractValues(class System.Web.UI.Control container) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IBindableTemplate.ExtractValues(System.Web.UI.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Specialized.IOrderedDictionary</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="container" Type="System.Web.UI.Control" />
+      </Parameters>
+      <Docs>
+        <param name="container">The <see cref="T:System.Web.UI.Control" /> from which to extract name/value pairs, which are passed by the data-bound control to an associated data source control in two-way data-binding scenarios.</param>
+        <summary>When implemented by a class, retrieves a set of name/value pairs for values bound using two-way ASP.NET data-binding syntax within the templated content.</summary>
+        <returns>An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> of name/value pairs. The name represents the name of a control within templated content, and the value is the current value of a property value bound using two-way ASP.NET data-binding syntax.</returns>
+        <remarks>To be added.</remarks>
+        <block subset="none" type="overrides">
+          <para>An <see cref="M:System.Web.UI.IBindableTemplate.ExtractValues(System.Web.UI.Control)" /> method must conform to the following rules:  
+  
+-   If more than one binding exists for a given field, the last binding encountered is used.  
+  
+-   In order to reference a control's identifier in the <see cref="M:System.Web.UI.IBindableTemplate.ExtractValues(System.Web.UI.Control)" /> method, the control must also have a user-defined ID property at parse time. If no ID exists, this results in a parse error.  
+  
+-   Two-way ASP.NET data-binding syntax is only valid in an <see cref="T:System.Web.UI.ITemplate" /> or <see cref="T:System.Web.UI.IBindableTemplate" /> property of a data-bound control.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

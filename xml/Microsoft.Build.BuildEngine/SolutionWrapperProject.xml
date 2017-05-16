@@ -1,0 +1,45 @@
+<Type Name="SolutionWrapperProject" FullName="Microsoft.Build.BuildEngine.SolutionWrapperProject">
+  <TypeSignature Language="C#" Value="public static class SolutionWrapperProject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SolutionWrapperProject extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.SolutionWrapperProject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class is used to generate an MSBuild wrapper project for a solution file or standalone VC project.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Generate">
+      <MemberSignature Language="C#" Value="public static string Generate (string solutionPath, string toolsVersionOverride, Microsoft.Build.Framework.BuildEventContext projectBuildEventContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Generate(string solutionPath, string toolsVersionOverride, class Microsoft.Build.Framework.BuildEventContext projectBuildEventContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.SolutionWrapperProject.Generate(System.String,System.String,Microsoft.Build.Framework.BuildEventContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="solutionPath" Type="System.String" />
+        <Parameter Name="toolsVersionOverride" Type="System.String" />
+        <Parameter Name="projectBuildEventContext" Type="Microsoft.Build.Framework.BuildEventContext" />
+      </Parameters>
+      <Docs>
+        <param name="solutionPath">Full path to the solution we are wrapping</param>
+        <param name="toolsVersionOverride">May be null. If non-null, contains the ToolsVersion passed in on the command line</param>
+        <param name="projectBuildEventContext">An event context for logging purposes.</param>
+        <summary>Given the full path to a solution, returns a string containing the v3.5 MSBuild-format wrapper project for that solution.</summary>
+        <returns>A string containing the path to the solution.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,18 @@
+<Namespace Name="System.Xml.Schema">
+  <Docs>
+    <summary>The <see cref="N:System.Xml.Schema" /> namespace contains the XML classes that provide standards-based support for XML schema definition language (XSD) schemas.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  -   Do not use schemas from unknown or untrusted sources or locations. Doing so will compromise the security of your code.  
+> -   XML schemas (including inline schemas) are inherently vulnerable to denial of service attacks; do not accept them in untrusted scenarios.  
+> -   Schema validation error messages and exceptions may expose sensitive information about the content model or URI paths to the schema file. Be careful not to expose this information to untrusted callers.  
+> -   Additional security considerations are covered in the Remarks section of the APIs in this namespace.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Namespace>

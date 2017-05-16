@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: c80d53a8-1a30-4115-b232-52f0d089fec5
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Tutorial: Deferred Execution (Visual Basic)

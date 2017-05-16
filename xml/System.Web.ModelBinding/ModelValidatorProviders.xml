@@ -1,0 +1,37 @@
+<Type Name="ModelValidatorProviders" FullName="System.Web.ModelBinding.ModelValidatorProviders">
+  <TypeSignature Language="C#" Value="public static class ModelValidatorProviders" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ModelValidatorProviders extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ModelValidatorProviders" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a container for the current validation provider.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Providers">
+      <MemberSignature Language="C#" Value="public static System.Web.ModelBinding.ModelValidatorProviderCollection Providers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Web.ModelBinding.ModelValidatorProviderCollection Providers" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ModelValidatorProviders.Providers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.ModelBinding.ModelValidatorProviderCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the model-validator provider collection.</summary>
+        <value>The model-validator provider collection.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,82 @@
+<Type Name="CustomErrorsModes" FullName="System.Runtime.Remoting.CustomErrorsModes">
+  <TypeSignature Language="C#" Value="public enum CustomErrorsModes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomErrorsModes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.CustomErrorsModes" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how custom errors are handled.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Complete exception information includes the exact server exception and the server stack trace. Filtered information includes a standard remoting exception but no server stack trace.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Off">
+      <MemberSignature Language="C#" Value="Off" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.CustomErrorsModes Off = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.CustomErrorsModes.Off" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.CustomErrorsModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All callers receive complete exception information.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="On">
+      <MemberSignature Language="C#" Value="On" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.CustomErrorsModes On = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.CustomErrorsModes.On" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.CustomErrorsModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>All callers receive filtered exception information.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoteOnly">
+      <MemberSignature Language="C#" Value="RemoteOnly" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.CustomErrorsModes RemoteOnly = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.CustomErrorsModes.RemoteOnly" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.Remoting.CustomErrorsModes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Local callers receive complete exception information; remote callers receive filtered exception information.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,9 @@
+<ServiceConfiguration serviceName="LS_Queries_VB" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+    <Role name="LightSwitchWebRole">
+        <Instances count="1" /> 
+        <ConfigurationSettings>
+        </ConfigurationSettings>
+        <Certificates>
+        </Certificates>  
+    </Role>
+</ServiceConfiguration>

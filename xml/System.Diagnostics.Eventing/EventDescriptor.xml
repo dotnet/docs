@@ -1,0 +1,213 @@
+<Type Name="EventDescriptor" FullName="System.Diagnostics.Eventing.EventDescriptor">
+  <TypeSignature Language="C#" Value="public struct EventDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public ansi sealed beforefieldinit EventDescriptor extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.EventDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains the metadata that defines an event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class represents an event defined in the manifest. After writing your manifest, you use the Message Compiler (MC.exe) to generate a resource file. A byproduct of the process is a header file that contains the event descriptor in C, as shown in the following example.  
+  
+```  
+EXTERN_C __declspec(selectany) const EVENT_DESCRIPTOR ReadEvent = {0x1, 0x0, 0x10, 0x4, 0x0, 0x0, 0x8000000000000005};  
+```  
+  
+ Use the values of the descriptor to create an instance of this class, as shown in the following example. The keyword is an unsigned long value and cannot be cast directly to a long; you must use the `unchecked` language keyword to allow the assignment.  
+  
+```  
+unchecked  
+{  
+    readEvent = new EventDescriptor(0x1, 0x0, 0x10, 0x4, 0x0, 0x0, (long)0x8000000000000005);  
+}  
+```  
+  
+ You use the descriptor when calling the <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A?displayProperty=fullName> or <xref:System.Diagnostics.Eventing.EventProvider.WriteEvent%2A?displayProperty=fullName> method.  
+  
+ For more information on writing the manifest and using the message compiler, see [Developing Event Publishers](https://msdn.microsoft.com/en-us/library/windows/desktop/aa964766\(v=vs.85\).aspx)  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EventDescriptor (int id, byte version, byte channel, byte level, byte opcode, int task, long keywords);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 id, unsigned int8 version, unsigned int8 channel, unsigned int8 level, unsigned int8 opcode, int32 task, int64 keywords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventDescriptor.#ctor(System.Int32,System.Byte,System.Byte,System.Byte,System.Byte,System.Int32,System.Int64)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.Int32" />
+        <Parameter Name="version" Type="System.Byte" />
+        <Parameter Name="channel" Type="System.Byte" />
+        <Parameter Name="level" Type="System.Byte" />
+        <Parameter Name="opcode" Type="System.Byte" />
+        <Parameter Name="task" Type="System.Int32" />
+        <Parameter Name="keywords" Type="System.Int64" />
+      </Parameters>
+      <Docs>
+        <param name="id">The event identifier.</param>
+        <param name="version">Version of the event. The version indicates a revision to the event definition. You can use this member and the Id member to identify a unique event.</param>
+        <param name="channel">Defines a potential target for the event.</param>
+        <param name="level">Specifies the level of detail included in the event.</param>
+        <param name="opcode">Operation being performed at the time the event is written.</param>
+        <param name="task">Identifies a logical component of the application that is writing the event.</param>
+        <param name="keywords">Bit mask that specifies the event category. The keyword can contain one or more provider-defined keywords, standard keywords, or both.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.EventDescriptor" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details on these parameters, see the attributes of the [EventDefinitionType](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382754\(v=vs.85\).aspx) complex type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Channel">
+      <MemberSignature Language="C#" Value="public byte Channel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Channel" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Channel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the channel value from the event descriptor.</summary>
+        <value>The channel that defines a potential target for the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EventId">
+      <MemberSignature Language="C#" Value="public int EventId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 EventId" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.EventId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the event identifier value from the event descriptor.</summary>
+        <value>The event identifier.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keywords">
+      <MemberSignature Language="C#" Value="public long Keywords { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Keywords" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Keywords" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the keyword value from the event descriptor.</summary>
+        <value>The keyword, which is a bit mask, that specifies the event category.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Level">
+      <MemberSignature Language="C#" Value="public byte Level { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Level" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Level" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the level value from the event descriptor.</summary>
+        <value>The level of detail included in the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Opcode">
+      <MemberSignature Language="C#" Value="public byte Opcode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Opcode" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Opcode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the operation code value from the event descriptor.</summary>
+        <value>The operation being performed at the time the event is written.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Task">
+      <MemberSignature Language="C#" Value="public int Task { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Task" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Task" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the task value from the event descriptor.</summary>
+        <value>The task that identifies the logical component of the application that is writing the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Version">
+      <MemberSignature Language="C#" Value="public byte Version { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Version" />
+      <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventDescriptor.Version" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retrieves the version value from the event descriptor.</summary>
+        <value>The version of the event.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The version indicates a revision to the event definition. You can use this member and the Id member to identify a unique event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

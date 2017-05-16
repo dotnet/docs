@@ -18,8 +18,8 @@ helpviewer_keywords:
   - "Handles keyword"
 ms.assetid: 1b051c0e-f499-42f6-acb5-6f4f27824b40
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,97 @@
+<Type Name="WorkflowWebService" FullName="System.Workflow.Activities.WorkflowWebService">
+  <TypeSignature Language="C#" Value="public abstract class WorkflowWebService : System.Web.Services.WebService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkflowWebService extends System.Web.Services.WebService" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WorkflowWebService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.WebService</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the base class for all workflow Web services.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WorkflowWebService (Type workflowType);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Type workflowType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowWebService.#ctor(System.Type)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="workflowType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="workflowType">The <see cref="T:System.Type" /> of the workflow.</param>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.Workflow.Activities.WorkflowWebService" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="protected object[] Invoke (Type interfaceType, string methodName, bool isActivation, object[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object[] Invoke(class System.Type interfaceType, string methodName, bool isActivation, object[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowWebService.Invoke(System.Type,System.String,System.Boolean,System.Object[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="interfaceType" Type="System.Type" />
+        <Parameter Name="methodName" Type="System.String" />
+        <Parameter Name="isActivation" Type="System.Boolean" />
+        <Parameter Name="parameters" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="interfaceType">The type of the interface.</param>
+        <param name="methodName">The name of the method.</param>
+        <param name="isActivation">Indicates whether the Web service activates the workflow.</param>
+        <param name="parameters">The parameters of the method specified by <c>methodName</c>.</param>
+        <summary>Invokes the associated workflow and retrieves the response.</summary>
+        <returns>The object returned by the Web service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowRuntime">
+      <MemberSignature Language="C#" Value="protected System.Workflow.Runtime.WorkflowRuntime WorkflowRuntime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.WorkflowRuntime WorkflowRuntime" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WorkflowWebService.WorkflowRuntime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.Runtime.WorkflowRuntime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Provides access to the current <see cref="T:System.Workflow.Runtime.WorkflowRuntime" />, which executes the workflow.</summary>
+        <value>The current <see cref="T:System.Workflow.Runtime.WorkflowRuntime" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

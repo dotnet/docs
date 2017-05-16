@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "compilation, conditional"
 ms.assetid: 9c35e55e-7eee-44fb-a586-dad1f1884848
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

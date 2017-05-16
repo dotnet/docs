@@ -1,0 +1,95 @@
+<Type Name="UCOMIConnectionPointContainer" FullName="System.Runtime.InteropServices.UCOMIConnectionPointContainer">
+  <TypeSignature Language="C#" Value="public interface UCOMIConnectionPointContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UCOMIConnectionPointContainer" />
+  <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIConnectionPointContainer" />
+  <AssemblyInfo>
+    <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("b196b284-bab4-101a-b69c-00aa00341d07")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Use <see cref="T:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer" /> instead.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IConnectionPointContainer` in the com subfolder of the MSDN library.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnumConnectionPoints">
+      <MemberSignature Language="C#" Value="public void EnumConnectionPoints (out System.Runtime.InteropServices.UCOMIEnumConnectionPoints ppEnum);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumConnectionPoints(class System.Runtime.InteropServices.UCOMIEnumConnectionPoints ppEnum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIConnectionPointContainer.EnumConnectionPoints(System.Runtime.InteropServices.UCOMIEnumConnectionPoints@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ppEnum" Type="System.Runtime.InteropServices.UCOMIEnumConnectionPoints&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="ppEnum">On successful return, contains the interface pointer of the enumerator.</param>
+        <summary>Creates an enumerator of all the connection points supported in the connectable object, one connection point per IID.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IConnectionPointContainer::EnumConnectionPoints` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindConnectionPoint">
+      <MemberSignature Language="C#" Value="public void FindConnectionPoint (ref Guid riid, out System.Runtime.InteropServices.UCOMIConnectionPoint ppCP);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FindConnectionPoint(valuetype System.Guid riid, class System.Runtime.InteropServices.UCOMIConnectionPoint ppCP) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIConnectionPointContainer.FindConnectionPoint(System.Guid@,System.Runtime.InteropServices.UCOMIConnectionPoint@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="riid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="ppCP" Type="System.Runtime.InteropServices.UCOMIConnectionPoint&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="riid">A reference to the outgoing interface IID whose connection point is being requested.</param>
+        <param name="ppCP">On successful return, contains the connection point that manages the outgoing interface <c>riid</c>.</param>
+        <summary>Asks the connectable object if it has a connection point for a particular IID, and if so, returns the <see langword="IConnectionPoint" /> interface pointer to that connection point.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, please see the existing documentation for `IConnectionPointContainer::FindConnectionPoint` in the MSDN library.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

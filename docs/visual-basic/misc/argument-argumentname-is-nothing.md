@@ -13,8 +13,8 @@ f1_keywords:
   - "vbrArgument_InvalidNullValue1"
 ms.assetid: abbde904-c191-4911-8822-c9dd2f81d616
 caps.latest.revision: 8
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"

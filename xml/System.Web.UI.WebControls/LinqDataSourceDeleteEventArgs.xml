@@ -1,0 +1,160 @@
+<Type Name="LinqDataSourceDeleteEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs">
+  <TypeSignature Language="C#" Value="public class LinqDataSourceDeleteEventArgs : System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSourceDeleteEventArgs extends System.ComponentModel.CancelEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.CancelEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Web.UI.WebControls.LinqDataSource.Deleting" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs> object is passed to any handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Deleting> event. The <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.OriginalObject%2A> property contains the data that will be deleted.  
+  
+ If the object that represents the data source throws a validation exception before it deletes the data, the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.Exception%2A> property contains an instance of the <xref:System.Web.UI.WebControls.LinqDataSourceValidationException> class. You can retrieve all the validation exceptions through the <xref:System.Web.UI.WebControls.LinqDataSourceValidationException.InnerExceptions%2A> property. If no validation exception is thrown, the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.Exception%2A> property contains `null`. If you handle the validation exceptions and do not want the exception to be re-thrown, set the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.ExceptionHandled%2A> property to `true`.  
+  
+ You create an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Deleting> event to validate the data, to examine validation errors from the data class, or to cancel the delete operation. You cancel the delete operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
+  
+ By default, the <xref:System.Web.UI.WebControls.LinqDataSource> control stores the original values from the data source in view state in the Web page, except those whose <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute is marked as `UpdateCheck.Never`. LINQ to SQL automatically checks the integrity of the data before deleting the data. It does this by comparing the current values in the data source with the original values that are stored in view state. You can perform additional data validation by creating a handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Deleting> event.  
+  
+   
+  
+## Examples  
+ The following example shows how to cancel the delete operation based on a property in the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.OriginalObject%2A> property and a value from the Web page. In the example, users must select a <xref:System.Web.UI.WebControls.CheckBox> control to confirm that they want to delete a product record when its `OnSale` property is set to `true`.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Deleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Deleting/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Deleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Deleting/vb/Default.aspx.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinqDataSourceDeleteEventArgs (object originalObject);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object originalObject) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.#ctor(System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="originalObject" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="originalObject">An object of the type specified in the <see cref="P:System.Web.UI.WebControls.LinqDataSource.TableName" /> property that contains the data to delete.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LinqDataSourceDeleteEventArgs (System.Web.UI.WebControls.LinqDataSourceValidationException exception);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.LinqDataSourceValidationException exception) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.#ctor(System.Web.UI.WebControls.LinqDataSourceValidationException)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="exception" Type="System.Web.UI.WebControls.LinqDataSourceValidationException" />
+      </Parameters>
+      <Docs>
+        <param name="exception">The exception that occurred when validating the data to delete.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs" /> class with the specified exception.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.LinqDataSourceValidationException Exception { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.LinqDataSourceValidationException Exception" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.Exception" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.LinqDataSourceValidationException</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the exception that was thrown while the data was being validated before the delete operation.</summary>
+        <value>The exception, if an error occurred; otherwise, <see langword="null" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a validation exception is thrown before the delete operation is performed, the exception is stored in the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.Exception%2A> property. In an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Deleting> event, you can retrieve the exception through the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.Exception%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExceptionHandled">
+      <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.ExceptionHandled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the exception was handled and that it should not be thrown again.</summary>
+        <value>
+          <see langword="true" /> if the exception was handled; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can create an event handler for the <xref:System.Web.UI.WebControls.LinqDataSource.Deleting> event to examine validation exceptions that were thrown before the delete operation. If you handle the exception and do not want it to be thrown again, set the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.ExceptionHandled%2A> property to `true`. If you do not set the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.ExceptionHandled%2A> property to `true`, the exception will be propagated to the next event handler in the call stack.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OriginalObject">
+      <MemberSignature Language="C#" Value="public object OriginalObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object OriginalObject" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.OriginalObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the object that represents the data to delete.</summary>
+        <value>An object of the type specified in the <see cref="P:System.Web.UI.WebControls.LinqDataSource.TableName" /> property that contains the data to delete.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.OriginalObject%2A> property to interact with the data before it is deleted. You can validate the data, or you can cancel the event by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. You can modify which record is deleted by changing the value or values of the object in the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.OriginalObject%2A> property.  
+  
+   
+  
+## Examples  
+ The following example shows how to cancel the delete operation based on a property in the <xref:System.Web.UI.WebControls.LinqDataSourceDeleteEventArgs.OriginalObject%2A> property and a value from the Web page. In the example, users must select a <xref:System.Web.UI.WebControls.CheckBox> control to confirm that they want to delete a product record when its `OnSale` property is set to `true`.  
+  
+ [!code-csharp[System.Web.UI.WebControls.LinqDataSource.Deleting#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Deleting/cs/Default.aspx.cs#1)]
+ [!code-vb[System.Web.UI.WebControls.LinqDataSource.Deleting#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.LinqDataSource.Deleting/vb/Default.aspx.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

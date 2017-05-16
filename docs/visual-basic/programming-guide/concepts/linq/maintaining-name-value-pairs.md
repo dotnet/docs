@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 57ac2072-d9f5-432b-84f0-a889c62fd813
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Maintaining Name/Value Pairs (Visual Basic)

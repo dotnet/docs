@@ -1,0 +1,21 @@
+﻿<Window 
+  x:Class="FragmentNavigationSample.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Fragment Navigation Sample"
+  Height="600" 
+  Width="500" 
+  >
+  <DockPanel>
+
+    <!--Address bar-->
+    <DockPanel DockPanel.Dock="Top">
+      <Label DockPanel.Dock="Left">Address:</Label>
+      <Button DockPanel.Dock="Right" Name="goButton" Click="goButton_Click">Go</Button>
+      <TextBox Name="addressTextBox">DocumentPage.xaml#Fragment5</TextBox>
+    </DockPanel>
+    
+    <Frame Name="browserFrame" FragmentNavigation="browserFrame_FragmentNavigation" />
+    
+  </DockPanel>
+</Window>

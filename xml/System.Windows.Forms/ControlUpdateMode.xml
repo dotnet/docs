@@ -1,0 +1,57 @@
+<Type Name="ControlUpdateMode" FullName="System.Windows.Forms.ControlUpdateMode">
+  <TypeSignature Language="C#" Value="public enum ControlUpdateMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ControlUpdateMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlUpdateMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Determines when changes to a data source value get propagated to the corresponding data-bound control property.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ControlUpdateMode> is used by the <xref:System.Windows.Forms.Binding.ControlUpdateMode%2A> property of the <xref:System.Windows.Forms.Binding> class. OnPropertyChanged is the default value. To force a control update when the update mode is Never, use the <xref:System.Windows.Forms.Binding.ReadValue%2A> method on the related <xref:System.Windows.Forms.Binding>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Never">
+      <MemberSignature Language="C#" Value="Never" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlUpdateMode Never = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlUpdateMode.Never" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlUpdateMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bound control is never updated when a data source value changes. The data source is write-only.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="OnPropertyChanged" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ControlUpdateMode OnPropertyChanged = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ControlUpdateMode.OnPropertyChanged" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ControlUpdateMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The bound control is updated when the data source value changes, or the data source position changes.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

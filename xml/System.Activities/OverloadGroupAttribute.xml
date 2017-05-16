@@ -1,0 +1,106 @@
+<Type Name="OverloadGroupAttribute" FullName="System.Activities.OverloadGroupAttribute">
+  <TypeSignature Language="C#" Value="public sealed class OverloadGroupAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OverloadGroupAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.OverloadGroupAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property, AllowMultiple=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a method for indicating which combinations of arguments are valid in an activity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Arguments can be grouped together to form valid overload groups. An overload group cannot be a subset or an equivalent set of another overload group. The only exception to this rule is a subset that contains only arguments where <xref:System.Activities.RuntimeArgument.IsRequired%2A> is `false`. Overload groups can overlap but it is an error if the intersection of the groups contains all the required arguments of one or both the overload groups.  
+  
+ An overload group is considered bound if all the <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments in the group are bound. If a group has zero <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments and at least one argument bound, then the group is considered bound. It is an error if none of the groups are bound unless one overload group has no <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments in it. Binding <xref:System.Activities.RuntimeArgument.IsRequired%2A> arguments from more than one overload group is not permitted. It is an error to have more than one overload group bound, that is, all required arguments in one overload group are bound and any argument in another overload group is also bound.  
+  
+ Any violation of the preceding rules results in a <xref:System.Activities.InvalidWorkflowException> being thrown when the containing activity is prepared for execution.  
+  
+ The <xref:System.Activities.RuntimeArgument.IsRequired%2A?displayProperty=fullName> is set to `true` if the <xref:System.Activities.RequiredArgumentAttribute?displayProperty=fullName> is applied to an argument.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OverloadGroupAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.OverloadGroupAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.OverloadGroupAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OverloadGroupAttribute (string groupName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string groupName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.OverloadGroupAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="groupName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="groupName">The name of the group of arguments.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.OverloadGroupAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GroupName">
+      <MemberSignature Language="C#" Value="public string GroupName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string GroupName" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.OverloadGroupAttribute.GroupName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the <see cref="T:System.Activities.OverloadGroupAttribute" />.</summary>
+        <value>The name of the group of related arguments.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TypeId">
+      <MemberSignature Language="C#" Value="public override object TypeId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object TypeId" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.OverloadGroupAttribute.TypeId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a unique identifier for this attribute.</summary>
+        <value>A unique identifier for this attribute.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

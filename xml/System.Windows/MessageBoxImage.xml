@@ -1,0 +1,182 @@
+<Type Name="MessageBoxImage" FullName="System.Windows.MessageBoxImage">
+  <TypeSignature Language="C#" Value="public enum MessageBoxImage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageBoxImage extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.MessageBoxImage" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the icon that is displayed by a message box.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table shows the different message box icons.  
+  
+|||  
+|-|-|  
+|![Hand icon](~/add/media/messagebox-hand.gif "Hand icon")|Hand|  
+|![Question icon](~/add/media/messagebox-question.gif "Question icon")|Question|  
+|![Exclamation icon](~/add/media/messagebox-exclamation.gif "Exclamation icon")|Exclamation|  
+|![Asterisk icon](~/add/media/messagebox-asterisk.gif "Asterisk icon")|Asterisk|  
+|![Stop icon](~/add/media/messagebox-stop.gif "Stop icon")|Stop|  
+|![Error icon](~/add/media/messagebox-error.gif "Error icon")|Error|  
+|![Warning icon](~/add/media/messagebox-warning.gif "Warning icon")|Warning|  
+|![Information icon](~/add/media/messagebox-information.gif "Information icon")|Information|  
+  
+ For a sample that demonstrates several options when using the <xref:System.Windows.MessageBox>, see [MessageBox Sample](http://go.microsoft.com/fwlink/?LinkID=160023).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Asterisk">
+      <MemberSignature Language="C#" Value="Asterisk" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Asterisk = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Asterisk" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains a symbol consisting of a lowercase letter i in a circle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Error = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains a symbol consisting of white X in a circle with a red background.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Exclamation">
+      <MemberSignature Language="C#" Value="Exclamation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Exclamation = int32(48)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Exclamation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Hand">
+      <MemberSignature Language="C#" Value="Hand" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Hand = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Hand" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains a symbol consisting of a white X in a circle with a red background.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Information">
+      <MemberSignature Language="C#" Value="Information" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Information = int32(64)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Information" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains a symbol consisting of a lowercase letter i in a circle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No icon is displayed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Question">
+      <MemberSignature Language="C#" Value="Question" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Question = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Question" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains a symbol consisting of a question mark in a circle.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="Stop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Stop = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Stop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains a symbol consisting of white X in a circle with a red background.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Warning">
+      <MemberSignature Language="C#" Value="Warning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxImage Warning = int32(48)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxImage.Warning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.MessageBoxImage</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,76 @@
+<Type Name="EditorReuseAttribute" FullName="System.Activities.Presentation.PropertyEditing.EditorReuseAttribute">
+  <TypeSignature Language="C#" Value="public sealed class EditorReuseAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EditorReuseAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.PropertyEditing.EditorReuseAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an attribute that is applied to a method that invokes a property editor and conveys whether the property editor can be used to edit successive properties without restarting.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+<!-- TODO: review snippet reference  [!CODE [WFD_EditorReuseAttribute#0](WFD_EditorReuseAttribute#0)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EditorReuseAttribute (bool reuseEditor);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool reuseEditor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.PropertyEditing.EditorReuseAttribute.#ctor(System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="reuseEditor" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="reuseEditor">
+          <see langword="true" /> if the attribute is to be applied to a method that invokes a reusable property editor; otherwise, <see langword="false" />.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.PropertyEditing.EditorReuseAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the editor is not reusable, it must be restarted to edit another property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReuseEditor">
+      <MemberSignature Language="C#" Value="public bool ReuseEditor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ReuseEditor" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.PropertyEditing.EditorReuseAttribute.ReuseEditor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a Boolean that indicates whether an attribute is applied to a method that invokes a reusable property editor.</summary>
+        <value>
+          <see langword="true" /> when an attribute is applied to a method that invokes a reusable property editor; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

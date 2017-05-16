@@ -1,0 +1,50 @@
+<Type Name="FillBehavior" FullName="System.Windows.Media.Animation.FillBehavior">
+  <TypeSignature Language="C#" Value="public enum FillBehavior" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FillBehavior extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.FillBehavior" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies how a <see cref="T:System.Windows.Media.Animation.Timeline" /> behaves when it is outside its active period but its parent is inside its active or hold period.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HoldEnd">
+      <MemberSignature Language="C#" Value="HoldEnd" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Animation.FillBehavior HoldEnd = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.FillBehavior.HoldEnd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.FillBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>After it reaches the end of its active period, the timeline holds its progress until the end of its parent's active and hold periods.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="Stop" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Animation.FillBehavior Stop = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.FillBehavior.Stop" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.FillBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The timeline stops if it is outside its active period while its parent is inside its active period.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

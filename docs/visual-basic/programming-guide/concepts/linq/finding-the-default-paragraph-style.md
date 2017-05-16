@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 9d094a4a-ec8c-41b0-b7ab-a3deb2a01d45
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Finding the Default Paragraph Style (Visual Basic)

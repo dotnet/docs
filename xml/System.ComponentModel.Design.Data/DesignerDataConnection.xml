@@ -1,0 +1,183 @@
+<Type Name="DesignerDataConnection" FullName="System.ComponentModel.Design.Data.DesignerDataConnection">
+  <TypeSignature Language="C#" Value="public sealed class DesignerDataConnection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerDataConnection extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataConnection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a connection to a data store in a design tool. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataConnection> object represents a connection to a data store in the design tool. Typically a <xref:System.ComponentModel.Design.Data.DesignerDataConnection> object is returned as part of the <xref:System.ComponentModel.Design.Data.IDataEnvironment.Connections%2A> property, and is created either by reading the application's configuration file or by calling the <xref:System.ComponentModel.Design.Data.IDataEnvironment.BuildConnection%2A> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerDataConnection (string name, string providerName, string connectionString);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string providerName, string connectionString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataConnection.#ctor(System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="providerName" Type="System.String" />
+        <Parameter Name="connectionString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name associated with this connection.</param>
+        <param name="providerName">The name of the provider object used to access the underlying data store</param>
+        <param name="connectionString">The string that specifies how to connect to the data store.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataConnection" /> class with the specified name, data provider, and connection string.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor to create <xref:System.ComponentModel.Design.Data.DesignerDataConnection> objects that are not created from the application's configuration file. When you use this constructor, the <xref:System.ComponentModel.Design.Data.DesignerDataConnection.IsConfigured%2A> property is set to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerDataConnection (string name, string providerName, string connectionString, bool isConfigured);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string providerName, string connectionString, bool isConfigured) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataConnection.#ctor(System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="providerName" Type="System.String" />
+        <Parameter Name="connectionString" Type="System.String" />
+        <Parameter Name="isConfigured" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name associated with this connection.</param>
+        <param name="providerName">The name of the provider object used to access the underlying data store.</param>
+        <param name="connectionString">The string that specifies how to connect to the data store.</param>
+        <param name="isConfigured">
+          <see langword="true" /> to indicate the connection was created from information stored in the application's configuration file; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataConnection" /> class with the specified name, data provider, and connection string, and indicates whether the connection was loaded from a configuration file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this constructor when you need to specify the value of the <xref:System.ComponentModel.Design.Data.DesignerDataConnection.IsConfigured%2A> property, such as when you are creating a <xref:System.ComponentModel.Design.Data.DesignerDataConnection> object from information stored in the application's configuration file. The <xref:System.ComponentModel.Design.Data.DesignerDataConnection.IsConfigured%2A> property is set to the value of the `isConfigured` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionString">
+      <MemberSignature Language="C#" Value="public string ConnectionString { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.ConnectionString" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the application connection string defined for the connection.</summary>
+        <value>The application connection string defined for the connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataConnection.ConnectionString%2A> property contains the connection string used by the application for connecting to the data store. You must use the <xref:System.ComponentModel.Design.Data.IDataEnvironment.GetDesignTimeConnection%2A?displayProperty=fullName> method to return a connection string suitable for use in the design environment.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsConfigured">
+      <MemberSignature Language="C#" Value="public bool IsConfigured { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsConfigured" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.IsConfigured" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value indicating whether the connection information is in the application's configuration file.</summary>
+        <value>
+          <see langword="true" /> if the connection is defined in the application's configuration file; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataConnection.IsConfigured%2A> property will be `true` if the <xref:System.ComponentModel.Design.Data.DesignerDataConnection> object was read from the application's configuration file, or if the <xref:System.ComponentModel.Design.Data.DesignerDataConnection> object was written to the application's configuration file by the <xref:System.ComponentModel.Design.Data.IDataEnvironment.ConfigureConnection%2A?displayProperty=fullName> method.  
+  
+ When the <xref:System.ComponentModel.Design.Data.DesignerDataConnection.IsConfigured%2A> is `true`, the <xref:System.ComponentModel.Design.Data.DesignerDataConnection.Name%2A> property is set to the name of the connection as defined in the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) of the configuration file.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the data connection.</summary>
+        <value>The name of the data connection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.Data.DesignerDataConnection.Name%2A> property contains the name that identifies a specific connection in an application configuration file or a list of data connections. When the <xref:System.ComponentModel.Design.Data.DesignerDataConnection.IsConfigured%2A> property is `true`,  <xref:System.ComponentModel.Design.Data.DesignerDataConnection.Name%2A> property is used as the `name` attribute in the [connectionStrings Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/b6ffbb2e-a4d1-410e-8f7e-9755e92c65de) configuration element, or is returned from the <xref:System.ComponentModel.Design.Data.IDataEnvironment.ConfigureConnection%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderName">
+      <MemberSignature Language="C#" Value="public string ProviderName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ProviderName" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataConnection.ProviderName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the provider used to access the underlying data store.</summary>
+        <value>The name of the provider used to access the underlying data store.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

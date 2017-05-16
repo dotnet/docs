@@ -1,0 +1,843 @@
+<Type Name="Cursor" FullName="System.Windows.Forms.Cursor">
+  <TypeSignature Language="C#" Value="public sealed class Cursor : IDisposable, System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Cursor extends System.Object implements class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Cursor" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Editor("System.Drawing.Design.CursorEditor, System.Drawing.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.CursorConverter))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the image used to paint the mouse pointer.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A cursor is a small picture whose location on the screen is controlled by a pointing device, such as a mouse, pen, or trackball. When the user moves the pointing device, the operating system moves the cursor accordingly.  
+  
+ Different cursor shapes are used to inform the user what operation the mouse will have. For example, when editing or selecting text, a <xref:System.Windows.Forms.Cursors.IBeam%2A?displayProperty=fullName> cursor is typically displayed. A wait cursor is commonly used to inform the user that a process is currently running. Examples of processes you might have the user wait for are opening a file, saving a file, or filling a control such as a <xref:System.Windows.Forms.DataGrid>, <xref:System.Windows.Forms.ListBox> or <xref:System.Windows.Forms.TreeView> with a large amount of data.  
+  
+ All controls that derive from the <xref:System.Windows.Forms.Control> class have a <xref:System.Windows.Forms.Control.Cursor%2A> property. To change the cursor displayed by the mouse pointer when it is within the bounds of the control, assign a <xref:System.Windows.Forms.Cursor> to the <xref:System.Windows.Forms.Control.Cursor%2A> property of the control. Alternatively, you can display cursors at the application level by assigning a <xref:System.Windows.Forms.Cursor> to the <xref:System.Windows.Forms.Cursor.Current%2A> property. For example, if the purpose of your application is to edit a text file, you might set the <xref:System.Windows.Forms.Cursor.Current%2A> property to <xref:System.Windows.Forms.Cursors.WaitCursor%2A?displayProperty=fullName> to display a wait cursor over the application while the file loads or saves to prevent any mouse events from being processed. When the process is complete, set the <xref:System.Windows.Forms.Cursor.Current%2A> property to <xref:System.Windows.Forms.Cursors.Default%2A?displayProperty=fullName> for the application to display the appropriate cursor over each control type.  
+  
+> [!NOTE]
+>  If you call <xref:System.Windows.Forms.Application.DoEvents%2A?displayProperty=fullName> before resetting the <xref:System.Windows.Forms.Cursor.Current%2A> property back to the <xref:System.Windows.Forms.Cursors.Default%2A?displayProperty=fullName> cursor, the application will resume listening for mouse events and will resume displaying the appropriate <xref:System.Windows.Forms.Cursor> for each control in the application.  
+  
+ Cursor objects can be created from several sources, such as the handle of an existing <xref:System.Windows.Forms.Cursor>, a standard <xref:System.Windows.Forms.Cursor> file, a resource, or a data stream.  
+  
+> [!NOTE]
+>  The <xref:System.Windows.Forms.Cursor> class does not support animated cursors (.ani files) or cursors with colors other than black and white.  
+  
+ If the image you are using as a cursor is too small, you can use the <xref:System.Windows.Forms.Cursor.DrawStretched%2A> method to force the image to fill the bounds of the cursor. You can temporarily hide the cursor by calling the <xref:System.Windows.Forms.Cursor.Hide%2A> method, and restore it by calling the <xref:System.Windows.Forms.Cursor.Show%2A> method.  
+  
+ Starting with the .NET Framework 4.5.2, the <xref:System.Windows.Forms.Cursor> will be resized based on the system DPI setting when the app.config file contains the following entry:  
+  
+```  
+<appSettings>  
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="true" />  
+</appSettings>  
+```  
+  
+   
+  
+## Examples  
+ The following code example displays a form that demonstrates using a custom cursor. The custom <xref:System.Windows.Forms.Cursor> is embedded in the application's resource file. The example requires a cursor contained in a cursor file named `MyCursor.cur`. To compile this example using the command line, include the following flag: `/res:MyCursor.Cur, CustomCursor.MyCursor.Cur`  
+  
+ [!code-csharp[System.Windows.Forms.Cursor#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor/CS/customcursor.cs#1)]
+ [!code-vb[System.Windows.Forms.Cursor#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor/VB/customcursor.vb#1)]  
+  
+ The following code example displays customer information in a <xref:System.Windows.Forms.TreeView> control. The root tree nodes display customer names, and the child tree nodes display the order numbers assigned to each customer. In this example, 1,000 customers are displayed with 15 orders each. The repainting of the <xref:System.Windows.Forms.TreeView> is suppressed by using the <xref:System.Windows.Forms.TreeView.BeginUpdate%2A> and <xref:System.Windows.Forms.TreeView.EndUpdate%2A> methods, and a wait <xref:System.Windows.Forms.Cursor> is displayed while the <xref:System.Windows.Forms.TreeView> creates and paints the <xref:System.Windows.Forms.TreeNode> objects. This example requires that you have a cursor file named `MyWait.cur` in the application directory. It also requires a `Customer` object that can hold a collection of `Order` objects, and that you have created an instance of a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[TreeView#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeView/CPP/treeview.cpp#1)]
+ [!code-csharp[TreeView#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeView/CS/treeview.cs#1)]
+ [!code-vb[TreeView#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeView/VB/treeview.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Cursor (IntPtr handle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.#ctor(System.IntPtr)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handle" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="handle">An <see cref="T:System.IntPtr" /> that represents the Windows handle of the cursor to create.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Cursor" /> class from the specified Windows handle.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You must free the cursor handle when you are done with it. For more information about disposing of resources, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).  
+  
+   
+  
+## Examples  
+ The following code example creates a cursor from the <xref:System.Windows.Forms.Cursor.Current%2A> cursor's <xref:System.Windows.Forms.Cursor.Handle%2A>, changes its position and clipping rectangle. The result is the cursor will move up and to the left 50 pixels from where it is when the code is executed. Additionally, the cursor's clipping rectangle is changed to the bounds of the form (by default it is the user's whole screen). This example requires that you have a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Button> to call this code when it is clicked.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#1)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#1)]
+ [!code-vb[System.Windows.Forms.Cursor Members#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="handle" /> is <see cref="F:System.IntPtr.Zero" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Cursor (System.IO.Stream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.#ctor(System.IO.Stream)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The data stream to load the <see cref="T:System.Windows.Forms.Cursor" /> from.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Cursor" /> class from the specified data stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The data stream specified by `stream` must contain a cursor (.cur) file.  
+  
+> [!NOTE]
+>  Animated cursors (.ani files) are not supported by the <xref:System.Windows.Forms.Cursor> class.  
+  
+   
+  
+## Examples  
+ The following code example loads a cursor from a <xref:System.IO.Stream> created by the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method of an <xref:System.Windows.Forms.OpenFileDialog>. When the method is called, an <xref:System.Windows.Forms.OpenFileDialog> is displayed to the user and when a. CUR file is selected and the dialog closed, the file is opened and the <xref:System.IO.Stream> returned is used to create a <xref:System.Windows.Forms.Cursor>.  
+  
+ [!code-cpp[CursorFromResource#1](~/samples/snippets/cpp/VS_Snippets_Winforms/CursorFromResource/CPP/mycursor.cpp#1)]
+ [!code-csharp[CursorFromResource#1](~/samples/snippets/csharp/VS_Snippets_Winforms/CursorFromResource/CS/mycursor.cs#1)]
+ [!code-vb[CursorFromResource#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CursorFromResource/VB/mycursor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Cursor (string fileName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="fileName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="fileName">The cursor file to load.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Cursor" /> class from the specified file.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `fileName` parameter must reference a standard cursor (.cur) file.  
+  
+> [!NOTE]
+>  Animated cursors (.ani files) are not supported by the <xref:System.Windows.Forms.Cursor> class.  
+  
+   
+  
+## Examples  
+ The following code example displays customer information in a <xref:System.Windows.Forms.TreeView> control. The root tree nodes display customer names, and the child tree nodes display the order numbers assigned to each customer. In this example, 1,000 customers are displayed with 15 orders each. The repainting of the <xref:System.Windows.Forms.TreeView> is suppressed by using the <xref:System.Windows.Forms.TreeView.BeginUpdate%2A> and <xref:System.Windows.Forms.TreeView.EndUpdate%2A> methods, and a wait <xref:System.Windows.Forms.Cursor> is displayed while the <xref:System.Windows.Forms.TreeView> creates and paints the <xref:System.Windows.Forms.TreeNode> objects. This example requires that you have a `Customer` object that can hold a collection of `Order` objects. It also requires that you have created an instance of a <xref:System.Windows.Forms.TreeView> control on a <xref:System.Windows.Forms.Form>.  
+  
+ [!code-cpp[TreeView#1](~/samples/snippets/cpp/VS_Snippets_Winforms/TreeView/CPP/treeview.cpp#1)]
+ [!code-csharp[TreeView#1](~/samples/snippets/csharp/VS_Snippets_Winforms/TreeView/CS/treeview.cs#1)]
+ [!code-vb[TreeView#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/TreeView/VB/treeview.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Cursor (Type type, string resource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string resource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.#ctor(System.Type,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="resource" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="type">The resource <see cref="T:System.Type" />.</param>
+        <param name="resource">The name of the resource.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Cursor" /> class from the specified resource with the specified resource type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following is an example of how to embed a cursor as a resource within your application. To embed the resource, reference the resource name followed by a comma, then its full assembly path. See the Example section to learn how to load the cursor from the embedded resource.  
+  
+```  
+Using the C# compiler:  
+csc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.cs  
+Using the Visual Basic compiler:  
+vbc /resource:"MyWaitCursor.cur","MyCursors.MyWaitCursor.cur" MyCursor.vb  
+```  
+  
+> [!NOTE]
+>  The resource reference when compiling as well as when referencing it in code, is case sensitive for both the C# and Visual Basic compilers.  
+  
+   
+  
+## Examples  
+ The following code example displays a form that demonstrates using a custom cursor by using the <xref:System.Windows.Forms.Cursor.%23ctor%2A> constructor. The custom <xref:System.Windows.Forms.Cursor> is embedded in the application's resource file. The example requires that you have a cursor contained in a cursor file named `MyCursor.cur`. To compile this example using the command line, include the following flag: `/res:MyCursor.Cur, CustomCursor.MyCursor.Cur`  
+  
+ [!code-csharp[System.Windows.Forms.Cursor#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor/CS/customcursor.cs#1)]
+ [!code-vb[System.Windows.Forms.Cursor#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor/VB/customcursor.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clip">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Rectangle Clip { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Rectangle Clip" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Clip" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the bounds that represent the clipping rectangle for the cursor.</summary>
+        <value>The <see cref="T:System.Drawing.Rectangle" /> that represents the clipping rectangle for the <see cref="T:System.Windows.Forms.Cursor" />, in screen coordinates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A clipped cursor is allowed to move only within its clipping rectangle. Generally, the system allows this only if the mouse is currently captured. If the cursor is not currently clipped, the resulting rectangle contains the dimensions of the entire screen.  
+  
+   
+  
+## Examples  
+ The following code example creates a cursor from the <xref:System.Windows.Forms.Cursor.Current%2A> cursor's <xref:System.Windows.Forms.Cursor.Handle%2A>, changes its position and clipping rectangle. The result is the cursor will move up and to the left 50 pixels from where it is when the code is executed. Additionally, the cursor's clipping rectangle is changed to the bounds of the form (by default it is the user's whole screen). This example requires that you have a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Button> to call this code when it is clicked.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#1)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#1)]
+ [!code-vb[System.Windows.Forms.Cursor Members#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for all windows to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyHandle">
+      <MemberSignature Language="C#" Value="public IntPtr CopyHandle ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int CopyHandle() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.CopyHandle" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Copies the handle of this <see cref="T:System.Windows.Forms.Cursor" />.</summary>
+        <returns>An <see cref="T:System.IntPtr" /> that represents the cursor's handle.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The handle created as a result of calling this method must be disposed of when you are done with it because it will not be disposed of by the garbage collector.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="public static System.Windows.Forms.Cursor Current { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.Cursor Current" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Current" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Cursor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a cursor object that represents the mouse cursor.</summary>
+        <value>A <see cref="T:System.Windows.Forms.Cursor" /> that represents the mouse cursor. The default is <see langword="null" /> if the mouse cursor is not visible.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Setting the <xref:System.Windows.Forms.Cursor.Current%2A> property changes the cursor currently displayed. The application may or may not continue to listen for mouse events. To signal that the application should not respond to mouse events during a long-running operation, use the <xref:System.Windows.Forms.Application.UseWaitCursor%2A> property. In most cases, however, it's better to use a background thread to manage a long-running operation, and leave your user interface accessible to the user. For more information on easily implementing a background task, see <xref:System.ComponentModel.BackgroundWorker>.  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.Windows.Forms.Cursor" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Windows.Forms.Cursor.Dispose%2A> when you are finished using the <xref:System.Windows.Forms.Cursor>. The `Dispose` method leaves the <xref:System.Windows.Forms.Cursor> in an unusable state. After calling <xref:System.Windows.Forms.Cursor.Dispose%2A>, you must release all references to the <xref:System.Windows.Forms.Cursor> so the garbage collector can reclaim the memory that the <xref:System.Windows.Forms.Cursor> was occupying. For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+> [!NOTE]
+>  Always call <xref:System.Windows.Forms.Cursor.Dispose%2A> before you release your last reference to the <xref:System.Windows.Forms.Cursor>. Otherwise, the resources it is using will not be freed until the garbage collector frees it.  
+  
+   
+  
+## Examples  
+ The following code example draws the specified cursor on the form in its normal size, and in stretched mode, twice its size. This example requires a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Cursor> to pass into the method when it is called.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#2)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#2)]
+ [!code-vb[System.Windows.Forms.Cursor Members#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Draw">
+      <MemberSignature Language="C#" Value="public void Draw (System.Drawing.Graphics g, System.Drawing.Rectangle targetRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Draw(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle targetRect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Draw(System.Drawing.Graphics,System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="targetRect" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> surface on which to draw the <see cref="T:System.Windows.Forms.Cursor" />.</param>
+        <param name="targetRect">The <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the <see cref="T:System.Windows.Forms.Cursor" />.</param>
+        <summary>Draws the cursor on the specified surface, within the specified bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The drawing command originates on the graphics surface represented by the `g` parameter, but a <xref:System.Drawing.Graphics> does not contain information about how to render a given image, so it passes the call to the <xref:System.Windows.Forms.Cursor>. The <xref:System.Windows.Forms.Cursor.Draw%2A> method crops the image to the given dimensions and allows you to specify a <xref:System.Drawing.Rectangle> within which to draw the <xref:System.Windows.Forms.Cursor>. This method is typically used if you want to draw the cursor on a Graphics surface. For example, you might have a dialog that allows the user to select cursors from a <xref:System.Windows.Forms.ListBox> control, or a group of <xref:System.Windows.Forms.RadioButton> controls.  
+  
+   
+  
+## Examples  
+ The following code example draws the specified cursor on the form in its normal size, and in stretched mode, twice its size. This example requires that you have a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Cursor> object to pass into the method when it is called.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#2)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#2)]
+ [!code-vb[System.Windows.Forms.Cursor Members#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DrawStretched">
+      <MemberSignature Language="C#" Value="public void DrawStretched (System.Drawing.Graphics g, System.Drawing.Rectangle targetRect);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawStretched(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle targetRect) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.DrawStretched(System.Drawing.Graphics,System.Drawing.Rectangle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="g" Type="System.Drawing.Graphics" />
+        <Parameter Name="targetRect" Type="System.Drawing.Rectangle" />
+      </Parameters>
+      <Docs>
+        <param name="g">The <see cref="T:System.Drawing.Graphics" /> surface on which to draw the <see cref="T:System.Windows.Forms.Cursor" />.</param>
+        <param name="targetRect">The <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the <see cref="T:System.Windows.Forms.Cursor" />.</param>
+        <summary>Draws the cursor in a stretched format on the specified surface, within the specified bounds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The drawing command originates on the graphics surface represented by the `g` parameter, but a <xref:System.Drawing.Graphics> object does not contain information about how to render a given image, so it passes the call to the <xref:System.Windows.Forms.Cursor> object. The <xref:System.Windows.Forms.Cursor.DrawStretched%2A> method stretches the image to fill the specified <xref:System.Drawing.Rectangle> when the cursor is drawn.  
+  
+   
+  
+## Examples  
+ The following code example draws the specified cursor on the form in its normal size, and in stretched mode, twice its size. This example requires that you have a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Cursor> object to pass into the method when it is called.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#2)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#2)]
+ [!code-vb[System.Windows.Forms.Cursor Members#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The <see cref="T:System.Windows.Forms.Cursor" /> to compare.</param>
+        <summary>Returns a value indicating whether this cursor is equal to the specified <see cref="T:System.Windows.Forms.Cursor" />.</summary>
+        <returns>
+          <see langword="true" /> if this cursor is equal to the specified <see cref="T:System.Windows.Forms.Cursor" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example creates a cursor from the <xref:System.Windows.Forms.Cursor.Current%2A> cursor's <xref:System.Windows.Forms.Cursor.Handle%2A>, changes its position and clipping rectangle. The result is the cursor will move up and to the left 50 pixels from where it is when the code is executed. Additionally, the cursor's clipping rectangle is changed to the bounds of the form (by default it is the user's whole screen). This example requires a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Button> to call this code when it is clicked.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#1)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#1)]
+ [!code-vb[System.Windows.Forms.Cursor Members#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~Cursor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Finalize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves the hash code for the current <see cref="T:System.Windows.Forms.Cursor" />.</summary>
+        <returns>A hash code for the current <see cref="T:System.Windows.Forms.Cursor" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Handle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the handle of the cursor.</summary>
+        <value>An <see cref="T:System.IntPtr" /> that represents the cursor's handle.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is not a copy of the handle; do not dispose of it.  
+  
+   
+  
+## Examples  
+ The following code example creates a cursor from the <xref:System.Windows.Forms.Cursor.Current%2A> cursor's <xref:System.Windows.Forms.Cursor.Handle%2A>, changes its position and clipping rectangle. The result is the cursor will move up and to the left 50 pixels from where it is when the code is executed. Additionally, the cursor's clipping rectangle is changed to the bounds of the form (by default it is the user's whole screen). This example requires a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Button> to call this code when it is clicked.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#1)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#1)]
+ [!code-vb[System.Windows.Forms.Cursor Members#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.Exception">The handle value is <see cref="F:System.IntPtr.Zero" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Hide">
+      <MemberSignature Language="C#" Value="public static void Hide ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Hide() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Hide" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Hides the cursor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Cursor.Show%2A> and <xref:System.Windows.Forms.Cursor.Hide%2A> method calls must be balanced. For every call to the <xref:System.Windows.Forms.Cursor.Hide%2A> method there must be a corresponding call to the <xref:System.Windows.Forms.Cursor.Show%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example hides the cursor when the mouse pointer enters the button's client area. Likewise, when the mouse pointer leaves the button's client area, the cursor is shown again. This example requires a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.Button> named `myButton`.  
+  
+ [!code-cpp[CursorFromResource#3](~/samples/snippets/cpp/VS_Snippets_Winforms/CursorFromResource/CPP/mycursor.cpp#3)]
+ [!code-csharp[CursorFromResource#3](~/samples/snippets/csharp/VS_Snippets_Winforms/CursorFromResource/CS/mycursor.cs#3)]
+ [!code-vb[CursorFromResource#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CursorFromResource/VB/mycursor.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+        <permission cref="T:System.Security.Permissions.UIPermission">for all windows call this method. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+      </Docs>
+    </Member>
+    <Member MemberName="HotSpot">
+      <MemberSignature Language="C#" Value="public System.Drawing.Point HotSpot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point HotSpot" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.HotSpot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the cursor hot spot.</summary>
+        <value>A <see cref="T:System.Drawing.Point" /> representing the cursor hot spot.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Cursor.HotSpot%2A> is the <xref:System.Drawing.Point> in the cursor that interacts with other elements on the screen.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (System.Windows.Forms.Cursor left, System.Windows.Forms.Cursor right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Forms.Cursor left, class System.Windows.Forms.Cursor right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.op_Equality(System.Windows.Forms.Cursor,System.Windows.Forms.Cursor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Forms.Cursor" />
+        <Parameter Name="right" Type="System.Windows.Forms.Cursor" />
+      </Parameters>
+      <Docs>
+        <param name="left">A <see cref="T:System.Windows.Forms.Cursor" /> to compare.</param>
+        <param name="right">A <see cref="T:System.Windows.Forms.Cursor" /> to compare.</param>
+        <summary>Returns a value indicating whether two instances of the <see cref="T:System.Windows.Forms.Cursor" /> class are equal.</summary>
+        <returns>
+          <see langword="true" /> if two instances of the <see cref="T:System.Windows.Forms.Cursor" /> class are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.Cursor.Equals%28System.Object%29?displayProperty=fullName>  
+  
+## Examples  
+ The following code example draws the specified cursor on the form in its normal size, and in stretched mode, twice its size. This example requires a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Cursor> object to pass into the method when it is called.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#2)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#2)]
+ [!code-vb[System.Windows.Forms.Cursor Members#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (System.Windows.Forms.Cursor left, System.Windows.Forms.Cursor right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Forms.Cursor left, class System.Windows.Forms.Cursor right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.op_Inequality(System.Windows.Forms.Cursor,System.Windows.Forms.Cursor)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="System.Windows.Forms.Cursor" />
+        <Parameter Name="right" Type="System.Windows.Forms.Cursor" />
+      </Parameters>
+      <Docs>
+        <param name="left">A <see cref="T:System.Windows.Forms.Cursor" /> to compare.</param>
+        <param name="right">A <see cref="T:System.Windows.Forms.Cursor" /> to compare.</param>
+        <summary>Returns a value indicating whether two instances of the <see cref="T:System.Windows.Forms.Cursor" /> class are not equal.</summary>
+        <returns>
+          <see langword="true" /> if two instances of the <see cref="T:System.Windows.Forms.Cursor" /> class are not equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Forms.Cursor.Equals%28System.Object%29?displayProperty=fullName>  
+  
+## Examples  
+ The following code example draws the specified cursor on the form in its normal size, and in stretched mode, twice its size. This example requires a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Cursor> to pass into the method when it is called.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#2)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#2)]
+ [!code-vb[System.Windows.Forms.Cursor Members#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Position">
+      <MemberSignature Language="C#" Value="public static System.Drawing.Point Position { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.Drawing.Point Position" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Position" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Point</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the cursor's position.</summary>
+        <value>A <see cref="T:System.Drawing.Point" /> that represents the cursor's position in screen coordinates.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Cursor.Position%2A> property is identical to the <xref:System.Windows.Forms.Control.MousePosition%2A?displayProperty=fullName> property.  
+  
+   
+  
+## Examples  
+ The following code example creates a cursor from the <xref:System.Windows.Forms.Cursor.Current%2A> cursor's <xref:System.Windows.Forms.Cursor.Handle%2A>, changes its position and clipping rectangle. The result is the cursor will move up and to the left 50 pixels from where it is when the code is executed. Additionally, the cursor's clipping rectangle is changed to the bounds of the form (by default it is the user's whole screen). This example requires a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Button> to call this code when it is clicked.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#1)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#1)]
+ [!code-vb[System.Windows.Forms.Cursor Members#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public static void Show ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Show() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.Show" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Displays the cursor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.Cursor.Show%2A> and <xref:System.Windows.Forms.Cursor.Hide%2A> method calls must be balanced. For every call to the <xref:System.Windows.Forms.Cursor.Hide%2A> method there must be a corresponding call to the <xref:System.Windows.Forms.Cursor.Show%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example hides the cursor when the mouse pointer enters the button's client area. Likewise, when the mouse pointer leaves the button's client area, the cursor is shown again. This example requires a <xref:System.Windows.Forms.Form> with a <xref:System.Windows.Forms.Button> named `myButton`.  
+  
+ [!code-cpp[CursorFromResource#3](~/samples/snippets/cpp/VS_Snippets_Winforms/CursorFromResource/CPP/mycursor.cpp#3)]
+ [!code-csharp[CursorFromResource#3](~/samples/snippets/csharp/VS_Snippets_Winforms/CursorFromResource/CS/mycursor.cs#3)]
+ [!code-vb[CursorFromResource#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/CursorFromResource/VB/mycursor.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public System.Drawing.Size Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size Size" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Size</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the size of the cursor object.</summary>
+        <value>A <see cref="T:System.Drawing.Size" /> that represents the width and height of the <see cref="T:System.Windows.Forms.Cursor" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example draws the specified cursor on the form in its normal size, and in stretched mode, twice its size. This example requires a <xref:System.Windows.Forms.Form> and a <xref:System.Windows.Forms.Cursor> object to pass into the method when it is called.  
+  
+ [!code-cpp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CPP/cursorstuff.cpp#2)]
+ [!code-csharp[System.Windows.Forms.Cursor Members#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/CS/cursorstuff.cs#2)]
+ [!code-vb[System.Windows.Forms.Cursor Members#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Cursor Members/VB/cursorstuff.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
+      <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="si" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
+      </Parameters>
+      <Docs>
+        <param name="si">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> class.</param>
+        <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> class.</param>
+        <summary>Serializes the object.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Cursor.Tag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the object that contains data about the <see cref="T:System.Windows.Forms.Cursor" />.</summary>
+        <value>An <see cref="T:System.Object" /> that contains data about the <see cref="T:System.Windows.Forms.Cursor" />. The default is <see langword="null" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Cursor.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves a human readable string representing this <see cref="T:System.Windows.Forms.Cursor" />.</summary>
+        <returns>A <see cref="T:System.String" /> that represents this <see cref="T:System.Windows.Forms.Cursor" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -16,8 +16,8 @@ helpviewer_keywords:
   - "DataRepeater, changing orientation"
 ms.assetid: 33aa8fd5-ac63-4bd0-ba13-8c2ab17e7824
 caps.latest.revision: 10
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,177 @@
+<Type Name="ActivityCollectionChangeEventArgs" FullName="System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class ActivityCollectionChangeEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityCollectionChangeEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents the information needed by an event handler to perform custom processing whenever the contents of an <see cref="T:System.Workflow.ComponentModel.ActivityCollection" /> changes.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityCollectionChangeEventArgs (int index, System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt; removedItems, System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt; addedItems, object owner, System.Workflow.ComponentModel.ActivityCollectionChangeAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 index, class System.Collections.Generic.ICollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; removedItems, class System.Collections.Generic.ICollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; addedItems, object owner, valuetype System.Workflow.ComponentModel.ActivityCollectionChangeAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.#ctor(System.Int32,System.Collections.Generic.ICollection{System.Workflow.ComponentModel.Activity},System.Collections.Generic.ICollection{System.Workflow.ComponentModel.Activity},System.Object,System.Workflow.ComponentModel.ActivityCollectionChangeAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="removedItems" Type="System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
+        <Parameter Name="addedItems" Type="System.Collections.Generic.ICollection&lt;System.Workflow.ComponentModel.Activity&gt;" />
+        <Parameter Name="owner" Type="System.Object" />
+        <Parameter Name="action" Type="System.Workflow.ComponentModel.ActivityCollectionChangeAction" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the change within the subject <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</param>
+        <param name="removedItems">A strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each removed <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <param name="addedItems">A strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each added <see cref="T:System.Workflow.ComponentModel.Activity" />.</param>
+        <param name="owner">The <see cref="T:System.Object" /> which originated the event.</param>
+        <param name="action">The <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeAction" /> corresponding to the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityCollectionChangeEventArgs (int index, System.Workflow.ComponentModel.Activity removedActivity, System.Workflow.ComponentModel.Activity addedActivity, object owner, System.Workflow.ComponentModel.ActivityCollectionChangeAction action);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 index, class System.Workflow.ComponentModel.Activity removedActivity, class System.Workflow.ComponentModel.Activity addedActivity, object owner, valuetype System.Workflow.ComponentModel.ActivityCollectionChangeAction action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.#ctor(System.Int32,System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.Activity,System.Object,System.Workflow.ComponentModel.ActivityCollectionChangeAction)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="removedActivity" Type="System.Workflow.ComponentModel.Activity" />
+        <Parameter Name="addedActivity" Type="System.Workflow.ComponentModel.Activity" />
+        <Parameter Name="owner" Type="System.Object" />
+        <Parameter Name="action" Type="System.Workflow.ComponentModel.ActivityCollectionChangeAction" />
+      </Parameters>
+      <Docs>
+        <param name="index">The index of the change within the subject <see cref="T:System.Workflow.ComponentModel.ActivityCollection" />.</param>
+        <param name="removedActivity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> which was removed from the collection.</param>
+        <param name="addedActivity">The <see cref="T:System.Workflow.ComponentModel.Activity" /> which was added to the collection.</param>
+        <param name="owner">The <see cref="T:System.Object" /> which originated the event.</param>
+        <param name="action">The <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeAction" /> corresponding to the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityCollectionChangeAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.ActivityCollectionChangeAction Action" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.ActivityCollectionChangeAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeAction" /> representing the type of change that occurred.</summary>
+        <value>The <see cref="T:System.Workflow.ComponentModel.ActivityCollectionChangeAction" /> representing the type of change that occurred.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddedItems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt; AddedItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Workflow.ComponentModel.Activity&gt; AddedItems" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.AddedItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each added <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <value>A strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each added <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the index of the change originating the event.</summary>
+        <value>The index of the change originating the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Owner">
+      <MemberSignature Language="C#" Value="public object Owner { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Owner" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.Owner" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Object" /> which originated the event.</summary>
+        <value>The <see cref="T:System.Object" /> which originated the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemovedItems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt; RemovedItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Workflow.ComponentModel.Activity&gt; RemovedItems" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs.RemovedItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.Activity&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each removed <see cref="T:System.Workflow.ComponentModel.Activity" />.</summary>
+        <value>A strongly typed <see cref="T:System.Collections.ICollection" /> of type <see cref="T:System.Workflow.ComponentModel.Activity" /> containing each removed <see cref="T:System.Workflow.ComponentModel.Activity" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

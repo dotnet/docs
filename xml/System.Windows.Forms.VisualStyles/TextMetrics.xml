@@ -1,0 +1,431 @@
+<Type Name="TextMetrics" FullName="System.Windows.Forms.VisualStyles.TextMetrics">
+  <TypeSignature Language="C#" Value="public struct TextMetrics" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit TextMetrics extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TextMetrics" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides basic information about the font specified by a visual style for a particular element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.TextMetrics> structure specifies the return values of the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.GetTextMetrics%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ascent">
+      <MemberSignature Language="C#" Value="public int Ascent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Ascent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Ascent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the ascent of characters in the font.</summary>
+        <value>The ascent of characters in the font.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The ascent is the distance a character extends above the base line.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AverageCharWidth">
+      <MemberSignature Language="C#" Value="public int AverageCharWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 AverageCharWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.AverageCharWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the average width of characters in the font.</summary>
+        <value>The average width of characters in the font.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The average character width is generally defined as the width of the letter "x". This value does not include the overhang required for bold or italic characters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BreakChar">
+      <MemberSignature Language="C#" Value="public char BreakChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char BreakChar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.BreakChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the character used to define word breaks for text justification.</summary>
+        <value>The character used to define word breaks for text justification.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CharSet">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.VisualStyles.TextMetricsCharacterSet CharSet { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.VisualStyles.TextMetricsCharacterSet CharSet" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.CharSet" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsCharacterSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the character set of the font.</summary>
+        <value>One of the <see cref="T:System.Windows.Forms.VisualStyles.TextMetricsCharacterSet" /> values that specifies the character set of the font.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultChar">
+      <MemberSignature Language="C#" Value="public char DefaultChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char DefaultChar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.DefaultChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the character to be substituted for characters not in the font.</summary>
+        <value>The character to be substituted for characters not in the font.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Descent">
+      <MemberSignature Language="C#" Value="public int Descent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Descent" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Descent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the descent of characters in the font.</summary>
+        <value>The descent of characters in the font.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The descent is the distance a character extends below the base line.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DigitizedAspectX">
+      <MemberSignature Language="C#" Value="public int DigitizedAspectX { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DigitizedAspectX" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.DigitizedAspectX" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the horizontal aspect of the device for which the font was designed.</summary>
+        <value>The horizontal aspect of the device for which the font was designed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DigitizedAspectY">
+      <MemberSignature Language="C#" Value="public int DigitizedAspectY { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DigitizedAspectY" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.DigitizedAspectY" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the vertical aspect of the device for which the font was designed.</summary>
+        <value>The vertical aspect of the device for which the font was designed.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExternalLeading">
+      <MemberSignature Language="C#" Value="public int ExternalLeading { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ExternalLeading" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.ExternalLeading" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of extra leading that the application adds between rows.</summary>
+        <value>The amount of extra leading (space) required between rows.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Because the leading area is outside the font, it contains no marks and is not altered by text output calls in either opaque or transparent mode.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstChar">
+      <MemberSignature Language="C#" Value="public char FirstChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char FirstChar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.FirstChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the first character defined in the font.</summary>
+        <value>The first character defined in the font.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public int Height { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the height of characters in the font.</summary>
+        <value>The height of characters in the font.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The height of a character is equal to the <xref:System.Windows.Forms.VisualStyles.TextMetrics.Ascent%2A> plus the <xref:System.Windows.Forms.VisualStyles.TextMetrics.Descent%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InternalLeading">
+      <MemberSignature Language="C#" Value="public int InternalLeading { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 InternalLeading" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.InternalLeading" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount of leading inside the bounds set by the <see cref="P:System.Windows.Forms.VisualStyles.TextMetrics.Height" /> property.</summary>
+        <value>The amount of leading inside the bounds set by the <see cref="P:System.Windows.Forms.VisualStyles.TextMetrics.Height" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Accent marks and other diacritical characters may occur in this area.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Italic">
+      <MemberSignature Language="C#" Value="public bool Italic { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Italic" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Italic" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the font is italic.</summary>
+        <value>
+          <see langword="true" /> if the font is italic; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastChar">
+      <MemberSignature Language="C#" Value="public char LastChar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance char LastChar" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.LastChar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Char</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the last character defined in the font.</summary>
+        <value>The last character defined in the font.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxCharWidth">
+      <MemberSignature Language="C#" Value="public int MaxCharWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxCharWidth" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.MaxCharWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the width of the widest character in the font.</summary>
+        <value>The width of the widest character in the font.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Overhang">
+      <MemberSignature Language="C#" Value="public int Overhang { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Overhang" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Overhang" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the extra width per string that may be added to some synthesized fonts.</summary>
+        <value>The extra width per string that may be added to some synthesized fonts.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PitchAndFamily">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues PitchAndFamily { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues PitchAndFamily" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.PitchAndFamily" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets information about the pitch, technology, and family of a physical font.</summary>
+        <value>A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.TextMetricsPitchAndFamilyValues" /> values that specifies the pitch, technology, and family of a physical font.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StruckOut">
+      <MemberSignature Language="C#" Value="public bool StruckOut { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StruckOut" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.StruckOut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the font specifies a horizontal line through the characters.</summary>
+        <value>
+          <see langword="true" /> if the font has a horizontal line through the characters; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Underlined">
+      <MemberSignature Language="C#" Value="public bool Underlined { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Underlined" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Underlined" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the font is underlined.</summary>
+        <value>
+          <see langword="true" /> if the font is underlined; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Weight">
+      <MemberSignature Language="C#" Value="public int Weight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Weight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.TextMetrics.Weight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the weight of the font.</summary>
+        <value>The weight of the font.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

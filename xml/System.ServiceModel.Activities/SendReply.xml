@@ -1,0 +1,289 @@
+<Type Name="SendReply" FullName="System.ServiceModel.Activities.SendReply">
+  <TypeSignature Language="C#" Value="public sealed class SendReply : System.Activities.Activity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SendReply extends System.Activities.Activity" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendReply" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Activities.Activity</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ContentProperty("Content")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>An activity that sends the reply message as part of a request/response message exchange pattern on the service side.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to create a <xref:System.ServiceModel.Activities.SendReply> activity and add it to a workflow in code.  
+  
+ [!code-csharp[SendReceiveParameters#0](~/samples/snippets/csharp/VS_Snippets_CFX/sendreceiveparameters/cs/echoworkflowservice/program.cs#0)]  
+  
+ The following example shows how to create a <xref:System.ServiceModel.Activities.SendReply> activity and add it to a workflow service in XAML.  
+  
+```xaml  
+<WorkflowService mc:Ignorable="sap" ConfigurationName="Service1" Name="Service1" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:System;assembly=System" xmlns:s2="clr-namespace:System;assembly=System.Xml" xmlns:s3="clr-namespace:System;assembly=System.Core" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.Core" xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:ssa="clr-namespace:System.ServiceModel.Activities;assembly=System.ServiceModel.Activities" xmlns:st="clr-namespace:System.Text;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">  
+  <p:Sequence sad:XamlDebuggerXmlReader.FileName="c:\Projects\WFServiceSnippets\WFServiceSnippets\Service1.xamlx" sap:VirtualizedContainerService.HintSize="277,644" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">  
+    <p:Sequence.Variables>  
+      <p:Variable x:TypeArguments="CorrelationHandle" Name="__handle1" />  
+      <p:Variable x:TypeArguments="x:String" Name="Message" />  
+      <p:Variable x:TypeArguments="x:String" Name="Echo" />  
+    </p:Sequence.Variables>  
+    <sap:WorkflowViewStateService.ViewState>  
+      <scg3:Dictionary x:TypeArguments="x:String, x:Object">  
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>  
+      </scg3:Dictionary>  
+    </sap:WorkflowViewStateService.ViewState>  
+    <Receive x:Name="__ReferenceID0" CanCreateInstance="True" DisplayName="ReceiveString" sap:VirtualizedContainerService.HintSize="255,90" OperationName="Echo" ServiceContractName="Echo">  
+      <Receive.CorrelationInitializers>  
+        <RequestReplyCorrelationInitializer CorrelationHandle="[__handle1]" />  
+      </Receive.CorrelationInitializers>  
+      <ReceiveParametersContent>  
+        <p:OutArgument x:TypeArguments="x:String" x:Key="message">[Message]</p:OutArgument>  
+      </ReceiveParametersContent>  
+    </Receive>  
+    <p:WriteLine sap:VirtualizedContainerService.HintSize="255,61" Text="[&quot;Message received: &quot; + Message]" />  
+    <p:Assign sap:VirtualizedContainerService.HintSize="255,58">  
+      <p:Assign.To>  
+        <p:OutArgument x:TypeArguments="x:String">[Echo]</p:OutArgument>  
+      </p:Assign.To>  
+      <p:Assign.Value>  
+        <p:InArgument x:TypeArguments="x:String">["&lt;echo&gt; " + Message]</p:InArgument>  
+      </p:Assign.Value>  
+    </p:Assign>  
+    <SendReply Request="{x:Reference __ReferenceID0}" DisplayName="SendReply" sap:VirtualizedContainerService.HintSize="255,90">  
+      <SendParametersContent>  
+        <p:InArgument x:TypeArguments="x:String" x:Key="echo">[Echo]</p:InArgument>  
+      </SendParametersContent>  
+    </SendReply>  
+    <p:WriteLine sap:VirtualizedContainerService.HintSize="255,61" Text="[&quot;Message sent: &quot; + Echo]" />  
+  </p:Sequence>  
+</WorkflowService>  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SendReply ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReply.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendReply" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use this constructor.  
+  
+ [!code-csharp[SendReceiveParameters#2](~/samples/snippets/csharp/VS_Snippets_CFX/sendreceiveparameters/cs/echoworkflowservice/program.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public string Action { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Action" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReply.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the value of the action header of the message.</summary>
+        <value>The action URI of the message.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheMetadata">
+      <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.ActivityMetadata metadata);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.ActivityMetadata metadata) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReply.CacheMetadata(System.Activities.ActivityMetadata)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="metadata" Type="System.Activities.ActivityMetadata" />
+      </Parameters>
+      <Docs>
+        <param name="metadata">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.SendContent Content { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.SendContent Content" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReply.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.SendContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the content sent by the <see cref="T:System.ServiceModel.Activities.SendReply" /> activity.</summary>
+        <value>The content to send.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The content can be one of the following types: <xref:System.ServiceModel.Activities.SendMessageContent> or <xref:System.ServiceModel.Activities.SendParametersContent>. Use <xref:System.ServiceModel.Activities.SendMessageContent> when sending a <xref:System.ServiceModel.Channels.Message> or a message contract type. Use <xref:System.ServiceModel.Activities.SendParametersContent> when sending data contract types.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CorrelationInitializers">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Activities.CorrelationInitializer&gt; CorrelationInitializers { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Activities.CorrelationInitializer&gt; CorrelationInitializers" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReply.CorrelationInitializers" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Activities.CorrelationInitializer&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of correlation initializers.</summary>
+        <value>A collection of correlation initializers.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] correlation see [Correlation](~/docs/framework/wcf/feature-details/correlation.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromOperationDescription">
+      <MemberSignature Language="C#" Value="public static System.ServiceModel.Activities.SendReply FromOperationDescription (System.ServiceModel.Description.OperationDescription operation, out System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Activities.SendReply&gt; faultReplies);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Activities.SendReply FromOperationDescription(class System.ServiceModel.Description.OperationDescription operation, class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Activities.SendReply&gt; faultReplies) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReply.FromOperationDescription(System.ServiceModel.Description.OperationDescription,System.Collections.Generic.IEnumerable{System.ServiceModel.Activities.SendReply}@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.SendReply</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="operation" Type="System.ServiceModel.Description.OperationDescription" />
+        <Parameter Name="faultReplies" Type="System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Activities.SendReply&gt;&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="operation">The contract operation description.</param>
+        <param name="faultReplies">When this method returns, contains the send replies with fault.</param>
+        <summary>Returns the send reply activity from the given contract operation description.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Activities.SendReply" /> object from the given contract operation description.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PersistBeforeSend">
+      <MemberSignature Language="C#" Value="public bool PersistBeforeSend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool PersistBeforeSend" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReply.PersistBeforeSend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that specifies whether the workflow service instance should be persisted before sending the message.</summary>
+        <value>
+          <see langword="true" /> if the workflow service should be persisted before sending the message;otherwise <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Request">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.Receive Request { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.Receive Request" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReply.Request" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.Receive</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a reference to the <see cref="T:System.ServiceModel.Activities.Receive" /> activity paired with this <see cref="T:System.ServiceModel.Activities.SendReply" /> activity.</summary>
+        <value>A receive activity.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property must not be `null`. <xref:System.ServiceModel.Activities.Receive> and <xref:System.ServiceModel.Activities.SendReply> activities are used together on the service side to model a request/response messaging pattern. This property specifies which <xref:System.ServiceModel.Activities.Receive> activity is paired.  
+  
+   
+  
+## Examples  
+ The following example shows how to use this constructor.  
+  
+ [!code-csharp[SendReceiveParameters#2](~/samples/snippets/csharp/VS_Snippets_CFX/sendreceiveparameters/cs/echoworkflowservice/program.cs#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,566 @@
+<Type Name="VisualCollection" FullName="System.Windows.Media.VisualCollection">
+  <TypeSignature Language="C#" Value="public sealed class VisualCollection : System.Collections.ICollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VisualCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.VisualCollection" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.ICollection</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an ordered collection of <see cref="T:System.Windows.Media.Visual" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Windows.Media.VisualCollection> has implied context affinity. If a procedure attempts to access the <xref:System.Windows.Media.VisualCollection> from a different context than the context of the owning <xref:System.Windows.Media.ContainerVisual>, an exception is thrown.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Media.VisualCollection> and add members to it.  
+  
+ [!code-csharp[DrawingVisualSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#100)]
+ [!code-vb[DrawingVisualSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#100)]  
+  
+> [!NOTE]
+>  For the complete sample, see [Hit Test Using DrawingVisuals Sample](http://go.microsoft.com/fwlink/?LinkID=159994).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VisualCollection (System.Windows.Media.Visual parent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Visual parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.#ctor(System.Windows.Media.Visual)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="parent" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="parent">The parent visual object whose <see cref="T:System.Windows.Media.VisualCollection" /> is returned.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.VisualCollection" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public int Add (System.Windows.Media.Visual visual);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Windows.Media.Visual visual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.Add(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> to append to the <see cref="T:System.Windows.Media.VisualCollection" />.</param>
+        <summary>Appends a <see cref="T:System.Windows.Media.Visual" /> to the end of the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
+        <returns>The index in the collection at which <paramref name="visual" /> was added.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Adding a <xref:System.Windows.Media.Visual> whose value is `null` is permitted and does not raise an exception.  
+  
+ The <xref:System.Windows.Media.VisualCollection.Add%2A> method also sets up the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
+  
+ If you need greater low-level control over the underlying storage implementation of visual child objects of a custom class, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you must define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
+  
+   
+  
+## Examples  
+ The following example shows how to create a <xref:System.Windows.Media.VisualCollection> and add members to it.  
+  
+ [!code-csharp[DrawingVisualSample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#100)]
+ [!code-vb[DrawingVisualSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#100)]  
+  
+> [!NOTE]
+>  For the complete sample, see [Hit Test Using DrawingVisuals Sample](http://go.microsoft.com/fwlink/?LinkID=159994).  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentException">An <see cref="T:System.ArgumentException" /> is thrown if the <see cref="T:System.Windows.Media.Visual" /> is a root element.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Capacity">
+      <MemberSignature Language="C#" Value="public int Capacity { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Capacity" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualCollection.Capacity" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the number of elements that the <see cref="T:System.Windows.Media.VisualCollection" /> can contain.</summary>
+        <value>The number of elements that the <see cref="T:System.Windows.Media.VisualCollection" /> can contain.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of <xref:System.Windows.Media.VisualCollection.Capacity%2A> is the number of elements that the <xref:System.Windows.Media.VisualCollection> is capable of storing. <xref:System.Windows.Media.VisualCollection.Count%2A> is the number of visuals that are actually in the <xref:System.Windows.Media.VisualCollection>. <xref:System.Windows.Media.VisualCollection.Capacity%2A> is always greater than or equal to <xref:System.Windows.Media.VisualCollection.Count%2A>. If <xref:System.Windows.Media.VisualCollection.Count%2A> exceeds <xref:System.Windows.Media.VisualCollection.Capacity%2A> while adding elements, the capacity of the <xref:System.Windows.Media.VisualCollection> is increased. By default <xref:System.Windows.Media.VisualCollection.Capacity%2A> is zero.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <see cref="P:System.Windows.Media.VisualCollection.Capacity" /> is set to a value that is less than <see cref="P:System.Windows.Media.VisualCollection.Count" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all elements from the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.VisualCollection.Count%2A> is reset to zero. The value of the <xref:System.Windows.Media.VisualCollection.Capacity%2A> remains unchanged. To reset the capacity of the <xref:System.Windows.Media.VisualCollection>, set the <xref:System.Windows.Media.VisualCollection.Capacity%2A> property to the desired size.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Media.Visual visual);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Windows.Media.Visual visual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.Contains(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> to search for in the collection.</param>
+        <summary>Returns a <see cref="T:System.Boolean" /> value that indicates whether the specified <see cref="T:System.Windows.Media.Visual" /> is contained in the collection.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="visual" /> is contained in the collection; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The worst-case runtime scenario of this function is `O(n)`, where `n` is the number of items in the <xref:System.Windows.Media.VisualCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The one-dimensional <see cref="T:System.Array" /> that is the destination of the elements that are copied from the <see cref="T:System.Windows.Media.VisualCollection" />.</param>
+        <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
+        <summary>Copies the items in the collection to an array, starting at a specific array index.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Media.Visual[] array, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Windows.Media.Visual[] array, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.CopyTo(System.Windows.Media.Visual[],System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="System.Windows.Media.Visual[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">An array of <see cref="T:System.Windows.Media.Visual" /> objects (which must have zero-based indexing).</param>
+        <param name="index">The index to start copying from within <c>array</c>.</param>
+        <summary>Copies the current collection into the passed <see cref="T:System.Windows.Media.Visual" /> array.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of elements in the collection.</summary>
+        <value>The number of elements that the <see cref="T:System.Windows.Media.VisualCollection" /> contains.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Media.VisualCollection.Count%2A> is the number of elements that are actually in the <xref:System.Windows.Media.VisualCollection>. <xref:System.Windows.Media.VisualCollection.Capacity%2A> is the number of elements that the <xref:System.Windows.Media.VisualCollection> is capable of storing.  
+  
+ <xref:System.Windows.Media.VisualCollection.Count%2A> is always less than or equal to <xref:System.Windows.Media.VisualCollection.Capacity%2A>. If <xref:System.Windows.Media.VisualCollection.Count%2A> exceeds <xref:System.Windows.Media.VisualCollection.Capacity%2A> while adding elements, the capacity of the list is doubled by automatically reallocating the internal array before copying the old elements and adding the new elements.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.VisualCollection.Enumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.VisualCollection/Enumerator GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.VisualCollection+Enumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Retrieves an enumerator that can iterate through the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
+        <returns>An enumerator that can be used to iterate through the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Media.Visual visual);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Media.Visual visual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.IndexOf(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> to locate in the <see cref="T:System.Windows.Media.VisualCollection" />.</param>
+        <summary>Returns the zero-based index of the <see cref="T:System.Windows.Media.Visual" />.</summary>
+        <returns>The index of the <see cref="T:System.Windows.Media.Visual" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Windows.Media.Visual> is not in the <xref:System.Windows.Media.VisualCollection>, -1 is returned. If `null` is passed to the method, the index of the first entry that has `null` is returned. If there is no null entry, -1 is returned.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Insert">
+      <MemberSignature Language="C#" Value="public void Insert (int index, System.Windows.Media.Visual visual);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Windows.Media.Visual visual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.Insert(System.Int32,System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index at which the value should be inserted.</param>
+        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> to insert into the <see cref="T:System.Windows.Media.VisualCollection" />.</param>
+        <summary>Inserts an element into the <see cref="T:System.Windows.Media.VisualCollection" /> at the specified index.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If <xref:System.Windows.Media.VisualCollection.Count%2A> already equals <xref:System.Windows.Media.VisualCollection.Capacity%2A>, the capacity of the <xref:System.Windows.Media.VisualCollection> is increased before the new <xref:System.Windows.Media.Visual> is inserted. If `index` is equal to <xref:System.Windows.Media.VisualCollection.Count%2A>, `visual` is added to the end of <xref:System.Windows.Media.VisualCollection>. Any existing visual objects that are equal to or greater than `index` are shifted to accommodate the new <xref:System.Windows.Media.Visual>, and their index values are updated.  
+  
+ The <xref:System.Windows.Media.VisualCollection.Insert%2A> method also sets up the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
+  
+ If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or greater than <see cref="P:System.Windows.Media.VisualCollection.Count" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualCollection.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether the <see cref="T:System.Windows.Media.VisualCollection" /> is read-only.</summary>
+        <value>The value that indicates whether the <see cref="T:System.Windows.Media.VisualCollection" /> is read-only.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is always `false` for all <xref:System.Windows.Media.VisualCollection> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSynchronized">
+      <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualCollection.IsSynchronized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates whether access to the <see cref="T:System.Windows.Media.VisualCollection" /> is synchronized (thread-safe).</summary>
+        <value>The value that indicates whether the <see cref="T:System.Windows.Media.VisualCollection" /> is synchronized (thread-safe).</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property is always `false` for all <xref:System.Windows.Media.VisualCollection> objects.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Visual this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Visual Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualCollection.Item(System.Int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Visual</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the <see cref="T:System.Windows.Media.VisualCollection" /> from which to get or set the <see cref="T:System.Windows.Media.Visual" />.</param>
+        <summary>Gets or sets the <see cref="T:System.Windows.Media.Visual" /> that is stored at the zero-based index of the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
+        <value>The <see cref="T:System.Windows.Media.Visual" /> that is stored at <paramref name="index" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides the ability to access a specific <xref:System.Windows.Media.Visual> in the <xref:System.Windows.Media.VisualCollection> by using an index.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero, or <paramref name="index" /> is equal to or greater than <see cref="P:System.Windows.Media.VisualCollection.Count" />.</exception>
+        <exception cref="T:System.ArgumentException">The new child element already has a parent, or the value at the specified index is not <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Windows.Media.Visual visual);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.Media.Visual visual) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.Remove(System.Windows.Media.Visual)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="visual" Type="System.Windows.Media.Visual" />
+      </Parameters>
+      <Docs>
+        <param name="visual">The <see cref="T:System.Windows.Media.Visual" /> to remove from the <see cref="T:System.Windows.Media.VisualCollection" />.</param>
+        <summary>Removes the specified <see cref="T:System.Windows.Media.Visual" /> object from the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The visual objects that follow the removed object are shifted to occupy the vacated position, and their index values are updated. If `visual` is `null`, the first `null` entry is removed. Note that removing a `null` entry is linear in the size of the collection.  
+  
+ The <xref:System.Windows.Media.VisualCollection.Remove%2A> method also removes the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
+  
+ If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAt">
+      <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.RemoveAt(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the visual to remove.</param>
+        <summary>Removes the visual object at the specified index in the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The visual objects that follow the removed object are shifted to occupy the vacated position, and their index values are updated.  
+  
+ The <xref:System.Windows.Media.VisualCollection.RemoveAt%2A> method also removes the parent-child relationship between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the child `visual`.  
+  
+ If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero, or <paramref name="index" /> is equal to or greater than <see cref="P:System.Windows.Media.VisualCollection.Count" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveRange">
+      <MemberSignature Language="C#" Value="public void RemoveRange (int index, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveRange(int32 index, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.RemoveRange(System.Int32,System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">The zero-based index of the range of elements to remove.</param>
+        <param name="count">The number of elements to remove.</param>
+        <summary>Removes a range of visual objects from the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The visual objects that follow the removed objects are shifted to occupy the vacated positions, and their index values are updated.  
+  
+ The <xref:System.Windows.Media.VisualCollection.RemoveRange%2A> method also removes the parent-child relationships between the parent visual, which is the owner of the <xref:System.Windows.Media.VisualCollection>, and the range of child visuals.  
+  
+ If you need greater low-level control over the underlying storage implementation of visual child objects, consider using the <xref:System.Windows.Media.Visual.AddVisualChild%2A> and <xref:System.Windows.Media.Visual.RemoveVisualChild%2A> methods. When you use these methods, you define your own storage implementation, and do not use <xref:System.Windows.Media.VisualCollection>.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or <paramref name="count" /> is less than zero.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="index" /> and <paramref name="count" /> do not refer to a valid range of elements in the <see cref="T:System.Windows.Media.VisualCollection" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SyncRoot">
+      <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.VisualCollection.SyncRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Windows.Media.VisualCollection" />.</summary>
+        <value>A value of type <see cref="T:System.Object" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.VisualCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>This member supports the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] infrastructure and is not intended to be used directly from your code. For a description of this member, see <see cref="M:System.Collections.IEnumerable.GetEnumerator" />.</summary>
+        <returns>An object that can be used to iterate through the collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

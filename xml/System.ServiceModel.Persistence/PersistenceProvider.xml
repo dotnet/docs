@@ -1,0 +1,603 @@
+<Type Name="PersistenceProvider" FullName="System.ServiceModel.Persistence.PersistenceProvider">
+  <TypeSignature Language="C#" Value="public abstract class PersistenceProvider : System.ServiceModel.Channels.CommunicationObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PersistenceProvider extends System.ServiceModel.Channels.CommunicationObject" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Persistence.PersistenceProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.WorkflowServices</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ServiceModel.Channels.CommunicationObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The WF3 types are deprecated.  Instead, please use the new WF4 types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The abstract base class from which all durable service persistence providers are derived.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Users can create classes derived from this type to create durable service persistence providers that use custom persistence stores, such as third-party databases, the file system, or storage systems accessed remotely. To create a system-provided implementation of this type that uses Microsoft SQL Server as a persistence store, see <xref:System.ServiceModel.Persistence.SqlPersistenceProviderFactory>.  
+  
+> [!NOTE]
+>  When creating persistence provider implementations, it is important to maintain the thread's original identity in the new provider's methods (such as <xref:System.ServiceModel.Persistence.PersistenceProvider.Load%2A>. Otherwise, security loopholes could be created, because operations would then run under the wrong identity.  
+  
+   
+  
+## Examples  
+ For an implementation of this type that uses the file system as a persistence store, see the FilePersistenceProviderFactory.cs file in the DurableServiceFactory SDK sample.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PersistenceProvider (Guid id);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid id) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.#ctor(System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="id" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="id">The unique identifier of the service state data being saved.</param>
+        <summary>When implemented in a derived class, initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.PersistenceProvider" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use the <xref:System.ServiceModel.Persistence.PersistenceProvider> constructor. This code example is part of the DurableServiceFactory SDK sample from the FilePersistenceProviderFactory.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]the DurableServiceFactory SDK sample.  
+  
+ [!code-csharp[PersistenceProvider#0](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginCreate">
+      <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginCreate (object instance, TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginCreate(object instance, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.BeginCreate(System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The actual instance state.</param>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <param name="callback">The method to be called when the operation is completed.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous operation from other operations.</param>
+        <summary>When implemented in a derived class, represents the beginning of the Create phase. The Create phase occurs when service instance records are first created in the persistence store.</summary>
+        <returns>The state of the <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.BeginCreate(System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" /> asynchronous method call.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.BeginCreate%2A> method.  
+  
+ [!code-csharp[PersistenceProvider#14](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#14)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginDelete">
+      <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginDelete (object instance, TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginDelete(object instance, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.BeginDelete(System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The actual instance state.</param>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <param name="callback">The method to be called when the operation is completed.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous operation from other operations.</param>
+        <summary>When implemented in a derived class, represents the beginning of the Delete phase. The Delete phase occurs when service state data is permanently deleted from the persistence store.</summary>
+        <returns>The state of the <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.BeginDelete(System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" /> asynchronous method call.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the `BeginDelete` method. This code example is part of the DurableServiceFactory SDK sample from the FilePersistenceProviderFactory.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]the DurableServiceFactory SDK sample.  
+  
+ [!code-csharp[PersistenceProvider#6](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginLoad">
+      <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginLoad (TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginLoad(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.BeginLoad(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <param name="callback">The method to be called when the operation is completed.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous operation from other operations.</param>
+        <summary>When implemented in a derived class, represents the beginning of the Load phase. The Load phase occurs when state data is loaded into the persistence provider from the persistence store.</summary>
+        <returns>The state of the <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.BeginLoad(System.TimeSpan,System.AsyncCallback,System.Object)" /> asynchronous method call.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the `BeginLoad` method. This code example is part of the DurableServiceFactory SDK sample from the FilePersistenceProviderFactory.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]the DurableServiceFactory SDK sample.  
+  
+ [!code-csharp[PersistenceProvider#7](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginLoadIfChanged">
+      <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginLoadIfChanged (TimeSpan timeout, object instanceToken, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginLoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.BeginLoadIfChanged(System.TimeSpan,System.Object,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="instanceToken" Type="System.Object" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <param name="instanceToken">The token returned by a previous <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.Create(System.Object,System.TimeSpan)" /> or <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.Update(System.Object,System.TimeSpan)" /> that represents the current state held by the caller.</param>
+        <param name="callback">The method to be called when the operation is completed.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous operation from other operations.</param>
+        <summary>When implemented in a derived class, represents the beginning of the LoadIfChanged phase. The LoadIfChanged phase occurs when state data is loaded into the persistence provider from the persistence store, and the state data in the persistence store has been changed.</summary>
+        <returns>The state of the <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.BeginLoadIfChanged(System.TimeSpan,System.Object,System.AsyncCallback,System.Object)" /> asynchronous method call.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.BeginLoadIfChanged%2A> method.  
+  
+ [!code-csharp[PersistenceProvider#11](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#11)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginUpdate">
+      <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginUpdate (object instance, TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginUpdate(object instance, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.BeginUpdate(System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The actual instance state.</param>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <param name="callback">The method to be called when the operation is completed.</param>
+        <param name="state">A user-provided object that distinguishes this particular asynchronous operation from other operations.</param>
+        <summary>When implemented in a derived class, represents the beginning of the Update phase. The Update phase occurs when service state data is updated in the persistence store.</summary>
+        <returns>The state of the <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.BeginUpdate(System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" /> asynchronous method call.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.BeginUpdate%2A> method.  
+  
+ [!code-csharp[PersistenceProvider#17](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#17)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public abstract object Create (object instance, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Create(object instance, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.Create(System.Object,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The actual instance state.</param>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <summary>When implemented in a derived class, creates a service state record in the persistence store.</summary>
+        <returns>The instance token corresponding to the state just saved. This can be passed to <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Object@)" /> to determine whether the state in the persistence store differs from the state when Create was called.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.Create%2A> method.  
+  
+ [!code-csharp[PersistenceProvider#15](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#15)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public abstract void Delete (object instance, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete(object instance, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.Delete(System.Object,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The actual instance state.</param>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <summary>When implemented in a derived class, permanently deletes service state information from the persistence store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.Delete%2A> method. This code example is part of the DurableServiceFactory SDK sample from the FilePersistenceProviderFactory.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]the DurableServiceFactory SDK sample.  
+  
+ [!code-csharp[PersistenceProvider#9](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndCreate">
+      <MemberSignature Language="C#" Value="public abstract object EndCreate (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object EndCreate(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.EndCreate(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the result of the operation.</param>
+        <summary>When implemented in a derived class, represents the end of the Create phase. The Create phase occurs when service state records are first created in the persistence store.</summary>
+        <returns>The instance token corresponding to the state just saved. This can be passed to <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Object@)" /> to determine whether the state in the persistence store differs from the state when Create was called.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.EndCreate%2A> method.  
+  
+ [!code-csharp[PersistenceProvider#16](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#16)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndDelete">
+      <MemberSignature Language="C#" Value="public abstract void EndDelete (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndDelete(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.EndDelete(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the result of the operation.</param>
+        <summary>When implemented in a derived class, represents the end of the Delete phase. The Delete phase occurs when state data is permanently deleted from the persistence store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.EndDelete%2A> method. This code example is part of the DurableServiceFactory SDK sample from the FilePersistenceProviderFactory.cs file. For more information, see the DurableServiceFactory SDK sample.  
+  
+ [!code-csharp[PersistenceProvider#5](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndLoad">
+      <MemberSignature Language="C#" Value="public abstract object EndLoad (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object EndLoad(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.EndLoad(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the result of the operation.</param>
+        <summary>When implemented in a derived class, represents the end of the Load phase. The Load phase occurs when state data is loaded into the persistence provider from the persistence store.</summary>
+        <returns>The service state information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use the `EndLoad` method. This code example is part of the DurableServiceFactory SDK sample from the FilePersistenceProviderFactory.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]the DurableServiceFactory SDK sample.  
+  
+ [!code-csharp[PersistenceProvider#1](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndLoadIfChanged">
+      <MemberSignature Language="C#" Value="public virtual bool EndLoadIfChanged (IAsyncResult result, out object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EndLoadIfChanged(class System.IAsyncResult result, object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.EndLoadIfChanged(System.IAsyncResult,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+        <Parameter Name="instance" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the result of the operation.</param>
+        <param name="instance">The actual instance state.</param>
+        <summary>When implemented in a derived class, represents the end of the LoadIfChanged phase. The LoadIfChanged phase occurs when state data is loaded into the persistence provider from the persistence store, and the state data in the persistence store has been changed.</summary>
+        <returns>
+          <see langword="true" /> if the instance <see langword="out" /> parameter has been set with the latest copy from the persistence store; <see langword="false" /> if the locally cached state is already up-to-date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.EndLoadIfChanged%2A> method.  
+  
+ [!code-csharp[PersistenceProvider#12](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#12)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndUpdate">
+      <MemberSignature Language="C#" Value="public abstract object EndUpdate (IAsyncResult result);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object EndUpdate(class System.IAsyncResult result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.EndUpdate(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="result" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="result">A reference to the result of the operation.</param>
+        <summary>Represents the end of the Update phase. The Update phase occurs when service state records are updated in the persistence store.</summary>
+        <returns>The instance token corresponding to the state just saved. This can be passed to <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Object@)" /> to determine whether the state in the persistence store differs from the state when Create was called.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.EndUpdate%2A> method.  
+  
+ [!code-csharp[PersistenceProvider#19](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#19)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public Guid Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Persistence.PersistenceProvider.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Represents the <see cref="T:System.Guid" /> associated with this instance.</summary>
+        <value>The GUID associated with this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to use the <xref:System.ServiceModel.Persistence.PersistenceProvider.Id%2A> property.  
+  
+ [!code-csharp[PersistenceProvider#10](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#10)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public abstract object Load (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Load(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.Load(System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <summary>When implemented in a derived class, loads service state information from the persistence store.</summary>
+        <returns>The loaded instance state.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Changes made to the security token in the <xref:System.ServiceModel.Persistence.PersistenceProvider.Load%2A> method, if not reverted, stay in effect for the remainder of that message's processing. This means that the service operation's user code, the response message path through the dispatcher, as well as any error paths, run in the changed security context.  
+  
+   
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.Load%2A> method. This code example is part of the DurableServiceFactory SDK sample from the FilePersistenceProviderFactory.cs file. [!INCLUDE[crdefault](~/includes/crdefault-md.md)]the DurableServiceFactory SDK sample.  
+  
+ [!code-csharp[PersistenceProvider#3](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadIfChanged">
+      <MemberSignature Language="C#" Value="public virtual bool LoadIfChanged (TimeSpan timeout, object instanceToken, out object instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadIfChanged(valuetype System.TimeSpan timeout, object instanceToken, object instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+        <Parameter Name="instanceToken" Type="System.Object" />
+        <Parameter Name="instance" Type="System.Object&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <param name="instanceToken">The token returned by a previous <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.Create(System.Object,System.TimeSpan)" /> or <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.Update(System.Object,System.TimeSpan)" />, which represents the current state held by the caller.</param>
+        <param name="instance">The actual instance state.</param>
+        <summary>When implemented in a derived class, loads service state information from the persistence store if that data has been changed.</summary>
+        <returns>
+          <see langword="true" /> if the <paramref name="instance" /><see langword="out" /> parameter has been set with the latest copy from the persistence store; <see langword="false" /> if the locally cached state is already up to date.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.LoadIfChanged%2A> method.  
+  
+ [!code-csharp[PersistenceProvider#13](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#13)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Update">
+      <MemberSignature Language="C#" Value="public abstract object Update (object instance, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Update(object instance, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceProvider.Update(System.Object,System.TimeSpan)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The actual instance state.</param>
+        <param name="timeout">The time period after which the persistence provider aborts this attempt.</param>
+        <summary>When implemented in a derived class, updates service state records in the persistence store.</summary>
+        <returns>The instance token corresponding to the state just saved. This can be passed to <see cref="M:System.ServiceModel.Persistence.PersistenceProvider.LoadIfChanged(System.TimeSpan,System.Object,System.Object@)" /> to determine whether the state in the persistence store differs from the state when Create was called.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code demonstrates how to implement the <xref:System.ServiceModel.Persistence.PersistenceProvider.Update%2A> method.  
+  
+ [!code-csharp[PersistenceProvider#18](~/samples/snippets/csharp/VS_Snippets_CFX/persistenceprovider/cs/filepersistenceprovider.cs#18)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

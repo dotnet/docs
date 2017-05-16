@@ -1,0 +1,51 @@
+<Type Name="IDataGridColumnStyleEditingNotificationService" FullName="System.Windows.Forms.IDataGridColumnStyleEditingNotificationService">
+  <TypeSignature Language="C#" Value="public interface IDataGridColumnStyleEditingNotificationService" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataGridColumnStyleEditingNotificationService" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides an editing notification interface.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ To create a new <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> column with special properties, you must first inherit from the <xref:System.Windows.Forms.DataGridColumnStyle> class. The <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService> interface is provided to notify the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> when a column is being edited.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ColumnStartedEditing">
+      <MemberSignature Language="C#" Value="public void ColumnStartedEditing (System.Windows.Forms.Control editingControl);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ColumnStartedEditing(class System.Windows.Forms.Control editingControl) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing(System.Windows.Forms.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="editingControl" Type="System.Windows.Forms.Control" />
+      </Parameters>
+      <Docs>
+        <param name="editingControl">The <see cref="T:System.Windows.Forms.Control" /> that is editing the column.</param>
+        <summary>Informs the <see cref="T:System.Windows.Forms.DataGrid" /> that the user has begun editing the column.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When called, the <xref:System.Windows.Forms.IDataGridColumnStyleEditingNotificationService.ColumnStartedEditing%2A> method allows the <xref:System.Windows.Forms.DataGrid?displayProperty=fullName> control to show a pencil in the row header indicating the row is being edited.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

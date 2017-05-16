@@ -1,0 +1,135 @@
+<Type Name="CompositionConstants" FullName="System.ComponentModel.Composition.Hosting.CompositionConstants">
+  <TypeSignature Language="C#" Value="public static class CompositionConstants" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CompositionConstants extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.CompositionConstants" />
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains static metadata keys used by the composition system.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Do not create metadata by using any of the keys in this class, except to deliberately interact with the composition system. Other uses will cause unpredictable behavior.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExportTypeIdentityMetadataName">
+      <MemberSignature Language="C#" Value="public const string ExportTypeIdentityMetadataName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ExportTypeIdentityMetadataName" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionConstants.ExportTypeIdentityMetadataName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the metadata key created by the composition system to mark a part with a unique identifier.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericContractMetadataName">
+      <MemberSignature Language="C#" Value="public const string GenericContractMetadataName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GenericContractMetadataName" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionConstants.GenericContractMetadataName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the metadata key created by the composition system to mark a generic contract.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenericParametersMetadataName">
+      <MemberSignature Language="C#" Value="public const string GenericParametersMetadataName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string GenericParametersMetadataName" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionConstants.GenericParametersMetadataName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the metadata key created by the composition system to mark generic parameters.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportSourceMetadataName">
+      <MemberSignature Language="C#" Value="public const string ImportSourceMetadataName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ImportSourceMetadataName" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionConstants.ImportSourceMetadataName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the metadata key created by the composition system to mark an import source.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGenericPartMetadataName">
+      <MemberSignature Language="C#" Value="public const string IsGenericPartMetadataName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string IsGenericPartMetadataName" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionConstants.IsGenericPartMetadataName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the metadata key created by the composition system to mark an <see langword="IsGenericPart" /> method.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PartCreationPolicyMetadataName">
+      <MemberSignature Language="C#" Value="public const string PartCreationPolicyMetadataName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string PartCreationPolicyMetadataName" />
+      <MemberSignature Language="DocId" Value="F:System.ComponentModel.Composition.Hosting.CompositionConstants.PartCreationPolicyMetadataName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the metadata key created by the composition system to mark a part with a creation policy.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

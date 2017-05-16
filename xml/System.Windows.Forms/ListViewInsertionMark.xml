@@ -1,0 +1,260 @@
+<Type Name="ListViewInsertionMark" FullName="System.Windows.Forms.ListViewInsertionMark">
+  <TypeSignature Language="C#" Value="public sealed class ListViewInsertionMark" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ListViewInsertionMark extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewInsertionMark" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Used to indicate the expected drop location when an item is dragged to a new position in a <see cref="T:System.Windows.Forms.ListView" /> control. This functionality is available only on Windows XP and later.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can retrieve a <xref:System.Windows.Forms.ListViewInsertionMark> from the <xref:System.Windows.Forms.ListView.InsertionMark%2A> property of a <xref:System.Windows.Forms.ListView> control and use it to visually indicate the expected drop location in a drag-and-drop operation when an item is dragged to a new position.  
+  
+ This feature works only when the <xref:System.Windows.Forms.ListView.AutoArrange%2A?displayProperty=fullName> property is set to `true` and when the <xref:System.Windows.Forms.ListView> control does not sort the items automatically. To prevent automatic sorting, the <xref:System.Windows.Forms.ListView.Sorting%2A?displayProperty=fullName> property must be set to <xref:System.Windows.Forms.SortOrder?displayProperty=fullName> and the <xref:System.Windows.Forms.ListView.View%2A?displayProperty=fullName> property must be set to <xref:System.Windows.Forms.View?displayProperty=fullName>, <xref:System.Windows.Forms.View?displayProperty=fullName>, or <xref:System.Windows.Forms.View?displayProperty=fullName>. Additionally, the insertion mark feature cannot be used with the <xref:System.Windows.Forms.ListView> grouping feature because the grouping feature orders the items by group membership.  
+  
+ The <xref:System.Windows.Forms.ListViewInsertionMark> class is typically used in a handler for the <xref:System.Windows.Forms.Control.DragOver?displayProperty=fullName> or <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName> event to update the position of the insertion mark as an item is dragged. It is also used in a handler for the <xref:System.Windows.Forms.Control.DragDrop?displayProperty=fullName> or <xref:System.Windows.Forms.Control.MouseUp?displayProperty=fullName> event to insert a dragged item at the correct location.  
+  
+ To update the position of the insertion mark, follow these steps:  
+  
+1.  In a handler for the <xref:System.Windows.Forms.Control.DragOver?displayProperty=fullName> or <xref:System.Windows.Forms.Control.MouseMove?displayProperty=fullName> event, use the <xref:System.Windows.Forms.ListView.InsertionMark%2A?displayProperty=fullName> property to access the <xref:System.Windows.Forms.ListViewInsertionMark> object associated with the <xref:System.Windows.Forms.ListView> control.  
+  
+2.  Use the <xref:System.Windows.Forms.ListViewInsertionMark.NearestIndex%2A> method to retrieve the index of the item closest to the mouse pointer.  
+  
+3.  Pass the index value to the <xref:System.Windows.Forms.ListView.GetItemRect%2A?displayProperty=fullName> method to retrieve the bounding rectangle of the item.  
+  
+4.  If the mouse pointer is located to the left of the midpoint of the bounding rectangle, set the <xref:System.Windows.Forms.ListViewInsertionMark.AppearsAfterItem%2A> property to `false`; otherwise, set it to `true`.  
+  
+5.  Set the <xref:System.Windows.Forms.ListViewInsertionMark.Index%2A> property to the index value retrieved from the <xref:System.Windows.Forms.ListViewInsertionMark.NearestIndex%2A> method. The insertion mark appears next to item with the specified index, either to the left or the right, depending on the <xref:System.Windows.Forms.ListViewInsertionMark.AppearsAfterItem%2A> property value. If an item is dragged over itself, the index is -1 and the insertion mark is hidden.  
+  
+ To insert the dragged item at the correct location, follow these steps:  
+  
+1.  In a handler for the <xref:System.Windows.Forms.Control.DragDrop?displayProperty=fullName> or <xref:System.Windows.Forms.Control.MouseUp?displayProperty=fullName> event, use the <xref:System.Windows.Forms.ListViewInsertionMark.Index%2A> property to determine the current location of the insertion mark. Store this value to be used later as the insertion index.  
+  
+2.  If the <xref:System.Windows.Forms.ListViewInsertionMark.AppearsAfterItem%2A> property is set to `true`, increment the stored insertion index value.  
+  
+3.  Use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Insert%2A?displayProperty=fullName> method to insert a clone of the dragged item into the <xref:System.Windows.Forms.ListView.Items%2A?displayProperty=fullName> collection at the stored insertion index.  
+  
+4.  Use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Remove%2A?displayProperty=fullName> method to remove the original copy of the dragged item.  
+  
+ You must insert a clone of the dragged item before the original copy is removed so the index values in the <xref:System.Windows.Forms.ListView.Items%2A?displayProperty=fullName> collection are not altered before the insertion.  
+  
+ To ensure that the items are displayed in the same order as their index values, you must set the <xref:System.Windows.Forms.ListView.ListViewItemSorter%2A?displayProperty=fullName> property to an implementation of the <xref:System.Collections.IComparer> interface that sorts items by index value. For more information, see the Example section.  
+  
+ You can modify the color of the insertion mark by using the <xref:System.Windows.Forms.ListViewInsertionMark.Color%2A> property. If you need the size or position of the insertion mark, you can get its bounding rectangle through the <xref:System.Windows.Forms.ListViewInsertionMark.Bounds%2A> property.  
+  
+> [!NOTE]
+>  The insertion mark feature is available only on Windows XP and the Windows Server 2003 family when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=fullName> method. On earlier operating systems, any code relating to the insertion mark will be ignored and the insertion mark will not appear. As a result, any code that depends on the insertion mark feature may not work correctly. You may want to include a test that determines whether the insertion mark feature is available, and provide alternate functionality when it is unavailable. For example, you may want to bypass all code that implements drag-and-drop item repositioning when running on operating systems that do not support insertion marks.  
+>   
+>  The insertion mark feature is provided by the same library that provides the operating system themes feature. To check for the availability of this library, call the <xref:System.Windows.Forms.FeatureSupport.IsPresent%28System.Object%29?displayProperty=fullName> method overload and pass in the <xref:System.Windows.Forms.OSFeature.Themes?displayProperty=fullName> value.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListView> insertion mark feature and implements drag-and-drop item reordering using the standard drag events. The position of the insertion mark is updated in a handler for the <xref:System.Windows.Forms.Control.DragOver?displayProperty=fullName> event. In this handler, the position of the mouse pointer is compared to the midpoint of the nearest item, and the result is used to determine whether the insertion mark appears to the left or the right of the item.  
+  
+ [!code-cpp[System.Windows.Forms.ListView.InsertionMark#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/CPP/listviewinsertionmarkexample.cpp#1)]
+ [!code-csharp[System.Windows.Forms.ListView.InsertionMark#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/CS/listviewinsertionmarkexample.cs#1)]
+ [!code-vb[System.Windows.Forms.ListView.InsertionMark#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/VB/listviewinsertionmarkexample.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppearsAfterItem">
+      <MemberSignature Language="C#" Value="public bool AppearsAfterItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AppearsAfterItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.AppearsAfterItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the insertion mark appears to the right of the item with the index specified by the <see cref="P:System.Windows.Forms.ListViewInsertionMark.Index" /> property.</summary>
+        <value>
+          <see langword="true" /> if the insertion mark appears to the right of the item with the index specified by the <see cref="P:System.Windows.Forms.ListViewInsertionMark.Index" /> property; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.ListViewInsertionMark.NearestIndex%2A> method lets you find the item closest to the mouse pointer, but you must do your own calculations to determine whether the insertion mark should appear before or after this item.  
+  
+ To calculate the value needed for the <xref:System.Windows.Forms.ListViewInsertionMark.AppearsAfterItem%2A> property, follow these steps:  
+  
+1.  Use the <xref:System.Windows.Forms.ListViewInsertionMark.NearestIndex%2A> method to retrieve the index of the item closest to the mouse pointer.  
+  
+2.  Pass the index value to the <xref:System.Windows.Forms.ListView.GetItemRect%2A?displayProperty=fullName> method to retrieve the bounding rectangle of the item.  
+  
+3.  If the mouse pointer is located to the left of the midpoint of the bounding rectangle, set the <xref:System.Windows.Forms.ListViewInsertionMark.AppearsAfterItem%2A> property to `false`; otherwise, set it to `true`.  
+  
+ For more information, see the <xref:System.Windows.Forms.ListViewInsertionMark> overview reference topic.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListView> insertion mark feature and implements drag-and-drop item reordering using the standard drag events. The position of the insertion mark is updated in a handler for the <xref:System.Windows.Forms.Control.DragOver?displayProperty=fullName> event. In this handler, the position of the mouse pointer is compared to the midpoint of the nearest item, and the result is used to determine whether the insertion mark appears to the left or the right of the item.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.ListViewInsertionMark> overview reference topic.  
+  
+ [!code-cpp[System.Windows.Forms.ListView.InsertionMark#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/CPP/listviewinsertionmarkexample.cpp#3)]
+ [!code-csharp[System.Windows.Forms.ListView.InsertionMark#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/CS/listviewinsertionmarkexample.cs#3)]
+ [!code-vb[System.Windows.Forms.ListView.InsertionMark#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/VB/listviewinsertionmarkexample.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Bounds">
+      <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.Bounds" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Rectangle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the bounding rectangle of the insertion mark.</summary>
+        <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the position and size of the insertion mark.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The coordinates in the insertion mark bounding rectangle are relative to the upper-left corner of the <xref:System.Windows.Forms.ListView> control.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public System.Drawing.Color Color { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color Color" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.Color" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Drawing.Color</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the color of the insertion mark.</summary>
+        <value>A <see cref="T:System.Drawing.Color" /> value that represents the color of the insertion mark. The default value is the value of the <see cref="P:System.Windows.Forms.ListView.ForeColor" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this property to set the insertion mark color to a value other than the foreground color of the <xref:System.Windows.Forms.ListView> control.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListView> insertion mark feature and implements drag-and-drop item reordering using the standard drag events. The position of the insertion mark is updated in a handler for the <xref:System.Windows.Forms.Control.DragOver?displayProperty=fullName> event. In this handler, the position of the mouse pointer is compared to the midpoint of the nearest item, and the result is used to determine whether the insertion mark appears to the left or the right of the item.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.ListViewInsertionMark> overview reference topic.  
+  
+ [!code-cpp[System.Windows.Forms.ListView.InsertionMark#2](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/CPP/listviewinsertionmarkexample.cpp#2)]
+ [!code-csharp[System.Windows.Forms.ListView.InsertionMark#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/CS/listviewinsertionmarkexample.cs#2)]
+ [!code-vb[System.Windows.Forms.ListView.InsertionMark#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/VB/listviewinsertionmarkexample.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Index">
+      <MemberSignature Language="C#" Value="public int Index { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewInsertionMark.Index" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index of the item next to which the insertion mark appears.</summary>
+        <value>The index of the item next to which the insertion mark appears or -1 when the insertion mark is hidden.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The insertion mark appears to the left of the item with the specified index if the <xref:System.Windows.Forms.ListViewInsertionMark.AppearsAfterItem%2A> property is set to `false`; otherwise, it appears to the right of the item. The insertion mark disappears automatically when a dragged item is inserted into the <xref:System.Windows.Forms.ListView.Items%2A?displayProperty=fullName> collection. To remove the insertion mark manually, for example, when an item is dragged onto itself or dragged outside the control, set the <xref:System.Windows.Forms.ListViewInsertionMark.Index%2A> value to -1.  
+  
+ Use the <xref:System.Windows.Forms.ListViewInsertionMark.NearestIndex%2A> method to retrieve the index of the item closest to a specified location, such as the location of the mouse pointer when positioning an item in a drag-and-drop operation.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListView> insertion mark feature and implements drag-and-drop item reordering using the standard drag events. The position of the insertion mark is updated in a handler for the <xref:System.Windows.Forms.Control.DragOver?displayProperty=fullName> event. In this handler, the position of the mouse pointer is compared to the midpoint of the nearest item, and the result is used to determine whether the insertion mark appears to the left or the right of the item.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.ListViewInsertionMark> overview reference topic.  
+  
+ [!code-cpp[System.Windows.Forms.ListView.InsertionMark#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/CPP/listviewinsertionmarkexample.cpp#3)]
+ [!code-csharp[System.Windows.Forms.ListView.InsertionMark#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/CS/listviewinsertionmarkexample.cs#3)]
+ [!code-vb[System.Windows.Forms.ListView.InsertionMark#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/VB/listviewinsertionmarkexample.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NearestIndex">
+      <MemberSignature Language="C#" Value="public int NearestIndex (System.Drawing.Point pt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 NearestIndex(valuetype System.Drawing.Point pt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewInsertionMark.NearestIndex(System.Drawing.Point)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pt" Type="System.Drawing.Point" />
+      </Parameters>
+      <Docs>
+        <param name="pt">A <see cref="T:System.Drawing.Point" /> representing the location from which to find the nearest item.</param>
+        <summary>Retrieves the index of the item closest to the specified point.</summary>
+        <returns>The index of the item closest to the specified point or -1 if the closest item is the item currently being dragged.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method lets you locate the item closest to the mouse pointer when doing a drag-and-drop operation. Use the index value returned to set the <xref:System.Windows.Forms.ListViewInsertionMark.Index%2A> property. When the item closest to the mouse pointer is the item being dragged, the return value of this method is -1. In this case, setting the <xref:System.Windows.Forms.ListViewInsertionMark.Index%2A> property to this value hides the insertion mark.  
+  
+ This method finds the closest item regardless of where the mouse pointer is located, while the <xref:System.Windows.Forms.ListView.GetItemAt%2A?displayProperty=fullName> method returns the item at the specified location only, or `null` if there is no item at that location. The <xref:System.Windows.Forms.ListView.GetItemAt%2A?displayProperty=fullName> method returns `null`, for example, when the mouse pointer is located between two items. For this reason, you should always use the <xref:System.Windows.Forms.ListViewInsertionMark.NearestIndex%2A> method when using a drag-and-drop operation to position items.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to use the <xref:System.Windows.Forms.ListView> insertion mark feature and implements drag-and-drop item reordering using the standard drag events. The position of the insertion mark is updated in a handler for the <xref:System.Windows.Forms.Control.DragOver?displayProperty=fullName> event. In this handler, the position of the mouse pointer is compared to the midpoint of the nearest item, and the result is used to determine whether the insertion mark appears to the left or the right of the item.  
+  
+ For the complete example, see the <xref:System.Windows.Forms.ListViewInsertionMark> overview reference topic.  
+  
+ [!code-cpp[System.Windows.Forms.ListView.InsertionMark#3](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/CPP/listviewinsertionmarkexample.cpp#3)]
+ [!code-csharp[System.Windows.Forms.ListView.InsertionMark#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/CS/listviewinsertionmarkexample.cs#3)]
+ [!code-vb[System.Windows.Forms.ListView.InsertionMark#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView.InsertionMark/VB/listviewinsertionmarkexample.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

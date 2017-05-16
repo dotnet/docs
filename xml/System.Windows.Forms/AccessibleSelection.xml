@@ -1,0 +1,141 @@
+<Type Name="AccessibleSelection" FullName="System.Windows.Forms.AccessibleSelection">
+  <TypeSignature Language="C#" Value="public enum AccessibleSelection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessibleSelection extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AccessibleSelection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies how an accessible object is selected or receives focus.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A focused object is the one object that receives keyboard input. The object with the keyboard focus is either the active window or a child object of the active window. A selected object is marked to participate in some type of group operation.  
+  
+ This enumeration is used by <xref:System.Windows.Forms.AccessibleObject.Select%2A?displayProperty=fullName>.  
+  
+ For additional information on the accessibility application, search for "Microsoft Active Accessibility" in the Microsoft Developer Network (MSDN) library.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates the creation of an accessibility-aware chart control, using the <xref:System.Windows.Forms.AccessibleObject> and <xref:System.Windows.Forms.Control.ControlAccessibleObject> classes to expose accessible information. The control plots two curves along with a legend. The `ChartControlAccessibleObject` class, which derives from `ControlAccessibleObject`, is used in the <xref:System.Windows.Forms.Control.CreateAccessibilityInstance%2A> method to provide custom accessible information for the chart control. Because the chart legend is not an actual <xref:System.Windows.Forms.Control> -based control, but instead is drawn by the chart control, it does not any built-in accessible information. Because of this, the `ChartControlAccessibleObject` class overrides the <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> method to return the `CurveLegendAccessibleObject` that represents accessible information for each part of the legend. When an accessible-aware application uses this control, the control can provide the necessary accessible information.  
+  
+ This example demonstrates using the <xref:System.Windows.Forms.AccessibleSelection> enumeration with the <xref:System.Windows.Forms.AccessibleObject.Select%2A> method. See the <xref:System.Windows.Forms.AccessibleObject> class overview for the complete code example.  
+  
+ [!code-cpp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CPP/chartcontrol.cpp#4)]
+ [!code-csharp[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/CS/chartcontrol.cs#4)]
+ [!code-vb[System.Windows.Forms.AccessibleObject#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.AccessibleObject/VB/chartcontrol.vb#4)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddSelection">
+      <MemberSignature Language="C#" Value="AddSelection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection AddSelection = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.AddSelection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Adds the object to the selection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendSelection">
+      <MemberSignature Language="C#" Value="ExtendSelection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection ExtendSelection = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.ExtendSelection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Selects all objects between the anchor and the selected object.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The selection or focus of an object is unchanged.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveSelection">
+      <MemberSignature Language="C#" Value="RemoveSelection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection RemoveSelection = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.RemoveSelection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Removes the object from the selection.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TakeFocus">
+      <MemberSignature Language="C#" Value="TakeFocus" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection TakeFocus = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.TakeFocus" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Assigns focus to an object and makes it the anchor, which is the starting point for the selection. Can be combined with <see langword="TakeSelection" />, <see langword="ExtendSelection" />, <see langword="AddSelection" />, or <see langword="RemoveSelection" />.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="TakeSelection">
+      <MemberSignature Language="C#" Value="TakeSelection" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleSelection TakeSelection = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleSelection.TakeSelection" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.AccessibleSelection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Selects the object and deselects all other objects in the container.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

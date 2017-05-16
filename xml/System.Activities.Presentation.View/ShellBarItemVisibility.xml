@@ -1,0 +1,151 @@
+<Type Name="ShellBarItemVisibility" FullName="System.Activities.Presentation.View.ShellBarItemVisibility">
+  <TypeSignature Language="C#" Value="public enum ShellBarItemVisibility" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ShellBarItemVisibility extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.ShellBarItemVisibility" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Enumerates the items that are visible in the shell bar.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="All">
+      <MemberSignature Language="C#" Value="All" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.ShellBarItemVisibility All = int32(-1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellBarItemVisibility.All" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that all items are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Arguments">
+      <MemberSignature Language="C#" Value="Arguments" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.ShellBarItemVisibility Arguments = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellBarItemVisibility.Arguments" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that arguments are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Imports">
+      <MemberSignature Language="C#" Value="Imports" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.ShellBarItemVisibility Imports = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellBarItemVisibility.Imports" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that imports are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiniMap">
+      <MemberSignature Language="C#" Value="MiniMap" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.ShellBarItemVisibility MiniMap = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellBarItemVisibility.MiniMap" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the mini map is visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.ShellBarItemVisibility None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellBarItemVisibility.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that nothing is visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PanMode">
+      <MemberSignature Language="C#" Value="PanMode" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.ShellBarItemVisibility PanMode = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellBarItemVisibility.PanMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that PanMode is visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Variables">
+      <MemberSignature Language="C#" Value="Variables" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.ShellBarItemVisibility Variables = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellBarItemVisibility.Variables" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the variables are visible.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Zoom">
+      <MemberSignature Language="C#" Value="Zoom" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.View.ShellBarItemVisibility Zoom = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.ShellBarItemVisibility.Zoom" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Presentation.View.ShellBarItemVisibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the zoom is visible.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

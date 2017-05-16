@@ -17,8 +17,8 @@ helpviewer_keywords:
   - ".NET Framework class library, reference information"
 ms.assetid: 8b202505-608b-4223-bbd9-2ace3d73e6cd
 caps.latest.revision: 15
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"
@@ -39,7 +39,7 @@ translation.priority.ht:
 This topic provides links to information about how to work with the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)] class library.  
   
 ## Related Sections  
- [Getting Started](http://msdn.microsoft.com/library/c693fd34-88fe-4d90-b332-19eeadf3b7e7)  
+ [Getting Started](../../framework/get-started/index.md)  
  Provides a comprehensive overview of the .NET Framework and links to additional resources.  
   
  [Class Library Overview](https://msdn.microsoft.com/library/hfa3fa08)  

@@ -1,0 +1,196 @@
+<Type Name="UpdateMapMetadata" FullName="System.Activities.DynamicUpdate.UpdateMapMetadata">
+  <TypeSignature Language="C#" Value="public class UpdateMapMetadata" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UpdateMapMetadata extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.UpdateMapMetadata" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies options for update map metadata.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the versioning and dynamic update functionality of Windows Workflow Foundation. [!INCLUDE[crabout](~/includes/crabout-md.md)] workflow versioning, workflow identity, and dynamic update, see the following topics.  
+  
+ [Workflow Versioning](http://go.microsoft.com/fwlink/?LinkID=271561)  
+ Describes the workflow versioning functionality introduced in [!INCLUDE[net_v45](~/includes/net-v45-md.md)].  
+  
+ [Dynamic Update](http://go.microsoft.com/fwlink/?LinkId=271563)  
+ Describes how to update the workflow definition of a persisted workflow instance by using dynamic update.  
+  
+ [Using WorkflowApplication Identity and Versioning](http://go.microsoft.com/fwlink/?LinkId=271564)  
+ Describes how to use <xref:System.Activities.WorkflowIdentity> to host multiple versions of a workflow side-by-side.  
+  
+ [Side by Side Versioning in WorkflowServiceHost](http://go.microsoft.com/fwlink/?LinkId=271565)  
+ Describes how to host multiple versions of a workflow on a single endpoint.  
+  
+ [How to: Host Multiple Versions of a Workflow Side-by-Side](http://go.microsoft.com/fwlink/?LinkId=271566)  
+ This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating a workflow definition, and hosting workflows using both the old and new definition at the same time.  
+  
+ [How to: Update the Definition of a Running Workflow Instance](http://go.microsoft.com/fwlink/?LinkId=271567)  
+ This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating persisted workflow instances to use a new workflow definition.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddMatch">
+      <MemberSignature Language="C#" Value="public void AddMatch (System.Activities.Activity updatedChild, System.Activities.Activity originalChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMatch(class System.Activities.Activity updatedChild, class System.Activities.Activity originalChild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.AddMatch(System.Activities.Activity,System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updatedChild" Type="System.Activities.Activity" />
+        <Parameter Name="originalChild" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="updatedChild">The updated child.</param>
+        <param name="originalChild">The original child.</param>
+        <summary>Adds a match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" /> with specified child.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMatch">
+      <MemberSignature Language="C#" Value="public void AddMatch (System.Activities.Variable updatedVariable, System.Activities.Variable originalVariable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMatch(class System.Activities.Variable updatedVariable, class System.Activities.Variable originalVariable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.AddMatch(System.Activities.Variable,System.Activities.Variable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updatedVariable" Type="System.Activities.Variable" />
+        <Parameter Name="originalVariable" Type="System.Activities.Variable" />
+      </Parameters>
+      <Docs>
+        <param name="updatedVariable">The updated variable.</param>
+        <param name="originalVariable">The original variable.</param>
+        <summary>Adds a match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" /> with specified variable.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowUpdateInsideThisActivity">
+      <MemberSignature Language="C#" Value="public void AllowUpdateInsideThisActivity ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AllowUpdateInsideThisActivity() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.AllowUpdateInsideThisActivity" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Allows updating of map metadata within the current activity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisallowUpdateInsideThisActivity">
+      <MemberSignature Language="C#" Value="public void DisallowUpdateInsideThisActivity (string reason);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DisallowUpdateInsideThisActivity(string reason) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.DisallowUpdateInsideThisActivity(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reason" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="reason">The reason of disallowing.</param>
+        <summary>Disallows updating of map metadata within the current activity.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMatch">
+      <MemberSignature Language="C#" Value="public System.Activities.Activity GetMatch (System.Activities.Activity updatedChild);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Activity GetMatch(class System.Activities.Activity updatedChild) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.GetMatch(System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Activity</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updatedChild" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="updatedChild">The updated child.</param>
+        <summary>Gets a match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" /> with specified child.</summary>
+        <returns>The match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMatch">
+      <MemberSignature Language="C#" Value="public System.Activities.Variable GetMatch (System.Activities.Variable updatedVariable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Variable GetMatch(class System.Activities.Variable updatedVariable) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.GetMatch(System.Activities.Variable)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Variable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="updatedVariable" Type="System.Activities.Variable" />
+      </Parameters>
+      <Docs>
+        <param name="updatedVariable">The updated variable.</param>
+        <summary>Gets a match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" /> with specified variable.</summary>
+        <returns>The match for <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReferenceToImportedChild">
+      <MemberSignature Language="C#" Value="public bool IsReferenceToImportedChild (System.Activities.Activity childActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsReferenceToImportedChild(class System.Activities.Activity childActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.UpdateMapMetadata.IsReferenceToImportedChild(System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="childActivity" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="childActivity">The child activity.</param>
+        <summary>Indicates whether the <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" /> is a reference to imported child.</summary>
+        <returns>
+          <see langword="True" /> if the <see cref="T:System.Activities.DynamicUpdate.UpdateMapMetadata" /> is a reference to imported child; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

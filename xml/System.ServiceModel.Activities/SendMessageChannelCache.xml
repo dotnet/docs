@@ -1,0 +1,211 @@
+<Type Name="SendMessageChannelCache" FullName="System.ServiceModel.Activities.SendMessageChannelCache">
+  <TypeSignature Language="C#" Value="public sealed class SendMessageChannelCache : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SendMessageChannelCache extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendMessageChannelCache" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Represents an extension that enables the customization of the cache sharing levels, the settings of the channel factory cache, and the settings of the channel cache for workflows that send messages to service endpoints using <see cref="T:System.ServiceModel.Activities.Send" /> messaging activities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is intended for workflows that send messages to service endpoints. These workflows are typically client workflows but could also be workflow services that are hosted in a <xref:System.ServiceModel.WorkflowServiceHost>.  
+  
+ By default, in a workflow hosted by a <xref:System.ServiceModel.WorkflowServiceHost>, the cache used by <xref:System.ServiceModel.Activities.Send> messaging activities is shared across all workflow instances in the <xref:System.ServiceModel.WorkflowServiceHost> (host-level caching). For a client workflow that is not hosted by a <xref:System.ServiceModel.WorkflowServiceHost>, the cache is available only to the workflow instance (instance-level caching). Caching is disabled by default for any send activity in your workflow that has endpoints defined in configuration.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] how to change the default cache sharing levels and cache settings for the channel factory and channel cache, see [Changing the Cache Sharing Levels for Send Activities](~/docs/framework/wcf/feature-details/changing-the-cache-sharing-levels-for-send-activities.md).  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class to share a channel cache between two workflow applications in a single app domain.  
+  
+ [!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SendMessageChannelCache ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageChannelCache.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendMessageChannelCache" /> class with default factory cache and channel cache settings.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SendMessageChannelCache (System.ServiceModel.Activities.ChannelCacheSettings factorySettings, System.ServiceModel.Activities.ChannelCacheSettings channelSettings);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Activities.ChannelCacheSettings factorySettings, class System.ServiceModel.Activities.ChannelCacheSettings channelSettings) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageChannelCache.#ctor(System.ServiceModel.Activities.ChannelCacheSettings,System.ServiceModel.Activities.ChannelCacheSettings)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="factorySettings" Type="System.ServiceModel.Activities.ChannelCacheSettings" />
+        <Parameter Name="channelSettings" Type="System.ServiceModel.Activities.ChannelCacheSettings" />
+      </Parameters>
+      <Docs>
+        <param name="factorySettings">The cache settings for cached channel factories.</param>
+        <param name="channelSettings">The cache settings for cached channels.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendMessageChannelCache" /> class with custom factory cache and channel cache settings.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
+  
+ You can choose to use only the channel factory cache and disable the channel cache by passing the `channelSettings` parameter to this constructor initialized to a <xref:System.ServiceModel.Activities.ChannelCacheSettings> instance with a <xref:System.ServiceModel.Activities.ChannelCacheSettings.MaxItemsInCache%2A> value of 0. To disable the cache completely for both the channel factory cache and the channel cache, pass the `factorySettings` parameter to this constructor initialized to a <xref:System.ServiceModel.Activities.ChannelCacheSettings> instance with a <xref:System.ServiceModel.Activities.ChannelCacheSettings.MaxItemsInCache%2A> value of 0. Note that you cannot turn the channel cache on if the channel factory cache is disabled.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.ServiceModel.Activities.SendMessageChannelCache> class to share a channel cache between two workflow applications in a single app domain.  
+  
+ [!code-csharp[ChannelCache#0](~/samples/snippets/csharp/VS_Snippets_CFX/channelcache/cs/client.cs#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SendMessageChannelCache (System.ServiceModel.Activities.ChannelCacheSettings factorySettings, System.ServiceModel.Activities.ChannelCacheSettings channelSettings, bool allowUnsafeCaching);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Activities.ChannelCacheSettings factorySettings, class System.ServiceModel.Activities.ChannelCacheSettings channelSettings, bool allowUnsafeCaching) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageChannelCache.#ctor(System.ServiceModel.Activities.ChannelCacheSettings,System.ServiceModel.Activities.ChannelCacheSettings,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="factorySettings" Type="System.ServiceModel.Activities.ChannelCacheSettings" />
+        <Parameter Name="channelSettings" Type="System.ServiceModel.Activities.ChannelCacheSettings" />
+        <Parameter Name="allowUnsafeCaching" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="factorySettings">The cache settings for cached channel factories.</param>
+        <param name="channelSettings">The cache settings for cached channels.</param>
+        <param name="allowUnsafeCaching">
+          <see langword="true" /> to turn caching on; otherwise, <see langword="false" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendMessageChannelCache" /> class with custom factory cache settings, custom channel cache settings, and a value that indicates whether to turn caching on.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ By default, the cache is only available for <xref:System.ServiceModel.Activities.Send> activities that don’t use endpoints defined in configuration. However, if you want to turn caching on in this case call this constructor with the `allowUnsafeCaching` parameter set to `true`. Next, add the new instance of this class as an extension to a workflow service host or a workflow instance.  
+  
+ [!INCLUDE[crabout](~/includes/crabout-md.md)] channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowUnsafeCaching">
+      <MemberSignature Language="C#" Value="public bool AllowUnsafeCaching { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowUnsafeCaching" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendMessageChannelCache.AllowUnsafeCaching" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether to turn caching on.</summary>
+        <value>
+          <see langword="true" /> to turn caching on; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ServiceModel.Activities.Send> activity in your workflow has endpoints defined in configuration caching could be unsecure and therefore is disabled by default. However, if you want to turn caching on set this property to `true`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChannelSettings">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.ChannelCacheSettings ChannelSettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.ChannelCacheSettings ChannelSettings" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendMessageChannelCache.ChannelSettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.ChannelCacheSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the settings of the channel cache.</summary>
+        <value>The settings of the channel cache.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageChannelCache.Dispose" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.ServiceModel.Activities.SendMessageChannelCache" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FactorySettings">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.ChannelCacheSettings FactorySettings { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.ChannelCacheSettings FactorySettings" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendMessageChannelCache.FactorySettings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Activities.ChannelCacheSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the settings of the channel factory cache.</summary>
+        <value>The settings of the channel factory cache.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The channel factory cache represents cached channel factories. [!INCLUDE[crabout](~/includes/crabout-md.md)] channel factories, see <xref:System.ServiceModel.ChannelFactory> and <xref:System.ServiceModel.ChannelFactory%601>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

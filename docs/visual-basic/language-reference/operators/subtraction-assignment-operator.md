@@ -21,8 +21,8 @@ helpviewer_keywords:
   - "compound assignment statements"
 ms.assetid: 5ead0c37-ae50-48f7-8435-8e341d81cae1
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

@@ -1,0 +1,82 @@
+<Type Name="NavigationMode" FullName="System.Windows.Navigation.NavigationMode">
+  <TypeSignature Language="C#" Value="public enum NavigationMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NavigationMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the type of navigation that is taking place <see cref="T:System.Windows.Navigation.NavigationMode" /> is used by the <see cref="P:System.Windows.Navigation.NavigatingCancelEventArgs.NavigationMode" /> property.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Back">
+      <MemberSignature Language="C#" Value="Back" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Navigation.NavigationMode Back = unsigned int8(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.Back" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Navigating back to the most recent content in back navigation history. This occurs when the **GoBack** method is called.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Forward">
+      <MemberSignature Language="C#" Value="Forward" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Navigation.NavigationMode Forward = unsigned int8(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.Forward" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Navigating to the most recent content on forward navigation history. This occurs when the **GoForward** method is called.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="New">
+      <MemberSignature Language="C#" Value="New" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Navigation.NavigationMode New = unsigned int8(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.New" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Navigating to new content. This occurs when the **Navigate** method is called, or when **Source** property is set.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="Refresh" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Navigation.NavigationMode Refresh = unsigned int8(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.Refresh" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Reloading the current content. This occurs when the **Refresh** method is called.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

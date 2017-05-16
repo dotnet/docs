@@ -1,0 +1,95 @@
+<Type Name="IAuthorizationPolicy" FullName="System.IdentityModel.Policy.IAuthorizationPolicy">
+  <TypeSignature Language="C#" Value="public interface IAuthorizationPolicy : System.IdentityModel.Policy.IAuthorizationComponent" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAuthorizationPolicy implements class System.IdentityModel.Policy.IAuthorizationComponent" />
+  <TypeSignature Language="DocId" Value="T:System.IdentityModel.Policy.IAuthorizationPolicy" />
+  <AssemblyInfo>
+    <AssemblyName>System.IdentityModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IdentityModel.Policy.IAuthorizationComponent</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines a set of rules for authorizing a user, given a set of claims.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implement the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> interface to add or map one set of claims to another. An authorization policy examines a set of claims and adds additional claims based on the current set. For example, an authorization policy might evaluate a claim that contains the date of birth and add a claim that asserts that the user is over 21 years old and add an Over21 claim to the <xref:System.IdentityModel.Policy.EvaluationContext>.  
+  
+ Classes that implement the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> interface do not authorize users, but they enable the <xref:System.ServiceModel.ServiceAuthorizationManager> class to do so. The <xref:System.ServiceModel.ServiceAuthorizationManager> calls the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method for each authorization policy in effect. The <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method determines whether additional claims should be added for the user, based on the current context. An authorization policy's <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method may be called multiple times, as claims are added to the <xref:System.IdentityModel.Policy.EvaluationContext> by other authorization policies. When all authorization policies in effect are done, the <xref:System.ServiceModel.ServiceAuthorizationManager> class makes authorization decisions based upon the final set of claims. The <xref:System.ServiceModel.ServiceAuthorizationManager> class then creates an <xref:System.IdentityModel.Policy.AuthorizationContext> that contains an immutable set of claims that reflects these authorization decisions.  
+  
+   
+  
+## Examples  
+ [!code-csharp[C_IAuthorizationPolicy#1](~/samples/snippets/csharp/VS_Snippets_CFX/c_iauthorizationpolicy/cs/service.cs#1)]
+ [!code-vb[C_IAuthorizationPolicy#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_iauthorizationpolicy/vb/myauthorizationpolicy.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Evaluate">
+      <MemberSignature Language="C#" Value="public bool Evaluate (System.IdentityModel.Policy.EvaluationContext evaluationContext, ref object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Evaluate(class System.IdentityModel.Policy.EvaluationContext evaluationContext, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate(System.IdentityModel.Policy.EvaluationContext,System.Object@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="evaluationContext" Type="System.IdentityModel.Policy.EvaluationContext" />
+        <Parameter Name="state" Type="System.Object&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="evaluationContext">An <see cref="T:System.IdentityModel.Policy.EvaluationContext" /> that contains the claim set that the authorization policy evaluates.</param>
+        <param name="state">A <see cref="T:System.Object" />, passed by reference that represents the custom state for this authorization policy.</param>
+        <summary>Evaluates whether a user meets the requirements for this authorization policy.</summary>
+        <returns>
+          <see langword="false" /> if the <see cref="M:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate(System.IdentityModel.Policy.EvaluationContext,System.Object@)" /> method for this authorization policy must be called if additional claims are added by other authorization policies to <paramref name="evaluationContext" />; otherwise, <see langword="true" /> to state no additional evaluation is required by this authorization policy.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  Implementers of the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> interface should expect the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method to be called multiple times by different threads.  
+  
+ Implementers of the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> interface can use the `state` parameter to track state between calls to the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method. If a state object is set inside a given call to the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method, the same object instance is passed to each and every subsequent call to the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method in the current evaluation process.  
+  
+   
+  
+## Examples  
+ [!code-csharp[C_IAuthorizationPolicy#2](~/samples/snippets/csharp/VS_Snippets_CFX/c_iauthorizationpolicy/cs/service.cs#2)]
+ [!code-vb[C_IAuthorizationPolicy#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/c_iauthorizationpolicy/vb/myauthorizationpolicy.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Issuer">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Claims.ClaimSet Issuer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Claims.ClaimSet Issuer" />
+      <MemberSignature Language="DocId" Value="P:System.IdentityModel.Policy.IAuthorizationPolicy.Issuer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Claims.ClaimSet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a claim set that represents the issuer of the authorization policy.</summary>
+        <value>A <see cref="T:System.IdentityModel.Claims.ClaimSet" /> that represents the issuer of the authorization policy.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

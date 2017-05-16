@@ -1,0 +1,109 @@
+<Type Name="ActivityDesignerOptionsAttribute" FullName="System.Activities.Presentation.ActivityDesignerOptionsAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ActivityDesignerOptionsAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityDesignerOptionsAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ActivityDesignerOptionsAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities.Presentation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Property)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies drill-down and node viewing mode for an <see cref="T:system.Activities.Presentation.ActivityDesigner" />, such as Flowcharts, that are used to compose activities.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Drilling down into the UI elements is allowed by default. It can be disallowed by setting the <xref:System.Activities.Presentation.ActivityDesignerOptionsAttribute.AllowDrillIn%2A> property to `false`. Child nodes are not always collapsed by default, but can be set to always collapse by setting the <xref:System.Activities.Presentation.ActivityDesignerOptionsAttribute.AlwaysCollapseChildren%2A> property to `true`.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ActivityDesignerOptionsAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ActivityDesignerOptionsAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="M:System.Activities.Presentation.ActivityDesignerOptionsAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default values assigned by this constructor are `true` for the <xref:System.Activities.Presentation.ActivityDesignerOptionsAttribute.AllowDrillIn%2A> property and `false` for the <xref:System.Activities.Presentation.ActivityDesignerOptionsAttribute.AlwaysCollapseChildren%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowDrillIn">
+      <MemberSignature Language="C#" Value="public bool AllowDrillIn { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AllowDrillIn" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ActivityDesignerOptionsAttribute.AllowDrillIn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether drilling down one level into an <see cref="T:system.Activities.Presentation.ActivityDesigner" /> is allowed.</summary>
+        <value>
+          <see langword="true" /> if drilling into the UI elements is allowed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlwaysCollapseChildren">
+      <MemberSignature Language="C#" Value="public bool AlwaysCollapseChildren { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool AlwaysCollapseChildren" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ActivityDesignerOptionsAttribute.AlwaysCollapseChildren" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value that indicates whether the child nodes are always collapsed.</summary>
+        <value>
+          <see langword="true" /> if the child nodes are always collapsed; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutlineViewIconProvider">
+      <MemberSignature Language="C#" Value="public Func&lt;System.Activities.Presentation.Model.ModelItem,System.Windows.Media.DrawingBrush&gt; OutlineViewIconProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Activities.Presentation.Model.ModelItem, class System.Windows.Media.DrawingBrush&gt; OutlineViewIconProvider" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ActivityDesignerOptionsAttribute.OutlineViewIconProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Activities.Presentation.Model.ModelItem,System.Windows.Media.DrawingBrush&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the function of outline view icon provider.</summary>
+        <value>The function of outline view icon provider.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,108 @@
+<Type Name="VisualBasicSettings" FullName="Microsoft.VisualBasic.Activities.VisualBasicSettings">
+  <TypeSignature Language="C#" Value="public class VisualBasicSettings" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualBasicSettings extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.TypeConverter(typeof(Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsConverter))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Windows.Markup.ValueSerializer(typeof(Microsoft.VisualBasic.Activities.XamlIntegration.VisualBasicSettingsValueSerializer))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains settings that <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> and <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> instances use to compile the source text of the expressions they contain.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These settings include assembly references and imported namespaces required to compile an expression.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VisualBasicSettings ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Activities.VisualBasicSettings.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Microsoft.VisualBasic.Activities.VisualBasicSettings Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.VisualBasic.Activities.VisualBasicSettings Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicSettings.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.VisualBasic.Activities.VisualBasicSettings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> that contains the default set of assembly references and imported namespaces. This set is available to all <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicValue`1" /> and <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicReference`1" /> instances in a given <see cref="T:System.AppDomain" />.</summary>
+        <value>A <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicSettings" /> that contains the default set of assembly references and imported namespaces.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The following table lists the default imported namespaces and assembly references.  
+  
+|Imported Namespace|Assembly|  
+|------------------------|--------------|  
+|System|mscorlib|  
+|System|System|  
+|System.Collections|mscorlib|  
+|System.Collections.Generic|mscorlib|  
+|System.Collections.Generic|System|  
+|System.Activities|System.Activities|  
+|System.Activities.Statements|System.Activities|  
+|System.Activities.Expressions|System.Activities|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportReferences">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.ISet&lt;Microsoft.VisualBasic.Activities.VisualBasicImportReference&gt; ImportReferences { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ISet`1&lt;class Microsoft.VisualBasic.Activities.VisualBasicImportReference&gt; ImportReferences" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Activities.VisualBasicSettings.ImportReferences" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.ISet&lt;Microsoft.VisualBasic.Activities.VisualBasicImportReference&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> objects, each of which represents an assembly reference and a namespace imported from that assembly.</summary>
+        <value>A collection of <see cref="T:Microsoft.VisualBasic.Activities.VisualBasicImportReference" /> objects, each of which represents an assembly reference and a namespace imported from that assembly.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

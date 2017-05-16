@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: 5a5758d4-906b-4285-908d-5b930db192e6
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # How to: Join Two Collections (LINQ to XML) (Visual Basic)

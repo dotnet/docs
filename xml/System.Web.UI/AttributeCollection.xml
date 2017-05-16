@@ -1,0 +1,440 @@
+<Type Name="AttributeCollection" FullName="System.Web.UI.AttributeCollection">
+  <TypeSignature Language="C#" Value="public sealed class AttributeCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttributeCollection extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.AttributeCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides object-model access to all attributes declared in the opening tag of an ASP.NET server control element. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Individual items in the collection return a <xref:System.String> object as their value. If there are no attribute items in the collection, the collection returns `null`.  
+  
+ Attributes on an HTML server control are programmatically available through the <xref:System.Web.UI.HtmlControls.HtmlControl.Attributes%2A> property, which is inherited by all HTML server controls. ASP.NET exposes attributes of HTML server controls as properties of those controls.  
+  
+ You can add attributes to a Web server control through the <xref:System.Web.UI.WebControls.WebControl.Attributes%2A> property, which is inherited by all Web server controls. The attributes in the attributes collection for a Web server control do not necessarily correspond to the control's strongly typed properties for that control.  
+  
+   
+  
+## Examples  
+ The following example creates a new <xref:System.Web.UI.AttributeCollection> object that is named `myAttributeCollection`, and then checks whether the page has been posted back. If it has not, the code adds two attributes to the collection. It then gets the number of attributes in the collection and iterates through the collection, writing the key to each attribute to the page. If the page is a postback, the code gets the new number of attributes and iterates through the collection, writing the key and value of each attribute to the page.  
+  
+ [!code-csharp[AttributeCollection_AttributeCollection#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AttributeCollection_AttributeCollection/CS/attributecollection_attributecollection.cs.aspx#1)]
+ [!code-vb[AttributeCollection_AttributeCollection#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AttributeCollection_AttributeCollection/VB/attributecollection_attributecollection.vb.aspx#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttributeCollection (System.Web.UI.StateBag bag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.StateBag bag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.AttributeCollection.#ctor(System.Web.UI.StateBag)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="bag" Type="System.Web.UI.StateBag" />
+      </Parameters>
+      <Docs>
+        <param name="bag">An object that contains the attribute keys and their values from the opening tag of the server control.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.AttributeCollection" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.AttributeCollection> constructor to create an instance of the class named it `myAttributeCollection`. The code passes the control's <xref:System.Web.UI.Control.ViewState%2A> property as a parameter argument.  
+  
+ [!code-csharp[AttributeCollection_AttributeCollection#2](~/samples/snippets/csharp/VS_Snippets_WebNet/AttributeCollection_AttributeCollection/CS/attributecollection_attributecollection.cs.aspx#2)]
+ [!code-vb[AttributeCollection_AttributeCollection#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AttributeCollection_AttributeCollection/VB/attributecollection_attributecollection.vb.aspx#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string key, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string key, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.AttributeCollection.Add(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The attribute name.</param>
+        <param name="value">The attribute value.</param>
+        <summary>Adds an attribute to a server control's <see cref="T:System.Web.UI.AttributeCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the string in the `value` parameter contains an ampersand (&), the character is automatically encoded. The resulting HTML representation is "&amp;".  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.AttributeCollection.Add%2A> method to programmatically add an attribute to an ASP.NET server control <xref:System.Web.UI.AttributeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic AttributeCollection.Add Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Add Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic AttributeCollection.Add Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Add Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributes">
+      <MemberSignature Language="C#" Value="public void AddAttributes (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.AttributeCollection.AddAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> instance that writes the attribute to the opening tag of an ASP.NET server control.</param>
+        <summary>Adds attributes from the <see cref="T:System.Web.UI.AttributeCollection" /> class to the <see cref="T:System.Web.UI.HtmlTextWriter" /> object that is responsible for rendering the attributes as markup.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method copies all the server control's attributes to an <xref:System.Web.UI.HtmlTextWriter> object so that they can be rendered by the next call to the <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> method.  
+  
+ For controls that are contained in other controls such as <xref:System.Web.UI.WebControls.Calendar> and <xref:System.Web.UI.WebControls.CheckBoxList>, you can potentially improve performance by rendering the contained controls directly. Rendering directly can be faster than rendering through the container control because container controls require that you copy all the child control attributes to the container control and render them after they are copied.  
+  
+   
+  
+## Examples  
+ The following example shows how to add new attributes to a <xref:System.Web.UI.WebControls.Button> server control named `myButton` and a <xref:System.Web.UI.WebControls.TextBox> server control named `myTextBox`. It then adds those attributes to a custom <xref:System.Web.UI.HtmlTextWriter> object that will write those attributes to an output stream for each of those controls.  
+  
+ [!code-csharp[AttributeCollection_Item#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AttributeCollection_Item/CS/attributecollection_item.cs.aspx#1)]
+ [!code-vb[AttributeCollection_Item#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AttributeCollection_Item/VB/attributecollection_item.vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.AttributeCollection.Clear" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Removes all attributes from a server control's <see cref="T:System.Web.UI.AttributeCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to programmatically remove all attributes from an HTML server control's <xref:System.Web.UI.AttributeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic AttributeCollection.Clear Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Clear Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic AttributeCollection.Clear Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Clear Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.AttributeCollection.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of attributes in the <see cref="T:System.Web.UI.AttributeCollection" /> object.</summary>
+        <value>The number of items in the collection.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.UI.AttributeCollection.Count%2A> property to write the number of attributes on a control to the containing page.  
+  
+ [!code-csharp[AttributeCollection_AttributeCollection#4](~/samples/snippets/csharp/VS_Snippets_WebNet/AttributeCollection_AttributeCollection/CS/attributecollection_attributecollection.cs.aspx#4)]
+ [!code-vb[AttributeCollection_AttributeCollection#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AttributeCollection_AttributeCollection/VB/attributecollection_attributecollection.vb.aspx#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CssStyle">
+      <MemberSignature Language="C#" Value="public System.Web.UI.CssStyleCollection CssStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.CssStyleCollection CssStyle" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.AttributeCollection.CssStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.CssStyleCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of styles for the ASP.NET server control to which the current <see cref="T:System.Web.UI.AttributeCollection" /> object belongs.</summary>
+        <value>A collection that contains the styles for the current server control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any style declared for a particular HTML server control is added to the <xref:System.Web.UI.CssStyleCollection> object when the containing ASP.NET Web page is parsed. You can use this property to add, remove, and iterate through the styles declared for the server control.  
+  
+   
+  
+## Examples  
+ The following example shows how to add a CSS style value programmatically to a server control's <xref:System.Web.UI.AttributeCollection> object. When a button is clicked, the background color of a <xref:System.Web.UI.WebControls.TextBox> server control named `TextBox1` is set to the selected item in a <xref:System.Web.UI.WebControls.DropDownList> server control named `DropDownList1`.  
+  
+ [!code-csharp[AttributeCollection_CssStyle#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AttributeCollection_CssStyle/CS/attributecollection_cssstyle.cs.aspx#1)]
+ [!code-vb[AttributeCollection_CssStyle#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AttributeCollection_CssStyle/VB/attributecollection_cssstyle.vb.aspx#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.AttributeCollection.Equals(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">The object instance to compare with this instance.</param>
+        <summary>Determines whether the current instance of the <see cref="T:System.Web.UI.AttributeCollection" /> object is equal to the specified object.</summary>
+        <returns>
+          <see langword="true" /> if the object that is contained in the <paramref name="o" /> parameter is equal to the current instance of <see cref="T:System.Web.UI.AttributeCollection" />; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For the compared objects to be equal, they must meet the following criteria:  
+  
+-   The object that is contained in the `o` parameter must be an <xref:System.Web.UI.AttributeCollection> object.  
+  
+-   Both collections must contain the same number of items.  
+  
+-   The key value of each entry in both collections must match.  
+  
+    > [!NOTE]
+    >  This method is primarily used by control developers.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.AttributeCollection.GetHashCode" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer hash code.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.AttributeCollection.GetHashCode%2A> method to determine the hash code for this <xref:System.Web.UI.AttributeCollection> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public string this[string key] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.AttributeCollection.Item(System.String)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The location of the attribute in the collection.</param>
+        <summary>Gets or sets a specified attribute value for a server control.</summary>
+        <value>The attribute value.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can add an attribute to or retrieve one from an ASP.NET server control that uses this property.  
+  
+   
+  
+## Examples  
+ The following example shows how to set a dynamic HTML `onblur` attribute to run an ECMAScript (JavaScript) command when a <xref:System.Web.UI.WebControls.TextBox> Web server control loses focus.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic AttributeCollection Example 2#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection Example 2/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic AttributeCollection Example 2#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection Example 2/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Keys">
+      <MemberSignature Language="C#" Value="public System.Collections.ICollection Keys { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.AttributeCollection.Keys" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ICollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of keys to all attributes in the server control's <see cref="T:System.Web.UI.AttributeCollection" /> object.</summary>
+        <value>The collection of keys.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property contains all the keys that are in the <xref:System.Web.UI.AttributeCollection> of an ASP.NET server control, whether you have added them programmatically with the <xref:System.Web.UI.AttributeCollection.Add%2A> method, or declaratively.  
+  
+   
+  
+## Examples  
+ The following example shows how to iterate through the <xref:System.Web.UI.AttributeCollection.Keys%2A> property of the <xref:System.Web.UI.AttributeCollection> object for an <xref:System.Web.UI.HtmlControls.HtmlSelect> server control.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic AttributeCollection.Keys Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Keys Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic AttributeCollection.Keys Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Keys Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.AttributeCollection.Remove(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The name of the attribute to remove.</param>
+        <summary>Removes an attribute from a server control's <see cref="T:System.Web.UI.AttributeCollection" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.Web.UI.AttributeCollection> object does not contain an attribute that has the specified `key`, the collection remains unchanged. No exception is thrown.  
+  
+   
+  
+## Examples  
+ The following example shows how to programmatically remove an attribute from an HTML server control's <xref:System.Web.UI.AttributeCollection> object.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[Classic AttributeCollection.Remove Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic AttributeCollection.Remove Example/CS/sourcecs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[Classic AttributeCollection.Remove Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic AttributeCollection.Remove Example/VB/sourcevb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.AttributeCollection.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Web.UI.HtmlTextWriter" />
+      </Parameters>
+      <Docs>
+        <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> instance that writes the attribute collection to the current output stream.</param>
+        <summary>Writes the collection of attributes to the specified <see cref="T:System.Web.UI.HtmlTextWriter" /> output stream for the control to which the collection belongs.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This section contains two code examples. The first code example shows how to inherit from the <xref:System.Web.UI.WebControls.WebControl> class to create a custom control named `AttribRender` that overrides the <xref:System.Web.UI.AttributeCollection.Render%2A> method. The second code example shows how to use the custom control in an ASP.NET Web page.  
+  
+ The following example shows how to create a custom control named `AttribRender` that overrides the <xref:System.Web.UI.WebControls.WebControl.Render%2A> method of the <xref:System.Web.UI.WebControls.WebControl> class without calling the <xref:System.Web.UI.WebControls.WebControl.Render%2A> method of the base class. Instead, `AttribRender` invokes the <xref:System.Web.UI.AttributeCollection.Render%2A> method.  
+  
+ [!code-csharp[AttributeCollection.Render_Sample1#1](~/samples/snippets/csharp/VS_Snippets_WebNet/AttributeCollection.Render_Sample1/CS/attributecollection_render.cs#1)]
+ [!code-vb[AttributeCollection.Render_Sample1#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AttributeCollection.Render_Sample1/VB/attributecollection_render.vb#1)]  
+  
+ The following example shows how to use the `AttribRender` custom control in a Web page. It assumes that the code file for the custom control is in the App_Code folder for the application.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[AttributeCollection.Render_Sample1#2](~/samples/snippets/csharp/VS_Snippets_WebNet/AttributeCollection.Render_Sample1/CS/attributecollection_rendercs.aspx#2)]  -->
+ <!-- TODO: review snippet reference [!code-vb[AttributeCollection.Render_Sample1#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/AttributeCollection.Render_Sample1/VB/attributecollection_rendervb.aspx#2)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

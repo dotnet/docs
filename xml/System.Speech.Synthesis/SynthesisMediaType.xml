@@ -1,0 +1,73 @@
+<Type Name="SynthesisMediaType" FullName="System.Speech.Synthesis.SynthesisMediaType">
+  <TypeSignature Language="C#" Value="public enum SynthesisMediaType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SynthesisMediaType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SynthesisMediaType" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Enumerates the types of media files.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The constructors of the <xref:System.Speech.Synthesis.FilePrompt> class use <xref:System.Speech.Synthesis.SynthesisMediaType> to indicate the media type of the file from which the prompt will be constructed.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Ssml">
+      <MemberSignature Language="C#" Value="Ssml" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.SynthesisMediaType Ssml = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisMediaType.Ssml" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesisMediaType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the media type is SSML.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="Text" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.SynthesisMediaType Text = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisMediaType.Text" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesisMediaType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the media type is Text.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="WaveAudio">
+      <MemberSignature Language="C#" Value="WaveAudio" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.SynthesisMediaType WaveAudio = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.SynthesisMediaType.WaveAudio" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Speech.Synthesis.SynthesisMediaType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Indicates that the media type is WaveAudio.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

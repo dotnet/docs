@@ -1,0 +1,73 @@
+<Type Name="PrintSystemObjectLoadMode" FullName="System.Printing.PrintSystemObjectLoadMode">
+  <TypeSignature Language="C#" Value="public enum PrintSystemObjectLoadMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintSystemObjectLoadMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemObjectLoadMode" />
+  <AssemblyInfo>
+    <AssemblyName>System.Printing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies whether the properties of an object are initialized when the object loads.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this type in a constructor for the abstract class <xref:System.Printing.PrintSystemObject>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LoadInitialized">
+      <MemberSignature Language="C#" Value="LoadInitialized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemObjectLoadMode LoadInitialized = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemObjectLoadMode.LoadInitialized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemObjectLoadMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The properties are initialized during loading.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadUninitialized">
+      <MemberSignature Language="C#" Value="LoadUninitialized" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemObjectLoadMode LoadUninitialized = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemObjectLoadMode.LoadUninitialized" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemObjectLoadMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The properties are not initialized during loading.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PrintSystemObjectLoadMode None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Printing.PrintSystemObjectLoadMode.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintSystemObjectLoadMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Not specified whether the properties are initialized.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

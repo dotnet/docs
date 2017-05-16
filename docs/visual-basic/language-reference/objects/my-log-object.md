@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "My.Log object"
 ms.assetid: 309b14b4-8875-4b2f-9661-a734b8cbff07
 caps.latest.revision: 12
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

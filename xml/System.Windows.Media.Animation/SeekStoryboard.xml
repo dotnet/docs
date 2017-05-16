@@ -1,0 +1,163 @@
+<Type Name="SeekStoryboard" FullName="System.Windows.Media.Animation.SeekStoryboard">
+  <TypeSignature Language="C#" Value="public sealed class SeekStoryboard : System.Windows.Media.Animation.ControllableStoryboardAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SeekStoryboard extends System.Windows.Media.Animation.ControllableStoryboardAction" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SeekStoryboard" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.ControllableStoryboardAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A trigger action that provides functionality for seeking (skipping) to a specified time within the active period of a <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a <xref:System.Windows.Media.Animation.SeekStoryboard> action with an <xref:System.Windows.EventTrigger> or a <xref:System.Windows.Trigger> to seek a <xref:System.Windows.Media.Animation.Storyboard>.  
+  
+ Note that seek operations do not take the storyboard's <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> or <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> settings into account: the storyboard is treated as though it had a <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> of 1 and no <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>.  
+  
+ Seeking a <xref:System.Windows.Media.Animation.Storyboard> triggers its <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events.  
+  
+## Pause, Resume, Stop, or Otherwise Control a Storyboard Interactively  
+ To be able to pause, resume, or otherwise control a <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> interactively, set the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> property of its <xref:System.Windows.Media.Animation.BeginStoryboard> and use a <xref:System.Windows.Media.Animation.ControllableStoryboardAction> object (such as <xref:System.Windows.Media.Animation.PauseStoryboard>, <xref:System.Windows.Media.Animation.ResumeStoryboard>, or <xref:System.Windows.Media.Animation.StopStoryboard>) to control it by referencing its <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A>. If the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> of <xref:System.Windows.Media.Animation.BeginStoryboard> is unspecified, the <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> cannot be interactively controlled after it is begun. See [How to: Use Event Triggers to Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-use-event-triggers-to-control-a-storyboard-after-it-starts.md) for more information.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SeekStoryboard ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SeekStoryboard.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.SeekStoryboard" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Offset">
+      <MemberSignature Language="C#" Value="public TimeSpan Offset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Offset" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SeekStoryboard.Offset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the amount by which the storyboard should move forward or backward from the seek origin <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Origin" />. .</summary>
+        <value>A positive or negative value that specifies the amount by which the storyboard should move forward or backward from the seek origin <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Origin" />. The default value is 0.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Note that seek operations do not take the storyboard's <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> or <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> settings into account: the storyboard is treated as though it had a <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> of 1 and no <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>.  
+  
+<a name="xamlAttributeUsage_Offset"></a>   
+## XAML Attribute Usage  
+ \<*object* <xref:System.Windows.Media.Animation.SeekStoryboard.Offset%2A>="[-][*days*.]*hours*:*minutes*:*seconds*[.*fractionalSeconds*]"/>  
+  
+ \- or -  
+  
+ \<*object* <xref:System.Windows.Media.Animation.SeekStoryboard.Offset%2A>="[-][*days*.]*hours*:*minutes*"/>  
+  
+ \- or -  
+  
+ \<*object* <xref:System.Windows.Media.Animation.SeekStoryboard.Offset%2A>="[-]*days*"/>  
+  
+<a name="xamlValues_Offset"></a>   
+## XAML Values  
+ Items in square brackets (`[` and `]`) are optional.  
+  
+ *days*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value greater than or equal to 0 that describes the number of days spanned by this offset.  
+  
+ *hours*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value between 0 and 23 that represents the number of hours spanned by this offset.  
+  
+ *minutes*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value between 0 and 59 that represents the number of minutes spanned by this offset.  
+  
+ *seconds*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value between 0 and 59 that represents the number of seconds spanned by this offset.  
+  
+ *fractionalSeconds*  
+ <xref:System.Int32?displayProperty=fullName>  
+  
+ A value consisting of 1 to 7 digits that represents fractional seconds.  
+  
+ For the complete <xref:System.TimeSpan> syntax, see the Remarks section of the <xref:System.TimeSpan.Parse%2A> page.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Origin">
+      <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.TimeSeekOrigin Origin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Animation.TimeSeekOrigin Origin" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.SeekStoryboard.Origin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Windows.Media.Animation.TimeSeekOrigin</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the position from which this seek operation's <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" /> is applied.</summary>
+        <value>The position from which this seek operation's <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" /> is applied. The default value is <see cref="F:System.Windows.Media.Animation.TimeSeekOrigin.BeginTime" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeOffset">
+      <MemberSignature Language="C#" Value="public bool ShouldSerializeOffset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeOffset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SeekStoryboard.ShouldSerializeOffset" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a value that indicates whether the <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" /> property of this <see cref="T:System.Windows.Media.Animation.SeekStoryboard" /> should be serialized.</summary>
+        <returns>**true** if the <see cref="P:System.Windows.Media.Animation.SeekStoryboard.Offset" /> property of this <see cref="T:System.Windows.Media.Animation.SeekStoryboard" /> should be serialized; otherwise, **false**.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

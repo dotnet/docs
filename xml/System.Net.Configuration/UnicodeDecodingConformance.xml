@@ -1,0 +1,89 @@
+<Type Name="UnicodeDecodingConformance" FullName="System.Net.Configuration.UnicodeDecodingConformance">
+  <TypeSignature Language="C#" Value="public enum UnicodeDecodingConformance" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UnicodeDecodingConformance extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Net.Configuration.UnicodeDecodingConformance" />
+  <AssemblyInfo>
+    <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Controls how Unicode characters are interpreted by the <see cref="Overload:System.Net.WebUtility.HtmlDecode" /> methods.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information on how Unicode characters are supposed to be encoded in HTML, see [Using character escapes in markup and CSS](http://go.microsoft.com/fwlink/?LinkId=256607).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Auto">
+      <MemberSignature Language="C#" Value="Auto" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.UnicodeDecodingConformance Auto = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeDecodingConformance.Auto" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.UnicodeDecodingConformance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use automatic behavior. The decoding behavior is determined by current application's target Framework. For [!INCLUDE[net_v45](~/includes/net-v45-md.md)] and later, the Unicode encoding decoding is strict.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Compat">
+      <MemberSignature Language="C#" Value="Compat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.UnicodeDecodingConformance Compat = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeDecodingConformance.Compat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.UnicodeDecodingConformance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use compatible behavior. Specifies that incoming data is not checked for validity before being decoded. For example, an input string of "&amp;amp;#xD84C;" would decode as U+D84C, which is an unpaired surrogate. Additionally, the decoder does not understand code points in the SMP unless they're represented as HTML-encoded surrogates, so the inputstring "&amp;#144308;" would result in the output string "&amp;#144308;".</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Loose">
+      <MemberSignature Language="C#" Value="Loose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.UnicodeDecodingConformance Loose = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeDecodingConformance.Loose" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.UnicodeDecodingConformance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use loose behavior. Similar to <see cref="F:System.Net.Configuration.UnicodeDecodingConformance.Compat" /> in that there are no validity checks, but the decoder also understands code points. The input string "&amp;#144308;" would decode into the character U+233B4 correctly. This switch is meant to provide maximum interoperability when the decoder doesn't know which format the provider is using to generate the encoded string.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Strict">
+      <MemberSignature Language="C#" Value="Strict" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Configuration.UnicodeDecodingConformance Strict = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Net.Configuration.UnicodeDecodingConformance.Strict" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Net.Configuration.UnicodeDecodingConformance</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use strict behavior. Specifies that the incoming encoded data is checked for validity before being decoded. For example, an input string of "&amp;#144308;" would decode as U+233B4, but an input string of "&amp;#xD84C;&amp;#xDFB4;" would fail to decode properly. Already-decoded data in the string is not checked for validity. For example, an input string of "\ud800" will result in an output string of "\ud800", as the already-decoded surrogate is skipped during decoding, even though it is unpaired.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

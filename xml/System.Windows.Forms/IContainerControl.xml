@@ -1,0 +1,101 @@
+<Type Name="IContainerControl" FullName="System.Windows.Forms.IContainerControl">
+  <TypeSignature Language="C#" Value="public interface IContainerControl" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContainerControl" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IContainerControl" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides the functionality for a control to act as a parent for other controls.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
+  
+ [!code-cpp[IContainerControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IContainerControl Implementation/CPP/mycontainercontrol.cpp#1)]
+ [!code-csharp[IContainerControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IContainerControl Implementation/CS/mycontainercontrol.cs#1)]
+ [!code-vb[IContainerControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IContainerControl Implementation/VB/mycontainercontrol.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>Implement this interface in classes that you want to parent a collection of controls. The members of this interface allow you to activate a child control, or determine which control is currently active. When implemented in a class, <see cref="M:System.Windows.Forms.IContainerControl.ActivateControl(System.Windows.Forms.Control)" /> takes a <see cref="T:System.Windows.Forms.Control" /> as a parameter and activates the specified control. The <see cref="P:System.Windows.Forms.IContainerControl.ActiveControl" /> property activates or retrieves the control that is active.  
+  
+ In most common scenarios, you do not need to directly implement this interface. For example, if you create a Windows Control Library project, Visual Studio generates an initial class for you. That class inherits from the <see cref="T:System.Windows.Forms.UserControl" /> class, and <see cref="T:System.Windows.Forms.UserControl" /> implements <see cref="T:System.Windows.Forms.IContainerControl" /> for you.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivateControl">
+      <MemberSignature Language="C#" Value="public bool ActivateControl (System.Windows.Forms.Control active);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ActivateControl(class System.Windows.Forms.Control active) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IContainerControl.ActivateControl(System.Windows.Forms.Control)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="active" Type="System.Windows.Forms.Control" />
+      </Parameters>
+      <Docs>
+        <param name="active">The <see cref="T:System.Windows.Forms.Control" /> being activated.</param>
+        <summary>Activates a specified control.</summary>
+        <returns>
+          <see langword="true" /> if the control is successfully activated; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
+  
+ [!code-cpp[IContainerControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IContainerControl Implementation/CPP/mycontainercontrol.cpp#1)]
+ [!code-csharp[IContainerControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IContainerControl Implementation/CS/mycontainercontrol.cs#1)]
+ [!code-vb[IContainerControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IContainerControl Implementation/VB/mycontainercontrol.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When implemented in a class, this method activates the specified <see cref="T:System.Windows.Forms.Control" />. The control must be a child of the container control.</para>
+        </block>
+      </Docs>
+    </Member>
+    <Member MemberName="ActiveControl">
+      <MemberSignature Language="C#" Value="public System.Windows.Forms.Control ActiveControl { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control ActiveControl" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.IContainerControl.ActiveControl" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.Control</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the control that is active on the container control.</summary>
+        <value>The <see cref="T:System.Windows.Forms.Control" /> that is currently active on the container control.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example inherits from the <xref:System.Windows.Forms.ScrollableControl> class and implements the <xref:System.Windows.Forms.IContainerControl> interface. Implementation is added to the <xref:System.Windows.Forms.IContainerControl.ActiveControl%2A> property and the <xref:System.Windows.Forms.IContainerControl.ActivateControl%2A> method.  
+  
+ [!code-cpp[IContainerControl Implementation#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IContainerControl Implementation/CPP/mycontainercontrol.cpp#1)]
+ [!code-csharp[IContainerControl Implementation#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IContainerControl Implementation/CS/mycontainercontrol.cs#1)]
+ [!code-vb[IContainerControl Implementation#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/IContainerControl Implementation/VB/mycontainercontrol.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+        <block subset="none" type="overrides">
+          <para>When implemented in a class, this property activates or retrieves the active control on the container control.</para>
+        </block>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

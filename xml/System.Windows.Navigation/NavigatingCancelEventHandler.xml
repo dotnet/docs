@@ -1,0 +1,40 @@
+<Type Name="NavigatingCancelEventHandler" FullName="System.Windows.Navigation.NavigatingCancelEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void NavigatingCancelEventHandler(object sender, NavigatingCancelEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NavigatingCancelEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigatingCancelEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Navigation.NavigatingCancelEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The source of the event.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle <see langword="Navigating" /> events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This event handler is used for the following events:  
+  
+-   <xref:System.Windows.Navigation.NavigationService.Navigating?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Navigation.NavigationWindow.Navigating?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Controls.Frame.Navigating?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Application.Navigating?displayProperty=fullName>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

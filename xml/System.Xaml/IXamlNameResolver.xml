@@ -1,0 +1,210 @@
+<Type Name="IXamlNameResolver" FullName="System.Xaml.IXamlNameResolver">
+  <TypeSignature Language="C#" Value="public interface IXamlNameResolver" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlNameResolver" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlNameResolver" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Describes a service that can return objects that are specified by XAML name, or alternatively, returns a token that defers name resolution. The service can also return an enumerable set of all named objects that are in the XAML namescope.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is not intended for external implementation of typical XAML scenarios because it is a service. This service enables markup extensions and type converters to resolve XAML names to other objects from the same XAML source while they are still in a XAML node representation. The service can be used to resolve forward references for any mechanism that relies on XAML names for nonlinear access to the surrounding XAML production. For more information, see [Type Converters and Markup Extensions for XAML](~/docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md).  
+  
+ Type converters and markup extensions can query for <xref:System.Xaml.IXamlNameResolver> as a service on the service context that is provided by a XAML object writer, when the XAML object writer invokes value conversion behavior. For more information, see [Type Converters and Markup Extensions for XAML](~/docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md) and [Service Contexts Available to Type Converters and Markup Extensions](~/docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md).  
+  
+ This service exposes an API that can defer name resolution. The metaphor implemented by the service is that names that cannot be resolved in a first pass against a partial name-object graph should be stored and used to create the fixup token. In the default behavior, all such names are submitted for another resolution attempt on a second pass. On the second pass, the overall name-object graph is complete, and all the fixup tokens are able to resolve.  
+  
+> [!NOTE]
+>  Even if they are permitted by a particular implementation, forward references in XAML inevitably have performance consequences. As a best practice for production-quality XAML, avoid forward references whenever possible.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAllNamesAndValuesInScope">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; GetAllNamesAndValuesInScope ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; GetAllNamesAndValuesInScope() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNameResolver.GetAllNamesAndValuesInScope" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns an enumerable set of all named objects in the XAML namescope.</summary>
+        <returns>An enumerable set of <see cref="T:System.Collections.Generic.KeyValuePair`2" /> objects. For each <see cref="T:System.Collections.Generic.KeyValuePair`2" />, the <see cref="P:System.Collections.Generic.KeyValuePair`2.Key" /> component is a string, and the <see cref="P:System.Collections.Generic.KeyValuePair`2.Value" /> component is the object that uses the <see cref="P:System.Collections.Generic.KeyValuePair`2.Key" /> name in the XAML namescope.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFixupToken">
+      <MemberSignature Language="C#" Value="public object GetFixupToken (System.Collections.Generic.IEnumerable&lt;string&gt; names);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetFixupToken(class System.Collections.Generic.IEnumerable`1&lt;string&gt; names) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNameResolver.GetFixupToken(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="names" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="names">A collection of names that are possible forward references.</param>
+        <summary>Returns an object that can correct for certain markup patterns that produce forward references.</summary>
+        <returns>An object that provides a token for lookup behavior to be evaluated later.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Existing internal service providers that are available in schema contexts for markup extensions and type converters can implement this service; however, they return an internal type that only the existing XAML writers that work under the default XAML schema context can process.  
+  
+ When all the forward referenced names are resolvable, the user code is called to reparse each name in the list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFixupToken">
+      <MemberSignature Language="C#" Value="public object GetFixupToken (System.Collections.Generic.IEnumerable&lt;string&gt; names, bool canAssignDirectly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetFixupToken(class System.Collections.Generic.IEnumerable`1&lt;string&gt; names, bool canAssignDirectly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNameResolver.GetFixupToken(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="names" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+        <Parameter Name="canAssignDirectly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="names">A collection of names that are possible forward references.</param>
+        <param name="canAssignDirectly">
+          <see langword="true" /> to immediately assign the resolved name reference to the target property. <see langword="false" /> to call the user code for a reparse. The default behavior is <see langword="false" />.</param>
+        <summary>Returns an object that can correct for certain markup patterns that produce forward references.</summary>
+        <returns>An object that provides a token for lookup behavior to be evaluated later.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Existing internal service providers that are available in schema contexts for markup extensions and type converters implement this service; however, they return an internal type that can only be processed by the existing XAML writers that work under the default XAML schema context.  
+  
+ If `canAssignDirectly` is `false`, when all the forward referenced names are resolvable, the user code is called to reparse each name in the list.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFixupTokenAvailable">
+      <MemberSignature Language="C#" Value="public bool IsFixupTokenAvailable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFixupTokenAvailable" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.IXamlNameResolver.IsFixupTokenAvailable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that determines whether calling <see cref="M:System.Xaml.IXamlNameResolver.GetFixupToken(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" /> is available in order to resolve a name into a token for forward resolution.</summary>
+        <value>
+          <see langword="true" /> if <see cref="M:System.Xaml.IXamlNameResolver.GetFixupToken(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" /> is available as an implementation that returns a useful token for forward resolution; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns `false` when <xref:System.Xaml.IXamlNameResolver.GetFixupToken%2A> does not return a token because a <xref:System.Xaml.Schema.XamlValueConverter%601> is involved in the second pass on an existing token.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnNameScopeInitializationComplete">
+      <MemberSignature Language="C#" Value="public event EventHandler OnNameScopeInitializationComplete;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler OnNameScopeInitializationComplete" />
+      <MemberSignature Language="DocId" Value="E:System.Xaml.IXamlNameResolver.OnNameScopeInitializationComplete" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a XAML processor has registered all the relevant names to the backing XAML namescope.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="public object Resolve (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Resolve(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNameResolver.Resolve(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name reference to resolve.</param>
+        <summary>Resolves an object from a name reference.</summary>
+        <returns>The resolved object; or null.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a value is returned as `null`, a forward reference might exist. Implementations that want to support forward references can use the `FixupToken` pattern through the <xref:System.Xaml.IXamlNameResolver.GetFixupToken%2A> and <xref:System.Xaml.IXamlNameResolver.IsFixupTokenAvailable%2A> APIs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resolve">
+      <MemberSignature Language="C#" Value="public object Resolve (string name, out bool isFullyInitialized);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Resolve(string name, bool isFullyInitialized) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNameResolver.Resolve(System.String,System.Boolean@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="isFullyInitialized" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name reference to resolve.</param>
+        <param name="isFullyInitialized">When this method returns, <see langword="true" /> if the returned object has any dependencies on unresolved references; otherwise, <see langword="false" />.</param>
+        <summary>Resolves an object from a name reference, and provides a tracking value that reports whether the object is fully initialized for object graph purposes.</summary>
+        <returns>An object that provides a token for lookup behavior to be evaluated later.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

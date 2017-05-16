@@ -1,0 +1,79 @@
+<Type Name="EntitySqlParser" FullName="System.Data.Common.EntitySql.EntitySqlParser">
+  <TypeSignature Language="C#" Value="public sealed class EntitySqlParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntitySqlParser extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.EntitySql.EntitySqlParser" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the Public Entity SQL Parser class.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public System.Data.Common.EntitySql.ParseResult Parse (string query, System.Data.Common.CommandTrees.DbParameterReferenceExpression[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.EntitySql.ParseResult Parse(string query, class System.Data.Common.CommandTrees.DbParameterReferenceExpression[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.EntitySql.EntitySqlParser.Parse(System.String,System.Data.Common.CommandTrees.DbParameterReferenceExpression[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.EntitySql.ParseResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="parameters" Type="System.Data.Common.CommandTrees.DbParameterReferenceExpression[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="query">The EntitySQL query to be parsed.</param>
+        <param name="parameters">The optional query parameters.</param>
+        <summary>Parse the specified <paramref name="query" /> with the specified <paramref name="parameters" />.</summary>
+        <returns>The <see cref="T:System.Data.Common.EntitySql.ParseResult" /> containing <see cref="T:System.Data.Common.CommandTrees.DbCommandTree" /> and information describing inline function definitions if any.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseLambda">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbLambda ParseLambda (string query, System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.CommandTrees.DbLambda ParseLambda(string query, class System.Data.Common.CommandTrees.DbVariableReferenceExpression[] variables) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.EntitySql.EntitySqlParser.ParseLambda(System.String,System.Data.Common.CommandTrees.DbVariableReferenceExpression[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbLambda</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="query" Type="System.String" />
+        <Parameter Name="variables" Type="System.Data.Common.CommandTrees.DbVariableReferenceExpression[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="query">The query to be parsed.</param>
+        <param name="variables">The optional query variables.</param>
+        <summary>Parse a specific <paramref name="query" /> with a specific set <paramref name="variables" /> and produce a <see cref="T:System.Data.Common.CommandTrees.DbLambda" />.</summary>
+        <returns>The <see cref="T:System.Data.Common.EntitySql.ParseResult" /> containing <see cref="T:System.Data.Common.CommandTrees.DbCommandTree" /> and information describing inline function definitions if any.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

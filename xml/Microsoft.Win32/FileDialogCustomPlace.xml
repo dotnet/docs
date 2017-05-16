@@ -1,0 +1,105 @@
+<Type Name="FileDialogCustomPlace" FullName="Microsoft.Win32.FileDialogCustomPlace">
+  <TypeSignature Language="C#" Value="public sealed class FileDialogCustomPlace" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileDialogCustomPlace extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Win32.FileDialogCustomPlace" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents an entry in a <see cref="T:Microsoft.Win32.FileDialog" /> custom place list.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Starting in [!INCLUDE[TLA#tla_winvista](~/includes/tlasharptla-winvista-md.md)], open and save file dialog boxes have a **Favorite Links** panel on the left side of the dialog box that allows the user to quickly navigate to a different location. These links are called custom places. This class allows you to modify the list that appears when your application uses a file dialog box. For the list of known folders for custom places, see <xref:Microsoft.Win32.FileDialogCustomPlaces>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileDialogCustomPlace (Guid knownFolder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid knownFolder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialogCustomPlace.#ctor(System.Guid)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="knownFolder" Type="System.Guid" />
+      </Parameters>
+      <Docs>
+        <param name="knownFolder">The GUID of a known folder.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.FileDialogCustomPlace" /> class with the specified known folder GUID.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FileDialogCustomPlace (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Win32.FileDialogCustomPlace.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">The path for the folder.</param>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Win32.FileDialogCustomPlace" /> class with the specified path.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KnownFolder">
+      <MemberSignature Language="C#" Value="public Guid KnownFolder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid KnownFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlace.KnownFolder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the GUID of the known folder for the custom place.</summary>
+        <value>The GUID of a known folder.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ GUIDs are associated with the known folders. For the list of known folders, see <xref:Microsoft.Win32.FileDialogCustomPlaces>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Win32.FileDialogCustomPlace.Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the file path for the custom place.</summary>
+        <value>The path for a custom place.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

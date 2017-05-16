@@ -1,0 +1,108 @@
+<Type Name="QueryInterceptorAttribute" FullName="System.Data.Services.QueryInterceptorAttribute">
+  <TypeSignature Language="C#" Value="public sealed class QueryInterceptorAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit QueryInterceptorAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Services.QueryInterceptorAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method, AllowMultiple=true, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The <see cref="T:System.Data.Services.QueryInterceptorAttribute" /> on a method annotates it as a query interceptor on the specified entity set.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Entity set-level authorization and validation is implemented by methods annotated with the <xref:System.Data.Services.QueryInterceptorAttribute>. [!INCLUDE[ssAstoria](~/includes/ssastoria-md.md)]s do not implement security policies but instead provide the infrastructure required for service developers to write their own security rules and business validation.  
+  
+ Entity set access control and validation is enabled through query operations by using query composition. To control entity-based access, implement a method-per-entity set according to the following rules:  
+  
+ The method must have public scope and be annotated with the <xref:System.Data.Services.QueryInterceptorAttribute>, taking the name of a entity set as a parameter.  
+  
+ The method must accept no parameters.  
+  
+ The method must return an expression of type `Expression<Func<T, bool>>` that is the filter to be composed for the entity set.  
+  
+   
+  
+## Examples  
+ The following example controls access to the `Customers` entity set. Each `Customer` can only see `Orders` associated with that `Customer`.  
+  
+```  
+[QueryInterceptor("Orders")]  
+public Expression<Func<Order, bool>> FilterOrders()   
+{  
+    return o => o.Customer.Name == /* Current principal name. */;  
+}   
+  
+// Insures that the user accessing the customer(s) has the appropriate  
+// rights as defined in the QueryRules object to access the customer  
+// resource(s).  
+  
+[QueryInterceptor ("Customers")]  
+public Expression<Func<Customer, bool>> FilterCustomers()   
+{  
+  return c => c.Name == /* Current principal name. */ &&  
+              this.CurrentDataSource.QueryRules.Contains(  
+                rule => rule.Name == c.Name &&  
+                        rule.CustomerAllowedToQuery == true  
+              );  
+}  
+  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public QueryInterceptorAttribute (string entitySetName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string entitySetName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Services.QueryInterceptorAttribute.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="entitySetName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="entitySetName">The name of the entity set that contains the entity to which the interceptor applies.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.QueryInterceptorAttribute" /> class for the entity set specified by the <paramref name="entitySetName" /> parameter.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EntitySetName">
+      <MemberSignature Language="C#" Value="public string EntitySetName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string EntitySetName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Services.QueryInterceptorAttribute.EntitySetName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>get: System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the entity set that contains the entity to which the interceptor applies.</summary>
+        <value>A string that indicates the name of the entity set that contains the entity to which the interceptor applies.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

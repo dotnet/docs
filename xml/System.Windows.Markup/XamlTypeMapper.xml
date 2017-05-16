@@ -1,0 +1,263 @@
+<Type Name="XamlTypeMapper" FullName="System.Windows.Markup.XamlTypeMapper">
+  <TypeSignature Language="C#" Value="public class XamlTypeMapper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlTypeMapper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlTypeMapper" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Maps a XAML element name to the appropriate CLR <see cref="T:System.Type" /> in assemblies.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.XamlTypeMapper> is part of an advanced WPF scenario that supplies alternate context for <xref:System.Windows.Markup.XamlReader> and <xref:System.Windows.Markup.XamlWriter>. For [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] WPF applications, you should consider overriding <xref:System.Xaml.XamlSchemaContext> for this scenario, rather than attempting to use <xref:System.Windows.Markup.XamlTypeMapper>.  
+  
+ <xref:System.Windows.Markup.XamlTypeMapper> can be used to provide the XAML parser with custom mapping information through a more direct technique than the application of <xref:System.Windows.Markup.XmlnsDefinitionAttribute> values on the assembly code. This might be useful for consolidation of all CLR namespaces in an assembly, or for referencing types that are XAML-ready in an existing assembly without having to recompile it just to add <xref:System.Windows.Markup.XmlnsDefinitionAttribute> attributing.  
+  
+ You typically create a <xref:System.Windows.Markup.XamlTypeMapper> instance in order to specify the <xref:System.Windows.Markup.ParserContext.XamlTypeMapper%2A> property value for a <xref:System.Windows.Markup.ParserContext>. The <xref:System.Windows.Markup.ParserContext> in turn can be used as the context for a <xref:System.Windows.Markup.XamlReader.Load%28System.IO.Stream%2CSystem.Windows.Markup.ParserContext%29?displayProperty=fullName>call.  
+  
+## Default Mapper  
+ You can obtain a default mapper using the <xref:System.Windows.Markup.XamlTypeMapper.DefaultMapper%2A> static property. The default mapper only works on a default assembly list. No specific information about assemblies (as is specified in <xref:System.Windows.Markup.XamlTypeMapper> constructors) is used.  
+  
+<a name="xamlTextUsage_XamlTypeMapper"></a>   
+## XAML Text Usage  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlTypeMapper (string[] assemblyNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.#ctor(System.String[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblyNames" Type="System.String[]" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyNames">The array of assembly names the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> should use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> class by specifying an array of assembly names that the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> should use.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assemblyNames" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public XamlTypeMapper (string[] assemblyNames, System.Windows.Markup.NamespaceMapEntry[] namespaceMaps);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames, class System.Windows.Markup.NamespaceMapEntry[] namespaceMaps) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.#ctor(System.String[],System.Windows.Markup.NamespaceMapEntry[])" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="assemblyNames" Type="System.String[]" />
+        <Parameter Name="namespaceMaps" Type="System.Windows.Markup.NamespaceMapEntry[]" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyNames">The array of assembly names the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> should use.</param>
+        <param name="namespaceMaps">The array of namespace maps the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> should use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> class, using the specified array of assembly names and the specified namespace maps.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assemblyNames" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddMappingProcessingInstruction">
+      <MemberSignature Language="C#" Value="public void AddMappingProcessingInstruction (string xmlNamespace, string clrNamespace, string assemblyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMappingProcessingInstruction(string xmlNamespace, string clrNamespace, string assemblyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.AddMappingProcessingInstruction(System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlNamespace" Type="System.String" />
+        <Parameter Name="clrNamespace" Type="System.String" />
+        <Parameter Name="assemblyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlNamespace">The prefix for the XML namespace..</param>
+        <param name="clrNamespace">The CLR  namespace that contains the types to map.</param>
+        <param name="assemblyName">The assembly that contains the CLR  namespace.</param>
+        <summary>Defines a mapping between an XML namespace and CLR namespaces in assemblies, and adds these to the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Markup.XamlTypeMapper.AddMappingProcessingInstruction%2A> is a programmatic way to add a mapping.  For example, the different parts of the following XAML mapping instruction correspond to the parameters of the <xref:System.Windows.Markup.XamlTypeMapper.AddMappingProcessingInstruction%2A>:  
+  
+```  
+<Window xmlns:SDK="clr-namespace:Samples;assembly=SDKSamples">  
+...  
+```  
+  
+ The `xmlNamespace` is `SDK`, the `clrNamespace` is `Samples`, and the `assemblyName` is `SDKSamples`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xmlNamespace" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="clrNamespace" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="assemblyName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AllowInternalType">
+      <MemberSignature Language="C#" Value="protected virtual bool AllowInternalType (Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool AllowInternalType(class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.AllowInternalType(System.Type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="type">The type to access.</param>
+        <summary>Requests permission for a <see cref="T:System.Windows.Markup.XamlTypeMapper" /> derived type that is called under full trust to access a specific internal type.</summary>
+        <returns>
+          <see langword="true" /> if the internal type can be accessed; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If not overridden by a subclass, <xref:System.Windows.Markup.XamlTypeMapper.AllowInternalType%2A> always returns `false`.  
+  
+ When overridden by a subclass, the behavior should be that <xref:System.Windows.Markup.XamlTypeMapper.AllowInternalType%2A> should return `true` if the internal type can be accessed; otherwise, `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultMapper">
+      <MemberSignature Language="C#" Value="public static System.Windows.Markup.XamlTypeMapper DefaultMapper { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Windows.Markup.XamlTypeMapper DefaultMapper" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlTypeMapper.DefaultMapper" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Markup.XamlTypeMapper</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an instance of the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> to use if one has not been specified.</summary>
+        <value>The default type mapper.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default mapper only works on a default assembly list. No specific information about assemblies (as is specified in <xref:System.Windows.Markup.XamlTypeMapper> constructors) is used. In the current implementation the default assembly list is: `WindowsBase`, `PresentationCore`, `PresentationFramework`.  
+  
+ Using the default mapper does not mean that you cannot use custom assemblies/types in XAML at all. It only means that if you do use custom types/assemblies, you must then use the conventional XAML technique of creating the mappings as `xmlns` attributes in each XAML page where the types/assemblies are referenced, as opposed to a type mapper API. For more information, see [XAML Namespaces and Namespace Mapping for WPF XAML](~/docs/framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetType">
+      <MemberSignature Language="C#" Value="public Type GetType (string xmlNamespace, string localName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetType(string xmlNamespace, string localName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.GetType(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="xmlNamespace" Type="System.String" />
+        <Parameter Name="localName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="xmlNamespace">The specified XML namespace prefix.</param>
+        <param name="localName">The "local" name of the XAML element to obtain the mapped <see cref="T:System.Type" /> for. Local in this context means as mapped versus the provided <c>xmlNamespace</c>.</param>
+        <summary>Gets the CLR <see cref="T:System.Type" /> that a given XAML element is mapped to, using the specified XML namespace prefix and element name.</summary>
+        <returns>The <see cref="T:System.Type" /> for the object, or <see langword="null" /> if no mapping could be resolved.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If a type cannot be found that maps to the provided information, `null` is returned.  
+  
+ Do not include the prefix as part of `localName`. For any prefixed XAML element information, separate it into `xmlNamespace` and `localName` components for this API call.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="xmlNamespace" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="localName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAssemblyPath">
+      <MemberSignature Language="C#" Value="public void SetAssemblyPath (string assemblyName, string assemblyPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAssemblyPath(string assemblyName, string assemblyPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.SetAssemblyPath(System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assemblyName" Type="System.String" />
+        <Parameter Name="assemblyPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="assemblyName">The short name of the assembly without an extension or path specified (equivalent to <see cref="P:System.Reflection.AssemblyName.Name" />).</param>
+        <param name="assemblyPath">The file path of the assembly. The assembly path must be a full file path containing a file extension.</param>
+        <summary>Specifies the path to use when loading an assembly.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="assemblyName" /> is <see langword="null" />  
+  
+ -or-  
+  
+ <paramref name="assemblyPath" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.Windows.Markup.XamlParseException">
+          <paramref name="assemblyName" /> is <see cref="F:System.String.Empty" />  
+  
+ -or-  
+  
+ <paramref name="assemblyPath" /> is <see cref="F:System.String.Empty" />  
+  
+ -or-  
+  
+ <paramref name="assemblyPath" /> is not a full file path containing a file extension.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

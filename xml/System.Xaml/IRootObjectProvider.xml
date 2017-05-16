@@ -1,0 +1,50 @@
+<Type Name="IRootObjectProvider" FullName="System.Xaml.IRootObjectProvider">
+  <TypeSignature Language="C#" Value="public interface IRootObjectProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRootObjectProvider" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.IRootObjectProvider" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Describes a service that can return the root object of markup being parsed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Xaml.IRootObjectProvider> service is mainly relevant to application services that are exposed by a particular framework or by capabilities of a commonly-used root element class in a framework.  
+  
+ Type converters and markup extensions can query for <xref:System.Xaml.IRootObjectProvider> as a service on the service context that is provided by a XAML object writer, when the XAML object writer invokes value conversion behavior. For more information, see [Type Converters and Markup Extensions for XAML](~/docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md) and [Service Contexts Available to Type Converters and Markup Extensions](~/docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RootObject">
+      <MemberSignature Language="C#" Value="public object RootObject { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object RootObject" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.IRootObjectProvider.RootObject" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the root object from markup or from an object graph.</summary>
+        <value>The root object.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The root object in a XAML markup scenario might be useful for markup extension scenarios because of attributes that might by convention be set at the root level of XAML markup. Specific root object capabilities might be specified by frameworks. For example, certain attributes might only be valid at the root level, or a framework might support inheritance of global properties from the root.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

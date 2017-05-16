@@ -1,0 +1,76 @@
+<Type Name="SpeechMode" FullName="System.Windows.Input.SpeechMode">
+  <TypeSignature Language="C#" Value="public enum SpeechMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SpeechMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.SpeechMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the mode of interpretation for speech input.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to specify the speech mode using the <xref:System.Windows.Input.SpeechMode> enumeration.  
+  
+ [!code-csharp[languagemanager#2](~/samples/snippets/csharp/VS_Snippets_Wpf/languageManager/CSharp/Window1.xaml.cs#2)]
+ [!code-vb[languagemanager#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/languageManager/visualbasic/window1.xaml.vb#2)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Command">
+      <MemberSignature Language="C#" Value="Command" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SpeechMode Command = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SpeechMode.Command" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SpeechMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Speech input is interpreted as commands.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Dictation">
+      <MemberSignature Language="C#" Value="Dictation" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SpeechMode Dictation = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SpeechMode.Dictation" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SpeechMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Speech input is interpreted as dictation.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Indeterminate">
+      <MemberSignature Language="C#" Value="Indeterminate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.SpeechMode Indeterminate = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Input.SpeechMode.Indeterminate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.SpeechMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Speech input mode is indeterminate.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

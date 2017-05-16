@@ -1,0 +1,191 @@
+<Type Name="WebServiceAttribute" FullName="System.Web.Services.WebServiceAttribute">
+  <TypeSignature Language="C#" Value="public sealed class WebServiceAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebServiceAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.WebServiceAttribute" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface, Inherited=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Used to add additional information to an XML Web service, such as a string describing its functionality.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Services.WebServiceAttribute> is not required for an XML Web service to be published and executed. You can use the `WebServiceAttribute` to specify a name for the XML Web service that is not restricted by the rules for a common language runtime identifier, which is used in the service description and the Service help page for the XML Web service.  
+  
+ An XML Web service should change its default XML namespace before it is made public. Each XML Web service needs a unique XML namespace to identify it so that client applications can distinguish it from other services on the Web. http://tempuri.org/ is available for XML Web services that are under development, but published XML Web services should use a more permanent namespace.  
+  
+ Your XML Web service should be identified by a XML namespace that you control. For example, you could use your company's Internet domain name as part of the XML namespace. Although many XML Web service XML namespaces look like URLs, they need not point to an actual resource on the Web. (XML Web service XML namespaces are URIs.) For XML Web services created using ASP.NET, the default XML namespace can be changed using <xref:System.Web.Services.WebServiceAttribute.Namespace%2A> property.  
+  
+ For more information about using attributes, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Web.Services.WebServiceAttribute.Description%2A> property of the <xref:System.Web.Services.WebServiceAttribute> to " `Common Server Variables` " and sets the XML namespace to http://www.microsoft.com/.  
+  
+  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WebServiceAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.WebServiceAttribute.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.WebServiceAttribute" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultNamespace">
+      <MemberSignature Language="C#" Value="public const string DefaultNamespace;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultNamespace" />
+      <MemberSignature Language="DocId" Value="F:System.Web.Services.WebServiceAttribute.DefaultNamespace" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The default value for the <see cref="P:System.Web.Services.WebServiceAttribute.Namespace" /> property. This field is constant.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public string Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Description" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceAttribute.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A descriptive message for the XML Web service.</summary>
+        <value>The text describing the functionality of the XML Web service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The descriptive message is displayed to prospective consumers of the XML Web service when description documents for the XML Web service are generated, such as the Service Description and the Service help page.  
+  
+   
+  
+## Examples  
+ The following example sets the <xref:System.Web.Services.WebServiceAttribute.Description%2A> property to " `Common Server Variables` ".  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceAttribute.Name" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the name of the XML Web service.</summary>
+        <value>The name for the XML Web service. Default value is the name of the class implementing the XML Web service.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Service Description is generated when a user navigates to the URL for the XML Web service and supplies a query string of ?WSDL. Within the Service Description, the <xref:System.Web.Services.WebServiceAttribute.Name%2A> property identifies the local part of the XML qualified name for the XML Web service. The `Name` property is also used to display the name of the XML Web service on the Service help page. The Service help page is displayed when a prospective consumer navigates to the.asmx page for the XML Web service without specifying an XML Web service method name and its parameters.  
+  
+ An XML qualified name is used to disambiguate elements with the same name with an XML document. An XML qualified name consists of the following two parts separated by a colon: namespace or a prefix associated with a namespace and local part. The namespace consists of a URI reference and for the purposes of the Service Description, is the value of the <xref:System.Web.Services.WebServiceAttribute.Namespace%2A> property. In general, a prefix, which acts like an alias to an URI, is associated with the namespace, so that all subsequent XML qualified names using the namespace can use the shortened prefix. The local part is a string beginning with a letter or underscore containing no spaces. Therefore, the XML qualified name identifying a XML Web service in the Service Description is in the following format:  
+  
+ <xref:System.Web.Services.WebServiceAttribute.Namespace%2A> : <xref:System.Web.Services.WebServiceAttribute.Name%2A>  
+  
+ For more information on XML qualified names, see http://www.w3.org/TR/REC-xml-names/.  
+  
+   
+  
+## Examples  
+ The following example sets <xref:System.Web.Services.WebServiceAttribute.Name%2A> of the XML Web service to `MyName`.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceAttribute.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the default XML namespace to use for the XML Web service.</summary>
+        <value>The default XML namespace to use for the XML Web service. The default is specified in the <see cref="F:System.Web.Services.WebServiceAttribute.DefaultNamespace" /> property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XML namespaces offer a way to create names in an XML document that are identified by a Uniform Resource Identifier (URI). By using XML namespaces you can uniquely identify elements or attributes in a XML document. The service description for a XML Web service is defined in XML, specifically in Web Services Description Language (WSDL).  
+  
+ Within the Service Description for an XML Web service, <xref:System.Web.Services.WebServiceAttribute.Namespace%2A> is used as the default namespace for XML elements directly pertaining to the XML Web service. For example, the name of the XML Web service and its XML Web service methods pertain to the namespace specified in the `Namespace` property. Elements that are specific to WSDL pertain to the http://schemas.xmlsoap.org/wsdl/ namespace.  
+  
+ For XML Web service clients using SOAP to call an XML Web service, you can optionally add the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> or <xref:System.Web.Services.Protocols.SoapRpcMethodAttribute> to call an XML Web service method. If the client is calling an XML Web service created using ASP.NET, the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestNamespace%2A>, <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ResponseNamespace%2A> and <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action%2A> properties are all derived from the <xref:System.Web.Services.WebServiceAttribute.Namespace%2A> property by default. For instance, given an XML Web service method name of `Time` and a `Namespace` property of `http://www.contoso.com/`, the `Action` property is `http://www.contoso.com/Time` by default. To change the default settings for `RequestNamespace`, `ResponseNamespace`, and `Action` for an XML Web service method, you can add a <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to the XML Web service method.  
+  
+> [!NOTE]
+>  An XML namespace is different from the namespace the class resides in, in terms of the [!INCLUDE[winsdklong](~/includes/winsdklong-md.md)]. To specify the namespace for the class, see [Namespace Keywords](~/docs/csharp/language-reference/keywords/namespace-keywords.md) if you writing in C#.  
+  
+   
+  
+## Examples  
+ The following example sets <xref:System.Web.Services.WebServiceAttribute.Namespace%2A> to `http://www.contoso.com` and overrides that namespace for the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action%2A> property by adding a <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute> to the `Time` XML Web service method.  
+  
+  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

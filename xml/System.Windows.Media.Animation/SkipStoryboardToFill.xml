@@ -1,0 +1,46 @@
+<Type Name="SkipStoryboardToFill" FullName="System.Windows.Media.Animation.SkipStoryboardToFill">
+  <TypeSignature Language="C#" Value="public sealed class SkipStoryboardToFill : System.Windows.Media.Animation.ControllableStoryboardAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SkipStoryboardToFill extends System.Windows.Media.Animation.ControllableStoryboardAction" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SkipStoryboardToFill" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Media.Animation.ControllableStoryboardAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>A trigger action that advances a <see cref="T:System.Windows.Media.Animation.Storyboard" /> to the end of its fill period.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use a <xref:System.Windows.Media.Animation.SkipStoryboardToFill> action with an <xref:System.Windows.EventTrigger> or a <xref:System.Windows.Trigger> to advance a <xref:System.Windows.Media.Animation.Storyboard> to its fill period, if it has one. This action also advances all child <xref:System.Windows.Media.Animation.Timeline> objects of the target <xref:System.Windows.Media.Animation.Storyboard> to their fill periods, if they have them.  
+  
+ <xref:System.Windows.Media.Animation.SkipStoryboardToFill> only affects an active <xref:System.Windows.Media.Animation.Storyboard> (after the <xref:System.Windows.Media.Animation.Storyboard> starts).  
+  
+## Pause, Resume, Stop, or Otherwise Control a Storyboard Interactively  
+ To be able to pause, resume, or otherwise control a <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> interactively, set the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> property of its <xref:System.Windows.Media.Animation.BeginStoryboard> and use a <xref:System.Windows.Media.Animation.ControllableStoryboardAction> object (such as <xref:System.Windows.Media.Animation.PauseStoryboard>, <xref:System.Windows.Media.Animation.ResumeStoryboard>, or <xref:System.Windows.Media.Animation.StopStoryboard>) to control it by referencing its <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A>. If the <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> of <xref:System.Windows.Media.Animation.BeginStoryboard> is unspecified, the <xref:System.Windows.Media.Animation.BeginStoryboard.Storyboard%2A> cannot be interactively controlled after it is begun. See [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md) for more information.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SkipStoryboardToFill ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SkipStoryboardToFill.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.SkipStoryboardToFill" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -13,8 +13,8 @@ dev_langs:
   - "VB"
 ms.assetid: d87ae99a-cfa9-4a31-a5e4-9d6437be6810
 caps.latest.revision: 3
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 ---
 # Refactoring Using an Extension Method (Visual Basic)

@@ -1,0 +1,134 @@
+<Type Name="ActivityChangeAction" FullName="System.Workflow.ComponentModel.ActivityChangeAction">
+  <TypeSignature Language="C#" Value="public abstract class ActivityChangeAction : System.Workflow.ComponentModel.WorkflowChangeAction" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ActivityChangeAction extends System.Workflow.ComponentModel.WorkflowChangeAction" />
+  <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityChangeAction" />
+  <AssemblyInfo>
+    <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Workflow.ComponentModel.WorkflowChangeAction</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer(typeof(System.Workflow.ComponentModel.ActivityChangeActionMarkupSerializer), typeof(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a proposed change to a <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> within a running workflow instance. This class must be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!NOTE]
+>  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
+  
+ This class is the base class for the canonical change actions which are added and removed and may be performed on a collection.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ActivityChangeAction ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityChangeAction.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityChangeAction" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ActivityChangeAction (System.Workflow.ComponentModel.CompositeActivity compositeActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.CompositeActivity compositeActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityChangeAction.#ctor(System.Workflow.ComponentModel.CompositeActivity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="compositeActivity" Type="System.Workflow.ComponentModel.CompositeActivity" />
+      </Parameters>
+      <Docs>
+        <param name="compositeActivity">The <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> associated with the change.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.ActivityChangeAction" /> class, initializing the associated <see cref="T:System.Workflow.ComponentModel.CompositeActivity" />.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="compositeActivity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerActivityDottedPath">
+      <MemberSignature Language="C#" Value="public string OwnerActivityDottedPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OwnerActivityDottedPath" />
+      <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets and sets the <see cref="P:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" /> of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> associated with this instance.</summary>
+        <value>The <see cref="P:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath" /> of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> associated with this instance.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This manipulates the <xref:System.Workflow.ComponentModel.ActivityChangeAction.OwnerActivityDottedPath%2A> member of the associated <xref:System.Workflow.ComponentModel.CompositeActivity>. Therefore, trying to set this without first initializing the associated <xref:System.Workflow.ComponentModel.CompositeActivity> will cause an exception to be thrown.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateChanges">
+      <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges (System.Workflow.ComponentModel.Activity contextActivity);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection ValidateChanges(class System.Workflow.ComponentModel.Activity contextActivity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityChangeAction.ValidateChanges(System.Workflow.ComponentModel.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Workflow.ComponentModel.Compiler.ValidationErrorCollection</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contextActivity" Type="System.Workflow.ComponentModel.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="contextActivity">The activity to have its changes validated.</param>
+        <summary>Validates the changes pending on the target activity.</summary>
+        <returns>A <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" /> that contains any <see cref="T:System.Workflow.ComponentModel.Compiler.ValidationError" /> resulting from running each <see cref="T:System.Workflow.ComponentModel.Compiler.Validator" /> defined for the target activity.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If `contextActivity` cannot be safely cast to a <xref:System.Workflow.ComponentModel.CompositeActivity> a null reference is returned.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="contextActivity" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

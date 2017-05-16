@@ -1,0 +1,73 @@
+<Type Name="SpellingReform" FullName="System.Windows.Controls.SpellingReform">
+  <TypeSignature Language="C#" Value="public enum SpellingReform" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SpellingReform extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SpellingReform" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the spelling reform rules used by the spellchecker of the text editing control (i.e. <see cref="T:System.Windows.Controls.TextBox" /> or <see cref="T:System.Windows.Controls.RichTextBox" />).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The spelling reform rules determined by this enumeration refer to the French and German spelling reforms. This enumeration has no effect when used with any other language.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Postreform">
+      <MemberSignature Language="C#" Value="Postreform" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SpellingReform Postreform = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SpellingReform.Postreform" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.SpellingReform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use spelling rules from after the spelling reform.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PreAndPostreform">
+      <MemberSignature Language="C#" Value="PreAndPostreform" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SpellingReform PreAndPostreform = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SpellingReform.PreAndPostreform" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.SpellingReform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use spelling rules from both before and after the spelling reform.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Prereform">
+      <MemberSignature Language="C#" Value="Prereform" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SpellingReform Prereform = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SpellingReform.Prereform" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.SpellingReform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Use spelling rules from before the spelling reform.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

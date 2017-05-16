@@ -1,0 +1,66 @@
+<Type Name="SeriesCollection" FullName="System.Web.UI.DataVisualization.Charting.SeriesCollection">
+  <TypeSignature Language="C#" Value="public class SeriesCollection : System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection&lt;System.Web.UI.DataVisualization.Charting.Series&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SeriesCollection extends System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection`1&lt;class System.Web.UI.DataVisualization.Charting.Series&gt;" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.SeriesCollection" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.DataVisualization</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection&lt;System.Web.UI.DataVisualization.Charting.Series&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">System.Web.UI.DataVisualization.Charting.Series</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a collection of <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> objects.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> class represents a collection of <xref:System.Web.UI.DataVisualization.Charting.Series> objects, which in turn represent a grouping of related data points and attributes for the series. This collection class is implemented as the <xref:System.Web.UI.DataVisualization.Charting.Chart.Series%2A> collection property of the root <xref:System.Web.UI.DataVisualization.Charting.Chart> object.  
+  
+ Series objects can be appended, inserted or removed from the collection at both design time and run time.  
+  
+ When a series is added to the collection, it is automatically assigned to the <xref:System.Web.UI.DataVisualization.Charting.ChartArea> object named "Default" or, if "Default" does not exist, to the first available chart area in the chart area collection.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.Series Add (string name);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.Series Add(string name) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.SeriesCollection.Add(System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.DataVisualization.Charting.Series</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name of the <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> to be added.</param>
+        <summary>Adds a <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object with the given name to the end of the collection.</summary>
+        <returns>The new <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> object appended to the collection. .</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Items are always added as the last item in the collection.  
+  
+ The `name` argument refers to the `Name` property of the object being added.  
+  
+ **Note** If you use this method to add <xref:System.Web.UI.DataVisualization.Charting.Series> objects to the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection> class, the associated <xref:System.Web.UI.DataVisualization.Charting.DataPoint> objects of the newly added <xref:System.Web.UI.DataVisualization.Charting.Series> object cannot have more than one Y-value per data point. To add a series that can handle multiple Y-values per data point, use the <xref:System.Web.UI.DataVisualization.Charting.SeriesCollection.Add%2A> System.Int32)?qualifyHint=False&autoUpgrade=True definition of this overloaded method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,40 @@
+<Type Name="EndEventHandler" FullName="System.Web.EndEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void EndEventHandler(IAsyncResult ar);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EndEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Web.EndEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="ar" Type="System.IAsyncResult" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="ar">The <see cref="T:System.IAsyncResult" /> that is the result of the <see cref="T:System.Web.BeginEventHandler" /> operation.</param>
+    <summary>Represents the method that handles asynchronous events such as application events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is called by the event source when completion of the asynchronous operation is signaled by a callback to the <xref:System.Web.BeginEventHandler> delegate.  
+  
+ When you create an <xref:System.Web.EndEventHandler> delegate, you identify the method that will handle the event. To associate the event with your event handler, add an instance of the delegate to the event. The event handler is called whenever the event occurs, unless you remove the delegate. For more information about event-handler delegates, see [NIB: Events and Delegates](http://msdn.microsoft.com/en-us/d98fd58b-fa4f-4598-8378-addf4355a115).  
+  
+   
+  
+## Examples  
+ The following code example uses the <xref:System.Web.EndEventHandler> delegate to register a handler for an asynchronous page.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/csharp/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/CS/pageaddonprerendercompleteasynccs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[PageAddOnPreRenderCompleteAsync#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/PageAddOnPreRenderCompleteAsync/VB/pageaddonprerendercompleteasyncvb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

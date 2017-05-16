@@ -1,0 +1,362 @@
+<Type Name="DesignerActionMethodItem" FullName="System.ComponentModel.Design.DesignerActionMethodItem">
+  <TypeSignature Language="C#" Value="public class DesignerActionMethodItem : System.ComponentModel.Design.DesignerActionItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionMethodItem extends System.ComponentModel.Design.DesignerActionItem" />
+  <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionMethodItem" />
+  <AssemblyInfo>
+    <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ComponentModel.Design.DesignerActionItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a smart tag panel item that is associated with a method in a class derived from <see cref="T:System.ComponentModel.Design.DesignerActionList" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionMethodItem> class represents individual items in a smart tag panel. An item of this type is displayed as an active user interface element, such as a hyperlink, that invokes a programmer-supplied method in a class derived from <xref:System.ComponentModel.Design.DesignerActionList>. The association between the item and the method is maintained through the value of the <xref:System.ComponentModel.Design.DesignerActionMethodItem.MemberName%2A> property. The method that this item invokes must neither take parameters nor return a value.  
+  
+ Individual panel items are associated together to form a panel by a call to the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method of the <xref:System.ComponentModel.Design.DesignerActionList> class.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
+  
+ For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+  
+ [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
+ [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="actionList" Type="System.ComponentModel.Design.DesignerActionList" />
+        <Parameter Name="memberName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="actionList">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> that contains the method this item is associated with.</param>
+        <param name="memberName">The case-sensitive name of the method in the class derived from <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to invoke through the panel item.</param>
+        <param name="displayName">The panel text for this item.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method and display names.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Category%2A> and <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> properties to `null`, and the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property to `false`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, bool includeAsDesignerVerb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, bool includeAsDesignerVerb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="actionList" Type="System.ComponentModel.Design.DesignerActionList" />
+        <Parameter Name="memberName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="includeAsDesignerVerb" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="actionList">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> that contains the method this item is associated with.</param>
+        <param name="memberName">The case-sensitive name of the method in the class derived from <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to invoke through the panel item.</param>
+        <param name="displayName">The panel text for this item.</param>
+        <param name="includeAsDesignerVerb">A flag that specifies whether to also treat the associated method as a designer verb.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method and display names, and a flag that indicates whether the item should appear in other user interface contexts.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `includeAsDesignerVerb` parameter is set to `true`, then this item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], a command will also be added to the **Attributes** pane of the Properties window. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
+  
+ The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Category%2A> and <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> properties to `null`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="actionList" Type="System.ComponentModel.Design.DesignerActionList" />
+        <Parameter Name="memberName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="actionList">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> that contains the method this item is associated with.</param>
+        <param name="memberName">The case-sensitive name of the method in the class derived from <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to invoke through the panel item.</param>
+        <param name="displayName">The panel text for this item.</param>
+        <param name="category">The case-sensitive <see cref="T:System.String" /> used to group similar items on the panel.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method, display, and category names.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> property to `null` and the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property to `false`.  
+  
+ For more information about how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, bool includeAsDesignerVerb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, bool includeAsDesignerVerb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="actionList" Type="System.ComponentModel.Design.DesignerActionList" />
+        <Parameter Name="memberName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="includeAsDesignerVerb" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="actionList">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> that contains the method this item is associated with.</param>
+        <param name="memberName">The case-sensitive name of the method in the class derived from <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to invoke through the panel item.</param>
+        <param name="displayName">The panel text for this item.</param>
+        <param name="category">The case-sensitive <see cref="T:System.String" /> used to group similar items on the panel.</param>
+        <param name="includeAsDesignerVerb">A flag that specifies whether to also treat the associated method as a designer verb for the associated component.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method, display, and category names, and a flag that indicates whether the item should appear in other user interface contexts.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `includeAsDesignerVerb` parameter is set to `true`, then the item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
+  
+ The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionItem.Description%2A> property to `null`.  
+  
+ For more information on how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, string description);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, string description) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String,System.String,System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="actionList" Type="System.ComponentModel.Design.DesignerActionList" />
+        <Parameter Name="memberName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="actionList">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> that contains the method this item is associated with.</param>
+        <param name="memberName">The case-sensitive name of the method in the class derived from <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to invoke through the panel item.</param>
+        <param name="displayName">The panel text for this item.</param>
+        <param name="category">The case-sensitive <see cref="T:System.String" /> used to group similar items on the panel.</param>
+        <param name="description">Supplemental text for this item, used in ToolTips or the status bar.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method and category names, and display and description text.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionMethodItem.%23ctor%2A> constructor sets the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property to `false`.  
+  
+ For more information on how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, string description, bool includeAsDesignerVerb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, string description, bool includeAsDesignerVerb) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="actionList" Type="System.ComponentModel.Design.DesignerActionList" />
+        <Parameter Name="memberName" Type="System.String" />
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="category" Type="System.String" />
+        <Parameter Name="description" Type="System.String" />
+        <Parameter Name="includeAsDesignerVerb" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="actionList">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> that contains the method this item is associated with.</param>
+        <param name="memberName">The case-sensitive name of the method in the class derived from <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to invoke through the panel item.</param>
+        <param name="displayName">The panel text for this item.</param>
+        <param name="category">The case-sensitive <see cref="T:System.String" /> used to group similar items on the panel.</param>
+        <param name="description">Supplemental text for this item, used in ToolTips or the status bar.</param>
+        <param name="includeAsDesignerVerb">A flag that specifies whether to also treat the associated method as a designer verb for the associated component.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class, with the specified method and category names, display and description text, and a flag that indicates whether the item should appear in other user interface contexts.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the `includeAsDesignerVerb` parameter is set to `true`, then this item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
+  
+ For more information about how the `category` parameter is used to group items on a panel, see the <xref:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems%2A> method.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a collection of <xref:System.ComponentModel.Design.DesignerActionItem> objects.  
+  
+ For a full example of implementing smart tags, see [How to: Attach Smart Tags to a Windows Forms Component](http://msdn.microsoft.com/library/42cc4a0c-9ab3-47e1-93b8-03b6a6ccf233).  
+  
+ [!code-csharp[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/CS/smarttags.cs#7)]
+ [!code-vb[System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.Design.DesignerAction.AddSmartTagsToWFComponent/VB/smarttags.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeAsDesignerVerb">
+      <MemberSignature Language="C#" Value="public virtual bool IncludeAsDesignerVerb { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeAsDesignerVerb" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a value that indicates the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> should appear in other user interface contexts.</summary>
+        <value>
+          <see langword="true" /> if the item is to be used in shortcut menus; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property is set to `true`, then the item is also considered a <xref:System.ComponentModel.Design.DesignerVerb>; therefore, it will be added to the component's design-time shortcut menu. A list of designer verbs can be accessed through the designer's <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> collection property.  
+  
+ The value of the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property is set in the constructor for this class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public virtual void Invoke ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.Invoke" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Programmatically executes the method associated with the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the <xref:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb%2A> property is initialized to `true`, the associated method can also be invoked through the corresponding designer verb event.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The method, named in <see cref="P:System.ComponentModel.Design.DesignerActionMethodItem.MemberName" /> cannot be found.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="MemberName">
+      <MemberSignature Language="C#" Value="public virtual string MemberName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionMethodItem.MemberName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the method that this <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> is associated with.</summary>
+        <value>A <see cref="T:System.String" /> that contains the name of the associated method.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionMethodItem.MemberName%2A> property specifies which property, in the class derived from the <xref:System.ComponentModel.Design.DesignerActionList> class, that the item should be bound to. When the programmer interacts with the panel item through the user interface (UI), this associated property will be set.  
+  
+ The bound method should neither take parameters nor return a value.  
+  
+ This property is set in the constructor. It is case-sensitive.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RelatedComponent">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent RelatedComponent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent RelatedComponent" />
+      <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionMethodItem.RelatedComponent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.IComponent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a component that contributes its <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> objects to the current panel.</summary>
+        <value>The contributing component, which should have an associated designer that supplies items.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.ComponentModel.Design.DesignerActionPropertyItem.RelatedComponent%2A> property allows another component to lend its smart tag panel items to the current list. For example, a user control might aggregate the items from one of its constituent standard controls.  
+  
+ This property works in conjunction with the <xref:System.ComponentModel.Design.DesignerActionItem.AllowAssociate%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

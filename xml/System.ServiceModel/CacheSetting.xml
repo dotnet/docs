@@ -1,0 +1,66 @@
+<Type Name="CacheSetting" FullName="System.ServiceModel.CacheSetting">
+  <TypeSignature Language="C#" Value="public enum CacheSetting" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheSetting extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.CacheSetting" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies an enumeration of cache settings.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AlwaysOff">
+      <MemberSignature Language="C#" Value="AlwaysOff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.CacheSetting AlwaysOff = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.CacheSetting.AlwaysOff" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.CacheSetting</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The setting is always off.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="AlwaysOn">
+      <MemberSignature Language="C#" Value="AlwaysOn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.CacheSetting AlwaysOn = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.CacheSetting.AlwaysOn" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.CacheSetting</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The setting is always on.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="Default" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.CacheSetting Default = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.ServiceModel.CacheSetting.Default" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.CacheSetting</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Default setting.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

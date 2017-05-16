@@ -1,0 +1,41 @@
+<Type Name="TrackedDependencies" FullName="Microsoft.Build.Utilities.TrackedDependencies">
+  <TypeSignature Language="C#" Value="public static class TrackedDependencies" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TrackedDependencies extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.TrackedDependencies" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>This class contains utility functions to assist with tracking dependencies</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExpandWildcards">
+      <MemberSignature Language="C#" Value="public static Microsoft.Build.Framework.ITaskItem[] ExpandWildcards (Microsoft.Build.Framework.ITaskItem[] expand);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Build.Framework.ITaskItem[] ExpandWildcards(class Microsoft.Build.Framework.ITaskItem[] expand) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TrackedDependencies.ExpandWildcards(Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Build.Framework.ITaskItem[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expand" Type="Microsoft.Build.Framework.ITaskItem[]" />
+      </Parameters>
+      <Docs>
+        <param name="expand">Array of items to be expanded.</param>
+        <summary>Expand wildcards in the item list.</summary>
+        <returns>Array of items expanded</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

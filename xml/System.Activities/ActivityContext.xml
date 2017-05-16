@@ -1,0 +1,412 @@
+<Type Name="ActivityContext" FullName="System.Activities.ActivityContext">
+  <TypeSignature Language="C#" Value="public class ActivityContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.ActivityContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>The base class for context classes that represent the execution environment of an activity.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class provides limited access to the [!INCLUDE[wf1](~/includes/wf1-md.md)] runtime and is the base class for all execution contexts that are provided by [!INCLUDE[wf](~/includes/wf-md.md)].  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivityInstanceId">
+      <MemberSignature Language="C#" Value="public string ActivityInstanceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ActivityInstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityContext.ActivityInstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unique identifier of the currently executing activity instance.</summary>
+        <value>The unique identifier of the currently executing activity instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataContext">
+      <MemberSignature Language="C#" Value="public System.Activities.WorkflowDataContext DataContext { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.WorkflowDataContext DataContext" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityContext.DataContext" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.WorkflowDataContext</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the data context of the currently executing activity.</summary>
+        <value>The workflow data context of the currently executing activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExtension&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetExtension&lt;T&gt; () where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetExtension&lt;class T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.GetExtension``1" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">The type of extension to retrieve.</typeparam>
+        <summary>Returns an extension of the specified type.</summary>
+        <returns>The extension of the specified type if present; otherwise, <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocation&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Activities.Location&lt;T&gt; GetLocation&lt;T&gt; (System.Activities.LocationReference locationReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Location`1&lt;!!T&gt; GetLocation&lt;T&gt;(class System.Activities.LocationReference locationReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.GetLocation``1(System.Activities.LocationReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Location&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="locationReference" Type="System.Activities.LocationReference" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the location to return.</typeparam>
+        <param name="locationReference">The referenced location.</param>
+        <summary>Returns the typed location for the specified referenced location for the current activity context.</summary>
+        <returns>The typed location.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public object GetValue (System.Activities.Argument argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Activities.Argument argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.GetValue(System.Activities.Argument)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument" Type="System.Activities.Argument" />
+      </Parameters>
+      <Docs>
+        <param name="argument">The argument to inspect.</param>
+        <summary>Gets the value of the specified <see cref="T:System.Activities.Argument" />.</summary>
+        <returns>The value of the argument.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue">
+      <MemberSignature Language="C#" Value="public object GetValue (System.Activities.RuntimeArgument runtimeArgument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Activities.RuntimeArgument runtimeArgument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.GetValue(System.Activities.RuntimeArgument)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="runtimeArgument" Type="System.Activities.RuntimeArgument" />
+      </Parameters>
+      <Docs>
+        <param name="runtimeArgument">The argument to inspect.</param>
+        <summary>Gets the value of the specified <see cref="T:System.Activities.RuntimeArgument" />.</summary>
+        <returns>The value of the argument.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetValue&lt;T&gt; (System.Activities.InArgument&lt;T&gt; argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetValue&lt;T&gt;(class System.Activities.InArgument`1&lt;!!T&gt; argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.GetValue``1(System.Activities.InArgument{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="argument" Type="System.Activities.InArgument&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to inspect.</param>
+        <summary>Gets the value of the specified <see cref="T:System.Activities.InArgument`1" />.</summary>
+        <returns>The value of the argument.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetValue&lt;T&gt; (System.Activities.InOutArgument&lt;T&gt; argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetValue&lt;T&gt;(class System.Activities.InOutArgument`1&lt;!!T&gt; argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.GetValue``1(System.Activities.InOutArgument{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="argument" Type="System.Activities.InOutArgument&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to inspect.</param>
+        <summary>Gets the value of the specified <see cref="T:System.Activities.InOutArgument`1" />.</summary>
+        <returns>The value of the argument.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetValue&lt;T&gt; (System.Activities.LocationReference locationReference);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetValue&lt;T&gt;(class System.Activities.LocationReference locationReference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.GetValue``1(System.Activities.LocationReference)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="locationReference" Type="System.Activities.LocationReference" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the value.</typeparam>
+        <param name="locationReference">The referenced location to inspect.</param>
+        <summary>Gets the value at the specified <see cref="T:System.Activities.LocationReference" />.</summary>
+        <returns>The value of the referenced location.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetValue&lt;T&gt; (System.Activities.OutArgument&lt;T&gt; argument);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetValue&lt;T&gt;(class System.Activities.OutArgument`1&lt;!!T&gt; argument) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.GetValue``1(System.Activities.OutArgument{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="argument" Type="System.Activities.OutArgument&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to inspect.</param>
+        <summary>Gets the value of the specified <see cref="T:System.Activities.OutArgument`1" />.</summary>
+        <returns>The value of the argument.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public void SetValue (System.Activities.Argument argument, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue(class System.Activities.Argument argument, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.SetValue(System.Activities.Argument,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="argument" Type="System.Activities.Argument" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="argument">The argument to receive the new value.</param>
+        <param name="value">The new value of the argument.</param>
+        <summary>Assigns a value to the specified <see cref="T:System.Activities.Argument" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void SetValue&lt;T&gt; (System.Activities.InArgument&lt;T&gt; argument, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue&lt;T&gt;(class System.Activities.InArgument`1&lt;!!T&gt; argument, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.SetValue``1(System.Activities.InArgument{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="argument" Type="System.Activities.InArgument&lt;T&gt;" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to receive the new value.</param>
+        <param name="value">The new value of the argument.</param>
+        <summary>Assigns a value to the specified <see cref="T:System.Activities.InArgument`1" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void SetValue&lt;T&gt; (System.Activities.InOutArgument&lt;T&gt; argument, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue&lt;T&gt;(class System.Activities.InOutArgument`1&lt;!!T&gt; argument, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.SetValue``1(System.Activities.InOutArgument{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="argument" Type="System.Activities.InOutArgument&lt;T&gt;" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to receive the new value.</param>
+        <param name="value">The new value of the argument.</param>
+        <summary>Assigns a value to the specified <see cref="T:System.Activities.InOutArgument`1" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void SetValue&lt;T&gt; (System.Activities.LocationReference locationReference, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue&lt;T&gt;(class System.Activities.LocationReference locationReference, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.SetValue``1(System.Activities.LocationReference,``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="locationReference" Type="System.Activities.LocationReference" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the location.</typeparam>
+        <param name="locationReference">The referenced location to receive the new value.</param>
+        <param name="value">The new value of the referenced location.</param>
+        <summary>Assigns a value to the specified <see cref="T:System.Activities.LocationReference" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void SetValue&lt;T&gt; (System.Activities.OutArgument&lt;T&gt; argument, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValue&lt;T&gt;(class System.Activities.OutArgument`1&lt;!!T&gt; argument, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.ActivityContext.SetValue``1(System.Activities.OutArgument{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="argument" Type="System.Activities.OutArgument&lt;T&gt;" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the argument.</typeparam>
+        <param name="argument">The argument to receive the new value.</param>
+        <param name="value">The new value of the argument.</param>
+        <summary>Assigns a value to the specified <see cref="T:System.Activities.OutArgument`1" />.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkflowInstanceId">
+      <MemberSignature Language="C#" Value="public Guid WorkflowInstanceId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid WorkflowInstanceId" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.ActivityContext.WorkflowInstanceId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the unique indentifier of the currently executing workflow instance.</summary>
+        <value>The unique identifier of the currently executing workflow instance.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

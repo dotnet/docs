@@ -29,8 +29,8 @@ helpviewer_keywords:
   - "#Else directive [Visual Basic]"
 ms.assetid: 10bba104-e3fd-451b-b672-faa472530502
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

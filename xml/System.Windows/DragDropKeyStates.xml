@@ -1,0 +1,144 @@
+<Type Name="DragDropKeyStates" FullName="System.Windows.DragDropKeyStates">
+  <TypeSignature Language="C#" Value="public enum DragDropKeyStates" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DragDropKeyStates extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.DragDropKeyStates" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the current state of the modifier keys (SHIFT, CTRL, and ALT), as well as the state of the mouse buttons.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ No distinction is made between the left or right SHIFT, ALT, and CTRL keys.  
+  
+ This enumeration is used by the <xref:System.Windows.DragEventArgs> and <xref:System.Windows.QueryContinueDragEventArgs> classes.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AltKey">
+      <MemberSignature Language="C#" Value="AltKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.DragDropKeyStates AltKey = int32(32)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DragDropKeyStates.AltKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The ALT key is pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlKey">
+      <MemberSignature Language="C#" Value="ControlKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.DragDropKeyStates ControlKey = int32(8)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DragDropKeyStates.ControlKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The control (CTRL) key is pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftMouseButton">
+      <MemberSignature Language="C#" Value="LeftMouseButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.DragDropKeyStates LeftMouseButton = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DragDropKeyStates.LeftMouseButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The left mouse button is pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="MiddleMouseButton">
+      <MemberSignature Language="C#" Value="MiddleMouseButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.DragDropKeyStates MiddleMouseButton = int32(16)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DragDropKeyStates.MiddleMouseButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The middle mouse button is pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.DragDropKeyStates None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DragDropKeyStates.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>No modifier keys or mouse buttons are pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightMouseButton">
+      <MemberSignature Language="C#" Value="RightMouseButton" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.DragDropKeyStates RightMouseButton = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DragDropKeyStates.RightMouseButton" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The right mouse button is pressed.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="ShiftKey">
+      <MemberSignature Language="C#" Value="ShiftKey" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.DragDropKeyStates ShiftKey = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.DragDropKeyStates.ShiftKey" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.DragDropKeyStates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The shift (SHIFT) key is pressed.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

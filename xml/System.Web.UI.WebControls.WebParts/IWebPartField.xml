@@ -1,0 +1,121 @@
+<Type Name="IWebPartField" FullName="System.Web.UI.WebControls.WebParts.IWebPartField">
+  <TypeSignature Language="C#" Value="public interface IWebPartField" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebPartField" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IWebPartField" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines a provider interface for connecting two server controls using a single field of data.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This interface is designed to be used with Web Parts connections. In a Web Parts connection, two server controls that reside in a <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> zone establish a connection and share data, with one control acting as the consumer and the other control acting as a provider. The mechanism for sharing data in a Web Parts connection is an interface instance, which the provider serves to the consumer by means of a callback method. To establish a connection, the consumer and provider must both work with the same interface type for sharing data. If the consumer does not recognize the interface type sent by the provider, it is still possible to connect the controls by means of a transformer (a <xref:System.Web.UI.WebControls.WebParts.WebPartTransformer> object) that translates the interface instance sent by the provider into a type that the consumer recognizes. For details on connections, see <xref:System.Web.UI.WebControls.WebParts.WebPartConnection> and [Web Parts Connections Overview](http://msdn.microsoft.com/library/d98cfd0f-ebd6-4871-89d5-abbd2cdef67b).  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface is a provider interface included with the Web Parts control set as a standard interface for creating connections based on a data field. You can also create custom interfaces to use with Web Parts connections, but in many data-driven Web applications, it is useful to create connections based on a common row (for details, see the <xref:System.Web.UI.WebControls.WebParts.IWebPartRow> interface), table (for details, see the <xref:System.Web.UI.WebControls.WebParts.IWebPartTable> interface), or field from the data source, using the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface. In a typical connection, a <xref:System.Web.UI.WebControls.WebParts.WebPart> control acting as a provider would implement the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface and provide an instance of the interface to consumers in a special callback method. For example, the provider might implement an <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface for a field in your user information table that contains a Web user's postal code data. Another <xref:System.Web.UI.WebControls.WebParts.WebPart> control acting as a consumer would define a special method to receive the interface instance, and could then extract the postal code data, and look up and display weather information based on the postal code.  
+  
+ The <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface has two exposed members. The <xref:System.Web.UI.WebControls.WebParts.IWebPartField.Schema%2A> property returns schema information about the data field encapsulated in a <xref:System.ComponentModel.PropertyDescriptor> object. The <xref:System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue%2A> method declares a method that an implementer (such as a provider control) uses to retrieve the interface instance's field data when the callback method is invoked.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to create a static connection between two controls using the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface. The code example has three parts:  
+  
+-   Source code for two custom <xref:System.Web.UI.WebControls.WebParts.WebPart> controls that can form a connection using the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface, with one control acting as the provider, the other acting as the consumer.  
+  
+-   A Web page that hosts the controls and declares the static connection in persistence format.  
+  
+-   A description of what happens when the example code runs.  
+  
+ The first part of the code example is the source code for the two custom controls. First is the code for the provider, which implements the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface. For simplicity in the example, the provider creates a table with some data rather than connecting to a database. The `GetConnectionInterface` method serves as the provider's connection point, the callback method that returns the interface instance to the consumer. As for the consumer, it retrieves the interface instance from the provider in its method named `SetConnectionInterface`, which is marked with a `ConnectionConsumer` attribute. After retrieving the instance of the interface, the consumer, in its `OnPreRender` method, calls the implementation of the <xref:System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue%2A> method in the provider, to retrieve the actual data.  
+  
+ For the code example to run, you must compile this source code. You can compile it explicitly and put the resulting assembly in your Web site's Bin folder or the global assembly cache. Alternatively, you can put the source code in your site's App_Code folder, where it will be dynamically compiled at run time. This code example uses dynamic compilation. For a walkthrough that demonstrates how to compile, see [Walkthrough: Developing and Using a Custom Web Server Control](http://msdn.microsoft.com/library/6d90782a-a1a4-45a6-b2d4-cf6362b83b08).  
+  
+ [!code-csharp[WebParts_IWebPartField_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPartField_Overview/CS/IFieldSample.cs#2)]
+ [!code-vb[WebParts_IWebPartField_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPartField_Overview/VB/IFieldSample.vb#2)]  
+  
+ The second part of the code example is the Web page that declares the static connection and hosts the controls. Near the top of the page is a `Register` directive that declares the namespace of the source code contained in the App_Code directory. The connection is declared using an `<asp:webpartconnection>` element. The custom consumer and provider controls are declared in a `<zonetemplate>` element within an `<asp:webpartzone>` element, which is required for them to be able to connect (they must reside within a zone that inherits from the <xref:System.Web.UI.WebControls.WebParts.WebPartZoneBase> class).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[WebParts_IWebPartField_Overview#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPartField_Overview/CS/defaultcs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[WebParts_IWebPartField_Overview#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPartField_Overview/VB/Defaultvb.aspx#1)]  -->  
+  
+ Load the page in a browser. The consumer control displays the data provided from the specified field, which the provider makes available through an instance of the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetFieldValue">
+      <MemberSignature Language="C#" Value="public void GetFieldValue (System.Web.UI.WebControls.WebParts.FieldCallback callback);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetFieldValue(class System.Web.UI.WebControls.WebParts.FieldCallback callback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue(System.Web.UI.WebControls.WebParts.FieldCallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="callback" Type="System.Web.UI.WebControls.WebParts.FieldCallback" />
+      </Parameters>
+      <Docs>
+        <param name="callback">A <see cref="T:System.Web.UI.WebControls.WebParts.FieldCallback" /> delegate that contains the address of a method that receives the data.</param>
+        <summary>Returns the value of the field that is being used by the interface as the basis of a connection between two <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method to retrieve the data field values passed by the interface.  
+  
+   
+  
+## Examples  
+ The following code example shows the implementation and use of the <xref:System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue%2A> method. The complete example is shown in the class overview for the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface. The provider control implements the <xref:System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue%2A> method, returning the value of a particular field in the data table. The consumer control calls the <xref:System.Web.UI.WebControls.WebParts.IWebPartField.GetFieldValue%2A> method in its `OnPreRender` method, so that the value of the data can be written to the page.  
+  
+ [!code-csharp[WebParts_IWebPartField_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPartField_Overview/CS/IFieldSample.cs#2)]
+ [!code-vb[WebParts_IWebPartField_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPartField_Overview/VB/IFieldSample.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Schema">
+      <MemberSignature Language="C#" Value="public System.ComponentModel.PropertyDescriptor Schema { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptor Schema" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebPartField.Schema" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the schema information for a data field that is used to share data between two <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls.</summary>
+        <value>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that describes the schema information for the data field.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property provides property information for the data passed by the interface. Transformer and consumer controls can query this property to get information about the type, contents, and other details of the field contained in the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface instance sent by a provider.  
+  
+   
+  
+## Examples  
+ The following code example shows the implementation and use of the <xref:System.Web.UI.WebControls.WebParts.IWebPartField.Schema%2A> property. The complete example is shown in the class overview for the <xref:System.Web.UI.WebControls.WebParts.IWebPartField> interface. The provider control implements the <xref:System.Web.UI.WebControls.WebParts.IWebPartField.Schema%2A> property. Then, in its `GetFieldValue` method, it uses the property to retrieve the field value.  
+  
+ [!code-csharp[WebParts_IWebPartField_Overview#2](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_IWebPartField_Overview/CS/IFieldSample.cs#2)]
+ [!code-vb[WebParts_IWebPartField_Overview#2](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_IWebPartField_Overview/VB/IFieldSample.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

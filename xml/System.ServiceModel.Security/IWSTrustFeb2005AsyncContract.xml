@@ -1,0 +1,445 @@
+<Type Name="IWSTrustFeb2005AsyncContract" FullName="System.ServiceModel.Security.IWSTrustFeb2005AsyncContract">
+  <TypeSignature Language="C#" Value="public interface IWSTrustFeb2005AsyncContract" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWSTrustFeb2005AsyncContract" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.ServiceContract(Name="IWSTrustFeb2005Async", Namespace="http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Defines an asynchronous service contract interface for the WS-Trust Feb 2005 protocol.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BeginTrustFeb2005Cancel">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005Cancel (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005Cancel(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Cancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Cancel", AsyncPattern=true, Name="TrustFeb2005CancelAsync", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous operation.</param>
+        <param name="state">An object that contains state information associated with the asynchronous operation.</param>
+        <summary>Defines the asynchronous Cancel method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005CancelResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005CancelResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005CancelResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005CancelResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel", AsyncPattern=true, Name="TrustFeb2005CancelResponseAsync", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Cancel")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous operation.</param>
+        <param name="state">An object that contains state information associated with the asynchronous operation.</param>
+        <summary>Defines the asynchronous RSTR/Cancel method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005Issue">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005Issue (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005Issue(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Issue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Issue", AsyncPattern=true, Name="TrustFeb2005IssueAsync", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous operation.</param>
+        <param name="state">An object that contains state information associated with the asynchronous operation.</param>
+        <summary>Defines the asynchronous Issue method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005IssueResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005IssueResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005IssueResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005IssueResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue", AsyncPattern=true, Name="TrustFeb2005IssueResponseAsync", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Issue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous operation.</param>
+        <param name="state">An object that contains state information associated with the asynchronous operation.</param>
+        <summary>Defines the asynchronous RSTR/Issue method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005Renew">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005Renew (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005Renew(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Renew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Renew", AsyncPattern=true, Name="TrustFeb2005RenewAsync", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous operation.</param>
+        <param name="state">An object that contains state information associated with the asynchronous operation.</param>
+        <summary>Defines the asynchronous Renew method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005RenewResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005RenewResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005RenewResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005RenewResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew", AsyncPattern=true, Name="TrustFeb2005RenewResponseAsync", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Renew")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous operation.</param>
+        <param name="state">An object that contains state information associated with the asynchronous operation.</param>
+        <summary>Defines the asynchronous RSTR/Renew method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005Validate">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005Validate (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005Validate(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Validate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RST/Validate", AsyncPattern=true, Name="TrustFeb2005ValidateAsync", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous operation.</param>
+        <param name="state">An object that contains state information associated with the asynchronous operation.</param>
+        <summary>Defines the asynchronous Validate method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005ValidateResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005ValidateResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005ValidateResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005ValidateResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ServiceModel.OperationContract(Action="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate", AsyncPattern=true, Name="TrustFeb2005ValidateResponseAsync", ReplyAction="http://schemas.xmlsoap.org/ws/2005/02/trust/RSTR/Validate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the request message, which contains the RST.</param>
+        <param name="callback">The <see cref="T:System.AsyncCallback" /> delegate that receives notification of the completion of the asynchronous operation.</param>
+        <param name="state">An object that contains state information associated with the asynchronous operation.</param>
+        <summary>Defines the asynchronous RSTR/Validate method for the WS-Trust Feb 2005 protocol.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that references the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005Cancel">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005Cancel (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005Cancel(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Cancel(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Cancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes the asynchronous Cancel method.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005CancelResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005CancelResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005CancelResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005CancelResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005CancelResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes the asynchronous RSTR/Cancel method.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005Issue">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005Issue (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005Issue(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Issue(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Issue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes the asynchronous Issue method.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005IssueResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005IssueResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005IssueResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005IssueResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005IssueResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes the asynchronous RSTR/Issue method.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005Renew">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005Renew (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005Renew(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Renew(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Renew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes the asynchronous Renew method.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005RenewResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005RenewResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005RenewResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005RenewResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005RenewResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes the asynchronous RSTR/Renew method.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005Validate">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005Validate (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005Validate(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005Validate(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005Validate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes the asynchronous Validate method.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005ValidateResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005ValidateResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005ValidateResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.EndTrustFeb2005ValidateResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> that is returned by a call to the <see cref="M:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract.BeginTrustFeb2005ValidateResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes the asynchronous RSTR/Validate method.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> that represents the response message, which contains the RSTR.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

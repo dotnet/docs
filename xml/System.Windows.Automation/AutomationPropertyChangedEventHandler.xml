@@ -1,0 +1,42 @@
+<Type Name="AutomationPropertyChangedEventHandler" FullName="System.Windows.Automation.AutomationPropertyChangedEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void AutomationPropertyChangedEventHandler(object sender, AutomationPropertyChangedEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutomationPropertyChangedEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationPropertyChangedEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Automation.AutomationPropertyChangedEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object that raised the event.</param>
+    <param name="e">Information about the event.</param>
+    <summary>Represents the method implemented by the UI Automation client application to handle the event raised by a UI Automation provider when a property has changed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Automation.AutomationElement> represented by `sender` might not have any cached properties or patterns, depending on whether the application subscribed to this event while a <xref:System.Windows.Automation.CacheRequest> was active.  
+  
+ Depending on the provider implementation, a property-changed event does not necessarily signify that the property value is different; it might just mean that the property was set, even to the same value. If your application needs to respond only to actual changes, it is your responsibility to track the state of the property.  
+  
+   
+  
+## Examples  
+ In the following example, changes in the <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.IsEnabled%2A> property of subscribed elements are handled.  
+  
+ [!code-csharp[UIAClient_snip#172](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/PropertySnips.cs#172)]
+ [!code-vb[UIAClient_snip#172](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/PropertySnips.vb#172)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

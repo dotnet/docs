@@ -1,0 +1,50 @@
+<Type Name="ParsingCulture" FullName="System.Web.UI.WebControls.ParsingCulture">
+  <TypeSignature Language="C#" Value="public enum ParsingCulture" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParsingCulture extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ParsingCulture" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the culture information to use when string values are converted to types.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Current">
+      <MemberSignature Language="C#" Value="Current" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ParsingCulture Current = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ParsingCulture.Current" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ParsingCulture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the <see cref="P:System.Globalization.CultureInfo.InvariantCulture" /> option.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Invariant">
+      <MemberSignature Language="C#" Value="Invariant" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ParsingCulture Invariant = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ParsingCulture.Invariant" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.WebControls.ParsingCulture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies the <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> option.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

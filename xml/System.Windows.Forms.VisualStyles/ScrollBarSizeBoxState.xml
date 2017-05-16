@@ -1,0 +1,57 @@
+<Type Name="ScrollBarSizeBoxState" FullName="System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState">
+  <TypeSignature Language="C#" Value="public enum ScrollBarSizeBoxState" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollBarSizeBoxState extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Specifies the visual state of a scroll bar sizing handle that is drawn with visual styles.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState> values correspond to the states of the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> objects exposed by the <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.SizeBox> class. The <xref:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState> values are also used as an argument in the <xref:System.Windows.Forms.ScrollBarRenderer.DrawSizeBox%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="LeftAlign">
+      <MemberSignature Language="C#" Value="LeftAlign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState LeftAlign = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState.LeftAlign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The sizing handle is aligned to the left.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="RightAlign">
+      <MemberSignature Language="C#" Value="RightAlign" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState RightAlign = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState.RightAlign" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The sizing handle is aligned to the right.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

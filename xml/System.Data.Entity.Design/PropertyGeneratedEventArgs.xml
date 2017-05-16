@@ -1,0 +1,192 @@
+<Type Name="PropertyGeneratedEventArgs" FullName="System.Data.Entity.Design.PropertyGeneratedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class PropertyGeneratedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PropertyGeneratedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.PropertyGeneratedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity.Design</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated" /> event.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyGeneratedEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PropertyGeneratedEventArgs.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.PropertyGeneratedEventArgs" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PropertyGeneratedEventArgs (System.Data.Metadata.Edm.MetadataItem propertySource, string backingFieldName, System.CodeDom.CodeTypeReference returnType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.MetadataItem propertySource, string backingFieldName, class System.CodeDom.CodeTypeReference returnType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PropertyGeneratedEventArgs.#ctor(System.Data.Metadata.Edm.MetadataItem,System.String,System.CodeDom.CodeTypeReference)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertySource" Type="System.Data.Metadata.Edm.MetadataItem" />
+        <Parameter Name="backingFieldName" Type="System.String" />
+        <Parameter Name="returnType" Type="System.CodeDom.CodeTypeReference" />
+      </Parameters>
+      <Docs>
+        <param name="propertySource">The <see cref="T:System.Data.Metadata.Edm.MetadataItem" /> object that is the source of the property.</param>
+        <param name="backingFieldName">The name of the field that backs the property.</param>
+        <param name="returnType">The base type of the property.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Entity.Design.PropertyGeneratedEventArgs" /> class with the specified property source, backing field name, and return type.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalAttributes">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.CodeDom.CodeAttributeDeclaration&gt; AdditionalAttributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.CodeDom.CodeAttributeDeclaration&gt; AdditionalAttributes" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalAttributes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.CodeDom.CodeAttributeDeclaration&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see langword="List(CodeAttributeDeclaration)" /> of attributes that will be added to the property.</summary>
+        <value>A collection that contains the attributes that will be added to the property. The collection is empty if no attributes will be added.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The attributes are added after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated> event is raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalGetStatements">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.CodeDom.CodeStatement&gt; AdditionalGetStatements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.CodeDom.CodeStatement&gt; AdditionalGetStatements" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalGetStatements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.CodeDom.CodeStatement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see langword="List(CodeStatement)" /> containing the get statements to be added to the property.</summary>
+        <value>A collection that contains the get statements to be added to the property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `List(CodeStatement)` is used to specify statements to add to the get accessor of the property. The statements are inserted after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated> event is raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AdditionalSetStatements">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.CodeDom.CodeStatement&gt; AdditionalSetStatements { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.CodeDom.CodeStatement&gt; AdditionalSetStatements" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalSetStatements" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;System.CodeDom.CodeStatement&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a <see langword="List(CodeStatement)" /> containing the set statements to be added to the property.</summary>
+        <value>A collection that contains the set statements to be added to the property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `List(CodeStatement)` is used to specify statements to add to the set accessor of the property. The statements are inserted after the <xref:System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated> event is raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackingFieldName">
+      <MemberSignature Language="C#" Value="public string BackingFieldName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BackingFieldName" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.BackingFieldName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the name of the field that backs the property.</summary>
+        <value>The name of the field that backs the property. This can be <see langword="null" /> for navigation properties.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertySource">
+      <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.MetadataItem PropertySource { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.MetadataItem PropertySource" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.PropertySource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Metadata.Edm.MetadataItem</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the <see cref="T:System.Data.Metadata.Edm.MetadataItem" /> object that is the source of the property.</summary>
+        <value>The <see cref="T:System.Data.Metadata.Edm.MetadataItem" /> object that is the source of the property.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnType">
+      <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference ReturnType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference ReturnType" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PropertyGeneratedEventArgs.ReturnType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.CodeDom.CodeTypeReference</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the type of the property.</summary>
+        <value>The type of the property.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property returns the common language runtime (CLR) equivalent type of the property. It can also be used to specify a new base type. This property applies only to navigation properties.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

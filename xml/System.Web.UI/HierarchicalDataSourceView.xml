@@ -1,0 +1,90 @@
+<Type Name="HierarchicalDataSourceView" FullName="System.Web.UI.HierarchicalDataSourceView">
+  <TypeSignature Language="C#" Value="public abstract class HierarchicalDataSourceView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HierarchicalDataSourceView extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.HierarchicalDataSourceView" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a data view on a node or collection of nodes in a hierarchical data structure for a <see cref="T:System.Web.UI.HierarchicalDataSourceControl" /> control.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET supports a data-binding architecture that enables Web server controls to bind to data and present it in a consistent fashion. Web server controls that bind to data are called data-bound controls, and the classes that facilitate that binding are called data source controls. Data source controls can represent any data source: a file, a stream, a relational database, a business object, and so on. Data source controls present data in a consistent way to data-bound controls, regardless of the source or format of the underlying data.  
+  
+ Data source controls that represent hierarchical data derive from the abstract <xref:System.Web.UI.HierarchicalDataSourceControl> class. You can think of a data source control as the combination of the data source control object and its associated views on the underlying data, which are represented by data source view objects. Hierarchical data source controls support a hierarchical data source view for each hierarchical level of data they represent. The data source views are not named, like the <xref:System.Web.UI.DataSourceView> objects associated with a <xref:System.Web.UI.DataSourceControl> control, but are identified by their unique hierarchical path.  
+  
+ Data source views define the capabilities of a data source control. All data source view objects, including <xref:System.Web.UI.HierarchicalDataSourceView>, support data retrieval from the underlying data source using the <xref:System.Web.UI.HierarchicalDataSourceView.Select%2A> method, which retrieves a hierarchical list of data as an <xref:System.Web.UI.IHierarchicalEnumerable> object. All data source view objects optionally support a basic set of capabilities, including operations such as <xref:System.Web.UI.DataSourceView.Insert%2A>, <xref:System.Web.UI.DataSourceView.Update%2A>, <xref:System.Web.UI.DataSourceView.Delete%2A>, and sorting. A data-bound control can discover the capabilities of a data source control by retrieving an associated data source view using the <xref:System.Web.UI.HierarchicalDataSourceControl.GetHierarchicalView%2A> method and querying the view at design time or at run time. <xref:System.Web.UI.HierarchicalDataSourceView> does not currently support <xref:System.Web.UI.DataSourceView.Insert%2A>, <xref:System.Web.UI.DataSourceView.Update%2A> or <xref:System.Web.UI.DataSourceView.Delete%2A> operations.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to derive a class from the <xref:System.Web.UI.HierarchicalDataSourceView> class to retrieve data from hierarchical data storage, in this case a file system. The `FileSystemDataSourceView` class is a strongly typed <xref:System.Web.UI.HierarchicalDataSourceView> instance that enables hierarchical Web server controls such as the <xref:System.Web.UI.WebControls.TreeView> control to bind to a `FileSystemDataSource` control and display file system information. For security purposes, file system information is displayed only if the data source control is being used in a localhost, authenticated scenario, and only starts with the virtual directory that the Web Forms page using the data source control resides in. Otherwise, the `viewPath` parameter passed to the constructor might be used to create a view based on the current file system path. This code example is part of a larger example provided for the <xref:System.Web.UI.HierarchicalDataSourceControl> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.FileSystemDataSource_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/CS/filesystemdatasource.cs#3)]
+ [!code-vb[Urtue.Samples.Alexkr.FileSystemDataSource_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/VB/filesystemdatasource.vb#3)]  
+  
+ ]]></format>
+    </remarks>
+    <block subset="none" type="overrides">
+      <para>When you inherit from <see cref="T:System.Web.UI.HierarchicalDataSourceView" />, you must override the following member: <see cref="M:System.Web.UI.HierarchicalDataSourceView.Select" />.</para>
+    </block>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected HierarchicalDataSourceView ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HierarchicalDataSourceView.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HierarchicalDataSourceView" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Select">
+      <MemberSignature Language="C#" Value="public abstract System.Web.UI.IHierarchicalEnumerable Select ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.IHierarchicalEnumerable Select() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.HierarchicalDataSourceView.Select" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.UI.IHierarchicalEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets a list of all the data items in the view.</summary>
+        <returns>An <see cref="T:System.Web.UI.IHierarchicalEnumerable" /> collection of data items.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.UI.HierarchicalDataSourceView.Select%2A> method returns an <xref:System.Web.UI.IHierarchicalEnumerable> collection of data items in the current view. You can call the <xref:System.Collections.IEnumerable.GetEnumerator%2A> method to get an <xref:System.Collections.IEnumerator> object and iterate through the collection of data items.  
+  
+   
+  
+## Examples  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HierarchicalDataSourceView.Select%2A> method in a class that derives from the <xref:System.Web.UI.HierarchicalDataSourceView> class to retrieve hierarchical <xref:System.IO.FileSystemInfo> data from a file system. For security purposes, file system information is displayed only if the data source control is being used in a localhost, authenticated scenario, and only starts with the virtual directory that the Web Forms page using the data source control resides in. Otherwise, the `viewPath` parameter passed to the constructor of the view object might be used to create a view based on the current file system path. This code example is part of a larger example provided for the <xref:System.Web.UI.HierarchicalDataSourceControl> class.  
+  
+ [!code-csharp[Urtue.Samples.Alexkr.FileSystemDataSource_1#3](~/samples/snippets/csharp/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/CS/filesystemdatasource.cs#3)]
+ [!code-vb[Urtue.Samples.Alexkr.FileSystemDataSource_1#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Urtue.Samples.Alexkr.FileSystemDataSource_1/VB/filesystemdatasource.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,1866 @@
+<Type Name="WSTrustServiceContract" FullName="System.ServiceModel.Security.WSTrustServiceContract">
+  <TypeSignature Language="C#" Value="public class WSTrustServiceContract : System.ServiceModel.Description.IContractBehavior, System.ServiceModel.Description.IWsdlExportExtension, System.ServiceModel.Security.IWSTrust13AsyncContract, System.ServiceModel.Security.IWSTrust13SyncContract, System.ServiceModel.Security.IWSTrustFeb2005AsyncContract, System.ServiceModel.Security.IWSTrustFeb2005SyncContract" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSTrustServiceContract extends System.Object implements class System.ServiceModel.Description.IContractBehavior, class System.ServiceModel.Description.IWsdlExportExtension, class System.ServiceModel.Security.IWSTrust13AsyncContract, class System.ServiceModel.Security.IWSTrust13SyncContract, class System.ServiceModel.Security.IWSTrustFeb2005AsyncContract, class System.ServiceModel.Security.IWSTrustFeb2005SyncContract" />
+  <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.WSTrustServiceContract" />
+  <AssemblyInfo>
+    <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IContractBehavior</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Description.IWsdlExportExtension</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Security.IWSTrust13AsyncContract</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Security.IWSTrust13SyncContract</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Security.IWSTrustFeb2005AsyncContract</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ServiceModel.Security.IWSTrustFeb2005SyncContract</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ServiceModel.Activation.AspNetCompatibilityRequirements(RequirementsMode=System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ServiceModel.ServiceBehavior(ConcurrencyMode=System.ServiceModel.ConcurrencyMode.Multiple, InstanceContextMode=System.ServiceModel.InstanceContextMode.Single, Name="SecurityTokenService", Namespace="http://schemas.microsoft.com/ws/2008/06/identity/securitytokenservice")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Definition of the WS-Trust service contract implementation.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implements the following service contract interfaces:  
+  
+-   <xref:System.ServiceModel.Security.IWSTrustFeb2005SyncContract>  
+  
+-   <xref:System.ServiceModel.Security.IWSTrust13SyncContract>  
+  
+-   <xref:System.ServiceModel.Security.IWSTrustFeb2005AsyncContract>  
+  
+-   <xref:System.ServiceModel.Security.IWSTrust13AsyncContract>  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WSTrustServiceContract (System.IdentityModel.Configuration.SecurityTokenServiceConfiguration securityTokenServiceConfiguration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Configuration.SecurityTokenServiceConfiguration securityTokenServiceConfiguration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.#ctor(System.IdentityModel.Configuration.SecurityTokenServiceConfiguration)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="securityTokenServiceConfiguration" Type="System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" />
+      </Parameters>
+      <Docs>
+        <param name="securityTokenServiceConfiguration">The configuration object that initializes this instance.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustServiceContract" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddBindingParameters">
+      <MemberSignature Language="C#" Value="public void AddBindingParameters (System.ServiceModel.Description.ContractDescription contractDescription, System.ServiceModel.Description.ServiceEndpoint endpoint, System.ServiceModel.Channels.BindingParameterCollection bindingParameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBindingParameters(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Channels.BindingParameterCollection bindingParameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.AddBindingParameters(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="bindingParameters" Type="System.ServiceModel.Channels.BindingParameterCollection" />
+      </Parameters>
+      <Docs>
+        <param name="contractDescription">The contract description to modify.</param>
+        <param name="endpoint">The endpoint to modify.</param>
+        <param name="bindingParameters">The objects that binding elements require to support the behavior.</param>
+        <summary>Configures any binding elements to support the contract behavior.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyClientBehavior">
+      <MemberSignature Language="C#" Value="public void ApplyClientBehavior (System.ServiceModel.Description.ContractDescription contractDescription, System.ServiceModel.Description.ServiceEndpoint endpoint, System.ServiceModel.Dispatcher.ClientRuntime clientRuntime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyClientBehavior(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.ClientRuntime clientRuntime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ApplyClientBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="clientRuntime" Type="System.ServiceModel.Dispatcher.ClientRuntime" />
+      </Parameters>
+      <Docs>
+        <param name="contractDescription">The contract description for which the extension is intended.</param>
+        <param name="endpoint">The endpoint.</param>
+        <param name="clientRuntime">The client runtime.</param>
+        <summary>The contract description for which the extension is intended.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyDispatchBehavior">
+      <MemberSignature Language="C#" Value="public void ApplyDispatchBehavior (System.ServiceModel.Description.ContractDescription contractDescription, System.ServiceModel.Description.ServiceEndpoint endpoint, System.ServiceModel.Dispatcher.DispatchRuntime dispatchRuntime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyDispatchBehavior(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Dispatcher.DispatchRuntime dispatchRuntime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ApplyDispatchBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.DispatchRuntime)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+        <Parameter Name="dispatchRuntime" Type="System.ServiceModel.Dispatcher.DispatchRuntime" />
+      </Parameters>
+      <Docs>
+        <param name="contractDescription">The contract description to be modified.</param>
+        <param name="endpoint">The endpoint that exposes the contract.</param>
+        <param name="dispatchRuntime">The dispatch runtime that controls service execution.</param>
+        <summary>Implements a modification or extension of the client across a contract.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginDispatchRequest">
+      <MemberSignature Language="C#" Value="protected virtual IAsyncResult BeginDispatchRequest (System.ServiceModel.Security.DispatchContext dispatchContext, AsyncCallback asyncCallback, object asyncState);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult BeginDispatchRequest(class System.ServiceModel.Security.DispatchContext dispatchContext, class System.AsyncCallback asyncCallback, object asyncState) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginDispatchRequest(System.ServiceModel.Security.DispatchContext,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispatchContext" Type="System.ServiceModel.Security.DispatchContext" />
+        <Parameter Name="asyncCallback" Type="System.AsyncCallback" />
+        <Parameter Name="asyncState" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dispatchContext">Defines the request parameters to process and exposes properties that determine the response message and action.</param>
+        <param name="asyncCallback">An optional asynchronous callback, to be called when the dispatch is complete.</param>
+        <param name="asyncState">A user-provided object that distinguishes this particular asynchronous dispatch request from other requests.</param>
+        <summary>Begins an asynchronous call to <see cref="M:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest(System.ServiceModel.Security.DispatchContext)" />.</summary>
+        <returns>A <see cref="T:System.IAsyncResult" /> that represents the asynchronous operation. Used as the input to the <see cref="M:System.ServiceModel.Security.WSTrustServiceContract.EndDispatchRequest(System.IAsyncResult)" /> method.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginProcessCore">
+      <MemberSignature Language="C#" Value="protected virtual IAsyncResult BeginProcessCore (System.ServiceModel.Channels.Message requestMessage, System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer, string requestAction, string responseAction, string trustNamespace, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult BeginProcessCore(class System.ServiceModel.Channels.Message requestMessage, class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer, string requestAction, string responseAction, string trustNamespace, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginProcessCore(System.ServiceModel.Channels.Message,System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer,System.String,System.String,System.String,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestMessage" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="requestSerializer" Type="System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" />
+        <Parameter Name="responseSerializer" Type="System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" />
+        <Parameter Name="requestAction" Type="System.String" />
+        <Parameter Name="responseAction" Type="System.String" />
+        <Parameter Name="trustNamespace" Type="System.String" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="requestMessage">The incoming request message.</param>
+        <param name="requestSerializer">The WS-Trust request Serializer.</param>
+        <param name="responseSerializer">The WS-Trust response Serializer.</param>
+        <param name="requestAction">The request SOAP action.</param>
+        <param name="responseAction">The response SOAP action.</param>
+        <param name="trustNamespace">The namespace URI of the WS-Trust version of the incoming request.</param>
+        <param name="callback">A callback that gets invoked when the asynchronous call ends.</param>
+        <param name="state">An object that contains state information for the asynchronous call.</param>
+        <summary>Handles an asynchronous call to the STS.</summary>
+        <returns>IAsyncResult that should be passed back to the End method to complete the Asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">One of the argument is null.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrust13Cancel">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrust13Cancel (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrust13Cancel(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Cancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 1.3 Cancel message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrust13CancelResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrust13CancelResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrust13CancelResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13CancelResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 RSTR/Cancel message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrust13Issue">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrust13Issue (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrust13Issue(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Issue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 Issue message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrust13IssueResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrust13IssueResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrust13IssueResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13IssueResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 RSTR/Issue message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrust13Renew">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrust13Renew (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrust13Renew(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Renew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 Renew message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrust13RenewResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrust13RenewResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrust13RenewResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13RenewResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 RSTR/Renew message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrust13Validate">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrust13Validate (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrust13Validate(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13Validate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 Validate message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrust13ValidateResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrust13ValidateResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrust13ValidateResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrust13ValidateResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust 1.3 RSTR/Validate message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005Cancel">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005Cancel (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005Cancel(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Cancel(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 Cancel message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005CancelResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005CancelResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005CancelResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005CancelResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 RSTR/Cancel message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005Issue">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005Issue (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005Issue(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Issue(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 Issue message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005IssueResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005IssueResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005IssueResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005IssueResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 RSTR/Issue message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005Renew">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005Renew (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005Renew(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Renew(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 Renew message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005RenewResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005RenewResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005RenewResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005RenewResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 RSTR/Renew message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005Validate">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005Validate (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005Validate(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005Validate(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 Validate message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BeginTrustFeb2005ValidateResponse">
+      <MemberSignature Language="C#" Value="public IAsyncResult BeginTrustFeb2005ValidateResponse (System.ServiceModel.Channels.Message request, AsyncCallback callback, object state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTrustFeb2005ValidateResponse(class System.ServiceModel.Channels.Message request, class System.AsyncCallback callback, object state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.BeginTrustFeb2005ValidateResponse(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IAsyncResult</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="callback" Type="System.AsyncCallback" />
+        <Parameter Name="state" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="request">The incoming request message.</param>
+        <param name="callback">A callback to be invoked when the asynchronous operation ends.</param>
+        <param name="state">An object that contains the asynchronous state.</param>
+        <summary>Processes an asynchronous call to the WS-Trust Feb 2005 RSTR/Validate message.</summary>
+        <returns>The <see cref="T:System.IAsyncResult" /> that should be passed back to the corresponding end method to complete the asynchronous call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDispatchContext">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Security.DispatchContext CreateDispatchContext (System.ServiceModel.Channels.Message requestMessage, string requestAction, string responseAction, string trustNamespace, System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer, System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext serializationContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Security.DispatchContext CreateDispatchContext(class System.ServiceModel.Channels.Message requestMessage, string requestAction, string responseAction, string trustNamespace, class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer, class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext serializationContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.CreateDispatchContext(System.ServiceModel.Channels.Message,System.String,System.String,System.String,System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.DispatchContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestMessage" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="requestAction" Type="System.String" />
+        <Parameter Name="responseAction" Type="System.String" />
+        <Parameter Name="trustNamespace" Type="System.String" />
+        <Parameter Name="requestSerializer" Type="System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" />
+        <Parameter Name="responseSerializer" Type="System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" />
+        <Parameter Name="serializationContext" Type="System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" />
+      </Parameters>
+      <Docs>
+        <param name="requestMessage">The incoming request message.</param>
+        <param name="requestAction">The SOAP action of the request.</param>
+        <param name="responseAction">The default SOAP action of the response.</param>
+        <param name="trustNamespace">Namespace URI of the WS-Trust version of the incoming request.</param>
+        <param name="requestSerializer">The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" /> used to deserialize incoming RST messages.</param>
+        <param name="responseSerializer">The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" /> used to deserialize incoming RSTR messages.</param>
+        <param name="serializationContext">The <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> to use when deserializing incoming messages.</param>
+        <summary>Creates a <see cref="T:System.ServiceModel.Security.DispatchContext" /> object for use by the <see cref="M:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest(System.ServiceModel.Security.DispatchContext)" /> method.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Security.DispatchContext" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSerializationContext">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext CreateSerializationContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext CreateSerializationContext() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.CreateSerializationContext" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates a <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> object using the local resolver information of the WSTrustServiceClient.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext" /> initialized with the current resolver information.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatchRequest">
+      <MemberSignature Language="C#" Value="protected virtual void DispatchRequest (System.ServiceModel.Security.DispatchContext dispatchContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DispatchRequest(class System.ServiceModel.Security.DispatchContext dispatchContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest(System.ServiceModel.Security.DispatchContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispatchContext" Type="System.ServiceModel.Security.DispatchContext" />
+      </Parameters>
+      <Docs>
+        <param name="dispatchContext">Defines the request parameters to process and exposes properties that determine the response message and action.</param>
+        <summary>Processes a WS-Trust request message, and optionally determines the appropriate response message and the WS-Addressing action for the response message.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndDispatchRequest">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Security.DispatchContext EndDispatchRequest (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Security.DispatchContext EndDispatchRequest(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndDispatchRequest(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Security.DispatchContext</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">
+          <see cref="T:System.IAsyncResult" /> that was returned by the call to the <see cref="M:System.ServiceModel.Security.WSTrustServiceContract.BeginDispatchRequest(System.ServiceModel.Security.DispatchContext,System.AsyncCallback,System.Object)" /> method.</param>
+        <summary>Completes an asynchronous call to <see cref="M:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest(System.ServiceModel.Security.DispatchContext)" />.</summary>
+        <returns>The <see cref="T:System.ServiceModel.Security.DispatchContext" /> that exposes properties that determine the response message and action.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndProcessCore">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Channels.Message EndProcessCore (IAsyncResult ar, string requestAction, string responseAction, string trustNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndProcessCore(class System.IAsyncResult ar, string requestAction, string responseAction, string trustNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndProcessCore(System.IAsyncResult,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+        <Parameter Name="requestAction" Type="System.String" />
+        <Parameter Name="responseAction" Type="System.String" />
+        <Parameter Name="trustNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> that was returned by the call to the asynchronous begin method.</param>
+        <param name="requestAction">The request SOAP Action.</param>
+        <param name="responseAction">The response SOAP Action.</param>
+        <param name="trustNamespace">The namespace URI of the current WS-Trust version.</param>
+        <summary>Completes an asynchronous call to the STS.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RST message.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">One of the arguments is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrust13Cancel">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrust13Cancel (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrust13Cancel(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Cancel(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 Cancel message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrust13CancelResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrust13CancelResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrust13CancelResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13CancelResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 RSTR/Cancel message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrust13Issue">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrust13Issue (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrust13Issue(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Issue(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 Issue message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrust13IssueResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrust13IssueResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrust13IssueResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13IssueResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 RSTR/Issue message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrust13Renew">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrust13Renew (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrust13Renew(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Renew(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 Renew message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrust13RenewResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrust13RenewResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrust13RenewResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13RenewResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 RSTR/Renew message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrust13Validate">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrust13Validate (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrust13Validate(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13Validate(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 Validate message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrust13ValidateResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrust13ValidateResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrust13ValidateResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrust13ValidateResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust 1.3 RSTR/Validate message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005Cancel">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005Cancel (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005Cancel(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Cancel(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 Cancel message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005CancelResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005CancelResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005CancelResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005CancelResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 RSTR/Cancel message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005Issue">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005Issue (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005Issue(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Issue(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Complete an Asynchronous call to Trust Feb 2005 Cancel message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005IssueResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005IssueResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005IssueResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005IssueResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 RSTR/Issue message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005Renew">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005Renew (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005Renew(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Renew(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 Renew message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005RenewResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005RenewResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005RenewResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005RenewResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 RSTR/Renew message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005Validate">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005Validate (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005Validate(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005Validate(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 Validate message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndTrustFeb2005ValidateResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndTrustFeb2005ValidateResponse (IAsyncResult ar);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message EndTrustFeb2005ValidateResponse(class System.IAsyncResult ar) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.EndTrustFeb2005ValidateResponse(System.IAsyncResult)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ar" Type="System.IAsyncResult" />
+      </Parameters>
+      <Docs>
+        <param name="ar">The <see cref="T:System.IAsyncResult" /> object returned by the Begin method that initiated the asynchronous call.</param>
+        <summary>Completes an asynchronous call to the WS-Trust Feb 2005 RSTR/Validate message.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportContract">
+      <MemberSignature Language="C#" Value="public virtual void ExportContract (System.ServiceModel.Description.WsdlExporter exporter, System.ServiceModel.Description.WsdlContractConversionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExportContract(class System.ServiceModel.Description.WsdlExporter exporter, class System.ServiceModel.Description.WsdlContractConversionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlContractConversionContext" />
+      </Parameters>
+      <Docs>
+        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
+        <param name="context">Provides mappings from exported WSDL elements to the contract description.</param>
+        <summary>When implemented in a derived class, writes custom Web Services Description Language (WSDL) elements into the generated WSDL for a contract.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Provides an implementation of the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%2A> method. The default implementation does nothing. You can override this method in a derived class to implement specific behavior.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExportEndpoint">
+      <MemberSignature Language="C#" Value="public virtual void ExportEndpoint (System.ServiceModel.Description.WsdlExporter exporter, System.ServiceModel.Description.WsdlEndpointConversionContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExportEndpoint(class System.ServiceModel.Description.WsdlExporter exporter, class System.ServiceModel.Description.WsdlEndpointConversionContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
+      </Parameters>
+      <Docs>
+        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
+        <param name="context">Provides mappings from exported WSDL elements to the endpoint description.</param>
+        <summary>Writes custom Web Services Description Language (WSDL) elements into the generated WSDL for an endpoint.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Implements the <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint%2A> method.  
+  
+ The default implementation does the following for every WS-Trust contract found:  
+  
+1.  Includes the appropriate WS-Trust namespace in the WSDL.  
+  
+2.  Imports the appropriate WS-Trust schema and all dependent schemas.  
+  
+3.  Fixes the Messages of each operation to appropriate WS-Trust equivalents. The WS-Trust Contract exposed by Windows Identity Foundation (WIF) takes a <xref:System.ServiceModel.Channels.Message> in and returns a <xref:System.ServiceModel.Channels.Message> out. But WS-Trust messages expect an RST and return an RSTR/RSTRC. This method fixes the message names with the appropriate WS-Trust messages.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FixMessageElement">
+      <MemberSignature Language="C#" Value="protected virtual void FixMessageElement (System.Web.Services.Description.ServiceDescription serviceDescription, System.Web.Services.Description.PortType portType, System.ServiceModel.Description.WsdlEndpointConversionContext context, string operationName, System.Xml.XmlQualifiedName inputMessageElement, System.Xml.XmlQualifiedName outputMessageElement);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void FixMessageElement(class System.Web.Services.Description.ServiceDescription serviceDescription, class System.Web.Services.Description.PortType portType, class System.ServiceModel.Description.WsdlEndpointConversionContext context, string operationName, class System.Xml.XmlQualifiedName inputMessageElement, class System.Xml.XmlQualifiedName outputMessageElement) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.FixMessageElement(System.Web.Services.Description.ServiceDescription,System.Web.Services.Description.PortType,System.ServiceModel.Description.WsdlEndpointConversionContext,System.String,System.Xml.XmlQualifiedName,System.Xml.XmlQualifiedName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceDescription" Type="System.Web.Services.Description.ServiceDescription" />
+        <Parameter Name="portType" Type="System.Web.Services.Description.PortType" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
+        <Parameter Name="operationName" Type="System.String" />
+        <Parameter Name="inputMessageElement" Type="System.Xml.XmlQualifiedName" />
+        <Parameter Name="outputMessageElement" Type="System.Xml.XmlQualifiedName" />
+      </Parameters>
+      <Docs>
+        <param name="serviceDescription">The <see cref="T:System.Web.Services.Description.ServiceDescription" /> that has the current state of the exported WSDL.</param>
+        <param name="portType">The WSDL PortType for which the messages are to be fixed.</param>
+        <param name="context">Provides mappings from exported WSDL elements to the endpoint description.</param>
+        <param name="operationName">The operation name inside the PortType.</param>
+        <param name="inputMessageElement">The <see cref="T:System.Xml.XmlQualifiedName" /> of the input message element.</param>
+        <param name="outputMessageElement">The <see cref="T:System.Xml.XmlQualifiedName" /> of the output message element.</param>
+        <summary>During WSDL generation, this method fixes a specified operation message element to refer to the RST and RSTR elements of the appropriate WS-Trust version.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The WS-Trust Contract exposed by Windows Identity Foundation (WIF) takes a <xref:System.ServiceModel.Channels.Message> in and returns a <xref:System.ServiceModel.Channels.Message> out. But WS-Trust messages expect an RST and return an RSTR/RSTRC. This method fixes the message names with the appropriate WS-Trust messages specified by the XML qualified names in `inputMessageElement` and `outputMessageLement`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="serviceDescription" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="portType" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="inputMessageType" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="outputMessageType" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="operationName" /> is <see langword="null" /> or Empty.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRstSecurityTokenResolver">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Selectors.SecurityTokenResolver GetRstSecurityTokenResolver ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenResolver GetRstSecurityTokenResolver() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.GetRstSecurityTokenResolver" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Selectors.SecurityTokenResolver</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that will be used when resolving tokens and keys in the WS-Trust message body.</summary>
+        <returns>The security token resolver that will be used when resolving tokens and keys in the WS-Trust message body.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSecurityHeaderTokenResolver">
+      <MemberSignature Language="C#" Value="protected virtual System.IdentityModel.Selectors.SecurityTokenResolver GetSecurityHeaderTokenResolver (System.ServiceModel.Channels.RequestContext requestContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IdentityModel.Selectors.SecurityTokenResolver GetSecurityHeaderTokenResolver(class System.ServiceModel.Channels.RequestContext requestContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.GetSecurityHeaderTokenResolver(System.ServiceModel.Channels.RequestContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Selectors.SecurityTokenResolver</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestContext" Type="System.ServiceModel.Channels.RequestContext" />
+      </Parameters>
+      <Docs>
+        <param name="requestContext">The context associated with the request.</param>
+        <summary>Returns the <see cref="T:System.IdentityModel.Selectors.SecurityTokenResolver" /> that resolves the following security tokens contained in the security header of the current WCF message request: protection token, endorsing, or signed endorsing supporting tokens.</summary>
+        <returns>The security token resolver that is used to resolve any SecurityTokenIdentifiers when deserializing RST UseKey elements or RST RenewTarget elements.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This <xref:System.IdentityModel.Selectors.SecurityTokenResolver> is used to resolve any SecurityTokenIdentifiers when deserializing RST UseKey elements or RST RenewTarget elements.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="requestContext" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="HandleException">
+      <MemberSignature Language="C#" Value="protected virtual bool HandleException (Exception ex, string trustNamespace, string action, System.ServiceModel.EnvelopeVersion requestEnvelopeVersion);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool HandleException(class System.Exception ex, string trustNamespace, string action, class System.ServiceModel.EnvelopeVersion requestEnvelopeVersion) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.HandleException(System.Exception,System.String,System.String,System.ServiceModel.EnvelopeVersion)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ex" Type="System.Exception" />
+        <Parameter Name="trustNamespace" Type="System.String" />
+        <Parameter Name="action" Type="System.String" />
+        <Parameter Name="requestEnvelopeVersion" Type="System.ServiceModel.EnvelopeVersion" />
+      </Parameters>
+      <Docs>
+        <param name="ex">The original exception.</param>
+        <param name="trustNamespace">The namespace of the current WS-Trust version.</param>
+        <param name="action">The WS-Trust action that caused the exception.</param>
+        <param name="requestEnvelopeVersion">The SOAP version of the request envelope.</param>
+        <summary>Raises the <see cref="E:System.ServiceModel.Security.WSTrustServiceContract.RequestFailed" /> event and converts the specified exception to a <see cref="T:System.ServiceModel.FaultException" /> if required. If the original exception was a <see cref="T:System.ServiceModel.FaultException" /> or if the PreserveOriginalException flag is set to <see langword="true" />, the conversion to a <see cref="T:System.ServiceModel.FaultException" /> is not performed.</summary>
+        <returns>Returns <see cref="T:System.Boolean" />. <see langword="false" /> if the original exception is thrown.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImportSchema">
+      <MemberSignature Language="C#" Value="protected virtual void ImportSchema (System.ServiceModel.Description.WsdlExporter exporter, System.ServiceModel.Description.WsdlEndpointConversionContext context, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ImportSchema(class System.ServiceModel.Description.WsdlExporter exporter, class System.ServiceModel.Description.WsdlEndpointConversionContext context, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ImportSchema(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="exporter" Type="System.ServiceModel.Description.WsdlExporter" />
+        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="exporter">The <see cref="T:System.ServiceModel.Description.WsdlExporter" /> that exports the contract information.</param>
+        <param name="context">Provides mappings from exported WSDL elements to the endpoint description.</param>
+        <param name="ns">The current WS-Trust namespace for which the schemas are imported.</param>
+        <summary>Imports all of the required schemas if not already present in the WSDL.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation imports the following schemas: WS-Trust Feb 2005 and WS-Trust 1.3. You can override this method in derived classes to import other schemas.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="exporter" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="context" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">
+          <paramref name="ns" /> is <see langword="null" /> or an empty string.</exception>
+        <exception cref="T:System.InvalidOperationException">The namespace specified in <paramref name="ns" /> is not a recognized WS-Trust namespace.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeNamespace">
+      <MemberSignature Language="C#" Value="protected virtual void IncludeNamespace (System.ServiceModel.Description.WsdlEndpointConversionContext context, string prefix, string ns);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void IncludeNamespace(class System.ServiceModel.Description.WsdlEndpointConversionContext context, string prefix, string ns) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.IncludeNamespace(System.ServiceModel.Description.WsdlEndpointConversionContext,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="System.ServiceModel.Description.WsdlEndpointConversionContext" />
+        <Parameter Name="prefix" Type="System.String" />
+        <Parameter Name="ns" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">Provides mappings from exported WSDL elements to the endpoint description.</param>
+        <param name="prefix">The prefix of the namespace to be included.</param>
+        <param name="ns">The namespace to be included.</param>
+        <summary>Adds the required WS-Trust namespaces to the WSDL if not already present.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="context" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessCore">
+      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Channels.Message ProcessCore (System.ServiceModel.Channels.Message requestMessage, System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer, string requestAction, string responseAction, string trustNamespace);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessCore(class System.ServiceModel.Channels.Message requestMessage, class System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer requestSerializer, class System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer responseSerializer, string requestAction, string responseAction, string trustNamespace) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessCore(System.ServiceModel.Channels.Message,System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer,System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer,System.String,System.String,System.String)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestMessage" Type="System.ServiceModel.Channels.Message" />
+        <Parameter Name="requestSerializer" Type="System.IdentityModel.Protocols.WSTrust.WSTrustRequestSerializer" />
+        <Parameter Name="responseSerializer" Type="System.IdentityModel.Protocols.WSTrust.WSTrustResponseSerializer" />
+        <Parameter Name="requestAction" Type="System.String" />
+        <Parameter Name="responseAction" Type="System.String" />
+        <Parameter Name="trustNamespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="requestMessage">The incoming request message.</param>
+        <param name="requestSerializer">The WS-Trust Request Serializer.</param>
+        <param name="responseSerializer">The WS-Trust Response Serializer.</param>
+        <param name="requestAction">The request SOAP action.</param>
+        <param name="responseAction">The response SOAP action.</param>
+        <param name="trustNamespace">The namespace URI of the WS-Trust version of the incoming request.</param>
+        <summary>Handles synchronous calls to the STS.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">One of the arguments is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13Cancel">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13Cancel (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Cancel(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Cancel(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 Cancel message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13CancelResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13CancelResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13CancelResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13CancelResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 RSTR/Cancel message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13Issue">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13Issue (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Issue(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Issue(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Process a WS-Trust 1.3 Issue message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13IssueResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13IssueResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13IssueResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13IssueResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 RSTR/Cancel message synchronously.</summary>
+        <returns>Returns <see cref="T:System.ServiceModel.Channels.Message" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13Renew">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13Renew (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Renew(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Renew(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 Renew message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13RenewResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13RenewResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13RenewResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13RenewResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 RSTR/Renew message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13Validate">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13Validate (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13Validate(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13Validate(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 Validate message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrust13ValidateResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrust13ValidateResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrust13ValidateResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrust13ValidateResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust 1.3 RSTR/Validate message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005Cancel">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005Cancel (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Cancel(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Cancel(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 Cancel message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005CancelResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005CancelResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005CancelResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005CancelResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 RSTR/Cancel message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005Issue">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005Issue (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Issue(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Issue(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 Issue message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005IssueResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005IssueResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005IssueResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005IssueResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 RSTR/Issue message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005Renew">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005Renew (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Renew(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Renew(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 Renew message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005RenewResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005RenewResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005RenewResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005RenewResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 RSTR/Renew message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005Validate">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005Validate (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005Validate(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005Validate(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 Validate message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcessTrustFeb2005ValidateResponse">
+      <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ProcessTrustFeb2005ValidateResponse (System.ServiceModel.Channels.Message message);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ProcessTrustFeb2005ValidateResponse(class System.ServiceModel.Channels.Message message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ProcessTrustFeb2005ValidateResponse(System.ServiceModel.Channels.Message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ServiceModel.Channels.Message</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="System.ServiceModel.Channels.Message" />
+      </Parameters>
+      <Docs>
+        <param name="message">The incoming request message.</param>
+        <summary>Processes a WS-Trust Feb 2005 RSTR/Validate message synchronously.</summary>
+        <returns>A <see cref="T:System.ServiceModel.Channels.Message" /> object that contains the serialized RSTR message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestFailed">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs&gt; RequestFailed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs&gt; RequestFailed" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Security.WSTrustServiceContract.RequestFailed" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.ServiceModel.Security.WSTrustRequestProcessingErrorEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Occurs when a failure happens processing a WS-Trust request from the client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information, see the <xref:System.ServiceModel.Security.WSTrustServiceContract.HandleException%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurityTokenServiceConfiguration">
+      <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.SecurityTokenServiceConfiguration SecurityTokenServiceConfiguration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.SecurityTokenServiceConfiguration SecurityTokenServiceConfiguration" />
+      <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustServiceContract.SecurityTokenServiceConfiguration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IdentityModel.Configuration.SecurityTokenServiceConfiguration</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the service configuration.</summary>
+        <value>A <see cref="T:System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" /> that represents the configuration for the service.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate (System.ServiceModel.Description.ContractDescription contractDescription, System.ServiceModel.Description.ServiceEndpoint endpoint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(class System.ServiceModel.Description.ContractDescription contractDescription, class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.Validate(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contractDescription" Type="System.ServiceModel.Description.ContractDescription" />
+        <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
+      </Parameters>
+      <Docs>
+        <param name="contractDescription">The contract to validate.</param>
+        <param name="endpoint">The endpoint to validate.</param>
+        <summary>When implemented in a derived class, confirms that the contract and endpoint can support the contract behavior.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default implementation just returns without throwing an exception. This indicates that the specified contract and endpoint are valid.  
+  
+ Inherited from <xref:System.ServiceModel.Description.IContractBehavior>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateDispatchContext">
+      <MemberSignature Language="C#" Value="protected virtual void ValidateDispatchContext (System.ServiceModel.Security.DispatchContext dispatchContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ValidateDispatchContext(class System.ServiceModel.Security.DispatchContext dispatchContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceContract.ValidateDispatchContext(System.ServiceModel.Security.DispatchContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispatchContext" Type="System.ServiceModel.Security.DispatchContext" />
+      </Parameters>
+      <Docs>
+        <param name="dispatchContext">The <see cref="T:System.ServiceModel.Security.DispatchContext" /> object to validate.</param>
+        <summary>Validates the specified <see cref="T:System.ServiceModel.Security.DispatchContext" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method ensures that the <xref:System.ServiceModel.Security.DispatchContext> Object represents a legal request prior to being passed into the <xref:System.ServiceModel.Security.WSTrustServiceContract.DispatchRequest%2A> method. The default implementation rejects incoming RST messages with RSTR actions and vice versa.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,228 @@
+<Type Name="SrgsSemanticInterpretationTag" FullName="System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag">
+  <TypeSignature Language="C#" Value="public class SrgsSemanticInterpretationTag : System.Speech.Recognition.SrgsGrammar.SrgsElement" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SrgsSemanticInterpretationTag extends System.Speech.Recognition.SrgsGrammar.SrgsElement" />
+  <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag" />
+  <AssemblyInfo>
+    <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Speech.Recognition.SrgsGrammar.SrgsElement</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{DebuggerDisplayString ()}")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents a tag that contains [ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-327.htm) that is run when the rule is matched.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default semantic format for System.Speech conforms to the W3C [Semantic Interpretation for Speech Recognition (SISR) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201765), where the format for `tag` elements that contain script is `semantics/1.0`. You must specify the script for <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> objects using this format. In the syntax of `semantics/1.0`:  
+  
+-   The Rule Variable of the containing rule element is identified by "out".  
+  
+-   The name of the object that has access to the Rule Variable of rule elements outside the containing rule element is identified by "rules".  
+  
+-   The result from the latest referenced rule that matches the utterance can be represented by "rules.latest()".  
+  
+ You can also associate a semantic value with a phrase in a grammar without using script, using the <xref:System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag> object.  
+  
+   
+  
+## Examples  
+ The following example creates a grammar for choosing the cities for a flight. The example uses <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> to assign a semantic value to each city, which is the code for the city's airport. The example also uses <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag> to assign a separate semantic key for each of the two references made by the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRuleRef> object named `cityRef` to the <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule> object named `cities`. The semantic keys identify a recognized city as the departure city or the arrival city for the flight. The handler for the <xref:System.Speech.Recognition.SpeechRecognitionEngine.SpeechRecognized> event uses the keys to retrieve the semantics from the recognition result.  
+  
+ In the code example, "out" refers to the Rule Variable of the containing <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule>. The expression "out.LeavingFrom" refers to the property named `LeavingFrom` of the Rule Variable on the rule named `bookFlight`.  
+  
+ The expression "rules.flightCities" refers to the Rule Variable on the rule whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id%2A> is `flightCities`, and which is the target of a rule reference. In the example, the expression "out.LeavingFrom=rules.flightCities;" assigns the value from the rule whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsRule.Id%2A> is `flightCities` to the property named `LeavingFrom` of the Rule Variable on the rule named `bookFlight`. See [Semantic Results Content](http://msdn.microsoft.com/en-us/622291af-615c-4a15-9014-2933aa3f89fe), [Grammar Rule Name Referencing](http://msdn.microsoft.com/en-us/0777e975-8665-4cc3-957b-752743cb1bb9), and [Grammar Rule Reference Referencing](http://msdn.microsoft.com/en-us/dec3a809-9aa2-4139-893f-3a549ca1e03e) for more information.  
+  
+```  
+using System;  
+using System.Speech.Recognition;  
+using System.Speech.Recognition.SrgsGrammar;  
+  
+namespace SampleRecognition  
+{  
+  class Program  
+  {  
+    static void Main(string[] args)  
+  
+    // Initialize a SpeechRecognitionEngine object.  
+    {  
+      using (SpeechRecognitionEngine recognizer =  
+         new SpeechRecognitionEngine(new System.Globalization.CultureInfo("en-US")))  
+      {  
+  
+        // Create a rule for the cities, assign a semantic value to each city.  
+        SrgsRule cities = new SrgsRule("flightCities");  
+        SrgsItem chi = new SrgsItem("Chicago");  
+        chi.Add(new SrgsSemanticInterpretationTag("out = \"ORD\";"));  
+        SrgsItem bos = new SrgsItem("Boston");  
+        bos.Add(new SrgsSemanticInterpretationTag("out = \"BOS\";"));  
+        SrgsItem mia = new SrgsItem("Miami");  
+        mia.Add(new SrgsSemanticInterpretationTag("out = \"MIA\";"));  
+        SrgsItem dal = new SrgsItem("Dallas");  
+        dal.Add(new SrgsSemanticInterpretationTag("out = \"DFW\";"));  
+  
+        SrgsOneOf airports = new SrgsOneOf(chi, bos, mia, dal);  
+        cities.Add(airports);  
+        cities.Scope = SrgsRuleScope.Private;  
+  
+        // Create a rule reference to the rule for cities.  
+        SrgsRuleRef cityRef = new SrgsRuleRef(cities);  
+  
+        // Create the root rule for the grammar.  
+        SrgsRule bookFlight = new SrgsRule("flightBooker");  
+        bookFlight.Add(new SrgsItem("I want to fly from"));  
+        bookFlight.Add(cityRef);  
+        bookFlight.Add(new SrgsSemanticInterpretationTag("out.LeavingFrom=rules.flightCities;"));  
+        bookFlight.Add(new SrgsItem("to"));  
+        bookFlight.Add(cityRef);  
+        bookFlight.Add(new SrgsSemanticInterpretationTag("out.GoingTo=rules.flightCities;"));  
+        bookFlight.Scope = SrgsRuleScope.Public;  
+  
+        // Initialize the SrgsDocument, set the root rule, add rules to the collection.  
+        SrgsDocument itinerary = new SrgsDocument(bookFlight);  
+        itinerary.Rules.Add(cities);  
+  
+        // Create a Grammar object and load it to the recognizer.  
+        Grammar g = new Grammar(itinerary);  
+        g.Name = ("City Chooser");  
+        recognizer.LoadGrammarAsync(g);  
+  
+        // Configure recognizer input.                  
+        recognizer.SetInputToDefaultAudioDevice();  
+  
+        // Attach a handler for the SpeechRecognized event.  
+        recognizer.SpeechRecognized +=  
+          new EventHandler<SpeechRecognizedEventArgs>(recognizer_SpeechRecognized);  
+  
+        // Start recognition.  
+        recognizer.RecognizeAsync();  
+        Console.WriteLine("Starting asynchronous recognition...");  
+  
+        // Keep the console window open.  
+        Console.ReadLine();  
+      }  
+    }  
+  
+    // Write to the console the text and the semantics from the recognition result.  
+    static void recognizer_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)  
+    {  
+      Console.WriteLine("Speech recognized: " + e.Result.Text);  
+      Console.WriteLine();  
+      Console.WriteLine("Semantic results:");  
+      Console.WriteLine("  The departure city is: " + e.Result.Semantics["LeavingFrom"].Value);  
+      Console.WriteLine("  The arrival city is: " + e.Result.Semantics["GoingTo"].Value);  
+    }  
+  }  
+}  
+  
+```  
+  
+ The following is the XML form of the grammar generated by the code in the example above.  
+  
+```xml  
+<?xml version="1.0" encoding="utf-8"?>  
+<grammar xml:lang="en-US" root="flightBooker" tag-format="semantics/1.0"   
+version="1.0" xmlns="http://www.w3.org/2001/06/grammar">  
+  
+  <rule id="flightBooker" scope="public">  
+    <item> I want to fly from </item>  
+    <ruleref uri="#flightCities" />   
+    <tag> out.LeavingFrom=rules.flightCities; </tag>  
+    <item> to </item>  
+    <ruleref uri="#flightCities" />   
+    <tag> out.GoingTo=rules.flightCities; </tag>  
+  </rule>  
+  
+  <rule id="flightCities" scope="private">  
+    <one-of>  
+      <item> Chicago <tag> out="ORD"; </tag></item>  
+      <item> Boston <tag> out="BOS"; </tag></item>  
+      <item> Miami <tag> out="MIA"; </tag></item>  
+      <item> Dallas <tag> out="DFW"; </tag></item>  
+    </one-of>  
+  </rule>  
+  
+</grammar>  
+```  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SrgsSemanticInterpretationTag ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a semantic interpretation tag whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script%2A> property contains an empty string.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SrgsSemanticInterpretationTag (string script);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string script) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.#ctor(System.String)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="script" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="script">A string that contains the [ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-327.htm) for the tag.</param>
+        <summary>Creates an instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag" /> class, specifying the script contents of the tag.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor creates a semantic interpretation tag whose <xref:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script%2A> property is set to the value in `script`.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="script" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Script">
+      <MemberSignature Language="C#" Value="public string Script { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Script" />
+      <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the [ECMAScript](http://www.ecma-international.org/publications/standards/Ecma-327.htm) for the tag.</summary>
+        <value>A string that contains the semantic interpretation script for the tag.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">An attempt is made to set **Script** to <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

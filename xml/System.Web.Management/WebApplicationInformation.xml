@@ -1,0 +1,303 @@
+<Type Name="WebApplicationInformation" FullName="System.Web.Management.WebApplicationInformation">
+  <TypeSignature Language="C#" Value="public sealed class WebApplicationInformation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebApplicationInformation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Management.WebApplicationInformation" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides information associated with health events.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET health monitoring allows production and operations staff to manage deployed Web applications. The <xref:System.Web.Management?displayProperty=fullName> namespace contains the health-event types responsible for packaging application health-status data and the provider types responsible for processing this data. It also contains supporting types that help during the management of health events.  
+  
+ Instances of the <xref:System.Web.Management.WebApplicationInformation> class contain information that is obtained using any of the types derived from the <xref:System.Web.Management.WebManagementEvent> type.  
+  
+ Your application needs the appropriate permissions to access protected information provided by this type.  
+  
+ The following is an excerpt of a configuration file you could use to enable ASP.NET to log error events that contain application information.  
+  
+```  
+<healthMonitoring   
+  enabled="true" heartBeatInterval="0">  
+  
+    <rules>  
+     <add   
+       name="All Errors Default"  
+       eventName="All Errors"  
+       provider="EventLogProvider"  
+       profile="Default"  
+       minInterval="00:01:00" />  
+    </rules>  
+  
+</healthMonitoring>  
+```  
+  
+> [!NOTE]
+>  In most cases you will be able to use the ASP.NET health-monitoring types as implemented, and you will control the health-monitoring system by specifying values in the `healthMonitoring` configuration section. You can also derive from the health-monitoring types to create your own custom events and providers. For an example of creating a custom event class, see the example provided in this topic.  
+  
+   
+  
+## Examples  
+ The following code example has two parts. The first part is an excerpt of the configuration file that enables ASP.NET to use a custom event. The second shows how to create that custom event by using the <xref:System.Web.Management.WebApplicationInformation> class.  
+  
+ Ensure that your custom event is raised at the proper time, that is, when the equivalent system health event it replaces would be raised.  
+  
+```  
+<healthMonitoring   
+  enabled="true" heartBeatInterval="0">  
+  
+  <eventMappings>   
+    <add name="SampleApplicationInformation"   
+        type="SamplesAspNet.SampleWebApplicationInformation, webapplicationinformation, Version=1.0.1585.27289, Culture=neutral, PublicKeyToken=3648e5c763a8239f, processorArchitecture=MSIL"/>   
+  </eventMappings>  
+  
+  <rules>   
+    <add name="Custom Application Information"  
+      eventName="SampleApplicationInformation"   
+      provider="EventLogProvider"    
+      profile="Default"/>   
+</rules>  
+  
+</healthMonitoring>  
+```  
+  
+ [!code-csharp[System.Web.Management.WebApplicationInformation#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#1)]
+ [!code-vb[System.Web.Management.WebApplicationInformation#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ApplicationDomain">
+      <MemberSignature Language="C#" Value="public string ApplicationDomain { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationDomain" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebApplicationInformation.ApplicationDomain" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the current application domain name.</summary>
+        <value>Gets the application domain name.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the application domain name.  
+  
+ [!code-csharp[System.Web.Management.WebApplicationInformation#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#4)]
+ [!code-vb[System.Web.Management.WebApplicationInformation#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationPath">
+      <MemberSignature Language="C#" Value="public string ApplicationPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebApplicationInformation.ApplicationPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the application physical path.</summary>
+        <value>The application physical path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property requires appropriate permissions to be accessed. Refer to the Permissions section.  
+  
+   
+  
+## Examples  
+ The following code example shows how to obtain the application physical path.  
+  
+ [!code-csharp[System.Web.Management.WebApplicationInformation#5](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#5)]
+ [!code-vb[System.Web.Management.WebApplicationInformation#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationVirtualPath">
+      <MemberSignature Language="C#" Value="public string ApplicationVirtualPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationVirtualPath" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebApplicationInformation.ApplicationVirtualPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the application logical path.</summary>
+        <value>The application logical path.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the application logical path.  
+  
+ [!code-csharp[System.Web.Management.WebApplicationInformation#6](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#6)]
+ [!code-vb[System.Web.Management.WebApplicationInformation#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#6)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FormatToString">
+      <MemberSignature Language="C#" Value="public void FormatToString (System.Web.Management.WebEventFormatter formatter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FormatToString(class System.Web.Management.WebEventFormatter formatter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebApplicationInformation.FormatToString(System.Web.Management.WebEventFormatter)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="formatter" Type="System.Web.Management.WebEventFormatter" />
+      </Parameters>
+      <Docs>
+        <param name="formatter">The <see cref="T:System.Web.Management.WebEventFormatter" /> that contains the tab and indentation settings used to format the Web health event information.</param>
+        <summary>Formats the application information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebApplicationInformation.FormatToString%2A> method provides a uniform format for event information, which is useful if the event data must be logged and later presented to the user. It is called internally when the provider invokes one of the <xref:System.Web.Management.WebBaseEvent.ToString%2A> methods.  
+  
+> [!NOTE]
+>  When formatting your custom event information for display, override the <xref:System.Web.Management.WebApplicationInformation.FormatToString%2A> method rather than the <xref:System.Web.Management.WebApplicationInformation.ToString%2A> method. This will avoid overwriting or tampering with sensitive system information.  
+  
+   
+  
+## Examples  
+ The following code example shows how to format custom information.  
+  
+ [!code-csharp[System.Web.Management.WebApplicationInformation#9](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#9)]
+ [!code-vb[System.Web.Management.WebApplicationInformation#9](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#9)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MachineName">
+      <MemberSignature Language="C#" Value="public string MachineName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebApplicationInformation.MachineName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the application machine name.</summary>
+        <value>The name of the machine where the application is running.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code example shows how to obtain the machine name.  
+  
+ [!code-csharp[System.Web.Management.WebApplicationInformation#7](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#7)]
+ [!code-vb[System.Web.Management.WebApplicationInformation#7](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#7)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Management.WebApplicationInformation.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Formats event information for display purposes.</summary>
+        <returns>The event information.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.Management.WebBaseEvent.ToString%2A> method formats event information by calling the <xref:System.Web.Management.WebApplicationInformation.FormatToString%2A> method.  
+  
+> [!NOTE]
+>  When formatting your custom event information for display, override the <xref:System.Web.Management.WebApplicationInformation.FormatToString%2A> method rather than this <xref:System.Web.Management.WebApplicationInformation.ToString%2A> method. This will avoid overwriting or tampering with sensitive system information.  
+  
+   
+  
+## Examples  
+ For an example of using the <xref:System.Web.Management.WebApplicationInformation.ToString%2A> method, see <xref:System.Web.Management.WebEventProvider>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrustLevel">
+      <MemberSignature Language="C#" Value="public string TrustLevel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TrustLevel" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Management.WebApplicationInformation.TrustLevel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the application trust level.</summary>
+        <value>The application trust level.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property requires appropriate permissions to be accessed. Refer to the Permissions section.  
+  
+   
+  
+## Examples  
+ The following example shows how to obtain the application-trust-level information.  
+  
+ [!code-csharp[System.Web.Management.WebApplicationInformation#8](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/CS/webapplicationinformation.cs#8)]
+ [!code-vb[System.Web.Management.WebApplicationInformation#8](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.Management.WebApplicationInformation/VB/webapplicationinformation.vb#8)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

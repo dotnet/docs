@@ -1,0 +1,47 @@
+<Type Name="VisualStyleElement+Tab" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+Tab">
+  <TypeSignature Language="C#" Value="public static class VisualStyleElement.Tab" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/Tab extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Contains classes that provide <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> objects for the parts of a tab control. This class cannot be inherited.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab> class provides a foundation in which the following classes are defined:  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.Body>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.Pane>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItem>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemBothEdges>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemLeftEdge>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TabItemRightEdge>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItem>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemBothEdges>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemLeftEdge>  
+  
+-   <xref:System.Windows.Forms.VisualStyles.VisualStyleElement.Tab.TopTabItemRightEdge>  
+  
+ Each of these classes provides one or more properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for the part of the tab control specified by the class name.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members />
+</Type>

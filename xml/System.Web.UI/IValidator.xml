@@ -1,0 +1,133 @@
+<Type Name="IValidator" FullName="System.Web.UI.IValidator">
+  <TypeSignature Language="C#" Value="public interface IValidator" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IValidator" />
+  <TypeSignature Language="DocId" Value="T:System.Web.UI.IValidator" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Defines the properties and methods that objects that participate in Web Forms validation must implement.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Classes that implement this interface represent a possible user input error. When the <xref:System.Web.UI.IValidator.Validate%2A> method is called, the class updates its <xref:System.Web.UI.IValidator.IsValid%2A> property to signify whether the error occurred. The <xref:System.Web.UI.IValidator.ErrorMessage%2A> property contains a text description of the error condition that you can display when the error occurs.  
+  
+ The <xref:System.Web.UI.WebControls.BaseValidator> class implements this interface, and all other ASP.NET validation server control classes inherit from <xref:System.Web.UI.WebControls.BaseValidator>. For information on validation server controls and how they work, see [ASP.NET Validation Controls](http://msdn.microsoft.com/library/fa2aa14d-a461-492e-9a79-c990904613ef).  
+  
+ For details on how to develop custom ASP.NET validation server controls, see [How to: Validate with a Custom Function for ASP.NET Server Controls](http://msdn.microsoft.com/library/f3ece2ad-2e88-40df-bb8b-3fe53ecf21ab).  
+  
+   
+  
+## Examples  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  -->  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ErrorMessage">
+      <MemberSignature Language="C#" Value="public string ErrorMessage { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IValidator.ErrorMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented by a class, gets or sets the error message text generated when the condition being validated fails.</summary>
+        <value>The error message to generate.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ ASP.NET developers access this property declaratively in the opening tag of a validation server control. For more information, see [Validation Server Control Syntax](http://msdn.microsoft.com/en-us/96d2c59e-693c-4079-9b53-b3ff0d9e9133).  
+  
+   
+  
+## Examples  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:System.Web.UI.IValidator.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>When implemented by a class, gets or sets a value indicating whether the user-entered content in the specified control passes validation.</summary>
+        <value>
+          <see langword="true" /> if the content is valid; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public void Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.UI.IValidator.Validate" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>When implemented by a class, evaluates the condition it checks and updates the <see cref="P:System.Web.UI.IValidator.IsValid" /> property.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+  
+> [!IMPORTANT]
+>  This example has a text box that accepts user input, which is a potential security threat. By default, ASP.NET Web pages validate that user input does not include script or HTML elements. For more information, see [Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  
+ <!-- TODO: review snippet reference [!code-csharp[IValidator_IsValid_Resubmit#1](~/samples/snippets/csharp/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/CS/ivalidator_isvalid.cs.aspx#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[IValidator_IsValid_Resubmit#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/IValidator_IsValid_ReSubmit/VB/ivalidator_isvalid.vb.aspx#1)]  -->  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

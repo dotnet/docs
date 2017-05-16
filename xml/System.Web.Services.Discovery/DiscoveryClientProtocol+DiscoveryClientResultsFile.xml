@@ -1,0 +1,76 @@
+<Type Name="DiscoveryClientProtocol+DiscoveryClientResultsFile" FullName="System.Web.Services.Discovery.DiscoveryClientProtocol+DiscoveryClientResultsFile">
+  <TypeSignature Language="C#" Value="public sealed class DiscoveryClientProtocol.DiscoveryClientResultsFile" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit DiscoveryClientProtocol/DiscoveryClientResultsFile extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the root element of an XML document containing the results of all files written when the <see cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll(System.String,System.String)" /> method is invoked.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you invoke the <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll%2A?displayProperty=fullName> method, all resolved discovery documents and a file containing a map of all those files are saved to a directory. The map file is described in XML with the root element being <xref:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile>; this class is passed to the <xref:System.Xml.Serialization.XmlSerializer> class to serialize the results.  
+  
+   
+  
+## Examples  
+ [!code-cpp[DiscoveryClientResultsFile_Results#1](~/samples/snippets/cpp/VS_Snippets_Remoting/DiscoveryClientResultsFile_Results/CPP/discoveryclientresultsfile_results.cpp#1)]
+ [!code-csharp[DiscoveryClientResultsFile_Results#1](~/samples/snippets/csharp/VS_Snippets_Remoting/DiscoveryClientResultsFile_Results/CS/discoveryclientresultsfile_results.cs#1)]
+ [!code-vb[DiscoveryClientResultsFile_Results#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/DiscoveryClientResultsFile_Results/VB/discoveryclientresultsfile_results.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DiscoveryClientResultsFile ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Results">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Discovery.DiscoveryClientResultCollection Results { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Discovery.DiscoveryClientResultCollection Results" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientResultsFile.Results" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Discovery.DiscoveryClientResultCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Web.Services.Discovery.DiscoveryClientResult" /> objects.</summary>
+        <value>A <see cref="T:System.Web.Services.Discovery.DiscoveryClientResultCollection" /> containing the results from a <see cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.ReadAll(System.String)" /> or <see cref="M:System.Web.Services.Discovery.DiscoveryClientProtocol.WriteAll(System.String,System.String)" /> invocation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ DiscoveryClientResultsFile_Results#3  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

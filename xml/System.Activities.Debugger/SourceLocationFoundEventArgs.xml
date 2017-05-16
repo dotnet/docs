@@ -1,0 +1,75 @@
+<Type Name="SourceLocationFoundEventArgs" FullName="System.Activities.Debugger.SourceLocationFoundEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class SourceLocationFoundEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SourceLocationFoundEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.SourceLocationFoundEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents SourceLocationFoundEventArgs.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SourceLocationFoundEventArgs (object target, System.Activities.Debugger.SourceLocation sourceLocation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object target, class System.Activities.Debugger.SourceLocation sourceLocation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.SourceLocationFoundEventArgs.#ctor(System.Object,System.Activities.Debugger.SourceLocation)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="sourceLocation" Type="System.Activities.Debugger.SourceLocation" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target location.</param>
+        <param name="sourceLocation">The source location.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Debugger.SourceLocationFoundEventArgs" /> class using the target and source location.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceLocation">
+      <MemberSignature Language="C#" Value="public System.Activities.Debugger.SourceLocation SourceLocation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Debugger.SourceLocation SourceLocation" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocationFoundEventArgs.SourceLocation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Debugger.SourceLocation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the specific location in a target source code file.</summary>
+        <value>The specific location in a target source code file.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public object Target { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Target" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.SourceLocationFoundEventArgs.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the target source code files for the specific location.</summary>
+        <value>The target source code files for the specific location.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

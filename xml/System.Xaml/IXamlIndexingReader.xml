@@ -1,0 +1,66 @@
+<Type Name="IXamlIndexingReader" FullName="System.Xaml.IXamlIndexingReader">
+  <TypeSignature Language="C#" Value="public interface IXamlIndexingReader" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlIndexingReader" />
+  <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlIndexingReader" />
+  <AssemblyInfo>
+    <AssemblyName>System.Xaml</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a service that represents indexed node control for a simple implementation of a node-based XAML reader.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Xaml.IXamlIndexingReader> maintains its own index in an externally provided list of nodes. The list can be accessed by using an Index delegate. This design enables multiple XAML readers to access the same fixed-index node set.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.IXamlIndexingReader.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the number of nodes in the current external node set.</summary>
+        <value>The number of nodes in the current external node set.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentIndex">
+      <MemberSignature Language="C#" Value="public int CurrentIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentIndex" />
+      <MemberSignature Language="DocId" Value="P:System.Xaml.IXamlIndexingReader.CurrentIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the index number of the current reader position for the indexed list view of XAML nodes.</summary>
+        <value>The index number of the current reader position.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using the <xref:System.Xaml.IXamlIndexingReader.CurrentIndex%2A> property, you are using a XAML node reader mode that does not have to use `Read` or `Skip` to traverse all intermediate nodes.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

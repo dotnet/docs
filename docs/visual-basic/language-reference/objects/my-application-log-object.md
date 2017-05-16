@@ -15,8 +15,8 @@ helpviewer_keywords:
   - "My.Application.Log object"
 ms.assetid: 296147f9-1109-4a55-9b5e-047f1ab9466c
 caps.latest.revision: 32
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "de-de"
@@ -43,7 +43,7 @@ Provides a property and methods to write event and exception information to the 
  For more information, see [Logging Information from the Application](../../../visual-basic/developing-apps/programming/log-info/logging-information-from-the-application.md).  
   
 > [!NOTE]
->  You can also use classes in the .NET Framework to log information from your application. For more information, see [Tracing and Instrumenting Applications](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743).  
+>  You can also use classes in the .NET Framework to log information from your application. For more information, see [Tracing and Instrumenting Applications](../../../framework/debug-trace-profile/tracing-and-instrumenting-applications.md).  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.Logging>  

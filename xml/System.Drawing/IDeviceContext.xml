@@ -1,0 +1,80 @@
+<Type Name="IDeviceContext" FullName="System.Drawing.IDeviceContext">
+  <TypeSignature Language="C#" Value="public interface IDeviceContext : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDeviceContext implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:System.Drawing.IDeviceContext" />
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>Defines methods for obtaining and releasing an existing handle to a Windows device context.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A device context defines the graphics object for drawing on a Windows-based device. An example of a class that implements the <xref:System.Drawing.IDeviceContext> interface is the <xref:System.Drawing.Graphics> class.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetHdc">
+      <MemberSignature Language="C#" Value="public IntPtr GetHdc ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetHdc() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.IDeviceContext.GetHdc" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the handle to a Windows device context.</summary>
+        <returns>An <see cref="T:System.IntPtr" /> representing the handle of a device context.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.IDeviceContext.GetHdc%2A> and <xref:System.Drawing.IDeviceContext.ReleaseHdc%2A> are two methods that allow you to get and release the handle for a Windows-based device. You should always follow a call to <xref:System.Drawing.IDeviceContext.GetHdc%2A> with a call to <xref:System.Drawing.IDeviceContext.ReleaseHdc%2A> when you are finished with the Windows handle.  
+  
+ <xref:System.Drawing.IDeviceContext.GetHdc%2A> is not designed to obtain handles created using Windows GDI methods such as `CreateDC` or `CreateCompatibleDC`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseHdc">
+      <MemberSignature Language="C#" Value="public void ReleaseHdc ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseHdc() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Drawing.IDeviceContext.ReleaseHdc" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Releases the handle of a Windows device context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Drawing.IDeviceContext.GetHdc%2A> and <xref:System.Drawing.IDeviceContext.ReleaseHdc%2A> are two methods that allow you to get and release the handle for a Windows-based device. You should always follow a call to <xref:System.Drawing.IDeviceContext.GetHdc%2A> with a call to <xref:System.Drawing.IDeviceContext.ReleaseHdc%2A> when you are finished with the Windows handle.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

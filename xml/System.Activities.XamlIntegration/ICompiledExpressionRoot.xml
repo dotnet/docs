@@ -1,0 +1,161 @@
+<Type Name="ICompiledExpressionRoot" FullName="System.Activities.XamlIntegration.ICompiledExpressionRoot">
+  <TypeSignature Language="C#" Value="public interface ICompiledExpressionRoot" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICompiledExpressionRoot" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies information about a compiled expression root.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanExecuteExpression">
+      <MemberSignature Language="C#" Value="public bool CanExecuteExpression (string expressionText, bool isReference, System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locations, out int expressionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExecuteExpression(string expressionText, bool isReference, class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locations, int32 expressionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.CanExecuteExpression(System.String,System.Boolean,System.Collections.Generic.IList{System.Activities.LocationReference},System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expressionText" Type="System.String" />
+        <Parameter Name="isReference" Type="System.Boolean" />
+        <Parameter Name="locations" Type="System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt;" />
+        <Parameter Name="expressionId" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="expressionText">The expression text used.</param>
+        <param name="isReference">
+          <see langword="True" /> if reference; otherwise, <see langword="false" />.</param>
+        <param name="locations">The collection of locations.</param>
+        <param name="expressionId">The expression identifier.</param>
+        <summary>Indicates whether the <see cref="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" /> can execute expression.</summary>
+        <returns>
+          <see langword="True" /> if the <see cref="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" /> can execute expression; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExpressionTreeForExpression">
+      <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression GetExpressionTreeForExpression (int expressionId, System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locationReferences);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.Expressions.Expression GetExpressionTreeForExpression(int32 expressionId, class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locationReferences) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.GetExpressionTreeForExpression(System.Int32,System.Collections.Generic.IList{System.Activities.LocationReference})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.Expressions.Expression</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expressionId" Type="System.Int32" />
+        <Parameter Name="locationReferences" Type="System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="expressionId">The expression identifier.</param>
+        <param name="locationReferences">The location reference.</param>
+        <summary>Gets the expression tree used for the expression.</summary>
+        <returns>The expression tree used for the expression.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLanguage">
+      <MemberSignature Language="C#" Value="public string GetLanguage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLanguage() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.GetLanguage" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Gets the language used in the expression root.</summary>
+        <returns>The language used.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRequiredLocations">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; GetRequiredLocations (int expressionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;string&gt; GetRequiredLocations(int32 expressionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.GetRequiredLocations(System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expressionId" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="expressionId">The expression identifier.</param>
+        <summary>Gets the list of required locations for the expression root.</summary>
+        <returns>The list of required locations for the expression root.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeExpression">
+      <MemberSignature Language="C#" Value="public object InvokeExpression (int expressionId, System.Collections.Generic.IList&lt;System.Activities.Location&gt; locations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeExpression(int32 expressionId, class System.Collections.Generic.IList`1&lt;class System.Activities.Location&gt; locations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.InvokeExpression(System.Int32,System.Collections.Generic.IList{System.Activities.Location})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expressionId" Type="System.Int32" />
+        <Parameter Name="locations" Type="System.Collections.Generic.IList&lt;System.Activities.Location&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="expressionId">The expression identifier.</param>
+        <param name="locations">The locations used.</param>
+        <summary>Invokes the <see cref="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" /> using the specified expression identifier and locations.</summary>
+        <returns>The invoked expression.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeExpression">
+      <MemberSignature Language="C#" Value="public object InvokeExpression (int expressionId, System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locations, System.Activities.ActivityContext activityContext);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeExpression(int32 expressionId, class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locations, class System.Activities.ActivityContext activityContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.InvokeExpression(System.Int32,System.Collections.Generic.IList{System.Activities.LocationReference},System.Activities.ActivityContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="expressionId" Type="System.Int32" />
+        <Parameter Name="locations" Type="System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt;" />
+        <Parameter Name="activityContext" Type="System.Activities.ActivityContext" />
+      </Parameters>
+      <Docs>
+        <param name="expressionId">The expression identifier.</param>
+        <param name="locations">The locations.</param>
+        <param name="activityContext">The activity context.</param>
+        <summary>Invokes the <see cref="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" /> using the specified expression identifier and locations and activity context.</summary>
+        <returns>The invoked expression.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

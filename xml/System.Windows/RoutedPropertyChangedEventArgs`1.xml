@@ -1,0 +1,168 @@
+<Type Name="RoutedPropertyChangedEventArgs&lt;T&gt;" FullName="System.Windows.RoutedPropertyChangedEventArgs&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class RoutedPropertyChangedEventArgs&lt;T&gt; : System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoutedPropertyChangedEventArgs`1&lt;T&gt; extends System.Windows.RoutedEventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.RoutedPropertyChangedEventArgs`1" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Windows.RoutedEventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of the dependency property that has changed.</typeparam>
+    <summary>Provides data about a change in value to a dependency property as reported by particular routed events, including the previous and current value of the property that changed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a generic class where the class is used for event data of different events. Different routed events can specify the type constraint of the generic to produce a type-specific event data class. Once the class is constrained, the <xref:System.Windows.RoutedPropertyChangedEventArgs%601.OldValue%2A> and <xref:System.Windows.RoutedPropertyChangedEventArgs%601.NewValue%2A> properties also reflect these type constraints; thus you can use a common event data class for different property changed events without requiring different delegates for each possible property type.  
+  
+ Routed events that reports a property change where the delegate incorporates this event data class include <xref:System.Windows.Controls.Primitives.RangeBase.ValueChanged>, where the type constraint (and old and new values passed in the arguments) is of type <xref:System.Double>, and <xref:System.Windows.Controls.TreeView.SelectedItemChanged>, where the type constraint is <xref:System.Object>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutedPropertyChangedEventArgs (T oldValue, T newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T oldValue, !T newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.RoutedPropertyChangedEventArgs`1.#ctor(`0,`0)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">Previous value of the property, prior to the event being raised.</param>
+        <param name="newValue">Current value of the property at the time of the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.RoutedPropertyChangedEventArgs`1" /> class, with provided old and new values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The types passed must match the declared constraints of the specific generic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoutedPropertyChangedEventArgs (T oldValue, T newValue, System.Windows.RoutedEvent routedEvent);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T oldValue, !T newValue, class System.Windows.RoutedEvent routedEvent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.RoutedPropertyChangedEventArgs`1.#ctor(`0,`0,System.Windows.RoutedEvent)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="routedEvent" Type="System.Windows.RoutedEvent" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">Previous value of the property, prior to the event being raised.</param>
+        <param name="newValue">Current value of the property at the time of the event.</param>
+        <param name="routedEvent">Identifier of the routed event that this arguments class carries information for.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.RoutedPropertyChangedEventArgs`1" /> class, with provided old and new values, and an event identifier.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The types passed for `oldValue` and `newValue` must match the declared constraints of the specific generic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeEventHandler">
+      <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.RoutedPropertyChangedEventArgs`1.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="genericHandler" Type="System.Delegate" />
+        <Parameter Name="genericTarget" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="genericHandler">The generic handler to call in a type-specific way.</param>
+        <param name="genericTarget">The target to call the handler on.</param>
+        <summary>Invokes event handlers in a type-specific way, which can increase event system efficiency.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This implementation casts the generic handler as a <xref:System.Windows.RoutedPropertyChangedEventHandler%601> and then invokes it. For details on this implementation pattern and the reasons for it, see <xref:System.Windows.RoutedEventArgs.InvokeEventHandler%2A> and [Routed Events Overview](~/docs/framework/wpf/advanced/routed-events-overview.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NewValue">
+      <MemberSignature Language="C#" Value="public T NewValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T NewValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RoutedPropertyChangedEventArgs`1.NewValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the new value of a property as reported by a property changed event.</summary>
+        <value>The generic value. In a practical implementation of the <see cref="T:System.Windows.RoutedPropertyChangedEventArgs`1" />, the generic type of this property is replaced with the constrained type of the implementation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value and type constraint of this property will be established by the constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OldValue">
+      <MemberSignature Language="C#" Value="public T OldValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T OldValue" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.RoutedPropertyChangedEventArgs`1.OldValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the previous value of the property as reported by a property changed event.</summary>
+        <value>The generic value. In a practical implementation of the <see cref="T:System.Windows.RoutedPropertyChangedEventArgs`1" />, the generic type of this property is replaced with the constrained type of the implementation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value and type constraint of this property will be established by the <xref:System.Windows.RoutedPropertyChangedEventArgs%601> constructor's type arguments.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

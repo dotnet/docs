@@ -1,0 +1,56 @@
+<Type Name="TextCompositionEventHandler" FullName="System.Windows.Input.TextCompositionEventHandler">
+  <TypeSignature Language="C#" Value="public delegate void TextCompositionEventHandler(object sender, TextCompositionEventArgs e);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextCompositionEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Input.TextCompositionEventHandler" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationCore</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="sender" Type="System.Object" />
+    <Parameter Name="e" Type="System.Windows.Input.TextCompositionEventArgs" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="sender">The object where the event handler is attached.</param>
+    <param name="e">The event data.</param>
+    <summary>Represents the method that will handle the routed events related to the <see cref="T:System.Windows.Input.TextComposition" /> and <see cref="T:System.Windows.Input.TextCompositionManager" /> classes, for example <see cref="E:System.Windows.UIElement.TextInput" />.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This delegate is used with the following attached events:  
+  
+-   <xref:System.Windows.Input.TextCompositionManager.TextInput?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.TextCompositionManager.TextInputStart?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.TextCompositionManager.TextInputUpdate?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.TextCompositionManager.PreviewTextInput?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.TextCompositionManager.PreviewTextInputStart?displayProperty=fullName>  
+  
+-   <xref:System.Windows.Input.TextCompositionManager.PreviewTextInputUpdate?displayProperty=fullName>  
+  
+ This delegate is also used with the following routed events on base elements. These routed events forward some of the previously listed attached events to make them more accessible to the general element model in [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)].  
+  
+-   <xref:System.Windows.UIElement.TextInput?displayProperty=fullName>  
+  
+-   <xref:System.Windows.UIElement.PreviewTextInput?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.TextInput?displayProperty=fullName>  
+  
+-   <xref:System.Windows.ContentElement.PreviewTextInput?displayProperty=fullName>  
+  
+ The attached events and the base element routed events share their event data, and the bubbling and tunneling versions of the routed events also share event data. This can affect the handled characteristics of the event as it travels the event route. For details, see [Input Overview](~/docs/framework/wpf/advanced/input-overview.md).  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+</Type>

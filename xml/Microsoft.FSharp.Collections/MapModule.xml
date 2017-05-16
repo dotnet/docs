@@ -1,0 +1,1007 @@
+<Type Name="MapModule" FullName="Microsoft.FSharp.Collections.MapModule">
+  <TypeSignature Language="C#" Value="public static class MapModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed MapModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.MapModule" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>2.3.98.1</AssemblyVersion>
+    <AssemblyVersion>3.98.4.0</AssemblyVersion>
+    <AssemblyVersion>3.100.4.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationRepresentation(Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.RequireQualifiedAccess</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; Add&lt;TKey,T&gt; (TKey key, T value, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; Add&lt;TKey, T&gt;(!!TKey key, !!T value, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Add``2(``0,``1,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("add")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContainsKey&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static bool ContainsKey&lt;TKey,T&gt; (TKey key, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ContainsKey&lt;TKey, T&gt;(!!TKey key, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.ContainsKey``2(``0,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("containsKey")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="key">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; Empty&lt;TKey,T&gt; ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; Empty&lt;TKey, T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Empty``2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("empty")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.GeneralizableValue</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exists&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static bool Exists&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool Exists&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Exists``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("exists")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;&gt;" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; Filter&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; Filter&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Filter``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("filter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;&gt;" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Find&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static T Find&lt;TKey,T&gt; (TKey key, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T Find&lt;TKey, T&gt;(!!TKey key, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Find``2(``0,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("find")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="key">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindKey&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static TKey FindKey&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TKey FindKey&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.FindKey``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("findKey")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TKey</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;&gt;" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fold&lt;TKey,T,TState&gt;">
+      <MemberSignature Language="C#" Value="public static TState Fold&lt;TKey,T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,TState&gt;&gt;&gt; folder, TState state, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TState Fold&lt;TKey, T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TState&gt;&gt;&gt; folder, !!TState state, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Fold``3(Microsoft.FSharp.Core.FSharpFunc{``2,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}}},``2,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("fold")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TState</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="folder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,TState&gt;&gt;&gt;" />
+        <Parameter Name="state" Type="TState" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TState">To be added.</typeparam>
+        <param name="folder">To be added.</param>
+        <param name="state">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FoldBack&lt;TKey,T,TState&gt;">
+      <MemberSignature Language="C#" Value="public static TState FoldBack&lt;TKey,T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TState,TState&gt;&gt;&gt; folder, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table, TState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TState FoldBack&lt;TKey, T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, !!TState&gt;&gt;&gt; folder, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table, !!TState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.FoldBack``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``2,``2}}},Microsoft.FSharp.Collections.FSharpMap{``0,``1},``2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("foldBack")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TState</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="folder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TState,TState&gt;&gt;&gt;" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+        <Parameter Name="state" Type="TState" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TState">To be added.</typeparam>
+        <param name="folder">To be added.</param>
+        <param name="table">To be added.</param>
+        <param name="state">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForAll&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static bool ForAll&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForAll&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.ForAll``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("forall")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;&gt;" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static bool IsEmpty&lt;TKey,T&gt; (Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsEmpty&lt;TKey, T&gt;(class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.IsEmpty``2(Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("isEmpty")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Iterate&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static void Iterate&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;&gt; action, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Iterate&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt;&gt; action, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Iterate``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("iter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;&gt;" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="action">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Map&lt;TKey,T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,TResult&gt; Map&lt;TKey,T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt; mapping, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!TResult&gt; Map&lt;TKey, T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt;&gt; mapping, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Map``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("map")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpMap&lt;TKey,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt;" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="mapping">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfArray&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; OfArray&lt;TKey,T&gt; (Tuple&lt;TKey,T&gt;[] elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; OfArray&lt;TKey, T&gt;(class System.Tuple`2&lt;!!TKey, !!T&gt;[] elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.OfArray``2(System.Tuple{``0,``1}[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("ofArray")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="elements" Type="System.Tuple&lt;TKey,T&gt;[]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfList&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; OfList&lt;TKey,T&gt; (Microsoft.FSharp.Collections.FSharpList&lt;Tuple&lt;TKey,T&gt;&gt; elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; OfList&lt;TKey, T&gt;(class Microsoft.FSharp.Collections.FSharpList`1&lt;class System.Tuple`2&lt;!!TKey, !!T&gt;&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.OfList``2(Microsoft.FSharp.Collections.FSharpList{System.Tuple{``0,``1}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("ofList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="elements" Type="Microsoft.FSharp.Collections.FSharpList&lt;System.Tuple&lt;TKey,T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfSeq&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; OfSeq&lt;TKey,T&gt; (System.Collections.Generic.IEnumerable&lt;Tuple&lt;TKey,T&gt;&gt; elements);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; OfSeq&lt;TKey, T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;!!TKey, !!T&gt;&gt; elements) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.OfSeq``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("ofSeq")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="elements" Type="System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;TKey,T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="elements">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Partition&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;,Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;&gt; Partition&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt;, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt;&gt; Partition&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Partition``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("partition")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;,Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;&gt;" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pick&lt;TKey,T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static TResult Pick&lt;TKey,T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt;&gt; chooser, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TResult Pick&lt;TKey, T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt;&gt; chooser, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Pick``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpOption{``2}}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("pick")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="chooser" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt;&gt;" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="chooser">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; Remove&lt;TKey,T&gt; (TKey key, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; Remove&lt;TKey, T&gt;(!!TKey key, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Remove``2(``0,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("remove")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="key">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Tuple&lt;TKey,T&gt;[] ToArray&lt;TKey,T&gt; (Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!TKey, !!T&gt;[] ToArray&lt;TKey, T&gt;(class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.ToArray``2(Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toArray")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Tuple&lt;TKey,T&gt;[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToList&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpList&lt;Tuple&lt;TKey,T&gt;&gt; ToList&lt;TKey,T&gt; (Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpList`1&lt;class System.Tuple`2&lt;!!TKey, !!T&gt;&gt; ToList&lt;TKey, T&gt;(class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.ToList``2(Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpList&lt;System.Tuple&lt;TKey,T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSeq&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Tuple&lt;TKey,T&gt;&gt; ToSeq&lt;TKey,T&gt; (Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;!!TKey, !!T&gt;&gt; ToSeq&lt;TKey, T&gt;(class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.ToSeq``2(Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toSeq")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Tuple&lt;TKey,T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryFind&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; TryFind&lt;TKey,T&gt; (TKey key, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; TryFind&lt;TKey, T&gt;(!!TKey key, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.TryFind``2(``0,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("tryFind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="key">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryFindKey&lt;TKey,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TKey&gt; TryFindKey&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TKey&gt; TryFindKey&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.TryFindKey``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("tryFindKey")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;TKey&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;&gt;" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryPick&lt;TKey,T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt; TryPick&lt;TKey,T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt;&gt; chooser, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt; TryPick&lt;TKey, T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt;&gt; chooser, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.TryPick``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpOption{``2}}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>2.3.98.1</AssemblyVersion>
+        <AssemblyVersion>3.98.4.0</AssemblyVersion>
+        <AssemblyVersion>3.100.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("tryPick")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="chooser" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt;&gt;" />
+        <Parameter Name="table" Type="Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="chooser">To be added.</param>
+        <param name="table">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

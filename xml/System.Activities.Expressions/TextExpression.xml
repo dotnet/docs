@@ -1,0 +1,487 @@
+<Type Name="TextExpression" FullName="System.Activities.Expressions.TextExpression">
+  <TypeSignature Language="C#" Value="public static class TextExpression" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TextExpression extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.TextExpression" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a text expression.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DefaultNamespaces">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; DefaultNamespaces { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IList`1&lt;string&gt; DefaultNamespaces" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.TextExpression.DefaultNamespaces" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default namespaces within the activity.</summary>
+        <value>The default namespaces within the activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultReferences">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt; DefaultReferences { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class System.Collections.Generic.IList`1&lt;class System.Activities.Expressions.AssemblyReference&gt; DefaultReferences" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.TextExpression.DefaultReferences" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the default references within the activity.</summary>
+        <value>The default references within the activity.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNamespaces">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetNamespaces (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetNamespaces(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetNamespaces(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <summary>Gets the collection of namespaces used in the text expression.</summary>
+        <returns>The collection of namespaces.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNamespacesForImplementation">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetNamespacesForImplementation (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetNamespacesForImplementation(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetNamespacesForImplementation(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <summary>Get the collection of namespaces for the implementation of the text expression.</summary>
+        <returns>The collection of namespaces.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNamespacesInScope">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;string&gt; GetNamespacesInScope (System.Activities.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;string&gt; GetNamespacesInScope(class System.Activities.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetNamespacesInScope(System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The activity for the scope.</param>
+        <summary>Gets the namespaces that are being used within the scope.</summary>
+        <returns>The namespaces that are being used within the scope.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferences">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt; GetReferences (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Activities.Expressions.AssemblyReference&gt; GetReferences(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetReferences(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <summary>Gets the list of references used for the text expression.</summary>
+        <returns>The list of references used.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencesForImplementation">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt; GetReferencesForImplementation (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Activities.Expressions.AssemblyReference&gt; GetReferencesForImplementation(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetReferencesForImplementation(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <summary>Gets the list of references used for the implementation of the text expression.</summary>
+        <returns>The list of references used.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetReferencesInScope">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt; GetReferencesInScope (System.Activities.Activity activity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IList`1&lt;class System.Activities.Expressions.AssemblyReference&gt; GetReferencesInScope(class System.Activities.Activity activity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.GetReferencesInScope(System.Activities.Activity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="activity" Type="System.Activities.Activity" />
+      </Parameters>
+      <Docs>
+        <param name="activity">The activity for the scope.</param>
+        <summary>Gets the references that are being used within the scope.</summary>
+        <returns>The references that are being used within the scope.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNamespaces">
+      <MemberSignature Language="C#" Value="public static void SetNamespaces (object target, System.Collections.Generic.IList&lt;string&gt; namespaces);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNamespaces(object target, class System.Collections.Generic.IList`1&lt;string&gt; namespaces) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetNamespaces(System.Object,System.Collections.Generic.IList{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="namespaces" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <param name="namespaces">The generic list of the namespaces.</param>
+        <summary>Sets the namespace for the Text expression with specified target and namespaces.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNamespaces">
+      <MemberSignature Language="C#" Value="public static void SetNamespaces (object target, string[] namespaces);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNamespaces(object target, string[] namespaces) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetNamespaces(System.Object,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="namespaces" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <param name="namespaces">The array of namespaces.</param>
+        <summary>Sets the namespace for the Text expression with specified target and namespaces.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNamespacesForImplementation">
+      <MemberSignature Language="C#" Value="public static void SetNamespacesForImplementation (object target, System.Collections.Generic.IList&lt;string&gt; namespaces);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNamespacesForImplementation(object target, class System.Collections.Generic.IList`1&lt;string&gt; namespaces) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetNamespacesForImplementation(System.Object,System.Collections.Generic.IList{System.String})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="namespaces" Type="System.Collections.Generic.IList&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <param name="namespaces">The list of namespaces.</param>
+        <summary>Represents an object to set namespaces for implementation of the text expression with specified target and namespaces.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetNamespacesForImplementation">
+      <MemberSignature Language="C#" Value="public static void SetNamespacesForImplementation (object target, string[] namespaces);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNamespacesForImplementation(object target, string[] namespaces) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetNamespacesForImplementation(System.Object,System.String[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="namespaces" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <param name="namespaces">The collection of namespaces.</param>
+        <summary>Represents an object to set namespaces for implementation of the text expression with specified target and namespaces.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReferences">
+      <MemberSignature Language="C#" Value="public static void SetReferences (object target, System.Activities.Expressions.AssemblyReference[] references);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetReferences(object target, class System.Activities.Expressions.AssemblyReference[] references) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetReferences(System.Object,System.Activities.Expressions.AssemblyReference[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="references" Type="System.Activities.Expressions.AssemblyReference[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <param name="references">The collection of references</param>
+        <summary>Represents an object to set references of the text expression with specified target and reference.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReferences">
+      <MemberSignature Language="C#" Value="public static void SetReferences (object target, System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt; references);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetReferences(object target, class System.Collections.Generic.IList`1&lt;class System.Activities.Expressions.AssemblyReference&gt; references) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetReferences(System.Object,System.Collections.Generic.IList{System.Activities.Expressions.AssemblyReference})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="references" Type="System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <param name="references">The generic list of references.</param>
+        <summary>Represents an object to set references of the text expression with specified target and reference.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReferencesForImplementation">
+      <MemberSignature Language="C#" Value="public static void SetReferencesForImplementation (object target, System.Activities.Expressions.AssemblyReference[] references);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetReferencesForImplementation(object target, class System.Activities.Expressions.AssemblyReference[] references) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetReferencesForImplementation(System.Object,System.Activities.Expressions.AssemblyReference[])" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="references" Type="System.Activities.Expressions.AssemblyReference[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <param name="references">The collection of the assembly reference.</param>
+        <summary>Represents an object to set references for implementation of the text expression with specified target and reference.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetReferencesForImplementation">
+      <MemberSignature Language="C#" Value="public static void SetReferencesForImplementation (object target, System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt; references);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetReferencesForImplementation(object target, class System.Collections.Generic.IList`1&lt;class System.Activities.Expressions.AssemblyReference&gt; references) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.SetReferencesForImplementation(System.Object,System.Collections.Generic.IList{System.Activities.Expressions.AssemblyReference})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+        <Parameter Name="references" Type="System.Collections.Generic.IList&lt;System.Activities.Expressions.AssemblyReference&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target.</param>
+        <param name="references">The generic list of the assembly reference.</param>
+        <summary>Represents an object to set references for implementation of the text expression with specified target and reference.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeNamespaces">
+      <MemberSignature Language="C#" Value="public static bool ShouldSerializeNamespaces (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShouldSerializeNamespaces(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.ShouldSerializeNamespaces(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target object.</param>
+        <summary>Represents a value that indicates whether the object should serialize namespaces.</summary>
+        <returns>
+          <see langword="True" /> if the object should serialize namespaces; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeNamespacesForImplementation">
+      <MemberSignature Language="C#" Value="public static bool ShouldSerializeNamespacesForImplementation (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShouldSerializeNamespacesForImplementation(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.ShouldSerializeNamespacesForImplementation(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target object.</param>
+        <summary>Represents a value that indicates whether the target should serialize namespaces for implementation.</summary>
+        <returns>
+          <see langword="True" /> if the target should serialize namespaces for implementation; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeReferences">
+      <MemberSignature Language="C#" Value="public static bool ShouldSerializeReferences (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShouldSerializeReferences(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.ShouldSerializeReferences(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target object.</param>
+        <summary>Represents a value that indicates whether the object should serialize references.</summary>
+        <returns>
+          <see langword="True" /> if the object should serialize references; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShouldSerializeReferencesForImplementation">
+      <MemberSignature Language="C#" Value="public static bool ShouldSerializeReferencesForImplementation (object target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ShouldSerializeReferencesForImplementation(object target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.TextExpression.ShouldSerializeReferencesForImplementation(System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target object.</param>
+        <summary>Represents a value that indicates whether the text expression should serialize namespaces for implementation.</summary>
+        <returns>
+          <see langword="True" /> if the text expression should serialize namespaces for implementation; otherwise, <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

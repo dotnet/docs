@@ -1,0 +1,44 @@
+<Type Name="DbDeleteCommandTree" FullName="System.Data.Common.CommandTrees.DbDeleteCommandTree">
+  <TypeSignature Language="C#" Value="public sealed class DbDeleteCommandTree : System.Data.Common.CommandTrees.DbModificationCommandTree" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DbDeleteCommandTree extends System.Data.Common.CommandTrees.DbModificationCommandTree" />
+  <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbDeleteCommandTree" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Data.Common.CommandTrees.DbModificationCommandTree</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents a single row delete operation expressed as a command tree. This class cannot be inherited.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Predicate">
+      <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbExpression Predicate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbExpression Predicate" />
+      <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbDeleteCommandTree.Predicate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Data.Common.CommandTrees.DbExpression</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets an <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the predicate used to determine which members of the target collection should be deleted.</summary>
+        <value>An <see cref="T:System.Data.Common.CommandTrees.DbExpression" /> that specifies the predicate used to determine which members of the target collection should be deleted.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The predicate can include only the following elements: <xref:System.Data.Common.CommandTrees.DbComparisonExpression> (represents equality), <xref:System.Data.Common.CommandTrees.DbConstantExpression>, <xref:System.Data.Common.CommandTrees.DbIsNullExpression>, <xref:System.Data.Common.CommandTrees.DbPropertyExpression>, <xref:System.Data.Common.CommandTrees.DbVariableReferenceExpression> (references the target), <xref:System.Data.Common.CommandTrees.DbAndExpression>, <xref:System.Data.Common.CommandTrees.DbOrExpression>, and <xref:System.Data.Common.CommandTrees.DbNotExpression>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

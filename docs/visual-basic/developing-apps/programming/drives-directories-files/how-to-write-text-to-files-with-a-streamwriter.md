@@ -17,8 +17,8 @@ helpviewer_keywords:
   - "writing to files, StreamWriter"
 ms.assetid: 99762e57-ef46-4dcc-8959-a8f79c22f067
 caps.latest.revision: 14
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

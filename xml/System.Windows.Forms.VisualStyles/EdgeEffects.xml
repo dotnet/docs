@@ -1,0 +1,110 @@
+<Type Name="EdgeEffects" FullName="System.Windows.Forms.VisualStyles.EdgeEffects">
+  <TypeSignature Language="C#" Value="public enum EdgeEffects" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EdgeEffects extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.EdgeEffects" />
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Specifies the visual effects that can be applied to the edges of a visual style element.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Forms.VisualStyles.EdgeEffects> values are used as argument values in the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer.DrawEdge%2A?displayProperty=fullName> method.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FillInterior">
+      <MemberSignature Language="C#" Value="FillInterior" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeEffects FillInterior = int32(2048)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.FillInterior" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The area within the element borders is filled.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Flat">
+      <MemberSignature Language="C#" Value="Flat" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeEffects Flat = int32(4096)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.Flat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border is flat.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Mono">
+      <MemberSignature Language="C#" Value="Mono" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeEffects Mono = int32(32768)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.Mono" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border is one-dimensional.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeEffects None = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.None" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border is drawn without any effects.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Soft">
+      <MemberSignature Language="C#" Value="Soft" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.EdgeEffects Soft = int32(16384)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.EdgeEffects.Soft" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.VisualStyles.EdgeEffects</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The border is soft.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

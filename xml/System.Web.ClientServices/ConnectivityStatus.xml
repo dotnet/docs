@@ -1,0 +1,68 @@
+<Type Name="ConnectivityStatus" FullName="System.Web.ClientServices.ConnectivityStatus">
+  <TypeSignature Language="C#" Value="public static class ConnectivityStatus" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ConnectivityStatus extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.ConnectivityStatus" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents the status of an application's network connection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.ClientServices.ConnectivityStatus> class to specify the network connectivity of Windows-based applications that use client application services. When you set the <xref:System.Web.ClientServices.ConnectivityStatus.IsOffline%2A> property to `true`, the client service providers use the offline cache instead of attempting to access the corresponding Web services. The offline status is stored on a per-user and per-application basis. For more information, see [How to: Work Offline with Client Application Services](http://msdn.microsoft.com/en-us/f792cb16-8520-4a0f-9dc9-07bfbc454e38).  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this class to update the offline status depending on a check box value. In this example, a <xref:System.Windows.Forms.CheckBox.CheckedChanged> event handler updates the offline status. If the user sets the application to the online state, the event handler attempts to revalidate the user. However, if the authentication server is unavailable, the event handler returns the application to the offline state.  
+  
+ [!code-csharp[ClientApplicationServices#315](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#315)]
+ [!code-vb[ClientApplicationServices#315](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#315)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsOffline">
+      <MemberSignature Language="C#" Value="public static bool IsOffline { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsOffline" />
+      <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.ConnectivityStatus.IsOffline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether an application is in offline mode.</summary>
+        <value>
+          <see langword="true" /> if the application is in offline mode; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you set the <xref:System.Web.ClientServices.ConnectivityStatus.IsOffline%2A> property, the <xref:System.Web.ClientServices.ConnectivityStatus> class caches the value to the local file system. The client service providers in the <xref:System.Web.ClientServices.Providers> namespace check this value to determine whether to use the offline data cache instead of attempting to access the associated [!INCLUDE[ajax_current_short](~/includes/ajax-current-short-md.md)] authentication, roles, and profile services.  
+  
+   
+  
+## Examples  
+ The following example code demonstrates how to use this property to update the offline status depending on a check box value. In this example, a <xref:System.Windows.Forms.CheckBox.CheckedChanged> event handler updates the offline status. If the user sets the application to the online state, the event handler attempts to revalidate the user. However, if the authentication server is unavailable, the event handler returns the application to the offline state.  
+  
+ [!code-csharp[ClientApplicationServices#315](~/samples/snippets/csharp/VS_Snippets_Winforms/ClientApplicationServices/CS/Class1.cs#315)]
+ [!code-vb[ClientApplicationServices#315](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ClientApplicationServices/VB/Class1.vb#315)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

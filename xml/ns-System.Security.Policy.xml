@@ -1,0 +1,6 @@
+<Namespace Name="System.Security.Policy">
+  <Docs>
+    <summary>The <see cref="N:System.Security.Policy" /> namespace contains code groups, membership conditions, and evidence. These three types of classes are used to create the rules applied by the common language runtime security policy system. Evidence classes are the input to security policy and membership conditions are the switches; together these create policy statements and determine the granted permission set. Policy levels and code groups are the structure of the policy hierarchy. Code groups are the encapsulation of a rule and are arranged hierarchically in a policy level.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Namespace>

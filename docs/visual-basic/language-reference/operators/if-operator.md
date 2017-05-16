@@ -22,8 +22,8 @@ helpviewer_keywords:
   - "If Operator [Visual Basic]"
 ms.assetid: dd56c9df-7cd4-442c-9ba6-20c70ee44c8f
 caps.latest.revision: 19
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

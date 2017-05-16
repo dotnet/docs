@@ -1,0 +1,96 @@
+<Type Name="ScrollItemPattern" FullName="System.Windows.Automation.ScrollItemPattern">
+  <TypeSignature Language="C#" Value="public class ScrollItemPattern : System.Windows.Automation.BasePattern" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollItemPattern extends System.Windows.Automation.BasePattern" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ScrollItemPattern" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Automation.BasePattern</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Represents child controls of containers that support the <see cref="T:System.Windows.Automation.ScrollPattern" /> control pattern.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ See [Control Pattern Mapping for UI Automation Clients](~/docs/framework/ui-automation/control-pattern-mapping-for-ui-automation-clients.md) for examples of controls that can implement this control pattern.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Pattern">
+      <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollItemPattern.Pattern" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.AutomationPattern</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Identifies the <see cref="T:System.Windows.Automation.ScrollItemPattern" /> control pattern.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.ScrollItemPatternIdentifiers>.  
+  
+ The pattern identifier is passed to methods such as <xref:System.Windows.Automation.AutomationElement.GetCurrentPattern%2A> to retrieve the control pattern of interest from the specified <xref:System.Windows.Automation.AutomationElement>.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.ScrollItemPattern> control pattern is obtained from an <xref:System.Windows.Automation.AutomationElement>.  
+  
+ [!code-csharp[UIAScrollItemPattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAScrollItemPattern_snip/CSharp/UIAScrollItemPattern_snippets.cs#100)]
+ [!code-vb[UIAScrollItemPattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAScrollItemPattern_snip/VisualBasic/UIAScrollItemPattern_snippets.vb#100)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScrollIntoView">
+      <MemberSignature Language="C#" Value="public void ScrollIntoView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollIntoView() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ScrollItemPattern.ScrollIntoView" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Scrolls the content area of a container object in order to display the <see cref="T:System.Windows.Automation.AutomationElement" /> within the visible region (viewport) of the container.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method does not provide the ability to specify the position of the <xref:System.Windows.Automation.AutomationElement> within the visible region (viewport) of the container.  
+  
+   
+  
+## Examples  
+ In the following example, a <xref:System.Windows.Automation.SelectionItemPattern.Select%2A>, <xref:System.Windows.Automation.SelectionItemPattern.AddToSelection%2A> or <xref:System.Windows.Automation.SelectionItemPattern.RemoveFromSelection%2A> event handler has been declared that attempts to scroll a <xref:System.Windows.Automation.SelectionItemPattern> object into the viewable region of its container control.  
+  
+ [!code-csharp[UIAScrollItemPattern_snip#100](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAScrollItemPattern_snip/CSharp/UIAScrollItemPattern_snippets.cs#100)]
+ [!code-vb[UIAScrollItemPattern_snip#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAScrollItemPattern_snip/VisualBasic/UIAScrollItemPattern_snippets.vb#100)]  
+[!code-csharp[UIAScrollItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAScrollItemPattern_snip/CSharp/UIAScrollItemPattern_snippets.cs#101)]
+[!code-vb[UIAScrollItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAScrollItemPattern_snip/VisualBasic/UIAScrollItemPattern_snippets.vb#101)]  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.InvalidOperationException">The item could not be scrolled into view.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,463 @@
+<Type Name="ConnectionOptions" FullName="System.Management.ConnectionOptions">
+  <TypeSignature Language="C#" Value="public class ConnectionOptions : System.Management.ManagementOptions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionOptions extends System.Management.ManagementOptions" />
+  <TypeSignature Language="DocId" Value="T:System.Management.ConnectionOptions" />
+  <AssemblyInfo>
+    <AssemblyName>System.Management</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Management.ManagementOptions</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Specifies all settings required to make a WMI connection.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with default connection options.  
+  
+ [!code-csharp[wminet_ConnectionOptions#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions/cs/ConnectionOptions.cs#1)]
+ [!code-vb[wminet_ConnectionOptions#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions/vb/ConnectionOptions.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectionOptions ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ConnectionOptions.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ConnectionOptions" /> class for the connection operation, using default values. This is the default constructor.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with default connection options.  
+  
+ [!code-csharp[wminet_ConnectionOptions()#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions()/cs/ConnectionOptions().cs#1)]
+ [!code-vb[wminet_ConnectionOptions()#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions()/vb/ConnectionOptions().vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectionOptions (string locale, string username, System.Security.SecureString password, string authority, System.Management.ImpersonationLevel impersonation, System.Management.AuthenticationLevel authentication, bool enablePrivileges, System.Management.ManagementNamedValueCollection context, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string locale, string username, class System.Security.SecureString password, string authority, valuetype System.Management.ImpersonationLevel impersonation, valuetype System.Management.AuthenticationLevel authentication, bool enablePrivileges, class System.Management.ManagementNamedValueCollection context, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ConnectionOptions.#ctor(System.String,System.String,System.Security.SecureString,System.String,System.Management.ImpersonationLevel,System.Management.AuthenticationLevel,System.Boolean,System.Management.ManagementNamedValueCollection,System.TimeSpan)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="locale" Type="System.String" />
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.Security.SecureString" />
+        <Parameter Name="authority" Type="System.String" />
+        <Parameter Name="impersonation" Type="System.Management.ImpersonationLevel" />
+        <Parameter Name="authentication" Type="System.Management.AuthenticationLevel" />
+        <Parameter Name="enablePrivileges" Type="System.Boolean" />
+        <Parameter Name="context" Type="System.Management.ManagementNamedValueCollection" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="locale">The locale to be used for the connection.</param>
+        <param name="username">The user name to be used for the connection. If null, the credentials of the currently logged-on user are used.</param>
+        <param name="password">The password for the given user name. If the user name is also null, the credentials used will be those of the currently logged-on user.</param>
+        <param name="authority">The authority to be used to authenticate the specified user.</param>
+        <param name="impersonation">The COM impersonation level to be used for the connection.</param>
+        <param name="authentication">The COM authentication level to be used for the connection.</param>
+        <param name="enablePrivileges">true to enable special user privileges; otherwise, false. This parameter should only be used when performing an operation that requires special Windows NT user privileges.</param>
+        <param name="context">A provider-specific, named value pairs object to be passed through to the provider.</param>
+        <param name="timeout">Reserved for future use.</param>
+        <summary>Creates a new ConnectionOption.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ConnectionOptions (string locale, string username, string password, string authority, System.Management.ImpersonationLevel impersonation, System.Management.AuthenticationLevel authentication, bool enablePrivileges, System.Management.ManagementNamedValueCollection context, TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string locale, string username, string password, string authority, valuetype System.Management.ImpersonationLevel impersonation, valuetype System.Management.AuthenticationLevel authentication, bool enablePrivileges, class System.Management.ManagementNamedValueCollection context, valuetype System.TimeSpan timeout) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ConnectionOptions.#ctor(System.String,System.String,System.String,System.String,System.Management.ImpersonationLevel,System.Management.AuthenticationLevel,System.Boolean,System.Management.ManagementNamedValueCollection,System.TimeSpan)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="locale" Type="System.String" />
+        <Parameter Name="username" Type="System.String" />
+        <Parameter Name="password" Type="System.String" />
+        <Parameter Name="authority" Type="System.String" />
+        <Parameter Name="impersonation" Type="System.Management.ImpersonationLevel" />
+        <Parameter Name="authentication" Type="System.Management.AuthenticationLevel" />
+        <Parameter Name="enablePrivileges" Type="System.Boolean" />
+        <Parameter Name="context" Type="System.Management.ManagementNamedValueCollection" />
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="locale">The locale to be used for the connection.</param>
+        <param name="username">The user name to be used for the connection. If null, the credentials of the currently logged-on user are used.</param>
+        <param name="password">The password for the given user name. If the user name is also null, the credentials used will be those of the currently logged-on user.</param>
+        <param name="authority">The authority to be used to authenticate the specified user.</param>
+        <param name="impersonation">The COM impersonation level to be used for the connection.</param>
+        <param name="authentication">The COM authentication level to be used for the connection.</param>
+        <param name="enablePrivileges">
+          <see langword="true" /> to enable special user privileges; otherwise, <see langword="false" />. This parameter should only be used when performing an operation that requires special Windows NT user privileges.</param>
+        <param name="context">A provider-specific, named value pairs object to be passed through to the provider.</param>
+        <param name="timeout">Reserved for future use.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.ConnectionOptions" /> class to be used for a WMI connection, using the specified values.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+  
+ [!code-csharp[wminet_ConnectionOptions(9)#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions(9)/cs/ConnectionOptions(9).cs#1)]
+ [!code-vb[wminet_ConnectionOptions(9)#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions(9)/vb/ConnectionOptions(9).vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authentication">
+      <MemberSignature Language="C#" Value="public System.Management.AuthenticationLevel Authentication { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Management.AuthenticationLevel Authentication" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ConnectionOptions.Authentication" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.AuthenticationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the COM authentication level to be used for operations in this connection.</summary>
+        <value>Returns an <see cref="T:System.Management.AuthenticationLevel" /> enumeration value indicating the COM authentication level used for a connection to the local or a remote computer.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ On Windows 2000 and below, the WMI service will request Connect level authentication, while on Windows XP and higher it will request Packet level authentication. If the client requires a specific authentication setting, this property can be used to control the authentication level on this particular connection. For example, the property can be set to <xref:System.Management.AuthenticationLevel?displayProperty=fullName> if the client requires all communication to be encrypted.  
+  
+## Property Value  
+ The COM authentication level to be used for operations in this connection. The default value is <xref:System.Management.AuthenticationLevel?displayProperty=fullName>, which indicates that the client will use the authentication level requested by the server, according to the standard DCOM negotiation process.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+  
+ [!code-csharp[wminet_ConnectionOptions_Authentication#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authentication/cs/ConnectionOptions_Authentication.cs#1)]
+ [!code-vb[wminet_ConnectionOptions_Authentication#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authentication/vb/ConnectionOptions_Authentication.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Authority">
+      <MemberSignature Language="C#" Value="public string Authority { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Authority" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ConnectionOptions.Authority" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the authority to be used to authenticate the specified user.</summary>
+        <value>Returns a <see cref="T:System.String" /> that defines the authority used to authenticate the specified user.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The property must be passed as follows: If it begins with the string "Kerberos:", Kerberos authentication will be used and this property should contain a Kerberos principal name. For example,  
+  
+```  
+Kerberos:<principal name>  
+```  
+  
+ If the property value begins with the string "NTLMDOMAIN:", NTLM authentication will be used and the property should contain a NTLM domain name. For example,  
+  
+```  
+NTLMDOMAIN:<domain name>  
+```  
+  
+ If the property is null, NTLM authentication will be used and the NTLM domain of the current user will be used.  
+  
+## Property Value  
+ If not `null`, this property can contain the name of the Windows NT/Windows 2000 domain in which to obtain the user to authenticate.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+  
+ [!code-csharp[wminet_ConnectionOptions_Authority#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authority/cs/ConnectionOptions_Authority.cs#1)]
+ [!code-vb[wminet_ConnectionOptions_Authority#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Authority/vb/ConnectionOptions_Authority.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clone">
+      <MemberSignature Language="C#" Value="public override object Clone ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Management.ConnectionOptions.Clone" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a copy of the object.</summary>
+        <returns>The cloned object.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnablePrivileges">
+      <MemberSignature Language="C#" Value="public bool EnablePrivileges { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnablePrivileges" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ConnectionOptions.EnablePrivileges" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether user privileges need to be enabled for the connection operation. This property should only be used when the operation performed requires a certain user privilege to be enabled (for example, a machine restart).</summary>
+        <value>Returns a <see cref="T:System.Boolean" /> value indicating whether user privileges need to be enabled for the connection operation.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+## Property Value  
+ `true` if user privileges need to be enabled for the connection operation; otherwise, `false`. The default value is `false`.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Impersonation">
+      <MemberSignature Language="C#" Value="public System.Management.ImpersonationLevel Impersonation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Management.ImpersonationLevel Impersonation" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ConnectionOptions.Impersonation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Management.ImpersonationLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the COM impersonation level to be used for operations in this connection.</summary>
+        <value>Returns an <see cref="T:System.Management.ImpersonationLevel" /> enumeration value indicating the impersonation level used to connect to WMI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Management.ImpersonationLevel?displayProperty=fullName> setting is advantageous when the provider is a trusted application or service. It eliminates the need for the provider to perform client identity and access checks for the requested operations. However, if for some reason the provider cannot be trusted, allowing it to impersonate the client may constitute a security threat. In such cases, we recommend that this property be set by the client to a lower value, such as <xref:System.Management.ImpersonationLevel?displayProperty=fullName>. Note that this may cause failure of the provider to perform the requested operations, for lack of sufficient permissions or inability to perform access checks.  
+  
+## Property Value  
+ The COM impersonation level to be used for operations in this connection. The default value is <xref:System.Management.ImpersonationLevel?displayProperty=fullName>, which indicates that the WMI provider can impersonate the client when performing the requested operations in this connection.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+  
+ [!code-csharp[wminet_ConnectionOptions_Impersonation#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Impersonation/cs/ConnectionOptions_Impersonation.cs#1)]
+ [!code-vb[wminet_ConnectionOptions_Impersonation#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Impersonation/vb/ConnectionOptions_Impersonation.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locale">
+      <MemberSignature Language="C#" Value="public string Locale { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Locale" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ConnectionOptions.Locale" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the locale to be used for the connection operation.</summary>
+        <value>Returns a <see cref="T:System.String" /> value used for the locale in a connection to WMI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For Microsoft locale identifiers, the format of the string is "MS_*xxx*", where *xxx* is a string in hexadecimal form that indicates the Locale Identification (LCID); for example, American English would appear as "MS_409".  
+  
+## Property Value  
+ The default value is DEFAULTLOCALE.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+  
+ [!code-csharp[wminet_ConnectionOptions_Locale#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Locale/cs/ConnectionOptions_Locale.cs#1)]
+ [!code-vb[wminet_ConnectionOptions_Locale#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_Locale/vb/ConnectionOptions_Locale.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Password">
+      <MemberSignature Language="C#" Value="public string Password { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Password" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ConnectionOptions.Password" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets the password for the specified user.</summary>
+        <value>Returns a <see cref="T:System.String" /> value used for the password in a connection to WMI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A blank string ("") specifies a valid zero-length password.  
+  
+ Hard-coding a password is a security threat.  Use security precautions such as encrypting a password, or prompting the user for a password when you set the <xref:System.Management.ConnectionOptions.Password%2A> property.  
+  
+## Property Value  
+ The default value is `null`. If the user name is also `null`, the credentials used will be those of the currently logged-on user.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecurePassword">
+      <MemberSignature Language="C#" Value="public System.Security.SecureString SecurePassword { set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Security.SecureString SecurePassword" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ConnectionOptions.SecurePassword" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Security.SecureString</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Sets the password for the specified user.</summary>
+        <value>Returns a SecureString value used for the password in a connection to WMI.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Username">
+      <MemberSignature Language="C#" Value="public string Username { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Username" />
+      <MemberSignature Language="DocId" Value="P:System.Management.ConnectionOptions.Username" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the user name to be used for the connection operation.</summary>
+        <value>Returns a <see cref="T:System.String" /> value used as the user name in a connection to WMI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the user name is from a domain other than the current domain, the string may contain the domain name and user name, separated by a backslash: string 'username' = "EnterDomainHere\\\EnterUsernameHere". The `strUser` parameter cannot be an empty string.  
+  
+## Property Value  
+ `null` if the connection will use the currently logged-on user; otherwise, a string representing the user name. The default value is `null`.  
+  
+## .NET Framework Security  
+ Full trust for the immediate caller. This member cannot be used by partially trusted code. For more information, see [Using Libraries from Partially Trusted Code](~/docs/framework/misc/using-libraries-from-partially-trusted-code.md).  
+  
+   
+  
+## Examples  
+ The following example connects to a remote computer and displays information about the operating system on the remote computer. A <xref:System.Management.ConnectionOptions> is created to connect to the remote computer with the desired connection options.  
+  
+ [!code-csharp[wminet_ConnectionOptions_UserName#1](~/samples/snippets/csharp/VS_Snippets_WindowsServer/wminet_ConnectionOptions_UserName/cs/ConnectionOptions_Username.cs#1)]
+ [!code-vb[wminet_ConnectionOptions_UserName#1](~/samples/snippets/visualbasic/VS_Snippets_WindowsServer/wminet_ConnectionOptions_UserName/vb/ConnectionOptions_Username.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

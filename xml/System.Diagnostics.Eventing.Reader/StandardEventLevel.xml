@@ -1,0 +1,114 @@
+<Type Name="StandardEventLevel" FullName="System.Diagnostics.Eventing.Reader.StandardEventLevel">
+  <TypeSignature Language="C#" Value="public enum StandardEventLevel" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StandardEventLevel extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.StandardEventLevel" />
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines the standard event levels that are used in the Event Log service. The level defines the severity of the event. Custom event levels can be defined beyond these standard levels. For more information about levels, see <see cref="T:System.Diagnostics.Eventing.Reader.EventLevel" />.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Critical">
+      <MemberSignature Language="C#" Value="Critical" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventLevel Critical = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.Critical" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This level corresponds to critical errors, which is a serious error that has caused a major failure.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Error">
+      <MemberSignature Language="C#" Value="Error" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventLevel Error = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.Error" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This level corresponds to normal errors that signify a problem.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Informational">
+      <MemberSignature Language="C#" Value="Informational" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventLevel Informational = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.Informational" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This level corresponds to informational events or messages that are not errors. These events can help trace the progress or state of an application.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="LogAlways">
+      <MemberSignature Language="C#" Value="LogAlways" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventLevel LogAlways = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.LogAlways" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This value indicates that not filtering on the level is done during the event publishing.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Verbose">
+      <MemberSignature Language="C#" Value="Verbose" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventLevel Verbose = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.Verbose" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This level corresponds to lengthy events or messages.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Warning">
+      <MemberSignature Language="C#" Value="Warning" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.StandardEventLevel Warning = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventLevel.Warning" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Diagnostics.Eventing.Reader.StandardEventLevel</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>This level corresponds to warning events. For example, an event that gets published because a disk is nearing full capacity is a warning event.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

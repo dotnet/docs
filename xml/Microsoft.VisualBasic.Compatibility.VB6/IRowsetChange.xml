@@ -1,0 +1,134 @@
+<Type Name="IRowsetChange" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowsetChange">
+  <TypeSignature Language="C#" Value="public interface IRowsetChange" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowsetChange" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowsetChange" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+    <AssemblyVersion>10.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Microsoft.VisualBasic.Compatibility.* classes are obsolete and supported within 32 bit processes only. http://go.microsoft.com/fwlink/?linkid=160862")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("0C733A05-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides an implementation of the OLE DB <see langword="IRowsetChange" /> interface for use by applications upgraded from Visual Basic 6.0.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DeleteRows">
+      <MemberSignature Language="C#" Value="public void DeleteRows (int hChapterReserved, int cRows, int[] rghRows, out int[] rgRowStatus);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void DeleteRows(int32 hChapterReserved, int32 cRows, int32[] rghRows, int32[] rgRowStatus) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetChange.DeleteRows(System.Int32,System.Int32,System.Int32[],System.Int32[]@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hChapterReserved" Type="System.Int32" />
+        <Parameter Name="cRows" Type="System.Int32" />
+        <Parameter Name="rghRows" Type="System.Int32[]" />
+        <Parameter Name="rgRowStatus" Type="System.Int32[]&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hChapterReserved">The chapter handle.</param>
+        <param name="cRows">The number of rows to be deleted.</param>
+        <param name="rghRows">An array of handles of the rows to be deleted.</param>
+        <param name="rgRowStatus">An array with <c>cRows</c> elements in which to return values indicating the status of each row specified in <c>rghRows</c>.</param>
+        <summary>Deletes rows.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertRow">
+      <MemberSignature Language="C#" Value="public void InsertRow (int hChapterReserved, int hAccessor, IntPtr pData, out int hRow);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void InsertRow(int32 hChapterReserved, int32 hAccessor, native int pData, int32 hRow) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetChange.InsertRow(System.Int32,System.Int32,System.IntPtr,System.Int32@)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hChapterReserved" Type="System.Int32" />
+        <Parameter Name="hAccessor" Type="System.Int32" />
+        <Parameter Name="pData" Type="System.IntPtr" />
+        <Parameter Name="hRow" Type="System.Int32&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="hChapterReserved">The chapter handle.</param>
+        <param name="hAccessor">The handle of the accessor to use.</param>
+        <param name="pData">A pointer to memory containing the new data values, at offsets that correspond to the bindings in the accessor.</param>
+        <param name="hRow">A pointer to memory in which to return the handle of the new row.</param>
+        <summary>Creates and initializes a new row.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetData">
+      <MemberSignature Language="C#" Value="public void SetData (int hRow, int hAccessor, IntPtr pData);" />
+      <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetData(int32 hRow, int32 hAccessor, native int pData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetChange.SetData(System.Int32,System.Int32,System.IntPtr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hRow" Type="System.Int32" />
+        <Parameter Name="hAccessor" Type="System.Int32" />
+        <Parameter Name="pData" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="hRow">The handle of the row in which to set data.</param>
+        <param name="hAccessor">The handle of the accessor to use.</param>
+        <param name="pData">A pointer to memory containing the new data values, at offsets that correspond to the bindings in the accessor.</param>
+        <summary>Sets data values in one or more columns in a row.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ [!INCLUDE[Note_compatibility](~/includes/note-compatibility-md.md)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

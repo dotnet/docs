@@ -20,8 +20,8 @@ helpviewer_keywords:
   - "XML [Visual Basic], accessing"
 ms.assetid: a16a4b13-54be-432c-82b3-a87091464ada
 caps.latest.revision: 22
-author: "stevehoag"
-ms.author: "shoag"
+author: dotnet-bot
+ms.author: dotnetcontent
 
 translation.priority.ht: 
   - "cs-cz"

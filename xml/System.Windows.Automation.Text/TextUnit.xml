@@ -1,0 +1,161 @@
+<Type Name="TextUnit" FullName="System.Windows.Automation.Text.TextUnit">
+  <TypeSignature Language="C#" Value="public enum TextUnit" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextUnit extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.TextUnit" />
+  <AssemblyInfo>
+    <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("A044E5C8-FC20-4747-8CC8-1487F9CBB680")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents pre-defined units of text for the purposes of navigation within a document.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Any method using <xref:System.Windows.Automation.Text.TextUnit> will deprecate `up` to the next supported <xref:System.Windows.Automation.Text.TextUnit> if the given <xref:System.Windows.Automation.Text.TextUnit> is not supported by the control.  
+  
+ The order, from smallest unit to largest, is listed below.  
+  
+-   Character  
+  
+-   Format  
+  
+-   Word  
+  
+-   Line  
+  
+-   Paragraph  
+  
+-   Page  
+  
+-   Document  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Character">
+      <MemberSignature Language="C#" Value="Character" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Character = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Character" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text unit is one character in length.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Document">
+      <MemberSignature Language="C#" Value="Document" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Document = int32(6)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Document" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text unit is an entire document in length.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Format">
+      <MemberSignature Language="C#" Value="Format" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Format = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Format" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text unit is the length of a single, common format specification, such as bold, italic, or similar.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Line">
+      <MemberSignature Language="C#" Value="Line" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Line = int32(3)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Line" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text unit is one line in length.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Page">
+      <MemberSignature Language="C#" Value="Page" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Page = int32(5)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Page" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text unit is one document-specific page in length.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Paragraph">
+      <MemberSignature Language="C#" Value="Paragraph" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Paragraph = int32(4)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Paragraph" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text unit is one paragraph in length.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Word">
+      <MemberSignature Language="C#" Value="Word" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Text.TextUnit Word = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Text.TextUnit.Word" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Automation.Text.TextUnit</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies that the text unit is one word in length.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

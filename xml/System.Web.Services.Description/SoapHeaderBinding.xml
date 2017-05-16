@@ -1,0 +1,293 @@
+<Type Name="SoapHeaderBinding" FullName="System.Web.Services.Description.SoapHeaderBinding">
+  <TypeSignature Language="C#" Value="public class SoapHeaderBinding : System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapHeaderBinding extends System.Web.Services.Description.ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.SoapHeaderBinding" />
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Web.Services.Description.ServiceDescriptionFormatExtension</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Web.Services.Configuration.XmlFormatExtension("header", "http://schemas.xmlsoap.org/wsdl/soap/", typeof(System.Web.Services.Description.InputBinding), typeof(System.Web.Services.Description.OutputBinding))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Represents an extensibility element added to an <see cref="T:System.Web.Services.Description.InputBinding" /> or an <see cref="T:System.Web.Services.Description.OutputBinding" /> within an XML Web service.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For more information about specifying protocols for XML Web services, see [&#91;\<topic://cpconbuildingaspnetwebservices>&#93;](http://msdn.microsoft.com/en-us/01dfc27c-c68e-4910-a0aa-5e4c2a766b0c). For more information about Web Services Description Language (WSDL), see the specification at http://www.w3.org/TR/wsdl/.  
+  
+   
+  
+## Examples  
+ [!code-cpp[SoapHeaderBinding#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderBinding/CPP/soapheaderbinding.cpp#1)]
+ [!code-csharp[SoapHeaderBinding#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderBinding/CS/soapheaderbinding.cs#1)]
+ [!code-vb[SoapHeaderBinding#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderBinding/VB/soapheaderbinding.vb#1)]  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SoapHeaderBinding ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.SoapHeaderBinding.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> class.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Encoding">
+      <MemberSignature Language="C#" Value="public string Encoding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Encoding" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapHeaderBinding.Encoding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("encodingStyle")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a URI representing the encoding style used to encode the SOAP header.</summary>
+        <value>A string containing a URI. The default value is an empty string ("").</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value of this property should be set only if the value of the <xref:System.Web.Services.Description.SoapHeaderBinding.Use%2A> property is `Encoded`. Otherwise the XML Web service will exhibit unexpected behavior.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fault">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.SoapHeaderFaultBinding Fault { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.SoapHeaderFaultBinding Fault" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapHeaderBinding.Fault" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlElement("headerfault")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.SoapHeaderFaultBinding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the extension type controlling the output in a WSDL document for the <see langword="headerfault" /> XML element of a SOAP header.</summary>
+        <value>A <see cref="T:System.Web.Services.Description.SoapHeaderFaultBinding" /> representing the SOAP header types used to transmit error information.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property did not exist in version 1.0 of the Microsoft .NET Framework SDK.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapToProperty">
+      <MemberSignature Language="C#" Value="public bool MapToProperty { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool MapToProperty" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapHeaderBinding.MapToProperty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlIgnore</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating whether the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> instance is mapped to a specific property in generated proxy classes.</summary>
+        <value>
+          <see langword="true" /> if the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> maps to a specific property; otherwise <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[SoapHeaderBinding_MapToProperty#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderBinding_MapToProperty/CPP/soapheaderbinding_maptoproperty.cpp#1)]
+ [!code-csharp[SoapHeaderBinding_MapToProperty#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderBinding_MapToProperty/CS/soapheaderbinding_maptoproperty.cs#1)]
+ [!code-vb[SoapHeaderBinding_MapToProperty#1](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderBinding_MapToProperty/VB/soapheaderbinding_maptoproperty.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Message">
+      <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName Message { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName Message" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapHeaderBinding.Message" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("message")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Xml.XmlQualifiedName</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value specifying the name of the <see cref="T:System.Web.Services.Description.Message" /> within the XML Web service to which the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> applies.</summary>
+        <value>An <see cref="T:System.Xml.XmlQualifiedName" /> representing the name of the <see cref="T:System.Web.Services.Description.Message" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default value of this property is an empty string ("").  
+  
+   
+  
+## Examples  
+ [!code-cpp[SoapHeaderBinding_Use#2](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderBinding_Use/CPP/soapheaderbinding_use.cpp#2)]
+ [!code-csharp[SoapHeaderBinding_Use#2](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderBinding_Use/CS/soapheaderbinding_use.cs#2)]
+ [!code-vb[SoapHeaderBinding_Use#2](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderBinding_Use/VB/soapheaderbinding_use.vb#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Namespace">
+      <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapHeaderBinding.Namespace" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("namespace")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Get or sets the URI representing the location of the specification for encoding of content not specifically defined by the <see cref="P:System.Web.Services.Description.SoapHeaderBinding.Encoding" /> property.</summary>
+        <value>A string representing a URI.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This property will return an empty string ("") if the property value has not been set. The value should only be set if the value of the <xref:System.Web.Services.Description.SoapHeaderBinding.Use%2A> property is `Encoded`. Otherwise the XML Web service will exhibit unexpected behavior.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Part">
+      <MemberSignature Language="C#" Value="public string Part { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Part" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapHeaderBinding.Part" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("part")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets a value indicating to which <see cref="T:System.Web.Services.Description.MessagePart" /> within the XML Web service the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> applies.</summary>
+        <value>A string representing the name of the <see cref="T:System.Web.Services.Description.MessagePart" /> to which the <see cref="T:System.Web.Services.Description.SoapHeaderBinding" /> applies.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ [!code-cpp[SoapHeaderBinding_Use#3](~/samples/snippets/cpp/VS_Snippets_Remoting/SoapHeaderBinding_Use/CPP/soapheaderbinding_use.cpp#3)]
+ [!code-csharp[SoapHeaderBinding_Use#3](~/samples/snippets/csharp/VS_Snippets_Remoting/SoapHeaderBinding_Use/CS/soapheaderbinding_use.cs#3)]
+ [!code-vb[SoapHeaderBinding_Use#3](~/samples/snippets/visualbasic/VS_Snippets_Remoting/SoapHeaderBinding_Use/VB/soapheaderbinding_use.vb#3)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Use">
+      <MemberSignature Language="C#" Value="public System.Web.Services.Description.SoapBindingUse Use { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Description.SoapBindingUse Use" />
+      <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.SoapHeaderBinding.Use" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Xml.Serialization.XmlAttribute("use")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Web.Services.Description.SoapBindingUse</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Specifies whether the header is encoded using rules specified by the <see cref="P:System.Web.Services.Description.SoapHeaderBinding.Encoding" /> property, or is encapsulated within a concrete XML schema.</summary>
+        <value>One of the <see cref="T:System.Web.Services.Description.SoapBindingUse" /> values. The default is <see langword="Default" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ SoapHeaderBinding_Use#4  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,73 @@
+<Type Name="DataGridRowDetailsVisibilityMode" FullName="System.Windows.Controls.DataGridRowDetailsVisibilityMode">
+  <TypeSignature Language="C#" Value="public enum DataGridRowDetailsVisibilityMode" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridRowDetailsVisibilityMode extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridRowDetailsVisibilityMode" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Defines constants that specify when <see cref="T:System.Windows.Controls.DataGrid" /> row details are displayed.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This enumeration is used by the <xref:System.Windows.Controls.DataGrid.RowDetailsVisibilityMode%2A?displayProperty=fullName> property.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Collapsed">
+      <MemberSignature Language="C#" Value="Collapsed" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridRowDetailsVisibilityMode Collapsed = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRowDetailsVisibilityMode.Collapsed" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridRowDetailsVisibilityMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row details section is not displayed for any rows.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="Visible" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridRowDetailsVisibilityMode Visible = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRowDetailsVisibilityMode.Visible" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridRowDetailsVisibilityMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row details section is displayed for all rows.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="VisibleWhenSelected">
+      <MemberSignature Language="C#" Value="VisibleWhenSelected" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.DataGridRowDetailsVisibilityMode VisibleWhenSelected = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:System.Windows.Controls.DataGridRowDetailsVisibilityMode.VisibleWhenSelected" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Controls.DataGridRowDetailsVisibilityMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>The row details section is displayed only for selected rows.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,254 @@
+<Type Name="SqlClientMetaDataCollectionNames" FullName="System.Data.SqlClient.SqlClientMetaDataCollectionNames">
+  <TypeSignature Language="C#" Value="public static class SqlClientMetaDataCollectionNames" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SqlClientMetaDataCollectionNames extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlClientMetaDataCollectionNames" />
+  <AssemblyInfo>
+    <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides a list of constants for use with the **GetSchema** method to retrieve metadata collections.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Columns">
+      <MemberSignature Language="C#" Value="public static readonly string Columns;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Columns" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Columns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Columns** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Databases">
+      <MemberSignature Language="C#" Value="public static readonly string Databases;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Databases" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Databases" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Databases** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeignKeys">
+      <MemberSignature Language="C#" Value="public static readonly string ForeignKeys;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ForeignKeys" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.ForeignKeys" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **ForeignKeys** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexColumns">
+      <MemberSignature Language="C#" Value="public static readonly string IndexColumns;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string IndexColumns" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.IndexColumns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **IndexColumns** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Indexes">
+      <MemberSignature Language="C#" Value="public static readonly string Indexes;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Indexes" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Indexes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Indexes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parameters">
+      <MemberSignature Language="C#" Value="public static readonly string Parameters;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Parameters" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Parameters" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Parameters** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcedureColumns">
+      <MemberSignature Language="C#" Value="public static readonly string ProcedureColumns;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ProcedureColumns" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.ProcedureColumns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **ProcedureColumns** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Procedures">
+      <MemberSignature Language="C#" Value="public static readonly string Procedures;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Procedures" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Procedures" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Procedures** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tables">
+      <MemberSignature Language="C#" Value="public static readonly string Tables;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Tables" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Tables" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Tables** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserDefinedTypes">
+      <MemberSignature Language="C#" Value="public static readonly string UserDefinedTypes;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string UserDefinedTypes" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.UserDefinedTypes" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **UserDefinedTypes** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Users">
+      <MemberSignature Language="C#" Value="public static readonly string Users;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Users" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Users" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Users** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewColumns">
+      <MemberSignature Language="C#" Value="public static readonly string ViewColumns;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ViewColumns" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.ViewColumns" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **ViewColumns** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Views">
+      <MemberSignature Language="C#" Value="public static readonly string Views;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string Views" />
+      <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlClientMetaDataCollectionNames.Views" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>A constant for use with the **GetSchema** method that represents the **Views** collection.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

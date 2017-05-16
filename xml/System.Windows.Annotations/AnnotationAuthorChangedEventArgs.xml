@@ -1,0 +1,113 @@
+<Type Name="AnnotationAuthorChangedEventArgs" FullName="System.Windows.Annotations.AnnotationAuthorChangedEventArgs">
+  <TypeSignature Language="C#" Value="public sealed class AnnotationAuthorChangedEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnnotationAuthorChangedEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationAuthorChangedEventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>Provides data for the <see cref="E:System.Windows.Annotations.Annotation.AuthorChanged" /> event.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Annotations.AnnotationAuthorChangedEventArgs> is passed as a parameter to the <xref:System.Windows.Annotations.AnnotationAuthorChangedEventHandler> whenever an <xref:System.Windows.Annotations.Annotation.AuthorChanged> event occurs on an <xref:System.Windows.Annotations.Annotation>.  
+  
+ ]]></format>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnnotationAuthorChangedEventArgs (System.Windows.Annotations.Annotation annotation, System.Windows.Annotations.AnnotationAction action, object author);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Annotations.Annotation annotation, valuetype System.Windows.Annotations.AnnotationAction action, object author) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.AnnotationAuthorChangedEventArgs.#ctor(System.Windows.Annotations.Annotation,System.Windows.Annotations.AnnotationAction,System.Object)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="annotation" Type="System.Windows.Annotations.Annotation" />
+        <Parameter Name="action" Type="System.Windows.Annotations.AnnotationAction" />
+        <Parameter Name="author" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="annotation">The annotation raising the event.</param>
+        <param name="action">The author operation performed: <see cref="F:System.Windows.Annotations.AnnotationAction.Added" />, <see cref="F:System.Windows.Annotations.AnnotationAction.Removed" />, or <see cref="F:System.Windows.Annotations.AnnotationAction.Modified" />.</param>
+        <param name="author">The author object being changed by the event.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationAuthorChangedEventArgs" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **AnnotationAuthorChangedEventArgs** is passed as a parameter to the <xref:System.Windows.Annotations.AnnotationAuthorChangedEventHandler> whenever an <xref:System.Windows.Annotations.Annotation.AuthorChanged> event occurs on an annotation.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="annotation" /> or <paramref name="action" /> is a null reference (**Nothing** in Visual Basic).</exception>
+        <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">
+          <paramref name="action" /> is an invalid <see cref="T:System.Windows.Annotations.AnnotationAction" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Action">
+      <MemberSignature Language="C#" Value="public System.Windows.Annotations.AnnotationAction Action { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Annotations.AnnotationAction Action" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationAuthorChangedEventArgs.Action" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the author change operation for the event.</summary>
+        <value>The author change operation: <see cref="F:System.Windows.Annotations.AnnotationAction.Added" />, <see cref="F:System.Windows.Annotations.AnnotationAction.Removed" />, or <see cref="F:System.Windows.Annotations.AnnotationAction.Modified" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Annotation">
+      <MemberSignature Language="C#" Value="public System.Windows.Annotations.Annotation Annotation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Annotations.Annotation Annotation" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationAuthorChangedEventArgs.Annotation" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Annotations.Annotation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the annotation that raised the event.</summary>
+        <value>The annotation that raised the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Author">
+      <MemberSignature Language="C#" Value="public object Author { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Author" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.AnnotationAuthorChangedEventArgs.Author" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the author object that is the target of the event.</summary>
+        <value>The author object that is the target of the event.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

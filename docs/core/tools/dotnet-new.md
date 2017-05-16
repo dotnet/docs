@@ -1,5 +1,5 @@
 ---
-title: dotnet-new command | Microsoft Docs
+title: dotnet-new command - .NET Core CLI | Microsoft Docs
 description: The dotnet-new command creates new .NET Core projects in the current directory.
 keywords: dotnet-new, CLI, CLI command, .NET Core
 author: blackdwarf
@@ -21,7 +21,7 @@ ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 ## Synopsis
 
 ```
-dotnet new <TEMPLATE> [-lang|--language] [-n|--name] [-o|--output] [-all|--show-all] [-h|--help] [Template arguments]
+dotnet new <TEMPLATE> [-lang|--language] [-n|--name] [-o|--output] [-all|--show-all] [-h|--help] [Template options]
 dotnet new <TEMPLATE> [-l|--list]
 dotnet new [-all|--show-all]
 dotnet new [-h|--help]
@@ -92,7 +92,7 @@ Each project template may have additional options available. The core templates 
 
 `-f|--framework` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0` or `netcoreapp1.1` (`Default: netcoreapp1.0`)
 
-`-au|--authentication` - The type of authentication to use. Values: `None` or `Individual` (Default: `None`)
+`-au|--auth` - The type of authentication to use. Values: `None` or `Individual` (Default: `None`)
 
 `-uld|--use-local-db` - Specifies whether or not to use LocalDB instead of SQLite. Values: `true` or `false` (Default: `false`)
 

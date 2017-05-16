@@ -1,0 +1,117 @@
+<Type Name="VirtualStackFrame" FullName="System.Activities.Debugger.VirtualStackFrame">
+  <TypeSignature Language="C#" Value="public class VirtualStackFrame" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualStackFrame extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.VirtualStackFrame" />
+  <AssemblyInfo>
+    <AssemblyName>System.Activities</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerNonUserCode</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Provides a virtual call stack frame for the interpreter.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VirtualStackFrame (System.Activities.Debugger.State state);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Debugger.State state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.VirtualStackFrame.#ctor(System.Activities.Debugger.State)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Activities.Debugger.State" />
+      </Parameters>
+      <Docs>
+        <param name="state">For this implementation, an object that contains the set of properties that define a virtual environment for a frame on a call stack.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.VirtualStackFrame" /> class with the state specified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public VirtualStackFrame (System.Activities.Debugger.State state, System.Collections.Generic.IDictionary&lt;string,object&gt; locals);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Debugger.State state, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; locals) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.VirtualStackFrame.#ctor(System.Activities.Debugger.State,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="state" Type="System.Activities.Debugger.State" />
+        <Parameter Name="locals" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="state">For this implementation, an object that contains the set of properties that define a virtual environment for a frame on a call stack.</param>
+        <param name="locals">Early and late bound variables associated with the state.</param>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.VirtualStackFrame" /> class with the state and local variables specified.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Locals">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Locals { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Locals" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.VirtualStackFrame.Locals" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets local variables for a frame on a call stack.</summary>
+        <value>A collection of key/value pairs that define early and late bound variables associated with the specified state.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public System.Activities.Debugger.State State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Debugger.State State" />
+      <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.VirtualStackFrame.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Activities.Debugger.State</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets the properties that define a virtual environment for a frame on a call stack.</summary>
+        <value>A <see langword="State" /> object that contains the properties that define a specified virtual environment.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.VirtualStackFrame.ToString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>A string instance of the state information.</summary>
+        <returns>The state information for a virtual environment.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

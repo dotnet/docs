@@ -52,21 +52,21 @@ You must create an object before you can access its members.
 
 2. Write a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) to create a variable to which you can assign a class instance. The variable should be of the type of the desired class.
 
-  ```vb
-  Dim nextCustomer As customer
-  ```
+   ```vb
+   Dim nextCustomer As customer
+   ```
 
 3. Add the [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md) keyword to initialize the variable to a new instance of the class.
 
-  ```vb
-  Dim nextCustomer As New customer
-  ```
+   ```vb
+   Dim nextCustomer As New customer
+   ```
 
 4. You can now access the members of the class through the object variable.  
 
-  ```vb
-  nextCustomer.accountNumber = lastAccountNumber + 1  
-  ```  
+   ```vb
+   nextCustomer.accountNumber = lastAccountNumber + 1  
+   ```
 
 > [!NOTE]
 >  Whenever possible, you should declare the variable to be of the class type you intend to assign to it. This is called *early binding*. If you don't know the class type at compile time, you can invoke *late binding* by declaring the variable to be of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). However, late binding can make performance slower and limit access to the run-time object's members. For more information, see [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md).
@@ -149,15 +149,15 @@ Members declared with the `Shared` keyword are *shared members*, which belong to
 
 1. Make sure the object has been created from its class and assigned to an object variable.
 
-  ```vb
-  Dim secondForm As New System.Windows.Forms.Form  
-  ```  
+   ```vb
+   Dim secondForm As New System.Windows.Forms.Form  
+   ```  
 
 2. In the statement that accesses the member, follow the object variable name with the *member-access operator* (`.`) and then the member name.
 
-  ```vb
-  secondForm.Show()
-  ```
+   ```vb
+   secondForm.Show()
+   ```
 
 #### Accessing shared members
 
@@ -165,9 +165,9 @@ Members declared with the `Shared` keyword are *shared members*, which belong to
 
 - Follow the class name with the *member-access operator* (`.`) and then the member name. You should always access a `Shared` member of the object directly through the class name.
 
-  ```vb
-  MsgBox("This computer is called " & Environment.MachineName)  
-  ```
+   ```vb
+   MsgBox("This computer is called " & Environment.MachineName)  
+   ```
 
 - If you have already created an object from the class, you can alternatively access a `Shared` member through the object's variable.
 
@@ -214,34 +214,34 @@ In the following example, suppose you want to define a special kind of <xref:Sys
 
 1. Use a [Class Statement](../../../../visual-basic/language-reference/statements/class-statement.md) to define a class from which to create the object you need.
 
-  ```vb
-  Public Class reversibleButton
-  ```
+   ```vb
+   Public Class reversibleButton
+   ```
 
-  Be sure an `End Class` statement follows the last line of code in your class. By default, the integrated development environment (IDE) automatically generates an `End Class` when you enter a `Class` statement.
+   Be sure an `End Class` statement follows the last line of code in your class. By default, the integrated development environment (IDE) automatically generates an `End Class` when you enter a `Class` statement.
 
 2. Follow the `Class` statement immediately with an [Inherits Statement](../../../../visual-basic/language-reference/statements/inherits-statement.md). Specify the class from which your new class derives.  
   
-  ```vb
-  Inherits System.Windows.Forms.Button
-  ```
+   ```vb
+   Inherits System.Windows.Forms.Button
+   ```
 
   Your new class inherits all the members defined by the base class.
 
-3. Add the code for the additional members your derived class exposes. For example, you might add a `reverseColors` method, and your derived class might look as follows:  
+3. Add the code for the additional members your derived class exposes. For example, you might add a `reverseColors` method, and your derived class might look as follows:
 
-  ```vb
-  Public Class reversibleButton  
-    Inherits System.Windows.Forms.Button  
-      Public Sub reverseColors()   
-        Dim saveColor As System.Drawing.Color = Me.BackColor  
-        Me.BackColor = Me.ForeColor  
-        Me.ForeColor = saveColor  
-      End Sub  
-  End Class   
-  ```  
+   ```vb
+   Public Class reversibleButton
+       Inherits System.Windows.Forms.Button
+           Public Sub reverseColors()
+               Dim saveColor As System.Drawing.Color = Me.BackColor
+               Me.BackColor = Me.ForeColor
+               Me.ForeColor = saveColor
+          End Sub
+   End Class
+   ```
 
-  If you create an object from the `reversibleButton` class, it can access all the members of the <xref:System.Windows.Forms.Button> class, as well as the `reverseColors` method and any other new members you define on `reversibleButton`.
+   If you create an object from the `reversibleButton` class, it can access all the members of the <xref:System.Windows.Forms.Button> class, as well as the `reverseColors` method and any other new members you define on `reversibleButton`.
 
 Derived classes inherit members from the class they are based on, allowing you to add complexity as you progress in a class hierarchy. For more information, see [Inheritance Basics](../../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md).
 

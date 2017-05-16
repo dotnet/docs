@@ -2,7 +2,7 @@
 title: Getting Started with F# in Visual Studio for Mac
 description: Learn how to use F# with Visual Studio for Mac.
 keywords: visual f#, f#, functional programming
-author: mimorr
+author: mizzle-mo
 ms.author: phcart
 ms.date: 02/13/2017
 ms.topic: article

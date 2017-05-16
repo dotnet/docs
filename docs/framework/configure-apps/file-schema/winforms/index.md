@@ -20,9 +20,9 @@ Windows Forms application configuration settings are stored in an application co
 
 ```xml
 <configuration>
-  \<System.Windows.Forms.ConfigurationSection>
+  <System.Windows.Forms.ConfigurationSection>
   ...
-  \</System.Windows.Forms.ConfigurationSection>
+  </System.Windows.Forms.ConfigurationSection>
 </configuration>
 ```
 
@@ -54,5 +54,5 @@ The `<System.Windows.Forms.ConfigurationSection>` element can include one or mor
 
 ## See also
 
-[Configuration File Schema](../index.md)
+[Configuration File Schema](../index.md)   
 [High DPI Support in Windows Forms](../../../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)

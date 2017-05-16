@@ -1661,8 +1661,8 @@ value Mod 2 = 0
   
  You can find the square root of a number by calling the <xref:System.Numerics.BigInteger.Log%2A> method along with the <xref:System.Math.Exp%2A?displayProperty=fullName> method. Note that the result is <xref:System.Double.PositiveInfinity?displayProperty=fullName> if the result is greater than <xref:System.Double.MaxValue?displayProperty=fullName>. The following example calculates the square root of each element in an array of <xref:System.Numerics.BigInteger> values.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Numerics.BigInteger.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.biginteger.log/cs/log1.cs#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Numerics.BigInteger.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.biginteger.log/vb/log1.vb#1)]  -->  
+ [!code-csharp[System.Numerics.BigInteger.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.biginteger.log/cs/log1.cs#1)] 
+ [!code-vb[System.Numerics.BigInteger.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.biginteger.log/vb/log1.vb#1)]   
   
  This method corresponds to the <xref:System.Math.Log%28System.Double%29?displayProperty=fullName> method for the primitive numeric types.  
   

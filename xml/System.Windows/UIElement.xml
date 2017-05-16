@@ -1574,7 +1574,6 @@ Image with an Elliptical Clip Region
  The following example code illustrates a control template for a particular custom control, which sets <xref:System.Windows.UIElement.Focusable%2A> `false` on one of the elements within the template.  
   
  [!code-xml[RichTextBox_NoScrollViewer#_ControlTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBox_NoScrollViewer/CS/window1.xaml#_controltemplate)]
- <!-- TODO: review snippet reference [!code-xml[RichTextBox_NoScrollViewer#_ControlTemplate](~/samples/snippets/xaml/VS_Snippets_Wpf/RichTextBox_NoScrollViewer/xaml/window1.xaml#_controltemplate)]  -->  
   
  ]]></format>
         </remarks>
@@ -3207,8 +3206,7 @@ Image with an Elliptical Clip Region
 ## Examples  
  The following example references this property as the property type of a <xref:System.Windows.Trigger>, part of a \<Style.Triggers> block. If the mouse is over the control, the control text turns blue and the cursor becomes a hand.  
   
- <!-- TODO: review snippet reference [!code-xml[ListViewCheckBox#Trigger](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCheckBox/CS/window1.xaml#trigger)]  -->
- <!-- TODO: review snippet reference [!code-xml[ListViewCheckBox#Trigger](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewCheckBox/xaml/window1.xaml#trigger)]  -->  
+ [!code-xml[ListViewChkBox#Trigger](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewChkBox/CS/window1.xaml#trigger)]   
   
  ]]></format>
         </remarks>
@@ -8332,8 +8330,7 @@ Image with an Elliptical Clip Region
 ## Examples  
  The following markup example shows an <xref:System.Windows.Media.ImageBrush> opacity mask applied to another <xref:System.Windows.Controls.Image>.  
   
- <!-- TODO: review snippet reference [!code-xml[OpacityMasksExample#UIElementOpacityMask](~/samples/snippets/csharp/VS_Snippets_Wpf/OpacityMasksExample/CS/ImageBrushExample.xaml#uielementopacitymask)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpacityMasksExample#UIElementOpacityMask](~/samples/snippets/xaml/VS_Snippets_Wpf/OpacityMasksExample/XAML/ImageBrushExample.xaml#uielementopacitymask)]  -->  
+ [!code-xml[OpacityMasksSnippet#UIElementOpacityMask](~/samples/snippets/csharp/VS_Snippets_Wpf/OpacityMasksSnippet/CS/ImageBrushExample.xaml#uielementopacitymask)]   
   
  ]]></format>
         </remarks>

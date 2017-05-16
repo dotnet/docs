@@ -301,7 +301,7 @@ public static void Main(string[] args) {
 
 ```
 
-The example above shows off a simple example of calling into `GetSystemTime()` function. The interesting bit is on line 4\. The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side. This means that the naming of the fields is not important, only their order is important, as it needs to correspond to the unmanaged struct, shown below:
+The example above shows off a simple example of calling into `GetSystemTime()` function. The interesting bit is on line 4. The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side. This means that the naming of the fields is not important, only their order is important, as it needs to correspond to the unmanaged struct, shown below:
 
 ```c
 typedef struct _SYSTEMTIME {

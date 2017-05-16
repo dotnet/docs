@@ -7,7 +7,6 @@ ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
   - "devlang-visual-basic"
-
 ms.topic: "article"
 dev_langs: 
   - "VB"
@@ -33,7 +32,6 @@ ms.assetid: dfc8deba-f5b3-4d1d-a937-7cb826446fc5
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
-
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -130,7 +128,7 @@ The `Inherits` statement is used to declare a new class, called a *derived class
   
  The following example compares `Me` and `MyClass`.  
   
-```  
+```vb
 Class baseClass  
     Public Overridable Sub testMethod()  
         MsgBox("Base class string")  

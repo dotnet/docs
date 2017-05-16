@@ -26,7 +26,8 @@
         },
         {
             "source_path": "docs/core/getting-started.md",
-            "redirect_url": "/dotnet/articles/core/get-started"
+            "redirect_url": "/dotnet/articles/core/get-started",
+            "redirect_document_id": true
         },
         {
             "source_path": "docs/core/migrating-from-dnx.md",
@@ -681,7 +682,8 @@
         },
         {
             "source_path": "docs/standard/getting-started.md",
-            "redirect_url": "/dotnet/articles/standard/get-started"
+            "redirect_url": "/dotnet/articles/standard/get-started",
+            "redirect_document_id": true
         },        
         {
             "source_path": "docs/tutorials/getting-started-with-csharp/microservices.md",

@@ -69,13 +69,13 @@ Lists new features in each of the versions of Visual Basic .NET.
  Covers how to receive support and give feedback.  
   
  [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/)  
- Provides links into the [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] documentation.  
+ Provides links into the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] documentation.  
   
  [C#](../../csharp/csharp.md)  
- Provides links into the documentation on application development with [!INCLUDE[csprcs](../../csharp/includes/csprcs_md.md)].  
+ Provides links into the documentation on application development with [!INCLUDE[csprcs](~/includes/csprcs-md.md)].  
   
  [Visual C++](https://docs.microsoft.com/cpp/)  
  Provides links into the Visual C++ documentation.  
   
  [Office and SharePoint Development](https://msdn.microsoft.com/library/d2tx7z6d)  
- Provides information about using Microsoft Office and [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] as part of a business application.
+ Provides information about using Microsoft Office and [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] as part of a business application.

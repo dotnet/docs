@@ -53,7 +53,7 @@ If you use the **/target:winmdobj** compiler option, the compiler creates an int
   
 3.  In the **Output type** list, choose **WinMD File**.  
   
-     The **WinMD File** option is available only for [!INCLUDE[win8_appname_long](../../../csharp/includes/win8_appname_long_md.md)] app templates.  
+     The **WinMD File** option is available only for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app templates.  
   
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   

@@ -37,7 +37,7 @@ translation.priority.ht:
 The **/target** compiler option can be specified in one of four forms:  
   
  [/target:appcontainerexe](../../../csharp/language-reference/compiler-options/target-appcontainerexe-compiler-option.md)  
- To create an .exe file for [!INCLUDE[win8_appname_long](../../../csharp/includes/win8_appname_long_md.md)] apps.  
+ To create an .exe file for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.  
   
  [/target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md)  
  To create an .exe file.  

@@ -56,7 +56,7 @@ The `Main` method is the entry point of a C# console application or windows appl
   
 -   `Main` can either have a `void` or `int` return type.  
   
--   The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] to create Windows Forms applications, you can add the parameter manually or else use the <xref:System.Environment> class to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program is not treated as the first command-line argument.  
+-   The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] to create Windows Forms applications, you can add the parameter manually or else use the <xref:System.Environment> class to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program is not treated as the first command-line argument.  
   
 ## In This Section  
   

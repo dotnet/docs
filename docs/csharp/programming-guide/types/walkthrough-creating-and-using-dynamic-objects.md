@@ -60,7 +60,7 @@ Dynamic objects expose members such as properties and methods at run time, inste
   
 #### To create a custom dynamic class  
   
-1.  Start [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].  
+1.  Start [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
 2.  On the **File** menu, point to **New** and then click **Project**.  
   
@@ -146,7 +146,7 @@ Dynamic objects expose members such as properties and methods at run time, inste
   
 #### To create a custom dynamic class  
   
-1.  In [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)], on the **File** menu, point to **New** and then click **Project**.  
+1.  In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], on the **File** menu, point to **New** and then click **Project**.  
   
 2.  In the **New Project** dialog box, in the **Project Types** pane, make sure that **Windows** is selected. Select **Console Application** in the **Templates** pane. In the **Name** box, type `DynamicIronPythonSample`, and then click **OK**. The new project is created.  
   

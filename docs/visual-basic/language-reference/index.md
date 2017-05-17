@@ -108,4 +108,4 @@ This section provides reference information for various aspects of the [!INCLUDE
  Provides comprehensive help on all areas of the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language.  
   
  [Visual Basic Command-Line Compiler](../../visual-basic/reference/command-line-compiler/index.md)  
- Describes how to use the command-line compiler as an alternative to compiling programs from within the [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] integrated development environment (IDE).
+ Describes how to use the command-line compiler as an alternative to compiling programs from within the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] integrated development environment (IDE).

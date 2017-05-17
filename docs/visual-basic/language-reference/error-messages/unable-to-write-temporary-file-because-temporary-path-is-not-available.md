@@ -43,9 +43,9 @@ translation.priority.ht:
   
 ## To correct this error  
   
-1.  Restart [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].  
+1.  Restart [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
-2.  If the problem persists, reinstall [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].  
+2.  If the problem persists, reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
 ## See Also  
  [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)

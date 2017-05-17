@@ -86,7 +86,7 @@
         <param name="rightRow">The second <see cref="T:System.Data.DataRow" /> object to compare.</param>
         <summary>Compares two <see cref="T:System.Data.DataRow" /> objects by using a column-by-column, value-based comparison.</summary>
         <returns>
-          <see langword="true" /> if the two <see cref="T:System.Data.DataRow" /> objects have ordered sets of column values that are equal; otherwise,<see langword=" false" />.</returns>
+          <see langword="true" /> if the two <see cref="T:System.Data.DataRow" /> objects have ordered sets of column values that are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

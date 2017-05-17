@@ -18,13 +18,13 @@
 ## Remarks  
  An <xref:System.ComponentModel.Design.Serialization.ExpressionContext> is placed on the context stack and contains the most relevant expression during serialization. The following C# code demonstrates an assignment.  
   
-```  
+```csharp  
 button1.Text = "Hello";  
 ```  
   
  During serialization, several serializers are responsible for creating this single statement. One of those serializers is responsible for creating "Hello". There are times when that serializer may need to know the context in which it is creating its expression. In the previous example, this context is not needed. The following C# code shows a situation in which knowledge of the context is necessary.  
   
-```  
+```csharp  
 button1.Text = rm.GetString("button1_Text");  
 ```  
   
@@ -175,9 +175,7 @@ button1.Text = rm.GetString("button1_Text");
   
  The following C# code shows how serializers can use this information to guide serialization.  
   
- [C#]  
-  
-```  
+```csharp  
 Padding p = new Padding();  
 p.Left = 5;  
 button1.Padding = p;  

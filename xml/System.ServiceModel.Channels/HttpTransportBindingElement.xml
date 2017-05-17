@@ -42,7 +42,7 @@
   
  `HttpTransportBindingElement` can also be used in a configuration file as shown in the following configuration.  
   
-```  
+```xml  
 <bindings>  
   <customBinding>  
     <binding name="Binding1">  
@@ -57,7 +57,6 @@
     </binding>  
   </customBinding>  
 </bindings>  
-  
 ```  
   
  ]]></format>
@@ -107,9 +106,7 @@
 ## Examples  
  The following example shows how to use the copy constructor in a derived class.  
   
- [C#]  
-  
-```  
+```csharp  
 public class MyBindingElement : HttpTransportBindingElement  
 {  
     public MyBindingElement(MyBindingElement elementToBeCloned) : base(elementToBeCloned)  
@@ -155,12 +152,9 @@ public class MyBindingElement : HttpTransportBindingElement
 ## Examples  
  The following example sets this property to indicate that all cookies from the server should be copied to future client requests.  
   
- [C#]  
-  
-```  
+```csharp  
 HttpTransportBindingElement httpBindingElement = new HttpBindingElement();  
 httpBindingElement.AllowCookies = true;  
-  
 ```  
   
  ]]></format>
@@ -199,9 +193,7 @@ httpBindingElement.AllowCookies = true;
 ## Examples  
  The following example sets this property to use when authenticating client requests.  
   
- [C#]  
-  
-```  
+```csharp  
 [ServiceContract]  
 interface ICalculator  
 {  
@@ -345,9 +337,7 @@ int odd=calc.Add(5,4);
 ## Examples  
  The following example sets this property to use when performing requests on the binding.  
   
- [C#]  
-  
-```  
+```csharp  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.BypassProxyOnLocal = true;  
 ```  
@@ -443,9 +433,7 @@ httpBinding.BypassProxyOnLocal = true;
 ## Examples  
  The following example clones the specified binding element.  
   
- [C#]  
-  
-```  
+```csharp  
 HttpBindingElement bindingElement = elementToClone.Clone();  
 ```  
   
@@ -650,9 +638,7 @@ HttpBindingElement bindingElement = elementToClone.Clone();
 ## Examples  
  The following example sets this property to use when performing requests on the binding.  
   
- [C#]  
-  
-```  
+```csharp  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.MaxBufferSize = 16384;  
 ```  
@@ -739,9 +725,7 @@ httpBinding.MaxBufferSize = 16384;
 ## Examples  
  The following example sets this property to use when performing requests on the binding. All requests are routed through this proxy, unless <xref:System.ServiceModel.Channels.HttpTransportBindingElement.BypassProxyOnLocal%2A> is set to `true` and the endpoint is a local endpoint.  
   
- [C#]  
-  
-```  
+```csharp  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.ProxyAddress = new Uri(http://proxyserver);  
 ```  
@@ -777,9 +761,7 @@ httpBinding.ProxyAddress = new Uri(http://proxyserver);
 ## Examples  
  The following example sets this property to use when sending requests to the proxy specified in the <xref:System.ServiceModel.Channels.HttpTransportBindingElement.ProxyAddress%2A> property.  
   
- [C#]  
-  
-```  
+```csharp  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.ProxyAddress = new Uri(http://proxyserver);  
 httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;  
@@ -870,9 +852,7 @@ httpBinding.ProxyAuthenticationScheme = AuthenticationSchemes.Digest;
 ## Examples  
  The following example outputs the scheme of the binding to the console.  
   
- [C#]  
-  
-```  
+```csharp  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);  
 ```  
@@ -1120,9 +1100,7 @@ Console.WriteLine("The scheme of the binding is {0}.",httpBinding.Scheme);
 ## Examples  
  The following example sets the property to enable Unsafe Connection Sharing.  
   
- [C#]  
-  
-```  
+```csharp  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.AuthenticationScheme = AuthenticationSchemes.Ntlm;  
 httpBinding.UnsafeConnectionNtlmAuthentication = true;  
@@ -1181,9 +1159,7 @@ httpBinding.UnsafeConnectionNtlmAuthentication = true;
 ## Examples  
  The following example causes user-specific proxy settings to be used.  
   
- [C#]  
-  
-```  
+```csharp  
 HttpTransportBindingElement httpBinding = new HttpTransportBindingElement();  
 httpBinding.UseDefaultWebProxy = false;  
 ```  

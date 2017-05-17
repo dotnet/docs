@@ -309,10 +309,10 @@ procID = Shell("C:\Windows\system32\calc.exe", AppWinStyle.NormalFocus)
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the argument portion of the command line used to start Visual Basic or an executable program developed with Visual Basic. The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command " />function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</summary>
+        <summary>Returns the argument portion of the command line used to start Visual Basic or an executable program developed with Visual Basic. The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</summary>
         <returns>Returns the argument portion of the command line used to start Visual Basic or an executable program developed with Visual Basic.  
   
- The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command " />function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</returns>
+ The <see langword="My" /> feature provides greater productivity and performance than the <see langword="Command" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -442,7 +442,7 @@ End Sub
         <param name="AppName">Required. <see langword="String" /> expression containing the name of the application or project to which the section or key setting applies.</param>
         <param name="Section">Required. <see langword="String" /> expression containing the name of the section from which the key setting is being deleted. If only <c>AppName</c> and <c>Section</c> are provided, the specified section is deleted along with all related key settings.</param>
         <param name="Key">Optional. <see langword="String" /> expression containing the name of the key setting being deleted.</param>
-        <summary>Deletes a section or key setting from an application's entry in the Windows registry. The <see langword="My" /> feature gives you greater productivity and performance in registry operations than the <see langword="DeleteSetting " />function. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" /> .</summary>
+        <summary>Deletes a section or key setting from an application's entry in the Windows registry. The <see langword="My" /> feature gives you greater productivity and performance in registry operations than the <see langword="DeleteSetting" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" /> .</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -565,7 +565,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for unrestricted Clipboard access to set this property to <see langword="true" />. Associated enumeration: the <see langword="AllClipboard" /> value of <see cref="T:System.Security.Permissions.UIPermissionClipboard" /></permission>
         <block subset="none" type="overrides">
-          <para>When overriding the <see cref="P:System.Windows.Forms.Control.AllowDrop" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.AllowDrop" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" />accessors of the <see cref="P:System.Windows.Forms.Control.AllowDrop" /> property; you can override only one if needed.</para>
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.AllowDrop" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.AllowDrop" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.AllowDrop" /> property; you can override only one if needed.</para>
         </block>
       </Docs>
     </Member>
@@ -618,7 +618,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding the <see cref="P:System.Windows.Forms.Control.Anchor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Anchor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" />accessors of the <see cref="P:System.Windows.Forms.Control.Anchor" /> property; you can override only one if needed.</para>
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.Anchor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Anchor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.Anchor" /> property; you can override only one if needed.</para>
         </block>
       </Docs>
     </Member>
@@ -769,7 +769,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding the <see cref="P:System.Windows.Forms.Control.BackColor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.BackColor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" />accessors of the <see cref="P:System.Windows.Forms.Control.BackColor" /> property; you can override only one if needed.</para>
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.BackColor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.BackColor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.BackColor" /> property; you can override only one if needed.</para>
         </block>
       </Docs>
     </Member>
@@ -857,7 +857,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding the <see cref="P:System.Windows.Forms.Control.BackgroundImage" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.BackgroundImage" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" />accessors of the <see cref="P:System.Windows.Forms.Control.BackgroundImage" /> property; you can override only one if needed.</para>
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.BackgroundImage" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.BackgroundImage" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.BackgroundImage" /> property; you can override only one if needed.</para>
         </block>
       </Docs>
     </Member>
@@ -1129,7 +1129,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding the <see cref="P:System.Windows.Forms.Control.BindingContext" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.BindingContext" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" />accessors of the <see cref="P:System.Windows.Forms.Control.BindingContext" /> property; you can override only one if needed.</para>
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.BindingContext" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.BindingContext" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.BindingContext" /> property; you can override only one if needed.</para>
         </block>
       </Docs>
     </Member>
@@ -2209,7 +2209,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding the <see cref="P:System.Windows.Forms.Control.ContextMenu" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.ContextMenu" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" />accessors of the <see cref="P:System.Windows.Forms.Control.ContextMenu" /> property; you can override only one if needed.</para>
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.ContextMenu" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.ContextMenu" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.ContextMenu" /> property; you can override only one if needed.</para>
         </block>
       </Docs>
     </Member>
@@ -2749,7 +2749,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for safe subwindows to set this property value. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <block subset="none" type="overrides">
-          <para>When overriding the <see cref="P:System.Windows.Forms.Control.Cursor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Cursor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" />methods of the <see cref="P:System.Windows.Forms.Control.Cursor" /> property; you can override only one if needed.</para>
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.Cursor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Cursor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> methods of the <see cref="P:System.Windows.Forms.Control.Cursor" /> property; you can override only one if needed.</para>
         </block>
       </Docs>
     </Member>
@@ -3285,7 +3285,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
@@ -4538,7 +4538,7 @@ MyControl.Font = New Font(MyControl.Font, _
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding the <see cref="P:System.Windows.Forms.Control.Font" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Font" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" />accessors of the <see cref="P:System.Windows.Forms.Control.Font" /> property; you can override only one if needed.</para>
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.Font" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Font" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.Font" /> property; you can override only one if needed.</para>
         </block>
       </Docs>
     </Member>
@@ -4641,7 +4641,7 @@ MyControl.Font = New Font(MyControl.Font, _
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.ForeColor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the<see langword="get" /> and <see langword="set" />accessors of the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property; you can override only one if needed.</para>
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.ForeColor" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property; you can override only one if needed.</para>
         </block>
       </Docs>
     </Member>
@@ -13096,7 +13096,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the <see cref="T:System.Windows.Forms.RightToLeft" /> values.</exception>
         <block subset="none" type="overrides">
-          <para>When overriding the <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" />accessors of the <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property; you can override only one if needed.</para>
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.RightToLeft" /> property; you can override only one if needed.</para>
         </block>
       </Docs>
     </Member>
@@ -14792,7 +14792,7 @@ if (CanSelect && IsMnemonic(charCode, MyControl.Text) {
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>When overriding the <see cref="P:System.Windows.Forms.Control.Text" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Text" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" />accessors of the <see cref="P:System.Windows.Forms.Control.Text" /> property; you can override only one if needed.</para>
+          <para>When overriding the <see cref="P:System.Windows.Forms.Control.Text" /> property in a derived class, use the base class's <see cref="P:System.Windows.Forms.Control.Text" /> property to extend the base implementation. Otherwise, you must provide all the implementation. You are not required to override both the <see langword="get" /> and <see langword="set" /> accessors of the <see cref="P:System.Windows.Forms.Control.Text" /> property; you can override only one if needed.</para>
         </block>
       </Docs>
     </Member>

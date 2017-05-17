@@ -1,7 +1,7 @@
 ---
 title: "What's new for Visual Basic | Microsoft Docs"
 
-ms.date: "2015-07-20"
+ms.date: "2017-04-27"
 ms.prod: .net
 
 
@@ -19,9 +19,8 @@ helpviewer_keywords:
   - "Visual Basic, what's new"
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
 caps.latest.revision: 145
-author: dotnet-bot
-ms.author: dotnetcontent
-
+author: rpetrusha
+ms.author: ronpet
 translation.priority.ht: 
   - "cs-cz"
   - "de-de"
@@ -38,48 +37,104 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # What's new for Visual Basic
-This page lists key feature names for each version of Visual Basic with descriptions of the new and enhanced features in the lastest version of the language.  
+
+This topic lists key feature names for each version of Visual Basic, with detailed descriptions of the new and enhanced features in the lastest version of the language.
   
-## Previous versions  
- Visual Basic / Visual Studio .NET 2002  
- First release  
-  
- Visual Basic / Visual Studio .NET 2003  
- Bit shift operators, loop variable declaration  
-  
- Visual Basic / Visual Studio .NET 2005  
- `My` type and helper types (access to app, computer, files system, network  
-  
- Visual Basic / Visual Studio .NET 2008  
- Language Integrated Query (LINQ), XML literals, local type inference, object initializers, anonymous types, extension methods, local `var` type inference, lambda expressions, `if` operator, partial methods, nullable value types  
-  
- Visual Basic, Visual Studio .NET 2010  
- Auto-implemented properties, collection initializers, implicit line continuation, dynamic, generic co/contra variance, global namespace access  
-  
- Visual Basic / Visual Studio .NET 2012  
- `Async` / `await`, iterators, caller info attributes  
-  
- Visual Basic / Visual Studio .NET 2013  
- technology previews of .NET Compiler Platform (“Roslyn”)  
-  
- Visual Basic / Visual Studio .NET 2015  
- Current version, see below  
-  
-## Current version  
- [Nameof](../../csharp/language-reference/keywords/nameof.md)  
+## Current Version
+
+Visual Basic / Visual Studio .NET 2017   
+For new features, see [Visual Basic 2017](#visual-basic-2017)
+
+## Previous versions
+
+Visual Basic / Visual Studio .NET 2015   
+For new features, see [Visual Basic 14](#visual-basic-14)
+
+Visual Basic / Visual Studio .NET 2013  
+Technology previews of the .NET Compiler Platform (“Roslyn”)
+
+Visual Basic / Visual Studio .NET 2012   
+`Async` and `await` keywords, iterators, caller info attributes
+
+Visual Basic, Visual Studio .NET 2010   
+Auto-implemented properties, collection initializers, implicit line continuation, dynamic, generic co/contra variance, global namespace access
+
+Visual Basic / Visual Studio .NET 2008   
+Language Integrated Query (LINQ), XML literals, local type inference, object initializers, anonymous types, extension methods, local `var` type inference, lambda expressions, `if` operator, partial methods, nullable value types  
+
+Visual Basic / Visual Studio .NET 2005   
+The `My` type and helper types (access to app, computer, files system, network)
+
+Visual Basic / Visual Studio .NET 2003   
+Bit-shift operators, loop variable declaration
+
+Visual Basic / Visual Studio .NET 2002   
+The first release of Visual Basic .NET
+
+## Visual Basic 2017
+
+[Tuples](../programming-guide/language-features/data-types/tuples.md)
+
+Tuples are a lightweight data structure that most commonly is used to return multiple values from a single method call. Ordinarily, to return multiple values from a method, you have to do one of the following:
+
+- Define a custom type (a `Class` or a `Structure`). This is a heavyweight solution.
+
+- Define one or more `ByRef` parameters, in addition to returning a value from the method.
+ 
+Visual Basic's support for tuples lets you quickly define a tuple, optionally assign semantic names to its values, and quickly retrieve its values. The following example wraps a call to the <xref:System.Int32.TryParse%2A> method and returns a tuple.
+
+[!code-vb[Tuple](../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#2)]
+
+You can then call the method and handle the returned tuple with code like the following.
+
+[!code-vb[ReturnTuple](../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple-returns.vb#3)] 
+
+**Binary literals and digit separators**
+
+You can define a binary literal by using the prefix `&B` or `&b`. In addition, you can use the underscore character, `_`, as a digit separator to enhance readability. The following example uses both features to assign a `Byte` value and to display it as a decimal, hexadecimal, and binary number.
+
+[!code-vb[Binary](../../../samples/snippets/visualbasic/getting-started/bin-example.vb#1)]
+
+For more information, see the "Literal assignments" section of the [Byte](../language-reference/data-types/byte-data-type.md#literal-assignments), [Integer](../language-reference/data-types/integer-data-type.md#literal-assignments), [Long](../language-reference/data-types/long-data-type.md#literal-assignments), [Short](../language-reference/data-types/short-data-type.md#literal-assignments), [SByte](../language-reference/data-types/sbyte-data-type.md#literal-assignments), [UInteger](../language-reference/data-types/uinteger-data-type.md#literal-assignments), [ULong](../language-reference/data-types/ulong-data-type.md#literal-assignments), and [UShort](../language-reference/data-types/ushort-data-type.md#literal-assignments) data types.
+
+**Support for C# reference return values**
+
+Starting with C# 7, C# supports reference return values. That is, when the calling method receives a value returned by reference, it can change the value of the reference. Visual Basic does not allow you to author methods with reference return values, but it does allow you to consume and modify the reference return values.
+
+For example, the following `Sentence` class written in C# includes a `FindNext` method that finds the next word in a sentence that begins with a specified substring. The string is returned as a reference return value, and a `Boolean` variable passed by reference to the method indicates whether the search was successful. This means that the caller can not only read the returned value; he or she can also modify it, and that modification is reflected in the `Sentence` class.
+
+[!code-vb[Ref-Return](../../../samples/snippets/visualbasic/getting-started/ref-returns.cs)]
+
+In its simplest form, you can modify the word found in the sentence by using code like the following. Note that you are not assigning a value to the method, but rather to the expression that the method returns, which is the reference return value.
+
+[!code-vb[Ref-Return](../../../samples/snippets/visualbasic/getting-started/ref-return.vb#1)]
+
+A problem with this code, though, is that if a match is not found, the method returns the first word. Since the example does not examine the value of the `Boolean` argument to determine whether a match is found, it modifies the first word if there is no match. The following example corrects this by replacing the first word with itself if there is no match.
+
+[!code-vb[Ref-Return](../../../samples/snippets/visualbasic/getting-started/ref-return.vb#2)]
+
+A better solution is to use a helper method to which the reference return value is passed by reference. The helper method can then modify the argument passed to it by reference. The following example does that.
+
+[!code-vb[Ref-Return](../../../samples/snippets/visualbasic/getting-started/ref-return-helper.vb#1)]
+
+For more information, see [Reference Return Values](../programming-guide/language-features/procedures/ref-return-values.md).
+
+## Visual Basic 14
+
+[Nameof](../../csharp/language-reference/keywords/nameof.md)  
  You can get the unqualified string name of a type or member for use in an error message without hard coding a string.  This allows your code to remain correct when refactoring.  This feature is also useful for hooking up model-view-controller MVC links and firing property changed events.  
   
- [String Interpolation](../../csharp/language-reference/keywords/interpolated-strings.md)  
+[String Interpolation](../../csharp/language-reference/keywords/interpolated-strings.md)  
  You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-format.md).  
   
- [Null-conditional Member Access and Indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  
- You can test for null in a very light syntactic way before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  If the left operand or object reference is null, the operations returns null.  
+[Null-conditional Member Access and Indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  
+You can test for null in a very light syntactic way before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  If the left operand or object reference is null, the operations returns null.  
   
- [Multi-line String Literals](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  
+[Multi-line String Literals](../../visual-basic/programming-guide/language-features/strings/string-basics.md)  
  String literals can contain newline sequences.  You no longer need the old work around of using `<xml><![CDATA[...text with newlines...]]></xml>.Value`  
   
- Comments  
- You can put comments after implicit line continuations, inside initializer expressions, and amongst LINQ expression terms.  
+Comments  
+You can put comments after implicit line continuations, inside initializer expressions, and amongst LINQ expression terms.  
   
  Smarter Fully-qualified Name Resolution  
  Given code such as `Threading.Thread.Sleep(1000)`, Visual Basic used to look up the namespace "Threading", discover it was ambiguous between System.Threading and System.Windows.Threading, and then report an error.  Visual Basic now considers both possible namespaces together.  If you show the completion list, the Visual Studio editor lists members from both types in the completion list.  

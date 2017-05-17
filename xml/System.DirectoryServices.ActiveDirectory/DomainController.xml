@@ -94,7 +94,7 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">Determines if the managed resources should be released. <see langword="true " />if the managed resources are released; otherwise, <see langword="false" />.</param>
+        <param name="disposing">Determines if the managed resources should be released. <see langword="true" /> if the managed resources are released; otherwise, <see langword="false" />.</param>
         <summary>Causes the object to release all managed and/or unmanaged resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -150,7 +150,7 @@ serviceHost.AddServiceEndpoint(new CustomEndpoint());
 ```xml  
 <services>  
   <service>  
-    <endpoint isSystemEndpoint=”true” kind=”udpDiscoveryEndpoint” />  
+    <endpoint isSystemEndpoint="true" kind="udpDiscoveryEndpoint" />  
   </service>  
 </services>  
 <standardEndpoints>    

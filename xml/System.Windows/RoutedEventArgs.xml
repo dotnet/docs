@@ -152,7 +152,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value that indicates the present state of the event handling for a routed event as it travels the route.</summary>
-        <value>If setting, set to<see langword=" true" /> if the event is to be marked handled; otherwise <see langword="false" />. If reading this value,<see langword=" true" /> indicates that either a class handler, or some instance handler along the route, has already marked this event handled. <see langword="false" />.indicates that no such handler has marked the event handled.  
+        <value>If setting, set to <see langword="true" /> if the event is to be marked handled; otherwise <see langword="false" />. If reading this value, <see langword="true" /> indicates that either a class handler, or some instance handler along the route, has already marked this event handled. <see langword="false" />.indicates that no such handler has marked the event handled.  
   
  The default value is <see langword="false" />.</value>
         <remarks>

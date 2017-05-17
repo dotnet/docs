@@ -60,7 +60,7 @@ This topic discusses features new to [!INCLUDE[indigo1](../../../includes/indigo
  An HTTPS protocol mapping has been added to simplify exposing an endpoint over HTTPS. To enable an HTTPS endpoint, ensure your website has an HTTPS binding and SSL certificate configured, and then simply enable HTTPS for the virtual directory that hosts the service. If metadata is enabled for the service, it will be exposed over HTTPS as well.  
   
 ## Generating a Single WSDL Document  
- Some third-party WSDL processing stacks are not able to process WSDL documents that have dependencies on other documents through a xsd:import.  WCF now allows you to specify that all WSDL information be returned in a single document. To request a single WSDL document append “?singleWSDL” to the URI when requesting metadata from the service.  
+ Some third-party WSDL processing stacks are not able to process WSDL documents that have dependencies on other documents through a xsd:import.  WCF now allows you to specify that all WSDL information be returned in a single document. To request a single WSDL document append "?singleWSDL" to the URI when requesting metadata from the service.  
   
 ## WebSocket Support  
  WebSockets is a technology that provides true bidirectional communication over ports 80 and 443 with performance characteristics similar to TCP. Two new bindings have been added to support communication over a WebSocket transport. <xref:System.ServiceModel.NetHttpBinding> and <xref:System.ServiceModel.NetHttpsBinding>. For more information see: [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md).  
@@ -99,7 +99,7 @@ This topic discusses features new to [!INCLUDE[indigo1](../../../includes/indigo
  Beginning with WCF 4.5 the WCF binary encoder adds support for compression. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Both the client and the service must configure the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Compression will work for HTTP, HTTPS, and TCP protocols. If a client specifies to use compression but the service does not support it a protocol exception is thrown indicating a protocol mismatch. [!INCLUDE[crdefault](../../../includes/crdefault-md.md)][Choosing a Message Encoder](../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)  
   
 ## UDP  
- Support has been added for a UDP transport which allows developers to write services that use “fire and forget” messaging. A client sends a message to a service and expects no response from the service.  
+ Support has been added for a UDP transport which allows developers to write services that use "fire and forget" messaging. A client sends a message to a service and expects no response from the service.  
   
 ## Multiple Authentication Support  
  Support has been added to support multiple authentication modes, as supported by IIS, on a single WCF endpoint when using the HTTP transport and transport security. IIS allows you to enable multiple authentication modes on a virtual directory, this feature allows a single WCF endpoint to support the multiple authentication modes enabled for the virtual directory where the WCF service is hosted.  

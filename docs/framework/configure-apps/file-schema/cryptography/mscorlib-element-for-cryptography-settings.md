@@ -36,7 +36,7 @@ Contains the [\<cryptographySettings> element](../../../../../docs/framework/con
   
 ```  
   
-      <mscorlib>   
+      <mscorlib>   
 </mscorlib>  
 ```  
   

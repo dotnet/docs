@@ -1,4 +1,4 @@
-# [Assemblies and the Global Assembly Cache (Visual Basic)](index.md)
+# [Assemblies and the GAC](index.md)
 ## [Friend Assemblies](friend-assemblies.md)
 ### [How to: Create Unsigned Friend Assemblies](how-to-create-unsigned-friend-assemblies.md)
 ### [How to: Create Signed Friend Assemblies](how-to-create-signed-friend-assemblies.md)

@@ -73,7 +73,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="fileName" /> or <paramref name="typeName " />is <see langword="null" />.</exception>
+          <paramref name="fileName" /> or <paramref name="typeName" /> is <see langword="null" />.</exception>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>

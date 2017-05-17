@@ -47,18 +47,14 @@
   
  Both the <xref:System.Data.Common.DbConnectionStringBuilder.Add%2A> method and <xref:System.Data.Common.DbConnectionStringBuilder.Item%2A> property handle tries to insert malicious entries. For example, the following code correctly escapes the nested key/value pair:  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim builder As New System.Data.Common.DbConnectionStringBuilder  
 builder("Data Source") = "(local)"  
 builder("integrated sSecurity") = True  
 builder("Initial Catalog") = "AdventureWorks;NewValue=Bad"  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 System.Data.Common.DbConnectionStringBuilder builder =   
     new System.Data.Common.DbConnectionStringBuilder();  
 builder["Data Source"] = "(local)";  

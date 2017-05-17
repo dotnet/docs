@@ -70,9 +70,7 @@ Console.WriteLine(myDirectoryEntry.Name + " entry is created in container.")
   
  The following C# example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
   
- [C#]  
-  
-```  
+```csharp  
 String strPath = "IIS://localhost/W3SVC/1/Root";  
   
 // Create a new 'DirectoryEntry' object with the given path.  
@@ -89,7 +87,7 @@ Console.WriteLine (myDirectoryEntry.Name + " entry is created in container.");
   
  The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with a specified path, then creates a new entry in the container and saves it.  
   
-```  
+```cpp  
 String* strPath = S"IIS://localhost/W3SVC/1/Root";  
   
 // Create a new 'DirectoryEntry' object with the given path.  
@@ -246,7 +244,7 @@ class MyClass1
   
  The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. It attempts to retrieve the new entry.  
   
-```cpp#  
+```cpp  
 #using <mscorlib.dll>  
 #using <System.dll>  
 #using <System.Directoryservices.dll>  
@@ -420,7 +418,7 @@ class MyClass1
   
  The following C++ example creates a new <xref:System.DirectoryServices.DirectoryEntry> object with the specified path, then creates a new entry in the container and saves it. Finally, it retrieves the new entry and deletes it.  
   
-```cpp#  
+```cpp  
 #using <mscorlib.dll>  
 #using <System.dll>  
 #using <System.Directoryservices.dll>  

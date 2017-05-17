@@ -26,7 +26,7 @@ The `diagnostics` element defines settings that can be used by an administrator 
 ```  
   
 <system.serviceModel>  
-   <diagnostics etwProviderId=”String”       performanceCounters="Off/ServiceOnly/All/Default"              wmiProviderEnabled="Boolean" >       <endToEndTracing activityTracing="Boolean"  
+   <diagnostics etwProviderId="String"       performanceCounters="Off/ServiceOnly/All/Default"              wmiProviderEnabled="Boolean" >       <endToEndTracing activityTracing="Boolean"  
           messageFlowTracing="Boolean"  
           propagateActivity="Boolean" />  
        <messageLogging logEntireMessage="Boolean"  

@@ -90,7 +90,7 @@ feed.ElementExtensions.Add("simpleString", "", "hello, world!");
   
 ```  
   
- The XML namespace for this element is the empty namespace (“”) and its value is a text node that contains the string “hello, world!”.  
+ The XML namespace for this element is the empty namespace ("") and its value is a text node that contains the string "hello, world!".  
   
  One way to create complex element extensions that consist of many nested elements is to use the .NET Framework APIs for serialization (both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Xml.Serialization.XmlSerializer> are supported) as shown in the following examples.  
   

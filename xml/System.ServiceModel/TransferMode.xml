@@ -62,7 +62,7 @@ CustomBinding binding = new CustomBinding(encoder, transport);
 <customBinding>  
     <binding name="streamingBinding">  
         <binaryMessageEncoding />  
-            <tcpTransport transferMode=”Streamed” />  
+            <tcpTransport transferMode="Streamed" />  
      </binding>  
 </customBinding>  
 ```  

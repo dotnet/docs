@@ -27,11 +27,11 @@ Evaluates a set of `Boolean` expressions to determine the result.
 ```  
   
 CASE  
-     WHEN Boolean_expression THEN result_expression   
-    [ ...n ]   
-     [   
-    ELSE else_result_expression   
-     ]   
+     WHEN Boolean_expression THEN result_expression   
+    [ ...n ]   
+     [   
+    ELSE else_result_expression   
+     ]   
 END  
 ```  
   

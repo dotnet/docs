@@ -98,8 +98,8 @@ The folowing directory structure is produced as a result of the command completi
     ├── FSNetCore.sln
     └── src
         ├── App
-        │   ├── App.fsproj
-        │   ├── Program.fs
+        │   ├── App.fsproj
+        │   ├── Program.fs
         └── Library
             ├── Library.fs
             └── Library.fsproj

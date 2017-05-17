@@ -3164,7 +3164,7 @@
         <summary>Converts a node's content to a string.</summary>
         <returns>The node content in a string representation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">An entry in<paramref name=" strings" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">An entry in <paramref name="strings" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsString">
@@ -3199,7 +3199,7 @@
         <summary>Converts a node's content to a string.</summary>
         <returns>The node content in a string representation.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">An entry in<paramref name=" strings" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">An entry in <paramref name="strings" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReadContentAsTimeSpan">

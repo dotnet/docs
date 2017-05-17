@@ -30,9 +30,7 @@
 ## Examples  
  The following example shows how to create a <xref:System.Web.DynamicData.DynamicValidator> control class that displays other exceptions in all pages.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 ''' <summary>   
 ''' Display other exceptions in all pages.   
 ''' </summary>   
@@ -69,9 +67,7 @@ Public Class MyDynamicValidator
 End Class  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 /// <summary>  
 /// Display other exceptions in all pages.   
 /// </summary>  
@@ -108,7 +104,7 @@ public class MyDynamicValidator : DynamicValidator {
   
  The following example shows how to use tag remapping in the web.config file to display the exception in all the Web pages.  
   
-```  
+```xml  
 <pages>  
   <tagMapping>  
     <add tagType="System.Web.DynamicData.DynamicValidator"   

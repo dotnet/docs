@@ -18,7 +18,7 @@ With the move of .NET Core projects from project.json to csproj and MSBuild, a s
 
 This document describes the new reference type. It also shows how to add a package dependency using this new reference type to your project. 
 
-## The new <PackageReference> element
+## The new \<PackageReference> element
 The `<PackageReference>` has the following basic structure:
 
 ```xml

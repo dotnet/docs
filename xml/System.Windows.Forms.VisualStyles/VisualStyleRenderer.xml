@@ -334,7 +334,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="g" /> or <paramref name="image" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="imageIndex" /> is less than 0, or greater than or equal to the number of images in<paramref name=" imageList" />.</exception>
+          <paramref name="imageIndex" /> is less than 0, or greater than or equal to the number of images in <paramref name="imageList" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="DrawParentBackground">

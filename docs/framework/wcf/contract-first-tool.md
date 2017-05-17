@@ -103,13 +103,13 @@ Service contracts often need to be created from existing services. In [!INCLUDE[
 -   **NamespaceMappings**: This setting specifies the mappings from the XSD Target Namespaces to CLR namespaces. Each mapping should use the following format:  
   
     ```xml  
-    “<Schema Namespace>, <CLR Namespace>”  
+    "<Schema Namespace>, <CLR Namespace>"  
     ```  
   
      The XML Serializer only accepts one mapping in the following format:  
   
     ```xml  
-    “*, <CLR Namespace>”  
+    "*, <CLR Namespace>"  
     ```  
   
 -   **OutputDirectory**: This setting specifies the directory where the code files will be generated.  

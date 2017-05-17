@@ -40,8 +40,8 @@ Removes a custom Web request module from the application.
   
 ```  
   
-      <remove   
-  name = "URI prefix"   
+      <remove   
+  name = "URI prefix"   
 />  
 ```  
   

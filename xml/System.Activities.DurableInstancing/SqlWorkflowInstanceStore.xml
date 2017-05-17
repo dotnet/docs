@@ -23,7 +23,6 @@
 ## Examples  
  The following code sample demonstrates creating a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>. This example is from the [Persistence Participants](~/docs/framework/windows-workflow-foundation/persistence-participants.md) sample.  
   
-<!-- TODO: review snippet reference  [!CODE [wfs_PersistenceParticipant#2](wfs_PersistenceParticipant#2)]  -->  
   
  ]]></format>
     </remarks>
@@ -170,7 +169,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the host does not renew the lock (in other words, extend the lease) with this in this time period, the persistence provider unlocks the instance and another host may lock the instance. The value is a <xref:System.TimeSpan> of the form “hh:mm:ss”. The minimum permitted value is “00:00:01” (1 sec). The default value of this property is “00:00:30” (30 seconds).  
+ If the host does not renew the lock (in other words, extend the lease) with this in this time period, the persistence provider unlocks the instance and another host may lock the instance. The value is a <xref:System.TimeSpan> of the form "hh:mm:ss". The minimum permitted value is "00:00:01" (1 sec). The default value of this property is "00:00:30" (30 seconds).  
   
    
   
@@ -196,13 +195,13 @@
         <ReturnType>System.Activities.DurableInstancing.InstanceCompletionAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the action to be taken after a workflow instance completes. Possible values are “DeleteNothing” and “DeleteAll”. The default value is “DeleteAll”. If the property is set to “DeleteNothing”, the persistence provider keeps all the instance data and metadata in the persistence database after the workflow instance completes. If the property is set to “DeleteAll”, the persistence provider deletes all the instance data and metadata after the workflow instance completes.</summary>
+        <summary>Specifies the action to be taken after a workflow instance completes. Possible values are "DeleteNothing" and "DeleteAll". The default value is "DeleteAll". If the property is set to "DeleteNothing", the persistence provider keeps all the instance data and metadata in the persistence database after the workflow instance completes. If the property is set to "DeleteAll", the persistence provider deletes all the instance data and metadata after the workflow instance completes.</summary>
         <value>The action to be taken after a workflow completes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Possible values are “DeleteNothing” and “DeleteAll”. The default value is “DeleteAll”. If the property is set to “DeleteNothing”, the persistence provider keeps all the instance data and metadata in the persistence database after the workflow instance completes. If the property is set to “DeleteAll”, the persistence provider deletes all the instance data and metadata after the workflow instance completes.  
+ Possible values are "DeleteNothing" and "DeleteAll". The default value is "DeleteAll". If the property is set to "DeleteNothing", the persistence provider keeps all the instance data and metadata in the persistence database after the workflow instance completes. If the property is set to "DeleteAll", the persistence provider deletes all the instance data and metadata after the workflow instance completes.  
   
    
   
@@ -229,12 +228,12 @@
       </ReturnValue>
       <Docs>
         <summary>Specifies a value that indicates whether the instance data must be compressed.</summary>
-        <value>The possible values are “None” and “GZip”. The default is “None”.</value>
+        <value>The possible values are "None" and "GZip". The default is "None".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value is set to “GZip”, the instance data is compressed using the GZip algorithm.  
+ If the value is set to "GZip", the instance data is compressed using the GZip algorithm.  
   
    
   
@@ -413,7 +412,7 @@
   
  When a workflow host receives this event, it executes the <xref:System.Activities.DurableInstancing.TryLoadRunnableWorkflowCommand> against the instance store to load the instance into the memory.  
   
- The type of the property is TimeSpan and the value is of the form “hh:mm:ss”. The minimum value is “00:00:01” (1 sec). If omitted, defaults to “00:00:05” (5 secs). This parameter is an optional parameter.  
+ The type of the property is TimeSpan and the value is of the form "hh:mm:ss". The minimum value is "00:00:01" (1 sec). If omitted, defaults to "00:00:05" (5 secs). This parameter is an optional parameter.  
   
    
   

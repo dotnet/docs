@@ -26,10 +26,10 @@ Registers the caches used for session tokens and token replay detection.
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <caches>  
-    </caches>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <caches>  
+    </caches>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

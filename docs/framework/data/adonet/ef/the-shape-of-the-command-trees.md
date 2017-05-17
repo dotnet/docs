@@ -102,9 +102,9 @@ The SQL generation module is responsible for generating a backend specific SQL q
 #### DbScanExpression  
  When used in output command trees, the DbScanExpression effectively represents a scan over a table, a view, or a store query, represented by EnitySetBase::Target.  
   
- If the metadata property “Defining Query” of the target is non-null, then it represents a query, the query text for which is provided in that metadata property in the provider’s specific language (or dialect) as specified in the store schema definition.  
+ If the metadata property "Defining Query" of the target is non-null, then it represents a query, the query text for which is provided in that metadata property in the provider’s specific language (or dialect) as specified in the store schema definition.  
   
- Otherwise, the target represents a table or a view. Its schema prefix is either in the “Schema” metadata property, if not null, otherwise is the entity container name.  The table or view name is either the “Table” metadata property, if not null, otherwise the Name property of the entity set base.  
+ Otherwise, the target represents a table or a view. Its schema prefix is either in the "Schema" metadata property, if not null, otherwise is the entity container name.  The table or view name is either the "Table" metadata property, if not null, otherwise the Name property of the entity set base.  
   
  All these properties originate from the definition of the corresponding EntitySet in the store schema definition file (the SSDL).  
   

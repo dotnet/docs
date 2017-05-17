@@ -182,7 +182,7 @@
         <param name="context">The client script that is evaluated on the client prior to initiating the callback. The result of the script is passed back to the client event handler.</param>
         <param name="clientErrorCallback">The name of the client event handler that receives the result when an error occurs in the server event handler.</param>
         <param name="useAsync">
-          <see langword="true " /> to perform the callback asynchronously; <see langword="false" /> to perform the callback synchronously.</param>
+          <see langword="true" /> to perform the callback asynchronously; <see langword="false" /> to perform the callback synchronously.</param>
         <summary>Obtains a reference to a client function that, when invoked, initiates a client call back to server events. The client function for this overloaded method includes a specified target, argument, client script, context, error handler, and Boolean value.</summary>
         <returns>The name of a client function that invokes the client callback.</returns>
         <remarks>
@@ -236,7 +236,7 @@
         <param name="context">The client script that is evaluated on the client prior to initiating the callback. The result of the script is passed back to the client event handler.</param>
         <param name="clientErrorCallback">The name of the client event handler that receives the result when an error occurs in the server event handler.</param>
         <param name="useAsync">
-          <see langword="true " />to perform the callback asynchronously; <see langword="false" /> to perform the callback synchronously.</param>
+          <see langword="true" /> to perform the callback asynchronously; <see langword="false" /> to perform the callback synchronously.</param>
         <summary>Obtains a reference to a client function that, when invoked, initiates a client call back to server events. The client function for this overloaded method includes a specified control, argument, client script, context, error handler, and Boolean value.</summary>
         <returns>The name of a client function that invokes the client callback.</returns>
         <remarks>

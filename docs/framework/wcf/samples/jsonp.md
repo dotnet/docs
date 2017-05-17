@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # JSONP
-This sample demonstrates how to support JSON with Padding (JSONP) in WCF REST services. JSONP is a convention used to invoke cross-domain scripts by generating script tags in the current document. The result is returned in a specified callback function. JSONP is based on the idea that tags such as \<script src=”http://...” > can evaluate scripts from any domain and the script retrieved by those tags is evaluated within a scope in which other functions may already be defined.  
+This sample demonstrates how to support JSON with Padding (JSONP) in WCF REST services. JSONP is a convention used to invoke cross-domain scripts by generating script tags in the current document. The result is returned in a specified callback function. JSONP is based on the idea that tags such as \<script src="http://..." > can evaluate scripts from any domain and the script retrieved by those tags is evaluated within a scope in which other functions may already be defined.  
   
 ## Demonstrates  
  Cross-domain scripting with JSONP.  
@@ -77,4 +77,4 @@ Sys._json0({"__type":"Customer:#Microsoft.Samples.Jsonp","Address":"1 Example Wa
   
 2.  Press F5 to launch  HYPERLINK "http://localhost:26648/JSONPClientPage.aspx" http://localhost:26648/JSONPClientPage.aspx in the browser.  
   
-3.  Notice that after the page loads, the text inputs for “Name” and “Address” are populated by values.  These values were supplied from a call to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service after the browser finished rendering the page.
+3.  Notice that after the page loads, the text inputs for "Name" and "Address" are populated by values.  These values were supplied from a call to the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service after the browser finished rendering the page.

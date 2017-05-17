@@ -27,7 +27,7 @@ Specifies the discoverability of service endpoints.
 ## Syntax  
   
 ```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <serviceDiscovery>        <announcementEndpoints>              <endpoint name="String”                        kind="Type" />        </announcementEndpoints>        <discoveryEndpoints>              <endpoint name="String”                        kind="Type" />        </discoveryEndpoints>      </serviceDiscovery>    </behavior>  </serviceBehaviors></behaviors>  
+<behaviors>  <serviceBehaviors>    <behavior name=String">      <serviceDiscovery>        <announcementEndpoints>              <endpoint name="String"                        kind="Type" />        </announcementEndpoints>        <discoveryEndpoints>              <endpoint name="String"                        kind="Type" />        </discoveryEndpoints>      </serviceDiscovery>    </behavior>  </serviceBehaviors></behaviors>  
 ```  
   
 ## Attributes and Elements  

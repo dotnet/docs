@@ -25,7 +25,7 @@ A service behavior that enables you to specify settings that control how workflo
 ## Syntax  
   
 ```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <workflowInstanceManagement authorizedWindowsGroup=”” />    </behavior>  </serviceBehaviors></behaviors>  
+<behaviors>  <serviceBehaviors>    <behavior name=String">      <workflowInstanceManagement authorizedWindowsGroup="" />    </behavior>  </serviceBehaviors></behaviors>  
 ```  
   
 ## Attributes and Elements  

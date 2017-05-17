@@ -66,12 +66,12 @@ Classes are declared using the keyword `class`, as shown in the following exampl
   
 -   [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
   
--   [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
-  
 -   [Constants](../../../csharp/programming-guide/classes-and-structs/constants.md)  
   
 -   [Fields](../../../csharp/programming-guide/classes-and-structs/fields.md)  
   
+-   [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
+
 -   [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)  
   
 -   [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)  

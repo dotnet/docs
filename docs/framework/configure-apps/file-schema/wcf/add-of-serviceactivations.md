@@ -58,13 +58,13 @@ A configuration element that allows you to define virtual service activation set
   
 ```  
 <configuration>  
-  <system.serviceModel>  
-    <serviceHostingEnvironment>  
-      <serviceActivations>  
-        <add service="GreetingService"/>  
-      </serviceActivations>  
-    </serviceHostingEnvironment>  
-  </system.serviceModel>  
+  <system.serviceModel>  
+    <serviceHostingEnvironment>  
+      <serviceActivations>  
+        <add service="GreetingService"/>  
+      </serviceActivations>  
+    </serviceHostingEnvironment>  
+  </system.serviceModel>  
 </configuration>  
 ```  
   

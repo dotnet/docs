@@ -52,8 +52,8 @@ by the test.
 Changing the way that tests are run
 -----------------------------------
 Each time you run one or more tests, a collection of settings is used to
-determine how those tests are run. These settings are contained in a “test
-settings” file.
+determine how those tests are run. These settings are contained in a "test
+settings" file.
 
 Here is a partial list of the changes you can make with a test settings file:
 
@@ -81,7 +81,7 @@ Explorer and then changing the test settings. (Test settings files have the
 extension .testsettings.)
 
 A solution can contain multiple test settings files. Only one of those
-files, known as the “Active” test settings file, is used to determine the
+files, known as the "Active" test settings file, is used to determine the
 settings that are currently used for test runs. You select the active test
 settings by clicking Select Active Test Settings on the Test menu.
 
@@ -122,8 +122,8 @@ you can turn into generic tests:
    test passed or failed. 0 indicates passing and any other value indicates
    a failure.
  - A general program to obtain specific functionality during a test scenario.
- - A test or program that uses a special XML file (called a “summary results
-   file”), to communicate detailed results.
+ - A test or program that uses a special XML file (called a "summary results
+   file"), to communicate detailed results.
 
 Manual test: The manual test type is used when the test tasks are to be
 completed by a test engineer as opposed to an automated script.

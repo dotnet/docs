@@ -34,7 +34,7 @@
  <xref:System.Diagnostics.EventLog> lets you access or customize Windows event logs, which record information about important software or hardware events. Using <xref:System.Diagnostics.EventLog>, you can read from existing logs, write entries to logs, create or delete event sources, delete logs, and respond to log entries. You can also create new logs when creating an event source.  
   
 > [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
  In addition to providing access to individual event logs and their entries, the <xref:System.Diagnostics.EventLog> class lets you access the collection of all event logs. You can use the `static` members of <xref:System.Diagnostics.EventLog> to delete logs, get log lists, create or delete a source, or determine if a computer already contains a particular source.  
   
@@ -1123,7 +1123,7 @@ SVC_UPDATE.EXE
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
         </block>
@@ -2127,7 +2127,7 @@ SVC_UPDATE.EXE
   
  The registry key for the event log could not be opened on the target computer.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="resourceFile " />is <see langword="null" />.</exception>
+          <paramref name="resourceFile" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Diagnostics.EventLogPermission">for administering event log information on the computer. Associated enumeration: <see cref="F:System.Diagnostics.EventLogPermissionAccess.Administer" /></permission>
       </Docs>
     </Member>

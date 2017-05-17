@@ -113,7 +113,7 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
   
 ```  
   
- The section under the <`cryptoClasses`> element creates the mapping between the SHA256CryptoServiceProvider and the alias “SHA256CSP”. The <`nameEntry`> element creates the mapping between the “SHA256CSP” alias and the specified URL (http://constoso.com/CustomAlgorithms/CustomHashAlgorithm ).  
+ The section under the <`cryptoClasses`> element creates the mapping between the SHA256CryptoServiceProvider and the alias "SHA256CSP". The <`nameEntry`> element creates the mapping between the "SHA256CSP" alias and the specified URL (http://constoso.com/CustomAlgorithms/CustomHashAlgorithm ).  
   
  To register the custom algorithm in code use the <xref:System.Security.Cryptography.CryptoConfig.AddAlgorithm%2A> System.String[])?qualifyHint=False&autoUpgrade=True method. This method creates both mappings. The following example shows how to call this method:  
   

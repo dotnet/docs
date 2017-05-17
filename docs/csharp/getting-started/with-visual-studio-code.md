@@ -1,10 +1,10 @@
 ---
-title: Getting started with Visual Studio Code | C# Guide
+title: Get started with Visual Studio Code | C# Guide
 description: Learn how to create and debug your first .NET Core application in C# using VS Code. 
-keywords: C#, Getting Started, Acquisition, Install, Visual Studio Code, Cross Platform
+keywords: C#, Get Started, Acquisition, Install, Visual Studio Code, Cross Platform
 author: kendrahavens
 ms.author: mairaw
-ms.date: 03/07/2017
+ms.date: 5/02/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: devlang-csharp
@@ -12,7 +12,7 @@ ms.devlang: csharp
 ms.assetid: 76c23597-4cf9-467e-8a47-0c3703ce37e7
 ---
 
-# Getting Started with Visual Studio Code
+# Get Started with Visual Studio Code
 
 .NET Core gives you a fast and modular platform for creating server applications that run on Windows, Linux, and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
 

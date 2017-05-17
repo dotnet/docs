@@ -843,7 +843,7 @@ public class SendEmail : Activity
         <summary>Called by the workflow runtime to initialize an activity during the construction of a new workflow instance. This method is called during the construction of a dynamic <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" /> is a null reference (<see langword="Nothing " />in Visual Basic).</exception>
+          <paramref name="provider" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Invoke&lt;T&gt;">

@@ -29,7 +29,7 @@ Passes constraining type arguments of a generic to the constructor of the generi
 ## XAML Attribute Usage  
   
 ```  
-<object x:TypeArguments="typeString" .../>  
+<object x:TypeArguments="typeString" .../>  
 ```  
   
 ## XAML Values  

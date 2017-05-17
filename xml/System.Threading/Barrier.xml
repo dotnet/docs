@@ -464,7 +464,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The total participant count is less than the specified<paramref name=" participantCount" /></exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The total participant count is less than the specified <paramref name="participantCount" /></exception>
         <exception cref="T:System.InvalidOperationException">The barrier already has 0 participants.  
   
  -or-  
@@ -615,7 +615,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="timeout" />is a negative number other than -1 milliseconds, which represents an infinite time-out, or it is greater than 32,767.</exception>
+          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out, or it is greater than 32,767.</exception>
         <exception cref="T:System.InvalidOperationException">The method was invoked from within a post-phase action, the barrier currently has 0 participants, or the barrier is signaled by more threads than are registered as participants.</exception>
       </Docs>
     </Member>
@@ -704,7 +704,7 @@
           <paramref name="cancellationToken" /> has been canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The current instance has already been disposed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="timeout" />is a negative number other than -1 milliseconds, which represents an infinite time-out.</exception>
+          <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out.</exception>
         <exception cref="T:System.InvalidOperationException">The method was invoked from within a post-phase action, the barrier currently has 0 participants, or the barrier is signaled by more threads than are registered as participants.</exception>
       </Docs>
     </Member>

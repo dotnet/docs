@@ -119,7 +119,7 @@
         <param name="item">The key/pair to locate. The key is an object of type <see cref="T:System.Windows.Markup.XmlLanguage" />. The value is an associated string.</param>
         <summary>Determines whether the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> contains the key/value pair.</summary>
         <returns>
-          <see langword="true " />if the collection contains the key/value pair; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the collection contains the key/value pair; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,7 +142,7 @@
         <param name="key">A value of type <see cref="T:System.Windows.Markup.XmlLanguage" />.</param>
         <summary>Determines whether the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> contains the specified language.</summary>
         <returns>
-          <see langword="true " />if the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> contains <paramref name="key" />; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> contains <paramref name="key" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,7 +231,7 @@
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Windows.Media.LanguageSpecificStringDictionary" /> is read-only.</summary>
         <value>
-          <see langword="true " />if the dictionary is read-only; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the dictionary is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

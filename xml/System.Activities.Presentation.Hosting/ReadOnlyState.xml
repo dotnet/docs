@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Visual elements can bind to this property in order to provide different behavior in a read-only state (such as the <xref:System.Activities.Presentation.View.ExpressionTextBox> disallowing edits and setting the state to “Disabled”). If a hosting application would like to set the designer to a read-only state, this <xref:System.Activities.Presentation.ContextItem> can be retrieved and can be set to `false`.  
+ Visual elements can bind to this property in order to provide different behavior in a read-only state (such as the <xref:System.Activities.Presentation.View.ExpressionTextBox> disallowing edits and setting the state to "Disabled"). If a hosting application would like to set the designer to a read-only state, this <xref:System.Activities.Presentation.ContextItem> can be retrieved and can be set to `false`.  
   
  ]]></format>
     </remarks>

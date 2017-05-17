@@ -51,9 +51,9 @@ Enables type names to be referenced without namespace qualification.
 ## Syntax  
   
 ```  
-Imports [ aliasname = ] namespace  
+Imports [ aliasname = ] namespace  
 -or-  
-Imports [ aliasname = ] namespace.element  
+Imports [ aliasname = ] namespace.element  
 ```  
   
 ## Parts  

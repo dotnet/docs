@@ -1554,20 +1554,7 @@
   
 ## Examples  
  The following example shows how to programmatically specify the cache provider named `DiskCache` for any HTTP request that goes to the Advanced.aspx page.  
-  
- [Visual Basic]  
-  
-```  
-Public Overloads Overrides Sub GetOutputCacheProviderName(ByVal context _  
-        As HttpContext) As String   
-    If context.Request.Path.EndsWith("Advanced.aspx") Then   
-        Return "DiskCache"   
-    Else   
-        Return MyBase.GetOutputCacheProviderName(context)   
-    End If   
-End Sub  
-```  
-  
+
 ```csharp  
 public override string GetOutputCacheProviderName(HttpContext context)  
 {  
@@ -1576,6 +1563,17 @@ public override string GetOutputCacheProviderName(HttpContext context)
     else  
         return base.GetOutputCacheProviderName(context);  
 }  
+```  
+
+```vb  
+Public Overloads Overrides Sub GetOutputCacheProviderName(ByVal context _  
+        As HttpContext) As String   
+    If context.Request.Path.EndsWith("Advanced.aspx") Then   
+        Return "DiskCache"   
+    Else   
+        Return MyBase.GetOutputCacheProviderName(context)   
+    End If   
+End Sub  
 ```  
   
  ]]></format>

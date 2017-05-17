@@ -25,7 +25,7 @@ This topic discusses how clients address services that read from queues and how 
 ## MSMQ Addressing  
  MSMQ uses paths and format names to identify a queue. Paths specify a host name and a `QueueName`. Optionally, there can be a `Private$` between the host name and the `QueueName` to indicate a private queue that is not published in the Active Directory directory service.  
   
- Path names are mapped to “FormatNames” to determine additional aspects of the address, including routing and queue manager transfer protocol. The Queue Manager supports two transfer protocols: native MSMQ protocol and SOAP Reliable Messaging Protocol (SRMP).  
+ Path names are mapped to "FormatNames" to determine additional aspects of the address, including routing and queue manager transfer protocol. The Queue Manager supports two transfer protocols: native MSMQ protocol and SOAP Reliable Messaging Protocol (SRMP).  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] MSMQ path and format names, see [About Message Queuing](http://go.microsoft.com/fwlink/?LinkId=94837).  
   

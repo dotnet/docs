@@ -114,7 +114,7 @@
         <returns>An <see cref="T:System.Security.Cryptography.AsymmetricAlgorithm" /> that represents the specified asymmetric cryptographic algorithm.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
-          <paramref name="requiresPrivateKey " />is <see langword="true" /> and a private key is not available.</exception>
+          <paramref name="requiresPrivateKey" /> is <see langword="true" /> and a private key is not available.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetHashAlgorithmForSignature">
@@ -138,7 +138,7 @@
         <returns>A <see cref="T:System.Security.Cryptography.HashAlgorithm" /> that generates hashes for digital signatures.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
-          <paramref name="algorithm " />is not supported. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</exception>
+          <paramref name="algorithm" /> is not supported. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSignatureDeformatter">
@@ -162,7 +162,7 @@
         <returns>An <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" /> that represents the de-formatter algorithm for the digital signature.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
-          <paramref name="algorithm " />is not supported. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</exception>
+          <paramref name="algorithm" /> is not supported. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSignatureFormatter">
@@ -186,7 +186,7 @@
         <returns>An <see cref="T:System.Security.Cryptography.AsymmetricSignatureDeformatter" /> that represents the formatter algorithm for the digital signature.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
-          <paramref name="algorithm " />is not supported. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</exception>
+          <paramref name="algorithm" /> is not supported. The supported algorithm is <see cref="F:System.IdentityModel.Tokens.SecurityAlgorithms.RsaSha1Signature" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="HasPrivateKey">

@@ -33,7 +33,7 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
    behaviorConfiguration="String"  
    binding="String"  
    bindingConfiguration="String"  
-   contract="String"   endpointConfiguration=”String”   kind=”String”  
+   contract="String"   endpointConfiguration="String"   kind="String"  
    name="String"  
 </endpoint>  
 ```  

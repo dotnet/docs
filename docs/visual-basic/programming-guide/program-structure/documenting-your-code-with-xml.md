@@ -53,7 +53,7 @@ In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vb
   
     -   The `cref` attribute can be attached to any tag to provide a reference to a code element. The compiler verifies that this code element exists. If the verification fails, the compiler issues a warning. The compiler also respects any `Imports` statements when looking for a type described in the `cref` attribute.  
   
-    -   The \<summary> tag is used by IntelliSense in [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] to display additional information about a type or member.  
+    -   The \<summary> tag is used by IntelliSense in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] to display additional information about a type or member.  
   
 ## Related Sections  
  For details on creating an XML file with documentation comments, see the following topics:  

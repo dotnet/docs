@@ -31,7 +31,7 @@ This section provides examples of [!INCLUDE[sqltecxlinq](../../../../csharp/prog
 |[How to: Project an Object Graph (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-project-an-object-graph.md)|Shows how to project a more complex object graph from a [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] query.|  
 |[How to: Project an Anonymous Type (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-project-an-anonymous-type.md)|Shows how to project a collection of anonymous objects from a [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] query.|  
 |[How to: Generate Text Files from XML (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-generate-text-files-from-xml.md)|Shows how to transform an XML file to a non-XML text file.|  
-|[How to: Generate XML from CSV Files (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-generate-xml-from-csv-files.md)|Shows how to use [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] to parse a CSV file and generate XML from it.|  
+|[How to: Generate XML from CSV Files (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-generate-xml-from-csv-files.md)|Shows how to use [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to parse a CSV file and generate XML from it.|  
   
 ## See Also  
  [Querying XML Trees (C#)](../../../../csharp/programming-guide/concepts/linq/querying-xml-trees.md)

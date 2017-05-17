@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Work with ActiveX Controls (Visual Basic)
-ActiveX controls are COM components or objects you can insert into a Web page or other application to reuse packaged functionality someone else has programmed. You can use ActiveX controls developed for Visual Basic 6.0 and earlier versions to add features to the **Toolbox** of [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].  
+ActiveX controls are COM components or objects you can insert into a Web page or other application to reuse packaged functionality someone else has programmed. You can use ActiveX controls developed for Visual Basic 6.0 and earlier versions to add features to the **Toolbox** of [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
 ### To add ActiveX controls to the toolbox  
   

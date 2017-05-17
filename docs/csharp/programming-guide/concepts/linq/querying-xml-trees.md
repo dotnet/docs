@@ -20,7 +20,7 @@ ms.author: "wiwagn"
 # Querying XML Trees (C#)
 This section provides examples of [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] queries.  
   
- For more information about writing [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] queries, see [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md).  
+ For more information about writing [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries, see [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md).  
   
  After you have instantiated an XML tree, writing queries is the most effective way to extract data from the tree. Also, querying combined with functional construction enables you to generate a new XML document that has a different shape from the original document.  
   

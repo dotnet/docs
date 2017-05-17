@@ -59,10 +59,10 @@ This section provides links to reference information about various aspects of [!
   
 ## Related Sections  
  [General User Interface Elements (Visual Studio)](https://docs.microsoft.com/visualstudio/ide/reference/general-user-interface-elements-visual-studio)  
- Contains topics for dialog boxes and windows used in [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
+ Contains topics for dialog boxes and windows used in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
  [XML Tools in Visual Studio](https://docs.microsoft.com/visualstudio/xml-tools/xml-tools-in-visual-studio)  
- Provides links to topics on various XML tools available in [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
+ Provides links to topics on various XML tools available in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
  [Automation and Extensibility Reference](http://msdn.microsoft.com/library/93112562-db21-4188-9383-ed19ad79bddf)  
- Provides links to topics covering automation and extensibility in [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)], for both shared and language-specific components.
+ Provides links to topics covering automation and extensibility in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], for both shared and language-specific components.

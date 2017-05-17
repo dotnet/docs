@@ -50,7 +50,7 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
 [!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
   
 ## Creating the Application  
- Start [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs_md.md)] and begin the project by creating a form that the user can use to write to the designated file.  
+ Start [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] and begin the project by creating a form that the user can use to write to the designated file.  
   
 #### To create the project  
   
@@ -60,7 +60,7 @@ This walkthrough demonstrates how to open and read a file using the <xref:System
   
 3.  In the **Name** box type `MyDiary` and click **OK**.  
   
-     [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs_md.md)] adds the project to **Solution Explorer**, and the **Windows Forms Designer** opens.  
+     [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] adds the project to **Solution Explorer**, and the **Windows Forms Designer** opens.  
   
 4.  Add the controls in the following table to the form and set the corresponding values for their properties.  
   

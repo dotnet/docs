@@ -71,7 +71,7 @@ The following web sites provide guidance and can help you find answers to common
 |----------|----------------|  
 |[Visual Basic Language](http://go.microsoft.com/fwlink/?LinkId=145963)|Discusses the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language syntax and compiler.|  
 |[Visual Basic Interop and Upgrade](http://go.microsoft.com/fwlink/?LinkId=145966)|Discusses upgrading to [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] and working with interoperability features.|  
-|[Visual Basic IDE](http://go.microsoft.com/fwlink/?LinkId=145971)|Discusses working in the [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] integrated development environment.|  
+|[Visual Basic IDE](http://go.microsoft.com/fwlink/?LinkId=145971)|Discusses working in the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] integrated development environment.|  
 |[Visual Basic Power Packs](http://social.msdn.microsoft.com/Forums/vbpowerpacks/threads)|Discusses the add-ins, controls, components, samples and tools that are part of the Visual Basic Power Packs.|  
 |[Visual Basic General](http://go.microsoft.com/fwlink/?LinkId=145973)|Discusses issues with [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] that are not discussed in other forums.|  
   

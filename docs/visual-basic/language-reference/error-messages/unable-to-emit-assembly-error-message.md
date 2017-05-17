@@ -75,7 +75,7 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
   
      Use double quotation marks (") if a path or file contains spaces.  
   
-6.  In [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)], add a .NET Assembly reference to the file you just created.  
+6.  In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], add a .NET Assembly reference to the file you just created.  
   
 ## See Also  
  [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex)   

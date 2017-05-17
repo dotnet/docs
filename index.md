@@ -81,7 +81,7 @@ title: .NET Documentation
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/articles/standard">.NET Platform Guide</a></h3>
+                                                <h3><a href="/dotnet/articles/standard/">.NET Platform Guide</a></h3>
                                                 <p><a href="/dotnet/articles/standard/get-started">Get Started</a></p>
                                                 <p><a href="/dotnet/articles/standard/tour">Tour of .NET</a></p>
                                                 <p><a href="/dotnet/articles/standard/components">.NET Architectural Concepts</a></p>

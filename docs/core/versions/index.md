@@ -44,7 +44,7 @@ The installer UI in those downloads will also be modified to clearly present the
 
 #### File name format
 
-`[product]-[major].[minor].[patch]-[previewN]-[optional build #]-[rid]-[component].[file ext]`
+`[product]-[component]-[major].[minor].[patch]-[previewN]-[optional build #]-[rid].[file ext]`
 
 Here are some examples of this format:
 

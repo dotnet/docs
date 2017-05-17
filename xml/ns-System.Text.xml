@@ -1,6 +1,6 @@
 <Namespace Name="System.Text">
   <Docs>
-    <summary>The <see cref="N:System.Text" /> namespace in the System.Text.Encoding.CodePages.dll assembly contains a single class, <see cref="T:System.Text.CodePagesEncodingProvider" />, that extends the <see cref="T:System.Text.EncodingProvider" /> class to make code page encodings available to apps that target the Universal Windows Platform.</summary>
+    <summary>The <see cref="N:System.Text" /> namespace contains classes that represent ASCII and Unicode character encodings; abstract base classes for converting blocks of characters to and from blocks of bytes; and a helper class that manipulates and formats <see cref="T:System.String" /> objects without creating intermediate instances of <see cref="T:System.String" />.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

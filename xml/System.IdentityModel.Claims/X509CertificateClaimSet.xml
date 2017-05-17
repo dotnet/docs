@@ -121,7 +121,7 @@
         <param name="claimType">The uniform resource identifier (URI) of a claim type.</param>
         <param name="right">The URI of the right associated with the new claim.</param>
         <summary>Searches for the claim that matches the specified claim type and rights in the <see cref="T:System.IdentityModel.Claims.X509CertificateClaimSet" />.</summary>
-        <returns>A<see langword=" System.Collections.Generic.IEnumerable&lt;Claim&gt;" /> object that enables you to enumerate the claims that match the specified criteria.</returns>
+        <returns>A <see langword="System.Collections.Generic.IEnumerable&lt;Claim&gt;" /> object that enables you to enumerate the claims that match the specified criteria.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -43,7 +43,7 @@
       <Docs>
         <param name="srgsGrammar">The grammar to compile.</param>
         <param name="outputStream">The stream that receives the results of compilation.</param>
-        <summary>Compiles an <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" />object into a binary grammar file with the .cfg extension and sends the output to a stream.</summary>
+        <summary>Compiles an <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsDocument" /> object into a binary grammar file with the .cfg extension and sends the output to a stream.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

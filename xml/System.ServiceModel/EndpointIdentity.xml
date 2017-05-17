@@ -378,7 +378,7 @@
         <summary>Creates an X509Certificate identity with the specified primary and supporting certificates.</summary>
         <returns>A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
   
- An X509Certificate <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="primaryCertificate" /> and<paramref name=" supportingCertificates." /></returns>
+ An X509Certificate <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="primaryCertificate" /> and <paramref name="supportingCertificates." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

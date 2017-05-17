@@ -124,7 +124,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="oid " />is <see langword="null" />.</exception>
+          <paramref name="oid" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -294,7 +294,7 @@
         <returns>An object that represents the specified OID.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="friendlyName " /> is <see langword="null" />.</exception>
+          <paramref name="friendlyName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">The OID was not found.</exception>
       </Docs>
     </Member>

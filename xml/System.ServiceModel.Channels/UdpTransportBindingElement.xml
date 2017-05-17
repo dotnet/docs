@@ -59,7 +59,7 @@
         <typeparam name="TChannel">The type of channel the factory builds.</typeparam>
         <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> that provides context for the binding element.</param>
         <summary>Initializes a channel factory for producing channels of a specified type from the binding context.</summary>
-        <returns>The<see cref="T:System.ServiceModel.Channels.IChannelFactory`1" /> of type <paramref name="TChannel" /> initialized from the context.</returns>
+        <returns>The <see cref="T:System.ServiceModel.Channels.IChannelFactory`1" /> of type <paramref name="TChannel" /> initialized from the context.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

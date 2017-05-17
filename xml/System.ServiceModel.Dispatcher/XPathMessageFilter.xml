@@ -340,7 +340,7 @@
         <param name="messageBuffer">The <see cref="T:System.ServiceModel.Channels.MessageBuffer" /> to test.</param>
         <summary>Determines whether a buffered message satisfies the query criteria of the XPath filter.</summary>
         <returns>
-          <see langword="true" /> if the <see cref="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" /> satisfies the filter criteria; otherwise<see langword=" false" />.</returns>
+          <see langword="true" /> if the <see cref="M:System.ServiceModel.Dispatcher.XPathMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" /> satisfies the filter criteria; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

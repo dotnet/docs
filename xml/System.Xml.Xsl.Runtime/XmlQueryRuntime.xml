@@ -730,7 +730,7 @@
         <Parameter Name="indexType" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="seq">An <see cref="T:System.Collections.Generic.IList`1" /> of <see cref="T:System.Xml.XPath.XPathItem" />objects.</param>
+        <param name="seq">An <see cref="T:System.Collections.Generic.IList`1" /> of <see cref="T:System.Xml.XPath.XPathItem" /> objects.</param>
         <param name="indexType">The index.</param>
         <summary>Returns <see langword="true" /> if the type of every item in the specified sequence matches the XML type that the specified index identifies.</summary>
         <returns>

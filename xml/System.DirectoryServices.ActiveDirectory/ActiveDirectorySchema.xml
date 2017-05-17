@@ -35,7 +35,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false " />to release only unmanaged resources.</param>
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the managed resources that are used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" /> object and, optionally, releases unmanaged resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -45,7 +45,7 @@
  ]]></format>
     </remarks>
     <block subset="none" type="overrides">
-      <para>You must override both the <see cref="M:System.IdentityModel.SecurityTokenService.GetScope(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" /> and the <see cref="M:System.IdentityModel.SecurityTokenService.GetOutputClaimsIdentity(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Scope)" />methods.</para>
+      <para>You must override both the <see cref="M:System.IdentityModel.SecurityTokenService.GetScope(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken)" /> and the <see cref="M:System.IdentityModel.SecurityTokenService.GetOutputClaimsIdentity(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Scope)" /> methods.</para>
     </block>
   </Docs>
   <Members>
@@ -769,7 +769,7 @@
  ]]></format>
         </remarks>
         <block subset="none" type="overrides">
-          <para>You must override this method in your implementation of the <see cref="T:System.IdentityModel.SecurityTokenService" />class.</para>
+          <para>You must override this method in your implementation of the <see cref="T:System.IdentityModel.SecurityTokenService" /> class.</para>
         </block>
       </Docs>
     </Member>

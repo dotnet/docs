@@ -113,7 +113,7 @@
         <param name="header">The name of the custom header.</param>
         <summary>Gets or sets a custom header field that the ASP.NET output cache varies the cached responses by, and appends it to the out-going <see langword="Vary" /> HTTP header.</summary>
         <value>
-          <see langword="true " />when the ASP.NET output cache varies by the specified custom field; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
+          <see langword="true" /> when the ASP.NET output cache varies by the specified custom field; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

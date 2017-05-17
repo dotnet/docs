@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -51,6 +52,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +98,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -124,6 +130,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,7 +160,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="policyEnforcement" /> is specified as <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="customChannelBinding " />is <see langword="null" />.</exception>
+          <paramref name="customChannelBinding" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -164,6 +171,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,7 +203,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="policyEnforcement" /> is specified as <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="customServiceNames " />is <see langword="null" /> or an empty list.</exception>
+          <paramref name="customServiceNames" /> is <see langword="null" /> or an empty list.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -206,6 +214,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -237,7 +246,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="policyEnforcement" /> is specified as <see cref="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="customServiceNames " />is <see langword="null" /> or an empty list.</exception>
+          <paramref name="customServiceNames" /> is <see langword="null" /> or an empty list.</exception>
       </Docs>
     </Member>
     <Member MemberName="CustomChannelBinding">
@@ -248,6 +257,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -282,6 +292,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -316,6 +327,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -351,6 +363,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -385,6 +398,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -425,6 +439,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Security</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -454,6 +472,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

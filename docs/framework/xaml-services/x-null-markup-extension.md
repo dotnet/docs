@@ -31,7 +31,7 @@ Specifies `null` as a value for a XAML member.
 ## XAML Attribute Usage  
   
 ```  
-<object property="{x:Null}" .../>  
+<object property="{x:Null}" .../>  
 ```  
   
 ## Remarks  

@@ -79,7 +79,7 @@ This topic outlines the basic steps required to create a routing configuration t
   
     ```  
   
-     With this configuration, the Routing Service exposes three separate endpoints. Depending on run-time choices, the client application sends messages to one of these addresses. Messages arriving at one of the “virtual” service endpoints (“rounding/calculator” or “regular/calculator”) are forwarded to the corresponding calculator implementation. If the client application doesn’t send the request to a particular endpoint, the message is addressed to the general endpoint. Regardless of the endpoint chosen, the client application may also choose to include the custom header to indicate that the message should be forwarded to the rounding calculator implementation.  
+     With this configuration, the Routing Service exposes three separate endpoints. Depending on run-time choices, the client application sends messages to one of these addresses. Messages arriving at one of the "virtual" service endpoints ("rounding/calculator" or "regular/calculator") are forwarded to the corresponding calculator implementation. If the client application doesn’t send the request to a particular endpoint, the message is addressed to the general endpoint. Regardless of the endpoint chosen, the client application may also choose to include the custom header to indicate that the message should be forwarded to the rounding calculator implementation.  
   
 2.  The following example defines the client (destination) endpoints that the Routing Service routes messages to.  
   
@@ -102,7 +102,7 @@ This topic outlines the basic steps required to create a routing configuration t
   
 ### Define Filters  
   
-1.  To route messages based on the “RoundingCalculator” custom header that the client application adds to the message, define a filter that uses an XPath query to check for the presence of this header. Because this header is defined by using a custom namespace, also add a namespace entry that defines a custom namespace prefix of “custom” that is used in the XPath query. The following example defines the necessary routing section, namespace table, and XPath filter.  
+1.  To route messages based on the "RoundingCalculator" custom header that the client application adds to the message, define a filter that uses an XPath query to check for the presence of this header. Because this header is defined by using a custom namespace, also add a namespace entry that defines a custom namespace prefix of "custom" that is used in the XPath query. The following example defines the necessary routing section, namespace table, and XPath filter.  
   
     ```xml  
     <routing>  
@@ -120,12 +120,12 @@ This topic outlines the basic steps required to create a routing configuration t
   
     ```  
   
-     This **MessageFilter** looks for a RoundingCalculator header in the message that contains a value of “rounding”. This header is set by the client to indicate that the message should be routed to the roundingCalc service.  
+     This **MessageFilter** looks for a RoundingCalculator header in the message that contains a value of "rounding". This header is set by the client to indicate that the message should be routed to the roundingCalc service.  
   
     > [!NOTE]
-    >  The s12 namespace prefix is defined by default in the namespace table, and represents the namespace “http://www.w3.org/2003/05/soap-envelope”.  
+    >  The s12 namespace prefix is defined by default in the namespace table, and represents the namespace "http://www.w3.org/2003/05/soap-envelope".  
   
-2.  You must also define filters that look for messages received on the two virtual endpoints. The first virtual endpoint is the “regular/calculator” endpoint. The client can send requests to this endpoint to indicate that the message should be routed to the regularCalc service. The following configuration defines a filter that uses the <xref:System.ServiceModel.Dispatcher.EndpointNameMessageFilter> to determine if the message arrived through an endpoint with the name specified in filterData.  
+2.  You must also define filters that look for messages received on the two virtual endpoints. The first virtual endpoint is the "regular/calculator" endpoint. The client can send requests to this endpoint to indicate that the message should be routed to the regularCalc service. The following configuration defines a filter that uses the <xref:System.ServiceModel.Dispatcher.EndpointNameMessageFilter> to determine if the message arrived through an endpoint with the name specified in filterData.  
   
     ```xml  
     <!--define an endpoint name filter looking for messages that show up on the virtual regular calculator endpoint-->  
@@ -133,9 +133,9 @@ This topic outlines the basic steps required to create a routing configuration t
   
     ```  
   
-     If a message is received by the service endpoint named “calculatorEndpoint”, this filter evaluates to `true`.  
+     If a message is received by the service endpoint named "calculatorEndpoint", this filter evaluates to `true`.  
   
-3.  Next, define a filter that looks for messages sent to the address of the roundingEndpoint. The client can send requests to this endpoint to indicate that the message should be routed to the roundingCalc service. The following configuration defines a filter that uses the <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> to determine if the message arrived at the “rounding/calculator” endpoint.  
+3.  Next, define a filter that looks for messages sent to the address of the roundingEndpoint. The client can send requests to this endpoint to indicate that the message should be routed to the roundingCalc service. The following configuration defines a filter that uses the <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter> to determine if the message arrived at the "rounding/calculator" endpoint.  
   
     ```xml  
     <!--define a filter looking for messages that show up with the address prefix.  The corresponds to the rounding calc virtual endpoint-->  
@@ -144,7 +144,7 @@ This topic outlines the basic steps required to create a routing configuration t
   
     ```  
   
-     If a message is received at an address that begins with “http://localhost/routingservice/router/rounding/” then this filter evaluates to **true**. Because the base address used by this configuration is “http://localhost/routingservice/router” and the address specified for the roundingEndpoint is “rounding/calculator”, the full address used to communicate with this endpoint is “http://localhost/routingservice/router/rounding/calculator”, which matches this filter.  
+     If a message is received at an address that begins with "http://localhost/routingservice/router/rounding/" then this filter evaluates to **true**. Because the base address used by this configuration is "http://localhost/routingservice/router" and the address specified for the roundingEndpoint is "rounding/calculator", the full address used to communicate with this endpoint is "http://localhost/routingservice/router/rounding/calculator", which matches this filter.  
   
     > [!NOTE]
     >  The PrefixEndpointAddress filter does not evaluate the host name when performing a match, because a single host can be referred to by using a variety of host names that may all be valid ways of referring to the host from the client application. For example, all of the following may refer to the same host:  
@@ -154,7 +154,7 @@ This topic outlines the basic steps required to create a routing configuration t
     > -   www.contoso.com  
     > -   ContosoWeb01  
   
-4.  The final filter must support the routing of messages that arrive at the general endpoint without the custom header. For this scenario, the messages should alternate between the regularCalc and roundingCalc services. To support the “round robin” routing of these messages,  use a custom filter that allows one filter instance to match for each message processed.  The following defines two instances of a RoundRobinMessageFilter, which are grouped together to indicate that they should alternate between each other.  
+4.  The final filter must support the routing of messages that arrive at the general endpoint without the custom header. For this scenario, the messages should alternate between the regularCalc and roundingCalc services. To support the "round robin" routing of these messages,  use a custom filter that allows one filter instance to match for each message processed.  The following defines two instances of a RoundRobinMessageFilter, which are grouped together to indicate that they should alternate between each other.  
   
     ```xml  
     <!-- Set up the custom message filters.  In this example,   
@@ -178,7 +178,7 @@ This topic outlines the basic steps required to create a routing configuration t
     > [!NOTE]
     >  While specifying a filter priority allows you to control the order in which filters are processed, it can adversely affect the performance of the Routing Service. When possible, construct filter logic so that the use of filter priorities is not required.  
   
-     The following defines the filter table and adds the “XPathFilter” defined earlier to the table with a priority of 2. This entry also specifies that if the “XPathFilter” matches the message, the message will be routed to the “roundingCalcEndpoint”  
+     The following defines the filter table and adds the "XPathFilter" defined earlier to the table with a priority of 2. This entry also specifies that if the "XPathFilter" matches the message, the message will be routed to the "roundingCalcEndpoint"  
   
     ```xml  
     <routing>  

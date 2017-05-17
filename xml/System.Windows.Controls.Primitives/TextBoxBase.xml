@@ -315,7 +315,7 @@
       <Docs>
         <summary>Gets a value that indicates whether the most recent action can be undone.</summary>
         <value>
-          <see langword="true " />if the most recent action can be undone; otherwise, <see langword="false" />.  
+          <see langword="true" /> if the most recent action can be undone; otherwise, <see langword="false" />.  
   
  This property has no default value.</value>
         <remarks>
@@ -352,8 +352,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.CaretBrush%2A> and <xref:System.Windows.Controls.Control.Foreground%2A> properties of a <xref:System.Windows.Controls.TextBox> to blue.  
   
- [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]
- <!-- TODO: review snippet reference [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/xaml/VS_Snippets_Wpf/textbaseselectionbrush/xaml/window1.xaml#textbox)]  -->  
+ [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]   
   
  The preceding example produces output that is like the following illustration.  
   
@@ -1937,8 +1936,7 @@ TextBox with CaretBrush set to blue
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> property to red and the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property to 0.5 to customize the appearance of selected text.  
   
- [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]
- <!-- TODO: review snippet reference [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/xaml/VS_Snippets_Wpf/textbaseselectionbrush/xaml/window1.xaml#textbox)]  -->  
+ [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]   
   
  The following illustration shows the <xref:System.Windows.Controls.TextBox> from the preceding example with its text selected.  
   
@@ -2049,8 +2047,7 @@ Selected text in a TextBox with SelectionBrush set to red
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.TextBox> and adds the text, "This is some text." The example sets the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionBrush%2A> property to red and the <xref:System.Windows.Controls.Primitives.TextBoxBase.SelectionOpacity%2A> property to 0.5 to customize the appearance of selected text.  
   
- [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]
- <!-- TODO: review snippet reference [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/xaml/VS_Snippets_Wpf/textbaseselectionbrush/xaml/window1.xaml#textbox)]  -->  
+ [!code-xml[TextBaseSelectionBrush#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/textbaseselectionbrush/CS/window1.xaml#textbox)]   
   
  The following illustration shows the <xref:System.Windows.Controls.TextBox> from the preceding example with its text selected.  
   

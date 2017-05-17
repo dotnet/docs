@@ -41,7 +41,7 @@ Specifies the timeout value when flowing transactions from server to client.in a
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`transactionTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time within which transactions must complete or be automatically terminated. The default is “00:00:00”.|  
+|`transactionTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time within which transactions must complete or be automatically terminated. The default is "00:00:00".|  
   
 ### Child Elements  
  None.  

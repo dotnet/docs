@@ -69,9 +69,7 @@
   
  The following code example shows a simple configuration file for the preceding service that creates one endpoint.  
   
- <!-- TODO: review snippet reference [!code[ServiceContractAttribute#2](~/samples/snippets/common/VS_Snippets_CFX/servicecontractattribute/common/hostapplication.exe.config#2)]  -->
- <!-- TODO: review snippet reference [!code-csharp[ServiceContractAttribute#2](~/samples/snippets/csharp/VS_Snippets_CFX/servicecontractattribute/cs/hostapplication.exe.config#2)]  -->
- <!-- TODO: review snippet reference [!code-vb[ServiceContractAttribute#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/servicecontractattribute/vb/hostapplication.exe.config#2)]  -->  
+ [!code-xml[ServiceContractAttribute#2](~/samples/snippets/csharp/VS_Snippets_CFX/servicecontractattribute/cs/hostapplication.exe.config#2)]   
   
  The following code example shows a simple client that invokes the preceding `SampleService`.  
   

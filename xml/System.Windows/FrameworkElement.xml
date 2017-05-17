@@ -1660,7 +1660,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the suggested height of the element.</summary>
-        <value>The height of the element, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. The default value is <see cref="F:System.Double.NaN" />. This value must be equal to or greater than 0.0. See Remarks for upper bound information.</value>
+        <value>The height of the element, in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. The default value is <see cref="F:System.Double.NaN" />. This value must be equal to or greater than 0.0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2989,7 +2989,7 @@
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.Windows.RoutedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized" /> is set to <see langword="true " />internally.</summary>
+        <summary>Raises the <see cref="E:System.Windows.FrameworkElement.Initialized" /> event. This method is invoked whenever <see cref="P:System.Windows.FrameworkElement.IsInitialized" /> is set to <see langword="true" /> internally.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4087,7 +4087,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to the template parent of this element. This property is not relevant if the element was not created through a template.</summary>
-        <value>The element whose <see cref="T:System.Windows.FrameworkTemplate" /><see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> caused this element to be created. This value is frequently <see langword="null" />; see Remarks.</value>
+        <value>The element whose <see cref="T:System.Windows.FrameworkTemplate" /><see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> caused this element to be created. This value is frequently <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4127,7 +4127,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the tool-tip object that is displayed for this element in the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].</summary>
-        <value>The tooltip object. See Remarks below for details on why this parameter is not strongly typed.</value>
+        <value>The tooltip object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

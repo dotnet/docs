@@ -59,7 +59,7 @@ If you are already familiar with Windows Communication Foundation (WCF), you kno
   
 ```  
 IHelloService serviceChannel = channelFactory.CreateChannelActingAs<IHelloService>( clientSamlToken );  
-serviceChannel.Hello(“Hi!”);  
+serviceChannel.Hello("Hi!");  
 ```  
   
  WIF provides the following benefits:  
@@ -89,7 +89,7 @@ SecurityToken token = channel.Issue(rst, out rstr);
  So far, we’ve only seen how to obtain a token. The token that is returned from the <xref:System.ServiceModel.Security.WSTrustChannel> object is a `GenericXmlSecurityToken` that contains all of the information that is necessary for authentication to a relying party. The following code example shows how to use this token.  
   
 ```  
-IHelloService serviceChannel = channelFactory.CreateChannelWithIssuedToken<IHelloService>( token ); serviceChannel.Hello(“Hi!”);  
+IHelloService serviceChannel = channelFactory.CreateChannelWithIssuedToken<IHelloService>( token ); serviceChannel.Hello("Hi!");  
 ```  
   
  The <xref:System.ServiceModel.ChannelFactory%601.CreateChannelWithIssuedToken%2A> extension method on the `ChannelFactory` object indicates to WIF that you have obtained a token out of band, and that it should stop the normal WCF call to the issuer and instead use the token that you obtained to authenticate to the relying party. This has the following benefits:  

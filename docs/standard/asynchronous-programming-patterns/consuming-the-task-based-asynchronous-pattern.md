@@ -83,22 +83,22 @@ cts.Cancel();
  To cancel multiple asynchronous invocations, you can pass the same token to all invocations:  
   
 ```csharp  
-var cts = new CancellationTokenSource();  
-    IList<string> results = await Task.WhenAll(from url in urls select DownloadStringAsync(url, cts.Token));  
-    // at some point later, potentially on another thread  
-    …  
-    cts.Cancel();  
+var cts = new CancellationTokenSource();  
+    IList<string> results = await Task.WhenAll(from url in urls select DownloadStringAsync(url, cts.Token));  
+    // at some point later, potentially on another thread  
+    …  
+    cts.Cancel();  
   
 ```  
   
  Or, you can pass the same token to a selective subset of operations:  
   
 ```csharp  
-var cts = new CancellationTokenSource();  
-    byte [] data = await DownloadDataAsync(url, cts.Token);  
-    await SaveToDiskAsync(outputPath, data, CancellationToken.None);  
-    … // at some point later, potentially on another thread  
-    cts.Cancel();  
+var cts = new CancellationTokenSource();  
+    byte [] data = await DownloadDataAsync(url, cts.Token);  
+    await SaveToDiskAsync(outputPath, data, CancellationToken.None);  
+    … // at some point later, potentially on another thread  
+    cts.Cancel();  
   
 ```  
   
@@ -521,14 +521,14 @@ public async  void btnDownload_Click(object sender, EventArgs e)
         {  
             Bitmap bmp = await download;  
             pictureBox.Image = bmp;  
-            status.Text = “Downloaded”;  
+            status.Text = "Downloaded";  
         }  
         else  
         {  
             pictureBox.Image = null;  
-            status.Text = “Timed out”;  
+            status.Text = "Timed out";  
             var ignored = download.ContinueWith(  
-                t => Trace(“Task finally completed”));  
+                t => Trace("Task finally completed"));  
         }  
     }  
     finally { btnDownload.Enabled = true; }  
@@ -549,11 +549,11 @@ public async  void btnDownload_Click(object sender, RoutedEventArgs e)
         if (downloads == await Task.WhenAny(downloads, Task.Delay(3000)))  
         {  
             foreach(var bmp in downloads) panel.AddImage(bmp);  
-            status.Text = “Downloaded”;  
+            status.Text = "Downloaded";  
         }  
         else  
         {  
-            status.Text = “Timed out”;  
+            status.Text = "Timed out";  
             downloads.ContinueWith(t => Log(t));  
         }  
     }  
@@ -657,9 +657,9 @@ public static async  Task<T> NeedOnlyOne(
   
 ```csharp  
 double currentPrice = await NeedOnlyOne(  
-    ct => GetCurrentPriceFromServer1Async(“msft”, ct),  
-    ct => GetCurrentPriceFromServer2Async(“msft”, ct),  
-    ct => GetCurrentPriceFromServer3Async(“msft”, ct));  
+    ct => GetCurrentPriceFromServer1Async("msft", ct),  
+    ct => GetCurrentPriceFromServer2Async("msft", ct),  
+    ct => GetCurrentPriceFromServer3Async("msft", ct));  
 ```  
   
 ### Interleaved Operations  
@@ -708,22 +708,22 @@ foreach(var task in Interleaved(tasks))
  In certain scatter/gather scenarios, you might want to wait for all tasks in a set, unless one of them faults, in which case you want to stop waiting as soon as the exception occurs.  You can accomplish that with a combinator method such as `WhenAllOrFirstException` in the following example:  
   
 ```csharp  
-public static Task<T[]> WhenAllOrFirstException<T>(IEnumerable<Task<T>> tasks)  
+public static Task<T[]> WhenAllOrFirstException<T>(IEnumerable<Task<T>> tasks)  
 {  
-    var inputs = tasks.ToList();  
-    var ce = new CountdownEvent(inputs.Count);  
-    var tcs = new TaskCompletionSource<T[]>();  
+    var inputs = tasks.ToList();  
+    var ce = new CountdownEvent(inputs.Count);  
+    var tcs = new TaskCompletionSource<T[]>();  
   
-    Action<Task> onCompleted = (Task completed) =>  
-    {  
-        if (completed.IsFaulted)   
-            tcs.TrySetException(completed.Exception.InnerExceptions);  
-        if (ce.Signal() && !tcs.Task.IsCompleted)  
-            tcs.TrySetResult(inputs.Select(t => t.Result).ToArray());  
-    };  
+    Action<Task> onCompleted = (Task completed) =>  
+    {  
+        if (completed.IsFaulted)   
+            tcs.TrySetException(completed.Exception.InnerExceptions);  
+        if (ce.Signal() && !tcs.Task.IsCompleted)  
+            tcs.TrySetResult(inputs.Select(t => t.Result).ToArray());  
+    };  
   
-    foreach (var t in inputs) t.ContinueWith(onCompleted);  
-    return tcs.Task;  
+    foreach (var t in inputs) t.ContinueWith(onCompleted);  
+    return tcs.Task;  
 }  
   
 ```  

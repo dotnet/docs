@@ -84,19 +84,19 @@ string[] GetCities(string firstLetters);
  Normally, JSON requests and responses consist of just one item. For the preceding `GetCities` operation, the request resembles the following statement.  
   
 ```  
-“na”  
+"na"  
 ```  
   
  The response to that request resembles the following statement.  
   
 ```  
-[“Nairobi”, “Naples”, “Nashville”]  
+["Nairobi", "Naples", "Nashville"]  
 ```  
   
  If the operation takes an extra parameter, the request style must be wrapped to wrap both parameters in a single JSON object. An example of this style JSON message is in the following example.  
   
 ```  
-{“firstLetters”: “na”, “maxNumber”: 2}  
+{"firstLetters": "na", "maxNumber": 2}  
 ```  
   
  The following contract accepts this message.  
@@ -110,7 +110,7 @@ string[] GetCities(string firstLetters, int maxNumber);
 ## Accessing AJAX Services  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] AJAX endpoints always accept both JSON and XML requests.  
   
- HTTP POST requests with a content-type of “application/json” are treated as JSON, and those with content-type that indicate XML (for example, “text/xml”) are treated as XML.  
+ HTTP POST requests with a content-type of "application/json" are treated as JSON, and those with content-type that indicate XML (for example, "text/xml") are treated as XML.  
   
  HTTP GET requests contain all the request parameters in the URL itself.  
   

@@ -70,7 +70,7 @@ Events in the .NET Framework are based on the delegate model. The delegate model
  [!code-vb[EventsOverview#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#2)]  
   
 ## Static and Dynamic Event Handlers  
- The .NET Framework allows subscribers to register for event notifications either statically or dynamically. Static event handlers are in effect for the entire life of the class whose events they handle. Dynamic event handlers are explicitly activated and deactivated during program execution, usually in response to some conditional program logic. For example, they can be used if event notifications are needed only under certain conditions or if an application provides multiple event handlers and run-time conditions define the appropriate one to use. The example in the previous section shows how to dynamically add an event handler. For more information, see [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70) and [Events](http://msdn.microsoft.com/library/a8e51b22-d294-44fb-9539-0072f06c4cb3).  
+ The .NET Framework allows subscribers to register for event notifications either statically or dynamically. Static event handlers are in effect for the entire life of the class whose events they handle. Dynamic event handlers are explicitly activated and deactivated during program execution, usually in response to some conditional program logic. For example, they can be used if event notifications are needed only under certain conditions or if an application provides multiple event handlers and run-time conditions define the appropriate one to use. The example in the previous section shows how to dynamically add an event handler. For more information, see [Events](../../visual-basic/programming-guide/language-features/events/index.md) and [Events](../../csharp/programming-guide/events/index.md).  
   
 ## Raising Multiple Events  
  If your class raises multiple events, the compiler generates one field per event delegate instance. If the number of events is large, the storage cost of one field per delegate may not be acceptable. For those situations, the .NET Framework provides event properties that you can use with another data structure of your choice to store event delegates.  
@@ -92,5 +92,5 @@ Events in the .NET Framework are based on the delegate model. The delegate model
  <xref:System.EventArgs>   
  <xref:System.Delegate>   
  [Events and routed events overview (Windows store apps)](http://go.microsoft.com/fwlink/?LinkId=261485)   
- [Events](http://msdn.microsoft.com/library/8fb0353a-e41b-4e23-b78f-da65db832f70)   
- [Events](http://msdn.microsoft.com/library/a8e51b22-d294-44fb-9539-0072f06c4cb3)
+ [Events (Visual Basic)](../../visual-basic/programming-guide/language-features/events/index.md)   
+ [Events (C# Programming Guide)](../../csharp/programming-guide/events/index.md)

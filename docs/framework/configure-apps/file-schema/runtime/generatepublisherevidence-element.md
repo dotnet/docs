@@ -81,9 +81,9 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
   
 ```  
 <configuration>  
-    <runtime>  
-        <generatePublisherEvidence enabled="false"/>  
-    </runtime>  
+    <runtime>  
+        <generatePublisherEvidence enabled="false"/>  
+    </runtime>  
 </configuration>  
 ```  
   

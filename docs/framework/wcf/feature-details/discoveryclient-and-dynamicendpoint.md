@@ -44,7 +44,7 @@ if (fr.Endpoints.Count > 0)
    Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);  
 }  
 else  
-   Console.WriteLine(“No matching endpoints found”);  
+   Console.WriteLine("No matching endpoints found");  
   
 ```  
   
@@ -100,7 +100,7 @@ EndpointAddress newEp = response.EndpointDiscoveryMetadata.Address;
 ```  
   
 ## DynamicEndpoint  
- <xref:System.ServiceModel.Discovery.DynamicEndpoint> is a standard endpoint ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Standard Endpoints](../../../../docs/framework/wcf/feature-details/standard-endpoints.md)) which performs discovery and automatically selects a matching service. Just create a <xref:System.ServiceModel.Discovery.DynamicEndpoint> passing in the contract to search for and the binding to use and pass the <xref:System.ServiceModel.Discovery.DynamicEndpoint> instance to the WCF client. The following example shows how to create and use a <xref:System.ServiceModel.Discovery.DynamicEndpoint> to call the calculator service. The discovery is performed every time the client is opened. Any endpoint defined in configuration can also be turned into a <xref:System.ServiceModel.Discovery.DynamicEndpoint> by adding the `kind =”dynamicEndpoint”` attribute to the endpoint configuration element.  
+ <xref:System.ServiceModel.Discovery.DynamicEndpoint> is a standard endpoint ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Standard Endpoints](../../../../docs/framework/wcf/feature-details/standard-endpoints.md)) which performs discovery and automatically selects a matching service. Just create a <xref:System.ServiceModel.Discovery.DynamicEndpoint> passing in the contract to search for and the binding to use and pass the <xref:System.ServiceModel.Discovery.DynamicEndpoint> instance to the WCF client. The following example shows how to create and use a <xref:System.ServiceModel.Discovery.DynamicEndpoint> to call the calculator service. The discovery is performed every time the client is opened. Any endpoint defined in configuration can also be turned into a <xref:System.ServiceModel.Discovery.DynamicEndpoint> by adding the `kind ="dynamicEndpoint"` attribute to the endpoint configuration element.  
   
 ```  
   

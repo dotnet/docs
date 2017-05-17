@@ -83,9 +83,9 @@ This topic describes how you can configure WS-AtomicTransaction (WS-AT) support 
   
  You can configure this by using the MMC WS-AT snap-in. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] this tool, see the [WS-AtomicTransaction Configuration MMC Snap-in](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md) topic. The following steps describe how to establish trust between two computers running MSDTC.  
   
-1.  Configure machine A's settings. For “Endpoint Certificate”, select certA. For "Authorized Certificates”, select the certB.  
+1.  Configure machine A's settings. For "Endpoint Certificate", select certA. For "Authorized Certificates", select the certB.  
   
-2.  Configure machine B's settings. For “Endpoint Certificate”, select certB. For "Authorized Certificates”, select the certA.  
+2.  Configure machine B's settings. For "Endpoint Certificate", select certB. For "Authorized Certificates", select the certA.  
   
 > [!NOTE]
 >  When one machine sends a message to the other machine, the sender attempts to verify that the subject name of the recipient’s certificate and the name of the recipient’s machine match. If they do not match, certificate verification fails and the two machines cannot communicate.  

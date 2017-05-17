@@ -260,7 +260,7 @@ public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext 
 }  
 ```  
   
- When you run the sample, the client calls AddEmployee followed by a GetEmployee call to check if the first call was successful. The result of the GetEmployee operation request is displayed in the client console window. The GetEmployee operation must succeed in finding the employee and print “found”.  
+ When you run the sample, the client calls AddEmployee followed by a GetEmployee call to check if the first call was successful. The result of the GetEmployee operation request is displayed in the client console window. The GetEmployee operation must succeed in finding the employee and print "found".  
   
 > [!NOTE]
 >  This sample shows how to plug in a surrogate for serialize, deserialize and metadata generation. It does not show how to plug in a surrogate for code generation from metadata. To see a sample of how a surrogate can be used to plug into client code generation, see the [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md) sample.  

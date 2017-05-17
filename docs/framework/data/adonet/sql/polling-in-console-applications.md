@@ -23,9 +23,7 @@ Asynchronous operations in ADO.NET allow you to initiate time-consuming database
 ## Example  
  The following console application updates data within the **AdventureWorks** sample database, doing its work asynchronously. In order to emulate a long-running process, this example inserts a WAITFOR statement in the command text. Normally, you would not try to make your commands run slower, but doing so in this case makes it easier to demonstrate asynchronous behavior.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Imports System  
 Imports System.Data.SqlClient  
   
@@ -101,9 +99,7 @@ Module Module1
 End Module   
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  

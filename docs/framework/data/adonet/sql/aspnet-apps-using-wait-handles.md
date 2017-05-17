@@ -31,9 +31,7 @@ The callback and polling models for handling asynchronous operations are useful 
   
  Add the following code to the form's class, modifying the connection string as necessary for your environment.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 ' Add these to the top of the class  
 Imports System  
 Imports System.Data  
@@ -164,9 +162,7 @@ Imports System.Threading
     End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 // Add the following using statements, if they are not already there.  
 using System;  
 using System.Data;  
@@ -328,9 +324,7 @@ void Button1_Click(object sender, System.EventArgs e)
   
  Add the following code to the form's class, modifying the connection string as necessary for your environment.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 ' Add these to the top of the class  
 Imports System  
 Imports System.Data  
@@ -451,9 +445,7 @@ Imports System.Threading
     End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 // Add the following using statements, if they are not already there.  
 using System;  
 using System.Data;  

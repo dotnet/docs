@@ -250,6 +250,23 @@
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">A <see cref="T:System.Net.PeerToPeer.PeerName" /> could not be created from the supplied <see cref="P:System.Net.PeerToPeer.PeerName.PeerHostName" /></exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the content of this <see cref="T:System.Net.PeerToPeer.PeerName" /> object is equivalent to the content of another object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The implementation of Equals is defined by IEquatable\<T>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (System.Net.PeerToPeer.PeerName other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Net.PeerToPeer.PeerName other) cil managed" />
@@ -487,22 +504,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the content of this <see cref="T:System.Net.PeerToPeer.PeerName" /> object is equivalent to the content of another object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The implementation of Equals is defined by IEquatable\<T>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

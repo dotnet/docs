@@ -223,6 +223,23 @@
  <paramref name="service" /> is a core service and the workflow run-time engine is already running (<see cref="P:System.Workflow.Runtime.WorkflowRuntime.IsStarted" /> is <see langword="true" />).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateWorkflow">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a workflow instance by using the specified parameters.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the workflow run-time engine has not been started, the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> methods call <xref:System.Workflow.Runtime.WorkflowRuntime.StartRuntime%2A>. See <xref:System.Workflow.Runtime.WorkflowRuntime.StartRuntime%2A> for a list of possible exceptions. After you create the workflow instance, call <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A?displayProperty=fullName> on the <xref:System.Workflow.Runtime.WorkflowInstance> object returned by the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> method to begin its execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateWorkflow">
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowInstance CreateWorkflow (Type workflowType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowInstance CreateWorkflow(class System.Type workflowType) cil managed" />
@@ -1499,22 +1516,5 @@ static void Main(string[] args)
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateWorkflow">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a workflow instance by using the specified parameters.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the workflow run-time engine has not been started, the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> methods call <xref:System.Workflow.Runtime.WorkflowRuntime.StartRuntime%2A>. See <xref:System.Workflow.Runtime.WorkflowRuntime.StartRuntime%2A> for a list of possible exceptions. After you create the workflow instance, call <xref:System.Workflow.Runtime.WorkflowInstance.Start%2A?displayProperty=fullName> on the <xref:System.Workflow.Runtime.WorkflowInstance> object returned by the <xref:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow%2A> method to begin its execution.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

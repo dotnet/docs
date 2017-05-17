@@ -25,7 +25,7 @@ Represents a configuration section for defining a set of routing filters, which 
 ## Syntax  
   
 ```vb  
-   <routing>      <filters>        <filter customType=”String”                filterData=”String”                filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"                 name="String" />      </filters></routing>  
+   <routing>      <filters>        <filter customType="String"                filterData="String"                filterType="Action/Address/AddressPrefix/And/Custom/Endpoint/MatchAll/XPath"                 name="String" />      </filters></routing>  
 ```  
   
 ```csharp  

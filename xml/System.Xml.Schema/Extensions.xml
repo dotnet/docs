@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.XDocument</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -104,6 +108,26 @@ custOrd did not validate
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="GetSchemaInfo">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the post-schema-validation infoset (PSVI) of a validated node.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ After you have validated an <xref:System.Xml.Linq.XDocument>, you can retrieve the post-schema-validation infoset for an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> that is contained in the document.  
+  
+ After retrieving the <xref:System.Xml.Schema.IXmlSchemaInfo> object, you can use the <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaAttribute%2A> or <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaElement%2A> properties to get a partial validation type (<xref:System.Xml.Schema.XmlSchemaElement> or <xref:System.Xml.Schema.XmlSchemaAttribute>). You can use the partial validation types to validate an attribute or a sub-tree.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSchemaInfo">
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.IXmlSchemaInfo GetSchemaInfo (this System.Xml.Linq.XAttribute source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.IXmlSchemaInfo GetSchemaInfo(class System.Xml.Linq.XAttribute source) cil managed" />
@@ -117,6 +141,10 @@ custOrd did not validate
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.IXmlSchemaInfo</ReturnType>
@@ -155,6 +183,10 @@ custOrd did not validate
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.IXmlSchemaInfo</ReturnType>
@@ -356,6 +388,28 @@ Invalid Element /Root/Child1/GrandChild3
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Validate">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates that an <see cref="T:System.Xml.Linq.XDocument" />, an <see cref="T:System.Xml.Linq.XElement" />, or an <see cref="T:System.Xml.Linq.XAttribute" /> conforms to an XSD in an <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These methods use an underlying <xref:System.Xml.XmlReader> to validate the XML tree against an XSD.  
+  
+ Validation error and warning messages are handled using the <xref:System.Xml.Schema.ValidationEventHandler> delegate. If no event handler is provided to these methods, validation errors are exposed as an <xref:System.Xml.Schema.XmlSchemaValidationException>. Validation warnings do not cause an <xref:System.Xml.Schema.XmlSchemaValidationException> to be thrown.  
+  
+ Some of these extension methods optionally allow population of the post-schema-validation infoset (PSVI).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public static void Validate (this System.Xml.Linq.XDocument source, System.Xml.Schema.XmlSchemaSet schemas, System.Xml.Schema.ValidationEventHandler validationEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Validate(class System.Xml.Linq.XDocument source, class System.Xml.Schema.XmlSchemaSet schemas, class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
@@ -369,6 +423,10 @@ Invalid Element /Root/Child1/GrandChild3
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -526,6 +584,10 @@ doc2 did not validate
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -729,6 +791,10 @@ lang did not validate
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1110,6 +1176,10 @@ Invalid Element /Root/Child1/GrandChild3
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1312,6 +1382,10 @@ child1 did not validate
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1578,6 +1652,10 @@ Invalid Attribute /Root/@Lang
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1791,47 +1869,5 @@ Contents of doc2:
         <exception cref="T:System.Xml.Schema.XmlSchemaValidationException">Thrown for XML Schema Definition Language (XSD) validation errors.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetSchemaInfo">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.Linq</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the post-schema-validation infoset (PSVI) of a validated node.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- After you have validated an <xref:System.Xml.Linq.XDocument>, you can retrieve the post-schema-validation infoset for an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> that is contained in the document.  
-  
- After retrieving the <xref:System.Xml.Schema.IXmlSchemaInfo> object, you can use the <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaAttribute%2A> or <xref:System.Xml.Schema.IXmlSchemaInfo.SchemaElement%2A> properties to get a partial validation type (<xref:System.Xml.Schema.XmlSchemaElement> or <xref:System.Xml.Schema.XmlSchemaAttribute>). You can use the partial validation types to validate an attribute or a sub-tree.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Validate">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.Linq</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Validates that an <see cref="T:System.Xml.Linq.XDocument" />, an <see cref="T:System.Xml.Linq.XElement" />, or an <see cref="T:System.Xml.Linq.XAttribute" /> conforms to an XSD in an <see cref="T:System.Xml.Schema.XmlSchemaSet" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These methods use an underlying <xref:System.Xml.XmlReader> to validate the XML tree against an XSD.  
-  
- Validation error and warning messages are handled using the <xref:System.Xml.Schema.ValidationEventHandler> delegate. If no event handler is provided to these methods, validation errors are exposed as an <xref:System.Xml.Schema.XmlSchemaValidationException>. Validation warnings do not cause an <xref:System.Xml.Schema.XmlSchemaValidationException> to be thrown.  
-  
- Some of these extension methods optionally allow population of the post-schema-validation infoset (PSVI).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

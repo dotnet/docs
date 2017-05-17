@@ -163,7 +163,7 @@
         <param name="clause">To be added.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance matches the specified key identifier.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is a <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> type and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="clause" /> is a <see cref="T:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause" /> type and the key identifier clauses match; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -225,7 +225,7 @@
         <param name="issuerSerialNumber">The serial number of the X.509 certificate.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified issuer name and issuer serial number.</summary>
         <returns>
-          <see langword="true" /> if the <paramref name="issuerName " />and <paramref name="issuerSerialNumber" /> parameters match the <see cref="P:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName" /> and <see cref="P:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber" /> properties; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the <paramref name="issuerName" /> and <paramref name="issuerSerialNumber" /> parameters match the <see cref="P:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerName" /> and <see cref="P:System.IdentityModel.Tokens.X509IssuerSerialKeyIdentifierClause.IssuerSerialNumber" /> properties; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

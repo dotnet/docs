@@ -31,7 +31,7 @@ Hosting of [!INCLUDE[TLA#tla_titlewinclient](../../../../includes/tlasharptla-ti
 ```  
 DEFINE_GUID(CGID_PresentationHost, 0xd0288c55, 0xd6, 0x4f5e, 0xa8, 0x51, 0x79, 0xde, 0xc5, 0x1b, 0x10, 0xec);  
 enum PresentationHostCommands {   
-   PHCMDID_TABINTO = 1   
+   PHCMDID_TABINTO = 1   
 };  
 ```  
   

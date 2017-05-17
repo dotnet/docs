@@ -69,7 +69,7 @@ One way to increase the capacity of [!INCLUDE[indigo1](../../../includes/indigo1
 <configuration>  
  <system.serviceModel>  
     <protocolMapping>  
-      <add scheme=”http” binding=”customBinding” />  
+      <add scheme="http" binding="customBinding" />  
     </protocolMapping>  
     <bindings>  
       <customBinding>  

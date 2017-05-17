@@ -579,14 +579,12 @@
       <Docs>
         <summary>Gets or sets the base directory where the directory for dynamically generated files is located.</summary>
         <value>The directory where the <see cref="P:System.AppDomain.DynamicDirectory" /> is located.  
-  
  <block subset="none" type="note"><para>  
- The return value of this property is different from the value assigned. See the Remarks section.  
-  
+ The return value of this property is different from the value assigned.
 </para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+
 ## Remarks  
  Use this property to set the base directory where the dynamic directory for the new application domain will be located. When code in the new application domain loads an assembly, assembly resolution looks first in the normal probing paths. If it does not find the assembly, it looks in the dynamic directory, which is returned by the <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=fullName> property. Dynamic assemblies that will be loaded and executed by the new application domain can be placed there.  
   

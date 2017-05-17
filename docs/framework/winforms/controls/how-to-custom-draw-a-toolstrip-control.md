@@ -63,9 +63,7 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 -   Override <xref:System.Windows.Forms.ProfessionalColorTable> and change the colors you want.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As _  
     System.EventArgs) Handles Me.Load  
         Dim t As MyColorTable = New MyColorTable  
@@ -115,7 +113,6 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
         End Get  
     End Property  
     End Class  
-  
     ```  
   
 ### To change the rendering for all ToolStrip controls in your application  
@@ -134,22 +131,16 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 -   Use code similar to the following code example.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Dim colorTable As ProfessionalColorTable()  
     colorTable.UseSystemColors = True  
     Dim toolStrip.Renderer As ToolStripProfessionalRenderer(colorTable)  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     ProfessionalColorTable colorTable = new ProfessionalColorTable();  
     colorTable.UseSystemColors = true;  
     toolStrip.Renderer = new ToolStripProfessionalRenderer(colorTable);  
-  
     ```  
   
 ## See Also  

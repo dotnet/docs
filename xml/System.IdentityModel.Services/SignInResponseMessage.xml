@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This message is created when the action parameter (wa) of the received message is “wsignin1.0” and the message contains a wresult or a wresultptr parameter.  
+ This message is created when the action parameter (wa) of the received message is "wsignin1.0" and the message contains a wresult or a wresultptr parameter.  
   
  When converting a <xref:System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse> object to a <xref:System.IdentityModel.Services.SignInResponseMessage> object, the context attribute on the RequestSecurityTokenResponse message is not transferred over, and must be explicitly set.  
   
@@ -180,11 +180,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Checks that the action parameter (wa) is “wsignin1.0” and that either the wresult parameter or the wresultptr parameter is specified.  
+ Checks that the action parameter (wa) is "wsignin1.0" and that either the wresult parameter or the wresultptr parameter is specified.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">The action parameter (wa) is not “wsignin1.0”.</exception>
+        <exception cref="T:System.InvalidOperationException">The action parameter (wa) is not "wsignin1.0".</exception>
         <exception cref="T:System.IdentityModel.Services.WSFederationMessageException">Neither the wresult parameter nor the wresultptr parameter is specified  
   
  -or-  

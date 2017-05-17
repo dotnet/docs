@@ -46,7 +46,7 @@ manager: "erikre"
   
  In this example, the name and type of the trace listener is specified. The Listener is named `sdt` and the standard .NET Framework trace listener (System.Diagnostics.XmlWriterTraceListener) is added as the type. The `initializeData` attribute is used to set the name of the log file for that Listener to be `SdrConfigExample.e2e`. For the log file, you can substitute a fully-qualified path for a simple file name.  
   
- The example creates a file in the root directory called SdrConfigExample.e2e. When you use the Trace Viewer to open the file as described in the “Opening and Viewing WCF Trace Files” section, you can see all the messages that have been sent.  
+ The example creates a file in the root directory called SdrConfigExample.e2e. When you use the Trace Viewer to open the file as described in the "Opening and Viewing WCF Trace Files" section, you can see all the messages that have been sent.  
   
  The tracing level is controlled by the `switchValue` setting. The available tracing levels are described in the following table.  
   
@@ -140,7 +140,7 @@ manager: "erikre"
  You can double-click an activity to display it in **Graph** View. The alternative way is to select an activity and switch to **Graph** View.  
   
 > [!NOTE]
->  The activity “000000000000” is a special activity that cannot be displayed in the Graph View. Because all other activities are linked to it, displaying this activity has a severe performance impact.  
+>  The activity "000000000000" is a special activity that cannot be displayed in the Graph View. Because all other activities are linked to it, displaying this activity has a severe performance impact.  
   
  You can click the column title to sort the activity list. Activities that contain warning traces have a yellow background and those that contain error traces have a red one.  
   
@@ -169,13 +169,13 @@ manager: "erikre"
   
  To expand or collapse activity transfers,  
   
-1.  Locate the transfer trace with a “+” sign on the left of the transfer icon.  
+1.  Locate the transfer trace with a "+" sign on the left of the transfer icon.  
   
-2.  Click the “+”, or press **Ctrl** and “+” using the keyboard.  
+2.  Click the "+", or press **Ctrl** and "+" using the keyboard.  
   
 3.  The next activity appears in the graph.  
   
-4.  A “-“ appears on the left of the transfer icon. Click the “-“ sign or press Ctrl and “-“, the activity transfer collapses.  
+4.  A "-" appears on the left of the transfer icon. Click the "-" sign or press Ctrl and "-", the activity transfer collapses.  
   
 > [!NOTE]
 >  When an activity has multiple transfers into it and you expand one of the transfers, activities that lead up to the new activity from the root activity are displayed. These new activities appear in collapsed form. If you want to see the details of these activities, expand them vertically by clicking the expand icon in the header of the graph.  
@@ -185,11 +185,11 @@ manager: "erikre"
   
  To expand or collapse activities vertically,  
   
-1.  Click the “+” icon in the activity header to expand the activity vertically.  
+1.  Click the "+" icon in the activity header to expand the activity vertically.  
   
 2.  Notice that all traces are displayed in the graph.  
   
-3.  Click the “-“ icon in the activity header to collapse the activity vertically.  
+3.  Click the "-" icon in the activity header to collapse the activity vertically.  
   
 4.  Notice that only important transfers, message logs, warning and exception traces are shown in the activity.  
   
@@ -339,57 +339,57 @@ manager: "erikre"
   
 -   Find target:  
   
-    -   The “Raw log data” option searches the keyword in all raw data.  
+    -   The "Raw log data" option searches the keyword in all raw data.  
   
-    -   The “XML Text” and “XML Attribute” options only search in XML elements.  
+    -   The "XML Text" and "XML Attribute" options only search in XML elements.  
   
-    -   The “Logged Message” option searches the keyword only in messages.  
+    -   The "Logged Message" option searches the keyword only in messages.  
   
--   Ignore root activity: The search ignores the traces in the “000000000000” activity. This improves performance in large trace files when the root activity has thousands of traces, most of which are transfers.  
+-   Ignore root activity: The search ignores the traces in the "000000000000" activity. This improves performance in large trace files when the root activity has thousands of traces, most of which are transfers.  
   
 ### Navigating Traces  
  Because traces are recorded step by step during application runtime, navigating traces can help you to debug your application. The Service Trace Viewer provides various ways to navigate in traces.  
   
 #### Step Forward or Backward  
- If you consider each trace as a line of code in the program, stepping forward is very similar to “Step over” in the Visual Studio Integrated Development Environment (IDE). The difference is that you can also step backward in the traces. Stepping forward means moving to the next trace in the activity.  
+ If you consider each trace as a line of code in the program, stepping forward is very similar to "Step over" in the Visual Studio Integrated Development Environment (IDE). The difference is that you can also step backward in the traces. Stepping forward means moving to the next trace in the activity.  
   
--   Step Forward: Use the **Activity** menu, or press “F10”. You can also use arrow key “down” in the trace pane.  
+-   Step Forward: Use the **Activity** menu, or press "F10". You can also use arrow key "down" in the trace pane.  
   
--   Step Backward: Use the **Activity** menu, or press “F9”. You can also use arrow key “up” in the trace pane.  
+-   Step Backward: Use the **Activity** menu, or press "F9". You can also use arrow key "up" in the trace pane.  
   
 > [!NOTE]
 >  This can take you to an activity occurring in a different process or even on a different computer, because [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] messages can carry activity IDs that span machines.  
   
 #### Follow Transfer  
- Transfer traces are special traces in the trace file. An activity may transfer to another activity by a transfer trace. For example, “Activity A” may transfer to “Activity B”. In such case, there is a transfer trace in the “Activity A” with the name “To: Activity” and the transfer icon. This transfer trace is a link between the two traces. In “Activity B”, there might also be a transfer trace at the end of the activity to transfer back to “Activity A”. This is similar to function calls in programs: A calls B, then B returns.  
+ Transfer traces are special traces in the trace file. An activity may transfer to another activity by a transfer trace. For example, "Activity A" may transfer to "Activity B". In such case, there is a transfer trace in the "Activity A" with the name "To: Activity" and the transfer icon. This transfer trace is a link between the two traces. In "Activity B", there might also be a transfer trace at the end of the activity to transfer back to "Activity A". This is similar to function calls in programs: A calls B, then B returns.  
   
- “Follow transfer” is similar to “Step into” in a debugger. It follows the transfer from A to B. It does not have any effect on other traces.  
+ "Follow transfer" is similar to "Step into" in a debugger. It follows the transfer from A to B. It does not have any effect on other traces.  
   
  There are two ways to follow a transfer: by mouse or by keyboard:  
   
 -   By Mouse: Double-click the transfer trace in the trace pane.  
   
--   By Keyboard: Select a transfer trace, and use “Follow Transfer” in the **Activity** menu, or press “F11”  
+-   By Keyboard: Select a transfer trace, and use "Follow Transfer" in the **Activity** menu, or press "F11"  
   
 > [!NOTE]
 >  In many cases, when Activity A transfers to Activity B, Activity A waits until Activity B transfers back to Activity A. This means that Activity A has no trace logged during the period when Activity B is actively tracing. However, it is also possible that Activity A does not wait, and continues to log traces. It is also possible that Activity B does not transfer back to Activity A. Therefore, activity transfers are still different from function calls in this sense. You can understand activity transfers better in Graph view.  
   
 #### Jump to Next or Previous Transfer  
- When you are analyzing the current activity, or selected activities when multiple activities are selected, you may want to quickly find the activities it transfers to. “Jump to next transfer” allows you to locate the next transfer trace in the activity. Once you find the transfer trace, you can use “Follow transfer” to step into the next activity.  
+ When you are analyzing the current activity, or selected activities when multiple activities are selected, you may want to quickly find the activities it transfers to. "Jump to next transfer" allows you to locate the next transfer trace in the activity. Once you find the transfer trace, you can use "Follow transfer" to step into the next activity.  
   
--   Jump to Next Transfer: Use the **Activity** menu, or press “Ctrl + F10”.  
+-   Jump to Next Transfer: Use the **Activity** menu, or press "Ctrl + F10".  
   
--   Jump to Previous Transfer: Use the **Activity** menu, or press “Ctrl + F9”.  
+-   Jump to Previous Transfer: Use the **Activity** menu, or press "Ctrl + F9".  
   
 #### Navigate in Graph View  
- Although navigating in the activity pane and trace pane is similar to debugging, using **Graph** view provides a much better experience in navigation. See “Graph View” section for more information.  
+ Although navigating in the activity pane and trace pane is similar to debugging, using **Graph** view provides a much better experience in navigation. See "Graph View" section for more information.  
   
 ### Loading Large Trace Files  
- Trace files can be very large. For example, if you turn on tracing on the “Verbose” level, the resulting trace file for running a few minutes can easily be hundreds of megabytes or even larger, depending on network speed and communication pattern.  
+ Trace files can be very large. For example, if you turn on tracing on the "Verbose" level, the resulting trace file for running a few minutes can easily be hundreds of megabytes or even larger, depending on network speed and communication pattern.  
   
  When you open a very large trace file in the Service Trace Viewer, system performance can be negatively impacted. The loading speed and the response time after loading can be slow. Actual speed differs from time to time, depending on your hardware configuration. In most PCs, loading a trace file larger than 200M has a severe performance impact. For traces files larger than 1G, the tool may use up all available memory, or stop responding for a very long time.  
   
- In order to avoid the slow loading and response time in analyzing large trace files, the Service Trace Viewer provides a feature called “Partial Loading”, which only loads a small part of the trace at a time. For example, you may have a trace file over 1GB, running for several days on the server. When some errors have occurred and you want to analyze the trace, it is not necessary to open the entire trace file. Instead, you can load the traces within a certain period of time when the error might have occurred. Because the scope is smaller, the Service Trace Viewer tool can load the file faster and you can identify the errors using a smaller set of data.  
+ In order to avoid the slow loading and response time in analyzing large trace files, the Service Trace Viewer provides a feature called "Partial Loading", which only loads a small part of the trace at a time. For example, you may have a trace file over 1GB, running for several days on the server. When some errors have occurred and you want to analyze the trace, it is not necessary to open the entire trace file. Instead, you can load the traces within a certain period of time when the error might have occurred. Because the scope is smaller, the Service Trace Viewer tool can load the file faster and you can identify the errors using a smaller set of data.  
   
 #### Enabling Partial Loading  
  You do not need to manually enable partial loading. If the total size of the trace file(s) you attempt to load exceeds 40MB, Service Trace Viewer automatically displays a Partial Loading dialog for you to select the part that you want to load.  
@@ -408,7 +408,7 @@ manager: "erikre"
  The following is a list of icons that the Service Trace Viewer tool uses in the **Activity** view, **Graph** view and **Trace** pane to represent different items.  
   
 > [!NOTE]
->  Some traces that are not categorized (for example, “a message is closed”) have no icon.  
+>  Some traces that are not categorized (for example, "a message is closed") have no icon.  
   
 ### Activity Tracing Traces  
   
@@ -451,7 +451,7 @@ manager: "erikre"
 |![Process Message activity](../../../docs/framework/wcf/media/wcfc-executionactivityiconc.GIF "wcfc_ExecutionActivityIconc")|Execute User Code activity: An activity that groups user code traces for processing a request.|  
   
 ## Troubleshooting  
- If you do not have permission to write to the registry, you get the following error message “The Microsoft Service Trace Viewer was not registered to the system” when you use the “`svctraceviewer /register`” command to register the tool. If this occurs, you should log in using an account that has write access to the registry.  
+ If you do not have permission to write to the registry, you get the following error message "The Microsoft Service Trace Viewer was not registered to the system" when you use the "`svctraceviewer /register`" command to register the tool. If this occurs, you should log in using an account that has write access to the registry.  
   
  In addition, the Service Trace Viewer tool writes some settings (for example, custom filters and filter options) to the SvcTraceViewer.exe.settings file in its assembly folder. If you do not have read permission for the file, you can still launch the tool, but you cannot load the settings.  
   

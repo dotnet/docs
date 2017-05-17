@@ -69,7 +69,7 @@ With [!INCLUDE[vstecado](../../../includes/vstecado-md.md)], you can create many
   
     -   The <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> method discards any changes made to the object.  
   
-     For more information about how the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>, and <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> methods work, see [Save data back to the database](http://msdn.microsoft.com/library/afe6cb8a-dc6a-428b-b07b-903ac02c890b).  
+     For more information about how the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>, and <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> methods work, see [Save data back to the database](/visualstudio/data-tools/save-data-back-to-the-database).  
   
      This transactional notion of data functionality is used by the <xref:System.Windows.Forms.DataGridView> control.  
   

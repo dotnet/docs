@@ -124,6 +124,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetRuntimeValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the run-time value of the binding.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Returns the run-time value.  
+  
+> [!CAUTION]
+>  Throws an exception if this bind is a binding to a method and a <xref:System.Workflow.ComponentModel.BindValidationContext.TargetType%2A> is not provided.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetRuntimeValue">
       <MemberSignature Language="C#" Value="public object GetRuntimeValue (System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetRuntimeValue(class System.Workflow.ComponentModel.Activity activity) cil managed" />
@@ -345,25 +365,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetRuntimeValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the run-time value of the binding.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Returns the run-time value.  
-  
-> [!CAUTION]
->  Throws an exception if this bind is a binding to a method and a <xref:System.Workflow.ComponentModel.BindValidationContext.TargetType%2A> is not provided.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

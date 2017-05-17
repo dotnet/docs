@@ -101,6 +101,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a property or pattern identifier to a <see cref="T:System.Windows.Automation.CacheRequest" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When a <xref:System.Windows.Automation.CacheRequest> object is created, the <xref:System.Windows.Automation.AutomationElement.RuntimeIdProperty> identifier is added as a default property to cache.  
+  
+ Adding an object that is already in the cache request has no effect.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Automation.AutomationPattern pattern);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Automation.AutomationPattern pattern) cil managed" />
@@ -390,24 +409,5 @@
         <exception cref="T:System.ArgumentException">An attempt was made to set the property to <see cref="F:System.Windows.Automation.TreeScope.Parent" /> or <see cref="F:System.Windows.Automation.TreeScope.Ancestors" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a property or pattern identifier to a <see cref="T:System.Windows.Automation.CacheRequest" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When a <xref:System.Windows.Automation.CacheRequest> object is created, the <xref:System.Windows.Automation.AutomationElement.RuntimeIdProperty> identifier is added as a default property to cache.  
-  
- Adding an object that is already in the cache request has no effect.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -690,7 +690,7 @@
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a T<see cref=":System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" /> object used for custom legend items.</summary>
+        <summary>Gets a <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" /> object used for custom legend items.</summary>
         <value>A <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1357,7 +1357,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum size of the legend, measured as a percentage of the chart area. This value is used by the automatic layout algorithm.</summary>
-        <value>A <see langword="float " /> value that represents the maximum size of the legend.</value>
+        <value>A <see langword="float" /> value that represents the maximum size of the legend.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

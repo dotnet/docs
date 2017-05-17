@@ -154,7 +154,7 @@
   
  <paramref name="displayName" /> is <see langword="null" /> or an empty string ("").</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="controlType " />is not the same type as the consumer control (or a valid class derived from it).</exception>
+          <paramref name="controlType" /> is not the same type as the consumer control (or a valid class derived from it).</exception>
       </Docs>
     </Member>
     <Member MemberName="SetObject">

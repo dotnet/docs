@@ -285,6 +285,23 @@
  The timeout has expired.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveCurrent">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the current message from the queue and returns the message to the calling application. Removing the message deletes it from the queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The behavior described for these overloads is applicable only if the <xref:System.Messaging.MessageEnumerator> instance is retrieved by using the <xref:System.Messaging.MessageQueue.GetMessageEnumerator2%2A>. Do not use <xref:System.Messaging.MessageQueue.GetMessageEnumerator%2A> to retrieve an instance of <xref:System.Messaging.MessageEnumerator> as this method has been deprecated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveCurrent">
       <MemberSignature Language="C#" Value="public System.Messaging.Message RemoveCurrent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Messaging.Message RemoveCurrent() cil managed" />
@@ -555,22 +572,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="RemoveCurrent">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the current message from the queue and returns the message to the calling application. Removing the message deletes it from the queue.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The behavior described for these overloads is applicable only if the <xref:System.Messaging.MessageEnumerator> instance is retrieved by using the <xref:System.Messaging.MessageQueue.GetMessageEnumerator2%2A>. Do not use <xref:System.Messaging.MessageQueue.GetMessageEnumerator%2A> to retrieve an instance of <xref:System.Messaging.MessageEnumerator> as this method has been deprecated.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

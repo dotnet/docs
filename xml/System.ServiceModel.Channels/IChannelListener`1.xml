@@ -34,6 +34,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="AcceptChannel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Accepts a channel of a specified type for communication with a client.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel%28System.TimeSpan%29> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AcceptChannel">
       <MemberSignature Language="C#" Value="public TChannel AcceptChannel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TChannel AcceptChannel() cil managed" />
@@ -89,6 +106,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginAcceptChannel">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to accept a channel within a specified or default interval of time.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.BeginAcceptChannel%2A> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginAcceptChannel">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginAcceptChannel (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAcceptChannel(class System.AsyncCallback callback, object state) cil managed" />
@@ -175,39 +209,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="BeginAcceptChannel">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to accept a channel within a specified or default interval of time.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.BeginAcceptChannel%2A> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AcceptChannel">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Accepts a channel of a specified type for communication with a client.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- It is recommended that the <xref:System.ServiceModel.Channels.IChannelListener%601.AcceptChannel%28System.TimeSpan%29> overload with the explicit timeout be used. The `timeout` specified for that method overrides any default timeouts set by the system for the service.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

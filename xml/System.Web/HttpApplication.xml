@@ -438,6 +438,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddOnLogRequestAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified <see cref="E:System.Web.HttpApplication.LogRequest" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.LogRequest" /> event handlers for the current request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.HttpApplication.AddOnLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddOnLogRequestAsync">
       <MemberSignature Language="C#" Value="public void AddOnLogRequestAsync (System.Web.BeginEventHandler bh, System.Web.EndEventHandler eh);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOnLogRequestAsync(class System.Web.BeginEventHandler bh, class System.Web.EndEventHandler eh) cil managed" />
@@ -493,6 +510,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddOnMapRequestHandlerAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified <see cref="E:System.Web.HttpApplication.MapRequestHandler" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.MapRequestHandler" /> event handlers for the current request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.HttpApplication.AddOnMapRequestHandlerAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddOnMapRequestHandlerAsync">
       <MemberSignature Language="C#" Value="public void AddOnMapRequestHandlerAsync (System.Web.BeginEventHandler bh, System.Web.EndEventHandler eh);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOnMapRequestHandlerAsync(class System.Web.BeginEventHandler bh, class System.Web.EndEventHandler eh) cil managed" />
@@ -692,6 +726,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddOnPostLogRequestAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified <see cref="E:System.Web.HttpApplication.PostLogRequest" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.PostLogRequest" /> event handlers for the current request.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.HttpApplication.AddOnPostLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddOnPostLogRequestAsync">
       <MemberSignature Language="C#" Value="public void AddOnPostLogRequestAsync (System.Web.BeginEventHandler bh, System.Web.EndEventHandler eh);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOnPostLogRequestAsync(class System.Web.BeginEventHandler bh, class System.Web.EndEventHandler eh) cil managed" />
@@ -1503,20 +1554,7 @@
   
 ## Examples  
  The following example shows how to programmatically specify the cache provider named `DiskCache` for any HTTP request that goes to the Advanced.aspx page.  
-  
- [Visual Basic]  
-  
-```  
-Public Overloads Overrides Sub GetOutputCacheProviderName(ByVal context _  
-        As HttpContext) As String   
-    If context.Request.Path.EndsWith("Advanced.aspx") Then   
-        Return "DiskCache"   
-    Else   
-        Return MyBase.GetOutputCacheProviderName(context)   
-    End If   
-End Sub  
-```  
-  
+
 ```csharp  
 public override string GetOutputCacheProviderName(HttpContext context)  
 {  
@@ -1525,6 +1563,17 @@ public override string GetOutputCacheProviderName(HttpContext context)
     else  
         return base.GetOutputCacheProviderName(context);  
 }  
+```  
+
+```vb  
+Public Overloads Overrides Sub GetOutputCacheProviderName(ByVal context _  
+        As HttpContext) As String   
+    If context.Request.Path.EndsWith("Advanced.aspx") Then   
+        Return "DiskCache"   
+    Else   
+        Return MyBase.GetOutputCacheProviderName(context)   
+    End If   
+End Sub  
 ```  
   
  ]]></format>
@@ -2367,56 +2416,5 @@ public override string GetOutputCacheProviderName(HttpContext context)
         <exception cref="T:System.Web.HttpException">The <see cref="T:System.Security.Principal.IPrincipal" /> object is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddOnMapRequestHandlerAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified <see cref="E:System.Web.HttpApplication.MapRequestHandler" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.MapRequestHandler" /> event handlers for the current request.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.HttpApplication.AddOnMapRequestHandlerAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddOnPostLogRequestAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified <see cref="E:System.Web.HttpApplication.PostLogRequest" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.PostLogRequest" /> event handlers for the current request.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.HttpApplication.AddOnPostLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddOnLogRequestAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified <see cref="E:System.Web.HttpApplication.LogRequest" /> event to the collection of asynchronous <see cref="E:System.Web.HttpApplication.LogRequest" /> event handlers for the current request.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.HttpApplication.AddOnLogRequestAsync%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -38,9 +38,7 @@
 ## Examples  
  The following example shows how to use the ManagementBind attribute to mark the constructor of a class.  
   
- [C#]  
-  
-```  
+```csharp  
 // Use the ManagementBind attribute to specify that this constructor  
 // is used to attach a class instance to a specific WMI  
 // instance. The constructor should set the values of the  

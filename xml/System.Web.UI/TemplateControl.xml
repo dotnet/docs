@@ -554,6 +554,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a <see cref="T:System.Web.UI.Control" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When you load a control into a container control, the container raises all of the added control's events until it has caught up to the current event. However, the added control does not catch up with postback data processing. For an added control to participate in postback data processing, including validation, the control must be added in the <xref:System.Web.UI.Control.Init> event rather than in the <xref:System.Web.UI.Control.Load> event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LoadControl">
       <MemberSignature Language="C#" Value="public System.Web.UI.Control LoadControl (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control LoadControl(string virtualPath) cil managed" />
@@ -809,6 +826,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ParseControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Parses an input string into a <see cref="T:System.Web.UI.Control" /> object on the ASP.NET Web page or user control.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Web.UI.TemplateControl.ParseControl%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ParseControl">
       <MemberSignature Language="C#" Value="public System.Web.UI.Control ParseControl (string content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.Control ParseControl(string content) cil managed" />
@@ -992,7 +1026,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="T:System.Web.UI.TemplateControl" /> control supports automatic events.</summary>
-        <value>Always<see langword=" true" />.</value>
+        <value>Always <see langword="true" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1366,39 +1400,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ParseControl">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Parses an input string into a <see cref="T:System.Web.UI.Control" /> object on the ASP.NET Web page or user control.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Web.UI.TemplateControl.ParseControl%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="LoadControl">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads a <see cref="T:System.Web.UI.Control" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When you load a control into a container control, the container raises all of the added control's events until it has caught up to the current event. However, the added control does not catch up with postback data processing. For an added control to participate in postback data processing, including validation, the control must be added in the <xref:System.Web.UI.Control.Init> event rather than in the <xref:System.Web.UI.Control.Load> event.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -95,7 +95,7 @@ A *component* is a class that implements the <xref:System.ComponentModel.ICompon
  [Component Classes](http://msdn.microsoft.com/library/ce2e5647-e673-4c2b-8125-ffebbd9d71bc)  
  Describes what makes a class a component, ways to expose component functionality, controlling access to components, and controlling how component instances are created.  
   
- [Troubleshooting Control and Component Authoring](http://msdn.microsoft.com/library/e9c8c099-2271-4737-882f-50f336c7a55e)  
+ [Troubleshooting Control and Component Authoring](../../framework/winforms/controls/troubleshooting-control-and-component-authoring.md)  
  Explains how to fix common problems.  
   
 ## See Also  

@@ -85,7 +85,7 @@ The Task-based Asynchronous Pattern (TAP) is based on the <xref:System.Threading
   
 ```csharp  
   
-public class Progress<T> : IProgress<T>  
+public class Progress<T> : IProgress<T>  
 {  
     public Progress();  
     public Progress(Action<T> handler);  
@@ -97,7 +97,7 @@ public class Progress<T> : IProgress<T>
   
 ```vb  
   
-Public Class Progress(Of T) : Inherits IProgress(Of T)  
+Public Class Progress(Of T) : Inherits IProgress(Of T)  
     Public Sub New()  
     Public Sub New(handler As Action(Of T))  
     Protected Overridable Sub OnReport(value As T)  

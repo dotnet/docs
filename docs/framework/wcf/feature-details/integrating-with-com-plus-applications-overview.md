@@ -106,7 +106,7 @@ manager: "erikre"
   
  With Internet Information Services (IIS) or Windows Process Activation Service (WAS) using the HTTP transport, the Httpcfg.exe tool can be used to reserve a transport endpoint address. In other configurations, it is important to protect against rogue services that act as the intended service. To prevent a rogue service from starting at the desired endpoint, the legitimate service can be configured to run as an NT service. This enables the legitimate service to claim the endpoint address prior to any rogue services.  
   
- When exposing a COM+ application with configured COM+ roles as a Web-hosted service, the “Launch IIS Process Account” must be added to one of the application’s roles. This account, typically with the name IWAM_machinename, must be added to enable clean shutdown of objects after use. The account should not be granted any additional permissions.  
+ When exposing a COM+ application with configured COM+ roles as a Web-hosted service, the "Launch IIS Process Account" must be added to one of the application’s roles. This account, typically with the name IWAM_machinename, must be added to enable clean shutdown of objects after use. The account should not be granted any additional permissions.  
   
  The COM+ process recycling features cannot be used on integrated applications. If the application is configured to use process recycling and the components are running in a COM+ hosted process, the service fails to start. This requirement does not include services using the Web-hosted in-process mode because the process recycling settings are not applied.  
   

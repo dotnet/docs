@@ -3537,6 +3537,23 @@ alert('Hello');
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to an <see cref="T:System.Web.UI.HtmlTextWriter" /> output stream, as specified by the overloaded parameters, followed by a line terminator string. All versions of this method write any pending tab spacing to the output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default line terminator string is a carriage return followed by a line feed ("\r\n"). The <xref:System.IO.TextWriter.WriteLine%2A> base method is used to write the `value` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteLine">
       <MemberSignature Language="C#" Value="public override void WriteLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine() cil managed" />
@@ -4236,22 +4253,5 @@ alert('Hello');
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteLine">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes data to an <see cref="T:System.Web.UI.HtmlTextWriter" /> output stream, as specified by the overloaded parameters, followed by a line terminator string. All versions of this method write any pending tab spacing to the output stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default line terminator string is a carriage return followed by a line feed ("\r\n"). The <xref:System.IO.TextWriter.WriteLine%2A> base method is used to write the `value` parameter.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

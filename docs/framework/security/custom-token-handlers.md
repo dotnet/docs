@@ -81,7 +81,7 @@ This topic discusses token handlers in WIF and how they are used to process toke
     <system.identityModel>  
         <identityConfiguration saveBootstrapContext="true">  
             <securityTokenHandlers>  
-                <remove type=”System.IdentityModel.Tokens.SamlSecurityTokenHandler, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=abcdefg123456789”>  
+                <remove type="System.IdentityModel.Tokens.SamlSecurityTokenHandler, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=abcdefg123456789">  
                 <add type="CustomToken.MyCustomTokenHandler, CustomToken" />  
             </securityTokenHandlers>  
         </identityConfiguration>  

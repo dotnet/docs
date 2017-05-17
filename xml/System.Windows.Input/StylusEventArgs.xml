@@ -88,7 +88,7 @@
         <Parameter Name="relativeTo" Type="System.Windows.IInputElement" />
       </Parameters>
       <Docs>
-        <param name="relativeTo">The <see cref="T:System.Windows.IInputElement" /> that the (<c>x</c>,<c>y</c>) coordinates are mapped to.</param>
+        <param name="relativeTo">The <see cref="T:System.Windows.IInputElement" /> that the (<c>x</c>, <c>y</c>) coordinates are mapped to.</param>
         <summary>Gets the position of the stylus.</summary>
         <returns>A <see cref="T:System.Windows.Point" /> that represents the position of the stylus, based on the coordinates of <paramref name="relativeTo" />.</returns>
         <remarks>To be added.</remarks>

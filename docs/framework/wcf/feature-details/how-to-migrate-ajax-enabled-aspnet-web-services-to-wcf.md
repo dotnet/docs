@@ -193,15 +193,15 @@ namespace ASPHello
   
 ```  
 Dictionary<string, int> d = new Dictionary<string, int>();  
-d.Add(“one”, 1);  
-d.Add(“two”, 2);  
+d.Add("one", 1);  
+d.Add("two", 2);  
 ```  
   
  This dictionary is represented in JSON objects as shown in the following list:  
   
 -   [{"Key":"one","Value":1},{"Key":"two","Value":2}] by the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>  
   
--   {“one”:1,”two”:2} by the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>  
+-   {"one":1,"two":2} by the ASP.NET AJAX <xref:System.Web.Script.Serialization.JavaScriptSerializer>  
   
  The <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> is more powerful in the sense that it can handle dictionaries where the key type is not string, while the <xref:System.Web.Script.Serialization.JavaScriptSerializer> cannot. But the latter is more JSON-friendly.  
   

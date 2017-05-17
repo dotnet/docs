@@ -92,6 +92,33 @@ private static Grammar CreateGrammarFromFile()
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.Grammar" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use a <xref:System.Speech.Recognition.Grammar.%23ctor%2A> constructor to create a <xref:System.Speech.Recognition.Grammar> instance from a <xref:System.Speech.Recognition.GrammarBuilder> or <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object, or from a file or a <xref:System.IO.Stream> that contains a description of a grammar in a supported format. Supported formats include the following:  
+  
+-   XML-format files that conform to the W3C [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761)  
+  
+-   Grammars that have been compiled to a binary file with a .cfg file extension  
+  
+ Grammar constructors that accept XML-format grammar files in their arguments compile the XML grammars to a binary format to optimize them for loading and consumption by a speech recognition engine. You can reduce the amount of time required to construct a <xref:System.Speech.Recognition.Grammar> object from an XML-format grammar by compiling the grammar in advance, using one of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler.Compile%2A> methods.  
+  
+ A speech recognition grammar can define a root rule. To create a <xref:System.Speech.Recognition.Grammar> object that specifies which rule to use as its root rule, use a constructor that accepts the `ruleName` parameter.  
+  
+ To create a <xref:System.Speech.Recognition.Grammar> object that specifies a base URI to resolve relative rule references, use a constructor that takes the `baseUri` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected Grammar ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -1075,7 +1102,7 @@ private static Grammar CreateSrgsDocumentGrammar3()
         <param name="ruleName">The identifier of the rule to use as the entry point of the speech recognition grammar, or <see langword="null" /> to use the default root rule of the grammar description.</param>
         <param name="baseUri">The base URI to use to resolve any relative rule reference in the grammar description, or <see langword="null" />.</param>
         <param name="parameters">Parameters to be passed to the initialization handler specified by the <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.OnInit" /> property for the entry point or the root rule of the <see cref="T:System.Speech.Recognition.Grammar" /> to be created. This parameter may be null.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.Grammar" /> class a <see cref="T:System.IO.Stream" />and specifies a root rule and a base URI to resolve relative references.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.Grammar" /> class a <see cref="T:System.IO.Stream" /> and specifies a root rule and a base URI to resolve relative references.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1656,32 +1683,5 @@ recognizer.RecognizeAsync(RecognizeMode.Multiple);
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.Grammar" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use a <xref:System.Speech.Recognition.Grammar.%23ctor%2A> constructor to create a <xref:System.Speech.Recognition.Grammar> instance from a <xref:System.Speech.Recognition.GrammarBuilder> or <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument> object, or from a file or a <xref:System.IO.Stream> that contains a description of a grammar in a supported format. Supported formats include the following:  
-  
--   XML-format files that conform to the W3C [Speech Recognition Grammar Specification (SRGS) Version 1.0](http://go.microsoft.com/fwlink/?LinkId=201761)  
-  
--   Grammars that have been compiled to a binary file with a .cfg file extension  
-  
- Grammar constructors that accept XML-format grammar files in their arguments compile the XML grammars to a binary format to optimize them for loading and consumption by a speech recognition engine. You can reduce the amount of time required to construct a <xref:System.Speech.Recognition.Grammar> object from an XML-format grammar by compiling the grammar in advance, using one of the <xref:System.Speech.Recognition.SrgsGrammar.SrgsGrammarCompiler.Compile%2A> methods.  
-  
- A speech recognition grammar can define a root rule. To create a <xref:System.Speech.Recognition.Grammar> object that specifies which rule to use as its root rule, use a constructor that accepts the `ruleName` parameter.  
-  
- To create a <xref:System.Speech.Recognition.Grammar> object that specifies a base URI to resolve relative rule references, use a constructor that takes the `baseUri` parameter.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

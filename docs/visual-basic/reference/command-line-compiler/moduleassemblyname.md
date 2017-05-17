@@ -65,7 +65,7 @@ Specifies the name of the assembly that this module will be a part of.
 >  The `/moduleassemblyname` option is not available from within the Visual Studio development environment; it is available only when you compile from a command prompt.  
   
 ## See Also  
- [How to: Build a Multifile Assembly](http://msdn.microsoft.com/library/261c5583-8a76-412d-bda7-9b8ee3b131e5)   
+ [How to: Build a Multifile Assembly](../../../framework/app-domains/how-to-build-a-multifile-assembly.md)   
  [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)   
  [/target (Visual Basic)](../../../visual-basic/reference/command-line-compiler/target.md)   
  [/main](../../../visual-basic/reference/command-line-compiler/main.md)   

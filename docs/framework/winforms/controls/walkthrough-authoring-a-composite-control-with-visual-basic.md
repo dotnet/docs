@@ -81,9 +81,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 7.  Modify the code so that it resembles the following code sample. Be sure to change the access modifier from `Private` to `Protected`.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Protected Sub Timer1_Tick(ByVal sender As Object, ByVal e As _  
         System.EventArgs) Handles Timer1.Tick  
         ' Causes the label to display the current time.    
@@ -95,9 +93,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 8.  Modify the method to be overridable. For more information, see the "Inheriting from a User Control" section below.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Protected Overridable Sub Timer1_Tick(ByVal sender As Object, ByVal _  
         e As System.EventArgs) Handles Timer1.Tick  
     ```  
@@ -115,9 +111,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 2.  Locate the `Public Class ctlClock` statement. Beneath it, type the following code.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Private colFColor as Color  
     Private colBColor as Color  
     ```  
@@ -126,9 +120,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 3.  Insert the following code beneath the variable declarations from step 2.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     ' Declares the name and type of the property.  
     Property ClockBackColor() as Color  
         ' Retrieves the value of the private variable colBColor.  
@@ -211,9 +203,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 2.  Locate the class declaration for the ctlAlarmClock control, which appears as `Public Class ctlAlarmClock`.  In the class declaration, insert the following code.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Private dteAlarmTime As Date  
     Private blnAlarmSet As Boolean  
     ' These properties will be declared as Public to allow future   
@@ -273,17 +263,13 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 2.  Locate the `Private blnAlarmSet As Boolean` statement. Immediately beneath it, add the following statement.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Dim blnColorTicker as Boolean  
     ```  
   
 3.  Locate the `End Class` statement at the bottom of the page. Just before the `End Class` statement, add the following code.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Protected Overrides Sub Timer1_Tick(ByVal sender As Object, ByVal e _  
         As System.EventArgs)  
         ' Calls the Timer1_Tick method of ctlClock.  
@@ -332,9 +318,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 3.  Modify this method so that it resembles the following code.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Private Sub lblAlarm_Click(ByVal sender As Object, ByVal e As _  
      System.EventArgs) Handles lblAlarm.Click  
         ' Turns off the alarm.  
@@ -390,9 +374,7 @@ Composite controls provide a means by which custom graphical interfaces can be c
   
 13. Modify the code so that it resembles the following.  
   
-     [Visual Basic]  
-  
-    ```  
+    ```vb  
     Private Sub dtpTest_ValueChanged(ByVal sender As Object, ByVal e As _  
         System.EventArgs) Handles dtpTest.ValueChanged  
         ctlAlarmClock1.AlarmTime = dtpTest.Value  

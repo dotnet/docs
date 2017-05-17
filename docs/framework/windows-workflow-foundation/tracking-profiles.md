@@ -23,23 +23,23 @@ Tracking profiles contain tracking queries that permit a tracking participant to
   
 ```  
 <system.serviceModel>  
-    ...  
-    <tracking>    
-      <trackingProfile name="Sample Tracking Profile">  
-        <workflow activityDefinitionId="*">  
-          <workflowInstanceQueries>  
-            <workflowInstanceQuery>  
-              <states>  
-                <state name="Started"/>  
-                <state name="Completed"/>  
-              </states>  
-            </workflowInstanceQuery>  
-          </workflowInstanceQueries>  
-        </workflow>  
-      </trackingProfile>          
-    </profiles>  
-  </tracking>  
-    ...  
+    ...  
+    <tracking>    
+      <trackingProfile name="Sample Tracking Profile">  
+        <workflow activityDefinitionId="*">  
+          <workflowInstanceQueries>  
+            <workflowInstanceQuery>  
+              <states>  
+                <state name="Started"/>  
+                <state name="Completed"/>  
+              </states>  
+            </workflowInstanceQuery>  
+          </workflowInstanceQueries>  
+        </workflow>  
+      </trackingProfile>          
+    </profiles>  
+  </tracking>  
+    ...  
 </system.serviceModel>  
   
 ```  
@@ -157,7 +157,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
     ```  
   
--   <xref:System.Activities.Tracking.ActivityStateQuery> - Use this to track life cycle changes of the activities that make up a workflow instance. For example, you may want to keep track of every time the “Send E-Mail” activity completes within a workflow instance. This query is necessary for a <xref:System.Activities.Tracking.TrackingParticipant> to subscribe to <xref:System.Activities.Tracking.ActivityStateRecord> objects. The available states to subscribe to are specified in <xref:System.Activities.Tracking.ActivityStates>.  
+-   <xref:System.Activities.Tracking.ActivityStateQuery> - Use this to track life cycle changes of the activities that make up a workflow instance. For example, you may want to keep track of every time the "Send E-Mail" activity completes within a workflow instance. This query is necessary for a <xref:System.Activities.Tracking.TrackingParticipant> to subscribe to <xref:System.Activities.Tracking.ActivityStateRecord> objects. The available states to subscribe to are specified in <xref:System.Activities.Tracking.ActivityStates>.  
   
      The configuration and code used to subscribe activity state tracking records that use the <xref:System.Activities.Tracking.ActivityStateQuery> for the `SendEmailActivity` activity is shown in the following example.  
   
@@ -325,18 +325,18 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
     ```  
   
 ### Annotations  
- Annotations allow you to arbitrarily tag tracking records with a value that can be configured after build time. For example, you might want several tracking records across several workflows to be tagged with “Mail Server” == “Mail Server1”. This makes it easy to find all records with this tag when querying tracking records later.  
+ Annotations allow you to arbitrarily tag tracking records with a value that can be configured after build time. For example, you might want several tracking records across several workflows to be tagged with "Mail Server" == "Mail Server1". This makes it easy to find all records with this tag when querying tracking records later.  
   
  To accomplish this, an annotation is added to a tracking query as shown in the following example.  
   
 ```  
 <activityStateQuery activityName="SendEmailActivity">  
-  <states>  
-    <state name="Closed"/>  
-  </states>  
-  <annotations>  
-    <annotation name="MailServer" value="Mail Server1"/>  
-  </annotations>  
+  <states>  
+    <state name="Closed"/>  
+  </states>  
+  <annotations>  
+    <annotation name="MailServer" value="Mail Server1"/>  
+  </annotations>  
 </activityStateQuery>  
   
 ```  
@@ -364,7 +364,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
  A profile configured as an XML configuration file is applied to a tracking participant using a behavior extension. This is added to a WorkflowServiceHost as described in the later section [Configuring Tracking for a Workflow](../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md).  
   
- The verbosity of the tracking records emitted by the host is determined by configuration settings within the tracking profile. A tracking participant subscribes to tracking records by adding queries to a tracking profile. To subscribe to all tracking records, the tracking profile needs to specify all tracking queries using “*” in the name fields in each of the queries.  
+ The verbosity of the tracking records emitted by the host is determined by configuration settings within the tracking profile. A tracking participant subscribes to tracking records by adding queries to a tracking profile. To subscribe to all tracking records, the tracking profile needs to specify all tracking queries using "*" in the name fields in each of the queries.  
   
  Here are some of the common examples of tracking profiles.  
   

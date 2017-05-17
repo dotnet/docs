@@ -109,6 +109,23 @@
  When <paramref name="state" /> is not a valid <see cref="T:System.Data.EntityState" /> value.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ChangeRelationshipState">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the state of the specified relationship between two entity objects.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is not supported for relationships based on a foreign key association.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ChangeRelationshipState">
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectStateEntry ChangeRelationshipState (object sourceEntity, object targetEntity, string navigationProperty, System.Data.EntityState relationshipState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectStateEntry ChangeRelationshipState(object sourceEntity, object targetEntity, string navigationProperty, valuetype System.Data.EntityState relationshipState) cil managed" />
@@ -558,22 +575,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ChangeRelationshipState">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Changes the state of the specified relationship between two entity objects.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is not supported for relationships based on a foreign key association.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -30,16 +30,14 @@
 ## Examples  
  The following example shows how to use the ManagementProbe attribute to indicate that a field represents a read-only WMI property.  
   
-```  
+```csharp  
 [ManagementProbe]  
 string count;  
 ```  
   
  The next example shows how to use the ManagementProbe attribute to mark a property.  
   
- [C#]  
-  
-```  
+```csharp  
 // Use the ManagementProbe attribute to specify that a property  
 // is a read-only property in the provider. Consumers will be  
 // able to get this property value through WMI.  
@@ -48,7 +46,6 @@ public int ReadOnlyProperty
 {  
     get { return this.propertyValue; }  
 }  
-  
 ```  
   
  ]]></format>

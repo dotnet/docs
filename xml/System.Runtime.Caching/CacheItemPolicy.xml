@@ -25,9 +25,7 @@
 ## Examples  
  The following example shows how to create an in-memory cache item that monitors the path for a text file. The cache creates a <xref:System.Runtime.Caching.CacheItemPolicy> object and sets the <xref:System.Runtime.Caching.CacheItemPolicy.AbsoluteExpiration%2A> property to evict the cache after 60 seconds.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Protected Sub Button1_Click(ByVal sender As Object, _  
             ByVal e As System.EventArgs) Handles Button1.Click  
     Dim cache As ObjectCache = MemoryCache.Default  
@@ -52,9 +50,7 @@ Protected Sub Button1_Click(ByVal sender As Object, _
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 protected void Button1_Click(object sender, EventArgs e)  
     {  
         ObjectCache cache = MemoryCache.Default;  

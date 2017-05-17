@@ -54,7 +54,7 @@
       </Parameters>
       <Docs>
         <param name="Path">Required. A <see langword="String" /> expression that identifies which directory or folder becomes the new default directory or folder. <c>Path</c> may include the drive. If no drive is specified, <see langword="ChDir" /> changes the default directory or folder on the current drive.</param>
-        <summary>Changes the current directory or folder. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than the <see langword="ChDir " />function. For more information, see <see cref="P:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory" /> .</summary>
+        <summary>Changes the current directory or folder. The <see langword="My" /> feature gives you better productivity and performance in file I/O operations than the <see langword="ChDir" /> function. For more information, see <see cref="P:Microsoft.VisualBasic.FileIO.FileSystem.CurrentDirectory" /> .</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -390,7 +390,7 @@
       </Parameters>
       <Docs>
         <param name="FileNumber">Required. <see langword="Integer" />. Any valid file number.</param>
-        <summary>Returns an enumeration representing the file mode for files opened using the <see langword="FileOpen" /> function. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than the <see langword="FileAttr " />function. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo(System.String)" /> for more information.</summary>
+        <summary>Returns an enumeration representing the file mode for files opened using the <see langword="FileOpen" /> function. The <see cref="T:Microsoft.VisualBasic.FileIO.FileSystem" /> gives you better productivity and performance in file I/O operations than the <see langword="FileAttr" /> function. See <see cref="M:Microsoft.VisualBasic.FileIO.FileSystem.GetFileInfo(System.String)" /> for more information.</summary>
         <returns>The following enumeration values indicate the file access mode:  
   
  <list type="table"><item><term> Value  

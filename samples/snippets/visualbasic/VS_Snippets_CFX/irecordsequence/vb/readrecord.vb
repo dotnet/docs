@@ -72,7 +72,7 @@ End Class
 
 			Console.WriteLine("Done...")
 		End Sub
-	'<snippet3>
+	'</snippet3>
 
 	'<snippet2>
 	' Read the records added to the log. 

@@ -1,4 +1,4 @@
-# .NET Documentation
+# .NET Docs
 
 This repo contains work-in-progress documentation for .NET. To contribute, see the [Contributing Guide](CONTRIBUTING.md) and the [issues list](https://github.com/dotnet/docs/issues). 
 

@@ -38,11 +38,11 @@ If you are the administrator for a server that is shared by hosting several smal
 ```  
 <?xml version="1.0" encoding="UTF-8"?>  
 <configuration>  
-    <runtime>  
-    . . .  
-    <gcTrimCommitOnLowMemory enabled="true"/>  
-    </runtime>  
-    . . .  
+    <runtime>  
+    . . .  
+    <gcTrimCommitOnLowMemory enabled="true"/>  
+    </runtime>  
+    . . .  
 </configuration>  
 ```  
   

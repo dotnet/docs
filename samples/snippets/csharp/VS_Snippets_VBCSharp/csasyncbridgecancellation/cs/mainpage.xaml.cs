@@ -169,7 +169,7 @@ namespace BlogFeedWithCancellation
 //     Windows Restart and Recovery Recipe, 3/21/2011 2:13:24 PM -07:00
 
 // Extreme Windows Blog
-//     Samsung Series 9 27” PLS Display: Amazing Picture, 8/20/2012 2:41:48 PM -07:00
+//     Samsung Series 9 27" PLS Display: Amazing Picture, 8/20/2012 2:41:48 PM -07:00
 //     NVIDIA GeForce GTX 660 Ti Graphics Card: Affordable Graphics Powerhouse, 8/16/2012 10:56:19 AM -07:00
 //     HP Z820 Workstation: Rising To the Challenge, 8/14/2012 1:57:01 PM -07:00
 

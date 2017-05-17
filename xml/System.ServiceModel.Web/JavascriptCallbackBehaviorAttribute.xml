@@ -20,7 +20,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>A contract behavior that allows you to set the URL query string parameter name to something other than the default “callback”.</summary>
+    <summary>A contract behavior that allows you to set the URL query string parameter name to something other than the default "callback".</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -30,10 +30,10 @@
  The following is an example of a URL used to call a service: `http://baseAddress/Service/RESTService?callback=functionName`. When invoked, the service responds with the following JSON.  
   
 ```  
-functionName({ “root”:”Something});  
+functionName({ "root":"Something});  
 ```  
   
- The <xref:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute> allows developers to specify the name of the URL query string parameter to interpret as the callback parameter. The default value is “callback” (not case sensitive).  
+ The <xref:System.ServiceModel.Web.JavascriptCallbackBehaviorAttribute> allows developers to specify the name of the URL query string parameter to interpret as the callback parameter. The default value is "callback" (not case sensitive).  
   
  The following example shows how this attribute is applied to a service contract.  
   
@@ -166,7 +166,7 @@ public class Service1
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property allows you to specify the name of the URL query string parameter used to identify the JSONP callback function name. The default value is “callback”.  
+ This property allows you to specify the name of the URL query string parameter used to identify the JSONP callback function name. The default value is "callback".  
   
  ]]></format>
         </remarks>

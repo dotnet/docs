@@ -1033,8 +1033,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">When<paramref name=" asyncResult" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">When<paramref name=" asyncResult" /> did not originate from this <see cref="T:System.Data.Services.Client.DataServiceContext" /> instance.  
+        <exception cref="T:System.ArgumentNullException">When <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">When <paramref name="asyncResult" /> did not originate from this <see cref="T:System.Data.Services.Client.DataServiceContext" /> instance.  
   
  -or-  
   
@@ -1061,7 +1061,7 @@
       <Docs>
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that represents the status of the asynchronous operation.</param>
         <summary>Called to complete the <see cref="M:System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback,System.Object,System.Data.Services.Client.DataServiceRequest[])" />.</summary>
-        <returns>The<see langword=" DataServiceResult" /> object that indicates the result of the batch operation.</returns>
+        <returns>The <see langword="DataServiceResult" /> object that indicates the result of the batch operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1429,7 +1429,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The<paramref name=" entity" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="entity" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="entity" /> is not tracked by this <see cref="T:System.Data.Services.Client.DataServiceContext" />.  
   
  -or-  
@@ -1927,6 +1927,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveChanges">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the changes the <see cref="T:System.Data.Services.Client.DataServiceContext" /> is tracking to storage.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A <xref:System.Data.Services.Client.DataServiceResponse> that contains status, headers, and errors that result from the call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SaveChanges">
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceResponse SaveChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceResponse SaveChanges() cil managed" />
@@ -2414,23 +2432,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SaveChanges">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves the changes the <see cref="T:System.Data.Services.Client.DataServiceContext" /> is tracking to storage.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A <xref:System.Data.Services.Client.DataServiceResponse> that contains status, headers, and errors that result from the call to <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

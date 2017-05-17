@@ -106,4 +106,4 @@ manager: "wpickett"
  [More Secure Printing in Windows Forms](../../../docs/framework/winforms/more-secure-printing-in-windows-forms.md)   
  [Security in Windows Forms Overview](../../../docs/framework/winforms/security-in-windows-forms-overview.md)   
  [Windows Forms Security](../../../docs/framework/winforms/windows-forms-security.md)   
- [Securing ClickOnce Applications](http://msdn.microsoft.com/library/a05b5f2f-d1f2-471a-8096-8b11f7554265)
+ [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications)

@@ -88,7 +88,7 @@ void IInstanceProvider.ReleaseInstance(InstanceContext instanceContext, object i
   
 ```  
   
- The `ReleaseInstance` method provides a “clean up initialization” feature. Normally the pool maintains a minimum number of objects for the lifetime of the pool. However, there can be periods of excessive usage that require creating additional objects in the pool to reach the maximum limit specified in the configuration. Eventually, when the pool becomes less active, those surplus objects can become an extra overhead. Therefore, when the `activeObjectsCount` reaches zero, an idle timer is started that triggers and performs a clean-up cycle.  
+ The `ReleaseInstance` method provides a "clean up initialization" feature. Normally the pool maintains a minimum number of objects for the lifetime of the pool. However, there can be periods of excessive usage that require creating additional objects in the pool to reach the maximum limit specified in the configuration. Eventually, when the pool becomes less active, those surplus objects can become an extra overhead. Therefore, when the `activeObjectsCount` reaches zero, an idle timer is started that triggers and performs a clean-up cycle.  
   
 ## Adding the Behavior  
  Dispatcher-layer extensions are hooked up using the following behaviors:  

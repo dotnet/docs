@@ -1170,9 +1170,7 @@ Protected Sub LinqDataSource_Inserting(ByVal sender As Object, _
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 protected void LinqDataSource_Inserting(object sender,   
         LinqDataSourceInsertEventArgs e)  
 {  
@@ -1673,9 +1671,7 @@ End Sub
   
  The following example shows how to assign the <xref:System.Web.UI.WebControls.LinqDataSourceSelectEventArgs.Result%2A> property to the object that is returned from a method that represents a stored procedure.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Protected Sub LinqDataSource_Selecting(ByVal sender As Object, _  
         ByVal e As LinqDataSourceSelectEventArgs)  
     Dim exampleContext As ExampleDataContext = New ExampleDataContext()  
@@ -1683,9 +1679,7 @@ Protected Sub LinqDataSource_Selecting(ByVal sender As Object, _
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 protected void LinqDataSource_Selecting(object sender,   
         LinqDataSourceSelectEventArgs e)  
 {  
@@ -2061,9 +2055,7 @@ Protected Sub LinqDataSource_Updating(ByVal sender As Object, _
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 protected void LinqDataSource_Updating(object sender,   
         LinqDataSourceUpdateEventArgs e)  
 {  

@@ -36,7 +36,7 @@ Returns the size of the strong name signature. This method is typically used by 
 ## Syntax  
   
 ```  
-HRESULT StrongNameSignatureSize (   
+HRESULT StrongNameSignatureSize (   
     [in]  BYTE   *pbPublicKeyBlob,  
     [in]  ULONG  cbPublicKeyBlob,   
     [in]  DWORD  *pcbSize  

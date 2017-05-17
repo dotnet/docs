@@ -126,7 +126,7 @@
         <param name="format">The format of the data to look for. See <see cref="T:System.Windows.DataFormats" /> for predefined formats.</param>
         <summary>Queries the Clipboard for the presence of data in a specified data format.</summary>
         <returns>
-          <see langword="true" /> if data in the specified format is available on the Clipboard; otherwise, <see langword="false" />. See Remarks.</returns>
+          <see langword="true" /> if data in the specified format is available on the Clipboard; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

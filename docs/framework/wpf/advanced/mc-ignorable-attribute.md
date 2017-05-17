@@ -43,7 +43,7 @@ Specifies which [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md
   xmlns:ignorablePrefix1="ignorableUri"  
   xmlns:ignorablePrefix2="ignorableUri2"  
   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"  
-  mc:Ignorable="ignorablePrefix1 ignorablePrefix2"...>  
+  mc:Ignorable="ignorablePrefix1 ignorablePrefix2"...>  
     <ignorablePrefix1:ThisElementCanBeIgnored/>  
 </object>  
 ```  

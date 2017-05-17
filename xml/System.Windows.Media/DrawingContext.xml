@@ -472,7 +472,7 @@
       </Parameters>
       <Docs>
         <param name="brush">The brush used to fill the rectangle, or <see langword="null" /> for no fill.</param>
-        <param name="pen">The pen used to stroke the rectangle, or <see langword="null " />for no stroke.</param>
+        <param name="pen">The pen used to stroke the rectangle, or <see langword="null" /> for no stroke.</param>
         <param name="rectangle">The rectangle to draw.</param>
         <param name="rectangleAnimations">The clock with which to animate the rectangle's size and dimensions, or <see langword="null" /> for no animation. This clock must be created from an <see cref="T:System.Windows.Media.Animation.AnimationTimeline" /> that can animate <see cref="T:System.Windows.Rect" /> objects.</param>
         <param name="radiusX">The radius in the X dimension of the rounded corners.  This value will be clamped to the range of 0 to <see cref="P:System.Windows.Rect.Width" />/2</param>

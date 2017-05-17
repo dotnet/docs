@@ -198,6 +198,23 @@ private void btnGet_Click(object sender, EventArgs e)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddOrGetExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a cache entry into the cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.MemoryCache.AddOrGetExisting%2A> method overloads are used to insert a cache entry into the cache. If a cache entry with a matching key does not exist, these methods insert a new entry. If a cache entry with a matching key already exists, they return the existing entry.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddOrGetExisting">
       <MemberSignature Language="C#" Value="public override System.Runtime.Caching.CacheItem AddOrGetExisting (System.Runtime.Caching.CacheItem item, System.Runtime.Caching.CacheItemPolicy policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Runtime.Caching.CacheItem AddOrGetExisting(class System.Runtime.Caching.CacheItem item, class System.Runtime.Caching.CacheItemPolicy policy) cil managed" />
@@ -280,9 +297,9 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="value " />is not <see langword="null" />.</exception>
+          <paramref name="value" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">Both the absolute and sliding expiration values for the <see cref="T:System.Runtime.Caching.CacheItemPolicy" /> object are set to values other than the defaults of <see cref="F:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration" /> and <see cref="F:System.Runtime.Caching.ObjectCache.NoSlidingExpiration" /> fields. The <see cref="T:System.Runtime.Caching.MemoryCache" /> class cannot set expiration policy based on a combination of an absolute expiration and a sliding expiration. Only one expiration setting can be explicitly set when you use the <see cref="T:System.Runtime.Caching.MemoryCache" /> instance. The other expiration setting must be set to <see cref="F:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration" /> or <see cref="F:System.Runtime.Caching.ObjectCache.NoSlidingExpiration" /></exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Runtime.Caching.CacheItemPolicy.SlidingExpiration" /> property is set to a value less than <see cref="F:System.TimeSpan.Zero" />.  
   
@@ -403,7 +420,7 @@ private void btnGet_Click(object sender, EventArgs e)
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateCacheEntryChangeMonitor">
@@ -442,7 +459,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keys" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An item in the <paramref name="keys" /> collection is <see langword="null" />.</exception>
@@ -574,7 +591,7 @@ private void btnGet_Click(object sender, EventArgs e)
         <returns>A reference to the cache entry that is identified by <paramref name="key" />, if the entry exists; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
@@ -609,7 +626,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
@@ -635,7 +652,7 @@ private void btnGet_Click(object sender, EventArgs e)
         <returns>The number of entries in the cache.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -719,7 +736,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keys" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An individual key in the collection is <see langword="null" />.</exception>
@@ -867,7 +884,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
@@ -898,6 +915,23 @@ private void btnGet_Click(object sender, EventArgs e)
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Set">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a cache entry into the cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified entry does not exist, it is created. If the specified entry exists, it is updated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Set">
       <MemberSignature Language="C#" Value="public override void Set (System.Runtime.Caching.CacheItem item, System.Runtime.Caching.CacheItemPolicy policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Set(class System.Runtime.Caching.CacheItem item, class System.Runtime.Caching.CacheItemPolicy policy) cil managed" />
@@ -989,7 +1023,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.  
   
@@ -1071,7 +1105,7 @@ private void btnGet_Click(object sender, EventArgs e)
   
  The <see cref="P:System.Runtime.Caching.CacheItemPolicy.Priority" /> property is not a value of the <see cref="T:System.Runtime.Caching.CacheItemPriority" /> enumeration.</exception>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -1133,39 +1167,5 @@ private void btnGet_Click(object sender, EventArgs e)
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddOrGetExisting">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Caching</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Inserts a cache entry into the cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Caching.MemoryCache.AddOrGetExisting%2A> method overloads are used to insert a cache entry into the cache. If a cache entry with a matching key does not exist, these methods insert a new entry. If a cache entry with a matching key already exists, they return the existing entry.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Set">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Caching</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Inserts a cache entry into the cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified entry does not exist, it is created. If the specified entry exists, it is updated.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

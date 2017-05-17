@@ -38,9 +38,7 @@
 ## Examples  
  The following example uses <xref:System.Data.OracleClient.OracleCommand>, along with <xref:System.Data.OracleClient.OracleDataAdapter> and <xref:System.Data.OracleClient.OracleConnection>, to select rows from a database. The example is passed an initialized <xref:System.Data.DataSet>, a connection string, a query string that is an SQL SELECT statement, and a string that is the name of the database table. The example then creates an <xref:System.Data.OracleClient.OracleCommandBuilder>.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Private Function SelectOracleRows(connection As String, queryString As String, tableName As String) As DataSet  
   
    Dim connection As New OracleConnection(connection)  
@@ -60,9 +58,7 @@ Private Function SelectOracleRows(connection As String, queryString As String, t
 End Function  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQuery, string myTableName)  
 {  
    OracleConnection myConn = new OracleConnection(myConnection);  
@@ -290,6 +286,29 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
         <exception cref="T:System.InvalidOperationException">The command text is not a valid stored procedure name, or the <see cref="T:System.Data.CommandType" /> specified was not <see cref="F:System.Data.CommandType.StoredProcedure" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDeleteCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform deletions on the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDeleteCommand">
       <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleCommand GetDeleteCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OracleClient.OracleCommand GetDeleteCommand() cil managed" />
@@ -365,6 +384,29 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetInsertCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform insertions on the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetInsertCommand">
       <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleCommand GetInsertCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OracleClient.OracleCommand GetInsertCommand() cil managed" />
@@ -506,6 +548,29 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetUpdateCommand">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform updates on the database.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
+  
+ You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
+  
+ The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A>.  
+  
+ For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetUpdateCommand">
       <MemberSignature Language="C#" Value="public System.Data.OracleClient.OracleCommand GetUpdateCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OracleClient.OracleCommand GetUpdateCommand() cil managed" />
@@ -682,74 +747,5 @@ public static DataSet SelectOracleSrvRows(string myConnection, string mySelectQu
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetDeleteCommand">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform deletions on the database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
-  
- You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
-  
- The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand%2A>.  
-  
- For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetInsertCommand">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform insertions on the database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
-  
- You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
-  
- The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand%2A>.  
-  
- For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetUpdateCommand">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the automatically generated <see cref="T:System.Data.OracleClient.OracleCommand" /> object required to perform updates on the database.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can use the <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> method for informational or troubleshooting purposes because it returns the <xref:System.Data.OracleClient.OracleCommand> object to be executed.  
-  
- You can also use <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> as the basis of a modified command. For example, you might call <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A> and modify the <xref:System.Data.OracleClient.OracleCommand.CommandText%2A> value, and then explicitly set that on the <xref:System.Data.OracleClient.OracleDataAdapter>.  
-  
- The SQL statements are first generated when the application calls either <xref:System.Data.Common.DbDataAdapter.Update%2A> or <xref:System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand%2A>.  
-  
- For more information, see [Generating Commands with CommandBuilders](~/docs/framework/data/adonet/generating-commands-with-commandbuilders.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

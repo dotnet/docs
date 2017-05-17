@@ -40,11 +40,11 @@ manager: "wpickett"
  The overload has the following signature:  
   
 ```  
-AppDomain.CreateDomain( string friendlyName,  
-                        Evidence securityInfo,  
-                        AppDomainSetup info,  
-                        PermissionSet grantSet,  
-                        params StrongName[] fullTrustAssemblies);  
+AppDomain.CreateDomain( string friendlyName,  
+                        Evidence securityInfo,  
+                        AppDomainSetup info,  
+                        PermissionSet grantSet,  
+                        params StrongName[] fullTrustAssemblies);  
 ```  
   
  The parameters for the <xref:System.AppDomain.CreateDomain%28System.String%2CSystem.Security.Policy.Evidence%2CSystem.AppDomainSetup%2CSystem.Security.PermissionSet%2CSystem.Security.Policy.StrongName%5B%5D%29> method overload specify the name of the <xref:System.AppDomain>, the evidence for the <xref:System.AppDomain>, the <xref:System.AppDomainSetup> object that identifies the application base for the sandbox, the permission set to use, and the strong names for fully trusted assemblies.  

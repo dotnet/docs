@@ -49,5 +49,5 @@ Type forwarding allows you to move a type to another assembly without having to 
   
 ## See Also  
  <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute>   
- [Type Forwarding (C++/CLI)](http://msdn.microsoft.com/library/ae730b69-0c27-41cc-84e1-3132783866ea)   
+ [Type Forwarding (C++/CLI)](/cpp/windows/type-forwarding-cpp-cli)   
  [#using Directive](http://msdn.microsoft.com/library/870b15e5-f361-40a8-ba1c-c57d75c8809a)

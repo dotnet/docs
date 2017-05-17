@@ -48,6 +48,29 @@ ArcSegment objects with different SweepDirection settings
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ArcSegment" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Media.ArcSegment> class defines only the destination point of the arc it represents; the beginning point of the arc is the current point of the <xref:System.Windows.Media.PathFigure>, to which the <xref:System.Windows.Media.ArcSegment> is added.  
+  
+ For most elliptical arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the `largeArc` and `sweepDirection` parameters indicate which arc to use.  
+  
+ Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If `largeArc` is **true**, then one of the two larger arc sweeps is chosen; otherwise, if `largeArc` is **false**, one of the smaller arc sweeps is chosen.  
+  
+ If `sweepDirection` is <xref:System.Windows.Media.SweepDirection.Clockwise>, the arc is drawn in a positive-angle direction. If `sweepDirection` is <xref:System.Windows.Media.SweepDirection.Counterclockwise>, the arc is drawn in a negative-angle direction.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ArcSegment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -473,28 +496,5 @@ ArcSegment objects with different SweepDirection settings
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.ArcSegment" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Media.ArcSegment> class defines only the destination point of the arc it represents; the beginning point of the arc is the current point of the <xref:System.Windows.Media.PathFigure>, to which the <xref:System.Windows.Media.ArcSegment> is added.  
-  
- For most elliptical arcs of a particular position, size, and rotation, there are four different arcs that can be drawn; the `largeArc` and `sweepDirection` parameters indicate which arc to use.  
-  
- Of the four candidate arc sweeps, two represent large arcs with sweeps of 180 degrees or greater, and two represent smaller arcs with sweeps 180 degrees or less. If `largeArc` is **true**, then one of the two larger arc sweeps is chosen; otherwise, if `largeArc` is **false**, one of the smaller arc sweeps is chosen.  
-  
- If `sweepDirection` is <xref:System.Windows.Media.SweepDirection.Clockwise>, the arc is drawn in a positive-angle direction. If `sweepDirection` is <xref:System.Windows.Media.SweepDirection.Counterclockwise>, the arc is drawn in a negative-angle direction.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -30,16 +30,16 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
 ## XAML Attribute Usage  
   
 ```  
-<object property="{} literalValue" .../>  
+<object property="{} literalValue" .../>  
 ```  
   
 ## XAML Property Element Usage  
   
 ```  
 <object>  
-  <object.property>  
-    {} literalValue  
-  </object.property>  
+  <object.property>  
+    {} literalValue  
+  </object.property>  
 </object>  
 ```  
   

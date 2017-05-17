@@ -28,14 +28,14 @@ Provides configuration for the <xref:System.IdentityModel.Services.Tokens.Member
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <add type="System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler, System.IdentityModel.Services">  
-        <userNameSecurityTokenHandlerRequirement membershipProviderName=xs:string >  
-        </userNameSecurityTokenHandlerRequirement>  
-      </add>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <add type="System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler, System.IdentityModel.Services">  
+        <userNameSecurityTokenHandlerRequirement membershipProviderName=xs:string >  
+        </userNameSecurityTokenHandlerRequirement>  
+      </add>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

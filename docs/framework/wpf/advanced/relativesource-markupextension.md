@@ -26,13 +26,13 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
 ## XAML Attribute Usage  
   
 ```  
-<Binding RelativeSource="{RelativeSource modeEnumValue}" .../>  
+<Binding RelativeSource="{RelativeSource modeEnumValue}" .../>  
 ```  
   
 ## XAML Attribute Usage (nested within Binding extension)  
   
 ```  
-<object property="{Binding RelativeSource={RelativeSource modeEnumValue} ...}" .../>  
+<object property="{Binding RelativeSource={RelativeSource modeEnumValue} ...}" .../>  
 ```  
   
 ## XAML Object Element Usage  
@@ -40,7 +40,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
 ```  
 <Binding>  
   <Binding.RelativeSource>  
-    <RelativeSource Mode="modeEnumValue"/>  
+    <RelativeSource Mode="modeEnumValue"/>  
   </Binding.RelativeSource>  
 </Binding>  
 - or   
@@ -48,7 +48,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
   <Binding.RelativeSource>  
     <RelativeSource  
       Mode="FindAncestor"  
-      AncestorType="{x:Type typeName}"  
+      AncestorType="{x:Type typeName}"  
       AncestorLevel="intLevel"  
     />  
   </Binding.RelativeSource>  

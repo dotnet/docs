@@ -39,9 +39,7 @@
 ## Examples  
  The following example shows how to search the ListPrice field of the Products table in the AdventureWorks database for products that have a list price of 400 or more. This example shows how to create a custom LINQ query in a method in page code and how to invoke the method in the <xref:System.Web.UI.WebControls.QueryExtender> control.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Shared Function FilterStandardPrice(ByVal query As _  
         IQueryable(Of Product)) As IQueryable(Of Product)  
         Return From p In query _  
@@ -50,9 +48,7 @@ Public Shared Function FilterStandardPrice(ByVal query As _
     End Function  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public static IQueryable<Product>   
         FilterStandardPrice(IQueryable<Product> query)  
 {  

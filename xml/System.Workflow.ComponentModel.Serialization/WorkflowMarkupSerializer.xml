@@ -124,7 +124,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="parentObject" /> or<paramref name=" childObj" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+          <paramref name="parentObject" /> or <paramref name="childObj" /> contains a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="CanSerializeToString">
@@ -597,6 +597,50 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Serialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes an <see cref="T:System.Object" /> into extensible Application Markup Language (XAML) format.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The functionality of <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer> is dependent on functionality of other types outside of Windows Workflow Foundation. Based on the limitations of those other types, not all data types can be serialized through the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer>. The following is a list of some unsupported types.  
+  
+> [!NOTE]
+>  This is not an exhaustive and complete list of unsupported types.  
+  
+ Arrays (supported only if property is decorated with `DesignerSerializationVisibility.Content` attribute value)  
+  
+ Parameterless Constructors  
+  
+ Multidimensional Arrays  
+  
+ Generic types (Generic `List` and `Dictionary` types supported only if property is decorated with `DesignerSerializationVisibility.Content` attribute value)  
+  
+ `Hashtable`  
+  
+ `Queue`  
+  
+ `Stack`  
+  
+ `XmlDocument`  
+  
+ `MailMessage`  
+  
+ `Bitmap`  
+  
+ Enumeration Arrays  
+  
+ In addition to this list, any property decorated with both the `ContentPropertyAttibute` and the `DesignerSerializationVisibilityAttribute` cannot be serialized by `WorkflowMarkupSerializer`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Serialize">
       <MemberSignature Language="C#" Value="public void Serialize (System.Xml.XmlWriter writer, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.Xml.XmlWriter writer, object obj) cil managed" />
@@ -818,49 +862,5 @@ code1.SetValue(WorkflowMarkupSerializer.XCodeProperty,
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Serialize">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Serializes an <see cref="T:System.Object" /> into extensible Application Markup Language (XAML) format.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The functionality of <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer> is dependent on functionality of other types outside of Windows Workflow Foundation. Based on the limitations of those other types, not all data types can be serialized through the <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer>. The following is a list of some unsupported types.  
-  
-> [!NOTE]
->  This is not an exhaustive and complete list of unsupported types.  
-  
- Arrays (supported only if property is decorated with `DesignerSerializationVisibility.Content` attribute value)  
-  
- Parameterless Constructors  
-  
- Multidimensional Arrays  
-  
- Generic types (Generic `List` and `Dictionary` types supported only if property is decorated with `DesignerSerializationVisibility.Content` attribute value)  
-  
- `Hashtable`  
-  
- `Queue`  
-  
- `Stack`  
-  
- `XmlDocument`  
-  
- `MailMessage`  
-  
- `Bitmap`  
-  
- Enumeration Arrays  
-  
- In addition to this list, any property decorated with both the `ContentPropertyAttibute` and the `DesignerSerializationVisibilityAttribute` cannot be serialized by `WorkflowMarkupSerializer`.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

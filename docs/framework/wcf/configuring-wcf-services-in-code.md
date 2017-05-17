@@ -70,7 +70,7 @@ public class Service1 : IService1
     public string GetData(int value);   
     public static void Configure(ServiceConfiguration config)   
     {   
-        // Enable “Add Service Reference” support   
+        // Enable "Add Service Reference" support   
        config.Description.Behaviors.Add( new ServiceMetadataBehavior { HttpGetEnabled = true });   
        // set up support for http, https, net.tcp, net.pipe   
        config.EnableProtocol(new BasicHttpBinding());   

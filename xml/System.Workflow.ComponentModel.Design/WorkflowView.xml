@@ -1870,6 +1870,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowInfoTip">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the **InfoTip** for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Displays the **InfoTip** for the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ShowInfoTip">
       <MemberSignature Language="C#" Value="public void ShowInfoTip (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowInfoTip(string text) cil managed" />
@@ -2225,22 +2242,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ShowInfoTip">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Displays the **InfoTip** for the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowView" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Displays the **InfoTip** for the <xref:System.Workflow.ComponentModel.Design.WorkflowView>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

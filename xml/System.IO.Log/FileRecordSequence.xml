@@ -158,6 +158,26 @@
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Append">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a log record to the <see cref="T:System.IO.Log.FileRecordSequence" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates a record sequence, appends record to it, and finally reads the records.  
+  
+ [!code-csharp[IRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#0)]
+ [!code-vb[IRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#0)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Append">
       <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber Append (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Append(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions) cil managed" />
@@ -247,8 +267,8 @@
 ## Examples  
  The following example shows how you can create a record sequence with this method.  
   
- <!-- TODO: review snippet reference [!code-csharp[IRecordSequence#3](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#3)]  -->
- <!-- TODO: review snippet reference [!code-vb[IRecordSequence#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#3)]  -->  
+ [!code-csharp[IRecordSequence#3](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#3)] 
+ [!code-vb[IRecordSequence#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#3)]   
   
  ]]></format>
         </remarks>
@@ -1515,6 +1535,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteRestartArea">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a restart area to the <see cref="T:System.IO.Log.FileRecordSequence" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A restart area can be used to temporarily store information containing a client's last checkpoint operation. When a recovery is necessary, you can read a restart area and retrieve all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+  
+ A restart area can be read using the <xref:System.IO.Log.FileRecordSequence.ReadRestartAreas%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteRestartArea">
       <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber WriteRestartArea (ArraySegment&lt;byte&gt; data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber WriteRestartArea(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data) cil managed" />
@@ -1819,44 +1858,5 @@
         <exception cref="T:System.IO.Log.ReservationNotFoundException">No reservation large enough to fit <paramref name="data" /> can be found in <paramref name="reservations" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteRestartArea">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a restart area to the <see cref="T:System.IO.Log.FileRecordSequence" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A restart area can be used to temporarily store information containing a client's last checkpoint operation. When a recovery is necessary, you can read a restart area and retrieve all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
-  
- A restart area can be read using the <xref:System.IO.Log.FileRecordSequence.ReadRestartAreas%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Append">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a log record to the <see cref="T:System.IO.Log.FileRecordSequence" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates a record sequence, appends record to it, and finally reads the records.  
-  
- [!code-csharp[IRecordSequence#0](~/samples/snippets/csharp/VS_Snippets_CFX/irecordsequence/cs/readrecord.cs#0)]
- [!code-vb[IRecordSequence#0](~/samples/snippets/visualbasic/VS_Snippets_CFX/irecordsequence/vb/readrecord.vb#0)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

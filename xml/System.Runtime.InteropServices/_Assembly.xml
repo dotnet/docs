@@ -67,6 +67,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.CreateInstance" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Reflection.Assembly.CreateInstance%2A> methods locate a type from this assembly and create an instance of it using the system activator.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateInstance">
       <MemberSignature Language="C#" Value="public object CreateInstance (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateInstance(string typeName) cil managed" />
@@ -325,6 +345,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetCustomAttributes" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Reflection.Assembly.GetCustomAttributes%2A> methods get the custom attributes for this assembly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCustomAttributes">
       <MemberSignature Language="C#" Value="public object[] GetCustomAttributes (bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetCustomAttributes(bool inherit) cil managed" />
@@ -452,6 +492,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFiles">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetFiles" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Reflection.Assembly.GetFiles%2A> methods get the files in the file table of an assembly manifest.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFiles">
       <MemberSignature Language="C#" Value="public System.IO.FileStream[] GetFiles ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.FileStream[] GetFiles() cil managed" />
@@ -543,6 +603,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetLoadedModules">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetLoadedModules" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Reflection.Assembly.GetLoadedModules%2A> methods get all the loaded modules that are part of this assembly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetLoadedModules">
       <MemberSignature Language="C#" Value="public System.Reflection.Module[] GetLoadedModules ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Module[] GetLoadedModules() cil managed" />
@@ -666,6 +746,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetManifestResourceStream">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetManifestResourceStream" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> methods load the specified manifest resource from this assembly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetManifestResourceStream">
       <MemberSignature Language="C#" Value="public System.IO.Stream GetManifestResourceStream (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetManifestResourceStream(string name) cil managed" />
@@ -764,6 +864,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetModules">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetModules" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Reflection.Assembly.GetModules%2A> methods get all the modules that are part of this assembly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetModules">
       <MemberSignature Language="C#" Value="public System.Reflection.Module[] GetModules ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Module[] GetModules() cil managed" />
@@ -826,6 +946,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetName">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetName" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Reflection.Assembly.GetName%2A> methods get an <xref:System.Reflection.AssemblyName> for this assembly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetName">
       <MemberSignature Language="C#" Value="public System.Reflection.AssemblyName GetName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.AssemblyName GetName() cil managed" />
@@ -951,6 +1091,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSatelliteAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetSatelliteAssembly" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Reflection.Assembly.GetSatelliteAssembly%2A> methods get the satellite assembly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSatelliteAssembly">
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly GetSatelliteAssembly (System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Assembly GetSatelliteAssembly(class System.Globalization.CultureInfo culture) cil managed" />
@@ -1017,6 +1177,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetType" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Reflection.Assembly.GetType%2A> methods get the <xref:System.Type> object that represents the specified type.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetType">
       <MemberSignature Language="C#" Value="public Type GetType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetType() cil managed" />
@@ -1243,6 +1423,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadModule">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.LoadModule" /> members.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
+  
+ The <xref:System.Reflection.Assembly.LoadModule%2A> members load the module internal to this assembly.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LoadModule">
       <MemberSignature Language="C#" Value="public System.Reflection.Module LoadModule (string moduleName, byte[] rawModule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Module LoadModule(string moduleName, unsigned int8[] rawModule) cil managed" />
@@ -1398,205 +1598,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetSatelliteAssembly">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetSatelliteAssembly" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.Assembly.GetSatelliteAssembly%2A> methods get the satellite assembly.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetName">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetName" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.Assembly.GetName%2A> methods get an <xref:System.Reflection.AssemblyName> for this assembly.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCustomAttributes">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetCustomAttributes" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.Assembly.GetCustomAttributes%2A> methods get the custom attributes for this assembly.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="LoadModule">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.LoadModule" /> members.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.Assembly.LoadModule%2A> members load the module internal to this assembly.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetType">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetType" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.Assembly.GetType%2A> methods get the <xref:System.Type> object that represents the specified type.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetManifestResourceStream">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetManifestResourceStream" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.Assembly.GetManifestResourceStream%2A> methods load the specified manifest resource from this assembly.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetLoadedModules">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetLoadedModules" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.Assembly.GetLoadedModules%2A> methods get all the loaded modules that are part of this assembly.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetModules">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetModules" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.Assembly.GetModules%2A> methods get all the modules that are part of this assembly.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetFiles">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.GetFiles" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.Assembly.GetFiles%2A> methods get the files in the file table of an assembly manifest.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateInstance">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.Assembly.CreateInstance" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code, and should not be called from managed code.  
-  
- The <xref:System.Reflection.Assembly.CreateInstance%2A> methods locate a type from this assembly and create an instance of it using the system activator.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

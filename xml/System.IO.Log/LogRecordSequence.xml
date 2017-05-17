@@ -142,7 +142,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="logStore" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="bufferSize " />is negative or zero.  
+          <paramref name="bufferSize" /> is negative or zero.  
   
  -or-  
   
@@ -457,6 +457,26 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Append">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a log record to the <see cref="T:System.IO.Log.IRecordSequence" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ This example shows how to use the <xref:System.IO.Log.LogRecordSequence.Append%2A> member  
+  
+ [!code-csharp[S_UELogRecordSequence#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#5)]
+ [!code-vb[S_UELogRecordSequence#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Append">
       <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber Append (ArraySegment&lt;byte&gt; data, System.IO.Log.SequenceNumber nextUndoRecord, System.IO.Log.SequenceNumber previousRecord, System.IO.Log.RecordAppendOptions recordAppendOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber Append(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data, valuetype System.IO.Log.SequenceNumber nextUndoRecord, valuetype System.IO.Log.SequenceNumber previousRecord, valuetype System.IO.Log.RecordAppendOptions recordAppendOptions) cil managed" />
@@ -1480,7 +1500,7 @@ recordSequence.Append(undoRecordData, userSqn, previousSqn, RecordAppendOptions.
   
  The request could not be performed because of an I/O device error.</exception>
         <exception cref="T:System.InvalidOperationException">
-          <see langword="End " />has already been called for this asynchronous operation.</exception>
+          <see langword="End" /> has already been called for this asynchronous operation.</exception>
         <exception cref="T:System.NotSupportedException">The operation cannot be performed because the record sequence was opened with read-only access.</exception>
         <exception cref="T:System.ObjectDisposedException">The method was called after the sequence has been disposed of.</exception>
         <exception cref="T:System.OutOfMemoryException">There is not enough memory to continue the execution of the program.</exception>
@@ -2233,6 +2253,25 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteRestartArea">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Log</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a restart area to the <see cref="T:System.IO.Log.LogRecordSequence" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
+  
+ A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteRestartArea">
       <MemberSignature Language="C#" Value="public System.IO.Log.SequenceNumber WriteRestartArea (ArraySegment&lt;byte&gt; data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.IO.Log.SequenceNumber WriteRestartArea(valuetype System.ArraySegment`1&lt;unsigned int8&gt; data) cil managed" />
@@ -2518,44 +2557,5 @@ void HandleTailPinned(object sender, TailPinnedEventArgs tailPinnedEventArgs)
         <exception cref="T:System.IO.Log.SequenceFullException">The record sequence is full.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteRestartArea">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a restart area to the <see cref="T:System.IO.Log.LogRecordSequence" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A restart area is used to temporarily store information containing a client's last checkpoint operation. The Common Log File System (CLFS) maintains two restart areas to guarantee that at least one valid area is always available. When a recovery is necessary, the CLFS reads its restart area and all the data from the last checkpoint operation. This data initializes the transaction table, dirty pages table, and open file table so they can be used in the recovery process.  
-  
- A restart area can be read using the <xref:System.IO.Log.LogRecordSequence.ReadRestartAreas%2A> method.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Append">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Log</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a log record to the <see cref="T:System.IO.Log.IRecordSequence" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- This example shows how to use the <xref:System.IO.Log.LogRecordSequence.Append%2A> member  
-  
- [!code-csharp[S_UELogRecordSequence#5](~/samples/snippets/csharp/VS_Snippets_CFX/s_uelogrecordsequence/cs/mylogrecordsequence.cs#5)]
- [!code-vb[S_UELogRecordSequence#5](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_uelogrecordsequence/vb/mylogrecordsequence.vb#5)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

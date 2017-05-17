@@ -199,7 +199,7 @@
         <param name="skiClause">To be added.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance matches the specified key identifier.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is of type <see cref="T:System.IdentityModel.Tokens.RsaKeyIdentifierClause" /> and the keys match; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="skiClause" /> is of type <see cref="T:System.IdentityModel.Tokens.RsaKeyIdentifierClause" /> and the keys match; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

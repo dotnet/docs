@@ -75,6 +75,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadFrom">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads an wsa:EndpointReference element from the specified reader.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Reads the contents of the wsa:EndpointReference element and returns an <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> object. The WS-Addressing namespace can be either the WS-Addressing standard schema (http://schemas.xmlsoap.org/ws/2004/08/addressing) or the WS-Addressing 1.0 standard schema (http://www.w3.org/2005/08/addressing). The wsa:Address element must be the first child element of the wsa:EndpointReference element. The <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property in the returned <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> is set to the URI specified by the wsa:Address element. All other child elements are added to the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details%2A> collection.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadFrom">
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Protocols.WSTrust.EndpointReference ReadFrom (System.Xml.XmlDictionaryReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Protocols.WSTrust.EndpointReference ReadFrom(class System.Xml.XmlDictionaryReader reader) cil managed" />
@@ -186,22 +203,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ReadFrom">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads an wsa:EndpointReference element from the specified reader.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Reads the contents of the wsa:EndpointReference element and returns an <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> object. The WS-Addressing namespace can be either the WS-Addressing standard schema (http://schemas.xmlsoap.org/ws/2004/08/addressing) or the WS-Addressing 1.0 standard schema (http://www.w3.org/2005/08/addressing). The wsa:Address element must be the first child element of the wsa:EndpointReference element. The <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Uri%2A> property in the returned <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference> is set to the URI specified by the wsa:Address element. All other child elements are added to the <xref:System.IdentityModel.Protocols.WSTrust.EndpointReference.Details%2A> collection.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

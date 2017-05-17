@@ -488,6 +488,24 @@
         <exception cref="T:System.InvalidOperationException">Transport element is missing or out of order or scheme is invalid or the message version is not specified.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CanBuildChannelFactory&lt;TChannel&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the current binding can build a channel factory stack on the client that satisfies some specific criteria.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use this method if you want to check that the channel factory for channels of type `TChannel` can be build for the `context` provided before attempting to actually build the factory. Alternatively, try to build the channel factory by calling <xref:System.ServiceModel.Channels.BindingElement.BuildChannelFactory%2A> and catch the exception generated if it cannot be built.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CanBuildChannelFactory&lt;TChannel&gt;">
       <MemberSignature Language="C#" Value="public bool CanBuildChannelFactory&lt;TChannel&gt; (object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanBuildChannelFactory&lt;TChannel&gt;(object[] parameters) cil managed" />
@@ -984,23 +1002,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CanBuildChannelFactory&lt;TChannel&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the current binding can build a channel factory stack on the client that satisfies some specific criteria.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use this method if you want to check that the channel factory for channels of type `TChannel` can be build for the `context` provided before attempting to actually build the factory. Alternatively, try to build the channel factory by calling <xref:System.ServiceModel.Channels.BindingElement.BuildChannelFactory%2A> and catch the exception generated if it cannot be built.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

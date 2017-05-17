@@ -57,12 +57,12 @@ The `cref` attribute in an XML documentation tag means "code reference." It spec
         </member>  
         <member name="M:TestNamespace.TestClass.#ctor">  
             <summary>  
-            This sample shows how to specify the <see cref="T:TestNamespace.TestClass"/> constructor as a cref attribute.   
+            This sample shows how to specify the <see cref="T:TestNamespace.TestClass"/> constructor as a cref attribute.   
             </summary>  
         </member>  
         <member name="M:TestNamespace.TestClass.#ctor(System.Int32)">  
             <summary>  
-            This sample shows how to specify the <see cref="M:TestNamespace.TestClass.#ctor(System.Int32)"/> constructor as a cref attribute.   
+            This sample shows how to specify the <see cref="M:TestNamespace.TestClass.#ctor(System.Int32)"/> constructor as a cref attribute.   
             </summary>  
         </member>  
         <member name="M:TestNamespace.TestClass.GetZero">  

@@ -141,7 +141,7 @@
 ## Remarks  
  When using the method, the service host does a "by-configuration-name" validation on the contract description. In other words, the host verifies that <xref:System.ServiceModel.Description.ContractDescription.ConfigurationName%2A> exists in the list of configuration names of the service contracts implemented by the service. If the validation passes, the description in the <xref:System.ServiceModel.Description.ServiceEndpoint> is used as it is, even if the <xref:System.ServiceModel.Description.ContractDescription> reflected from the service is different.  
   
- As an example, assume that the description in the ServiceEndpoint and the contract description reflected from the service have the same name, but different operation behaviors. The implication of only “by-configuration-name” validation is that there is no validation that the behaviors are the same and there are one updates to one description because of another description.  
+ As an example, assume that the description in the ServiceEndpoint and the contract description reflected from the service have the same name, but different operation behaviors. The implication of only "by-configuration-name" validation is that there is no validation that the behaviors are the same and there are one updates to one description because of another description.  
   
  If the `address` is a relative URI, one of the base addresses of the <xref:System.ServiceModel.ServiceHost> (depending on the binding protocol) is used as the endpoint's base address.  
   
@@ -150,7 +150,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="Endpoint" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The host is not in a Created or an Opening state or there is no <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the hosted service.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="Address" />, <paramref name="Binding, " /> or <paramref name="Contract" /> property is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="Address" />, <paramref name="Binding" />, or <paramref name="Contract" /> property is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">
@@ -1024,7 +1024,7 @@
 ## Remarks  
   
 > [!WARNING]
->  When using <xref:System.ServiceModel.WorkflowServiceHost>, exposing a hosting endpoint, and a <xref:System.ServiceModel.ServiceHostBase.UnknownMessageReceived> exception is thrown, the host passes the message to the event handler. If an attempt is made to read this message an <xref:System.InvalidOperationException> is thrown. The description of the exception will say “This message cannot support the operation because it has been read.”  The WCF infrastructure reads the message while extracting the message parameters. This message is then passed to the event handler and any attempt to read it causes an exception. If you need to access message parameters in your <xref:System.InvalidOperationException> handler from a hosting endpoint, define the hosting endpoint contract using MessageContract and place the needed data into a message header. [!INCLUDE[crabout](~/includes/crabout-md.md)] hosting endpoints see [Workflow Service Host Extensibility](~/docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  
+>  When using <xref:System.ServiceModel.WorkflowServiceHost>, exposing a hosting endpoint, and a <xref:System.ServiceModel.ServiceHostBase.UnknownMessageReceived> exception is thrown, the host passes the message to the event handler. If an attempt is made to read this message an <xref:System.InvalidOperationException> is thrown. The description of the exception will say "This message cannot support the operation because it has been read."  The WCF infrastructure reads the message while extracting the message parameters. This message is then passed to the event handler and any attempt to read it causes an exception. If you need to access message parameters in your <xref:System.InvalidOperationException> handler from a hosting endpoint, define the hosting endpoint contract using MessageContract and place the needed data into a message header. [!INCLUDE[crabout](~/includes/crabout-md.md)] hosting endpoints see [Workflow Service Host Extensibility](~/docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  
   
  ]]></format>
         </remarks>

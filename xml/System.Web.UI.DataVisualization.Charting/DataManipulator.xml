@@ -1209,7 +1209,7 @@
         <param name="fromXValue">The starting point for the series range to be checked. Uses the X-values of the data points.</param>
         <param name="toXValue">The end point for the series range to be checked. Uses the X-values of the data points.</param>
         <param name="series">The <see cref="T:System.Web.UI.DataVisualization.Charting.Series" /> in which to insert the empty points.</param>
-        <summary>Replaces the missing data points in a series with empty points. The series is checked for a given interval that is determined by the <paramref name="interval" />, <paramref name="intervalOffset" />, <paramref name="intervalOffsetType " />and <paramref name="intervalType" /> arguments. The series range that is checked is determined by the <paramref name="toXValue" /> and <paramref name="fromXValue" /> arguments.</summary>
+        <summary>Replaces the missing data points in a series with empty points. The series is checked for a given interval that is determined by the <paramref name="interval" />, <paramref name="intervalOffset" />, <paramref name="intervalOffsetType" /> and <paramref name="intervalType" /> arguments. The series range that is checked is determined by the <paramref name="toXValue" /> and <paramref name="fromXValue" /> arguments.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

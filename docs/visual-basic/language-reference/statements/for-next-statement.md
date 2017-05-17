@@ -59,13 +59,13 @@ Repeats a group of statements a specified number of times.
 ## Syntax  
   
 ```  
-For counter [ As datatype ] = start To end [ Step step ]  
-    [ statements ]  
+For counter [ As datatype ] = start To end [ Step step ]  
+    [ statements ]  
     [ Continue For ]  
     [ statements ]  
-    [ Exit For ]  
-    [ statements ]  
-Next [ counter ]  
+    [ Exit For ]  
+    [ statements ]  
+Next [ counter ]  
 ```  
   
 ## Parts  

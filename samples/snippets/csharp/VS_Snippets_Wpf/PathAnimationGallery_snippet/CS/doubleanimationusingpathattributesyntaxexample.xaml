@@ -43,10 +43,10 @@
                 <!-- <SnippetDoubleAnimationUsingPathAttributeSyntaxExample> -->
                 <DoubleAnimationUsingPath.PathGeometry>  
                   <PathGeometry Figures="M 10,100 C 35,0 135,0 160,100 180,190 285,200 310,100" />     
-          </DoubleAnimationUsingPath.PathGeometry>
+                </DoubleAnimationUsingPath.PathGeometry>
                 <!-- </SnippetDoubleAnimationUsingPathAttributeSyntaxExample> -->
 
-        </DoubleAnimationUsingPath>
+              </DoubleAnimationUsingPath>
 
               <!-- Animates the rectangle vertically along the path. -->
               <DoubleAnimationUsingPath

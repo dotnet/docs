@@ -75,7 +75,7 @@
         <param name="printQueue">The <see cref="T:System.Printing.PrintQueue" /> that hosts the print job that provides the content of the stream.</param>
         <param name="printJobName">The name of the print job that provides the content of the stream.</param>
         <param name="commitDataOnClose">
-          <see langword="true" /> to commit data in the <see cref="T:System.Printing.PrintQueueStream" /> when the <see cref="M:System.Printing.PrintQueueStream.Close" /> method is called; otherwise,<see langword=" false" />.</param>
+          <see langword="true" /> to commit data in the <see cref="T:System.Printing.PrintQueueStream" /> when the <see cref="M:System.Printing.PrintQueueStream.Close" /> method is called; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueueStream" /> class for the specified print job that is hosted in the specified <see cref="T:System.Printing.PrintQueue" />, with an indication of whether data in the <see cref="T:System.Printing.PrintQueueStream" /> should be committed when the stream is closed.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,7 +104,7 @@
         <param name="printQueue">The <see cref="T:System.Printing.PrintQueue" /> that hosts the print job that provides the content of the stream.</param>
         <param name="printJobName">The name of the print job that provides the content of the stream.</param>
         <param name="commitDataOnClose">
-          <see langword="true" /> to commit data in the <see cref="T:System.Printing.PrintQueueStream" /> when the <see cref="M:System.Printing.PrintQueueStream.Close" /> method is called; otherwise,<see langword=" false" />.</param>
+          <see langword="true" /> to commit data in the <see cref="T:System.Printing.PrintQueueStream" /> when the <see cref="M:System.Printing.PrintQueueStream.Close" /> method is called; otherwise, <see langword="false" />.</param>
         <param name="printTicket">The settings of the print job.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueueStream" /> class for the specified print job that is hosted in the specified <see cref="T:System.Printing.PrintQueue" />, with the specified settings and an indication of whether data in the <see cref="T:System.Printing.PrintQueueStream" /> should be committed when the stream is closed.</summary>
         <remarks>To be added.</remarks>

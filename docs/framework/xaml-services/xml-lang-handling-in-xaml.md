@@ -26,7 +26,7 @@ The `xml:lang` attribute is an [!INCLUDE[TLA2#tla_xml](../../../includes/tla2sha
 ## XAML Attribute Usage  
   
 ```  
-<object xml:lang="rfc3066lang" />  
+<object xml:lang="rfc3066lang" />  
 ```  
   
 ## XAML Values  
